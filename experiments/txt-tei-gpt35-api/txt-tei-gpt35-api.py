@@ -23,7 +23,7 @@ Provide the XML structure for the text content, including appropriate tags and h
 """
 
 # Insert your OpenAI API key here
-openai_api_key = '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'
+openai_api_key = 'OpenAI API'
 openai.api_key = openai_api_key
 
 # Loop through each text file in the input directory
