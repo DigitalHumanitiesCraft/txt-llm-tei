@@ -7,23 +7,37 @@ output_directory = 'output'
 
 # Define the prompt template
 prompt_template = """
-Given the following text of a letter, convert it into TEI XML format. 
-The text includes a location and date, an address, the body of the letter, a closing salutation, and a signature. 
-In the TEI XML, these should be represented by the <dateline>, <p>, <closer>, and <signed> elements respectively. 
-Names should be enclosed in <persName> tags without reference links. 
-Page breaks are indicated by a vertical bar followed by a number, like "|2|", and should be converted into a <pb> element with the n attribute set to the page number. 
-Ignore the facs attribute in the <pb> element. 
-Also, include an note> element with a n attribute for numbering, which contains a editorial comment.
+Make the following annotations in the unstructured text and tag it with XML elements. This is a letter from or to Hugo Schuchardt (1842-1927).
+Here are the mapping rules: 
+Named Entities:
+* dateline: <dl> </dl>
+* location: <l> </l>
+* person: <p> </p>
+* organisation: <o> </o>
+* address: <a> </a>
+Textual strucutres:
+* paragaphs: <p> </p>
+* closer: <c> </c>
+* signed: <s> </s>
+Other:
+* dates: <d> </d>
+* editorial comment: <e> </e> and add @n with a counter.
+
+Further rules:
+* The mapping rules must always be adhered to. If you are not able to comply with them, just write "Failed" instead.
+*The original text must not be changed.
+* "|1|" is a page breaks.
+* Each element must always close after the annotated string.
+* There is a <root> element as the root, which means that the xml is well-formed.
+
 Unstructured text:
 ´´´
 {}
 ´´´
-
-Provide the XML structure for the text content, including appropriate tags and hierarchy. Convert this into the corresponding TEI XML format.
 """
 
 # Insert your OpenAI API key here
-openai_api_key = 'OpenAI API'
+openai_api_key = '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'
 openai.api_key = openai_api_key
 
 # Loop through each text file in the input directory
