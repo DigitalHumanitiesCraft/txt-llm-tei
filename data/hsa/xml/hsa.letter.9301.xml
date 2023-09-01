@@ -1,402 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Wilhelm Meyer-Lübke an Hugo Schuchardt (10-07233)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-            <forename>Wilhelm</forename>
-            <surname>Meyer-Lübke</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Magdalena</forename>
-            <surname>Rattey</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/9301" type="PID">o:hsa.letter.9301</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">10-07233</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">07233</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-                <forename>Wilhelm</forename>
-                <surname>Meyer-Lübke</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" ref="http://sws.geonames.org/2761368">Wien</origPlace>
-              <origDate ana="dcterms:created" when="1899-01-06">1899-01-06</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Magdalena</forename>
-              <surname>Rattey</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Wilhelm Meyer-Lübke und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2180"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.9301">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2180" ref="https://viaf.org/viaf/2546176">
-            <forename>Wilhelm</forename>
-            <surname>Meyer-Lübke</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" key="#GID.1" ref="http://sws.geonames.org/2761368">Wien</placeName>
-          <date when="1899-01-06">1899-01-06</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <name ref="http://geonames.org/2761368" type="fcode:STM">Wien-Fluss</name>
-                <location>
-                  <geo>16.38409,48.2088</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2180" type="context">
-                        Korrespondenz Wilhelm Meyer-Lübke - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3085" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschrift für romanische Philologie</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.860" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.302" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Provenzalisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.886" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Latein</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9301" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9301" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9301" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9301" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.9301" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Wien 6 I 99</dateline>
-        <opener>Hochgeehrter Herr Kollege!</opener>
-        <p> ‘Da muss sich manches rätsel lösen, doch - manches rätsel knüpft sich auch’<note n="1" place="foot"
-              type="editorial">ML zitiert hier Verse aus einem Dialog zwischen Faust und Mephistopheles in <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.84">Goethes</persName>
-            <hi rend="unknown"
-            rendition="#none">Faust</hi>, Kap. 24.</note> - nur ist-, und das ist wol die hauptsache, die zahl der von Ihnen in dem zweiten etymologischen beitrag 1)<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.28">Schuchardt, Hugo. 1899. Romanische Etymologieen II. <hi
-                  rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.9301" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Wien 6 I 99</dateline>
+            <opener>Hochgeehrter Herr Kollege!</opener>
+            <p> ‘Da muss sich manches rätsel lösen, doch - manches rätsel knüpft sich auch’<note n="1" place="foot" type="editorial">ML zitiert hier Verse aus einem Dialog zwischen Faust und Mephistopheles in <persName ref="[authorityLink]">Goethes</persName>
+                  <hi rend="unknown" rendition="#none">Faust</hi>, Kap. 24.</note> - nur ist-, und das ist wol die hauptsache, die zahl der von Ihnen in dem zweiten etymologischen beitrag 1)<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.28">Schuchardt, Hugo. 1899. Romanische Etymologieen II. <hi rend="unknown" rendition="#none">
 Sitzungsberichte der philosophisch-historischen Classe der Kaiserlichen Akademie der Wissenschaften in Wien</hi> 141: 1–122.</ref>
-            </bibl> [Archiv-/Breviernummer: 335]. (= Schuchardt 1899b).</note> gelösten unendlich viel grösser und vor allem wichtiger, als was übrig bleibt oder sich neu aufwirft. </p>
-
-        <p>Wer überhaupt beweisführungen zugänglich ist und jedes mass von – soll ich sagen sachkenntnis oder schulung oder glauben besitzt, das, wo es sich nicht um gleichungen wie <hi
-            rend="unknown"
-            rendition="#none">pater : padre</hi> handelt, nun einmal die voraussetzung der nicht exakten wissenschaften bildet, für den ist das <hi
-            rend="unknown" rendition="#none">trovare</hi> problem<note n="3" place="foot"
-              type="editorial">Der Etymologie von <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">ital.</ref>
-            <foreign xml:lang="it">
-              <hi rend="unknown" rendition="#none">trovare</hi>
-            </foreign> (<ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">franz.</ref>
-            <foreign xml:lang="fr">
-              <hi rend="unknown" rendition="#none">trouver</hi>
-
-            </foreign> etc.) schenkt Schuchardt (1899b) seine besondere Aufmerksamkeit. Die Diskussion um die Wurzel der romanischen Wörter, an der sich <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2350">Gaston Paris</persName> und <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+                  </bibl> [Archiv-/Breviernummer: 335]. (= Schuchardt 1899b).</note> gelösten unendlich viel grösser und vor allem wichtiger, als was übrig bleibt oder sich neu aufwirft. </p>
+            <p>Wer überhaupt beweisführungen zugänglich ist und jedes mass von – soll ich sagen sachkenntnis oder schulung oder glauben besitzt, das, wo es sich nicht um gleichungen wie <hi rend="unknown" rendition="#none">pater : padre</hi> handelt, nun einmal die voraussetzung der nicht exakten wissenschaften bildet, für den ist das <hi rend="unknown" rendition="#none">trovare</hi> problem<note n="3" place="foot" type="editorial">Der Etymologie von <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">ital.</ref>
+                  <foreign xml:lang="it">
+                     <hi rend="unknown" rendition="#none">trovare</hi>
+                  </foreign> (<ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">franz.</ref>
+                  <foreign xml:lang="fr">
+                     <hi rend="unknown" rendition="#none">trouver</hi>
+                  </foreign> etc.) schenkt Schuchardt (1899b) seine besondere Aufmerksamkeit. Die Diskussion um die Wurzel der romanischen Wörter, an der sich <persName ref="[authorityLink]">Gaston Paris</persName> und <persName ref="[authorityLink]">
 Schuchardt</persName> maßgeblich – jedoch mit unterschiedlichen Ansichten – beteiligten, wird in weiteren Schuchardt’schen Beiträgen für die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3085">
-              <hi rend="unknown" rendition="#none">ZrP</hi>
-            </ref> fortgesetzt (vgl. Werke im <hi rend="unknown" rendition="#none">HSA</hi>). Vgl. auch <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4027">
-                <hi rend="unknown" rendition="#none">REW</hi> (1911) 8992</ref>
-            </bibl>, s.v. <hi rend="unknown" rendition="#none">tŭrbāre</hi>.</note> gelöst. – Die kaninchenhafte fruchtbarkeit </p>
-
-        <p>1) Indem ich den brief nochmals lese, sehe ich, dass ich die hauptsache vergessen habe – Ihnen meinen wärmsten dank für die freundliche, frühe zusendung<note
-            n="4" place="foot" type="editorial">Betrifft Schuchardt (1899b), wie aus der Einleitung des vorliegenden Briefes hervorgeht.</note> auszusprechen. </p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>von <hi rend="unknown"
-            rendition="#none">cochlea</hi> wirkt auf den ersten blick fast beängstigend, aber auch wenn der eine und andere bastard dazwischen sein, wenn sich gelegentlich vielleicht ein ganz fremder eingeschlichen haben sollte, so wird doch auch hier das meiste bestehen bleiben, namentlich die <hi
-            rend="unknown" rendition="#none">glocke</hi> endgültig gedeutet sein. </p>
-        <p>Zu <hi rend="unknown" rendition="#none">most</hi> bietet das Schweizerische Idiotikon IIII 544 <note n="5"
-            place="foot" type="editorial">
-            <ref target="https://digital.idiotikon.ch/idtkn/id4.htm#!page/40541/mode/1up">
-              <hi rend="unknown"
-              rendition="#none">Schweizerisches Idiotikon. Wörterbuch der schweizerdeutschen Sprache.</hi> Bd. IV.</ref> (Vgl. Sp. 541-544, s.v. <hi
-              rend="unknown" rendition="#none">Most</hi>) Dieser Band erschien erst 1901 vollständig.</note>auch einiges. </p>
-        <p>Zu den kleinen rætseln gehört das verhæltniss von tẹro zu <hi rend="unknown"
-            rendition="#none">tie</hi>, oder soll man neben <hi rend="unknown" rendition="#none">
-tẹra</hi> ein <hi
-            rend="unknown" rendition="#none">tęra</hi> annehmen wie <hi rend="unknown"
-            rendition="#none">ecclęsia</hi>? Oder <hi rend="unknown" rendition="#none">clocia</hi> &gt;
-<hi
-            rend="unknown" rendition="#none">cruise</hi>, wo man doch [']<hi rend="unknown"
-            rendition="#none">closse</hi>, <hi rend="unknown"
-            rendition="#none">crosse</hi> erwartete; auch habe ich einige bedenken, das deutsche weit verbreitete wort ohne weiteres aus dem franz. zu leiten, wæhrend allerdings<pb
-            facs="#IMG.3" n="3"/>
-          <hi rend="unknown" rendition="#none">crogiuolo</hi>, auf dessen zusammenhang mit <hi rend="unknown"
-            rendition="#none">krause</hi> usw. ich vor vielen jahren (Zs XI<note n="6" place="foot" type="editorial">
-            <bibl>
+                     <hi rend="unknown" rendition="#none">ZrP</hi>
+                  </ref> fortgesetzt (vgl. Werke im <hi rend="unknown" rendition="#none">HSA</hi>). Vgl. auch <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4027">
+                        <hi rend="unknown" rendition="#none">REW</hi> (1911) 8992</ref>
+                  </bibl>, s.v. <hi rend="unknown" rendition="#none">tŭrbāre</hi>.</note> gelöst. – Die kaninchenhafte fruchtbarkeit </p>
+            <p>1) Indem ich den brief nochmals lese, sehe ich, dass ich die hauptsache vergessen habe – Ihnen meinen wärmsten dank für die freundliche, frühe zusendung<note n="4" place="foot" type="editorial">Betrifft Schuchardt (1899b), wie aus der Einleitung des vorliegenden Briefes hervorgeht.</note> auszusprechen. </p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>von <hi rend="unknown" rendition="#none">cochlea</hi> wirkt auf den ersten blick fast beängstigend, aber auch wenn der eine und andere bastard dazwischen sein, wenn sich gelegentlich vielleicht ein ganz fremder eingeschlichen haben sollte, so wird doch auch hier das meiste bestehen bleiben, namentlich die <hi rend="unknown" rendition="#none">glocke</hi> endgültig gedeutet sein. </p>
+            <p>Zu <hi rend="unknown" rendition="#none">most</hi> bietet das Schweizerische Idiotikon IIII 544 <note n="5" place="foot" type="editorial">
+                  <ref target="https://digital.idiotikon.ch/idtkn/id4.htm#!page/40541/mode/1up">
+                     <hi rend="unknown" rendition="#none">Schweizerisches Idiotikon. Wörterbuch der schweizerdeutschen Sprache.</hi> Bd. IV.</ref> (Vgl. Sp. 541-544, s.v. <hi rend="unknown" rendition="#none">Most</hi>) Dieser Band erschien erst 1901 vollständig.</note>auch einiges. </p>
+            <p>Zu den kleinen rætseln gehört das verhæltniss von tẹro zu <hi rend="unknown" rendition="#none">tie</hi>, oder soll man neben <hi rend="unknown" rendition="#none">
+tẹra</hi> ein <hi rend="unknown" rendition="#none">tęra</hi> annehmen wie <hi rend="unknown" rendition="#none">ecclęsia</hi>? Oder <hi rend="unknown" rendition="#none">clocia</hi> &gt;
+<hi rend="unknown" rendition="#none">cruise</hi>, wo man doch [']<hi rend="unknown" rendition="#none">closse</hi>, <hi rend="unknown" rendition="#none">crosse</hi> erwartete; auch habe ich einige bedenken, das deutsche weit verbreitete wort ohne weiteres aus dem franz. zu leiten, wæhrend allerdings<pb facs="#IMG.3" n="3"/>
+               <hi rend="unknown" rendition="#none">crogiuolo</hi>, auf dessen zusammenhang mit <hi rend="unknown" rendition="#none">krause</hi> usw. ich vor vielen jahren (Zs XI<note n="6" place="foot" type="editorial">
+                  <bibl>
 
 
 Meyer-Lübke, Wilhelm. 1887. Studi di filologia romanza. Fasc. 4. [Besprechung]. <hi rend="unknown" rendition="#none">ZrP</hi> 11: 578-580.
 </bibl>
-          </note> 578) hingewiesen habe, eher als frz. lehnwort ginge. </p>
-        <p>Meine deutung von <hi rend="unknown"
-            rendition="#none">aorir</hi> usw möchte ich nicht ohne weiteres preisgeben – nicht aus angeborner halsstarrigkeit, die ich, wie gerade Sie ja wissen, nicht habe, als weil <hi
-            rend="unknown" rendition="#none">
-abhorrere</hi> mir noch schwerere bedenken erregt.<note n="7" place="foot"
-              type="editorial">Im <hi rend="unknown" rendition="#none">REW</hi> (1911) steht das Etymon <hi
-              rend="unknown" rendition="#none">abhorrescĕre</hi> (23) für u. a. provenzalisch <hi rend="unknown" rendition="#none">aorrir</hi>. Im <bibl>
-              <hi rend="unknown" rendition="#none">REW</hi> (1935b)
-</bibl> findet sich das Etymon oder „Stichwort“ <hi
-              rend="unknown" rendition="#none">abhŏrrēscĕre</hi> (23) für <ref target="https://gams.uni-graz.at/o:hsa.languages#L.302">prov. </ref>
-            <hi rend="unknown" rendition="#none">aborrir</hi>. </note>
-        </p>
-        <p>Dass ich Sie wegen nichtnennung bei <hi rend="unknown" rendition="#none">trebol</hi>
-          <note n="8" place="foot" type="editorial">Vgl. Schuchardt (1899b: 67). Dazu schreibt ML in <bibl>
-              <hi rend="unknown"
-            rendition="#none">Rom. Grammatik</hi> I, § 605 (1890a)
-</bibl>.</note> auch nur in gedanken eines plagiats zeihen würde haben Sie hoffentlich nicht ernstlich geglaubt; Sie täten mir damit sehr unrecht. Ich hätte selbst bei <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1507">Foersters</persName>
-          <hi rend="unknown" rendition="#none">landier</hi>
-          <note n="9" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5892">
-Foerster, Wendelin. 1899. Französische Etymologien (Neufr. <hi
-                  rend="unknown" rendition="#none">andier</hi>, engl. <hi rend="unknown" rendition="#none">Andiron</hi>). ZrP 23: 422-429.</ref>
-            </bibl>
-
-          </note> artikel nicht zur feder gegriffen, auch wenn er selber nicht eine übrigens recht mangelhafte berichtigung gebracht hatte. Sie klagten damals, dass die <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.302">prov.</ref> Wbb. so unbequem stünden, <pb
-            facs="#IMG.4"
-            n="4"/>dass Sie sie nicht immer heranzögen, so nahm ich Ihnen die mühe ab, da mir das wort grade einfiel. Dass für mich das prov. <hi
-            rend="unknown"
-            rendition="#none">b</hi> keine schwierigkeit macht, wissen Sie von damals her – an dem ǫ stosse ich mich etwas mehr – aber nicht so, dass ich darüber fiele / Mehr anderswo. Neumann bittet mich, Ihre schrift im litbl. anzuzeigen. <note
-            n="10" place="foot" type="editorial">Dieser Bitte kam ML nach. Vgl. FN 343 zu <ref target="https://gams.uni-graz.at/o:hsa.letter.9308">
+               </note> 578) hingewiesen habe, eher als frz. lehnwort ginge. </p>
+            <p>Meine deutung von <hi rend="unknown" rendition="#none">aorir</hi> usw möchte ich nicht ohne weiteres preisgeben – nicht aus angeborner halsstarrigkeit, die ich, wie gerade Sie ja wissen, nicht habe, als weil <hi rend="unknown" rendition="#none">
+abhorrere</hi> mir noch schwerere bedenken erregt.<note n="7" place="foot" type="editorial">Im <hi rend="unknown" rendition="#none">REW</hi> (1911) steht das Etymon <hi rend="unknown" rendition="#none">abhorrescĕre</hi> (23) für u. a. provenzalisch <hi rend="unknown" rendition="#none">aorrir</hi>. Im <bibl>
+                     <hi rend="unknown" rendition="#none">REW</hi> (1935b)
+</bibl> findet sich das Etymon oder „Stichwort“ <hi rend="unknown" rendition="#none">abhŏrrēscĕre</hi> (23) für <ref target="https://gams.uni-graz.at/o:hsa.languages#L.302">prov. </ref>
+                  <hi rend="unknown" rendition="#none">aborrir</hi>. </note>
+            </p>
+            <p>Dass ich Sie wegen nichtnennung bei <hi rend="unknown" rendition="#none">trebol</hi>
+               <note n="8" place="foot" type="editorial">Vgl. Schuchardt (1899b: 67). Dazu schreibt ML in <bibl>
+                     <hi rend="unknown" rendition="#none">Rom. Grammatik</hi> I, § 605 (1890a)
+</bibl>.</note> auch nur in gedanken eines plagiats zeihen würde haben Sie hoffentlich nicht ernstlich geglaubt; Sie täten mir damit sehr unrecht. Ich hätte selbst bei <persName ref="[authorityLink]">Foersters</persName>
+               <hi rend="unknown" rendition="#none">landier</hi>
+               <note n="9" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5892">
+Foerster, Wendelin. 1899. Französische Etymologien (Neufr. <hi rend="unknown" rendition="#none">andier</hi>, engl. <hi rend="unknown" rendition="#none">Andiron</hi>). ZrP 23: 422-429.</ref>
+                  </bibl>
+               </note> artikel nicht zur feder gegriffen, auch wenn er selber nicht eine übrigens recht mangelhafte berichtigung gebracht hatte. Sie klagten damals, dass die <ref target="https://gams.uni-graz.at/o:hsa.languages#L.302">prov.</ref> Wbb. so unbequem stünden, <pb facs="#IMG.4" n="4"/>dass Sie sie nicht immer heranzögen, so nahm ich Ihnen die mühe ab, da mir das wort grade einfiel. Dass für mich das prov. <hi rend="unknown" rendition="#none">b</hi> keine schwierigkeit macht, wissen Sie von damals her – an dem ǫ stosse ich mich etwas mehr – aber nicht so, dass ich darüber fiele / Mehr anderswo. Neumann bittet mich, Ihre schrift im litbl. anzuzeigen. <note n="10" place="foot" type="editorial">Dieser Bitte kam ML nach. Vgl. FN 343 zu <ref target="https://gams.uni-graz.at/o:hsa.letter.9308">
 17-07226</ref>.</note>
-        </p>
-        <p>Im nächsten heft der Zs. berühre ich in einer note zum bericht über das Arch. Gl. <note n="11" place="foot" type="editorial">
-            <bibl>
+            </p>
+            <p>Im nächsten heft der Zs. berühre ich in einer note zum bericht über das Arch. Gl. <note n="11" place="foot" type="editorial">
+                  <bibl>
 
 
-Meyer-Lübke, Wilhelm. 1900. <hi rend="unknown"
-                rendition="#none">Archivio Glottologico Italiano</hi>. Band XV, Heft 1 u. 2. <hi rend="unknown"
-            rendition="#none">ZrP</hi> 24: 139-144
+Meyer-Lübke, Wilhelm. 1900. <hi rend="unknown" rendition="#none">Archivio Glottologico Italiano</hi>. Band XV, Heft 1 u. 2. <hi rend="unknown" rendition="#none">ZrP</hi> 24: 139-144
 </bibl>. Die Note zu aqua tepula befindet sich auf S. 140.</note>das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.886">lat</ref>
-          <hi rend="unknown" rendition="#none">Tepula</hi> mit dem von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2301">Nigra</persName>
-          <note n="12" place="foot"
-                type="editorial">ML bespricht in diesem Bericht (s. vorhergeh. FN) u. a. <bibl>
+               <hi rend="unknown" rendition="#none">Tepula</hi> mit dem von <persName ref="[authorityLink]">Nigra</persName>
+               <note n="12" place="foot" type="editorial">ML bespricht in diesem Bericht (s. vorhergeh. FN) u. a. <bibl>
 
-Costantino Nigras <hi
-                rend="unknown" rendition="#none">Note etimologiche e lessicali</hi> (in <hi rend="unknown"
-              rendition="#none">Archivio Glottologico Italiano</hi> 15, 97-130
-</bibl>). Zu <hi rend="unknown"
-            rendition="#none">
-tepula</hi> in diesem Artikel siehe S. 108.</note> ua. unfug getrieben wird. Erst neulich, als ich für Vollmöllers Jb.<note
-            n="13" place="foot"
-                type="editorial">
+Costantino Nigras <hi rend="unknown" rendition="#none">Note etimologiche e lessicali</hi> (in <hi rend="unknown" rendition="#none">Archivio Glottologico Italiano</hi> 15, 97-130
+</bibl>). Zu <hi rend="unknown" rendition="#none">
+tepula</hi> in diesem Artikel siehe S. 108.</note> ua. unfug getrieben wird. Erst neulich, als ich für Vollmöllers Jb.<note n="13" place="foot" type="editorial">
 Geimeint ist <bibl>
 
-Meyer-Lübke, Wilhelm. 1899. Italienische Grammatik. 1895-1896. <hi
-                rend="unknown" rendition="#none">Kritischer Jahresbericht über die Fortschritte der Romanischen Philologie</hi> IV: I 154- I 156.
+Meyer-Lübke, Wilhelm. 1899. Italienische Grammatik. 1895-1896. <hi rend="unknown" rendition="#none">Kritischer Jahresbericht über die Fortschritte der Romanischen Philologie</hi> IV: I 154- I 156.
 </bibl>
-          </note> Ihren <hi rend="unknown" rendition="#none">sapidus</hi> aufsatz<note n="14" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.437">Schuchardt (1897b).</ref>
-            </bibl>
-          </note> durchstudirte, sah ich, dass Sie auch schon dieses <hi rend="unknown" rendition="#none">Tepula</hi>
-          <note n="15" place="foot"
-            type="editorial">Vgl. Schuchardt (1897b: 39).</note> in seine richtigen schranken gewiesen hatten, konnte aber das zitat nicht mehr nachtragen. <hi
-            rend="unknown" rendition="#none">Scusi</hi>! </p>
-        <closer>
-          <salute> Mit hochachtungsvollem grusse</salute>
-          <lb/>
-          <salute>Ihr ganz ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180"> W. Meyer-Lübke</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </note> Ihren <hi rend="unknown" rendition="#none">sapidus</hi> aufsatz<note n="14" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.437">Schuchardt (1897b).</ref>
+                  </bibl>
+               </note> durchstudirte, sah ich, dass Sie auch schon dieses <hi rend="unknown" rendition="#none">Tepula</hi>
+               <note n="15" place="foot" type="editorial">Vgl. Schuchardt (1897b: 39).</note> in seine richtigen schranken gewiesen hatten, konnte aber das zitat nicht mehr nachtragen. <hi rend="unknown" rendition="#none">Scusi</hi>! </p>
+            <closer>
+               <salute> Mit hochachtungsvollem grusse</salute>
+               <lb/>
+               <salute>Ihr ganz ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]"> W. Meyer-Lübke</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

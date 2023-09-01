@@ -1,408 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Lorenz Diefenbach (03-HS-Diefenbach)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Luca</forename>
-            <surname>Melchior</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2571" type="PID">o:hsa.letter.2571</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">03-HS-Diefenbach</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Deutschland</country>
-            <region>Hessen</region>
-            <settlement>Gießen</settlement>
-            <institution>Justus-Liebig-Universität Gießen</institution>
-            <repository ref="https://www.uni-giessen.de/ub/de">Universitätsbibliothek der Justus-Liebig-Universität Gießen</repository>
-            <idno type="shelfmark">HS</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="3" unit="pages">3 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" ref="http://sws.geonames.org/2918752">Gotha</origPlace>
-              <origDate ana="dcterms:created" when="1869-06-30">1869-06-30</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Luca</forename>
-              <surname>Melchior</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Lorenz Diefenbach</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1388"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2571">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" key="#GID.1" ref="http://sws.geonames.org/2918752">Gotha</placeName>
-          <date when="1869-06-30">1869-06-30</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1388" ref="https://viaf.org/viaf/69014898">
-            <forename>Lorenz</forename>
-            <surname>Diefenbach</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Gotha</settlement>
-                <name ref="http://geonames.org/2918752" type="fcode:PPLA3">Gotha</name>
-                <location>
-                  <geo>10.70193,50.94823</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1388" type="context">
-                        Korrespondenz Hugo Schuchardt - Lorenz Diefenbach
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.329" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Lautgesetze</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.667" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.863" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Romanische Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.3212" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rätoromanische Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.3104" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Friulanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.866" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Vulgärlatein</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.886" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Latein</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.860" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.202" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Keltische Sprachen</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2571" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://www.uni-giessen.de/ub/de">Universitätsbibliothek der Justus-Liebig-Universität Gießen</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2571" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://www.uni-giessen.de/ub/de">Universitätsbibliothek der Justus-Liebig-Universität Gießen</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2571" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://www.uni-giessen.de/ub/de">Universitätsbibliothek der Justus-Liebig-Universität Gießen</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2571" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Gotha d. 30 Juni 69.</dateline>
-        <opener>Hochverehrter Herr!</opener>
-        <p>Diese weiteren Zeilen von meiner Seite sollen Ihnen keine neue Belästigung, sondern den wärmsten Dank für die liebenswürdige und rasche Beantwortung meiner Anfrage bringen.</p>
-        <p>Unter denjenigen Wörtern von zweifelhaftem Ursprung, denen wir im <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.667">Deutschen</ref> wie im <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.863">Romanischen</ref> begegnen, mögen nicht wenige einem dritten Sprachgebiet ursprünglich eigen sein, so oberd. <hi
-            rend="unknown" rendition="#none">dachse</hi>, <hi rend="unknown"
-            rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2571" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Gotha d. 30 Juni 69.</dateline>
+            <opener>Hochverehrter Herr!</opener>
+            <p>Diese weiteren Zeilen von meiner Seite sollen Ihnen keine neue Belästigung, sondern den wärmsten Dank für die liebenswürdige und rasche Beantwortung meiner Anfrage bringen.</p>
+            <p>Unter denjenigen Wörtern von zweifelhaftem Ursprung, denen wir im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.667">Deutschen</ref> wie im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.863">Romanischen</ref> begegnen, mögen nicht wenige einem dritten Sprachgebiet ursprünglich eigen sein, so oberd. <hi rend="unknown" rendition="#none">dachse</hi>, <hi rend="unknown" rendition="#none">
 dächse</hi>, rätorom <foreign xml:lang="rm">
-            <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 daschlauna</hi>
-          </foreign> u.s.w. Von deutscher Herkunft des it. <foreign xml:lang="it">
-            <hi rend="unknown" rendition="#none">matto</hi>
-          </foreign>, <foreign xml:lang="it">
-            <hi rend="unknown" rendition="#none">matta</hi>
-          </foreign>, u.s.w. vermag ich mich nicht durchaus zu überzeugen;<note n="1" place="foot"
-              type="editorial"> Diez (<hi
-              rendition="#sup">3</hi>1870: 46) führte, Bezug nehmend auf Diefenbach (1851 Bd. II: 2), oberit. <foreign xml:lang="it">
-              <hi rend="unknown" rendition="#none">matto</hi>
-            </foreign> 'Knabe' <foreign xml:lang="it">
-              <hi rend="unknown" rendition="#none">matta</hi>
-            </foreign> 'Mädchen' auf ahd. <hi rend="unknown" rendition="#none">magat</hi>, mhd. <hi rend="unknown"
-            rendition="#none">maget</hi> zurück.</note> ebenso wenig scheint mir piem. <foreign xml:lang="it">
-            <hi rend="unknown" rendition="#none">rista</hi>
-          </foreign> dem Ahd. entnommen zu sein (Diez Wtb. I, 347)<note n="2" place="foot"
-              type="editorial"> Vgl. Diez (<hi rendition="#sup">3</hi>1869: 327): "<foreign xml:lang="it">
+               </foreign> u.s.w. Von deutscher Herkunft des it. <foreign xml:lang="it">
+                  <hi rend="unknown" rendition="#none">matto</hi>
+               </foreign>, <foreign xml:lang="it">
+                  <hi rend="unknown" rendition="#none">matta</hi>
+               </foreign>, u.s.w. vermag ich mich nicht durchaus zu überzeugen;<note n="1" place="foot" type="editorial"> Diez (<hi rendition="#sup">3</hi>1870: 46) führte, Bezug nehmend auf Diefenbach (1851 Bd. II: 2), oberit. <foreign xml:lang="it">
+                     <hi rend="unknown" rendition="#none">matto</hi>
+                  </foreign> 'Knabe' <foreign xml:lang="it">
+                     <hi rend="unknown" rendition="#none">matta</hi>
+                  </foreign> 'Mädchen' auf ahd. <hi rend="unknown" rendition="#none">magat</hi>, mhd. <hi rend="unknown" rendition="#none">maget</hi> zurück.</note> ebenso wenig scheint mir piem. <foreign xml:lang="it">
+                  <hi rend="unknown" rendition="#none">rista</hi>
+               </foreign> dem Ahd. entnommen zu sein (Diez Wtb. I, 347)<note n="2" place="foot" type="editorial"> Vgl. Diez (<hi rendition="#sup">3</hi>1869: 327): "<foreign xml:lang="it">
 Resta</foreign>
-            <hi rend="unknown" rendition="#none">it</hi>., <hi rend="unknown" rendition="#none">sp</hi>. <foreign
-              xml:lang="es">ristra</foreign>, <hi rend="unknown" rendition="#none">pg</hi>. <foreign
-              xml:lang="pt">
-reste</foreign>, restia, <hi rend="unknown" rendition="#none">pr</hi>. rest <hi
-              rend="unknown" rendition="#none">bund zwiebeln,</hi>
-            <hi rend="unknown" rendition="#none">knoblauch oder anderer fruchte</hi>; <hi rend="unknown"
-              rendition="#none">von</hi> restis <hi rend="unknown"
-              rendition="#none">seil, weil sie daran befestigt werden, wiewohl das lat</hi>. <foreign xml:lang="la">restes allii sive caeparum</foreign>
-            <hi rend="unknown" rendition="#none">etwas anderes ist als das pr</hi>. una rest de cebas ho de alhs <hi
-              rend="unknown" rendition="#none">LR. V, 88, indem jenes die blätter der zwiebel bedeutet</hi>. <hi
-              rend="unknown" rendition="#none">Das piem</hi>. <foreign xml:lang="it">rista</foreign>
-            <hi rend="unknown" rendition="#none">hanf trifft dagegen mit ahd</hi>. rîsta <hi rend="unknown"
-            rendition="#none">flachsbündel zusammen</hi>".</note>, das deutsche <hi rend="unknown"
-            rendition="#none">Reiste</hi>, <hi rend="unknown" rendition="#none">Rîste</hi> vielmehr von <ref target="https://gams.uni-graz.at/o:hsa.languages#L.886">lat.</ref>
-          <foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">arista</hi>
-          </foreign>, Haar der Kornähre, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">
+                  <hi rend="unknown" rendition="#none">it</hi>., <hi rend="unknown" rendition="#none">sp</hi>. <foreign xml:lang="es">ristra</foreign>, <hi rend="unknown" rendition="#none">pg</hi>. <foreign xml:lang="pt">
+reste</foreign>, restia, <hi rend="unknown" rendition="#none">pr</hi>. rest <hi rend="unknown" rendition="#none">bund zwiebeln,</hi>
+                  <hi rend="unknown" rendition="#none">knoblauch oder anderer fruchte</hi>; <hi rend="unknown" rendition="#none">von</hi> restis <hi rend="unknown" rendition="#none">seil, weil sie daran befestigt werden, wiewohl das lat</hi>. <foreign xml:lang="la">restes allii sive caeparum</foreign>
+                  <hi rend="unknown" rendition="#none">etwas anderes ist als das pr</hi>. una rest de cebas ho de alhs <hi rend="unknown" rendition="#none">LR. V, 88, indem jenes die blätter der zwiebel bedeutet</hi>. <hi rend="unknown" rendition="#none">Das piem</hi>. <foreign xml:lang="it">rista</foreign>
+                  <hi rend="unknown" rendition="#none">hanf trifft dagegen mit ahd</hi>. rîsta <hi rend="unknown" rendition="#none">flachsbündel zusammen</hi>".</note>, das deutsche <hi rend="unknown" rendition="#none">Reiste</hi>, <hi rend="unknown" rendition="#none">Rîste</hi> vielmehr von <ref target="https://gams.uni-graz.at/o:hsa.languages#L.886">lat.</ref>
+               <foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">arista</hi>
+               </foreign>, Haar der Kornähre, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">
 it.</ref>
-          <foreign xml:lang="it">
-            <hi rend="unknown" rendition="#none">resta</hi>
-          </foreign> gleichbed. Md. v. Poschiavo <hi rend="unknown"
-            rendition="#none">rest</hi> Flachs oder Hahnfachel herzustammen. It. <foreign xml:lang="it">
-            <hi rend="unknown" rendition="#none">lisca</hi>
-          </foreign> entspricht dem lat. <foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">arista</hi>
-          </foreign> in der doppelten Bedeutung 'Achel' und 'Gräte' und formell zwischen beiden steht comask. <hi
-            rend="unknown" rendition="#none">resca</hi>, '<foreign
-            xml:lang="it">crine o pagliuzza aderente alla buccia del grano del formento e d’altri grani</foreign>', im 17. Jhh. = Achel des Flachses, sodass mail. <foreign xml:lang="it">
-            <hi rend="unknown" rendition="#none">lisca</hi>
-          </foreign> u.s.w. <pb facs="#IMG.2" n="2"/> Riedgras (Diez Wtb. I, 252)<note n="3" place="foot"
-              type="editorial"> In Diez (<hi rendition="#sup">3</hi>1869: 251) ist zu lesen: "<foreign xml:lang="it">Lisca</foreign>
-            <hi rend="unknown" rendition="#none">it. halm, gräte, piem</hi>. <foreign xml:lang="it">lesca</foreign>, <hi
-              rend="unknown" rendition="#none">mail</hi>. <foreign xml:lang="it">lisca</foreign>, <hi rend="unknown"
-              rendition="#none">
-fr</hi>. <foreign xml:lang="fr">laîche</foreign> (<hi rend="unknown"
-              rendition="#none">füe</hi> lêche) <hi rend="unknown" rendition="#none">riedgras; ahd</hi>. lisca <hi
-              rend="unknown" rendition="#none">farrenkraut, ried. ndl</hi>. lisch. <hi rend="unknown"
-              rendition="#none">Dasselbe wort ist it</hi>. <foreign xml:lang="it">lisca</foreign>, <hi rend="unknown"
-              rendition="#none">piem</hi>. <foreign xml:lang="it">lesca</foreign>, <hi rend="unknown"
-              rendition="#none">cat</hi>. llesca, <hi rend="unknown" rendition="#none">neupr</hi>. lisco, lesco, <hi
-              rend="unknown" rendition="#none">
+               <foreign xml:lang="it">
+                  <hi rend="unknown" rendition="#none">resta</hi>
+               </foreign> gleichbed. Md. v. Poschiavo <hi rend="unknown" rendition="#none">rest</hi> Flachs oder Hahnfachel herzustammen. It. <foreign xml:lang="it">
+                  <hi rend="unknown" rendition="#none">lisca</hi>
+               </foreign> entspricht dem lat. <foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">arista</hi>
+               </foreign> in der doppelten Bedeutung 'Achel' und 'Gräte' und formell zwischen beiden steht comask. <hi rend="unknown" rendition="#none">resca</hi>, '<foreign xml:lang="it">crine o pagliuzza aderente alla buccia del grano del formento e d’altri grani</foreign>', im 17. Jhh. = Achel des Flachses, sodass mail. <foreign xml:lang="it">
+                  <hi rend="unknown" rendition="#none">lisca</hi>
+               </foreign> u.s.w. <pb facs="#IMG.2" n="2"/> Riedgras (Diez Wtb. I, 252)<note n="3" place="foot" type="editorial"> In Diez (<hi rendition="#sup">3</hi>1869: 251) ist zu lesen: "<foreign xml:lang="it">Lisca</foreign>
+                  <hi rend="unknown" rendition="#none">it. halm, gräte, piem</hi>. <foreign xml:lang="it">lesca</foreign>, <hi rend="unknown" rendition="#none">mail</hi>. <foreign xml:lang="it">lisca</foreign>, <hi rend="unknown" rendition="#none">
+fr</hi>. <foreign xml:lang="fr">laîche</foreign> (<hi rend="unknown" rendition="#none">füe</hi> lêche) <hi rend="unknown" rendition="#none">riedgras; ahd</hi>. lisca <hi rend="unknown" rendition="#none">farrenkraut, ried. ndl</hi>. lisch. <hi rend="unknown" rendition="#none">Dasselbe wort ist it</hi>. <foreign xml:lang="it">lisca</foreign>, <hi rend="unknown" rendition="#none">piem</hi>. <foreign xml:lang="it">lesca</foreign>, <hi rend="unknown" rendition="#none">cat</hi>. llesca, <hi rend="unknown" rendition="#none">neupr</hi>. lisco, lesco, <hi rend="unknown" rendition="#none">
 fr</hi>. <foreign xml:lang="fr">lêche</foreign>
-            <hi rend="unknown" rendition="#none">(nicht</hi> laîche <hi rend="unknown"
-              rendition="#none">geschr.) mit der bed. feine schnitte von etwas; vb. cat</hi>. llescar <hi rend="unknown"
-              rendition="#none">in schnittchen zertheilen. Eine altndd. glosse Graff II, 281 lautet</hi> lesc '<hi
-              rend="unknown" rendition="#none">scirpus, papirus</hi>', <hi rend="unknown"
-              rendition="#none">die zweite bedeutung der zweiten romanischen ganz nahe liegend; ein anderes setzt gradezu</hi> lisca <hi
-              rend="unknown" rendition="#none">'sniede' Nyerup p. 285</hi>".</note> weiter abliegen würde.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Blear</hi>, das auch Sie einst in den Celtica wegen <hi rend="unknown"
-            rendition="#none">bear</hi> mit Kymr. <hi rend="unknown"
-            rendition="#none">bar</hi> u.s.w. zusammenstellten,<note n="4" place="foot"
-              type="editorial"> Vgl. Diefenbach (1839: 184-185): "Wir haben viele Beispiele aus mehreren ausgehoben, um zu zeigen, wie einheitlich dieser Wortstamm in den <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.202">keltischen Sprachen</ref> ist […]. Eine Menge entsprechender Wörter in den Germ. und Rom. Sprachen halten wir, wenn auch nicht alle verwandte, aus den keltischen entlehnt. U. A. findet auch in den obigen Wörtern das auffallende Rhät. <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.3212">Bear</ref> = (weit ferner von ähnlich klingenden Germ. Wörtern abstehend) viel; sehr seine Erklärung; zufällige Anklänge, wie Zend. (Anquetil) pooro = Georg. Beuri = viel können nicht gelten“.</note> scheint mir mit <hi
-            rend="unknown" rendition="#none">ben</hi> oder <hi rend="unknown"
-            rendition="#none">bel</hi> (vgl. beaucoup) zusammengesetzt; <hi rend="unknown"
-            rendition="#none">biglier</hi> und <hi rend="unknown"
-            rendition="#none">gerr</hi>, viel, kann ich nachweisen. – An <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2657">Schneller</persName> habe ich neulich einmal geschrieben; ich glaube, er wird die Grenze zwischen den rätorom. und ital. Mundarten <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.567">
-Tirols</placeName> nicht ganz vorurtheilsfrei ziehen.<note
-            n="5" place="foot" type="editorial">
-            <ref
-              target="https://gams.uni-graz.at/o:hsa.persons#P.2657">Schneller</ref> schrieb an Schuchardt am 29.6.1869 (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.6333">Brief Nr. 10138</ref>): "Ich werde mir erlauben Ihnen nächstens einen Gymnas. Programm-Aufsatz, betitelt: "Ueber die mundartliche Literatur der Romanen in Südtirol" [unter der Presse] zu übersenden. Ich habe darin die beiläufigen Gränzen des ganzen <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.3104">
-friaulisch</ref>-ladinisch-churwälschen Sprachkreises bestimmt […]". Beim erwähnten Aufsatz handelt es sich um Schneller (1869). Von Schneller sind im Schuchardt-Nachlass noch zwei weitere Briefe aus den Jahren 1877 und 1897 (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.6336">Nr. 10139</ref>-<ref
-            target="https://gams.uni-graz.at/o:hsa.letter.6337">10140</ref>) erhalten.</note> Ob Pallioppi’s Werk gedeiht, bezweifle ich.<note
-            n="6" place="foot"
-              type="editorial"> Wie im Kommentar zum Brief Lfd. Nr. 2 erwähnt, wurde das Wörterbuch von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3103">Zaccaria Pallioppi</persName> erst von seinem Sohn <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2345">Emil</persName> vervollständigt und 26 Jahre nach diesem Brief veröffentlicht (Pallioppi &amp; Pallioppi 1895).</note> Was in Deutschland Zusammenhängendes über Rätoromanisch geschrieben worden ist, leidet an grossen Mängeln; die letzte Arbeit, die von <hi
-            rend="unknown"
-            rendition="#none">Stengel</hi>, ist aber darin doch zu stark und von ausserordentlicher Flüchtigkeit.<note
-            n="7" place="foot" type="editorial"> Gemeint ist Stengel (1868). Die Schrift hatte Schuchardt "offen gestanden, nicht befriedigt, da sie zu starke Mißverständniße und Mißgriffe enthält", wie er an Diez am 1.12.1896 schrieb (ich zitiere nach <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1908">Hurch 2013: 36</ref>
-            </bibl>).</note> Mit Ausnahme von <hi rend="unknown" rendition="#none">Staub</hi>, Das Brot<note n="8"
-            place="foot"
-            type="editorial"> Staub (1868).</note>, kenne und besitze ich meistens die von Ihnen genannten einschlägigen Schriften.<note
-            n="9" place="foot"
-              type="editorial"> Wie in der Einleitung zu dieser Edition sowie in der FN 34 zum vorigen Brief (vgl. unter <ref
-              target="http://netkonwl-uni-graz.at/id/letter/2570">02-02296</ref>) hatte Schuchardt schon im Jahre 1866 eine Liste einschlägiger rätoromanischer Werke von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1671">Wilhelm Gurlitt</persName> erhalten vgl. den Brief Gurlitts in der Edition von Olet (2015) unter <ref
-            target="http://netkonwl-uni-graz.at/id/letter/1507">
-01-04231</ref>, in dem zahlreiche der auch von Diefenbach erwähnten Werke schon genannt wurden.</note> Auch mir hat <hi
-            rend="unknown" rendition="#none">
-Thurot</hi> sein Werk zugesandt<note n="10" place="foot"
-            type="editorial"> Wahrscheinlich Thurot (1868), vgl. Brief Lfd. Nr. 2.</note>. <hi rend="unknown"
-            rendition="#none">Bridel</hi> der Verfasser des Glossars, ist mein Grossonkel<note n="11" place="foot" type="editorial"> Vgl. Brief Lfd. Nr. 2. Gemeint ist <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4902">Bridel (1866)</ref>
-            </bibl>.</note>.</p>
-        <p>Das einzige Wesentliche, was ich noch vermisse, ist <hi rend="unknown"
-            rendition="#none">Pirona</hi>, Vocabolario furlano<note n="12" place="foot" type="editorial"> Es handelt sich um das <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3191">
-                <hi rend="unknown" rendition="#none">Vocabolario friulano</hi> von Jacopo Pirona</ref>
-
-            </bibl>, das als Buch erst zwei Jahre später erschien (Pirona/Pirona 1871), dessen Publikation aber in Faszikeln schon seit 1867 im Umlauf war. Schuchardt erhielt das Werk durch den Bibliothekar <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1933">Reinhold Köhler</persName> aus <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.441">Weimar</placeName> (vgl. Melchior 2014: 7-8).</note>; ich habe es in Venedig schon in diesem Frühjahr, auch bei Ascoli in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.125">Mailand</placeName> gesehen,<note n="13" place="foot"
-              type="editorial"> Schuchardt hatte während seines Aufenthaltes in Italien im Jahr 1869 Mailand besucht und war dort zu Gast bei Ascoli (vgl. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.1086">Brief vom 9. April</ref> in der Edition von Lichem/Würdinger 2013).</note> aber um meinen Koffer nicht zu beschweren (!), nicht mitgenommen. Jetzt habe ich es schon vergeblich von <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.20">Göttingen</placeName> und <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.441">Weimar</placeName> zu erhalten gesucht; kennen Sie es? Ich trage durchaus kein Bedenken, das Friaulische <pb
-            facs="#IMG.3"
-            n="3"/> geradezu dem Rätoromanischen zuzuzählen. Von meinen Studien erwarten Sie nicht zu viel; es wird eine 'lächerliche Maus' zu Tage treten. Ich hatte eine Arbeit über die römische Mundart begonnen, zu der ich in den Bibliotheken und Osterien <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.86">
-Roms</placeName> Manches gesammelt hatte; da Sie [sic] aber einen zu grossen Umfang anzunehmen drohte und ich binnen Kurzem einer wissenschaftlichen Abhandlung benöthigt bin, so habe ich mich in den grauenhaften Wirrwarr rätorom. Orthographie gestürzt, um nach einigen Lautgesetzen zu fischen. Ich habe nicht zu viel, aber merkwürdige Einflüsse von Konsonanten auf <hi
-            rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">(nicht</hi> laîche <hi rend="unknown" rendition="#none">geschr.) mit der bed. feine schnitte von etwas; vb. cat</hi>. llescar <hi rend="unknown" rendition="#none">in schnittchen zertheilen. Eine altndd. glosse Graff II, 281 lautet</hi> lesc '<hi rend="unknown" rendition="#none">scirpus, papirus</hi>', <hi rend="unknown" rendition="#none">die zweite bedeutung der zweiten romanischen ganz nahe liegend; ein anderes setzt gradezu</hi> lisca <hi rend="unknown" rendition="#none">'sniede' Nyerup p. 285</hi>".</note> weiter abliegen würde.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Blear</hi>, das auch Sie einst in den Celtica wegen <hi rend="unknown" rendition="#none">bear</hi> mit Kymr. <hi rend="unknown" rendition="#none">bar</hi> u.s.w. zusammenstellten,<note n="4" place="foot" type="editorial"> Vgl. Diefenbach (1839: 184-185): "Wir haben viele Beispiele aus mehreren ausgehoben, um zu zeigen, wie einheitlich dieser Wortstamm in den <ref target="https://gams.uni-graz.at/o:hsa.languages#L.202">keltischen Sprachen</ref> ist […]. Eine Menge entsprechender Wörter in den Germ. und Rom. Sprachen halten wir, wenn auch nicht alle verwandte, aus den keltischen entlehnt. U. A. findet auch in den obigen Wörtern das auffallende Rhät. <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3212">Bear</ref> = (weit ferner von ähnlich klingenden Germ. Wörtern abstehend) viel; sehr seine Erklärung; zufällige Anklänge, wie Zend. (Anquetil) pooro = Georg. Beuri = viel können nicht gelten“.</note> scheint mir mit <hi rend="unknown" rendition="#none">ben</hi> oder <hi rend="unknown" rendition="#none">bel</hi> (vgl. beaucoup) zusammengesetzt; <hi rend="unknown" rendition="#none">biglier</hi> und <hi rend="unknown" rendition="#none">gerr</hi>, viel, kann ich nachweisen. – An <persName ref="[authorityLink]">Schneller</persName> habe ich neulich einmal geschrieben; ich glaube, er wird die Grenze zwischen den rätorom. und ital. Mundarten <placeName ref="[authorityLink]">
+Tirols</placeName> nicht ganz vorurtheilsfrei ziehen.<note n="5" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2657">Schneller</ref> schrieb an Schuchardt am 29.6.1869 (<ref target="https://gams.uni-graz.at/o:hsa.letter.6333">Brief Nr. 10138</ref>): "Ich werde mir erlauben Ihnen nächstens einen Gymnas. Programm-Aufsatz, betitelt: "Ueber die mundartliche Literatur der Romanen in Südtirol" [unter der Presse] zu übersenden. Ich habe darin die beiläufigen Gränzen des ganzen <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3104">
+friaulisch</ref>-ladinisch-churwälschen Sprachkreises bestimmt […]". Beim erwähnten Aufsatz handelt es sich um Schneller (1869). Von Schneller sind im Schuchardt-Nachlass noch zwei weitere Briefe aus den Jahren 1877 und 1897 (<ref target="https://gams.uni-graz.at/o:hsa.letter.6336">Nr. 10139</ref>-<ref target="https://gams.uni-graz.at/o:hsa.letter.6337">10140</ref>) erhalten.</note> Ob Pallioppi’s Werk gedeiht, bezweifle ich.<note n="6" place="foot" type="editorial"> Wie im Kommentar zum Brief Lfd. Nr. 2 erwähnt, wurde das Wörterbuch von <persName ref="[authorityLink]">Zaccaria Pallioppi</persName> erst von seinem Sohn <persName ref="[authorityLink]">Emil</persName> vervollständigt und 26 Jahre nach diesem Brief veröffentlicht (Pallioppi &amp; Pallioppi 1895).</note> Was in Deutschland Zusammenhängendes über Rätoromanisch geschrieben worden ist, leidet an grossen Mängeln; die letzte Arbeit, die von <hi rend="unknown" rendition="#none">Stengel</hi>, ist aber darin doch zu stark und von ausserordentlicher Flüchtigkeit.<note n="7" place="foot" type="editorial"> Gemeint ist Stengel (1868). Die Schrift hatte Schuchardt "offen gestanden, nicht befriedigt, da sie zu starke Mißverständniße und Mißgriffe enthält", wie er an Diez am 1.12.1896 schrieb (ich zitiere nach <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1908">Hurch 2013: 36</ref>
+                  </bibl>).</note> Mit Ausnahme von <hi rend="unknown" rendition="#none">Staub</hi>, Das Brot<note n="8" place="foot" type="editorial"> Staub (1868).</note>, kenne und besitze ich meistens die von Ihnen genannten einschlägigen Schriften.<note n="9" place="foot" type="editorial"> Wie in der Einleitung zu dieser Edition sowie in der FN 34 zum vorigen Brief (vgl. unter <ref target="http://netkonwl-uni-graz.at/id/letter/2570">02-02296</ref>) hatte Schuchardt schon im Jahre 1866 eine Liste einschlägiger rätoromanischer Werke von <persName ref="[authorityLink]">Wilhelm Gurlitt</persName> erhalten vgl. den Brief Gurlitts in der Edition von Olet (2015) unter <ref target="http://netkonwl-uni-graz.at/id/letter/1507">
+01-04231</ref>, in dem zahlreiche der auch von Diefenbach erwähnten Werke schon genannt wurden.</note> Auch mir hat <hi rend="unknown" rendition="#none">
+Thurot</hi> sein Werk zugesandt<note n="10" place="foot" type="editorial"> Wahrscheinlich Thurot (1868), vgl. Brief Lfd. Nr. 2.</note>. <hi rend="unknown" rendition="#none">Bridel</hi> der Verfasser des Glossars, ist mein Grossonkel<note n="11" place="foot" type="editorial"> Vgl. Brief Lfd. Nr. 2. Gemeint ist <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4902">Bridel (1866)</ref>
+                  </bibl>.</note>.</p>
+            <p>Das einzige Wesentliche, was ich noch vermisse, ist <hi rend="unknown" rendition="#none">Pirona</hi>, Vocabolario furlano<note n="12" place="foot" type="editorial"> Es handelt sich um das <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3191">
+                        <hi rend="unknown" rendition="#none">Vocabolario friulano</hi> von Jacopo Pirona</ref>
+                  </bibl>, das als Buch erst zwei Jahre später erschien (Pirona/Pirona 1871), dessen Publikation aber in Faszikeln schon seit 1867 im Umlauf war. Schuchardt erhielt das Werk durch den Bibliothekar <persName ref="[authorityLink]">Reinhold Köhler</persName> aus <placeName ref="[authorityLink]">Weimar</placeName> (vgl. Melchior 2014: 7-8).</note>; ich habe es in Venedig schon in diesem Frühjahr, auch bei Ascoli in <placeName ref="[authorityLink]">Mailand</placeName> gesehen,<note n="13" place="foot" type="editorial"> Schuchardt hatte während seines Aufenthaltes in Italien im Jahr 1869 Mailand besucht und war dort zu Gast bei Ascoli (vgl. <ref target="https://gams.uni-graz.at/o:hsa.letter.1086">Brief vom 9. April</ref> in der Edition von Lichem/Würdinger 2013).</note> aber um meinen Koffer nicht zu beschweren (!), nicht mitgenommen. Jetzt habe ich es schon vergeblich von <placeName ref="[authorityLink]">Göttingen</placeName> und <placeName ref="[authorityLink]">Weimar</placeName> zu erhalten gesucht; kennen Sie es? Ich trage durchaus kein Bedenken, das Friaulische <pb facs="#IMG.3" n="3"/> geradezu dem Rätoromanischen zuzuzählen. Von meinen Studien erwarten Sie nicht zu viel; es wird eine 'lächerliche Maus' zu Tage treten. Ich hatte eine Arbeit über die römische Mundart begonnen, zu der ich in den Bibliotheken und Osterien <placeName ref="[authorityLink]">
+Roms</placeName> Manches gesammelt hatte; da Sie [sic] aber einen zu grossen Umfang anzunehmen drohte und ich binnen Kurzem einer wissenschaftlichen Abhandlung benöthigt bin, so habe ich mich in den grauenhaften Wirrwarr rätorom. Orthographie gestürzt, um nach einigen Lautgesetzen zu fischen. Ich habe nicht zu viel, aber merkwürdige Einflüsse von Konsonanten auf <hi rend="unknown" rendition="#none">
 folgende</hi> Vokale entdeckt.<note n="14" place="foot" type="editorial"> Im Schuchardts Habilitationsarbeit sollte nämlich "der vorwärtswirkende angleichende Einfluss von Konsonanten auf Vokale, der positive wie negative, und die auf kombinatorischer Ursache beruhende Vokalabänderung aus dem Churwälschen und, wo dieses Anknüpfungspunkte bietet, auch aus andern romanischen Sprachen belegt" werden (Schuchardt 1870: 3).</note>
-        </p>
-        <closer>
-          <salute>Mit vorzüglichster Hochachtung</salute>
-          <salute>Ihr ganz ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Hugo Schuchardt.</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            </p>
+            <closer>
+               <salute>Mit vorzüglichster Hochachtung</salute>
+               <salute>Ihr ganz ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Hugo Schuchardt.</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

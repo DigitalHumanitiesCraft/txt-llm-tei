@@ -1,288 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Bogdan Petriceicu Hasdeu (15-1171)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bruno</forename>
-            <surname>Mazzoni</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4471" type="PID">o:hsa.letter.4471</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">15-1171</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <repository>Unbekannt</repository>
-            <idno type="shelfmark">1171</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1877-10-22">1877-10-22</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bruno</forename>
-              <surname>Mazzoni</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Bogdan Petriceicu Hasdeu</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1720"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4471">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1877-10-22">1877-10-22</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1720" ref="https://viaf.org/viaf/65406496">
-            <forename>Bogdan Petriceicu</forename>
-            <surname>Hasdeu</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1720" type="context">
-                        Korrespondenz Hugo Schuchardt - Bogdan Petriceicu Hasdeu
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.686" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Academia Română (Bukarest)</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.854" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rumänisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4471" xml:lang="de">
-        <pb n="1"/>
-        <dateline> Graz 22. 8<hi rendition="#sup">bre</hi> 77. </dateline>
-        <opener> Verehrter Freund und Kollege! </opener>
-        <p>Für die Uebersendung neuer Aushängebogen von S. 17-176<note n="1" place="foot" type="editorial">Cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">
-                <hi rend="unknown" rendition="#none">CdB</hi> I.</ref>
-
-            </bibl> Alle pagine indicate sono stampati i testi nn. XVII-XXX.</note> danke ich Ihnen um so mehr, als auf meine Anfrage nach <hi
-            rend="unknown" rendition="#none">Udine</hi> und <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.99">
-            <hi rend="unknown" rendition="#none">Venedig</hi>
-          </placeName> bezüglich einer Kreuzbandsendung aus <hi rend="unknown"
-            rendition="#none">Bucarest</hi> ich keine Auskunft erhalten habe. Nun fehlt ja wohl noch das <hi
-            rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4471" xml:lang="de">
+            <pb n="1"/>
+            <dateline> Graz 22. 8<hi rendition="#sup">bre</hi> 77. </dateline>
+            <opener> Verehrter Freund und Kollege! </opener>
+            <p>Für die Uebersendung neuer Aushängebogen von S. 17-176<note n="1" place="foot" type="editorial">Cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">
+                        <hi rend="unknown" rendition="#none">CdB</hi> I.</ref>
+                  </bibl> Alle pagine indicate sono stampati i testi nn. XVII-XXX.</note> danke ich Ihnen um so mehr, als auf meine Anfrage nach <hi rend="unknown" rendition="#none">Udine</hi> und <placeName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Venedig</hi>
+               </placeName> bezüglich einer Kreuzbandsendung aus <hi rend="unknown" rendition="#none">Bucarest</hi> ich keine Auskunft erhalten habe. Nun fehlt ja wohl noch das <hi rend="unknown" rendition="#none">
 Glossar</hi>
-          <note n="2" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4476">XIX</ref>, n. 3.</note>? Sobald ich Alles zusammen haben werde, sollen Sie das Versprochene erhalten, das dann — nach Ihren Wünschen und Rathschlägen — modifizirt werden wird.</p>
-        <p>Meine Anzeige des letzten Bandes der <hi rend="unknown"
-            rendition="#none">
-Columna</hi> werden Sie gesehen haben<note n="3" place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4464">VII</ref> e n. 17.</note>; ich sende Ihnen unter Kreuzband einige Exemplare davon. Sie werden diese Anzeige sehr trocken und kühl finden und nicht sehr damit zufrieden sein. Aber ich bitte Sie zu bedenken, dass gerade weil mir so viel daran liegt, das Interesse der Romanisten am <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.854">
-Rumänischen</ref> zu wecken, ich möglichst vorsichtig zu Werke gehe. Sie können nicht glauben, wie leicht eine allzu warme Anerkennung bei meinen Landsleuten Misstrauen erregt, besonders wenn es sich um Gebiete handelt, die ihnen eben noch so gut wie unbekannt sind. Ich selbst, wie ich Ihnen ganz offen gestehe, habe mich auch erst <hi
-            rend="unknown" rendition="#none">allmählich</hi> für Ihre <hi rend="unknown"
-            rendition="#none">thrakischen</hi> Studien erwärmt und bin jetzt der Ueberzeugung, dass auf diesem Felde, und zwar durch Sie, glückliche und wichtige Ergebnisse gewonnen werden; nur wird man nicht allzurasch hier vorschreiten dürfen, sondern mit dem grössten Bedachte. Glauben Sie nicht, dass ich eine allzu kalte und langsame Natur bin; ich bin ganz das Gegentheil davon, neige sehr zur Voreiligkeit und Raschheit und es kostet mir Mühe genug <hi
-            rend="unknown" rendition="#none">recht objektiv</hi> zu sein. Vielleicht gehe ich denn manchmal — wie das ja oft bei einer Reaktion der Fall zu sein pflegt — in dieser Richtung zu weit.</p>
-        <p>Leider befinden sich in meiner Anzeige, deren Korrektur ich nicht selbst besorgt habe, eine <hi
-            rend="unknown"
-            rendition="#none">Menge von Druckfehlern.</hi> Da Ihr Auge in Bezug auf dieselben noch schärfer sein wird, wie das meinige, so würden Sie mich sehr verbinden, wenn Sie eines von den Exemplaren mir mit Angabe dieser Druckfehler zurückschicken wollten, damit ich die Berichtigung derselben im nächsten Hefte der Zeitschrift veranlassen kann<hi rendition="#sup">+</hi>.</p>
-
-        <p>Die Nachrichten über die Societate Academică Romană haben mich sehr interessirt. Zunächst freut mich sehr, dass die Denkmäler des 16. u. 17. Jhrhs wieder abgedruckt werden sollen<note
-            n="4" place="foot"
-              type="editorial">Lo Schuchardt deve far qui riferimento a notizie incontrate nei resoconti delle sedute dell’Academia, pubblicati nei volumi di 
-« Analile Societatei Academice Române ». In realtà già dal 1874 era stata istituita in seno all’Academia una commissione lessicografica, che decideva tra l’altro di promuovere la ristampa, con caratteri latini, dei piú importanti testi romeno-slavi pubblicati nei secc. XVI-XVII. Venivano cosí affidate a <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2812">D. Sturdza</persName> l’edizione del <bibl>
+               <note n="2" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4476">XIX</ref>, n. 3.</note>? Sobald ich Alles zusammen haben werde, sollen Sie das Versprochene erhalten, das dann — nach Ihren Wünschen und Rathschlägen — modifizirt werden wird.</p>
+            <p>Meine Anzeige des letzten Bandes der <hi rend="unknown" rendition="#none">
+Columna</hi> werden Sie gesehen haben<note n="3" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4464">VII</ref> e n. 17.</note>; ich sende Ihnen unter Kreuzband einige Exemplare davon. Sie werden diese Anzeige sehr trocken und kühl finden und nicht sehr damit zufrieden sein. Aber ich bitte Sie zu bedenken, dass gerade weil mir so viel daran liegt, das Interesse der Romanisten am <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">
+Rumänischen</ref> zu wecken, ich möglichst vorsichtig zu Werke gehe. Sie können nicht glauben, wie leicht eine allzu warme Anerkennung bei meinen Landsleuten Misstrauen erregt, besonders wenn es sich um Gebiete handelt, die ihnen eben noch so gut wie unbekannt sind. Ich selbst, wie ich Ihnen ganz offen gestehe, habe mich auch erst <hi rend="unknown" rendition="#none">allmählich</hi> für Ihre <hi rend="unknown" rendition="#none">thrakischen</hi> Studien erwärmt und bin jetzt der Ueberzeugung, dass auf diesem Felde, und zwar durch Sie, glückliche und wichtige Ergebnisse gewonnen werden; nur wird man nicht allzurasch hier vorschreiten dürfen, sondern mit dem grössten Bedachte. Glauben Sie nicht, dass ich eine allzu kalte und langsame Natur bin; ich bin ganz das Gegentheil davon, neige sehr zur Voreiligkeit und Raschheit und es kostet mir Mühe genug <hi rend="unknown" rendition="#none">recht objektiv</hi> zu sein. Vielleicht gehe ich denn manchmal — wie das ja oft bei einer Reaktion der Fall zu sein pflegt — in dieser Richtung zu weit.</p>
+            <p>Leider befinden sich in meiner Anzeige, deren Korrektur ich nicht selbst besorgt habe, eine <hi rend="unknown" rendition="#none">Menge von Druckfehlern.</hi> Da Ihr Auge in Bezug auf dieselben noch schärfer sein wird, wie das meinige, so würden Sie mich sehr verbinden, wenn Sie eines von den Exemplaren mir mit Angabe dieser Druckfehler zurückschicken wollten, damit ich die Berichtigung derselben im nächsten Hefte der Zeitschrift veranlassen kann<hi rendition="#sup">+</hi>.</p>
+            <p>Die Nachrichten über die Societate Academică Romană haben mich sehr interessirt. Zunächst freut mich sehr, dass die Denkmäler des 16. u. 17. Jhrhs wieder abgedruckt werden sollen<note n="4" place="foot" type="editorial">Lo Schuchardt deve far qui riferimento a notizie incontrate nei resoconti delle sedute dell’Academia, pubblicati nei volumi di 
+« Analile Societatei Academice Române ». In realtà già dal 1874 era stata istituita in seno all’Academia una commissione lessicografica, che decideva tra l’altro di promuovere la ristampa, con caratteri latini, dei piú importanti testi romeno-slavi pubblicati nei secc. XVI-XVII. Venivano cosí affidate a <persName ref="[authorityLink]">D. Sturdza</persName> l’edizione del <bibl>
 
 Salterio in versi di Dosoftei (1673)
 </bibl>, a <persName>
 
 A. Odobescu</persName> quella della <bibl>
-              <hi rend="unknown" rendition="#none">
+                     <hi rend="unknown" rendition="#none">
 Pravila</hi> di Govora (1640)
 </bibl>, a <persName>
 
 G. Sion</persName> quella del <bibl>
-              <hi rend="unknown"
-                rendition="#none">Divanul lumii</hi> di D. Cantemir (1698)
+                     <hi rend="unknown" rendition="#none">Divanul lumii</hi> di D. Cantemir (1698)
 </bibl> e al Hasdeu l’edizione del <bibl>
 
 Salterio slavo-romeno di Coresi (1577)
 </bibl> (per quest’ultimo v. LXIX, n. 2). Si veda, al riguardo, <bibl>
 
-N. A. Ursu, <hi
-                rend="unknown"
-                rendition="#none">Contribuţia Academiei Române în domeniul editării critice a textelor vechi româneşti</hi>, « LR » XV (1966), pp. 531-47
+N. A. Ursu, <hi rend="unknown" rendition="#none">Contribuţia Academiei Române în domeniul editării critice a textelor vechi româneşti</hi>, « LR » XV (1966), pp. 531-47
 </bibl>; <bibl>
 
-E. Vîrtosu, <hi
-                rend="unknown"
-            rendition="#none">Paleografia româno-chirilică</hi>, Bucureşti 1968
-</bibl> (in particolare cap. IV).</note> — ich werde Gelegenheit nehmen, hierauf die Romanisten besonders aufmerksam zu machen<note
-            n="5" place="foot" type="editorial">Cf. <hi rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
-
-            </hi>, p. viii.</note> — sodann, dass die lexikographische Commission in Bezug auf die Orthographie ein Prinzip angenommen hat, welchem ich durchaus beipflichte<note
-            n="6" place="foot" type="editorial">Lo Schuchardt era intervenuto anni prima sul tema con l’art. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.406">
-                <hi rend="unknown" rendition="#none">De l’ortographe du roumain</hi>
-              </ref>, « Romania ». II (1873), pp. 72-9</bibl>
-
-            <bibl>
+E. Vîrtosu, <hi rend="unknown" rendition="#none">Paleografia româno-chirilică</hi>, Bucureşti 1968
+</bibl> (in particolare cap. IV).</note> — ich werde Gelegenheit nehmen, hierauf die Romanisten besonders aufmerksam zu machen<note n="5" place="foot" type="editorial">Cf. <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
+                  </hi>, p. viii.</note> — sodann, dass die lexikographische Commission in Bezug auf die Orthographie ein Prinzip angenommen hat, welchem ich durchaus beipflichte<note n="6" place="foot" type="editorial">Lo Schuchardt era intervenuto anni prima sul tema con l’art. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.406">
+                        <hi rend="unknown" rendition="#none">De l’ortographe du roumain</hi>
+                     </ref>, « Romania ». II (1873), pp. 72-9</bibl>
+                  <bibl>
 
 (e versione romena in « ClT » IV [1873])
 </bibl>, con il quale si schierava tra i sostenitori del criterio fonetico contro l’etimologismo latinizzante delle norme ortografiche proposte dalla 
-Societate Academică Română negli anni 1867 e 1869. Va qui ricordato forse come in quello scritto lo Schuchardt mettesse pure in discussione « le principe <hi
-              rend="unknown" rendition="#none">intellectuel</hi> » — sostenuto da <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3940">Titu Maiorescu</persName>, a correzione del fonetismo puro e in difesa della struttura logica della lingua, nel fondamentale lavoro <hi
-              rend="unknown"
-              rendition="#none">Despre scrierea limbei rumăne</hi>, Iaşi 1866 — affermando che « Il n’y a pas de grammaire hors de la langue parlée » (<hi
-              rend="unknown"
-                rendition="#none">De l’ortographe du roumain</hi>, cit., p. 75; e <bibl>
+Societate Academică Română negli anni 1867 e 1869. Va qui ricordato forse come in quello scritto lo Schuchardt mettesse pure in discussione « le principe <hi rend="unknown" rendition="#none">intellectuel</hi> » — sostenuto da <persName ref="[authorityLink]">Titu Maiorescu</persName>, a correzione del fonetismo puro e in difesa della struttura logica della lingua, nel fondamentale lavoro <hi rend="unknown" rendition="#none">Despre scrierea limbei rumăne</hi>, Iaşi 1866 — affermando che « Il n’y a pas de grammaire hors de la langue parlée » (<hi rend="unknown" rendition="#none">De l’ortographe du roumain</hi>, cit., p. 75; e <bibl>
 
 
-replica del Maiorescu nelle edd. di <hi
-                rend="unknown"
-              rendition="#none">Despre scrierea</hi>..., cit., sucessive al ’73)
+replica del Maiorescu nelle edd. di <hi rend="unknown" rendition="#none">Despre scrierea</hi>..., cit., sucessive al ’73)
 </bibl>.<lb/>La commissione lessicografica, di cui facevano parte, tra gli altri, gli antilatinisti <persName>
 
 G. Bariţ</persName>, B. P. Hasdeu, <persName>
-A. Odobescu</persName>, e dal 1879, con la nuova <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.686">Academia Română</ref>, riconosciuta istituzione nazionale, anche <persName
-                ref="https://gams.uni-graz.at/o:hsa.persons#P.3940">T. Maiorescu</persName>, procedendo con una difficile opera di mediazione nella direzione già anticipata dallo Schuchardt, arriverà ad una lenta ma progressiva affermazione del criterio fonetico (1880, 1881). E va qui sottolineato il ruolo avuto, ai fini di tale affermazione, dalla stampa periodica del tempo, in primo luogo le 
+A. Odobescu</persName>, e dal 1879, con la nuova <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.686">Academia Română</ref>, riconosciuta istituzione nazionale, anche <persName ref="[authorityLink]">T. Maiorescu</persName>, procedendo con una difficile opera di mediazione nella direzione già anticipata dallo Schuchardt, arriverà ad una lenta ma progressiva affermazione del criterio fonetico (1880, 1881). E va qui sottolineato il ruolo avuto, ai fini di tale affermazione, dalla stampa periodica del tempo, in primo luogo le 
 
 « Convorbiri literare » della 
 
@@ -290,47 +79,36 @@ Società Junimea di <placeName>
 
 Iaşì</placeName>, attraverso l’elaborazione e la prassi di una norma ortografica ispirata ai criteri scientifici introdotti da Titu Maiorescu. Per i diversi problemi qui accennati, si vedano, nella bibliografia piú recente: <bibl>
 
-K.-H. Schroeder, <hi
-                rend="unknown"
-                rendition="#none">Zur Entwicklung der rumänischen Ortographie</hi>, « ZRPh » LXXXII (1966), pp. 320-38
+K.-H. Schroeder, <hi rend="unknown" rendition="#none">Zur Entwicklung der rumänischen Ortographie</hi>, « ZRPh » LXXXII (1966), pp. 320-38
 </bibl>; <bibl>
 
-F. Şuteu, <hi
-                rend="unknown"
-                rendition="#none">Proiectele ortografice ale Societăţi Academice Române</hi>, « LR » XV (1966), pp. 503-18
+F. Şuteu, <hi rend="unknown" rendition="#none">Proiectele ortografice ale Societăţi Academice Române</hi>, « LR » XV (1966), pp. 503-18
 </bibl>; <bibl>
 
-Eadem, <hi
-                rend="unknown" rendition="#none">Influenza ortografiei asupra pronunţării literare româneşti</hi>, Bucureşti 1976
+Eadem, <hi rend="unknown" rendition="#none">Influenza ortografiei asupra pronunţării literare româneşti</hi>, Bucureşti 1976
 </bibl>; <bibl>
-              <hi rend="unknown" rendition="#none">Istoria lingvisticii româneşti</hi>, a cura di I. Iordan, Bucureşti 1978
+                     <hi rend="unknown" rendition="#none">Istoria lingvisticii româneşti</hi>, a cura di I. Iordan, Bucureşti 1978
 </bibl>.</note>.</p>
-        <p>Endlich <hi rend="unknown" rendition="#none">freut</hi> und <hi rend="unknown"
-            rendition="#none">ehrt</hi> es mich ungemein, das die S. A. mich zu Ihrem Mitgliede hat erwählen wollen<note
-            n="7" place="foot"
-              type="editorial">Nella seduta del 13 settembre 1877 la Societate Academică Română, sotto la presidenza di <persName>
-Ion Ghica</persName>, aveva eletto membri onorari <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">Graziadio I. Ascoli</persName> e Hugo Schuchardt. È di quella stessa seduta l’elezione del Hasdeu (respinto una prima volta nel 1869) a membro ordinario. Cf. <bibl>
+            <p>Endlich <hi rend="unknown" rendition="#none">freut</hi> und <hi rend="unknown" rendition="#none">ehrt</hi> es mich ungemein, das die S. A. mich zu Ihrem Mitgliede hat erwählen wollen<note n="7" place="foot" type="editorial">Nella seduta del 13 settembre 1877 la Societate Academică Română, sotto la presidenza di <persName>
+Ion Ghica</persName>, aveva eletto membri onorari <persName ref="[authorityLink]">Graziadio I. Ascoli</persName> e Hugo Schuchardt. È di quella stessa seduta l’elezione del Hasdeu (respinto una prima volta nel 1869) a membro ordinario. Cf. <bibl>
 
 « Analile Societatei Academice Române » X, parte I (1877), pp. 95-6.
 </bibl>
-          </note>; ich nehme das mit dem ergebensten Danke an nicht als eine <hi rend="unknown"
-            rendition="#none">
+               </note>; ich nehme das mit dem ergebensten Danke an nicht als eine <hi rend="unknown" rendition="#none">
 Anerkennung</hi> dessen, was ich gethan habe — denn für die <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">
-            <hi rend="unknown" rendition="#none">rumänische</hi>
-          </ref> Philologie habe ich noch kaum Etwas gethan — sondern als eine <hi rend="unknown" rendition="#none">Anregung</hi> erst Etwas zu thun.</p>
-        <closer>
-          <salute>Mit den herzlichsten Grüssen ganz der Ihrige</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Hugo Schuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>
-            <hi rendition="#sup">+</hi> Es ist auch möglich, dass <hi rend="unknown" rendition="#none">ich</hi> den einen oder andern Irrthum begangen habe; ich musste diese Anzeige zu rasch erledigen.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                  <hi rend="unknown" rendition="#none">rumänische</hi>
+               </ref> Philologie habe ich noch kaum Etwas gethan — sondern als eine <hi rend="unknown" rendition="#none">Anregung</hi> erst Etwas zu thun.</p>
+            <closer>
+               <salute>Mit den herzlichsten Grüssen ganz der Ihrige</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Hugo Schuchardt</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>
+                  <hi rendition="#sup">+</hi> Es ist auch möglich, dass <hi rend="unknown" rendition="#none">ich</hi> den einen oder andern Irrthum begangen habe; ich musste diese Anzeige zu rasch erledigen.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

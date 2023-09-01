@@ -1,531 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Georg Gerland an Hugo Schuchardt (01-03652)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1572">
-            <forename>Georg</forename>
-            <surname>Gerland</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10842" type="PID">o:hsa.letter.10842</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-03652</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">03652</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1572">
-                <forename>Georg</forename>
-                <surname>Gerland</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="10" unit="pages">10 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.499" ref="http://sws.geonames.org/2973783">Straßburg</origPlace>
-              <origDate ana="dcterms:created" when="1882-03-16">1882-03-16</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Georg Gerland und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1572"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10842">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1572" ref="https://viaf.org/viaf/77071469">
-            <forename>Georg</forename>
-            <surname>Gerland</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.499" key="#GID.1" ref="http://sws.geonames.org/2973783">Straßburg</placeName>
-          <date when="1882-03-16">1882-03-16</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Strasbourg</settlement>
-                <name ref="http://geonames.org/2973783" type="fcode:PPLA">Strasbourg</name>
-                <location>
-                  <geo>7.74553,48.58392</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1572" type="context">
-                        Korrespondenz Georg Gerland - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4183" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Indogermanistik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4057" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Koninklijk Bataviaasch Genootschap van Kunsten &amp; Wetenschappen</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.228" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch außerhalb Europas</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.845" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Niederländisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.427" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kreoldänisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.576" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bantu-Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.863" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Romanische Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.860" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.653" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Finnisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.891" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Englisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.503" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Malaiisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.917" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Chinesische Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.555" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Pidgins (Englisch)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10842" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10842" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10842" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10842" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10842" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10842" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10842" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10842" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10842" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10842" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10842" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>
-          <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.499">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10842" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>
+               <placeName ref="[authorityLink]">
 Straßb.</placeName> 16/3 82.<lb/>
-        </dateline>
-        <opener>Sehr geehrter Herr Kollege<lb/>
-        </opener>
-
-        <p>Ihr Brief vom 10. hat mich auf das lebhafteste interessirt und die Wahl Ihres Themas ist gewiß eine sehr zu preisende, denn Sie werden eine Menge Fragen berühren, oder vielmehr lösen müssen, welche für Natur u. Wesen des Menschen von höchster Bedeutung sind. Gern verspreche ich, in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.77">Halle</placeName> für Sie meine Netze auszuwerfen und noch viel lieber möcht‘ ich gleich jetzt Sie mit einem rechten Segen von Notizen überschütten: aber das geht leider nicht, aus dem sehr natürlichen Grund weil ich selber nichts weiß.</p>
-        <p>Ueber <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5898">
-Westindien</placeName> bietet Ihnen vielleicht einiges das – im ganzen nicht erfreuliche – Werk von <hi
-            rend="unknown" rendition="#none">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1975">Edgar la Selve</persName>, le Pays des <pb
-              facs="#IMG.2" n="2"/> Nègres, voyage à Haiti Paris Hachette et C<hi
-            rendition="#sup">ie</hi> 1881 (4 fr.)</hi>. In diesem Buche kommen nicht selten neger-<ref target="https://gams.uni-graz.at/o:hsa.languages#L.228">
+            </dateline>
+            <opener>Sehr geehrter Herr Kollege<lb/>
+            </opener>
+            <p>Ihr Brief vom 10. hat mich auf das lebhafteste interessirt und die Wahl Ihres Themas ist gewiß eine sehr zu preisende, denn Sie werden eine Menge Fragen berühren, oder vielmehr lösen müssen, welche für Natur u. Wesen des Menschen von höchster Bedeutung sind. Gern verspreche ich, in <placeName ref="[authorityLink]">Halle</placeName> für Sie meine Netze auszuwerfen und noch viel lieber möcht‘ ich gleich jetzt Sie mit einem rechten Segen von Notizen überschütten: aber das geht leider nicht, aus dem sehr natürlichen Grund weil ich selber nichts weiß.</p>
+            <p>Ueber <placeName ref="[authorityLink]">
+Westindien</placeName> bietet Ihnen vielleicht einiges das – im ganzen nicht erfreuliche – Werk von <hi rend="unknown" rendition="#none">
+                  <persName ref="[authorityLink]">Edgar la Selve</persName>, le Pays des <pb facs="#IMG.2" n="2"/> Nègres, voyage à Haiti Paris Hachette et C<hi rendition="#sup">ie</hi> 1881 (4 fr.)</hi>. In diesem Buche kommen nicht selten neger-<ref target="https://gams.uni-graz.at/o:hsa.languages#L.228">
 französische</ref> Sätze und Liedchen vor, z. B. S. 188</p>
-        <p>
-          <hi rend="unknown" rendition="#none">moe‘ vle‘ gnon zé</hi> = <hi rend="unknown" rendition="#none">je veux un oeuf</hi>
-          <hi rend="unknown" rendition="#none">Gnia point (sic)</hi> = <hi rend="unknown"
-            rendition="#none">il n’y en a point</hi>. <hi rend="unknown"
-            rendition="#none">A coze ça mon vlé dé</hi> = <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">A cause de cela, j’en veux deux</hi>
-          </foreign>.</p>
-        <p>S. 240, bei Anlaß eines Streites der Haitier mit einem deutschen Kriegsschiff:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Depi la chambe banq‘ nou réséve, Prussiens, vlé oué combien ça ÿé; Allemands vlé oué combien ÿo gé</hi>.</p>
-        <p>-----</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Frégate révé, mouillé nen port tout députés couri, vini. Yo di: „Bagay-là trop fort! Bismarck et Batsch, c’est malfini …“</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Oui, pipe!</hi>
-        </p>
-
-        <p>Und so weiter. Sehr wertvoll scheinen mir freilich diese Proben nicht zu sein. Edgar la Selve hat übrigens ein 2 bändiges Werk geschrieben – welches Sie zwar ohne Zweifel zwar besser kennen als ich – la littérature française d’outre-mer 2 éd.<note
-            n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8442">
-                <hi rend="unknown" rendition="#none">Le pays des nègres: voyage à Haïti, ancienne partie française de Saint-Domingue</hi>
-              </ref>
-            </bibl> / par Edgar La Selve, ... (Paris, 1881).</note>
-          <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5963">Guadeloupe</placeName>, <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5943">
-Martinique</placeName>, <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5965">Haïti</placeName>, la <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5988">Réunion</placeName>, <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5933">Maurice</placeName>, <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5934">Algérie</placeName>, Sénégal, <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5972">
-Canada</placeName>, <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5884">
-Louisiane</placeName>; könnte Ihnen dies nicht vielleicht nützlich sein? auch ist La Selve so weit ich weiß Lehrer in Haïti (obwohl sein Pays de Nègres von <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.666">Paris</placeName> aus <pb facs="#IMG.3"
-            n="3"/> eingeleitet ist); seine Adresse wäre sicher bei Hachette u. C<hi
-            rendition="#sup">ie</hi> zu erfahren.<note n="2" place="foot" type="editorial">
+            <p>
+               <hi rend="unknown" rendition="#none">moe‘ vle‘ gnon zé</hi> = <hi rend="unknown" rendition="#none">je veux un oeuf</hi>
+               <hi rend="unknown" rendition="#none">Gnia point (sic)</hi> = <hi rend="unknown" rendition="#none">il n’y en a point</hi>. <hi rend="unknown" rendition="#none">A coze ça mon vlé dé</hi> = <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">A cause de cela, j’en veux deux</hi>
+               </foreign>.</p>
+            <p>S. 240, bei Anlaß eines Streites der Haitier mit einem deutschen Kriegsschiff:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Depi la chambe banq‘ nou réséve, Prussiens, vlé oué combien ça ÿé; Allemands vlé oué combien ÿo gé</hi>.</p>
+            <p>-----</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Frégate révé, mouillé nen port tout députés couri, vini. Yo di: „Bagay-là trop fort! Bismarck et Batsch, c’est malfini …“</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Oui, pipe!</hi>
+            </p>
+            <p>Und so weiter. Sehr wertvoll scheinen mir freilich diese Proben nicht zu sein. Edgar la Selve hat übrigens ein 2 bändiges Werk geschrieben – welches Sie zwar ohne Zweifel zwar besser kennen als ich – la littérature française d’outre-mer 2 éd.<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8442">
+                        <hi rend="unknown" rendition="#none">Le pays des nègres: voyage à Haïti, ancienne partie française de Saint-Domingue</hi>
+                     </ref>
+                  </bibl> / par Edgar La Selve, ... (Paris, 1881).</note>
+               <placeName ref="[authorityLink]">Guadeloupe</placeName>, <placeName ref="[authorityLink]">
+Martinique</placeName>, <placeName ref="[authorityLink]">Haïti</placeName>, la <placeName ref="[authorityLink]">Réunion</placeName>, <placeName ref="[authorityLink]">Maurice</placeName>, <placeName ref="[authorityLink]">Algérie</placeName>, Sénégal, <placeName ref="[authorityLink]">
+Canada</placeName>, <placeName ref="[authorityLink]">
+Louisiane</placeName>; könnte Ihnen dies nicht vielleicht nützlich sein? auch ist La Selve so weit ich weiß Lehrer in Haïti (obwohl sein Pays de Nègres von <placeName ref="[authorityLink]">Paris</placeName> aus <pb facs="#IMG.3" n="3"/> eingeleitet ist); seine Adresse wäre sicher bei Hachette u. C<hi rendition="#sup">ie</hi> zu erfahren.<note n="2" place="foot" type="editorial">
 Vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.8650">
 06264-06266</ref>.</note>
-        </p>
-        <p>Dann glaube ich, daß die Grey-Library am Cap Ihnen vielleicht manches wertvolle bieten könnte.<note n="3"
-            place="foot" type="editorial">Grey Collection (National Library of South Africa); vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8488">Carol Steyn, <hi rend="unknown" rendition="#none">The Medieval and Renaissance Manuscripts in the Grey Collection of the National Library of South Africa</hi>
-              </ref>
-            </bibl>, Cape Town, 2 vols. (2002).</note> Der Nachfolger <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5343">
+            </p>
+            <p>Dann glaube ich, daß die Grey-Library am Cap Ihnen vielleicht manches wertvolle bieten könnte.<note n="3" place="foot" type="editorial">Grey Collection (National Library of South Africa); vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8488">Carol Steyn, <hi rend="unknown" rendition="#none">The Medieval and Renaissance Manuscripts in the Grey Collection of the National Library of South Africa</hi>
+                     </ref>
+                  </bibl>, Cape Town, 2 vols. (2002).</note> Der Nachfolger <persName ref="[authorityLink]">
 Bleeks</persName>
-          <note n="4" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.5343">Wilhelm Heinrich Immanuel Bleek</persName> (1827-1875), ursprünglich aus <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> stammender Sprachwissenschaftler.</note> (der leider auf Bl. sehr schlecht zu sprechen ist, wie mir scheint, ohne genügenden Grund) ist ein Freund von mir, den Sie vielleicht auch noch von Halle her kennen (er war Schüler <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2438">Potts</persName>
-          <note n="5" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2438">August Friedrich Pott</persName> (1802-1887), erster Professor f. Allg.Sprachwissenschaft in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.77">
-Halle</placeName>, ab 1833; vgl. HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.2491">08984</ref>.</note>), <hi rend="unknown"
-              rendition="#none">Dr. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1697">Theoph. Hahn</persName>
-          </hi>.<note n="6" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1697">Johannes Theophilus Hahn</persName> (1842-1904) war Sohn eines ehemals im Namaqualande tätigen Missionärs, sprach das Hottentottische als Muttersprache und kannte Land und Leute; vgl. HSA 04348-04340.</note> Der wird Ihnen alles, was sich Einschlagendes findet, mit großer Rührigkeit u. Bereitwilligkeit mitteilen, und wenn irgendwo, so könnten Sie bei u. von ihm über das origin. (??) <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.845">Holländisch</ref> hören und Proben erhalten. Schreiben Sie ihm nur mit einem schönen Gruß von mir oder auch ohne das, er antwortet Ihnen sofort u. gibt was er hat. Seine Adresse: <hi
-            rend="unknown" rendition="#none">Dr. Th. H. Grey Library, <placeName>
+               <note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Wilhelm Heinrich Immanuel Bleek</persName> (1827-1875), ursprünglich aus <placeName ref="[authorityLink]">Bonn</placeName> stammender Sprachwissenschaftler.</note> (der leider auf Bl. sehr schlecht zu sprechen ist, wie mir scheint, ohne genügenden Grund) ist ein Freund von mir, den Sie vielleicht auch noch von Halle her kennen (er war Schüler <persName ref="[authorityLink]">Potts</persName>
+               <note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">August Friedrich Pott</persName> (1802-1887), erster Professor f. Allg.Sprachwissenschaft in <placeName ref="[authorityLink]">
+Halle</placeName>, ab 1833; vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.2491">08984</ref>.</note>), <hi rend="unknown" rendition="#none">Dr. <persName ref="[authorityLink]">Theoph. Hahn</persName>
+               </hi>.<note n="6" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Johannes Theophilus Hahn</persName> (1842-1904) war Sohn eines ehemals im Namaqualande tätigen Missionärs, sprach das Hottentottische als Muttersprache und kannte Land und Leute; vgl. HSA 04348-04340.</note> Der wird Ihnen alles, was sich Einschlagendes findet, mit großer Rührigkeit u. Bereitwilligkeit mitteilen, und wenn irgendwo, so könnten Sie bei u. von ihm über das origin. (??) <ref target="https://gams.uni-graz.at/o:hsa.languages#L.845">Holländisch</ref> hören und Proben erhalten. Schreiben Sie ihm nur mit einem schönen Gruß von mir oder auch ohne das, er antwortet Ihnen sofort u. gibt was er hat. Seine Adresse: <hi rend="unknown" rendition="#none">Dr. Th. H. Grey Library, <placeName>
 
 Cape Town</placeName>
-          </hi>.</p>
-        <p>Und haben Sie sich für Amerika schon an den bekannten Amerikanisten Gatschet gewendet?<note n="7"
-            place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1555">Albert Samuel Gatschet</persName> (1832-1907), US-amerik. Ethnologe; vgl. HSA 03574-03591.</note> er ist gleichfalls durch seine Stellung am Smithson. Institute sehr reich an Stoff u. kann Ihnen vielleicht manches mitteilen. Seine Adresse: <hi
-            rend="unknown" rendition="#none">Dr. G. Washington, care Bureau of Ethnology</hi>.</p>
-
-        <p>Sodann mein‘ ich einige solche verderbte französ. Phrasen aus dem Munde von Neukaledoniern gelesen zu haben in dem sehr interessanten Buche: <hi
-            rend="unknown"
-            rendition="#none">lettres d’un Marin. Calédonie. Le Cap. Ste Hélène par Paul Branda. Paris Fischbacher 1881</hi>.<note
-            n="8" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8406">Paul Branda, <hi rend="unknown" rendition="#none">Lettres d’un marin: Calédonie: Le Cap-Sainte-Hélène</hi>
-              </ref>
-            </bibl>, Paris: G. Fischbacher, 1881 [der „Marin“ ist Paul-Émile-Marie Réveillère].</note>
-          <pb facs="#IMG.4" n="4"/> Wenn Sie nun lachen und fragen: ist das Alles, was Sie wissen? So muß ich leider gestehen: ja, alles. Aber dann ist mein Brief noch lange nicht zu Ende. Denn wenn ich für diesmal nichts mehr weiß, so kann ich doch versprechen, die Augen offen zu halten. Und ferner fragen Sie noch nach anderen Dingen, die mich sehr lebhaft interessiren.</p>
-        <p>So ist freilich die Uebereinstimmung des Maskarenen- u. <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.427">Antillenkreolisch</ref> sehr auffallend. Aber sollte auf beiden Inselgruppen der farbige Grundstock wirklich so verschieden sein, wie Sie annehmen? Worauf gründen Sie diese Verschiedenheit? Sind nicht die meisten Sklaven dort wie auf den französ. Antillen sog. Kongoneger, so daß sich schon von dieser gemeinsamen Grundlage aus (denn der Unterschied der West- u. Ostküste Afr.‘s ist sprachlich namentlich für Ihre Untersuchung ein sehr geringer) manches erklären würde? Und gesetzt, wir haben auch die ächten Sudan-Neger mit zu berücksichtigen, wenigstens für die Antillen: so stehen gerade viele der Negersprachen der Westküste (z. B. der Yorubastock<note
-            n="9" place="foot" type="editorial">Deutung der zweiten Worthälfte unsicher!</note>) den eigentlichen <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.576">Bantusprachen</ref> so nahe, daß sich auch bei der Einmischung eines reichlichen Negerelementes <pb
-            facs="#IMG.5"
-            n="5"/> die gleiche Grundform entwickeln konnte, ja mußte. Sie fragen: in welcher Weise gesellt sich in einem Gehirne zu einer schon vorhandenen Sprache eine zweite? und hier scheint mir des Pudels Kern zu liegen, von hier aus der Weg zur Aufklärung aller der Probleme sich zu bieten, welche Sie erwähnen. Ich glaube aber gar nicht, daß in <hi
-            rend="unknown" rendition="#none">einem</hi> Gehirn sich <hi rend="unknown"
-            rendition="#none">zwei</hi> Sprachen <hi rend="unknown"
-            rendition="#none">einen</hi>. Das dürfte doch psychologisch, außer bei künstlicher Erlernung, unmöglich sein u. auch bei einer solchen bleibt jede Sprache für sich, <hi
-            rend="unknown"
-            rendition="#none">eint</hi> sich also nicht. Mir scheint es, als ob bei diesen Kreolensprachen drei Erscheinungen vorkommen: 1) eine Uebernahme der Kultur- oder herrschenden Sprache, die dann aber verderbt wird, wie in den obigen Beispielen aus La Selve<note
-            n="10" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1975">Edgar La Selve</persName>, s. o.</note> u. wie, im Großen, bei der Entstehung der <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.863">roman. Sprachen</ref> der Fall war. Daß sich aus einer solchen Zertrümmerung dann wieder ein Wunderbau wie das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.226">Französ</ref>., das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.860">Ital</ref>. u. s. w. bilden konnte, das liegt in der außerordentlichen logischen Leistungsfähigkeit eines ganzen <hi
-            rend="unknown"
-            rendition="#none">Volkes</hi>; ein Einzelner kann das nicht schaffen, wohl aber eine Reihe von Generationen, eine große Summe von Individuen, welche durch Summirung der einzelnen Kräfte oder besten der Kräfte der Einzelnen allmählich aus dem Zerstörten wieder ein Neues schaffen. Hierbei kommt das, was man Sprachgefühl der Völker nennt, zur Geltung, u. was doch weiter nichts ist, als die Regelung der psychophysischen Sprachfähigkeit u. ihrer unwillkürlichen Auslösungen u. Wirkungen auch den logischen Gesetzen, welche bei der gleichen Natur der Psyche überall gleich sind, und dem ganzen intellektuell-ethischen <pb
-            facs="#IMG.6"
-            n="6"/> Bedürfnis des einzelnen Volkes. Dies Bedürfnis beruht allerdings vielfach auf Gewöhnung d. h. Vererbung, wie ja der Sprachbau der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4183">Indogerm</ref>. anders ist als der amerikanische u. s. w. Dies Bedürfnis kann sich mit der Zeit d. h. mit der Entwickelung der Völker ändern. Cf. das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.653">Finnische</ref> im Vergl. z. B. zum Samojedischen oder das heut. Indogermanisch mit sehr viel früheren Stufen desselben u. s. w. – Bei dieser Art der Bildung v. Kreolensprachen bleibt im wesentlichen auch die „innere Sprachform“ der Kultur in der herrschenden Sprache; der Hauptbildner ist hierbei das <hi
-            rend="unknown" rendition="#none">herrschende</hi> Volk, dem sich das geringere Volk wohl oder übel fügt.</p>
-
-        <p>2) Nun kann aber auch der Bildner das untergeordnete Volk sein, indem es die neue Sprache nur zu seinem Bedürfnis verwendet, um [sich] überhaupt seinen Herren verständlich zu machen. Dann behält es seine eigene Sprach<hi
-            rend="unknown"
-            rendition="#none">form</hi> bei, nimmt nur die signifikanten Lautgruppen d. h. Worte der anderen Sprache herüber u. accomodirt sie. So die Beispiele, welche Sie mir anführen: <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">moi ca manger, moi manger</hi>
-
-          </foreign>. Das kann der Amerikaner nicht: denn seiner inneren Sprachform, dieser seltsamen Polysynthese, fügen sich andere Worbildungen, als seine eigenen, nicht, u. wenn er hier u. da dennoch fremde Worte aufnimmt, so bleibt das ganze immer indianisch, weil sich die indianische Bildungsweise als solche sofort kennzeichnet, während die Bildungsweise der afrik. Sprachen viel mehr mit den unsrigen übereinstimmt. Bei dieser Erscheinung ist zunächst zu beachten, daß überhaupt in der Sprachgeschichte die Worte verhältnismäßig wechselnd, vergänglich sind, man kann sie den fallenden u. neu wachsenden Blättern eines immergrünen Baumes vergleichen; namentlich rasch aber wechseln die Worte bei den Naturvölkern, <pb
-            facs="#IMG.7"
-            n="7"/> wenn ich auch keineswegs diese Erscheinung übertreiben will. Denn diese Sprachenflucht, welche jetzt anzunehmen bei manchen Ethnologen Mode wird u. da die sogar ein Lepsius mir unbegreiflich glaubt (Einl. Nubergrammatik),<note
-            n="11" place="foot" type="editorial">Carl Richard Lepsius, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6524">
-                <hi rend="unknown" rendition="#none">Nubische Grammatik mit einer Einleitung über die Völker und Sprachen Afrika's</hi>
-              </ref>
-
-            </bibl>, Berlin: Hertz, 1880.</note> ist wissenschaftlich völlig unhaltbar. Ferner ist hier zu beachten, wie außerordentlich gleichmäßig die Grundelemente – ich meine die formalen – <hi
-            rend="unknown"
-            rendition="#none">aller</hi> menschlichen Sprachen sind, meist auch, mit Ausnahme der amerikanischen, ihre Verwendung. Wortreihen wie: ich das essen = ich esse das; ich essen = ich will essen u. s. w. verstehen wir u. der Afrikaner u. der Polynesier u. der Chinese ungefähr gleich gut, der Amerikaner nicht. Durch diese verhälnism. geringe Bedeutung des Wort<hi
-            rend="unknown"
-            rendition="#none">
-lautes</hi>, durch diese Gleichmäßigkeit der formalen Sprachelemente ist die Entstehung dieser Kreolenjargons wohl begreiflich, es sind keine zwei Sprachen gleichwertig <hi
-            rend="unknown"
-            rendition="#none">geeint</hi>, sondern die eine bleibt als Körper, über welche die andere das Gewand der Lautung zieht. Und meistens werden diese herübergenommenen Worte auch noch derb verstümmelt. – Auch die modernen Kultursprachen nehmen Fremdwörter auf, die sie nach ihrer Art umwandeln. Namentlich das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.891">Englische</ref> scheint mir hier beachtenswert, mit seiner ganzen Sprachbildung, mit seinen Neuschöpfungen wie „Bus“ für Omnibus u. s. w. Auch die Neubildung v. Worten wie Gas oder die Namen der neuen physischen Maaße nach Personennamen, die dann noch abgekürzt werden, gehören hierher; es bildet sich durch dieselben eine Art internationales Jargon. Und was hier absichtlich, willkürlich geschieht, das geschieht bei den Negern etc unwillkürlich – nicht unabsichtlich – nach den durch lange Vererbung latenten Kräften u. Gesetzen der Sprachbildung. <pb
-            facs="#IMG.8"
-            n="8"/> 3) Können solche Sprachen sich rein als Mischsprachen entwickeln, wie z. B. zwischen Hindus (im weitesten Sinn) und den Europäern, deren Sprachen im ganzen gleiche Stufen haben, gleichwertig sind. Unsre modernen europ. Kultursprachen sind ja Gott lob alle solche Mischsprachen, daher ein internationales Verständnis möglich. Der gleichmäßige Gang der europ. Sprachen, der indischen ist allerdings sehr merkwürdig. Auch werden in jenen beiden anderen kreol. Sprachformen, auch in indian. Jargons, Mischungen nie fehlen. Von besonderer Merkwürdigkeit deucht mich, müßten die Sprachen im malais. Archipel sein, wegen ihrer außerordentlich bunten Mischung u. weil hier wohl <ref target="https://gams.uni-graz.at/o:hsa.languages#L.503">malaiisch</ref>
-          <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.917">chines</ref>. Mischungen vorkommen, freilich stets mit malaischer Grundlage. Ich glaube, die 
+               </hi>.</p>
+            <p>Und haben Sie sich für Amerika schon an den bekannten Amerikanisten Gatschet gewendet?<note n="7" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Albert Samuel Gatschet</persName> (1832-1907), US-amerik. Ethnologe; vgl. HSA 03574-03591.</note> er ist gleichfalls durch seine Stellung am Smithson. Institute sehr reich an Stoff u. kann Ihnen vielleicht manches mitteilen. Seine Adresse: <hi rend="unknown" rendition="#none">Dr. G. Washington, care Bureau of Ethnology</hi>.</p>
+            <p>Sodann mein‘ ich einige solche verderbte französ. Phrasen aus dem Munde von Neukaledoniern gelesen zu haben in dem sehr interessanten Buche: <hi rend="unknown" rendition="#none">lettres d’un Marin. Calédonie. Le Cap. Ste Hélène par Paul Branda. Paris Fischbacher 1881</hi>.<note n="8" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8406">Paul Branda, <hi rend="unknown" rendition="#none">Lettres d’un marin: Calédonie: Le Cap-Sainte-Hélène</hi>
+                     </ref>
+                  </bibl>, Paris: G. Fischbacher, 1881 [der „Marin“ ist Paul-Émile-Marie Réveillère].</note>
+               <pb facs="#IMG.4" n="4"/> Wenn Sie nun lachen und fragen: ist das Alles, was Sie wissen? So muß ich leider gestehen: ja, alles. Aber dann ist mein Brief noch lange nicht zu Ende. Denn wenn ich für diesmal nichts mehr weiß, so kann ich doch versprechen, die Augen offen zu halten. Und ferner fragen Sie noch nach anderen Dingen, die mich sehr lebhaft interessiren.</p>
+            <p>So ist freilich die Uebereinstimmung des Maskarenen- u. <ref target="https://gams.uni-graz.at/o:hsa.languages#L.427">Antillenkreolisch</ref> sehr auffallend. Aber sollte auf beiden Inselgruppen der farbige Grundstock wirklich so verschieden sein, wie Sie annehmen? Worauf gründen Sie diese Verschiedenheit? Sind nicht die meisten Sklaven dort wie auf den französ. Antillen sog. Kongoneger, so daß sich schon von dieser gemeinsamen Grundlage aus (denn der Unterschied der West- u. Ostküste Afr.‘s ist sprachlich namentlich für Ihre Untersuchung ein sehr geringer) manches erklären würde? Und gesetzt, wir haben auch die ächten Sudan-Neger mit zu berücksichtigen, wenigstens für die Antillen: so stehen gerade viele der Negersprachen der Westküste (z. B. der Yorubastock<note n="9" place="foot" type="editorial">Deutung der zweiten Worthälfte unsicher!</note>) den eigentlichen <ref target="https://gams.uni-graz.at/o:hsa.languages#L.576">Bantusprachen</ref> so nahe, daß sich auch bei der Einmischung eines reichlichen Negerelementes <pb facs="#IMG.5" n="5"/> die gleiche Grundform entwickeln konnte, ja mußte. Sie fragen: in welcher Weise gesellt sich in einem Gehirne zu einer schon vorhandenen Sprache eine zweite? und hier scheint mir des Pudels Kern zu liegen, von hier aus der Weg zur Aufklärung aller der Probleme sich zu bieten, welche Sie erwähnen. Ich glaube aber gar nicht, daß in <hi rend="unknown" rendition="#none">einem</hi> Gehirn sich <hi rend="unknown" rendition="#none">zwei</hi> Sprachen <hi rend="unknown" rendition="#none">einen</hi>. Das dürfte doch psychologisch, außer bei künstlicher Erlernung, unmöglich sein u. auch bei einer solchen bleibt jede Sprache für sich, <hi rend="unknown" rendition="#none">eint</hi> sich also nicht. Mir scheint es, als ob bei diesen Kreolensprachen drei Erscheinungen vorkommen: 1) eine Uebernahme der Kultur- oder herrschenden Sprache, die dann aber verderbt wird, wie in den obigen Beispielen aus La Selve<note n="10" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Edgar La Selve</persName>, s. o.</note> u. wie, im Großen, bei der Entstehung der <ref target="https://gams.uni-graz.at/o:hsa.languages#L.863">roman. Sprachen</ref> der Fall war. Daß sich aus einer solchen Zertrümmerung dann wieder ein Wunderbau wie das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">Französ</ref>., das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">Ital</ref>. u. s. w. bilden konnte, das liegt in der außerordentlichen logischen Leistungsfähigkeit eines ganzen <hi rend="unknown" rendition="#none">Volkes</hi>; ein Einzelner kann das nicht schaffen, wohl aber eine Reihe von Generationen, eine große Summe von Individuen, welche durch Summirung der einzelnen Kräfte oder besten der Kräfte der Einzelnen allmählich aus dem Zerstörten wieder ein Neues schaffen. Hierbei kommt das, was man Sprachgefühl der Völker nennt, zur Geltung, u. was doch weiter nichts ist, als die Regelung der psychophysischen Sprachfähigkeit u. ihrer unwillkürlichen Auslösungen u. Wirkungen auch den logischen Gesetzen, welche bei der gleichen Natur der Psyche überall gleich sind, und dem ganzen intellektuell-ethischen <pb facs="#IMG.6" n="6"/> Bedürfnis des einzelnen Volkes. Dies Bedürfnis beruht allerdings vielfach auf Gewöhnung d. h. Vererbung, wie ja der Sprachbau der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4183">Indogerm</ref>. anders ist als der amerikanische u. s. w. Dies Bedürfnis kann sich mit der Zeit d. h. mit der Entwickelung der Völker ändern. Cf. das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.653">Finnische</ref> im Vergl. z. B. zum Samojedischen oder das heut. Indogermanisch mit sehr viel früheren Stufen desselben u. s. w. – Bei dieser Art der Bildung v. Kreolensprachen bleibt im wesentlichen auch die „innere Sprachform“ der Kultur in der herrschenden Sprache; der Hauptbildner ist hierbei das <hi rend="unknown" rendition="#none">herrschende</hi> Volk, dem sich das geringere Volk wohl oder übel fügt.</p>
+            <p>2) Nun kann aber auch der Bildner das untergeordnete Volk sein, indem es die neue Sprache nur zu seinem Bedürfnis verwendet, um [sich] überhaupt seinen Herren verständlich zu machen. Dann behält es seine eigene Sprach<hi rend="unknown" rendition="#none">form</hi> bei, nimmt nur die signifikanten Lautgruppen d. h. Worte der anderen Sprache herüber u. accomodirt sie. So die Beispiele, welche Sie mir anführen: <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">moi ca manger, moi manger</hi>
+               </foreign>. Das kann der Amerikaner nicht: denn seiner inneren Sprachform, dieser seltsamen Polysynthese, fügen sich andere Worbildungen, als seine eigenen, nicht, u. wenn er hier u. da dennoch fremde Worte aufnimmt, so bleibt das ganze immer indianisch, weil sich die indianische Bildungsweise als solche sofort kennzeichnet, während die Bildungsweise der afrik. Sprachen viel mehr mit den unsrigen übereinstimmt. Bei dieser Erscheinung ist zunächst zu beachten, daß überhaupt in der Sprachgeschichte die Worte verhältnismäßig wechselnd, vergänglich sind, man kann sie den fallenden u. neu wachsenden Blättern eines immergrünen Baumes vergleichen; namentlich rasch aber wechseln die Worte bei den Naturvölkern, <pb facs="#IMG.7" n="7"/> wenn ich auch keineswegs diese Erscheinung übertreiben will. Denn diese Sprachenflucht, welche jetzt anzunehmen bei manchen Ethnologen Mode wird u. da die sogar ein Lepsius mir unbegreiflich glaubt (Einl. Nubergrammatik),<note n="11" place="foot" type="editorial">Carl Richard Lepsius, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6524">
+                        <hi rend="unknown" rendition="#none">Nubische Grammatik mit einer Einleitung über die Völker und Sprachen Afrika's</hi>
+                     </ref>
+                  </bibl>, Berlin: Hertz, 1880.</note> ist wissenschaftlich völlig unhaltbar. Ferner ist hier zu beachten, wie außerordentlich gleichmäßig die Grundelemente – ich meine die formalen – <hi rend="unknown" rendition="#none">aller</hi> menschlichen Sprachen sind, meist auch, mit Ausnahme der amerikanischen, ihre Verwendung. Wortreihen wie: ich das essen = ich esse das; ich essen = ich will essen u. s. w. verstehen wir u. der Afrikaner u. der Polynesier u. der Chinese ungefähr gleich gut, der Amerikaner nicht. Durch diese verhälnism. geringe Bedeutung des Wort<hi rend="unknown" rendition="#none">
+lautes</hi>, durch diese Gleichmäßigkeit der formalen Sprachelemente ist die Entstehung dieser Kreolenjargons wohl begreiflich, es sind keine zwei Sprachen gleichwertig <hi rend="unknown" rendition="#none">geeint</hi>, sondern die eine bleibt als Körper, über welche die andere das Gewand der Lautung zieht. Und meistens werden diese herübergenommenen Worte auch noch derb verstümmelt. – Auch die modernen Kultursprachen nehmen Fremdwörter auf, die sie nach ihrer Art umwandeln. Namentlich das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.891">Englische</ref> scheint mir hier beachtenswert, mit seiner ganzen Sprachbildung, mit seinen Neuschöpfungen wie „Bus“ für Omnibus u. s. w. Auch die Neubildung v. Worten wie Gas oder die Namen der neuen physischen Maaße nach Personennamen, die dann noch abgekürzt werden, gehören hierher; es bildet sich durch dieselben eine Art internationales Jargon. Und was hier absichtlich, willkürlich geschieht, das geschieht bei den Negern etc unwillkürlich – nicht unabsichtlich – nach den durch lange Vererbung latenten Kräften u. Gesetzen der Sprachbildung. <pb facs="#IMG.8" n="8"/> 3) Können solche Sprachen sich rein als Mischsprachen entwickeln, wie z. B. zwischen Hindus (im weitesten Sinn) und den Europäern, deren Sprachen im ganzen gleiche Stufen haben, gleichwertig sind. Unsre modernen europ. Kultursprachen sind ja Gott lob alle solche Mischsprachen, daher ein internationales Verständnis möglich. Der gleichmäßige Gang der europ. Sprachen, der indischen ist allerdings sehr merkwürdig. Auch werden in jenen beiden anderen kreol. Sprachformen, auch in indian. Jargons, Mischungen nie fehlen. Von besonderer Merkwürdigkeit deucht mich, müßten die Sprachen im malais. Archipel sein, wegen ihrer außerordentlich bunten Mischung u. weil hier wohl <ref target="https://gams.uni-graz.at/o:hsa.languages#L.503">malaiisch</ref>
+               <ref target="https://gams.uni-graz.at/o:hsa.languages#L.917">chines</ref>. Mischungen vorkommen, freilich stets mit malaischer Grundlage. Ich glaube, die 
 
 Tijdschr. for taal land en Volkenkunde van neerlandsch Indie
-<note
-            n="12" place="foot" type="editorial">Vermutlich ist gemeint: 
+<note n="12" place="foot" type="editorial">Vermutlich ist gemeint: 
 
-<hi rend="unknown"
-              rendition="#none">
+<hi rend="unknown" rendition="#none">
 Tijdschrift voor Indische taal-, land- en volkenkunde</hi>
-. <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4057">Koninklijk Bataviaasch Genootschap van Kunsten en Wetenschappen</ref>,1853-1955.</note> enthält einiges Einschlagende, weiß es aber nicht genau. – Auch kann es vorkommen, daß z. B. zwischen Negern u. Chinesen sich ein Kreolen-<hi
-            rend="unknown"
-            rendition="#none">
+. <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4057">Koninklijk Bataviaasch Genootschap van Kunsten en Wetenschappen</ref>,1853-1955.</note> enthält einiges Einschlagende, weiß es aber nicht genau. – Auch kann es vorkommen, daß z. B. zwischen Negern u. Chinesen sich ein Kreolen-<hi rend="unknown" rendition="#none">
 englisch</hi> als Verkehrssprache bildet. Denn ist der Neger im Besitz der englischen Worte u. ihres Sinnes, so wird er sich, wenn er die Laute, die Aussprache versteht, gewiß auch in <ref target="https://gams.uni-graz.at/o:hsa.languages#L.555">
 Pidginerengl</ref>. verständigen können.</p>
-
-        <p>Von einer erstarrten Kindersprache kann also nicht die Rede sein. Ich muß überhaupt gestehen, daß ich mir unter einer solchen nichts denken kann. Uns erscheinen deshalb leicht die nicht flekt. Sprachen kindlich, weil in ihnen viele Beziehungen nicht direkt zur lautlichen oder formalen Darstellung kommen. Allein darum fehlen sie nicht. Und gleichfalls sind sie beschränkter im Vorrat ihrer Begriffs- oder Vorstellungswidergabe, auch wohl in ihrer ganzen begrifflichen Schärfe, und also haben sie manche Analogien mit der Kindersprache. Weiter aber auch nichts. Und namentlich darf man den Begriff Kindersprache nicht anthropologisch fassen, dann wird er ganz falsch. Denn jene Völker sind aber anthropologisch <pb
-            facs="#IMG.9" n="9"/> keine Kinder, sie sind völlig reif entwickelt, in ihrer Denkschärfe oft entwickelter als wir meinen u. von einer physiologischen (anthropologischen) Unfertigkeit, wie sie bei den Kindern statt findet, ist bei Ihnen nicht die Rede.</p>
-        <p>Mein Vortrag in Halle soll das Gut<note n="13" place="foot"
-            type="editorial">Wohl verschrieben für „Gebiet“!</note> der Anthropologie u. Ethnologie etwas strenger auseinander halten, als dies gewöhnlich geschieht. Der Mensch ist, wie jedes Naturobjekt u. namentlich je höher dasselbe entwickelt ist, äußerst variabel. Diese Variationen sind aber unmöglich als feste Normen hinzustellen, nach welchen man sogar die Menschheit genealogisch, also ethnologisch einteilen könnte. Ihren Wert sollen sie behalten, als höchst merkwürdige Erscheinungen der Menschennatur; aber die absolute Herrschaft auch in ethnolog. Einteilungen dürfen sie nicht haben. Und ebenso wird es mir darauf ankommen, den großen ethnol. Wert, die ethnol. Dauerhaftigkeit der Sprache nach ihrer wahren Bedeutung zu betonen. Gerade Ihre Untersuchungen zeigen ja, wie fest die innere Sprachform ist. Ich hoffe, Sie als Sprachforscher werden mir trotz aller roman. Sprachen u. ähnlichen Vorgängen diese Festigkeit der Sprachen, die natürlich keine absolute ist, zugestehen. Natürlich ändert der Wortschatz viel leichter, viel rascher, die innere Form der Sprache nur sehr langsam. Mein Satz ist, wie ich ihn weitläufiger in meinen anthropol. Beiträgen ausgeführt habe (halb bei Niemeyer, den Sie gewiß <pb
-            facs="#IMG.10"
-            n="10"/> auch kennen): Sprachverwandtschaft beweist im graden Verhältnis ihre Stärke für die Nähe der genealog. Verwandtschaft. Nicht-Verwandtschaft des Wortschatzes ja auch der Sprachform spricht nicht gegen einen, dann freilich nur <hi
-            rend="unknown"
-            rendition="#none">sehr</hi> fernen ethnolog. Zusammenhang. Dabei können immer ganze Völker in eine andere Sprache übergegangen sein, dann aber nur durch die gewaltsamsten oder gewaltigsten Mittel. – Es würde mich sehr interessiren, wenn Sie mir die Grundgedanken Ihres Vortrags über Anthropol. u. Ethnol<note
-            n="14" place="foot" type="editorial">Kein Drucknachweis.</note> mitteilen wollten; es würde mich sehr freuen, wenn wir in sprachlicher Gesammtauffassung übereinstimmten. Denn wie viel angenehmer wandelt es sich, wenn es heißt: dieser Weg ist der rechte, den geh ich auch, als wenn einem die Leute stets überraschend u. in anderer Richtung entgegen gehen.</p>
-        <p>Das Werk v. Nogueira <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6176">A raça negra</ref>
-          </bibl>
-          <note n="15" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6176">Antonio F. Nogueira, <hi
-                  rend="unknown" rendition="#none">A raça negra sob o ponto de vista da civilisação da Africa; usos e costumes de alguns povos gentilicos do interior de Mossamedes</hi>
-              </ref>
-            </bibl>, Lisboa: Typ. Nova Minerva, 1880.</note> kenn ich nicht, möchte‘ es aber kennen lernen, wann, und, wes Inhalts ist es erschienen?</p>
-        <p>Nun leben Sie wohl. Fast fürcht‘ ich, Sie rufen schmerzvoll schon längst: Die ich rief, die Geister!<note
-            n="16" place="foot" type="editorial">J. W. Goethe, „Der Zauberlehrling“: <hi rend="unknown" rendition="#none">Die ich rief, die Geister Werd ich nun nicht los</hi>.</note> Aber jetzt sollen Sie mich auch los werden, doch hoff‘ ich nicht für immer. Ihre Arbeit interessirt mich sehr, u. möchte‘ ich gern von Ihnen wieder hören.</p>
-        <closer>
-          <salute>Mit besten Grüßen<lb/> Ihr ergebenster<lb/>
-          </salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1572">G. Gerland</persName>
-          </signed>
-          <lb/>
-        </closer>
-        <dateline>Straßb. 17/3 82</dateline>
-      </div>
-    </body>
-  </text>
+            <p>Von einer erstarrten Kindersprache kann also nicht die Rede sein. Ich muß überhaupt gestehen, daß ich mir unter einer solchen nichts denken kann. Uns erscheinen deshalb leicht die nicht flekt. Sprachen kindlich, weil in ihnen viele Beziehungen nicht direkt zur lautlichen oder formalen Darstellung kommen. Allein darum fehlen sie nicht. Und gleichfalls sind sie beschränkter im Vorrat ihrer Begriffs- oder Vorstellungswidergabe, auch wohl in ihrer ganzen begrifflichen Schärfe, und also haben sie manche Analogien mit der Kindersprache. Weiter aber auch nichts. Und namentlich darf man den Begriff Kindersprache nicht anthropologisch fassen, dann wird er ganz falsch. Denn jene Völker sind aber anthropologisch <pb facs="#IMG.9" n="9"/> keine Kinder, sie sind völlig reif entwickelt, in ihrer Denkschärfe oft entwickelter als wir meinen u. von einer physiologischen (anthropologischen) Unfertigkeit, wie sie bei den Kindern statt findet, ist bei Ihnen nicht die Rede.</p>
+            <p>Mein Vortrag in Halle soll das Gut<note n="13" place="foot" type="editorial">Wohl verschrieben für „Gebiet“!</note> der Anthropologie u. Ethnologie etwas strenger auseinander halten, als dies gewöhnlich geschieht. Der Mensch ist, wie jedes Naturobjekt u. namentlich je höher dasselbe entwickelt ist, äußerst variabel. Diese Variationen sind aber unmöglich als feste Normen hinzustellen, nach welchen man sogar die Menschheit genealogisch, also ethnologisch einteilen könnte. Ihren Wert sollen sie behalten, als höchst merkwürdige Erscheinungen der Menschennatur; aber die absolute Herrschaft auch in ethnolog. Einteilungen dürfen sie nicht haben. Und ebenso wird es mir darauf ankommen, den großen ethnol. Wert, die ethnol. Dauerhaftigkeit der Sprache nach ihrer wahren Bedeutung zu betonen. Gerade Ihre Untersuchungen zeigen ja, wie fest die innere Sprachform ist. Ich hoffe, Sie als Sprachforscher werden mir trotz aller roman. Sprachen u. ähnlichen Vorgängen diese Festigkeit der Sprachen, die natürlich keine absolute ist, zugestehen. Natürlich ändert der Wortschatz viel leichter, viel rascher, die innere Form der Sprache nur sehr langsam. Mein Satz ist, wie ich ihn weitläufiger in meinen anthropol. Beiträgen ausgeführt habe (halb bei Niemeyer, den Sie gewiß <pb facs="#IMG.10" n="10"/> auch kennen): Sprachverwandtschaft beweist im graden Verhältnis ihre Stärke für die Nähe der genealog. Verwandtschaft. Nicht-Verwandtschaft des Wortschatzes ja auch der Sprachform spricht nicht gegen einen, dann freilich nur <hi rend="unknown" rendition="#none">sehr</hi> fernen ethnolog. Zusammenhang. Dabei können immer ganze Völker in eine andere Sprache übergegangen sein, dann aber nur durch die gewaltsamsten oder gewaltigsten Mittel. – Es würde mich sehr interessiren, wenn Sie mir die Grundgedanken Ihres Vortrags über Anthropol. u. Ethnol<note n="14" place="foot" type="editorial">Kein Drucknachweis.</note> mitteilen wollten; es würde mich sehr freuen, wenn wir in sprachlicher Gesammtauffassung übereinstimmten. Denn wie viel angenehmer wandelt es sich, wenn es heißt: dieser Weg ist der rechte, den geh ich auch, als wenn einem die Leute stets überraschend u. in anderer Richtung entgegen gehen.</p>
+            <p>Das Werk v. Nogueira <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6176">A raça negra</ref>
+               </bibl>
+               <note n="15" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6176">Antonio F. Nogueira, <hi rend="unknown" rendition="#none">A raça negra sob o ponto de vista da civilisação da Africa; usos e costumes de alguns povos gentilicos do interior de Mossamedes</hi>
+                     </ref>
+                  </bibl>, Lisboa: Typ. Nova Minerva, 1880.</note> kenn ich nicht, möchte‘ es aber kennen lernen, wann, und, wes Inhalts ist es erschienen?</p>
+            <p>Nun leben Sie wohl. Fast fürcht‘ ich, Sie rufen schmerzvoll schon längst: Die ich rief, die Geister!<note n="16" place="foot" type="editorial">J. W. Goethe, „Der Zauberlehrling“: <hi rend="unknown" rendition="#none">Die ich rief, die Geister Werd ich nun nicht los</hi>.</note> Aber jetzt sollen Sie mich auch los werden, doch hoff‘ ich nicht für immer. Ihre Arbeit interessirt mich sehr, u. möchte‘ ich gern von Ihnen wieder hören.</p>
+            <closer>
+               <salute>Mit besten Grüßen<lb/> Ihr ergebenster<lb/>
+               </salute>
+               <signed>
+                  <persName ref="[authorityLink]">G. Gerland</persName>
+               </signed>
+               <lb/>
+            </closer>
+            <dateline>Straßb. 17/3 82</dateline>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

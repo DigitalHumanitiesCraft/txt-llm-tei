@@ -1,312 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Henri Gaidoz (074-SG13)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Magdalena</forename>
-            <surname>Rattey</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5229" type="PID">o:hsa.letter.5229</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">074-SG13</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</repository>
-            <idno type="shelfmark">SG13</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" ref="http://sws.geonames.org/2918752">Gotha</origPlace>
-              <origDate ana="dcterms:created" when="1896-01-28">1896-01-28</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Magdalena</forename>
-              <surname>Rattey</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Henri Gaidoz</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1541"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5229">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" key="#GID.1" ref="http://sws.geonames.org/2918752">Gotha</placeName>
-          <date when="1896-01-28">1896-01-28</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1541" ref="https://viaf.org/viaf/9972548">
-            <forename>Henri</forename>
-            <surname>Gaidoz</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Gotha</settlement>
-                <name ref="http://geonames.org/2918752" type="fcode:PPLA3">Gotha</name>
-                <location>
-                  <geo>10.70193,50.94823</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1541" type="context">
-                        Korrespondenz Hugo Schuchardt - Henri Gaidoz
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5467" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Budapesti Hírlap</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5229" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5229" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5229" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5229" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5229" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5229" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <pb facs="#IMG.2" n="2"/>
-        <dateline>Gotha, Siebleberstr. 33. <lb/> 28. Jänner 96</dateline>
-        <opener>Hochgeehrter Herr und Freund,</opener>
-
-        <p>Jene Vorschrift für die Civilbeamten von Elsass-Lothringen, auf die Sie sich bezogen, habe ich trotz verschiedenartiger Bemühungen noch nicht zu Gesicht bekommen können, und bis das geschehen sein wird, will ich die Sache nicht für abgethan erachten. Inzwischen muss ich Ihnen doch mittheilen dass ein mir befreundeter Rath im hiesigen Ministerium die reichsländischen Verordnungen eingesehen und Nichts bezügliches gefunden hat, und dass eine eben eingetroffene Korrespondenzkarte aus Strassburg schon desshalb die Sache in Frage stellt, weil sich die Wirkungen einer solchen <pb
-            facs="#IMG.3"
-            n="3"/> Vorschrift doch der Oeffentlichkeit nicht entziehen könnten. Man denke aber nicht daran, <hi
-            rend="unknown" rendition="#none">Louis</hi> in <hi rend="unknown"
-            rendition="#none">Ludwig</hi> umzuändern oder <hi rend="unknown"
-            rendition="#none">Stifvatèr, Kablé, Guerber</hi> u.s.w. zu regermanisiren.<note n="1" place="foot"
-              type="editorial">Dies schrieb <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1649">Gustav Gröber</persName> Hugo Schuchardt in einer Korrespondenzkarte (Bibl. Nr. 04087) vom <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.5905">26. Jänner 1898</ref> aus <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.499">
-Straßburg</placeName>.</note> Sie werden aber zugeben dass wir einer grossen Versuchung widerstehen wenn wir die für uns lächerlichen Akzente belassen. Ich selbst habe z.B. den Namen des bekannten Pfarrers <hi
-            rend="unknown"
-            rendition="#none">
-Guerber</hi> in den Zeitungen immer nur so geschrieben gefunden. Wir sind übrigens auch mit den Namen der seit Jahrhunderten unter uns wohnenden französischen Familien viel toleranter verfahren als die Franzosen mit denen der deutschen; es ist uns nicht eingefallen <hi
-            rend="unknown" rendition="#none">Düboa </hi>für <hi rend="unknown"
-            rendition="#none">Dubois </hi>u.s.w. zu schreiben. <pb facs="#IMG.4"
-            n="4"/> Was mich betrifft, so wird Sie vielleicht der Satz über meine Unparteilichkeit beruhigen den ich einem für eine magyarische Zeitschrift bestimmten Artikel<note
-            n="2" place="foot"
-              type="editorial">Möglicherweise ist die Referenz dazu Schuchardt, Hugo. 1896. 'A keresztnevek 'fordítása''. In <hi
-              rend="unknown" rendition="#none">Magyar Nyelvőr</hi> 25: 97-107. [Archiv-/Breviernummer: <ref
-              target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.651">302</ref>]. Dieser Artikel schließt sich an Schuchardts <hi
-              rend="unknown" rendition="#none">Sind unserer Personennamen übersetzbar?</hi> [Archiv-/Breviernummer: <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.655">290</ref>] an.</note> eingefügt habe: </p>
-
-        <p>"Wenn ich in Erfahrung bringen sollte dass man im Elsass gegen französische oder in Posen gegen polnische Taufnamen einen gleichen gesetzmässigen Krieg führte, so würde ich ebenso von <hi
-            rend="unknown" rendition="#none">deutschem Chauvinismus</hi> reden, wie ich jetzt von <hi rend="unknown" rendition="#none">magyarischem</hi> rede."</p>
-        <p>Es ist jetzt in Paris ein Buch erschienen, bei Léon Challey, von <hi rend="unknown"
-            rendition="#none">Raoul Chélard</hi>, <hi rend="unknown" rendition="#none">La Hongrie millénaire</hi>
-          <note n="3" place="foot" type="editorial">Chélard, Raoul. 1896. <hi rend="unknown" rendition="#none">
-              <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5229" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <pb facs="#IMG.2" n="2"/>
+            <dateline>Gotha, Siebleberstr. 33. <lb/> 28. Jänner 96</dateline>
+            <opener>Hochgeehrter Herr und Freund,</opener>
+            <p>Jene Vorschrift für die Civilbeamten von Elsass-Lothringen, auf die Sie sich bezogen, habe ich trotz verschiedenartiger Bemühungen noch nicht zu Gesicht bekommen können, und bis das geschehen sein wird, will ich die Sache nicht für abgethan erachten. Inzwischen muss ich Ihnen doch mittheilen dass ein mir befreundeter Rath im hiesigen Ministerium die reichsländischen Verordnungen eingesehen und Nichts bezügliches gefunden hat, und dass eine eben eingetroffene Korrespondenzkarte aus Strassburg schon desshalb die Sache in Frage stellt, weil sich die Wirkungen einer solchen <pb facs="#IMG.3" n="3"/> Vorschrift doch der Oeffentlichkeit nicht entziehen könnten. Man denke aber nicht daran, <hi rend="unknown" rendition="#none">Louis</hi> in <hi rend="unknown" rendition="#none">Ludwig</hi> umzuändern oder <hi rend="unknown" rendition="#none">Stifvatèr, Kablé, Guerber</hi> u.s.w. zu regermanisiren.<note n="1" place="foot" type="editorial">Dies schrieb <persName ref="[authorityLink]">Gustav Gröber</persName> Hugo Schuchardt in einer Korrespondenzkarte (Bibl. Nr. 04087) vom <ref target="https://gams.uni-graz.at/o:hsa.letter.5905">26. Jänner 1898</ref> aus <placeName ref="[authorityLink]">
+Straßburg</placeName>.</note> Sie werden aber zugeben dass wir einer grossen Versuchung widerstehen wenn wir die für uns lächerlichen Akzente belassen. Ich selbst habe z.B. den Namen des bekannten Pfarrers <hi rend="unknown" rendition="#none">
+Guerber</hi> in den Zeitungen immer nur so geschrieben gefunden. Wir sind übrigens auch mit den Namen der seit Jahrhunderten unter uns wohnenden französischen Familien viel toleranter verfahren als die Franzosen mit denen der deutschen; es ist uns nicht eingefallen <hi rend="unknown" rendition="#none">Düboa </hi>für <hi rend="unknown" rendition="#none">Dubois </hi>u.s.w. zu schreiben. <pb facs="#IMG.4" n="4"/> Was mich betrifft, so wird Sie vielleicht der Satz über meine Unparteilichkeit beruhigen den ich einem für eine magyarische Zeitschrift bestimmten Artikel<note n="2" place="foot" type="editorial">Möglicherweise ist die Referenz dazu Schuchardt, Hugo. 1896. 'A keresztnevek 'fordítása''. In <hi rend="unknown" rendition="#none">Magyar Nyelvőr</hi> 25: 97-107. [Archiv-/Breviernummer: <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.651">302</ref>]. Dieser Artikel schließt sich an Schuchardts <hi rend="unknown" rendition="#none">Sind unserer Personennamen übersetzbar?</hi> [Archiv-/Breviernummer: <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.655">290</ref>] an.</note> eingefügt habe: </p>
+            <p>"Wenn ich in Erfahrung bringen sollte dass man im Elsass gegen französische oder in Posen gegen polnische Taufnamen einen gleichen gesetzmässigen Krieg führte, so würde ich ebenso von <hi rend="unknown" rendition="#none">deutschem Chauvinismus</hi> reden, wie ich jetzt von <hi rend="unknown" rendition="#none">magyarischem</hi> rede."</p>
+            <p>Es ist jetzt in Paris ein Buch erschienen, bei Léon Challey, von <hi rend="unknown" rendition="#none">Raoul Chélard</hi>, <hi rend="unknown" rendition="#none">La Hongrie millénaire</hi>
+               <note n="3" place="foot" type="editorial">Chélard, Raoul. 1896. <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 L’Autriche-Hongrie. II. La Hongrie millénaire.
 </bibl>
-            </hi> Paris: L. Chailley.</note> das ich im <hi rend="unknown" rendition="#none">Budapesti Hírlap</hi>
-          <note n="4" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5467">Budapesti Hírlap</ref>
-            </hi> (ungar.<hi rend="unknown"
-              rendition="#none"> hírlap</hi> dt. ‚Tageszeitung‘) war eine unabhänige, nationalistisch ausgerichtete, <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.5936">ungarische</placeName> Tagszeitung, die von 1881-1938 in Budapest erschien. (Vgl. z.B. <bibl>
+                  </hi> Paris: L. Chailley.</note> das ich im <hi rend="unknown" rendition="#none">Budapesti Hírlap</hi>
+               <note n="4" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5467">Budapesti Hírlap</ref>
+                  </hi> (ungar.<hi rend="unknown" rendition="#none"> hírlap</hi> dt. ‚Tageszeitung‘) war eine unabhänige, nationalistisch ausgerichtete, <placeName ref="[authorityLink]">ungarische</placeName> Tagszeitung, die von 1881-1938 in Budapest erschien. (Vgl. z.B. <bibl>
 
 Tezla
 </bibl> 1970: 704; <bibl>
 
 Buzinkay
-</bibl> 2006: 1959f.). Vgl. die ausführlichere Anmerkung zum Brief vom 31. Dezember 1898 (<ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5256">096-SG22</ref>).</note> aus<pb facs="#IMG.5" n="5"/>führlich besprochen sehe. Er nimmt die Magyaren gegen die Nichtmagyaren in Schutz; man hätte 1868 in der ersten Hitze ein Nationalitätengesetz geschafften das man nicht zur buchstäblichen Ausführung bringen könnte, weil sonst ein Babel entstünde. Der Gedanke dass das Einzige was dann zu thun sein würde, die Aufhebung dieses Nationalitätengesetzes wäre, scheint dem Verfasser nicht gekommen zu sein. Schauen Sie sich doch das Buch an, und korrigieren Sie die Prinzipien des Verfassers!</p>
-        <p>Erfreuen Sie mich bald wieder einmal mit einem Briefe. Ich bin seit Weihnachten hier bei meiner Mutter, die schwer erkrankt war, der es jetzt aber etwas besser geht. Hoffentlich brauche ich nur noch kurze Zeit hier zu bleiben.</p>
-        <closer>
-          <salute>Mit herzlichem Gruss</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Hugo Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+</bibl> 2006: 1959f.). Vgl. die ausführlichere Anmerkung zum Brief vom 31. Dezember 1898 (<ref target="https://gams.uni-graz.at/o:hsa.letter.5256">096-SG22</ref>).</note> aus<pb facs="#IMG.5" n="5"/>führlich besprochen sehe. Er nimmt die Magyaren gegen die Nichtmagyaren in Schutz; man hätte 1868 in der ersten Hitze ein Nationalitätengesetz geschafften das man nicht zur buchstäblichen Ausführung bringen könnte, weil sonst ein Babel entstünde. Der Gedanke dass das Einzige was dann zu thun sein würde, die Aufhebung dieses Nationalitätengesetzes wäre, scheint dem Verfasser nicht gekommen zu sein. Schauen Sie sich doch das Buch an, und korrigieren Sie die Prinzipien des Verfassers!</p>
+            <p>Erfreuen Sie mich bald wieder einmal mit einem Briefe. Ich bin seit Weihnachten hier bei meiner Mutter, die schwer erkrankt war, der es jetzt aber etwas besser geht. Hoffentlich brauche ich nur noch kurze Zeit hier zu bleiben.</p>
+            <closer>
+               <salute>Mit herzlichem Gruss</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Hugo Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

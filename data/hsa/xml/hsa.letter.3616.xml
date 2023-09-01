@@ -1,392 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Émile Trouette an Hugo Schuchardt (03-11847)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">
-            <forename>Émile</forename>
-            <surname>Trouette</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Martina</forename>
-            <surname>Pelz</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3616" type="PID">o:hsa.letter.3616</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">03-11847</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11847</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="fr"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">
-                <forename>Émile</forename>
-                <surname>Trouette</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="12" unit="pages">12 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" ref="http://sws.geonames.org/2988507">Paris</origPlace>
-              <origDate ana="dcterms:created" when="1882-10-17">1882-10-17</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Martina</forename>
-              <surname>Pelz</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Émile Trouette und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2884"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3616">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2884" ref="https://viaf.org/viaf/194120079">
-            <forename>Émile</forename>
-            <surname>Trouette</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" key="#GID.1" ref="http://sws.geonames.org/2988507">Paris</placeName>
-          <date when="1882-10-17">1882-10-17</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Paris</settlement>
-                <name ref="http://geonames.org/2988507" type="fcode:PPLC">Paris</name>
-                <location>
-                  <geo>2.3488,48.85341</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2884" type="context">
-                        Korrespondenz Émile Trouette - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="fr">Französisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.11">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3616" xml:id="IMG.12">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3616" xml:lang="fr">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Paris, le 17 octobre 1882</dateline>
-        <opener>
-          <note n="1" place="foot"
-              type="editorial">In diesem Brief (Bibl.-Nr. 3-11847) und im folgenden Brief (Bibl.-Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.3618">4-11848</ref>) beantwortet Trouette systematisch die Fragen Schuchardts, die Trouette schließlich in Brief Nr. 4-11848 (ab S. 9) als Beilage hinzufügt.</note>Monsieur,</opener>
-        <p>Vous savez reconnaître des gallicismes dans le créole de M. Héry;<note n="2" place="foot"
-              type="editorial">Als Beilage zu Trouettes Brief mit der Lfd. Nr. <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.3618">04-11848</ref> gingen Schuchardts Fragen zur Morphosyntax des Réunion-Kreols kommentiert zurück an Schuchardt. In diesen Fragen bezieht sich Schuchardt mehrfach auf von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1753">Héry</persName> angeführtes Sprachmaterial und stellt kritisch in Frage, ob dieses nicht erhebliche Gallizismen aufweise.</note> je me demande si j’ai quelque chose à vous apprendre. Je vais néanmoins répondre à chacune des questions de votre lettre. C’est bien moi qui ai fourni à mon cousin Julien Vinson,<note
-            n="3" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2939">Julien Vinson</persName> (1843-1926), französischer Linguist und Cousin Trouettes, der sich in erster Linie mit indischen Sprachen und dem <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.837">Baskischen</ref> beschäftigt hat. Er war auch ein Korrespondenzpartner Schuchardts (Bibl. Nr. <ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.2939">12444-12480</ref>).</note> parent au même degré par conséquent de mon beau-frère Auguste Vinson, le morceau qui a paru dans la Revue de linguistique<note
-            n="4" place="foot" type="editorial">Julien Vinson (1882): <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1934">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.12" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3616" xml:lang="fr">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Paris, le 17 octobre 1882</dateline>
+            <opener>
+               <note n="1" place="foot" type="editorial">In diesem Brief (Bibl.-Nr. 3-11847) und im folgenden Brief (Bibl.-Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.3618">4-11848</ref>) beantwortet Trouette systematisch die Fragen Schuchardts, die Trouette schließlich in Brief Nr. 4-11848 (ab S. 9) als Beilage hinzufügt.</note>Monsieur,</opener>
+            <p>Vous savez reconnaître des gallicismes dans le créole de M. Héry;<note n="2" place="foot" type="editorial">Als Beilage zu Trouettes Brief mit der Lfd. Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.3618">04-11848</ref> gingen Schuchardts Fragen zur Morphosyntax des Réunion-Kreols kommentiert zurück an Schuchardt. In diesen Fragen bezieht sich Schuchardt mehrfach auf von <persName ref="[authorityLink]">Héry</persName> angeführtes Sprachmaterial und stellt kritisch in Frage, ob dieses nicht erhebliche Gallizismen aufweise.</note> je me demande si j’ai quelque chose à vous apprendre. Je vais néanmoins répondre à chacune des questions de votre lettre. C’est bien moi qui ai fourni à mon cousin Julien Vinson,<note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Julien Vinson</persName> (1843-1926), französischer Linguist und Cousin Trouettes, der sich in erster Linie mit indischen Sprachen und dem <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">Baskischen</ref> beschäftigt hat. Er war auch ein Korrespondenzpartner Schuchardts (Bibl. Nr. <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2939">12444-12480</ref>).</note> parent au même degré par conséquent de mon beau-frère Auguste Vinson, le morceau qui a paru dans la Revue de linguistique<note n="4" place="foot" type="editorial">Julien Vinson (1882): <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1934">
 Un échantillon du patois créole-français du Mozambique</ref>
-            </bibl>, in: Revue de linguistique et de philologie comparée 15, 330-332. Schuchardt nahm auf diesen Artikel in seiner Schrift « <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.454">Sur le créole de la Réunion </ref>
-
-            </bibl>» (Schuchardt 1882) Bezug. </note> du 15 juillet dernier, morceau que je tenais, je vous l’ai dit, de mon élève et ami Fréderic Legras. Les différences que vous avez remarquées entre le texte de la Revue et celui de ma lettre viennent de mon cousin. Je n’aurais pas dit Nègre malgache, l’expression étant inusitée chez nous, où l’on dit Noir malgache ou plutôt Malgache tout court, et <pb
-            facs="#IMG.2" n="2"/> surtout parce que les Nègres appartiennent à l’Afrique continentale et non pas à l’île de Madagascar. Un autre motif encore, c’est qu’il s’agissait d’un morceau de créole mozambique et non de créole malgache. Je n’aurais pas dit (comme dans le titre) patois créole français du Mozambique, puisque je donnais du créole mozambique de Bourbon. – Mon cousin a traduit rampangou par pas du tout, quand le mot signifie riz brûlé. – Le spécimen assez développé qu’annonce la note signée J.V. placée sous le titre est précisément le récit du Chat botté que j’ai donné à mon parent, comme je le donne à vous, Monsieur. (Entre parenthèse ici pour que je ne l’oublie pas, le mot Nègre est une injure, Négresse ne l’est pas)</p>
-
-        <p>Votre lettre parle de bourbonnais pur, elle dit : Dans le bourbonnais, on intercale après un pronom sujet etc. Ceci me fait craindre que vous ne cherchiez dans notre créole des usages plus constants que ceux qui peuvent <pb
-            facs="#IMG.3" n="3"/> exister. Je crois que nous avons à nous préoccuper des faits beaucoup plus qu’à les expliquer, à les coordonner. Les règles sont ici peu de chose, quoiqu’il y ait une manière générale, chacun parle à peu près comme il l’entend. C’est pour cela que j’ai laissé dans mes textes ces inconséquences qui se présentaient sous ma plume ; il me suffisait qu’elles fussent parfaitement créoles ; je tenais même à les présenter, pour qu’elles fussent constatées ; mais j’ai eu tort de ne pas les mettre dans la bouche d’individus différents, chaque individu devant être bien certainement plus conséquent avec lui-même qu’avec les autres.</p>
-
-        <p>S’il m’était permis d’employer de très grands mots pour de très-petites choses, je dirais que nous avons notre langue et nos dialectes, en faisant descendre ce dernier mot jusqu’aux habitudes particulières aux petits groupes qui se rencontrent dans certaines communes ; ces nuances, je sais qu’elles existent, mais il me serait à peu près impossible de les exposer. <pb
-            facs="#IMG.4"
-            n="4"/> Une autre difficulté consisterait à donner du créole mozambique pur et du créole malgache pur.<note
-            n="5" place="foot" type="editorial">Für weitere Informationen zur Geschichte und Bevölkerungsstruktur, siehe Information Herland und Vaxelaire, Daniel (1999): <bibl>
+                  </bibl>, in: Revue de linguistique et de philologie comparée 15, 330-332. Schuchardt nahm auf diesen Artikel in seiner Schrift « <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.454">Sur le créole de la Réunion </ref>
+                  </bibl>» (Schuchardt 1882) Bezug. </note> du 15 juillet dernier, morceau que je tenais, je vous l’ai dit, de mon élève et ami Fréderic Legras. Les différences que vous avez remarquées entre le texte de la Revue et celui de ma lettre viennent de mon cousin. Je n’aurais pas dit Nègre malgache, l’expression étant inusitée chez nous, où l’on dit Noir malgache ou plutôt Malgache tout court, et <pb facs="#IMG.2" n="2"/> surtout parce que les Nègres appartiennent à l’Afrique continentale et non pas à l’île de Madagascar. Un autre motif encore, c’est qu’il s’agissait d’un morceau de créole mozambique et non de créole malgache. Je n’aurais pas dit (comme dans le titre) patois créole français du Mozambique, puisque je donnais du créole mozambique de Bourbon. – Mon cousin a traduit rampangou par pas du tout, quand le mot signifie riz brûlé. – Le spécimen assez développé qu’annonce la note signée J.V. placée sous le titre est précisément le récit du Chat botté que j’ai donné à mon parent, comme je le donne à vous, Monsieur. (Entre parenthèse ici pour que je ne l’oublie pas, le mot Nègre est une injure, Négresse ne l’est pas)</p>
+            <p>Votre lettre parle de bourbonnais pur, elle dit : Dans le bourbonnais, on intercale après un pronom sujet etc. Ceci me fait craindre que vous ne cherchiez dans notre créole des usages plus constants que ceux qui peuvent <pb facs="#IMG.3" n="3"/> exister. Je crois que nous avons à nous préoccuper des faits beaucoup plus qu’à les expliquer, à les coordonner. Les règles sont ici peu de chose, quoiqu’il y ait une manière générale, chacun parle à peu près comme il l’entend. C’est pour cela que j’ai laissé dans mes textes ces inconséquences qui se présentaient sous ma plume ; il me suffisait qu’elles fussent parfaitement créoles ; je tenais même à les présenter, pour qu’elles fussent constatées ; mais j’ai eu tort de ne pas les mettre dans la bouche d’individus différents, chaque individu devant être bien certainement plus conséquent avec lui-même qu’avec les autres.</p>
+            <p>S’il m’était permis d’employer de très grands mots pour de très-petites choses, je dirais que nous avons notre langue et nos dialectes, en faisant descendre ce dernier mot jusqu’aux habitudes particulières aux petits groupes qui se rencontrent dans certaines communes ; ces nuances, je sais qu’elles existent, mais il me serait à peu près impossible de les exposer. <pb facs="#IMG.4" n="4"/> Une autre difficulté consisterait à donner du créole mozambique pur et du créole malgache pur.<note n="5" place="foot" type="editorial">Für weitere Informationen zur Geschichte und Bevölkerungsstruktur, siehe Information Herland und Vaxelaire, Daniel (1999): <bibl>
 
 Le grand livre de l’histoire de la Réunion
 </bibl>, Sainte-Clotilde, Orphie.</note> Nos diverses races n’ont-elles pas influé les unes sur les autres ? Un enfant cafre n’a-t-il rien appris des Malgaches, un enfant malgache des Cafres, un petit blanc des Cafres et des Malgaches ?</p>
-
-        <p>Nous sommes arrivés, Monsieur, au moment, où il serait dangereux d’attendre plus longtemps pour commencer l’étude que vous avez entreprise. Le créole bourbonnais va disparaître bientôt. Les races qui l’ont créé ne se recrutent plus à leurs patries d’origine, Madagascar et la côte d’Afrique ; elles ne se reproduisent même plus de manière à se perpétuer, le nombre des femmes étant inférieur à celui des hommes, outre que l’oisiveté, la misère, par suite, ne sont guère propres à maintenir les populations. D’autres causes encore amèneraient la disparition du créole. Pour une population de 120.000 <pb
-            facs="#IMG.5" n="5"/> âmes (je ne parle pas de nos 47.000 travailleurs étrangers) nous avons un lycée de 500 élèves et 148 écoles de divers degrés, où le parler se modifie nécessairement pour revenir au français. Un chemin de fer dont on use largement doit aussi exercer son influence sur les différences qui ont pu se maintenir jusqu’ici entre les diverses localités.</p>
-        <p>Je reviens à l’emploi des pronoms, à `l intercalé après un pronom sujet devant une voyelle, ou y devant une consonne. Le créole dit :</p>
-        <p>1. Moi l’appelle à li pour Je l’ai appelé</p>
-        <p>2. Moi y appelle<note n="6" place="foot" type="editorial">Mit Bleistift interlinear: y pelle?</note> à li pour Je l’appelle et je l’appelais </p>
-        <p>3. Moi pèle à li pour je l’appellerai, Je l’appellerais</p>
-        <p>Quel est le verbe ? Est-ce appeler ou peler ?</p>
-
-        <p>Moi péle à li (z) étant certain, ne pourrait-on pas écrire Moi la péle à li(s) ? Les noirs ne disent pas autrement que taraper pour attraper, téler pour atteler, lexandre et <pb
-            facs="#IMG.6" n="6"/> Léquissandre, lexis et Léquissis pour Alexandre et Alexis, et encore doucir, partenir, fûter, gacer, jouter, crocher, compagner, etc. en supprimant la première syllabe qui renferme un a.</p>
-        <p> On dit : li reste, et quelque fois li y reste, avec un y bien sensible. Moi vient est rare.</p>
-        <p>Dans couvéritirou ni çaud, qu’est-ce que ni ? On dit aussi bien, je veux dire aussi souvent : couveritirou li çaud, ou bien : couvéritirou, li ni çaud. Et les Cafres : Li la toumbé, li na toumbé, li nan tonmbé. Le plus sûr dans tout cela est peut-être que c’est la bouteille à l’encre. </p>
-
-        <p> Ça ni bébété la ni fé gaigne à moin malhérou ; on dit aussi bien : ça bébété là fait gaigne etc. Est-il dès lors utile de chercher la valeur des deux ni, qui peuvent n’être que des sons sans aucune signification, des sons émis sans que celui qui les émet <pb
-            facs="#IMG.7" n="7"/> y attache aucune idée, ni même s’en aperçoive ? Je suis certain que si l’on disait à un Cafre : Tu viens de dire : Ca ni bébéte ; qu’entends-tu par ni ? il vous regarderait tout étonné. </p>
-        <p> Admettons un instant que dans Ça ni bébéte, ni se justifie comme mot dépendant de bebête, pourquoi dans ça ni petit manabara, ni ne se justifierait-il pas comme dépendant du substantif manabara, comme dans le petit malabar, ce petit malabar le et ce se rapportent à malabar, bien qu’ils se trouvent placés devant l’adjectif petit ? Mais j’admets plus volontiers que ni n’a très-souvent aucun sens. </p>
-        <p>De même, chez les plus civilises : Bon</p>
-        <p>Dié pini à moin ; chez les Malgaches : Bon Dié y pini à moin ; chez les Cafres : Boun dié ni pini à moin. </p>
-        <p>Moin guetté, ou moin y guetté, moin ni guetté, trois manières usitées. <pb facs="#IMG.8" n="8"/>
-        </p>
-        <p>Certainement Moin la tarapé, moin n’a guetté, à traduire sans se préoccuper d’un complément.</p>
-
-        <p>Na couissi, na cendourou, na comme article. Oui, sans doute le créole ne connaît pas l’article, mais à condition que l’on dise qu’il ne le connaît pas habituellement, qu’il n’en fait pas un usage aussi fréquent que le français ; car il est des cas où l’article est bien évidemment employé, où il serait impossible de s’en passer. Sic, par exemple, on ne dira pas : la toumbé dana la cendourou, mais « la toumbé dana la cendourou ou bien : la toumbé dan’ na cendourou. Quelquefois le créole détermine avec un grand luxe de mots ; il dira : Ça la couissi là. Li na toumbe dana la cendourou. L’article li se trouve souvent devant les substantifs : Pend gara li roce, prenez garde aux roches. Et comme on dirait également : Pend gara à vous roce <pb
-            facs="#IMG.9" n="9"/> le li et le à vous, n’ont peut-être d’autre but que l’éloigner l’articulation r de gare, de la même articulation r de roce, gar ro exigeant un effort que les créoles n’aiment pas.</p>
-        <p>[Quer] : Li lé fouti fe’ ça, oui. Il est homme à faire cela.</p>
-        <p> Fouti a plus d’un sens et s’emploie fréquemment. Li n’a pas fouti, il n’est pas capable ; li lé fouti, il est perdu, ruiné, déconsidéré ; li lé fouti, il est mort ; fouti canaille, canaille au suprême degré ; fouti payé, détestable pays ; fouti moi li camp ou fou moi l’camp, va-t-en ; et d’autres que je ne me rappelle pas dans le moment.</p>
-
-        <p>Pour ce qui est de l’e final, tantôt muet, tantôt fermé dans des verbes, je crois, malgré mon peu de disposition à reconnaître des règles dans le créole, que, si l’on peut en formuler une, c’est celle-ci : l’e est fermé lorsque la prononciation laisse un intervalle entre le verbe et le mot suivant, quel qu’il soit, et muet <pb
-            facs="#IMG.10" n="10"/> lorsque la prononciation est assez rapide pour que le verbe et le mot suivant ne fassent pour ainsi dire qu’un seul mot. Dans li va reste darriére, prononcez : Li va res darrière. La nature de l’e serait donc subordonée aux causes qui peuvent ralentir ou précipiter la prononciation.</p>
-        <p> Ce que je dis des fables de M. Héry ? Exactement ce que vous en dites vous-même, Monsieur ; c’est qu’elles renferment de nombreux gallicismes ; mais je le dis tout bas, parce que je tiens à ne pas bleuer des amis.</p>
-        <p> Encore une phrase créole très usitée : Moi la gagn’ tatane c’matin, ou Moi la gagn’ tatane ci matin, ou Moi la gagn’ tatane a ci matin, ce qui veut dire : J’ai été parvenu ce matin, j’ai quitté mon lit très tard. </p>
-        <p> A tout cela il faudrait ajouter autre chose ; mais qui pourra l’écrire ? <pb facs="#IMG.11" n="11"/>
+            <p>Nous sommes arrivés, Monsieur, au moment, où il serait dangereux d’attendre plus longtemps pour commencer l’étude que vous avez entreprise. Le créole bourbonnais va disparaître bientôt. Les races qui l’ont créé ne se recrutent plus à leurs patries d’origine, Madagascar et la côte d’Afrique ; elles ne se reproduisent même plus de manière à se perpétuer, le nombre des femmes étant inférieur à celui des hommes, outre que l’oisiveté, la misère, par suite, ne sont guère propres à maintenir les populations. D’autres causes encore amèneraient la disparition du créole. Pour une population de 120.000 <pb facs="#IMG.5" n="5"/> âmes (je ne parle pas de nos 47.000 travailleurs étrangers) nous avons un lycée de 500 élèves et 148 écoles de divers degrés, où le parler se modifie nécessairement pour revenir au français. Un chemin de fer dont on use largement doit aussi exercer son influence sur les différences qui ont pu se maintenir jusqu’ici entre les diverses localités.</p>
+            <p>Je reviens à l’emploi des pronoms, à `l intercalé après un pronom sujet devant une voyelle, ou y devant une consonne. Le créole dit :</p>
+            <p>1. Moi l’appelle à li pour Je l’ai appelé</p>
+            <p>2. Moi y appelle<note n="6" place="foot" type="editorial">Mit Bleistift interlinear: y pelle?</note> à li pour Je l’appelle et je l’appelais </p>
+            <p>3. Moi pèle à li pour je l’appellerai, Je l’appellerais</p>
+            <p>Quel est le verbe ? Est-ce appeler ou peler ?</p>
+            <p>Moi péle à li (z) étant certain, ne pourrait-on pas écrire Moi la péle à li(s) ? Les noirs ne disent pas autrement que taraper pour attraper, téler pour atteler, lexandre et <pb facs="#IMG.6" n="6"/> Léquissandre, lexis et Léquissis pour Alexandre et Alexis, et encore doucir, partenir, fûter, gacer, jouter, crocher, compagner, etc. en supprimant la première syllabe qui renferme un a.</p>
+            <p> On dit : li reste, et quelque fois li y reste, avec un y bien sensible. Moi vient est rare.</p>
+            <p>Dans couvéritirou ni çaud, qu’est-ce que ni ? On dit aussi bien, je veux dire aussi souvent : couveritirou li çaud, ou bien : couvéritirou, li ni çaud. Et les Cafres : Li la toumbé, li na toumbé, li nan tonmbé. Le plus sûr dans tout cela est peut-être que c’est la bouteille à l’encre. </p>
+            <p> Ça ni bébété la ni fé gaigne à moin malhérou ; on dit aussi bien : ça bébété là fait gaigne etc. Est-il dès lors utile de chercher la valeur des deux ni, qui peuvent n’être que des sons sans aucune signification, des sons émis sans que celui qui les émet <pb facs="#IMG.7" n="7"/> y attache aucune idée, ni même s’en aperçoive ? Je suis certain que si l’on disait à un Cafre : Tu viens de dire : Ca ni bébéte ; qu’entends-tu par ni ? il vous regarderait tout étonné. </p>
+            <p> Admettons un instant que dans Ça ni bébéte, ni se justifie comme mot dépendant de bebête, pourquoi dans ça ni petit manabara, ni ne se justifierait-il pas comme dépendant du substantif manabara, comme dans le petit malabar, ce petit malabar le et ce se rapportent à malabar, bien qu’ils se trouvent placés devant l’adjectif petit ? Mais j’admets plus volontiers que ni n’a très-souvent aucun sens. </p>
+            <p>De même, chez les plus civilises : Bon</p>
+            <p>Dié pini à moin ; chez les Malgaches : Bon Dié y pini à moin ; chez les Cafres : Boun dié ni pini à moin. </p>
+            <p>Moin guetté, ou moin y guetté, moin ni guetté, trois manières usitées. <pb facs="#IMG.8" n="8"/>
+            </p>
+            <p>Certainement Moin la tarapé, moin n’a guetté, à traduire sans se préoccuper d’un complément.</p>
+            <p>Na couissi, na cendourou, na comme article. Oui, sans doute le créole ne connaît pas l’article, mais à condition que l’on dise qu’il ne le connaît pas habituellement, qu’il n’en fait pas un usage aussi fréquent que le français ; car il est des cas où l’article est bien évidemment employé, où il serait impossible de s’en passer. Sic, par exemple, on ne dira pas : la toumbé dana la cendourou, mais « la toumbé dana la cendourou ou bien : la toumbé dan’ na cendourou. Quelquefois le créole détermine avec un grand luxe de mots ; il dira : Ça la couissi là. Li na toumbe dana la cendourou. L’article li se trouve souvent devant les substantifs : Pend gara li roce, prenez garde aux roches. Et comme on dirait également : Pend gara à vous roce <pb facs="#IMG.9" n="9"/> le li et le à vous, n’ont peut-être d’autre but que l’éloigner l’articulation r de gare, de la même articulation r de roce, gar ro exigeant un effort que les créoles n’aiment pas.</p>
+            <p>[Quer] : Li lé fouti fe’ ça, oui. Il est homme à faire cela.</p>
+            <p> Fouti a plus d’un sens et s’emploie fréquemment. Li n’a pas fouti, il n’est pas capable ; li lé fouti, il est perdu, ruiné, déconsidéré ; li lé fouti, il est mort ; fouti canaille, canaille au suprême degré ; fouti payé, détestable pays ; fouti moi li camp ou fou moi l’camp, va-t-en ; et d’autres que je ne me rappelle pas dans le moment.</p>
+            <p>Pour ce qui est de l’e final, tantôt muet, tantôt fermé dans des verbes, je crois, malgré mon peu de disposition à reconnaître des règles dans le créole, que, si l’on peut en formuler une, c’est celle-ci : l’e est fermé lorsque la prononciation laisse un intervalle entre le verbe et le mot suivant, quel qu’il soit, et muet <pb facs="#IMG.10" n="10"/> lorsque la prononciation est assez rapide pour que le verbe et le mot suivant ne fassent pour ainsi dire qu’un seul mot. Dans li va reste darriére, prononcez : Li va res darrière. La nature de l’e serait donc subordonée aux causes qui peuvent ralentir ou précipiter la prononciation.</p>
+            <p> Ce que je dis des fables de M. Héry ? Exactement ce que vous en dites vous-même, Monsieur ; c’est qu’elles renferment de nombreux gallicismes ; mais je le dis tout bas, parce que je tiens à ne pas bleuer des amis.</p>
+            <p> Encore une phrase créole très usitée : Moi la gagn’ tatane c’matin, ou Moi la gagn’ tatane ci matin, ou Moi la gagn’ tatane a ci matin, ce qui veut dire : J’ai été parvenu ce matin, j’ai quitté mon lit très tard. </p>
+            <p> A tout cela il faudrait ajouter autre chose ; mais qui pourra l’écrire ? <pb facs="#IMG.11" n="11"/>
  C’est tout un langage par le nez ; oui, par le nez, sans que la bouche y soit pour rien, sans une seule articulation. Cette lacune, impossible à combler, est d’autant plus regrettable, que deux créoles ne sont jamais en conversation sans faire un fréquent usage de ce moyen si singulier d’exprimer un grand nombre de pensées. </p>
-        <p> Je n’ai pas de nouvelles de M. Cerisier, mais j’en aurai. </p>
-        <closer>
-          <salute> Je crois, Monsieur, n’avoir négligé aucun point de votre lettre. Permettez-moi de vous la retourner, parce qu’il peut être utile que vous ayez la question à côté de la réponse ; mais vous aurez l’obligeance de me la rendre. Je garde les bonnes choses. </salute>
-          <lb/>
-          <salute> Croyez bien, Monsieur, à mon désir de vous aider jusqu’àu bout et de toutes mes forces. </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">E L Trouette</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Ci – joint <pb facs="#IMG.12" n="12"/> un volume que je vous prie, Monsieur, de vouloir bien accepter ; il contient des renseignements sur le pays dont vous étudiez la langue.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            <p> Je n’ai pas de nouvelles de M. Cerisier, mais j’en aurai. </p>
+            <closer>
+               <salute> Je crois, Monsieur, n’avoir négligé aucun point de votre lettre. Permettez-moi de vous la retourner, parce qu’il peut être utile que vous ayez la question à côté de la réponse ; mais vous aurez l’obligeance de me la rendre. Je garde les bonnes choses. </salute>
+               <lb/>
+               <salute> Croyez bien, Monsieur, à mon désir de vous aider jusqu’àu bout et de toutes mes forces. </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">E L Trouette</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Ci – joint <pb facs="#IMG.12" n="12"/> un volume que je vous prie, Monsieur, de vouloir bien accepter ; il contient des renseignements sur le pays dont vous étudiez la langue.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

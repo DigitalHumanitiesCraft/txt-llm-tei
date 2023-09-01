@@ -1,373 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Theodor Gartner an Hugo Schuchardt (003-03350)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1553">
-            <forename>Theodor</forename>
-            <surname>Gartner</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/6506" type="PID">o:hsa.letter.6506</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">003-03350</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">03350</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1553">
-                <forename>Theodor</forename>
-                <surname>Gartner</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" ref="http://sws.geonames.org/2761368">Wien</origPlace>
-              <origDate ana="dcterms:created" when="1883-11-29">1883-11-29</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2018">2018</date>
-          <title>Die Korrespondenz zwischen Theodor Gartner und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1553"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.6506">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1553" ref="https://viaf.org/viaf/59114592">
-            <forename>Theodor</forename>
-            <surname>Gartner</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" key="#GID.1" ref="http://sws.geonames.org/2761368">Wien</placeName>
-          <date when="1883-11-29">1883-11-29</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <name ref="http://geonames.org/2761368" type="fcode:STM">Wien-Fluss</name>
-                <location>
-                  <geo>16.38409,48.2088</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1553" type="context">
-                        Korrespondenz Theodor Gartner - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.90" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Stellungnahme</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5022" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Académie française</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3347" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Archiv für das Studium der neueren Sprachen und Literaturen</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6506" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6506" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6506" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6506" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.6506" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Verehrter Herr Professor!</opener>
-
-        <p>Die offene Sendung vom 26. d. M. ist gestern abend in meine Hände gelangt. Ich danke verbindlichst für das Zeitungsblatt, das Sie dem Sonderabdrucke gütigst beigelegt hatten.<note
-            n="1" place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.618">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.6506" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Verehrter Herr Professor!</opener>
+            <p>Die offene Sendung vom 26. d. M. ist gestern abend in meine Hände gelangt. Ich danke verbindlichst für das Zeitungsblatt, das Sie dem Sonderabdrucke gütigst beigelegt hatten.<note n="1" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.618">
 Zeitungsdeutsch</ref>
-            </bibl>”, <hi rend="unknown" rendition="#none">
+                  </bibl>”, <hi rend="unknown" rendition="#none">
 Deutsche Zeitung (Wien)</hi>, 24. November 1883. Es handelt sich um eine Rez. von Halatschkas <bibl>
-              <hi rend="unknown" rendition="#none">Zeitungsdeutsch </hi>
-            </bibl>(s. u.), in dem auch Gartner erwähnt wird: „Ich finde bei Herrn <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5605">Halatschka</persName> ,genug beschränkt‘ (Seite 40), eben so wie ,genug groß‘ bei Herrn Gartner, der die Materialien zu dieser Veröffentlichung geliefert hat“.</note> Ich habe daraus nicht nur manches gelernt, sondern leite aus dieser Aufmerksamkeit von Ihnen überdies das Recht ab, Sie mit einer Erwiderung zu belästigen, zu der ich sonst nicht das Herz gehabt hätte. Ein Feuilleton – vermuthlich haben nicht Sie diesen behaglichen Winkel im Blatt ausgewählt – lässt übrigens kaum eine andere als eine briefliche Erwiderung zu; auch kann ich in einem Briefe vieles sagen, was ich unter gar keinen Umständen veröffentlichen dürfte. Lassen Sie mich also anfangen, und legen Sie den Brief immerhin beiseite, wenn er Sie zu unbedeutend oder allzu freimüthig dünkt.</p>
-        <p>Vor allem muss ich einen großen Theil Ihres Tadels auf <hi rend="unknown"
-            rendition="#none">meine</hi> Schultern nehmen. Die Sammelzettel waren ja von <hi rend="unknown"
-            rendition="#none">mir</hi> und für <hi rend="unknown"
-            rendition="#none">mich</hi> geschrieben; sie enthielten ferner nicht nur offenkundige Sprachfehler, sondern auch Beispiele, die ich erst hätte überprüfen wollen, und Beispiele zu Nebenzwecken aber ohne Angabe darüber. Welch reichliche Fehlerquelle für einen Arbeiter, der in den Sammler zu viel Vertrauen setzte! So mag <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5605">Halatschka</persName>
-          <note n="2" place="foot" type="editorial">Raimund Halatschka, <bibl>
-              <hi rend="unknown" rendition="#none">
+                     <hi rend="unknown" rendition="#none">Zeitungsdeutsch </hi>
+                  </bibl>(s. u.), in dem auch Gartner erwähnt wird: „Ich finde bei Herrn <persName ref="[authorityLink]">Halatschka</persName> ,genug beschränkt‘ (Seite 40), eben so wie ,genug groß‘ bei Herrn Gartner, der die Materialien zu dieser Veröffentlichung geliefert hat“.</note> Ich habe daraus nicht nur manches gelernt, sondern leite aus dieser Aufmerksamkeit von Ihnen überdies das Recht ab, Sie mit einer Erwiderung zu belästigen, zu der ich sonst nicht das Herz gehabt hätte. Ein Feuilleton – vermuthlich haben nicht Sie diesen behaglichen Winkel im Blatt ausgewählt – lässt übrigens kaum eine andere als eine briefliche Erwiderung zu; auch kann ich in einem Briefe vieles sagen, was ich unter gar keinen Umständen veröffentlichen dürfte. Lassen Sie mich also anfangen, und legen Sie den Brief immerhin beiseite, wenn er Sie zu unbedeutend oder allzu freimüthig dünkt.</p>
+            <p>Vor allem muss ich einen großen Theil Ihres Tadels auf <hi rend="unknown" rendition="#none">meine</hi> Schultern nehmen. Die Sammelzettel waren ja von <hi rend="unknown" rendition="#none">mir</hi> und für <hi rend="unknown" rendition="#none">mich</hi> geschrieben; sie enthielten ferner nicht nur offenkundige Sprachfehler, sondern auch Beispiele, die ich erst hätte überprüfen wollen, und Beispiele zu Nebenzwecken aber ohne Angabe darüber. Welch reichliche Fehlerquelle für einen Arbeiter, der in den Sammler zu viel Vertrauen setzte! So mag <persName ref="[authorityLink]">Halatschka</persName>
+               <note n="2" place="foot" type="editorial">Raimund Halatschka, <bibl>
+                     <hi rend="unknown" rendition="#none">
 Zeitungsdeutsch</hi>
-
-            </bibl>, Wien: Pichlers Wwe u. Sohn, 1883. Das Buch ist Gartner gewidmet.</note> vieles apodiktisch für falsch erklärt haben; nicht aus <hi
-            rend="unknown" rendition="#none">Unbescheidenheit</hi>, sondern weil er meinte, <hi rend="unknown" rendition="#none">ich</hi> hielte es so sicher für falsch, und weil er in seiner Bescheidenheit eine zu hohe Meinung von mir, seinem ehemaligen Lehrer, hatte. Von Bescheidenheit triefende Redensarten wären freilich billig gewesen, wie Brombeeren.</p>
-        <p>Ihrem Wunsche, dass <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5605">
-Halatschka</persName> alle fehlerhaften und verdächtigen Ausdrücke, Flexionen, Constructionen u.s.w. bis auf ihren Ursprung zurück <hi
-            rend="unknown"
-            rendition="#none">geschichtlich</hi> hätte verfolgen sollen, schließe ich mich an. Aber es muss ja nicht einer alles machen; und mancher andere, z.B. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5604">Andresen</persName>,<note n="3" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5604">Karl Gustav Andresen</persName>, <bibl>
-              <hi rend="unknown" rendition="#none">Sprachgebrauch und Sprachrichtigkeit im Deutschen</hi>
-            </bibl>, Heilbronn: Henninger, 1880 (immer wieder aufgelegt).</note> hat das auch versäumt, ohne dass ihm deshalb ein Kritiker sagt: Du hast wohl davon gar keine Ahnung, dass Du mit einem sprachgeschichtlichen Stoffe hantierst.</p>
-        <p>
-          <pb facs="#IMG.3" n="3"/> „<hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+                  </bibl>, Wien: Pichlers Wwe u. Sohn, 1883. Das Buch ist Gartner gewidmet.</note> vieles apodiktisch für falsch erklärt haben; nicht aus <hi rend="unknown" rendition="#none">Unbescheidenheit</hi>, sondern weil er meinte, <hi rend="unknown" rendition="#none">ich</hi> hielte es so sicher für falsch, und weil er in seiner Bescheidenheit eine zu hohe Meinung von mir, seinem ehemaligen Lehrer, hatte. Von Bescheidenheit triefende Redensarten wären freilich billig gewesen, wie Brombeeren.</p>
+            <p>Ihrem Wunsche, dass <persName ref="[authorityLink]">
+Halatschka</persName> alle fehlerhaften und verdächtigen Ausdrücke, Flexionen, Constructionen u.s.w. bis auf ihren Ursprung zurück <hi rend="unknown" rendition="#none">geschichtlich</hi> hätte verfolgen sollen, schließe ich mich an. Aber es muss ja nicht einer alles machen; und mancher andere, z.B. <persName ref="[authorityLink]">Andresen</persName>,<note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Karl Gustav Andresen</persName>, <bibl>
+                     <hi rend="unknown" rendition="#none">Sprachgebrauch und Sprachrichtigkeit im Deutschen</hi>
+                  </bibl>, Heilbronn: Henninger, 1880 (immer wieder aufgelegt).</note> hat das auch versäumt, ohne dass ihm deshalb ein Kritiker sagt: Du hast wohl davon gar keine Ahnung, dass Du mit einem sprachgeschichtlichen Stoffe hantierst.</p>
+            <p>
+               <pb facs="#IMG.3" n="3"/> „<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 Von</hi>
-          </hi> Zeitungsdeutsch“ zu sagen fällt <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5605">Halatschka</persName> nicht ein; es ist ein Setzfehler (st. <hi
-            rend="unknown" rendition="#none">Vom</hi>), wie wohl die meisten Leser sofort denken werden. (Für den indeclinablen Gebrauch des Wortes „Deutsch“ einen norddeutschen Gewährsmann: K. Sachs, dt.-frz. Wtb.)</p>
-        <p>„<hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">À la minute</hi>
-          </hi>“ ist absichtlich und scherzweis gesagt; auch das dürften die meisten Leser sofort herausgefunden haben.</p>
-        <p>„<hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Genug groß</hi>
-
-          </hi>“, sagen Sie, „macht mir den Eindruck von einem Provincialismus, ja von etwas Undeutschem“ (ich würde gesagt haben „macht <hi
-            rend="unknown" rendition="#none">auf mich </hi>den Eindruck <hi rend="unknown"
-            rendition="#none">eines</hi> Prov., ja des Undeutschen“). Aber ich kenne, so wie Sie, keine deutsche Gegend, wo „genug groß“ gewöhnlicher, geschweige ausschließlich gebraucht wird. Es ist dies vielmehr eine, wie ich meine, <hi
-            rend="unknown"
-            rendition="#none">auch</hi> richtige, ja die logisch bessere Stellung (vgl. sehr groß, zu groß, genügend groß). <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5606">Sanders</persName>
-          <note n="4" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.5606">Daniel Sanders</persName> (1819-1897), deutscher Lexikograph, Sprachforscher, Dichter und Übersetzer. Er gab gemeinsam mit <persName>
-Eduard Muret</persName> (1833-1904) u. a. ein viel benutztes und immer wieder aufgelegtes <hi
-              rend="unknown"
-            rendition="#none">Enzyklopädisches engl.-dt. u. dt.-engl. Wörterbuch </hi>heraus.</note> weist sie bei Lessing, Jacobi, Voß, Goethe u. A. nach (Wtb. d. dt. Spr.); und derselbe <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5606">Sanders</persName> (der übrigens kein sonderlich guter Gewährsmann ist: vgl. Litt.-Bl. f. g. u. r. Ph., 1883, Spalte 341-344) behauptet an der von Ihnen angeführten Stelle seiner Deutschen Sprach-Ukase nicht mehr, als dass „genug“ <hi
-            rend="unknown" rendition="#none">gewöhnlich</hi> dem dadurch bestimmten Worte nachgestellt werde. </p>
-        <p>In dem Satze „Niemand wird es <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+               </hi> Zeitungsdeutsch“ zu sagen fällt <persName ref="[authorityLink]">Halatschka</persName> nicht ein; es ist ein Setzfehler (st. <hi rend="unknown" rendition="#none">Vom</hi>), wie wohl die meisten Leser sofort denken werden. (Für den indeclinablen Gebrauch des Wortes „Deutsch“ einen norddeutschen Gewährsmann: K. Sachs, dt.-frz. Wtb.)</p>
+            <p>„<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">À la minute</hi>
+               </hi>“ ist absichtlich und scherzweis gesagt; auch das dürften die meisten Leser sofort herausgefunden haben.</p>
+            <p>„<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Genug groß</hi>
+               </hi>“, sagen Sie, „macht mir den Eindruck von einem Provincialismus, ja von etwas Undeutschem“ (ich würde gesagt haben „macht <hi rend="unknown" rendition="#none">auf mich </hi>den Eindruck <hi rend="unknown" rendition="#none">eines</hi> Prov., ja des Undeutschen“). Aber ich kenne, so wie Sie, keine deutsche Gegend, wo „genug groß“ gewöhnlicher, geschweige ausschließlich gebraucht wird. Es ist dies vielmehr eine, wie ich meine, <hi rend="unknown" rendition="#none">auch</hi> richtige, ja die logisch bessere Stellung (vgl. sehr groß, zu groß, genügend groß). <persName ref="[authorityLink]">Sanders</persName>
+               <note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Daniel Sanders</persName> (1819-1897), deutscher Lexikograph, Sprachforscher, Dichter und Übersetzer. Er gab gemeinsam mit <persName>
+Eduard Muret</persName> (1833-1904) u. a. ein viel benutztes und immer wieder aufgelegtes <hi rend="unknown" rendition="#none">Enzyklopädisches engl.-dt. u. dt.-engl. Wörterbuch </hi>heraus.</note> weist sie bei Lessing, Jacobi, Voß, Goethe u. A. nach (Wtb. d. dt. Spr.); und derselbe <persName ref="[authorityLink]">Sanders</persName> (der übrigens kein sonderlich guter Gewährsmann ist: vgl. Litt.-Bl. f. g. u. r. Ph., 1883, Spalte 341-344) behauptet an der von Ihnen angeführten Stelle seiner Deutschen Sprach-Ukase nicht mehr, als dass „genug“ <hi rend="unknown" rendition="#none">gewöhnlich</hi> dem dadurch bestimmten Worte nachgestellt werde. </p>
+            <p>In dem Satze „Niemand wird es <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 wundernehmen</hi>
-          </hi>“ („wundernehmen“ in dem <hi rend="unknown"
-            rendition="#none">Schul</hi>programme nach der k. k. a. pr. öst. <hi rend="unknown" rendition="#none">Schul</hi>orthographie pflichtschuldigst zusammengeschrieben) ist „niemand“ ein Accusativ, und somit trifft Ihre Vermuthung, dass es Affectation sei, nicht zu. „Niemand“ ohne Flexikon im Dat. und im Acc. ist ja geschichtlich begründet, von den Grammatikern theils gebilligt, theils sogar verlangt und bei Schriftstellern nicht unüblich (s. K. Sachs, dt.-frz. Wtb.).</p>
-        <p>Warum lassen Sie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5605">
+               </hi>“ („wundernehmen“ in dem <hi rend="unknown" rendition="#none">Schul</hi>programme nach der k. k. a. pr. öst. <hi rend="unknown" rendition="#none">Schul</hi>orthographie pflichtschuldigst zusammengeschrieben) ist „niemand“ ein Accusativ, und somit trifft Ihre Vermuthung, dass es Affectation sei, nicht zu. „Niemand“ ohne Flexikon im Dat. und im Acc. ist ja geschichtlich begründet, von den Grammatikern theils gebilligt, theils sogar verlangt und bei Schriftstellern nicht unüblich (s. K. Sachs, dt.-frz. Wtb.).</p>
+            <p>Warum lassen Sie <persName ref="[authorityLink]">
 Halatschka</persName> sagen, „<hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">er</hi>
-          </hi>
-          <hi rend="unknown"
-            rendition="#none"> könne nicht zugeben</hi>, dass sich die Sprache denkwidrig weiterbilde u.s.w.“? Er schreibt ja, „<hi
-            rend="unknown" rendition="#none">wir</hi> können nicht …“ und meint, da er zu bescheiden ist im Plur. maj. zu reden, nicht sich, sondern das deutsche Volk.</p>
-        <p>
-          <pb facs="#IMG.3"
-            n="3"/>Sie sagen, dass der Trieb, der das Zeitungsdeutsch erzeugt naturgemäß sei; fahren aber gleich so fort: „Manche <hi
-            rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">krankhaften</hi>
-          </hi> Auswüchse treten dabei zu Tage.“ Hat denn Halatschka etwas anderes behauptet? Er hält nur eben manches für krankhaft, was Sie nicht dafür halten, und er würde Ihnen (wie ich) für die bloße Nennung all dieser Fälle recht dankbar gewesen sein.</p>
-        <p>Wenn „<hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">heuer</hi>
-          </hi>“ zufällig im <hi rend="unknown" rendition="#none">Nord</hi>deutschen erhalten wäre und wir <hi
-            rend="unknown" rendition="#none">Süd</hi>deutsche das schreckliche Gebilde „diesjährig“ auf dem Gewissen hätten (vgl. „diesbezüglich“), wie würde man da an der Spree hohnlachen, weil wir das deutsche Wort verlernt und ein undeutsches Ungeheuer neugebildet hätten!</p>
-        <p>„<hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Nachdem</hi>
-          </hi>“ dürfen wir deshalb nicht causal werden lassen, weil wir sonst unseren Überfluss an causalen Conjunctionen noch steigern würden und für après que gar kein Wort hätten.</p>
-        <p>Gar sehr interessierte es mich zu hören, dass die Spanier aus freien Stücken <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">el mismo </hi>
-          </hi>als Personalpronomen missbrauchen sollen. Allein ich wartete vergeblich auf ein vorsedanisches Beispiel; ich möchte daher (trotz meinen dürftigen Kenntnissen im Spanischen) noch immer die Meinung behalten, dass die Zeitungsjuden jene europäische „Seuche“ verschulden. (Ich brauche wohl nicht zu versichern, dass ich kein Antisemit bin.)</p>
-        <p>„Die <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Besedas</hi>
-          </hi>“ muss man sagen, weil Sie sonst in jenem Citate nicht den Plural erkennen? Das kann nicht Ihr Ernst sein. Das hieße ja das creolischeste Kauderwälsch gutheißen! Nein, so scherzen sie nur „unter dem Striche“.</p>
-        <p>„Ich suche ihn <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">nach rechts</hi>
-
-          </hi>“ wird durch den ganz anderen Fall „Ich forsche ihm bis nach den entferntesten Gegenden nach“ durchaus nicht gerechtfertigt; dieses ist richtig (Bis <hi
-            rend="unknown" rendition="#none">wohin</hi> forschest du nach?), jenes falsch (<hi rend="unknown" rendition="#none">Wo</hi> suchst du?)</p>
-
-        <p>Um etwas auf einen späteren Augenblick zu verschieben, sagen die Tschechen „Až potom!“, nicht nur „Potom“, und so, wenn sie <pb
-            facs="#IMG.4" n="4"/> deutsch reden „Bis später!“ statt „Später!“ Diesen Gebrauch des Wortes „<hi
-            rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">bis</hi>
-
-          </hi>“ (als pleonastischen Hinweises auf die Zukunft) in Österreich erklärt, wenn ich nicht irre, schon <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2638">Schleicher</persName> in <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3347">Herrigs Archiv</ref> für einen Slavismus.<note n="5"
-            place="foot" type="editorial">Nicht nachgewiesen; vgl. aber Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.6507">
+                  <hi rend="unknown" rendition="#none">er</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none"> könne nicht zugeben</hi>, dass sich die Sprache denkwidrig weiterbilde u.s.w.“? Er schreibt ja, „<hi rend="unknown" rendition="#none">wir</hi> können nicht …“ und meint, da er zu bescheiden ist im Plur. maj. zu reden, nicht sich, sondern das deutsche Volk.</p>
+            <p>
+               <pb facs="#IMG.3" n="3"/>Sie sagen, dass der Trieb, der das Zeitungsdeutsch erzeugt naturgemäß sei; fahren aber gleich so fort: „Manche <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">krankhaften</hi>
+               </hi> Auswüchse treten dabei zu Tage.“ Hat denn Halatschka etwas anderes behauptet? Er hält nur eben manches für krankhaft, was Sie nicht dafür halten, und er würde Ihnen (wie ich) für die bloße Nennung all dieser Fälle recht dankbar gewesen sein.</p>
+            <p>Wenn „<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">heuer</hi>
+               </hi>“ zufällig im <hi rend="unknown" rendition="#none">Nord</hi>deutschen erhalten wäre und wir <hi rend="unknown" rendition="#none">Süd</hi>deutsche das schreckliche Gebilde „diesjährig“ auf dem Gewissen hätten (vgl. „diesbezüglich“), wie würde man da an der Spree hohnlachen, weil wir das deutsche Wort verlernt und ein undeutsches Ungeheuer neugebildet hätten!</p>
+            <p>„<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Nachdem</hi>
+               </hi>“ dürfen wir deshalb nicht causal werden lassen, weil wir sonst unseren Überfluss an causalen Conjunctionen noch steigern würden und für après que gar kein Wort hätten.</p>
+            <p>Gar sehr interessierte es mich zu hören, dass die Spanier aus freien Stücken <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">el mismo </hi>
+               </hi>als Personalpronomen missbrauchen sollen. Allein ich wartete vergeblich auf ein vorsedanisches Beispiel; ich möchte daher (trotz meinen dürftigen Kenntnissen im Spanischen) noch immer die Meinung behalten, dass die Zeitungsjuden jene europäische „Seuche“ verschulden. (Ich brauche wohl nicht zu versichern, dass ich kein Antisemit bin.)</p>
+            <p>„Die <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Besedas</hi>
+               </hi>“ muss man sagen, weil Sie sonst in jenem Citate nicht den Plural erkennen? Das kann nicht Ihr Ernst sein. Das hieße ja das creolischeste Kauderwälsch gutheißen! Nein, so scherzen sie nur „unter dem Striche“.</p>
+            <p>„Ich suche ihn <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">nach rechts</hi>
+               </hi>“ wird durch den ganz anderen Fall „Ich forsche ihm bis nach den entferntesten Gegenden nach“ durchaus nicht gerechtfertigt; dieses ist richtig (Bis <hi rend="unknown" rendition="#none">wohin</hi> forschest du nach?), jenes falsch (<hi rend="unknown" rendition="#none">Wo</hi> suchst du?)</p>
+            <p>Um etwas auf einen späteren Augenblick zu verschieben, sagen die Tschechen „Až potom!“, nicht nur „Potom“, und so, wenn sie <pb facs="#IMG.4" n="4"/> deutsch reden „Bis später!“ statt „Später!“ Diesen Gebrauch des Wortes „<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">bis</hi>
+               </hi>“ (als pleonastischen Hinweises auf die Zukunft) in Österreich erklärt, wenn ich nicht irre, schon <persName ref="[authorityLink]">Schleicher</persName> in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3347">Herrigs Archiv</ref> für einen Slavismus.<note n="5" place="foot" type="editorial">Nicht nachgewiesen; vgl. aber Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.6507">
 03351</ref>.</note> In Thüringen mag der Missbrauch ohne slav. Einfluss aufgekommen sein.</p>
-        <p>Dass eine Sprachbehörde wie die <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5022">Académie Française</ref> für Deutschland nicht passt, gebe ich zu; aber dass sich Akademiker auf die Seite der Zeitungsschreiber schlagen und „ein frisches <hi
-            rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Drauflossündigen</hi>
-
-          </hi>“ predigen, das kann doch auch bei uns nicht heilsam sein, es muss diejenigen, denen die deutsche Schriftsprache lieb und heilig ist und die für deren Reinhaltung – nach ihren Kräften – kämpfen, betrüben und entmuthigen, besonders einen so jungen Mann wie <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5605">Halatschka</persName>.</p>
-        <p>Ich hoffe zuversichtlich, verehrter Herr Professor, dass Sie mir, den Sie kennen, den Eifer für die gute Sache und – ich gestehe es gerne – für den guten Freund nicht übel deuten werden, und verbleibe mit immer gleicher Hochachtung</p>
-        <closer>
-          <salute>Ihr</salute>
-          <lb/>
-          <salute>ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1553">Gartner</persName>
-          </signed>
-          <dateline>Wien, am 29. November 1883.<lb/>(V., Wimmergasse, 2)</dateline>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Dass eine Sprachbehörde wie die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5022">Académie Française</ref> für Deutschland nicht passt, gebe ich zu; aber dass sich Akademiker auf die Seite der Zeitungsschreiber schlagen und „ein frisches <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Drauflossündigen</hi>
+               </hi>“ predigen, das kann doch auch bei uns nicht heilsam sein, es muss diejenigen, denen die deutsche Schriftsprache lieb und heilig ist und die für deren Reinhaltung – nach ihren Kräften – kämpfen, betrüben und entmuthigen, besonders einen so jungen Mann wie <persName ref="[authorityLink]">Halatschka</persName>.</p>
+            <p>Ich hoffe zuversichtlich, verehrter Herr Professor, dass Sie mir, den Sie kennen, den Eifer für die gute Sache und – ich gestehe es gerne – für den guten Freund nicht übel deuten werden, und verbleibe mit immer gleicher Hochachtung</p>
+            <closer>
+               <salute>Ihr</salute>
+               <lb/>
+               <salute>ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Gartner</persName>
+               </signed>
+               <dateline>Wien, am 29. November 1883.<lb/>(V., Wimmergasse, 2)</dateline>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

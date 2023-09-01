@@ -1,348 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Francesco D´Ovidio (50-HSFDO18)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Sandra</forename>
-            <surname>Covino</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7661" type="PID">o:hsa.letter.7661</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">50-HSFDO18</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Italien</country>
-            <settlement>Pisa</settlement>
-            <repository ref="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</repository>
-            <idno type="shelfmark">HSFDO18</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1898-11-24">1898-11-24</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Sandra</forename>
-              <surname>Covino</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Francesco D´Ovidio</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1353"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7661">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1898-11-24">1898-11-24</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1353" ref="https://viaf.org/viaf/29528295">
-            <forename>Francesco</forename>
-            <surname>D´Ovidio</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1353" type="context">
-                        Korrespondenz Hugo Schuchardt - Francesco D´Ovidio
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7661" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7661" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7661" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7661" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7661" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7661" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 24 nov ’98</dateline>
-        <opener>Carissimo mio!</opener>
-
-        <p>Il mio caso rassomiglia un po’ a quello del giornalista il quale, richiesto da un amico leggesse una opera di esso e scrivessevi sopra quattro righe, gli rispose “leggere <hi
-            rend="unknown"
-            rendition="#none">e</hi> scrivere? Che pensi mai? O leggere o scrivere, scegli!” Volevo ringraziarti del tuo trattato sui versi italiani prima (non dico: senza) di averlo letto, quel che si può fare in modo elegantissimo (<hi
-            rend="unknown" rendition="#none">bis dat qui cito dat</hi> ecc.), ma poi mi risolsi di leggerlo prima<note
-            n="1" place="foot" type="editorial">Schuchardt si riferiva al lungo saggio di D’Ovidio <hi rend="unknown"
-            rendition="#none">Origine versi italiani</hi>.</note>. Lo feci ed ora è doppio il mio imbarazzo. Dapprima quel solito: la questione della lingua. Devo scriverti correttamente in lingua barbara o barbaramente nel volgare illustre? L’uno ti causa un po’ d’incomodo, all’altro già sei avvezzo <pb
-            facs="#IMG.2"
-            n="2"/> e, esente di quel accento sassone di che si divertiva il vostro buon Salvador, ti parrà forse meno insupportabile. Però sento io un dolore quasi fisico, quando ho da servirmi della tua lingua considerando „le piaghe mortali che al bel corpo suo si spesse faccio‟<note
-            n="2" place="foot"
-              type="editorial">Variazione scherzosa dei versi petrarcheschi «a le piaghe mortali / che nel bel corpo tuo sì spesse veggio» (<hi
-              rend="unknown"
-              rendition="#none">Italia mia, benché il parlar sia indarno</hi>, Canzoniere, CXXVIII, vv. 2-3). <hi
-              rend="unknown"
-            rendition="#none">Salvador</hi> è forse <persName>Salvatore Di Giacomo</persName>, che inizialmente utilizzò questo pseudonimo firmando articoli giornalistici.</note>. E poi si tratta di quello che vorrei dirti. Tu sai che poco sono pratico di spagnuolismi*; ma in questa occasione non potrei far di meno: <hi
-            rend="unknown" rendition="#none">hic Rhodus, hic hispanioliza</hi>
-          <note n="3" place="foot"
-              type="editorial">Nel registro spiritoso della lettera, Schuchardt richiama il detto <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7661" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 24 nov ’98</dateline>
+            <opener>Carissimo mio!</opener>
+            <p>Il mio caso rassomiglia un po’ a quello del giornalista il quale, richiesto da un amico leggesse una opera di esso e scrivessevi sopra quattro righe, gli rispose “leggere <hi rend="unknown" rendition="#none">e</hi> scrivere? Che pensi mai? O leggere o scrivere, scegli!” Volevo ringraziarti del tuo trattato sui versi italiani prima (non dico: senza) di averlo letto, quel che si può fare in modo elegantissimo (<hi rend="unknown" rendition="#none">bis dat qui cito dat</hi> ecc.), ma poi mi risolsi di leggerlo prima<note n="1" place="foot" type="editorial">Schuchardt si riferiva al lungo saggio di D’Ovidio <hi rend="unknown" rendition="#none">Origine versi italiani</hi>.</note>. Lo feci ed ora è doppio il mio imbarazzo. Dapprima quel solito: la questione della lingua. Devo scriverti correttamente in lingua barbara o barbaramente nel volgare illustre? L’uno ti causa un po’ d’incomodo, all’altro già sei avvezzo <pb facs="#IMG.2" n="2"/> e, esente di quel accento sassone di che si divertiva il vostro buon Salvador, ti parrà forse meno insupportabile. Però sento io un dolore quasi fisico, quando ho da servirmi della tua lingua considerando „le piaghe mortali che al bel corpo suo si spesse faccio‟<note n="2" place="foot" type="editorial">Variazione scherzosa dei versi petrarcheschi «a le piaghe mortali / che nel bel corpo tuo sì spesse veggio» (<hi rend="unknown" rendition="#none">Italia mia, benché il parlar sia indarno</hi>, Canzoniere, CXXVIII, vv. 2-3). <hi rend="unknown" rendition="#none">Salvador</hi> è forse <persName>Salvatore Di Giacomo</persName>, che inizialmente utilizzò questo pseudonimo firmando articoli giornalistici.</note>. E poi si tratta di quello che vorrei dirti. Tu sai che poco sono pratico di spagnuolismi*; ma in questa occasione non potrei far di meno: <hi rend="unknown" rendition="#none">hic Rhodus, hic hispanioliza</hi>
+               <note n="3" place="foot" type="editorial">Nel registro spiritoso della lettera, Schuchardt richiama il detto <hi rend="unknown" rendition="#none">
 hic Rhodus, hic saltus</hi> “qui [è] Rodi, salta qui”, cioè “dimostra quello che dici” (in riferimento a un atleta sbruffone che aveva affermato di avere fatto un salto lungo da un piede all’altro del colosso di Rodi).</note>
-        </p>
-        <p>¡quien supiera scribi!</p>
-        <p>esclamo come la ragazza del Campoamor che sta dettando al parroco una lettera all’amoroso,</p>
-        <p> …… en vano</p>
-        <p>Me quereis complacer,</p>
-        <p>Si no encarnan los signos de la mano</p>
-        <p>Todo el sér de mi sér.</p>
-        <p>Escribidle, por Dios, que</p>
-        <p>ammiro la limpidezza colla quale sa esporre i problemi <pb facs="#IMG.3" n="3"/> più difficili, la vastità dello sguardo al quale non isfugge nulla, quell’immenso buon senso elevato a critica squisitissima, la ricchezza delle bellissime metafore, raffinate e ovvie nell’istesso tempo, la forza delle espressini, attinte in gran parte, ad esempio dei maestri della lingua, alla fonte viva del volgo …….</p>
-        <p>Dios mio; cuantas cosas le diria</p>
-        <p>Si supiera escribir!<note n="4" place="foot" type="editorial">I versi citati da Schuchardt sono tratti da <hi
-              rend="unknown"
-              rendition="#none">Quien supiera escribir</hi>, uno dei componimenti poetici più celebri dei <hi
-              rend="unknown" rendition="#none">Doloras</hi> (I ed.: 1846), opera dello scrittore e uomo politico spagnolo Ramón de Campoamor y Campoosorio (Navia, Asturie, 1817-Madrid 1901): «[…] en vano / me queiréis complacer / si no encarnan los signos de la mano / todo el sér de mi ser. // Escribidle, por Dios, que el alma mía ya en mí no quiere estar; […] Dios mío, ¡cuántas cosas le díria / si supiera escribir!».</note>
-        </p>
-
-        <p>In fine e in fatti, ti dirò che mi son accinto alla lettura con un po’ di svogliatezza; mi trovavo poco disposto ad occuparmi di versificazione paleo- o neolatina; non feci che ubbidire ad un imperativo categorico. Venni, vidi e fui rapito come il giovanotto che per la prima volta legge i <hi
-            rend="unknown" rendition="#none">Trois mousquetaires</hi>.</p>
-        <p>Non ti sorprenda la mia freddezza in faccia di soggetti così alti; il poco movimento che fo, non <pb
-            facs="#IMG.4"
-            n="4"/> lo fo che tra cose triviali e basse. Per ora tutta la mia forza mentale si è concentrata sul <hi
-            rend="unknown"
-            rendition="#none">
-muscolone</hi> (come si dice nel dialetto di costì) che corrisponde all’antico ἄγκιστρον e pare sia proprio all’Italia meridionale, mentre altrove si servono della <hi
-            rend="unknown" rendition="#none">cocca</hi>.</p>
-        <p>[disegno] – muscolone [disegno] – cocca</p>
-        <p>in un fuso </p>
-        <p>di Prajano.</p>
-
-        <p>Se tu ne potessi sapere qualchechosa intorno ad una diversità eventuale delle forme del fuso meridionale (in ispecie sopra l’esistenza dell’intaccatura spirale [disegno]), mi sarebbe cosa gratissima<note
-            n="5" place="foot"
-            type="editorial">Per tutti i disegni presenti in questa lettera, si rimanda al testo originale digitalizzato.</note>. Finora la mia fusologia si trova nello stadio di confusologia<note
-            n="6" place="foot" type="editorial">Schuchardt aveva intrapreso una nuova ricerca etnolinguistica sulla filatura e sui fusi, i cui risultati saranno illustrati nelle <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.28">
-                <hi rend="unknown" rendition="#none">Rom. Etym. II</hi>
-              </ref>
-            </bibl> (su cocca e muscolone, cf. ivi, pp. 37-47) e nel <hi rend="unknown"
-              rendition="#none">Festschrift</hi> per i settant’anni dell’amico <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2264">Mussafia</persName>: cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.53">
-                <hi rend="unknown" rendition="#none">HS an AM</hi>
-              </ref>
-            </bibl>.</note>
-        </p>
-        <p>Stia bene, amami<note n="7" place="foot" type="editorial">Alternando il tu e il lei in questa lettera (v. sopra «sa esporre»), Schuchardt voleva forse rafforzare lepidamente l’espressione della sua ammirazione per D’Ovidio.</note>
-        </p>
-        <closer>
-          <salute>Tuus &amp; tuarum</salute>
-          <lb/>
-          <salute>totus</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Sch.</persName>
-          </signed>
-        </closer>
-        <postscript>
-
-          <p>P.S. Hai fatto bene di lasciarmi la mia acca; chè come disse già l’Ariosto Hercole avrebbe ammazzato con la sua clava chi avesse voluto togliergli l’H<note
-              n="8" place="foot"
-                type="editorial">Schuchardt era contrario all’abitudine italiana, ancora abbastanza diffusa all’epoca, di tradurre i nomi propri stranieri: cf. la nota 1 alla <ref
-                target="https://gams.uni-graz.at/o:hsa.letter.7648">lettera XXXVII, HSA, B 8461</ref>. La frase riportata o comunque riferimenti pertinenti non si trovano nel corpus ariostesco, bensì nei <hi
-                rend="unknown"
-                rendition="#none">
-Discorsi intorno al comporre</hi> (1554) di Gian Battista Giraldi Cinthio, il quale affermò che Ariosto rideva di chi «lasciav[a] di porre la H ove di ragion doveva esser posta. […] Et diceva egli: “[…] s’Hercole la si vedesse levata dal suo nome, ne farebbe la vendetta, contra chi levata gliele avesse, col pestargli la testa colla mazza” » (<hi
-                rend="unknown"
-                rendition="#none">
-Discorsi intorno al comporre rivisti dall’autore nell’esemplare ferrarese</hi> Cl. I 90, a c. di Susanna Villari, Messina, Centro Interdipartimentale di Studi Umanistici, 2002, p.135). Questa testimonianza è riportata nella <hi
-                rend="unknown"
-                rendition="#none">Vita di Ludovico Ariosto scritta dall’abate Girolamo Baruffaldi giuniore</hi> (Ferrara 1807, pp. 216-217), che Schuchardt probabilmente aveva consultato, quando nel 1872 lesse e commentò l’Orlando furioso all’Università di Lipsia (cf. Giuseppe Jacopo Ferrazzi, <hi
-                rend="unknown"
-              rendition="#none">Bibliografia ariostesca</hi>, Bassano 1881, p. 60).</note>; ma hai fatto male di dire p. 11: „gli idiomi romanzi vi dicono a coro che la parlata latina finì col pronunziare *<hi
-              rend="unknown" rendition="#none">ŏvum</hi> anzichè ōvum.<note n="9" place="foot" type="editorial">La citazione è tratta da <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7630">D’Ovidio, <hi rend="unknown" rendition="#none">Origine versi italiani</hi>
-                </ref>
-              </bibl>, p. 11. Nelle ristampe del saggio, l’autore aggiunse la seguente nota: «Sul modo onde debba spiegarsi l’abbreviazione di ovum non c’è consenso fra i romanisti» (<bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7629">D’Ovidio, <hi rend="unknown" rendition="#none">Versificaz. ital.</hi>
-                </ref>
-              </bibl>, p. 152 e <hi rend="unknown" rendition="#none">Opere</hi>, IX.1, p. 143).</note>‟ No, amico mio, ọ̄vum divenne ǭvum per la forza dissimulatrice del v; la quantità non c’entra nè poco nè punto.</p>
-          <p>* e mal me ne colse negli ultimi tempi<note n="10" place="foot" type="editorial">
+            </p>
+            <p>¡quien supiera scribi!</p>
+            <p>esclamo come la ragazza del Campoamor che sta dettando al parroco una lettera all’amoroso,</p>
+            <p> …… en vano</p>
+            <p>Me quereis complacer,</p>
+            <p>Si no encarnan los signos de la mano</p>
+            <p>Todo el sér de mi sér.</p>
+            <p>Escribidle, por Dios, que</p>
+            <p>ammiro la limpidezza colla quale sa esporre i problemi <pb facs="#IMG.3" n="3"/> più difficili, la vastità dello sguardo al quale non isfugge nulla, quell’immenso buon senso elevato a critica squisitissima, la ricchezza delle bellissime metafore, raffinate e ovvie nell’istesso tempo, la forza delle espressini, attinte in gran parte, ad esempio dei maestri della lingua, alla fonte viva del volgo …….</p>
+            <p>Dios mio; cuantas cosas le diria</p>
+            <p>Si supiera escribir!<note n="4" place="foot" type="editorial">I versi citati da Schuchardt sono tratti da <hi rend="unknown" rendition="#none">Quien supiera escribir</hi>, uno dei componimenti poetici più celebri dei <hi rend="unknown" rendition="#none">Doloras</hi> (I ed.: 1846), opera dello scrittore e uomo politico spagnolo Ramón de Campoamor y Campoosorio (Navia, Asturie, 1817-Madrid 1901): «[…] en vano / me queiréis complacer / si no encarnan los signos de la mano / todo el sér de mi ser. // Escribidle, por Dios, que el alma mía ya en mí no quiere estar; […] Dios mío, ¡cuántas cosas le díria / si supiera escribir!».</note>
+            </p>
+            <p>In fine e in fatti, ti dirò che mi son accinto alla lettura con un po’ di svogliatezza; mi trovavo poco disposto ad occuparmi di versificazione paleo- o neolatina; non feci che ubbidire ad un imperativo categorico. Venni, vidi e fui rapito come il giovanotto che per la prima volta legge i <hi rend="unknown" rendition="#none">Trois mousquetaires</hi>.</p>
+            <p>Non ti sorprenda la mia freddezza in faccia di soggetti così alti; il poco movimento che fo, non <pb facs="#IMG.4" n="4"/> lo fo che tra cose triviali e basse. Per ora tutta la mia forza mentale si è concentrata sul <hi rend="unknown" rendition="#none">
+muscolone</hi> (come si dice nel dialetto di costì) che corrisponde all’antico ἄγκιστρον e pare sia proprio all’Italia meridionale, mentre altrove si servono della <hi rend="unknown" rendition="#none">cocca</hi>.</p>
+            <p>[disegno] – muscolone [disegno] – cocca</p>
+            <p>in un fuso </p>
+            <p>di Prajano.</p>
+            <p>Se tu ne potessi sapere qualchechosa intorno ad una diversità eventuale delle forme del fuso meridionale (in ispecie sopra l’esistenza dell’intaccatura spirale [disegno]), mi sarebbe cosa gratissima<note n="5" place="foot" type="editorial">Per tutti i disegni presenti in questa lettera, si rimanda al testo originale digitalizzato.</note>. Finora la mia fusologia si trova nello stadio di confusologia<note n="6" place="foot" type="editorial">Schuchardt aveva intrapreso una nuova ricerca etnolinguistica sulla filatura e sui fusi, i cui risultati saranno illustrati nelle <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.28">
+                        <hi rend="unknown" rendition="#none">Rom. Etym. II</hi>
+                     </ref>
+                  </bibl> (su cocca e muscolone, cf. ivi, pp. 37-47) e nel <hi rend="unknown" rendition="#none">Festschrift</hi> per i settant’anni dell’amico <persName ref="[authorityLink]">Mussafia</persName>: cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.53">
+                        <hi rend="unknown" rendition="#none">HS an AM</hi>
+                     </ref>
+                  </bibl>.</note>
+            </p>
+            <p>Stia bene, amami<note n="7" place="foot" type="editorial">Alternando il tu e il lei in questa lettera (v. sopra «sa esporre»), Schuchardt voleva forse rafforzare lepidamente l’espressione della sua ammirazione per D’Ovidio.</note>
+            </p>
+            <closer>
+               <salute>Tuus &amp; tuarum</salute>
+               <lb/>
+               <salute>totus</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Sch.</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>P.S. Hai fatto bene di lasciarmi la mia acca; chè come disse già l’Ariosto Hercole avrebbe ammazzato con la sua clava chi avesse voluto togliergli l’H<note n="8" place="foot" type="editorial">Schuchardt era contrario all’abitudine italiana, ancora abbastanza diffusa all’epoca, di tradurre i nomi propri stranieri: cf. la nota 1 alla <ref target="https://gams.uni-graz.at/o:hsa.letter.7648">lettera XXXVII, HSA, B 8461</ref>. La frase riportata o comunque riferimenti pertinenti non si trovano nel corpus ariostesco, bensì nei <hi rend="unknown" rendition="#none">
+Discorsi intorno al comporre</hi> (1554) di Gian Battista Giraldi Cinthio, il quale affermò che Ariosto rideva di chi «lasciav[a] di porre la H ove di ragion doveva esser posta. […] Et diceva egli: “[…] s’Hercole la si vedesse levata dal suo nome, ne farebbe la vendetta, contra chi levata gliele avesse, col pestargli la testa colla mazza” » (<hi rend="unknown" rendition="#none">
+Discorsi intorno al comporre rivisti dall’autore nell’esemplare ferrarese</hi> Cl. I 90, a c. di Susanna Villari, Messina, Centro Interdipartimentale di Studi Umanistici, 2002, p.135). Questa testimonianza è riportata nella <hi rend="unknown" rendition="#none">Vita di Ludovico Ariosto scritta dall’abate Girolamo Baruffaldi giuniore</hi> (Ferrara 1807, pp. 216-217), che Schuchardt probabilmente aveva consultato, quando nel 1872 lesse e commentò l’Orlando furioso all’Università di Lipsia (cf. Giuseppe Jacopo Ferrazzi, <hi rend="unknown" rendition="#none">Bibliografia ariostesca</hi>, Bassano 1881, p. 60).</note>; ma hai fatto male di dire p. 11: „gli idiomi romanzi vi dicono a coro che la parlata latina finì col pronunziare *<hi rend="unknown" rendition="#none">ŏvum</hi> anzichè ōvum.<note n="9" place="foot" type="editorial">La citazione è tratta da <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7630">D’Ovidio, <hi rend="unknown" rendition="#none">Origine versi italiani</hi>
+                        </ref>
+                     </bibl>, p. 11. Nelle ristampe del saggio, l’autore aggiunse la seguente nota: «Sul modo onde debba spiegarsi l’abbreviazione di ovum non c’è consenso fra i romanisti» (<bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7629">D’Ovidio, <hi rend="unknown" rendition="#none">Versificaz. ital.</hi>
+                        </ref>
+                     </bibl>, p. 152 e <hi rend="unknown" rendition="#none">Opere</hi>, IX.1, p. 143).</note>‟ No, amico mio, ọ̄vum divenne ǭvum per la forza dissimulatrice del v; la quantità non c’entra nè poco nè punto.</p>
+               <p>* e mal me ne colse negli ultimi tempi<note n="10" place="foot" type="editorial">
 La nota si trova in calce alla seconda pagina della lettera.</note>
-          </p>
-        </postscript>
-        <pb facs="#IMG.5" n="5"/>
-      </div>
-    </body>
-  </text>
+               </p>
+            </postscript>
+            <pb facs="#IMG.5" n="5"/>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

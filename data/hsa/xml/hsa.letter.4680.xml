@@ -1,435 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Herbert Steiner an Hugo Schuchardt (32-11255)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2776">
-            <forename>Herbert</forename>
-            <surname>Steiner</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4680" type="PID">o:hsa.letter.4680</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">32-11255</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11255</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2776">
-                <forename>Herbert</forename>
-                <surname>Steiner</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="10" unit="pages">10 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.597" ref="http://sws.geonames.org/7872676">Götzis</origPlace>
-              <origDate ana="dcterms:created" when="1922-02-01">1922-02-01</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Herbert Steiner und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2776"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4680">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2776" ref="https://viaf.org/viaf/22581935">
-            <forename>Herbert</forename>
-            <surname>Steiner</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.597" key="#GID.1" ref="http://sws.geonames.org/7872676">Götzis</placeName>
-          <date when="1922-02-01">1922-02-01</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <region>Götzis</region>
-                <name ref="http://geonames.org/7872676" type="fcode:ADM3">Götzis</name>
-                <location>
-                  <geo>9.66319,47.33693</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2776" type="context">
-                        Korrespondenz Herbert Steiner - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4435" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Klassische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.922" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Romanische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4956" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kreolistik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4452" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskische Studien</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.759" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kaukasische Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.863" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Romanische Sprachen</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4680" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4680" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4680" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4680" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4680" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4680" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4680" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4680" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4680" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4680" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4680" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline> Götzis 1. Febr. 1922 </dateline>
-        <opener> Hochverehrter Herr Hofrat! </opener>
-        <p>Der kleine Aufsatz, den ich als bescheidene – und hoffentlich leserliche – Festgabe beilege, soll im nächsten Heft der ZR erscheinen. Da ich bisher keine Korrektur erhalten habe und doch mich nicht mit ganz leeren Händen zu Ihrem Feste einfinden möchte, bitte ich Sie, ihn auch in dieser Form anzunehmen.</p>
-        <p>Ich bitte Sie auch, nicht übelzunehmen, was Ihnen darin schematisch oder oberflächlich erscheinen muss. Ich weiss, dass der Gehalt Ihrer Schriften und Ihre Stellung viel präziser gekennzeichnet, viel tiefer gesehen werden müssten, als ich dies heute vermag. Ich weiss auch wohl, wieviel der Aufsatz Ihrem Gespräche verdankt.</p>
-        <p>Dennoch möchte ich hinter ihm alle Wünsche verstecken und nur nochmals danken für alle Ihre Güte gegen mich.</p>
-        <closer>
-          <salute>In sehr herzlichem Gedenken grüssend,</salute>
-          <lb/>
-          <salute>Ihr ergebenster </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2776">Herbert Steiner.</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Doch noch einen Wunsch: daß diese Tage Ihnen zu allem Schönen nicht viel Ermüdendes bringen!</p>
-          <p>Die Karte bzw. <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2977">
-Wartburg</persName> erreichte Sie hoffentlich. Die Separata folgen <hi
-              rend="unknown" rendition="#none">wirklich </hi>bald.<note n="1" place="foot" type="editorial">S. 2 des Brief ist leer, auf S. 3 folgt Steiners Festartikel aus Anlass von Schuchardts 80. Geburtstag am 4.2.1922.</note>
-          </p>
-        </postscript>
-      </div>
-      <div corresp="#L.4680" subtype="original" type="appendix" xml:lang="de">
-        <pb facs="#IMG.3" n="3"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Zu Hugo Schuchardts 80. Geburstag</hi>
-          <note n="2" place="foot" type="editorial">Der Text wird mit der Druckversion (vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1593">
-                <hi rend="unknown" rendition="#none">ZrP </hi>42, 1922, 1-4</ref>
-            </bibl>) verglichen; orthographische Abweichungen (z.B. ss=ß) werden nicht eigens vermerkt, abgekürzte Titel in eckigen Klammern aufgelöst. Unterstreichungen sind im gedruckten Text Sperrungen.</note>
-        </p>
-        <p>Am 4. Februar feiert Hugo Schuchardt seinen 80. Geburtstag. Sein Werk ist eins der reichsten, die die Sprachwissenschaft besitzt. In ständiger Entwicklung begriffen, immer neue Gebiete umfassend, oft in veränderten Kanälen weiterfliessend, kann es erst jetzt als ein Ganzes gesehen werden und ist auch heute noch nicht abgeschlossen.</p>
-
-        <p>Wie der romanischen, gehört es der Sprachwissenschaft im weitesten Sinne an. Der Zwanzigjährige, Schüler <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">
-Diezens</persName> und vor allem <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2638">Schleichers</persName> und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2528">Ritschls</persName>, schlägt im <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.730">„V. d. V.“ [=Vokalismus des Vulgärlateins] (1864-66)</ref>
-          </bibl> die Brücke von der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4435">klassischen</ref> zur <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.922">romanischen Philologie</ref> und schafft die Grundlage für alle spätere Forschung auf diesem Gebiet. Er ist fortab auf Grenzpfaden, Grenzkämmen<note
-            n="3" place="foot" type="editorial">„Grenzkämmen“ fehlt im Druck.</note> gewandelt.</p>
-        <p>Den rumäno-albanischen und keltischen Studien folgen die <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4956">kreolischen</ref>: Bausteine zu einem Werk über die aussereuropäische Romania, sie haben reichstes Material herbeigeschafft, Probleme gestellt und geklärt. Zugleich untersucht er die Sprachkreuzungen auf dem Boden der österreichisch-ungarischen Monarchie und beschäftigt sich mit dem Magyarischen. Seit dem Anfang der neunziger Jahre hat er sich, ohne je sein altes Gebiet aufzugeben, immer stärker dem <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4452">Baskischen</ref> zugewandt und <pb facs="#IMG.4" n="4"/> forschend, kämpfend, herausgebend die Wissenschaft von dieser Sprache mitbegründet (vor allem <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.157">„Bask. u. Rom.“ [= Baskisch und Romanisch] 1906</ref>
-          </bibl> u. <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.695">„Die iberi. Dekl.“ [= Die iberische Deklination] 1907</ref>
-          </bibl>). Er greift noch weiter aus: an seine <ref target="https://gams.uni-graz.at/o:hsa.languages#L.759">kaukasischen Studien</ref> schliessen sich – ich ziehe nur die Hauptlinien –, mit den baskischen zusammenhängend, die berberischen und mittelafrikanischen des Siebzigjährigen. Fast alle sind sie in steter, bald lockerer, bald enger Beziehung zur Romania.</p>
-        <p>S. hat der Wissenschaft<note n="4" place="foot"
-            type="editorial">Im Druck: Sprachwissenschaft</note> Gebiete erobert, er hat ihre Methoden umgebildet, ihre Probleme vertieft. Hatte ihn im „V. d. V.“ [=Vok. d. Vulgärlat.] das „Werden der Sprache" beschäftigt, so schreitet er nun nach allen Seiten über <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">Diez</persName> hinaus. Von der gesprochenen Sprache ausgehend, fordert er – zugleich mit <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">Ascoli</persName> und Mussafia – wissenschaftliche Darstellung der Laute und der Mundarten. Er stellt in der <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.309">„Klass. d. rom. Mundarten“ [= Klassifikation der romanischen Mundarten] (1870)</ref>
-          </bibl> die Frage nach den Sprachgrenzen und leugnet diese Grenzen, da er vorwiegend Übergänge – zeitliche Entwicklung, räumliche Abänderung – sieht. Er bekämpft in der berühmten Schrift <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.55">„Üb. d. Lautges.“ [= Über die Lautgesetze] (1885)</ref>
-          </bibl> die mechanistische Einseitigkeit des junggrammatischen Dogmas.<note n="5" place="foot"
-            type="editorial">Im Druck ist der Satz umgestellt.</note> Die Berührungen der <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.863">romanischen Sprachen</ref> mit fremden und die sprachlichen und nationalen Verhältnisse, die er in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5913">Österreich</placeName> kennen lernt, führen ihn an das Problem der Sprachmischung heran (<bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">„Sl.-d. u. Sl.-it.“ [= Slawo-deutsches und Slawo-italienisches] 1884</ref>
-          </bibl>), Entstehung und <pb facs="#IMG.5" n="5"/> Struktur der kreolischen Mundarten, die ihm zuerst als Mischsprachen erscheinen, in denen er dann ein primitives Sprachstadium erkennt, an die Idee der Weltsprache (<bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.486">„Auf Anl. d. Vol.“ [= Auf Anlass des Volkapüks] 1887</ref>
-          </bibl>, <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.675">„Weltspr. u. Wsp“ [= Weltsprache und Weltsprachen] 1894</ref>
-          </bibl>). Die Etymologie, auf Bedeutung<note n="6" place="foot"
-              type="editorial">Im Druck: Wortbedeutung.</note> und Wortmischung gegründet, wird zur Individualgeschichte des Wortes (<bibl>„Rom. Etym. I II“ [= <ref
-              target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.437">Roman. Etymologieen I</ref>, <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.28">II</ref>] 1897, 1899</bibl>), diese, von der Sachforschung nicht zu trennen, zur Kultur- und Begriffsgeschichte (<bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.53">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4680" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline> Götzis 1. Febr. 1922 </dateline>
+            <opener> Hochverehrter Herr Hofrat! </opener>
+            <p>Der kleine Aufsatz, den ich als bescheidene – und hoffentlich leserliche – Festgabe beilege, soll im nächsten Heft der ZR erscheinen. Da ich bisher keine Korrektur erhalten habe und doch mich nicht mit ganz leeren Händen zu Ihrem Feste einfinden möchte, bitte ich Sie, ihn auch in dieser Form anzunehmen.</p>
+            <p>Ich bitte Sie auch, nicht übelzunehmen, was Ihnen darin schematisch oder oberflächlich erscheinen muss. Ich weiss, dass der Gehalt Ihrer Schriften und Ihre Stellung viel präziser gekennzeichnet, viel tiefer gesehen werden müssten, als ich dies heute vermag. Ich weiss auch wohl, wieviel der Aufsatz Ihrem Gespräche verdankt.</p>
+            <p>Dennoch möchte ich hinter ihm alle Wünsche verstecken und nur nochmals danken für alle Ihre Güte gegen mich.</p>
+            <closer>
+               <salute>In sehr herzlichem Gedenken grüssend,</salute>
+               <lb/>
+               <salute>Ihr ergebenster </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Herbert Steiner.</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Doch noch einen Wunsch: daß diese Tage Ihnen zu allem Schönen nicht viel Ermüdendes bringen!</p>
+               <p>Die Karte bzw. <persName ref="[authorityLink]">
+Wartburg</persName> erreichte Sie hoffentlich. Die Separata folgen <hi rend="unknown" rendition="#none">wirklich </hi>bald.<note n="1" place="foot" type="editorial">S. 2 des Brief ist leer, auf S. 3 folgt Steiners Festartikel aus Anlass von Schuchardts 80. Geburtstag am 4.2.1922.</note>
+               </p>
+            </postscript>
+         </div>
+         <div corresp="#L.4680"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <pb facs="#IMG.3" n="3"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Zu Hugo Schuchardts 80. Geburstag</hi>
+               <note n="2" place="foot" type="editorial">Der Text wird mit der Druckversion (vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1593">
+                        <hi rend="unknown" rendition="#none">ZrP </hi>42, 1922, 1-4</ref>
+                  </bibl>) verglichen; orthographische Abweichungen (z.B. ss=ß) werden nicht eigens vermerkt, abgekürzte Titel in eckigen Klammern aufgelöst. Unterstreichungen sind im gedruckten Text Sperrungen.</note>
+            </p>
+            <p>Am 4. Februar feiert Hugo Schuchardt seinen 80. Geburtstag. Sein Werk ist eins der reichsten, die die Sprachwissenschaft besitzt. In ständiger Entwicklung begriffen, immer neue Gebiete umfassend, oft in veränderten Kanälen weiterfliessend, kann es erst jetzt als ein Ganzes gesehen werden und ist auch heute noch nicht abgeschlossen.</p>
+            <p>Wie der romanischen, gehört es der Sprachwissenschaft im weitesten Sinne an. Der Zwanzigjährige, Schüler <persName ref="[authorityLink]">
+Diezens</persName> und vor allem <persName ref="[authorityLink]">Schleichers</persName> und <persName ref="[authorityLink]">Ritschls</persName>, schlägt im <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.730">„V. d. V.“ [=Vokalismus des Vulgärlateins] (1864-66)</ref>
+               </bibl> die Brücke von der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4435">klassischen</ref> zur <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.922">romanischen Philologie</ref> und schafft die Grundlage für alle spätere Forschung auf diesem Gebiet. Er ist fortab auf Grenzpfaden, Grenzkämmen<note n="3" place="foot" type="editorial">„Grenzkämmen“ fehlt im Druck.</note> gewandelt.</p>
+            <p>Den rumäno-albanischen und keltischen Studien folgen die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4956">kreolischen</ref>: Bausteine zu einem Werk über die aussereuropäische Romania, sie haben reichstes Material herbeigeschafft, Probleme gestellt und geklärt. Zugleich untersucht er die Sprachkreuzungen auf dem Boden der österreichisch-ungarischen Monarchie und beschäftigt sich mit dem Magyarischen. Seit dem Anfang der neunziger Jahre hat er sich, ohne je sein altes Gebiet aufzugeben, immer stärker dem <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4452">Baskischen</ref> zugewandt und <pb facs="#IMG.4" n="4"/> forschend, kämpfend, herausgebend die Wissenschaft von dieser Sprache mitbegründet (vor allem <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.157">„Bask. u. Rom.“ [= Baskisch und Romanisch] 1906</ref>
+               </bibl> u. <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.695">„Die iberi. Dekl.“ [= Die iberische Deklination] 1907</ref>
+               </bibl>). Er greift noch weiter aus: an seine <ref target="https://gams.uni-graz.at/o:hsa.languages#L.759">kaukasischen Studien</ref> schliessen sich – ich ziehe nur die Hauptlinien –, mit den baskischen zusammenhängend, die berberischen und mittelafrikanischen des Siebzigjährigen. Fast alle sind sie in steter, bald lockerer, bald enger Beziehung zur Romania.</p>
+            <p>S. hat der Wissenschaft<note n="4" place="foot" type="editorial">Im Druck: Sprachwissenschaft</note> Gebiete erobert, er hat ihre Methoden umgebildet, ihre Probleme vertieft. Hatte ihn im „V. d. V.“ [=Vok. d. Vulgärlat.] das „Werden der Sprache" beschäftigt, so schreitet er nun nach allen Seiten über <persName ref="[authorityLink]">Diez</persName> hinaus. Von der gesprochenen Sprache ausgehend, fordert er – zugleich mit <persName ref="[authorityLink]">Ascoli</persName> und Mussafia – wissenschaftliche Darstellung der Laute und der Mundarten. Er stellt in der <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.309">„Klass. d. rom. Mundarten“ [= Klassifikation der romanischen Mundarten] (1870)</ref>
+               </bibl> die Frage nach den Sprachgrenzen und leugnet diese Grenzen, da er vorwiegend Übergänge – zeitliche Entwicklung, räumliche Abänderung – sieht. Er bekämpft in der berühmten Schrift <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.55">„Üb. d. Lautges.“ [= Über die Lautgesetze] (1885)</ref>
+               </bibl> die mechanistische Einseitigkeit des junggrammatischen Dogmas.<note n="5" place="foot" type="editorial">Im Druck ist der Satz umgestellt.</note> Die Berührungen der <ref target="https://gams.uni-graz.at/o:hsa.languages#L.863">romanischen Sprachen</ref> mit fremden und die sprachlichen und nationalen Verhältnisse, die er in <placeName ref="[authorityLink]">Österreich</placeName> kennen lernt, führen ihn an das Problem der Sprachmischung heran (<bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">„Sl.-d. u. Sl.-it.“ [= Slawo-deutsches und Slawo-italienisches] 1884</ref>
+               </bibl>), Entstehung und <pb facs="#IMG.5" n="5"/> Struktur der kreolischen Mundarten, die ihm zuerst als Mischsprachen erscheinen, in denen er dann ein primitives Sprachstadium erkennt, an die Idee der Weltsprache (<bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.486">„Auf Anl. d. Vol.“ [= Auf Anlass des Volkapüks] 1887</ref>
+               </bibl>, <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.675">„Weltspr. u. Wsp“ [= Weltsprache und Weltsprachen] 1894</ref>
+               </bibl>). Die Etymologie, auf Bedeutung<note n="6" place="foot" type="editorial">Im Druck: Wortbedeutung.</note> und Wortmischung gegründet, wird zur Individualgeschichte des Wortes (<bibl>„Rom. Etym. I II“ [= <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.437">Roman. Etymologieen I</ref>, <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.28">II</ref>] 1897, 1899</bibl>), diese, von der Sachforschung nicht zu trennen, zur Kultur- und Begriffsgeschichte (<bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.53">
 „An A. [= Adolf] Mussafia“, 1905</ref>
-          </bibl>), so schliesslich die Bedeutungs= zur Bezeichnungslehre: Das Wörterbuch ist identisch mit der Grammatik. Wie früher die Anschauungen von Sprachgrenzen, lösen sich ihm nun die grammatischen und syntaktischen Kategorien auf (<bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.555">„Sprachurspr.“ [= Sprachursprung] 1918-21</ref>
-          </bibl>
-          <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.337">„Poss. u. pass.“ [= Possessivisch und passivisch] 1921</ref>
-          </bibl>).</p>
-        <p>Die Einheit dieses Werkes wird deutlich an S.s [= Schuchardts] <hi rend="unknown"
-            rendition="#none">Sprachphilosophie</hi>. Nicht von der Philosophie, sondern von der Sprachwissenschaft ausgehend, ist sie der Kern des Ganzen. In den V. d. V. [= Vok. d. Vulgärlat.] hat er noch Manches von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2638">Schleicher</persName> übernommen. In der Klass. d. r. Mda. [= Klass. d. rom. Mundarten] ist er ganz selbständig. Die Sprache ist eine Betätigung, eine Funktion, kein Organismus. Damit ist in der Frage der Sprachverwandtschaft gegen die Stammbaumtheorie entschieden. Die Abänderung in Raum und Zeit ist von Mischung durchsetzt, die allen Wandel verursacht. So ist die einzelne Sprache ohne andere Einheitlichkeit als <pb
-            facs="#IMG.6"
-            n="6"/> als die des Gebrauchs. Die menschliche Sprache in ihrer Gesamtheit bildet eine Einheit, ein Kontinuum, unendlich abgestuft, in dem der Begriff der Entlehnung zurücktritt vor dem der elementaren Verwandtschaft. Aus der Entwicklung lässt sich die Entstehung erschliessen. Hier ergibt sich die Priorität des Verbalbegriffs und des eingliedrigen Satzes. Es gibt nur <hi
-            rend="unknown" rendition="#none">eine</hi>, allgemeine Sprachwissenschaft. Die Sprache steht in Zusammenhang und Wechselwirkung mit allem Erleben der Menschheit.</p>
-        <p>S. [=Schuchardt] hat, im Gefühl von der Einheit der Wissenschaft, „das Hineintragen naturwissenschaftlicher Anschauungen und Verfahrungsweisen in die Sprachwissenschaft“ bekämpft. Sein Blick für das Lebendige und Vielfältige, im Goetheschen Sinne Organisch-Abgestufte und sich Entwickelnde, für das Sich-Kreuzen der Ursachen, Erscheinungen, Probleme, sein Ablehnen willkürlicher und dogmatischer Erklärung haben ihn nicht ins Relativistische geführt, sondern zu einer umfassenden Anschauung des sprachlichen Geschehens und zu einer tiefsinnigen Auffassung der Sprachmischung. Er hat sie in den Arbeiten über eines halben Jahrhunderts dargestellt, bis zu den jüngsten, zusammenfassenden glottogonischen Schriften (<bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.713">„Sprachverwandtschaft“ 1917</ref>
-          </bibl>, <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.555">
+               </bibl>), so schliesslich die Bedeutungs= zur Bezeichnungslehre: Das Wörterbuch ist identisch mit der Grammatik. Wie früher die Anschauungen von Sprachgrenzen, lösen sich ihm nun die grammatischen und syntaktischen Kategorien auf (<bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.555">„Sprachurspr.“ [= Sprachursprung] 1918-21</ref>
+               </bibl>
+               <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.337">„Poss. u. pass.“ [= Possessivisch und passivisch] 1921</ref>
+               </bibl>).</p>
+            <p>Die Einheit dieses Werkes wird deutlich an S.s [= Schuchardts] <hi rend="unknown" rendition="#none">Sprachphilosophie</hi>. Nicht von der Philosophie, sondern von der Sprachwissenschaft ausgehend, ist sie der Kern des Ganzen. In den V. d. V. [= Vok. d. Vulgärlat.] hat er noch Manches von <persName ref="[authorityLink]">Schleicher</persName> übernommen. In der Klass. d. r. Mda. [= Klass. d. rom. Mundarten] ist er ganz selbständig. Die Sprache ist eine Betätigung, eine Funktion, kein Organismus. Damit ist in der Frage der Sprachverwandtschaft gegen die Stammbaumtheorie entschieden. Die Abänderung in Raum und Zeit ist von Mischung durchsetzt, die allen Wandel verursacht. So ist die einzelne Sprache ohne andere Einheitlichkeit als <pb facs="#IMG.6" n="6"/> als die des Gebrauchs. Die menschliche Sprache in ihrer Gesamtheit bildet eine Einheit, ein Kontinuum, unendlich abgestuft, in dem der Begriff der Entlehnung zurücktritt vor dem der elementaren Verwandtschaft. Aus der Entwicklung lässt sich die Entstehung erschliessen. Hier ergibt sich die Priorität des Verbalbegriffs und des eingliedrigen Satzes. Es gibt nur <hi rend="unknown" rendition="#none">eine</hi>, allgemeine Sprachwissenschaft. Die Sprache steht in Zusammenhang und Wechselwirkung mit allem Erleben der Menschheit.</p>
+            <p>S. [=Schuchardt] hat, im Gefühl von der Einheit der Wissenschaft, „das Hineintragen naturwissenschaftlicher Anschauungen und Verfahrungsweisen in die Sprachwissenschaft“ bekämpft. Sein Blick für das Lebendige und Vielfältige, im Goetheschen Sinne Organisch-Abgestufte und sich Entwickelnde, für das Sich-Kreuzen der Ursachen, Erscheinungen, Probleme, sein Ablehnen willkürlicher und dogmatischer Erklärung haben ihn nicht ins Relativistische geführt, sondern zu einer umfassenden Anschauung des sprachlichen Geschehens und zu einer tiefsinnigen Auffassung der Sprachmischung. Er hat sie in den Arbeiten über eines halben Jahrhunderts dargestellt, bis zu den jüngsten, zusammenfassenden glottogonischen Schriften (<bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.713">„Sprachverwandtschaft“ 1917</ref>
+               </bibl>, <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.555">
 „Sprachursprung“</ref>
-          </bibl>).</p>
-        <p>S. [Schuchardt] will erkennen <hi rend="unknown"
-            rendition="#none">und </hi>wirken. Er will die Schäden und Unklarheiten in der Sprache beseitigen. Als <hi
-            rend="unknown" rendition="#none">Sprachpolitiker </hi>untersucht <pb facs="#IMG.7" n="7"/> er an Beispielen aus dem alten Österreich-Ungarn und an weltsprachlichen Bestrebungen, inwieweit die Sprache, die die Nation trennt, zu ihrer Verständigung dienen könnte. Er hat über dem Recht der Nationen nie das der Menschheit vergessen.</p>
-        <p>Seine Schriften, äusserst vielfältig<note n="7" place="foot" type="editorial">Im Druck: inhaltlich so vielgestaltig.</note>, reichen von der eindringendsten Untersuchung bis zur freiesten Überschau. Sie umfassen die monumentale Kompilation, den Essay (<bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.783">„Rom. u. Kelt.“ [=Romanisches und Keltisches] 1886</ref>
-          </bibl>), die Miszelle, die breitausladende Festschrift (für Witte (<bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.612">„Rit. u. Terz.“ [=Ritornell und Terzine] 1874</ref>
-          </bibl>), <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">Miklosich</ref>
-          </bibl>, <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.53">
+               </bibl>).</p>
+            <p>S. [Schuchardt] will erkennen <hi rend="unknown" rendition="#none">und </hi>wirken. Er will die Schäden und Unklarheiten in der Sprache beseitigen. Als <hi rend="unknown" rendition="#none">Sprachpolitiker </hi>untersucht <pb facs="#IMG.7" n="7"/> er an Beispielen aus dem alten Österreich-Ungarn und an weltsprachlichen Bestrebungen, inwieweit die Sprache, die die Nation trennt, zu ihrer Verständigung dienen könnte. Er hat über dem Recht der Nationen nie das der Menschheit vergessen.</p>
+            <p>Seine Schriften, äusserst vielfältig<note n="7" place="foot" type="editorial">Im Druck: inhaltlich so vielgestaltig.</note>, reichen von der eindringendsten Untersuchung bis zur freiesten Überschau. Sie umfassen die monumentale Kompilation, den Essay (<bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.783">„Rom. u. Kelt.“ [=Romanisches und Keltisches] 1886</ref>
+               </bibl>), die Miszelle, die breitausladende Festschrift (für Witte (<bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.612">„Rit. u. Terz.“ [=Ritornell und Terzine] 1874</ref>
+               </bibl>), <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">Miklosich</ref>
+               </bibl>, <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.53">
 Mussafia</ref>
-
-          </bibl>), die Rezension, inner- und ausserhalb dieser die Polemik, in der sich sein Werk immer mehr entfaltet hat (gegen Paul für die seelische Bedingung des Lautwandels, gegen Thomas für die begriffliche der Wortgeschichte, gegen Vinson in der Frage der byskischen Verba, gegen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2156">Meillet</persName> in der der Sprachverwandtschaft). Ihr Reiz ist, dass sie voll von Leben, vibrierend, leidenschaftlich, zugleich von ritterlicher Gerechtigkeit und innerem Mass sind. Ganz unabhängig und unschematisch, oft kurz und konzentriert, sind sie andeutend und Richtung weisend, nicht lehrhaft und systematisch. Dem Blick fürs Komplexe entspricht die Dichtheit ihres Gewebes. Erörterungen schlingen sich durch Reihen von kritischen, polemischen, darstellenden Arbeiten. Scheinbar unübersichtlich, kreist dieses Werk um die zentralen Fragen der Sprachwissenschaft und muss in <pb
-            facs="#IMG.8" n="8"/> seinen Zusammenhängen, als Ganzes gesehen werden.<hi rendition="#sup">1</hi>
-        </p>
-        <p>Durchaus persönlich, wie die Anlage der Schriften, ist ihr Stil. Er ist anmutig und kräftig, von reinem Kontur, eigenen Tempo und eigener Bildhaftigkeit.</p>
-
-        <p>Das in S.‘s [= Schuchardts] Arbeiten gesammelte Wissen ist ein ungeheueres; aber das Methodische, die Frage nach neuen<note
-            n="8" place="foot"
-            type="editorial">Im Druck: den.</note> Kriterien, die Lösung transzendenter Probleme steht ihm zuhöchst. Er hat immer nach dem Schwierigsten gegriffen, ist immer weitergeschritten. Kaum ein Anderer ist so weit und tief gedrungen. Sein Weg führt auf Grenzkämmen, zu hohen Warten, Ausblicke gewährend, den Andern oft fern. Von da aus sieht er Zusammenhänge, Einheit und in ihr dauernde Veränderung. So steht er am Anfang eines Jahrhunderts, wie <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3539">Wilhelm von Humboldt</persName> an dem des vorigen und der Sprachwissenschaft.</p>
-
-        <p>Einsam arbeitend, weit voraus, hat er Anregungen für Jahrzehnte gegeben. Seine Weltgeltung steht längst fest, aber erst <pb
-            facs="#IMG.9" n="9"/> seit den neueren Schweizer Romanisten hat die Forschung seine Gedanken erkannt und in steigendem Masse aufgegriffen. Hier beginnt die eigentliche Wirkung seines Werks.</p>
-        <p>Indes der Meister mit der inneren Frische, die wir bewundern, schafft, keinem Neuen verschlossen, das Antlitz dem Leben zugewandt, grüsst ihn diese Zeitschrift, die, von ihrem ersten Jahrgang bis zu dem <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.677">Aufsatz über „Ecke, Winkel“</ref>
-
-          </bibl>, den kein Anderer so hätte schreiben können, in fast jedem ihrer Bände seinen Namen aufweist. Wir Alle grüssen ihn<note
-            n="9" place="foot" type="editorial">Im Druck: grüßen ihn dankbar (dafür fehlt: dankbar).</note>, in Verehrung, mit Dank und frommem Wunsch.</p>
-        <postscript>
-          <p>
-            <hi rendition="#sup">1</hi> So im „Brevier“, aus S.s Schriften zusammengestellt u. eingeleitet von Leo Spitzer (Halle 1922) – Festabe und Erfüllung eines romanistischen Desideratums –, u. in des Unterzeichneten noch nicht ganz abgeschlossener Darstellung von S.‘s Sprachphilosophie.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+               </bibl>), die Rezension, inner- und ausserhalb dieser die Polemik, in der sich sein Werk immer mehr entfaltet hat (gegen Paul für die seelische Bedingung des Lautwandels, gegen Thomas für die begriffliche der Wortgeschichte, gegen Vinson in der Frage der byskischen Verba, gegen <persName ref="[authorityLink]">Meillet</persName> in der der Sprachverwandtschaft). Ihr Reiz ist, dass sie voll von Leben, vibrierend, leidenschaftlich, zugleich von ritterlicher Gerechtigkeit und innerem Mass sind. Ganz unabhängig und unschematisch, oft kurz und konzentriert, sind sie andeutend und Richtung weisend, nicht lehrhaft und systematisch. Dem Blick fürs Komplexe entspricht die Dichtheit ihres Gewebes. Erörterungen schlingen sich durch Reihen von kritischen, polemischen, darstellenden Arbeiten. Scheinbar unübersichtlich, kreist dieses Werk um die zentralen Fragen der Sprachwissenschaft und muss in <pb facs="#IMG.8" n="8"/> seinen Zusammenhängen, als Ganzes gesehen werden.<hi rendition="#sup">1</hi>
+            </p>
+            <p>Durchaus persönlich, wie die Anlage der Schriften, ist ihr Stil. Er ist anmutig und kräftig, von reinem Kontur, eigenen Tempo und eigener Bildhaftigkeit.</p>
+            <p>Das in S.‘s [= Schuchardts] Arbeiten gesammelte Wissen ist ein ungeheueres; aber das Methodische, die Frage nach neuen<note n="8" place="foot" type="editorial">Im Druck: den.</note> Kriterien, die Lösung transzendenter Probleme steht ihm zuhöchst. Er hat immer nach dem Schwierigsten gegriffen, ist immer weitergeschritten. Kaum ein Anderer ist so weit und tief gedrungen. Sein Weg führt auf Grenzkämmen, zu hohen Warten, Ausblicke gewährend, den Andern oft fern. Von da aus sieht er Zusammenhänge, Einheit und in ihr dauernde Veränderung. So steht er am Anfang eines Jahrhunderts, wie <persName ref="[authorityLink]">Wilhelm von Humboldt</persName> an dem des vorigen und der Sprachwissenschaft.</p>
+            <p>Einsam arbeitend, weit voraus, hat er Anregungen für Jahrzehnte gegeben. Seine Weltgeltung steht längst fest, aber erst <pb facs="#IMG.9" n="9"/> seit den neueren Schweizer Romanisten hat die Forschung seine Gedanken erkannt und in steigendem Masse aufgegriffen. Hier beginnt die eigentliche Wirkung seines Werks.</p>
+            <p>Indes der Meister mit der inneren Frische, die wir bewundern, schafft, keinem Neuen verschlossen, das Antlitz dem Leben zugewandt, grüsst ihn diese Zeitschrift, die, von ihrem ersten Jahrgang bis zu dem <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.677">Aufsatz über „Ecke, Winkel“</ref>
+               </bibl>, den kein Anderer so hätte schreiben können, in fast jedem ihrer Bände seinen Namen aufweist. Wir Alle grüssen ihn<note n="9" place="foot" type="editorial">Im Druck: grüßen ihn dankbar (dafür fehlt: dankbar).</note>, in Verehrung, mit Dank und frommem Wunsch.</p>
+            <postscript>
+               <p>
+                  <hi rendition="#sup">1</hi> So im „Brevier“, aus S.s Schriften zusammengestellt u. eingeleitet von Leo Spitzer (Halle 1922) – Festabe und Erfüllung eines romanistischen Desideratums –, u. in des Unterzeichneten noch nicht ganz abgeschlossener Darstellung von S.‘s Sprachphilosophie.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

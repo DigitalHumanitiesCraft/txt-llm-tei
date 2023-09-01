@@ -1,318 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Georges Lacombe (134-086)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Katrin</forename>
-            <surname>Purgay</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4032" type="PID">o:hsa.letter.4032</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">134-086</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</repository>
-            <idno type="shelfmark">086</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1911-07-30">1911-07-30</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Katrin</forename>
-              <surname>Purgay</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Georges Lacombe</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1977"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4032">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1911-07-30">1911-07-30</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1977" ref="https://viaf.org/viaf/34446283">
-            <forename>Georges</forename>
-            <surname>Lacombe</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1977" type="context">
-                        Korrespondenz Hugo Schuchardt - Georges Lacombe
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4032" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4032" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4032" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4032" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4032" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 30. Juli ’11</dateline>
-        <opener>Sehr geehrter Herr und Freund.</opener>
-
-        <p>Eben hatte ich eine Karte an Sie abgeschickt (mit der Anfrage ob Sie etwas über neuerliche Verbesserungen von Stempfs Dechapare-übersetzung wüßten) als ich Ihren Brief aus Cauterets empfing. Zu Ihren <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5524">Leiçarraga</persName>-bemerkungen Folgendes.</p>
-        <p>12,20 <hi rend="unknown" rendition="#none">kea darión lihoa</hi>: ‒ kea <hi rend="unknown" rendition="#none">dario lihoari</hi>? Ja! „Der Rauch entströmt dem Linnen“. S. meine <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.88">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4032" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 30. Juli ’11</dateline>
+            <opener>Sehr geehrter Herr und Freund.</opener>
+            <p>Eben hatte ich eine Karte an Sie abgeschickt (mit der Anfrage ob Sie etwas über neuerliche Verbesserungen von Stempfs Dechapare-übersetzung wüßten) als ich Ihren Brief aus Cauterets empfing. Zu Ihren <persName ref="[authorityLink]">Leiçarraga</persName>-bemerkungen Folgendes.</p>
+            <p>12,20 <hi rend="unknown" rendition="#none">kea darión lihoa</hi>: ‒ kea <hi rend="unknown" rendition="#none">dario lihoari</hi>? Ja! „Der Rauch entströmt dem Linnen“. S. meine <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.88">
 Bask. Stud. I</ref>
-          </bibl>, 42 (guip. se me está cayendo: <hi rend="unknown"
-            rendition="#none">dario</hi>). Vgl. Dechepare B 2,9: <hi rend="unknown"
-            rendition="#none">Orotaric laryola odol preciatuya</hi> „von allen Seiten strömt das kostbare Blut (ihm herab)“: <hi
-            rend="unknown" rendition="#none">
+               </bibl>, 42 (guip. se me está cayendo: <hi rend="unknown" rendition="#none">dario</hi>). Vgl. Dechepare B 2,9: <hi rend="unknown" rendition="#none">Orotaric laryola odol preciatuya</hi> „von allen Seiten strömt das kostbare Blut (ihm herab)“: <hi rend="unknown" rendition="#none">
 fluvioac iariaturen zaizca</hi> Leic. Joh. 7,38. </p>
-        <p>
-          <pb facs="#IMG.2" n="2"/> 12,48. <hi rend="unknown"
-            rendition="#none">erran cieçon hura erran cionari</hi> (<hi rend="unknown" rendition="#none">ceraucanari</hi>? Ja!) Das ist ja die Stelle zu der ich jenen langen Kommentar schrieb der durch Ihre Hände gegangen ist</p>
-        <p>15,32 <hi rend="unknown"
-            rendition="#none">ecen ia hirur egun du</hi>. Ein bei Leiç. nicht seltener Romanismus; so Mark 8,2 <hi
-            rend="unknown" rendition="#none">hirur egun du,</hi> Luk 13,7 <hi rend="unknown"
-            rendition="#none">hirur urthe dic</hi>, 13,16 <hi rend="unknown"
-            rendition="#none">hemeçortzi urthe duela</hi>[.] Aber auch das von Ihnen an erster Stelle empfohlene <hi
-            rend="unknown" rendition="#none">hirur egun huntan</hi> findet sich bei ihm Mark 5,25: <hi rend="unknown" rendition="#none">hamabi urthe hetan</hi>.</p>
-        <p>17,11. <hi rend="unknown" rendition="#none">Elias ethorriren bada</hi>. Besser sei <hi rend="unknown"
-            rendition="#none">da</hi>, sagen Sie, aber <hi rend="unknown"
-            rendition="#none">bada</hi> steht mit Nachdruck; es handelt sich darum ob Elias kommt oder nicht: <hi
-            rend="unknown" rendition="#none">Elias <hi rend="unknown" rendition="#none">quidem</hi>
-          </hi>…. <hi rend="unknown" rendition="#none">De vray</hi> Elie… Das <hi rend="unknown"
-            rendition="#none">da</hi> braucht im Folgenden nicht wiederholt zu werden bei dem <hi rend="unknown"
-            rendition="#none">bere staturaco ditu</hi> da keine Alternative aufgestellt worden ist. Wohl aber hätte dieses <hi
-            rend="unknown" rendition="#none">staturaco</hi> selbst eine Bemerkung verdient für <hi rend="unknown"
-            rendition="#none">staturaturen</hi>; denn Leiç. bildet nur selten das Fut. auf –<hi rend="unknown"
-            rendition="#none">co (ethorrico</hi>, gewöhnlich <hi rend="unknown" rendition="#none">ethorriren</hi>). </p>
-        <p>
-          <pb facs="#IMG.3" n="3"/> Ebenso Mark 9,11. Act. Ap. 1, 6. Auch die Bildung ist merkwürdig: <hi rend="unknown" rendition="#none">bere ‒ statu = ra ‒ tu</hi>.</p>
-        <p>20,23 <hi rend="unknown" rendition="#none">aitaz appainduric dauenei</hi>. Ebenso <hi rend="unknown"
-            rendition="#none">lekua Jaincoaz appainduric</hi> Apoc. 12,6 Vgl. die Überschriften wie Matth. 2: <hi
-            rend="unknown" rendition="#none">Christ.., çuhurrez adoratu</hi>, 4<hi rend="unknown"
-            rendition="#none"> Christ…Aingueruez cerbitzatu</hi>, aber auch <hi rend="unknown" rendition="#none">ficotzebat maradicatu Christec</hi> u.ä. Einl. z. Leiç LXXXVIII Anm.</p>
-        <p>19,27 <hi rend="unknown" rendition="#none">ler içanen da beraz <hi rend="unknown" rendition="#none">
+            <p>
+               <pb facs="#IMG.2" n="2"/> 12,48. <hi rend="unknown" rendition="#none">erran cieçon hura erran cionari</hi> (<hi rend="unknown" rendition="#none">ceraucanari</hi>? Ja!) Das ist ja die Stelle zu der ich jenen langen Kommentar schrieb der durch Ihre Hände gegangen ist</p>
+            <p>15,32 <hi rend="unknown" rendition="#none">ecen ia hirur egun du</hi>. Ein bei Leiç. nicht seltener Romanismus; so Mark 8,2 <hi rend="unknown" rendition="#none">hirur egun du,</hi> Luk 13,7 <hi rend="unknown" rendition="#none">hirur urthe dic</hi>, 13,16 <hi rend="unknown" rendition="#none">hemeçortzi urthe duela</hi>[.] Aber auch das von Ihnen an erster Stelle empfohlene <hi rend="unknown" rendition="#none">hirur egun huntan</hi> findet sich bei ihm Mark 5,25: <hi rend="unknown" rendition="#none">hamabi urthe hetan</hi>.</p>
+            <p>17,11. <hi rend="unknown" rendition="#none">Elias ethorriren bada</hi>. Besser sei <hi rend="unknown" rendition="#none">da</hi>, sagen Sie, aber <hi rend="unknown" rendition="#none">bada</hi> steht mit Nachdruck; es handelt sich darum ob Elias kommt oder nicht: <hi rend="unknown" rendition="#none">Elias <hi rend="unknown" rendition="#none">quidem</hi>
+               </hi>…. <hi rend="unknown" rendition="#none">De vray</hi> Elie… Das <hi rend="unknown" rendition="#none">da</hi> braucht im Folgenden nicht wiederholt zu werden bei dem <hi rend="unknown" rendition="#none">bere staturaco ditu</hi> da keine Alternative aufgestellt worden ist. Wohl aber hätte dieses <hi rend="unknown" rendition="#none">staturaco</hi> selbst eine Bemerkung verdient für <hi rend="unknown" rendition="#none">staturaturen</hi>; denn Leiç. bildet nur selten das Fut. auf –<hi rend="unknown" rendition="#none">co (ethorrico</hi>, gewöhnlich <hi rend="unknown" rendition="#none">ethorriren</hi>). </p>
+            <p>
+               <pb facs="#IMG.3" n="3"/> Ebenso Mark 9,11. Act. Ap. 1, 6. Auch die Bildung ist merkwürdig: <hi rend="unknown" rendition="#none">bere ‒ statu = ra ‒ tu</hi>.</p>
+            <p>20,23 <hi rend="unknown" rendition="#none">aitaz appainduric dauenei</hi>. Ebenso <hi rend="unknown" rendition="#none">lekua Jaincoaz appainduric</hi> Apoc. 12,6 Vgl. die Überschriften wie Matth. 2: <hi rend="unknown" rendition="#none">Christ.., çuhurrez adoratu</hi>, 4<hi rend="unknown" rendition="#none"> Christ…Aingueruez cerbitzatu</hi>, aber auch <hi rend="unknown" rendition="#none">ficotzebat maradicatu Christec</hi> u.ä. Einl. z. Leiç LXXXVIII Anm.</p>
+            <p>19,27 <hi rend="unknown" rendition="#none">ler içanen da beraz <hi rend="unknown" rendition="#none">
 gure</hi>
-          </hi>? Sie meinen, es müße <hi rend="unknown"
-            rendition="#none">
-guzaz</hi> heißen; aber dann würde es bedeuten; was wird <hi rend="unknown"
-            rendition="#none">mit uns</hi> sein? Der Sinn jedoch ist; was wird <hi rend="unknown"
-            rendition="#none">unser</hi> (Teil) sein? was werden wir (als Lohn) haben? So denke ich könnte wohl <hi
-            rend="unknown" rendition="#none">guri</hi> stehen, aber dann müßte <hi rend="unknown"
-            rendition="#none">zaicu</hi> vorausgehen. Also <hi rend="unknown"
-            rendition="#none">gure</hi> wird nicht zu beanstanden sein; nur daß man vielleicht <hi rend="unknown" rendition="#none">gurea</hi>erwarten könnte.</p>
-        <p>18,9. hobe duk hire. Ähnlich <hi rend="unknown" rendition="#none">harc hobe luque</hi> [18,]6 (so auch Luk 17,2).</p>
-        <p>26,11 <hi rend="unknown" rendition="#none">ethorten dirade</hi>. Kommt <hi rend="unknown"
-            rendition="#none">heltzen </hi>überhaupt im N.T. vor? <hi rend="unknown" rendition="#none">heldu da</hi> ist eine der ersten Eigentümlichkeiten die mir im bask. Sprachgebrauch aufgefallen sind; ich denke, ich habe darüber irgendwo mich geäußert.</p>
-        <p>20,2 <hi rend="unknown"
-            rendition="#none">dinero batetan eguneco</hi> entspricht à un denier pour jour Sollte <hi rend="unknown"
-            rendition="#none">bana </hi>gebraucht werden<hi rend="unknown"
-            rendition="#none">, </hi>müßte es auch im Lok. stehen:<hi rend="unknown" rendition="#none"> banatan </hi>
-        </p>
-        <p>
-          <pb facs="#IMG.4" n="4"/> XX, 30 (und auch IX Überschr.) sowie in dem Index rerum ĩv} <hi rend="unknown"
-            rendition="#none">itsu bi</hi> (doch <hi rend="unknown" rendition="#none">bi itsu</hi> 9,27) guipuzk.</p>
-        <p>Wortstellung um di[e] Kakophonie zu vermeiden!</p>
-        <p>XXI Ü. u. XXIV Ü. halte ich <hi rend="unknown" rendition="#none">eguiten duten<hi rend="unknown" rendition="#none">ac</hi>
-          </hi> und <hi rend="unknown" rendition="#none">
+               </hi>? Sie meinen, es müße <hi rend="unknown" rendition="#none">
+guzaz</hi> heißen; aber dann würde es bedeuten; was wird <hi rend="unknown" rendition="#none">mit uns</hi> sein? Der Sinn jedoch ist; was wird <hi rend="unknown" rendition="#none">unser</hi> (Teil) sein? was werden wir (als Lohn) haben? So denke ich könnte wohl <hi rend="unknown" rendition="#none">guri</hi> stehen, aber dann müßte <hi rend="unknown" rendition="#none">zaicu</hi> vorausgehen. Also <hi rend="unknown" rendition="#none">gure</hi> wird nicht zu beanstanden sein; nur daß man vielleicht <hi rend="unknown" rendition="#none">gurea</hi>erwarten könnte.</p>
+            <p>18,9. hobe duk hire. Ähnlich <hi rend="unknown" rendition="#none">harc hobe luque</hi> [18,]6 (so auch Luk 17,2).</p>
+            <p>26,11 <hi rend="unknown" rendition="#none">ethorten dirade</hi>. Kommt <hi rend="unknown" rendition="#none">heltzen </hi>überhaupt im N.T. vor? <hi rend="unknown" rendition="#none">heldu da</hi> ist eine der ersten Eigentümlichkeiten die mir im bask. Sprachgebrauch aufgefallen sind; ich denke, ich habe darüber irgendwo mich geäußert.</p>
+            <p>20,2 <hi rend="unknown" rendition="#none">dinero batetan eguneco</hi> entspricht à un denier pour jour Sollte <hi rend="unknown" rendition="#none">bana </hi>gebraucht werden<hi rend="unknown" rendition="#none">, </hi>müßte es auch im Lok. stehen:<hi rend="unknown" rendition="#none"> banatan </hi>
+            </p>
+            <p>
+               <pb facs="#IMG.4" n="4"/> XX, 30 (und auch IX Überschr.) sowie in dem Index rerum ĩv} <hi rend="unknown" rendition="#none">itsu bi</hi> (doch <hi rend="unknown" rendition="#none">bi itsu</hi> 9,27) guipuzk.</p>
+            <p>Wortstellung um di[e] Kakophonie zu vermeiden!</p>
+            <p>XXI Ü. u. XXIV Ü. halte ich <hi rend="unknown" rendition="#none">eguiten duten<hi rend="unknown" rendition="#none">ac</hi>
+               </hi> und <hi rend="unknown" rendition="#none">
 perseveraturen due<hi rend="unknown" rendition="#none">na</hi>
-          </hi> für richtig </p>
-        <p>Vivant sequentes!</p>
-        <p>Einl. z. Leic. LXXV habe ich die Formen <hi rend="unknown" rendition="#none">
-baitinguzguet</hi> und <hi
-            rend="unknown"
-            rendition="#none">eztinguzteçuen</hi> als durchaus rätselhaft bezeichnet. Nun begegnet mir bei Dechepare<hi
-            rend="unknown" rendition="#none"> enguztazu</hi> „gebt (gewährt o.ä.) sie mir“. Das setzt ein Verb <hi
-            rend="unknown" rendition="#none">engun, ingun</hi> voraus ähnlicher Bildung wie <hi rend="unknown" rendition="#none">entzun</hi>, das ja auch in einfacher Konjugation vorkommt. Könnten Sie nicht von dort aus wo Sie jetzt weilen in der lebenden Sprache eine Spur davon auffinden?</p>
-        <p>Wenn an Ithurrys Grammatik nur so wenig fehlt, so wäre es ja geradezu auch in materieller Beziehung ein Vorteil wenn sie fertig gedruckt würde. Der Torso kann doch nicht im Buchhandel verkauft werden.</p>
-        <closer>
-          <salute>Mit herzl. Gruß</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Sch.</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </hi> für richtig </p>
+            <p>Vivant sequentes!</p>
+            <p>Einl. z. Leic. LXXV habe ich die Formen <hi rend="unknown" rendition="#none">
+baitinguzguet</hi> und <hi rend="unknown" rendition="#none">eztinguzteçuen</hi> als durchaus rätselhaft bezeichnet. Nun begegnet mir bei Dechepare<hi rend="unknown" rendition="#none"> enguztazu</hi> „gebt (gewährt o.ä.) sie mir“. Das setzt ein Verb <hi rend="unknown" rendition="#none">engun, ingun</hi> voraus ähnlicher Bildung wie <hi rend="unknown" rendition="#none">entzun</hi>, das ja auch in einfacher Konjugation vorkommt. Könnten Sie nicht von dort aus wo Sie jetzt weilen in der lebenden Sprache eine Spur davon auffinden?</p>
+            <p>Wenn an Ithurrys Grammatik nur so wenig fehlt, so wäre es ja geradezu auch in materieller Beziehung ein Vorteil wenn sie fertig gedruckt würde. Der Torso kann doch nicht im Buchhandel verkauft werden.</p>
+            <closer>
+               <salute>Mit herzl. Gruß</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Sch.</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

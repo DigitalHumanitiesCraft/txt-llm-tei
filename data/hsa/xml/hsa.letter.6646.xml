@@ -1,428 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Ferdinand Hestermann an Hugo Schuchardt (5-04700)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1759">
-            <forename>Ferdinand</forename>
-            <surname>Hestermann</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/6646" type="PID">o:hsa.letter.6646</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">5-04700</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">04700</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1759">
-                <forename>Ferdinand</forename>
-                <surname>Hestermann</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" ref="http://sws.geonames.org/2761368">Wien</origPlace>
-              <origDate ana="dcterms:created" when="1916-09-29">1916-09-29</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Ferdinand Hestermann und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1759"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.6646">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1759" ref="https://viaf.org/viaf/3402650">
-            <forename>Ferdinand</forename>
-            <surname>Hestermann</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" key="#GID.1" ref="http://sws.geonames.org/2761368">Wien</placeName>
-          <date when="1916-09-29">1916-09-29</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <name ref="http://geonames.org/2761368" type="fcode:STM">Wien-Fluss</name>
-                <location>
-                  <geo>16.38409,48.2088</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1759" type="context">
-                        Korrespondenz Ferdinand Hestermann - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3080" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dankschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.463" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Erster Weltkrieg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4967" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Wiener Zeitschrift für die Kunde des Morgenlandes</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4184" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Anthropos</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.728" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachen in Südamerika</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.836" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Buchveröffentlichung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4441" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Afrikanistik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3391" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kaiserliche Akademie der Wissenschaften in Wien</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.797" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Phonographie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.801" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachen im Kaukasus</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4440" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Finnougristik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.966" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Phonogrammarchiv (Wien)</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.337" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Lykisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.377" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Etruskisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.742" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Georgisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.741" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Südkaukasische (kartwelische) Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.759" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kaukasische Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.5698" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Oskisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.789" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Tatarisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6646" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6646" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6646" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6646" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6646" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.6646" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Wien, am 29. September 1916.<lb/>XII Graf Seilerng.22/II</dateline>
-        <opener>Hochgeehrter Herr Hofrat!</opener>
-        <p>Ihre so überaus freundliche Sendung ist gestern hier eingetroffen.<note n="1" place="foot"
-              type="editorial">Vgl. Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.6645">4-04699</ref>.</note> Ebenfalls am Tage vorher Ihr so liebenswürdiger Brief. Beiden Aeusserungen Ihres gütigen Wohlwollens sage ich meinen herzlichen Dank. Wenn Herr Hofrat bemerken, dass ich sichtlich überrascht sein würde, so ist das in der Tat eingetroffen, aber in der besseren Richtung, indem ich, wie ich von Professoren und ihren Werken nach Erfahrung wusste, ich mir viel weniger vorgestellt hatte. Sind doch jetzt über 60 Nummern durch diese Sendung in meiner Hand, zusammen also über 70 Ihrer werten Arbeiten. Wenn ich etwas bedauern darf, so ist es nur das Eine, dass die „Karthwelische Sprachwissenschaft“ nur in Nrn. I (283) und III (297) vertreten ist, während die Nummer II (284) nicht übergekommen ist, was gewiss in einem Manko seinen Grund hat. Doch besitze ich von dieser Arbeit schon lange meine Excerpten. Es freut mich das in meiner Not an Büchern um so mehr, da ich so armselig daran war, und hier in Wien besonders in der reichsten Anthropologischen Abteilung die erschwerendsten Umstände vorliegen.</p>
-
-        <p>Ich schliesse mich des weiteren Ihrem geschätzten Schreiben an, und bemerke zunächst, dass ich mich mit dem <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.337">
-Lykischen</ref> schon seit Jahren beschäftigt hatte, ich eine ganze Arbeit über das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.337">Lykische</ref> und seine Entzifferung fertig hatte, aber nicht in Druck bringen kann, wegen des Krieges. So muss ich sie in Bruchstücken verausgaben, der zweite Teil ist eben von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5697">Wiklund</persName>
-          <note n="2" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.5697">Karl Bernhard Wiklund</persName> (1868-1934), <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4440">Finno-Ugrist</ref> in Uppsala.</note> für den Le Monde Oriental in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6089">Uppsala</placeName> angenommen. <pb facs="#IMG.2"
-            n="2"/> Damit bin ich schon in eine weitere Beantwortung Ihrer Frage eingetreten, nämlich dass ich mich beschränken möchte. Ich bin so überzeugt, dass Herr Hofrat mit diesem Hinweis vollständig das Beste für mich treffen, wie es viele gesagt haben, und ich es auch lebhaftest empfinde. Ich will aber Einiges zur Erklärung dieser meiner Notlage hinzufügen. Das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.337">Lykische</ref>, um gleich bei dem Thema zu bleiben, ist eine Folge meiner <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.377">etruskisch</ref>en Arbeit, die ich die Jahre zuvor gemacht habe. Die Arbeit umfasst die ersten 5000 Inschriften des Corpus, die ich in 14 Tagen und Nächten kopiert hatte. Die Arbeit erstreckt sich auf eine Unmasse von Kleinigkeiten, die beiläufig ca 1000 Folioseiten ausmachen mögen. Es war meine erste Arbeit überhaupt in diesen Gebieten, denn das erste, was ich im Leben auf der vierten Gymnasialklasse studierte, war <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5703">Bruppacher</persName>’s Versuch einer Lautlehre des <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.5698">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.6646" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Wien, am 29. September 1916.<lb/>XII Graf Seilerng.22/II</dateline>
+            <opener>Hochgeehrter Herr Hofrat!</opener>
+            <p>Ihre so überaus freundliche Sendung ist gestern hier eingetroffen.<note n="1" place="foot" type="editorial">Vgl. Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.6645">4-04699</ref>.</note> Ebenfalls am Tage vorher Ihr so liebenswürdiger Brief. Beiden Aeusserungen Ihres gütigen Wohlwollens sage ich meinen herzlichen Dank. Wenn Herr Hofrat bemerken, dass ich sichtlich überrascht sein würde, so ist das in der Tat eingetroffen, aber in der besseren Richtung, indem ich, wie ich von Professoren und ihren Werken nach Erfahrung wusste, ich mir viel weniger vorgestellt hatte. Sind doch jetzt über 60 Nummern durch diese Sendung in meiner Hand, zusammen also über 70 Ihrer werten Arbeiten. Wenn ich etwas bedauern darf, so ist es nur das Eine, dass die „Karthwelische Sprachwissenschaft“ nur in Nrn. I (283) und III (297) vertreten ist, während die Nummer II (284) nicht übergekommen ist, was gewiss in einem Manko seinen Grund hat. Doch besitze ich von dieser Arbeit schon lange meine Excerpten. Es freut mich das in meiner Not an Büchern um so mehr, da ich so armselig daran war, und hier in Wien besonders in der reichsten Anthropologischen Abteilung die erschwerendsten Umstände vorliegen.</p>
+            <p>Ich schliesse mich des weiteren Ihrem geschätzten Schreiben an, und bemerke zunächst, dass ich mich mit dem <ref target="https://gams.uni-graz.at/o:hsa.languages#L.337">
+Lykischen</ref> schon seit Jahren beschäftigt hatte, ich eine ganze Arbeit über das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.337">Lykische</ref> und seine Entzifferung fertig hatte, aber nicht in Druck bringen kann, wegen des Krieges. So muss ich sie in Bruchstücken verausgaben, der zweite Teil ist eben von <persName ref="[authorityLink]">Wiklund</persName>
+               <note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Karl Bernhard Wiklund</persName> (1868-1934), <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4440">Finno-Ugrist</ref> in Uppsala.</note> für den Le Monde Oriental in <placeName ref="[authorityLink]">Uppsala</placeName> angenommen. <pb facs="#IMG.2" n="2"/> Damit bin ich schon in eine weitere Beantwortung Ihrer Frage eingetreten, nämlich dass ich mich beschränken möchte. Ich bin so überzeugt, dass Herr Hofrat mit diesem Hinweis vollständig das Beste für mich treffen, wie es viele gesagt haben, und ich es auch lebhaftest empfinde. Ich will aber Einiges zur Erklärung dieser meiner Notlage hinzufügen. Das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.337">Lykische</ref>, um gleich bei dem Thema zu bleiben, ist eine Folge meiner <ref target="https://gams.uni-graz.at/o:hsa.languages#L.377">etruskisch</ref>en Arbeit, die ich die Jahre zuvor gemacht habe. Die Arbeit umfasst die ersten 5000 Inschriften des Corpus, die ich in 14 Tagen und Nächten kopiert hatte. Die Arbeit erstreckt sich auf eine Unmasse von Kleinigkeiten, die beiläufig ca 1000 Folioseiten ausmachen mögen. Es war meine erste Arbeit überhaupt in diesen Gebieten, denn das erste, was ich im Leben auf der vierten Gymnasialklasse studierte, war <persName ref="[authorityLink]">Bruppacher</persName>’s Versuch einer Lautlehre des <ref target="https://gams.uni-graz.at/o:hsa.languages#L.5698">
 Oskischen</ref>,<note n="3" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5703">Heinrich Bruppacher</persName>, <bibl>
-              <hi rend="unknown" rendition="#none">Versuch einer Lautlere der oskischen Sprache</hi>
-            </bibl>, Zürich; Höhr in Komm., 1869.</note> die aus meiner Vorliebe fürs Latein entsprang. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2652">P. Schmidt</persName> hat dann später immer meinen Hang zu dem Europäischen getadelt, bis er am Schluss bekannte, dass er die nächsten 5 - - 6 Jahre auch wieder dazu übergehen wolle. So habe ich mich persönlich, - - ich meine ausserberuflich! immer stark mit Indogermanisch-Semitisch und Enklaven-Gebieten beschäftigt. Ich habe schon im Jahr 1898 mit dem Hettitischen begonnen, da ich einen Hang zu den Komplizierungen hatte. So gelang es mir, die Geheimschrift der Yezidibücher in einer Viertelstunde zu entziffern.<note
-            n="4" place="foot" type="editorial">Vgl. Khanna Omarkhali, <bibl>
-              <hi rend="unknown" rendition="#none">The Yezidi religious textual tradition : from oral to written : categories, transmission, scripturalisation and canonisation of the Yezidi oral religious texts with samples of oral and written religious texts and with audio and video samples on CD-ROM</hi>
-            </bibl>, Wiesbaden: Harrassowitz, 2017</note> Das war meine persönliche Seite, die ich gewiss bald abgeschliffen hätte, wäre nicht eine berufliche erschreckend dazwischengetreten.</p>
-        <p>Das war meine Berufung an den <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4184">Anthropos</ref>. Der war so vielseitig, und so mangelnd an Kräften, dass man Alles mögliche daran versuchte. Ich hatte mit Ostasiatisch angefangen, da ich ein Jahr lang mit gutem Erfolg Chinesisch bei einem unserer Missionare gelernt hatte. Das begann also <pb
-            facs="#IMG.3"
-            n="3"/> zuerst, daher meine Lolo-Studien, die ich in der WZKM veröffentlicht hatte, nachdem mir eine grössere vom Berliner Museum zweimal verboten wurde, da das Manuskript dort im Museum lag, das ich aber mit Erlaubnis kopierte. Dann kam ich zur Südsee, weil wir darin keine Vertreter hatten, und hier unsere Missionare in Neuguinea wie vernagelt dastanden, man bekam nichts. Das blieb nicht lange, da meldete sich der Amerikanistenkongress, - - ich hatte aber meine Papuagrammatik noch nicht einmal heraus! - - also hinein! Ich war in Verzweiflung, was zu machen sei, denn das Renommée verlangte doch Betätigung. Ich stand zwischen verschiedenen Feuern: Das Guarani-Problem brannte mir auf der Seele, die Kariben nach <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4387">von den Steinen</persName>,<note n="5" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4387">Karl von den Steinen</persName> (1855-1929), deutscher Mediziner und Ethnologe, <bibl>
-              <hi rend="unknown" rendition="#none">
+                  <persName ref="[authorityLink]">Heinrich Bruppacher</persName>, <bibl>
+                     <hi rend="unknown" rendition="#none">Versuch einer Lautlere der oskischen Sprache</hi>
+                  </bibl>, Zürich; Höhr in Komm., 1869.</note> die aus meiner Vorliebe fürs Latein entsprang. <persName ref="[authorityLink]">P. Schmidt</persName> hat dann später immer meinen Hang zu dem Europäischen getadelt, bis er am Schluss bekannte, dass er die nächsten 5 - - 6 Jahre auch wieder dazu übergehen wolle. So habe ich mich persönlich, - - ich meine ausserberuflich! immer stark mit Indogermanisch-Semitisch und Enklaven-Gebieten beschäftigt. Ich habe schon im Jahr 1898 mit dem Hettitischen begonnen, da ich einen Hang zu den Komplizierungen hatte. So gelang es mir, die Geheimschrift der Yezidibücher in einer Viertelstunde zu entziffern.<note n="4" place="foot" type="editorial">Vgl. Khanna Omarkhali, <bibl>
+                     <hi rend="unknown" rendition="#none">The Yezidi religious textual tradition : from oral to written : categories, transmission, scripturalisation and canonisation of the Yezidi oral religious texts with samples of oral and written religious texts and with audio and video samples on CD-ROM</hi>
+                  </bibl>, Wiesbaden: Harrassowitz, 2017</note> Das war meine persönliche Seite, die ich gewiss bald abgeschliffen hätte, wäre nicht eine berufliche erschreckend dazwischengetreten.</p>
+            <p>Das war meine Berufung an den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4184">Anthropos</ref>. Der war so vielseitig, und so mangelnd an Kräften, dass man Alles mögliche daran versuchte. Ich hatte mit Ostasiatisch angefangen, da ich ein Jahr lang mit gutem Erfolg Chinesisch bei einem unserer Missionare gelernt hatte. Das begann also <pb facs="#IMG.3" n="3"/> zuerst, daher meine Lolo-Studien, die ich in der WZKM veröffentlicht hatte, nachdem mir eine grössere vom Berliner Museum zweimal verboten wurde, da das Manuskript dort im Museum lag, das ich aber mit Erlaubnis kopierte. Dann kam ich zur Südsee, weil wir darin keine Vertreter hatten, und hier unsere Missionare in Neuguinea wie vernagelt dastanden, man bekam nichts. Das blieb nicht lange, da meldete sich der Amerikanistenkongress, - - ich hatte aber meine Papuagrammatik noch nicht einmal heraus! - - also hinein! Ich war in Verzweiflung, was zu machen sei, denn das Renommée verlangte doch Betätigung. Ich stand zwischen verschiedenen Feuern: Das Guarani-Problem brannte mir auf der Seele, die Kariben nach <persName ref="[authorityLink]">von den Steinen</persName>,<note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Karl von den Steinen</persName> (1855-1929), deutscher Mediziner und Ethnologe, <bibl>
+                     <hi rend="unknown" rendition="#none">
 Diccionario sipibo castellano-deutsch-sipibo; apuntes de gramática; sipibo-castellano; Abdruck der Handschrift eines Franziskaners, mit Beiträgen zur Kenntnis der Pano-stämme am Ucayali</hi>
-
-            </bibl>, Berlin: Reimer, 1904.</note> das Araukanische, das mir schon lange als zum Guarani verwandt erschien, Herr Hofrat sehen die Spuren davon in der Karte, die Schmidt in Berlin Z. f. E.<note
-            n="6" place="foot" type="editorial">
-            <bibl>
-              <hi rend="unknown" rendition="#none">Zeitschrift für Ethnologie</hi> 45. Jg., 1913
-</bibl>, 242, s. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.6643">Brief 04697</ref>.</note> veröffentlichte. Er riet mir, mit dem Südpunkte zu beginnen, und so Amerika einfach sprachlich abzurollen. Aber das ging für den Kongress nicht. So entstand meine Pano-Arbeit. Die erstreckte sich auf 32 Sprachen, deren Wörterbücher ich vergleichend zusammenstellte, aber je wenn ich glaubte, fertig zu sein, tauchte ein neues Vokabular auf, und am Ende kam ein neues Werk, das Grösste, und der Autor ersuchte mich, zu warten und seine Studie über das Kaschinaua (in Portugiesisch) miteinzubeziehen.<note
-            n="7" place="foot" type="editorial">J. Capistrano de Abreu, <bibl>
-              <hi rend="unknown" rendition="#none">rā-txa hu-ni-ku-ï ; a lingua dos Caxinauás do rio Ibuaçu, affluente do Muru (prefeitura de Tarauacá) ; ra-txa hu-ni-ku-i,</hi>
-
-            </bibl>Rio de Janeiro: Leuzinger, 1914.</note> Der Verfasser schickte sogar mehrfach den Sekretär des Konsuls zu mir, ich liess mich bewegen, bis eines guten Tages die ganze Druckerei in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.290">Rio de Janeiro</placeName> niederbrannte. Da sass ich mit meinem Warten. Ich habe auch diesmal gezögert, kam aber doch dazu, es fertigzustellen, schickte es an <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2494">Reinisch</persName>
-          <note n="8" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2494">Leo Reinisch</persName> (1832-1919), Ägyptologe und bedeutender Sprachwissenschaftler, ab 1868 Professor in <placeName>
-Wien</placeName>.</note> in die Wiener Sprachenkommission, die die Sache zuerst hinnahm, dann eine Erweiterung verlangte, (die aber wohl als unfertig gedacht war,) ich schickte mich an, die Erweiterung, die fertig für alle 32 Sprachen vorlag, einzusenden, als <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2494">Reinisch</persName> mir mitteil- <pb facs="#IMG.4"
-            n="4"/> te, er wisse garnichts mit dem Manuskript anzufangen, es fehle ja die Grammatik. Ich war darüber nicht gerade sehr erbaut, da mir scheint, die Sprachen-Bibliothek<note
-            n="9" place="foot"
-            type="editorial">Schriften der Sprachenkommission // Kaiserliche Akademie der Wissenschaften, Wien: A. Hölder.</note> ist wohl nur für Hamitistik gegründet, da man von ihr sogar ein halb fertiges Buch veröffentlichte, und ausser dem von mir verfertigten Neengatu (Guarani-Tupi), das aber „aus Ordensrücksichten nicht meinen Namen tragen durfte“,<note
-            n="10" place="foot" type="editorial">P. Constant Tastevin, <bibl>
-              <hi rend="unknown" rendition="#none">La langue Tapïhïya dite Tupï ou Ńeẽngatu (Belle Langue); grammaire, dictionnaire et textes</hi>
-            </bibl>, Wien: Hölder, 1910 (Schriften der Sprachenkommission; 2).</note> erschien, durch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2652">Schmidt</persName> durchgedrückt. So liegt das Riesenmanuskript bei mir, und - - vermodert. - - Unterdessen war das Manuskript über das Yagan (Feuerländisch) aufgetaucht, auf dem Kongress, das niemand zu veröffentlichen sich getrauen wollte. Man fragte in unserer Redaktion an, ich war der einzige, der unten aufzurollen begonnen hatte. So liegt auch das Lexikon bei mir, 32000 Wörter, die ich umschrieben und bearbeitet habe. Aber der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.463">Krieg</ref> hälts zurück.</p>
-        <p>Dann begann der Protest gegen die <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4441">Afrikanistik</ref>. Ich hatte Schmidt schon aufmerksam gemacht als <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2158">Meinhofs</persName> erster Riss der Bantu-Grammatik herauskam,<note
-            n="11" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2158">Carl Meinhof</persName>, <bibl>
-              <hi rend="unknown" rendition="#none">Grundzüge einer vergleichenden Grammatik der Bantusprachen</hi>
-            </bibl>, Berlin: Reimer: 1906.</note> der er es uns als „Muster“ schilderte. Ich breche ab, denn die Sache begann unerquicklich zu werden, denn ich habe mehr gearbeitet, als man von mir gesehen hat.</p>
-        <p>Nun zum <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.759">Kaukasischen</ref>. Ich habe die gesamten Manuskriptkataloge vereint, verglichen, einheitlich zusammengestellt, sie alle ins Deutsch gebracht, alle, auch aus dem Sbornik,<note
-            n="12" place="foot" type="editorial">
-            <bibl>
-              <hi rend="unknown" rendition="#none">Sbornik Imeratorkago Russkago Istoričeskago Obščestva: The collections of the Imperial Russan Historical Society</hi>
-
-            </bibl>, 1, 1867-148, 1916.</note> aus Paris, Athos, Jerusalem, usw. Publikation unmöglich. Das Corpus des <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.742">Georgisch</ref>en liegt in vielen Bruchstücken, auch unpublizierten, vor. Das Manuskript, - - wenn ich nicht vertrauensbrüchig werde - -, ist im Besitz des Hofrates Neumann in Mödling,<note
-            n="13" place="foot"
-            type="editorial">Vermutlich <persName>
+                  </bibl>, Berlin: Reimer, 1904.</note> das Araukanische, das mir schon lange als zum Guarani verwandt erschien, Herr Hofrat sehen die Spuren davon in der Karte, die Schmidt in Berlin Z. f. E.<note n="6" place="foot" type="editorial">
+                  <bibl>
+                     <hi rend="unknown" rendition="#none">Zeitschrift für Ethnologie</hi> 45. Jg., 1913
+</bibl>, 242, s. <ref target="https://gams.uni-graz.at/o:hsa.letter.6643">Brief 04697</ref>.</note> veröffentlichte. Er riet mir, mit dem Südpunkte zu beginnen, und so Amerika einfach sprachlich abzurollen. Aber das ging für den Kongress nicht. So entstand meine Pano-Arbeit. Die erstreckte sich auf 32 Sprachen, deren Wörterbücher ich vergleichend zusammenstellte, aber je wenn ich glaubte, fertig zu sein, tauchte ein neues Vokabular auf, und am Ende kam ein neues Werk, das Grösste, und der Autor ersuchte mich, zu warten und seine Studie über das Kaschinaua (in Portugiesisch) miteinzubeziehen.<note n="7" place="foot" type="editorial">J. Capistrano de Abreu, <bibl>
+                     <hi rend="unknown" rendition="#none">rā-txa hu-ni-ku-ï ; a lingua dos Caxinauás do rio Ibuaçu, affluente do Muru (prefeitura de Tarauacá) ; ra-txa hu-ni-ku-i,</hi>
+                  </bibl>Rio de Janeiro: Leuzinger, 1914.</note> Der Verfasser schickte sogar mehrfach den Sekretär des Konsuls zu mir, ich liess mich bewegen, bis eines guten Tages die ganze Druckerei in <placeName ref="[authorityLink]">Rio de Janeiro</placeName> niederbrannte. Da sass ich mit meinem Warten. Ich habe auch diesmal gezögert, kam aber doch dazu, es fertigzustellen, schickte es an <persName ref="[authorityLink]">Reinisch</persName>
+               <note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Leo Reinisch</persName> (1832-1919), Ägyptologe und bedeutender Sprachwissenschaftler, ab 1868 Professor in <placeName>
+Wien</placeName>.</note> in die Wiener Sprachenkommission, die die Sache zuerst hinnahm, dann eine Erweiterung verlangte, (die aber wohl als unfertig gedacht war,) ich schickte mich an, die Erweiterung, die fertig für alle 32 Sprachen vorlag, einzusenden, als <persName ref="[authorityLink]">Reinisch</persName> mir mitteil- <pb facs="#IMG.4" n="4"/> te, er wisse garnichts mit dem Manuskript anzufangen, es fehle ja die Grammatik. Ich war darüber nicht gerade sehr erbaut, da mir scheint, die Sprachen-Bibliothek<note n="9" place="foot" type="editorial">Schriften der Sprachenkommission // Kaiserliche Akademie der Wissenschaften, Wien: A. Hölder.</note> ist wohl nur für Hamitistik gegründet, da man von ihr sogar ein halb fertiges Buch veröffentlichte, und ausser dem von mir verfertigten Neengatu (Guarani-Tupi), das aber „aus Ordensrücksichten nicht meinen Namen tragen durfte“,<note n="10" place="foot" type="editorial">P. Constant Tastevin, <bibl>
+                     <hi rend="unknown" rendition="#none">La langue Tapïhïya dite Tupï ou Ńeẽngatu (Belle Langue); grammaire, dictionnaire et textes</hi>
+                  </bibl>, Wien: Hölder, 1910 (Schriften der Sprachenkommission; 2).</note> erschien, durch <persName ref="[authorityLink]">Schmidt</persName> durchgedrückt. So liegt das Riesenmanuskript bei mir, und - - vermodert. - - Unterdessen war das Manuskript über das Yagan (Feuerländisch) aufgetaucht, auf dem Kongress, das niemand zu veröffentlichen sich getrauen wollte. Man fragte in unserer Redaktion an, ich war der einzige, der unten aufzurollen begonnen hatte. So liegt auch das Lexikon bei mir, 32000 Wörter, die ich umschrieben und bearbeitet habe. Aber der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.463">Krieg</ref> hälts zurück.</p>
+            <p>Dann begann der Protest gegen die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4441">Afrikanistik</ref>. Ich hatte Schmidt schon aufmerksam gemacht als <persName ref="[authorityLink]">Meinhofs</persName> erster Riss der Bantu-Grammatik herauskam,<note n="11" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Carl Meinhof</persName>, <bibl>
+                     <hi rend="unknown" rendition="#none">Grundzüge einer vergleichenden Grammatik der Bantusprachen</hi>
+                  </bibl>, Berlin: Reimer: 1906.</note> der er es uns als „Muster“ schilderte. Ich breche ab, denn die Sache begann unerquicklich zu werden, denn ich habe mehr gearbeitet, als man von mir gesehen hat.</p>
+            <p>Nun zum <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.759">Kaukasischen</ref>. Ich habe die gesamten Manuskriptkataloge vereint, verglichen, einheitlich zusammengestellt, sie alle ins Deutsch gebracht, alle, auch aus dem Sbornik,<note n="12" place="foot" type="editorial">
+                  <bibl>
+                     <hi rend="unknown" rendition="#none">Sbornik Imeratorkago Russkago Istoričeskago Obščestva: The collections of the Imperial Russan Historical Society</hi>
+                  </bibl>, 1, 1867-148, 1916.</note> aus Paris, Athos, Jerusalem, usw. Publikation unmöglich. Das Corpus des <ref target="https://gams.uni-graz.at/o:hsa.languages#L.742">Georgisch</ref>en liegt in vielen Bruchstücken, auch unpublizierten, vor. Das Manuskript, - - wenn ich nicht vertrauensbrüchig werde - -, ist im Besitz des Hofrates Neumann in Mödling,<note n="13" place="foot" type="editorial">Vermutlich <persName>
 
 Wilhelm Anton Neumann</persName> (1837-1919), Archäologe, Bibelwissenschaftler, Kunsthistoriker, seit 1874 Professor in <placeName>
-Wien</placeName>, mehrfach Dekan der Katholisch-Theologischen Fakultät, 1899 Rector magnificus, gestorben in Mödling.</note> Palimpsest, griechisch oder syrisch unterschrieben. Freilich wäre zunächst die Uebersetzung des Svanetischen<note
-            n="14" place="foot" type="editorial">
-            <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.741">Südkaukasische</ref> Sprache.</note> Wörterbuches notwendig, an der ich seit einem Jahre sitze, aber publizieren! Im Uebrigen teile ich ganz Ihre Meinung über das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.742">Georgische</ref>, doch scheint seit vorgestern auf poli- […]<note
-            n="15" place="foot" type="editorial">Hier scheint eine Seite zu fehlen, auch wenn man „auf poli[ti]schem … Wege“ ergänzt.</note>
-          <pb facs="#IMG.5"
-            n="5"/> schem und wirtschaftlichem Wege ein Ansatz vorhanden zu sein, ich war selber innerhalb der Versammlung, - - aber als Stenograph, um mein Brot zu verdienen, so weiss ich es nur privat. Es wird ja Herrn Hofrat bekannt sein, dass Herr Prof. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2424">Dr Pöch</persName>
-          <note n="16" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2424">Rudolf Pöch</persName> (1870-1921),österr. Ethnograph und Anthropologe, seit 1913 ao. Prof. in <placeName>
-Wien</placeName>; er war <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1759">Hestermanns</persName> Doktorvater.</note> phonographische Aufnahmen in den Kriegsgefangenenlagern gemacht hat,<note
-            n="17" place="foot" type="editorial">Diese befinden sich heute im <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.966">Wiener Phonogrammarchiv</ref> (PhAÖAkWiss; 141 Treffer).</note> darunter <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.759">Kaukasische</ref> und <ref target="https://gams.uni-graz.at/o:hsa.languages#L.789">Tatarische</ref> Sprachen.</p>
-
-        <p>Lassen mich Herr Hofrat noch hinzufügen, dass also eigentlich meine Verzweigtheit nur ein Nachklang aus meiner bisherigen Arbeitsmethode ist, der ich im Zwang unterstand, so stark, dass mir eigentliche Arbeiten daraus, wie das Feuerländische, trotz der behördlich konzessionierten Annahme am Schlusse verboten wurden, weil <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5687">Graebner</persName>
-          <note n="18" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5687">Robert <hi rend="unknown"
-              rendition="#none">Fritz</hi> Graebner</persName> (1877-1934), deutscher Ethnologe, 1911 in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.61">
+Wien</placeName>, mehrfach Dekan der Katholisch-Theologischen Fakultät, 1899 Rector magnificus, gestorben in Mödling.</note> Palimpsest, griechisch oder syrisch unterschrieben. Freilich wäre zunächst die Uebersetzung des Svanetischen<note n="14" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.741">Südkaukasische</ref> Sprache.</note> Wörterbuches notwendig, an der ich seit einem Jahre sitze, aber publizieren! Im Uebrigen teile ich ganz Ihre Meinung über das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.742">Georgische</ref>, doch scheint seit vorgestern auf poli- […]<note n="15" place="foot" type="editorial">Hier scheint eine Seite zu fehlen, auch wenn man „auf poli[ti]schem … Wege“ ergänzt.</note>
+               <pb facs="#IMG.5" n="5"/> schem und wirtschaftlichem Wege ein Ansatz vorhanden zu sein, ich war selber innerhalb der Versammlung, - - aber als Stenograph, um mein Brot zu verdienen, so weiss ich es nur privat. Es wird ja Herrn Hofrat bekannt sein, dass Herr Prof. <persName ref="[authorityLink]">Dr Pöch</persName>
+               <note n="16" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Rudolf Pöch</persName> (1870-1921),österr. Ethnograph und Anthropologe, seit 1913 ao. Prof. in <placeName>
+Wien</placeName>; er war <persName ref="[authorityLink]">Hestermanns</persName> Doktorvater.</note> phonographische Aufnahmen in den Kriegsgefangenenlagern gemacht hat,<note n="17" place="foot" type="editorial">Diese befinden sich heute im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.966">Wiener Phonogrammarchiv</ref> (PhAÖAkWiss; 141 Treffer).</note> darunter <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.759">Kaukasische</ref> und <ref target="https://gams.uni-graz.at/o:hsa.languages#L.789">Tatarische</ref> Sprachen.</p>
+            <p>Lassen mich Herr Hofrat noch hinzufügen, dass also eigentlich meine Verzweigtheit nur ein Nachklang aus meiner bisherigen Arbeitsmethode ist, der ich im Zwang unterstand, so stark, dass mir eigentliche Arbeiten daraus, wie das Feuerländische, trotz der behördlich konzessionierten Annahme am Schlusse verboten wurden, weil <persName ref="[authorityLink]">Graebner</persName>
+               <note n="18" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Robert <hi rend="unknown" rendition="#none">Fritz</hi> Graebner</persName> (1877-1934), deutscher Ethnologe, 1911 in <placeName ref="[authorityLink]">
 Bonn</placeName> habilitiert.</note> in Köln eine furchtbar hämische Bemerkung gegen meinen früheren Chef gemacht hatte.</p>
-        <p>Ich sage nur das Eine: Es war am Schluss unmöglich, und so gehe ich meine Wege. Aber ich bin Herrn Hofrat dankbar für den lieben Wink, dass ich mich beschränke. Ich werde mein Bestes daran tun.</p>
-        <p>Soll ich noch mehr über meine Sachlage schreiben? Ich glaube, es verlohnt sich nicht, denn dass es schwer ist, das weiss ohnedies jeder. In den nächsten Monaten hoffe ich mein Doktorat zu machen, dann bin ich einen kleinen Schritt weiter!</p>
-        <p>Zum Schlusse danke ich Herrn Hofrat nochmals in aller Verbindlichkeit für Ihre so wohlwollende Teilnahme an meinem wissenschaftlichen Geschick, wie ich es vielen Herren in dieser meiner schwersten Zeit danke. Ich danke Ihnen auch für die so überaus freundliche Uebersendung der vielen Schriften, nicht zum wenigsten aber auch für Ihren mir so angenehmen Brief. Möge eine reiche Arbeit meinerseits jedes Ihrer geschätzten Geschenke lohnen.</p>
-        <closer>
-          <salute>Unter diesen besten Wünschen bin ich</salute>
-          <lb/>
-          <salute>Herrn Hofrat ergebenster</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1759">Ferd. Hestermann</persName>
-          </signed>. </closer>
-      </div>
-    </body>
-  </text>
+            <p>Ich sage nur das Eine: Es war am Schluss unmöglich, und so gehe ich meine Wege. Aber ich bin Herrn Hofrat dankbar für den lieben Wink, dass ich mich beschränke. Ich werde mein Bestes daran tun.</p>
+            <p>Soll ich noch mehr über meine Sachlage schreiben? Ich glaube, es verlohnt sich nicht, denn dass es schwer ist, das weiss ohnedies jeder. In den nächsten Monaten hoffe ich mein Doktorat zu machen, dann bin ich einen kleinen Schritt weiter!</p>
+            <p>Zum Schlusse danke ich Herrn Hofrat nochmals in aller Verbindlichkeit für Ihre so wohlwollende Teilnahme an meinem wissenschaftlichen Geschick, wie ich es vielen Herren in dieser meiner schwersten Zeit danke. Ich danke Ihnen auch für die so überaus freundliche Uebersendung der vielen Schriften, nicht zum wenigsten aber auch für Ihren mir so angenehmen Brief. Möge eine reiche Arbeit meinerseits jedes Ihrer geschätzten Geschenke lohnen.</p>
+            <closer>
+               <salute>Unter diesen besten Wünschen bin ich</salute>
+               <lb/>
+               <salute>Herrn Hofrat ergebenster</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Ferd. Hestermann</persName>
+               </signed>. </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

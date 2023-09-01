@@ -1,455 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Rudolf Meringer an Hugo Schuchardt (08-07044)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">
-            <forename>Rudolf</forename>
-            <surname>Meringer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Verena</forename>
-            <surname>Schwägerl-Melchior</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5310" type="PID">o:hsa.letter.5310</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">08-07044</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">07044</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">
-                <forename>Rudolf</forename>
-                <surname>Meringer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1900-09-05">1900-09-05</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Verena</forename>
-              <surname>Schwägerl-Melchior</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Rudolf Meringer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2169"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5310">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2169" ref="https://viaf.org/viaf/17549012">
-            <forename>Rudolf</forename>
-            <surname>Meringer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1900-09-05">1900-09-05</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2169" type="context">
-                        Korrespondenz Rudolf Meringer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.763" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rezension</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.271" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Todesfälle</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.28" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Englischsprachige Literatur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3080" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dankschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5372" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Verleih von Materialien</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.882" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Ethnologie, Anthropologie, Volkskunde</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3215" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsvorhaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3115" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Nachdrucke, Neuauflagen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.477" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Etymologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5104" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Grazer Tagblatt</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.693" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Graz</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5310" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5310" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5310" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5310" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5310" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5310" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5310" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>
-
-          <lb/>Graz 5. Sept. 00 <lb/>Motto: „Unwahrheiten im persönlichen Verkehr sind mir ganz verhasst“ <lb/>H. Schuchardt Ges. Werke Bd. 36 s. 458 u. „Vermischtes“<note
-            n="1" place="foot" type="editorial">Schuchardt hat nie "Gesammelte Werke" publiziert. Eventuell hat Meringer ihm dieses Motto, auf das er sich später wieder bezieht, in den Mund legen wollen. Es könnte aber auch sein, dass Schuchardt selbst in einem seiner nicht erhaltenen Briefe an Meringer einen solchen Ausspruch getätigt hat.</note>
-        </dateline>
-        <opener> Verehrter Herr Hofrath! </opener>
-        <p>Wie freut es mich, Ihnen wieder – schon wieder, muss man sagen – von ganzem Herzen zustimmen zu können. Hoffentlich haben Sie auch gewußt, wie sehr ich an Ihrer Seite bin, wenn Sie solche zu wenig beachtete Grundsätze hervorheben. Es gibt nämlich wirklich Menschen, die mich nicht recht verstehen – namentlich in Graz. </p>
-
-        <p>Gott sei Dank, weiß wenigstens ich von mir, daß ich der ehrlichsten Begeisterung für das, was ein Anderer gemacht hat, fähig bin und ich freue mich daher, daß ich auch jederzeit das zu sagen das Bedürfniß habe. Ist das eine gar so schlechte Eigenschaft? Ich habe ja die Fähigkeit, auch das Gegentheil offen zu legen. Und deshalb bitte ich Sie, sich von mir vor u. hinter Ihrem Rücken wissenschaftlich so loben zu lassen, als ich muß. Mir ist das ein Lebensbedürfnis. Die Sache wäre bloß bedenklich, wenn meine Art zu widersprechen gar zu unangenehm wäre. Ich hoffe, daß ich da berechtigten Wünschen nach manch Zugeständnisse werde machen können.<pb
-            facs="#IMG.2" n="2"/> Von Ihrer Probevorlesung habe ich eine Anzeige niedergeschrieben u. abgesandt.<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1345">Meringer (1900)</ref>
-            </bibl>.</note>
-        </p>
-        <p>Ich denke Sie wird Ihnen nicht unangenehm sein. Sie kennen ja meine Meinung ganz genau u. ich bin gewohnt das was ich sage auch zu drucken.</p>
-
-        <p>Haben Sie Dank für die geliehenen Bücher! Sie haben mir damit eine große Freude gemacht. Den Montelius verstehe ich noch nicht ganz.<note
-            n="3" place="foot" type="editorial">Unter Umständen bezieht sich Meringer hier auf den schwedischen Prähistoriker <persName>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5310" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>
+               <lb/>Graz 5. Sept. 00 <lb/>Motto: „Unwahrheiten im persönlichen Verkehr sind mir ganz verhasst“ <lb/>H. Schuchardt Ges. Werke Bd. 36 s. 458 u. „Vermischtes“<note n="1" place="foot" type="editorial">Schuchardt hat nie "Gesammelte Werke" publiziert. Eventuell hat Meringer ihm dieses Motto, auf das er sich später wieder bezieht, in den Mund legen wollen. Es könnte aber auch sein, dass Schuchardt selbst in einem seiner nicht erhaltenen Briefe an Meringer einen solchen Ausspruch getätigt hat.</note>
+            </dateline>
+            <opener> Verehrter Herr Hofrath! </opener>
+            <p>Wie freut es mich, Ihnen wieder – schon wieder, muss man sagen – von ganzem Herzen zustimmen zu können. Hoffentlich haben Sie auch gewußt, wie sehr ich an Ihrer Seite bin, wenn Sie solche zu wenig beachtete Grundsätze hervorheben. Es gibt nämlich wirklich Menschen, die mich nicht recht verstehen – namentlich in Graz. </p>
+            <p>Gott sei Dank, weiß wenigstens ich von mir, daß ich der ehrlichsten Begeisterung für das, was ein Anderer gemacht hat, fähig bin und ich freue mich daher, daß ich auch jederzeit das zu sagen das Bedürfniß habe. Ist das eine gar so schlechte Eigenschaft? Ich habe ja die Fähigkeit, auch das Gegentheil offen zu legen. Und deshalb bitte ich Sie, sich von mir vor u. hinter Ihrem Rücken wissenschaftlich so loben zu lassen, als ich muß. Mir ist das ein Lebensbedürfnis. Die Sache wäre bloß bedenklich, wenn meine Art zu widersprechen gar zu unangenehm wäre. Ich hoffe, daß ich da berechtigten Wünschen nach manch Zugeständnisse werde machen können.<pb facs="#IMG.2" n="2"/> Von Ihrer Probevorlesung habe ich eine Anzeige niedergeschrieben u. abgesandt.<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1345">Meringer (1900)</ref>
+                  </bibl>.</note>
+            </p>
+            <p>Ich denke Sie wird Ihnen nicht unangenehm sein. Sie kennen ja meine Meinung ganz genau u. ich bin gewohnt das was ich sage auch zu drucken.</p>
+            <p>Haben Sie Dank für die geliehenen Bücher! Sie haben mir damit eine große Freude gemacht. Den Montelius verstehe ich noch nicht ganz.<note n="3" place="foot" type="editorial">Unter Umständen bezieht sich Meringer hier auf den schwedischen Prähistoriker <persName>
 Oscar Montelius</persName> (1843-1921) und dessen 1899 erschienenes Werk <bibl>
-              <hi rend="unknown" rendition="#none">Der Orient und Europa; Einfluss der orientalischen Cultur auf Europa bis zur Mitte des letzten Jahrtausends v. Chr</hi>. Stockholm: Kungl. Hofboktryckeriet.
+                     <hi rend="unknown" rendition="#none">Der Orient und Europa; Einfluss der orientalischen Cultur auf Europa bis zur Mitte des letzten Jahrtausends v. Chr</hi>. Stockholm: Kungl. Hofboktryckeriet.
 </bibl>
-
-          </note> Ich habe keine Spur eines Beweises von der ost-westlichen Culturbewegg der Arier, besser Indogermanen in <hi
-            rend="unknown" rendition="#none">jenen</hi> Zeiten, von denen er spricht. Daß später Kleinasien ein Sammel- und für Europa ein Ausstrahlungspunkt war, das ist ja Niemand fremd. Aber die ganze Art, wie er wirtschaftet, ist mir nicht gelegen und Sie werden wohl auch nicht zustimmen können. Wir haben hoffentlich an einem Winterabend Zeit darüber zu reden. </p>
-        <p>Der <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2984">
+               </note> Ich habe keine Spur eines Beweises von der ost-westlichen Culturbewegg der Arier, besser Indogermanen in <hi rend="unknown" rendition="#none">jenen</hi> Zeiten, von denen er spricht. Daß später Kleinasien ein Sammel- und für Europa ein Ausstrahlungspunkt war, das ist ja Niemand fremd. Aber die ganze Art, wie er wirtschaftet, ist mir nicht gelegen und Sie werden wohl auch nicht zustimmen können. Wir haben hoffentlich an einem Winterabend Zeit darüber zu reden. </p>
+            <p>Der <persName ref="[authorityLink]">
 Wechssler</persName>
-          <note n="4" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2984">Eduard Wechssler</persName> (1869-1949), deutscher Romanist, von dem ein auf 31. Juli 1900 datiertes Schreiben im Schuchardt-Nachlass vorliegt (
+               <note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Eduard Wechssler</persName> (1869-1949), deutscher Romanist, von dem ein auf 31. Juli 1900 datiertes Schreiben im Schuchardt-Nachlass vorliegt (
 
 Bibl. Nr. 12696, ediert in <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1005">Swiggers, Pierre and Herman Seldeslachts. 2009a. 'Zur Diskussion über die Lautgesetze: Eduard Wechssler und Hugo Schuchardt'. In <hi
-                  rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1005">Swiggers, Pierre and Herman Seldeslachts. 2009a. 'Zur Diskussion über die Lautgesetze: Eduard Wechssler und Hugo Schuchardt'. In <hi rend="unknown" rendition="#none">
 Orbis. Bulletin International de Documentation Linguistique</hi> 41: 395-400).</ref>
-            </bibl>
+                  </bibl>
+               </note> ist ein sehr braver Mann; fleißig u. gescheit hat er alles zusammengetragen u. es seinen Nachfolgern überlassen aus diesem Reimlexikon Verse zu machen.<note n="5" place="foot" type="editorial">Vermutlich ist hiermit gemeint <bibl>
 
-          </note> ist ein sehr braver Mann; fleißig u. gescheit hat er alles zusammengetragen u. es seinen Nachfolgern überlassen aus diesem Reimlexikon Verse zu machen.<note
-            n="5" place="foot" type="editorial">Vermutlich ist hiermit gemeint <bibl>
-
-Wechssler, Eduard. 1900. <hi
-                rend="unknown" rendition="#none">Chrestomathie der französischen Lyrik</hi>.
+Wechssler, Eduard. 1900. <hi rend="unknown" rendition="#none">Chrestomathie der französischen Lyrik</hi>.
 </bibl>
-
-          </note> Das ist ja für viele wahre Wissenschaft: edle Zurückhaltung! Sie ist um so leichter, je weniger einer von Einfällen beschäftigt ist. Aber auch selbständig <pb
-            facs="#IMG.3" n="3"/> beobachtet hat <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2984">Wechssler</persName> nichts. Thut nichts, es ist ein gutes Buch. Ein großes Verdienste hat er jedenfalls, daß er den oft aufgewärmten blähenden Kohl von schönen Redensarten u. tiefsinnigen Erklärungen ins Feuer wirft. Aber genau das wird man ihm wahrscheinlich übel nehmen. So viel ich sehe genießt ja auch <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3036">Wundt</persName>
-          <note n="6" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3036">Wilhelm Wundt</persName> (1832-1920), deutscher Psychologe und Philosoph, der ebenfalls mit Schuchardt korrespondierte (vgl. <bibl>
+               </note> Das ist ja für viele wahre Wissenschaft: edle Zurückhaltung! Sie ist um so leichter, je weniger einer von Einfällen beschäftigt ist. Aber auch selbständig <pb facs="#IMG.3" n="3"/> beobachtet hat <persName ref="[authorityLink]">Wechssler</persName> nichts. Thut nichts, es ist ein gutes Buch. Ein großes Verdienste hat er jedenfalls, daß er den oft aufgewärmten blähenden Kohl von schönen Redensarten u. tiefsinnigen Erklärungen ins Feuer wirft. Aber genau das wird man ihm wahrscheinlich übel nehmen. So viel ich sehe genießt ja auch <persName ref="[authorityLink]">Wundt</persName>
+               <note n="6" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Wilhelm Wundt</persName> (1832-1920), deutscher Psychologe und Philosoph, der ebenfalls mit Schuchardt korrespondierte (vgl. <bibl>
 
 Mücke/Purgay 2015
 </bibl>).</note> noch mit Wonne diese „ungemischte Speise“.</p>
-        <p>Der arme <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2185">G. Meyer</persName> ist also todt und begraben.<note
-            n="7" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2185">Gustav Meyer</persName> starb am 28. August 1900.</note> Seine griech. Gramm.<note
-            n="8" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3695">Meyer, Gustav. 1880. <hi
-                  rend="unknown" rendition="#none">Griechische Grammatik</hi>. Leipzig: Breitkopf &amp; Härtel</ref>
-
-            </bibl>. Eine zweite Aufl. erschien 1886, eine dritte 1896.</note> steht jederzeit eine Nasenlänge vor mir auf dem Schreibtische. Wäre er doch gesund 90 Jahre alt geworden! Ich wäre ihm nie in den Weg gekommen. Aber jetzt bin ich ihm oft sehr gram. So wenn ich bei der Arbeit sitze und die Institute vor mir sehe, mit allen Hilfsmitteln. Er war ein Junggeselle - das ist seine Sache – er war aber auch ein wissenschaftlicher Junggeselle, das unterliegt der Kritik. Ein Universitätslehrer, ja jeder der was schreibt, ist eine Art Vater und muss das Kindergeschrei annehmen. Das ist gewiß nicht angenehm aber notwendige Folgerung. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2185">G. Meyer</persName> hat einen solchen Gedanken offenbar als albern immer weit von sich gewiesen wenn er ihm jemals gekommen ist. <pb
-            facs="#IMG.4"
-            n="4"/> Für seine Kanzel hat er in keiner Weise gesorgt u. es wäre ihm leicht gewesen, man hat es ihm angetragen. Ich hatte gehofft, dass man mich auffordert und dadurch zwingt an seinem Grabe etwas zu sagen – ich hätte schon noch genug gutes sagen können, es geschah aber nicht.<note
-            n="9" place="foot" type="editorial">Der Ablauf der Beisetzung von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2185">Gustav Meyer</persName> wird im <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5104">Grazer Tagblatt</ref> vom 31. August 1900, S. 3 beschrieben. Hier ist nur von einer Ansprache des <persName>
-Vicars Schaudig</persName> die Rede.</note> Und hätte ich selbst die Initiative ergreifen sollen? Das entsprach dann doch wieder meinem Motto (s.o.) nicht. So nah hat er mich nie herankommen lassen. Also wie der alte <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.389">Shakespeare</ref> sagt: <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2185">G Meyer</persName>, Gehab dich wohl</p>
-
-        <p>Sie werden, verehrter Herr Hofrath, es lächerlich finden, wenn ich Sie frage, wann Sie zurückkommen? Aber es ist jetzt sehr einsam geworden. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2077">Loserth</persName>
-          <note n="10" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2077">Johann Loserth </persName> (1846-1936), österreichischer Historiker und von 1893 bis 1917 Professor an der <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.693">Universität Graz</ref>. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2077">
-Loserth</persName> stand ebenfalls in brieflichem Kontakt mit Schuchardt (Bibl. Nr. 06645-06649 im Schuchardt-Nachlass; die Briefe Schuchardts an Loserth befinden sich im Steiermärkischen Landesarchiv in Graz).</note> u. v. Graff<note
-            n="11" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1630">Graff de Pancsova, Ludwig Bartholomäus</persName> (1851-1924), Zoologe und unter anderem von 1896 bis 1897 Rektor der <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.693">
-Universität Graz</ref>. Zwischen von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1630">Graff</persName> und Schuchardt bestand ebenfalls Kontakt (Bibl. Nr. 03911-03920).</note> sind auf eine Fußreise gegangen u. jetzt habe ich Niemand. Ich kenne die anderen Collegen so gut wie gar nicht. Ich schwitze darüber, meinen Besitz an Bauernhäusern zu liquidieren,<note
-            n="12" place="foot"
-            type="editorial">Es konnte nicht geklärt werden, was hiermit gemeint ist.</note> mit Verlust, vorläufig, aber wenigstens halbwegs in Ehren. Über Bancalari habe ich eine 27 halbe Bogen lange Beerdigung geschrieben, die vielleicht doch nicht ganz umsonst geschrieben sein wird.<note
-            n="13" place="foot" type="editorial">Gemeint ist <bibl>
+            <p>Der arme <persName ref="[authorityLink]">G. Meyer</persName> ist also todt und begraben.<note n="7" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Gustav Meyer</persName> starb am 28. August 1900.</note> Seine griech. Gramm.<note n="8" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3695">Meyer, Gustav. 1880. <hi rend="unknown" rendition="#none">Griechische Grammatik</hi>. Leipzig: Breitkopf &amp; Härtel</ref>
+                  </bibl>. Eine zweite Aufl. erschien 1886, eine dritte 1896.</note> steht jederzeit eine Nasenlänge vor mir auf dem Schreibtische. Wäre er doch gesund 90 Jahre alt geworden! Ich wäre ihm nie in den Weg gekommen. Aber jetzt bin ich ihm oft sehr gram. So wenn ich bei der Arbeit sitze und die Institute vor mir sehe, mit allen Hilfsmitteln. Er war ein Junggeselle - das ist seine Sache – er war aber auch ein wissenschaftlicher Junggeselle, das unterliegt der Kritik. Ein Universitätslehrer, ja jeder der was schreibt, ist eine Art Vater und muss das Kindergeschrei annehmen. Das ist gewiß nicht angenehm aber notwendige Folgerung. <persName ref="[authorityLink]">G. Meyer</persName> hat einen solchen Gedanken offenbar als albern immer weit von sich gewiesen wenn er ihm jemals gekommen ist. <pb facs="#IMG.4" n="4"/> Für seine Kanzel hat er in keiner Weise gesorgt u. es wäre ihm leicht gewesen, man hat es ihm angetragen. Ich hatte gehofft, dass man mich auffordert und dadurch zwingt an seinem Grabe etwas zu sagen – ich hätte schon noch genug gutes sagen können, es geschah aber nicht.<note n="9" place="foot" type="editorial">Der Ablauf der Beisetzung von <persName ref="[authorityLink]">Gustav Meyer</persName> wird im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5104">Grazer Tagblatt</ref> vom 31. August 1900, S. 3 beschrieben. Hier ist nur von einer Ansprache des <persName>
+Vicars Schaudig</persName> die Rede.</note> Und hätte ich selbst die Initiative ergreifen sollen? Das entsprach dann doch wieder meinem Motto (s.o.) nicht. So nah hat er mich nie herankommen lassen. Also wie der alte <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.389">Shakespeare</ref> sagt: <persName ref="[authorityLink]">G Meyer</persName>, Gehab dich wohl</p>
+            <p>Sie werden, verehrter Herr Hofrath, es lächerlich finden, wenn ich Sie frage, wann Sie zurückkommen? Aber es ist jetzt sehr einsam geworden. <persName ref="[authorityLink]">Loserth</persName>
+               <note n="10" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Johann Loserth </persName> (1846-1936), österreichischer Historiker und von 1893 bis 1917 Professor an der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.693">Universität Graz</ref>. <persName ref="[authorityLink]">
+Loserth</persName> stand ebenfalls in brieflichem Kontakt mit Schuchardt (Bibl. Nr. 06645-06649 im Schuchardt-Nachlass; die Briefe Schuchardts an Loserth befinden sich im Steiermärkischen Landesarchiv in Graz).</note> u. v. Graff<note n="11" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Graff de Pancsova, Ludwig Bartholomäus</persName> (1851-1924), Zoologe und unter anderem von 1896 bis 1897 Rektor der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.693">
+Universität Graz</ref>. Zwischen von <persName ref="[authorityLink]">Graff</persName> und Schuchardt bestand ebenfalls Kontakt (Bibl. Nr. 03911-03920).</note> sind auf eine Fußreise gegangen u. jetzt habe ich Niemand. Ich kenne die anderen Collegen so gut wie gar nicht. Ich schwitze darüber, meinen Besitz an Bauernhäusern zu liquidieren,<note n="12" place="foot" type="editorial">Es konnte nicht geklärt werden, was hiermit gemeint ist.</note> mit Verlust, vorläufig, aber wenigstens halbwegs in Ehren. Über Bancalari habe ich eine 27 halbe Bogen lange Beerdigung geschrieben, die vielleicht doch nicht ganz umsonst geschrieben sein wird.<note n="13" place="foot" type="editorial">Gemeint ist <bibl>
 
 
 Meringer, Rudolf. 1903. 'G. Bancalari und die Methode der Hausforschung'. In: MAGW, 33. Bd. 252-273.
 </bibl>
-          </note> Aber um das Schicksal meiner Akademie-Arbeit ist mir bang.<note n="14" place="foot"
-                type="editorial">Vermutlich meint Meringer hier seine erst zwei Jahre späte erschienene Arbeit <bibl>
+               </note> Aber um das Schicksal meiner Akademie-Arbeit ist mir bang.<note n="14" place="foot" type="editorial">Vermutlich meint Meringer hier seine erst zwei Jahre späte erschienene Arbeit <bibl>
 
-'Die Stellung des bosnischen Hauses und Etymologien zum Hausrat'. <hi
-                rend="unknown" rendition="#none">Sitzungsberichte der philosophisch-historischen Classe der kaiserlichen Akademie der Wissenschaften</hi> 144, VI. Abhandlung (Meringer 1902).
+'Die Stellung des bosnischen Hauses und Etymologien zum Hausrat'. <hi rend="unknown" rendition="#none">Sitzungsberichte der philosophisch-historischen Classe der kaiserlichen Akademie der Wissenschaften</hi> 144, VI. Abhandlung (Meringer 1902).
 </bibl>
-          </note>
-          <pb facs="#IMG.5"
-            n="5"/> Und gerade diese bedeutet meinen Absagebrief an alle persönlichen Ansprüche auf diesem Gebiete. Für mein Fach habe ich genug von dieser Hilfsdisciplin gesehen. Die Referenten der Arbeit werden aber <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1835">Jagić</persName>
-          <note n="15" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1835">Vatroslav Jagić</persName> (1838-1923), kroatischer Sprachwissenschaftler, der ebenfalls in Kontakt mit Schuchardt stand (vgl. die <ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.1835">Korrespondenz-Edition von Mayr 2016</ref>).</note> u Benndorf<note
-            n="16" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1127">Otto Benndorf</persName> (1838-1907), klassischer Archäologe, von dem zwei Schreiben im Schuchardt-Nachlass erhalten sind (Bibl. Nr. 00932-00933).</note> sein. Sie lieben mich nicht. So fürchte ich, daß ich selbständig publicieren muss. Das Unglück wäre ja nicht so groß.</p>
-        <p>Nächsten Winter will ich V u V<note n="17" place="foot" type="editorial">Vermutlich <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3256">
-Meringer, Rudolf / Mayer, Karl. 1895. <hi
-                  rend="unknown" rendition="#none">
+               </note>
+               <pb facs="#IMG.5" n="5"/> Und gerade diese bedeutet meinen Absagebrief an alle persönlichen Ansprüche auf diesem Gebiete. Für mein Fach habe ich genug von dieser Hilfsdisciplin gesehen. Die Referenten der Arbeit werden aber <persName ref="[authorityLink]">Jagić</persName>
+               <note n="15" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Vatroslav Jagić</persName> (1838-1923), kroatischer Sprachwissenschaftler, der ebenfalls in Kontakt mit Schuchardt stand (vgl. die <ref target="https://gams.uni-graz.at/o:hsa.persons#P.1835">Korrespondenz-Edition von Mayr 2016</ref>).</note> u Benndorf<note n="16" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Otto Benndorf</persName> (1838-1907), klassischer Archäologe, von dem zwei Schreiben im Schuchardt-Nachlass erhalten sind (Bibl. Nr. 00932-00933).</note> sein. Sie lieben mich nicht. So fürchte ich, daß ich selbständig publicieren muss. Das Unglück wäre ja nicht so groß.</p>
+            <p>Nächsten Winter will ich V u V<note n="17" place="foot" type="editorial">Vermutlich <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3256">
+Meringer, Rudolf / Mayer, Karl. 1895. <hi rend="unknown" rendition="#none">
 Versprechen und Verlesen. Eine psychologisch-linguistische Studie</hi>. Stuttgart: Göschen’sche Verlagshandlung</ref>
-            </bibl>.</note> II unter neuem Titel machen.<note n="18" place="foot" type="editorial">Eventuell ist gemeint: <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3171">
-Meringer, Rudolf. 1908. <hi
-                  rend="unknown" rendition="#none">Aus dem Leben der Sprache: Versprechen, Kindersprache, Nachahmungstrieb. Festschrift der k. k. Karl-Franzens-Universität Graz aus Anlaß der Jahresfeier am 15. XI. 1906.</hi> Berlin: Behr’s Verlag</ref>
+                  </bibl>.</note> II unter neuem Titel machen.<note n="18" place="foot" type="editorial">Eventuell ist gemeint: <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3171">
+Meringer, Rudolf. 1908. <hi rend="unknown" rendition="#none">Aus dem Leben der Sprache: Versprechen, Kindersprache, Nachahmungstrieb. Festschrift der k. k. Karl-Franzens-Universität Graz aus Anlaß der Jahresfeier am 15. XI. 1906.</hi> Berlin: Behr’s Verlag</ref>
+                  </bibl>.</note> Es soll aber nicht wieder so sein wie I. Ich will nicht mehr in Hemdärmeln erscheinen. Der größte Theil ist vorgearbeitet- Gott gebs! – Von Anton ist seine letzte Rede über den Ausdruck der Gemütsbeweggn.<note n="19" place="foot" type="editorial">
+                  <bibl>
 
-            </bibl>.</note> Es soll aber nicht wieder so sein wie I. Ich will nicht mehr in Hemdärmeln erscheinen. Der größte Theil ist vorgearbeitet- Gott gebs! – Von Anton ist seine letzte Rede über den Ausdruck der Gemütsbeweggn.<note
-            n="19" place="foot" type="editorial">
-
-            <bibl>
-
-Anton, Gabriel. 1900. 'Über den Ausdruck der Gemütsbewegung beim gesunden und kranken Menschen'. In: <hi
-                rend="unknown" rendition="#none">Psychiatrische Wochenschrift.</hi> Bd 2., 165-169.
+Anton, Gabriel. 1900. 'Über den Ausdruck der Gemütsbewegung beim gesunden und kranken Menschen'. In: <hi rend="unknown" rendition="#none">Psychiatrische Wochenschrift.</hi> Bd 2., 165-169.
 </bibl>
-          </note> erschienen. Sie werden die größte Achtung vor den feinen Beobachtungen empfinden. Für uns sehr gut zu brauchen! doch ein merkwürdiger Mensch: diese unbegreifliche äußere Ruhe bei dieser Fähigkeit feinste Vibrationen rein aufzunehmen. </p>
-        <p>U.s.w. wenn Sie wiederkommen</p>
-        <closer>
-          <salute>In aufrichtigster Verehrg (s. Motto)</salute>
-          <lb/>
-          <salute>Ihr </salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">Rudolf Meringer</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>
-            <pb facs="#IMG.6" n="6"/> Soeben erhalte ich Ihre freundliche Karte. Leider komme ich zu keinem klaren Resultate. Sicher ist, daß πίνᾰκος, κλίνᾰκος ein ᾰ haben, denn sonst wäre ion-att. mit Bestimmtheit η zu erwarten. Ebenso sicher ist aber daß es ein – ᾱκ gegeben hat. das ist Ablaut zu – ᾰκ u. erscheint ion.-att. als – ηκ.</p>
+               </note> erschienen. Sie werden die größte Achtung vor den feinen Beobachtungen empfinden. Für uns sehr gut zu brauchen! doch ein merkwürdiger Mensch: diese unbegreifliche äußere Ruhe bei dieser Fähigkeit feinste Vibrationen rein aufzunehmen. </p>
+            <p>U.s.w. wenn Sie wiederkommen</p>
+            <closer>
+               <salute>In aufrichtigster Verehrg (s. Motto)</salute>
+               <lb/>
+               <salute>Ihr </salute>
+               <signed>
+                  <persName ref="[authorityLink]">Rudolf Meringer</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>
+                  <pb facs="#IMG.6" n="6"/> Soeben erhalte ich Ihre freundliche Karte. Leider komme ich zu keinem klaren Resultate. Sicher ist, daß πίνᾰκος, κλίνᾰκος ein ᾰ haben, denn sonst wäre ion-att. mit Bestimmtheit η zu erwarten. Ebenso sicher ist aber daß es ein – ᾱκ gegeben hat. das ist Ablaut zu – ᾰκ u. erscheint ion.-att. als – ηκ.</p>
+               <p>Wenn κοχλαξ ā haben sollte, müsste es dorischer Herkunft sein. κοχληξ ηκος ist in Ordnung. Auch νέᾱξ (ion. νέηξ) ist in Ordnung weil Vocal voraus geht. […] νέᾱξ aksl. nov<hi rend="unknown" rendition="#none">a</hi>ku (a= idg. ā!). Langes idg. ā wird weiter erwiesen durch bi-bāx, mordāx, fornāx etc. </p>
+               <p>Idg. ist also *āk: *ăk.</p>
+               <p>Wie Caelius Aurelianus aber zu cochlaea kommt<note n="20" place="foot" type="editorial">Vgl. <bibl>
 
-          <p>Wenn κοχλαξ ā haben sollte, müsste es dorischer Herkunft sein. κοχληξ ηκος ist in Ordnung. Auch νέᾱξ (ion. νέηξ) ist in Ordnung weil Vocal voraus geht. […] νέᾱξ aksl. nov<hi
-              rend="unknown" rendition="#none">a</hi>ku (a= idg. ā!). Langes idg. ā wird weiter erwiesen durch bi-bāx, mordāx, fornāx etc. </p>
-          <p>Idg. ist also *āk: *ăk.</p>
-          <p>Wie Caelius Aurelianus aber zu cochlaea kommt<note n="20" place="foot"
-                  type="editorial">Vgl. <bibl>
-
-Schuchardt, Hugo. 1899. 'Romanische Etymologieen II'. In <hi
-                  rend="unknown" rendition="#none">Sitzungsberichte der philosophisch-historischen Classe der Kaiserlichen Akademie der Wissenschaften. Wien</hi> 141: 1-122 [HSA 335], S. 14.
+Schuchardt, Hugo. 1899. 'Romanische Etymologieen II'. In <hi rend="unknown" rendition="#none">Sitzungsberichte der philosophisch-historischen Classe der Kaiserlichen Akademie der Wissenschaften. Wien</hi> 141: 1-122 [HSA 335], S. 14.
 </bibl>
-            </note> ist damit noch in keiner Weise erklärt. Da er in einer Zeit lebte, wo ae noch bestimmt diphthongisch war, so kann er wohl nicht durch -ηκ beeinflusst worden sein, die ae für e sind zweifelhaft scēna scaina = ςκηνή. Vielleicht ist also Herr Caelius A. ganz unschuldig an dem ae. Noch dazu ist er Africaner.</p>
-          <p>Aber, wie gesagt, ich möchte in dieser schwierigen Frage nicht genau eine Meinung abgeben, weil ich sie nicht begründen könnte.</p>
-          <closer>
-            <salute>Schönste Empfehlgn</salute>
-            <lb/>
-            <salute>Ihr</salute>
-            <signed>
-              <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">RM</persName>
-            </signed>
-          </closer>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                  </note> ist damit noch in keiner Weise erklärt. Da er in einer Zeit lebte, wo ae noch bestimmt diphthongisch war, so kann er wohl nicht durch -ηκ beeinflusst worden sein, die ae für e sind zweifelhaft scēna scaina = ςκηνή. Vielleicht ist also Herr Caelius A. ganz unschuldig an dem ae. Noch dazu ist er Africaner.</p>
+               <p>Aber, wie gesagt, ich möchte in dieser schwierigen Frage nicht genau eine Meinung abgeben, weil ich sie nicht begründen könnte.</p>
+               <closer>
+                  <salute>Schönste Empfehlgn</salute>
+                  <lb/>
+                  <salute>Ihr</salute>
+                  <signed>
+                     <persName ref="[authorityLink]">RM</persName>
+                  </signed>
+               </closer>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

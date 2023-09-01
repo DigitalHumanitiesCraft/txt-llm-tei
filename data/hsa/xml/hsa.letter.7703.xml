@@ -1,390 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Francesco D´Ovidio (92-HSFDO35)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Sandra</forename>
-            <surname>Covino</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7703" type="PID">o:hsa.letter.7703</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">92-HSFDO35</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Italien</country>
-            <settlement>Pisa</settlement>
-            <repository ref="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</repository>
-            <idno type="shelfmark">HSFDO35</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="9" unit="pages">9 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1920-12-16">1920-12-16</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Sandra</forename>
-              <surname>Covino</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Francesco D´Ovidio</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1353"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7703">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1920-12-16">1920-12-16</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1353" ref="https://viaf.org/viaf/29528295">
-            <forename>Francesco</forename>
-            <surname>D´Ovidio</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1353" type="context">
-                        Korrespondenz Hugo Schuchardt - Francesco D´Ovidio
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7703" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 16.12.’20.</dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Ich bin Dir sehr dankbar für Deinen Brief vom 25. Nov. Wenn ich ihn nicht sofort beantwortet habe, so entschuldige das damit daß ich nicht nur im allgemeinen physischen Hemmungen ausgesetzt bin, sondern auch durch meine geschwächte Sehkraft mir Lesen und Schreiben beschwerlich geworden ist. Amtliche Obliegenheiten habe ich allerdings nicht zu erledigen; mit meinen eigenen Sachen aber muß ich ohne Beihülfe fertig werden.</p>
+            <p>Ich erlaube mir auf Deine Anregungen hin, einige Punkte in ein helleres Licht zu setzen, ohne daß das früher Gesagte dadurch irgendwelche Abänderung erführe. Ich freue mich daß Du dem deutschen Herzen das gleiche gestattest wie dem italienischen. Die Verschiedenheit in der verstandesmäßigen Bemessung der Dinge beruht natürlich zunächst auf der Verschiedenheit der nationalen Interessen. Es liegt aber doch die Möglichkeit eines gemeinsamen Standpunktes vor, eines menschlichen oder doch eines europäischen. Das <hi rend="unknown" rendition="#none">Selbstbestimmungsrecht</hi> ist ja von Feind und Freund allgemein aner<pb facs="#IMG.2" n="2"/>kannt und von der Entente an allen Grenzen des deutschen Gebietes zur Ausführung gebracht worden oder wird es demnächst. Mit einer einzigen Ausnahme, und zwar im <hi rend="unknown" rendition="#none">Südwesten</hi>
+               <note n="1" place="foot" type="editorial">Schuchardt si riferiva al <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4307">
+                     <hi rend="unknown" rendition="#none">Südtirol</hi>
+                  </ref>; sulle ragioni politiche dell’attribuzione all’Italia di questo territorio, cf. la nota 7 alla precedente lettera di D’Ovidio: <ref target="https://gams.uni-graz.at/o:hsa.letter.7702">XCI, HSA, B 8491</ref>.</note>. Wenn man in Schleswig und Kärnten von einer <hi rend="unknown" rendition="#none">res judicata</hi> sprechen muß, so kann ich diesen Ausdruck für das deutsche Südtirol nicht annehmen, nicht weil ich ein Deutscher, sondern weil ich ein Philologe bin. So sicher das Wort <hi rend="unknown" rendition="#none">jus</hi> darin steckt, ebenso wenig steckt die Sache jus in dem Pakt, den Italiener und Britten über die Köpfe der dabei zunächst Beteiligten hinweg geschlossen haben. Wir müssen dabei bekennen daß eine Vergewaltigung stattgefunden hat, mag sie auch in zarter, vorsichtiger Art erfolgt sein – weil wir uns sonst nur schwer über die Vergewaltigung die wir durch Angliederung an die Tschechoslowakei erfahren haben, beschweren könnten. Die Abmachungen von Regierungen, mögen sie ]sich[ auch für “unwider<pb facs="#IMG.3" n="3"/>ruflich” erklärt werden, entscheiden tatsächlich nicht immer<note n="2" place="foot" type="editorial">I trattati di pace di Parigi e di Saint-Germain-en-Laye avevano assegnato gran parte della Slesia austriaca alla Cecoslovacchia e il Tirolo meridionale all’Italia. Per la Carinzia (nella zona a maggioranza slovena) e per lo Schleswig, incamerato dalla Prussia nel 1866, era stato disposto lo svolgimento di plebisciti. Il primo, in Carinzia, era stato inaspettatamente favorevole all’Austria; nello Schleswig settentrionale avevano vinto i filo-danesi, mentre nello Schleswig centrale erano prevalsi nettamente coloro che preferivano restare parte dello Stato tedesco (cf. E. Goldstein, <hi rend="unknown" rendition="#none">Gli accordi di pace</hi>, cit., pp. 42, 50-51 e Nina Jebsen &amp; Martin Klatt, <hi rend="unknown" rendition="#none">The negotiation of national and regional identity during the Schleswig-plebiscite following the First World War</hi>, in «First World War Studies», V/2, 2014, pp. 181-211). Si capisce, dunque, perché in questa lettera Schuchardt, assai critico verso il patto di Londra, parli di res iudicata per lo Schleswig e la Carinzia ma di «stupro» per il Sudtirolo.</note>. Die Franzosen blieben bezüglich von Elsaß-Lothringen durch ein halbes Jahrhundert desselben Sinnes und bekamen es wieder; der Anspruch der Deutschen auf das deutsche Südtirol ist noch besser begründet. Es ist auch nicht richtig, von <hi rend="unknown" rendition="#none">
+wenigen tausend</hi> Deutschen zu reden die um vieler Millionen Italiener willen geschädigt worden seien. Es kommt doch der große Körper in Betracht von dem sie abgetrennt worden sind, vor allem die eng mit ihnen verbundenen Nordtiroler. Aber auch sie allein genommen sind nicht <hi rend="unknown" rendition="#none">wenige</hi> Tausende, sondern viele. Ich frage telephonisch an maßgebender Stelle an; man antwortet mir: mindestens 300,000 und in einem neben mir liegenden Buche lese ich daß 1890 in den drei Bezirkshauptmannschaften Meran, Brixen, Bozen 166000 Einwohner gezählt wurden.</p>
+            <p>Nun berühre ich noch einiges Nebensächliche, wodurch aber die Beurteilung der Hauptfrage in keiner Weise beeinflußt wird. Zuerst lehne ich wiederum einen Ausdruck ab, der in diesem Zusammenhang gebraucht wird, <pb facs="#IMG.4" n="4"/> den von den <hi rend="unknown" rendition="#none">natürlichen Grenzen</hi>. Ich bin durchaus der Ansicht von Henri Barbusse, daß Grenzen im allgemeinen künstlich gesteckt werden und daß nur die Grenzen anzuerkennen seien, die durch die Sprache, Kunst und Sitte der Völker bestimmt seien<note n="3" place="foot" type="editorial">Sulle idee di <persName>H. Barbusse</persName>, cf. la nota 6 alla lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.7700">LXXXIX, CASNS, FDO, HS 33</ref>. Negli anni a cavallo della Grande Guerra, è possibile rilevare in Schuchardt un doppio sistema di idee e di orientamenti concettuali, a seconda dell’ambito e delle finalità dei suoi scritti: da una parte lo scienziato delle lingue, il teorico della Sprachmischung e della Sprachverwandtschaft, dall’altra l’opinionista politico e l’uomo pragmaticamente schierato nella difesa del proprio Volkstum e dell’inscindibile rapporto tra lingua, popolo e territorio (cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7356">Covino, <hi rend="unknown" rendition="#none">Linguistica e nazionalismo</hi>
                      </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4307" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Südtirolfrage</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.290" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Accademia dei Lincei (Rom)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7703" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7703" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7703" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7703" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7703" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7703" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7703" xml:id="IMG.7">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7703" xml:id="IMG.8">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7703" xml:id="IMG.9">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7703" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 16.12.’20.</dateline>
-        <opener>Lieber Freund,</opener>
-        <p>Ich bin Dir sehr dankbar für Deinen Brief vom 25. Nov. Wenn ich ihn nicht sofort beantwortet habe, so entschuldige das damit daß ich nicht nur im allgemeinen physischen Hemmungen ausgesetzt bin, sondern auch durch meine geschwächte Sehkraft mir Lesen und Schreiben beschwerlich geworden ist. Amtliche Obliegenheiten habe ich allerdings nicht zu erledigen; mit meinen eigenen Sachen aber muß ich ohne Beihülfe fertig werden.</p>
-
-        <p>Ich erlaube mir auf Deine Anregungen hin, einige Punkte in ein helleres Licht zu setzen, ohne daß das früher Gesagte dadurch irgendwelche Abänderung erführe. Ich freue mich daß Du dem deutschen Herzen das gleiche gestattest wie dem italienischen. Die Verschiedenheit in der verstandesmäßigen Bemessung der Dinge beruht natürlich zunächst auf der Verschiedenheit der nationalen Interessen. Es liegt aber doch die Möglichkeit eines gemeinsamen Standpunktes vor, eines menschlichen oder doch eines europäischen. Das <hi
-            rend="unknown" rendition="#none">Selbstbestimmungsrecht</hi> ist ja von Feind und Freund allgemein aner<pb
-            facs="#IMG.2"
-            n="2"/>kannt und von der Entente an allen Grenzen des deutschen Gebietes zur Ausführung gebracht worden oder wird es demnächst. Mit einer einzigen Ausnahme, und zwar im <hi
-            rend="unknown" rendition="#none">Südwesten</hi>
-          <note n="1" place="foot" type="editorial">Schuchardt si riferiva al <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4307">
-              <hi rend="unknown" rendition="#none">Südtirol</hi>
-
-            </ref>; sulle ragioni politiche dell’attribuzione all’Italia di questo territorio, cf. la nota 7 alla precedente lettera di D’Ovidio: <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.7702">XCI, HSA, B 8491</ref>.</note>. Wenn man in Schleswig und Kärnten von einer <hi
-            rend="unknown"
-            rendition="#none">res judicata</hi> sprechen muß, so kann ich diesen Ausdruck für das deutsche Südtirol nicht annehmen, nicht weil ich ein Deutscher, sondern weil ich ein Philologe bin. So sicher das Wort <hi
-            rend="unknown"
-            rendition="#none">jus</hi> darin steckt, ebenso wenig steckt die Sache jus in dem Pakt, den Italiener und Britten über die Köpfe der dabei zunächst Beteiligten hinweg geschlossen haben. Wir müssen dabei bekennen daß eine Vergewaltigung stattgefunden hat, mag sie auch in zarter, vorsichtiger Art erfolgt sein – weil wir uns sonst nur schwer über die Vergewaltigung die wir durch Angliederung an die Tschechoslowakei erfahren haben, beschweren könnten. Die Abmachungen von Regierungen, mögen sie ]sich[ auch für “unwider<pb
-            facs="#IMG.3" n="3"/>ruflich” erklärt werden, entscheiden tatsächlich nicht immer<note n="2" place="foot"
-              type="editorial">I trattati di pace di Parigi e di Saint-Germain-en-Laye avevano assegnato gran parte della Slesia austriaca alla Cecoslovacchia e il Tirolo meridionale all’Italia. Per la Carinzia (nella zona a maggioranza slovena) e per lo Schleswig, incamerato dalla Prussia nel 1866, era stato disposto lo svolgimento di plebisciti. Il primo, in Carinzia, era stato inaspettatamente favorevole all’Austria; nello Schleswig settentrionale avevano vinto i filo-danesi, mentre nello Schleswig centrale erano prevalsi nettamente coloro che preferivano restare parte dello Stato tedesco (cf. E. Goldstein, <hi
-              rend="unknown"
-              rendition="#none">Gli accordi di pace</hi>, cit., pp. 42, 50-51 e Nina Jebsen &amp; Martin Klatt, <hi
-              rend="unknown"
-            rendition="#none">The negotiation of national and regional identity during the Schleswig-plebiscite following the First World War</hi>, in «First World War Studies», V/2, 2014, pp. 181-211). Si capisce, dunque, perché in questa lettera Schuchardt, assai critico verso il patto di Londra, parli di res iudicata per lo Schleswig e la Carinzia ma di «stupro» per il Sudtirolo.</note>. Die Franzosen blieben bezüglich von Elsaß-Lothringen durch ein halbes Jahrhundert desselben Sinnes und bekamen es wieder; der Anspruch der Deutschen auf das deutsche Südtirol ist noch besser begründet. Es ist auch nicht richtig, von <hi
-            rend="unknown"
-            rendition="#none">
-wenigen tausend</hi> Deutschen zu reden die um vieler Millionen Italiener willen geschädigt worden seien. Es kommt doch der große Körper in Betracht von dem sie abgetrennt worden sind, vor allem die eng mit ihnen verbundenen Nordtiroler. Aber auch sie allein genommen sind nicht <hi
-            rend="unknown" rendition="#none">wenige</hi> Tausende, sondern viele. Ich frage telephonisch an maßgebender Stelle an; man antwortet mir: mindestens 300,000 und in einem neben mir liegenden Buche lese ich daß 1890 in den drei Bezirkshauptmannschaften Meran, Brixen, Bozen 166000 Einwohner gezählt wurden.</p>
-
-        <p>Nun berühre ich noch einiges Nebensächliche, wodurch aber die Beurteilung der Hauptfrage in keiner Weise beeinflußt wird. Zuerst lehne ich wiederum einen Ausdruck ab, der in diesem Zusammenhang gebraucht wird, <pb
-            facs="#IMG.4" n="4"/> den von den <hi rend="unknown"
-            rendition="#none">natürlichen Grenzen</hi>. Ich bin durchaus der Ansicht von Henri Barbusse, daß Grenzen im allgemeinen künstlich gesteckt werden und daß nur die Grenzen anzuerkennen seien, die durch die Sprache, Kunst und Sitte der Völker bestimmt seien<note
-            n="3" place="foot"
-              type="editorial">Sulle idee di <persName>H. Barbusse</persName>, cf. la nota 6 alla lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.7700">LXXXIX, CASNS, FDO, HS 33</ref>. Negli anni a cavallo della Grande Guerra, è possibile rilevare in Schuchardt un doppio sistema di idee e di orientamenti concettuali, a seconda dell’ambito e delle finalità dei suoi scritti: da una parte lo scienziato delle lingue, il teorico della Sprachmischung e della Sprachverwandtschaft, dall’altra l’opinionista politico e l’uomo pragmaticamente schierato nella difesa del proprio Volkstum e dell’inscindibile rapporto tra lingua, popolo e territorio (cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7356">Covino, <hi rend="unknown" rendition="#none">Linguistica e nazionalismo</hi>
-              </ref>
-
-            </bibl>, cit., pp. 171-177). </note>. Machen sich wirtschaftliche Beweggründe geltend, so werden diesen bei einer Volksabstimmung sich offenbaren. Aber die deutschen Südtiroler schauen auch in dieser Beziehung nach Norden; ihr Handel geht hauptsächlich mit Wein, Obst u.a. dorthin und der Norden füllt Meran mit Kurgästen<note
-            n="4" place="foot" type="editorial">Schuchardt non condivideva la previsione, formulata da D’Ovidio nella lettera precedente, sugli utili pratici che i Sudtirolesi avrebbero ricavato «dalla convivenza con l’Italia».</note>.*)</p>
-
-        <p>„Natürliche Nationalgrenzen‟, das scheint mir ein Widersinn zu sein, eine Unklarheit über das Verhältnis von Physischem und Psychischem. Ihr Italiener betrachtet das Gebirge als völkertrennend, die Franzosen den Fluß: wer ist mehr im Recht? Nun kommt mir in anderer Ausdruck oder vielmehr ein neuer Begriff – denn es handelt sich um Wirkliches in den Weg, der der <hi
-            rend="unknown"
-            rendition="#none">militärischen Sicherung</hi>. Wie steht es hier mit der Gerechtigkeit? Ist nicht die Sicherung der einen Partei <pb
-            facs="#IMG.5"
-            n="5"/> Bedrohung der andern? Kann man vom Brenner nicht ebenso gut nordwärts absteigen wie südwärts? Haben die Römer die den Barbaren verboten, nach dem Süden zu kommen, sich etwa selbst das Verbot auferlegt die Alpen (und ebenso den Rhein) zu überschreiten? Und schließlich wie steht es mit dem Erfolg militärischer Sicherungen wie die in Frage stehende? Nun ich glaube, wir sind alle einig darin daß die Kriegstechnik der Zukunft, wenn sie fortschreitet wie bisher, über den Brenner wie einen Maulwurfshügel hinwegsehen wird. Die Annexion bedeutet nicht die Behebung einer Gefahr, sondern eine Gefahr selbst<note
-            n="5" place="foot" type="editorial">Nelle pagini iniziali dell’articolo <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.749">
-                <hi rend="unknown" rendition="#none">Bekenntnisse und Erkenntnisse</hi>
-              </ref>
-
-            </bibl>, pubblicato l’anno prima in «Wissen und Leben», XIII/5, 1919, pp. 179-198, Schuchardt, presentando la sua personale esperienza di linguista testimone della storia contemporanea, aveva confessato di avere perso la fiducia in una cooperazione pacifica tra i popoli sulla base degli ideali umanistici e aveva tra l’altro espresso la sua preoccupazione che le condizioni di pace non divenissero fonte di guerre future (cf. Andreas Golob, <hi
-              rend="unknown"
-              rendition="#none">Foreign Language Studies at the University of Graz (Austria-Hungary) during the First World War</hi>, in <hi
-              rend="unknown" rendition="#none">War and the Humanities. The Cultural Impact of the First World War</hi>, eds. Frank Jacob, Jeffrey M. Shaw &amp; Timothy Demy, Paderborn, F. Schöningh, 2019, pp. 53-83: 62-63). In altri suoi scritti militanti, come il cit. articolo <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.661">
-                <hi rend="unknown" rendition="#none">Römischer Chauvinismus</hi>
-              </ref>
-            </bibl>, aveva in particolare presagito la nascita di un irredentismo sudtirolese (cf. la nota 1 alla <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.7701">lettera XC, CASNS, FDO, HS 34</ref>).</note>. An die törichten, uns Deutschen selbst so unheilvollen Römerzüge warnend zu erinnern, kann doch keinem Vernünftigen einfallen. Die Deutschen werden kaum je so viel Kräfte vereinen um einem Angriff [zu] widerstehen, geschweige denn einen solchen ins Werk zu setzen. Also, ich wüßte nicht wie sie den Italienern je eine Gefahr werden könnten. Wohl aber kann deutsche Freund<pb
-            facs="#IMG.6" n="6"/>schaft den Italienern nützen, wie umgekehrt; nur erscheint den Deutschen die italienische nicht aufrichtig genug, da sie sich gegen die Deutschen als mögliche Fremde der Zukunft auf rechtswidrige Weise zu sichern sucht. Und nun verschiebt sich wohl in den Augen von vielen Deiner Landsleute die Lage der Dinge, so daß die Deutschen weil sie sich nicht wie artige Kinder, über das ihnen Weggenommene beruhigen, als unbequemes, unsicheres Element für eine friedliche Zukunft erscheinen.</p>
-
-        <p>Noch hätte ich mancherlei zu sagen (z. B. über die „Tedeschi“ unter denen die Tschechen eine Hauptrolle spielten; ich erinnere nur an den Tschechen Radetzky<note
-            n="6" place="foot"
-            type="editorial">Il richiamo alle origini boeme, e non tedesche, del conte <persName>Josef Radetzky</persName> (Sedlčany 1766-Milano 1858) rappresenta una replica indiretta ai riferimenti, contenuti nella precedente lettera di D’Ovidio, ai martiri di Belfiore e alle sofferenze imposte dall’Austria a «vaste e nobili regioni italiane».</note>); ich will aber mit einer Behauptung schließen die Dich zuerst überraschen wird. Aus dem Vorangehenden mußt Du gerade meine Liebe zu Italien erkennen, natürlich aus meiner Enttäuschung. Ich hätte Italien größer gewünscht, und es hätte sich größer gezeigt wenn es kleiner geblieben wäre. Es liebt ja die große Geste und es stand ihm eine <pb
-            facs="#IMG.7"
-            n="7"/> solche zu Gebote, wie sie selten vollzogen wird und wie sie königlichen Glanz verleiht, die des <hi
-            rend="unknown" rendition="#none">Verzichtes</hi>. Vielleicht ist es doch nicht „unwiderruflich“; dann werde ich mich mit den Rosen meines Gartens bekränzen.</p>
-
-        <p>Verzeihe mir – aus den im Eingang gegebenen Gründen – wenn ich nicht, wie es sofort meine Absicht gewesen war Dir für Deine Zusendungen gedankt habe, die ich sofort mit lebhaften Interesse gelesen habe. Vielleicht hängt die Unterlassung damit zusammen daß ich Deine mir versprochene Arbeit über den <hi
-            rend="unknown" rendition="#none">
-Ritmo cassinese</hi> abwarten wollte die aber nicht eingetroffen ist<note
-            n="7" place="foot" type="editorial">Schuchardt aveva già palesato, nella lettera del 6 giugno 1920, il suo interesse a ricevere il saggio sul <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7638">
-                <hi rend="unknown" rendition="#none">Ritmo cassinese</hi>
-              </ref>
-            </bibl>, che D’Ovidio gli aveva offerto più di un anno prima: cf. la lettera <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.7696">LXXXV, HSA, B 8492</ref>, e la nota 4.</note>. Indessen habe ich inzwischen von ihr Kenntnis genommen. _ Eben ist ein großer Stoß von Schriften der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.290">Acc. dei L.</ref> eingetroffen, die ich noch kaum habe ansehen können<note
-            n="8" place="foot" type="editorial">Sulle pubblicazioni dell’<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.290">Accademia dei Lincei</ref> speditegli da D’Ovidio, Schuchardt si soffermerà nella lettera successiva.</note>.</p>
-        <closer>
-          <salute>Mit herzlichstem Gruß</salute>
-          <lb/>
-          <salute>Dein dankbarer und getreuer</salute>
-          <lb/>
-          <salute>alter Freund</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+                  </bibl>, cit., pp. 171-177). </note>. Machen sich wirtschaftliche Beweggründe geltend, so werden diesen bei einer Volksabstimmung sich offenbaren. Aber die deutschen Südtiroler schauen auch in dieser Beziehung nach Norden; ihr Handel geht hauptsächlich mit Wein, Obst u.a. dorthin und der Norden füllt Meran mit Kurgästen<note n="4" place="foot" type="editorial">Schuchardt non condivideva la previsione, formulata da D’Ovidio nella lettera precedente, sugli utili pratici che i Sudtirolesi avrebbero ricavato «dalla convivenza con l’Italia».</note>.*)</p>
+            <p>„Natürliche Nationalgrenzen‟, das scheint mir ein Widersinn zu sein, eine Unklarheit über das Verhältnis von Physischem und Psychischem. Ihr Italiener betrachtet das Gebirge als völkertrennend, die Franzosen den Fluß: wer ist mehr im Recht? Nun kommt mir in anderer Ausdruck oder vielmehr ein neuer Begriff – denn es handelt sich um Wirkliches in den Weg, der der <hi rend="unknown" rendition="#none">militärischen Sicherung</hi>. Wie steht es hier mit der Gerechtigkeit? Ist nicht die Sicherung der einen Partei <pb facs="#IMG.5" n="5"/> Bedrohung der andern? Kann man vom Brenner nicht ebenso gut nordwärts absteigen wie südwärts? Haben die Römer die den Barbaren verboten, nach dem Süden zu kommen, sich etwa selbst das Verbot auferlegt die Alpen (und ebenso den Rhein) zu überschreiten? Und schließlich wie steht es mit dem Erfolg militärischer Sicherungen wie die in Frage stehende? Nun ich glaube, wir sind alle einig darin daß die Kriegstechnik der Zukunft, wenn sie fortschreitet wie bisher, über den Brenner wie einen Maulwurfshügel hinwegsehen wird. Die Annexion bedeutet nicht die Behebung einer Gefahr, sondern eine Gefahr selbst<note n="5" place="foot" type="editorial">Nelle pagini iniziali dell’articolo <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.749">
+                        <hi rend="unknown" rendition="#none">Bekenntnisse und Erkenntnisse</hi>
+                     </ref>
+                  </bibl>, pubblicato l’anno prima in «Wissen und Leben», XIII/5, 1919, pp. 179-198, Schuchardt, presentando la sua personale esperienza di linguista testimone della storia contemporanea, aveva confessato di avere perso la fiducia in una cooperazione pacifica tra i popoli sulla base degli ideali umanistici e aveva tra l’altro espresso la sua preoccupazione che le condizioni di pace non divenissero fonte di guerre future (cf. Andreas Golob, <hi rend="unknown" rendition="#none">Foreign Language Studies at the University of Graz (Austria-Hungary) during the First World War</hi>, in <hi rend="unknown" rendition="#none">War and the Humanities. The Cultural Impact of the First World War</hi>, eds. Frank Jacob, Jeffrey M. Shaw &amp; Timothy Demy, Paderborn, F. Schöningh, 2019, pp. 53-83: 62-63). In altri suoi scritti militanti, come il cit. articolo <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.661">
+                        <hi rend="unknown" rendition="#none">Römischer Chauvinismus</hi>
+                     </ref>
+                  </bibl>, aveva in particolare presagito la nascita di un irredentismo sudtirolese (cf. la nota 1 alla <ref target="https://gams.uni-graz.at/o:hsa.letter.7701">lettera XC, CASNS, FDO, HS 34</ref>).</note>. An die törichten, uns Deutschen selbst so unheilvollen Römerzüge warnend zu erinnern, kann doch keinem Vernünftigen einfallen. Die Deutschen werden kaum je so viel Kräfte vereinen um einem Angriff [zu] widerstehen, geschweige denn einen solchen ins Werk zu setzen. Also, ich wüßte nicht wie sie den Italienern je eine Gefahr werden könnten. Wohl aber kann deutsche Freund<pb facs="#IMG.6" n="6"/>schaft den Italienern nützen, wie umgekehrt; nur erscheint den Deutschen die italienische nicht aufrichtig genug, da sie sich gegen die Deutschen als mögliche Fremde der Zukunft auf rechtswidrige Weise zu sichern sucht. Und nun verschiebt sich wohl in den Augen von vielen Deiner Landsleute die Lage der Dinge, so daß die Deutschen weil sie sich nicht wie artige Kinder, über das ihnen Weggenommene beruhigen, als unbequemes, unsicheres Element für eine friedliche Zukunft erscheinen.</p>
+            <p>Noch hätte ich mancherlei zu sagen (z. B. über die „Tedeschi“ unter denen die Tschechen eine Hauptrolle spielten; ich erinnere nur an den Tschechen Radetzky<note n="6" place="foot" type="editorial">Il richiamo alle origini boeme, e non tedesche, del conte <persName>Josef Radetzky</persName> (Sedlčany 1766-Milano 1858) rappresenta una replica indiretta ai riferimenti, contenuti nella precedente lettera di D’Ovidio, ai martiri di Belfiore e alle sofferenze imposte dall’Austria a «vaste e nobili regioni italiane».</note>); ich will aber mit einer Behauptung schließen die Dich zuerst überraschen wird. Aus dem Vorangehenden mußt Du gerade meine Liebe zu Italien erkennen, natürlich aus meiner Enttäuschung. Ich hätte Italien größer gewünscht, und es hätte sich größer gezeigt wenn es kleiner geblieben wäre. Es liebt ja die große Geste und es stand ihm eine <pb facs="#IMG.7" n="7"/> solche zu Gebote, wie sie selten vollzogen wird und wie sie königlichen Glanz verleiht, die des <hi rend="unknown" rendition="#none">Verzichtes</hi>. Vielleicht ist es doch nicht „unwiderruflich“; dann werde ich mich mit den Rosen meines Gartens bekränzen.</p>
+            <p>Verzeihe mir – aus den im Eingang gegebenen Gründen – wenn ich nicht, wie es sofort meine Absicht gewesen war Dir für Deine Zusendungen gedankt habe, die ich sofort mit lebhaften Interesse gelesen habe. Vielleicht hängt die Unterlassung damit zusammen daß ich Deine mir versprochene Arbeit über den <hi rend="unknown" rendition="#none">
+Ritmo cassinese</hi> abwarten wollte die aber nicht eingetroffen ist<note n="7" place="foot" type="editorial">Schuchardt aveva già palesato, nella lettera del 6 giugno 1920, il suo interesse a ricevere il saggio sul <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7638">
+                        <hi rend="unknown" rendition="#none">Ritmo cassinese</hi>
+                     </ref>
+                  </bibl>, che D’Ovidio gli aveva offerto più di un anno prima: cf. la lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.7696">LXXXV, HSA, B 8492</ref>, e la nota 4.</note>. Indessen habe ich inzwischen von ihr Kenntnis genommen. _ Eben ist ein großer Stoß von Schriften der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.290">Acc. dei L.</ref> eingetroffen, die ich noch kaum habe ansehen können<note n="8" place="foot" type="editorial">Sulle pubblicazioni dell’<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.290">Accademia dei Lincei</ref> speditegli da D’Ovidio, Schuchardt si soffermerà nella lettera successiva.</note>.</p>
+            <closer>
+               <salute>Mit herzlichstem Gruß</salute>
+               <lb/>
+               <salute>Dein dankbarer und getreuer</salute>
+               <lb/>
+               <salute>alter Freund</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">
 HSchuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>--------------------------------------------</p>
-          <p>*) Du sagst: … alcuni (!) tedeschi siano obbligati per ragioni topografiche <hi rend="unknown"
-              rendition="#none">ineluttabili</hi> (?) a convivere …; teurer Freund, hier kann ich nicht folgen, ich müßte ein sacrificium intellectus begehen<note
-              n="9" place="foot" type="editorial">L’annotazione si trova in calce alla quarta pagina della lettera.</note>
-          </p>
-          <p>--------------------------------------------</p>
-        </postscript>
-        <pb facs="#IMG.8" n="8"/>
-        <pb facs="#IMG.9" n="9"/>
-      </div>
-    </body>
-  </text>
+               </signed>
+            </closer>
+            <postscript>
+               <p>--------------------------------------------</p>
+               <p>*) Du sagst: … alcuni (!) tedeschi siano obbligati per ragioni topografiche <hi rend="unknown" rendition="#none">ineluttabili</hi> (?) a convivere …; teurer Freund, hier kann ich nicht folgen, ich müßte ein sacrificium intellectus begehen<note n="9" place="foot" type="editorial">L’annotazione si trova in calce alla quarta pagina della lettera.</note>
+               </p>
+               <p>--------------------------------------------</p>
+            </postscript>
+            <pb facs="#IMG.8" n="8"/>
+            <pb facs="#IMG.9" n="9"/>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,436 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Placido Cerri an Hugo Schuchardt (02-01587)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1287">
-            <forename>Placido</forename>
-            <surname>Cerri</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/9545" type="PID">o:hsa.letter.9545</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-01587</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">01587</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1287">
-                <forename>Placido</forename>
-                <surname>Cerri</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6217" ref="http://sws.geonames.org/2525545">Bivona</origPlace>
-              <origDate ana="dcterms:created" when="1871-04-27">1871-04-27</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2020">2020</date>
-          <title>Die Korrespondenz zwischen Placido Cerri und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1287"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.9545">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1287" ref="https://viaf.org/viaf/42636325">
-            <forename>Placido</forename>
-            <surname>Cerri</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6217" key="#GID.1" ref="http://sws.geonames.org/2525545">Bivona</placeName>
-          <date when="1871-04-27">1871-04-27</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Bivona</settlement>
-                <name ref="http://geonames.org/2525545" type="fcode:PPLA3">Bivona</name>
-                <location>
-                  <geo>13.43895,37.61797</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1287" type="context">
-                        Korrespondenz Placido Cerri - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.369" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Piemontesische Dialekte</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.372" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sizilianische Dialekte</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.860" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.3143" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sardisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.381" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sanskrit</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.838" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Griechisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.667" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.886" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Latein</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.126" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Arabisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9545" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9545" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9545" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9545" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9545" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9545" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.9545" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bivona (<placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5890">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.9545" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bivona (<placeName ref="[authorityLink]">
 Sicilia</placeName>) 27 aprile 1871.<lb/>
-        </dateline>
-        <opener>Illustre e caro Sig. Professore,</opener>
-
-        <p>Non so che cosa Ella possa aver pensato a quest’ora di me, o come abbia giudicato il mio modo di procedere verso di lei specialmente dopochè ricevetti la cortesissima sua lettera del mese di gennaio, la quale mi giunse qui molto in ritardo dopo avermi cercato inutilmente altrove. In quest’anno ho avuto da fare in diversi luoghi senza stabilirmi definitivamente in alcuno. Dapprima fui nominato a Brescia, dove trovai degli imbrogli, per cui dovetti presto andare a <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.114">Firenze</placeName>. Qui mi fermai per qualche tempo poi mi fu offerto un incarico provvisorio a Bivona<note
-            n="1" place="foot"
-            type="editorial">Kleinstadt in der Provinz Agrigento.</note> dove erano successi disordini; un prof aveva abbandonato il suo ufficio un altro era stato destituto, e simili diavolerie. Esitai un poco, ma siccome non si trattava che di pochi mesi finii con accettare per avere occasione di vedere la <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5890">Sicilia</placeName>, sola parte d’<placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5969">Italia</placeName> che mi restava da visitare. Rimangono ancora circa tre mesi, poi la mia missione sarà compiuta ed allora ritornerò in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5941">Piemonte</placeName>. Ma prima d’arrivarvi è probabile che mi fermi alcune settimane a <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.86">Roma</placeName>. Ella che vi è stata molto tempo se desidera alcuna cosa non ha che a scrivermi, ma prima del mese di luglio, altrimenti forse non mi troverebbe più qui. Intanto vorrei chiederle il permesso di dispensarmi per ora dal darle minutei ragguagli intorno al <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.369">dialetto Piemontese</ref>. Temerei di non essere preciso. Non mi sono mai occupato <pb
-            facs="#IMG.2"
-            n="2"/> di queste comparazioni dialettiche, e le minime differenze di pronunzia tra un paese e l’altro sfuggono a chi non si proponga di studiarle. Nel prossimo autunno con qualche accurata osservazione e piú ancora con qualche conferenza col <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1493">Flechia</persName>
-          <note n="2" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1493">Giovanni Flechia</persName> (811-1892), ital. Sanskritist, Lehrer Cerris; vgl. HSA 
+            </dateline>
+            <opener>Illustre e caro Sig. Professore,</opener>
+            <p>Non so che cosa Ella possa aver pensato a quest’ora di me, o come abbia giudicato il mio modo di procedere verso di lei specialmente dopochè ricevetti la cortesissima sua lettera del mese di gennaio, la quale mi giunse qui molto in ritardo dopo avermi cercato inutilmente altrove. In quest’anno ho avuto da fare in diversi luoghi senza stabilirmi definitivamente in alcuno. Dapprima fui nominato a Brescia, dove trovai degli imbrogli, per cui dovetti presto andare a <placeName ref="[authorityLink]">Firenze</placeName>. Qui mi fermai per qualche tempo poi mi fu offerto un incarico provvisorio a Bivona<note n="1" place="foot" type="editorial">Kleinstadt in der Provinz Agrigento.</note> dove erano successi disordini; un prof aveva abbandonato il suo ufficio un altro era stato destituto, e simili diavolerie. Esitai un poco, ma siccome non si trattava che di pochi mesi finii con accettare per avere occasione di vedere la <placeName ref="[authorityLink]">Sicilia</placeName>, sola parte d’<placeName ref="[authorityLink]">Italia</placeName> che mi restava da visitare. Rimangono ancora circa tre mesi, poi la mia missione sarà compiuta ed allora ritornerò in <placeName ref="[authorityLink]">Piemonte</placeName>. Ma prima d’arrivarvi è probabile che mi fermi alcune settimane a <placeName ref="[authorityLink]">Roma</placeName>. Ella che vi è stata molto tempo se desidera alcuna cosa non ha che a scrivermi, ma prima del mese di luglio, altrimenti forse non mi troverebbe più qui. Intanto vorrei chiederle il permesso di dispensarmi per ora dal darle minutei ragguagli intorno al <ref target="https://gams.uni-graz.at/o:hsa.languages#L.369">dialetto Piemontese</ref>. Temerei di non essere preciso. Non mi sono mai occupato <pb facs="#IMG.2" n="2"/> di queste comparazioni dialettiche, e le minime differenze di pronunzia tra un paese e l’altro sfuggono a chi non si proponga di studiarle. Nel prossimo autunno con qualche accurata osservazione e piú ancora con qualche conferenza col <persName ref="[authorityLink]">Flechia</persName>
+               <note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Giovanni Flechia</persName> (811-1892), ital. Sanskritist, Lehrer Cerris; vgl. HSA 
 
 03049.</note> potrò darle tutte quelle indicazioni che Ella mi domanderà.</p>
-        <p>Quello che ora dovrei fare è parlarle dei <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.372">dialetti siciliani</ref>. Ma in questi sono nuovo; e poi v’è pochissima differenza tra quello di Bivona ed il Palermitano che Ella conoscerà specialmente per le opere del <persName>
+            <p>Quello che ora dovrei fare è parlarle dei <ref target="https://gams.uni-graz.at/o:hsa.languages#L.372">dialetti siciliani</ref>. Ma in questi sono nuovo; e poi v’è pochissima differenza tra quello di Bivona ed il Palermitano che Ella conoscerà specialmente per le opere del <persName>
 
-Meli</persName>.<note
-            n="3" place="foot" type="editorial">
-
-            <persName>
-Giovanni Meli</persName> (1740-1815), ital. Arzt, Naturwissenschaftler und Dichter.</note> Domandai di altre pubblicazioni e mi fu accennata soltano un opera che ora è in corso di stampa. Deve essere una raccolta di canti Siciliani di tutti i tempi e di tutti i luoghi della <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5890">
+Meli</persName>.<note n="3" place="foot" type="editorial">
+                  <persName>
+Giovanni Meli</persName> (1740-1815), ital. Arzt, Naturwissenschaftler und Dichter.</note> Domandai di altre pubblicazioni e mi fu accennata soltano un opera che ora è in corso di stampa. Deve essere una raccolta di canti Siciliani di tutti i tempi e di tutti i luoghi della <placeName ref="[authorityLink]">
 Sicilia</placeName>.<note n="4" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6105">
-                <hi rend="unknown" rendition="#none">Canti popolari siciliani</hi> raccolti da Giuseppe Pitrè</ref>
-
-            </bibl>, Palermo: Pedone-Lauriel, 1871 (Biblioteca delle tradizioni siciliane, 1-2).</note> L’autore chiamasi <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2417">Pitrè</persName>
-          <note n="5" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2417">Giusepe Pitrè</persName> (1841-1916), ital. Volkskundler; vgl. HSA 08864-08871.</note> e l’opera viene pubblicata in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.172">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6105">
+                        <hi rend="unknown" rendition="#none">Canti popolari siciliani</hi> raccolti da Giuseppe Pitrè</ref>
+                  </bibl>, Palermo: Pedone-Lauriel, 1871 (Biblioteca delle tradizioni siciliane, 1-2).</note> L’autore chiamasi <persName ref="[authorityLink]">Pitrè</persName>
+               <note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Giusepe Pitrè</persName> (1841-1916), ital. Volkskundler; vgl. HSA 08864-08871.</note> e l’opera viene pubblicata in <placeName ref="[authorityLink]">
 Palermo</placeName> coi tipi di Pedone-Lauriel. Se Ella desidera intorna ad essa altre informazioni piú particolareggiate, basterá che me ne scriva, che appena seguita la pubblicazione vedrò di soddisfarla.</p>
-
-        <p>Le osservazioni che finora mi riuscì di fare si riducono a poca cosa. Mi si dice che sostanzialmente in tutta la Sicilia non v’è che un solo dialetto, e le differenze nelle divese provincie si riducono quasi tutte al modo di pronunziarlo. Così le vocali <hi
-            rend="unknown" rendition="#none">i</hi> ed <hi rend="unknown"
-            rendition="#none">u</hi> che così spesso nel Meli rappresentano l’<hi rend="unknown"
-            rendition="#none">e</hi> e l’<hi rend="unknown" rendition="#none">
+            <p>Le osservazioni che finora mi riuscì di fare si riducono a poca cosa. Mi si dice che sostanzialmente in tutta la Sicilia non v’è che un solo dialetto, e le differenze nelle divese provincie si riducono quasi tutte al modo di pronunziarlo. Così le vocali <hi rend="unknown" rendition="#none">i</hi> ed <hi rend="unknown" rendition="#none">u</hi> che così spesso nel Meli rappresentano l’<hi rend="unknown" rendition="#none">e</hi> e l’<hi rend="unknown" rendition="#none">
 o</hi>
-          <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.860">Italiano</ref>, qualche volta ma raramente qui si pronunziano <hi
-            rend="unknown" rendition="#none">e</hi> ed <hi rend="unknown" rendition="#none">o</hi>. Così <hi
-            rend="unknown" rendition="#none">vattene</hi> in Pal.<note n="6" place="foot"
-            type="editorial">
+               <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">Italiano</ref>, qualche volta ma raramente qui si pronunziano <hi rend="unknown" rendition="#none">e</hi> ed <hi rend="unknown" rendition="#none">o</hi>. Così <hi rend="unknown" rendition="#none">vattene</hi> in Pal.<note n="6" place="foot" type="editorial">
 Palermitano.</note> vattínni <pb facs="#IMG.3" n="3"/> e in Bivonese vattínne. Ma nella maggior parte dei casi questa differenza non ha luogo.</p>
-        <p>Ho trovato un analogia col <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.3143">Sardo</ref> nella pronunzia del <hi rend="unknown"
-            rendition="#none">dd</hi> che sta per <hi rend="unknown"
-            rendition="#none">ll</hi>. Questa pronunzia ha luogo appoggiando la lingua al palato e rendendo così un suono che dovrebbe essere ad un dipresso come quello delle cerebrali dell’alfabeto <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.381">sanscrito</ref>. È poi frequentissimo, come in <hi
-            rend="unknown" rendition="#none">iddu</hi> p. <hi rend="unknown"
-            rendition="#none">ello</hi> (forma antiquata di <hi rend="unknown"
-            rendition="#none">egli</hi> che si trova usata spesso dagli scrittori del sec. XIV. Così in <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4219">Dante</persName> verso il fine del canto XXXI dell’inf.) Così ddocu p. llocu = lì, e Toriddu p. Torello nome proprio diminutivo da Salvatore e Piddu per Pello diminutivo di Giuseppe di cui ha ritenuto solo l’ultima sillaba. Altri nomi proprii formano qui il loro vezzeggiativo in modo curioso; come Totó, Tití, Cocó, Nenè da Antonio, Agostino, Nicolò, Emanuele.</p>
-        <p>Nel parlare comune molte parole soffrono apocopi notevolissime. Così le espressioni <hi rend="unknown"
-            rendition="#none">nónsi</hi>, <hi rend="unknown" rendition="#none">sísi</hi> e più spesso <hi rend="unknown" rendition="#none">
+            <p>Ho trovato un analogia col <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3143">Sardo</ref> nella pronunzia del <hi rend="unknown" rendition="#none">dd</hi> che sta per <hi rend="unknown" rendition="#none">ll</hi>. Questa pronunzia ha luogo appoggiando la lingua al palato e rendendo così un suono che dovrebbe essere ad un dipresso come quello delle cerebrali dell’alfabeto <ref target="https://gams.uni-graz.at/o:hsa.languages#L.381">sanscrito</ref>. È poi frequentissimo, come in <hi rend="unknown" rendition="#none">iddu</hi> p. <hi rend="unknown" rendition="#none">ello</hi> (forma antiquata di <hi rend="unknown" rendition="#none">egli</hi> che si trova usata spesso dagli scrittori del sec. XIV. Così in <persName ref="[authorityLink]">Dante</persName> verso il fine del canto XXXI dell’inf.) Così ddocu p. llocu = lì, e Toriddu p. Torello nome proprio diminutivo da Salvatore e Piddu per Pello diminutivo di Giuseppe di cui ha ritenuto solo l’ultima sillaba. Altri nomi proprii formano qui il loro vezzeggiativo in modo curioso; come Totó, Tití, Cocó, Nenè da Antonio, Agostino, Nicolò, Emanuele.</p>
+            <p>Nel parlare comune molte parole soffrono apocopi notevolissime. Così le espressioni <hi rend="unknown" rendition="#none">nónsi</hi>, <hi rend="unknown" rendition="#none">sísi</hi> e più spesso <hi rend="unknown" rendition="#none">
 nons</hi>
-          <hi rend="unknown" rendition="#none">sis</hi> che stanno per <hi rend="unknown"
-            rendition="#none">no signore</hi>. Così <hi rend="unknown" rendition="#none">
-Vossia</hi> è talvolta <hi
-            rend="unknown" rendition="#none">vossa</hi> e talvolta solo <hi rend="unknown"
-            rendition="#none">ssa</hi> per Vostra Signoria. Una maniera di saluto verso il superiore specialmente ecclesiatico è: <hi
-            rend="unknown" rendition="#none">ssa</hi>
-          <hi rend="unknown" rendition="#none">benedica</hi>. Così: <hi rend="unknown" rendition="#none">vossa</hi>
-          <hi rend="unknown" rendition="#none">acchiana</hi> = V. S. salga. <hi rend="unknown"
-            rendition="#none">Acchianari</hi> p. salire ha modificato alquanto il significato etimologico di appianare. Della mutazione di una labiale in gutt. quando sta davanti ad <hi
-            rend="unknown"
-            rendition="#none">i</hi> abbiamo numerosi esempi: chianu p. piano; cunchiri per compire; cchiú p. piú; <pb
-            facs="#IMG.4" n="4"/> ciatu per fiato, ciumi p. fiume ecc.</p>
-        <p>È singolare che mentre in molte parti della Sicilia vi è tanta predilezione per le vocali <hi rend="unknown"
-            rendition="#none">i</hi> ed <hi rend="unknown" rendition="#none">u</hi> da sostituirli quasi sempre ad <hi
-            rend="unknown" rendition="#none">i</hi> ed <hi rend="unknown"
-            rendition="#none">o</hi>, in alcuni luoghi come ad es. in Caltanisetta avviene il fatto apposto: anzi questi <hi
-            rend="unknown" rendition="#none">e</hi> ed <hi rend="unknown"
-            rendition="#none">
-o</hi> sono là pronunziati molto larghi; ad es. zóccaro p. zucchero; e la espressione Ital. <hi
-            rend="unknown" rendition="#none">un</hi>
-          <hi rend="unknown" rendition="#none">litro</hi>
-          <hi rend="unknown" rendition="#none">di</hi>
-          <hi rend="unknown" rendition="#none">vino</hi> sarebbe a Bivona: un litru di vinu ed a Caltanisetta <hi
-            rend="unknown" rendition="#none">on</hi>
-          <hi rend="unknown" rendition="#none">letro</hi>
-          <hi rend="unknown" rendition="#none">di</hi>
-          <hi rend="unknown"
-            rendition="#none">beno</hi>. – È pur notabile la difficoltà che qui si incontra per pronunziare certi suoni. Tra gli scuolari non mi riuscì mai di ottenere che l’υ <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.838">
-greco</ref> sia pronunziato come l’ü <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.667">tedesco</ref>. I più pronunziano senz’altro u; altri sforzandosi a dire ü, vi permettono inavvertemente un i e pronunziano ad es. <foreign
-            xml:lang="el">μύω</foreign> come se fosse scritto <foreign xml:lang="el">μιύω</foreign>.</p>
-
-        <p>Così non possono pronunziare di seguito alcune vocali, mentre d’altra parte evitano pure molti gruppi consonantici. Per questo nel dialetto correggono molte sincopi che nella lingua Ital. sarebbero necessarie come <foreign xml:lang="el">
-            <hi rend="unknown" rendition="#none">amarisi</hi>
-          </foreign> p. <hi rend="unknown" rendition="#none">amarsi</hi>. Anche leggendo il <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.886">latino</ref> o l’Ital. non possono pronunziare di seguito due vocali forti. Leggendo il vocabolo latino <hi
-            rend="unknown"
-            rendition="#none">eo</hi> dicono egho; così alleghanza p. alleanza facendo però sentire più fortemente l’aspirazione <hi
-            rend="unknown" rendition="#none">h</hi> che il <hi rend="unknown" rendition="#none">g</hi>.</p>
-
-        <p>Per mostrarle a qual segno talvolta modifichino suoni per essi difficili a pronunziarsi le citerò ancora un esempio. Qui è in uso la grammatica latina dello <persName>
-Schultz</persName>.<note
-            n="7" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7755">Ferdinand Schultz, <hi rend="unknown" rendition="#none">Grammatica della lingua latina, manuale d’esercizi graduali sulla grammatica latina con apposito vocabolario</hi>
-              </ref>
-            </bibl>, Roma-Torino: Paravia, 1895, 2 vol. (es gibt verschiedene, immer wieder erweiterte Ausgaben dieser Grammatik). Schultz (1814-1893)</note>
-          <pb facs="#IMG.5"
-            n="5"/> Crederebbe lei che leggendo questa parola dicono Curti? Non conoscendo per il ch altra pronunzia che quella del k, per loro questa parola è come se fosse scritta: Skultz. Trovando duro il suono sk sopprimono a dirittura la 1<hi rendition="#sup">
-            <hi rend="unknown" rendition="#none">
+               <hi rend="unknown" rendition="#none">sis</hi> che stanno per <hi rend="unknown" rendition="#none">no signore</hi>. Così <hi rend="unknown" rendition="#none">
+Vossia</hi> è talvolta <hi rend="unknown" rendition="#none">vossa</hi> e talvolta solo <hi rend="unknown" rendition="#none">ssa</hi> per Vostra Signoria. Una maniera di saluto verso il superiore specialmente ecclesiatico è: <hi rend="unknown" rendition="#none">ssa</hi>
+               <hi rend="unknown" rendition="#none">benedica</hi>. Così: <hi rend="unknown" rendition="#none">vossa</hi>
+               <hi rend="unknown" rendition="#none">acchiana</hi> = V. S. salga. <hi rend="unknown" rendition="#none">Acchianari</hi> p. salire ha modificato alquanto il significato etimologico di appianare. Della mutazione di una labiale in gutt. quando sta davanti ad <hi rend="unknown" rendition="#none">i</hi> abbiamo numerosi esempi: chianu p. piano; cunchiri per compire; cchiú p. piú; <pb facs="#IMG.4" n="4"/> ciatu per fiato, ciumi p. fiume ecc.</p>
+            <p>È singolare che mentre in molte parti della Sicilia vi è tanta predilezione per le vocali <hi rend="unknown" rendition="#none">i</hi> ed <hi rend="unknown" rendition="#none">u</hi> da sostituirli quasi sempre ad <hi rend="unknown" rendition="#none">i</hi> ed <hi rend="unknown" rendition="#none">o</hi>, in alcuni luoghi come ad es. in Caltanisetta avviene il fatto apposto: anzi questi <hi rend="unknown" rendition="#none">e</hi> ed <hi rend="unknown" rendition="#none">
+o</hi> sono là pronunziati molto larghi; ad es. zóccaro p. zucchero; e la espressione Ital. <hi rend="unknown" rendition="#none">un</hi>
+               <hi rend="unknown" rendition="#none">litro</hi>
+               <hi rend="unknown" rendition="#none">di</hi>
+               <hi rend="unknown" rendition="#none">vino</hi> sarebbe a Bivona: un litru di vinu ed a Caltanisetta <hi rend="unknown" rendition="#none">on</hi>
+               <hi rend="unknown" rendition="#none">letro</hi>
+               <hi rend="unknown" rendition="#none">di</hi>
+               <hi rend="unknown" rendition="#none">beno</hi>. – È pur notabile la difficoltà che qui si incontra per pronunziare certi suoni. Tra gli scuolari non mi riuscì mai di ottenere che l’υ <ref target="https://gams.uni-graz.at/o:hsa.languages#L.838">
+greco</ref> sia pronunziato come l’ü <ref target="https://gams.uni-graz.at/o:hsa.languages#L.667">tedesco</ref>. I più pronunziano senz’altro u; altri sforzandosi a dire ü, vi permettono inavvertemente un i e pronunziano ad es. <foreign xml:lang="el">μύω</foreign> come se fosse scritto <foreign xml:lang="el">μιύω</foreign>.</p>
+            <p>Così non possono pronunziare di seguito alcune vocali, mentre d’altra parte evitano pure molti gruppi consonantici. Per questo nel dialetto correggono molte sincopi che nella lingua Ital. sarebbero necessarie come <foreign xml:lang="el">
+                  <hi rend="unknown" rendition="#none">amarisi</hi>
+               </foreign> p. <hi rend="unknown" rendition="#none">amarsi</hi>. Anche leggendo il <ref target="https://gams.uni-graz.at/o:hsa.languages#L.886">latino</ref> o l’Ital. non possono pronunziare di seguito due vocali forti. Leggendo il vocabolo latino <hi rend="unknown" rendition="#none">eo</hi> dicono egho; così alleghanza p. alleanza facendo però sentire più fortemente l’aspirazione <hi rend="unknown" rendition="#none">h</hi> che il <hi rend="unknown" rendition="#none">g</hi>.</p>
+            <p>Per mostrarle a qual segno talvolta modifichino suoni per essi difficili a pronunziarsi le citerò ancora un esempio. Qui è in uso la grammatica latina dello <persName>
+Schultz</persName>.<note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7755">Ferdinand Schultz, <hi rend="unknown" rendition="#none">Grammatica della lingua latina, manuale d’esercizi graduali sulla grammatica latina con apposito vocabolario</hi>
+                     </ref>
+                  </bibl>, Roma-Torino: Paravia, 1895, 2 vol. (es gibt verschiedene, immer wieder erweiterte Ausgaben dieser Grammatik). Schultz (1814-1893)</note>
+               <pb facs="#IMG.5" n="5"/> Crederebbe lei che leggendo questa parola dicono Curti? Non conoscendo per il ch altra pronunzia che quella del k, per loro questa parola è come se fosse scritta: Skultz. Trovando duro il suono sk sopprimono a dirittura la 1<hi rendition="#sup">
+                  <hi rend="unknown" rendition="#none">
 a</hi>
+               </hi> consonante e resta kultz. Evitano poi il gruppo consonantico finale coll’inserzione di un i dicendo kultis, e poi kulti per non finire la parola in konsonante. Un Toscano avrebbe detto Cultisse. Riguardo alla mutazione di <hi rend="unknown" rendition="#none">l</hi> in <hi rend="unknown" rendition="#none">
+r</hi> davanti a t si vede pure in alcuni luoghi della Toscana dove si pronunzia ad es. morto p. molto. Avrei creduto di trovare qui maggior copia di vocaboli puramente <ref target="https://gams.uni-graz.at/o:hsa.languages#L.838">greci</ref>. Ed invece mi parve di sentirne pochissime, fra cui p. es. vastásu = facchino da cfr. con <foreign xml:lang="el">βαστάζω</foreign>, e la espressione <hi rend="unknown" rendition="#none">in</hi>
+               <hi rend="unknown" rendition="#none">tu</hi> = <foreign xml:lang="el">ἐν τῷ</foreign> nella forma e nel significato, mentre tradotta in puro Siciliano sarebbe <hi rend="unknown" rendition="#none">in</hi>
+               <hi rend="unknown" rendition="#none">lu</hi>.</p>
+            <p>Anche <ref target="https://gams.uni-graz.at/o:hsa.languages#L.126">la lingua Araba</ref> ha lasciato meno traccie che mi sarei aspettato. Ma siccome questa lingua non la conosco niente affatto, non vorrei arrischiarmi ad affermare come arabe parole per me di etimologia ignota. Tali sarebbero ad es. le seguenti voci qui usate: khaja : siepe; khaneja = arco cavalcavia; <foreign xml:lang="co">crafócchiu</foreign> = spelonca; alè = baia. Derisione; lemmu (nome di un vaso grande di terra cotta simile al bacile); allabafattaţu = stanco, spossato ecc.</p>
+            <p>
+               <pb facs="#IMG.6" n="6"/> Così ho soddisfatto al desiderio da lei espresso nella sua lettera che le scrivessi molto. Purchè coll’essere lungo non sia riuscito inutile o peggio.</p>
+            <p>Non voglio però finire senza rettificare un suo giudizio sugli Italiani quando ci diceva troppo ligii alla Francia. In questioni di questa natura le opinioni sono sempre molto varie. Io crederei di poter dire che nel passato conflitto il più delle simpatie furono per la <placeName>
 
-          </hi> consonante e resta kultz. Evitano poi il gruppo consonantico finale coll’inserzione di un i dicendo kultis, e poi kulti per non finire la parola in konsonante. Un Toscano avrebbe detto Cultisse. Riguardo alla mutazione di <hi
-            rend="unknown" rendition="#none">l</hi> in <hi rend="unknown"
-            rendition="#none">
-r</hi> davanti a t si vede pure in alcuni luoghi della Toscana dove si pronunzia ad es. morto p. molto. Avrei creduto di trovare qui maggior copia di vocaboli puramente <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.838">greci</ref>. Ed invece mi parve di sentirne pochissime, fra cui p. es. vastásu = facchino da cfr. con <foreign
-            xml:lang="el">βαστάζω</foreign>, e la espressione <hi rend="unknown" rendition="#none">in</hi>
-          <hi rend="unknown" rendition="#none">tu</hi> = <foreign
-            xml:lang="el">ἐν τῷ</foreign> nella forma e nel significato, mentre tradotta in puro Siciliano sarebbe <hi
-            rend="unknown" rendition="#none">in</hi>
-          <hi rend="unknown" rendition="#none">lu</hi>.</p>
-        <p>Anche <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.126">la lingua Araba</ref> ha lasciato meno traccie che mi sarei aspettato. Ma siccome questa lingua non la conosco niente affatto, non vorrei arrischiarmi ad affermare come arabe parole per me di etimologia ignota. Tali sarebbero ad es. le seguenti voci qui usate: khaja : siepe; khaneja = arco cavalcavia; <foreign xml:lang="co">crafócchiu</foreign> = spelonca; alè = baia. Derisione; lemmu (nome di un vaso grande di terra cotta simile al bacile); allabafattaţu = stanco, spossato ecc.</p>
-        <p>
-          <pb facs="#IMG.6" n="6"/> Così ho soddisfatto al desiderio da lei espresso nella sua lettera che le scrivessi molto. Purchè coll’essere lungo non sia riuscito inutile o peggio.</p>
-
-        <p>Non voglio però finire senza rettificare un suo giudizio sugli Italiani quando ci diceva troppo ligii alla Francia. In questioni di questa natura le opinioni sono sempre molto varie. Io crederei di poter dire che nel passato conflitto il più delle simpatie furono per la <placeName>
-
-Germania</placeName>. In favore di questa avvennero molte dimostrazioni popolari; e non fu così per la <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5905">Francia</placeName>. E se vi furono molti Italiani che seguirono Garibaldi nol fecero per amore dei Francesi quanto della repubblica; e credo colla speranza di farla trionfare in Francia per trasportarla poi altrove. Del resto quasi tutti coloro che parlano dei mali onde la Francia è presentemente afflitta, soggiungono: le sta bene che così sia stato posto freno alla sua superbia. Difatti da molti anni ella voleva farla da padrona in casa nostra, e con modi tanto insolenti che tutti ne erano irritati.</p>
-        <p>Stia bene, e mi conservi sempre la sua benevolenza.</p>
-        <closer>
-          <salute>Suo dev<hi rendition="#sup">
-              <hi rend="unknown" rendition="#none">mo</hi>
-            </hi> et aff<hi rendition="#sup">
-              <hi rend="unknown" rendition="#none">
+Germania</placeName>. In favore di questa avvennero molte dimostrazioni popolari; e non fu così per la <placeName ref="[authorityLink]">Francia</placeName>. E se vi furono molti Italiani che seguirono Garibaldi nol fecero per amore dei Francesi quanto della repubblica; e credo colla speranza di farla trionfare in Francia per trasportarla poi altrove. Del resto quasi tutti coloro che parlano dei mali onde la Francia è presentemente afflitta, soggiungono: le sta bene che così sia stato posto freno alla sua superbia. Difatti da molti anni ella voleva farla da padrona in casa nostra, e con modi tanto insolenti che tutti ne erano irritati.</p>
+            <p>Stia bene, e mi conservi sempre la sua benevolenza.</p>
+            <closer>
+               <salute>Suo dev<hi rendition="#sup">
+                     <hi rend="unknown" rendition="#none">mo</hi>
+                  </hi> et aff<hi rendition="#sup">
+                     <hi rend="unknown" rendition="#none">
 mo</hi>
-            </hi>
-            <lb/>
-          </salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1287">Placido Cerri</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                  </hi>
+                  <lb/>
+               </salute>
+               <signed>
+                  <persName ref="[authorityLink]">Placido Cerri</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

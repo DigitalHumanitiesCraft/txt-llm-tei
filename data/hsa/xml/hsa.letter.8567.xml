@@ -1,322 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Jakob Jud (87-HSJJ27)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8567" type="PID">o:hsa.letter.8567</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">87-HSJJ27</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Bern</settlement>
-            <institution>Universität Bern</institution>
-            <repository ref="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">AIS Archiv</repository>
-            <idno type="shelfmark">HSJJ27</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1921-01-30">1921-01-30</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Jakob Jud</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1858"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8567">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1921-01-30">1921-01-30</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1858" ref="https://viaf.org/viaf/88644299">
-            <forename>Jakob</forename>
-            <surname>Jud</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1858" type="context">
-                        Korrespondenz Hugo Schuchardt - Jakob Jud
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.463" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Erster Weltkrieg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3981" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Wissen und Leben: neue Schweizer Rundschau</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8567" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8567" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8567" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8567" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8567" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8567" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8567" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline> G. 30.1.21</dateline>
-        <opener>Lieber Freund!</opener>
-
-        <p>Es war meine Absicht gewesen Ihnen erst in einigen Tagen ausführlicher zu schreiben. Nun lese ich aber gerade in der Morgenzeitung daß von übermorgen an ein Brief nach dem Ausland 5 Kronen, eine Postkarte 3 Kr. Kosten wird. So setze ich mich denn hin um möglichst rasch meine ganze Korrespondenz zu erledigen. Denn nun heißt es auch in diesen Ausgaben zu sparen. Wenn Freund Nedwed<note
-            n="1" place="foot" type="editorial">Der Jurist <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2279">Hans Nedwed</persName> (1850-1940); vgl. HSA 07723-07731.</note> mir vor einigen Wochen zwar nicht notariell beglaubigte, <pb
-            facs="#IMG.2"
-            n="2"/> aber doch schriftlich versicherte, daß wir „scheußliche“ Zustände hätten, so sind sie es seither noch mehr und werden es immer mehr. Alle Welt streikt und fordert Lohnerhöhung; nur wir Pensionisten können es nicht, und wissen Sie was ich bekomme? 4000 K. monatlich – ein Wiener Kollege schreibt mir: das ist ein lächerliches und schmähliches Ruhegehalt. Ja, ein Ofenheizer bekommt 3600 K., eine Scheuerfrau für drei Tage 470 K. und Beköstigung usw. Ich denke nicht daran, Ihr Mitleid erregen zu wollen. Nein, indem ich Ihnen die Hand drücke für Ihren freundlichen Wunsch mir zu helfen erkläre ich daß das erstens nicht <hi
-            rend="unknown" rendition="#none">
-möglich</hi> ist - uns kann man nur in <pb facs="#IMG.3"
-            n="3"/> der Gesamtheit helfen – zweitens auch nicht <hi rend="unknown" rendition="#none">nötig</hi> ist. Ich werde nicht Hungers sterben, und über das Meiste, z. B. meine geflickten Hausröcke hilft mir mein Humor hinweg. Oder meine Person überhaupt wird nicht zu leiden haben, aber Geplantes wird aufgegeben oder abgeändert werden müssen – doch darüber kann ich mich nicht auslassen:</p>
-
-        <p>In meinem alten Kopf ist immerhin noch ein warmes Plätzchen für wissenschaftliche Gedanken; aber die Politik drängt sie stets wieder hinaus. Ich wiederhole immer: in dieser vom Pesthauch des Hasses [s. Briand]<note
-            n="2" place="foot" type="editorial">
-            <persName>
-Aristide Briand</persName> (1862-1932), franz. Politiker, setzte sich nach dem <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.463">Ersten Weltkrieg</ref> für Aussöhnung mit Deutschland und eine europäische Zusammenarbeit ein.</note> vergifteten Luft kann man keinen <pb
-            facs="#IMG.4"
-            n="4"/> ruhigen, gesunden Atemzug mehr tun. Wo sind denn die großen Pazifisten, die Begründer der Völkerfreundschaft oder wie viel sind ihrer? So lange Frankreich nicht einsehen wird, daß es bis 1870 Europas Frieden bedroht hat und seitdem Deutschlands Ruhe durch sein Bündnis mit Rußland, so lange soll man nicht von Gerechtigkeit, Menschlichkeit und anderen schönen Dingen reden. Als ob die Deutschen den Krieg erfunden hätten! Es hat mich gefreut, in <hi
-            rend="unknown" rendition="#none">W. u. L.</hi>
-          <note n="3" place="foot" type="editorial">Die von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1189">Ernest Bovet</persName> hrsg. Schweizer Kulturzeitschrift <hi
-              rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3981">Wissen und Leben</ref>
-            </hi>.</note> Stimmen zu vernehmen gegen die Soldatenspielerei in der Schweiz. Das ist konsequent. An die Begeisterung für den Krieg, die unsere Jugend aus der Literatur schöpft, denkt niemand.</p>
-        <p>
-          <pb facs="#IMG.5"
-            n="5"/> Wissenschaftlich zu denken vermag schließlich jeder; aber als Romanist ohne die nötigen Behelfe zu arbeiten nicht und romanistische <hi
-            rend="unknown"
-            rendition="#none">Feld</hi>arbeit ist durch die Friedensverträge den Boches geradezu untersagt. Seit vielen Jahren habe ich die <hi
-            rend="unknown" rendition="#none">Romania</hi> nicht gesehen (und somit auch nicht Ihre Anzeige meiner <hi
-            rend="unknown" rendition="#none">Rom. L. im Berb.</hi>);<note n="4" place="foot"
-              type="editorial">Jud, Rez. in <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1268">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8567" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline> G. 30.1.21</dateline>
+            <opener>Lieber Freund!</opener>
+            <p>Es war meine Absicht gewesen Ihnen erst in einigen Tagen ausführlicher zu schreiben. Nun lese ich aber gerade in der Morgenzeitung daß von übermorgen an ein Brief nach dem Ausland 5 Kronen, eine Postkarte 3 Kr. Kosten wird. So setze ich mich denn hin um möglichst rasch meine ganze Korrespondenz zu erledigen. Denn nun heißt es auch in diesen Ausgaben zu sparen. Wenn Freund Nedwed<note n="1" place="foot" type="editorial">Der Jurist <persName ref="[authorityLink]">Hans Nedwed</persName> (1850-1940); vgl. HSA 07723-07731.</note> mir vor einigen Wochen zwar nicht notariell beglaubigte, <pb facs="#IMG.2" n="2"/> aber doch schriftlich versicherte, daß wir „scheußliche“ Zustände hätten, so sind sie es seither noch mehr und werden es immer mehr. Alle Welt streikt und fordert Lohnerhöhung; nur wir Pensionisten können es nicht, und wissen Sie was ich bekomme? 4000 K. monatlich – ein Wiener Kollege schreibt mir: das ist ein lächerliches und schmähliches Ruhegehalt. Ja, ein Ofenheizer bekommt 3600 K., eine Scheuerfrau für drei Tage 470 K. und Beköstigung usw. Ich denke nicht daran, Ihr Mitleid erregen zu wollen. Nein, indem ich Ihnen die Hand drücke für Ihren freundlichen Wunsch mir zu helfen erkläre ich daß das erstens nicht <hi rend="unknown" rendition="#none">
+möglich</hi> ist - uns kann man nur in <pb facs="#IMG.3" n="3"/> der Gesamtheit helfen – zweitens auch nicht <hi rend="unknown" rendition="#none">nötig</hi> ist. Ich werde nicht Hungers sterben, und über das Meiste, z. B. meine geflickten Hausröcke hilft mir mein Humor hinweg. Oder meine Person überhaupt wird nicht zu leiden haben, aber Geplantes wird aufgegeben oder abgeändert werden müssen – doch darüber kann ich mich nicht auslassen:</p>
+            <p>In meinem alten Kopf ist immerhin noch ein warmes Plätzchen für wissenschaftliche Gedanken; aber die Politik drängt sie stets wieder hinaus. Ich wiederhole immer: in dieser vom Pesthauch des Hasses [s. Briand]<note n="2" place="foot" type="editorial">
+                  <persName>
+Aristide Briand</persName> (1862-1932), franz. Politiker, setzte sich nach dem <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.463">Ersten Weltkrieg</ref> für Aussöhnung mit Deutschland und eine europäische Zusammenarbeit ein.</note> vergifteten Luft kann man keinen <pb facs="#IMG.4" n="4"/> ruhigen, gesunden Atemzug mehr tun. Wo sind denn die großen Pazifisten, die Begründer der Völkerfreundschaft oder wie viel sind ihrer? So lange Frankreich nicht einsehen wird, daß es bis 1870 Europas Frieden bedroht hat und seitdem Deutschlands Ruhe durch sein Bündnis mit Rußland, so lange soll man nicht von Gerechtigkeit, Menschlichkeit und anderen schönen Dingen reden. Als ob die Deutschen den Krieg erfunden hätten! Es hat mich gefreut, in <hi rend="unknown" rendition="#none">W. u. L.</hi>
+               <note n="3" place="foot" type="editorial">Die von <persName ref="[authorityLink]">Ernest Bovet</persName> hrsg. Schweizer Kulturzeitschrift <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3981">Wissen und Leben</ref>
+                  </hi>.</note> Stimmen zu vernehmen gegen die Soldatenspielerei in der Schweiz. Das ist konsequent. An die Begeisterung für den Krieg, die unsere Jugend aus der Literatur schöpft, denkt niemand.</p>
+            <p>
+               <pb facs="#IMG.5" n="5"/> Wissenschaftlich zu denken vermag schließlich jeder; aber als Romanist ohne die nötigen Behelfe zu arbeiten nicht und romanistische <hi rend="unknown" rendition="#none">Feld</hi>arbeit ist durch die Friedensverträge den Boches geradezu untersagt. Seit vielen Jahren habe ich die <hi rend="unknown" rendition="#none">Romania</hi> nicht gesehen (und somit auch nicht Ihre Anzeige meiner <hi rend="unknown" rendition="#none">Rom. L. im Berb.</hi>);<note n="4" place="foot" type="editorial">Jud, Rez. in <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1268">
 Romania</ref>
-              </bibl>
-
-            </hi> 45, 1919, 272-275.</note> natürlich kann unsere Universitätsbibliothek sie wie so viele andere Zeitschriften weder nachschaffen noch fortsetzen. Aber wie gesagt, denken, also produzieren können wir immer; doch mit Verzicht aufs Zitieren – L. Spitzer fühlt das schon als Unglück. Unter welchen lustigen Umständen man produzieren kann, das erfuhr ich kürzlich. R. Menéndez Pidal wird eine Festschrift vorbereitet (natürlich in <hi
-            rend="unknown" rendition="#none">
+                     </bibl>
+                  </hi> 45, 1919, 272-275.</note> natürlich kann unsere Universitätsbibliothek sie wie so viele andere Zeitschriften weder nachschaffen noch fortsetzen. Aber wie gesagt, denken, also produzieren können wir immer; doch mit Verzicht aufs Zitieren – L. Spitzer fühlt das schon als Unglück. Unter welchen lustigen Umständen man produzieren kann, das erfuhr ich kürzlich. R. Menéndez Pidal wird eine Festschrift vorbereitet (natürlich in <hi rend="unknown" rendition="#none">
 zwei</hi>
-          <pb facs="#IMG.6"
-            n="6"/> Bänden wie schon seiner Zeit für Menéndez Pelayo): Anmeldung der Beiträge bis zum 30 April 1921, Einlieferung bis zum 31 Dez. 1922, Drucklegung 1923f., Darbietung 1924.<note
-            n="5" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3887">Homenaje ofrecido a Menéndez Pidal: Miscelánea de estúdios lingüisticos, literarios e históricos</ref>
-              </bibl>
-            </hi>, Madrid: Hernando, 1925, 3 Bde. – Von Schuchardt stammt „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.542">An Don Ramón Menéndez Pidal [Geleit-Gedicht]</ref>
-            </bibl>“, Homenaje ofrecido a Menendez Pidal (Bd. 1), IX.</note> Und dabei überlegen sich die Herren nicht einmal, wie alt so einer sein darf, dem man die Einladung schicken will. Wie einfach wäre es doch, statt der Beiträge bis zu 30 Seiten solche bis zu 6 Seiten zu verlangen, die aber eine ganz bestimmte Beziehung zu der Arbeit des Zufeiernden haben müßten.</p>
-        <p>Wenn nun auch meine Zuschriften etwas seltener erfogen sollten als bisher, vergelten Sie es mir nicht mit Gleichem. Behalten Sie mich lieb wie ich Sie.</p>
-        <closer>
-          <salute>Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HSchuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               <pb facs="#IMG.6" n="6"/> Bänden wie schon seiner Zeit für Menéndez Pelayo): Anmeldung der Beiträge bis zum 30 April 1921, Einlieferung bis zum 31 Dez. 1922, Drucklegung 1923f., Darbietung 1924.<note n="5" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3887">Homenaje ofrecido a Menéndez Pidal: Miscelánea de estúdios lingüisticos, literarios e históricos</ref>
+                     </bibl>
+                  </hi>, Madrid: Hernando, 1925, 3 Bde. – Von Schuchardt stammt „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.542">An Don Ramón Menéndez Pidal [Geleit-Gedicht]</ref>
+                  </bibl>“, Homenaje ofrecido a Menendez Pidal (Bd. 1), IX.</note> Und dabei überlegen sich die Herren nicht einmal, wie alt so einer sein darf, dem man die Einladung schicken will. Wie einfach wäre es doch, statt der Beiträge bis zu 30 Seiten solche bis zu 6 Seiten zu verlangen, die aber eine ganz bestimmte Beziehung zu der Arbeit des Zufeiernden haben müßten.</p>
+            <p>Wenn nun auch meine Zuschriften etwas seltener erfogen sollten als bisher, vergelten Sie es mir nicht mit Gleichem. Behalten Sie mich lieb wie ich Sie.</p>
+            <closer>
+               <salute>Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HSchuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

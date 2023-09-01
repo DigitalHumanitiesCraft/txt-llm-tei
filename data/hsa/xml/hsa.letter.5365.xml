@@ -1,340 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Georges Lacombe (200-121)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Katrin</forename>
-            <surname>Purgay</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5365" type="PID">o:hsa.letter.5365</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">200-121</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</repository>
-            <idno type="shelfmark">121</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1912-01-18">1912-01-18</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Katrin</forename>
-              <surname>Purgay</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Georges Lacombe</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1977"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5365">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1912-01-18">1912-01-18</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1977" ref="https://viaf.org/viaf/34446283">
-            <forename>Georges</forename>
-            <surname>Lacombe</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1977" type="context">
-                        Korrespondenz Hugo Schuchardt - Georges Lacombe
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5365" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5365" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5365" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5365" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5365" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5365" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5365" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 18.1.’12</dateline>
-        <opener>Sehr geehrter Herr und Freund,</opener>
-        <p>Ich bin Ihnen noch mehrfach Dank und Antwort schuldig.</p>
-
-        <p>1) Ihre Mitteilung neuer Insektennamen ist mir sehr wertvoll. Augenblicklich habe ich noch keinen davon zitieren können; in dem vor einigen Tagen an <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2906">de Urquijo</persName> abgesandten Artikel <hi
-            rend="unknown"
-            rendition="#none">Ts̃ingurri </hi>habe ich auch Namen der Spinne erwähnt, aber nur gewisse mit <hi
-            rend="unknown" rendition="#none">m</hi> anlautende. Dazu hätte auch <hi rend="unknown"
-            rendition="#none">masma</hi> und noch mehr <hi rend="unknown"
-            rendition="#none">marasma</hi> gehört; aber ich habe davon abgesehen, weil mir das <hi rend="unknown" rendition="#none">-as-</hi> noch unklar ist.</p>
-        <p>2) Mein <hi rend="unknown" rendition="#none">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.366">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5365" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 18.1.’12</dateline>
+            <opener>Sehr geehrter Herr und Freund,</opener>
+            <p>Ich bin Ihnen noch mehrfach Dank und Antwort schuldig.</p>
+            <p>1) Ihre Mitteilung neuer Insektennamen ist mir sehr wertvoll. Augenblicklich habe ich noch keinen davon zitieren können; in dem vor einigen Tagen an <persName ref="[authorityLink]">de Urquijo</persName> abgesandten Artikel <hi rend="unknown" rendition="#none">Ts̃ingurri </hi>habe ich auch Namen der Spinne erwähnt, aber nur gewisse mit <hi rend="unknown" rendition="#none">m</hi> anlautende. Dazu hätte auch <hi rend="unknown" rendition="#none">masma</hi> und noch mehr <hi rend="unknown" rendition="#none">marasma</hi> gehört; aber ich habe davon abgesehen, weil mir das <hi rend="unknown" rendition="#none">-as-</hi> noch unklar ist.</p>
+            <p>2) Mein <hi rend="unknown" rendition="#none">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.366">
 Emainzquiçue</ref>
-            </bibl>
-          </hi> wird nun wieder, dank Ihnen, einige Anmerkungen – Einschübe lassen sich <pb facs="#IMG.2"
-            n="2"/> nicht gut mehr bei der Korrektur machen – bekommen müssen. – Von wo, d.h. inbezug auf welche lokale Sprechweise, die Mitteilung von F. de S<hi
-            rendition="#sup">t</hi> Jayme<note n="1" place="foot"
-                type="editorial">Schuchardt strich die Stelle „Von wo [...]<placeName>
+                  </bibl>
+               </hi> wird nun wieder, dank Ihnen, einige Anmerkungen – Einschübe lassen sich <pb facs="#IMG.2" n="2"/> nicht gut mehr bei der Korrektur machen – bekommen müssen. – Von wo, d.h. inbezug auf welche lokale Sprechweise, die Mitteilung von F. de S<hi rendition="#sup">t</hi> Jayme<note n="1" place="foot" type="editorial">Schuchardt strich die Stelle „Von wo [...]<placeName>
 
- S<hi
-              rendition="#sup">t </hi>Jayme</placeName>“ durch und schrieb dafür am Rand: (S<hi
-            rendition="#sup">t</hi> Palais).</note> über <hi rend="unknown" rendition="#none">jakinak</hi> und <hi
-            rend="unknown" rendition="#none">izkik</hi> ? Das erstere ist eine <hi rend="unknown"
-            rendition="#none">Abkürzung</hi> (für <hi rend="unknown"
-            rendition="#none">jakin[ez]ak) </hi>aber nicht das letztere. Es steht nicht für <hi rend="unknown"
-            rendition="#none">in-zatzik</hi>, sondern für <hi rend="unknown"
-            rendition="#none">e(g)i-tzik</hi>. – Von <hi rend="unknown" rendition="#none">utzi</hi> hat <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5780">Oihenart</persName> noch eine andere einfache Form (<hi
-            rend="unknown" rendition="#none">eztutzala</hi>), die von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1062">Azkue</persName> zitiert wird. – Beiläufig gesagt, ist Ihnen irgend eine Stelle bekannt wo auf den örtlichen Charakter der Sprache Oihenarts eingegangen wird?</p>
-        <p>3) Die Fingernamen, sowie das <hi rend="unknown" rendition="#none">–zutu</hi> in <hi rend="unknown"
-            rendition="#none">aurzutu</hi> usw. (übrigens hat Azkue diese Formen) <pb facs="#IMG.3"
-            n="3"/> bleiben zu erwägen. <hi rend="unknown" rendition="#none">–Zutu </hi>ist Synonym von <hi
-            rend="unknown" rendition="#none">
+ S<hi rendition="#sup">t </hi>Jayme</placeName>“ durch und schrieb dafür am Rand: (S<hi rendition="#sup">t</hi> Palais).</note> über <hi rend="unknown" rendition="#none">jakinak</hi> und <hi rend="unknown" rendition="#none">izkik</hi> ? Das erstere ist eine <hi rend="unknown" rendition="#none">Abkürzung</hi> (für <hi rend="unknown" rendition="#none">jakin[ez]ak) </hi>aber nicht das letztere. Es steht nicht für <hi rend="unknown" rendition="#none">in-zatzik</hi>, sondern für <hi rend="unknown" rendition="#none">e(g)i-tzik</hi>. – Von <hi rend="unknown" rendition="#none">utzi</hi> hat <persName ref="[authorityLink]">Oihenart</persName> noch eine andere einfache Form (<hi rend="unknown" rendition="#none">eztutzala</hi>), die von <persName ref="[authorityLink]">Azkue</persName> zitiert wird. – Beiläufig gesagt, ist Ihnen irgend eine Stelle bekannt wo auf den örtlichen Charakter der Sprache Oihenarts eingegangen wird?</p>
+            <p>3) Die Fingernamen, sowie das <hi rend="unknown" rendition="#none">–zutu</hi> in <hi rend="unknown" rendition="#none">aurzutu</hi> usw. (übrigens hat Azkue diese Formen) <pb facs="#IMG.3" n="3"/> bleiben zu erwägen. <hi rend="unknown" rendition="#none">–Zutu </hi>ist Synonym von <hi rend="unknown" rendition="#none">
 –zaro.</hi>
-        </p>
-        <p>4) Die<hi rend="unknown" rendition="#none">Larraineko</hi>
-          <hi rend="unknown"
-            rendition="#none">Albadak </hi>für die ich nochmals bestens danke, enthalten einige Dunkelheiten die <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2939">Vinson</persName> wohl hätte versuchen sollen aufzuklären, da er die Veröffentlichung einmal anzeigte.</p>
-        <p>5) Was die passivistische Auffassung des baskischen Transitivs anlangt, so habe ich mich über das Chronologische in meinen <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.88">Bask. Stud. I</ref>
-
-          </bibl> S. 2 bestimmt ausgesprochen. Diese ist mir, so viel mir erinnerlich, von allem Anfang meiner Beschäftigung mit dem Baskischen vertraut gewesen, jedenfalls 1887 <pb
-            facs="#IMG.4"
-            n="4"/> als ich im Baskenland weilte[.] 1888 (Mai) bin ich auf die Sache insofern etwas näher eingegangen als ich die ablehnende Stellung von Vinson und von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1466">van Eys</persName>, und die vorübergehende Annäherung des Prinzen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1171">Bonaparte</persName> ins Auge fasste. Ich habe hier darauf hingewiesen daß Fr. Müller in seinem Grundriß (1887) die betreffende Tatsache „zuerst klar erkannt und klar ausgesprochen hat.“ Da ich schon im März 1887 abgereist bin, so muß ich den Band schon im Winter 1886/7 haben benutzen können; <hi
-            rend="unknown"
-            rendition="#none">wann</hi> er erschienen ist, weiß ich nicht genau. Es wäre aber doch die Möglichkeit vorhanden daß ich aus einer andern Quelle die bewußte Auffassung geschöpft hätte. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5454">Stempf</persName> in seiner deutschen und französischen Broschüre vom 24. <pb
-            facs="#IMG.5" n="5"/> Dez. 1890 (ich kann sie in der Vinsonschen Bibliographie nicht finden), sagt am Schluß:</p>
-        <p>„zu den vorstehenden Ausführungen, deren Beendigung durch die Kenntnisnahme von Herrn Dr. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2252">Friedrich Müller</persName>. „Über die Sprache der Basken“ (Grundriss der Sprachwissenschaft, Wien 1885, III. 2. I p. 1-48) wesentlich <hi
-            rend="unknown" rendition="#none">
+            </p>
+            <p>4) Die<hi rend="unknown" rendition="#none">Larraineko</hi>
+               <hi rend="unknown" rendition="#none">Albadak </hi>für die ich nochmals bestens danke, enthalten einige Dunkelheiten die <persName ref="[authorityLink]">Vinson</persName> wohl hätte versuchen sollen aufzuklären, da er die Veröffentlichung einmal anzeigte.</p>
+            <p>5) Was die passivistische Auffassung des baskischen Transitivs anlangt, so habe ich mich über das Chronologische in meinen <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.88">Bask. Stud. I</ref>
+               </bibl> S. 2 bestimmt ausgesprochen. Diese ist mir, so viel mir erinnerlich, von allem Anfang meiner Beschäftigung mit dem Baskischen vertraut gewesen, jedenfalls 1887 <pb facs="#IMG.4" n="4"/> als ich im Baskenland weilte[.] 1888 (Mai) bin ich auf die Sache insofern etwas näher eingegangen als ich die ablehnende Stellung von Vinson und von <persName ref="[authorityLink]">van Eys</persName>, und die vorübergehende Annäherung des Prinzen <persName ref="[authorityLink]">Bonaparte</persName> ins Auge fasste. Ich habe hier darauf hingewiesen daß Fr. Müller in seinem Grundriß (1887) die betreffende Tatsache „zuerst klar erkannt und klar ausgesprochen hat.“ Da ich schon im März 1887 abgereist bin, so muß ich den Band schon im Winter 1886/7 haben benutzen können; <hi rend="unknown" rendition="#none">wann</hi> er erschienen ist, weiß ich nicht genau. Es wäre aber doch die Möglichkeit vorhanden daß ich aus einer andern Quelle die bewußte Auffassung geschöpft hätte. <persName ref="[authorityLink]">Stempf</persName> in seiner deutschen und französischen Broschüre vom 24. <pb facs="#IMG.5" n="5"/> Dez. 1890 (ich kann sie in der Vinsonschen Bibliographie nicht finden), sagt am Schluß:</p>
+            <p>„zu den vorstehenden Ausführungen, deren Beendigung durch die Kenntnisnahme von Herrn Dr. <persName ref="[authorityLink]">Friedrich Müller</persName>. „Über die Sprache der Basken“ (Grundriss der Sprachwissenschaft, Wien 1885, III. 2. I p. 1-48) wesentlich <hi rend="unknown" rendition="#none">
 erleichtert</hi> worden ist“.</p>
-        <p>elles (les recherches) ont eu … pour <hi rend="unknown" rendition="#none">encouragement</hi> la lecture du remarquable travail de Fr. Müller….1885.....</p>
-        <p>Dazu bemerke ich zunächst daß <hi rend="unknown" rendition="#none">188<hi rend="unknown" rendition="#none">5 </hi>
-
-          </hi>ein Irrtum ist; das Buch ist 1887 erschienen (höchstens Ende 1886 – die Vorrede ist vom Sept. 1886). Sodann daß die Ausdrucksweise Stempfs angesichts des Sachverhalts eine sehr eigentümliche ist. Am Interessantesten aber ist der Hinweis auf eine Stelle bei Chaho, welche „den Anstoß zu den vorstehenden Ausführungen <pb
-            facs="#IMG.6" n="6"/> gab“ = „elles ont eu pour point de départ“.</p>
-        <p>Weshalb ich so ausführlich über diese Sache spreche? Durchaus nicht etwa um irgendeine Priorität für mich herauszuschlagen, im Gegenteil, um den Verdachte zu ersticken, als beabsichtige ich das. Eine schlimme Erfahrung der letzten Zeit drängt mich dazu; mich hatte ein Fachgenosse beschuldigt ich wolle ihm die Priorität eines Schlagwortes rauben, während mir dies gar nicht eingefallen war, und er das hinterher auch einsah. Also:</p>
-
-        <p>Die Erkenntnis, um die es sich handelt, hatte schon in manchen Köpfen (Chaho, Pr. Bonaparte…) voraus gespukt! <hi
-            rend="unknown"
-            rendition="#none">Fr. Müller</hi> hat sie, so viel ich sehe, zuerst wirklich klar gefasst und ausgesprochen (1887), ich (1888) und Stempf (1890) haben sie nur schärfer herausgearbeitet. Müller spricht nicht schlechtweg von der Passivität des Transitivs; er übersetzt <hi
-            rend="unknown" rendition="#none">nakarzu </hi>nicht: „ich werde getragen von dir“, sondern „ich bin im Tragen (Getragen werden) durch dich“, indem er aus der Doppelnatur des Infinitivs die Bildung erklärt. Näheres S. 19; hierin bin ich mit Fr. Müller ganz und gar nicht einverstanden (in der Auffassung des Verbs als eines Nomens).</p>
-        <closer>
-          <salute>Mit besten Grüßen</salute>
-          <lb/>
-          <salute>Ihr erg.</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Sch.</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>
-            <pb facs="#IMG.4" n="4"/>
-            <note n="2" place="foot"
-              type="editorial">
-Fußzeile.</note> Ich habe eine alte Korrektur (aber nicht korrigiert) von meinem Artikel über <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1572">
+            <p>elles (les recherches) ont eu … pour <hi rend="unknown" rendition="#none">encouragement</hi> la lecture du remarquable travail de Fr. Müller….1885.....</p>
+            <p>Dazu bemerke ich zunächst daß <hi rend="unknown" rendition="#none">188<hi rend="unknown" rendition="#none">5 </hi>
+               </hi>ein Irrtum ist; das Buch ist 1887 erschienen (höchstens Ende 1886 – die Vorrede ist vom Sept. 1886). Sodann daß die Ausdrucksweise Stempfs angesichts des Sachverhalts eine sehr eigentümliche ist. Am Interessantesten aber ist der Hinweis auf eine Stelle bei Chaho, welche „den Anstoß zu den vorstehenden Ausführungen <pb facs="#IMG.6" n="6"/> gab“ = „elles ont eu pour point de départ“.</p>
+            <p>Weshalb ich so ausführlich über diese Sache spreche? Durchaus nicht etwa um irgendeine Priorität für mich herauszuschlagen, im Gegenteil, um den Verdachte zu ersticken, als beabsichtige ich das. Eine schlimme Erfahrung der letzten Zeit drängt mich dazu; mich hatte ein Fachgenosse beschuldigt ich wolle ihm die Priorität eines Schlagwortes rauben, während mir dies gar nicht eingefallen war, und er das hinterher auch einsah. Also:</p>
+            <p>Die Erkenntnis, um die es sich handelt, hatte schon in manchen Köpfen (Chaho, Pr. Bonaparte…) voraus gespukt! <hi rend="unknown" rendition="#none">Fr. Müller</hi> hat sie, so viel ich sehe, zuerst wirklich klar gefasst und ausgesprochen (1887), ich (1888) und Stempf (1890) haben sie nur schärfer herausgearbeitet. Müller spricht nicht schlechtweg von der Passivität des Transitivs; er übersetzt <hi rend="unknown" rendition="#none">nakarzu </hi>nicht: „ich werde getragen von dir“, sondern „ich bin im Tragen (Getragen werden) durch dich“, indem er aus der Doppelnatur des Infinitivs die Bildung erklärt. Näheres S. 19; hierin bin ich mit Fr. Müller ganz und gar nicht einverstanden (in der Auffassung des Verbs als eines Nomens).</p>
+            <closer>
+               <salute>Mit besten Grüßen</salute>
+               <lb/>
+               <salute>Ihr erg.</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Sch.</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>
+                  <pb facs="#IMG.4" n="4"/>
+                  <note n="2" place="foot" type="editorial">
+Fußzeile.</note> Ich habe eine alte Korrektur (aber nicht korrigiert) von meinem Artikel über <persName ref="[authorityLink]">
 Gerland</persName> gefunden; da Sie mir, glaub’ ich, einmal sagten, sie hätten ihn nicht, so schicke ich Ihnen, faute de mieux, diesen Fetzen.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

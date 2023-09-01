@@ -1,423 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Jakob Jud (46-HSJJ08)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8526" type="PID">o:hsa.letter.8526</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">46-HSJJ08</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Bern</settlement>
-            <institution>Universität Bern</institution>
-            <repository ref="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">AIS Archiv</repository>
-            <idno type="shelfmark">HSJJ08</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1917-09-16">1917-09-16</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Jakob Jud</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1858"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8526">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1917-09-16">1917-09-16</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1858" ref="https://viaf.org/viaf/88644299">
-            <forename>Jakob</forename>
-            <surname>Jud</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1858" type="context">
-                        Korrespondenz Hugo Schuchardt - Jakob Jud
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4172" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Straßburg</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.381" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sanskrit</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8526" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8526" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8526" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8526" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8526" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8526" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8526" xml:id="IMG.7">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8526" xml:id="IMG.8">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8526" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>G. 16.9. ’17.</dateline>
-        <opener>Lieber Freund!</opener>
-        <p>Am letzten Tage der Sommerzeitrechnung will ich das gräßliche Werk vollenden oder doch beginnen es zu vollenden. Ich habe das dunkle Gefühl Ihnen in meinen Briefen vom 1-3 und vom 6-9 eine Menge läppischen Zeuges mitgeteilt zu haben. Vergessen habe ich zu bemerken daß ich zwar eine Muschel-, Stein-, Siegel- und Münzsammlung (diese letzter sehr schmächtig, aber keine Käfer- und Schmetterlingssammlung besaß, daß ich für Chemie und Physik nie eine besondere Neigung gefühlt habe, wohl aber für Naturgeschichte. Ein kleines Büchlein welches die Linnesche Systematik der Tiere enthielt, fesselte mich einst als Kind so sehr daß ich deshalb eine Kindergesellschaft aufgab oder aufgeben wollte.</p>
-        <p>22.9.17</p>
-
-        <p>Ich brach diesen Brief ab, um Ihnen am 19/20 einen dritten über Späteres zu schreiben. Nun aber erweist es sich mir als dringende Notwendigkeit dieses Autobiographische – es war mir wirklich nicht an der Wiege gesungen worden – endlich einmal zum Abschluß zu bringen. <pb
-            facs="#IMG.2"
-            n="2"/> Wenn ich ein französischer Romancier wäre, hätte ich meine Jugendgeschichte kürzer und schöner gestalten können. Ein wenig mit der „allgemeinen Grammatik“ beschäftigt, entdecke ich in meiner Bücherei die von Beauzee (1767).<note
-            n="1" place="foot" type="editorial">Nicolas Beauzée, <hi rend="unknown" rendition="#none">
-              <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8526" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>G. 16.9. ’17.</dateline>
+            <opener>Lieber Freund!</opener>
+            <p>Am letzten Tage der Sommerzeitrechnung will ich das gräßliche Werk vollenden oder doch beginnen es zu vollenden. Ich habe das dunkle Gefühl Ihnen in meinen Briefen vom 1-3 und vom 6-9 eine Menge läppischen Zeuges mitgeteilt zu haben. Vergessen habe ich zu bemerken daß ich zwar eine Muschel-, Stein-, Siegel- und Münzsammlung (diese letzter sehr schmächtig, aber keine Käfer- und Schmetterlingssammlung besaß, daß ich für Chemie und Physik nie eine besondere Neigung gefühlt habe, wohl aber für Naturgeschichte. Ein kleines Büchlein welches die Linnesche Systematik der Tiere enthielt, fesselte mich einst als Kind so sehr daß ich deshalb eine Kindergesellschaft aufgab oder aufgeben wollte.</p>
+            <p>22.9.17</p>
+            <p>Ich brach diesen Brief ab, um Ihnen am 19/20 einen dritten über Späteres zu schreiben. Nun aber erweist es sich mir als dringende Notwendigkeit dieses Autobiographische – es war mir wirklich nicht an der Wiege gesungen worden – endlich einmal zum Abschluß zu bringen. <pb facs="#IMG.2" n="2"/> Wenn ich ein französischer Romancier wäre, hätte ich meine Jugendgeschichte kürzer und schöner gestalten können. Ein wenig mit der „allgemeinen Grammatik“ beschäftigt, entdecke ich in meiner Bücherei die von Beauzee (1767).<note n="1" place="foot" type="editorial">Nicolas Beauzée, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 Grammaire générale ou exposition raisonnée des éléments nécessaires du language, pour servir de fondement à l'étude de toutes les langues
 </bibl>
-
-            </hi>, Paris: J. Barbou, 1767.</note> Ich hatte sie 1857 in einer Bücherversteigerung – solche besuchte ich damals mit Leidenschaft, und kaufte nur die allerbilligsten Bücher – erstanden, zwei schöne Ureinbände für 2 Groschen (25 Rappen). Daraus, könnte ich dichten, entwickelte sich all meine Sprachforschung, um nun am Ende meiner Tage wieder in Allgemeinheiten sich aufzulösen. – Im Ernste möchte ich inbezug auf meine wissenschaftlichen Neigungen noch Eines bemerken. Obwohl ohne Liebe zur praktischen Mathematik, habe ich von je her eine ganz besondere zur philosophischen gehabt, aber eine rein platonische, ohne ganz feste und umfassende Kenntnisse zu erwerben. Auf dem Gymnasium schon übten die Äußerungen des Lehrers über die im Unendlichen sich schneidenden Parallelen, über die Vieldeutigkeit der Null usw. einen eigentümlichen Reiz auf mich aus. Im ersten Jenaer Semester trieb ich, ganz für mich, Differentialrechnung und war davon so begeistert daß ich auf sie oder wohl eher auf ihren Erfinder Leibniz ein Sonett machte. Und bis in meine alten Tage hat mich dieses Phantom begleitet, ich habe <pb
-            facs="#IMG.3"
-            n="3"/> mich immer von Zeit zu Zeit in seinen Armen ausgeruht; vor allem interessiert mich die Mengenlehre. Ich habe diese Sache die mir selbst recht eigentümlich vorkommt, deshalb erwähnen wollen weil sie sich nicht selten bei Sprachforschern findet, Vermählung von Mathematik und Sprachwissenschaft. Der bekannteste Beleg dafür ist Graßmann.<note
-            n="2" place="foot" type="editorial">
-
-            <persName>
-Hermann Graßmann</persName> (1809-1877), deutscher Mathematiker, Physiker und Sprachwissenschaftler, Begründer der Vektor- und Tensorrechnung.</note> Bei Baudouin de Courtenay<note
-            n="3" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1097">Jan Baudouin de Courtenay</persName> (1845-1929), Slawist und allg. Sprachwissenschaftler; vgl. HSA 00578-00611.</note> u. a. ist ebenso wie bei mir diese Perversität mehr im Verborgenen geblieben. Als ich den serbokroatischen Lexikographen (und Grammatiker) Budmani<note
-            n="4" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1231">Pietro / Pero Budmani</persName> (1835-1914), kroat. Linguist, der aus <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.936">Dubrovnik</placeName> stammte.</note> in Agram besuchte, traf ich ihn mit der Lösung mathematischer Aufgaben beschäftigt. </p>
-        <p>---------</p>
-        <p>Corssens Buch<note n="5" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3083">Wilhelm Paul Corssen</persName> (1820-1875), deutscher Klass. Philologe und Sprachwissenschaftler; Verf. von <hi
-              rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>, Paris: J. Barbou, 1767.</note> Ich hatte sie 1857 in einer Bücherversteigerung – solche besuchte ich damals mit Leidenschaft, und kaufte nur die allerbilligsten Bücher – erstanden, zwei schöne Ureinbände für 2 Groschen (25 Rappen). Daraus, könnte ich dichten, entwickelte sich all meine Sprachforschung, um nun am Ende meiner Tage wieder in Allgemeinheiten sich aufzulösen. – Im Ernste möchte ich inbezug auf meine wissenschaftlichen Neigungen noch Eines bemerken. Obwohl ohne Liebe zur praktischen Mathematik, habe ich von je her eine ganz besondere zur philosophischen gehabt, aber eine rein platonische, ohne ganz feste und umfassende Kenntnisse zu erwerben. Auf dem Gymnasium schon übten die Äußerungen des Lehrers über die im Unendlichen sich schneidenden Parallelen, über die Vieldeutigkeit der Null usw. einen eigentümlichen Reiz auf mich aus. Im ersten Jenaer Semester trieb ich, ganz für mich, Differentialrechnung und war davon so begeistert daß ich auf sie oder wohl eher auf ihren Erfinder Leibniz ein Sonett machte. Und bis in meine alten Tage hat mich dieses Phantom begleitet, ich habe <pb facs="#IMG.3" n="3"/> mich immer von Zeit zu Zeit in seinen Armen ausgeruht; vor allem interessiert mich die Mengenlehre. Ich habe diese Sache die mir selbst recht eigentümlich vorkommt, deshalb erwähnen wollen weil sie sich nicht selten bei Sprachforschern findet, Vermählung von Mathematik und Sprachwissenschaft. Der bekannteste Beleg dafür ist Graßmann.<note n="2" place="foot" type="editorial">
+                  <persName>
+Hermann Graßmann</persName> (1809-1877), deutscher Mathematiker, Physiker und Sprachwissenschaftler, Begründer der Vektor- und Tensorrechnung.</note> Bei Baudouin de Courtenay<note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Jan Baudouin de Courtenay</persName> (1845-1929), Slawist und allg. Sprachwissenschaftler; vgl. HSA 00578-00611.</note> u. a. ist ebenso wie bei mir diese Perversität mehr im Verborgenen geblieben. Als ich den serbokroatischen Lexikographen (und Grammatiker) Budmani<note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Pietro / Pero Budmani</persName> (1835-1914), kroat. Linguist, der aus <placeName ref="[authorityLink]">Dubrovnik</placeName> stammte.</note> in Agram besuchte, traf ich ihn mit der Lösung mathematischer Aufgaben beschäftigt. </p>
+            <p>---------</p>
+            <p>Corssens Buch<note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Wilhelm Paul Corssen</persName> (1820-1875), deutscher Klass. Philologe und Sprachwissenschaftler; Verf. von <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Kritische Beiträge zur lateinischen Formenlehre
 </bibl>
-            </hi> (1863); es könnte aber auch <hi rend="unknown" rendition="#none">
-              <bibl>
+                  </hi> (1863); es könnte aber auch <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 De Volscorum lingua commentatio
 </bibl>
-
-            </hi> (1858) gemeint sein.</note> habe ich wohl schon als Gymnasiast kennen gelernt; ich entsinne mich des großen Eindrucks den es auf mich machte. Doch hat es die Wahl meines Studiums kaum bestimmt; ich nahm es wohl erst am Ende oder nach meiner Universitätszeit wieder vor. Es kam soviel anderes dazwischen. <pb
-            facs="#IMG.4"
-            n="4"/> Ich sollte nach meinem Abgang vom Gymnasium zunächst einen Aufenthalt in Genf nehmen (wegen meiner Gesundheit); doch entschlossen sich meine Eltern schließlich mich erst in Deutschland studieren zu lassen. Klassische Philologie, natürlich. Vielleicht hätte ich orientalische am meisten gewünscht; aber die konnte man nur in Verbindung mit Theologie studieren, wie das in der Tat mein Freund und Schulnachbar Rudloff<note
-            n="6" place="foot" type="editorial">
-
-            <persName>
+                  </hi> (1858) gemeint sein.</note> habe ich wohl schon als Gymnasiast kennen gelernt; ich entsinne mich des großen Eindrucks den es auf mich machte. Doch hat es die Wahl meines Studiums kaum bestimmt; ich nahm es wohl erst am Ende oder nach meiner Universitätszeit wieder vor. Es kam soviel anderes dazwischen. <pb facs="#IMG.4" n="4"/> Ich sollte nach meinem Abgang vom Gymnasium zunächst einen Aufenthalt in Genf nehmen (wegen meiner Gesundheit); doch entschlossen sich meine Eltern schließlich mich erst in Deutschland studieren zu lassen. Klassische Philologie, natürlich. Vielleicht hätte ich orientalische am meisten gewünscht; aber die konnte man nur in Verbindung mit Theologie studieren, wie das in der Tat mein Freund und Schulnachbar Rudloff<note n="6" place="foot" type="editorial">
+                  <persName>
 Gustav Adolf Rudloff</persName> (1839-1907), thüringischer Theologe, Superintendent in <placeName>
-Wangenheim</placeName>.</note> tat. Auch die neueren Sprachen pflegte man gemeinsam mit Theologie zu studieren. Als Theologe wurde ich zwar immatrikuliert, aber nur aus Versehen; wie man auch meinen dritten Taufnamen Marío (nach meiner Patin der Herzogin Marie) in Marius, den grimmen Cimbernbesieger latinisierte. Im ersten Semester hörte ich, meinem Vater zu lieb, auch juristische Vorlesungen (Institutionen und römische Rechtsgeschichte), dann geriet ich ganz in den Bann von Kuno Fischer<note
-            n="7" place="foot" type="editorial">
-            <persName>
-Kuno Fischer</persName> (1824-1907), deutscher Philosoph, ab 1856 Prof. in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.216">Jena</placeName>.</note> – daß ich, bei meinen sehr knappen Geldmitteln mir die vier Bände von seiner Geschichte der neueren Philosophie kaufte, besagt viel; in der Tat trug ich mich mit dem Gedanken mich ganz der Philosophie zu widmen. Neben diesem blendenden Stern verblaßte doch nicht ganz das Licht A. Schleichers,<note
-            n="8" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2638">August Schleicher</persName> (1821-1868), deutscher Sprachwissenschaftler und Indogermanist, ab 1857 Prof. in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.216">Jena</placeName>; vgl. HSA 100058-10060.</note> der mich allerdings mehr durch den Stoff, als durch die Art seines Vortrags anzog. Eigentlich wundert es mich daß ich nicht durch ihn veranlaßt worden bin Arianer<note
-            n="9" place="foot" type="editorial">Indo-arischer Philologe (<ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.381">
-Sanskritist</ref>).</note> zu werden. (Sanskrit habe ich einigermaßen betrieben; viel- <pb
-            facs="#IMG.5"
-            n="5"/> leicht haben die slawischen Sprachen mehr abstoßend als anziehend auf mich gewirkt). Auf die drei Semester Jena folgten die drei Semester Bonn; hier führte, auch für mich, Ritschl<note
-            n="10" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2528">Friedrich Wilhelm Ritschl </persName>(1806-1878), Klass. Philol.; vgl. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.8527">Brief 9</ref> (19.9.1917).</note> das große Wort. Der tüchtige Jahn<note
-            n="11" place="foot" type="editorial">
-            <persName>
-Otto Jahn</persName> (1813-1869), Klass. Philologe u. Archäologe, seit 1855 <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonner</placeName> Professor, der schon bald mit Ritschl in einen „Philologenkrieg“ verstrickt wurde.</note> langweilte mich. Ritschl war gegen mich anfangs sehr wohlwollend; daß sich das änderte, erklärt sich von dem schon Mitgeteilten abgesehen daraus daß ich, aus einem törichten Gerechtigkeitssinn zu meinem Prüfer in klassischer Philologie nicht Ritschl wählte, sondern Jahn, weil er, wie der Pedell mir sagte, an der Reihe war. Ritschl hat dann noch ein paar Mal versteckte Pfeile gegen mich abgeschossen, wobei sich für mich, der abwesend war, mein Vater einsetzte. Doch hat er mich, als ich ihm als Prüfer doch gegenübersaß (im Leipziger Colloquium 1870), doch nicht schlecht behandelt, (eine kaptiöse Frage nahm ich ihm nicht allzu übel) und mir sogar einen, bei seinen körperlichen Umständen sehr beschwerlichen Gegenbesuch gemacht. Daß ich mit meinem Vokalismus des Vulgärlateins eigentlich mich den Latinisten entfremdete ohne den Romanisten näher zu kommen, beruhte zum Teil auf äußern oder gar rein persönlichen Umständen. Diez war doch zu alt um auf diese Dinge näher einzugehen; er hegte aber eine sehr gute Gesinnung gegen mich und nicht bloß in seinen Briefen trat das zu Tage. In seinem Exemplar meines V. d. V. [= Vokalismus des Vulgärlateins] fand sich ein Zettel mit den Worten: „Es ist leicht, da das Werk nunmehr auch mit einem Register versehen ist, <pb
-            facs="#IMG.6"
-            n="6"/> wenigstens die Geschichte der einzelnen Buchstaben darin aufzusuchen.“ Darunter das früher Geschriebene: „Es bedarf kaum der Bemerkung daß besonders das von Schuchardt gesammelte und kritisch verarbeitete reiche Material zu Rathe zu ziehen ist. Bedeut. Werk.“ Bartsch<note
-            n="12" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1090">Karl Friedrich Bartsch</persName> (1832-1888), deutscher Romanist in <placeName>
+Wangenheim</placeName>.</note> tat. Auch die neueren Sprachen pflegte man gemeinsam mit Theologie zu studieren. Als Theologe wurde ich zwar immatrikuliert, aber nur aus Versehen; wie man auch meinen dritten Taufnamen Marío (nach meiner Patin der Herzogin Marie) in Marius, den grimmen Cimbernbesieger latinisierte. Im ersten Semester hörte ich, meinem Vater zu lieb, auch juristische Vorlesungen (Institutionen und römische Rechtsgeschichte), dann geriet ich ganz in den Bann von Kuno Fischer<note n="7" place="foot" type="editorial">
+                  <persName>
+Kuno Fischer</persName> (1824-1907), deutscher Philosoph, ab 1856 Prof. in <placeName ref="[authorityLink]">Jena</placeName>.</note> – daß ich, bei meinen sehr knappen Geldmitteln mir die vier Bände von seiner Geschichte der neueren Philosophie kaufte, besagt viel; in der Tat trug ich mich mit dem Gedanken mich ganz der Philosophie zu widmen. Neben diesem blendenden Stern verblaßte doch nicht ganz das Licht A. Schleichers,<note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">August Schleicher</persName> (1821-1868), deutscher Sprachwissenschaftler und Indogermanist, ab 1857 Prof. in <placeName ref="[authorityLink]">Jena</placeName>; vgl. HSA 100058-10060.</note> der mich allerdings mehr durch den Stoff, als durch die Art seines Vortrags anzog. Eigentlich wundert es mich daß ich nicht durch ihn veranlaßt worden bin Arianer<note n="9" place="foot" type="editorial">Indo-arischer Philologe (<ref target="https://gams.uni-graz.at/o:hsa.languages#L.381">
+Sanskritist</ref>).</note> zu werden. (Sanskrit habe ich einigermaßen betrieben; viel- <pb facs="#IMG.5" n="5"/> leicht haben die slawischen Sprachen mehr abstoßend als anziehend auf mich gewirkt). Auf die drei Semester Jena folgten die drei Semester Bonn; hier führte, auch für mich, Ritschl<note n="10" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Friedrich Wilhelm Ritschl </persName>(1806-1878), Klass. Philol.; vgl. <ref target="https://gams.uni-graz.at/o:hsa.letter.8527">Brief 9</ref> (19.9.1917).</note> das große Wort. Der tüchtige Jahn<note n="11" place="foot" type="editorial">
+                  <persName>
+Otto Jahn</persName> (1813-1869), Klass. Philologe u. Archäologe, seit 1855 <placeName ref="[authorityLink]">Bonner</placeName> Professor, der schon bald mit Ritschl in einen „Philologenkrieg“ verstrickt wurde.</note> langweilte mich. Ritschl war gegen mich anfangs sehr wohlwollend; daß sich das änderte, erklärt sich von dem schon Mitgeteilten abgesehen daraus daß ich, aus einem törichten Gerechtigkeitssinn zu meinem Prüfer in klassischer Philologie nicht Ritschl wählte, sondern Jahn, weil er, wie der Pedell mir sagte, an der Reihe war. Ritschl hat dann noch ein paar Mal versteckte Pfeile gegen mich abgeschossen, wobei sich für mich, der abwesend war, mein Vater einsetzte. Doch hat er mich, als ich ihm als Prüfer doch gegenübersaß (im Leipziger Colloquium 1870), doch nicht schlecht behandelt, (eine kaptiöse Frage nahm ich ihm nicht allzu übel) und mir sogar einen, bei seinen körperlichen Umständen sehr beschwerlichen Gegenbesuch gemacht. Daß ich mit meinem Vokalismus des Vulgärlateins eigentlich mich den Latinisten entfremdete ohne den Romanisten näher zu kommen, beruhte zum Teil auf äußern oder gar rein persönlichen Umständen. Diez war doch zu alt um auf diese Dinge näher einzugehen; er hegte aber eine sehr gute Gesinnung gegen mich und nicht bloß in seinen Briefen trat das zu Tage. In seinem Exemplar meines V. d. V. [= Vokalismus des Vulgärlateins] fand sich ein Zettel mit den Worten: „Es ist leicht, da das Werk nunmehr auch mit einem Register versehen ist, <pb facs="#IMG.6" n="6"/> wenigstens die Geschichte der einzelnen Buchstaben darin aufzusuchen.“ Darunter das früher Geschriebene: „Es bedarf kaum der Bemerkung daß besonders das von Schuchardt gesammelte und kritisch verarbeitete reiche Material zu Rathe zu ziehen ist. Bedeut. Werk.“ Bartsch<note n="12" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Karl Friedrich Bartsch</persName> (1832-1888), deutscher Romanist in <placeName>
 
-Heidelberg</placeName>; vgl. Brief HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.3364">01-00551</ref>).</note> mit dem ich 1868 oder Anfang 1869 in Rom zusammentraf, nahm meine Pläne ins Lager der Romanisten überzugehen „sans enthousiasme“ auf und Ebert<note
-            n="13" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1430">
-Adolf Ebert</persName> (1820-1890), deutscher Romanist in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.177">Leipzig</placeName>; vgl. HSA 02677-02694.</note> sagte mir einmal gelegentlich und gemütlich – auf dem Philologentag in Leipzig 1872 - ich glaube, in Gegenwart von Freund Bartsch, daß ich nicht darauf rechnen dürfte zur Professur zu gelangen wenn ich nicht einen altfranzösischen Text veröffentlichte. Aber siehe da, noch in demselben Jahre hieß es: „Das Unzulängliche Hier ward's Ereignis.“<note
-            n="14" place="foot" type="editorial">Am Rande: „Dez. 1872 Ernennung zum Ordinarius in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.77">Halle</placeName>“.</note> Man hatte an mich auch bei der Neugründung der Universität Straßburg gedacht; der Kurator Frh. von Roggenbach<note
-            n="15" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.5114">Franz von Roggenbach</persName> (1825-1907), badischer Politiker (Minister), 1871-72 Kurator der neugegründeten <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4172">Reichsuniversität Straßburg</ref>.</note> aber hatte, wie ich später hörte, diesen Gedanken wieder aufgegeben, weil ich gerade ein Jahr, bald nach meiner Habilitation, gesundheitshalber fern von der Universität zubrachte. Ich hatte <hi
-            rend="unknown"
-            rendition="#none">Mommsen</hi> gebeten, für den Fall daß ihn Roggenbach um Rat fragen sollte, ihm die eigene Ansicht über meinen V. d. V. [=Vokalismus des Vulgärlateins] mitzuteilen. Darauf antwortete mir der „Rauhbein“, der er ja immer war (19.1.72):<note
-            n="16" place="foot" type="editorial">Vgl. HSA, Brief <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5302">03-07438</ref>.</note> bei der Besetzung eines romanistischen Lehrstuhls könne <pb
-            facs="#IMG.7"
-            n="7"/> mein Werk nur nebenher in Frage kommen; wenn ihn Roggenbach in der Sache befrüge, so müßte er ihm antworten „daß es nicht auf jenes Werk mit seinem pro und contra, sondern darauf ankomme was Sie als Docent und Schriftsteller im Fache des eigentlich Romanischen geleistet haben und ich hierüber in jeder Hinsicht incompetent bin“<note
-            n="17" place="foot" type="editorial">Vgl. zu Einzelheiten HSA, Brief <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5301">
-02-HS_TM_s.n</ref>.</note>. Hier darf man nicht sowohl von Engherzigkeit, als engem Gesichtskreis reden. Wie würde Mommsen wohl sich geäußert haben, wenn es sich um einen Lehrstuhl für lat. Philologie gehandelt hätte? wahrscheinlich auch „nur nebenher“. Aber in irgend einen Kreis muß doch das Vulgärlatein hineingehören. – Hierbei fällt mir ein: es wäre wohl nicht ganz uninteressant [aber beileibe denke ich nicht an eine Ehrenrettung für mich], wenn man Ritschls Ansicht vom Vulgärlatein, besonders aus seinen Opuscula philologica,<note
-            n="18" place="foot" type="editorial">
+Heidelberg</placeName>; vgl. Brief HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.3364">01-00551</ref>).</note> mit dem ich 1868 oder Anfang 1869 in Rom zusammentraf, nahm meine Pläne ins Lager der Romanisten überzugehen „sans enthousiasme“ auf und Ebert<note n="13" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
+Adolf Ebert</persName> (1820-1890), deutscher Romanist in <placeName ref="[authorityLink]">Leipzig</placeName>; vgl. HSA 02677-02694.</note> sagte mir einmal gelegentlich und gemütlich – auf dem Philologentag in Leipzig 1872 - ich glaube, in Gegenwart von Freund Bartsch, daß ich nicht darauf rechnen dürfte zur Professur zu gelangen wenn ich nicht einen altfranzösischen Text veröffentlichte. Aber siehe da, noch in demselben Jahre hieß es: „Das Unzulängliche Hier ward's Ereignis.“<note n="14" place="foot" type="editorial">Am Rande: „Dez. 1872 Ernennung zum Ordinarius in <placeName ref="[authorityLink]">Halle</placeName>“.</note> Man hatte an mich auch bei der Neugründung der Universität Straßburg gedacht; der Kurator Frh. von Roggenbach<note n="15" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Franz von Roggenbach</persName> (1825-1907), badischer Politiker (Minister), 1871-72 Kurator der neugegründeten <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4172">Reichsuniversität Straßburg</ref>.</note> aber hatte, wie ich später hörte, diesen Gedanken wieder aufgegeben, weil ich gerade ein Jahr, bald nach meiner Habilitation, gesundheitshalber fern von der Universität zubrachte. Ich hatte <hi rend="unknown" rendition="#none">Mommsen</hi> gebeten, für den Fall daß ihn Roggenbach um Rat fragen sollte, ihm die eigene Ansicht über meinen V. d. V. [=Vokalismus des Vulgärlateins] mitzuteilen. Darauf antwortete mir der „Rauhbein“, der er ja immer war (19.1.72):<note n="16" place="foot" type="editorial">Vgl. HSA, Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.5302">03-07438</ref>.</note> bei der Besetzung eines romanistischen Lehrstuhls könne <pb facs="#IMG.7" n="7"/> mein Werk nur nebenher in Frage kommen; wenn ihn Roggenbach in der Sache befrüge, so müßte er ihm antworten „daß es nicht auf jenes Werk mit seinem pro und contra, sondern darauf ankomme was Sie als Docent und Schriftsteller im Fache des eigentlich Romanischen geleistet haben und ich hierüber in jeder Hinsicht incompetent bin“<note n="17" place="foot" type="editorial">Vgl. zu Einzelheiten HSA, Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.5301">
+02-HS_TM_s.n</ref>.</note>. Hier darf man nicht sowohl von Engherzigkeit, als engem Gesichtskreis reden. Wie würde Mommsen wohl sich geäußert haben, wenn es sich um einen Lehrstuhl für lat. Philologie gehandelt hätte? wahrscheinlich auch „nur nebenher“. Aber in irgend einen Kreis muß doch das Vulgärlatein hineingehören. – Hierbei fällt mir ein: es wäre wohl nicht ganz uninteressant [aber beileibe denke ich nicht an eine Ehrenrettung für mich], wenn man Ritschls Ansicht vom Vulgärlatein, besonders aus seinen Opuscula philologica,<note n="18" place="foot" type="editorial">
 Friderici Ritschelii <hi rend="unknown" rendition="#none">
-              <bibl>
+                     <bibl>
 
 
 Opuscula philologica (Friedrich Ritschls Kleine Philologische Schriften)
 </bibl>
-            </hi>, Leipzig: Teubner, 1866 f.</note> herstellte. So viel mir in Erinnerung ist, war es ihm nur ein Anhang oder auch eine Fortsetzung des archaischen Lateins, nur mit gänzlicher Beiseitelassung des Romanischen.</p>
-        <p>------------</p>
-
-        <p>Von Herbst 1862 bis Frühjahr 1867 und von Frühjahr 1869-1870 war ich in Gotha, ohne wissenschaftlichen Verkehr von irgend <pb
-            facs="#IMG.8"
-            n="8"/> welchem Belang (brieflicher ausgenommen). Während dieser Zeit machte ich verschiedene kleinere Reisen, von denen mir vor allem die nach den Nordseebädern Borkum (1861, 1862) und Sylt (1864) in dankbarster Erinnerung sind. Sie haben mich körperlich und geistig außerordentlich rege gemacht, meinen Sinn allerdings dem romanischen Süden ab und dem germanischen Norden zugewendet; ich beabsichtigte über das Sylter Friesisch zu arbeiten – versuchte mich zunächst im <hi
-            rend="unknown" rendition="#none">Sölring snakki</hi>,<note n="19" place="foot"
-              type="editorial">Nann Mungard, <hi rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>, Leipzig: Teubner, 1866 f.</note> herstellte. So viel mir in Erinnerung ist, war es ihm nur ein Anhang oder auch eine Fortsetzung des archaischen Lateins, nur mit gänzlicher Beiseitelassung des Romanischen.</p>
+            <p>------------</p>
+            <p>Von Herbst 1862 bis Frühjahr 1867 und von Frühjahr 1869-1870 war ich in Gotha, ohne wissenschaftlichen Verkehr von irgend <pb facs="#IMG.8" n="8"/> welchem Belang (brieflicher ausgenommen). Während dieser Zeit machte ich verschiedene kleinere Reisen, von denen mir vor allem die nach den Nordseebädern Borkum (1861, 1862) und Sylt (1864) in dankbarster Erinnerung sind. Sie haben mich körperlich und geistig außerordentlich rege gemacht, meinen Sinn allerdings dem romanischen Süden ab und dem germanischen Norden zugewendet; ich beabsichtigte über das Sylter Friesisch zu arbeiten – versuchte mich zunächst im <hi rend="unknown" rendition="#none">Sölring snakki</hi>,<note n="19" place="foot" type="editorial">Nann Mungard, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 For Sölring Spraak en Wiis; eine Sammlung von Sylter Wörtern, wie sie zu Anfang d. 20. Jh. auf Sylt gesprochen u. vordem gebraucht worden sind
 </bibl>
-            </hi>, Keitum a. Sylt: Sölring Foriining, 1909.</note> wie ein Jahrzehnt später im <hi rend="unknown"
-            rendition="#none">tschauntscher rumaunsch</hi>, beides etwa mit gleichem Erfolg, nämlich <hi rend="unknown" rendition="#none">seu üna vacha spagnöl(a)</hi>. Vom Mai 1867 bis Ende des Jahres war ich in Genf; von Weihnachten 1867 bis Ostern 1869 in Rom (und Neapel usw.); darüber vielleicht später einmal (Studium des Romanesco, die Vita di Cola Rienzi u. a.), sowie über meine vorAscolischen Studien im Ladinischen. Wenn Sie mir noch einen Fragebogen schicken wollen – ich bin immer bereit ihn zu beantworten.</p>
-        <closer>
-          <salute>Viele Grüße an Gauchat. <lb/> Ihr getreuer H.</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Sch</persName>
-          </signed>
-        </closer>
-        <postscript>
-
-          <p>Die Krebse sind es bekanntlich gewohnt lebend gesotten zu werden. Doch hat es mich etwas befremdet in der Doktordissertation von Otto Broens Darstellung und Würdigung des sprachphilosophischen Gegensatzes zwischen Paul, Wundt und Marty, Bonn 1913,<note
-              n="20" place="foot"
-              type="editorial">Betzdorf: Ebner, 1913. 69 S. 8°, Bonn, Phil. Diss. v. 19. Dez. 1913, Ref. Külpe.</note> S. 28 Anm. zu lesen: „Neuerdings ist von E. Herzog die alte Frage nach der Natur der Lautgesetze wieder einmal behandelt worden, wozu man Voßlers Kritik vergleichen kann. Mit der Nennung der Namen Wechsler, Osthof und Wundt sollte aber wohl endgültig dieses ,Problem' als abgeschlossen gelten.“<note
-              n="21" place="foot" type="editorial">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4044">
+                  </hi>, Keitum a. Sylt: Sölring Foriining, 1909.</note> wie ein Jahrzehnt später im <hi rend="unknown" rendition="#none">tschauntscher rumaunsch</hi>, beides etwa mit gleichem Erfolg, nämlich <hi rend="unknown" rendition="#none">seu üna vacha spagnöl(a)</hi>. Vom Mai 1867 bis Ende des Jahres war ich in Genf; von Weihnachten 1867 bis Ostern 1869 in Rom (und Neapel usw.); darüber vielleicht später einmal (Studium des Romanesco, die Vita di Cola Rienzi u. a.), sowie über meine vorAscolischen Studien im Ladinischen. Wenn Sie mir noch einen Fragebogen schicken wollen – ich bin immer bereit ihn zu beantworten.</p>
+            <closer>
+               <salute>Viele Grüße an Gauchat. <lb/> Ihr getreuer H.</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Sch</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Die Krebse sind es bekanntlich gewohnt lebend gesotten zu werden. Doch hat es mich etwas befremdet in der Doktordissertation von Otto Broens Darstellung und Würdigung des sprachphilosophischen Gegensatzes zwischen Paul, Wundt und Marty, Bonn 1913,<note n="20" place="foot" type="editorial">Betzdorf: Ebner, 1913. 69 S. 8°, Bonn, Phil. Diss. v. 19. Dez. 1913, Ref. Külpe.</note> S. 28 Anm. zu lesen: „Neuerdings ist von E. Herzog die alte Frage nach der Natur der Lautgesetze wieder einmal behandelt worden, wozu man Voßlers Kritik vergleichen kann. Mit der Nennung der Namen Wechsler, Osthof und Wundt sollte aber wohl endgültig dieses ,Problem' als abgeschlossen gelten.“<note n="21" place="foot" type="editorial">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4044">
 Heinimann</ref>
-              </bibl>, 1972, 12-16. </note>
-          </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                     </bibl>, 1972, 12-16. </note>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

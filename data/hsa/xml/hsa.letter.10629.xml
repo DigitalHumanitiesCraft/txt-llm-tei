@@ -1,335 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Lajos Katona (443-05067_475)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10629" type="PID">o:hsa.letter.10629</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">443-05067_475</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Ungarn</country>
-            <settlement>Budapest</settlement>
-            <repository ref="https://mta.hu/english/">Abteilung für Handschriften und Alte Bücher, Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften</repository>
-            <idno type="shelfmark">05067_475</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1910-04-20">1910-04-20</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2023">2023</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Lajos Katona</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1888"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10629">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1910-04-20">1910-04-20</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1888" ref="https://viaf.org/viaf/53140754">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1888" type="context">
-                        Korrespondenz Hugo Schuchardt - Lajos Katona
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4411" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Ethnologische Mittheilungen aus Ungarn</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10629" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10629" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10629" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10629" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10629" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10629" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10629" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>G., am Tage nach dem Hall. Kometen<note n="1" place="foot" type="editorial">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10629" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>G., am Tage nach dem Hall. Kometen<note n="1" place="foot" type="editorial">
 Der Periheldurchgang des Halleyschen Kometen fand in diesem Jahr am 20. April statt.</note>
-          <lb/> [20.4.1910] </dateline>
-        <opener>Lieber Freund,</opener>
-        <p>Egszer volt hol nem volt<note n="2" place="foot"
-            type="editorial">„Es war einmal, und es war doch nicht“.</note> - gestern als ich Ihren Brief empfing, hatte ich mir gerade vorgenommen Ihnen zu schreiben. Der Anlaß dazu war folgender. Obwohl ich kein Greis bin der von seinen Erinnerungen „zehrt“, so besitze ich doch ein sehr dankbares Gefühl für Alles und Alle welche je zu meiner Freude oder Erheiterung beigetragen haben. Bei meinem ersten Besuch in Budapest lernte ich eine Menge von Menschen kennen; vor Andern – nicht <hi
-            rend="unknown"
-            rendition="#none">unter</hi> Andern auch Sie. Mit manchen blieb ich in irgend einer Beziehung; manche <pb
-            facs="#IMG.2" n="2"/> waren aber nur vorübergehende Bekanntschaften. Dazu gehörte auch Mikszáth K.,<note
-            n="3" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2201">Kálmán Mikszáth</persName> (1847-1910), ungar. Schriftsteller; vgl. HSA 07381. – Er verstarb am 28. Mai 1910 in <placeName>
-Budapest</placeName>; sein Geburtstag war der 16. Januar 1847; offenbar geben andere Quellen als Geburtsjahr 1849 an.</note> mit ihm und andern (ich entsinne mich nur des Adv. Dr. Takács †)<note
-            n="4" place="foot" type="editorial">
-
-            <persName>
+               <lb/> [20.4.1910] </dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Egszer volt hol nem volt<note n="2" place="foot" type="editorial">„Es war einmal, und es war doch nicht“.</note> - gestern als ich Ihren Brief empfing, hatte ich mir gerade vorgenommen Ihnen zu schreiben. Der Anlaß dazu war folgender. Obwohl ich kein Greis bin der von seinen Erinnerungen „zehrt“, so besitze ich doch ein sehr dankbares Gefühl für Alles und Alle welche je zu meiner Freude oder Erheiterung beigetragen haben. Bei meinem ersten Besuch in Budapest lernte ich eine Menge von Menschen kennen; vor Andern – nicht <hi rend="unknown" rendition="#none">unter</hi> Andern auch Sie. Mit manchen blieb ich in irgend einer Beziehung; manche <pb facs="#IMG.2" n="2"/> waren aber nur vorübergehende Bekanntschaften. Dazu gehörte auch Mikszáth K.,<note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Kálmán Mikszáth</persName> (1847-1910), ungar. Schriftsteller; vgl. HSA 07381. – Er verstarb am 28. Mai 1910 in <placeName>
+Budapest</placeName>; sein Geburtstag war der 16. Januar 1847; offenbar geben andere Quellen als Geburtsjahr 1849 an.</note> mit ihm und andern (ich entsinne mich nur des Adv. Dr. Takács †)<note n="4" place="foot" type="editorial">
+                  <persName>
 Istvan Takács</persName>, Jurist in <placeName>
-Budapest</placeName>, Anwalt und Angesteller der Akademie.</note> habe ich manche Stunde verlumpt. Eines Abends kneipten wir zu viert (oder zu dritt) in der „Königin von England“ zusammen (lauter Junggesellen); wir tranken Brüderschaft miteinander und versprachen uns wenn wir heirateten, der Hochzeit des Andern beizuwohnen – ich weiß nichts mehr von den Andern, einer war ein Abgeordneter serbischer Nationalität. Mikszáth konnte nicht viel mehr deutsch, als ich damals madjarisch; und so war natürlich von <pb
-            facs="#IMG.3"
-            n="3"/> einem seelischen Austausch nicht die Rede. Nun habe ich aber immer seine Novellen mit grossem Genuss gelesen, meistens allerdings in deutscher Sprache,<note
-            n="5" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8168">Ungarische Novellen</ref>
-              </bibl>
-
-            </hi> von Koloman Mikszáth. Aus d. Ungar. v. C. Langsch. Mit Ill. von W. Roegge ; Ill., Berlin: Hillger, [1903], (Kürschners Bücherschatz; 370).</note> wie auch die Romane von Jókai;<note
-            n="6" place="foot" type="editorial">
-
-            <persName>
-Mór (Maurus, Mauritius) Jókai / Jókay Móritz</persName> (1825-1904), ungar. Schriftsteller und Journalist, Akademie-Mitglied, vgl. <hi
-              rend="unknown"
-              rendition="#none">Anzeiger der Gesellschaft für die Völkerkunde Ungarns</hi> I, 1, 1890, 1-2: „Die <hi
-              rend="unknown"
-              rendition="#none">
+Budapest</placeName>, Anwalt und Angesteller der Akademie.</note> habe ich manche Stunde verlumpt. Eines Abends kneipten wir zu viert (oder zu dritt) in der „Königin von England“ zusammen (lauter Junggesellen); wir tranken Brüderschaft miteinander und versprachen uns wenn wir heirateten, der Hochzeit des Andern beizuwohnen – ich weiß nichts mehr von den Andern, einer war ein Abgeordneter serbischer Nationalität. Mikszáth konnte nicht viel mehr deutsch, als ich damals madjarisch; und so war natürlich von <pb facs="#IMG.3" n="3"/> einem seelischen Austausch nicht die Rede. Nun habe ich aber immer seine Novellen mit grossem Genuss gelesen, meistens allerdings in deutscher Sprache,<note n="5" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8168">Ungarische Novellen</ref>
+                     </bibl>
+                  </hi> von Koloman Mikszáth. Aus d. Ungar. v. C. Langsch. Mit Ill. von W. Roegge ; Ill., Berlin: Hillger, [1903], (Kürschners Bücherschatz; 370).</note> wie auch die Romane von Jókai;<note n="6" place="foot" type="editorial">
+                  <persName>
+Mór (Maurus, Mauritius) Jókai / Jókay Móritz</persName> (1825-1904), ungar. Schriftsteller und Journalist, Akademie-Mitglied, vgl. <hi rend="unknown" rendition="#none">Anzeiger der Gesellschaft für die Völkerkunde Ungarns</hi> I, 1, 1890, 1-2: „Die <hi rend="unknown" rendition="#none">
 
 Gesellschaft für die Völkerkunde Ungarns
-</hi> ist aus den Bestrebungen hervorgegangen, zu denen die unmittelbare Anregung die im Jahre 1887 gegründete Zeitschrift ,<ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4411">Ethnologische Mitteilungen aus Ungarn</ref>‘ gegeben hat. Die statutenmässige Aufgabe der Gesellschaft ist: das Erforschen der jetzigen und einstigen Völker des ungarischen Staates und des historischen Ungarns, ferner auf Grund gegenseitigen Kennenlernens die Pflege der geschwisterlichen Eintracht und des Gefühles der Zusammengehörigkeit unter den im Vaterland lebenden Völkern.- Die Gesellschaft, die ihre Tätigkeit im Herbst 1889 mit etwa 500 Mitgliedern begonnen hat, hält monatliche Vortragssitzungen ab und gibt als Amtsorgan […] die Monatsschrift ,
-Ethnographia‘ heraus“.</note> aber ich habe die damals beiden Schriftstellern gemachte Zusage doch gehalten: ich würde sie einst auch in ihrer Muttersprache lesen. Nun erfahre ich vor längerer Zeit aus den Zeitungen daß M. in diesem Jahre seinen sechzigsten feiere und beschloß damals ihn wenn der Tag gekommen wäre, telegraphisch zu beglückwünschen. Aber ich vergaß den Tag [jetzt schaue ich nach und finde den 19. Jänner 1909 <pb
-            facs="#IMG.4"
-            n="4"/> angegeben - ??] und nun las ich gerade gestern in der N. Fr. Pr. vom vorhergehenden Tag ein Feuilleton von S. Radó über Mikszáth. Hätten Sie also, lieber alter Freund, die Güte, Mikszáth – wenn Sie überhaupt mit ihm „stehen“ und Gelegenheit haben ihn zu sehen – meine Teilnahme an seinem Jubiläum (und insbesondere an dem Erwerb eigenen Grund und Bodens) zu übermitteln? Vielleicht ist der Komet schon vorübergegangen; ich bin ein so kalenderloser Mensch dass ich alle wichtigen Daten zu versäumen pflege und mich nur durch starke Verfrühung zu retten vermag. Meine besten Freunde hier, Bauers,<note
-            n="7" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1098">Adolf Bauer</persName> (1855-1919), Althistoriker in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> (später <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">
+</hi> ist aus den Bestrebungen hervorgegangen, zu denen die unmittelbare Anregung die im Jahre 1887 gegründete Zeitschrift ,<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4411">Ethnologische Mitteilungen aus Ungarn</ref>‘ gegeben hat. Die statutenmässige Aufgabe der Gesellschaft ist: das Erforschen der jetzigen und einstigen Völker des ungarischen Staates und des historischen Ungarns, ferner auf Grund gegenseitigen Kennenlernens die Pflege der geschwisterlichen Eintracht und des Gefühles der Zusammengehörigkeit unter den im Vaterland lebenden Völkern.- Die Gesellschaft, die ihre Tätigkeit im Herbst 1889 mit etwa 500 Mitgliedern begonnen hat, hält monatliche Vortragssitzungen ab und gibt als Amtsorgan […] die Monatsschrift ,
+Ethnographia‘ heraus“.</note> aber ich habe die damals beiden Schriftstellern gemachte Zusage doch gehalten: ich würde sie einst auch in ihrer Muttersprache lesen. Nun erfahre ich vor längerer Zeit aus den Zeitungen daß M. in diesem Jahre seinen sechzigsten feiere und beschloß damals ihn wenn der Tag gekommen wäre, telegraphisch zu beglückwünschen. Aber ich vergaß den Tag [jetzt schaue ich nach und finde den 19. Jänner 1909 <pb facs="#IMG.4" n="4"/> angegeben - ??] und nun las ich gerade gestern in der N. Fr. Pr. vom vorhergehenden Tag ein Feuilleton von S. Radó über Mikszáth. Hätten Sie also, lieber alter Freund, die Güte, Mikszáth – wenn Sie überhaupt mit ihm „stehen“ und Gelegenheit haben ihn zu sehen – meine Teilnahme an seinem Jubiläum (und insbesondere an dem Erwerb eigenen Grund und Bodens) zu übermitteln? Vielleicht ist der Komet schon vorübergegangen; ich bin ein so kalenderloser Mensch dass ich alle wichtigen Daten zu versäumen pflege und mich nur durch starke Verfrühung zu retten vermag. Meine besten Freunde hier, Bauers,<note n="7" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Adolf Bauer</persName> (1855-1919), Althistoriker in <placeName ref="[authorityLink]">Graz</placeName> (später <placeName ref="[authorityLink]">
 Wien</placeName>); er war seit 1885 mit Amalie (gen. Mela), Tochter des Obersten <persName>
-Emanuel Smekal</persName>, verheiratet.</note> feiern gegen Ende Juni ihre silberne Hochzeit; ich habe schon vor einer Woche Geschenk und Verse erledigt. Mein Gedächtnis ist zwar nicht so schlecht daß ich mir Monatstage <pb
-            facs="#IMG.5"
-            n="5"/> nicht merken könnte (übrigens verwechsle ich sehr gern Juni und Juli), aber die Haupthemmung für mein <hi
-            rend="unknown" rendition="#none">Mit</hi>feiern besteht darin daß ich gemeiniglich nicht weiß wann ich lebe oder vulgär gesprochen den wievielsten wir haben. </p>
-        <p>Elég azzal!<note n="8" place="foot"
-            type="editorial">„Das reicht!“</note>Das sollte nur der Anlaß sein um wieder einmal von Ihnen zu hören, von Ihrem und der Ihrigen befinden und von Ihren Ferienplänen. Und nun zum Anlaß <hi
-            rend="unknown" rendition="#none">Ihres</hi> Briefes. Wenn <hi rend="unknown"
-            rendition="#none">
-Sie</hi> nicht wissen wo die Geschichte, die ich meine, steht, dann ist die Sache allerdings hoffnungslos. Aber ich muß bemerken daß Sie, wahrscheinlich infolge meiner nicht hinlänglich klaren Darstellung auf der Karte an Simonyi, den Kern nicht ganz erfaßt haben. Es handelt sich gar nicht um die etymologische Bedeutung von Wörtern (<hi
-            rend="unknown" rendition="#none">esö</hi>)<note n="9" place="foot" type="editorial">„Regen“.</note>,<pb
-            facs="#IMG.6"
-            n="6"/> sondern das Verhalten der Muttersprache zu den fremden Sprachen. Der naive Deutsche sagt: „Das <hi
-            rend="unknown" rendition="#none">ist</hi> Wein, der Ungar <hi rend="unknown"
-            rendition="#none">nennt es bor,</hi> der Italiener <hi rend="unknown"
-            rendition="#none">vino</hi>“ usw. Wort und Sache fallen geradezu für den Einsprachigen zusammen, die Vielheit der Benennungen leuchtet ihm nicht recht ein und ebensowenig daß ist mehrfachen Sinn hat. Ich erinnere Sie an das berühmteste <hi
-            rend="unknown" rendition="#none">ist</hi>, das ἐστί der Abendmahlseinsetzung.<note n="10" place="foot" type="editorial">Lk. 22, 19: τοῦτό ἐστιν τὸ σῶμά μου.</note>
-        </p>
-        <p>Ich danke Ihnen auch für das Gedruckte; man muß immer seiner ersten Liebe gedenken, das erhält jung.</p>
-        <closer>
-          <salute>Mit herzlichstem Gruss an Sie und die Ihrigen<lb/> Ihr getreuer</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+Emanuel Smekal</persName>, verheiratet.</note> feiern gegen Ende Juni ihre silberne Hochzeit; ich habe schon vor einer Woche Geschenk und Verse erledigt. Mein Gedächtnis ist zwar nicht so schlecht daß ich mir Monatstage <pb facs="#IMG.5" n="5"/> nicht merken könnte (übrigens verwechsle ich sehr gern Juni und Juli), aber die Haupthemmung für mein <hi rend="unknown" rendition="#none">Mit</hi>feiern besteht darin daß ich gemeiniglich nicht weiß wann ich lebe oder vulgär gesprochen den wievielsten wir haben. </p>
+            <p>Elég azzal!<note n="8" place="foot" type="editorial">„Das reicht!“</note>Das sollte nur der Anlaß sein um wieder einmal von Ihnen zu hören, von Ihrem und der Ihrigen befinden und von Ihren Ferienplänen. Und nun zum Anlaß <hi rend="unknown" rendition="#none">Ihres</hi> Briefes. Wenn <hi rend="unknown" rendition="#none">
+Sie</hi> nicht wissen wo die Geschichte, die ich meine, steht, dann ist die Sache allerdings hoffnungslos. Aber ich muß bemerken daß Sie, wahrscheinlich infolge meiner nicht hinlänglich klaren Darstellung auf der Karte an Simonyi, den Kern nicht ganz erfaßt haben. Es handelt sich gar nicht um die etymologische Bedeutung von Wörtern (<hi rend="unknown" rendition="#none">esö</hi>)<note n="9" place="foot" type="editorial">„Regen“.</note>,<pb facs="#IMG.6" n="6"/> sondern das Verhalten der Muttersprache zu den fremden Sprachen. Der naive Deutsche sagt: „Das <hi rend="unknown" rendition="#none">ist</hi> Wein, der Ungar <hi rend="unknown" rendition="#none">nennt es bor,</hi> der Italiener <hi rend="unknown" rendition="#none">vino</hi>“ usw. Wort und Sache fallen geradezu für den Einsprachigen zusammen, die Vielheit der Benennungen leuchtet ihm nicht recht ein und ebensowenig daß ist mehrfachen Sinn hat. Ich erinnere Sie an das berühmteste <hi rend="unknown" rendition="#none">ist</hi>, das ἐστί der Abendmahlseinsetzung.<note n="10" place="foot" type="editorial">Lk. 22, 19: τοῦτό ἐστιν τὸ σῶμά μου.</note>
+            </p>
+            <p>Ich danke Ihnen auch für das Gedruckte; man muß immer seiner ersten Liebe gedenken, das erhält jung.</p>
+            <closer>
+               <salute>Mit herzlichstem Gruss an Sie und die Ihrigen<lb/> Ihr getreuer</salute>
+               <signed>
+                  <persName ref="[authorityLink]">
 HSchuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Bitte um Nachsicht für das sehr eilig sehr Geschmierte.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Bitte um Nachsicht für das sehr eilig sehr Geschmierte.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,309 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (121-10882)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/1710" type="PID">o:hsa.letter.1710</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">121-10882</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">10882</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" ref="http://sws.geonames.org/2761368">Wien</origPlace>
-              <origDate ana="dcterms:created" when="1918-01-14">1918-01-14</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.1710">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" key="#GID.1" ref="http://sws.geonames.org/2761368">Wien</placeName>
-          <date when="1918-01-14">1918-01-14</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <name ref="http://geonames.org/2761368" type="fcode:STM">Wien-Fluss</name>
-                <location>
-                  <geo>16.38409,48.2088</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1710" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1710" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1710" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1710" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.1710" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Wien, 14. I. 1918</dateline>
-        <opener>Verehrter Herr Hofrat,</opener>
-        <p>Nicht um einen Briefwechsel zu provozieren, der Ihnen lästig würde, sondern um ein Echo auf ein so gewichtiges Dokument wie Ihren Brief vom 11./12. ertönen zu lassen, antworte ich sofort.</p>
-
-        <p>Es freut mich, daß Sie meinen Absichten, die durchaus "idealen Beweggründe" anerkennen. In der ganzen <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.1710" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Wien, 14. I. 1918</dateline>
+            <opener>Verehrter Herr Hofrat,</opener>
+            <p>Nicht um einen Briefwechsel zu provozieren, der Ihnen lästig würde, sondern um ein Echo auf ein so gewichtiges Dokument wie Ihren Brief vom 11./12. ertönen zu lassen, antworte ich sofort.</p>
+            <p>Es freut mich, daß Sie meinen Absichten, die durchaus "idealen Beweggründe" anerkennen. In der ganzen <persName ref="[authorityLink]">
 M.-L.</persName>-Angelegenheit sehe ich nichts als Form-Uneinigkeiten: auch Ihre Briefe geben kein anderes Bild: nicht erwiderte oder gemachte Besuche, nicht beglückwünschte Festtage usw., nichts, das zwei so "große" Männer notwendig auseinandertreiben müßte.</p>
-
-        <p>Hier muß ich etwas sagen, was ich stets an der Welt unserer Professoren getadelt habe: ihr zeremonieller Sinn. Was spielen z.B. in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.177">Leipzig</placeName> statt dem Frack angezogener Gehrock, Verstreichenlassen einer Frist zwischen den Beamten und derlei mehr für eine Riesenrolle! Ja, ist das nicht das ärgste Philisterium?</p>
-        <p>Fern sei es mir, die gegen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-M.-L.</persName> vorgebrachten Gravamina mit diesen Philistrositäten auf eine Stufe zu stellen – aber eins bleibt doch aus dem Professorenmilieu übrig: eine Nicht-Gratulation ist ein Affront – diese Ansicht muß ich bekämpfen. Eine Gratulation ist ein Geschenk – kommt es, schön; kommt es nicht, meno male! Ich bin <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> gewiß gut, vergesse aber regelmäßig an seinen Geburtstag. Ich verehre Sie, Herr Hofrat, sehr, aber ich <pb
-            facs="#IMG.2" n="2"/>gratulierte am 4. statt am 6. Febr. (oder ist es anders richtig?).</p>
-        <p>Ferner bekämpfe ich den Ausdruck "Die <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">Meringer</persName>angelegenheit" (nicht die damit gemeinte Sache, über die mir kein Urteil zusteht): das ist es ja eben, in Universitätskreisen gibt es fortwährend eine "x-Angelegenheit", die besonders mit Stellenbesetzungen oder Literaturfehden (bitte abzuteilen: Literat-Urfehden) zusammenhängt. Herr Hofrat beanstanden mein Rangieren – ich schlage wenig an meine Brust; aber ist dies nicht viel harmloser als dieser Geist des Unfriedens, der in deutschen Universitätsgauen herrscht und jede wissenschaftliche Äußerung in den Geruch einer "Bosheit gegen y", einer "Spitzer gegen z" bringt?</p>
-        <p>Daß die "Schule" <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-M.-L.</persName>'s Sie, Herrn Hofrat, nicht gebührend geachtet habe, könnte ich nicht bestätigen: ich selbst bin in einer gläubigen Verehrung zu Ihnen aufgewachsen und habe dies in Schrift und Wort oft ausgesprochen, ebenso <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2516">Elise Richter</persName>. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1459">Ettmayer</persName> gehört doch zu "Ihrer Schule" oder zu Ihrer "Schule", nicht zu der <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName>'s, rechnet sich selbst nicht zu dieser und wird von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName> nicht zu "sich" gerechnet. Seine Rüpelei wird, wie ich jetzt in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> hörte, von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> so beurteilt wie sie es verdient, und auch – wie von Ihnen – als Anzeichen nicht normaler Geistesart aufgefaßt.</p>
-
-        <p>Daß ich mich vor nunmehr 8 Jahren in einer Abendstunde klopfenden Herzens bei Ihnen anklopfend, mit Gefühlen, die denen des Leschetitzky oder <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2594">Sauer</persName> "endlich" zu Gesicht bekommenden<pb
-            facs="#IMG.3"
-            n="3"/> Amerikaners in Bezug auf Kitschigkeit und Ehrlichkeit verwandt waren, – kurz als blutjunger Anfänger bei Ihnen mit den Worten "Schüler <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-M-L</persName>'s" einführte, war ein Akt der Selbstverteidigung: ich hoffte, vor Schuchardt Gnade zu finden, indem ich als Bannformel "<persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName>" sprach – daß ich damit Pech hatte, wußte ich damals nicht.</p>
-
-        <p>Ich gehe nun weiter: in den acht Jahren haben Herr Hofrat, wie Sie sagen, nur meinen "wissenschaftlichen Gängen" Verständnis und Beifall entgegengebracht – "menschlich" sei ich Ihnen nicht näher gekommen. Und ich hatte mir grade das eingebildet? Ich hatte grade gedacht, daß Sie mich als aufrichtigen, keiner Gemeinheit und Zweizüngigkeit fähigen Menschen, als manchmal voreilig temperamentvollen, jedenfalls aber blutvollen Streiter gegen "was uns alle bändigt, das Gemeine" kennen gelernt haben und daß ich das für den Jüngern so ehrende Wort "Freund" (das mir auch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">Gilliéron</persName> stets schreiben, wobei bei letzterem <hi
-            rend="unknown"
-            rendition="#none">ami</hi> nicht confrère ist!) schon verdient hätte – und nun schreiben Herr Hofrat noch immer: "Lieber Herr – <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-M.-L.</persName>-Schüler", d.h. noch immer wölbt sich der Schatten "meines Meisters" über mich und zwischen uns – als ob wir nicht längst direkt und schattenlos miteinander gesprochen (=korrespondiert) hätten, als ob ich nicht in vielem mehr zu Ihnen als zu <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-M-L.</persName> klänge (so in <pb facs="#IMG.4"
-            n="4"/>Ihrer mehr künstlerischen Lebensauffassung, Ihrer Betonung des Problematischen und der Probleme!), als ob ich nicht schließlich – gestatten Sie auch mir ein bischen Selbstcharakteristik – mehr Mensch wäre als alle die Fischblütler, die mit Sitzfleisch, aber nicht mit "Sitz-Geist" (Chr. Morgenstern) versehen sind und zu denen ich auch <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1459">Herrn v.E.</persName> rechne!</p>
-        <p>Darüber bin ich – nicht "übelgelaunt", nein, aber sagen wir: kindlich gekränkt.</p>
-
-        <p>Da ich nun aber ins "Schmollen" zu verfallen drohe, will ich schnell bemerken, was Herr Hofrat aus obigem Zitat schon entnommen haben werden, daß ich eine kleine Arbeit über "Die groteske Sprachkunst Christian Morgensterns" vorbereitet habe<note
-            n="1" place="foot" type="editorial"> In seiner Endfassung lautet der Titel <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3786">"Die groteske Gestaltungs- und Sprachkunst Christian Morgensterns"</ref>
-            </bibl>; der Text wird in einer Gemeinschaftspublikation erscheinen: <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3962">Hans Sperber und L.S., <hi
-                  rend="unknown" rendition="#none">Motiv und Wort. Studien zur Literatur- und Sprachpsychologie</hi>.</ref> Leipzig: Reisland 1918.</bibl>
-          </note> – die natürlich wieder zwischen alle Sesseln, von denen der Athapaskisten bis zu denen der Germanisten, durchfällt und nirgends Platz finden wird, ferner daß ich über ein System der deskriptiven Gramm. anläßlich meiner Urania-Kurse nachdenke, endlich daß ich bitte, nicht mit der Antwort bis zur Veröffentlichung des Anti-Ch. zu warten – denn nun sind schon 2 Monate vergangen und es werden noch weitere 2 vergehen – dann aber werden die Ansichten Trotzkys so sehr Allgemeingut geworden sein, daß man Spitzers linguistische Konsequenzen aus ihnen in den Wind der öffentlichen Meinung schlagen wird...</p>
-        <closer>
-          <salute>Mit ergebensten Grüßen</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-            <lb/> ein Anhänger, kein Schüler einer Gegen-Schule! </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Hier muß ich etwas sagen, was ich stets an der Welt unserer Professoren getadelt habe: ihr zeremonieller Sinn. Was spielen z.B. in <placeName ref="[authorityLink]">Leipzig</placeName> statt dem Frack angezogener Gehrock, Verstreichenlassen einer Frist zwischen den Beamten und derlei mehr für eine Riesenrolle! Ja, ist das nicht das ärgste Philisterium?</p>
+            <p>Fern sei es mir, die gegen <persName ref="[authorityLink]">
+M.-L.</persName> vorgebrachten Gravamina mit diesen Philistrositäten auf eine Stufe zu stellen – aber eins bleibt doch aus dem Professorenmilieu übrig: eine Nicht-Gratulation ist ein Affront – diese Ansicht muß ich bekämpfen. Eine Gratulation ist ein Geschenk – kommt es, schön; kommt es nicht, meno male! Ich bin <persName ref="[authorityLink]">M.-L.</persName> gewiß gut, vergesse aber regelmäßig an seinen Geburtstag. Ich verehre Sie, Herr Hofrat, sehr, aber ich <pb facs="#IMG.2" n="2"/>gratulierte am 4. statt am 6. Febr. (oder ist es anders richtig?).</p>
+            <p>Ferner bekämpfe ich den Ausdruck "Die <persName ref="[authorityLink]">Meringer</persName>angelegenheit" (nicht die damit gemeinte Sache, über die mir kein Urteil zusteht): das ist es ja eben, in Universitätskreisen gibt es fortwährend eine "x-Angelegenheit", die besonders mit Stellenbesetzungen oder Literaturfehden (bitte abzuteilen: Literat-Urfehden) zusammenhängt. Herr Hofrat beanstanden mein Rangieren – ich schlage wenig an meine Brust; aber ist dies nicht viel harmloser als dieser Geist des Unfriedens, der in deutschen Universitätsgauen herrscht und jede wissenschaftliche Äußerung in den Geruch einer "Bosheit gegen y", einer "Spitzer gegen z" bringt?</p>
+            <p>Daß die "Schule" <persName ref="[authorityLink]">
+M.-L.</persName>'s Sie, Herrn Hofrat, nicht gebührend geachtet habe, könnte ich nicht bestätigen: ich selbst bin in einer gläubigen Verehrung zu Ihnen aufgewachsen und habe dies in Schrift und Wort oft ausgesprochen, ebenso <persName ref="[authorityLink]">Elise Richter</persName>. <persName ref="[authorityLink]">Ettmayer</persName> gehört doch zu "Ihrer Schule" oder zu Ihrer "Schule", nicht zu der <persName ref="[authorityLink]">M-L</persName>'s, rechnet sich selbst nicht zu dieser und wird von <persName ref="[authorityLink]">M-L</persName> nicht zu "sich" gerechnet. Seine Rüpelei wird, wie ich jetzt in <placeName ref="[authorityLink]">Bonn</placeName> hörte, von <persName ref="[authorityLink]">M.-L.</persName> so beurteilt wie sie es verdient, und auch – wie von Ihnen – als Anzeichen nicht normaler Geistesart aufgefaßt.</p>
+            <p>Daß ich mich vor nunmehr 8 Jahren in einer Abendstunde klopfenden Herzens bei Ihnen anklopfend, mit Gefühlen, die denen des Leschetitzky oder <persName ref="[authorityLink]">Sauer</persName> "endlich" zu Gesicht bekommenden<pb facs="#IMG.3" n="3"/> Amerikaners in Bezug auf Kitschigkeit und Ehrlichkeit verwandt waren, – kurz als blutjunger Anfänger bei Ihnen mit den Worten "Schüler <persName ref="[authorityLink]">
+M-L</persName>'s" einführte, war ein Akt der Selbstverteidigung: ich hoffte, vor Schuchardt Gnade zu finden, indem ich als Bannformel "<persName ref="[authorityLink]">M-L</persName>" sprach – daß ich damit Pech hatte, wußte ich damals nicht.</p>
+            <p>Ich gehe nun weiter: in den acht Jahren haben Herr Hofrat, wie Sie sagen, nur meinen "wissenschaftlichen Gängen" Verständnis und Beifall entgegengebracht – "menschlich" sei ich Ihnen nicht näher gekommen. Und ich hatte mir grade das eingebildet? Ich hatte grade gedacht, daß Sie mich als aufrichtigen, keiner Gemeinheit und Zweizüngigkeit fähigen Menschen, als manchmal voreilig temperamentvollen, jedenfalls aber blutvollen Streiter gegen "was uns alle bändigt, das Gemeine" kennen gelernt haben und daß ich das für den Jüngern so ehrende Wort "Freund" (das mir auch <persName ref="[authorityLink]">M.-L.</persName> und <persName ref="[authorityLink]">Gilliéron</persName> stets schreiben, wobei bei letzterem <hi rend="unknown" rendition="#none">ami</hi> nicht confrère ist!) schon verdient hätte – und nun schreiben Herr Hofrat noch immer: "Lieber Herr – <persName ref="[authorityLink]">
+M.-L.</persName>-Schüler", d.h. noch immer wölbt sich der Schatten "meines Meisters" über mich und zwischen uns – als ob wir nicht längst direkt und schattenlos miteinander gesprochen (=korrespondiert) hätten, als ob ich nicht in vielem mehr zu Ihnen als zu <persName ref="[authorityLink]">
+M-L.</persName> klänge (so in <pb facs="#IMG.4" n="4"/>Ihrer mehr künstlerischen Lebensauffassung, Ihrer Betonung des Problematischen und der Probleme!), als ob ich nicht schließlich – gestatten Sie auch mir ein bischen Selbstcharakteristik – mehr Mensch wäre als alle die Fischblütler, die mit Sitzfleisch, aber nicht mit "Sitz-Geist" (Chr. Morgenstern) versehen sind und zu denen ich auch <persName ref="[authorityLink]">Herrn v.E.</persName> rechne!</p>
+            <p>Darüber bin ich – nicht "übelgelaunt", nein, aber sagen wir: kindlich gekränkt.</p>
+            <p>Da ich nun aber ins "Schmollen" zu verfallen drohe, will ich schnell bemerken, was Herr Hofrat aus obigem Zitat schon entnommen haben werden, daß ich eine kleine Arbeit über "Die groteske Sprachkunst Christian Morgensterns" vorbereitet habe<note n="1" place="foot" type="editorial"> In seiner Endfassung lautet der Titel <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3786">"Die groteske Gestaltungs- und Sprachkunst Christian Morgensterns"</ref>
+                  </bibl>; der Text wird in einer Gemeinschaftspublikation erscheinen: <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3962">Hans Sperber und L.S., <hi rend="unknown" rendition="#none">Motiv und Wort. Studien zur Literatur- und Sprachpsychologie</hi>.</ref> Leipzig: Reisland 1918.</bibl>
+               </note> – die natürlich wieder zwischen alle Sesseln, von denen der Athapaskisten bis zu denen der Germanisten, durchfällt und nirgends Platz finden wird, ferner daß ich über ein System der deskriptiven Gramm. anläßlich meiner Urania-Kurse nachdenke, endlich daß ich bitte, nicht mit der Antwort bis zur Veröffentlichung des Anti-Ch. zu warten – denn nun sind schon 2 Monate vergangen und es werden noch weitere 2 vergehen – dann aber werden die Ansichten Trotzkys so sehr Allgemeingut geworden sein, daß man Spitzers linguistische Konsequenzen aus ihnen in den Wind der öffentlichen Meinung schlagen wird...</p>
+            <closer>
+               <salute>Mit ergebensten Grüßen</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+                  <lb/> ein Anhänger, kein Schüler einer Gegen-Schule! </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

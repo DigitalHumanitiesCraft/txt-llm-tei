@@ -1,286 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Eduard Wölfflin (02-HSEW01)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10026" type="PID">o:hsa.letter.10026</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-HSEW01</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Basel</settlement>
-            <repository ref="https://stiftungen.stiftungschweiz.ch/organisation/eduard-woelfflin-thesaurus-stiftung">Eduard Wölfflin-Thesaurus-Stiftung, Basel</repository>
-            <idno type="shelfmark">HSEW01</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1883-03-04">1883-03-04</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Eduard Wölfflin</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/3032"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10026">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1883-03-04">1883-03-04</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.3032" ref="https://viaf.org/viaf/45080602">
-            <forename>Eduard</forename>
-            <surname>Wölfflin</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.3032" type="context">
-                        Korrespondenz Hugo Schuchardt - Eduard Wölfflin
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10026" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://stiftungen.stiftungschweiz.ch/organisation/eduard-woelfflin-thesaurus-stiftung">Eduard Wölfflin-Thesaurus-Stiftung, Basel</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10026" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://stiftungen.stiftungschweiz.ch/organisation/eduard-woelfflin-thesaurus-stiftung">Eduard Wölfflin-Thesaurus-Stiftung, Basel</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10026" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://stiftungen.stiftungschweiz.ch/organisation/eduard-woelfflin-thesaurus-stiftung">Eduard Wölfflin-Thesaurus-Stiftung, Basel</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10026" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://stiftungen.stiftungschweiz.ch/organisation/eduard-woelfflin-thesaurus-stiftung">Eduard Wölfflin-Thesaurus-Stiftung, Basel</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10026" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 4 März 1883.<note n="1" place="foot" type="editorial">„Unverzügliche“ Antwort auf Wölfflins Brief HSA 12872  vom 2.3.1883.</note>
-        </dateline>
-        <opener>Geehrtester Herr Kollege!</opener>
-        <p>Sie waren so liebenswürdig auf meine Kreuzbandsendung nicht nur mit einer eben solchen und zwar Positives enthaltenden (deren ich mich mit Musse erfreuen werde), sondern auch mit einem Briefe zu antworten. </p>
-
-        <p>Ich erwiedere umgehend. Zunächst was Sie angeht. Sie dürfen aus meinen Worten durchaus Nichts entnehmen, was wie eine Unterschätzung Ihrer Leistungen aussähe. Ich habe nur einen einzigen wenn Sie wollen äusserlichen, persönlichen Punkt berührt. Sie müssen bedenken, dass die klassischen Philologen seit <pb
-            facs="#IMG.2" n="2"/> dem Erscheinen meines V. d. V.<note n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.730">Schuchardt, <hi rend="unknown" rendition="#none">Der Vokalismus des Vulgärlateins</hi>, Leipzig: Teubner</ref>
-
-            </bibl>, 1866-68, 3 Bde. Es gibt zwar zahlreiche Rezensionen der drei Bände, aber namhafte Klassische Philologen sind nicht unter den Verfassern.</note> dieses Buch zum Theil mit einer gewissen Absicht ignoriert haben. Ihnen messe ich eine solche durchaus nicht bei; allein, wenn Sie vollständig Recht haben mich bei Untersuchungen, an denen ich keinen Antheil habe, nicht zu citiren, so glaube ich doch in ganz allgemeinen, einleitenden Bemerkungen eine Erwähnung zu verdienen. Ich wiederhole, Sie konnten doch nicht schlechtweg sagen, die Erforschung des Spätlateins in seinem Verhältnis zu den romanischen Sprachen sei ein unangebautes Feld, wie kaum ein anderes.<note
-            n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8159">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10026" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 4 März 1883.<note n="1" place="foot" type="editorial">„Unverzügliche“ Antwort auf Wölfflins Brief HSA 12872  vom 2.3.1883.</note>
+            </dateline>
+            <opener>Geehrtester Herr Kollege!</opener>
+            <p>Sie waren so liebenswürdig auf meine Kreuzbandsendung nicht nur mit einer eben solchen und zwar Positives enthaltenden (deren ich mich mit Musse erfreuen werde), sondern auch mit einem Briefe zu antworten. </p>
+            <p>Ich erwiedere umgehend. Zunächst was Sie angeht. Sie dürfen aus meinen Worten durchaus Nichts entnehmen, was wie eine Unterschätzung Ihrer Leistungen aussähe. Ich habe nur einen einzigen wenn Sie wollen äusserlichen, persönlichen Punkt berührt. Sie müssen bedenken, dass die klassischen Philologen seit <pb facs="#IMG.2" n="2"/> dem Erscheinen meines V. d. V.<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.730">Schuchardt, <hi rend="unknown" rendition="#none">Der Vokalismus des Vulgärlateins</hi>, Leipzig: Teubner</ref>
+                  </bibl>, 1866-68, 3 Bde. Es gibt zwar zahlreiche Rezensionen der drei Bände, aber namhafte Klassische Philologen sind nicht unter den Verfassern.</note> dieses Buch zum Theil mit einer gewissen Absicht ignoriert haben. Ihnen messe ich eine solche durchaus nicht bei; allein, wenn Sie vollständig Recht haben mich bei Untersuchungen, an denen ich keinen Antheil habe, nicht zu citiren, so glaube ich doch in ganz allgemeinen, einleitenden Bemerkungen eine Erwähnung zu verdienen. Ich wiederhole, Sie konnten doch nicht schlechtweg sagen, die Erforschung des Spätlateins in seinem Verhältnis zu den romanischen Sprachen sei ein unangebautes Feld, wie kaum ein anderes.<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8159">
 Wölfflin, <hi rend="unknown" rendition="#none">Lateinische und romanische Komparation</hi>, Erlangen: Deichert, 1879</ref>
-            </bibl>, Vowort, S. iii: „Wenn Bücheler richtig bemerkt, es sei ein Grundzug der heutigen Philologie das klassische Altertum mit dem in Zusammenhang zu setzen, was vorher und nachher gewesen ist, so müssen wir gleichwohl gestehen, daß die Erforschung des Spätlateins in seinem Verhältnis zu den romanischen Sprachen ein unangebautes Feld sei“.</note>
-        </p>
-        <p>Was nun den Ausdruck <hi rend="unknown" rendition="#none">Gründerbestrebungen</hi> betrifft,<note n="3"
-            place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.436">Gustav Meyer &amp;amp; Hugo Schuchardt, „[Rez. von:] Dr. Karl Sittl, <hi
-                  rend="unknown"
-                  rendition="#none">Die lokalen Verschiedenheiten der lateinischen Sprache mit besonderer Berücksichtigung des afrikanischen Lateins</hi>“, <hi
-                  rend="unknown" rendition="#none">ZrP</hi> 6, 1882, 608-628</ref>
-
-            </bibl>. Hier heißt es gleich zu Anfang: „Auch in der Wissenschaft sind neuerdings Gründerbestrebungen zu Tage getreten; das ruhige Weiterbauen befriedigt nicht immer, man giebt sich gern den Anschein, Forschungsmethoden oder Forschungsgebiete, die schon vorher wohl bekannt waren, gefunden zu haben und exploitiert dieselben mit manchen gewagten Spekulationen“.</note> so versichere ich Sie, dass ich zunächst nur Sittl <pb
-            facs="#IMG.3"
-            n="3"/> dabei im Auge hatte, dass ich aber allerdings nach seinem Vorwort annahm, Sie hätten die <hi
-            rend="unknown" rendition="#none">ganze</hi> Arbeit beeinflusst und kontrollirt. Und da schien es mir wieder, dass doch einem so jungen Mann ein solch anmasslicher, und wie der Erfolg zeigt höchst ungerechtfertigt anmasslicher Ton hätte abgerathen werden sollen.</p>
-
-        <p>Sie können doch nicht behaupten, dass ich das Misstrauen, das mir der 1. u. 2. Theil eingeflösst haben, auch auf den 3. Übertragen habe. Ich konstatire ja ausdrücklich p. 625 den Unterschied. Auf die eigentliche Frage konnte ich mich ja nicht einlassen; und wenn Tobler sich sehr anerkennend geäussert hat, so bezweifle ich, so sehr ich ihn auch sonst schätze, dass <pb
-            facs="#IMG.4" n="4"/> er betreffs der Africitas<note n="4" place="foot" type="editorial">Zur „Africitas“ vgl. <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8160">Christian Schmidt, „Die verlorene Romanität in Afrika: Afrolatein / Afroromanisch / La Romania submersa en Mésie, en Thrace et en Pannonie“, in: Gerhard Ernst [u.a.] (Hrsg.), <hi
-                  rend="unknown" rendition="#none">Romanische Sprachgeschichte / Histoire linguistique de la Romania</hi>, Teilband 1, 1, Berlin-New York: De Gruyter, 2003</ref>
-
-            </bibl>, bes. 669f.</note> viel kompetenter ist als ich. Nach einer nicht unmittelbar vernommenen Äusserung <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1715">Hartel</persName>’s<note n="5" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1715">Wilhelm von Hartel</persName> (1839-1907), österr. Klass. Philologe; vgl. HSA 04418-04421. – Die Rez. steht in <hi
-              rend="unknown"
-            rendition="#none">Philologischer Anzeiger</hi> XIII, 1883, 777-789. Diese Rez. ist mit kleineren Einschränkungen durchaus positiv: „Eine erschöpfende behandlung des gegenstandes geht nach dem gegenwärtigen standpunkt der wissenschaft weit über die kraft eines einzelnen, und was ich an lücken und unzulänglichkeiten im folgenden hervorhebe, möge demnach nicht als eine schmälerung des wirklichen verdienstes dieses ersten frisch unternommenen versuches, wodurch sich eine junge kraft in empfehlender weise einführt, aufgefaßt werden (777/778).</note> würde auch dieser die Resultate nicht oder doch nur zum Theile acceptiren (seine demnächst erscheinende Recension wird ja das lehren); und ein hiesiger Kenner der Africitas sprach sich mir auch darüber ablehnend aus. – Sie machen unserem Artikel den Vorwurf, dass er keine „Anzeige“ sei, weil er nur tadele; ich erkläre Ihnen hiermit nochmals, dass ich über das was Ihnen lobenswerth erscheint, kein Urtheil habe, und Prof. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2185">G. Meyer</persName> ebenso wenig. Das ist ja gerade bei Sittl das Schlimme, dass er von Dingen redet, von denen er gar Nichts versteht. Sollen die Kritiker ihm das nachmachen? Bedenken Sie auch, dass die Anzeige in einer Fachzeitschrift erschienen ist. – Ich bedaure Ihnen keine hiesige Seminararbeit (zu edler Rache) verheissen zu können; ich habe kein Seminar. – Doch Nichts für ungut; ich hoffe wir treffen uns einmal in einer freundlichen Sommerfrische und dann wird sicher Ihr Unmuth verschwinden.</p>
-        <closer>
-          <salute>Hochachtungsvoll Ihr erg.</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+                  </bibl>, Vowort, S. iii: „Wenn Bücheler richtig bemerkt, es sei ein Grundzug der heutigen Philologie das klassische Altertum mit dem in Zusammenhang zu setzen, was vorher und nachher gewesen ist, so müssen wir gleichwohl gestehen, daß die Erforschung des Spätlateins in seinem Verhältnis zu den romanischen Sprachen ein unangebautes Feld sei“.</note>
+            </p>
+            <p>Was nun den Ausdruck <hi rend="unknown" rendition="#none">Gründerbestrebungen</hi> betrifft,<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.436">Gustav Meyer &amp;amp; Hugo Schuchardt, „[Rez. von:] Dr. Karl Sittl, <hi rend="unknown" rendition="#none">Die lokalen Verschiedenheiten der lateinischen Sprache mit besonderer Berücksichtigung des afrikanischen Lateins</hi>“, <hi rend="unknown" rendition="#none">ZrP</hi> 6, 1882, 608-628</ref>
+                  </bibl>. Hier heißt es gleich zu Anfang: „Auch in der Wissenschaft sind neuerdings Gründerbestrebungen zu Tage getreten; das ruhige Weiterbauen befriedigt nicht immer, man giebt sich gern den Anschein, Forschungsmethoden oder Forschungsgebiete, die schon vorher wohl bekannt waren, gefunden zu haben und exploitiert dieselben mit manchen gewagten Spekulationen“.</note> so versichere ich Sie, dass ich zunächst nur Sittl <pb facs="#IMG.3" n="3"/> dabei im Auge hatte, dass ich aber allerdings nach seinem Vorwort annahm, Sie hätten die <hi rend="unknown" rendition="#none">ganze</hi> Arbeit beeinflusst und kontrollirt. Und da schien es mir wieder, dass doch einem so jungen Mann ein solch anmasslicher, und wie der Erfolg zeigt höchst ungerechtfertigt anmasslicher Ton hätte abgerathen werden sollen.</p>
+            <p>Sie können doch nicht behaupten, dass ich das Misstrauen, das mir der 1. u. 2. Theil eingeflösst haben, auch auf den 3. Übertragen habe. Ich konstatire ja ausdrücklich p. 625 den Unterschied. Auf die eigentliche Frage konnte ich mich ja nicht einlassen; und wenn Tobler sich sehr anerkennend geäussert hat, so bezweifle ich, so sehr ich ihn auch sonst schätze, dass <pb facs="#IMG.4" n="4"/> er betreffs der Africitas<note n="4" place="foot" type="editorial">Zur „Africitas“ vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8160">Christian Schmidt, „Die verlorene Romanität in Afrika: Afrolatein / Afroromanisch / La Romania submersa en Mésie, en Thrace et en Pannonie“, in: Gerhard Ernst [u.a.] (Hrsg.), <hi rend="unknown" rendition="#none">Romanische Sprachgeschichte / Histoire linguistique de la Romania</hi>, Teilband 1, 1, Berlin-New York: De Gruyter, 2003</ref>
+                  </bibl>, bes. 669f.</note> viel kompetenter ist als ich. Nach einer nicht unmittelbar vernommenen Äusserung <persName ref="[authorityLink]">Hartel</persName>’s<note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Wilhelm von Hartel</persName> (1839-1907), österr. Klass. Philologe; vgl. HSA 04418-04421. – Die Rez. steht in <hi rend="unknown" rendition="#none">Philologischer Anzeiger</hi> XIII, 1883, 777-789. Diese Rez. ist mit kleineren Einschränkungen durchaus positiv: „Eine erschöpfende behandlung des gegenstandes geht nach dem gegenwärtigen standpunkt der wissenschaft weit über die kraft eines einzelnen, und was ich an lücken und unzulänglichkeiten im folgenden hervorhebe, möge demnach nicht als eine schmälerung des wirklichen verdienstes dieses ersten frisch unternommenen versuches, wodurch sich eine junge kraft in empfehlender weise einführt, aufgefaßt werden (777/778).</note> würde auch dieser die Resultate nicht oder doch nur zum Theile acceptiren (seine demnächst erscheinende Recension wird ja das lehren); und ein hiesiger Kenner der Africitas sprach sich mir auch darüber ablehnend aus. – Sie machen unserem Artikel den Vorwurf, dass er keine „Anzeige“ sei, weil er nur tadele; ich erkläre Ihnen hiermit nochmals, dass ich über das was Ihnen lobenswerth erscheint, kein Urtheil habe, und Prof. <persName ref="[authorityLink]">G. Meyer</persName> ebenso wenig. Das ist ja gerade bei Sittl das Schlimme, dass er von Dingen redet, von denen er gar Nichts versteht. Sollen die Kritiker ihm das nachmachen? Bedenken Sie auch, dass die Anzeige in einer Fachzeitschrift erschienen ist. – Ich bedaure Ihnen keine hiesige Seminararbeit (zu edler Rache) verheissen zu können; ich habe kein Seminar. – Doch Nichts für ungut; ich hoffe wir treffen uns einmal in einer freundlichen Sommerfrische und dann wird sicher Ihr Unmuth verschwinden.</p>
+            <closer>
+               <salute>Hochachtungsvoll Ihr erg.</salute>
+               <signed>
+                  <persName ref="[authorityLink]">
 HSchuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

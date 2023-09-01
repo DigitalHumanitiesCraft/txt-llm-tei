@@ -1,389 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Josef Priebsch an Hugo Schuchardt (02-09013)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2445">
-            <forename>Josef</forename>
-            <surname>Priebsch</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3710" type="PID">o:hsa.letter.3710</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-09013</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">09013</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2445">
-                <forename>Josef</forename>
-                <surname>Priebsch</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.656" ref="http://sws.geonames.org/2643743">London</origPlace>
-              <origDate ana="dcterms:created" when="1892-12-31">1892-12-31</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Josef Priebsch und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2445"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3710">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2445" ref="https://viaf.org/viaf/114477408">
-            <forename>Josef</forename>
-            <surname>Priebsch</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.656" key="#GID.1" ref="http://sws.geonames.org/2643743">London</placeName>
-          <date when="1892-12-31">1892-12-31</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>United Kingdom</country>
-                <settlement>London</settlement>
-                <name ref="http://geonames.org/2643743" type="fcode:PPLC">London</name>
-                <location>
-                  <geo>-0.12574,51.50853</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2445" type="context">
-                        Korrespondenz Josef Priebsch - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.274" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Reisen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5050" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">King's College (Cambridge)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.967" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Networking</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5051" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bodleian Library (Oxford)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4738" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">British Museum (London)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3343" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Modern Language Notes</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3710" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3710" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3710" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3710" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3710" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3710" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3710" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>64 Gloucesterplace   London 31. December<lb/>Portmansqu. W. 1892</dateline>
-        <opener>
-          <hi rend="unknown" rendition="#none">Hochgeehrter Herr Professor!</hi>
-        </opener>
-        <p>Gestatten Sie, daß ich Ihnen mit diesen Zeilen ein Lebenszeichen von mir gebe und nehmen Sie vor allem meine besten Neujahrswünsche entgegen; ich wünsche von Herzen, daß Ihnen im kommenden Jahre ein in jeder Hinsicht Sie zufriedenstellender Gesundheitszustand beschieden sein möge.</p>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3710" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>64 Gloucesterplace   London 31. December<lb/>Portmansqu. W. 1892</dateline>
+            <opener>
+               <hi rend="unknown" rendition="#none">Hochgeehrter Herr Professor!</hi>
+            </opener>
+            <p>Gestatten Sie, daß ich Ihnen mit diesen Zeilen ein Lebenszeichen von mir gebe und nehmen Sie vor allem meine besten Neujahrswünsche entgegen; ich wünsche von Herzen, daß Ihnen im kommenden Jahre ein in jeder Hinsicht Sie zufriedenstellender Gesundheitszustand beschieden sein möge.</p>
+            <p>Darf ich Sie mit der Mittheilung einiger Details über meine Persönlichkeit belästigen? Im Laufe des Monates Juli verließ ich <placeName ref="[authorityLink]">Paris</placeName>, um in <placeName ref="[authorityLink]">England</placeName> längeren Aufenthalt zu nehmen, wenige Wochen nur weilte ich damals in London, um in erster Linie die <pb facs="#IMG.2" n="2"/> Einrichtung des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4738">Britischen Museums</ref>, die Art der Katalogisierung kennenzulernen, dann wandte ich mich, nach einem kurzen Aufenthalte in Cambridge, wo ich in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5050">
+                  <hi rend="unknown" rendition="#none">King’s College</hi>
+               </ref> durch bekannte <hi rend="unknown" rendition="#none">Fellow</hi>s eingeführt wurde, nach dem lieblichen <placeName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Oxford</hi>
+               </placeName>; daselbst fand ich reichliche Beschäftigung und Gelegenheit zu Studien in der ausgezeichnet dotirten und bequem eingerichteten <hi rend="unknown" rendition="#none">Bodleiana</hi>, nicht jedoch in dem Maße war ich studieneifrig, daß ich nicht Zeit gefunden hätte, gesundheitfürdernden und erhaltenden Rudersport zu üben, ein Vergnügen, dem zu huldigen der zwischen saftig grünen Matten ruhig sich dahin schlängelnde Strom der Themse, dort <hi rend="unknown" rendition="#none">Jves</hi>
+               <note n="1" place="foot" type="editorial">Verschrieben für <hi rend="unknown" rendition="#none">
+Isis</hi>, was der eigentliche Name der Themse in <placeName ref="[authorityLink]">Oxford</placeName> ist? Das Schriftbild spricht für <hi rend="unknown" rendition="#none">Jves, Joos</hi> oder <hi rend="unknown" rendition="#none">Joes</hi>, ähnelt aber auch „Isis“?</note> genannt, und ihr kleiner aber romantischer Nebenfluß <hi rend="unknown" rendition="#none">Charwell</hi>
+               <note n="2" place="foot" type="editorial">Der Name lautet richtig <hi rend="unknown" rendition="#none">Cherwell</hi>.</note> die beste Gelegenheit bieten. Durch Empfehlungen in die dortigen Kreise eingeführt, lernte ich die angenehmen, geselligen Eigenschaften der gelehrten <hi rend="unknown" rendition="#none">scholars</hi> und das liebens- <pb facs="#IMG.3" n="3"/> würdige Wesen der stark von Universitätsgeist erfüllten Damen kennen; <hi rend="unknown" rendition="#none">Prof. Max Müller</hi>
+               <note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Friedrich Max Müller</persName> (1823-1900), aus <placeName>
 
-        <p>Darf ich Sie mit der Mittheilung einiger Details über meine Persönlichkeit belästigen? Im Laufe des Monates Juli verließ ich <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.666">Paris</placeName>, um in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6083">England</placeName> längeren Aufenthalt zu nehmen, wenige Wochen nur weilte ich damals in London, um in erster Linie die <pb
-            facs="#IMG.2" n="2"/> Einrichtung des <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4738">Britischen Museums</ref>, die Art der Katalogisierung kennenzulernen, dann wandte ich mich, nach einem kurzen Aufenthalte in Cambridge, wo ich in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5050">
-            <hi rend="unknown" rendition="#none">King’s College</hi>
-          </ref> durch bekannte <hi rend="unknown"
-            rendition="#none">Fellow</hi>s eingeführt wurde, nach dem lieblichen <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.9">
-            <hi rend="unknown" rendition="#none">Oxford</hi>
-
-          </placeName>; daselbst fand ich reichliche Beschäftigung und Gelegenheit zu Studien in der ausgezeichnet dotirten und bequem eingerichteten <hi
-            rend="unknown"
-            rendition="#none">Bodleiana</hi>, nicht jedoch in dem Maße war ich studieneifrig, daß ich nicht Zeit gefunden hätte, gesundheitfürdernden und erhaltenden Rudersport zu üben, ein Vergnügen, dem zu huldigen der zwischen saftig grünen Matten ruhig sich dahin schlängelnde Strom der Themse, dort <hi
-            rend="unknown" rendition="#none">Jves</hi>
-          <note n="1" place="foot" type="editorial">Verschrieben für <hi rend="unknown"
-              rendition="#none">
-Isis</hi>, was der eigentliche Name der Themse in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.9">Oxford</placeName> ist? Das Schriftbild spricht für <hi
-              rend="unknown" rendition="#none">Jves, Joos</hi> oder <hi rend="unknown"
-            rendition="#none">Joes</hi>, ähnelt aber auch „Isis“?</note> genannt, und ihr kleiner aber romantischer Nebenfluß <hi
-            rend="unknown" rendition="#none">Charwell</hi>
-          <note n="2" place="foot" type="editorial">Der Name lautet richtig <hi rend="unknown"
-            rendition="#none">Cherwell</hi>.</note> die beste Gelegenheit bieten. Durch Empfehlungen in die dortigen Kreise eingeführt, lernte ich die angenehmen, geselligen Eigenschaften der gelehrten <hi
-            rend="unknown" rendition="#none">scholars</hi> und das liebens- <pb facs="#IMG.3"
-            n="3"/> würdige Wesen der stark von Universitätsgeist erfüllten Damen kennen; <hi rend="unknown" rendition="#none">Prof. Max Müller</hi>
-          <note n="3" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2252">Friedrich Max Müller</persName> (1823-1900), aus <placeName>
-
-Dessau</placeName> stammender Sprach- und Religionswissenschaftler, unterrichtete ab 1850 in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.9">Oxford</placeName>, wo er 1868 eine Professur für Vergleichende Religionswissenschaft schuf; er war wissenschaftlich äußerst produktiv und arbeitete auch für die <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5051">Bodleian Library</ref>.</note>, der sehr frisch und munter aussieht, empfing mich und meinen germanistischen Vetter<note
-            n="4" place="foot"
-            type="editorial">Zu <persName>
-Robert Pietsch</persName> s. Bedeutung.</note> aufs zuvorkommendste; auf dessen gütige Verwendung hin, gewannen wir Zutritt zu dem in dem herrlichen Garten des <hi
-            rend="unknown"
-            rendition="#none">Wadham College </hi>abgehaltenen Gartenfeste des Orientalistencongresses. Mit angenehmen Erinnerungen an die dort so glücklich verlebten Monate, kehrte ich im Anfange des <hi
-            rend="unknown" rendition="#none">October</hi> nach der Hauptstadt zurück, in der Absicht um im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4738">
-            <hi rend="unknown" rendition="#none">British Museum </hi>
-
-          </ref>mich festzusetzen. Es gibt wohl keine Anstalt auf dem Continente, die mit dieser in irgend einer Hinsicht rivalisiren könnte; auch der <hi
-            rend="unknown" rendition="#none">Bibl. Nat. </hi>stehen so reichliche Mittel, wie sie das <hi rend="unknown"
-            rendition="#none">
-Mus.</hi> besitzt, nicht zur Verfügung; in den seltensten Fällen versagt der musterhaft geführte <hi
-            rend="unknown" rendition="#none">Catalog</hi>; Wünsche, in dem aufliegenden <pb facs="#IMG.4" n="4"/> Desiderienbuche aufgezeichnet, werden sofort berücksichtigt; die Beamten sind überaus höflich und zuvorkommend und zu jeglicher Unterstützung bereit, erfreuliche Eigenschaften, die ich den Pariser Beamten absprechen muß.</p>
-        <p>Nachforschungen, die ich im Beginne meines Londoner Aufenthaltes über das Schicksal der <hi rend="unknown"
-            rendition="#none">Lucien Bonaparte</hi>schen Bibliothek anstellte<note n="5" place="foot"
-              type="editorial">Schuchardts Interesse erklärt sich durch den wissenschaftlichen Austausch mit dem <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1171">Prinzen</persName>, vgl. „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4046">Briefe des Prinzen L.-L. Bonaparte an H. Schuchardt</ref>
-            </bibl>“, <hi rend="unknown"
-            rendition="#none">Revue internationale des études baques 3</hi>, 1909, 133-139.</note>, ergaben kein sicheres Resultat, heute erfahre ich, da ich bei der berühmten Bücher Auctionsfirma <hi
-            rend="unknown" rendition="#none">
+Dessau</placeName> stammender Sprach- und Religionswissenschaftler, unterrichtete ab 1850 in <placeName ref="[authorityLink]">Oxford</placeName>, wo er 1868 eine Professur für Vergleichende Religionswissenschaft schuf; er war wissenschaftlich äußerst produktiv und arbeitete auch für die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5051">Bodleian Library</ref>.</note>, der sehr frisch und munter aussieht, empfing mich und meinen germanistischen Vetter<note n="4" place="foot" type="editorial">Zu <persName>
+Robert Pietsch</persName> s. Bedeutung.</note> aufs zuvorkommendste; auf dessen gütige Verwendung hin, gewannen wir Zutritt zu dem in dem herrlichen Garten des <hi rend="unknown" rendition="#none">Wadham College </hi>abgehaltenen Gartenfeste des Orientalistencongresses. Mit angenehmen Erinnerungen an die dort so glücklich verlebten Monate, kehrte ich im Anfange des <hi rend="unknown" rendition="#none">October</hi> nach der Hauptstadt zurück, in der Absicht um im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4738">
+                  <hi rend="unknown" rendition="#none">British Museum </hi>
+               </ref>mich festzusetzen. Es gibt wohl keine Anstalt auf dem Continente, die mit dieser in irgend einer Hinsicht rivalisiren könnte; auch der <hi rend="unknown" rendition="#none">Bibl. Nat. </hi>stehen so reichliche Mittel, wie sie das <hi rend="unknown" rendition="#none">
+Mus.</hi> besitzt, nicht zur Verfügung; in den seltensten Fällen versagt der musterhaft geführte <hi rend="unknown" rendition="#none">Catalog</hi>; Wünsche, in dem aufliegenden <pb facs="#IMG.4" n="4"/> Desiderienbuche aufgezeichnet, werden sofort berücksichtigt; die Beamten sind überaus höflich und zuvorkommend und zu jeglicher Unterstützung bereit, erfreuliche Eigenschaften, die ich den Pariser Beamten absprechen muß.</p>
+            <p>Nachforschungen, die ich im Beginne meines Londoner Aufenthaltes über das Schicksal der <hi rend="unknown" rendition="#none">Lucien Bonaparte</hi>schen Bibliothek anstellte<note n="5" place="foot" type="editorial">Schuchardts Interesse erklärt sich durch den wissenschaftlichen Austausch mit dem <persName ref="[authorityLink]">Prinzen</persName>, vgl. „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4046">Briefe des Prinzen L.-L. Bonaparte an H. Schuchardt</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">Revue internationale des études baques 3</hi>, 1909, 133-139.</note>, ergaben kein sicheres Resultat, heute erfahre ich, da ich bei der berühmten Bücher Auctionsfirma <hi rend="unknown" rendition="#none">
 Southeby</hi>
-          <note n="6" place="foot"
-            type="editorial">Das traditionsreiche Auktionshaus 
+               <note n="6" place="foot" type="editorial">Das traditionsreiche Auktionshaus 
 Sotheby’s (so die richtige Schreibung) in <placeName>
 
-London</placeName> wurde 1744 gegründet und existiert noch heute. Der „Strand“ ist die Verbindungsstraße zwischen der City of London und der City of Westminster.</note> am <hi
-            rend="unknown"
-            rendition="#none">Strand </hi>Erkundigungen einzog, daß die reiche Bibliothek des Prinzen im Laufe dieses Jahres zur öffentlichen Versteigerung kommen dürfte, das Datum ist leider nicht fixirt, der Termin des <hi
-            rend="unknown" rendition="#none">booksale</hi> wird 6 Wochen früher in allen Journalen bekanntgegeben<note
-            n="7" place="foot"
-            type="editorial">Die Bücher wurden im Jahr 1901 von der 1887 in <placeName>
+London</placeName> wurde 1744 gegründet und existiert noch heute. Der „Strand“ ist die Verbindungsstraße zwischen der City of London und der City of Westminster.</note> am <hi rend="unknown" rendition="#none">Strand </hi>Erkundigungen einzog, daß die reiche Bibliothek des Prinzen im Laufe dieses Jahres zur öffentlichen Versteigerung kommen dürfte, das Datum ist leider nicht fixirt, der Termin des <hi rend="unknown" rendition="#none">booksale</hi> wird 6 Wochen früher in allen Journalen bekanntgegeben<note n="7" place="foot" type="editorial">Die Bücher wurden im Jahr 1901 von der 1887 in <placeName>
 
 Chicago</placeName> gegründeten Newberry Library erstanden. Auf deren Homepage heißt es: „In 1901, the Newberry acquired the collection of amateur comparative linguist Louis Lucien Bonaparte (1815–1891), nephew of the Emperor Napoleon. Numbering some 18,000 items, the Bonaparte collection represents the state of linguistic studies at the end of the nineteenth century. It includes many grammars and dictionaries for all the European languages and some non-European ones, rare items exemplifying the early printing of individual languages, and other specimens of everyday printing of the nineteenth century selected to represent the spoken languages of that day. It is particularly strong for such linguistic isolates as Albanian, Sardinian, Basque, Frisian, and Lithuanian, for Romance dialectology, and for the Celtic languages. The rarities and other linguistic specimens intersect with other collection strengths of the Newberry, for example, in the areas of children’s books, almanacs, courtesy books, Bibles, hymnals, catechisms, and songsters“.</note> das <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4738">
-            <hi rend="unknown" rendition="#none">Br. Mus.</hi>
-          </ref> wird, wie mir <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5059">Mr Fortescue</persName>
-          <note n="8" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.5059">George Knottesford Fortescue</persName> (1847-1912), seit 1899 Keeper of the Printed Books des <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4738s">British Museum</ref> (British Library).</note> mittheilt, jedesfalls die Mehrzahl der Bücher u. Handschriften ankaufen. Ich werde mich freuen, Ihnen, geehrter Herr Professor, einen Catalog derselben, unmittelbar <pb
-            facs="#IMG.5" n="5"/> nach Erscheinen zusenden zu können. Aus einer in dem Märzhefte der „<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3343">
-            <hi rend="unknown" rendition="#none">Modern Language Notes</hi>
-          </ref>“ erschienen Notiz<note n="9" place="foot" type="editorial">
-            <bibl>
-              <hi rend="unknown"
-            rendition="#none">MLN 7</hi>, H. 5, 1892
-</bibl>, 158: „Professor Hugo Schuchardt (University of Graz, Austria) is engaged on a special work dealing with Negro English. In order to treat this subject as fully as possible, the author would esteem it a favor, if writers of news-paper articles (or other casual contributions to local journals) bearing on the material, would forward to him directly copies of said articles, or indicate the same through the columns of MOD. LANG. NOTES“.</note> ersehe ich, daß Sie sich zur Zeit mit den auf englischem Colonialgebiete gesprochenen Mischsprachen beschäftigen.<note
-            n="10" place="foot"
-            type="editorial">Offenbar hat Schuchardt dieses Angebot gern angenommen, wenn man die folgenden Briefe vergleicht.</note> Ich würde mich glücklich schätzen, wenn ich mich Ihnen irgendwie sei es durch Nachforschung nach in das Fach einschlägigem Material, sei es durch Abschriften von Manuscripten, die sich im <hi
-            rend="unknown" rendition="#none">Brit. Mus. </hi>finden, gefällig erweisen könnte. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1402">
-            <hi rend="unknown" rendition="#none">Mr Dodgson</hi>
-          </persName>
-          <note n="11" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1402">Edward Spencer Dodgson</persName> (1857-1922), Britischer Baskologe, Korrespondent Schuchardts (HSA, Lfd. Nr. 02373-02603); vgl. insbesondere Brief <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.3094">032-02393</ref>; vgl. auch Anm. 15 Brief <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.3709">
-01-09021</ref> .</note> scheint, wie ich aus einer Pariser Quelle erfahren habe, im letzten Sommer die baskischen Lande wieder unsicher gemacht zu haben; ich bemühte mich vergebens in der letzten Zeit meines Aufenthaltes ihm seine wortvergleichenden <pb
-            facs="#IMG.6"
-            n="6"/> Phantastereien aus dem Kopf zu schlagen; ich hoffe, daß er Sie, seitdem ich ihm einen nicht miszuverstehenden <hi
-            rend="unknown" rendition="#none">hint</hi> gegeben habe, mit seinen Spielereien verschont hat.</p>
-        <p>Ich gedenke, Ende dieses Monats <hi rend="unknown" rendition="#none">London </hi>für <hi rend="unknown" rendition="#none">Cambridge </hi>auf einige Zeit zu verlassen.</p>
-        <p>In der Hoffnung, daß dieses Schreiben Sie, hochgeehrten Herrn Professor, bei guter Gesundheit antreffe, verbleibe ich Ihr</p>
-        <closer>
-          <salute>ergebener Schüler</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2445">D<hi rendition="#sup">r</hi> Josef Priebsch</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                  <hi rend="unknown" rendition="#none">Br. Mus.</hi>
+               </ref> wird, wie mir <persName ref="[authorityLink]">Mr Fortescue</persName>
+               <note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">George Knottesford Fortescue</persName> (1847-1912), seit 1899 Keeper of the Printed Books des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4738s">British Museum</ref> (British Library).</note> mittheilt, jedesfalls die Mehrzahl der Bücher u. Handschriften ankaufen. Ich werde mich freuen, Ihnen, geehrter Herr Professor, einen Catalog derselben, unmittelbar <pb facs="#IMG.5" n="5"/> nach Erscheinen zusenden zu können. Aus einer in dem Märzhefte der „<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3343">
+                  <hi rend="unknown" rendition="#none">Modern Language Notes</hi>
+               </ref>“ erschienen Notiz<note n="9" place="foot" type="editorial">
+                  <bibl>
+                     <hi rend="unknown" rendition="#none">MLN 7</hi>, H. 5, 1892
+</bibl>, 158: „Professor Hugo Schuchardt (University of Graz, Austria) is engaged on a special work dealing with Negro English. In order to treat this subject as fully as possible, the author would esteem it a favor, if writers of news-paper articles (or other casual contributions to local journals) bearing on the material, would forward to him directly copies of said articles, or indicate the same through the columns of MOD. LANG. NOTES“.</note> ersehe ich, daß Sie sich zur Zeit mit den auf englischem Colonialgebiete gesprochenen Mischsprachen beschäftigen.<note n="10" place="foot" type="editorial">Offenbar hat Schuchardt dieses Angebot gern angenommen, wenn man die folgenden Briefe vergleicht.</note> Ich würde mich glücklich schätzen, wenn ich mich Ihnen irgendwie sei es durch Nachforschung nach in das Fach einschlägigem Material, sei es durch Abschriften von Manuscripten, die sich im <hi rend="unknown" rendition="#none">Brit. Mus. </hi>finden, gefällig erweisen könnte. <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Mr Dodgson</hi>
+               </persName>
+               <note n="11" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Edward Spencer Dodgson</persName> (1857-1922), Britischer Baskologe, Korrespondent Schuchardts (HSA, Lfd. Nr. 02373-02603); vgl. insbesondere Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.3094">032-02393</ref>; vgl. auch Anm. 15 Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.3709">
+01-09021</ref> .</note> scheint, wie ich aus einer Pariser Quelle erfahren habe, im letzten Sommer die baskischen Lande wieder unsicher gemacht zu haben; ich bemühte mich vergebens in der letzten Zeit meines Aufenthaltes ihm seine wortvergleichenden <pb facs="#IMG.6" n="6"/> Phantastereien aus dem Kopf zu schlagen; ich hoffe, daß er Sie, seitdem ich ihm einen nicht miszuverstehenden <hi rend="unknown" rendition="#none">hint</hi> gegeben habe, mit seinen Spielereien verschont hat.</p>
+            <p>Ich gedenke, Ende dieses Monats <hi rend="unknown" rendition="#none">London </hi>für <hi rend="unknown" rendition="#none">Cambridge </hi>auf einige Zeit zu verlassen.</p>
+            <p>In der Hoffnung, daß dieses Schreiben Sie, hochgeehrten Herrn Professor, bei guter Gesundheit antreffe, verbleibe ich Ihr</p>
+            <closer>
+               <salute>ergebener Schüler</salute>
+               <signed>
+                  <persName ref="[authorityLink]">D<hi rendition="#sup">r</hi> Josef Priebsch</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

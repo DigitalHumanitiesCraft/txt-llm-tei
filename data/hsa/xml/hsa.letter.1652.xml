@@ -1,323 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (65-10827)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/1652" type="PID">o:hsa.letter.1652</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">65-10827</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">10827</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace>Unbekannt</origPlace>
-              <origDate ana="dcterms:created" when="1917-03-10">1917-03-10</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.1652">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName>Unbekannt</placeName>
-          <date when="1917-03-10">1917-03-10</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item/>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1652" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1652" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1652" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1652" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.1552" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>10. III.</dateline>
-        <opener>Verehrter Herr Hofrat,</opener>
-        <p>Ich weiß nicht, ob das unterstrichene "für immer" am Schlusse Ihres Briefes mit der Absage der Entente an den Mittler Wilson zu vergleichen ist – jedenfalls bin ich kein Wilson, der die Mittlerrolle mit dem Hintergrund drönender Kanonen ausstattet, und setze daher den Gedankenaustausch weiter fort.</p>
-
-        <p>Sie haben den Anteil persönlicher Dankbarkeit aus meinem Schwärmen herausgehört – und ich bekenne, daß Sie Recht haben. Aber auch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">Gilliéron</persName> ist mir ein treuer Freund und Berater gewesen und doch empfinde ich die kulturelle wie wissenschaftliche Kluft, die ihn von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> trennt, sehr stark. Ich empfinde auch, daß <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> Ihnen, mit dem mich doch die Bande der wissenschaftlichen Verehrung (ohne persönliches Universitätsinteresse) verbinden, in Bezug auf allgemeine linguistische Begabung und kulturgeschichtlichen Blick nachsteht. Auf der anderen Seite empfinde ich Ihre Forderung nach Akribie im Widerspruch mit dem Aufbau von Hypothesen, wie denen über das bearnische <hi
-            rend="unknown"
-            rendition="#none">que</hi>, oder einigem in Ihrem Aufsatz über Romano-Magyarisches. Ein <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> würde vielleicht hier seinerseits die Forderung der Akribie stellen – ich sage das nur, um zu beleuchten, wie die Sichtbarkeit der berühmten "Warzen" von der "Bearbeitung" (=Heraus- oder Hineinarbeitung) abhängt.</p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> schreibt jetzt immer mit der Maschine und das kann doch kein ernster Grund für Absturz diplomatischer Beziehungen (oder Nicht-Aufrechterhaltung derselben) sein. Wie würde <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> ein netter Brief wie die vielen, die ich mich glücklich schätze von Ihnen zu besitzen, freuen! Ich sage dies selbstverständlich nicht offiziös (dies bei mir voraussetzen hieße mich beleidigen), sondern aus meinem Empfinden heraus. Wie wird er das Band gemeinsamen Arbeitens, das sich von <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> nach <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> zöge, als Segen und Freud fühlen!</p>
-
-        <p>"Vertreter unserer Wissenschaft" – Sie stoßen sich an diesem Eindrucke! Gewiß, mit Recht! Aber jede Abgrenzung einer Wissenschaft ist ja gewaltsam und schließlich interessiert Sie ja doch mehr was <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2516">El. Richter</persName> arbeitet als etwa Egon Wellesz, der Privatdozent der Musikgeschichte, den Sie vielleicht nur bei einer bestimmten Monographie zu Rate ziehen werden! Daß die romanischen Philologen gegenwärtig recht "klein" sind, ist ebenso sicher, wie daß die Indogermanistik auch recht viel Krimskrams aufzuweisen hat: bitte nur irgend eine Fachzeitschrift in die Hand zu nehmen. In sprachbiologischer Beziehung haben jedenfalls Germanisten, Slawisten und Indogerm. von uns zu lernen, nicht umgekehrt. Ein <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4363">Hans Sperber</persName> ist heute in Acht und Bann getan von allen Mitgermanisten!</p>
-        <p>Gewiß hat beim Abfassen des Wb. die Zitierweise keinen persönlichen Untergrund: der Name <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> kommt ja auch nicht vor, sondern <hi
-            rend="unknown"
-            rendition="#none">Rom. gramm.</hi> etc. Daß Mißgriffe vorliegen (wie gerade in Ihrem Fall), ist richtig, aber <pb
-            facs="#IMG.3" n="3"/>keineswegs aus gemeinen Instinkten deutbar.</p>
-        <p>Ich gebe alles zu: Sie und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-M.-L.</persName> sind in der Arbeitsweise, Denkweise, Lebensweise vollkommen verschieden – aber ist das nicht ein Reiz mehr, um sich kennen zu lernen? Z.B. ist <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> unerotisch, ich höchst erotisch veranlagt – hat das unser gedeihliches Auskommen je gehindert? Oder – um nicht Kleines mit Großem, sondern Großes mit Großen zu vergleichen – war Goethe Schiller oder umgekehrt?</p>
-
-        <p>Ganz merkwürdig ist Ihr Vorwurf des Militarismus, wo ich doch als ein berüchtigter Ketzer und Verfehmer desselben verhaßt bin, wo alle deutschen Dreinhauer mir das zum Vorwurf machen! Wo ich in meiner (ungedruckten) Abhandlung die Wilamowitz Moellendorffsche Parallelisierung von Wissensch. u. Militarismus bekämpfe.<note
-            n="1" place="foot" type="editorial"> Der Spezialist für griechische Tragödien <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5124">Ulrich von Wilamowitz-Moellendorff</persName> hat sich u.a. hervorgetan mit <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3998">
-                <hi rend="unknown" rendition="#none">Deutsche Reden in schwerer Zeit</hi>. Hrsg. von der Zentralstelle für Volkswohlfahrt und dem Verein für Volkstümliche Kurse von Berliner Hochschullehrern. Berlin: Heymann 1914.</ref>
-            </bibl>
-          </note> Die Persönlichkeit über alles – sage ich auch, aber ähnlich wie <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.84">
-Goethe</ref>, der von der Meisterschaft in der Beschränkung gesprochen hat. Ich schachtele doch niemanden ein? Wie wäre ich sonst mit einem <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> so gut wie mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">Gilliéron</persName>, mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1858">Jud</persName> wie mit <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2516">El. Richter</persName>?</p>
-        <p>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> ist natürlich vor allem ein Schweizer – verschwiegen, nicht leicht zugänglich, aber bei näherem Kennenlernen tiefgründig und denkt sich über manche Dinge eine Masse, was man nicht bei ihm vermutet. Warum sollen wir nicht hierin auch die Persönlichkeit respektieren? <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.1552" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>10. III.</dateline>
+            <opener>Verehrter Herr Hofrat,</opener>
+            <p>Ich weiß nicht, ob das unterstrichene "für immer" am Schlusse Ihres Briefes mit der Absage der Entente an den Mittler Wilson zu vergleichen ist – jedenfalls bin ich kein Wilson, der die Mittlerrolle mit dem Hintergrund drönender Kanonen ausstattet, und setze daher den Gedankenaustausch weiter fort.</p>
+            <p>Sie haben den Anteil persönlicher Dankbarkeit aus meinem Schwärmen herausgehört – und ich bekenne, daß Sie Recht haben. Aber auch <persName ref="[authorityLink]">Gilliéron</persName> ist mir ein treuer Freund und Berater gewesen und doch empfinde ich die kulturelle wie wissenschaftliche Kluft, die ihn von <persName ref="[authorityLink]">M.-L.</persName> trennt, sehr stark. Ich empfinde auch, daß <persName ref="[authorityLink]">M.-L.</persName> Ihnen, mit dem mich doch die Bande der wissenschaftlichen Verehrung (ohne persönliches Universitätsinteresse) verbinden, in Bezug auf allgemeine linguistische Begabung und kulturgeschichtlichen Blick nachsteht. Auf der anderen Seite empfinde ich Ihre Forderung nach Akribie im Widerspruch mit dem Aufbau von Hypothesen, wie denen über das bearnische <hi rend="unknown" rendition="#none">que</hi>, oder einigem in Ihrem Aufsatz über Romano-Magyarisches. Ein <persName ref="[authorityLink]">M.-L.</persName> würde vielleicht hier seinerseits die Forderung der Akribie stellen – ich sage das nur, um zu beleuchten, wie die Sichtbarkeit der berühmten "Warzen" von der "Bearbeitung" (=Heraus- oder Hineinarbeitung) abhängt.</p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>
+               <persName ref="[authorityLink]">M.-L.</persName> schreibt jetzt immer mit der Maschine und das kann doch kein ernster Grund für Absturz diplomatischer Beziehungen (oder Nicht-Aufrechterhaltung derselben) sein. Wie würde <persName ref="[authorityLink]">M.-L.</persName> ein netter Brief wie die vielen, die ich mich glücklich schätze von Ihnen zu besitzen, freuen! Ich sage dies selbstverständlich nicht offiziös (dies bei mir voraussetzen hieße mich beleidigen), sondern aus meinem Empfinden heraus. Wie wird er das Band gemeinsamen Arbeitens, das sich von <placeName ref="[authorityLink]">Bonn</placeName> nach <placeName ref="[authorityLink]">Graz</placeName> zöge, als Segen und Freud fühlen!</p>
+            <p>"Vertreter unserer Wissenschaft" – Sie stoßen sich an diesem Eindrucke! Gewiß, mit Recht! Aber jede Abgrenzung einer Wissenschaft ist ja gewaltsam und schließlich interessiert Sie ja doch mehr was <persName ref="[authorityLink]">El. Richter</persName> arbeitet als etwa Egon Wellesz, der Privatdozent der Musikgeschichte, den Sie vielleicht nur bei einer bestimmten Monographie zu Rate ziehen werden! Daß die romanischen Philologen gegenwärtig recht "klein" sind, ist ebenso sicher, wie daß die Indogermanistik auch recht viel Krimskrams aufzuweisen hat: bitte nur irgend eine Fachzeitschrift in die Hand zu nehmen. In sprachbiologischer Beziehung haben jedenfalls Germanisten, Slawisten und Indogerm. von uns zu lernen, nicht umgekehrt. Ein <persName ref="[authorityLink]">Hans Sperber</persName> ist heute in Acht und Bann getan von allen Mitgermanisten!</p>
+            <p>Gewiß hat beim Abfassen des Wb. die Zitierweise keinen persönlichen Untergrund: der Name <persName ref="[authorityLink]">M.-L.</persName> kommt ja auch nicht vor, sondern <hi rend="unknown" rendition="#none">Rom. gramm.</hi> etc. Daß Mißgriffe vorliegen (wie gerade in Ihrem Fall), ist richtig, aber <pb facs="#IMG.3" n="3"/>keineswegs aus gemeinen Instinkten deutbar.</p>
+            <p>Ich gebe alles zu: Sie und <persName ref="[authorityLink]">
+M.-L.</persName> sind in der Arbeitsweise, Denkweise, Lebensweise vollkommen verschieden – aber ist das nicht ein Reiz mehr, um sich kennen zu lernen? Z.B. ist <persName ref="[authorityLink]">M.-L.</persName> unerotisch, ich höchst erotisch veranlagt – hat das unser gedeihliches Auskommen je gehindert? Oder – um nicht Kleines mit Großem, sondern Großes mit Großen zu vergleichen – war Goethe Schiller oder umgekehrt?</p>
+            <p>Ganz merkwürdig ist Ihr Vorwurf des Militarismus, wo ich doch als ein berüchtigter Ketzer und Verfehmer desselben verhaßt bin, wo alle deutschen Dreinhauer mir das zum Vorwurf machen! Wo ich in meiner (ungedruckten) Abhandlung die Wilamowitz Moellendorffsche Parallelisierung von Wissensch. u. Militarismus bekämpfe.<note n="1" place="foot" type="editorial"> Der Spezialist für griechische Tragödien <persName ref="[authorityLink]">Ulrich von Wilamowitz-Moellendorff</persName> hat sich u.a. hervorgetan mit <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3998">
+                        <hi rend="unknown" rendition="#none">Deutsche Reden in schwerer Zeit</hi>. Hrsg. von der Zentralstelle für Volkswohlfahrt und dem Verein für Volkstümliche Kurse von Berliner Hochschullehrern. Berlin: Heymann 1914.</ref>
+                  </bibl>
+               </note> Die Persönlichkeit über alles – sage ich auch, aber ähnlich wie <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.84">
+Goethe</ref>, der von der Meisterschaft in der Beschränkung gesprochen hat. Ich schachtele doch niemanden ein? Wie wäre ich sonst mit einem <persName ref="[authorityLink]">M.-L.</persName> so gut wie mit <persName ref="[authorityLink]">Gilliéron</persName>, mit <persName ref="[authorityLink]">Jud</persName> wie mit <persName ref="[authorityLink]">El. Richter</persName>?</p>
+            <p>
+               <persName ref="[authorityLink]">M.-L.</persName> ist natürlich vor allem ein Schweizer – verschwiegen, nicht leicht zugänglich, aber bei näherem Kennenlernen tiefgründig und denkt sich über manche Dinge eine Masse, was man nicht bei ihm vermutet. Warum sollen wir nicht hierin auch die Persönlichkeit respektieren? <persName ref="[authorityLink]">
 M.-L.</persName> findet wieder, Sie wären zurückhaltend gewesen!</p>
-        <p>Die Detail-Gravamina (nicht erwiderte Bemerke oder Nicht-Gratulieren u.dgl.) sind doch wohl nur Anlässe, nicht Ursachen einer nicht ganz wolkenlosen Beziehung. Da sagen bekanntlich beide Teile, der andere habe angefangen, während "es" angefangen hat. Gerade eine gewisse edle Männlichkeit und Geradheit fällt uns Österreichern im Gegensatz zur hiesigen Waschlappigkeit wohltuend bei ihm auf!</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName> ist gewiß nicht humorvoll und doch atmet sein Familienleben etwas vom deutschen Hause Eigenes, einen Zauber der einfachen Redlichkeit und Herzlichkeit, den jeder Einblick gewinnende nicht genug zu preisen weiß. Seine Hörer (auch die Nur-Hörsaal-Hörer) heben seine sonnige Arbeitsfreude, sein wohlwollendes Auge hervor – "Schwamm", werden Sie sagen!</p>
-        <p>Lassen Sie uns die Akten schließen! Aber verargen Sie es mir nicht, wenn ich das Sprichwort <hi
-            rend="unknown" rendition="#none">les amis de nos amis sont nos amis</hi> auch hier wahr machen möchte. Verargen Sie es meiner Jugend nicht, wenn sie noch glaubt, daß im Reiche der großen Gelehrten auch jene weltentrückte Güte herrschen sollte, die Gegensätze auflöst! Und seien Sie überzeugt, daß meine Motive durchaus uneigennützige sind: ich "habe" ja nichts "davon", wenn ich zwei mir als Vorbilder dienende Menschen "zusammenbringen" möchte, mais là, sérieusement!</p>
-        <p>So, und nun eile ich zu einer Wiederholung meines Vortrags "Spr. u. Weltgeschehen" im Volksheim!</p>
-        <closer>
-          <salute>Ergebenste Grüße vom allzeit ergebenen</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-        <postscript>
+            <p>Die Detail-Gravamina (nicht erwiderte Bemerke oder Nicht-Gratulieren u.dgl.) sind doch wohl nur Anlässe, nicht Ursachen einer nicht ganz wolkenlosen Beziehung. Da sagen bekanntlich beide Teile, der andere habe angefangen, während "es" angefangen hat. Gerade eine gewisse edle Männlichkeit und Geradheit fällt uns Österreichern im Gegensatz zur hiesigen Waschlappigkeit wohltuend bei ihm auf!</p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>
+               <persName ref="[authorityLink]">M.-L.</persName> ist gewiß nicht humorvoll und doch atmet sein Familienleben etwas vom deutschen Hause Eigenes, einen Zauber der einfachen Redlichkeit und Herzlichkeit, den jeder Einblick gewinnende nicht genug zu preisen weiß. Seine Hörer (auch die Nur-Hörsaal-Hörer) heben seine sonnige Arbeitsfreude, sein wohlwollendes Auge hervor – "Schwamm", werden Sie sagen!</p>
+            <p>Lassen Sie uns die Akten schließen! Aber verargen Sie es mir nicht, wenn ich das Sprichwort <hi rend="unknown" rendition="#none">les amis de nos amis sont nos amis</hi> auch hier wahr machen möchte. Verargen Sie es meiner Jugend nicht, wenn sie noch glaubt, daß im Reiche der großen Gelehrten auch jene weltentrückte Güte herrschen sollte, die Gegensätze auflöst! Und seien Sie überzeugt, daß meine Motive durchaus uneigennützige sind: ich "habe" ja nichts "davon", wenn ich zwei mir als Vorbilder dienende Menschen "zusammenbringen" möchte, mais là, sérieusement!</p>
+            <p>So, und nun eile ich zu einer Wiederholung meines Vortrags "Spr. u. Weltgeschehen" im Volksheim!</p>
+            <closer>
+               <salute>Ergebenste Grüße vom allzeit ergebenen</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>13. III. Nun habe ich diesen Brief noch etwas abliegen lassen. Inzwischen trifft Ihre Karte ein, die den Schweizer Einwand auch erwähnt. Ferner noch etwas: gewiß, Sie sind eine monographische Natur – aber eben deshalb sind Sie jedem Verfasser eines Kompendiums überlegen. Denn die Einzelfrage läßt sich so ausschöpfen wie der aufs Ganze bedachte Verfasser nicht konnte. Jeder Dissertationsschmierant hat es leicht, seine Überlegenheit einem <persName ref="[authorityLink]">M-L</persName> gegenüber zu beweisen, der natürlich sich nicht in eine Frage versenken konnte. Der Wert der Kompendien ist ja eben, daß sie das Wissensrepertorium einer Zeit zusammenfassen – um die Lücken, Mängel, Widersprüche derselben umso klarer aufzudecken.<persName ref="[authorityLink]"> M.-L</persName>'s REW mag manchen Mangel haben – aber sein größter Vorzug ist: es ist da. Seine Mängel sind schließlich identisch mit denen unserer Sprachwissenschaft. Ein <persName ref="[authorityLink]">Saussure</persName> mag fehlerhaft gedacht sein – er ist eben da, um von Schuchardt verbessert zu werden. Aber ohne REW, ohne Cours de Ling. gén. wären wir ja gar nicht imstande, weiterzukommen!</p>
+               <p>
+                  <persName ref="[authorityLink]">E.R</persName>'s Artikel ist tatsächlich in der <hi rend="unknown" rendition="#none">
+Urania</hi>-Ztschr. erschienen – wie ich glaube: das Format stimmt nämlich mit allen möglichen Zts. überein.<note n="3" place="foot" type="editorial">
+                     <persName ref="[authorityLink]">Elise Richter</persName> hält in diesen Jahren regelmäßig Kurse an den Wiener Volkshochschulen, insbesondere zu zeitgenössischer romanischer Literatur. Die am weitesten ausgearbeitete Version ihrer Beschäftigung mit "boche" findet sich jedoch in <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4069">
+                           <hi rend="unknown" rendition="#none">Zeitschrift für französische Sprache und Literatur</hi> XLV (1919): 121-135.</ref>
+                     </bibl> In der 
 
-          <p>13. III. Nun habe ich diesen Brief noch etwas abliegen lassen. Inzwischen trifft Ihre Karte ein, die den Schweizer Einwand auch erwähnt. Ferner noch etwas: gewiß, Sie sind eine monographische Natur – aber eben deshalb sind Sie jedem Verfasser eines Kompendiums überlegen. Denn die Einzelfrage läßt sich so ausschöpfen wie der aufs Ganze bedachte Verfasser nicht konnte. Jeder Dissertationsschmierant hat es leicht, seine Überlegenheit einem <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName> gegenüber zu beweisen, der natürlich sich nicht in eine Frage versenken konnte. Der Wert der Kompendien ist ja eben, daß sie das Wissensrepertorium einer Zeit zusammenfassen – um die Lücken, Mängel, Widersprüche derselben umso klarer aufzudecken.<persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2180"> M.-L</persName>'s REW mag manchen Mangel haben – aber sein größter Vorzug ist: es ist da. Seine Mängel sind schließlich identisch mit denen unserer Sprachwissenschaft. Ein <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3305">Saussure</persName> mag fehlerhaft gedacht sein – er ist eben da, um von Schuchardt verbessert zu werden. Aber ohne REW, ohne Cours de Ling. gén. wären wir ja gar nicht imstande, weiterzukommen!</p>
-          <p>
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2516">E.R</persName>'s Artikel ist tatsächlich in der <hi
-              rend="unknown"
-              rendition="#none">
-Urania</hi>-Ztschr. erschienen – wie ich glaube: das Format stimmt nämlich mit allen möglichen Zts. überein.<note
-              n="3" place="foot" type="editorial">
-              <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2516">Elise Richter</persName> hält in diesen Jahren regelmäßig Kurse an den Wiener Volkshochschulen, insbesondere zu zeitgenössischer romanischer Literatur. Die am weitesten ausgearbeitete Version ihrer Beschäftigung mit "boche" findet sich jedoch in <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4069">
-                  <hi rend="unknown" rendition="#none">Zeitschrift für französische Sprache und Literatur</hi> XLV (1919): 121-135.</ref>
-              </bibl> In der 
-
-<hi rend="unknown"
-                rendition="#none">Urania</hi>-Zeitschrift findet sich jedenfalls kein Artikel von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2516">E. Richter</persName>.</note> Das kommt davon, wenn Separata [...].</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+<hi rend="unknown" rendition="#none">Urania</hi>-Zeitschrift findet sich jedenfalls kein Artikel von <persName ref="[authorityLink]">E. Richter</persName>.</note> Das kommt davon, wenn Separata [...].</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

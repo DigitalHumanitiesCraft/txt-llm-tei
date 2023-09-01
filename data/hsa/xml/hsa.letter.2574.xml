@@ -1,617 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Lorenz Diefenbach an Hugo Schuchardt (06-02298)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1388">
-            <forename>Lorenz</forename>
-            <surname>Diefenbach</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Luca</forename>
-            <surname>Melchior</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2574" type="PID">o:hsa.letter.2574</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">06-02298</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">02298</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1388">
-                <forename>Lorenz</forename>
-                <surname>Diefenbach</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="3" unit="pages">3 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.284" ref="http://sws.geonames.org/2925533">Frankfurt am Main</origPlace>
-              <origDate ana="dcterms:created" when="1869-07-12">1869-07-12</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Luca</forename>
-              <surname>Melchior</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Lorenz Diefenbach und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1388"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2574">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1388" ref="https://viaf.org/viaf/69014898">
-            <forename>Lorenz</forename>
-            <surname>Diefenbach</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.284" key="#GID.1" ref="http://sws.geonames.org/2925533">Frankfurt am Main</placeName>
-          <date when="1869-07-12">1869-07-12</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Frankfurt am Main</settlement>
-                <name ref="http://geonames.org/2925533" type="fcode:PPLA3">Frankfurt am Main</name>
-                <location>
-                  <geo>8.68417,50.11552</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="context:hsa.letters.1388" type="context">
-                        Korrespondenz Lorenz Diefenbach - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.531" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturhinweise / bibliographische Angaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.840" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachkontakt (allgemein)</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.3212" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rätoromanische Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2574" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2574" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2574" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2574" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Frankfurt M (Uhlandstr. 24) 12/VII 69.</dateline>
-        <opener>Geehrter Herr!</opener>
-        <p>
-          <foreign xml:lang="it">Voi ch’entrate, lasciate ogni speranza</foreign>!<note n="1" place="foot"
-              type="editorial"> Vgl. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4219">Dantes</persName>
-            <hi rend="unknown" rendition="#none">Commedia</hi>, <hi rend="unknown"
-              rendition="#none">Inferno</hi>, III, 9: "<foreign
-            xml:lang="it">Lasciate ogni speranza, voi ch'entrate</foreign>" (Inschrift auf dem Höllentor).</note> i.e. Erwarten Sie ungefähr Nichts von dem folgenden Plunder aus meinen, zumeist vorlängst niedergeschriebenen Brouillons, die der ordnenden, streichenden, ausarbeitenden Hand erst noch harren. Ich setze voraus, daß Sie Conradi<note
-            n="2" place="foot" type="editorial"> Conradi 1828 [1823]. Dieses Werk war Schuchardt schon von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1671">Gurlitt</persName> in einem 1866 datierten Brief empfohlen worden (vgl. den <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.1507">Brief Gurlitts in der Edition von Olet (2015)</ref>).</note>, Carîš<note
-            n="3" place="foot" type="editorial"> Carisch (1848).</note> nebst Fts.<note n="4" place="foot"
-              type="editorial"> Möglicherweise Carisch (1852). Auch dieses Werk war Schuchardt von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1671">Gurlitt</persName> in seinem Brief aus dem Jahr 1866 geannt worden (vgl. den <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.1507">Brief Gurlitts in der Edition von Olet (2015)</ref>).</note>, Walter<note
-            n="5" place="foot"
-              type="editorial"> Walter (1832). Gurlitt hatte Schuchardt im schon erwähnten Brief aus dem Jahre 1866 (gl. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.1507">Olet 2015</ref>) auch dieses Werk schon genannt.</note>, Fuchs<note
-            n="6" place="foot"
-            type="editorial"> Wahrscheinlich ist Fuchs (1849) – eher als Fuchs (1840) – gemeint.</note>, Diez<note n="7"
-            place="foot" type="editorial"> Wahrscheinlich <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3726">Diez' Etymologisches Wörterbuch</ref>
-            </bibl> (z.B. <hi rendition="#sup">
-2</hi>1861-1862).</note>, Tobler<note n="8" place="foot"
-            type="editorial"> Vermutlich Tobler (1837).</note> (aus welchem vermuthl auch einige der folg. Ww. stammen, bei welchen ich die Quelle nicht notiert hatte), auch meine Celtica<note
-            n="9" place="foot" type="editorial"> Diefenbach (1839-1840).</note>, Goth. Wb.<note n="10" place="foot"
-            type="editorial"> Diefenbach (1851).</note>, Orig. Eur.<note n="11" place="foot" type="editorial"> Diefenbach (1861).</note>, zur Hand haben oder excerpierten – wesshalb ich nur gelegentlich auf diese Bücher verweise.</p>
-        <p>vorderrhein. crestašit Alpenrose; vgl. Carîš v. Crest<note n="12" place="foot"
-              type="editorial"> In Carisch (1848: 36) ist zu lesen: "Crest, <hi rend="unknown"
-              rendition="#none">m</hi>. craista, coligna, E. Hügel, <hi rend="unknown"
-              rendition="#none">m</hi>., Anhöhe, <hi rend="unknown" rendition="#none">f</hi>., cresta, <hi
-              rend="unknown" rendition="#none">f</hi>., craista, Hühnerkamm, <hi rend="unknown"
-              rendition="#none">m</hi>., Hügel, <hi rend="unknown"
-            rendition="#none">f</hi>. alzar la -, sich erheben, stolz werden. avair la -, coathscnea, 3. gut aussehen. crestas cod - chied, fluors d'god, 3. Alpenrosen".</note>. – endutgiel &amp;c i. q. frz. andouille mlt. inductilis, ging auch ins <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">
-Baskische</ref> &amp;c über. Andere Wurstnamen z.b. mu- ital. mo-rtadella; ligoiña, ligjoña &amp;c. vgl. Car. v. Ligiar.<note
-            n="13" place="foot"
-              type="editorial"> Dort ist zu lesen "Ligiar, liar - er, binden, knüpfen, fesseln. It. <foreign
-            xml:lang="it">legare</foreign>. ligiar en cudischs, lier -, Bücher einbinden." (Carisch 1848: 82).</note> – Zu bear &amp; guari noch bayonn. nabére = frz. <foreign
-            xml:lang="fr">naguère</foreign>; oberlimosin. gro = frz. guère. – barbalada Obstkuchen, aus frz. marmelade? – bulla, billa Schmetterling simil.; vgl. u.a. dän bille Käfer? Viele andere Insektnamen klingen an. – zinzla, zinsla o. der. kaum: ital. <foreign
-            xml:lang="it">cencio</foreign> &amp;c.; gardén zëntenes Lederstreif erinnert an centone. – cruč krumm; s.m. Haken (zum Herabziehen der Kirschenäste); cenča Krücke u.s.w.; vgl. Car. v. Crutsch,<note
-            n="14" place="foot" type="editorial"> An der angegebenen Stelle liest man "Crutsch, <hi rend="unknown" rendition="#none">a.</hi> crotsch, 2. Croatsch, 3. gebogen, gebeugt. ir -, sdrinà - ò, gebogen, krumm gehen" (Carisch 1848: 36).</note>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">Diez</persName> v. Croccia.<note n="15"
-            place="foot" type="editorial"> In Diez (<hi rendition="#sup">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2574" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Frankfurt M (Uhlandstr. 24) 12/VII 69.</dateline>
+            <opener>Geehrter Herr!</opener>
+            <p>
+               <foreign xml:lang="it">Voi ch’entrate, lasciate ogni speranza</foreign>!<note n="1" place="foot" type="editorial"> Vgl. <persName ref="[authorityLink]">Dantes</persName>
+                  <hi rend="unknown" rendition="#none">Commedia</hi>, <hi rend="unknown" rendition="#none">Inferno</hi>, III, 9: "<foreign xml:lang="it">Lasciate ogni speranza, voi ch'entrate</foreign>" (Inschrift auf dem Höllentor).</note> i.e. Erwarten Sie ungefähr Nichts von dem folgenden Plunder aus meinen, zumeist vorlängst niedergeschriebenen Brouillons, die der ordnenden, streichenden, ausarbeitenden Hand erst noch harren. Ich setze voraus, daß Sie Conradi<note n="2" place="foot" type="editorial"> Conradi 1828 [1823]. Dieses Werk war Schuchardt schon von <persName ref="[authorityLink]">Gurlitt</persName> in einem 1866 datierten Brief empfohlen worden (vgl. den <ref target="https://gams.uni-graz.at/o:hsa.letter.1507">Brief Gurlitts in der Edition von Olet (2015)</ref>).</note>, Carîš<note n="3" place="foot" type="editorial"> Carisch (1848).</note> nebst Fts.<note n="4" place="foot" type="editorial"> Möglicherweise Carisch (1852). Auch dieses Werk war Schuchardt von <persName ref="[authorityLink]">Gurlitt</persName> in seinem Brief aus dem Jahr 1866 geannt worden (vgl. den <ref target="https://gams.uni-graz.at/o:hsa.letter.1507">Brief Gurlitts in der Edition von Olet (2015)</ref>).</note>, Walter<note n="5" place="foot" type="editorial"> Walter (1832). Gurlitt hatte Schuchardt im schon erwähnten Brief aus dem Jahre 1866 (gl. <ref target="https://gams.uni-graz.at/o:hsa.letter.1507">Olet 2015</ref>) auch dieses Werk schon genannt.</note>, Fuchs<note n="6" place="foot" type="editorial"> Wahrscheinlich ist Fuchs (1849) – eher als Fuchs (1840) – gemeint.</note>, Diez<note n="7" place="foot" type="editorial"> Wahrscheinlich <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3726">Diez' Etymologisches Wörterbuch</ref>
+                  </bibl> (z.B. <hi rendition="#sup">
+2</hi>1861-1862).</note>, Tobler<note n="8" place="foot" type="editorial"> Vermutlich Tobler (1837).</note> (aus welchem vermuthl auch einige der folg. Ww. stammen, bei welchen ich die Quelle nicht notiert hatte), auch meine Celtica<note n="9" place="foot" type="editorial"> Diefenbach (1839-1840).</note>, Goth. Wb.<note n="10" place="foot" type="editorial"> Diefenbach (1851).</note>, Orig. Eur.<note n="11" place="foot" type="editorial"> Diefenbach (1861).</note>, zur Hand haben oder excerpierten – wesshalb ich nur gelegentlich auf diese Bücher verweise.</p>
+            <p>vorderrhein. crestašit Alpenrose; vgl. Carîš v. Crest<note n="12" place="foot" type="editorial"> In Carisch (1848: 36) ist zu lesen: "Crest, <hi rend="unknown" rendition="#none">m</hi>. craista, coligna, E. Hügel, <hi rend="unknown" rendition="#none">m</hi>., Anhöhe, <hi rend="unknown" rendition="#none">f</hi>., cresta, <hi rend="unknown" rendition="#none">f</hi>., craista, Hühnerkamm, <hi rend="unknown" rendition="#none">m</hi>., Hügel, <hi rend="unknown" rendition="#none">f</hi>. alzar la -, sich erheben, stolz werden. avair la -, coathscnea, 3. gut aussehen. crestas cod - chied, fluors d'god, 3. Alpenrosen".</note>. – endutgiel &amp;c i. q. frz. andouille mlt. inductilis, ging auch ins <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">
+Baskische</ref> &amp;c über. Andere Wurstnamen z.b. mu- ital. mo-rtadella; ligoiña, ligjoña &amp;c. vgl. Car. v. Ligiar.<note n="13" place="foot" type="editorial"> Dort ist zu lesen "Ligiar, liar - er, binden, knüpfen, fesseln. It. <foreign xml:lang="it">legare</foreign>. ligiar en cudischs, lier -, Bücher einbinden." (Carisch 1848: 82).</note> – Zu bear &amp; guari noch bayonn. nabére = frz. <foreign xml:lang="fr">naguère</foreign>; oberlimosin. gro = frz. guère. – barbalada Obstkuchen, aus frz. marmelade? – bulla, billa Schmetterling simil.; vgl. u.a. dän bille Käfer? Viele andere Insektnamen klingen an. – zinzla, zinsla o. der. kaum: ital. <foreign xml:lang="it">cencio</foreign> &amp;c.; gardén zëntenes Lederstreif erinnert an centone. – cruč krumm; s.m. Haken (zum Herabziehen der Kirschenäste); cenča Krücke u.s.w.; vgl. Car. v. Crutsch,<note n="14" place="foot" type="editorial"> An der angegebenen Stelle liest man "Crutsch, <hi rend="unknown" rendition="#none">a.</hi> crotsch, 2. Croatsch, 3. gebogen, gebeugt. ir -, sdrinà - ò, gebogen, krumm gehen" (Carisch 1848: 36).</note>
+               <persName ref="[authorityLink]">Diez</persName> v. Croccia.<note n="15" place="foot" type="editorial"> In Diez (<hi rendition="#sup">
 3</hi>1869: 145) ist zu lesen: "<foreign xml:lang="it">Croccia, gruccia</foreign>
-            <hi rend="unknown" rendition="#none">it. krücke</hi>, <foreign xml:lang="it">
+                  <hi rend="unknown" rendition="#none">it. krücke</hi>, <foreign xml:lang="it">
 cruccia</foreign>
-            <hi rend="unknown" rendition="#none">grabscheit, altsp. </hi>croza, <hi rend="unknown"
-              rendition="#none">pr.</hi> crossa, <hi rend="unknown" rendition="#none">fr.</hi>
-            <foreign xml:lang="fr">crosse</foreign>
-            <hi rend="unknown" rendition="#none">krummstab. Die herleitung aus dem fr.</hi>
-            <foreign xml:lang="fr">croc</foreign>
-            <hi rend="unknown" rendition="#none">(haken) findet Schwierigkeit im buchstaben</hi>, <hi rend="unknown"
-              rendition="#none">dem nur ein fr.</hi> croche <hi rend="unknown" rendition="#none">gerecht wäre</hi>. <hi
-              rend="unknown" rendition="#none">Wie</hi> pancia, panza, panse <hi rend="unknown"
-              rendition="#none">aus</hi> pantex, <hi rend="unknown" rendition="#none">so konnte</hi> croccia <hi
-              rend="unknown" rendition="#none">mit seinen genossen aus</hi> crux, <hi rend="unknown"
-              rendition="#none">leichter noch, in betracht der doppelconsonanz</hi> cc, ss, <hi rend="unknown" rendition="#none">aus</hi>
-            <hi rend="unknown" rendition="#none">dem adj.</hi> crucea <hi rend="unknown"
-              rendition="#none">entstehen, woraus auch ahd.</hi> krukja <hi rend="unknown"
-            rendition="#none">entstanden scheint</hi>".</note> – cameg Blitzer (vgl. Car. v. Camiar)<note n="16"
-            place="foot"
-              type="editorial"> "Camiar, - egiar, 1. dar chalavernas, 2. straglüschir, 3. blitzen. It. <foreign xml:lang="it">
-              <hi rend="unknown" rendition="#none">lampeggiare</hi>
-            </foreign>. camèg, <hi rend="unknown" rendition="#none">m.</hi>, chalaverna, <hi rend="unknown"
-              rendition="#none">f</hi>. lintscherna, <hi rend="unknown" rendition="#none">m</hi>. E. Blitz, <hi
-              rend="unknown"
-            rendition="#none">m</hi>." (Carisch 1848: 25).</note> i. q. poitevin. chaline f. – čutt (auch schweiz. deutsch) m. Lamm; vgl. Car h. v.,<note
-            n="17" place="foot" type="editorial"> Vgl. Carisch (1848: 171) "Tschutt, <hi rend="unknown"
-              rendition="#none">m</hi>. tschott, 2. Agnè, 3. Lamm, <hi rend="unknown"
-            rendition="#none">m</hi>. Liebkosungsname für Kinder. Meu-, mein Lämmchen, Herz!".</note> Stalder v. Tschutten<note
-            n="18" place="foot" type="editorial"> Vgl. Stalder (1806: 322): "Tschutten <hi rend="unknown"
-            rendition="#none">v. act.</hi> – Kinder mit Kühmilch nähren, statt sie zu säugen; Tschutterinn, die dies versteht; der Tschutt, ein mit Kühmilch ernährtes Schaaf, und überhaupt Benennung eines Lammes im ersten Jahre; das Tschuttje, Schmeichelwort für mignon. (Vd.)"</note> – čuvicca f. Eule i. q. schwz. Tschawicke f ¿: <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.226">
-frz</ref>. <foreign
-            xml:lang="fr">chevèche</foreign> prov. cabeca Käuzchen, versch. von den Ww. bei Diez II c v. Choe?<note
-            n="19" place="foot" type="editorial"> Vgl Diez (<hi rendition="#sup">3</hi>1870: 256-257): "Choe <hi
-              rend="unknown" rendition="#none">alfr. </hi>
-            <hi rend="unknown" rendition="#none">Bert. p. 50, pic.</hi> cave, <hi rend="unknown"
-              rendition="#none">pr.</hi> cau, chau '<hi rend="unknown" rendition="#none">bubo</hi>'<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">grabscheit, altsp. </hi>croza, <hi rend="unknown" rendition="#none">pr.</hi> crossa, <hi rend="unknown" rendition="#none">fr.</hi>
+                  <foreign xml:lang="fr">crosse</foreign>
+                  <hi rend="unknown" rendition="#none">krummstab. Die herleitung aus dem fr.</hi>
+                  <foreign xml:lang="fr">croc</foreign>
+                  <hi rend="unknown" rendition="#none">(haken) findet Schwierigkeit im buchstaben</hi>, <hi rend="unknown" rendition="#none">dem nur ein fr.</hi> croche <hi rend="unknown" rendition="#none">gerecht wäre</hi>. <hi rend="unknown" rendition="#none">Wie</hi> pancia, panza, panse <hi rend="unknown" rendition="#none">aus</hi> pantex, <hi rend="unknown" rendition="#none">so konnte</hi> croccia <hi rend="unknown" rendition="#none">mit seinen genossen aus</hi> crux, <hi rend="unknown" rendition="#none">leichter noch, in betracht der doppelconsonanz</hi> cc, ss, <hi rend="unknown" rendition="#none">aus</hi>
+                  <hi rend="unknown" rendition="#none">dem adj.</hi> crucea <hi rend="unknown" rendition="#none">entstehen, woraus auch ahd.</hi> krukja <hi rend="unknown" rendition="#none">entstanden scheint</hi>".</note> – cameg Blitzer (vgl. Car. v. Camiar)<note n="16" place="foot" type="editorial"> "Camiar, - egiar, 1. dar chalavernas, 2. straglüschir, 3. blitzen. It. <foreign xml:lang="it">
+                     <hi rend="unknown" rendition="#none">lampeggiare</hi>
+                  </foreign>. camèg, <hi rend="unknown" rendition="#none">m.</hi>, chalaverna, <hi rend="unknown" rendition="#none">f</hi>. lintscherna, <hi rend="unknown" rendition="#none">m</hi>. E. Blitz, <hi rend="unknown" rendition="#none">m</hi>." (Carisch 1848: 25).</note> i. q. poitevin. chaline f. – čutt (auch schweiz. deutsch) m. Lamm; vgl. Car h. v.,<note n="17" place="foot" type="editorial"> Vgl. Carisch (1848: 171) "Tschutt, <hi rend="unknown" rendition="#none">m</hi>. tschott, 2. Agnè, 3. Lamm, <hi rend="unknown" rendition="#none">m</hi>. Liebkosungsname für Kinder. Meu-, mein Lämmchen, Herz!".</note> Stalder v. Tschutten<note n="18" place="foot" type="editorial"> Vgl. Stalder (1806: 322): "Tschutten <hi rend="unknown" rendition="#none">v. act.</hi> – Kinder mit Kühmilch nähren, statt sie zu säugen; Tschutterinn, die dies versteht; der Tschutt, ein mit Kühmilch ernährtes Schaaf, und überhaupt Benennung eines Lammes im ersten Jahre; das Tschuttje, Schmeichelwort für mignon. (Vd.)"</note> – čuvicca f. Eule i. q. schwz. Tschawicke f ¿: <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">
+frz</ref>. <foreign xml:lang="fr">chevèche</foreign> prov. cabeca Käuzchen, versch. von den Ww. bei Diez II c v. Choe?<note n="19" place="foot" type="editorial"> Vgl Diez (<hi rendition="#sup">3</hi>1870: 256-257): "Choe <hi rend="unknown" rendition="#none">alfr. </hi>
+                  <hi rend="unknown" rendition="#none">Bert. p. 50, pic.</hi> cave, <hi rend="unknown" rendition="#none">pr.</hi> cau, chau '<hi rend="unknown" rendition="#none">bubo</hi>'<hi rend="unknown" rendition="#none">
  LR. </hi>
-            <hi rend="unknown" rendition="#none">VI, 9 uhu. Daher fr.</hi>
-            <foreign xml:lang="fr">chouette</foreign>, <hi rend="unknown" rendition="#none">
-pic.</hi> cavette <hi
-              rend="unknown" rendition="#none">kauz (kleiner uhu), hieraus entlehnt it.</hi> ciovetta, civetta, <hi
-              rend="unknown" rendition="#none">venez.</hi> zovetta, <hi rend="unknown"
-              rendition="#none">
-wal.</hi> ciovíce¦; <hi rend="unknown" rendition="#none">dsgl. pic.</hi> cawan, <hi
-              rend="unknown" rendition="#none">in Anjou</hi> chouan, <hi rend="unknown"
-              rendition="#none">in Berry </hi>chavant, <hi rend="unknown" rendition="#none">pr.</hi> chauana, <hi
-              rend="unknown" rendition="#none">
-bret.</hi> kaouan, <hi rend="unknown"
-              rendition="#none">schon dem früheren mlatein bekannt:</hi> cauani '<hi rend="unknown"
-              rendition="#none">ululae aves</hi>'<hi rend="unknown" rendition="#none"> Gl. erford. p. 283<hi rendition="#sup">b</hi>
-            </hi>, strix vel cauanna <hi rend="unknown"
-              rendition="#none">Gl. Älfrici,</hi> noctua corvus nocturnus vel cauannus <hi rend="unknown"
-              rendition="#none">Gl. aug. Rz. Franz.</hi> chat-huant <hi rend="unknown"
-              rendition="#none">eule (höhnende katze) ist vielleicht nur eine umdeutdung von</hi> chouan, <hi
-              rend="unknown"
-              rendition="#none">doch kommt auch das p. 41. Desselben stammes scheint der name eines andern vogels, pr.</hi> caucala, <hi
-              rend="unknown" rendition="#none">fr.</hi> choucas <hi rend="unknown"
-              rendition="#none">nebelkrähe, auch sp.</hi> chova, <hi rend="unknown"
-              rendition="#none">das ganz zu altfr.</hi> choe <hi rend="unknown"
-              rendition="#none">stimmt, dsgl. sp.</hi> choya, <hi rend="unknown"
-              rendition="#none">engl,</hi> chowgh, <hi rend="unknown"
-                rendition="#none">vgl. in einem lat.-dtschen glossar Hattemer I, 290<hi rendition="#sup">
+                  <hi rend="unknown" rendition="#none">VI, 9 uhu. Daher fr.</hi>
+                  <foreign xml:lang="fr">chouette</foreign>, <hi rend="unknown" rendition="#none">
+pic.</hi> cavette <hi rend="unknown" rendition="#none">kauz (kleiner uhu), hieraus entlehnt it.</hi> ciovetta, civetta, <hi rend="unknown" rendition="#none">venez.</hi> zovetta, <hi rend="unknown" rendition="#none">
+wal.</hi> ciovíce¦; <hi rend="unknown" rendition="#none">dsgl. pic.</hi> cawan, <hi rend="unknown" rendition="#none">in Anjou</hi> chouan, <hi rend="unknown" rendition="#none">in Berry </hi>chavant, <hi rend="unknown" rendition="#none">pr.</hi> chauana, <hi rend="unknown" rendition="#none">
+bret.</hi> kaouan, <hi rend="unknown" rendition="#none">schon dem früheren mlatein bekannt:</hi> cauani '<hi rend="unknown" rendition="#none">ululae aves</hi>'<hi rend="unknown" rendition="#none"> Gl. erford. p. 283<hi rendition="#sup">b</hi>
+                  </hi>, strix vel cauanna <hi rend="unknown" rendition="#none">Gl. Älfrici,</hi> noctua corvus nocturnus vel cauannus <hi rend="unknown" rendition="#none">Gl. aug. Rz. Franz.</hi> chat-huant <hi rend="unknown" rendition="#none">eule (höhnende katze) ist vielleicht nur eine umdeutdung von</hi> chouan, <hi rend="unknown" rendition="#none">doch kommt auch das p. 41. Desselben stammes scheint der name eines andern vogels, pr.</hi> caucala, <hi rend="unknown" rendition="#none">fr.</hi> choucas <hi rend="unknown" rendition="#none">nebelkrähe, auch sp.</hi> chova, <hi rend="unknown" rendition="#none">das ganz zu altfr.</hi> choe <hi rend="unknown" rendition="#none">stimmt, dsgl. sp.</hi> choya, <hi rend="unknown" rendition="#none">engl,</hi> chowgh, <hi rend="unknown" rendition="#none">vgl. in einem lat.-dtschen glossar Hattemer I, 290<hi rendition="#sup">
 b</hi>
-            </hi> chuvue '<hi rend="unknown" rendition="#none">tacha</hi>'<hi rend="unknown"
-              rendition="#none"> (dohle). Der stamm mag deutsch sein: mhd.</hi> chouh <hi rend="unknown"
-                rendition="#none">eule s. Grimm I<hi rendition="#sup">2</hi>, 178, ein vogel</hi> cauha <hi
-              rend="unknown" rendition="#none">findet sich L. Alam. 99, 13; vgl. ndl.</hi> kauw <hi rend="unknown"
-              rendition="#none">krähe</hi>, <hi rend="unknown" rendition="#none">engl.</hi> kaw <hi rend="unknown"
-            rendition="#none">
-krächzen</hi>".</note> – ensiel Kitze, Zicklein &amp;c., s. Car. v. Ansiel.<note n="20"
-            place="foot" type="editorial"> Vgl. Carisch (1848: 7) "Ansiel, <hi rend="unknown"
-            rendition="#none">m</hi>. 1. Asöl, 2. Usöl, 3. Männliches Zieglein".</note> – empelar Thiere führen. – enfarlar Bäume impfen, ¿: lt. ferula? – fardar, fredar riechen, aus fragrare, vgl. Diez h. v.<note
-            n="21" place="foot" type="editorial"> Vgl. Diez (<hi
-              rendition="#sup">3</hi>1869: 188) liest man: "Fragrare, fiagare, flairar, <hi rend="unknown"
-              rendition="#none">sämmtlich in den sard. mundarten</hi>, <hi rend="unknown"
-              rendition="#none">pr. cat</hi>. flairar, <hi rend="unknown" rendition="#none">fr.</hi> flairer, <hi
-              rend="unknown" rendition="#none">pg.</hi> cheirar (ch = fl) <hi rend="unknown"
-              rendition="#none">duften</hi>;<hi rend="unknown" rendition="#none"> sbst. sard.</hi> fragu, fiagu, <hi
-              rend="unknown" rendition="#none">altfr. pic.</hi> flair, <hi rend="unknown"
-              rendition="#none">
-pg.</hi> cheiro, <hi rend="unknown" rendition="#none">cat. fem. </hi>flaira <hi
-              rend="unknown" rendition="#none">duft, auch cornisch</hi> flair <hi rend="unknown"
-              rendition="#none">Zeuß I, 189</hi>;<hi rend="unknown" rendition="#none"> von</hi> fragrare, <hi
-              rend="unknown" rendition="#none">durch dissimilation</hi> flagrare. – <hi rend="unknown"
-              rendition="#none">Altfr.</hi> flairer <hi rend="unknown"
-              rendition="#none">hieß sowohl olere wie odorari; die neue sprache beschränkt dieses verbum auf letztere bedeutung und drückt olere mit</hi> fleurer <hi
-              rend="unknown"
-            rendition="#none">aus. Bemerkungen darüber bei Gachet 213. 214</hi>". </note> – estri Firste. – fig, fich milan. fiss sehr; vgl. m. Goth. Wb. F. 30.<note
-            n="22" place="foot" type="editorial"> Vgl. Diefenbach (1851 Bd. I: 373-374): "30. Fetjan schmücken, <foreign
-                xml:lang="el">
-κοσμεῖν</foreign> 1 Tim. 2, 9. feteins Schmuck, καταστολή ebds. (Massmann in Münch. Anz. 1840.)<p>LG. vergleichen <hi
-                rend="unknown" rendition="#none">fitan</hi> u. Nr. 39. und <hi rend="unknown"
-                rendition="#none">fett</hi> — wiefern? Wir halten mit Massmann Nr. 24. <hi rend="unknown"
-                rendition="#none">b</hi>. nah vrw., vgl. u. a. altn. <hi rend="unknown"
-                rendition="#none">fata</hi> vestire <hi rend="unknown"
-                rendition="#none">fat</hi> vestis; vinculum vgl. (Band als Schmuck und Feßel) <hi rend="unknown"
-                rendition="#none">fetill</hi> ags. <hi rend="unknown" rendition="#none">fetel</hi> ahd. <hi
-                rend="unknown" rendition="#none">
-vezil</hi> balteus sp. pg. <hi rend="unknown"
-                rendition="#none">fita</hi> (Dz. 1, 53.) sard. <hi rend="unknown" rendition="#none">fetta</hi> it. <hi
-                rend="unknown" rendition="#none">fettuccia</hi> Band, Binde: wallon. <hi rend="unknown"
-                rendition="#none">fessi</hi> schnüren? ferner altn. <hi rend="unknown"
-                rendition="#none">fit</hi> f. margo, planities <hi rend="unknown"
-                rendition="#none">pinguis</hi> et palustris (<hi rend="unknown"
-                rendition="#none">fita</hi> f. pinguedo, <hi rend="unknown" rendition="#none">Fette</hi>); <hi
-                rend="unknown" rendition="#none">î ref</hi> operum textilium limbus = dän. <hi rend="unknown"
-                rendition="#none">fid</hi>, fed n. ahd. <hi rend="unknown"
-                rendition="#none">fiza, vitza</hi> f. licium = mhd. <hi rend="unknown"
-                rendition="#none">vitze</hi> f. <hi rend="unknown" rendition="#none">vitz</hi> m. nhd. <hi
-                rend="unknown" rendition="#none">fitze</hi> f.; nnd. <hi rend="unknown"
-                rendition="#none">visse</hi> (Nebenstamm?) id.; Falte = altn. <hi rend="unknown"
-                rendition="#none">fit</hi> ruga, plica (nicht bei Biörn) id. mit dem obigen? <hi rend="unknown"
-                rendition="#none">fitja</hi> nhd. <hi rend="unknown"
-                rendition="#none">fitzen</hi> (Frisch) plicare. e. (oxford.) <hi rend="unknown"
-                rendition="#none">fittle</hi>, (craven.) <hi rend="unknown"
-                rendition="#none">fettle</hi> ornare gehört zu nnd. <hi rend="unknown"
-                rendition="#none">fisseln</hi> (vgl. o. ss aus ts?) oft putzen, reinigen und nicht zu nnd. <hi
-                rend="unknown" rendition="#none">
-fitjen</hi> mit einem Flederwisch (=<hi rend="unknown"
-                rendition="#none">
-feder</hi>wisch nnd. <hi rend="unknown"
-                rendition="#none">fitje</hi>) putzen, kehren? altn. <hi rend="unknown"
-                rendition="#none">fitla</hi> befingern: bair. allwett. fiseln, fisseln (nach Smllr h. v. nicht mit ß). Auch e. <hi
-                rend="unknown" rendition="#none">fit</hi> mag vrw. sein; vgl. u. a. ahd. <hi rend="unknown"
-                rendition="#none">fizus</hi> mhd. <hi rend="unknown"
-                rendition="#none">viez</hi> m. callidus, etwa – ein 'geputzter, geschliffener, gewichster' Kerl etc. Dagegen stammt das nah an unsre Nr. ankl. e. <hi
-                rend="unknown" rendition="#none">feat</hi> schott. <hi rend="unknown"
-                rendition="#none">fait</hi> sauber, hübsch von <hi rend="unknown" rendition="#none">factus</hi> frz. <hi
-                rend="unknown" rendition="#none">
-fait</hi> vgl. u. a. e. to <hi rend="unknown"
-                rendition="#none">feat</hi> gestalten, zierlich machen etc. c. d. <hi rend="unknown"
-                rendition="#none">
+                  </hi> chuvue '<hi rend="unknown" rendition="#none">tacha</hi>'<hi rend="unknown" rendition="#none"> (dohle). Der stamm mag deutsch sein: mhd.</hi> chouh <hi rend="unknown" rendition="#none">eule s. Grimm I<hi rendition="#sup">2</hi>, 178, ein vogel</hi> cauha <hi rend="unknown" rendition="#none">findet sich L. Alam. 99, 13; vgl. ndl.</hi> kauw <hi rend="unknown" rendition="#none">krähe</hi>, <hi rend="unknown" rendition="#none">engl.</hi> kaw <hi rend="unknown" rendition="#none">
+krächzen</hi>".</note> – ensiel Kitze, Zicklein &amp;c., s. Car. v. Ansiel.<note n="20" place="foot" type="editorial"> Vgl. Carisch (1848: 7) "Ansiel, <hi rend="unknown" rendition="#none">m</hi>. 1. Asöl, 2. Usöl, 3. Männliches Zieglein".</note> – empelar Thiere führen. – enfarlar Bäume impfen, ¿: lt. ferula? – fardar, fredar riechen, aus fragrare, vgl. Diez h. v.<note n="21" place="foot" type="editorial"> Vgl. Diez (<hi rendition="#sup">3</hi>1869: 188) liest man: "Fragrare, fiagare, flairar, <hi rend="unknown" rendition="#none">sämmtlich in den sard. mundarten</hi>, <hi rend="unknown" rendition="#none">pr. cat</hi>. flairar, <hi rend="unknown" rendition="#none">fr.</hi> flairer, <hi rend="unknown" rendition="#none">pg.</hi> cheirar (ch = fl) <hi rend="unknown" rendition="#none">duften</hi>;<hi rend="unknown" rendition="#none"> sbst. sard.</hi> fragu, fiagu, <hi rend="unknown" rendition="#none">altfr. pic.</hi> flair, <hi rend="unknown" rendition="#none">
+pg.</hi> cheiro, <hi rend="unknown" rendition="#none">cat. fem. </hi>flaira <hi rend="unknown" rendition="#none">duft, auch cornisch</hi> flair <hi rend="unknown" rendition="#none">Zeuß I, 189</hi>;<hi rend="unknown" rendition="#none"> von</hi> fragrare, <hi rend="unknown" rendition="#none">durch dissimilation</hi> flagrare. – <hi rend="unknown" rendition="#none">Altfr.</hi> flairer <hi rend="unknown" rendition="#none">hieß sowohl olere wie odorari; die neue sprache beschränkt dieses verbum auf letztere bedeutung und drückt olere mit</hi> fleurer <hi rend="unknown" rendition="#none">aus. Bemerkungen darüber bei Gachet 213. 214</hi>". </note> – estri Firste. – fig, fich milan. fiss sehr; vgl. m. Goth. Wb. F. 30.<note n="22" place="foot" type="editorial"> Vgl. Diefenbach (1851 Bd. I: 373-374): "30. Fetjan schmücken, <foreign xml:lang="el">
+κοσμεῖν</foreign> 1 Tim. 2, 9. feteins Schmuck, καταστολή ebds. (Massmann in Münch. Anz. 1840.)<p>LG. vergleichen <hi rend="unknown" rendition="#none">fitan</hi> u. Nr. 39. und <hi rend="unknown" rendition="#none">fett</hi> — wiefern? Wir halten mit Massmann Nr. 24. <hi rend="unknown" rendition="#none">b</hi>. nah vrw., vgl. u. a. altn. <hi rend="unknown" rendition="#none">fata</hi> vestire <hi rend="unknown" rendition="#none">fat</hi> vestis; vinculum vgl. (Band als Schmuck und Feßel) <hi rend="unknown" rendition="#none">fetill</hi> ags. <hi rend="unknown" rendition="#none">fetel</hi> ahd. <hi rend="unknown" rendition="#none">
+vezil</hi> balteus sp. pg. <hi rend="unknown" rendition="#none">fita</hi> (Dz. 1, 53.) sard. <hi rend="unknown" rendition="#none">fetta</hi> it. <hi rend="unknown" rendition="#none">fettuccia</hi> Band, Binde: wallon. <hi rend="unknown" rendition="#none">fessi</hi> schnüren? ferner altn. <hi rend="unknown" rendition="#none">fit</hi> f. margo, planities <hi rend="unknown" rendition="#none">pinguis</hi> et palustris (<hi rend="unknown" rendition="#none">fita</hi> f. pinguedo, <hi rend="unknown" rendition="#none">Fette</hi>); <hi rend="unknown" rendition="#none">î ref</hi> operum textilium limbus = dän. <hi rend="unknown" rendition="#none">fid</hi>, fed n. ahd. <hi rend="unknown" rendition="#none">fiza, vitza</hi> f. licium = mhd. <hi rend="unknown" rendition="#none">vitze</hi> f. <hi rend="unknown" rendition="#none">vitz</hi> m. nhd. <hi rend="unknown" rendition="#none">fitze</hi> f.; nnd. <hi rend="unknown" rendition="#none">visse</hi> (Nebenstamm?) id.; Falte = altn. <hi rend="unknown" rendition="#none">fit</hi> ruga, plica (nicht bei Biörn) id. mit dem obigen? <hi rend="unknown" rendition="#none">fitja</hi> nhd. <hi rend="unknown" rendition="#none">fitzen</hi> (Frisch) plicare. e. (oxford.) <hi rend="unknown" rendition="#none">fittle</hi>, (craven.) <hi rend="unknown" rendition="#none">fettle</hi> ornare gehört zu nnd. <hi rend="unknown" rendition="#none">fisseln</hi> (vgl. o. ss aus ts?) oft putzen, reinigen und nicht zu nnd. <hi rend="unknown" rendition="#none">
+fitjen</hi> mit einem Flederwisch (=<hi rend="unknown" rendition="#none">
+feder</hi>wisch nnd. <hi rend="unknown" rendition="#none">fitje</hi>) putzen, kehren? altn. <hi rend="unknown" rendition="#none">fitla</hi> befingern: bair. allwett. fiseln, fisseln (nach Smllr h. v. nicht mit ß). Auch e. <hi rend="unknown" rendition="#none">fit</hi> mag vrw. sein; vgl. u. a. ahd. <hi rend="unknown" rendition="#none">fizus</hi> mhd. <hi rend="unknown" rendition="#none">viez</hi> m. callidus, etwa – ein 'geputzter, geschliffener, gewichster' Kerl etc. Dagegen stammt das nah an unsre Nr. ankl. e. <hi rend="unknown" rendition="#none">feat</hi> schott. <hi rend="unknown" rendition="#none">fait</hi> sauber, hübsch von <hi rend="unknown" rendition="#none">factus</hi> frz. <hi rend="unknown" rendition="#none">
+fait</hi> vgl. u. a. e. to <hi rend="unknown" rendition="#none">feat</hi> gestalten, zierlich machen etc. c. d. <hi rend="unknown" rendition="#none">
 feature</hi> und dgl. = mhd. <hi rend="unknown" rendition="#none">
-feiten</hi>, <hi
-                rend="unknown" rendition="#none">feitieren</hi> bilden, schmücken <hi rend="unknown"
-                rendition="#none">feitûre</hi> Machwerk, Gestalt etc. rhaetor. <hi rend="unknown"
-                rendition="#none">fitar</hi> fertig machen (vgl. parare: frz. se parer; auch Ähnliches o. Nr. 24; namentlich wird das dorthin geh. swd. <hi
-                rend="unknown" rendition="#none">fatt</hi> dän. <hi rend="unknown"
-                rendition="#none">fat</hi> adj. adv. in diesem Sinne gebraucht); -si sich schmücken <hi rend="unknown"
-                rendition="#none">
+feiten</hi>, <hi rend="unknown" rendition="#none">feitieren</hi> bilden, schmücken <hi rend="unknown" rendition="#none">feitûre</hi> Machwerk, Gestalt etc. rhaetor. <hi rend="unknown" rendition="#none">fitar</hi> fertig machen (vgl. parare: frz. se parer; auch Ähnliches o. Nr. 24; namentlich wird das dorthin geh. swd. <hi rend="unknown" rendition="#none">fatt</hi> dän. <hi rend="unknown" rendition="#none">fat</hi> adj. adv. in diesem Sinne gebraucht); -si sich schmücken <hi rend="unknown" rendition="#none">
 fitament</hi> Schmuck; doch wie aus d. Lat. entstanden? vgl. etwa <foreign xml:lang="it">
-                <hi rend="unknown" rendition="#none">conficere</hi>
-              </foreign> etc.; oder spätere Schwächung des <hi rend="unknown" rendition="#none">a</hi> in <hi
-                rend="unknown" rendition="#none">i</hi>; dazu vll. rhaet. <hi rend="unknown"
-                rendition="#none">fig</hi> milan. <hi rend="unknown"
-                rendition="#none">fiss</hi> sehr, sonderbar = swz. (appenz.) <hi rend="unknown"
-                rendition="#none">fitz</hi> viel, allzu, das Tobler (etwa nach Art vieler Eigennamendeminutive) aus <hi
-                rend="unknown"
-                rendition="#none">
-viel</hi> gebildet glaubt. – Vrm. laßen sich auch zu allen diesen Ww. nicht wenige der rätselhaften mit <hi
-                rend="unknown"
-                rendition="#none">p</hi> anl. Nebenstamme stellen, denen wir schon öfters in den sächs. und nord. Sprr. begegneten. Vgl. z. B. <hi
-                rend="unknown" rendition="#none">P</hi>. 1. und nnd. <hi rend="unknown"
-                rendition="#none">peit</hi> geputzt, säuberlich, wenn nicht aus <hi rend="unknown"
-                rendition="#none">peget</hi>? vgl. swd. dän. <hi rend="unknown"
-                rendition="#none">pên</hi> id., geziert nnd. <hi rend="unknown"
-                rendition="#none">pentje</hi> geziert säuberliches Frauenzimmer? Indessen s. vrw. Ww. mit <hi
-                rend="unknown" rendition="#none">
+                        <hi rend="unknown" rendition="#none">conficere</hi>
+                     </foreign> etc.; oder spätere Schwächung des <hi rend="unknown" rendition="#none">a</hi> in <hi rend="unknown" rendition="#none">i</hi>; dazu vll. rhaet. <hi rend="unknown" rendition="#none">fig</hi> milan. <hi rend="unknown" rendition="#none">fiss</hi> sehr, sonderbar = swz. (appenz.) <hi rend="unknown" rendition="#none">fitz</hi> viel, allzu, das Tobler (etwa nach Art vieler Eigennamendeminutive) aus <hi rend="unknown" rendition="#none">
+viel</hi> gebildet glaubt. – Vrm. laßen sich auch zu allen diesen Ww. nicht wenige der rätselhaften mit <hi rend="unknown" rendition="#none">p</hi> anl. Nebenstamme stellen, denen wir schon öfters in den sächs. und nord. Sprr. begegneten. Vgl. z. B. <hi rend="unknown" rendition="#none">P</hi>. 1. und nnd. <hi rend="unknown" rendition="#none">peit</hi> geputzt, säuberlich, wenn nicht aus <hi rend="unknown" rendition="#none">peget</hi>? vgl. swd. dän. <hi rend="unknown" rendition="#none">pên</hi> id., geziert nnd. <hi rend="unknown" rendition="#none">pentje</hi> geziert säuberliches Frauenzimmer? Indessen s. vrw. Ww. mit <hi rend="unknown" rendition="#none">
 ü</hi> bei Oulzen 259". </p>
-          </note> – fitar, fittar &amp;c. vgl. ebg. &amp; II S. 759<note n="23" place="foot"
-              type="editorial"> In Diefenbach (1851 Bd. II: 759) liest man: " Nr. 24. S. 368 ff. b. Vgl. Nrr. 30. 39. Grimm Vorr. zu Sch. stellt zusammen ahd. <foreign xml:lang="goh">
-              <hi rend="unknown" rendition="#none">faz</hi>, <hi rend="unknown" rendition="#none">fazôn</hi>
-            </foreign> altn. <hi rend="unknown" rendition="#none">fat</hi>, <hi rend="unknown"
-              rendition="#none">
-fata</hi> g. fitan, fetjan vgl. lt. parere : parare. – aengl. <hi rend="unknown"
-              rendition="#none">fat</hi> fetch <hi rend="unknown" rendition="#none">fate</hi> fetched. S. 370. ltt. <hi
-              rend="unknown" rendition="#none">pinneklis</hi> Pferdespansel, Fußeisen, Feßel ¿ : <hi rend="unknown"
-              rendition="#none">pinnu</hi>S. 142. lth. <hi rend="unknown" rendition="#none">pantis</hi>, <hi
-              rend="unknown" rendition="#none">panczas</hi> m. = <hi rend="unknown"
-            rendition="#none">pancza</hi> f. Ltt. puncót s. P. 13 Ntr.".</note> afrz. fétis &amp;c. Diez I v. Fitto.<note
-            n="24" place="foot" type="editorial"> Vgl. Diez (<hi rendition="#sup">3</hi>1869: 181): "<foreign xml:lang="it">Fitto</foreign>
-            <hi rend="unknown" rendition="#none">it</hi>., <hi rend="unknown" rendition="#none">sp</hi>. <foreign
-              xml:lang="es">hito</foreign>, <hi rend="unknown" rendition="#none">pg</hi>. fito <hi rend="unknown"
-              rendition="#none">eingesteckt, geheftet; sbst. sp</hi>. hito, <hi rend="unknown"
-              rendition="#none">pg</hi>. fito <hi rend="unknown" rendition="#none">in den boden gesteckter</hi>
-            <hi rend="unknown" rendition="#none">
-pfahl, grenzpfahl</hi>, hita <hi rend="unknown"
-              rendition="#none">pflock</hi>; <hi rend="unknown" rendition="#none">auch it</hi>. fìtto <hi rend="unknown"
-              rendition="#none">zins (das festgesetzte?) Von dem alterthümlich lat. part</hi>, fictus <hi rend="unknown"
-              rendition="#none">für</hi> fixus <hi rend="unknown"
-              rendition="#none">bei Lucres und Farro, vgl</hi>. petra fita <hi rend="unknown"
-              rendition="#none">Yep. II, num. 13 (aera 684). Selbst das fr</hi>. fiche <hi rend="unknown"
-              rendition="#none">pflock</hi> = <hi rend="unknown" rendition="#none">sp</hi>. hita <hi rend="unknown"
-              rendition="#none">würde sich hieherziehen lassen, wenn auch das vb</hi>. ficher <hi rend="unknown"
-              rendition="#none">besser zu</hi> ficcare <hi rend="unknown"
-            rendition="#none">
-gestellt wird. S. Rom. gramm. I, 16</hi>".</note> – čiep Frack, vgl. čopp alem. Tschrepe &amp;c. – magniug Käsmatte &amp;c. vgl. Car. v. Mignucc;<note
-            n="25" place="foot" type="editorial"> In Carisch (1848: 94) ist zu lesen: "Mignucc, <hi rend="unknown"
-            rendition="#none">m</hi>. manuochetta, 3. Kleiner Hauskäs".</note> wol unverw. mit manteca u.s.w. – minal, minel m. ein Trockenmaß, vgl. Diez II c v. Mine<note
-            n="26" place="foot" type="editorial"> In Diez (<hi rendition="#sup">3</hi>1870: 378) ist zu lesen: "Mine <hi
-              rend="unknown" rendition="#none">fr.</hi> mina <hi rend="unknown"
-              rendition="#none">pr. ein getreidemaß, gewöhnlich von</hi> medimnus<hi rend="unknown"
-              rendition="#none"> hergeleitet, paßt buchstäblich nur zu </hi>hemīna <hi rend="unknown"
-              rendition="#none">maß für flüssigkeiten, mlat. aber auch frucht- und längenmaß wie pr.</hi> emina, <hi
-              rend="unknown" rendition="#none">altfr.</hi> emine, <hi rend="unknown"
-            rendition="#none">sp</hi>. hemina".</note>. – mogul m. Krume, zu alamann. mocken, möckli; dagegen mievla, smeula aus micula? <pb
-            facs="#IMG.2" n="2"/> pumér m. Obstbaum (pomarius) auch altital. (Apfolter Voc. a. 1477)<note n="27"
-            place="foot" type="editorial"> Damit sind "<foreign
-            xml:lang="la">Voc. a. 1477. Vocabularii ex quo impressi per Nicolaum Hechtermynze in Eltuil 1477, qui integer asservatur in Biblioth. Ducali Gothana […], reliquiae quaedam in Neumanni Opusculis p. 455 publicatae eaedemque ab Adelungio quoque ad Glossarium manuale collatae</foreign>" (Diefenbach 1857: XXII) gemeint. Es war nicht möglich, die Angabe in der Quelle zu verifizieren.</note>. – rupar rülpsen, vgl. Car. v. Riep<note
-            n="28" place="foot" type="editorial"> "Riep, <hi rend="unknown" rendition="#none">m</hi>. rüpeh, <hi
-              rend="unknown" rendition="#none">m</hi>. riepel, 3. Rülps, <hi rend="unknown"
-              rendition="#none">
+               </note> – fitar, fittar &amp;c. vgl. ebg. &amp; II S. 759<note n="23" place="foot" type="editorial"> In Diefenbach (1851 Bd. II: 759) liest man: " Nr. 24. S. 368 ff. b. Vgl. Nrr. 30. 39. Grimm Vorr. zu Sch. stellt zusammen ahd. <foreign xml:lang="goh">
+                     <hi rend="unknown" rendition="#none">faz</hi>, <hi rend="unknown" rendition="#none">fazôn</hi>
+                  </foreign> altn. <hi rend="unknown" rendition="#none">fat</hi>, <hi rend="unknown" rendition="#none">
+fata</hi> g. fitan, fetjan vgl. lt. parere : parare. – aengl. <hi rend="unknown" rendition="#none">fat</hi> fetch <hi rend="unknown" rendition="#none">fate</hi> fetched. S. 370. ltt. <hi rend="unknown" rendition="#none">pinneklis</hi> Pferdespansel, Fußeisen, Feßel ¿ : <hi rend="unknown" rendition="#none">pinnu</hi>S. 142. lth. <hi rend="unknown" rendition="#none">pantis</hi>, <hi rend="unknown" rendition="#none">panczas</hi> m. = <hi rend="unknown" rendition="#none">pancza</hi> f. Ltt. puncót s. P. 13 Ntr.".</note> afrz. fétis &amp;c. Diez I v. Fitto.<note n="24" place="foot" type="editorial"> Vgl. Diez (<hi rendition="#sup">3</hi>1869: 181): "<foreign xml:lang="it">Fitto</foreign>
+                  <hi rend="unknown" rendition="#none">it</hi>., <hi rend="unknown" rendition="#none">sp</hi>. <foreign xml:lang="es">hito</foreign>, <hi rend="unknown" rendition="#none">pg</hi>. fito <hi rend="unknown" rendition="#none">eingesteckt, geheftet; sbst. sp</hi>. hito, <hi rend="unknown" rendition="#none">pg</hi>. fito <hi rend="unknown" rendition="#none">in den boden gesteckter</hi>
+                  <hi rend="unknown" rendition="#none">
+pfahl, grenzpfahl</hi>, hita <hi rend="unknown" rendition="#none">pflock</hi>; <hi rend="unknown" rendition="#none">auch it</hi>. fìtto <hi rend="unknown" rendition="#none">zins (das festgesetzte?) Von dem alterthümlich lat. part</hi>, fictus <hi rend="unknown" rendition="#none">für</hi> fixus <hi rend="unknown" rendition="#none">bei Lucres und Farro, vgl</hi>. petra fita <hi rend="unknown" rendition="#none">Yep. II, num. 13 (aera 684). Selbst das fr</hi>. fiche <hi rend="unknown" rendition="#none">pflock</hi> = <hi rend="unknown" rendition="#none">sp</hi>. hita <hi rend="unknown" rendition="#none">würde sich hieherziehen lassen, wenn auch das vb</hi>. ficher <hi rend="unknown" rendition="#none">besser zu</hi> ficcare <hi rend="unknown" rendition="#none">
+gestellt wird. S. Rom. gramm. I, 16</hi>".</note> – čiep Frack, vgl. čopp alem. Tschrepe &amp;c. – magniug Käsmatte &amp;c. vgl. Car. v. Mignucc;<note n="25" place="foot" type="editorial"> In Carisch (1848: 94) ist zu lesen: "Mignucc, <hi rend="unknown" rendition="#none">m</hi>. manuochetta, 3. Kleiner Hauskäs".</note> wol unverw. mit manteca u.s.w. – minal, minel m. ein Trockenmaß, vgl. Diez II c v. Mine<note n="26" place="foot" type="editorial"> In Diez (<hi rendition="#sup">3</hi>1870: 378) ist zu lesen: "Mine <hi rend="unknown" rendition="#none">fr.</hi> mina <hi rend="unknown" rendition="#none">pr. ein getreidemaß, gewöhnlich von</hi> medimnus<hi rend="unknown" rendition="#none"> hergeleitet, paßt buchstäblich nur zu </hi>hemīna <hi rend="unknown" rendition="#none">maß für flüssigkeiten, mlat. aber auch frucht- und längenmaß wie pr.</hi> emina, <hi rend="unknown" rendition="#none">altfr.</hi> emine, <hi rend="unknown" rendition="#none">sp</hi>. hemina".</note>. – mogul m. Krume, zu alamann. mocken, möckli; dagegen mievla, smeula aus micula? <pb facs="#IMG.2" n="2"/> pumér m. Obstbaum (pomarius) auch altital. (Apfolter Voc. a. 1477)<note n="27" place="foot" type="editorial"> Damit sind "<foreign xml:lang="la">Voc. a. 1477. Vocabularii ex quo impressi per Nicolaum Hechtermynze in Eltuil 1477, qui integer asservatur in Biblioth. Ducali Gothana […], reliquiae quaedam in Neumanni Opusculis p. 455 publicatae eaedemque ab Adelungio quoque ad Glossarium manuale collatae</foreign>" (Diefenbach 1857: XXII) gemeint. Es war nicht möglich, die Angabe in der Quelle zu verifizieren.</note>. – rupar rülpsen, vgl. Car. v. Riep<note n="28" place="foot" type="editorial"> "Riep, <hi rend="unknown" rendition="#none">m</hi>. rüpeh, <hi rend="unknown" rendition="#none">m</hi>. riepel, 3. Rülps, <hi rend="unknown" rendition="#none">
 m</hi>. Ital. <foreign xml:lang="it">
-              <hi rend="unknown" rendition="#none">
+                     <hi rend="unknown" rendition="#none">
 rutto</hi>
-            </foreign>" (Carisch 1848: 134).</note> (nhd. Rüpel = Rülps nicht vrw., vgl. Grimm D. Mythol. S. 472<note
-            n="29" place="foot" type="editorial"> In Grimm (<hi
-              rendition="#sup">2</hi>1844: 472) ist zu lesen: "Robin ist die französischenglische form des mannsnamens Robert, d. i. des ahd. Hruodperaht, mhd. Ruotperht, nhd. Ruprecht, Rupert, Ruppert und <hi
-              rend="unknown" rendition="#none">
+                  </foreign>" (Carisch 1848: 134).</note> (nhd. Rüpel = Rülps nicht vrw., vgl. Grimm D. Mythol. S. 472<note n="29" place="foot" type="editorial"> In Grimm (<hi rendition="#sup">2</hi>1844: 472) ist zu lesen: "Robin ist die französischenglische form des mannsnamens Robert, d. i. des ahd. Hruodperaht, mhd. Ruotperht, nhd. Ruprecht, Rupert, Ruppert und <hi rend="unknown" rendition="#none">
 Robin fellow</hi> der nemliche hausgeist, den wir in <placeName>
 
 Deutschland</placeName>
-            <hi rend="unknown"
-              rendition="#none">knecht Ruprecht</hi> nennen und zu weihnachten den kindern erscheinen lassen, der aber in den lustspielen des 16. 17 jh. zu einem blossen <hi
-              rend="unknown" rendition="#none">Rüpel</hi> oder <hi rend="unknown"
-              rendition="#none">Rüppel</hi>, d. h. allgemeinen lustigen narren wird *)". In der Fußnote ist weiters zu lesen: "*) Ayrers fastnachtspiele 73<hi
-              rendition="#sup">d</hi> bestätigen, dass der eigenname <hi rend="unknown"
-              rendition="#none">Ruprecht</hi> die koseform <hi rend="unknown"
-              rendition="#none">
-Rupel</hi> annimmt. einige dialecte verwenden <hi rend="unknown"
-              rendition="#none">Rüpel</hi>, <hi rend="unknown"
-              rendition="#none">Riepel</hi> wieder zur benennung des katers; in hexenacten heisst ein junger kleiner teufel <hi
-              rend="unknown" rendition="#none">Rubel</hi>. nach dem leipziger avanturier 1, 22. 23. erscheint <hi
-              rend="unknown"
-            rendition="#none">knecht Ruprecht</hi> rauch gekleidet, den sack auf dem rücken, die rute in der hand".</note>), vrsch. von ahd. rofazon, wie von ructase? vgl. roppen u. dgl. in meinen beiden Gloss. Lat.-Germ v. Eructare.<note
-            n="30" place="foot"
-              type="editorial"> In Diefenbach (1857: 209) liest man: "Eruct-are, -uare, -ari (75), -uari (70) (<hi
-              rend="unknown" rendition="#none">i</hi>. ructuare 1, 75. <hi rend="unknown" rendition="#none">cf</hi>. <hi
-              rend="unknown" rendition="#none">v</hi>. ructare; <foreign xml:lang="la">
-              <hi rend="unknown" rendition="#none">ructum facere</hi>
-            </foreign>, gurgulare 75, <hi rend="unknown" rendition="#none">
-ex-puere</hi>, <hi rend="unknown"
-              rendition="#none">-primaere</hi>, <foreign xml:lang="la">
-              <hi rend="unknown" rendition="#none">emittere</hi>, <hi rend="unknown" rendition="#none">proferre</hi>,</foreign>
-            <hi rend="unknown" rendition="#none">letari</hi>; <hi rend="unknown" rendition="#none">bissw</hi>. <hi
-              rend="unknown" rendition="#none">
-unterschieden</hi>-uare<hi rend="unknown" rendition="#none">i</hi>. <hi
-              rend="unknown" rendition="#none">euertere</hi> Gl. m. <hi rend="unknown"
-              rendition="#none">cf</hi>. eruncare; <foreign xml:lang="la">
-              <hi rend="unknown" rendition="#none">quasi de pleno extra nunciare</hi>
-            </foreign> 67, 76) reyßperen, rothtzen (74). rustern (17). <hi rend="unknown"
-              rendition="#none">
-hd</hi>. vß-, auß-r., -rusteren, -rustiren (152), -ristern (18), -ruspern, -risperen, -reuspern, -reyspeln (74), -rodin (8, <hi
-              rend="unknown" rendition="#none">wo sonst</hi> -rustern &amp;c., <hi rend="unknown"
-              rendition="#none">aber bei</hi> 9 reden), -ruffen (4), -roffen (10), -tzygen (70, 151, 152), -sprechen (110 &amp;c.),-werffen (1, 5<hi
-              rendition="#sup">b</hi>). vyßrispen (132). roppen (8). ru̇pczen (9). roepsen (99). of-reybzen (12), -rocen (13), -rostern (21). reubeten <hi
-              rend="unknown" rendition="#none">cum collo</hi> (8<hi rendition="#sup">b</hi>). (-uare) vff ru<hi
-              rendition="#sup">ˡ</hi>bczen (6), up rofen (23) mit dem munde, reubzen <hi rend="unknown"
-              rendition="#none">ł</hi> raffa-tzen, <hi rend="unknown" rendition="#none">var</hi>. -rtzen, <hi
-              rend="unknown"
-              rendition="#none">ł</hi> golkotzen (75). gurtzen, rochtzen (65). goͤrbsen (126). goͤrpsen (Fris.). vff ru<hi
-              rendition="#sup">ˡ</hi>sten (6). up-rosten (22), -rostern (23). <hi rend="unknown"
-              rendition="#none">hd</hi>. <hi rend="unknown" rendition="#none">nd</hi>. vor-, liervor-, <hi
-              rend="unknown"
-              rendition="#none">
-hd</hi>. erfor- (21, 152), erfuͤr- (151), herfur-bringen,-brengen. v’- (8<hi
-              rendition="#sup">b</hi>), foln- (18), vol- (9) -bringen. reden (9). <hi rend="unknown"
-              rendition="#none">hd</hi>. <hi rend="unknown" rendition="#none">
-nd</hi>. singen. recht sin (17. <hi
-              rend="unknown"
-              rendition="#none">aus</hi> singen). sagen, frewen (74). -are er-freuwen (69), -froͤen (134)", in Diefenbach (1867: 156): "Eruct-are wtrispen, wtspreken <hi
-              rend="unknown" rendition="#none">
-G. voc.</hi> koptzen 30. vz robczen (ructare raubczen) <hi
-              rend="unknown" rendition="#none">V. a. 1420</hi>. ł -uare auß ropczen, vor brenen (-brengen <hi
-              rend="unknown" rendition="#none">Gloss.), </hi>singen 27. vß rupsßeren (niesßeren?) o. vallen in (<hi
-              rend="unknown" rendition="#none">aus</hi> vollen <hi rend="unknown"
-              rendition="#none">sim.</hi>) bringen 45. aus schreyen 52. -are kőcken <hi rend="unknown"
-              rendition="#none">Fr.</hi>-auit erku<hi rendition="#sup">
-ˡ</hi>kt <hi rend="unknown"
-              rendition="#none">(schwerlich vgl.</hi> erfreuen <hi rend="unknown"
-              rendition="#none">sim. Gloss.</hi>) 41. -are auff rüspen, aus singen; -uare auff rueffen mitt dem mund 33. -uare awß werffen 34. -are ausrűspen, vorpringen, singen; -atio rophiczung; -us rophicz <hi
-              rend="unknown" rendition="#none">P.</hi>
-            <hi rend="unknown" rendition="#none">V.</hi>-uatio <hi rend="unknown"
-            rendition="#none">ł</hi>singultus sode, is vp stiginghe ut dem maghen in den munt 38".</note> Dagegen grufflar, gronflar, grunfler zu frz. ronfler. – ruck heiser (vrsch. von ruch rauch rauh), doch aus raucus? – resti, risti m. Geräthe (auch Kleider), aus Hd. rüsten? – squassel sudarium („aus kyͤmr. chwysel“ Bruce-White)<note
-            n="31" place="foot" type="editorial"> Vgl. Bruce-Whyte (1841: 484): "<hi rend="unknown"
-              rendition="#none">squassel</hi> (sudarium), W. <hi rend="unknown"
-            rendition="#none">chwysel</hi>".</note>. – salin f. Kornfrucht, Waizen, aus siligin? – zarclar, zerclar i. q. frz. sarcler (sarculare). – uradi m. Blast, Schauer, vgl. frz. orage prov. auratge, aus aura. – uale m. Bienengestelle. – livinalong. daus, dauso m. Sohn, vgl. toso &amp; Diez h. v.<note
-            n="32" place="foot" type="editorial"> Vgl. Diez (<hi rendition="#sup">3</hi>1869: 419-420): "Toso <hi
-              rend="unknown" rendition="#none">it. (mundartl), pr</hi>. tos, <hi rend="unknown"
-              rendition="#none">altfr</hi>. tosel <hi rend="unknown"
-              rendition="#none">knabe; fem. it. pr</hi>. tosa, <hi rend="unknown" rendition="#none">altfr</hi>. tose <hi
-              rend="unknown" rendition="#none">mädchen. </hi>
-            <hi rend="unknown" rendition="#none">Buchstäblich kann</hi> toso <hi rend="unknown"
-              rendition="#none">seinen ursprung in</hi> tonsus <hi rend="unknown"
-              rendition="#none">haben, allem was soll das abgeschorene haar zumal bei mädchen, wie schon Ferrari einwendet? Nur Sklaven wurden geschoren. Besser darum von</hi> intonsus <hi
-              rend="unknown"
-              rendition="#none">mit ab- gefallnem präfix, wie andre erklären: sagt ja Horaz</hi> intonsi pueri <hi
-              rend="unknown" rendition="#none">und Garcilaso</hi> mancebo intonso. <hi rend="unknown"
-              rendition="#none">Vielleicht aber läßt sich das wort aus einer üblicheren anschauung deuten. Ital</hi>. torso <hi
-              rend="unknown" rendition="#none">heißt strunk, butzen des obstes, mit syncopiertem</hi> r toso <hi
-              rend="unknown" rendition="#none">(dieselbe syncope vor</hi> s <hi rend="unknown"
-              rendition="#none">in</hi> dosso, giuso, ritroso, rovescio, pesca <hi rend="unknown"
-              rendition="#none">von</hi> dorsum, deorsum, retrorsus, reversus, persica, <hi rend="unknown"
-              rendition="#none">Rom. gramm</hi>.<hi rend="unknown"
-              rendition="#none"> II, 210), der knabe ward strunk oder butzen genomi, wie dies auch in andern ausdrücken und in andern sprachen geschah, s. oben</hi> garzone. <hi
-              rend="unknown"
-              rendition="#none">Des wortes eigentliche heimath ist Oberitalien, wo es die meisten ableitungen hervorgebracht hat (</hi>toset, toson, tosonot, tosel, toselot <hi
-              rend="unknown" rendition="#none">u. a.), aber <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5969">Italien</placeName> ist auch die eigentliche heimath von</hi> torso".</note>
-        </p>
-        <p>Genug für jetzt! Vielleicht regt mich <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">Diez</persName>, den ich in seinen Ferien erwarte, zur weiteren Revision meiner Sammlungen an – <hi
-            rend="unknown" rendition="#none">wenn</hi> ich Zeit finde. Sicherer sehe ich den weiteren Ergebnissen Ihrer Forschungen entgegen.</p>
-        <closer>
-          <salute>Mit aufrichtiger Hochachtung</salute>
-          <lb/>
-          <signed>Ihr ergebener<lb/>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1388">Lorenz Diefenbach</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>
-            <pb facs="#IMG.3" n="3"/>
-            <note n="33" place="foot" type="editorial"> Es handelt sich um Schuchardt'sche Notizen.</note> Càrisch: crestas chied; daher wohl der Irrtum š = sch = s-ch </p>
-          <p>poitev. chaline vielmehr mit untereng. chalaverna zu vergleichen</p>
-          <p>woher genommen čuvicca?</p>
-          <p>woher gen. mogul?</p>
-          <p>squassel ist doch = scussal Schürze?</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                  <hi rend="unknown" rendition="#none">knecht Ruprecht</hi> nennen und zu weihnachten den kindern erscheinen lassen, der aber in den lustspielen des 16. 17 jh. zu einem blossen <hi rend="unknown" rendition="#none">Rüpel</hi> oder <hi rend="unknown" rendition="#none">Rüppel</hi>, d. h. allgemeinen lustigen narren wird *)". In der Fußnote ist weiters zu lesen: "*) Ayrers fastnachtspiele 73<hi rendition="#sup">d</hi> bestätigen, dass der eigenname <hi rend="unknown" rendition="#none">Ruprecht</hi> die koseform <hi rend="unknown" rendition="#none">
+Rupel</hi> annimmt. einige dialecte verwenden <hi rend="unknown" rendition="#none">Rüpel</hi>, <hi rend="unknown" rendition="#none">Riepel</hi> wieder zur benennung des katers; in hexenacten heisst ein junger kleiner teufel <hi rend="unknown" rendition="#none">Rubel</hi>. nach dem leipziger avanturier 1, 22. 23. erscheint <hi rend="unknown" rendition="#none">knecht Ruprecht</hi> rauch gekleidet, den sack auf dem rücken, die rute in der hand".</note>), vrsch. von ahd. rofazon, wie von ructase? vgl. roppen u. dgl. in meinen beiden Gloss. Lat.-Germ v. Eructare.<note n="30" place="foot" type="editorial"> In Diefenbach (1857: 209) liest man: "Eruct-are, -uare, -ari (75), -uari (70) (<hi rend="unknown" rendition="#none">i</hi>. ructuare 1, 75. <hi rend="unknown" rendition="#none">cf</hi>. <hi rend="unknown" rendition="#none">v</hi>. ructare; <foreign xml:lang="la">
+                     <hi rend="unknown" rendition="#none">ructum facere</hi>
+                  </foreign>, gurgulare 75, <hi rend="unknown" rendition="#none">
+ex-puere</hi>, <hi rend="unknown" rendition="#none">-primaere</hi>, <foreign xml:lang="la">
+                     <hi rend="unknown" rendition="#none">emittere</hi>, <hi rend="unknown" rendition="#none">proferre</hi>,</foreign>
+                  <hi rend="unknown" rendition="#none">letari</hi>; <hi rend="unknown" rendition="#none">bissw</hi>. <hi rend="unknown" rendition="#none">
+unterschieden</hi>-uare<hi rend="unknown" rendition="#none">i</hi>. <hi rend="unknown" rendition="#none">euertere</hi> Gl. m. <hi rend="unknown" rendition="#none">cf</hi>. eruncare; <foreign xml:lang="la">
+                     <hi rend="unknown" rendition="#none">quasi de pleno extra nunciare</hi>
+                  </foreign> 67, 76) reyßperen, rothtzen (74). rustern (17). <hi rend="unknown" rendition="#none">
+hd</hi>. vß-, auß-r., -rusteren, -rustiren (152), -ristern (18), -ruspern, -risperen, -reuspern, -reyspeln (74), -rodin (8, <hi rend="unknown" rendition="#none">wo sonst</hi> -rustern &amp;c., <hi rend="unknown" rendition="#none">aber bei</hi> 9 reden), -ruffen (4), -roffen (10), -tzygen (70, 151, 152), -sprechen (110 &amp;c.),-werffen (1, 5<hi rendition="#sup">b</hi>). vyßrispen (132). roppen (8). ru̇pczen (9). roepsen (99). of-reybzen (12), -rocen (13), -rostern (21). reubeten <hi rend="unknown" rendition="#none">cum collo</hi> (8<hi rendition="#sup">b</hi>). (-uare) vff ru<hi rendition="#sup">ˡ</hi>bczen (6), up rofen (23) mit dem munde, reubzen <hi rend="unknown" rendition="#none">ł</hi> raffa-tzen, <hi rend="unknown" rendition="#none">var</hi>. -rtzen, <hi rend="unknown" rendition="#none">ł</hi> golkotzen (75). gurtzen, rochtzen (65). goͤrbsen (126). goͤrpsen (Fris.). vff ru<hi rendition="#sup">ˡ</hi>sten (6). up-rosten (22), -rostern (23). <hi rend="unknown" rendition="#none">hd</hi>. <hi rend="unknown" rendition="#none">nd</hi>. vor-, liervor-, <hi rend="unknown" rendition="#none">
+hd</hi>. erfor- (21, 152), erfuͤr- (151), herfur-bringen,-brengen. v’- (8<hi rendition="#sup">b</hi>), foln- (18), vol- (9) -bringen. reden (9). <hi rend="unknown" rendition="#none">hd</hi>. <hi rend="unknown" rendition="#none">
+nd</hi>. singen. recht sin (17. <hi rend="unknown" rendition="#none">aus</hi> singen). sagen, frewen (74). -are er-freuwen (69), -froͤen (134)", in Diefenbach (1867: 156): "Eruct-are wtrispen, wtspreken <hi rend="unknown" rendition="#none">
+G. voc.</hi> koptzen 30. vz robczen (ructare raubczen) <hi rend="unknown" rendition="#none">V. a. 1420</hi>. ł -uare auß ropczen, vor brenen (-brengen <hi rend="unknown" rendition="#none">Gloss.), </hi>singen 27. vß rupsßeren (niesßeren?) o. vallen in (<hi rend="unknown" rendition="#none">aus</hi> vollen <hi rend="unknown" rendition="#none">sim.</hi>) bringen 45. aus schreyen 52. -are kőcken <hi rend="unknown" rendition="#none">Fr.</hi>-auit erku<hi rendition="#sup">
+ˡ</hi>kt <hi rend="unknown" rendition="#none">(schwerlich vgl.</hi> erfreuen <hi rend="unknown" rendition="#none">sim. Gloss.</hi>) 41. -are auff rüspen, aus singen; -uare auff rueffen mitt dem mund 33. -uare awß werffen 34. -are ausrűspen, vorpringen, singen; -atio rophiczung; -us rophicz <hi rend="unknown" rendition="#none">P.</hi>
+                  <hi rend="unknown" rendition="#none">V.</hi>-uatio <hi rend="unknown" rendition="#none">ł</hi>singultus sode, is vp stiginghe ut dem maghen in den munt 38".</note> Dagegen grufflar, gronflar, grunfler zu frz. ronfler. – ruck heiser (vrsch. von ruch rauch rauh), doch aus raucus? – resti, risti m. Geräthe (auch Kleider), aus Hd. rüsten? – squassel sudarium („aus kyͤmr. chwysel“ Bruce-White)<note n="31" place="foot" type="editorial"> Vgl. Bruce-Whyte (1841: 484): "<hi rend="unknown" rendition="#none">squassel</hi> (sudarium), W. <hi rend="unknown" rendition="#none">chwysel</hi>".</note>. – salin f. Kornfrucht, Waizen, aus siligin? – zarclar, zerclar i. q. frz. sarcler (sarculare). – uradi m. Blast, Schauer, vgl. frz. orage prov. auratge, aus aura. – uale m. Bienengestelle. – livinalong. daus, dauso m. Sohn, vgl. toso &amp; Diez h. v.<note n="32" place="foot" type="editorial"> Vgl. Diez (<hi rendition="#sup">3</hi>1869: 419-420): "Toso <hi rend="unknown" rendition="#none">it. (mundartl), pr</hi>. tos, <hi rend="unknown" rendition="#none">altfr</hi>. tosel <hi rend="unknown" rendition="#none">knabe; fem. it. pr</hi>. tosa, <hi rend="unknown" rendition="#none">altfr</hi>. tose <hi rend="unknown" rendition="#none">mädchen. </hi>
+                  <hi rend="unknown" rendition="#none">Buchstäblich kann</hi> toso <hi rend="unknown" rendition="#none">seinen ursprung in</hi> tonsus <hi rend="unknown" rendition="#none">haben, allem was soll das abgeschorene haar zumal bei mädchen, wie schon Ferrari einwendet? Nur Sklaven wurden geschoren. Besser darum von</hi> intonsus <hi rend="unknown" rendition="#none">mit ab- gefallnem präfix, wie andre erklären: sagt ja Horaz</hi> intonsi pueri <hi rend="unknown" rendition="#none">und Garcilaso</hi> mancebo intonso. <hi rend="unknown" rendition="#none">Vielleicht aber läßt sich das wort aus einer üblicheren anschauung deuten. Ital</hi>. torso <hi rend="unknown" rendition="#none">heißt strunk, butzen des obstes, mit syncopiertem</hi> r toso <hi rend="unknown" rendition="#none">(dieselbe syncope vor</hi> s <hi rend="unknown" rendition="#none">in</hi> dosso, giuso, ritroso, rovescio, pesca <hi rend="unknown" rendition="#none">von</hi> dorsum, deorsum, retrorsus, reversus, persica, <hi rend="unknown" rendition="#none">Rom. gramm</hi>.<hi rend="unknown" rendition="#none"> II, 210), der knabe ward strunk oder butzen genomi, wie dies auch in andern ausdrücken und in andern sprachen geschah, s. oben</hi> garzone. <hi rend="unknown" rendition="#none">Des wortes eigentliche heimath ist Oberitalien, wo es die meisten ableitungen hervorgebracht hat (</hi>toset, toson, tosonot, tosel, toselot <hi rend="unknown" rendition="#none">u. a.), aber <placeName ref="[authorityLink]">Italien</placeName> ist auch die eigentliche heimath von</hi> torso".</note>
+            </p>
+            <p>Genug für jetzt! Vielleicht regt mich <persName ref="[authorityLink]">Diez</persName>, den ich in seinen Ferien erwarte, zur weiteren Revision meiner Sammlungen an – <hi rend="unknown" rendition="#none">wenn</hi> ich Zeit finde. Sicherer sehe ich den weiteren Ergebnissen Ihrer Forschungen entgegen.</p>
+            <closer>
+               <salute>Mit aufrichtiger Hochachtung</salute>
+               <lb/>
+               <signed>Ihr ergebener<lb/>
+                  <persName ref="[authorityLink]">Lorenz Diefenbach</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>
+                  <pb facs="#IMG.3" n="3"/>
+                  <note n="33" place="foot" type="editorial"> Es handelt sich um Schuchardt'sche Notizen.</note> Càrisch: crestas chied; daher wohl der Irrtum š = sch = s-ch </p>
+               <p>poitev. chaline vielmehr mit untereng. chalaverna zu vergleichen</p>
+               <p>woher genommen čuvicca?</p>
+               <p>woher gen. mogul?</p>
+               <p>squassel ist doch = scussal Schürze?</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

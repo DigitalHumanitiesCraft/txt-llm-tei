@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+    ns="http://www.tei-c.org/ns/1.0" xmlns="http://relaxng.org/ns/structure/1.0">
+    <start>
+        <element name="TEI">
+            <element name="teiHeader">
+                <element name="fileDesc">
+                    <element name="titleStmt">
+                        <element name="title">
+                            <text/>
+                        </element>
+                    </element>
+                    <element name="publicationStmt">
+                        <ref name="p"/>
+                    </element>
+                    <element name="sourceDesc">
+                        <ref name="p"/>
+                    </element>
+                </element>
+            </element>
+            <optional>
+                <element name="facsimile">
+                    <oneOrMore>
+                        <element name="surface">
+                            <element name="graphic">
+                                <attribute name="mimeType"/>
+                                <attribute name="url"/>
+                                <attribute>
+                                    <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+                                    <data type="NCName"/>
+                                </attribute>
+                            </element>
+                        </element>
+                    </oneOrMore>
+                </element>
+            </optional>
+            <element name="text">
+                <element name="body">
+                    <oneOrMore>
+                        <element name="div">
+                            <optional>
+                                <attribute name="corresp"/>
+                            </optional>
+                            <attribute name="subtype">
+                                <data type="NCName"/>
+                            </attribute>
+                            <attribute name="type">
+                                <data type="NCName"/>
+                            </attribute>
+                            <optional>
+                                <attribute>
+                                    <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+                                    <data type="NCName"/>
+                                </attribute>
+                            </optional>
+                            <attribute>
+                                <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+                                <data type="NCName"/>
+                            </attribute>
+                            <oneOrMore>
+                                <choice>
+                                    <ref name="closer"/>
+                                    <ref name="dateline"/>
+                                    <ref name="lb"/>
+                                    <ref name="note"/>
+                                    <ref name="p"/>
+                                    <ref name="pb"/>
+                                    <ref name="postscript"/>
+                                    <ref name="salute"/>
+                                    <ref name="signed"/>
+                                    <ref name="table"/>
+                                    <ref name="opener"/>
+                                    
+                                </choice>
+                            </oneOrMore>
+                        </element>
+                    </oneOrMore>
+                    <optional>
+                        <ref name="postscript"/>
+                    </optional>
+                </element>
+            </element>
+        </element>
+    </start>
+    <define name="opener">
+        <element name="opener">
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="foreign"/>
+                    <ref name="hi"/>
+                    <ref name="lb"/>
+                    <ref name="note"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="placeName"/>
+                    <ref name="ref"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="p">
+        <element name="p">
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="bibl"/>
+                    <ref name="foreign"/>
+                    <ref name="hi"/>
+                    <ref name="lb"/>
+                    <ref name="note"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="placeName"/>
+                    <ref name="ref"/>
+                    <ref name="table"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="pb">
+        <element name="pb">
+            <optional>
+                <attribute name="facs"/>
+            </optional>
+            <attribute name="n"/>
+        </element>
+    </define>
+    <define name="note">
+        <element name="note">
+            <attribute name="n"/>
+            <attribute name="place">
+                <data type="NCName"/>
+            </attribute>
+            <attribute name="type">
+                <data type="NCName"/>
+            </attribute>
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="bibl"/>
+                    <ref name="foreign"/>
+                    <ref name="hi"/>
+                    <ref name="lb"/>
+                    <ref name="note"/>
+                    <ref name="p"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="placeName"/>
+                    <ref name="ref"/>
+                    <ref name="table"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="closer">
+        <element name="closer">
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="dateline"/>
+                    <ref name="foreign"/>
+                    <ref name="hi"/>
+                    <ref name="lb"/>
+                    <ref name="note"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="placeName"/>
+                    <ref name="ref"/>
+                    <ref name="salute"/>
+                    <ref name="signed"/>
+                    <ref name="bibl"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="lb">
+        <element name="lb">
+            <empty/>
+        </element>
+    </define>
+    <define name="addName">
+        <element name="addName">
+            <text/>
+        </element>
+    </define>
+    <define name="dateline">
+        <element name="dateline">
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="hi"/>
+                    <ref name="lb"/>
+                    <ref name="note"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="placeName"/>
+                    <ref name="ref"/>
+                    <ref name="bibl"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                    <ref name="foreign"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="postscript">
+        <element name="postscript">
+            <oneOrMore>
+                <choice>
+                    <ref name="note"/>
+                    <ref name="p"/>
+                    <ref name="pb"/>
+                    <ref name="table"/>
+                    <ref name="ref"/>
+                    <ref name="bibl"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                    <ref name="foreign"/>
+                    <ref name="lb"/>
+                    <ref name="placeName"/>
+                </choice>
+            </oneOrMore>
+            <optional>
+                <choice>
+                    <ref name="closer"/>
+                    <ref name="signed"/>
+                    <ref name="ref"/>
+                    <ref name="bibl"/>
+                    <ref name="note"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                    <ref name="pb"/>
+                    <ref name="foreign"/>
+                    <ref name="lb"/>
+                    <ref name="placeName"/>
+                </choice>
+            </optional>
+        </element>
+    </define>
+    <define name="signed">
+        <element name="signed">
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="hi"/>
+                    <ref name="lb"/>
+                    <ref name="note"/>
+                    <ref name="persName"/>
+                    <ref name="ref"/>
+                    <ref name="bibl"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                    <ref name="pb"/>
+                    <ref name="foreign"/>
+                    <ref name="placeName"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="table">
+        <element name="table">
+            <optional>
+                <attribute name="rend"/>
+            </optional>
+            <optional>
+                <element name="head">
+                    <oneOrMore>
+                        <choice>
+                            <text/>
+                            <ref name="hi"/>
+                            <ref name="ref"/>
+                            <ref name="bibl"/>
+                            <ref name="note"/>
+                            <ref name="addName"/>
+                            <ref name="opener"/>
+                            <ref name="pb"/>
+                            <ref name="foreign"/>
+                            <ref name="lb"/>
+                            <ref name="placeName"/>
+                        </choice>
+                    </oneOrMore>
+                </element>
+            </optional>
+            <oneOrMore>
+                <choice>
+                    <ref name="pb"/>
+                    <element name="row">
+                        <oneOrMore>
+                            <element name="cell">
+                                <optional>
+                                    <attribute name="role">
+                                        <data type="NCName"/>
+                                    </attribute>
+                                </optional>
+                                <oneOrMore>
+                                    <choice>
+                                        <text/>
+                                        <ref name="bibl"/>
+                                        <ref name="foreign"/>
+                                        <ref name="hi"/>
+                                        <ref name="lb"/>
+                                        <ref name="note"/>
+                                        <ref name="p"/>
+                                        <ref name="pb"/>
+                                        <ref name="persName"/>
+                                        <ref name="ref"/>
+                                        <ref name="addName"/>
+                                        <ref name="opener"/>
+                                        <ref name="placeName"/>
+                                    </choice>
+                                </oneOrMore>
+                            </element>
+                        </oneOrMore>
+                    </element>
+                    <ref name="ref"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                    <ref name="placeName"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="salute">
+        <element name="salute">
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="foreign"/>
+                    <ref name="hi"/>
+                    <ref name="lb"/>
+                    <ref name="note"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="placeName"/>
+                    <ref name="ref"/>
+                    <ref name="bibl"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="foreign">
+        <element name="foreign">
+            <attribute>
+                <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+                <data type="NCName"/>
+            </attribute>
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="foreign"/>
+                    <ref name="hi"/>
+                    <ref name="note"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="placeName"/>
+                    <ref name="ref"/>
+                    <ref name="bibl"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                    <ref name="lb"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="persName">
+        <element name="persName">
+            <optional>
+                <attribute name="ref"/>
+            </optional>
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="hi"/>
+                    <ref name="lb"/>
+                    <ref name="note"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="ref"/>
+                    <ref name="bibl"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                    <ref name="foreign"/>
+                    <ref name="placeName"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="hi">
+        <element name="hi">
+            <optional>
+                <attribute name="rend">
+                    <data type="NCName"/>
+                </attribute>
+            </optional>
+            <attribute name="rendition"/>
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="bibl"/>
+                    <ref name="foreign"/>
+                    <ref name="hi"/>
+                    <ref name="lb"/>
+                    <ref name="note"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="placeName"/>
+                    <ref name="ref"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="ref">
+        <element name="ref">
+            <optional>
+                <attribute name="target">
+                    <data type="anyURI"/>
+                </attribute>
+            </optional>
+            <optional>
+                <attribute name="type">
+                    <data type="anyURI"/>
+                </attribute>
+            </optional>
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="foreign"/>
+                    <ref name="hi"/>
+                    <ref name="note"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="placeName"/>
+                    <ref name="ref"/>
+                    <ref name="bibl"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                    <ref name="lb"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="placeName">
+        <element name="placeName">
+            <optional>
+                <attribute name="ref"/>
+            </optional>
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="hi"/>
+                    <ref name="lb"/>
+                    <ref name="pb"/>
+                    <ref name="ref"/>
+                    <ref name="bibl"/>
+                    <ref name="note"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                    <ref name="foreign"/>
+                    <ref name="placeName"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="bibl">
+        <element name="bibl">
+            <oneOrMore>
+                <choice>
+                    <text/>
+                    <ref name="bibl"/>
+                    <ref name="hi"/>
+                    <ref name="pb"/>
+                    <ref name="persName"/>
+                    <ref name="placeName"/>
+                    <ref name="ref"/>
+                    <ref name="note"/>
+                    <ref name="addName"/>
+                    <ref name="opener"/>
+                    <ref name="foreign"/>
+                    <ref name="lb"/>
+                </choice>
+            </oneOrMore>
+        </element>
+    </define>
+</grammar>

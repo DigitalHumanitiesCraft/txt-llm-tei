@@ -1,382 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Julien Vinson (30-HSJV12)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10108" type="PID">o:hsa.letter.10108</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">30-HSJV12</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka eta Artxiboa</repository>
-            <idno type="shelfmark">HSJV12</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1897-12-04">1897-12-04</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Julien Vinson</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2939"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10108">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1897-12-04">1897-12-04</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2939" ref="https://viaf.org/viaf/102331524">
-            <forename>Julien</forename>
-            <surname>Vinson</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2939" type="context">
-                        Korrespondenz Hugo Schuchardt - Julien Vinson
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5057" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bibliothèque Nationale de France</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.693" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Graz</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.939" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kaiserliche Akademie der Wissenschaften (Wien)</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.883" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Armenisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10108" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10108" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10108" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10108" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10108" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10108" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10108" xml:id="IMG.7">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10108" xml:id="IMG.8">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10108" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 4 Dez 97.<note n="1" place="foot" type="editorial">Handschriftlicher Zusatz von Vinson: “rép.”</note>
-        </dateline>
-        <opener> Hochgeehrter Herr Kollege </opener>
-        <p> Ich habe ein Exemplar des ersten Bogens<note n="2" place="foot" type="editorial">Wie man sieht war der Aufwand der Herstellung des <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.448">Leiçarraga-Bandes von Linschmann &amp;amp; Schuchardt (1900)</ref>
-
-            </bibl> so aufwendig, dass bereits Ende 1897 der erste Druckbogen zur Korrektur vorlag. Interessant ist, das Schuchardt auch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2939">
-Vinson</persName> in diesen Prozess einbezogen hat.</note> abwarten wollen, ehe ich Ihnen für Ihren freundlichen Brief dankte. Dasselbe geht Ihnen unter Kreuzband zu; ich bitte Sie um Ihr <hi
-            rend="unknown"
-            rendition="#none">
-aufrichtiges</hi> Urtheil – wenngleich nun in der Einrichtung nichts mehr zu ändern ist. Ich sehe wie schwer es ist Druckfehler zu vermeiden, besonders wenn man die des <pb
-            facs="#IMG.2" n="2"/> Originals wiedergeben will. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2047">Linschmann</persName> liest die erste Korrektur, ich revidire, indem ich <hi
-            rend="unknown"
-            rendition="#none">
-zweimal</hi> durchlese. Und so Manches (z.B. ein çe für ce) habe ich erst bei der <hi
-            rend="unknown"
-            rendition="#none">zweiten</hi> Lesung gefunden! Die Marginalien machen besondere Mühe, die Punkte haben eine grosse Neigung zu verschwinden – wir lassen auch die Punkte mit dem Original weg. In Bezug auf Buchstabentrennung bin ich eher zu Koncessionen geneigt, als L.; aber ich folge ih[m] und lasse <pb
-            facs="#IMG.3" n="3"/> z.B. b il für bil, obwohl ich dann consequenter Weise noch einige andre Trennungen vornehmen möchte. Die Grenze ist gar zu schwer zu ziehen. Dazu kommen noch einige in unsern Exemplaren (L. hat das Stuttgarter, ich das Leipziger) sich darbietende Ungleichheiten. z.B </p>
-        <p>S. 8<hi rendition="#sup">r</hi> (zu V, 31) marc. 10.4 bei mir kein Punkt, im Stuttg. Spur eines solchen. </p>
-        <p>S. 12<hi rendition="#sup">r</hi> (zu VII, 19) <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10108" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 4 Dez 97.<note n="1" place="foot" type="editorial">Handschriftlicher Zusatz von Vinson: “rép.”</note>
+            </dateline>
+            <opener> Hochgeehrter Herr Kollege </opener>
+            <p> Ich habe ein Exemplar des ersten Bogens<note n="2" place="foot" type="editorial">Wie man sieht war der Aufwand der Herstellung des <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.448">Leiçarraga-Bandes von Linschmann &amp;amp; Schuchardt (1900)</ref>
+                  </bibl> so aufwendig, dass bereits Ende 1897 der erste Druckbogen zur Korrektur vorlag. Interessant ist, das Schuchardt auch <persName ref="[authorityLink]">
+Vinson</persName> in diesen Prozess einbezogen hat.</note> abwarten wollen, ehe ich Ihnen für Ihren freundlichen Brief dankte. Dasselbe geht Ihnen unter Kreuzband zu; ich bitte Sie um Ihr <hi rend="unknown" rendition="#none">
+aufrichtiges</hi> Urtheil – wenngleich nun in der Einrichtung nichts mehr zu ändern ist. Ich sehe wie schwer es ist Druckfehler zu vermeiden, besonders wenn man die des <pb facs="#IMG.2" n="2"/> Originals wiedergeben will. <persName ref="[authorityLink]">Linschmann</persName> liest die erste Korrektur, ich revidire, indem ich <hi rend="unknown" rendition="#none">
+zweimal</hi> durchlese. Und so Manches (z.B. ein çe für ce) habe ich erst bei der <hi rend="unknown" rendition="#none">zweiten</hi> Lesung gefunden! Die Marginalien machen besondere Mühe, die Punkte haben eine grosse Neigung zu verschwinden – wir lassen auch die Punkte mit dem Original weg. In Bezug auf Buchstabentrennung bin ich eher zu Koncessionen geneigt, als L.; aber ich folge ih[m] und lasse <pb facs="#IMG.3" n="3"/> z.B. b il für bil, obwohl ich dann consequenter Weise noch einige andre Trennungen vornehmen möchte. Die Grenze ist gar zu schwer zu ziehen. Dazu kommen noch einige in unsern Exemplaren (L. hat das Stuttgarter, ich das Leipziger) sich darbietende Ungleichheiten. z.B </p>
+            <p>S. 8<hi rendition="#sup">r</hi> (zu V, 31) marc. 10.4 bei mir kein Punkt, im Stuttg. Spur eines solchen. </p>
+            <p>S. 12<hi rendition="#sup">r</hi> (zu VII, 19) <hi rend="unknown" rendition="#none">
 Lehẽ.</hi> 3.10 bei mir Spur eines Punktes, im Stuttg. fehlt er. </p>
-        <p>S. 23<hi rendition="#sup">r</hi> (zu XII, 42) 1. chro. 9.1 bei mir kein Punkt, im Stuttg. wohl </p>
-        <p>Wie verhält es sich damit in Ihrem Exemplar? </p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>Ein Exemplar ist Ihnen <hi rend="unknown"
-            rendition="#none">auf jeden Fall</hi> schon von mir aus zugedacht. Möglicherweise helfen Sie uns aber bei der Arbeit. Bei der geringen Anzahl der Ausg. des Katechismus wird es schwer sein, eine in unsere Hände zu bekommen – die Bibl. des Arsénal<note
-            n="3" place="foot" type="editorial">Die <hi rend="unknown"
-              rendition="#none">Bibliothèque de l'Arsénal</hi> ist heute eigenständiger Teil der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5057">
-              <hi rend="unknown" rendition="#none">Bibliothèque nationale de France</hi>
-            </ref>.</note> leiht, glaub’ ich, gar nichts aus. Wir wollen nämlich Alles von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5524">Liç.</persName> bringen. Doch davon später eingehender – heute schreibe ich Ihnen in <hi
-            rend="unknown" rendition="#none">grösster</hi> Eile. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1402">Dodgson</persName> langweilt mich fortwährend; ich möchte ihn ein für alle Mal los sein. Würden Sie sich wohl dazu entschliessen ihm die beiden Blätter als Theile meines Briefes an Sie zu schicken? Vielleicht kurirt ihn das etwas.<note
-            n="4" place="foot" type="editorial">Die folgenden Seiten scheinen formal nicht, inhaltlich aber sehr wohl an die ersten 4 Seiten anzuschließen. Unter anderem sind sie jeweils am rechten oberen Eck mit den Zahlen 5 bis 8 nummeriert. </note>
-        </p>
-        <pb facs="#IMG.5" n="5"/>
-        <p>Dodgson fährt merkwürdigerweise fort mir zu schreiben. Ich habe mit ihm gebrochen und werde ihm nicht antworten. Da er sich aber sicherlich bei Ihnen und bei Andern über mich beklagen wird, so will ich wenigstens Ihnen gegenüber eine klare Darstellung meines Verhältnisses zu D. geben und ich bitte Sie, wenn Sie ihn gelegentlich sehen oder ihm schreiben sollten, davon mitzutheilen was Ihnen gut dünkt. </p>
-
-        <p>D. hat die Korrespondenz mit mir gesucht und, trotz meines Widerstrebens, aufrecht erhalten[.] Er hat noch neuerdings an den Rektor unserer <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.693">Universität</ref> geschrieben und sich darüber beschwert dass ich ihm nicht antworte. In einer seiner letzten Zuschriften beschuldigt er mich, ich sei willens gewesen <foreign
-            xml:lang="en">„to use him as a cats paw or to get any advantage out of him that might be possible to me</foreign>”. Nun, by Jove das ist ein hübscher Sommernachtstraum. Er hat mir seine Sachen geschickt und ich ihm die meinigen. Dann hat er mir dann und wann eine kleine baskische Broschüre modernen Datums geschickt, dafür habe ich ihm gedankt, aber einen wesentlichen Dienst hat er meinen Studien damit nicht geleistet. Glaubt er nun in seiner Korrespondenz mir mehr Belehrung haben zu theil werden lassen als ich ihm? Ich gebe zu dass ich seine Karten und Briefe<hi
-            rend="unknown"
-            rendition="#none"> zum grossen Theil</hi> nicht gelesen habe, aus dem einfachen Grunde, weil die Lektüre eines solchen bunten Wirrwarrs aller möglichen Notizen meine Kräfte überstieg. Ich habe ihn dringend <pb
-            facs="#IMG.6"
-            n="6"/> gebeten mir doch etwas geordnete und übersichtliche Briefe zu schreiben; er ist nicht darauf eingegangen. Was mich anlangt, so habe ich mich Jahre hindurch bemüht ihn von den Phantastereien zu heilen, mit denen er mir immer wieder gekommen ist, diesen Vergleichungen <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">
-baskischer</ref> Wörter mit <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.883">armenischen</ref>, 
-estnischen u.s.w., diesem Missverstehen eines <hi
-            rend="unknown" rendition="#none">bè</hi> italienischer oder eines <hi rend="unknown"
-            rendition="#none">bem</hi> portugiesischer Bauern als eines baskischen <hi rend="unknown"
-            rendition="#none">bai</hi>, und sofort [sic] – ich könnte eine sehr lange Liste solcher Notizen geben. Beständig habe ich ihm zugeredet sein unstätes Leben aufzugeben und die Art und Weise seiner Veröffentlichungen zu ändern; nicht immer sich über Andere zu beklagen, sondern auch „den Basken im eigenen Auge zu sehen“. Kurz ich habe ihm, und zwar nur weil er selbst darauf drang, meine Ansicht über ihn und seine Thätigkeit unumwunden ausgesprochen; ich habe, ihm ebenso wie Andern gegenüber, seine grosse praktische Vertrautheit mit dem <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">Baskischen</ref> voll und neidlos anerkannt, aber nicht minder seine Fehler ihm vorgehalten, mag es sich nun um seine wissenschaftliche Betrachtungsweise, sei es um sein Verhalten gegen Andere gehandelt haben. Wenn er daraus entnehmen will, dass ich nicht sein Freund gewesen bin, so mag er es. Er spricht so viel von seinen Feinden; frägt er sich wohl ob er sich nicht selbst diese Feinde gemacht hat? Ich bin auch jetzt nicht sein Feind, aber nach dem Streich den er mir gespielt hat, will ich persönlich Nichts mehr mit ihm zu <pb
-            facs="#IMG.7"
-            n="7"/> thun haben weil mir das mein eigenes Interesse verbietet. Wenn ich mit L. einen Neudruck von Liç. veranstalte und mir von der Wiener Akademie eine materielle Beihilfe dazu erwirke, so ist das eine Angelegenheit, in die sich kein Andrer einzumengen hat. Ich habe betreffs der Einrichtung der Ausgabe keine Verpflichtung übernommen und kein öffentliches Programm gegeben. Wenn ich auf D.’s Anfrage, ob ich die Druckfehler L.’s reproduziren wolle, bejahend antwortete, so war das eine <hi
-            rend="unknown"
-            rendition="#none">private</hi> Mittheilung, von der ich doch, auch ohne ihn erst um Geheimhaltung zu bitten, nicht erwarten konnte dass er den Gebrauch davon machen würde, den er gemacht hat. Ich will dabei gar nicht untersuchen ob er Recht hat oder nicht (da er nur über den einen Punkt unterrichtet war, nicht über die Anlage des Neudrucks im Allgemeinen, so durfte er sich ja im Grunde ein so allgemeines Urtheil gar nicht erlauben); aber nun auf einer Postkarte! mit einem unglaublichen Pathos seine Ansicht, als ob sie eine unmassgebliche wäre, einer Körperschaft vorzutragen die von Herrn Dodgson nicht das Geringste weiss, und sie zu beschwören den unseligen Plan zu hindern, das ist einerseits der Gipfel der Lächerlichkeit, und anderseits durchaus <hi
-            rend="unknown" rendition="#none">
+            <p>S. 23<hi rendition="#sup">r</hi> (zu XII, 42) 1. chro. 9.1 bei mir kein Punkt, im Stuttg. wohl </p>
+            <p>Wie verhält es sich damit in Ihrem Exemplar? </p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>Ein Exemplar ist Ihnen <hi rend="unknown" rendition="#none">auf jeden Fall</hi> schon von mir aus zugedacht. Möglicherweise helfen Sie uns aber bei der Arbeit. Bei der geringen Anzahl der Ausg. des Katechismus wird es schwer sein, eine in unsere Hände zu bekommen – die Bibl. des Arsénal<note n="3" place="foot" type="editorial">Die <hi rend="unknown" rendition="#none">Bibliothèque de l'Arsénal</hi> ist heute eigenständiger Teil der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5057">
+                     <hi rend="unknown" rendition="#none">Bibliothèque nationale de France</hi>
+                  </ref>.</note> leiht, glaub’ ich, gar nichts aus. Wir wollen nämlich Alles von <persName ref="[authorityLink]">Liç.</persName> bringen. Doch davon später eingehender – heute schreibe ich Ihnen in <hi rend="unknown" rendition="#none">grösster</hi> Eile. <persName ref="[authorityLink]">Dodgson</persName> langweilt mich fortwährend; ich möchte ihn ein für alle Mal los sein. Würden Sie sich wohl dazu entschliessen ihm die beiden Blätter als Theile meines Briefes an Sie zu schicken? Vielleicht kurirt ihn das etwas.<note n="4" place="foot" type="editorial">Die folgenden Seiten scheinen formal nicht, inhaltlich aber sehr wohl an die ersten 4 Seiten anzuschließen. Unter anderem sind sie jeweils am rechten oberen Eck mit den Zahlen 5 bis 8 nummeriert. </note>
+            </p>
+            <pb facs="#IMG.5" n="5"/>
+            <p>Dodgson fährt merkwürdigerweise fort mir zu schreiben. Ich habe mit ihm gebrochen und werde ihm nicht antworten. Da er sich aber sicherlich bei Ihnen und bei Andern über mich beklagen wird, so will ich wenigstens Ihnen gegenüber eine klare Darstellung meines Verhältnisses zu D. geben und ich bitte Sie, wenn Sie ihn gelegentlich sehen oder ihm schreiben sollten, davon mitzutheilen was Ihnen gut dünkt. </p>
+            <p>D. hat die Korrespondenz mit mir gesucht und, trotz meines Widerstrebens, aufrecht erhalten[.] Er hat noch neuerdings an den Rektor unserer <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.693">Universität</ref> geschrieben und sich darüber beschwert dass ich ihm nicht antworte. In einer seiner letzten Zuschriften beschuldigt er mich, ich sei willens gewesen <foreign xml:lang="en">„to use him as a cats paw or to get any advantage out of him that might be possible to me</foreign>”. Nun, by Jove das ist ein hübscher Sommernachtstraum. Er hat mir seine Sachen geschickt und ich ihm die meinigen. Dann hat er mir dann und wann eine kleine baskische Broschüre modernen Datums geschickt, dafür habe ich ihm gedankt, aber einen wesentlichen Dienst hat er meinen Studien damit nicht geleistet. Glaubt er nun in seiner Korrespondenz mir mehr Belehrung haben zu theil werden lassen als ich ihm? Ich gebe zu dass ich seine Karten und Briefe<hi rend="unknown" rendition="#none"> zum grossen Theil</hi> nicht gelesen habe, aus dem einfachen Grunde, weil die Lektüre eines solchen bunten Wirrwarrs aller möglichen Notizen meine Kräfte überstieg. Ich habe ihn dringend <pb facs="#IMG.6" n="6"/> gebeten mir doch etwas geordnete und übersichtliche Briefe zu schreiben; er ist nicht darauf eingegangen. Was mich anlangt, so habe ich mich Jahre hindurch bemüht ihn von den Phantastereien zu heilen, mit denen er mir immer wieder gekommen ist, diesen Vergleichungen <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">
+baskischer</ref> Wörter mit <ref target="https://gams.uni-graz.at/o:hsa.languages#L.883">armenischen</ref>, 
+estnischen u.s.w., diesem Missverstehen eines <hi rend="unknown" rendition="#none">bè</hi> italienischer oder eines <hi rend="unknown" rendition="#none">bem</hi> portugiesischer Bauern als eines baskischen <hi rend="unknown" rendition="#none">bai</hi>, und sofort [sic] – ich könnte eine sehr lange Liste solcher Notizen geben. Beständig habe ich ihm zugeredet sein unstätes Leben aufzugeben und die Art und Weise seiner Veröffentlichungen zu ändern; nicht immer sich über Andere zu beklagen, sondern auch „den Basken im eigenen Auge zu sehen“. Kurz ich habe ihm, und zwar nur weil er selbst darauf drang, meine Ansicht über ihn und seine Thätigkeit unumwunden ausgesprochen; ich habe, ihm ebenso wie Andern gegenüber, seine grosse praktische Vertrautheit mit dem <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">Baskischen</ref> voll und neidlos anerkannt, aber nicht minder seine Fehler ihm vorgehalten, mag es sich nun um seine wissenschaftliche Betrachtungsweise, sei es um sein Verhalten gegen Andere gehandelt haben. Wenn er daraus entnehmen will, dass ich nicht sein Freund gewesen bin, so mag er es. Er spricht so viel von seinen Feinden; frägt er sich wohl ob er sich nicht selbst diese Feinde gemacht hat? Ich bin auch jetzt nicht sein Feind, aber nach dem Streich den er mir gespielt hat, will ich persönlich Nichts mehr mit ihm zu <pb facs="#IMG.7" n="7"/> thun haben weil mir das mein eigenes Interesse verbietet. Wenn ich mit L. einen Neudruck von Liç. veranstalte und mir von der Wiener Akademie eine materielle Beihilfe dazu erwirke, so ist das eine Angelegenheit, in die sich kein Andrer einzumengen hat. Ich habe betreffs der Einrichtung der Ausgabe keine Verpflichtung übernommen und kein öffentliches Programm gegeben. Wenn ich auf D.’s Anfrage, ob ich die Druckfehler L.’s reproduziren wolle, bejahend antwortete, so war das eine <hi rend="unknown" rendition="#none">private</hi> Mittheilung, von der ich doch, auch ohne ihn erst um Geheimhaltung zu bitten, nicht erwarten konnte dass er den Gebrauch davon machen würde, den er gemacht hat. Ich will dabei gar nicht untersuchen ob er Recht hat oder nicht (da er nur über den einen Punkt unterrichtet war, nicht über die Anlage des Neudrucks im Allgemeinen, so durfte er sich ja im Grunde ein so allgemeines Urtheil gar nicht erlauben); aber nun auf einer Postkarte! mit einem unglaublichen Pathos seine Ansicht, als ob sie eine unmassgebliche wäre, einer Körperschaft vorzutragen die von Herrn Dodgson nicht das Geringste weiss, und sie zu beschwören den unseligen Plan zu hindern, das ist einerseits der Gipfel der Lächerlichkeit, und anderseits durchaus <hi rend="unknown" rendition="#none">
 ungentlemanlike</hi>. Er schreibt mir: <foreign xml:lang="en">
-            <hi rend="unknown" rendition="#none">I am a free man, Sir, and will express my opinions</hi>
-          </foreign> u.s.w. Ja, Sir, Sie <pb facs="#IMG.8" n="8"/> sind ein Mann frei von jeder Rücksicht auf Andre! Ich möchte wissen was D. dazu gesagt haben würde wenn er mir ein Manuskript vorgelegt hätte, das er einer Zeitschrift zusenden wollte und ich hätte flugs an die Redaktion geschrieben: Um Gottes willen, drucken Sie das nicht ab, das ist ja lauter Unsinn! Ja, dann hätte er ein Recht gehabt von Feindseligkeit zu sprechen. </p>
-
-        <p> Nun hat D. die Naivetät seine Briefschaften von mir zurückzuverlangen; er hat wahrscheinlich in Romanen gelesen, dass bei der Auflösung einer Liaison die Briefe zurückgegeben zu werden pflegen. Ich würde an und für sich darauf eingehen; aber da D. mit meinen Briefen ganz nach Willkür geschaltet, sie z.B. – was doch der allgemeinen Sitte widerspricht – ohne mich um Erlaubnis zu fragen, abgedruckt hat, so will auch ich mich meines Rechtes auf seine Briefe nicht entäussern, in dem Moment da er mir Rache schwört. Ich muss die Mittel in den Händen behalten um falschen Behauptungen seinerseits entgegenzutreten. Er hat die Manie, für sich bei allen möglichen Dingen die Priorität in Anspruch zu nehmen, und er hat mich schon einige Male des Plagiats an seinen mir aufgedrängten Mittheilungen beschuldigt – fälschlich wie ich ihm nachgewiesen habe; während er die Etymologie <hi
-            rend="unknown" rendition="#none">acheter</hi> = <hi rend="unknown"
-            rendition="#none">archiater</hi>, die ich ihm gedruckt zugesendet hatte, später als auf seinem eigenen Mist gewachsen veröffentlichte. Und unglaublich, von meinem Plan, Lic. neu herauszugeben, sagt er: „<foreign
-            xml:lang="en">My scheme has borne fruit in your brain</foreign>.“ Ich habe schon lange vor 1889 – in diesem Jahre hatte D. die <hi
-            rend="unknown"
-            rendition="#none">originelle</hi> Idee – daran gedacht dass Lic. neu zu drucken wäre, nämlich als mir <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1171">
+                  <hi rend="unknown" rendition="#none">I am a free man, Sir, and will express my opinions</hi>
+               </foreign> u.s.w. Ja, Sir, Sie <pb facs="#IMG.8" n="8"/> sind ein Mann frei von jeder Rücksicht auf Andre! Ich möchte wissen was D. dazu gesagt haben würde wenn er mir ein Manuskript vorgelegt hätte, das er einer Zeitschrift zusenden wollte und ich hätte flugs an die Redaktion geschrieben: Um Gottes willen, drucken Sie das nicht ab, das ist ja lauter Unsinn! Ja, dann hätte er ein Recht gehabt von Feindseligkeit zu sprechen. </p>
+            <p> Nun hat D. die Naivetät seine Briefschaften von mir zurückzuverlangen; er hat wahrscheinlich in Romanen gelesen, dass bei der Auflösung einer Liaison die Briefe zurückgegeben zu werden pflegen. Ich würde an und für sich darauf eingehen; aber da D. mit meinen Briefen ganz nach Willkür geschaltet, sie z.B. – was doch der allgemeinen Sitte widerspricht – ohne mich um Erlaubnis zu fragen, abgedruckt hat, so will auch ich mich meines Rechtes auf seine Briefe nicht entäussern, in dem Moment da er mir Rache schwört. Ich muss die Mittel in den Händen behalten um falschen Behauptungen seinerseits entgegenzutreten. Er hat die Manie, für sich bei allen möglichen Dingen die Priorität in Anspruch zu nehmen, und er hat mich schon einige Male des Plagiats an seinen mir aufgedrängten Mittheilungen beschuldigt – fälschlich wie ich ihm nachgewiesen habe; während er die Etymologie <hi rend="unknown" rendition="#none">acheter</hi> = <hi rend="unknown" rendition="#none">archiater</hi>, die ich ihm gedruckt zugesendet hatte, später als auf seinem eigenen Mist gewachsen veröffentlichte. Und unglaublich, von meinem Plan, Lic. neu herauszugeben, sagt er: „<foreign xml:lang="en">My scheme has borne fruit in your brain</foreign>.“ Ich habe schon lange vor 1889 – in diesem Jahre hatte D. die <hi rend="unknown" rendition="#none">originelle</hi> Idee – daran gedacht dass Lic. neu zu drucken wäre, nämlich als mir <persName ref="[authorityLink]">
 Bonaparte</persName> sein <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4294">Verbe basque</ref>
-
-          </bibl> schenkte. Übrigens täuscht sich D. auch in Bezug auf seinen Antheil an der Sache; er hat mir 1893, zwei Jahre später als ich Mitglied der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.939">W. Akad.</ref> geworden war, geschrieben „<foreign
-              xml:lang="en">Will your Academy do nothing for the publishing of <hi rend="unknown"
-              rendition="#none">old Basque</hi> texts with <hi rend="unknown" rendition="#none">translation</hi> and <hi
-              rend="unknown" rendition="#none">notes</hi>
-
-          </foreign>?“ Wenn ich irgend etwas Gutes bei D. finde, so werde ich es citiren, und wenn etwas Unsinniges, gelegentlich darauf aufmerksam machen, ganz so später wie früher; er aber will Alle bitten, meinen Namen in seinen Schriften auszulöschen, <foreign xml:lang="en">
-            <hi rend="unknown" rendition="#none">
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4294">Verbe basque</ref>
+               </bibl> schenkte. Übrigens täuscht sich D. auch in Bezug auf seinen Antheil an der Sache; er hat mir 1893, zwei Jahre später als ich Mitglied der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.939">W. Akad.</ref> geworden war, geschrieben „<foreign xml:lang="en">Will your Academy do nothing for the publishing of <hi rend="unknown" rendition="#none">old Basque</hi> texts with <hi rend="unknown" rendition="#none">translation</hi> and <hi rend="unknown" rendition="#none">notes</hi>
+               </foreign>?“ Wenn ich irgend etwas Gutes bei D. finde, so werde ich es citiren, und wenn etwas Unsinniges, gelegentlich darauf aufmerksam machen, ganz so später wie früher; er aber will Alle bitten, meinen Namen in seinen Schriften auszulöschen, <foreign xml:lang="en">
+                  <hi rend="unknown" rendition="#none">
 as false to me and to Basque</hi>
-          </foreign> (also Dodgson und Baskisch sind identisch!) </p>
-        <closer>
-          <salute>Mit besten Grüssen Ihr ganz ergebener</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt. </persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </foreign> (also Dodgson und Baskisch sind identisch!) </p>
+            <closer>
+               <salute>Mit besten Grüssen Ihr ganz ergebener</salute>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt. </persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

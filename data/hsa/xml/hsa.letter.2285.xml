@@ -1,326 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (429-11183)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2285" type="PID">o:hsa.letter.2285</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">429-11183</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11183</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.287" ref="http://sws.geonames.org/2873759">Marburg</origPlace>
-              <origDate ana="dcterms:created" when="1926-01-11">1926-01-11</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2285">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.287" key="#GID.1" ref="http://sws.geonames.org/2873759">Marburg</placeName>
-          <date when="1926-01-11">1926-01-11</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Marburg</settlement>
-                <name ref="http://geonames.org/2873759" type="fcode:PPLA3">Marburg</name>
-                <location>
-                  <geo>8.77069,50.80904</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4174" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Idealismus (Sprachwissenschaft)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4175" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Positivismus (Sprachwissenschaft)</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2285" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2285" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2285" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2285" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2285" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Marburg, 11. I. 1926.</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-        <p>Also gut: Ihr <hi rend="unknown" rendition="#none">cito</hi> erfordert <hi rend="unknown" rendition="#none">mein bis</hi>.</p>
-        <p>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2697">W.Schulze</persName> lehnte nicht Ihre Weltanschauung als Mitarbeiterin an Ihrer wiss. Arbeit, sondern irgend eine Weltanschauung als Mitarbeiterin .... ab. Bes. der Fall der internation. Hilfsspr. war gemeint, wo Sie die Wünschbarkeit von Weltanschaulichen aus ins Treffen führten oder geführt haben sollen.</p>
-        <p>Von der <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2166">Menéndez Pidal</persName>–Festschr. weiß ich eben wenig wie von <hi
-            rend="unknown"
-            rendition="#none">Schuchardt Hispaniensis</hi>. Castro organisiert alles Mögliche, ich korrespondiere meist mit dem Sekretär Omero Onis, auch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2276">Navarro Tomás</persName>. Ich werde übrigens im März manches erfahren, da ich auf einen Monat nach <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5989">Spanien</placeName> reise. Ich habe ein Stipendium von 1000 M bekommen. Als letzter der jüngeren Romanisten werde ich also das verheißene Land sehen. Ein bischen fürchte ich mich, ob ich die jugendliche Reizsamkeit noch haben werde, ob ich nicht hoffnungslos embourgeoisé bin, familien- und fakultäthaft "versackt" usw. Man ist als 39jähriger Familienvater nicht mehr jung wie ehedem.</p>
-        <pb facs="#IMG.2" n="2"/>
-
-        <p>Ich finde, die Akademien sind heutzutage eine Verteilungsstelle von Ehren, die in das Fakultätsgetriebe eine dissoziierende Unordnung hineintragen. Gott sei Dank, daß wir hier keine haben. Ich brauche nur an die Wiener und Heidelberger Verhältnisse zu denken! M.H. Jellinek nach vielen Jahren korresp. Mitglied. Much seit langen Jahren wirkliches <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1459">
-Ettmayer</persName> Akademiemitglied. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">Meyer-Lübke</persName> fährt nach <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5895">Portugal</placeName> u. wird Akademie-Mitglied usw. Ich werde wohl nie (wissenschaftlich gesprochen) jenen geruhsamen und geheimrätlichen Eindruck machen, der mir den Eintritt in eine jener sublimen Körperschaften verstattet. Drucken lasse ich in Zeitschriften, die meine Sachen schnell bringen – <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1767">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2285" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Marburg, 11. I. 1926.</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Also gut: Ihr <hi rend="unknown" rendition="#none">cito</hi> erfordert <hi rend="unknown" rendition="#none">mein bis</hi>.</p>
+            <p>
+               <persName ref="[authorityLink]">W.Schulze</persName> lehnte nicht Ihre Weltanschauung als Mitarbeiterin an Ihrer wiss. Arbeit, sondern irgend eine Weltanschauung als Mitarbeiterin .... ab. Bes. der Fall der internation. Hilfsspr. war gemeint, wo Sie die Wünschbarkeit von Weltanschaulichen aus ins Treffen führten oder geführt haben sollen.</p>
+            <p>Von der <persName ref="[authorityLink]">Menéndez Pidal</persName>–Festschr. weiß ich eben wenig wie von <hi rend="unknown" rendition="#none">Schuchardt Hispaniensis</hi>. Castro organisiert alles Mögliche, ich korrespondiere meist mit dem Sekretär Omero Onis, auch <persName ref="[authorityLink]">Navarro Tomás</persName>. Ich werde übrigens im März manches erfahren, da ich auf einen Monat nach <placeName ref="[authorityLink]">Spanien</placeName> reise. Ich habe ein Stipendium von 1000 M bekommen. Als letzter der jüngeren Romanisten werde ich also das verheißene Land sehen. Ein bischen fürchte ich mich, ob ich die jugendliche Reizsamkeit noch haben werde, ob ich nicht hoffnungslos embourgeoisé bin, familien- und fakultäthaft "versackt" usw. Man ist als 39jähriger Familienvater nicht mehr jung wie ehedem.</p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>Ich finde, die Akademien sind heutzutage eine Verteilungsstelle von Ehren, die in das Fakultätsgetriebe eine dissoziierende Unordnung hineintragen. Gott sei Dank, daß wir hier keine haben. Ich brauche nur an die Wiener und Heidelberger Verhältnisse zu denken! M.H. Jellinek nach vielen Jahren korresp. Mitglied. Much seit langen Jahren wirkliches <persName ref="[authorityLink]">
+Ettmayer</persName> Akademiemitglied. <persName ref="[authorityLink]">Meyer-Lübke</persName> fährt nach <placeName ref="[authorityLink]">Portugal</placeName> u. wird Akademie-Mitglied usw. Ich werde wohl nie (wissenschaftlich gesprochen) jenen geruhsamen und geheimrätlichen Eindruck machen, der mir den Eintritt in eine jener sublimen Körperschaften verstattet. Drucken lasse ich in Zeitschriften, die meine Sachen schnell bringen – <persName ref="[authorityLink]">
 Hilka</persName> z.B. kümmert sich überhaupt um Redaktionelles nicht, à la bonne heure! Ingerenz von Redakteuren wehre ich ab.</p>
-
-        <p>Ich verstehe wohl, daß Sie Sainéan's Worte gekränkt haben, obwohl man aus seinen Worten spürt, daß er Sie ganz anders behandelt als Meyer-Lübke und Thomas. Aber warum lassen Sie sich den Kern berechtigter Kritik an früherer Etymologik durch diese persönliche Bitterkeit vergällen? Daß zu stark konstruiert worden ist, ist sicher. Daß wir Ammenmärchen wie Troja &gt;
-<ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.226">frz</ref>. <foreign
-            xml:lang="fr">truie</foreign> noch bis jetzt geglaubt haben, ist eine Schande. Daß Sie selbst dem Zeitgeist sich nicht ganz <pb
-            facs="#IMG.3"
-            n="3"/>entziehen konnten, wer wird darin etwas Sonderbares finden? Daß Sainéan nicht neue Faktoren heranzieht, ist richtig (übrigens hat er ziemlich selbständig seit langem die "création métaphorique" praktisch betont) – wer könnte das? Sein Neues ist die quantitative Abschätzung des Konstruktionell-Ermittelbaren. Ich schrieb Ihnen schon s.z. und habe es in der "Werkstatt" auch ausgeplaudert, daß ich an Verknüpfungen wie die von <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">bask</ref>. <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">luki</hi>
-          </foreign> mit fernstehenden Sprachen aus diesem Grunde nicht glauben kann. Hier ist doch, wie ich glaube, bei Sainéan wie bei mir etwas Neues. Die Häufigkeit und Geläufigkeit eines Vorgangs festzustellen ist schließlich auch eine wissenschaftliche Leistung. Es ergibt sich daraus, daß man prinzipiell bei romanischen Wörtern nicht an ein bislang nicht belegtes Etymon (z.B. berecynthia) denken soll.</p>
-        <p>Ich "verstehe" wieder meinerseits nicht, wie ein – <hi rend="unknown"
-            rendition="#none">ist</hi> zweierlei sein kann in einem menschlichen Denkbereich wie dem Glauben, der Axiomatik. Ich kann doch nicht Monist und Dualist auf einmal, et ... et, partim ... partim sein. <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4174">
+            <p>Ich verstehe wohl, daß Sie Sainéan's Worte gekränkt haben, obwohl man aus seinen Worten spürt, daß er Sie ganz anders behandelt als Meyer-Lübke und Thomas. Aber warum lassen Sie sich den Kern berechtigter Kritik an früherer Etymologik durch diese persönliche Bitterkeit vergällen? Daß zu stark konstruiert worden ist, ist sicher. Daß wir Ammenmärchen wie Troja &gt;
+<ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">frz</ref>. <foreign xml:lang="fr">truie</foreign> noch bis jetzt geglaubt haben, ist eine Schande. Daß Sie selbst dem Zeitgeist sich nicht ganz <pb facs="#IMG.3" n="3"/>entziehen konnten, wer wird darin etwas Sonderbares finden? Daß Sainéan nicht neue Faktoren heranzieht, ist richtig (übrigens hat er ziemlich selbständig seit langem die "création métaphorique" praktisch betont) – wer könnte das? Sein Neues ist die quantitative Abschätzung des Konstruktionell-Ermittelbaren. Ich schrieb Ihnen schon s.z. und habe es in der "Werkstatt" auch ausgeplaudert, daß ich an Verknüpfungen wie die von <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">bask</ref>. <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">luki</hi>
+               </foreign> mit fernstehenden Sprachen aus diesem Grunde nicht glauben kann. Hier ist doch, wie ich glaube, bei Sainéan wie bei mir etwas Neues. Die Häufigkeit und Geläufigkeit eines Vorgangs festzustellen ist schließlich auch eine wissenschaftliche Leistung. Es ergibt sich daraus, daß man prinzipiell bei romanischen Wörtern nicht an ein bislang nicht belegtes Etymon (z.B. berecynthia) denken soll.</p>
+            <p>Ich "verstehe" wieder meinerseits nicht, wie ein – <hi rend="unknown" rendition="#none">ist</hi> zweierlei sein kann in einem menschlichen Denkbereich wie dem Glauben, der Axiomatik. Ich kann doch nicht Monist und Dualist auf einmal, et ... et, partim ... partim sein. <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4174">
 Idealismus</ref> ist eine bestimmte Axiomatik. Man kann praktisch bald mehr Material sammeln bald mehr den Gedanken leben, aber man kann innerlich nur nach einer Richtung hin streben: z.B. nach dem Gedanken, wie ich glaube auch Sie tun. Ein Mann wie Lommatzsch oder G.Cohn freut sich dagegen am Beleg als Beleg, am Tatsächlichen, weil es 'so ist'. Das ist doch <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4175">Positivismus</ref>.</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>[Teil scheint zu fehlen]</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Beforschung</hi> schien mir an sich nicht unpassend, aber nicht recht zu Ihrer Stilphysiognomie zu passen. E. Bertram und Gundolf lieben derlei. Ein Gefühl, weiter nichts.</p>
-        <p>"Der Andere". Ich weiß noch immer nicht, wer das ist. Ich nehme an: <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2776">Herbert Steiner</persName>.</p>
-        <p>Ist Caroline Michaëlis gestorben?</p>
-        <p>Warum sollen Sie nicht für etwas subskribieren, was Sie möglicherweise nicht mehr sehen? Ich würde an Ihrer Stelle "naiv" annehmen: Ich lebe ewig. Wir haben jetzt den "Zauberberg" zu Ende gelesen. Das ist ein Buch, das an solche letzten Dinge rührt.</p>
-        <p>Ich muß es aufs entschiedenste ablehnen, daß die persönliche Berührung mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Lerch</persName> (4 Stunden Aufenthalt in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.42">
-München</placeName>), den ich als Menschen wegen seines arroganten Berlinertums nicht schmecken und nicht riechen kann, irgend etwas mit der Stellungnahme gegen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2542">Rohlfs</persName>, der mir persönlich gleich unsympathisch ist, zu tun habe. Ich gehe nur vom Format der Persönlichkeit aus und habe in mir eine gewisse natürliche Hierarchie-Tabelle, gegen die ich nicht gern Versündigungen in Kauf nehme. Wenn Lerch gegen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1348">Curtius</persName> ankämpft, werde ich für Curtius sein, wenn Rohlfs gegen Lerch, für Lerch. Wenn <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">Meyer-Lübke</persName> gegen Schuchardt angekämpft hat, bin ich für Schuchardt gewesen. Wenn <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2156">Meillet</persName> gegen Vossler kämpft, für Vossler. Die persönliche Kenntnis im Umgang ist allerdings sehr geeignet, wie ich glaube, um Fehlurteile über das Persönliche in bestimmten Werken zu korrigieren.</p>
-        <p>Ich habe nichts über Wassermann gelesen. Was ist damit und was habe ich mit ihm zu tun?</p>
-        <closer>
-          <salute>Herzlichste Grüße</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <pb facs="#IMG.4" n="4"/>
+            <p>[Teil scheint zu fehlen]</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Beforschung</hi> schien mir an sich nicht unpassend, aber nicht recht zu Ihrer Stilphysiognomie zu passen. E. Bertram und Gundolf lieben derlei. Ein Gefühl, weiter nichts.</p>
+            <p>"Der Andere". Ich weiß noch immer nicht, wer das ist. Ich nehme an: <persName ref="[authorityLink]">Herbert Steiner</persName>.</p>
+            <p>Ist Caroline Michaëlis gestorben?</p>
+            <p>Warum sollen Sie nicht für etwas subskribieren, was Sie möglicherweise nicht mehr sehen? Ich würde an Ihrer Stelle "naiv" annehmen: Ich lebe ewig. Wir haben jetzt den "Zauberberg" zu Ende gelesen. Das ist ein Buch, das an solche letzten Dinge rührt.</p>
+            <p>Ich muß es aufs entschiedenste ablehnen, daß die persönliche Berührung mit <persName ref="[authorityLink]">Lerch</persName> (4 Stunden Aufenthalt in <placeName ref="[authorityLink]">
+München</placeName>), den ich als Menschen wegen seines arroganten Berlinertums nicht schmecken und nicht riechen kann, irgend etwas mit der Stellungnahme gegen <persName ref="[authorityLink]">Rohlfs</persName>, der mir persönlich gleich unsympathisch ist, zu tun habe. Ich gehe nur vom Format der Persönlichkeit aus und habe in mir eine gewisse natürliche Hierarchie-Tabelle, gegen die ich nicht gern Versündigungen in Kauf nehme. Wenn Lerch gegen <persName ref="[authorityLink]">Curtius</persName> ankämpft, werde ich für Curtius sein, wenn Rohlfs gegen Lerch, für Lerch. Wenn <persName ref="[authorityLink]">Meyer-Lübke</persName> gegen Schuchardt angekämpft hat, bin ich für Schuchardt gewesen. Wenn <persName ref="[authorityLink]">Meillet</persName> gegen Vossler kämpft, für Vossler. Die persönliche Kenntnis im Umgang ist allerdings sehr geeignet, wie ich glaube, um Fehlurteile über das Persönliche in bestimmten Werken zu korrigieren.</p>
+            <p>Ich habe nichts über Wassermann gelesen. Was ist damit und was habe ich mit ihm zu tun?</p>
+            <closer>
+               <salute>Herzlichste Grüße</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

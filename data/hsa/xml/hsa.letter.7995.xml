@@ -1,321 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Alfred Kirchhoff an Hugo Schuchardt (01-05552)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1912">
-            <forename>Alfred</forename>
-            <surname>Kirchhoff</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7995" type="PID">o:hsa.letter.7995</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-05552</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">05552</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1912">
-                <forename>Alfred</forename>
-                <surname>Kirchhoff</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.77" ref="http://sws.geonames.org/2911522">Halle</origPlace>
-              <origDate ana="dcterms:created" when="1887-11-04">1887-11-04</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2021">2021</date>
-          <title>Die Korrespondenz zwischen Alfred Kirchhoff und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1912"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7995">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1912" ref="https://viaf.org/viaf/62293953">
-            <forename>Alfred</forename>
-            <surname>Kirchhoff</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.77" key="#GID.1" ref="http://sws.geonames.org/2911522">Halle</placeName>
-          <date when="1887-11-04">1887-11-04</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Halle</settlement>
-                <name ref="http://geonames.org/2911522" type="fcode:PPL">Halle</name>
-                <location>
-                  <geo>11.97947,51.48158</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1912" type="context">
-                        Korrespondenz Alfred Kirchhoff - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.60" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Volapük</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7995" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7995" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7995" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7995" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7995" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Halle, den 4. Nov. 87</dateline>
-        <opener>Verehrter Herr Kollege!</opener>
-
-        <p>Sie glauben gar nicht, wie mich Ihr Brief erfreut hat. Bewies er mir doch, daß es sogar unter den Sprachforschern gegenüber der Beurteilung des Volapük<note
-            n="1" place="foot" type="editorial">Vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7368">Kirchhoff, <hi rend="unknown" rendition="#none">Volapük. Hilfsbuch zum schnellen und leichten Erlernen der Anfangsgründe dieser Weltsprache</hi>, Halle a. S.: Waisenhaus, 1887</ref>
-            </bibl>; <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7369">Ders., <hi rend="unknown"
-                  rendition="#none">Volapük: Or, universal language. A short grammatical course</hi>, 2 Teile, Halle a. S.: <hi rendition="#sup">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7995" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Halle, den 4. Nov. 87</dateline>
+            <opener>Verehrter Herr Kollege!</opener>
+            <p>Sie glauben gar nicht, wie mich Ihr Brief erfreut hat. Bewies er mir doch, daß es sogar unter den Sprachforschern gegenüber der Beurteilung des Volapük<note n="1" place="foot" type="editorial">Vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7368">Kirchhoff, <hi rend="unknown" rendition="#none">Volapük. Hilfsbuch zum schnellen und leichten Erlernen der Anfangsgründe dieser Weltsprache</hi>, Halle a. S.: Waisenhaus, 1887</ref>
+                  </bibl>; <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7369">Ders., <hi rend="unknown" rendition="#none">Volapük: Or, universal language. A short grammatical course</hi>, 2 Teile, Halle a. S.: <hi rendition="#sup">
 5</hi>1888</ref>
-            </bibl>.</note> noch einen Unparteiischen gibt!</p>
+                  </bibl>.</note> noch einen Unparteiischen gibt!</p>
+            <p>Darin haben Sie vollkommen Recht, daß diese Sprache im einzelnen noch vielfacher Verbesserung bedarf, aber es tagt auch zu solcher Besserung ein Hoffnungsstrahl, seitdem es mir auf dem internat. Vp.-Kongreß in München<note n="2" place="foot" type="editorial">Gemeint ist wohl der vom 6. bis zum 9. August 1887 in München stattfindende 2. Kongress aller Weltsprachefreunde.</note> gelungen ist, Schleÿer<note n="3" place="foot" type="editorial">
+                  <persName>
 
-        <p>Darin haben Sie vollkommen Recht, daß diese Sprache im einzelnen noch vielfacher Verbesserung bedarf, aber es tagt auch zu solcher Besserung ein Hoffnungsstrahl, seitdem es mir auf dem internat. Vp.-Kongreß in München<note
-            n="2" place="foot"
-            type="editorial">Gemeint ist wohl der vom 6. bis zum 9. August 1887 in München stattfindende 2. Kongress aller Weltsprachefreunde.</note> gelungen ist, Schleÿer<note
-            n="3" place="foot" type="editorial">
-
-            <persName>
-
-Johann Martin Schleyer</persName> (1831-1912), „katholischer Priester, Lyriker und Philanthrop. Er erfand um 1880 die Plansprache <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.60">Volapük</ref> und war der erste Cifal der Bewegung“ (<ref
-            target="https://de.wikipedia.org/wiki/Johann_Martin_Schleyer">
-wikipedia</ref>).</note> selbst dahin zu vermögen, daß er Prof. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1898">
-            <hi rend="unknown" rendition="#none">Kerckhoffs</hi>
-          </persName>
-          <note n="4" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1898">Jean Guillaume Auguste Victor François Hubert Kerckhoffs von Nieuwenhof</persName> (1835-1903), war allerdings nicht in Brüssel, sondern in Nuth (heute Niederlande) geboren; Studium und Promotion in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.219">Lüttich</placeName>; vgl. auch HSA 05506.</note> zum Dirigenten der internat. Akademie zur Weiterpflege seiner Sprache vorschlug, was dann auch einstimmig angenommen wurde. Es war ein Erfolg, wie wenn jemand den Papst <pb
-            facs="#IMG.2" n="2"/> rumkriegte, Bismarck zur Revision der Verfassung der katholischen Kirche einzusetzen.</p>
-
-        <p>Kerckhoffs in Paris (Rue Vauquelin 17) ist ein ganz ausgezeichneter Kerl: geistvoll, furchtlos gegenüber plebejischer Wiederhaarigkeit vornehmen oder gemeinen Gesindels, Brüsseler von Geburt (daher frei von französischem Dünkel, echt international), alter Studio von Bonn, gewiß also Schüler unseres braven Diez. Schleÿer dagegen ist nichts als ein gescheiter Pfaff, der einmal einen wirklich guten Gedanken gehabt hat, ihn aber schändet, indem er Pfennige aus seiner Erfindung herauszuschlagen sucht mit seinen miserablen Büchern, seinem jammer- <pb
-            facs="#IMG.3" n="3"/> vollen Käseblatt Volapükabled<note n="5" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">
+Johann Martin Schleyer</persName> (1831-1912), „katholischer Priester, Lyriker und Philanthrop. Er erfand um 1880 die Plansprache <ref target="https://gams.uni-graz.at/o:hsa.languages#L.60">Volapük</ref> und war der erste Cifal der Bewegung“ (<ref target="https://de.wikipedia.org/wiki/Johann_Martin_Schleyer">
+wikipedia</ref>).</note> selbst dahin zu vermögen, daß er Prof. <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Kerckhoffs</hi>
+               </persName>
+               <note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Jean Guillaume Auguste Victor François Hubert Kerckhoffs von Nieuwenhof</persName> (1835-1903), war allerdings nicht in Brüssel, sondern in Nuth (heute Niederlande) geboren; Studium und Promotion in <placeName ref="[authorityLink]">Lüttich</placeName>; vgl. auch HSA 05506.</note> zum Dirigenten der internat. Akademie zur Weiterpflege seiner Sprache vorschlug, was dann auch einstimmig angenommen wurde. Es war ein Erfolg, wie wenn jemand den Papst <pb facs="#IMG.2" n="2"/> rumkriegte, Bismarck zur Revision der Verfassung der katholischen Kirche einzusetzen.</p>
+            <p>Kerckhoffs in Paris (Rue Vauquelin 17) ist ein ganz ausgezeichneter Kerl: geistvoll, furchtlos gegenüber plebejischer Wiederhaarigkeit vornehmen oder gemeinen Gesindels, Brüsseler von Geburt (daher frei von französischem Dünkel, echt international), alter Studio von Bonn, gewiß also Schüler unseres braven Diez. Schleÿer dagegen ist nichts als ein gescheiter Pfaff, der einmal einen wirklich guten Gedanken gehabt hat, ihn aber schändet, indem er Pfennige aus seiner Erfindung herauszuschlagen sucht mit seinen miserablen Büchern, seinem jammer- <pb facs="#IMG.3" n="3"/> vollen Käseblatt Volapükabled<note n="5" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
 Weltspracheblatt, Monatsblätter der Weltsprache Volapük = Volapükabled</hi>
-, Konstanz-Überlingen, Feyel, 1.1881 – 7.1887, Ausg. = Nr. 1-80.</note> und seinem an Tetzels<note
-            n="6" place="foot" type="editorial">
+, Konstanz-Überlingen, Feyel, 1.1881 – 7.1887, Ausg. = Nr. 1-80.</note> und seinem an Tetzels<note n="6" place="foot" type="editorial">
 Johann Tetzel (um 1460-11.10.1519), deutscher Dominikaner und Ablassprediger, der Martin Luther zu seinen 95 Thesen motivierte.</note> Ablaßhandel erinnernden „Diplomen“-Schacher. Am besten kennzeichnet seine Heuchelei das Wort, das er mir in München zuflüsterte: „Nicht ich habe das Vp. erfunden, sondern – mein Genius!“</p>
-        <p>Nun aber wollen Sie ja eigentlich nur wissen, was die Sprachgelehrten <hi rend="unknown"
-            rendition="#none">im allgemeinen</hi> gegen Vp. einzuwenden haben. Das ist auf einen Fidibus zu schreiben. Es drängt sich in Freund <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2815">Suchier</persName>s Wort zusammen: est Unsinn.<note
-            n="7" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2815">Hermann Suchier</persName> (1848-1914), deutscher Romanist; Zitat nicht nachgewiesen.</note> Die Sache ist einfach die: <hi
-            rend="unknown" rendition="#none">gegen</hi> Max Müllers<note n="8" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2252">Friedrich Max Müller</persName> (1823-1900), deutsch-englischer Sprach u. Religionswissenschaftler; vgl. bes. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7370">
-                <hi rend="unknown" rendition="#none">Proposals for a missionary alphabet submitted to the alphabetical conferences held at the Residence of Chevalier Bunsen in January 1854</hi>, London: Spottiswoode, 1854</ref>
-            </bibl>.</note> Voraussagen, daß eine künstliche Sprache nicht nur <hi rend="unknown"
-            rendition="#none">möglich</hi>, sondern unter Umständen eine solche sogar in mehr als einer Hinsicht etwas viel vollkommeneres sein könne als eine natürliche Sprache (eine Voraussage, die be- <pb
-            facs="#IMG.4" n="4"/> kanntlich <hi rend="unknown"
-            rendition="#none">vor</hi> Erfindung des Vp. geschehen) behaupten die Höhererleuchteten, daß es keine <hi
-            rend="unknown" rendition="#none">
-gemachte</hi> Sprache geben <hi rend="unknown"
-            rendition="#none">könne</hi>. Seitdem es nun thatsächlich eine solche giebt, die zur Zeit mindestens von 50000 geschrieben und gesprochen wird von Buenos Aires bis Alexandrien und Bairut, ärgern sich jene Weisen furchtbar und retten sich hinter die Schutzmauer, wenigstens <hi
-            rend="unknown"
-            rendition="#none">lebensfähig</hi> sei die Sprache nicht. Dann kommt das bekannte Gedusel, „die Sprache ist ein Organismus, den könnt Ihr so wenig <hi
-            rend="unknown"
-            rendition="#none">machen</hi> wie den Homunculus“; etwas verständlicher klingt das andere Motiv, die Sprache werde, wenn von verschiedenen Nationen gesprochen, nach Nationalgebieten zerfallen. Gegenbeweis: das Latein während 2000 Jahren, die <hi
-            rend="unknown"
-            rendition="#none">völlig</hi> gleichartige Handhabung (incl. Aussprache) des Vp. bei Russen, Dänen, Engländern, Italienern etc., nebenbei die Aussicht, daß diese internat. Verkehrssprache wesentlich eine <hi
-            rend="unknown" rendition="#none">geschriebene</hi> Sprache bleiben wird.</p>
-        <closer>
-          <salute>Zu jeder weiteren Mitteilung gern bereit, grüßt Sie herzlich</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1912">
+            <p>Nun aber wollen Sie ja eigentlich nur wissen, was die Sprachgelehrten <hi rend="unknown" rendition="#none">im allgemeinen</hi> gegen Vp. einzuwenden haben. Das ist auf einen Fidibus zu schreiben. Es drängt sich in Freund <persName ref="[authorityLink]">Suchier</persName>s Wort zusammen: est Unsinn.<note n="7" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Hermann Suchier</persName> (1848-1914), deutscher Romanist; Zitat nicht nachgewiesen.</note> Die Sache ist einfach die: <hi rend="unknown" rendition="#none">gegen</hi> Max Müllers<note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Friedrich Max Müller</persName> (1823-1900), deutsch-englischer Sprach u. Religionswissenschaftler; vgl. bes. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7370">
+                        <hi rend="unknown" rendition="#none">Proposals for a missionary alphabet submitted to the alphabetical conferences held at the Residence of Chevalier Bunsen in January 1854</hi>, London: Spottiswoode, 1854</ref>
+                  </bibl>.</note> Voraussagen, daß eine künstliche Sprache nicht nur <hi rend="unknown" rendition="#none">möglich</hi>, sondern unter Umständen eine solche sogar in mehr als einer Hinsicht etwas viel vollkommeneres sein könne als eine natürliche Sprache (eine Voraussage, die be- <pb facs="#IMG.4" n="4"/> kanntlich <hi rend="unknown" rendition="#none">vor</hi> Erfindung des Vp. geschehen) behaupten die Höhererleuchteten, daß es keine <hi rend="unknown" rendition="#none">
+gemachte</hi> Sprache geben <hi rend="unknown" rendition="#none">könne</hi>. Seitdem es nun thatsächlich eine solche giebt, die zur Zeit mindestens von 50000 geschrieben und gesprochen wird von Buenos Aires bis Alexandrien und Bairut, ärgern sich jene Weisen furchtbar und retten sich hinter die Schutzmauer, wenigstens <hi rend="unknown" rendition="#none">lebensfähig</hi> sei die Sprache nicht. Dann kommt das bekannte Gedusel, „die Sprache ist ein Organismus, den könnt Ihr so wenig <hi rend="unknown" rendition="#none">machen</hi> wie den Homunculus“; etwas verständlicher klingt das andere Motiv, die Sprache werde, wenn von verschiedenen Nationen gesprochen, nach Nationalgebieten zerfallen. Gegenbeweis: das Latein während 2000 Jahren, die <hi rend="unknown" rendition="#none">völlig</hi> gleichartige Handhabung (incl. Aussprache) des Vp. bei Russen, Dänen, Engländern, Italienern etc., nebenbei die Aussicht, daß diese internat. Verkehrssprache wesentlich eine <hi rend="unknown" rendition="#none">geschriebene</hi> Sprache bleiben wird.</p>
+            <closer>
+               <salute>Zu jeder weiteren Mitteilung gern bereit, grüßt Sie herzlich</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">
 Kirchhoff</persName>.</signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

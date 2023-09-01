@@ -1,532 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Émile Trouette an Hugo Schuchardt (10-11854)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">
-            <forename>Émile</forename>
-            <surname>Trouette</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Martina</forename>
-            <surname>Pelz</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3628" type="PID">o:hsa.letter.3628</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">10-11854</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11854</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="fr"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">
-                <forename>Émile</forename>
-                <surname>Trouette</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="11" unit="pages">11 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" ref="http://sws.geonames.org/2988507">Paris</origPlace>
-              <origDate ana="dcterms:created" when="1882-12-05">1882-12-05</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Martina</forename>
-              <surname>Pelz</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Émile Trouette und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2884"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3628">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2884" ref="https://viaf.org/viaf/194120079">
-            <forename>Émile</forename>
-            <surname>Trouette</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" key="#GID.1" ref="http://sws.geonames.org/2988507">Paris</placeName>
-          <date when="1882-12-05">1882-12-05</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Paris</settlement>
-                <name ref="http://geonames.org/2988507" type="fcode:PPLC">Paris</name>
-                <location>
-                  <geo>2.3488,48.85341</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2884" type="context">
-                        Korrespondenz Émile Trouette - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="fr">Französisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3628" xml:id="IMG.11">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3628" xml:lang="fr">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Paris le 5 décembre 1882</dateline>
-        <opener>Monsieur, </opener>
-        <p>Je vous ai fait attendre ; j’ai été occupé ; je reviens à notre créole. </p>
-        <p>            La <hi rend="unknown" rendition="#none">Veuve</hi> ( ?) ne me va pas beaucoup ; elle renferme trop de pensées et de locutions qui ne sont pas créoles.</p>
-        <p>            <hi rend="unknown" rendition="#none">Quan<hi rend="unknown"
-              rendition="#none">t </hi>ein madam’ j<hi rend="unknown" rendition="#none">o</hi>li</hi>, dites, Quant<hi
-            rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">s</hi>
-          </hi> ein madam’ z<hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3628" xml:lang="fr">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Paris le 5 décembre 1882</dateline>
+            <opener>Monsieur, </opener>
+            <p>Je vous ai fait attendre ; j’ai été occupé ; je reviens à notre créole. </p>
+            <p>            La <hi rend="unknown" rendition="#none">Veuve</hi> ( ?) ne me va pas beaucoup ; elle renferme trop de pensées et de locutions qui ne sont pas créoles.</p>
+            <p>            <hi rend="unknown" rendition="#none">Quan<hi rend="unknown" rendition="#none">t </hi>ein madam’ j<hi rend="unknown" rendition="#none">o</hi>li</hi>, dites, Quant<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">s</hi>
+               </hi> ein madam’ z<hi rend="unknown" rendition="#none">
 o</hi>li.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Y vient d’ perd’ son mari</hi> : C’est bien du créole. <hi rend="unknown"
-            rendition="#none">Fini perd’</hi> ne dirait pas la même chose précisément, et <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+            <p>
+               <hi rend="unknown" rendition="#none">Y vient d’ perd’ son mari</hi> : C’est bien du créole. <hi rend="unknown" rendition="#none">Fini perd’</hi> ne dirait pas la même chose précisément, et <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 fine</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">perd’</hi> serait mauricien. </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Li cassé vot’ la tête</hi>, on <hi rend="unknown" rendition="#none">casse</hi> qui serait peut-être mieux.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Li crie comment bébête</hi>. Bon. <hi rend="unknown"
-            rendition="#none">Main li temps mangé son chagrin</hi>. <hi rend="unknown"
-            rendition="#none">Manzé</hi> plutôt que <hi rend="unknown" rendition="#none">mangé</hi> ; <hi rend="unknown" rendition="#none">çagrin</hi>
-          <pb facs="#IMG.2" n="2"/> plutôt que <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">ch</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">agrin</hi> ; <hi rend="unknown" rendition="#none">man<hi rend="unknown" rendition="#none">ze</hi>
-          </hi> ou <hi rend="unknown" rendition="#none">manz<hi rend="unknown" rendition="#none">é</hi>
-          </hi> comme plus haut pour <hi rend="unknown" rendition="#none">casse</hi>. <hi rend="unknown" rendition="#none">Le temps mange le chagrin</hi>, métaphore usitée peut être chez les créoles, mais dont je n’ai aucun souvenir. </p>
-        <p>            <hi rend="unknown" rendition="#none">Plaisir y revient grand li train</hi>. <hi rend="unknown"
-            rendition="#none">Plaisir</hi> avec ce sens général n’est pas créole ; <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+               </hi>
+               <hi rend="unknown" rendition="#none">perd’</hi> serait mauricien. </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Li cassé vot’ la tête</hi>, on <hi rend="unknown" rendition="#none">casse</hi> qui serait peut-être mieux.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Li crie comment bébête</hi>. Bon. <hi rend="unknown" rendition="#none">Main li temps mangé son chagrin</hi>. <hi rend="unknown" rendition="#none">Manzé</hi> plutôt que <hi rend="unknown" rendition="#none">mangé</hi> ; <hi rend="unknown" rendition="#none">çagrin</hi>
+               <pb facs="#IMG.2" n="2"/> plutôt que <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">ch</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none">agrin</hi> ; <hi rend="unknown" rendition="#none">man<hi rend="unknown" rendition="#none">ze</hi>
+               </hi> ou <hi rend="unknown" rendition="#none">manz<hi rend="unknown" rendition="#none">é</hi>
+               </hi> comme plus haut pour <hi rend="unknown" rendition="#none">casse</hi>. <hi rend="unknown" rendition="#none">Le temps mange le chagrin</hi>, métaphore usitée peut être chez les créoles, mais dont je n’ai aucun souvenir. </p>
+            <p>            <hi rend="unknown" rendition="#none">Plaisir y revient grand li train</hi>. <hi rend="unknown" rendition="#none">Plaisir</hi> avec ce sens général n’est pas créole ; <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 re</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">vient</hi> est du français pur ; de même que <hi rend="unknown" rendition="#none">grand train</hi>, qui est inconnu.</p>
-        <p>            <hi rend="unknown"
-            rendition="#none">Moin n’ana bon’ mémoire</hi>. Le mot mémoire a-t-il jamais été prononcé par un créole ? Et j’entends par créole tout autre chose que ces domestiques qui sont en contact continuel avec les maîtres, et finissent par en prendre la langue. Pourquoi l’apostrophe de <hi
-            rend="unknown" rendition="#none">n’ana</hi> ?</p>
-        <p>            <hi rend="unknown" rendition="#none">Acout’ sel’ment zhistoire</hi>. Bon ; mais précisément <hi
-            rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+               </hi>
+               <hi rend="unknown" rendition="#none">vient</hi> est du français pur ; de même que <hi rend="unknown" rendition="#none">grand train</hi>, qui est inconnu.</p>
+            <p>            <hi rend="unknown" rendition="#none">Moin n’ana bon’ mémoire</hi>. Le mot mémoire a-t-il jamais été prononcé par un créole ? Et j’entends par créole tout autre chose que ces domestiques qui sont en contact continuel avec les maîtres, et finissent par en prendre la langue. Pourquoi l’apostrophe de <hi rend="unknown" rendition="#none">n’ana</hi> ?</p>
+            <p>            <hi rend="unknown" rendition="#none">Acout’ sel’ment zhistoire</hi>. Bon ; mais précisément <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 a</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">cout, <hi rend="unknown" rendition="#none">
-sel</hi>’ment</hi> et <hi
-            rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+               </hi>
+               <hi rend="unknown" rendition="#none">cout, <hi rend="unknown" rendition="#none">
+sel</hi>’ment</hi> et <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 zh</hi>
-          </hi>
-          <hi rend="unknown"
-            rendition="#none">istoire </hi>qui sont si bien créoles rendent plus sensibles ce qui ne l’est pas. <pb
-            facs="#IMG.3" n="3"/>
-        </p>
-        <p>             <hi rend="unknown"
-            rendition="#none">Ça que l’arriv’ Valazé</hi>. Il n’y a aucune raison pour que le mot Valazie se rencontre fréquemment dans le <hi
-            rend="unknown" rendition="#none">patois créole</hi> de Bourbon ; il en serait autrement de la poésie <hi
-            rend="unknown" rendition="#none">française</hi>. Valazie est une vallée ravissante, <hi rend="unknown" rendition="#none">une pièce d’orfèvrerie</hi>
-          <hi rend="unknown" rendition="#none">délicieusement ciselée</hi>, a dit un voyageur, quelque chose <hi
-            rend="unknown" rendition="#none">d’inouï de beauté</hi>, a dit un autre. </p>
-        <p>            Mon frère Auguste Vison y va dix fois, vingt fois par an depuis son enfance ; il y est même propriétaire d’une maisonnette depuis dix ans. </p>
-        <p>            Je dirais <hi rend="unknown" rendition="#none">ça <hi rend="unknown" rendition="#none">
+               </hi>
+               <hi rend="unknown" rendition="#none">istoire </hi>qui sont si bien créoles rendent plus sensibles ce qui ne l’est pas. <pb facs="#IMG.3" n="3"/>
+            </p>
+            <p>             <hi rend="unknown" rendition="#none">Ça que l’arriv’ Valazé</hi>. Il n’y a aucune raison pour que le mot Valazie se rencontre fréquemment dans le <hi rend="unknown" rendition="#none">patois créole</hi> de Bourbon ; il en serait autrement de la poésie <hi rend="unknown" rendition="#none">française</hi>. Valazie est une vallée ravissante, <hi rend="unknown" rendition="#none">une pièce d’orfèvrerie</hi>
+               <hi rend="unknown" rendition="#none">délicieusement ciselée</hi>, a dit un voyageur, quelque chose <hi rend="unknown" rendition="#none">d’inouï de beauté</hi>, a dit un autre. </p>
+            <p>            Mon frère Auguste Vison y va dix fois, vingt fois par an depuis son enfance ; il y est même propriétaire d’une maisonnette depuis dix ans. </p>
+            <p>            Je dirais <hi rend="unknown" rendition="#none">ça <hi rend="unknown" rendition="#none">
 qu’l</hi>’arrive</hi>
-        </p>
-        <p>            <hi rend="unknown" rendition="#none">Pour ein madam’ zizi.</hi> Au lieu de <hi rend="unknown"
-            rendition="#none">pour</hi> il faudrait <hi rend="unknown"
-            rendition="#none">ça qu’ l’arrive madam’ zizi</hi>, en supprimant <hi rend="unknown"
-            rendition="#none">ein</hi>, et en trouvant un autre nom que <hi rend="unknown" rendition="#none">zizi</hi>.</p>
-        <p>            <hi rend="unknown"
-            rendition="#none">Ein jour que son défunt pour faire ein bon zaffaire</hi>. Mettons <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">z</hi>our</hi> et <hi rend="unknown" rendition="#none">déf<hi
-              rend="unknown" rendition="#none">i</hi>n</hi> et <hi rend="unknown" rendition="#none">pou fai</hi>. </p>
-        <p>            <hi rend="unknown" rendition="#none">Pour mett’ créol dedans</hi> ; bon, mais <pb facs="#IMG.4"
-            n="4"/> disons <hi rend="unknown" rendition="#none">cr<hi rend="unknown" rendition="#none">i</hi>ol’</hi>
-        </p>
-        <p>            <hi rend="unknown" rendition="#none">L’até descend’ Saint-Pierre</hi>. Bon. L<hi rend="unknown"
-            rendition="#none">’até</hi> est bien créole et <hi rend="unknown"
-            rendition="#none">l’été</hi> aussi ; on les emploie l’un pour l’autre, indifféremment, sans se préoccuper du mot français altéré, primitif. Mais de Valazie on descend à S<hi
-            rendition="#sup">t</hi> André, à S<hi rendition="#sup">t</hi> Benoît, à S<hi
-            rendition="#sup">t</hi> Suzanne, S<hi rendition="#sup">t</hi> Marie et Saint Denis, nullement à Saint Pierre qui se trouve sur le revers opposé des montagnes. Saint Pierre n’est mis là que pour rimer avec zaffaire, et c’est un sacrifice pas trop grand de la réalité à la rime.</p>
-        <p>            <hi rend="unknown" rendition="#none">Li laissa’ son femm’, son zenfants</hi>. Bon. Laissé ou laisse que j’aimerais mieux.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">            Avec beau pèr’, dans’ son la caze </hi>
-        </p>
-        <p>            <hi rend="unknown" rendition="#none">Ca l’était raison l’hivernage</hi>.  </p>
-        <p>Je n’ai jamais entendu un noir prononcer le mot hivernage. <pb facs="#IMG.5" n="5"/>
-          <hi rend="unknown"
-            rendition="#none">La rivière l’ate’ haute, maré passe à la naze mari passe</hi> ne me va pas ; ou dira plutôt <hi
-            rend="unknown" rendition="#none">
-li passe</hi> ou <hi rend="unknown"
-            rendition="#none">ali passe</hi>. On ne passe pas <hi rend="unknown"
-            rendition="#none">à la nage</hi> des torrents dont la pente <hi rend="unknown"
-            rendition="#none">minimum</hi>, en plaine, est de 2, 3 centimètres par mètre, et qui peuvent débiter <hi
-            rend="unknown" rendition="#none">2.000</hi> mètres cuber d’eau par seconde entre deux culées placées à <hi
-            rend="unknown" rendition="#none">100</hi> mètres l’une del’autre.</p>
-        <p>            <hi rend="unknown" rendition="#none">Quand l’arriv’ dans mitan. Disons Quan<hi rend="unknown" rendition="#none">k</hi> l’arriv’ dan</hi>
-          <hi rend="unknown" rendition="#none">n</hi>
-          <hi rend="unknown" rendition="#none"> mitan</hi>
-        </p>
-        <p>            <hi rend="unknown"
-            rendition="#none">A la mer la descend</hi>. Inversion qui n’a jamais été faite. <hi rend="unknown"
-              rendition="#none">A la mer <hi rend="unknown" rendition="#none">li dis</hi>cend</hi> serait plus créole ; mais ce qui est peu créole c’est de penser à la mer qui est loin, au lieu de la rivière qui est près, qui du reste avec sa furie, avec les galets, les blocs qu’elle roule est plus dangereuse que la mer. </p>
-        <p>            Li la fini néyé. Bon.</p>
-        <p>            Sou femm’ là bas crié. Bon, <hi rend="unknown" rendition="#none">
+            </p>
+            <p>            <hi rend="unknown" rendition="#none">Pour ein madam’ zizi.</hi> Au lieu de <hi rend="unknown" rendition="#none">pour</hi> il faudrait <hi rend="unknown" rendition="#none">ça qu’ l’arrive madam’ zizi</hi>, en supprimant <hi rend="unknown" rendition="#none">ein</hi>, et en trouvant un autre nom que <hi rend="unknown" rendition="#none">zizi</hi>.</p>
+            <p>            <hi rend="unknown" rendition="#none">Ein jour que son défunt pour faire ein bon zaffaire</hi>. Mettons <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">z</hi>our</hi> et <hi rend="unknown" rendition="#none">déf<hi rend="unknown" rendition="#none">i</hi>n</hi> et <hi rend="unknown" rendition="#none">pou fai</hi>. </p>
+            <p>            <hi rend="unknown" rendition="#none">Pour mett’ créol dedans</hi> ; bon, mais <pb facs="#IMG.4" n="4"/> disons <hi rend="unknown" rendition="#none">cr<hi rend="unknown" rendition="#none">i</hi>ol’</hi>
+            </p>
+            <p>            <hi rend="unknown" rendition="#none">L’até descend’ Saint-Pierre</hi>. Bon. L<hi rend="unknown" rendition="#none">’até</hi> est bien créole et <hi rend="unknown" rendition="#none">l’été</hi> aussi ; on les emploie l’un pour l’autre, indifféremment, sans se préoccuper du mot français altéré, primitif. Mais de Valazie on descend à S<hi rendition="#sup">t</hi> André, à S<hi rendition="#sup">t</hi> Benoît, à S<hi rendition="#sup">t</hi> Suzanne, S<hi rendition="#sup">t</hi> Marie et Saint Denis, nullement à Saint Pierre qui se trouve sur le revers opposé des montagnes. Saint Pierre n’est mis là que pour rimer avec zaffaire, et c’est un sacrifice pas trop grand de la réalité à la rime.</p>
+            <p>            <hi rend="unknown" rendition="#none">Li laissa’ son femm’, son zenfants</hi>. Bon. Laissé ou laisse que j’aimerais mieux.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">            Avec beau pèr’, dans’ son la caze </hi>
+            </p>
+            <p>            <hi rend="unknown" rendition="#none">Ca l’était raison l’hivernage</hi>.  </p>
+            <p>Je n’ai jamais entendu un noir prononcer le mot hivernage. <pb facs="#IMG.5" n="5"/>
+               <hi rend="unknown" rendition="#none">La rivière l’ate’ haute, maré passe à la naze mari passe</hi> ne me va pas ; ou dira plutôt <hi rend="unknown" rendition="#none">
+li passe</hi> ou <hi rend="unknown" rendition="#none">ali passe</hi>. On ne passe pas <hi rend="unknown" rendition="#none">à la nage</hi> des torrents dont la pente <hi rend="unknown" rendition="#none">minimum</hi>, en plaine, est de 2, 3 centimètres par mètre, et qui peuvent débiter <hi rend="unknown" rendition="#none">2.000</hi> mètres cuber d’eau par seconde entre deux culées placées à <hi rend="unknown" rendition="#none">100</hi> mètres l’une del’autre.</p>
+            <p>            <hi rend="unknown" rendition="#none">Quand l’arriv’ dans mitan. Disons Quan<hi rend="unknown" rendition="#none">k</hi> l’arriv’ dan</hi>
+               <hi rend="unknown" rendition="#none">n</hi>
+               <hi rend="unknown" rendition="#none"> mitan</hi>
+            </p>
+            <p>            <hi rend="unknown" rendition="#none">A la mer la descend</hi>. Inversion qui n’a jamais été faite. <hi rend="unknown" rendition="#none">A la mer <hi rend="unknown" rendition="#none">li dis</hi>cend</hi> serait plus créole ; mais ce qui est peu créole c’est de penser à la mer qui est loin, au lieu de la rivière qui est près, qui du reste avec sa furie, avec les galets, les blocs qu’elle roule est plus dangereuse que la mer. </p>
+            <p>            Li la fini néyé. Bon.</p>
+            <p>            Sou femm’ là bas crié. Bon, <hi rend="unknown" rendition="#none">
 comme</hi>
-          <pb facs="#IMG.6" n="6"/>
-          <hi rend="unknown" rendition="#none">créole</hi>. </p>
-        <p>            <hi rend="unknown" rendition="#none">Fais mort à moin, bon Dié.`-</hi> Bon.</p>
-        <p>            <hi rend="unknown" rendition="#none">Mon mari n’a pi là quonqu’ ma faire.</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">            Sur la terre</hi> ! Bon, sauf <hi rend="unknown"
-            rendition="#none">sur</hi> à remplacer par <hi rend="unknown" rendition="#none">dissi</hi>.</p>
-        <p>            <hi rend="unknown" rendition="#none">A foré li plére</hi>.</p>
-        <p>            <hi rend="unknown" rendition="#none">Li fait pitié</hi>. Bon. </p>
-        <p>            <hi rend="unknown" rendition="#none">Malher là l’arrivé l’était proch’ jour del’an</hi>.</p>
-        <p>Bon, en disant <hi rend="unknown" rendition="#none">pro<hi rend="unknown" rendition="#none">ss</hi>
-          </hi> en mon <hi rend="unknown" rendition="#none">proe<hi rend="unknown" rendition="#none">ts</hi>
-          </hi>.</p>
-
-        <p>Près du jour del’an, c’est en octobre, novembre ou décembre ; les rivières ne descendent pas dans cette saison <hi
-            rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+               <pb facs="#IMG.6" n="6"/>
+               <hi rend="unknown" rendition="#none">créole</hi>. </p>
+            <p>            <hi rend="unknown" rendition="#none">Fais mort à moin, bon Dié.`-</hi> Bon.</p>
+            <p>            <hi rend="unknown" rendition="#none">Mon mari n’a pi là quonqu’ ma faire.</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">            Sur la terre</hi> ! Bon, sauf <hi rend="unknown" rendition="#none">sur</hi> à remplacer par <hi rend="unknown" rendition="#none">dissi</hi>.</p>
+            <p>            <hi rend="unknown" rendition="#none">A foré li plére</hi>.</p>
+            <p>            <hi rend="unknown" rendition="#none">Li fait pitié</hi>. Bon. </p>
+            <p>            <hi rend="unknown" rendition="#none">Malher là l’arrivé l’était proch’ jour del’an</hi>.</p>
+            <p>Bon, en disant <hi rend="unknown" rendition="#none">pro<hi rend="unknown" rendition="#none">ss</hi>
+               </hi> en mon <hi rend="unknown" rendition="#none">proe<hi rend="unknown" rendition="#none">ts</hi>
+               </hi>.</p>
+            <p>Près du jour del’an, c’est en octobre, novembre ou décembre ; les rivières ne descendent pas dans cette saison <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 sèche</hi>
-          </hi>, sauf la derrière quinzaine de décembre.</p>
-        <p>            <hi rend="unknown" rendition="#none">Quand vini bonn’anmée, son papa dit</hi> : <hi
-            rend="unknown" rendition="#none">J’enfant</hi>. Oui, <hi rend="unknown"
-            rendition="#none">quand bonn’ année, vini</hi>, mais surtout : <hi rend="unknown"
-              rendition="#none">son papa <hi rend="unknown" rendition="#none">y</hi> dit</hi>. Quant à z’<hi
-            rend="unknown" rendition="#none">enfant</hi> il ne s’emploierait au vocatif qu’au pluriel, et mieux vaudrait ici le nom propre. </p>
-        <p>            <hi rend="unknown" rendition="#none">Quoi ça moi donne à vous ?</hi> – <hi rend="unknown"
-            rendition="#none">A moi, révir son fille</hi> qui ça serait mauricien. Je ne connais pas <hi rend="unknown"
-            rendition="#none">révir</hi> pour <hi rend="unknown" rendition="#none">répond</hi>. De plus je n’admets pas l’inversion. </p>
-        <p>            <hi rend="unknown" rendition="#none">M’y demandé pis rien, laisse à moi mort tranquille</hi>. <pb
-            facs="#IMG.7" n="7"/>
-        </p>
-        <p>            <hi rend="unknown" rendition="#none">Demand<hi rend="unknown" rendition="#none">é</hi>
-          </hi>ou <hi rend="unknown" rendition="#none">deman<hi rend="unknown" rendition="#none">de</hi>
-          </hi> que j’aime mieux.</p>
-        <p>            <hi rend="unknown" rendition="#none">Ça l’était vie’ bonhomme’ li connait la manière</hi>. Bon. </p>
-        <p>            <hi rend="unknown" rendition="#none">Quand un mari s’en va</hi>, Français pur</p>
-        <p>                        ça la mod’ l’ordinaire. </p>
-        <p>
-          <hi rend="unknown" rendition="#none">            l</hi>’ ne s’explique guère, mais n’est pas impossible. </p>
-        <p>            Zén gens ná pas manqué qui vient rod’son soulié. </p>
-        <p>            Mana y eneboit’ li pas, quand mêm’ ça vie’ li pié.</p>
-        <p>Souvenir confus du soulier de Cendrillon ; peu intelligible. – <hi rend="unknown"
-              rendition="#none">N’a pas manqué <hi rend="unknown" rendition="#none">qui</hi>
-          </hi> etc, peu créole. <hi rend="unknown" rendition="#none">Quand même <hi rend="unknown" rendition="#none">ça</hi> vie li pié</hi>. Ça est de trop.</p>
-        <p>            <hi rend="unknown" rendition="#none">Li papa dit pas rien, li laissé son fill’grogné</hi>. Bon comme créole.</p>
-        <p>            Li connait li na pas pour toujours chagriné. </p>
-        <p>Invention peu créole. Disons <hi rend="unknown" rendition="#none">tou<hi rend="unknown" rendition="#none">
+               </hi>, sauf la derrière quinzaine de décembre.</p>
+            <p>            <hi rend="unknown" rendition="#none">Quand vini bonn’anmée, son papa dit</hi> : <hi rend="unknown" rendition="#none">J’enfant</hi>. Oui, <hi rend="unknown" rendition="#none">quand bonn’ année, vini</hi>, mais surtout : <hi rend="unknown" rendition="#none">son papa <hi rend="unknown" rendition="#none">y</hi> dit</hi>. Quant à z’<hi rend="unknown" rendition="#none">enfant</hi> il ne s’emploierait au vocatif qu’au pluriel, et mieux vaudrait ici le nom propre. </p>
+            <p>            <hi rend="unknown" rendition="#none">Quoi ça moi donne à vous ?</hi> – <hi rend="unknown" rendition="#none">A moi, révir son fille</hi> qui ça serait mauricien. Je ne connais pas <hi rend="unknown" rendition="#none">révir</hi> pour <hi rend="unknown" rendition="#none">répond</hi>. De plus je n’admets pas l’inversion. </p>
+            <p>            <hi rend="unknown" rendition="#none">M’y demandé pis rien, laisse à moi mort tranquille</hi>. <pb facs="#IMG.7" n="7"/>
+            </p>
+            <p>            <hi rend="unknown" rendition="#none">Demand<hi rend="unknown" rendition="#none">é</hi>
+               </hi>ou <hi rend="unknown" rendition="#none">deman<hi rend="unknown" rendition="#none">de</hi>
+               </hi> que j’aime mieux.</p>
+            <p>            <hi rend="unknown" rendition="#none">Ça l’était vie’ bonhomme’ li connait la manière</hi>. Bon. </p>
+            <p>            <hi rend="unknown" rendition="#none">Quand un mari s’en va</hi>, Français pur</p>
+            <p>                        ça la mod’ l’ordinaire. </p>
+            <p>
+               <hi rend="unknown" rendition="#none">            l</hi>’ ne s’explique guère, mais n’est pas impossible. </p>
+            <p>            Zén gens ná pas manqué qui vient rod’son soulié. </p>
+            <p>            Mana y eneboit’ li pas, quand mêm’ ça vie’ li pié.</p>
+            <p>Souvenir confus du soulier de Cendrillon ; peu intelligible. – <hi rend="unknown" rendition="#none">N’a pas manqué <hi rend="unknown" rendition="#none">qui</hi>
+               </hi> etc, peu créole. <hi rend="unknown" rendition="#none">Quand même <hi rend="unknown" rendition="#none">ça</hi> vie li pié</hi>. Ça est de trop.</p>
+            <p>            <hi rend="unknown" rendition="#none">Li papa dit pas rien, li laissé son fill’grogné</hi>. Bon comme créole.</p>
+            <p>            Li connait li na pas pour toujours chagriné. </p>
+            <p>Invention peu créole. Disons <hi rend="unknown" rendition="#none">tou<hi rend="unknown" rendition="#none">
 zou</hi>
-          </hi> et <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+               </hi> et <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 ça</hi>griné</hi>. </p>
-        <p>            <hi rend="unknown" rendition="#none">Li temps s’en va</hi> ; pas créole. Dire: <hi rend="unknown" rendition="#none">Li temps y passe</hi>. </p>
-        <p>                                               <hi rend="unknown" rendition="#none">
+            <p>            <hi rend="unknown" rendition="#none">Li temps s’en va</hi> ; pas créole. Dire: <hi rend="unknown" rendition="#none">Li temps y passe</hi>. </p>
+            <p>                                               <hi rend="unknown" rendition="#none">
 Son fille y commence ein pé rire</hi>. Bon.</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Mett’ein p’tit riban, li martiqu’ son figire</hi>. Elle met des rubans, se farde la figure ; mais il faudrait <hi
-            rend="unknown" rendition="#none">mastiqu’ son fi<hi rend="unknown"
-            rendition="#none">gh</hi>ire</hi> en supprimant li, ou mettre <hi rend="unknown"
-            rendition="#none">li</hi> devant <hi rend="unknown" rendition="#none">mett’</hi>. <pb facs="#IMG.8" n="8"/>
-        </p>
-        <p>            <hi rend="unknown" rendition="#none">A guet dans son la glaç’ pour voir si li li bien.</hi>
-        </p>
-        <p>Se regarde dans son miroir pour voir si elle est jolie ; il faudrait écrire <hi rend="unknown"
-            rendition="#none">Aguett’</hi>, du verbe <hi rend="unknown" rendition="#none">guetter</hi>. </p>
-        <p>            Si li toujours zoli ; li acout’ miticien – Bon.</p>
-        <p>            Li mett’ bell’rob’ coulèr’ avec fichi dentelle. Dire <hi rend="unknown" rendition="#none">fici</hi>.</p>
-        <p>            Li r’ssemb’ ein p’titt mamzell Bon</p>
-        <p>Comme son papa fait comment chevrell’ dans l’eau. <hi rend="unknown" rendition="#none">Com<hi rend="unknown" rendition="#none">me</hi>
-          </hi>, avec l’<hi rend="unknown" rendition="#none">e</hi> qui compte, non ; dire <hi rend="unknown"
-            rendition="#none">
+            <p>
+               <hi rend="unknown" rendition="#none">Mett’ein p’tit riban, li martiqu’ son figire</hi>. Elle met des rubans, se farde la figure ; mais il faudrait <hi rend="unknown" rendition="#none">mastiqu’ son fi<hi rend="unknown" rendition="#none">gh</hi>ire</hi> en supprimant li, ou mettre <hi rend="unknown" rendition="#none">li</hi> devant <hi rend="unknown" rendition="#none">mett’</hi>. <pb facs="#IMG.8" n="8"/>
+            </p>
+            <p>            <hi rend="unknown" rendition="#none">A guet dans son la glaç’ pour voir si li li bien.</hi>
+            </p>
+            <p>Se regarde dans son miroir pour voir si elle est jolie ; il faudrait écrire <hi rend="unknown" rendition="#none">Aguett’</hi>, du verbe <hi rend="unknown" rendition="#none">guetter</hi>. </p>
+            <p>            Si li toujours zoli ; li acout’ miticien – Bon.</p>
+            <p>            Li mett’ bell’rob’ coulèr’ avec fichi dentelle. Dire <hi rend="unknown" rendition="#none">fici</hi>.</p>
+            <p>            Li r’ssemb’ ein p’titt mamzell Bon</p>
+            <p>Comme son papa fait comment chevrell’ dans l’eau. <hi rend="unknown" rendition="#none">Com<hi rend="unknown" rendition="#none">me</hi>
+               </hi>, avec l’<hi rend="unknown" rendition="#none">e</hi> qui compte, non ; dire <hi rend="unknown" rendition="#none">
 comm’</hi> ou bien <hi rend="unknown" rendition="#none">commo<hi rend="unknown" rendition="#none">
 n</hi>
-          </hi> eu s’enfonçant plus avant dans le gros créole lourd. <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Ch</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">evrett’</hi>, non ; dire <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">ce</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">vrett</hi> ou <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">ci</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">vrett’</hi> ; <hi rend="unknown"
-            rendition="#none">dans l’eau</hi>, dire : <hi rend="unknown"
-            rendition="#none">
+               </hi> eu s’enfonçant plus avant dans le gros créole lourd. <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Ch</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none">evrett’</hi>, non ; dire <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">ce</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none">vrett</hi> ou <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">ci</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none">vrett’</hi> ; <hi rend="unknown" rendition="#none">dans l’eau</hi>, dire : <hi rend="unknown" rendition="#none">
 dann’</hi> l’eau, ou mieux <hi rend="unknown" rendition="#none">dann’di l’eau</hi>
-        </p>
-        <p>            <hi rend="unknown" rendition="#none">Y call’ d’arrière</hi>. Peu intelligible ; cela veut dire peut-être que le père qui a été rabroué n’osant plus s’avancer, c’est la fille qui s’avance. </p>
-        <p>                        <hi rend="unknown" rendition="#none">Ça li bien beau</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Ça zenhomme y vini pour faire à moi la vous </hi>
-        </p>
-        <p>            Ça me paraît de trop dans <hi rend="unknown" rendition="#none">Ca li bien beau</hi>.</p>
-        <p>Les noirs disent-ils faire la cour ? <pb facs="#IMG.9" n="9"/>
-        </p>
-        <p>            Papa, pour nous marier, voa dire à nous li <hi rend="unknown" rendition="#none">zour</hi>. Inversion encore.</p>
-        <p>                        Ça zhistoir ‘là, zann’.</p>
-        <p>                        Li montré que dan’ femme</p>
-        <p>                        Chagrin pour ein mari</p>
-        <p>                        Y amarr’ par longtemps n’aime.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Li</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none"> mont<hi rend="unknown" rendition="#none">ré</hi>
-          </hi> plutôt mauricien que bourbon – mais ; nous dirions r <hi rend="unknown" rendition="#none">y montr<hi
-              rend="unknown" rendition="#none">e</hi>
-          </hi>. Le qu<hi rend="unknown" rendition="#none">
-e</hi> est français. – <hi rend="unknown"
-            rendition="#none">N’ame</hi>. Je n’ai jamais entendu prononcer ce mot ; les créoles disent souvent <hi
-            rend="unknown" rendition="#none">li Ker</hi>, le cœur. </p>
-        <p>            Est-il bien permis de faire une fable en créole pour en tirer une moralité, quand il n’y a pas un seul exemple de ce genre dans les habitudes des Cafres, des Mozambiques, des Malgaches, etc. ?</p>
-
-        <p>            La confusion que je fais du premier et du second volume de M. Héry ne m’étonne pas ; je n’ai pas ces volumes sous la main ; je ne les ai jamais eus à moi. Si par hasard je pouvais <pb
-            facs="#IMG.10" n="10"/> me procurer le premier volume qui vous manque, Monsieur, je me ferais un plaisir de vous l’envoyer. </p>
-        <p>            Me vous donnez par la peine de copier les spécimens que vous avez du patois sechellois ; ils me seraient agréables comme attention aimable de votre part ; mais je ne vois pas que je puisse jamais en tirer parti et votre temps doit être bien occupé. </p>
-        <p>            Je suis entièrement de votre avis quant aux sirandams, avec proverbes, etc. Outre qu’ils donnent l’esprit de ceux qui les ont créés, il y a là nécessairement une formule inaltérable, certaine, très précieuse pour celui qui veut étudier une langue. </p>
-
-        <p>            Je n’ai rien obtenu encore de mon ami Couturier quant aux indications à vous donner sur les travaux <pb
-            facs="#IMG.11" n="11"/> qui ont pu être faits à la Martinique et à la Guadeloupe sur le créole de ces îles ; il paraît qu’il y a très peu de chose dans ce genre, ce qui embarrasse Couturier.</p>
-        <closer>
-          <salute>J’aime à vous répéter, Monsieur, que je suis très heureuse d’avoir pu être utile à un homme qui veut bien s’occuper des choses de mon petit-pays.</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">L Trouette</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            </p>
+            <p>            <hi rend="unknown" rendition="#none">Y call’ d’arrière</hi>. Peu intelligible ; cela veut dire peut-être que le père qui a été rabroué n’osant plus s’avancer, c’est la fille qui s’avance. </p>
+            <p>                        <hi rend="unknown" rendition="#none">Ça li bien beau</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Ça zenhomme y vini pour faire à moi la vous </hi>
+            </p>
+            <p>            Ça me paraît de trop dans <hi rend="unknown" rendition="#none">Ca li bien beau</hi>.</p>
+            <p>Les noirs disent-ils faire la cour ? <pb facs="#IMG.9" n="9"/>
+            </p>
+            <p>            Papa, pour nous marier, voa dire à nous li <hi rend="unknown" rendition="#none">zour</hi>. Inversion encore.</p>
+            <p>                        Ça zhistoir ‘là, zann’.</p>
+            <p>                        Li montré que dan’ femme</p>
+            <p>                        Chagrin pour ein mari</p>
+            <p>                        Y amarr’ par longtemps n’aime.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Li</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none"> mont<hi rend="unknown" rendition="#none">ré</hi>
+               </hi> plutôt mauricien que bourbon – mais ; nous dirions r <hi rend="unknown" rendition="#none">y montr<hi rend="unknown" rendition="#none">e</hi>
+               </hi>. Le qu<hi rend="unknown" rendition="#none">
+e</hi> est français. – <hi rend="unknown" rendition="#none">N’ame</hi>. Je n’ai jamais entendu prononcer ce mot ; les créoles disent souvent <hi rend="unknown" rendition="#none">li Ker</hi>, le cœur. </p>
+            <p>            Est-il bien permis de faire une fable en créole pour en tirer une moralité, quand il n’y a pas un seul exemple de ce genre dans les habitudes des Cafres, des Mozambiques, des Malgaches, etc. ?</p>
+            <p>            La confusion que je fais du premier et du second volume de M. Héry ne m’étonne pas ; je n’ai pas ces volumes sous la main ; je ne les ai jamais eus à moi. Si par hasard je pouvais <pb facs="#IMG.10" n="10"/> me procurer le premier volume qui vous manque, Monsieur, je me ferais un plaisir de vous l’envoyer. </p>
+            <p>            Me vous donnez par la peine de copier les spécimens que vous avez du patois sechellois ; ils me seraient agréables comme attention aimable de votre part ; mais je ne vois pas que je puisse jamais en tirer parti et votre temps doit être bien occupé. </p>
+            <p>            Je suis entièrement de votre avis quant aux sirandams, avec proverbes, etc. Outre qu’ils donnent l’esprit de ceux qui les ont créés, il y a là nécessairement une formule inaltérable, certaine, très précieuse pour celui qui veut étudier une langue. </p>
+            <p>            Je n’ai rien obtenu encore de mon ami Couturier quant aux indications à vous donner sur les travaux <pb facs="#IMG.11" n="11"/> qui ont pu être faits à la Martinique et à la Guadeloupe sur le créole de ces îles ; il paraît qu’il y a très peu de chose dans ce genre, ce qui embarrasse Couturier.</p>
+            <closer>
+               <salute>J’aime à vous répéter, Monsieur, que je suis très heureuse d’avoir pu être utile à un homme qui veut bien s’occuper des choses de mon petit-pays.</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">L Trouette</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,261 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Bogdan Petriceicu Hasdeu (01-1163)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bruno</forename>
-            <surname>Mazzoni</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4458" type="PID">o:hsa.letter.4458</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-1163</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <repository>Unbekannt</repository>
-            <idno type="shelfmark">1163</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.77" ref="http://sws.geonames.org/2911522">Halle</origPlace>
-              <origDate ana="dcterms:created" when="1874-04-16">1874-04-16</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bruno</forename>
-              <surname>Mazzoni</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Bogdan Petriceicu Hasdeu</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1720"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4458">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.77" key="#GID.1" ref="http://sws.geonames.org/2911522">Halle</placeName>
-          <date when="1874-04-16">1874-04-16</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1720" ref="https://viaf.org/viaf/65406496">
-            <forename>Bogdan Petriceicu</forename>
-            <surname>Hasdeu</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Halle</settlement>
-                <name ref="http://geonames.org/2911522" type="fcode:PPL">Halle</name>
-                <location>
-                  <geo>11.97947,51.48158</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1720" type="context">
-                        Korrespondenz Hugo Schuchardt - Bogdan Petriceicu Hasdeu
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.854" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rumänisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4458" xml:lang="de">
-        <pb n="1"/>
-        <dateline> Halle 16. 4. 74. </dateline>
-        <opener> Sehr geehrter Herr! </opener>
-        <p>Soeben empfange ich erst – da ich während der letzten 4 Wochen in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.666">Paris</placeName> war – Ihr schönes Werk, welches Sie die Güte gehabt haben, mir zuzusenden<note
-            n="1" place="foot" type="editorial">
-            <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4458" xml:lang="de">
+            <pb n="1"/>
+            <dateline> Halle 16. 4. 74. </dateline>
+            <opener> Sehr geehrter Herr! </opener>
+            <p>Soeben empfange ich erst – da ich während der letzten 4 Wochen in <placeName ref="[authorityLink]">Paris</placeName> war – Ihr schönes Werk, welches Sie die Güte gehabt haben, mir zuzusenden<note n="1" place="foot" type="editorial">
+                  <bibl>
 
-B. P. Hasdeu, <hi rend="unknown"
-                rendition="#none">Istoria critică a Românilorŭ. Pamentulŭ Ţerrei-Românesci</hi>. I. <hi rend="unknown"
-              rendition="#none">Intinderea territorială. Nomenclatura. Actiunea naturei. Ediţiunea II revăzută şi foarte adausă</hi>, Bucureşti 1874, xii-316 p. (prima ed. 1873).
-</bibl> V. <hi
-              rend="unknown" rendition="#none">infra</hi>, <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4476">n. 4; e XIX</ref>, n. 1.</note>. Natürlich habe ich nur erst darin blättern können, aber dies genügt mir zu zeigen, wie viel neue und werthvolle Untersuchungen in demselben enthalten sind. Ich freue mich ausserordentlich auf das Studium desselben; ich werde so zu der Beschäftigung mit dem <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.854">
-Rumänischen</ref> wieder zurückgeführt, das ich in der letzten Zeit etwas vernachlässigt habe<note
-            n="2" place="foot"
-              type="editorial">Per un panorama cronologico e tematico dei contributi romenistici dello Schuchardt rinviamo senz’altro alla bibliografia curata da <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">L. Spitzer</persName> per lo <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1505">
+B. P. Hasdeu, <hi rend="unknown" rendition="#none">Istoria critică a Românilorŭ. Pamentulŭ Ţerrei-Românesci</hi>. I. <hi rend="unknown" rendition="#none">Intinderea territorială. Nomenclatura. Actiunea naturei. Ediţiunea II revăzută şi foarte adausă</hi>, Bucureşti 1874, xii-316 p. (prima ed. 1873).
+</bibl> V. <hi rend="unknown" rendition="#none">infra</hi>, <ref target="https://gams.uni-graz.at/o:hsa.letter.4476">n. 4; e XIX</ref>, n. 1.</note>. Natürlich habe ich nur erst darin blättern können, aber dies genügt mir zu zeigen, wie viel neue und werthvolle Untersuchungen in demselben enthalten sind. Ich freue mich ausserordentlich auf das Studium desselben; ich werde so zu der Beschäftigung mit dem <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">
+Rumänischen</ref> wieder zurückgeführt, das ich in der letzten Zeit etwas vernachlässigt habe<note n="2" place="foot" type="editorial">Per un panorama cronologico e tematico dei contributi romenistici dello Schuchardt rinviamo senz’altro alla bibliografia curata da <persName ref="[authorityLink]">L. Spitzer</persName> per lo <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1505">
 Schuchardt-Brevier</ref>
-
-            </bibl> (pp. 15-50).</note>. Hoffentlich finde ich Zeit, eine ausführliche Besprechung Ihres Buches oder mindestens seines philologischen Theiles in einer deutschen Zeitschrift oder Zeitung abdrucken zu lassen<note
-            n="3" place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4461">IV</ref>, n. 2.</note>. Jedenfalls werde ich Ihnen meinen Dank noch auf andere Weise aussprechen, als durch diese eiligen Zeilen. Ich sehe, dass ein Paragraph des 2. Bds. Ihrer Istoria über die Poesia frunḑeĭ verḑĭ handelt<note
-            n="4" place="foot"
-              type="editorial">Dalla lettura di questa lettera, e di quella, piú esplicita, datata 28 aprile 1874, si evince che lo Schuchardt non aveva ancora avuto sotto mano il testo del lavoro del Hasdeu (per il quale v. <ref target="https://gams.uni-graz.at/o:hsa.letter.4459">
+                  </bibl> (pp. 15-50).</note>. Hoffentlich finde ich Zeit, eine ausführliche Besprechung Ihres Buches oder mindestens seines philologischen Theiles in einer deutschen Zeitschrift oder Zeitung abdrucken zu lassen<note n="3" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4461">IV</ref>, n. 2.</note>. Jedenfalls werde ich Ihnen meinen Dank noch auf andere Weise aussprechen, als durch diese eiligen Zeilen. Ich sehe, dass ein Paragraph des 2. Bds. Ihrer Istoria über die Poesia frunḑeĭ verḑĭ handelt<note n="4" place="foot" type="editorial">Dalla lettura di questa lettera, e di quella, piú esplicita, datata 28 aprile 1874, si evince che lo Schuchardt non aveva ancora avuto sotto mano il testo del lavoro del Hasdeu (per il quale v. <ref target="https://gams.uni-graz.at/o:hsa.letter.4459">
 II</ref>, nn. 1 e 2). L’informazione l’aveva potuta dunque desumere dall’ultima pagina di copertina della seconda edizione di <bibl>
-              <hi rend="unknown" rendition="#none">Istoria critică a Românilorŭ</hi>
-
-            </bibl>, I, cit., in cui si anticipava il prospetto della materia del volume secondo.</note>; es ist dies ein Punkt, der mich augenblicklich sehr interessirt, da ich eine Schrift über das italienische Ritornell unter der Presse habe<note
-            n="5" place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4461">IV</ref>, n. 1.</note>. Ich muss gestehen, dass ich an eine historische Verwandtschaft der rumänischen mit der italienischen Eingangsformel, wie diese von Cipariu<note
-            n="6" place="foot" type="editorial">Cf. <bibl>
+                     <hi rend="unknown" rendition="#none">Istoria critică a Românilorŭ</hi>
+                  </bibl>, I, cit., in cui si anticipava il prospetto della materia del volume secondo.</note>; es ist dies ein Punkt, der mich augenblicklich sehr interessirt, da ich eine Schrift über das italienische Ritornell unter der Presse habe<note n="5" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4461">IV</ref>, n. 1.</note>. Ich muss gestehen, dass ich an eine historische Verwandtschaft der rumänischen mit der italienischen Eingangsformel, wie diese von Cipariu<note n="6" place="foot" type="editorial">Cf. <bibl>
 
 T. Cipariu, <hi rend="unknown" rendition="#none">Elemente de poetică, metrică şi versificaţiune</hi>, Blaj 1860, p. 195
 </bibl>, dove l’autore adduceva esempi italiani tratti da <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6091">N. Tommaseo, <hi rend="unknown" rendition="#none">Canti popolari toscani corsi illiri greci</hi>..., 4 voll., Venezia 1841-1842</ref>
-            </bibl>.</note>, Alecsandri<note n="7" place="foot" type="editorial">Cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6091">N. Tommaseo, <hi rend="unknown" rendition="#none">Canti popolari toscani corsi illiri greci</hi>..., 4 voll., Venezia 1841-1842</ref>
+                  </bibl>.</note>, Alecsandri<note n="7" place="foot" type="editorial">Cf. <bibl>
 
 
-V. Alecsandri, <hi
-                rend="unknown"
-            rendition="#none">
+V. Alecsandri, <hi rend="unknown" rendition="#none">
 Poesiĭ popolare ale Românilor</hi>, Bucureşti 1867 [ma 1866], pp. 278, 305, 403, 406. (Ristampa in 2 voll., a cura di G. Vrabie, Bucureşti 1965)
-</bibl>.</note>, Picot<note
-            n="8" place="foot" type="editorial">
+</bibl>.</note>, Picot<note n="8" place="foot" type="editorial">
 Cf. <bibl>
 
-É. Picot, <hi rend="unknown"
-            rendition="#none">Documents pour servir à l’étude des dialectes roumains</hi>, Paris 1873, p. 45
-</bibl> (estratto dall’annata quinta della « Revue de linguistique et de philologie comparée »).</note>, Imbriani<note
-            n="9" place="foot" type="editorial">V. lettere <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.4459">II</ref> e <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4460">III</ref>.</note> angenommen wird, nicht zu glauben vermag; ich erblicke nur <hi
-            rend="unknown" rendition="#none">analoge</hi> Erscheinungen hierin. Haben <hi rend="unknown" rendition="#none">Sie</hi> sich darüber ausgesprochen? Es würde vor Allem zu zeigen sein, dass das Frunḑă verde ursprünglich den lyrischen Liedern angehört und dass darunter die Geliebte verstanden wird; denn der italienische Blumenausruf der jetzt allerdings meist ohne jeden Sinn ist, hat sich zu Anfang gewiss auf die Geliebte zu bezogen, wofür ich den Nachweis beizubringen gedenke.</p>
-        <closer>
-          <salute>Genehmigen Sie die Versicherung meiner vorzüglichsten Hochachtung</salute>
-          <lb/>
-          <salute>Ihr ergebenster</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+É. Picot, <hi rend="unknown" rendition="#none">Documents pour servir à l’étude des dialectes roumains</hi>, Paris 1873, p. 45
+</bibl> (estratto dall’annata quinta della « Revue de linguistique et de philologie comparée »).</note>, Imbriani<note n="9" place="foot" type="editorial">V. lettere <ref target="https://gams.uni-graz.at/o:hsa.letter.4459">II</ref> e <ref target="https://gams.uni-graz.at/o:hsa.letter.4460">III</ref>.</note> angenommen wird, nicht zu glauben vermag; ich erblicke nur <hi rend="unknown" rendition="#none">analoge</hi> Erscheinungen hierin. Haben <hi rend="unknown" rendition="#none">Sie</hi> sich darüber ausgesprochen? Es würde vor Allem zu zeigen sein, dass das Frunḑă verde ursprünglich den lyrischen Liedern angehört und dass darunter die Geliebte verstanden wird; denn der italienische Blumenausruf der jetzt allerdings meist ohne jeden Sinn ist, hat sich zu Anfang gewiss auf die Geliebte zu bezogen, wofür ich den Nachweis beizubringen gedenke.</p>
+            <closer>
+               <salute>Genehmigen Sie die Versicherung meiner vorzüglichsten Hochachtung</salute>
+               <lb/>
+               <salute>Ihr ergebenster</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

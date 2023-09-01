@@ -1,388 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Tullio Erber an Hugo Schuchardt (04-02761)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1451">
-            <forename>Tullio</forename>
-            <surname>Erber</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Birgit</forename>
-            <surname>Dorn</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2515" type="PID">o:hsa.letter.2515</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">04-02761</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">02761</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1451">
-                <forename>Tullio</forename>
-                <surname>Erber</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.336" ref="http://sws.geonames.org/3186952">Zara</origPlace>
-              <origDate ana="dcterms:created" when="1884-04-12">12.04.1884.</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Birgit</forename>
-              <surname>Dorn</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Tullio Erber und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1451"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2515">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1451" ref="https://viaf.org/viaf/88804839">
-            <forename>Tullio</forename>
-            <surname>Erber</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.336" key="#GID.1" ref="http://sws.geonames.org/3186952">Zara</placeName>
-          <date when="1884-04-12">12.04.1884.</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Croatia</country>
-                <settlement>Zadar</settlement>
-                <name ref="http://geonames.org/3186952" type="fcode:PPLA">Zadar</name>
-                <location>
-                  <geo>15.22514,44.11578</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1451" type="context">
-                        Korrespondenz Tullio Erber - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3512" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachkontaktphänomene</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.993" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Entlehnung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3801" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">phonolog. Prozesse / Lautentsprechungen / Korrelationen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.324" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Syntax</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3415" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Morphosyntax</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.860" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.638" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Slawische Sprachen</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2515" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2515" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2515" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2515" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2515" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2515" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2515" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Sehr geehrter Herr Professor!</opener>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2515" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Sehr geehrter Herr Professor!</opener>
+            <p>Empfangen Sie vor Allem meinen herzlichsten Dank für Ihre freundlichen zwei Briefe, deren Beantwortung mir leider vor heute nicht möglich war, da ich schon wieder von meinem Augen geplagt werde, so dass ich langsam meinen Verpflichtungen nachkommen kann. Verzeihen Sie mir daher, wenn ich mich auch heute kurz fasse, obwohl ich mein Möglichstes thun werde, um ja keine Ihrer Fragen unbeantwortet zu lassen. Um sicherer zu fahren, habe ich mit <persName ref="[authorityLink]">
+Brunelli</persName> Ihren Brief eingehend besprochen und theile Ihnen hiermit das Resultat unserer Verabredungen. Jene Dalmatiner, welche eine ausschließlich italienische Bildung genossen haben, schreiben eine reine ital. Sprache wie die Lombarden und Venetianer, nicht aber wie die aus Mittel- und Unter Italien. Die Dalmatiner, welche sich fleißig <pb facs="#IMG.2" n="2"/>mit deutschen oder slavischen Büchern befassen, zeigen den Einfluss dieser Sprachen in Frasen und Wörtern, obwohl sie im ganzen genommen dennoch eine gewisse Leichtfertigkeit im ital. Stil haben. Man schreibt heutzutage viel schlechter ital. als einst, und dies in folge der vielsprachigen Gymnasien und der deutschen Universitäten. So viel gibt auch Brunelli zu; ich bin der Meinung dass man dies Verhältnis im Allgemeinen folgendermaßen ausdrücken könnte: „Nur sehr wenige Dalmatiner schreiben eine rein ital. Sprache, während die meisten eine slav. oder deutsche Beeinflussung in ihrem Stil deutlich aufweisen.“ Tommaseo<note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Niccolo Tommaseo</persName> (1802-1874), Linguist, Schriftsteller und Verfasser verschiedener italienischer Wörterbücher (vgl. <hi rend="unknown" rendition="#none">Dizionario di Storia</hi>, s.v. (Treccani)). </note> ist der Vater der Purismen und bei ihm kommen entschieden keine fremden Wörter vor. Die Amtssprache hat Germanismen und Slavismen in Hülle und Fülle, was auch natürlich ist, weil wir in Dalmatien viele Kroaten und Deutsche haben, welche ihre Erledigungen auf ital. Schreiben. Prelezione = Vorlesung, wird von allen ital=osterreichischen Studenten gebraucht und ist natürlich ein Germanismus; lezione wird in Italien geschrieben und gesprochen. Dass man im Königreich <pb facs="#IMG.3" n="3"/>Italien spottweise von einer „lingua italo=austriaca“ spricht, ist ganz sicher und begründet. Zum Schlusse will ich Ihnen noch ein Beispiel anführen. An unserem Gymnasium ist die Philosophie Lindner’s <note n="2" place="foot" type="editorial">
+                  <persName>
 
-        <p>Empfangen Sie vor Allem meinen herzlichsten Dank für Ihre freundlichen zwei Briefe, deren Beantwortung mir leider vor heute nicht möglich war, da ich schon wieder von meinem Augen geplagt werde, so dass ich langsam meinen Verpflichtungen nachkommen kann. Verzeihen Sie mir daher, wenn ich mich auch heute kurz fasse, obwohl ich mein Möglichstes thun werde, um ja keine Ihrer Fragen unbeantwortet zu lassen. Um sicherer zu fahren, habe ich mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1217">
-Brunelli</persName> Ihren Brief eingehend besprochen und theile Ihnen hiermit das Resultat unserer Verabredungen. Jene Dalmatiner, welche eine ausschließlich italienische Bildung genossen haben, schreiben eine reine ital. Sprache wie die Lombarden und Venetianer, nicht aber wie die aus Mittel- und Unter Italien. Die Dalmatiner, welche sich fleißig <pb
-            facs="#IMG.2"
-            n="2"/>mit deutschen oder slavischen Büchern befassen, zeigen den Einfluss dieser Sprachen in Frasen und Wörtern, obwohl sie im ganzen genommen dennoch eine gewisse Leichtfertigkeit im ital. Stil haben. Man schreibt heutzutage viel schlechter ital. als einst, und dies in folge der vielsprachigen Gymnasien und der deutschen Universitäten. So viel gibt auch Brunelli zu; ich bin der Meinung dass man dies Verhältnis im Allgemeinen folgendermaßen ausdrücken könnte: „Nur sehr wenige Dalmatiner schreiben eine rein ital. Sprache, während die meisten eine slav. oder deutsche Beeinflussung in ihrem Stil deutlich aufweisen.“ Tommaseo<note
-            n="1" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.5031">Niccolo Tommaseo</persName> (1802-1874), Linguist, Schriftsteller und Verfasser verschiedener italienischer Wörterbücher (vgl. <hi
-              rend="unknown"
-            rendition="#none">Dizionario di Storia</hi>, s.v. (Treccani)). </note> ist der Vater der Purismen und bei ihm kommen entschieden keine fremden Wörter vor. Die Amtssprache hat Germanismen und Slavismen in Hülle und Fülle, was auch natürlich ist, weil wir in Dalmatien viele Kroaten und Deutsche haben, welche ihre Erledigungen auf ital. Schreiben. Prelezione = Vorlesung, wird von allen ital=osterreichischen Studenten gebraucht und ist natürlich ein Germanismus; lezione wird in Italien geschrieben und gesprochen. Dass man im Königreich <pb
-            facs="#IMG.3"
-            n="3"/>Italien spottweise von einer „lingua italo=austriaca“ spricht, ist ganz sicher und begründet. Zum Schlusse will ich Ihnen noch ein Beispiel anführen. An unserem Gymnasium ist die Philosophie Lindner’s <note
-            n="2" place="foot" type="editorial">
-
-            <persName>
-
-Gustav Adolf Lindner</persName> (1828-1887) war pädagogischer Schriftsteller, Lehrer und Professor und verfasste verschiedene Schulbücher für das Fach Philosophie (vgl. Sander, 1906: 738f.).</note> eingeführt; die ital. Uebersetzung der Psychologie ist von Dr. Ambrosini (Fano-Marche) und jene der Logik ist von mir besorgt worden<note
-            n="3" place="foot" type="editorial">Übersetzungen der Schulbücher Lindnders ins Italienische finden sich wie im Brief beschrieben von Erber (<bibl>
+Gustav Adolf Lindner</persName> (1828-1887) war pädagogischer Schriftsteller, Lehrer und Professor und verfasste verschiedene Schulbücher für das Fach Philosophie (vgl. Sander, 1906: 738f.).</note> eingeführt; die ital. Uebersetzung der Psychologie ist von Dr. Ambrosini (Fano-Marche) und jene der Logik ist von mir besorgt worden<note n="3" place="foot" type="editorial">Übersetzungen der Schulbücher Lindnders ins Italienische finden sich wie im Brief beschrieben von Erber (<bibl>
 
 
 Lindner, 1882
 </bibl>)  und Ambrosini (Lindner, 1882).</note>. Wie oft haben sich die Schüler bei mir über die Schwierigkeit der Sprache Ambrosini’s beklagt, während meine Logik leicht fasslich ist; und doch hat Ambrosini einen ausgezeichneten Stil, wie ich einen solchen nie erreichen werde.</p>
-        <p>Die Aussprache des <hi rend="unknown"
-            rendition="#none">z</hi> variiert; je slavischer eine Person, desto mehr nähert sich <hi rend="unknown"
-            rendition="#none">
-z</hi> dem <hi rend="unknown"
-            rendition="#none">ž</hi>, und je ital. eine Person desto mehr nähert es sich dem harten <hi rend="unknown"
-            rendition="#none">z</hi> wie in <hi rend="unknown"
-            rendition="#none">mezzo</hi>. – Man sagt hier sowohl ami<hi rend="unknown"
-            rendition="#none">ss</hi>i als amici; visio und vizio etc. Wenn ein gebildeter Dalmatiner rein spricht, dann bleiben <hi
-            rend="unknown" rendition="#none">
-z</hi> und <hi rend="unknown"
-            rendition="#none">s</hi> immer wie im Ital. – Gustizia, justizia, justissia werden uebereinander und in derselben Bedeutung gebraucht.- Man sagt hier jorno, giorno, aber nie zorno. –Das <hi
-            rend="unknown" rendition="#none">s</hi> in <hi rend="unknown"
-            rendition="#none">sibica</hi> lautet wie in ital. <pb facs="#IMG.4"
-            n="4"/>serva, sera (im deutschen „senden“). – Das v für f wird nie in Zara gehört, wenn die Leute ital. reden. – <hi
-            rend="unknown" rendition="#none">Kukica</hi> (hier <hi rend="unknown" rendition="#none">c</hi> gleich <hi
-            rend="unknown" rendition="#none">z</hi>) wird als Fangspiel gebraucht (κιχάνω?<note n="4" place="foot"
-            type="editorial">κιχάνω findet sich im Griechisch-Deutschen Wörterbuch von <bibl>
+            <p>Die Aussprache des <hi rend="unknown" rendition="#none">z</hi> variiert; je slavischer eine Person, desto mehr nähert sich <hi rend="unknown" rendition="#none">
+z</hi> dem <hi rend="unknown" rendition="#none">ž</hi>, und je ital. eine Person desto mehr nähert es sich dem harten <hi rend="unknown" rendition="#none">z</hi> wie in <hi rend="unknown" rendition="#none">mezzo</hi>. – Man sagt hier sowohl ami<hi rend="unknown" rendition="#none">ss</hi>i als amici; visio und vizio etc. Wenn ein gebildeter Dalmatiner rein spricht, dann bleiben <hi rend="unknown" rendition="#none">
+z</hi> und <hi rend="unknown" rendition="#none">s</hi> immer wie im Ital. – Gustizia, justizia, justissia werden uebereinander und in derselben Bedeutung gebraucht.- Man sagt hier jorno, giorno, aber nie zorno. –Das <hi rend="unknown" rendition="#none">s</hi> in <hi rend="unknown" rendition="#none">sibica</hi> lautet wie in ital. <pb facs="#IMG.4" n="4"/>serva, sera (im deutschen „senden“). – Das v für f wird nie in Zara gehört, wenn die Leute ital. reden. – <hi rend="unknown" rendition="#none">Kukica</hi> (hier <hi rend="unknown" rendition="#none">c</hi> gleich <hi rend="unknown" rendition="#none">z</hi>) wird als Fangspiel gebraucht (κιχάνω?<note n="4" place="foot" type="editorial">κιχάνω findet sich im Griechisch-Deutschen Wörterbuch von <bibl>
 
 Pape (1954:
-</bibl> 1443)  in der Bedeutung ’erreichen, antreffen, finden’ oder ’im Lauf einholen’. </note>); man sagt auch „guarda che non te cuco, cuchemo se“; „zogar a cuca“ als Eier - Spiel kommt hier nicht vor. Das Suffix <hi
-            rend="unknown"
-            rendition="#none">ica </hi>ist slavisch (diminuitiv) wie z.B. gora- gorica, Sava- Savica, kabánica, mlikárica<note
-            n="5" place="foot"
-            type="editorial">
+</bibl> 1443)  in der Bedeutung ’erreichen, antreffen, finden’ oder ’im Lauf einholen’. </note>); man sagt auch „guarda che non te cuco, cuchemo se“; „zogar a cuca“ als Eier - Spiel kommt hier nicht vor. Das Suffix <hi rend="unknown" rendition="#none">ica </hi>ist slavisch (diminuitiv) wie z.B. gora- gorica, Sava- Savica, kabánica, mlikárica<note n="5" place="foot" type="editorial">
 Möglicherweise handelt es sich hierbei jedoch lediglich um eine Lexementlehnung. In <bibl>
 
 Miotto (1991:
-</bibl> 122) wird auf eine Entlehnung aus dem Čakavischen hingewiesen.</note>. Wörter auf <hi
-            rend="unknown"
-            rendition="#none">ica</hi> werden hier sehr oft beim ital. Reden gebraucht, nur wie der Accent stets auf’s <hi
-            rend="unknown" rendition="#none">i </hi>verschoben z.B. g(k)abaníca (Rock) mlikarícaste.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Girica</hi> slav. (sgv. Ghiriza) oder<hi rend="unknown"
-            rendition="#none"> gavon </hi>(zaratin.) bedeutet für Zara, Umgebung und Cherso<note n="6" place="foot"
-            type="editorial">Ital. Bezeichnung für die Insel <placeName>
-Cres</placeName> (Alberi, 2008: 1673).</note> ein kleiner Fisch, welcher sich im ganzen adriat. Meere befindet und in Venedig<hi
-            rend="unknown"
-            rendition="#none"> agone </hi>heist. Manula (slav.) oder marida (zaratin.) ist eine zweite Gattung (<hi
-            rend="unknown" rendition="#none">ganz verschiedener Fische</hi>) welche in Venedig menola <hi rend="unknown" rendition="#none">schiava</hi>
-          <note n="7" place="foot" type="editorial">Im <hi rend="unknown"
-              rendition="#none">Dizionario del dialetto Veneziano </hi>findet sich ein Eintrag als Unterpunkt von <hi
-              rend="unknown" rendition="#none">menola</hi> im gleichen Zusammenhang. Die <hi rend="unknown"
-              rendition="#none">menola schiava</hi> ist eine Unterart des Sparus Menolatus und hat den Beinahmen <hi
-              rend="unknown" rendition="#none">schiava</hi> auf Grund des Hauptvorkommens im illyrischen Raum (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3583">Boerio, 1829</ref>
-            </bibl>: 347).</note> heißt, weil sie nur auf den illirischen Küsten vorkommt. In Spalato hat <hi
-            rend="unknown"
-            rendition="#none">ghera</hi> die Bedeutung marida, und ghirica die von maridella (dimin.). Ich bin selbst ein mühender Fischer und sie können mir, dem Boerio<note
-            n="8" place="foot" type="editorial">
+</bibl> 122) wird auf eine Entlehnung aus dem Čakavischen hingewiesen.</note>. Wörter auf <hi rend="unknown" rendition="#none">ica</hi> werden hier sehr oft beim ital. Reden gebraucht, nur wie der Accent stets auf’s <hi rend="unknown" rendition="#none">i </hi>verschoben z.B. g(k)abaníca (Rock) mlikarícaste.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Girica</hi> slav. (sgv. Ghiriza) oder<hi rend="unknown" rendition="#none"> gavon </hi>(zaratin.) bedeutet für Zara, Umgebung und Cherso<note n="6" place="foot" type="editorial">Ital. Bezeichnung für die Insel <placeName>
+Cres</placeName> (Alberi, 2008: 1673).</note> ein kleiner Fisch, welcher sich im ganzen adriat. Meere befindet und in Venedig<hi rend="unknown" rendition="#none"> agone </hi>heist. Manula (slav.) oder marida (zaratin.) ist eine zweite Gattung (<hi rend="unknown" rendition="#none">ganz verschiedener Fische</hi>) welche in Venedig menola <hi rend="unknown" rendition="#none">schiava</hi>
+               <note n="7" place="foot" type="editorial">Im <hi rend="unknown" rendition="#none">Dizionario del dialetto Veneziano </hi>findet sich ein Eintrag als Unterpunkt von <hi rend="unknown" rendition="#none">menola</hi> im gleichen Zusammenhang. Die <hi rend="unknown" rendition="#none">menola schiava</hi> ist eine Unterart des Sparus Menolatus und hat den Beinahmen <hi rend="unknown" rendition="#none">schiava</hi> auf Grund des Hauptvorkommens im illyrischen Raum (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3583">Boerio, 1829</ref>
+                  </bibl>: 347).</note> heißt, weil sie nur auf den illirischen Küsten vorkommt. In Spalato hat <hi rend="unknown" rendition="#none">ghera</hi> die Bedeutung marida, und ghirica die von maridella (dimin.). Ich bin selbst ein mühender Fischer und sie können mir, dem Boerio<note n="8" place="foot" type="editorial">
 Verweis auf <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3583">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3583">
 Boerio (1829)</ref>
-            </bibl>.</note> zum Trotz, glauben, das meine Ansicht noch recht confus an dieser Stelle ist.</p>
-        <pb facs="#IMG.5" n="5"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Syntaktische Slavismen.</hi> „Ghiotto su“ ist im Slavischen „poklepan na“ mit Accus z.B. ribu:</p>
-        <p>„Giuocare sulle carte“ kommt in Zara nicht vor, wohl aber in den <hi rend="unknown" rendition="#none">borghi di Spalato</hi>. </p>
-        <p>Meravigliarsi a qualcheduno hört man hier nie, sondern meravigliarsi di qualcheduno. Venir la piccola forza für svenimento ist unbekannt. Praticare con qualcheduno (slav. obićiti s’ kim) ist wie ital.; siehe Toscanisches Sprichwort „dimmi con chi pratichi, e ti dirò chi sei“. Man hört hier sehr häufig „praticare qualcheduno oder qualche cosa“ was natürlich nicht correct ital. ist.</p>
-        <p>Parada kommt vielleicht vom ital. parare, weil jenes Ruder die Barke dirigiert.</p>
-
-        <p>Sciare (nach rückwärts rudern) ist vom ital. – scia = solio che lascia dietro se il naviglio mentre va. (Siehe Diez beim franz. Worte <hi
-            rend="unknown" rendition="#none">scier</hi>).</p>
-        <p>Die Elision des<hi rend="unknown"
-            rendition="#none"> che</hi> in Redensarten wie „più slavo di quello sono l’altre etc.“ gehört zu den ital. Purismen. Hier hört man jetzt nur<hi
-            rend="unknown" rendition="#none"> che</hi> z.B. <pb facs="#IMG.6" n="6"/>„mi son più giovane che vecchio“, „mi son più slavo che lu“ oder auch (de lui statt di lui).</p>
-        <p>Das <hi rend="unknown" rendition="#none">se </hi>wird gebraucht, wenn das Subj. zugleich Objekt ist. Das <hi
-            rend="unknown" rendition="#none">me </hi>steht für <hi rend="unknown" rendition="#none">ci</hi> wenn Subj. u. Obj. verschieden sind. Me sera nel stomego kommt bei ordinären Leuten schon vor, aber häufiger me se sera nel stomego = ich fühle eine Beklemmung im Magen. Man kann sagen „za vidjet ga“ und auch „da ga vidim“ mir ist letztere Form correcter.</p>
-        <p>Hiermit glaube ich auf Alles geantwortet zu haben, umsomehr da auch Brunelli Ihnen dieser Tage einen Brief zuschickte. Sollten Sie noch etwas brauchen, so bitte ich nur ungeniert auch auf einer Correspondenz=Carte zu schreiben; ich stehe Ihnen ja stets und mit Vergnügen zur Verfügung.</p>
-        <closer>
-          <salute>Mit besten Grüßen</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <lb/>
-          <salute>ganz ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1451">T. Erber</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                  </bibl>.</note> zum Trotz, glauben, das meine Ansicht noch recht confus an dieser Stelle ist.</p>
+            <pb facs="#IMG.5" n="5"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Syntaktische Slavismen.</hi> „Ghiotto su“ ist im Slavischen „poklepan na“ mit Accus z.B. ribu:</p>
+            <p>„Giuocare sulle carte“ kommt in Zara nicht vor, wohl aber in den <hi rend="unknown" rendition="#none">borghi di Spalato</hi>. </p>
+            <p>Meravigliarsi a qualcheduno hört man hier nie, sondern meravigliarsi di qualcheduno. Venir la piccola forza für svenimento ist unbekannt. Praticare con qualcheduno (slav. obićiti s’ kim) ist wie ital.; siehe Toscanisches Sprichwort „dimmi con chi pratichi, e ti dirò chi sei“. Man hört hier sehr häufig „praticare qualcheduno oder qualche cosa“ was natürlich nicht correct ital. ist.</p>
+            <p>Parada kommt vielleicht vom ital. parare, weil jenes Ruder die Barke dirigiert.</p>
+            <p>Sciare (nach rückwärts rudern) ist vom ital. – scia = solio che lascia dietro se il naviglio mentre va. (Siehe Diez beim franz. Worte <hi rend="unknown" rendition="#none">scier</hi>).</p>
+            <p>Die Elision des<hi rend="unknown" rendition="#none"> che</hi> in Redensarten wie „più slavo di quello sono l’altre etc.“ gehört zu den ital. Purismen. Hier hört man jetzt nur<hi rend="unknown" rendition="#none"> che</hi> z.B. <pb facs="#IMG.6" n="6"/>„mi son più giovane che vecchio“, „mi son più slavo che lu“ oder auch (de lui statt di lui).</p>
+            <p>Das <hi rend="unknown" rendition="#none">se </hi>wird gebraucht, wenn das Subj. zugleich Objekt ist. Das <hi rend="unknown" rendition="#none">me </hi>steht für <hi rend="unknown" rendition="#none">ci</hi> wenn Subj. u. Obj. verschieden sind. Me sera nel stomego kommt bei ordinären Leuten schon vor, aber häufiger me se sera nel stomego = ich fühle eine Beklemmung im Magen. Man kann sagen „za vidjet ga“ und auch „da ga vidim“ mir ist letztere Form correcter.</p>
+            <p>Hiermit glaube ich auf Alles geantwortet zu haben, umsomehr da auch Brunelli Ihnen dieser Tage einen Brief zuschickte. Sollten Sie noch etwas brauchen, so bitte ich nur ungeniert auch auf einer Correspondenz=Carte zu schreiben; ich stehe Ihnen ja stets und mit Vergnügen zur Verfügung.</p>
+            <closer>
+               <salute>Mit besten Grüßen</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <lb/>
+               <salute>ganz ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">T. Erber</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

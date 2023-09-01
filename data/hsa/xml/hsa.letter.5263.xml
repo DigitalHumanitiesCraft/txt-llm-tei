@@ -1,394 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Henri Gaidoz (103-SG27)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Magdalena</forename>
-            <surname>Rattey</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5263" type="PID">o:hsa.letter.5263</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">103-SG27</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</repository>
-            <idno type="shelfmark">SG27</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1899-01-20">1899-01-20</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Magdalena</forename>
-              <surname>Rattey</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Henri Gaidoz</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1541"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5263">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1899-01-20">1899-01-20</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1541" ref="https://viaf.org/viaf/9972548">
-            <forename>Henri</forename>
-            <surname>Gaidoz</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1541" type="context">
-                        Korrespondenz Hugo Schuchardt - Henri Gaidoz
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4205" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Nationalismus</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5387" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Mélusine. Recueil de mythologie, littérature populaire, traditions et usages.</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.275" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Gesundheit</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5404" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Folkloregesellschaft (Graz)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5263" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5263" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5263" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5263" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5263" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5263" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 20 Jänner 1899</dateline>
-        <opener>Verehrter Herr,</opener>
-
-        <p>Die Dämmerung überraschte mich vorgestern; ich konnte nicht Alles schreiben was ich beabsichtigte zu schreiben. Über das <hi
-            rend="unknown"
-            rendition="#none">Junctim </hi>wusste ich nicht mehr als Sie, und Ihre Ansicht schien mir richtig zu sein. Inzwischen habe ich mich an bester Quelle darüber unterrichtet. Das östr. Staatsw. von Mischler und Ulbrich<note
-            n="1" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5263" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 20 Jänner 1899</dateline>
+            <opener>Verehrter Herr,</opener>
+            <p>Die Dämmerung überraschte mich vorgestern; ich konnte nicht Alles schreiben was ich beabsichtigte zu schreiben. Über das <hi rend="unknown" rendition="#none">Junctim </hi>wusste ich nicht mehr als Sie, und Ihre Ansicht schien mir richtig zu sein. Inzwischen habe ich mich an bester Quelle darüber unterrichtet. Das östr. Staatsw. von Mischler und Ulbrich<note n="1" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 Österreichisches Staatswörterbuch. Handbuch des gesamten österreichischen öffentlichen Rechtes
 </bibl>
-
-            </hi>. Hrsg. unter Mitwirkung zahlreicher Fachmänner von Ernst Mischler und Josef Ulbrich. Band I-II. Wien: Hölder 1857-1912; 2. wesentl. umgearb. Aufl. Band I-IV. Wien: Hölder 1905-1909.</note> sagt: „Wenn Gesetz-Vorlagen derartig innerlich zusammenhängen, dass sie zwar in den Gesetzgebungskörperschaften aufeinander folgend behandelt werden können, die aber ihres innern Zusammenhangs wegen nur gemeinsam und unter der Bedingung behandelt werden, dass sie zugleich gelten, zugleich sanctionirt werden sollen, so nennt man solche Vorlagen in Ungarn <hi
-            rend="unknown"
-            rendition="#none">
-Junctim-Vorlagen.</hi> - Es ist in Ungarn in neuester Zeit, aus Anlass der kirchenpolitischen Gesetze, der Ausdruck <pb
-            facs="#IMG.2" n="2"/>
-          <hi rend="unknown" rendition="#none">Junctim-Vorlagen</hi> in Gebrauch gekommen.</p>
-
-        <p>Erst heute schicke ich Ihnen die Artikel über Galizien, die Serie ist jetzt erst abgeschlossen - und diese Polen welche sich selbst nicht haben beherrschen können, wollen uns beherrschen! Nur weil sie schlau sind und Höflingsmanieren haben! Ich habe im vorigen Jahre die <hi
-            rend="unknown"
-            rendition="#none">Denkwürdigkeiten des Pan Severin Soplica </hi>(zweite Hälfte des vorigen Jahrhunderts) gelesen, in deutscher Uebersetzung<note
-            n="2" place="foot" type="editorial">Rzewuski, Heinrich. 1875. <hi rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>. Hrsg. unter Mitwirkung zahlreicher Fachmänner von Ernst Mischler und Josef Ulbrich. Band I-II. Wien: Hölder 1857-1912; 2. wesentl. umgearb. Aufl. Band I-IV. Wien: Hölder 1905-1909.</note> sagt: „Wenn Gesetz-Vorlagen derartig innerlich zusammenhängen, dass sie zwar in den Gesetzgebungskörperschaften aufeinander folgend behandelt werden können, die aber ihres innern Zusammenhangs wegen nur gemeinsam und unter der Bedingung behandelt werden, dass sie zugleich gelten, zugleich sanctionirt werden sollen, so nennt man solche Vorlagen in Ungarn <hi rend="unknown" rendition="#none">
+Junctim-Vorlagen.</hi> - Es ist in Ungarn in neuester Zeit, aus Anlass der kirchenpolitischen Gesetze, der Ausdruck <pb facs="#IMG.2" n="2"/>
+               <hi rend="unknown" rendition="#none">Junctim-Vorlagen</hi> in Gebrauch gekommen.</p>
+            <p>Erst heute schicke ich Ihnen die Artikel über Galizien, die Serie ist jetzt erst abgeschlossen - und diese Polen welche sich selbst nicht haben beherrschen können, wollen uns beherrschen! Nur weil sie schlau sind und Höflingsmanieren haben! Ich habe im vorigen Jahre die <hi rend="unknown" rendition="#none">Denkwürdigkeiten des Pan Severin Soplica </hi>(zweite Hälfte des vorigen Jahrhunderts) gelesen, in deutscher Uebersetzung<note n="2" place="foot" type="editorial">Rzewuski, Heinrich. 1875. <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 Denkwürdigkeiten des Pan Severin Soplica Mundschenk von Parnau
 </bibl>
-
-            </hi>. Aus dem Polnischen übertragen von Philipp Loebenstein. Leipzig: Reclam.</note> (Reclam 701-704 zusammen 80 Pfennige); man glaubt die Märchen aus Tausend und Einer Nacht zu lesen. Übrigens, wiederhole ich es, wenn auch in der neuerliche Verbrüderung zwischen Tschechen und Polen viel Sentimentalität steckt, die letzteren werden schliesslich doch nur ihre eigenen Interessen haben, und diese sind gegen das tschechische Staatsrecht - von den Deutschen haben ja die Polen gar Nichts zu besorgen. Und, trotz der Brochüre Langs<note
-            n="3" place="foot"
-              type="editorial">L. Lang. 1898. '<bibl>
+                  </hi>. Aus dem Polnischen übertragen von Philipp Loebenstein. Leipzig: Reclam.</note> (Reclam 701-704 zusammen 80 Pfennige); man glaubt die Märchen aus Tausend und Einer Nacht zu lesen. Übrigens, wiederhole ich es, wenn auch in der neuerliche Verbrüderung zwischen Tschechen und Polen viel Sentimentalität steckt, die letzteren werden schliesslich doch nur ihre eigenen Interessen haben, und diese sind gegen das tschechische Staatsrecht - von den Deutschen haben ja die Polen gar Nichts zu besorgen. Und, trotz der Brochüre Langs<note n="3" place="foot" type="editorial">L. Lang. 1898. '<bibl>
 
 Les nationalités en Hongrie et en Autriche
-</bibl>'. In: <hi
-              rend="unknown" rendition="#none">Revue politique et parlementaire, </hi>Band XVIII, Nummer 52, Oktober<hi
-              rend="unknown" rendition="#none">.</hi> Paris: Colin. (Siehe Brief vom 13. November 1898 (<ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5252">
-092-03282</ref>), Gaidoz an Schuchardt).</note>, werden sich die Magyaren mit Händen und Füssen gegen den <hi
-            rend="unknown" rendition="#none">Trialismus</hi>
-          <note n="4" place="foot" type="editorial">Der 
+</bibl>'. In: <hi rend="unknown" rendition="#none">Revue politique et parlementaire, </hi>Band XVIII, Nummer 52, Oktober<hi rend="unknown" rendition="#none">.</hi> Paris: Colin. (Siehe Brief vom 13. November 1898 (<ref target="https://gams.uni-graz.at/o:hsa.letter.5252">
+092-03282</ref>), Gaidoz an Schuchardt).</note>, werden sich die Magyaren mit Händen und Füssen gegen den <hi rend="unknown" rendition="#none">Trialismus</hi>
+               <note n="4" place="foot" type="editorial">Der 
 
 Trialismus bezeichnet in Hinblick auf die österreichisch-ungarische Doppelmonarchie ein Konzept der Dreiteilung, und zwar in folgende Staaten: Österreich und Ungarn und ein slawischer Reichsteil. Es blieb jedoch nur bei der Idee des Trialismus.</note> wehren. </p>
-
-        <p>Oestreich ist bisher das aristokratischste Land Europas gewesen; die Aristokratie spielt hier auch heute noch eine Rolle wie nirgend anderswo. Aber auch das wird sich ändern, der demokratische Geist ist in den letzten Jahren sehr lebendig geworden. Der Roman einer Grazer Aristokratin (die ich persönlich kenne) gibt eine getreue Schilderung der „Gesellschaft“.<note
-            n="5" place="foot"
-              type="editorial">Es könnte sein, dass Schuchardt die Grazer Aristokratin und Schriftstellerin <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2586">Edith von Salburg</persName> (1868-1942, spät. Freifrau Edith Krieg von Hochfelden) meint. Ihre Kindheit verbrachte sie in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.6">
+            <p>Oestreich ist bisher das aristokratischste Land Europas gewesen; die Aristokratie spielt hier auch heute noch eine Rolle wie nirgend anderswo. Aber auch das wird sich ändern, der demokratische Geist ist in den letzten Jahren sehr lebendig geworden. Der Roman einer Grazer Aristokratin (die ich persönlich kenne) gibt eine getreue Schilderung der „Gesellschaft“.<note n="5" place="foot" type="editorial">Es könnte sein, dass Schuchardt die Grazer Aristokratin und Schriftstellerin <persName ref="[authorityLink]">Edith von Salburg</persName> (1868-1942, spät. Freifrau Edith Krieg von Hochfelden) meint. Ihre Kindheit verbrachte sie in <placeName ref="[authorityLink]">
 Graz</placeName> und lebte dort bis zu ihrer Heirat mit Franz Frh. K. v. H. im Jahr 1898. Da von Salburgs Roman „<bibl>
 
 Die österreichische Gesellschaft. (Tril., Die Exclusiven, Papa Durchlaucht, Die Inclusiven)
 </bibl>“ 1897/98 veröffentlicht wurde, also zu der Zeit, als sie sich noch in Graz aufhielt (deshalb „Grazer Aristokratin“), ist anzunehmen, dass Schuchardt sich auf diesen Roman bezieht. (Vgl. <bibl>
 
 ÖBL 1815-1950, Bd. 4
-</bibl> (Lfg. 18, 1968), S. 270f.). Im Schuchardt-Nachlass befindet sich ein Brief aus dem Jahr 1889 von Edith von Salburg (09891), mit einen <hi
-              rend="unknown" rendition="#none">
+</bibl> (Lfg. 18, 1968), S. 270f.). Im Schuchardt-Nachlass befindet sich ein Brief aus dem Jahr 1889 von Edith von Salburg (09891), mit einen <hi rend="unknown" rendition="#none">
 Gedicht an Hugo Schuchardt</hi> (vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1600">Wolf</ref>
-            </bibl> 1993).</note>
-          <pb facs="#IMG.3" n="3"/>
-        </p>
-        <p>Die <hi rend="unknown" rendition="#none">Mélusine</hi>
-          <note n="6" place="foot"
-              type="editorial">Damit ist die 1877 von Gaidoz und Rolland gegründete Zeitschrift <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5387">
-              <hi rend="unknown" rendition="#none">Mélusine. </hi>
-              <hi rend="unknown" rendition="#none">Recueil de mythologie, littérature populaire, traditions et usages</hi>
-            </ref>. gemeint. Sie erschien bis 1912. In Brief (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.5250">090-03280</ref>) fragt Gaidoz, ob die <hi
-              rend="unknown"
-            rendition="#none">Mélusine</hi> in Graz erhältlich sei.</note> habe ich unserem Bibliothekar lebhaftest zur Anschaffung empfohlen. Die Bibliothekare lassen sich auch zu den billigsten Zeitschriften nur ungern herbei, weil sie die <hi
-            rend="unknown"
-            rendition="#none">dauernden</hi> Belastungen möglichst vermeiden und die Zeitschriften ausserdem (wie ich in meiner eigenen erfahre) mancherlei Unbequemlichkeiten mit sich führen. Ich habe zu meinem Bedauern festgestellt dass die M. in keiner öffentlichen östreichischen Bibliothek gehalten wird (wir haben nämlich einen Gesamtkatalog über die Zeitschriften). Ich hätte schon früher dazu gethan, aber, obwohl ich gelegentlich mit dem Folklore zu thun habe, bin ich doch kein Folklorist. Freilich habe ich einstmals mit G. Meyer eine Folkloregesellschaft gegründet und war deren Präsident; aber wir sind nie über die constituirende Sitzung hinausgekommen und ich beglückwünsche mich dazu - tot capita tot sensus!<note
-            n="7" place="foot"
-              type="editorial">Wie aus einem Artikel von Elisabeth Egger und Susanne Oberpeilsteiner in den <hi
-              rend="unknown" rendition="#none">Grazer Linguistischen Studien </hi>(<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1777">2016, Heft 85</ref>
-            </bibl>) hervorgeht, erwähnt <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1888">Ludwig Katona</persName> (1900: 220, zit. nach. Egger / Oberpeilsteiner 2016) im Nachruf auf <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2185">Meyer</persName>: „dass Meyer im Einvernehmen mit Schuchardt 1882 eine <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.5404">
-Folklore-Gesellschaft</ref> in Graz gründen wollte, dass dieses Bestreben aber nicht über die konstituierende Sitzung hinauskam.“ Darüber hinaus weisen die Autorinnen auf einen Feuilletonbeitrag mit dem Titel „Folklore“ von Schuchardt und Meyer in der <hi
-              rend="unknown" rendition="#none">Grazer Tagespost</hi> vom 22. Juni 1882 hin. (Vgl. Elisabeth Egger &amp; Susanne Oberpeilsteiner. 2016. ‘ ‘Ich werde mir erlauben (…)’ Die Korrespondenz von Wilhelm und Marie Hein mit Hugo Schuchardt’. In <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1777">Grazer Linguistische Studien 85 : 57-130</ref>
-            </bibl>).</note>
-        </p>
-
-        <p>Ich möchte Sie bitten mich bei E. Rolland, zu dem Sie ja in nahen Beziehungen stehen, zu entschuldigen. Er schickte mir vor längerer Zeit den ersten Band seiner <hi
-            rend="unknown" rendition="#none">Flore pop.</hi>
-          <note n="8" place="foot" type="editorial">Rolland, Eugène. 1896-1914. <hi rend="unknown" rendition="#none">
-              <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1600">Wolf</ref>
+                  </bibl> 1993).</note>
+               <pb facs="#IMG.3" n="3"/>
+            </p>
+            <p>Die <hi rend="unknown" rendition="#none">Mélusine</hi>
+               <note n="6" place="foot" type="editorial">Damit ist die 1877 von Gaidoz und Rolland gegründete Zeitschrift <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5387">
+                     <hi rend="unknown" rendition="#none">Mélusine. </hi>
+                     <hi rend="unknown" rendition="#none">Recueil de mythologie, littérature populaire, traditions et usages</hi>
+                  </ref>. gemeint. Sie erschien bis 1912. In Brief (<ref target="https://gams.uni-graz.at/o:hsa.letter.5250">090-03280</ref>) fragt Gaidoz, ob die <hi rend="unknown" rendition="#none">Mélusine</hi> in Graz erhältlich sei.</note> habe ich unserem Bibliothekar lebhaftest zur Anschaffung empfohlen. Die Bibliothekare lassen sich auch zu den billigsten Zeitschriften nur ungern herbei, weil sie die <hi rend="unknown" rendition="#none">dauernden</hi> Belastungen möglichst vermeiden und die Zeitschriften ausserdem (wie ich in meiner eigenen erfahre) mancherlei Unbequemlichkeiten mit sich führen. Ich habe zu meinem Bedauern festgestellt dass die M. in keiner öffentlichen östreichischen Bibliothek gehalten wird (wir haben nämlich einen Gesamtkatalog über die Zeitschriften). Ich hätte schon früher dazu gethan, aber, obwohl ich gelegentlich mit dem Folklore zu thun habe, bin ich doch kein Folklorist. Freilich habe ich einstmals mit G. Meyer eine Folkloregesellschaft gegründet und war deren Präsident; aber wir sind nie über die constituirende Sitzung hinausgekommen und ich beglückwünsche mich dazu - tot capita tot sensus!<note n="7" place="foot" type="editorial">Wie aus einem Artikel von Elisabeth Egger und Susanne Oberpeilsteiner in den <hi rend="unknown" rendition="#none">Grazer Linguistischen Studien </hi>(<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1777">2016, Heft 85</ref>
+                  </bibl>) hervorgeht, erwähnt <persName ref="[authorityLink]">Ludwig Katona</persName> (1900: 220, zit. nach. Egger / Oberpeilsteiner 2016) im Nachruf auf <persName ref="[authorityLink]">Meyer</persName>: „dass Meyer im Einvernehmen mit Schuchardt 1882 eine <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5404">
+Folklore-Gesellschaft</ref> in Graz gründen wollte, dass dieses Bestreben aber nicht über die konstituierende Sitzung hinauskam.“ Darüber hinaus weisen die Autorinnen auf einen Feuilletonbeitrag mit dem Titel „Folklore“ von Schuchardt und Meyer in der <hi rend="unknown" rendition="#none">Grazer Tagespost</hi> vom 22. Juni 1882 hin. (Vgl. Elisabeth Egger &amp; Susanne Oberpeilsteiner. 2016. ‘ ‘Ich werde mir erlauben (…)’ Die Korrespondenz von Wilhelm und Marie Hein mit Hugo Schuchardt’. In <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1777">Grazer Linguistische Studien 85 : 57-130</ref>
+                  </bibl>).</note>
+            </p>
+            <p>Ich möchte Sie bitten mich bei E. Rolland, zu dem Sie ja in nahen Beziehungen stehen, zu entschuldigen. Er schickte mir vor längerer Zeit den ersten Band seiner <hi rend="unknown" rendition="#none">Flore pop.</hi>
+               <note n="8" place="foot" type="editorial">Rolland, Eugène. 1896-1914. <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Flore populaire de France ou Histoire naturelle des plantes dans leurs rapports avec la linguistique et le folklore
 </bibl>
-
-            </hi>. 11 Bände. Zuerst bei Librairie Rolland in Paris, dann bei Staube erschienen. Die Bände 9, 10 und 11 wurden postum von Gaidoz herausgegeben. (Vgl. "Bibliographie d’Eugène Rolland: ouvrages et revues", in: <ref target="https://www.berose.fr/rubrique85.html?lang=fr">
-              <hi rend="unknown" rendition="#none">Bérose</hi>. <hi rend="unknown" rendition="#none">
+                  </hi>. 11 Bände. Zuerst bei Librairie Rolland in Paris, dann bei Staube erschienen. Die Bände 9, 10 und 11 wurden postum von Gaidoz herausgegeben. (Vgl. "Bibliographie d’Eugène Rolland: ouvrages et revues", in: <ref target="https://www.berose.fr/rubrique85.html?lang=fr">
+                     <hi rend="unknown" rendition="#none">Bérose</hi>. <hi rend="unknown" rendition="#none">
 Encyclopédie en ligne</hi>
-            </ref>).</note> mit der Bitte ihn zu besprechen. <pb facs="#IMG.4"
-            n="4"/> Ich hatte auch die beste Absicht, verfügte sogar über die einleitenden Worte - die ich stets am Schwersten finde - aber anderes kam dazwischen.<note
-            n="9" place="foot"
-              type="editorial">Später hat Schuchardt eine Rezension verfasst: Schuchardt, Hugo. 1899. '[Rez. von:] Eugène Rolland, Flore populaire ou Histoire naturelle des plantes dans leurs rapports avec la linguistique et le folklore. Tome I (1896), Tome II (1899)'. In <hi
-              rend="unknown" rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 20: 280-282. [Archiv-/Breviernummer: <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.259">
+                  </ref>).</note> mit der Bitte ihn zu besprechen. <pb facs="#IMG.4" n="4"/> Ich hatte auch die beste Absicht, verfügte sogar über die einleitenden Worte - die ich stets am Schwersten finde - aber anderes kam dazwischen.<note n="9" place="foot" type="editorial">Später hat Schuchardt eine Rezension verfasst: Schuchardt, Hugo. 1899. '[Rez. von:] Eugène Rolland, Flore populaire ou Histoire naturelle des plantes dans leurs rapports avec la linguistique et le folklore. Tome I (1896), Tome II (1899)'. In <hi rend="unknown" rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 20: 280-282. [Archiv-/Breviernummer: <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.259">
 349</ref>
-
-            </bibl>].</note> Meine Gesundheit ist schlecht, meine Kräfte schwach und ich bürde mir zu vielerlei auf. So erklärt es sich dass ich ihm auch nicht gedankt habe, was ich sonst bei jedem mir <hi
-            rend="unknown" rendition="#none">
+                  </bibl>].</note> Meine Gesundheit ist schlecht, meine Kräfte schwach und ich bürde mir zu vielerlei auf. So erklärt es sich dass ich ihm auch nicht gedankt habe, was ich sonst bei jedem mir <hi rend="unknown" rendition="#none">
 geschenkten</hi> Buche thue. Ich konsultiere seine <hi rend="unknown" rendition="#none">Faune pop.</hi>
-          <note n="10" place="foot" type="editorial">Rolland, Eugène. 1877-1911. <hi rend="unknown"
-              rendition="#none">Faune populaire de la France; noms vulgaires, dictons, proverbes, légendes, contes et superstitions.</hi> 13 Bände. Die ersten acht Bände erschienen bei Maisonneuve in Paris, die letzten fünf wurden postum von Gaidoz bei Staude in Paris herausgegeben. (Vgl. "Bibliographie d’Eugène Rolland: ouvrages et revues", in: <ref target="https://www.berose.fr/rubrique85.html?lang=fr">
-              <hi rend="unknown" rendition="#none">Bérose. Encyclopédie en ligne.</hi>
-
-            </ref>). Siehe auch Schuchardts Rezension: Schuchardt, Hugo. 1884. '[Rez. von:] Rolland, Eugène, Faune populaire de la France (Noms vulgaires, dictons, proverbes, légendes, contes et superstitions) I-VI'. In <hi
-              rend="unknown" rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 5: 280-284. [Archiv-/Breviernummer: <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.252">
+               <note n="10" place="foot" type="editorial">Rolland, Eugène. 1877-1911. <hi rend="unknown" rendition="#none">Faune populaire de la France; noms vulgaires, dictons, proverbes, légendes, contes et superstitions.</hi> 13 Bände. Die ersten acht Bände erschienen bei Maisonneuve in Paris, die letzten fünf wurden postum von Gaidoz bei Staude in Paris herausgegeben. (Vgl. "Bibliographie d’Eugène Rolland: ouvrages et revues", in: <ref target="https://www.berose.fr/rubrique85.html?lang=fr">
+                     <hi rend="unknown" rendition="#none">Bérose. Encyclopédie en ligne.</hi>
+                  </ref>). Siehe auch Schuchardts Rezension: Schuchardt, Hugo. 1884. '[Rez. von:] Rolland, Eugène, Faune populaire de la France (Noms vulgaires, dictons, proverbes, légendes, contes et superstitions) I-VI'. In <hi rend="unknown" rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 5: 280-284. [Archiv-/Breviernummer: <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.252">
 167</ref>
-            </bibl>].</note> (und auch den ersten Band der <hi rend="unknown" rendition="#none">Flore</hi>) sehr fleissig. </p>
-        <closer>
-          <salute>Mit herzlichem Grusse,</salute>
-          <lb/>
-          <salute>Ihr ergebenster</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-        <pb facs="#IMG.5" n="5"/>
-      </div>
-    </body>
-  </text>
+                  </bibl>].</note> (und auch den ersten Band der <hi rend="unknown" rendition="#none">Flore</hi>) sehr fleissig. </p>
+            <closer>
+               <salute>Mit herzlichem Grusse,</salute>
+               <lb/>
+               <salute>Ihr ergebenster</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+            <pb facs="#IMG.5" n="5"/>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,571 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Alfredo Trombetti an Hugo Schuchardt (06-11787)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">
-            <forename>Alfredo</forename>
-            <surname>Trombetti</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3135" type="PID">o:hsa.letter.3135</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">06-11787</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11787</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">
-                <forename>Alfredo</forename>
-                <surname>Trombetti</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="12" unit="pages">12 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.420" ref="http://sws.geonames.org/3177700">Cuneo</origPlace>
-              <origDate ana="dcterms:created" when="1902-11-26">1902-11-26</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Alfredo Trombetti und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2881"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3135">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2881" ref="https://viaf.org/viaf/44384477">
-            <forename>Alfredo</forename>
-            <surname>Trombetti</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.420" key="#GID.1" ref="http://sws.geonames.org/3177700">Cuneo</placeName>
-          <date when="1902-11-26">1902-11-26</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Cuneo</settlement>
-                <name ref="http://geonames.org/3177700" type="fcode:PPLA2">Cuneo</name>
-                <location>
-                  <geo>7.54828,44.39071</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2881" type="context">
-                        Korrespondenz Alfredo Trombetti - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4967" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Wiener Zeitschrift für die Kunde des Morgenlandes</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3090" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsche morgenländische Gesellschaft</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.11">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3135" xml:id="IMG.12">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3135" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Cuneo, 26 Novembre 1902</dateline>
-        <opener>Chiarissimo Signor Professore, </opener>
-
-        <p>La ringrazio infinitamente della cortese lettera che Ella mi ha mandato e della cartolina che ho ricevuto oggi stesso. Io non osavo chiedere l’autorevolissimo suo appoggio presso gli amici influenti che Ella conta qui in Italia: Ella me lo offre – bene inteso nel caso che Le paia meritato – e io non so davvero come ringraziarla fin d’ora della buona disposizione di SV. a mio riguardo. Ciò che io desidero è che in qualche modo sia richiamata l’attenzione su di un modesto ma appassionatissimo cultore degli studi glottologici comparativi intesi nel senso più vasto, cultore che ha fatto finora dei sacrifizi inenarrabili per puro ideale amore della scienza e che è rimasto ed è voluto rimanere finora nell’ombra. Ciò che io presento alla R. Accademia dei Lincei è il frutto di lunghi e amorosi studi e di lunghe meditazioni e veglie; ed ho la coscienza di avere trovato una tale quantità di fatti nuovi e di somma importanza, che non dubito punto di aver fatto opera più meritevole del premio. L’unica cosa che io temo è l’apatio o lo scetticismo da parte degli esaminatori o giudici; i per meglio dire temo di suscitare diffidenze per il fatto che io sono un autodidatta e non riconosco per miei maestri che i grandi glottologi e per mia guida le loro opere. Finora chi ha sentito parlare di me? Si parlò, è vero, di me come di un <hi
-            rend="unknown"
-            rendition="#none">giovanotto poliglotto</hi> in molti giornali della penisola, allorquando il Carducci, il Gandino e altri <pb
-            facs="#IMG.2" n="2"/> valentuomini mi segnalarono ai concittadini di Bologna come un «caso eccezionale», perchè all’età di 15 o 16 anni conoscevo abbastanza bene le lingue classiche, parecchie lingue moderne e alcune lingue orientali; ma dopo d’allora è passato molto tempo e io son vissuto ritiratissimo e desideroso di presentarmi un giorno al pubblico con un lavoro vasto, piuttostochè di pubblicare di mano in mano qualche cosa. Ho fatto bene o male? Non lo so, nè giova ricercarlo; questo so che ho lavorato sul serio. Se ora mi presento tutto ad un tratto, così semi-ignoto come sono, rischio di suscitare diffidenza. Se invece una parola autorevole interviene, allora le cose cambiano aspetto e tutto va bene, perchè io ho la certezza assoluta di avere scoperto molte cose importanti assai. – Nel caso che Ella riceva impressione favorevole dallo scritto che presto Le sarà inviato, non occorre certo che s’incomodi a farne la recensione: a me basta che Ella ne scriva privatamente a qualche suo amico membro dell’Accademia dei Lincei (so che segretario è l’eccellente Ignazio Guidi; forse vi appartiene il Suo amico Emilio Teza, certamente l’Ascoli, il De Gubernatis ecc.). Mi spiace soltanto che lo scarso spazio concessomi non mi permise di approfondire certe questioni.</p>
-
-        <p>Sed de me satis. Non si dia pensiero per trovare una copia del suo articolo su «Kauk. u. arische Elemente in den finno-ugrischen Sprachen» di B. Munkácsi (lavoro che io conosco): mi farò spedire dalla Biblioteca di Roma o da altra del regno il volume della WZKM<note
-            n="1" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4967">
-              <hi rend="unknown" rendition="#none">Wiener Zeitschrift für die Kunde des Morgenlandes</hi>
-
-            </ref>.</note>, in cui è stato pubblicato. Mi preme di conoscere le idee di VS. sul concetto dell'affinità linguistica. Nelle mie ricerche io finora mi sono fermato ai fatti; ho notato cioè quali sono gli elementi <pb
-            facs="#IMG.3" n="3"/> grammaticali e lessicali comuni a due o più gruppi linguistici, senza preoccuparmi troppo della mistione delle lingue.</p>
-
-        <p>Nella questione dei suoni «enfatici» ecc. – la quale merita veramente l’attenzione dei glottologi – io non posso che riferire quanto trovo scritto nei libri migliori, perchè nel campo fonetico io non ho nessuna competenza per di più non conosco de suoni enfatici che il solo ق arabo per averlo sentito più volte da un persiano che parlava l’arabo. Non già per sostenere la mia tesi, ma semplicemente per farle conoscere su quali autorità io mi fondavo, le riferirò qui in breve quello che ne so. Cominciando dagli avulsivi o <hi
-            rend="unknown"
-            rendition="#none">Schnalzlaute</hi> dell Ottentoto e del Boschimano, trovo in Sievers Grundzüge der Phonetik §64 (ho dinanzi a me la 4. edizione del 1893): «Die <hi
-            rend="unknown"
-            rendition="#none">
-Schnalzlaute</hi> der Hottentotten ...... sind wie bereits Chladni S. 216 richtig erkannte, vielmehr <hi
-            rend="unknown" rendition="#none">Sanglaute</hi>, die <hi rend="unknown"
-            rendition="#none">bei geschlossenem Kehlkopf </hi>* erzeugt werden» [nota a pié di pagina: „da me sottolineato”]. Schils poi, nella Grammaire complète de la langue des Namas (Louvain 1891),<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6523">Schils (1891)</ref>
-            </bibl>.</note> osserva (a pag. 6) che «les inspirata sont <hi rend="unknown"
-            rendition="#none">muet</hi> et non sonores», il che si accorda col fatto della chiusura o occlusione della laringe. – Quanto alle lingue bantu, io mi riferisco allo studio di C. Meinhof sul Ce-Wenda – studio pubblicato nell'ultimo volume della ZDMG<note
-            n="3" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">Zeitschrift der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3090">deutschen morgenländischen Gesellschaft</ref>
-
-            </hi>.</note> – nel quale si nota che: «Die stimmlosen Lenes der Südafrikaner klingen fast wie Inspiraten (Imposivä) [sic], die mit eingesogenem Atem gesprochen werden». Il Meinhof indica tali suoni con <hi
-            rend="unknown" rendition="#none">’k</hi>, <hi rend="unknown" rendition="#none">
-’t</hi>, <hi rend="unknown"
-            rendition="#none">’p</hi> = <hi rend="unknown" rendition="#none">ḱ</hi>, <hi rend="unknown"
-            rendition="#none">ť</hi>, <hi rend="unknown" rendition="#none">ṕ</hi> ossia <hi rend="unknown"
-            rendition="#none">
-k</hi>, <hi rend="unknown" rendition="#none">t</hi>, <hi rend="unknown"
-            rendition="#none">p</hi> con ’, segno della occlusione laringale, v. §339. – Quanto al Semitico, P. Haupt in: Ueber die semitischen Sprach<pb
-            facs="#IMG.4"
-            n="4"/>laute und ihre Umschrift (Beitr. zur Assyr. I, 1889, pag. 249-67) afferma recisamente che i suoni enfatici sono uguali ai suoni ordinari + א (cioè + Kehlkopfverschluss), ossia che ט, per esempio, è = תּ + א. Enrico Zimmern poi, nella Vergl. Gramm. der sem. Sprachen,<note
-            n="4" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6520">Zimmern (1898)</ref>
-            </bibl>.</note> definisce ט <hi rend="unknown" rendition="#none">
-ṭ</hi> come un <hi rend="unknown"
-            rendition="#none">t</hi> sopradentale «mit Stimmritzenverschluss», il ק <hi rend="unknown"
-            rendition="#none">q</hi> come <hi rend="unknown"
-            rendition="#none">k</hi> posteriore pure «mit Stimmritzenverschluss» e il צ <hi rend="unknown"
-            rendition="#none">ṣ</hi> come <hi rend="unknown" rendition="#none">s</hi> «mit Stimmritzen<hi rend="unknown"
-            rendition="#none">verengung</hi>». I suoni <hi rend="unknown"
-            rendition="#none">
-q</hi> ecc. delle lingui cuscitiche non sono tutt identici nella pronuncia corrispondenti semitici; per esempio, il ɸ<hi
-            rend="unknown" rendition="#none"> q</hi> cuscitico è in gran parte diverso dal ق <hi rend="unknown"
-            rendition="#none">q</hi> arabo. Le indicazioni che si possono avere dalle opere di L. Reinisch e di altri sono poco chiare, se non erro. Il Reinisch parla di precacuminali nel Begia, di Schnalzlaute nelle lingue Agau ecc. Nel Galla alcuni suoni sono dati come Schnalzlaute. V. Fr. Praetorius, zur Grammatik der Gallasprache, dal quale riporterò il passo seguente (pag. 40): «Die bereits von Lepsius, stand. alphab.<hi
-            rendition="#sup">2</hi> 205 aufgeworfene Frage,<note n="5" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3577">Lepsius (1863)</ref>
-
-            </bibl>.</note> ob die dem Amhar. und dem Galla gemeinsame Art, gewisse Consonanten mit lange geschlossenem Kehlkopf hervorzubringen, semitischen oder kuschitischen Ursprungs sei, diese Frage ....... Ich vermute noch bestimmter als früher (amhar. Sprache V f.), dass der Keim des langen Kehlkopfverschlusses schon in der altsemitischen Artikulation wenigstens des q und ṭ gelegen hat, dass aber der Einfluss des dem Galla eigentümlichen ḍ mit seinem überlangen Kehlkopfverschluss (vielleicht auch des q) jene Keime weiterentwickelt und noch andere Laute in dieselbe Bahn hineingezogen hat». Qualche altra osservazione avrei da aggiungere, ma quello che ho riferito basterà <pb
-            facs="#IMG.5"
-            n="5"/> non già a troncare la questione, ma a dimostrare che non senza qualche ragione io avevo pensato ai suoni di cui sopra come probabili corrispondenti fonetici delle esplosive tenui e delle affricate con occlusione laringale, proprie del Georgiano e di altre lingue del Caucaso. Curioso è che anche nell’Armeno si trovano tali consonanti, osservate anche dallo Sievers. Fed. Müller, per esempio, trascrive il ք sempre con <hi
-            rend="unknown"
-            rendition="#none">
-q</hi> (anche in molti altri punti il sistema fonetico armeno rassomiglia assai a quello caucasico). Con tutto ciò restano delle difficoltà non poche e molto c’è ancora d'incerto e di oscuro. Ella accenna alla media <hi
-            rend="unknown"
-            rendition="#none">ḍ</hi>: è giusta l'obbiezione e ci avevo pensato anch'io. Sarebbe bene che si facessero anche degli studi fonetico-grafici sui suoni «enfatici» e simili. Se Ella va in Egitto, avrà occasione di studiare i detti suoni <hi
-            rend="unknown" rendition="#none">de auditu</hi>. </p>
-
-        <p>I consiglio che Ella mi dà di non parlare troppo recisamente di monogenesi del linguaggio, è senza dubbio savio; ma ecco come stanno le cose. Cominciai i miei studi, come credo di averle detto, cercando di risolvere in un senso o nell’altro la questione del nesso, diciamo così, ario-semitico. Io non avevo nessun preconcetto e mi sarei adattato anche ad una soluzione negativa. Ma riconobbi ben presto che non si poteva giungere a qualche risultato sicuro se non esaminando tutto il vasto gruppo Camitosemitico. Quali i confini di questo? Non ci sono; e io sarei ben lieto che qualcuno me le indicasse. In realtà si passa gradatamente, senza avvedersene, al Bantu. Per affermare l’affinità del Bantu col Camitosemitico basterebbero seconco me le coincidenze già notate da altri, cioè il causativo in <hi
-            rend="unknown" rendition="#none">-isa</hi>, <hi rend="unknown"
-            rendition="#none">-iša</hi>, il possessivo <hi rend="unknown"
-            rendition="#none">a-ko</hi> „di te”, il numerale <hi rend="unknown" rendition="#none">tatu</hi>, <hi
-            rend="unknown" rendition="#none">
-satu</hi> 3 (cfr. cuscitico <hi rend="unknown"
-            rendition="#none">sadō-</hi>, <hi rend="unknown"
-            rendition="#none">sadē</hi>) e qualche altra. Ma di «coincidenze» di questo genere io ne <pb facs="#IMG.6"
-            n="6"/> scoperte moltissime. Qui non posso naturalmente citarne quante vorrei: ne citerò una che Ella certamente apprezerà non poco. Nel Bantu il possessivo „mio” è <hi
-            rend="unknown" rendition="#none">-ngu</hi> (cfr. semitico – assiro – <hi rend="unknown"
-            rendition="#none">anāku</hi> „io”), per es. <hi rend="unknown"
-            rendition="#none">baba-ngu</hi> padre mio. La medesima, identica forma si trova nelle lingue melanesiani, per es. <hi
-            rend="unknown"
-            rendition="#none">ulu-ngu</hi> la mia testa. È un caso? Dimostrerò nel mio lavoro che non è un caso, come non è un caso che il malese <hi
-            rend="unknown" rendition="#none">
-ā́ku</hi> id. (per es. <hi rend="unknown"
-            rendition="#none">šarr-āku</hi> König bin ich). In tutti i gruppi intermedi si possono perseguire queste forme. Ritorniamo al Bantu. Sono rimaste in questo gruppo delle forme d'immensa antichità (per me il Bantu è il gruppo più arcaico di tutti), talvolta come fossilizzate o cristallizzate. Così, per esprimere il possessivo, il Bantu dovette avere in epoca remotissima forme corrispondenti alle camitosemitiche. Di queste forme io ho scoperto le tracce. I nomi „padre” e „madre” sono nella maggior parte delle lingue bantu <hi
-            rend="unknown" rendition="#none">tata</hi> e <hi rend="unknown"
-            rendition="#none">mama</hi> (Lallwörter); ora „babbo mio” si dice <hi rend="unknown"
-            rendition="#none">tate</hi>, „mamma mia“ <hi rend="unknown"
-            rendition="#none">mame</hi> e siccome nel Bantu <hi rend="unknown"
-            rendition="#none">e</hi> proviene da ai abbiamo *tata-i, *<hi rend="unknown"
-            rendition="#none">mama-i</hi> (cfr.  <hi rend="unknown" rendition="#none">ma-i</hi> „mamma mia” dove <hi
-            rend="unknown" rendition="#none">
-ai</hi> è conservato a cagione dell'accento). Ora chi non riconosce in <hi
-            rend="unknown"
-            rendition="#none">-i</hi> il suffisso camitosemitico „mio”? Ma ripeto che di tali fatti io ne ho trovato un grande numero. Quanto all’Ottentoto, io dimostro in un lavoro di minutissima analisi che esso è di origina cuscitica, come sospettarono il Bleek<note
-            n="6" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6518">Bleek (1868)</ref>
-            </bibl>.</note> e il Lepsius<note n="7" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6524">Lepsius (1880)</ref>
-            </bibl>
-          </note>. Tutte le lingue dell’Africa adunque <pb facs="#IMG.7"
-            n="7"/> sono strettamente collegate tra di loro e non presuppongono pluralità d’origine. Giacchè, chi vorrà sul serio sostenere che le lingue dell’Africa che non rientrano direttamente o nel gruppo bantu o nel camitosemitico sono isolate e suppongono origini diverse? Che, per esempio, il Wolof sia una Ursprache in senso assoluto? Basta un’analisi anche superficiale per convincersi che le lingue della zone intermedia sono appunto intermedie e si accostano alcune più al Camitosemitico, altre più al Bantu. Ciò posto, tutte le lingue dell’Africa possono e devono confrontarsi con l'Indoeuropeo, direttamente  o indirettamente (che cosa vieta, per esempio, di porre il Protobantu <hi
-            rend="unknown" rendition="#none">lamba</hi> „leccare” = latino <hi rend="unknown"
-            rendition="#none">lamb-ere</hi>? In realtà però la radice si trova in tutti i gruppi intermedi). Quelle relazioni strettissime che si notano – o che farò notare – fra tutte le lingue africane, so notano ancora nell’Eurasia-Oceania. Dall’Indoeuropeo si passa quasi insensibilmente da una parte all’Uralico, dall’altra al Dravidico. Il Dravidico poi ha diramazioni sue proprie (Andamanese – Australiano). L’Uralico, come è noto, non è che un ramo dello Uralaltaico, il quale si collega strettamente alle lingue indocinesi. Le lingue maleopolinesiache infine provengono evidentemente da un ceppo al quale appartengono pure le lingue Mon-Khmer (compreso il Kolh); il quale ceppo è connesso coll'Indocinese e perciò coll’Uralaltaico. Resta un <hi
-            rend="unknown" rendition="#none">hiatus</hi> fra l'Africa e l'Eurasia-Oceania; ma questo <hi rend="unknown"
-            rendition="#none">hiatus</hi> viene colmato dalle lingue del Caucaso, le quali da una parte si collegano al Camitosemitico, dall’altra all’Uralico e all’Indoeuropeo. Tutto questo  – si potrebbe dire – sono affermazione. Io vorrei che Ella, egregio professore, potesse dare un giorno un’occhiata al lavoro mio; e sono certo che ammetterebbe che le mie affermazioni non sono fatte <hi
-            rend="unknown" rendition="#none">a priori</hi>; tutt’altro. Io odio le afferma<pb facs="#IMG.8"
-            n="8"/>zioni <hi rend="unknown"
-            rendition="#none">a priori</hi> e non ho mai potuto capire (o l’ho capito assai bene) perchè tanti glottologi o pseudoglottologi abbiano affermato la poligenesi del linguaggio. Chi potrà mai provare la poligenesi? Nessuno. Le coincidenze dicono molto, le divergenze non significano nulla, quando si ammette che la formazione del linguaggio risalga a tempi remotissimi. Purtroppo, in molti sostenitori della monogenesi hanno prevalso le idee religiose e – quel che è peggio – in molti sostenitori della poligenesi ha prevalso il desiderio di cogliere in fallo l’Antico Testamento. Ciò è male, molto male. La scienza dever ricercare solo il <hi
-            rend="unknown" rendition="#none">vero</hi>. </p>
-        <p>Mi fa piacere di vedere che Ella non è fra coloro che <hi rend="unknown"
-            rendition="#none">affermano</hi> la poligenesi. Per ritornare al consiglio che Ella mi dà e che è savio, Le dirò anzitutto che per riguardo a Lei, di cui io non conosceva le opinioni in proposito, e anche per non allarmare i timidi, mi sono astenuto quasi del tutto dall’accennare nel mio scritto a Lei diretto alla questione della monogenesi. Solo in un punto faccio voti che le questioni della affinità fra i vari gruppi finora ritenuti isolati trovino maggiore interesse e minor scetticismo fra i glottologi e ricordo che lo scopo più alto della glottologia deve essere la classificazione genealogica delle lingue e l’<hi
-            rend="unknown"
-            rendition="#none">
-eventuale</hi> dimostrazione della monogenesi di esse, affermando che la poligenesi non potrà mai essere dimostrata. Ma a Lei qui voglio parlare sinceramente, perchè è questione di sincerità scientifica. Fino a poco tempo fa io mi ero proposto di confrontare e identificare fra di loro il Bantu e il Camitosemitico, questo col gruppo Caucasico, questo coll’Indoeuropeo–Uralico–Dravidico, questo gruppo con l’Uralaltaico ecc. Riuscite le singole identificazioni, forse la monogenesi sarebbe stata fondata egualmente su salde basi (A=B, B=C, C=D  ecc.). Fino a poco tempo fa io non credevo che si potessero trovare molti elementi grammaticali e lessicali <pb
-            facs="#IMG.9"
-            n="9"/> comuni a più gruppi ma ora si sono accumulati in tale copia che quasi mio malgrado devo affermare altamente la monogenesi, a costo di far sorridere qualche <hi
-            rend="unknown" rendition="#none">apriorista</hi>. Dopo avere scritto una minuta analisi dell’Ottentoto, del Bantu, del Camitosemitico e di qualche altro gruppo, ho compiuto una sintesi lessicale e sto terminando la sintesi grammaticale comparativa delle lingue del mondo antico: ebbene, affermo altamente che ciò che ho raccolto è meraviglioso e supera tutte le speranze che avevo prima. Metto la mano a caso sopra una delle carte della mia analisi lesicale e trovo:</p>
-        <p>„oscuro; nero”</p>
-        <p>Radice primordiale:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">tam</hi>, <hi rend="unknown" rendition="#none">
-tem</hi>, <hi
-            rend="unknown" rendition="#none">tim</hi>, <hi rend="unknown" rendition="#none">tom</hi>, <hi rend="unknown" rendition="#none">tum</hi>
-        </p>
-        <p>Indoeuropeo <hi rend="unknown" rendition="#none">tĕm-ā́</hi>  „oscurità” (a.slavo <hi rend="unknown"
-            rendition="#none">tǐmá</hi> ecc.) nome astratto = Agau <hi rend="unknown"
-            rendition="#none">tem-ā́</hi> „oscurità” nome astratto da <hi rend="unknown" rendition="#none">tem</hi> essere oscuro. (Inutile che qui riferisca tutte le voci indoeuropee e camitosemitiche). </p>
-        <p>Bantu <hi rend="unknown" rendition="#none">tan-tum</hi> „nero” (= *<hi rend="unknown" rendition="#none">tam-tum</hi>). Nella zona intermedia si trova pure la stessa radice. </p>
-        <p>Uralaltaico: Suomi <hi rend="unknown" rendition="#none">tumma</hi> „oscuro” ecc. – Uiguro <hi rend="unknown" rendition="#none">tum-lik</hi> oscuro ecc. (radice diffusa in tutto l’Uralaltaico).</p>
-        <p>Lingue monosillabiche: </p>
-        <p>Khasia <hi rend="unknown" rendition="#none">dum</hi> oscurità, <hi rend="unknown" rendition="#none">jing-dum</hi> notte (e così pure molte voci per „notte” nel gruppo Mon-Khmer). – La medesima radice nel Siamese ecc. </p>
-        <p>Maleopolinesiaco <hi rend="unknown" rendition="#none">i-tom</hi>, <hi rend="unknown"
-            rendition="#none">i-tam</hi> ecc. „nero” donde <hi rend="unknown" rendition="#none">ma-itom</hi> id forma rappresentata in tutta l’Oceania, compresa l’Australia.</p>
-        <p>Ho tralasciato molti gruppi secondari e tutte le lingue «isolate». È un caso che la medesima <pb
-            facs="#IMG.10" n="10"/> radice si trovi in tutti i gruppi del mondo antico? È un caso che si ripete assai spesso, perchè potrei recare esempi simili a centinaia !</p>
-
-        <p>Ma io ho abusato abbastanza della sua pazienza e mi affretto a terminare questa già troppo lunga lettera. Scriverò a Firenze perchè le mandino direttamente il mio lavoretto (a proposito, nel [sic] Le ho ancora detto il titolo; esso è intitolato: «Delle relazioni delle lingue caucasiche con le lingue camitosemitiche e con altri gruppi linguistici – Lettera al Professore H. Schuchardt»).<note
-            n="8" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1633">Trombetti (1902)</ref>
-
-            </bibl>.</note> Non avendo più ricevuto nuove bozze per un’altra correzione, suppongo che si stia stampando il volume contenente il mio scritto. Vi troverà qualche incongruenza nella trascrizione, per es. ora ā ora â, ora ć ora č ora <hi
-            rend="unknown" rendition="#none">tš</hi>: queste incongruenze sono dovute in gran parte alle difficoltà tipografiche e alla distanza che impedì che le bozze mi potessero essere spedite più di due volte. Ma questi sono nei; quello che più mi dispiace si è di non aver potuto rifare il tutto, perchè dopo tanti mesi molte cose avrei potuto esporre diversamente e molte altre aggiungere. Basta: ἀγαδῇ τύχῃ.</p>
-        <closer>
-          <salute>Cordiali saluti dal suo</salute>
-          <lb/>
-          <salute>devm̃o</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">Alfredo Trombetti</persName>. </signed>
-        </closer>
-      </div>
-      <div corresp="#L.3135" subtype="original" type="appendix" xml:lang="it">
-        <p>PS. – Nel secondo articolo, che conterrà la parte lessicale, la materia sarà più copiosa. Nelle comparazioni lessicali io sono rigoroso: accolgo soltanto quelle voci che sono identiche per forma e per significato. Lo stesso faccio nella sintesi lessicale di tutte le lingue del mondo antico.</p>
-        <p>Interessante per la storia della cultura è il seguente confronto: Kharthwelico <hi rend="unknown"
-            rendition="#none">qid</hi> comperare (anche Tabass., se non erro) = Proto-cuscitico <hi rend="unknown"
-            rendition="#none">qid</hi> comperare, vendere (: Kafa <hi rend="unknown"
-            rendition="#none">gīt</hi>, Bilin <hi rend="unknown" rendition="#none">kid</hi>, Chamir <hi rend="unknown"
-            rendition="#none">qey</hi> = *<hi rend="unknown" rendition="#none">qid</hi>, Amh. ሼጠ, Geez <hi
-            rend="unknown" rendition="#none">šēṭa</hi> ecc.).</p>
-        <pb facs="#IMG.11" n="11"/>
-        <p>A proposito ancora dei suoni pronunciati con occlusione laringale.</p>
-        <p>Riuscii a identificare molte parole Ottentote e Boschimane con parole cuscitiche e fra esse ve ne sono talune che cominciano con Schnalzlaut. Per esempio:</p>
-        <p>Nama <hi rend="unknown"
-            rendition="#none">ṭ’hūb</hi> * [nota a pié di pagina: con ṭ’ indico l’avulsivo cerebrale (similmente gli altri avulsivi). <hi rendition="#sup">s</hi> è lo Hamzah arabo = Kehlkopfverschluss.] terra (sostanza), terra (= mondo terrestre), paese, Cfr.</p>
-        <p>Egiziano <hi rend="unknown" rendition="#none">t<hi rendition="#sup">s</hi>
-          </hi> (Copto <hi rend="unknown" rendition="#none">tho</hi>, <hi rend="unknown"
-            rendition="#none">
-to</hi>) terra, paese. Qui è interessante vedere <hi rend="unknown"
-              rendition="#none">t+<hi rendition="#sup">s</hi>
-          </hi>. Barea <hi rend="unknown" rendition="#none">do</hi> terra, paese, Kulfan <hi rend="unknown"
-            rendition="#none">
-tao</hi> paese, Teda <hi rend="unknown" rendition="#none">te</hi> id. – Kulfan anche <hi
-            rend="unknown" rendition="#none">to-b</hi>, cfr. Songhai <hi rend="unknown" rendition="#none">dō</hi>, <hi
-            rend="unknown" rendition="#none">
-dō-bo</hi> terra, paese = Arabo <hi rend="unknown"
-            rendition="#none">ṭūb-</hi> tegole (di argilla; cfr. Semitico <hi rend="unknown"
-            rendition="#none">ṭī-ṭ-</hi>,  <hi rend="unknown" rendition="#none">ṭī-n-</hi> argilla). La parola è primoridiale perchè ricorre frequente anche nell’Eurasia e nell’Oceania.</p>
-        <p>Altro esempio:</p>
-        <p>Nama <hi rend="unknown" rendition="#none">khoi-</hi>, T’kora <hi rend="unknown"
-            rendition="#none">kui-</hi>  homo. T’kham (dialetto boschimano) <hi rend="unknown"
-            rendition="#none">ṭ’kui</hi>  homo, plur. o collettivo <hi rend="unknown" rendition="#none">ṭ’ē</hi>, <hi
-            rend="unknown" rendition="#none">ṭ’eie</hi>. Cfr.</p>
-        <p>Barea <hi rend="unknown" rendition="#none">ku</hi>, Kunama <hi rend="unknown" rendition="#none">kū</hi>, <hi
-            rend="unknown" rendition="#none">kŭā</hi> (<hi rend="unknown"
-            rendition="#none">kū-nāmā</hi> = „uomini Nama” cfr. i Nama ottentoti) – Kanuri <hi rend="unknown"
-            rendition="#none">kōa</hi> ecc. (diffusissimo in tutta l'Africa e anche fuori). Il Kungiara <hi
-            rend="unknown" rendition="#none">
-due</hi>, <hi rend="unknown" rendition="#none">duo</hi> plur. <hi
-            rend="unknown" rendition="#none">kua</hi> è prezioso, perchè spiega l’avulsivo <hi rend="unknown" rendition="#none">ṭ’-</hi> del Boschimano. </p>
-
-        <p>Giacce sono scivolato in questo campo non so restistere alla tentazione di farle conoscere alcuni miei raffronti lessicali fra l’Ottentoto <pb
-            facs="#IMG.12" n="12"/> e le lingue cuscitiche e altre (specialmente il Nubiano si avvicina grandemente all’Ottentoto per il lessico e per altro). </p>
-        <p>Nama <hi rend="unknown" rendition="#none">karu</hi> russare: Nubiano <hi rend="unknown"
-            rendition="#none">korre</hi>, Saho <hi rend="unknown" rendition="#none">karr-iš</hi> ecc. È voce primordiale, perchè diffusa in tutto il mondo antico. </p>
-        <p>Nama <hi rend="unknown" rendition="#none">ma</hi> dare : Copto <hi rend="unknown"
-            rendition="#none">ma</hi> dà, Basco  <hi rend="unknown" rendition="#none">ema-n</hi>, <hi rend="unknown"
-            rendition="#none">emo-n</hi>, <hi rend="unknown" rendition="#none">emai-</hi>, Kafa <hi rend="unknown"
-            rendition="#none">am</hi>, Wolof <hi rend="unknown" rendition="#none">mai</hi> ecc. In tutta l'Africa.</p>
-        <p>Nama <hi rend="unknown" rendition="#none">am</hi> destro … Barea <hi rend="unknown"
-            rendition="#none">hamme</hi>, Egizio-Semitico Base <hi rend="unknown"
-            rendition="#none">y-am-</hi> (Basco <hi rend="unknown" rendition="#none">eskuma</hi> ecc.); con <hi
-            rend="unknown" rendition="#none">y-</hi> cfr. Georg. <hi rend="unknown" rendition="#none">i-gurdiw</hi> de, à côté.</p>
-        <p>Nama <hi rend="unknown" rendition="#none">dawa</hi> voltare : Saho <hi rend="unknown" rendition="#none">dab</hi> id.</p>
-        <p>Nama <hi rend="unknown" rendition="#none">duru-</hi> Maus : Nuba <hi rend="unknown"
-            rendition="#none">dau</hi>, Somali <hi rend="unknown" rendition="#none">dau</hi> ecc.</p>
-        <p>Nama <hi rend="unknown" rendition="#none">suni-</hi> Nabel : Nuba <hi rend="unknown" rendition="#none">sēn</hi> Nabel</p>
-        <p>Nama <hi rend="unknown" rendition="#none">sĩ-sen</hi> lavorare : <hi rend="unknown"
-            rendition="#none">ṣana</hi>ع<hi rend="unknown" rendition="#none">
-a</hi> fare, lavorare, Kunama <hi
-            rend="unknown" rendition="#none">sana</hi> lavorare ecc.</p>
-        <p>Nama <hi rend="unknown" rendition="#none">daũ</hi> brennen : Nuba <hi rend="unknown" rendition="#none">dume</hi> brennen</p>
-        <p>   "     <hi rend="unknown" rendition="#none">khowa</hi> aprire : Nuba <hi rend="unknown" rendition="#none">kauwe</hi> id.</p>
-        <p>   "     <hi rend="unknown" rendition="#none">mã</hi> stare, rimanere : Egiz. <hi rend="unknown"
-            rendition="#none">mu</hi>, Indoeur. <hi rend="unknown" rendition="#none">man</hi> ecc. </p>
-        <p>   "     <hi rend="unknown" rendition="#none">tsu</hi>
-          <hi rend="unknown" rendition="#none">χ</hi>
-          <hi rend="unknown" rendition="#none">u-</hi> notte = Protobantu <hi rend="unknown"
-            rendition="#none">tūku</hi>, cfr. Georg. <hi rend="unknown" rendition="#none">tsu</hi>
-          <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.12" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3135" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Cuneo, 26 Novembre 1902</dateline>
+            <opener>Chiarissimo Signor Professore, </opener>
+            <p>La ringrazio infinitamente della cortese lettera che Ella mi ha mandato e della cartolina che ho ricevuto oggi stesso. Io non osavo chiedere l’autorevolissimo suo appoggio presso gli amici influenti che Ella conta qui in Italia: Ella me lo offre – bene inteso nel caso che Le paia meritato – e io non so davvero come ringraziarla fin d’ora della buona disposizione di SV. a mio riguardo. Ciò che io desidero è che in qualche modo sia richiamata l’attenzione su di un modesto ma appassionatissimo cultore degli studi glottologici comparativi intesi nel senso più vasto, cultore che ha fatto finora dei sacrifizi inenarrabili per puro ideale amore della scienza e che è rimasto ed è voluto rimanere finora nell’ombra. Ciò che io presento alla R. Accademia dei Lincei è il frutto di lunghi e amorosi studi e di lunghe meditazioni e veglie; ed ho la coscienza di avere trovato una tale quantità di fatti nuovi e di somma importanza, che non dubito punto di aver fatto opera più meritevole del premio. L’unica cosa che io temo è l’apatio o lo scetticismo da parte degli esaminatori o giudici; i per meglio dire temo di suscitare diffidenze per il fatto che io sono un autodidatta e non riconosco per miei maestri che i grandi glottologi e per mia guida le loro opere. Finora chi ha sentito parlare di me? Si parlò, è vero, di me come di un <hi rend="unknown" rendition="#none">giovanotto poliglotto</hi> in molti giornali della penisola, allorquando il Carducci, il Gandino e altri <pb facs="#IMG.2" n="2"/> valentuomini mi segnalarono ai concittadini di Bologna come un «caso eccezionale», perchè all’età di 15 o 16 anni conoscevo abbastanza bene le lingue classiche, parecchie lingue moderne e alcune lingue orientali; ma dopo d’allora è passato molto tempo e io son vissuto ritiratissimo e desideroso di presentarmi un giorno al pubblico con un lavoro vasto, piuttostochè di pubblicare di mano in mano qualche cosa. Ho fatto bene o male? Non lo so, nè giova ricercarlo; questo so che ho lavorato sul serio. Se ora mi presento tutto ad un tratto, così semi-ignoto come sono, rischio di suscitare diffidenza. Se invece una parola autorevole interviene, allora le cose cambiano aspetto e tutto va bene, perchè io ho la certezza assoluta di avere scoperto molte cose importanti assai. – Nel caso che Ella riceva impressione favorevole dallo scritto che presto Le sarà inviato, non occorre certo che s’incomodi a farne la recensione: a me basta che Ella ne scriva privatamente a qualche suo amico membro dell’Accademia dei Lincei (so che segretario è l’eccellente Ignazio Guidi; forse vi appartiene il Suo amico Emilio Teza, certamente l’Ascoli, il De Gubernatis ecc.). Mi spiace soltanto che lo scarso spazio concessomi non mi permise di approfondire certe questioni.</p>
+            <p>Sed de me satis. Non si dia pensiero per trovare una copia del suo articolo su «Kauk. u. arische Elemente in den finno-ugrischen Sprachen» di B. Munkácsi (lavoro che io conosco): mi farò spedire dalla Biblioteca di Roma o da altra del regno il volume della WZKM<note n="1" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4967">
+                     <hi rend="unknown" rendition="#none">Wiener Zeitschrift für die Kunde des Morgenlandes</hi>
+                  </ref>.</note>, in cui è stato pubblicato. Mi preme di conoscere le idee di VS. sul concetto dell'affinità linguistica. Nelle mie ricerche io finora mi sono fermato ai fatti; ho notato cioè quali sono gli elementi <pb facs="#IMG.3" n="3"/> grammaticali e lessicali comuni a due o più gruppi linguistici, senza preoccuparmi troppo della mistione delle lingue.</p>
+            <p>Nella questione dei suoni «enfatici» ecc. – la quale merita veramente l’attenzione dei glottologi – io non posso che riferire quanto trovo scritto nei libri migliori, perchè nel campo fonetico io non ho nessuna competenza per di più non conosco de suoni enfatici che il solo ق arabo per averlo sentito più volte da un persiano che parlava l’arabo. Non già per sostenere la mia tesi, ma semplicemente per farle conoscere su quali autorità io mi fondavo, le riferirò qui in breve quello che ne so. Cominciando dagli avulsivi o <hi rend="unknown" rendition="#none">Schnalzlaute</hi> dell Ottentoto e del Boschimano, trovo in Sievers Grundzüge der Phonetik §64 (ho dinanzi a me la 4. edizione del 1893): «Die <hi rend="unknown" rendition="#none">
+Schnalzlaute</hi> der Hottentotten ...... sind wie bereits Chladni S. 216 richtig erkannte, vielmehr <hi rend="unknown" rendition="#none">Sanglaute</hi>, die <hi rend="unknown" rendition="#none">bei geschlossenem Kehlkopf </hi>* erzeugt werden» [nota a pié di pagina: „da me sottolineato”]. Schils poi, nella Grammaire complète de la langue des Namas (Louvain 1891),<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6523">Schils (1891)</ref>
+                  </bibl>.</note> osserva (a pag. 6) che «les inspirata sont <hi rend="unknown" rendition="#none">muet</hi> et non sonores», il che si accorda col fatto della chiusura o occlusione della laringe. – Quanto alle lingue bantu, io mi riferisco allo studio di C. Meinhof sul Ce-Wenda – studio pubblicato nell'ultimo volume della ZDMG<note n="3" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Zeitschrift der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3090">deutschen morgenländischen Gesellschaft</ref>
+                  </hi>.</note> – nel quale si nota che: «Die stimmlosen Lenes der Südafrikaner klingen fast wie Inspiraten (Imposivä) [sic], die mit eingesogenem Atem gesprochen werden». Il Meinhof indica tali suoni con <hi rend="unknown" rendition="#none">’k</hi>, <hi rend="unknown" rendition="#none">
+’t</hi>, <hi rend="unknown" rendition="#none">’p</hi> = <hi rend="unknown" rendition="#none">ḱ</hi>, <hi rend="unknown" rendition="#none">ť</hi>, <hi rend="unknown" rendition="#none">ṕ</hi> ossia <hi rend="unknown" rendition="#none">
+k</hi>, <hi rend="unknown" rendition="#none">t</hi>, <hi rend="unknown" rendition="#none">p</hi> con ’, segno della occlusione laringale, v. §339. – Quanto al Semitico, P. Haupt in: Ueber die semitischen Sprach<pb facs="#IMG.4" n="4"/>laute und ihre Umschrift (Beitr. zur Assyr. I, 1889, pag. 249-67) afferma recisamente che i suoni enfatici sono uguali ai suoni ordinari + א (cioè + Kehlkopfverschluss), ossia che ט, per esempio, è = תּ + א. Enrico Zimmern poi, nella Vergl. Gramm. der sem. Sprachen,<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6520">Zimmern (1898)</ref>
+                  </bibl>.</note> definisce ט <hi rend="unknown" rendition="#none">
+ṭ</hi> come un <hi rend="unknown" rendition="#none">t</hi> sopradentale «mit Stimmritzenverschluss», il ק <hi rend="unknown" rendition="#none">q</hi> come <hi rend="unknown" rendition="#none">k</hi> posteriore pure «mit Stimmritzenverschluss» e il צ <hi rend="unknown" rendition="#none">ṣ</hi> come <hi rend="unknown" rendition="#none">s</hi> «mit Stimmritzen<hi rend="unknown" rendition="#none">verengung</hi>». I suoni <hi rend="unknown" rendition="#none">
+q</hi> ecc. delle lingui cuscitiche non sono tutt identici nella pronuncia corrispondenti semitici; per esempio, il ɸ<hi rend="unknown" rendition="#none"> q</hi> cuscitico è in gran parte diverso dal ق <hi rend="unknown" rendition="#none">q</hi> arabo. Le indicazioni che si possono avere dalle opere di L. Reinisch e di altri sono poco chiare, se non erro. Il Reinisch parla di precacuminali nel Begia, di Schnalzlaute nelle lingue Agau ecc. Nel Galla alcuni suoni sono dati come Schnalzlaute. V. Fr. Praetorius, zur Grammatik der Gallasprache, dal quale riporterò il passo seguente (pag. 40): «Die bereits von Lepsius, stand. alphab.<hi rendition="#sup">2</hi> 205 aufgeworfene Frage,<note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3577">Lepsius (1863)</ref>
+                  </bibl>.</note> ob die dem Amhar. und dem Galla gemeinsame Art, gewisse Consonanten mit lange geschlossenem Kehlkopf hervorzubringen, semitischen oder kuschitischen Ursprungs sei, diese Frage ....... Ich vermute noch bestimmter als früher (amhar. Sprache V f.), dass der Keim des langen Kehlkopfverschlusses schon in der altsemitischen Artikulation wenigstens des q und ṭ gelegen hat, dass aber der Einfluss des dem Galla eigentümlichen ḍ mit seinem überlangen Kehlkopfverschluss (vielleicht auch des q) jene Keime weiterentwickelt und noch andere Laute in dieselbe Bahn hineingezogen hat». Qualche altra osservazione avrei da aggiungere, ma quello che ho riferito basterà <pb facs="#IMG.5" n="5"/> non già a troncare la questione, ma a dimostrare che non senza qualche ragione io avevo pensato ai suoni di cui sopra come probabili corrispondenti fonetici delle esplosive tenui e delle affricate con occlusione laringale, proprie del Georgiano e di altre lingue del Caucaso. Curioso è che anche nell’Armeno si trovano tali consonanti, osservate anche dallo Sievers. Fed. Müller, per esempio, trascrive il ք sempre con <hi rend="unknown" rendition="#none">
+q</hi> (anche in molti altri punti il sistema fonetico armeno rassomiglia assai a quello caucasico). Con tutto ciò restano delle difficoltà non poche e molto c’è ancora d'incerto e di oscuro. Ella accenna alla media <hi rend="unknown" rendition="#none">ḍ</hi>: è giusta l'obbiezione e ci avevo pensato anch'io. Sarebbe bene che si facessero anche degli studi fonetico-grafici sui suoni «enfatici» e simili. Se Ella va in Egitto, avrà occasione di studiare i detti suoni <hi rend="unknown" rendition="#none">de auditu</hi>. </p>
+            <p>I consiglio che Ella mi dà di non parlare troppo recisamente di monogenesi del linguaggio, è senza dubbio savio; ma ecco come stanno le cose. Cominciai i miei studi, come credo di averle detto, cercando di risolvere in un senso o nell’altro la questione del nesso, diciamo così, ario-semitico. Io non avevo nessun preconcetto e mi sarei adattato anche ad una soluzione negativa. Ma riconobbi ben presto che non si poteva giungere a qualche risultato sicuro se non esaminando tutto il vasto gruppo Camitosemitico. Quali i confini di questo? Non ci sono; e io sarei ben lieto che qualcuno me le indicasse. In realtà si passa gradatamente, senza avvedersene, al Bantu. Per affermare l’affinità del Bantu col Camitosemitico basterebbero seconco me le coincidenze già notate da altri, cioè il causativo in <hi rend="unknown" rendition="#none">-isa</hi>, <hi rend="unknown" rendition="#none">-iša</hi>, il possessivo <hi rend="unknown" rendition="#none">a-ko</hi> „di te”, il numerale <hi rend="unknown" rendition="#none">tatu</hi>, <hi rend="unknown" rendition="#none">
+satu</hi> 3 (cfr. cuscitico <hi rend="unknown" rendition="#none">sadō-</hi>, <hi rend="unknown" rendition="#none">sadē</hi>) e qualche altra. Ma di «coincidenze» di questo genere io ne <pb facs="#IMG.6" n="6"/> scoperte moltissime. Qui non posso naturalmente citarne quante vorrei: ne citerò una che Ella certamente apprezerà non poco. Nel Bantu il possessivo „mio” è <hi rend="unknown" rendition="#none">-ngu</hi> (cfr. semitico – assiro – <hi rend="unknown" rendition="#none">anāku</hi> „io”), per es. <hi rend="unknown" rendition="#none">baba-ngu</hi> padre mio. La medesima, identica forma si trova nelle lingue melanesiani, per es. <hi rend="unknown" rendition="#none">ulu-ngu</hi> la mia testa. È un caso? Dimostrerò nel mio lavoro che non è un caso, come non è un caso che il malese <hi rend="unknown" rendition="#none">
+ā́ku</hi> id. (per es. <hi rend="unknown" rendition="#none">šarr-āku</hi> König bin ich). In tutti i gruppi intermedi si possono perseguire queste forme. Ritorniamo al Bantu. Sono rimaste in questo gruppo delle forme d'immensa antichità (per me il Bantu è il gruppo più arcaico di tutti), talvolta come fossilizzate o cristallizzate. Così, per esprimere il possessivo, il Bantu dovette avere in epoca remotissima forme corrispondenti alle camitosemitiche. Di queste forme io ho scoperto le tracce. I nomi „padre” e „madre” sono nella maggior parte delle lingue bantu <hi rend="unknown" rendition="#none">tata</hi> e <hi rend="unknown" rendition="#none">mama</hi> (Lallwörter); ora „babbo mio” si dice <hi rend="unknown" rendition="#none">tate</hi>, „mamma mia“ <hi rend="unknown" rendition="#none">mame</hi> e siccome nel Bantu <hi rend="unknown" rendition="#none">e</hi> proviene da ai abbiamo *tata-i, *<hi rend="unknown" rendition="#none">mama-i</hi> (cfr.  <hi rend="unknown" rendition="#none">ma-i</hi> „mamma mia” dove <hi rend="unknown" rendition="#none">
+ai</hi> è conservato a cagione dell'accento). Ora chi non riconosce in <hi rend="unknown" rendition="#none">-i</hi> il suffisso camitosemitico „mio”? Ma ripeto che di tali fatti io ne ho trovato un grande numero. Quanto all’Ottentoto, io dimostro in un lavoro di minutissima analisi che esso è di origina cuscitica, come sospettarono il Bleek<note n="6" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6518">Bleek (1868)</ref>
+                  </bibl>.</note> e il Lepsius<note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6524">Lepsius (1880)</ref>
+                  </bibl>
+               </note>. Tutte le lingue dell’Africa adunque <pb facs="#IMG.7" n="7"/> sono strettamente collegate tra di loro e non presuppongono pluralità d’origine. Giacchè, chi vorrà sul serio sostenere che le lingue dell’Africa che non rientrano direttamente o nel gruppo bantu o nel camitosemitico sono isolate e suppongono origini diverse? Che, per esempio, il Wolof sia una Ursprache in senso assoluto? Basta un’analisi anche superficiale per convincersi che le lingue della zone intermedia sono appunto intermedie e si accostano alcune più al Camitosemitico, altre più al Bantu. Ciò posto, tutte le lingue dell’Africa possono e devono confrontarsi con l'Indoeuropeo, direttamente  o indirettamente (che cosa vieta, per esempio, di porre il Protobantu <hi rend="unknown" rendition="#none">lamba</hi> „leccare” = latino <hi rend="unknown" rendition="#none">lamb-ere</hi>? In realtà però la radice si trova in tutti i gruppi intermedi). Quelle relazioni strettissime che si notano – o che farò notare – fra tutte le lingue africane, so notano ancora nell’Eurasia-Oceania. Dall’Indoeuropeo si passa quasi insensibilmente da una parte all’Uralico, dall’altra al Dravidico. Il Dravidico poi ha diramazioni sue proprie (Andamanese – Australiano). L’Uralico, come è noto, non è che un ramo dello Uralaltaico, il quale si collega strettamente alle lingue indocinesi. Le lingue maleopolinesiache infine provengono evidentemente da un ceppo al quale appartengono pure le lingue Mon-Khmer (compreso il Kolh); il quale ceppo è connesso coll'Indocinese e perciò coll’Uralaltaico. Resta un <hi rend="unknown" rendition="#none">hiatus</hi> fra l'Africa e l'Eurasia-Oceania; ma questo <hi rend="unknown" rendition="#none">hiatus</hi> viene colmato dalle lingue del Caucaso, le quali da una parte si collegano al Camitosemitico, dall’altra all’Uralico e all’Indoeuropeo. Tutto questo  – si potrebbe dire – sono affermazione. Io vorrei che Ella, egregio professore, potesse dare un giorno un’occhiata al lavoro mio; e sono certo che ammetterebbe che le mie affermazioni non sono fatte <hi rend="unknown" rendition="#none">a priori</hi>; tutt’altro. Io odio le afferma<pb facs="#IMG.8" n="8"/>zioni <hi rend="unknown" rendition="#none">a priori</hi> e non ho mai potuto capire (o l’ho capito assai bene) perchè tanti glottologi o pseudoglottologi abbiano affermato la poligenesi del linguaggio. Chi potrà mai provare la poligenesi? Nessuno. Le coincidenze dicono molto, le divergenze non significano nulla, quando si ammette che la formazione del linguaggio risalga a tempi remotissimi. Purtroppo, in molti sostenitori della monogenesi hanno prevalso le idee religiose e – quel che è peggio – in molti sostenitori della poligenesi ha prevalso il desiderio di cogliere in fallo l’Antico Testamento. Ciò è male, molto male. La scienza dever ricercare solo il <hi rend="unknown" rendition="#none">vero</hi>. </p>
+            <p>Mi fa piacere di vedere che Ella non è fra coloro che <hi rend="unknown" rendition="#none">affermano</hi> la poligenesi. Per ritornare al consiglio che Ella mi dà e che è savio, Le dirò anzitutto che per riguardo a Lei, di cui io non conosceva le opinioni in proposito, e anche per non allarmare i timidi, mi sono astenuto quasi del tutto dall’accennare nel mio scritto a Lei diretto alla questione della monogenesi. Solo in un punto faccio voti che le questioni della affinità fra i vari gruppi finora ritenuti isolati trovino maggiore interesse e minor scetticismo fra i glottologi e ricordo che lo scopo più alto della glottologia deve essere la classificazione genealogica delle lingue e l’<hi rend="unknown" rendition="#none">
+eventuale</hi> dimostrazione della monogenesi di esse, affermando che la poligenesi non potrà mai essere dimostrata. Ma a Lei qui voglio parlare sinceramente, perchè è questione di sincerità scientifica. Fino a poco tempo fa io mi ero proposto di confrontare e identificare fra di loro il Bantu e il Camitosemitico, questo col gruppo Caucasico, questo coll’Indoeuropeo–Uralico–Dravidico, questo gruppo con l’Uralaltaico ecc. Riuscite le singole identificazioni, forse la monogenesi sarebbe stata fondata egualmente su salde basi (A=B, B=C, C=D  ecc.). Fino a poco tempo fa io non credevo che si potessero trovare molti elementi grammaticali e lessicali <pb facs="#IMG.9" n="9"/> comuni a più gruppi ma ora si sono accumulati in tale copia che quasi mio malgrado devo affermare altamente la monogenesi, a costo di far sorridere qualche <hi rend="unknown" rendition="#none">apriorista</hi>. Dopo avere scritto una minuta analisi dell’Ottentoto, del Bantu, del Camitosemitico e di qualche altro gruppo, ho compiuto una sintesi lessicale e sto terminando la sintesi grammaticale comparativa delle lingue del mondo antico: ebbene, affermo altamente che ciò che ho raccolto è meraviglioso e supera tutte le speranze che avevo prima. Metto la mano a caso sopra una delle carte della mia analisi lesicale e trovo:</p>
+            <p>„oscuro; nero”</p>
+            <p>Radice primordiale:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">tam</hi>, <hi rend="unknown" rendition="#none">
+tem</hi>, <hi rend="unknown" rendition="#none">tim</hi>, <hi rend="unknown" rendition="#none">tom</hi>, <hi rend="unknown" rendition="#none">tum</hi>
+            </p>
+            <p>Indoeuropeo <hi rend="unknown" rendition="#none">tĕm-ā́</hi>  „oscurità” (a.slavo <hi rend="unknown" rendition="#none">tǐmá</hi> ecc.) nome astratto = Agau <hi rend="unknown" rendition="#none">tem-ā́</hi> „oscurità” nome astratto da <hi rend="unknown" rendition="#none">tem</hi> essere oscuro. (Inutile che qui riferisca tutte le voci indoeuropee e camitosemitiche). </p>
+            <p>Bantu <hi rend="unknown" rendition="#none">tan-tum</hi> „nero” (= *<hi rend="unknown" rendition="#none">tam-tum</hi>). Nella zona intermedia si trova pure la stessa radice. </p>
+            <p>Uralaltaico: Suomi <hi rend="unknown" rendition="#none">tumma</hi> „oscuro” ecc. – Uiguro <hi rend="unknown" rendition="#none">tum-lik</hi> oscuro ecc. (radice diffusa in tutto l’Uralaltaico).</p>
+            <p>Lingue monosillabiche: </p>
+            <p>Khasia <hi rend="unknown" rendition="#none">dum</hi> oscurità, <hi rend="unknown" rendition="#none">jing-dum</hi> notte (e così pure molte voci per „notte” nel gruppo Mon-Khmer). – La medesima radice nel Siamese ecc. </p>
+            <p>Maleopolinesiaco <hi rend="unknown" rendition="#none">i-tom</hi>, <hi rend="unknown" rendition="#none">i-tam</hi> ecc. „nero” donde <hi rend="unknown" rendition="#none">ma-itom</hi> id forma rappresentata in tutta l’Oceania, compresa l’Australia.</p>
+            <p>Ho tralasciato molti gruppi secondari e tutte le lingue «isolate». È un caso che la medesima <pb facs="#IMG.10" n="10"/> radice si trovi in tutti i gruppi del mondo antico? È un caso che si ripete assai spesso, perchè potrei recare esempi simili a centinaia !</p>
+            <p>Ma io ho abusato abbastanza della sua pazienza e mi affretto a terminare questa già troppo lunga lettera. Scriverò a Firenze perchè le mandino direttamente il mio lavoretto (a proposito, nel [sic] Le ho ancora detto il titolo; esso è intitolato: «Delle relazioni delle lingue caucasiche con le lingue camitosemitiche e con altri gruppi linguistici – Lettera al Professore H. Schuchardt»).<note n="8" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1633">Trombetti (1902)</ref>
+                  </bibl>.</note> Non avendo più ricevuto nuove bozze per un’altra correzione, suppongo che si stia stampando il volume contenente il mio scritto. Vi troverà qualche incongruenza nella trascrizione, per es. ora ā ora â, ora ć ora č ora <hi rend="unknown" rendition="#none">tš</hi>: queste incongruenze sono dovute in gran parte alle difficoltà tipografiche e alla distanza che impedì che le bozze mi potessero essere spedite più di due volte. Ma questi sono nei; quello che più mi dispiace si è di non aver potuto rifare il tutto, perchè dopo tanti mesi molte cose avrei potuto esporre diversamente e molte altre aggiungere. Basta: ἀγαδῇ τύχῃ.</p>
+            <closer>
+               <salute>Cordiali saluti dal suo</salute>
+               <lb/>
+               <salute>devm̃o</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Alfredo Trombetti</persName>. </signed>
+            </closer>
+         </div>
+         <div corresp="#L.3135"
+              subtype="original"
+              type="appendix"
+              xml:lang="it">
+            <p>PS. – Nel secondo articolo, che conterrà la parte lessicale, la materia sarà più copiosa. Nelle comparazioni lessicali io sono rigoroso: accolgo soltanto quelle voci che sono identiche per forma e per significato. Lo stesso faccio nella sintesi lessicale di tutte le lingue del mondo antico.</p>
+            <p>Interessante per la storia della cultura è il seguente confronto: Kharthwelico <hi rend="unknown" rendition="#none">qid</hi> comperare (anche Tabass., se non erro) = Proto-cuscitico <hi rend="unknown" rendition="#none">qid</hi> comperare, vendere (: Kafa <hi rend="unknown" rendition="#none">gīt</hi>, Bilin <hi rend="unknown" rendition="#none">kid</hi>, Chamir <hi rend="unknown" rendition="#none">qey</hi> = *<hi rend="unknown" rendition="#none">qid</hi>, Amh. ሼጠ, Geez <hi rend="unknown" rendition="#none">šēṭa</hi> ecc.).</p>
+            <pb facs="#IMG.11" n="11"/>
+            <p>A proposito ancora dei suoni pronunciati con occlusione laringale.</p>
+            <p>Riuscii a identificare molte parole Ottentote e Boschimane con parole cuscitiche e fra esse ve ne sono talune che cominciano con Schnalzlaut. Per esempio:</p>
+            <p>Nama <hi rend="unknown" rendition="#none">ṭ’hūb</hi> * [nota a pié di pagina: con ṭ’ indico l’avulsivo cerebrale (similmente gli altri avulsivi). <hi rendition="#sup">s</hi> è lo Hamzah arabo = Kehlkopfverschluss.] terra (sostanza), terra (= mondo terrestre), paese, Cfr.</p>
+            <p>Egiziano <hi rend="unknown" rendition="#none">t<hi rendition="#sup">s</hi>
+               </hi> (Copto <hi rend="unknown" rendition="#none">tho</hi>, <hi rend="unknown" rendition="#none">
+to</hi>) terra, paese. Qui è interessante vedere <hi rend="unknown" rendition="#none">t+<hi rendition="#sup">s</hi>
+               </hi>. Barea <hi rend="unknown" rendition="#none">do</hi> terra, paese, Kulfan <hi rend="unknown" rendition="#none">
+tao</hi> paese, Teda <hi rend="unknown" rendition="#none">te</hi> id. – Kulfan anche <hi rend="unknown" rendition="#none">to-b</hi>, cfr. Songhai <hi rend="unknown" rendition="#none">dō</hi>, <hi rend="unknown" rendition="#none">
+dō-bo</hi> terra, paese = Arabo <hi rend="unknown" rendition="#none">ṭūb-</hi> tegole (di argilla; cfr. Semitico <hi rend="unknown" rendition="#none">ṭī-ṭ-</hi>,  <hi rend="unknown" rendition="#none">ṭī-n-</hi> argilla). La parola è primoridiale perchè ricorre frequente anche nell’Eurasia e nell’Oceania.</p>
+            <p>Altro esempio:</p>
+            <p>Nama <hi rend="unknown" rendition="#none">khoi-</hi>, T’kora <hi rend="unknown" rendition="#none">kui-</hi>  homo. T’kham (dialetto boschimano) <hi rend="unknown" rendition="#none">ṭ’kui</hi>  homo, plur. o collettivo <hi rend="unknown" rendition="#none">ṭ’ē</hi>, <hi rend="unknown" rendition="#none">ṭ’eie</hi>. Cfr.</p>
+            <p>Barea <hi rend="unknown" rendition="#none">ku</hi>, Kunama <hi rend="unknown" rendition="#none">kū</hi>, <hi rend="unknown" rendition="#none">kŭā</hi> (<hi rend="unknown" rendition="#none">kū-nāmā</hi> = „uomini Nama” cfr. i Nama ottentoti) – Kanuri <hi rend="unknown" rendition="#none">kōa</hi> ecc. (diffusissimo in tutta l'Africa e anche fuori). Il Kungiara <hi rend="unknown" rendition="#none">
+due</hi>, <hi rend="unknown" rendition="#none">duo</hi> plur. <hi rend="unknown" rendition="#none">kua</hi> è prezioso, perchè spiega l’avulsivo <hi rend="unknown" rendition="#none">ṭ’-</hi> del Boschimano. </p>
+            <p>Giacce sono scivolato in questo campo non so restistere alla tentazione di farle conoscere alcuni miei raffronti lessicali fra l’Ottentoto <pb facs="#IMG.12" n="12"/> e le lingue cuscitiche e altre (specialmente il Nubiano si avvicina grandemente all’Ottentoto per il lessico e per altro). </p>
+            <p>Nama <hi rend="unknown" rendition="#none">karu</hi> russare: Nubiano <hi rend="unknown" rendition="#none">korre</hi>, Saho <hi rend="unknown" rendition="#none">karr-iš</hi> ecc. È voce primordiale, perchè diffusa in tutto il mondo antico. </p>
+            <p>Nama <hi rend="unknown" rendition="#none">ma</hi> dare : Copto <hi rend="unknown" rendition="#none">ma</hi> dà, Basco  <hi rend="unknown" rendition="#none">ema-n</hi>, <hi rend="unknown" rendition="#none">emo-n</hi>, <hi rend="unknown" rendition="#none">emai-</hi>, Kafa <hi rend="unknown" rendition="#none">am</hi>, Wolof <hi rend="unknown" rendition="#none">mai</hi> ecc. In tutta l'Africa.</p>
+            <p>Nama <hi rend="unknown" rendition="#none">am</hi> destro … Barea <hi rend="unknown" rendition="#none">hamme</hi>, Egizio-Semitico Base <hi rend="unknown" rendition="#none">y-am-</hi> (Basco <hi rend="unknown" rendition="#none">eskuma</hi> ecc.); con <hi rend="unknown" rendition="#none">y-</hi> cfr. Georg. <hi rend="unknown" rendition="#none">i-gurdiw</hi> de, à côté.</p>
+            <p>Nama <hi rend="unknown" rendition="#none">dawa</hi> voltare : Saho <hi rend="unknown" rendition="#none">dab</hi> id.</p>
+            <p>Nama <hi rend="unknown" rendition="#none">duru-</hi> Maus : Nuba <hi rend="unknown" rendition="#none">dau</hi>, Somali <hi rend="unknown" rendition="#none">dau</hi> ecc.</p>
+            <p>Nama <hi rend="unknown" rendition="#none">suni-</hi> Nabel : Nuba <hi rend="unknown" rendition="#none">sēn</hi> Nabel</p>
+            <p>Nama <hi rend="unknown" rendition="#none">sĩ-sen</hi> lavorare : <hi rend="unknown" rendition="#none">ṣana</hi>ع<hi rend="unknown" rendition="#none">
+a</hi> fare, lavorare, Kunama <hi rend="unknown" rendition="#none">sana</hi> lavorare ecc.</p>
+            <p>Nama <hi rend="unknown" rendition="#none">daũ</hi> brennen : Nuba <hi rend="unknown" rendition="#none">dume</hi> brennen</p>
+            <p>   "     <hi rend="unknown" rendition="#none">khowa</hi> aprire : Nuba <hi rend="unknown" rendition="#none">kauwe</hi> id.</p>
+            <p>   "     <hi rend="unknown" rendition="#none">mã</hi> stare, rimanere : Egiz. <hi rend="unknown" rendition="#none">mu</hi>, Indoeur. <hi rend="unknown" rendition="#none">man</hi> ecc. </p>
+            <p>   "     <hi rend="unknown" rendition="#none">tsu</hi>
+               <hi rend="unknown" rendition="#none">χ</hi>
+               <hi rend="unknown" rendition="#none">u-</hi> notte = Protobantu <hi rend="unknown" rendition="#none">tūku</hi>, cfr. Georg. <hi rend="unknown" rendition="#none">tsu</hi>
+               <hi rend="unknown" rendition="#none">
 χ</hi>
-          <hi rend="unknown" rendition="#none">e-li</hi> sera, Akuša <hi rend="unknown" rendition="#none">duge</hi> notte, ecc.</p>
-        <p>   "     <hi rend="unknown" rendition="#none">ari-</hi> cane : Egiz. <hi rend="unknown" rendition="#none">ŭhór</hi> ecc. Cfr. anche „volpe”.</p>
-        <p>   "     <hi rend="unknown" rendition="#none">tsara-b</hi> polvere = Arabo <hi rend="unknown"
-            rendition="#none">turā-b-</hi> Georg. e Lazo <hi rend="unknown" rendition="#none">m-tweri</hi> ecc. Voce primordiale.</p>
-        <p>    "     <hi rend="unknown" rendition="#none">toro-b</hi> guerra = Teda <hi rend="unknown"
-            rendition="#none">tulo</hi>, Maba <hi rend="unknown" rendition="#none">torre</hi>. Cfr. Galla <hi
-            rend="unknown" rendition="#none">
+               <hi rend="unknown" rendition="#none">e-li</hi> sera, Akuša <hi rend="unknown" rendition="#none">duge</hi> notte, ecc.</p>
+            <p>   "     <hi rend="unknown" rendition="#none">ari-</hi> cane : Egiz. <hi rend="unknown" rendition="#none">ŭhór</hi> ecc. Cfr. anche „volpe”.</p>
+            <p>   "     <hi rend="unknown" rendition="#none">tsara-b</hi> polvere = Arabo <hi rend="unknown" rendition="#none">turā-b-</hi> Georg. e Lazo <hi rend="unknown" rendition="#none">m-tweri</hi> ecc. Voce primordiale.</p>
+            <p>    "     <hi rend="unknown" rendition="#none">toro-b</hi> guerra = Teda <hi rend="unknown" rendition="#none">tulo</hi>, Maba <hi rend="unknown" rendition="#none">torre</hi>. Cfr. Galla <hi rend="unknown" rendition="#none">
 dūl-</hi> guerreggiare. </p>
-        <p>    "     <hi rend="unknown" rendition="#none">som-i</hi> ombra = Bilin <hi rend="unknown"
-            rendition="#none">šā́mā</hi>, Kunama <hi rend="unknown" rendition="#none">šṓma</hi> ecc. </p>
-        <p>Mi fermo, ma questo non è che una parte minima di ciò che ho raccolto.</p>
-        <closer>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">ATrombett</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>[Zusatz in anderer Farbe:]</p>
-
-          <p>Per ض ḍ conviene tener conto dei suoni che etimologicamente gli corrispondono nelle lingue affini; per es. arabo <hi
-              rend="unknown" rendition="#none">
-ḍarratũ</hi> Nebenfrau, Geez <hi rend="unknown"
-              rendition="#none">ḍrr</hi>, ma aram. <hi rend="unknown" rendition="#none"> ͑arr<hi
-              rendition="#sup">e</hi>dā</hi>, ebr. <hi rend="unknown" rendition="#none">ṣārā</hi> = assiro <hi
-              rend="unknown" rendition="#none">ṣerritu</hi> –– arabo ͐<hi rend="unknown"
-              rendition="#none">
-arḍ-</hi> terra, ma aram.  ͐<hi rend="unknown" rendition="#none">arqā</hi> e  ͐<hi
-              rend="unknown" rendition="#none">ar͑ā</hi> (notevole ͑ ), ebr. äreṣ = assiro <hi rend="unknown" rendition="#none">erṣitu</hi>. Dunque nelle altre lingue tenui, sorde e ͑ .</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            <p>    "     <hi rend="unknown" rendition="#none">som-i</hi> ombra = Bilin <hi rend="unknown" rendition="#none">šā́mā</hi>, Kunama <hi rend="unknown" rendition="#none">šṓma</hi> ecc. </p>
+            <p>Mi fermo, ma questo non è che una parte minima di ciò che ho raccolto.</p>
+            <closer>
+               <signed>
+                  <persName ref="[authorityLink]">ATrombett</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>[Zusatz in anderer Farbe:]</p>
+               <p>Per ض ḍ conviene tener conto dei suoni che etimologicamente gli corrispondono nelle lingue affini; per es. arabo <hi rend="unknown" rendition="#none">
+ḍarratũ</hi> Nebenfrau, Geez <hi rend="unknown" rendition="#none">ḍrr</hi>, ma aram. <hi rend="unknown" rendition="#none"> ͑arr<hi rendition="#sup">e</hi>dā</hi>, ebr. <hi rend="unknown" rendition="#none">ṣārā</hi> = assiro <hi rend="unknown" rendition="#none">ṣerritu</hi> –– arabo ͐<hi rend="unknown" rendition="#none">
+arḍ-</hi> terra, ma aram.  ͐<hi rend="unknown" rendition="#none">arqā</hi> e  ͐<hi rend="unknown" rendition="#none">ar͑ā</hi> (notevole ͑ ), ebr. äreṣ = assiro <hi rend="unknown" rendition="#none">erṣitu</hi>. Dunque nelle altre lingue tenui, sorde e ͑ .</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

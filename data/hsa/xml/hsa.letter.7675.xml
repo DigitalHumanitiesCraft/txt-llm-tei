@@ -1,360 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Francesco D´Ovidio (64-HSFDO24)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Sandra</forename>
-            <surname>Covino</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7675" type="PID">o:hsa.letter.7675</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">64-HSFDO24</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Italien</country>
-            <settlement>Pisa</settlement>
-            <repository ref="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</repository>
-            <idno type="shelfmark">HSFDO24</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6063" ref="http://sws.geonames.org/3167644">Sant'Agata sui Due Golfi</origPlace>
-              <origDate ana="dcterms:created" when="1901-08-16">1901-08-16</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Sandra</forename>
-              <surname>Covino</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Francesco D´Ovidio</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1353"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7675">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6063" key="#GID.1" ref="http://sws.geonames.org/3167644">Sant'Agata sui Due Golfi</placeName>
-          <date when="1901-08-16">1901-08-16</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1353" ref="https://viaf.org/viaf/29528295">
-            <forename>Francesco</forename>
-            <surname>D´Ovidio</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Sant'Agata sui Due Golfi</settlement>
-                <name ref="http://geonames.org/3167644" type="fcode:PPL">Sant'Agata sui Due Golfi</name>
-                <location>
-                  <geo>14.37402,40.60565</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1353" type="context">
-                        Korrespondenz Hugo Schuchardt - Francesco D´Ovidio
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7675" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Sant’Agata sopra Sorrento,<lb/> al giorno dell’apertura della caccia<lb/> 1901</dateline>
+            <opener>Mio carissimo, </opener>
+            <p>Difatti, la tua penultima si smarrì, cioè riposa in qualche sotterraneo postale. Degli scavi che in altre occasioni ho fatto fare nelle fabbriche delle R.P.<note n="1" place="foot" type="editorial">Reali Poste.</note> di Napoli non rimasero senza effetto; ma cotesta cartolina<note n="2" place="foot" type="editorial">
+L’impressione è che Schuchardt non si riferisse alla cartolina di D’Ovidio del 23 luglio (= LXIII), ma piuttosto a un’altra missiva anch’essa non pervenutaci.</note> come fu instradata, non l’indovino. Mi congratulo con te e la tua famiglia che vi troviate in uno stato soddisfacente. Non posso dire lo stesso di me. È una buona abitudine dei medici vostri, al meno nelle prime consultazioni, il fare l’elenco di tutti gli acciacchi che opprimono il paziente; riesce qualche volta un po’ lunga la menuta; ma allora con più facilità <pb facs="#IMG.2" n="2"/> si può scieglere un piatto per l’exitus letalis. Prescindendo dalla diatesi, dalla nevrastenia e dall’alterosclerosi iniziale (un po’ di enfisema e di tubercoli hanno appena il valore d’un antipasto), mi nutrisco per adesso d’un catarro laringo-faringite e d’un catarro bronchiale con stenose. Sopraggiunse alcuni giorni fa – quindi non ancora registrata ufficialmente – una completa mancanza d’appetito (dispepsia o comunque si chiami nella lingua tecnica), una vera carnifobia, che m’indebolisce e deprime oltremodo. Tutto questo te lo comunico soltanto perchè non ti meravigliassi troppo se, uno di questi giorni, io prendessi, benchè con ali rotte, il volo verso il mio paese. Vi sarei costretto; probabilmente mi deciderò la Domenica ventura, quando verrà qua il Dott. [Cotaccio].</p>
+            <p>Malvolentieri troncherei i studi cominciati a Napoli benchè colà più che altrove mi manchino delle persone che possano aiutarmi di consigli e rischiaramenti intorno alle <pb facs="#IMG.3" n="3"/> cose popolari. Non creder però che io abbia dimenticato che talora ti sei abbassato dalle tue altezze aquiline agli acquitrini nei quali sto pattugliando io. Ti debbo delle notizie intorno ai fusi di questi paesi, delle quali mi sono valuto nelle mie Rom. Etim. II<note n="3" place="foot" type="editorial">Da alcuni anni, Schuchardt si dedicava a una ricerca etnolinguistica sui fusi: cf. la <ref target="https://gams.uni-graz.at/o:hsa.letter.7661">lettera L, CASNS, FDO, HS 18</ref>, e la nota 6. Nelle <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.28">
+                        <hi rend="unknown" rendition="#none">Rom. Etym. II</hi>
                      </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7675" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7675" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7675" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7675" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7675" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7675" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7675" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Sant’Agata sopra Sorrento,<lb/> al giorno dell’apertura della caccia<lb/> 1901</dateline>
-        <opener>Mio carissimo, </opener>
-
-        <p>Difatti, la tua penultima si smarrì, cioè riposa in qualche sotterraneo postale. Degli scavi che in altre occasioni ho fatto fare nelle fabbriche delle R.P.<note
-            n="1" place="foot"
-            type="editorial">Reali Poste.</note> di Napoli non rimasero senza effetto; ma cotesta cartolina<note n="2"
-            place="foot"
-            type="editorial">
-L’impressione è che Schuchardt non si riferisse alla cartolina di D’Ovidio del 23 luglio (= LXIII), ma piuttosto a un’altra missiva anch’essa non pervenutaci.</note> come fu instradata, non l’indovino. Mi congratulo con te e la tua famiglia che vi troviate in uno stato soddisfacente. Non posso dire lo stesso di me. È una buona abitudine dei medici vostri, al meno nelle prime consultazioni, il fare l’elenco di tutti gli acciacchi che opprimono il paziente; riesce qualche volta un po’ lunga la menuta; ma allora con più facilità <pb
-            facs="#IMG.2" n="2"/> si può scieglere un piatto per l’exitus letalis. Prescindendo dalla diatesi, dalla nevrastenia e dall’alterosclerosi iniziale (un po’ di enfisema e di tubercoli hanno appena il valore d’un antipasto), mi nutrisco per adesso d’un catarro laringo-faringite e d’un catarro bronchiale con stenose. Sopraggiunse alcuni giorni fa – quindi non ancora registrata ufficialmente – una completa mancanza d’appetito (dispepsia o comunque si chiami nella lingua tecnica), una vera carnifobia, che m’indebolisce e deprime oltremodo. Tutto questo te lo comunico soltanto perchè non ti meravigliassi troppo se, uno di questi giorni, io prendessi, benchè con ali rotte, il volo verso il mio paese. Vi sarei costretto; probabilmente mi deciderò la Domenica ventura, quando verrà qua il Dott. [Cotaccio].</p>
-
-        <p>Malvolentieri troncherei i studi cominciati a Napoli benchè colà più che altrove mi manchino delle persone che possano aiutarmi di consigli e rischiaramenti intorno alle <pb
-            facs="#IMG.3"
-            n="3"/> cose popolari. Non creder però che io abbia dimenticato che talora ti sei abbassato dalle tue altezze aquiline agli acquitrini nei quali sto pattugliando io. Ti debbo delle notizie intorno ai fusi di questi paesi, delle quali mi sono valuto nelle mie Rom. Etim. II<note
-            n="3" place="foot"
-              type="editorial">Da alcuni anni, Schuchardt si dedicava a una ricerca etnolinguistica sui fusi: cf. la <ref target="https://gams.uni-graz.at/o:hsa.letter.7661">lettera L, CASNS, FDO, HS 18</ref>, e la nota 6. Nelle <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.28">
-                <hi rend="unknown" rendition="#none">Rom. Etym. II</hi>
-              </ref>
-
-            </bibl>, pp. 37-47, Schuchardt, dopo avere esaminato altri esiti fonetici e semantici di COCHLEA, si era soffermato su <hi
-              rend="unknown"
-              rendition="#none">cocca</hi> ‘Spindelkerbe’ e su altri termini designanti parti del fuso nelle sue varie tipologie (v. le otto figure a p. 39). In particolare, a p. 40 di questo saggio si trova citato lo <hi
-              rend="unknown"
-              rendition="#none">Häkchenspindel</hi> di Praiano (fig. III) ed il tipo di fuso napoletano più comune (fig. V); alle pp. 44-47 le numerose varianti dialettali della coccarola (un piccolo gancio o bottoncino in cima al fuso) e del <hi
-              rend="unknown"
-            rendition="#none">muscolo o fusajolo</hi> (dispositivi per non fare sfuggire il filo dal fuso).</note>; mi pare lo <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2628">Scherillo</persName> te le fornì<note n="4" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2628">Michele Scherillo</persName> (Soccavo, Napoli, 1860-Milano 1930). Si era formato a <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.103">
-Napoli</placeName> con D’Ovidio, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3068">Zumbini</persName> e <persName>Kerbaker</persName>; dal 1893 insegnava Letteratura italiana presso l’Accademia scientifico-letteraria di Milano. Per quanto riguarda i fusi utilizzati nei paesi della provincia di Napoli, non si conservano missive di D’Ovidio contenenti informazioni significative sull’argomento, ma nel dicembre 1901 Schuchardt si rivolgerà direttamente a Scherillo, come si ricava dalle tre lettere dello studioso napoletano conservate nello HSA e datate 19 dicembre 1901, 8 gennaio 1902 e 20 giungo 1905. Ampie notizie furono trasmesse al luminare di Graz nella seconda (B 10037). Schuchardt le utilizzerà nell’opuscolo in onore di <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2264">
-Mussafia</persName>, HS an AM.</note>. Ma non mi trovo che nei principii della fusologia; esaminai una cinquantina di fusi pompeiani nel Museo nazionale, e ne trovai molti colla coccarola [disegno] nella parte superiore. Adesso mi preme di conoscere la forma del fuso nelle contrade vesuviane; (qui, nella penisola sorrentina ha una forma che non corrisponde alla sopraddetta, perchè come nella maggior parte del Mezzogiorno, provveduta di due fusaiuoli [disegno])<note
-            n="5" place="foot" type="editorial">Per entrambi i piccoli disegni si rimanda al testo originale digitalizzato.</note>
-          <pb facs="#IMG.4"
-            n="4"/> Spero di potere io stesso, facendo una gita in carrozzella a Pompei, raccogliere dei fusi lungo la strada; ma se frattanto, per combinazione, le tue Signorine vedessero costà un fuso differente dal sorrentino, mi raccomanderei alla loro benevolenza. _ Neppure in quanto a certe espressioni dialettali non so a chi rivolgermi per la verificazione o rettificazione. Quanto facilmente un forestiere possa incorrere in errore, te l’ho mostrato con quella storiella del <hi
-            rend="unknown" rendition="#none">làtero</hi> e l’<hi rend="unknown" rendition="#none">anitra</hi>
-          <note n="6" place="foot"
-            type="editorial">Forse in una lettera non pervenutaci. Il riferimento non è chiaro.</note>. L’altro giorno sentii qua, da differenti persone, <hi
-            rend="unknown" rendition="#none">
-semprevina</hi> invece di <hi rend="unknown"
-            rendition="#none">semprevivo = aloe</hi>. Dalla filaccia di queste piante fanno delle funi; e da queste funi delle suole a certe scarpe che chiamano <hi
-            rend="unknown" rendition="#none">
-paragate</hi>, che non è altro che lo spagn. <hi rend="unknown"
-            rendition="#none">
+                  </bibl>, pp. 37-47, Schuchardt, dopo avere esaminato altri esiti fonetici e semantici di COCHLEA, si era soffermato su <hi rend="unknown" rendition="#none">cocca</hi> ‘Spindelkerbe’ e su altri termini designanti parti del fuso nelle sue varie tipologie (v. le otto figure a p. 39). In particolare, a p. 40 di questo saggio si trova citato lo <hi rend="unknown" rendition="#none">Häkchenspindel</hi> di Praiano (fig. III) ed il tipo di fuso napoletano più comune (fig. V); alle pp. 44-47 le numerose varianti dialettali della coccarola (un piccolo gancio o bottoncino in cima al fuso) e del <hi rend="unknown" rendition="#none">muscolo o fusajolo</hi> (dispositivi per non fare sfuggire il filo dal fuso).</note>; mi pare lo <persName ref="[authorityLink]">Scherillo</persName> te le fornì<note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Michele Scherillo</persName> (Soccavo, Napoli, 1860-Milano 1930). Si era formato a <placeName ref="[authorityLink]">
+Napoli</placeName> con D’Ovidio, <persName ref="[authorityLink]">Zumbini</persName> e <persName>Kerbaker</persName>; dal 1893 insegnava Letteratura italiana presso l’Accademia scientifico-letteraria di Milano. Per quanto riguarda i fusi utilizzati nei paesi della provincia di Napoli, non si conservano missive di D’Ovidio contenenti informazioni significative sull’argomento, ma nel dicembre 1901 Schuchardt si rivolgerà direttamente a Scherillo, come si ricava dalle tre lettere dello studioso napoletano conservate nello HSA e datate 19 dicembre 1901, 8 gennaio 1902 e 20 giungo 1905. Ampie notizie furono trasmesse al luminare di Graz nella seconda (B 10037). Schuchardt le utilizzerà nell’opuscolo in onore di <persName ref="[authorityLink]">
+Mussafia</persName>, HS an AM.</note>. Ma non mi trovo che nei principii della fusologia; esaminai una cinquantina di fusi pompeiani nel Museo nazionale, e ne trovai molti colla coccarola [disegno] nella parte superiore. Adesso mi preme di conoscere la forma del fuso nelle contrade vesuviane; (qui, nella penisola sorrentina ha una forma che non corrisponde alla sopraddetta, perchè come nella maggior parte del Mezzogiorno, provveduta di due fusaiuoli [disegno])<note n="5" place="foot" type="editorial">Per entrambi i piccoli disegni si rimanda al testo originale digitalizzato.</note>
+               <pb facs="#IMG.4" n="4"/> Spero di potere io stesso, facendo una gita in carrozzella a Pompei, raccogliere dei fusi lungo la strada; ma se frattanto, per combinazione, le tue Signorine vedessero costà un fuso differente dal sorrentino, mi raccomanderei alla loro benevolenza. _ Neppure in quanto a certe espressioni dialettali non so a chi rivolgermi per la verificazione o rettificazione. Quanto facilmente un forestiere possa incorrere in errore, te l’ho mostrato con quella storiella del <hi rend="unknown" rendition="#none">làtero</hi> e l’<hi rend="unknown" rendition="#none">anitra</hi>
+               <note n="6" place="foot" type="editorial">Forse in una lettera non pervenutaci. Il riferimento non è chiaro.</note>. L’altro giorno sentii qua, da differenti persone, <hi rend="unknown" rendition="#none">
+semprevina</hi> invece di <hi rend="unknown" rendition="#none">semprevivo = aloe</hi>. Dalla filaccia di queste piante fanno delle funi; e da queste funi delle suole a certe scarpe che chiamano <hi rend="unknown" rendition="#none">
+paragate</hi>, che non è altro che lo spagn. <hi rend="unknown" rendition="#none">
 alpargatas</hi>, basc. <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">espartiñak</hi>
-
-          </foreign>, che non ne differiscono che per la pianta, che fornisce la materia della suola – colà è lo sparto (giunco). Ecco uno spagnolismo che tu per certo non conoscevi! Non so per ora se quelle parole sono state registrate dal d’Ambra <pb
-            facs="#IMG.5" n="5"/> o altrui; non mi pare probabile<note n="7" place="foot" type="editorial">Cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3952">D’Ambra, <hi rend="unknown" rendition="#none">Voc nap.-tosc.</hi>
-              </ref>
-            </bibl> Il termine <hi rend="unknown"
-            rendition="#none">paragate</hi> non vi compare.</note>. Che peccato che il Dizionario del de Rocco sia rimasto incompiuto, e che neanche il tomo si possa trovare dai librai<note
-            n="8" place="foot" type="editorial">
-            <hi rend="unknown"
-              rendition="#none">Il Vocabolario del dialetto napolitano</hi>, Napoli, Chiurazzi, 1891 – opera di Emmanuele Rocco (Ferrol, Spagna, 1811-Napoli 1892) – fu pubblicato in 17 fascicoli contenenti le lettere A-F (fino a feletto); la parte relativa alle lettere F (da <hi
-              rend="unknown"
-              rendition="#none">
-figliastro</hi>)-Z restò inedita. Ne è apparsa di recente l’edizione critica: cf. Rocco, III e IV (il t. II ripropone, in edizione anastatica, il raro volume del 1891). Sulla figura di questo lessicografo, v. Antonio Vinciguerra, <hi
-              rend="unknown" rendition="#none">Emmanuele Rocco nella cultura linguistica napoletana dell’Ottocento</hi>, ivi, t. I, pp. 51-57.</note>!</p>
-        <p>Come si trova lo <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3068">
-Zumbini</persName>? E il <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1314">Cocchia</persName>? A Napoli non domandai di nissuno, ritenendo che tutti sarebbero in villeggiatura. Al <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2343">Pais</persName> naturalmente mi presentai nelle mie visite al Museo; e mi fu molto cortese<note
-            n="9" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2343">
+                  <hi rend="unknown" rendition="#none">espartiñak</hi>
+               </foreign>, che non ne differiscono che per la pianta, che fornisce la materia della suola – colà è lo sparto (giunco). Ecco uno spagnolismo che tu per certo non conoscevi! Non so per ora se quelle parole sono state registrate dal d’Ambra <pb facs="#IMG.5" n="5"/> o altrui; non mi pare probabile<note n="7" place="foot" type="editorial">Cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3952">D’Ambra, <hi rend="unknown" rendition="#none">Voc nap.-tosc.</hi>
+                     </ref>
+                  </bibl> Il termine <hi rend="unknown" rendition="#none">paragate</hi> non vi compare.</note>. Che peccato che il Dizionario del de Rocco sia rimasto incompiuto, e che neanche il tomo si possa trovare dai librai<note n="8" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Il Vocabolario del dialetto napolitano</hi>, Napoli, Chiurazzi, 1891 – opera di Emmanuele Rocco (Ferrol, Spagna, 1811-Napoli 1892) – fu pubblicato in 17 fascicoli contenenti le lettere A-F (fino a feletto); la parte relativa alle lettere F (da <hi rend="unknown" rendition="#none">
+figliastro</hi>)-Z restò inedita. Ne è apparsa di recente l’edizione critica: cf. Rocco, III e IV (il t. II ripropone, in edizione anastatica, il raro volume del 1891). Sulla figura di questo lessicografo, v. Antonio Vinciguerra, <hi rend="unknown" rendition="#none">Emmanuele Rocco nella cultura linguistica napoletana dell’Ottocento</hi>, ivi, t. I, pp. 51-57.</note>!</p>
+            <p>Come si trova lo <persName ref="[authorityLink]">
+Zumbini</persName>? E il <persName ref="[authorityLink]">Cocchia</persName>? A Napoli non domandai di nissuno, ritenendo che tutti sarebbero in villeggiatura. Al <persName ref="[authorityLink]">Pais</persName> naturalmente mi presentai nelle mie visite al Museo; e mi fu molto cortese<note n="9" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
 Ettore Pais</persName> (Borgo S. Dalmazzo 1856-Roma 1939). Fu direttore del Museo archeologico nazionale di Napoli dal 1901 al 1904.</note>.</p>
-        <p>Il <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-Meyer-Lübke</persName> nella sua <hi
-            rend="unknown" rendition="#none">
-Einleitung</hi> che ti avrà mandata, dice p. 97 che «neben <hi
-            rend="unknown" rendition="#none">Taránto</hi> wird auch <hi rend="unknown"
-            rendition="#none">
-Táranto</hi> betont». Gli domandai daddove abbia preso questo <hi rend="unknown"
-            rendition="#none">Taránto</hi>; mi rispose: l’attestano il d’Ovidio (Arch. Glott. IX) l’Ascoli ed altri. Ma dove l’avete pescato voi? Per sicuro nè nel Mare piccolo, nè nel Mare Grande di Taranto<note
-            n="10" place="foot" type="editorial">
+            <p>Il <persName ref="[authorityLink]">
+Meyer-Lübke</persName> nella sua <hi rend="unknown" rendition="#none">
+Einleitung</hi> che ti avrà mandata, dice p. 97 che «neben <hi rend="unknown" rendition="#none">Taránto</hi> wird auch <hi rend="unknown" rendition="#none">
+Táranto</hi> betont». Gli domandai daddove abbia preso questo <hi rend="unknown" rendition="#none">Taránto</hi>; mi rispose: l’attestano il d’Ovidio (Arch. Glott. IX) l’Ascoli ed altri. Ma dove l’avete pescato voi? Per sicuro nè nel Mare piccolo, nè nel Mare Grande di Taranto<note n="10" place="foot" type="editorial">
 Cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3651">W. Meyer-Lübke, <hi rend="unknown" rendition="#none">Einführung in das Studium der Romanischen Sprachwissenschaft</hi>, Heidelberg, Carl Winter’s Universitätsbuchhandlung, 1901</ref>
-
-            </bibl>, p. 97: «Denn wenn neben Taránto auch Táranto betont wird, so legt die Lage des Ortes die Annahme nahe, daß es sich im zweiten Falle um eine griechische Accentstellung handle». Per quanto riguarda <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">
-Ascoli</persName>, cf. la nota 1 da lui apposta a p. 126 del saggio di Giuseppe Morosi, <hi
-              rend="unknown"
-              rendition="#none">Il vocalismo del dialetto leccese</hi>, in AGI, IV, 1878, pp. 117-144. D’Ovidio aveva parlato dell’accento greco mantenutosi nell’it. <hi
-              rend="unknown" rendition="#none">
-Táranto</hi> e avanzatosi da ultimo nel lecc. <hi rend="unknown"
-              rendition="#none">Tarántu</hi> nell’articolo <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3651">W. Meyer-Lübke, <hi rend="unknown" rendition="#none">Einführung in das Studium der Romanischen Sprachwissenschaft</hi>, Heidelberg, Carl Winter’s Universitätsbuchhandlung, 1901</ref>
+                  </bibl>, p. 97: «Denn wenn neben Taránto auch Táranto betont wird, so legt die Lage des Ortes die Annahme nahe, daß es sich im zweiten Falle um eine griechische Accentstellung handle». Per quanto riguarda <persName ref="[authorityLink]">
+Ascoli</persName>, cf. la nota 1 da lui apposta a p. 126 del saggio di Giuseppe Morosi, <hi rend="unknown" rendition="#none">Il vocalismo del dialetto leccese</hi>, in AGI, IV, 1878, pp. 117-144. D’Ovidio aveva parlato dell’accento greco mantenutosi nell’it. <hi rend="unknown" rendition="#none">
+Táranto</hi> e avanzatosi da ultimo nel lecc. <hi rend="unknown" rendition="#none">Tarántu</hi> nell’articolo <hi rend="unknown" rendition="#none">
 Spigolature romanze. Dalle pagine di un latinista</hi>, in AGI, X [non IX], 1886-1888, pp. 413-446: 429. Cf. pure D’Ovidio, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7628">
-                <hi rend="unknown" rendition="#none">Talento</hi>,</ref>
-            </bibl> p. 122 e <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7628">
-                <hi rend="unknown" rendition="#none">Note etim.</hi>
-              </ref>
-            </bibl>, p. 5.</note>.</p>
-        <p>Devo finire la lettera: l’illuminazione esteriore (scrivo la sera) è molto debole, quasi nulla l’interiore. Mi mancano le parole, la grammatica, i pensieri, non ci resta che un po’ di cuore per te e la tua famiglia.</p>
-        <closer>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H.Sch.</persName>
-          </signed>
-        </closer>
-        <pb facs="#IMG.6" n="6"/>
-      </div>
-    </body>
-  </text>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7628">
+                        <hi rend="unknown" rendition="#none">Talento</hi>,</ref>
+                  </bibl> p. 122 e <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7628">
+                        <hi rend="unknown" rendition="#none">Note etim.</hi>
+                     </ref>
+                  </bibl>, p. 5.</note>.</p>
+            <p>Devo finire la lettera: l’illuminazione esteriore (scrivo la sera) è molto debole, quasi nulla l’interiore. Mi mancano le parole, la grammatica, i pensieri, non ci resta che un po’ di cuore per te e la tua famiglia.</p>
+            <closer>
+               <signed>
+                  <persName ref="[authorityLink]">H.Sch.</persName>
+               </signed>
+            </closer>
+            <pb facs="#IMG.6" n="6"/>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

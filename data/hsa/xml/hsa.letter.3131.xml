@@ -1,340 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Alfredo Trombetti an Hugo Schuchardt (02-11783)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">
-            <forename>Alfredo</forename>
-            <surname>Trombetti</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3131" type="PID">o:hsa.letter.3131</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-11783</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11783</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">
-                <forename>Alfredo</forename>
-                <surname>Trombetti</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="7" unit="pages">7 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.420" ref="http://sws.geonames.org/3177700">Cuneo</origPlace>
-              <origDate ana="dcterms:created" when="1902-06-07">1902-06-07</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Alfredo Trombetti und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2881"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3131">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2881" ref="https://viaf.org/viaf/44384477">
-            <forename>Alfredo</forename>
-            <surname>Trombetti</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.420" key="#GID.1" ref="http://sws.geonames.org/3177700">Cuneo</placeName>
-          <date when="1902-06-07">1902-06-07</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Cuneo</settlement>
-                <name ref="http://geonames.org/3177700" type="fcode:PPLA2">Cuneo</name>
-                <location>
-                  <geo>7.54828,44.39071</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2881" type="context">
-                        Korrespondenz Alfredo Trombetti - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3131" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3131" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3131" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3131" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3131" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3131" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3131" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3131" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Cuneo, 7 giugno 1902</dateline>
-        <opener>Chiarissimo Professore, </opener>
-        <p>La ringrazio vivamente del gentile invio della Sua recensione di: Baskisch u. Berberisch di <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1540">Von der Gabelentz</persName>.<note n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.206">Schuchardt (1893a)</ref>
-
-            </bibl>.</note> Io consento pienamente con Lei nei giudizi. Mi è poi in particolar modo gradito di vedere che le mie conclusioni sulle affinità del Basco da una parte col Berbero (o meglio col Hamitico in genere) e dall'altra con le lingue caucasiche (specie con quelle del Sud), concordano con quanto ne pensa Lei, conoscitore così profondo del Basco e delle lingue del Caucaso. Il problema delle affinità del Basco – come in generale tutte le questioni riflettenti i nessi linguistici – non può <pb
-            facs="#IMG.2" n="2"/> però essere interamente risolto se non traendo nel campo della comparazione tutte le lingue o gruppi di lingue che possono avere relazioni dirette o indirette. Nel caso del Basco, per es., non giova ricorrere all'egiziano-copto o al berbero soltanto, ma come dice anch'Ella, bisogna operare col Hamitico tutto quanto, poichè moltissime forme e moltissimi vocaboli antichi possono benissimo essere conservati in rami remoti. Così io credo di avere scoperto dei punti assai notevoli di contatto fra il Basco e il Nubiano, senza che essi significhino punto che il Basco sia genealogicamente più vicino al Nubiano che ad altre lingue hamitiche. Gli è che il Nubiano e il Basco hanno conservato degli elementi antichissimi di origine comune. </p>
-        <p>Le lingue formano come come tante reti inestricabili: le affinità non <pb facs="#IMG.3"
-            n="3"/> sono unilaterali, ma <hi rend="unknown"
-            rendition="#none">
-diverse</hi> e numerose. Le lingue italiche, per es., sono affini alle celtiche, ma questo non impedisce che esse siano anche affini alle germaniche, alle lituslave ecc. Fed. Müller<note
-            n="2" place="foot" type="editorial">Müller (1876-1887). <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2252">Friedrich Müller</persName> wird die Prägung des Begriffs <hi
-              rend="unknown"
-            rendition="#none">Hamito-Semitische Sprachen</hi> zugeschrieben.</note> credeva di infirmare il valore dei contatti notati da Norris,<note
-            n="3" place="foot" type="editorial">Wahrscheinlich <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6517">Norris (1846)</ref>
-            </bibl>.</note> dal <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5343">Bleek</persName>
-          <note n="4" place="foot" type="editorial">Es ist nicht ganz klar, auf welches Werk von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5343">Bleek</persName> Trombetti sich hier bezieht, wahrscheinlich <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6518">Bleek (1868)</ref>
-            </bibl>.</note> e dal <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1249">Caldwell</persName>
-          <note n="5" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6519">Caldwell (1875)</ref>
-            </bibl>.</note> fra le lingue dravidiche e le australiane col far notare che molti degli elementi comuni non erano ristretti alle lingue dravidiche e alle australiane, ma si estendevano ad altri gruppi linguistici. Questo non mi pare un buon argomento contrario.</p>
-
-        <p>Da molti anni io mi occupo indefessamente della ricerca dei nessi fra i gruppi linguistici del mondo antico finora ritenuti isolati. Avendo avuto la fortuna di imparare fin da fanciullo parecchie lingue di varie famiglie (indoeurop., hamitosem., uralaltaiche ecc.) ed avendo anche avuto in sorte un’eccellente memoria, ho potuto dominare come dall’alto il vasto campo e ho trovato moltissimi punti di contatto (grammaticali e <pb
-            facs="#IMG.4" n="4"/> lessicali), per se stessi evidentissimi e non difficili da scoprirsi, ma che non erano ancora stati scoperti, perchè la maggior parte dei glottologi è profondamente versata in un gruppo ristretto di lingue, mentre per la questione dei nessi è necessario abbracciare a un tempo molti gruppi.</p>
-        <p>A, B, C, D .......Z</p>
-        <p>Io potrò dimostrare A=B, B=C, C=D ecc. e perciò anche, per es., B=M; ma, perchè la dimostrazione sia completa, dovrò paragonando A con B por mente anche a C, D ecc., perchè in B possono essersi perduti elementi già comuni con A e conservati solo in C, D.....</p>
-
-        <p>Ma io temo di abusare della Sua pazienza. Le aggiungerò soltanto che sto raccogliendo tutte le mie ricerche in un grosso volume che presenterò entro quest'anno all’Accademia dei Lincei (per il premio reale di £ 10.000).<note
-            n="6" place="foot"
-              type="editorial">Diese Frage des Preises der Akademie zieht sich über zahlreiche Folgebriefe. Für eine realistische Einschätzung ist es durchaus wichtig, auch andere dazugehörige Korrespondenzen des <hi
-              rend="unknown"
-              rendition="#none">
-HSA</hi> zu konsultieren, vgl. insbesondere die kritische Position in mehreren Briefen zwischen Schuchardt und <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">Ascoli</persName> (etwas <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.1321">168-B76_15</ref> (Schuchardt an Ascoli), <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.1331">
-180-00332</ref> (Ascoli an Schuchardt) bzw. <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.1332">181-B29_12</ref> (Schuchardt an Ascoli) hier im <hi
-              rend="unknown"
-            rendition="#none">
-HSA</hi>.</note> Finora non ho pubblicato niente di staccato, appunto perchè credo che le questioni delle affinità non si possano risolvere interamente, se non traendo in campo tutto il materiale per fare i confronti fra i gruppi che si <pb
-            facs="#IMG.5" n="5"/> presumono affini, <hi rend="unknown"
-            rendition="#none">ma senza lasciar del tutto da parte i gruppi aventi relazioni mediate</hi>. Posso però assicurarla che sono riuscito a scoprire dei nessi altrettanto meravigliosi quanto sicuri. Questo posso affermare risolutamente: che non c’è lingua alcuna nè famiglia di lingue nel mondo antico che possa dirsi veramente <hi
-            rend="unknown"
-            rendition="#none">isolata</hi>. Anzi le relazioni sono sempre multiple e la più grave difficoltà è di stabilire quelle che in tedesco si dicono <hi
-            rend="unknown" rendition="#none">Verwandtschaftsverhältnisse</hi>.</p>
-
-        <p>Ho pensato in questi giorni se convenisse pubblicare una parte almeno del mio lavoro riguardante le lingue Hamitiche, le Caucasiche e il Basco. Ove a ciò mi decidessi, sarebbe poi mio desiderio di dedicare il lavoro a Lei, egregio Professore; e spero che Ella ne accetterebbe la dedica, s’intende <hi
-            rend="unknown"
-            rendition="#none">
-dopo essersi assicurato della serietà del medesimo</hi>. Purtroppo, chi ricerca affinità linguistiche corre il rischio di esser giudicato quasi <pb
-            facs="#IMG.6" n="6"/>
-          <hi rend="unknown"
-            rendition="#none">a priori</hi> per visionario, sia perchè è molto diffusa l’opinione della irreducibilità delle maggior parte dei gruppi linguistici ammettendosi dai più una poligenesi glottica), la quale (a dir poco) non potrà mai essere provata; sia perchè molti hanno trattato delle affinità in modo leggero o senza metodo rigoroso. Io, invece, nelle mie ricerche calme, metodiche, lunghe e pazienti non ho mai voluto sostenere una tesi: mi sono lasciato guidare dai fatti ed ho sempre escluso tutto ciò che può avere carattere ipotetico per attenermi a ciò che è innegabile. Il mio principio ormai è <hi
-            rend="unknown"
-            rendition="#none">pochi fatti, ma sicuri</hi>. Secondo me, il Von der Gabelentz errò quando credette che il grande numero delle comparazioni da lui fatte valesse a rafforzare la credenza nel nesso Basco-Berberico; egli invece pur troppo fece sì che le buone comparazioni <pb
-            facs="#IMG.7" n="7"/> in mezzo a tante falsissime fossero come perdute e di nessun valore. Più che il numero ha importanza la qualità dei raffronti.</p>
-        <closer>
-          <salute>Perdoni, egregio Professore, la mia lunga chiacchierata e mi creda</salute>
-          <lb/>
-          <salute>Suo devm̃o</salute>
-          <lb/>
-          <signed>Prof. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">Alfredo Trombetti</persName>
-          </signed>
-          <dateline>R. Liceo – Cuneo</dateline>
-        </closer>
-      </div>
-    </body>
-  </text>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3131" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Cuneo, 7 giugno 1902</dateline>
+            <opener>Chiarissimo Professore, </opener>
+            <p>La ringrazio vivamente del gentile invio della Sua recensione di: Baskisch u. Berberisch di <persName ref="[authorityLink]">Von der Gabelentz</persName>.<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.206">Schuchardt (1893a)</ref>
+                  </bibl>.</note> Io consento pienamente con Lei nei giudizi. Mi è poi in particolar modo gradito di vedere che le mie conclusioni sulle affinità del Basco da una parte col Berbero (o meglio col Hamitico in genere) e dall'altra con le lingue caucasiche (specie con quelle del Sud), concordano con quanto ne pensa Lei, conoscitore così profondo del Basco e delle lingue del Caucaso. Il problema delle affinità del Basco – come in generale tutte le questioni riflettenti i nessi linguistici – non può <pb facs="#IMG.2" n="2"/> però essere interamente risolto se non traendo nel campo della comparazione tutte le lingue o gruppi di lingue che possono avere relazioni dirette o indirette. Nel caso del Basco, per es., non giova ricorrere all'egiziano-copto o al berbero soltanto, ma come dice anch'Ella, bisogna operare col Hamitico tutto quanto, poichè moltissime forme e moltissimi vocaboli antichi possono benissimo essere conservati in rami remoti. Così io credo di avere scoperto dei punti assai notevoli di contatto fra il Basco e il Nubiano, senza che essi significhino punto che il Basco sia genealogicamente più vicino al Nubiano che ad altre lingue hamitiche. Gli è che il Nubiano e il Basco hanno conservato degli elementi antichissimi di origine comune. </p>
+            <p>Le lingue formano come come tante reti inestricabili: le affinità non <pb facs="#IMG.3" n="3"/> sono unilaterali, ma <hi rend="unknown" rendition="#none">
+diverse</hi> e numerose. Le lingue italiche, per es., sono affini alle celtiche, ma questo non impedisce che esse siano anche affini alle germaniche, alle lituslave ecc. Fed. Müller<note n="2" place="foot" type="editorial">Müller (1876-1887). <persName ref="[authorityLink]">Friedrich Müller</persName> wird die Prägung des Begriffs <hi rend="unknown" rendition="#none">Hamito-Semitische Sprachen</hi> zugeschrieben.</note> credeva di infirmare il valore dei contatti notati da Norris,<note n="3" place="foot" type="editorial">Wahrscheinlich <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6517">Norris (1846)</ref>
+                  </bibl>.</note> dal <persName ref="[authorityLink]">Bleek</persName>
+               <note n="4" place="foot" type="editorial">Es ist nicht ganz klar, auf welches Werk von <persName ref="[authorityLink]">Bleek</persName> Trombetti sich hier bezieht, wahrscheinlich <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6518">Bleek (1868)</ref>
+                  </bibl>.</note> e dal <persName ref="[authorityLink]">Caldwell</persName>
+               <note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6519">Caldwell (1875)</ref>
+                  </bibl>.</note> fra le lingue dravidiche e le australiane col far notare che molti degli elementi comuni non erano ristretti alle lingue dravidiche e alle australiane, ma si estendevano ad altri gruppi linguistici. Questo non mi pare un buon argomento contrario.</p>
+            <p>Da molti anni io mi occupo indefessamente della ricerca dei nessi fra i gruppi linguistici del mondo antico finora ritenuti isolati. Avendo avuto la fortuna di imparare fin da fanciullo parecchie lingue di varie famiglie (indoeurop., hamitosem., uralaltaiche ecc.) ed avendo anche avuto in sorte un’eccellente memoria, ho potuto dominare come dall’alto il vasto campo e ho trovato moltissimi punti di contatto (grammaticali e <pb facs="#IMG.4" n="4"/> lessicali), per se stessi evidentissimi e non difficili da scoprirsi, ma che non erano ancora stati scoperti, perchè la maggior parte dei glottologi è profondamente versata in un gruppo ristretto di lingue, mentre per la questione dei nessi è necessario abbracciare a un tempo molti gruppi.</p>
+            <p>A, B, C, D .......Z</p>
+            <p>Io potrò dimostrare A=B, B=C, C=D ecc. e perciò anche, per es., B=M; ma, perchè la dimostrazione sia completa, dovrò paragonando A con B por mente anche a C, D ecc., perchè in B possono essersi perduti elementi già comuni con A e conservati solo in C, D.....</p>
+            <p>Ma io temo di abusare della Sua pazienza. Le aggiungerò soltanto che sto raccogliendo tutte le mie ricerche in un grosso volume che presenterò entro quest'anno all’Accademia dei Lincei (per il premio reale di £ 10.000).<note n="6" place="foot" type="editorial">Diese Frage des Preises der Akademie zieht sich über zahlreiche Folgebriefe. Für eine realistische Einschätzung ist es durchaus wichtig, auch andere dazugehörige Korrespondenzen des <hi rend="unknown" rendition="#none">
+HSA</hi> zu konsultieren, vgl. insbesondere die kritische Position in mehreren Briefen zwischen Schuchardt und <persName ref="[authorityLink]">Ascoli</persName> (etwas <ref target="https://gams.uni-graz.at/o:hsa.letter.1321">168-B76_15</ref> (Schuchardt an Ascoli), <ref target="https://gams.uni-graz.at/o:hsa.letter.1331">
+180-00332</ref> (Ascoli an Schuchardt) bzw. <ref target="https://gams.uni-graz.at/o:hsa.letter.1332">181-B29_12</ref> (Schuchardt an Ascoli) hier im <hi rend="unknown" rendition="#none">
+HSA</hi>.</note> Finora non ho pubblicato niente di staccato, appunto perchè credo che le questioni delle affinità non si possano risolvere interamente, se non traendo in campo tutto il materiale per fare i confronti fra i gruppi che si <pb facs="#IMG.5" n="5"/> presumono affini, <hi rend="unknown" rendition="#none">ma senza lasciar del tutto da parte i gruppi aventi relazioni mediate</hi>. Posso però assicurarla che sono riuscito a scoprire dei nessi altrettanto meravigliosi quanto sicuri. Questo posso affermare risolutamente: che non c’è lingua alcuna nè famiglia di lingue nel mondo antico che possa dirsi veramente <hi rend="unknown" rendition="#none">isolata</hi>. Anzi le relazioni sono sempre multiple e la più grave difficoltà è di stabilire quelle che in tedesco si dicono <hi rend="unknown" rendition="#none">Verwandtschaftsverhältnisse</hi>.</p>
+            <p>Ho pensato in questi giorni se convenisse pubblicare una parte almeno del mio lavoro riguardante le lingue Hamitiche, le Caucasiche e il Basco. Ove a ciò mi decidessi, sarebbe poi mio desiderio di dedicare il lavoro a Lei, egregio Professore; e spero che Ella ne accetterebbe la dedica, s’intende <hi rend="unknown" rendition="#none">
+dopo essersi assicurato della serietà del medesimo</hi>. Purtroppo, chi ricerca affinità linguistiche corre il rischio di esser giudicato quasi <pb facs="#IMG.6" n="6"/>
+               <hi rend="unknown" rendition="#none">a priori</hi> per visionario, sia perchè è molto diffusa l’opinione della irreducibilità delle maggior parte dei gruppi linguistici ammettendosi dai più una poligenesi glottica), la quale (a dir poco) non potrà mai essere provata; sia perchè molti hanno trattato delle affinità in modo leggero o senza metodo rigoroso. Io, invece, nelle mie ricerche calme, metodiche, lunghe e pazienti non ho mai voluto sostenere una tesi: mi sono lasciato guidare dai fatti ed ho sempre escluso tutto ciò che può avere carattere ipotetico per attenermi a ciò che è innegabile. Il mio principio ormai è <hi rend="unknown" rendition="#none">pochi fatti, ma sicuri</hi>. Secondo me, il Von der Gabelentz errò quando credette che il grande numero delle comparazioni da lui fatte valesse a rafforzare la credenza nel nesso Basco-Berberico; egli invece pur troppo fece sì che le buone comparazioni <pb facs="#IMG.7" n="7"/> in mezzo a tante falsissime fossero come perdute e di nessun valore. Più che il numero ha importanza la qualità dei raffronti.</p>
+            <closer>
+               <salute>Perdoni, egregio Professore, la mia lunga chiacchierata e mi creda</salute>
+               <lb/>
+               <salute>Suo devm̃o</salute>
+               <lb/>
+               <signed>Prof. <persName ref="[authorityLink]">Alfredo Trombetti</persName>
+               </signed>
+               <dateline>R. Liceo – Cuneo</dateline>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

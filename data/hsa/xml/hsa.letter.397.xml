@@ -1,257 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Elise Richter (57-266_27-6)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/397" type="PID">o:hsa.letter.397</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">57-266_27-6</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <settlement>Wien</settlement>
-            <repository ref="https://www.onb.ac.at/">Österreichische Nationalbibliothek</repository>
-            <idno type="shelfmark">266_27</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1923-03-19">1923-03-19</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2009">2009</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Elise Richter</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2516"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.397">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1923-03-19">1923-03-19</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2516" ref="https://viaf.org/viaf/19723742">
-            <forename>Elise</forename>
-            <surname>Richter</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2516" type="context">
-                        Korrespondenz Hugo Schuchardt - Elise Richter
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3080" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dankschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3972" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Grazer Tagespost</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4027" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Neue Freie Presse</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.735" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschriften</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3085" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschrift für romanische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.275" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Gesundheit</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3855" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Reflexion über Wissenschaftskommunikation</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.397" xml:lang="de">
-        <pb n="1"/>
-        <dateline>Graz 19. III. 23</dateline>
-        <opener>Verehrte Kollegin,</opener>
-
-        <p>Verzeihen Sie daß ich Ihnen erst heute antworte, die Fortsetzung Ihres Feuilletons habe ich zu spät entdeckt, aber gar nicht den <hi
-            rend="unknown"
-            rendition="#none">
-beiliegenden</hi> Artikel, den Sie in Ihrem Brief kennzeichnen. Ich finde <pb
-            n="2"/> Ihren Aufsatz durchaus klar und gut – auch ich meine ja, daß die Sprache die Schöpferin des Volkes ist. Und was dazu etwa modifizierend zu bemerken wäre, kommt bei <hi
-            rend="unknown"
-            rendition="#none">dieser</hi> Gelegenheit nicht in Betracht. Eines freilich bleibt, wie bei allen Auseinandersetzungen das Wesentliche, die <hi
-            rend="unknown" rendition="#none">Terminologie</hi>. Nun werde ich warten bis das <pb n="3"/>Fehlende in meiner Hand ist.</p>
-
-        <p>Ich schaffe mir schon seit Jahren nichts Fachwissenschaftliches mehr an, auch keine Zeitschriften. Von Zeitungen halte ich mir nur die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3972">
-            <hi rend="unknown" rendition="#none">Grazer Tagespost</hi>
-          </ref> und habe - in jedem Sinne - genug damit. Die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4027">N.F.P.</ref> kommt mir nicht zu Gesicht.</p>
-        <p>Alles das hängt mit dem Zustand meiner Augen zusammen, die für engen Druck und diakritische Zeichen <pb n="4"/> nicht mehr genügen.</p>
-        <p>Ich muß an <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2264">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.397" xml:lang="de">
+            <pb n="1"/>
+            <dateline>Graz 19. III. 23</dateline>
+            <opener>Verehrte Kollegin,</opener>
+            <p>Verzeihen Sie daß ich Ihnen erst heute antworte, die Fortsetzung Ihres Feuilletons habe ich zu spät entdeckt, aber gar nicht den <hi rend="unknown" rendition="#none">
+beiliegenden</hi> Artikel, den Sie in Ihrem Brief kennzeichnen. Ich finde <pb n="2"/> Ihren Aufsatz durchaus klar und gut – auch ich meine ja, daß die Sprache die Schöpferin des Volkes ist. Und was dazu etwa modifizierend zu bemerken wäre, kommt bei <hi rend="unknown" rendition="#none">dieser</hi> Gelegenheit nicht in Betracht. Eines freilich bleibt, wie bei allen Auseinandersetzungen das Wesentliche, die <hi rend="unknown" rendition="#none">Terminologie</hi>. Nun werde ich warten bis das <pb n="3"/>Fehlende in meiner Hand ist.</p>
+            <p>Ich schaffe mir schon seit Jahren nichts Fachwissenschaftliches mehr an, auch keine Zeitschriften. Von Zeitungen halte ich mir nur die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3972">
+                  <hi rend="unknown" rendition="#none">Grazer Tagespost</hi>
+               </ref> und habe - in jedem Sinne - genug damit. Die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4027">N.F.P.</ref> kommt mir nicht zu Gesicht.</p>
+            <p>Alles das hängt mit dem Zustand meiner Augen zusammen, die für engen Druck und diakritische Zeichen <pb n="4"/> nicht mehr genügen.</p>
+            <p>Ich muß an <persName ref="[authorityLink]">
 Mussafia</persName> denken, der bei Gründung der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3085">
-            <hi rend="unknown" rendition="#none">Z.f.rom.Ph.</hi>
-          </ref> mir über das Augenpulver klagte.</p>
-        <closer>
-          <salute>Mit herzlichem Gruß</salute>
-          <lb/>
-          <salute>Ihr ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+                  <hi rend="unknown" rendition="#none">Z.f.rom.Ph.</hi>
+               </ref> mir über das Augenpulver klagte.</p>
+            <closer>
+               <salute>Mit herzlichem Gruß</salute>
+               <lb/>
+               <salute>Ihr ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">
 HSchuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Eben erst nehme ich <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4847">
-              <hi rend="unknown" rendition="#none">Muchs</hi>
-            </persName> Artikel wahr, der sich in das Kuvert eingeklemmt hatte; ich werde Ihnen, wohl heute noch, meine Meinung darüber mitteilen.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Eben erst nehme ich <persName ref="[authorityLink]">
+                     <hi rend="unknown" rendition="#none">Muchs</hi>
+                  </persName> Artikel wahr, der sich in das Kuvert eingeklemmt hatte; ich werde Ihnen, wohl heute noch, meine Meinung darüber mitteilen.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

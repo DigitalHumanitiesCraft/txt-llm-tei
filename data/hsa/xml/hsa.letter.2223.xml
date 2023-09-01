@@ -1,393 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (377-11134)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2223" type="PID">o:hsa.letter.2223</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">377-11134</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11134</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" ref="http://sws.geonames.org/2946447">Bonn</origPlace>
-              <origDate ana="dcterms:created" when="1923-12-07">1923-12-07</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2223">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" key="#GID.1" ref="http://sws.geonames.org/2946447">Bonn</placeName>
-          <date when="1923-12-07">1923-12-07</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Bonn</settlement>
-                <name ref="http://geonames.org/2946447" type="fcode:PPLA3">Bonn</name>
-                <location>
-                  <geo>7.09549,50.73438</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.864" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Katalanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.854" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rumänisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2223" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2223" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2223" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2223" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2223" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2223" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2223" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bonn, 7. XII. 1923</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-        <p>Nun, diese Primitiae sind wahrhafte Primitiae, Frühlings- nicht Altersfrüchte. Eine solche Konzentration und Zusammenpressung schwierigsten Stoffes, eine solch knappe Verbindung von historischer und deskriptiver Analyse ist wohl kaum noch gesehen worden. Wo bleibt da die sprichwörtliche Geschwätzigkeit des Alters? Ich beglückwünsche Sie zu dieser Kunstleistung!</p>
-        <p>Da ich selbst vom <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">
-Baskischen</ref> zwar wiederholt genippt, aber nie wirklich getrunken habe, so überließ ich mich ganz Ihrer Führung u. will Ihnen daher die Punkte mitteilen, wo ich – zweifellos infolge einer Unfähigkeit – gestolpert bin u. nicht oder schlecht verstanden habe.<note
-            n="1" place="foot" type="editorial"> Die Korrekturstellen zu den <hi rend="unknown" rendition="#none">Primitia</hi>e enthalten Randanmerkungen Schuchardts im Brief Spitzers.</note>
-        </p>
-        <p>§ 1-2 was bedeutet "allgemeine" und "besondere Bindung"?</p>
-        <p>4-5 warum das Etymon von <hi rend="unknown" rendition="#none">seme</hi> nicht angeben?</p>
-        <p>10: bei <hi rend="unknown" rendition="#none">ziezon</hi> sollte der Begriff des Zielzeichens (z) wieder eingeführt werden.</p>
-        <p>9.10. soll es nicht "imperfektiven <hi rend="unknown" rendition="#none">zen</hi>" heißen?</p>
-        <p>16 l. heltze.ar.en</p>
-        <p>S.10 oben: l. "das auslautende <hi rend="unknown" rendition="#none">-n</hi>"?</p>
-        <p>mitte: l. gesehen st. gesesehen</p>
-        <p>§ 20 l. <hi rend="unknown" rendition="#none">z.i.e.z.ó.n</hi> st. z.i.e.z.<hi rend="unknown" rendition="#none">ö</hi>.n?</p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>Der Unterschied zwischen za1 u. za2 ist mir nicht ganz klar</p>
-        <p>24. am nächstens <ref target="https://gams.uni-graz.at/o:hsa.languages#L.864">kat</ref>. <foreign xml:lang="ca">
-            <hi rend="unknown" rendition="#none">fons a</hi>
-          </foreign>, z.B. in Alacant = fundus</p>
-        <p>26 <hi rend="unknown" rendition="#none">bil-</hi> : welches rom. Etymon?</p>
-        <p>S.12 bei <hi rend="unknown" rendition="#none">den</hi> ähnlicher Fall wie <hi rend="unknown"
-            rendition="#none">zan</hi> &gt;
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2223" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bonn, 7. XII. 1923</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Nun, diese Primitiae sind wahrhafte Primitiae, Frühlings- nicht Altersfrüchte. Eine solche Konzentration und Zusammenpressung schwierigsten Stoffes, eine solch knappe Verbindung von historischer und deskriptiver Analyse ist wohl kaum noch gesehen worden. Wo bleibt da die sprichwörtliche Geschwätzigkeit des Alters? Ich beglückwünsche Sie zu dieser Kunstleistung!</p>
+            <p>Da ich selbst vom <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">
+Baskischen</ref> zwar wiederholt genippt, aber nie wirklich getrunken habe, so überließ ich mich ganz Ihrer Führung u. will Ihnen daher die Punkte mitteilen, wo ich – zweifellos infolge einer Unfähigkeit – gestolpert bin u. nicht oder schlecht verstanden habe.<note n="1" place="foot" type="editorial"> Die Korrekturstellen zu den <hi rend="unknown" rendition="#none">Primitia</hi>e enthalten Randanmerkungen Schuchardts im Brief Spitzers.</note>
+            </p>
+            <p>§ 1-2 was bedeutet "allgemeine" und "besondere Bindung"?</p>
+            <p>4-5 warum das Etymon von <hi rend="unknown" rendition="#none">seme</hi> nicht angeben?</p>
+            <p>10: bei <hi rend="unknown" rendition="#none">ziezon</hi> sollte der Begriff des Zielzeichens (z) wieder eingeführt werden.</p>
+            <p>9.10. soll es nicht "imperfektiven <hi rend="unknown" rendition="#none">zen</hi>" heißen?</p>
+            <p>16 l. heltze.ar.en</p>
+            <p>S.10 oben: l. "das auslautende <hi rend="unknown" rendition="#none">-n</hi>"?</p>
+            <p>mitte: l. gesehen st. gesesehen</p>
+            <p>§ 20 l. <hi rend="unknown" rendition="#none">z.i.e.z.ó.n</hi> st. z.i.e.z.<hi rend="unknown" rendition="#none">ö</hi>.n?</p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>Der Unterschied zwischen za1 u. za2 ist mir nicht ganz klar</p>
+            <p>24. am nächstens <ref target="https://gams.uni-graz.at/o:hsa.languages#L.864">kat</ref>. <foreign xml:lang="ca">
+                  <hi rend="unknown" rendition="#none">fons a</hi>
+               </foreign>, z.B. in Alacant = fundus</p>
+            <p>26 <hi rend="unknown" rendition="#none">bil-</hi> : welches rom. Etymon?</p>
+            <p>S.12 bei <hi rend="unknown" rendition="#none">den</hi> ähnlicher Fall wie <hi rend="unknown" rendition="#none">zan</hi> &gt;
 <hi rend="unknown" rendition="#none">zen</hi>?</p>
-        <p>S.13 zu "die erweiterte Form" wäre ein "s. unter c)" hinzuzufügen.</p>
-        <p>§ 38 zu Partizip statt Inf. vgl. etwa rum. <hi rend="unknown" rendition="#none">de v</hi>
-          <hi rend="unknown" rendition="#none">ăzut</hi>
-        </p>
-        <p>42 l. <hi rend="unknown" rendition="#none">lan.ean</hi>?</p>
-        <p>S.18 Z.1. "ist" einzuschalten</p>
-        <p>§ 72 "mit" dem Zielzeichen und [dem Zeichen] der 3.Pers."</p>
-        <p>74 l. du selbst</p>
-        <p>79 <hi rend="unknown" rendition="#none">dirade</hi> ist, soviel ich sehe nicht erklärt.</p>
-        <p>87.88 Erklärung dieses Futurs!</p>
-        <p>89 Elativ mißverständlich</p>
-        <p>92 ähnlich "ich habe dir gefehlt vor dir" volks<ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.226">frz</ref>. <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">je vous te donne un soufflet</hi>
-          </foreign>
-        </p>
-        <p>"ebenso im Anlaut [l. Auslaut?], wo es (was?) für beide Geschlechter gilt" mir nicht verständlich.</p>
-        <p>95 l. aitzin.e.an. Vgl. asp. encontra mia, magy. mellettem</p>
-        <p>108 vgl. <foreign xml:lang="fr">il eut de la compassion</foreign>, ebenso ptg. tive in V. 21 Übersetzung l. wurde st. würde?</p>
-        <p>118 was ist das für ein futurales <hi rend="unknown" rendition="#none">ke</hi>?</p>
-        <p>130,132 von "imperativischer" Entwicklg hatten wir nichts gehört (vgl. <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.226">frz</ref>. <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">que</hi>
-          </foreign>, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">rum</ref>. <foreign xml:lang="ro">
-            <hi rend="unknown" rendition="#none">să</hi>
-          </foreign>?)</p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>147 l. Jacques hire anaiea</p>
-        <p>157, 2 l. ioan</p>
-        <p>Zu V. 29 <hi rend="unknown" rendition="#none">hambat</hi> wäre wohl Verweis auf 77 nötig, in V 30 <hi
-            rend="unknown" rendition="#none">zeiniek</hi> auf 77 und 8</p>
-        <p>Nun hätte ich aber noch einen Riesenwunsch: daß Sie auf dies erste Bändchen ein <hi rend="unknown" rendition="#none">Secunditiae</hi> folgen ließen, das enthielte a) ein Register der behandelten Dinge (man hat z.B. vergessen, wo etwas behandelt wird, und findet trotz des 2 Bogen Umfangs im Formengewimmel nicht rasch das Gesuchte), b) eine krit. Bibliographie der behandelten Gegenstände, vornehmlich die Auffindungsorte Ihrer eigenen Äußerungen über ein Wort, eine Form usw. Auch Paradigmen wären zur Zuammenfassung sehr erwünscht.</p>
-        <p>Nun zu dem Inhalt Ihres Briefes. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1348">Curtius</persName> hat mir selbst mitgeteilt, daß er an Sie, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-M-L</persName> und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2865">
+            <p>S.13 zu "die erweiterte Form" wäre ein "s. unter c)" hinzuzufügen.</p>
+            <p>§ 38 zu Partizip statt Inf. vgl. etwa rum. <hi rend="unknown" rendition="#none">de v</hi>
+               <hi rend="unknown" rendition="#none">ăzut</hi>
+            </p>
+            <p>42 l. <hi rend="unknown" rendition="#none">lan.ean</hi>?</p>
+            <p>S.18 Z.1. "ist" einzuschalten</p>
+            <p>§ 72 "mit" dem Zielzeichen und [dem Zeichen] der 3.Pers."</p>
+            <p>74 l. du selbst</p>
+            <p>79 <hi rend="unknown" rendition="#none">dirade</hi> ist, soviel ich sehe nicht erklärt.</p>
+            <p>87.88 Erklärung dieses Futurs!</p>
+            <p>89 Elativ mißverständlich</p>
+            <p>92 ähnlich "ich habe dir gefehlt vor dir" volks<ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">frz</ref>. <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">je vous te donne un soufflet</hi>
+               </foreign>
+            </p>
+            <p>"ebenso im Anlaut [l. Auslaut?], wo es (was?) für beide Geschlechter gilt" mir nicht verständlich.</p>
+            <p>95 l. aitzin.e.an. Vgl. asp. encontra mia, magy. mellettem</p>
+            <p>108 vgl. <foreign xml:lang="fr">il eut de la compassion</foreign>, ebenso ptg. tive in V. 21 Übersetzung l. wurde st. würde?</p>
+            <p>118 was ist das für ein futurales <hi rend="unknown" rendition="#none">ke</hi>?</p>
+            <p>130,132 von "imperativischer" Entwicklg hatten wir nichts gehört (vgl. <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">frz</ref>. <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">que</hi>
+               </foreign>, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">rum</ref>. <foreign xml:lang="ro">
+                  <hi rend="unknown" rendition="#none">să</hi>
+               </foreign>?)</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>147 l. Jacques hire anaiea</p>
+            <p>157, 2 l. ioan</p>
+            <p>Zu V. 29 <hi rend="unknown" rendition="#none">hambat</hi> wäre wohl Verweis auf 77 nötig, in V 30 <hi rend="unknown" rendition="#none">zeiniek</hi> auf 77 und 8</p>
+            <p>Nun hätte ich aber noch einen Riesenwunsch: daß Sie auf dies erste Bändchen ein <hi rend="unknown" rendition="#none">Secunditiae</hi> folgen ließen, das enthielte a) ein Register der behandelten Dinge (man hat z.B. vergessen, wo etwas behandelt wird, und findet trotz des 2 Bogen Umfangs im Formengewimmel nicht rasch das Gesuchte), b) eine krit. Bibliographie der behandelten Gegenstände, vornehmlich die Auffindungsorte Ihrer eigenen Äußerungen über ein Wort, eine Form usw. Auch Paradigmen wären zur Zuammenfassung sehr erwünscht.</p>
+            <p>Nun zu dem Inhalt Ihres Briefes. <persName ref="[authorityLink]">Curtius</persName> hat mir selbst mitgeteilt, daß er an Sie, <persName ref="[authorityLink]">
+M-L</persName> und <persName ref="[authorityLink]">
 Thurneysen</persName> geschrieben habe, aber dem an 2. Stelle Genannten mißtraue. Ich glaube aber doch, daß er mich wegloben wird, um mich weggelobt zu haben. Überhaupt, so schreibt Curtius, stünde die Sache günstig.</p>
-
-        <p>Das politische Moment scheint begraben oder nicht aufgewacht zu sein. Die Fakultät hat sich zwar noch nicht definitiv festgelegt, aber es besteht Aussicht, daß ich nach <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2984">Wechssler</persName> genannt werde. Dann würde also die Berufung davon abhängen, ob die Regierung Wechssler zuerst beruft und ob dieser wirklich nach Abdera zurückkehren will.</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>Ich wage nicht zu hoffen. Bitte alles diskret zu behandeln. Meine s.z. Befürchtungen bezüglich "Tratsch" galten nicht Ihnen und dem Augenblick, sondern demjenigen, der Ihre Papiere einmal durchschauen wird. Ich wäre Ihnen sehr verbunden, wenn Sie Vernichtung meiner Scripta anordneten – nur Ihnen habe ich mich ja eröffnet. </p>
-        <p>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2156">Meillet</persName> hat mir 2 Briefe geschrieben, die die hohe "probité" dieses Gelehrten bezeugen. Er sei "désolé d'avoir été maladroit", er habe keinen "article de combat" schreiben wollen, er sei mit mir eins in der Betonung des die Völker Einigenden. Man kenne in Frkr. die Deutschen nicht und in Dtschld. nicht die Franzosen. Ein Pathos der Bescheidenheit geht durch seine Briefe, das wohl absichtlich die Siegerpose verschmäht.</p>
-        <p>Viel ententistischer ist der Brief <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1858">Juds</persName>, den ich gleichzeitig erhalte. Er meint, ich renne bei ihm offene Türen ein, wenn ich ihn von der Unredlichkeit der franz. Haltung in der Rheinlandbewegung zu überzeugen suche – aber er gibt zu verstehen, daß wir s.z. Ähnliches im Flamland inszenierten. Worauf zu erwidern wäre 1) daß damals Krieg war 2) wir nie Tugendbolde zu sein behauptet haben wie die Entente, 3) man immer für ein Unrecht einen Präzedenzfall finden kann. Weiters spricht er von der tatsächlichen Zahlungsunwilligkeit der dtsch. Industriellen, worin er ja recht hat. <pb
-            facs="#IMG.5" n="5"/>Er wollte eine Einladung für mich nach <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5989">
-Spanien</placeName> bei Griera durchsetzen – aber da er nichts schreibt, setze ich voraus, entweder daß ihm sein Wunsch nicht in Erfüllung ging oder daß er mir meine Darstellung der Vergewaltigung <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonns</placeName> durch die französisch behüteten Sonderbündler übelgenommen hat.</p>
-        <p>Daß <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2776">H. Steiner</persName> je seine Arbeit über Sie beenden würde, halte ich für ausgeschlossen.<note
-            n="2" place="foot" type="editorial"> Tatsächlich ist keine derartige Arbeit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2776">Herbert Steiners</persName> zu Schuchardt bekannt.</note> Er ist ein Mann, der in jungen Jahren dem Kleinwinzigen zustrebt, eine <hi
-            rend="unknown" rendition="#none">
+            <p>Das politische Moment scheint begraben oder nicht aufgewacht zu sein. Die Fakultät hat sich zwar noch nicht definitiv festgelegt, aber es besteht Aussicht, daß ich nach <persName ref="[authorityLink]">Wechssler</persName> genannt werde. Dann würde also die Berufung davon abhängen, ob die Regierung Wechssler zuerst beruft und ob dieser wirklich nach Abdera zurückkehren will.</p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>Ich wage nicht zu hoffen. Bitte alles diskret zu behandeln. Meine s.z. Befürchtungen bezüglich "Tratsch" galten nicht Ihnen und dem Augenblick, sondern demjenigen, der Ihre Papiere einmal durchschauen wird. Ich wäre Ihnen sehr verbunden, wenn Sie Vernichtung meiner Scripta anordneten – nur Ihnen habe ich mich ja eröffnet. </p>
+            <p>
+               <persName ref="[authorityLink]">Meillet</persName> hat mir 2 Briefe geschrieben, die die hohe "probité" dieses Gelehrten bezeugen. Er sei "désolé d'avoir été maladroit", er habe keinen "article de combat" schreiben wollen, er sei mit mir eins in der Betonung des die Völker Einigenden. Man kenne in Frkr. die Deutschen nicht und in Dtschld. nicht die Franzosen. Ein Pathos der Bescheidenheit geht durch seine Briefe, das wohl absichtlich die Siegerpose verschmäht.</p>
+            <p>Viel ententistischer ist der Brief <persName ref="[authorityLink]">Juds</persName>, den ich gleichzeitig erhalte. Er meint, ich renne bei ihm offene Türen ein, wenn ich ihn von der Unredlichkeit der franz. Haltung in der Rheinlandbewegung zu überzeugen suche – aber er gibt zu verstehen, daß wir s.z. Ähnliches im Flamland inszenierten. Worauf zu erwidern wäre 1) daß damals Krieg war 2) wir nie Tugendbolde zu sein behauptet haben wie die Entente, 3) man immer für ein Unrecht einen Präzedenzfall finden kann. Weiters spricht er von der tatsächlichen Zahlungsunwilligkeit der dtsch. Industriellen, worin er ja recht hat. <pb facs="#IMG.5" n="5"/>Er wollte eine Einladung für mich nach <placeName ref="[authorityLink]">
+Spanien</placeName> bei Griera durchsetzen – aber da er nichts schreibt, setze ich voraus, entweder daß ihm sein Wunsch nicht in Erfüllung ging oder daß er mir meine Darstellung der Vergewaltigung <placeName ref="[authorityLink]">Bonns</placeName> durch die französisch behüteten Sonderbündler übelgenommen hat.</p>
+            <p>Daß <persName ref="[authorityLink]">H. Steiner</persName> je seine Arbeit über Sie beenden würde, halte ich für ausgeschlossen.<note n="2" place="foot" type="editorial"> Tatsächlich ist keine derartige Arbeit <persName ref="[authorityLink]">Herbert Steiners</persName> zu Schuchardt bekannt.</note> Er ist ein Mann, der in jungen Jahren dem Kleinwinzigen zustrebt, eine <hi rend="unknown" rendition="#none">
 noterella</hi> in einem Jahr, eine Rezension alle heiligen drei Zeiten. Das ist dann immer fein ziseliert, aber eben eine Nippsache.</p>
-        <p>Thorn ist jener Schwede, der über <hi rend="unknown" rendition="#none">Les dénominations du cordonnier,<note
-              n="3" place="foot" type="editorial">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3806">Anders Christopher Thorn, <hi
-                    rend="unknown" rendition="#none">Quelques dénominations du "Cordonnier" en français. Etude de géographie linguistique</hi>
-                </ref>. Braunschweig: Westermann 1912.</bibl>
-            </note> Sartre-Tailleur,<note n="4" place="foot" type="editorial">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3805">Ders., <hi rend="unknown" rendition="#none">Sartre-tailleur. Étude de lexicologie et de géographie linguistique</hi>
-                </ref>. Lund: Gleerup und Leipzig: Harrassowitz 1913.</bibl>
-            </note> racemus-uva</hi> etc. gehandelt hat u. sich jetzt, allerdings wohl vergebens, um die Professur in Gothenburg bewirbt.</p>
-
-        <p>Das Wort "synthetisch" hat wohl zwei Gebrauchsweisen, 'Wissen zusammenfassend' und 'Zusammenhänge sehend'. Ersteres ist <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName> (auch wohl an der Stelle <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2460">
-Puşcarius</persName>), das zweite <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName>. Übrigens habe ich keine synthetische Begabung im Sinne M-Ls und daher kann ich auch die Symbolik, die P. an jener Stelle andeutet, nicht einsehen.</p>
-        <p>Ich freue mich sehr auf Ihre Einführung. Aber erwarten Sie keine Beurteilung von mir, der ich Ihnen auf den baskischen Saumpfad vorläufig nicht folgen werde können. Premièren liebe ich tatsächlich – nun habe ich schon seit 4 Jahren keine theatermäßige gesehen!</p>
-        <pb facs="#IMG.6" n="6"/>
-
-        <p>Der Gegensatz historisch-psychologisch paßt mir auch nicht. Er steht allerdings in Ihrer Saussure-Rezension. Ebenso habe ich M-L davon abgebracht, in der 3. Aufl. seiner Einführung<note
-            n="5" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3651">Wilhelm Meyer-Lübke, <hi
-                  rend="unknown" rendition="#none">Einführung in das Studium der romanischen Sprachwissenschaft</hi>
-              </ref>. 3. Auflage. Heidelberg: Winter 1920.</bibl>
-          </note> Biologie und Paläontologie zu scheiden:</p>
-        <p>Gegen den <hi rend="unknown" rendition="#none">clamare</hi>-Artikel M-Ls werde ich opponieren und den schematisierten Begriff des Bedeutungslehnwortes etwas zu klären suchen. </p>
-        <p>[Ende fehlt]</p>
-      </div>
-    </body>
-  </text>
+            <p>Thorn ist jener Schwede, der über <hi rend="unknown" rendition="#none">Les dénominations du cordonnier,<note n="3" place="foot" type="editorial">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3806">Anders Christopher Thorn, <hi rend="unknown" rendition="#none">Quelques dénominations du "Cordonnier" en français. Etude de géographie linguistique</hi>
+                        </ref>. Braunschweig: Westermann 1912.</bibl>
+                  </note> Sartre-Tailleur,<note n="4" place="foot" type="editorial">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3805">Ders., <hi rend="unknown" rendition="#none">Sartre-tailleur. Étude de lexicologie et de géographie linguistique</hi>
+                        </ref>. Lund: Gleerup und Leipzig: Harrassowitz 1913.</bibl>
+                  </note> racemus-uva</hi> etc. gehandelt hat u. sich jetzt, allerdings wohl vergebens, um die Professur in Gothenburg bewirbt.</p>
+            <p>Das Wort "synthetisch" hat wohl zwei Gebrauchsweisen, 'Wissen zusammenfassend' und 'Zusammenhänge sehend'. Ersteres ist <persName ref="[authorityLink]">M-L</persName> (auch wohl an der Stelle <persName ref="[authorityLink]">
+Puşcarius</persName>), das zweite <persName ref="[authorityLink]">Vossler</persName>. Übrigens habe ich keine synthetische Begabung im Sinne M-Ls und daher kann ich auch die Symbolik, die P. an jener Stelle andeutet, nicht einsehen.</p>
+            <p>Ich freue mich sehr auf Ihre Einführung. Aber erwarten Sie keine Beurteilung von mir, der ich Ihnen auf den baskischen Saumpfad vorläufig nicht folgen werde können. Premièren liebe ich tatsächlich – nun habe ich schon seit 4 Jahren keine theatermäßige gesehen!</p>
+            <pb facs="#IMG.6" n="6"/>
+            <p>Der Gegensatz historisch-psychologisch paßt mir auch nicht. Er steht allerdings in Ihrer Saussure-Rezension. Ebenso habe ich M-L davon abgebracht, in der 3. Aufl. seiner Einführung<note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3651">Wilhelm Meyer-Lübke, <hi rend="unknown" rendition="#none">Einführung in das Studium der romanischen Sprachwissenschaft</hi>
+                     </ref>. 3. Auflage. Heidelberg: Winter 1920.</bibl>
+               </note> Biologie und Paläontologie zu scheiden:</p>
+            <p>Gegen den <hi rend="unknown" rendition="#none">clamare</hi>-Artikel M-Ls werde ich opponieren und den schematisierten Begriff des Bedeutungslehnwortes etwas zu klären suchen. </p>
+            <p>[Ende fehlt]</p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

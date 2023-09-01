@@ -1,382 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Louis Couturat an Hugo Schuchardt (08-01966)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1333">
-            <forename>Louis</forename>
-            <surname>Couturat</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/6975" type="PID">o:hsa.letter.6975</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">08-01966</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">01966</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="fr"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1333">
-                <forename>Louis</forename>
-                <surname>Couturat</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" ref="http://sws.geonames.org/2988507">Paris</origPlace>
-              <origDate ana="dcterms:created" when="1902-05-09">1902-05-09</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2018">2018</date>
-          <title>Die Korrespondenz zwischen Louis Couturat und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1333"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.6975">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1333" ref="https://viaf.org/viaf/73914289">
-            <forename>Louis</forename>
-            <surname>Couturat</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" key="#GID.1" ref="http://sws.geonames.org/2988507">Paris</placeName>
-          <date when="1902-05-09">1902-05-09</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Paris</settlement>
-                <name ref="http://geonames.org/2988507" type="fcode:PPLC">Paris</name>
-                <location>
-                  <geo>2.3488,48.85341</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1333" type="context">
-                        Korrespondenz Louis Couturat - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.54" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Internationale Sprache</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.685" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Österreichische Akademie der Wissenschaften (Wien)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4435" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Klassische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3392" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Association Internationale des Académies</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4785" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Kiel</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.60" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Volapük</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.891" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Englisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.667" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.51" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Esperanto</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="fr">Französisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6975" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6975" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6975" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6975" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6975" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.6975" xml:lang="fr">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>
-          <lb/>DÉLÉGATION POUR L’ADOPTION D’UNE <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4502">LANGUE AUXILIAIRE INTERNATIONALE</ref>
-
-          <lb/>SECRÉTAIRE : M. L. LEAU                                                TÉSORIER : M. L.COUTURAT <lb/>6, Rue Vavin                                                                         7, Rue Nicole <lb/>PARIS (6<hi
-            rendition="#sup">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.6975" xml:lang="fr">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>
+               <lb/>DÉLÉGATION POUR L’ADOPTION D’UNE <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4502">LANGUE AUXILIAIRE INTERNATIONALE</ref>
+               <lb/>SECRÉTAIRE : M. L. LEAU                                                TÉSORIER : M. L.COUTURAT <lb/>6, Rue Vavin                                                                         7, Rue Nicole <lb/>PARIS (6<hi rendition="#sup">
 e</hi>)                                                                            PARIS (5<hi rendition="#sup">e</hi>) <lb/>    ----                                                                                       ---   <lb/>
-          <hi rend="unknown" rendition="#none">Paris, le </hi>9 mai 1902 </dateline>
-        <opener> Monsieur et très honoré Collègue, </opener>
-        <p>Je vous remercie vivement de votre lettre, et de la démarche que vous comptez faire à <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.685">l’Académie de Wien</ref>, et du conseil que vous nous donnez à ce sujet. J’écris immédiatement à <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2336">M le Prof Ostwald</persName> pour lui demander s’il pourrait faire envoyer mon article aux membres de la classe phil.-hist. de l’Académie, en l’accompagnant d’une lettre de recommandation. J’espère qu’il me répondra favorablement, et que l’envoi pourra être fait. <pb
-            facs="#IMG.2"
-            n="2"/> Je regrette que ma brochure ne soit pas encore imprimé en allemand, mais j’attendais une réponse de l’éditeur de <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.177">Leipzig</placeName>. – J’espère que votre santé vous permettra d’aller à <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName>, et je fais tous mes vœux pour elle. Puisque vous ne pouvez pas faire de communication officielle, vous pourriez décider M Th Gomperz<note
-            n="1" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1612">Theodor Gomperz</persName> (1832-1912), <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4435">Klass. Philologe</ref>, 1873-1890 in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName>. Vgl. HSA 03871-03874, bes. 
-03872. Vgl. auch <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2099">Ernst Mach</persName> (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.2493">Brief 02-06746</ref>, 19.4.1902) an Schuchardt: „Wenn Sie der Sache das Opfer bringen wollten, nach <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.97">
-Wien</placeName> zu kommen, würden wir uns alle sehr freuen. Niemand wird ja verlangen, dass Sie zur feierlichen Sitzung oder zum Diner kommen. Ich habe heute mit <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1612">Gomperz</persName> gesprochen; er war eben nicht sehr orientirt über die Angelegenheit, steht derselben aber durchaus nicht ablehnend gegenüber. Vor allem muss Couturat mindestens 10-20 Exemplare des Prospectes senden, damit die Herrn klar werden können, um was es sich handelt“ (vgl. auch die dazu gemachten Anmerkungen von <persName>
+               <hi rend="unknown" rendition="#none">Paris, le </hi>9 mai 1902 </dateline>
+            <opener> Monsieur et très honoré Collègue, </opener>
+            <p>Je vous remercie vivement de votre lettre, et de la démarche que vous comptez faire à <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.685">l’Académie de Wien</ref>, et du conseil que vous nous donnez à ce sujet. J’écris immédiatement à <persName ref="[authorityLink]">M le Prof Ostwald</persName> pour lui demander s’il pourrait faire envoyer mon article aux membres de la classe phil.-hist. de l’Académie, en l’accompagnant d’une lettre de recommandation. J’espère qu’il me répondra favorablement, et que l’envoi pourra être fait. <pb facs="#IMG.2" n="2"/> Je regrette que ma brochure ne soit pas encore imprimé en allemand, mais j’attendais une réponse de l’éditeur de <placeName ref="[authorityLink]">Leipzig</placeName>. – J’espère que votre santé vous permettra d’aller à <placeName ref="[authorityLink]">Wien</placeName>, et je fais tous mes vœux pour elle. Puisque vous ne pouvez pas faire de communication officielle, vous pourriez décider M Th Gomperz<note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Theodor Gomperz</persName> (1832-1912), <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4435">Klass. Philologe</ref>, 1873-1890 in <placeName ref="[authorityLink]">Wien</placeName>. Vgl. HSA 03871-03874, bes. 
+03872. Vgl. auch <persName ref="[authorityLink]">Ernst Mach</persName> (<ref target="https://gams.uni-graz.at/o:hsa.letter.2493">Brief 02-06746</ref>, 19.4.1902) an Schuchardt: „Wenn Sie der Sache das Opfer bringen wollten, nach <placeName ref="[authorityLink]">
+Wien</placeName> zu kommen, würden wir uns alle sehr freuen. Niemand wird ja verlangen, dass Sie zur feierlichen Sitzung oder zum Diner kommen. Ich habe heute mit <persName ref="[authorityLink]">Gomperz</persName> gesprochen; er war eben nicht sehr orientirt über die Angelegenheit, steht derselben aber durchaus nicht ablehnend gegenüber. Vor allem muss Couturat mindestens 10-20 Exemplare des Prospectes senden, damit die Herrn klar werden können, um was es sich handelt“ (vgl. auch die dazu gemachten Anmerkungen von <persName>
 Johannes Mücke</persName>).</note> à en faire une: il paraît bien disposé en notre faveur.</p>
-
-        <p>Tout ce que vous me dites sur la marche à suivre est fort juste, et concorde parfaitement avec nos propres vues. Il y a deux questions bien distinctes, que nous nous efforçons de séparer pour les résoudre méthodiquement et successivement, la <hi
-            rend="unknown" rendition="#none">question de principe</hi> et la <hi rend="unknown"
-            rendition="#none">question de choix</hi>. Celle-ci doit évidemment être réservée à ce „centre autorisé“ et compétent dont vous parlez, et qui se trouve, à notre avis aussi, dans l’<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3392">
-            <hi rend="unknown" rendition="#none">Association internationale des Académies</hi>
-          </ref>.</p>
-        <pb facs="#IMG.3" n="3"/>
-
-        <p> Mais l’autre question relève du public, ou tout au moins de la masse de ceux que nous appelons „les intéressés“, et ceux-là ont voix au chapitre, et sont compétents pour exprimer leurs besoins et leurs vœux; et cela est nécessaire pour que les Académies prennent la chose en considération. C’est cet ensemble des „intéressés“ que la <hi
-            rend="unknown"
-            rendition="#none">Délégation</hi> veut représenter aussi complètement que possible, et parmi eux les commerçants ne sont ni les moins „intéressés“ ni les moins „intéressants“. On peut comparer l’élaboration de la L. I. à la construction d’un chemin de fer: tous les habitants du pays ont le droit de donner leur avis sur l’utilité de la ligne et sur le tracé qu’elle doit suivre (en gros); c’est ensuite aux ingénieurs à la construire conformément aux vœux et aux besoins des populations. Les „intéressés“ n’ont pas besoin de savoir comment se fait <pb
-            facs="#IMG.4"
-            n="4"/> un chemin de fer (pourvu qu’il soit possible); mais les ingénieurs ne sont pas les meilleurs juges de l’utilité du chemin de fer (à moins qu’ils ne se placent au point de vue du public.) Les ingénieurs, dans notre affaire, ce sont les philologues; avec cette différence, que les ingénieurs et les architectes ne demandent qu’à construire, même sans nécessité, tandis que les philologues (en général) se soucient médiocrement de fabriquer une L. I. C’est pourquoi il faut que le public les pousse. Mais il est évidemment mauvais juge (la preuve en est le succès inexplicable et immérité que le <ref target="https://gams.uni-graz.at/o:hsa.languages#L.60">
-            <hi rend="unknown" rendition="#none">Volapük</hi>
-          </ref> a remporté passagèrement), et ce n’est qu’à la longue, par l’expérience et par l’usage, qu’il couronnerait le meilleur projet. Il appartient aux savants de devancer son choix instinctif et irréfléchi, et de lui épargner des tâtonnements, des aventures et des déceptions sans nombre.</p>
-        <closer>
-          <salute>- Veuillez agréer, Monsieur et très honoré Collègue, l’expression de mon respectueux dévouement.</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1333">Louis Couturat</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>P. S. Je connais le projet de Dietrich;<note n="2" place="foot" type="editorial">
-              <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1392">Carl Dietrich</persName> (keine Lebensdaten), Interlinguist; Verf. von <bibl>
-                <hi rend="unknown" rendition="#none">
+            <p>Tout ce que vous me dites sur la marche à suivre est fort juste, et concorde parfaitement avec nos propres vues. Il y a deux questions bien distinctes, que nous nous efforçons de séparer pour les résoudre méthodiquement et successivement, la <hi rend="unknown" rendition="#none">question de principe</hi> et la <hi rend="unknown" rendition="#none">question de choix</hi>. Celle-ci doit évidemment être réservée à ce „centre autorisé“ et compétent dont vous parlez, et qui se trouve, à notre avis aussi, dans l’<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3392">
+                  <hi rend="unknown" rendition="#none">Association internationale des Académies</hi>
+               </ref>.</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p> Mais l’autre question relève du public, ou tout au moins de la masse de ceux que nous appelons „les intéressés“, et ceux-là ont voix au chapitre, et sont compétents pour exprimer leurs besoins et leurs vœux; et cela est nécessaire pour que les Académies prennent la chose en considération. C’est cet ensemble des „intéressés“ que la <hi rend="unknown" rendition="#none">Délégation</hi> veut représenter aussi complètement que possible, et parmi eux les commerçants ne sont ni les moins „intéressés“ ni les moins „intéressants“. On peut comparer l’élaboration de la L. I. à la construction d’un chemin de fer: tous les habitants du pays ont le droit de donner leur avis sur l’utilité de la ligne et sur le tracé qu’elle doit suivre (en gros); c’est ensuite aux ingénieurs à la construire conformément aux vœux et aux besoins des populations. Les „intéressés“ n’ont pas besoin de savoir comment se fait <pb facs="#IMG.4" n="4"/> un chemin de fer (pourvu qu’il soit possible); mais les ingénieurs ne sont pas les meilleurs juges de l’utilité du chemin de fer (à moins qu’ils ne se placent au point de vue du public.) Les ingénieurs, dans notre affaire, ce sont les philologues; avec cette différence, que les ingénieurs et les architectes ne demandent qu’à construire, même sans nécessité, tandis que les philologues (en général) se soucient médiocrement de fabriquer une L. I. C’est pourquoi il faut que le public les pousse. Mais il est évidemment mauvais juge (la preuve en est le succès inexplicable et immérité que le <ref target="https://gams.uni-graz.at/o:hsa.languages#L.60">
+                  <hi rend="unknown" rendition="#none">Volapük</hi>
+               </ref> a remporté passagèrement), et ce n’est qu’à la longue, par l’expérience et par l’usage, qu’il couronnerait le meilleur projet. Il appartient aux savants de devancer son choix instinctif et irréfléchi, et de lui épargner des tâtonnements, des aventures et des déceptions sans nombre.</p>
+            <closer>
+               <salute>- Veuillez agréer, Monsieur et très honoré Collègue, l’expression de mon respectueux dévouement.</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Louis Couturat</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>P. S. Je connais le projet de Dietrich;<note n="2" place="foot" type="editorial">
+                     <persName ref="[authorityLink]">Carl Dietrich</persName> (keine Lebensdaten), Interlinguist; Verf. von <bibl>
+                        <hi rend="unknown" rendition="#none">
 Grundlagen der Völkerverkehrssprache. Entwürfe für den Auf- und Ausbau einer denkrichtigen, neutralen Kunstsprache als zukünftige Schriftsprache, eventuell auch Sprechsprache für den internationalen Verkehr</hi>, Dresden: Verlag von Gerhard Kühtmann, 1902.
 </bibl>
-            </note> il est impraticable. Le projet français auquel vous faites allusion doit être celui de l’abbé <persName>
+                  </note> il est impraticable. Le projet français auquel vous faites allusion doit être celui de l’abbé <persName>
 
 Ardouin</persName>
-            <note n="3" place="foot"
-              type="editorial">Nicht nachgewiesen. Er soll der Vertreter eines „Français International“ gewesen sein.</note> qui propose seulement de simplifier le <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.226">français</ref> comme d’autres ont fait pour l’<ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.891">
+                  <note n="3" place="foot" type="editorial">Nicht nachgewiesen. Er soll der Vertreter eines „Français International“ gewesen sein.</note> qui propose seulement de simplifier le <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">français</ref> comme d’autres ont fait pour l’<ref target="https://gams.uni-graz.at/o:hsa.languages#L.891">
 anglais</ref> ou pour l’<ref target="https://gams.uni-graz.at/o:hsa.languages#L.667">allemand</ref>. Il n’y a pas à en tenir compte.</p>
-          <pb facs="#IMG.4" n="4"/>
-          <p> P. S. Je vous serais reconnaissant de me donner les deux renseignements suivants, si vous les possédez (sur une simple carte postale):</p>
-
-          <p>1° Quel est le poète auteur de la phrase que vous avez cité: „Was die Sprache gewollt, haben die Sprachen zerstört.“?<note
-              n="4" place="foot" type="editorial">
+               <pb facs="#IMG.4" n="4"/>
+               <p> P. S. Je vous serais reconnaissant de me donner les deux renseignements suivants, si vous les possédez (sur une simple carte postale):</p>
+               <p>1° Quel est le poète auteur de la phrase que vous avez cité: „Was die Sprache gewollt, haben die Sprachen zerstört.“?<note n="4" place="foot" type="editorial">
 Nicht nachweisbarer <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5098">
 Schiller</ref>-Pentameter. Titel eines <bibl>
 
 
 Buches von Eugen A. Lauda (Berlin 1888) zum Weltsprachenprogramm
 </bibl>.</note>
-          </p>
-          <p>2° M le Prof. Tönnies,<note n="5" place="foot" type="editorial">
+               </p>
+               <p>2° M le Prof. Tönnies,<note n="5" place="foot" type="editorial">
+                     <persName>
 
-              <persName>
+Ferdinand Tönnies</persName> (1855-1936), deutscher Soziologe, Ökonom und Philosoph.</note> de <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4785">Kiel</ref>, qui est venu me voir ces jours derniers, m’a affirmé que le „J von Grimm“ qui a écrit à Péra, le 10 janvier 1860, le fameux „programme d’une langue universelle“ ne peut être l’illustre philologue de ce nom. Pourriez-vous me me tirer de l’incertitude?<note n="6" place="foot" type="editorial">Vgl. <ref target="https://gams.uni-graz.at/o:hsa.letter.6977">PK 01981</ref>. <bibl>
 
-Ferdinand Tönnies</persName> (1855-1936), deutscher Soziologe, Ökonom und Philosoph.</note> de <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4785">Kiel</ref>, qui est venu me voir ces jours derniers, m’a affirmé que le „J von Grimm“ qui a écrit à Péra, le 10 janvier 1860, le fameux „programme d’une langue universelle“ ne peut être l’illustre philologue de ce nom. Pourriez-vous me me tirer de l’incertitude?<note
-              n="6" place="foot" type="editorial">Vgl. <ref
-                  target="https://gams.uni-graz.at/o:hsa.letter.6977">PK 01981</ref>. <bibl>
-
-Couturat / Leau, <hi
-                  rend="unknown"
-              rendition="#none">Histoire de la langue</hi>, 1903, 121-127
-</bibl> widmen ihm ein ganzes Kapitel und erwähnen ihn auch sonst mehrfach.</note> Nous aurions besoin d’être fixés sur ce point, car nous comptons publier ledit programme dans notre <hi
-              rend="unknown"
-              rendition="#none">
-Histoire de la Langue Universelle</hi> (qui est fort avancé). Elle comprend une douzaine de langues <hi
-              rend="unknown" rendition="#none">a posteriori</hi> (<ref target="https://gams.uni-graz.at/o:hsa.languages#L.51">
-              <hi rend="unknown" rendition="#none">Esperanto</hi>
-            </ref>, etc.) et 7 ou 8 langes mixtes (<ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.60">Volapük</ref> et C<hi
-              rendition="#sup">ie</hi>) [Doit-on dire: <hi rend="unknown" rendition="#none">
-Hilfs</hi>- ou <hi
-              rend="unknown" rendition="#none">Hülfssprache</hi>?]</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+Couturat / Leau, <hi rend="unknown" rendition="#none">Histoire de la langue</hi>, 1903, 121-127
+</bibl> widmen ihm ein ganzes Kapitel und erwähnen ihn auch sonst mehrfach.</note> Nous aurions besoin d’être fixés sur ce point, car nous comptons publier ledit programme dans notre <hi rend="unknown" rendition="#none">
+Histoire de la Langue Universelle</hi> (qui est fort avancé). Elle comprend une douzaine de langues <hi rend="unknown" rendition="#none">a posteriori</hi> (<ref target="https://gams.uni-graz.at/o:hsa.languages#L.51">
+                     <hi rend="unknown" rendition="#none">Esperanto</hi>
+                  </ref>, etc.) et 7 ou 8 langes mixtes (<ref target="https://gams.uni-graz.at/o:hsa.languages#L.60">Volapük</ref> et C<hi rendition="#sup">ie</hi>) [Doit-on dire: <hi rend="unknown" rendition="#none">
+Hilfs</hi>- ou <hi rend="unknown" rendition="#none">Hülfssprache</hi>?]</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

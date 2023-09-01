@@ -1,614 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Johannes Ulrich Hubschmied an Hugo Schuchardt (03-04876)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1807">
-            <forename>Johannes Ulrich</forename>
-            <surname>Hubschmied</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4954" type="PID">o:hsa.letter.4954</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">03-04876</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">04876</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1807">
-                <forename>Johannes Ulrich</forename>
-                <surname>Hubschmied</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="32" unit="pages">32 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.648" ref="http://sws.geonames.org/2660089">Küsnacht</origPlace>
-              <origDate ana="dcterms:created" when="1921-03-07">1921-03-07</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Johannes Ulrich Hubschmied und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1807"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4954">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1807" ref="https://viaf.org/viaf/191037934">
-            <forename>Johannes Ulrich</forename>
-            <surname>Hubschmied</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.648" key="#GID.1" ref="http://sws.geonames.org/2660089">Küsnacht</placeName>
-          <date when="1921-03-07">1921-03-07</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Switzerland</country>
-                <settlement>Küsnacht</settlement>
-                <name ref="http://geonames.org/2660089" type="fcode:PPL">Küsnacht</name>
-                <location>
-                  <geo>8.58401,47.31805</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1807" type="context">
-                        Korrespondenz Johannes Ulrich Hubschmied - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.11">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.12">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.13">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.14">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.15">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.16">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.17">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.18">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.19">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.20">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.21">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.22">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.23">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.24">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.25">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.26">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.27">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.28">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.29">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.30">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.31">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4954" xml:id="IMG.32">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4954" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Hochgeehrter herr professor,</opener>
-        <p>Seit meinen ersten studienjahren verehre ich Sie als führer und bahnbrecher in der wissenschaft. Sie sind mein lehrer gewesen, wenn ich Sie auch nie persönlich habe kennen lernen. Ihnen verdank ich unendlich viel. Mit grossem schmerze hab ich während des krieges und seither oft an Sie gedacht; freund Jud hat mir manchen brief von Ihnen zu lesen gegeben, aus dem ich ersehe wie Sie unter dem kriege leiden.</p>
-        <p>Verzeihen Sie mir, dass ich erst jetzt Ihnen ein kleines zeichen meiner dankbarkeit zukommen lasse. Meine Frau hat vorgestern durch den Lebensmittelverein Zürich Ihnen ein paket geschickt mit verschiedenem, das in Österreich jetzt rar sein wird. Betrachten Sie s als kleine abzahlung meiner grossen dankesschuld.</p>
-        <closer>
-          <salute>Empfangen Sie, verehrter und lieber meister, hochachtungsvolle grüsse von Ihrem</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1807">J. U. Hubschmied</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.4954" subtype="original" type="appendix" xml:lang="de">
-        <pb facs="#IMG.2" n="2"/>
-        <p>beiträge f. Schuchardt<note n="1" place="foot" type="editorial">Es handelt sich um eine nicht vollständige Liste von Subskribenten des <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1506">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.12" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.13" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.14" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.15" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.16" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.17" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.18" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.19" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.20" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.21" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.22" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.23" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.24" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.25" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.26" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.27" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.28" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.29" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.30" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.31" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.32" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4954" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Hochgeehrter herr professor,</opener>
+            <p>Seit meinen ersten studienjahren verehre ich Sie als führer und bahnbrecher in der wissenschaft. Sie sind mein lehrer gewesen, wenn ich Sie auch nie persönlich habe kennen lernen. Ihnen verdank ich unendlich viel. Mit grossem schmerze hab ich während des krieges und seither oft an Sie gedacht; freund Jud hat mir manchen brief von Ihnen zu lesen gegeben, aus dem ich ersehe wie Sie unter dem kriege leiden.</p>
+            <p>Verzeihen Sie mir, dass ich erst jetzt Ihnen ein kleines zeichen meiner dankbarkeit zukommen lasse. Meine Frau hat vorgestern durch den Lebensmittelverein Zürich Ihnen ein paket geschickt mit verschiedenem, das in Österreich jetzt rar sein wird. Betrachten Sie s als kleine abzahlung meiner grossen dankesschuld.</p>
+            <closer>
+               <salute>Empfangen Sie, verehrter und lieber meister, hochachtungsvolle grüsse von Ihrem</salute>
+               <signed>
+                  <persName ref="[authorityLink]">J. U. Hubschmied</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.4954"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <pb facs="#IMG.2" n="2"/>
+            <p>beiträge f. Schuchardt<note n="1" place="foot" type="editorial">Es handelt sich um eine nicht vollständige Liste von Subskribenten des <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1506">
 Schuchardt-Breviers</ref>
-            </bibl>, vgl. unten S. 4-32. </note>
-        </p>
-        <p>Huldreich Schmidt, Englischviertelstr. 42 Zch.</p>
-        <p>Peider Lansel, Sent</p>
-        <p>Dr. Ernestine Werder, Dufourstr. 136, Zch 8</p>
-        <p>Dr. Chr. Luchsinger, Fluelistr. 5, S Gallen</p>
-        <p>Dr. I Vetsch, Kornhausstr. 25 Zch 6</p>
-        <p>Dr. Th. Spoerri, Gümligen Bern.</p>
-        <p>Dr. E. Abegg, privatdoz. Rütistr. 56, Zch</p>
-        <p>Jules Ronjat, chemin des Chênes, 8, Genève (Servette)</p>
-        <p>prof. dr. Debrunner, Falkenweg 9 Bern.</p>
-        <p>“ L. Gauchat, Hofackerstr. Zch 7</p>
-        <p>“ E. Schwyzer Wiesenstr. “ </p>
-        <p>dr. W. Hebeisen, 96 Altenburgstr., Bern</p>
-        <p>prof. dr. E. Muret, 55 Florissant, Genève</p>
-        <p>frl. dr. M. Zweifel 23, Gartenstr. Zch 2.</p>
-        <p>prof. dr. A. Bachmann, Freiestr. 111 Zch 7.</p>
-        <p>“ Herzog, Freiestr. Zch 7</p>
-        <p>dr. P. Scheuermeier Göhri, Schopf.</p>
-        <p>Zentralbibl. Zürich Jaberg, Bertoni</p>
-        <p>E Eggenschwiler, Soloturn Huber, Szadrowski</p>
-        <pb facs="#IMG.3" n="3"/>
-      </div>
-      <div corresp="#L.4954" subtype="original" type="appendix" xml:lang="de">
-        <pb facs="#IMG.3" n="3"/>
-        <dateline>AKTIENGESELLSCHAFT<lb/>CHOCOLAT TOBLER<lb/>BERN Bern, Datum des Poststempels.<lb/>P. P.</dateline>
-
-        <p>Veranlasst durch die alle Erwartungen übertreffende grosse Nachfrage nach unserer kürzlich erschienenen Ido-Broschüre „Weltfirma und Weltsprache“<note
-            n="2" place="foot" type="editorial">
-            <hi rend="unknown"
-              rendition="#none">Weltfirma und Weltsprache. Die geniale Einfachheit und Natürlichkeit der Weltsprache Ido</hi>, hrsg. von der Aktiengesellschaft Chocolat Tobler, Bern 1920. – Es handelt sich bei Ido um eine von dem französischen Mathematiker und Philosophen Louis Couturat (1868-1914) geschaffene Weiterentwicklung (Vereinfachung) des Esperanto. Vgl. Günter Anton, „Über die Struktur und Entwicklung des Ido im Vergleich zum Esperanto“, <hi
-              rend="unknown" rendition="#none">Beiträge der 10. Jahrestagung der Gesellschaft für Interlinguistik e. V., 17.–19. November 2000 in Berlin.</hi> Red.: Detlev Blanke, GIL, Berlin 2001.</note>, haben wir uns entschlossen, sämtlichen schweizerischen Lehrern davon je ein Exemplar gratis zuzustellen. Wir hoffen gerne, dass deren Inhalt Sie veranlassen werde, bei sich bietender Gelegenheit Ihre Schüler über den Zweck und die Vorteile der internationalen Hilfssprache aufzuklären und auf diese Weise an diesem grossen Kulturwerk mitzuarbeiten. Diese Broschüre wird gratis unserem Album zum Einkleben unserer künstlerischen und lehrreichen Reklamemarken beigefügt. Das darin erwähnte Büchlein: „Kakao, Schokolade und Schweiz. Schokolade-Industrie“ steht Ihnen auf Wunsch ebenfalls zur Verfügung.</p>
-        <p>Wir benutzen die Gelegenheit, Ihnen gleichzeitig ein Exemplar unserer soeben aus dem Druck erschienenen Karte „Das neue Europa“ zu übersenden. Dieselbe wird Ihnen sicher willkommen sein und beim Geographie-Unterricht vorzügliche Dienste leisten.</p>
-        <closer>
-          <salute>Wir halten uns Ihnen stets bestens empfohlen und begrüssen Sie</salute>
-          <lb/>
-          <salute>mit vorzüglicher Hochachtung</salute>
-          <lb/>
-          <signed>AKTIENGESELLSCHAFT CHOCOLAT TOBLER<note n="3" place="foot" type="editorial">
+                  </bibl>, vgl. unten S. 4-32. </note>
+            </p>
+            <p>Huldreich Schmidt, Englischviertelstr. 42 Zch.</p>
+            <p>Peider Lansel, Sent</p>
+            <p>Dr. Ernestine Werder, Dufourstr. 136, Zch 8</p>
+            <p>Dr. Chr. Luchsinger, Fluelistr. 5, S Gallen</p>
+            <p>Dr. I Vetsch, Kornhausstr. 25 Zch 6</p>
+            <p>Dr. Th. Spoerri, Gümligen Bern.</p>
+            <p>Dr. E. Abegg, privatdoz. Rütistr. 56, Zch</p>
+            <p>Jules Ronjat, chemin des Chênes, 8, Genève (Servette)</p>
+            <p>prof. dr. Debrunner, Falkenweg 9 Bern.</p>
+            <p>“ L. Gauchat, Hofackerstr. Zch 7</p>
+            <p>“ E. Schwyzer Wiesenstr. “ </p>
+            <p>dr. W. Hebeisen, 96 Altenburgstr., Bern</p>
+            <p>prof. dr. E. Muret, 55 Florissant, Genève</p>
+            <p>frl. dr. M. Zweifel 23, Gartenstr. Zch 2.</p>
+            <p>prof. dr. A. Bachmann, Freiestr. 111 Zch 7.</p>
+            <p>“ Herzog, Freiestr. Zch 7</p>
+            <p>dr. P. Scheuermeier Göhri, Schopf.</p>
+            <p>Zentralbibl. Zürich Jaberg, Bertoni</p>
+            <p>E Eggenschwiler, Soloturn Huber, Szadrowski</p>
+            <pb facs="#IMG.3" n="3"/>
+         </div>
+         <div corresp="#L.4954"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <pb facs="#IMG.3" n="3"/>
+            <dateline>AKTIENGESELLSCHAFT<lb/>CHOCOLAT TOBLER<lb/>BERN Bern, Datum des Poststempels.<lb/>P. P.</dateline>
+            <p>Veranlasst durch die alle Erwartungen übertreffende grosse Nachfrage nach unserer kürzlich erschienenen Ido-Broschüre „Weltfirma und Weltsprache“<note n="2" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Weltfirma und Weltsprache. Die geniale Einfachheit und Natürlichkeit der Weltsprache Ido</hi>, hrsg. von der Aktiengesellschaft Chocolat Tobler, Bern 1920. – Es handelt sich bei Ido um eine von dem französischen Mathematiker und Philosophen Louis Couturat (1868-1914) geschaffene Weiterentwicklung (Vereinfachung) des Esperanto. Vgl. Günter Anton, „Über die Struktur und Entwicklung des Ido im Vergleich zum Esperanto“, <hi rend="unknown" rendition="#none">Beiträge der 10. Jahrestagung der Gesellschaft für Interlinguistik e. V., 17.–19. November 2000 in Berlin.</hi> Red.: Detlev Blanke, GIL, Berlin 2001.</note>, haben wir uns entschlossen, sämtlichen schweizerischen Lehrern davon je ein Exemplar gratis zuzustellen. Wir hoffen gerne, dass deren Inhalt Sie veranlassen werde, bei sich bietender Gelegenheit Ihre Schüler über den Zweck und die Vorteile der internationalen Hilfssprache aufzuklären und auf diese Weise an diesem grossen Kulturwerk mitzuarbeiten. Diese Broschüre wird gratis unserem Album zum Einkleben unserer künstlerischen und lehrreichen Reklamemarken beigefügt. Das darin erwähnte Büchlein: „Kakao, Schokolade und Schweiz. Schokolade-Industrie“ steht Ihnen auf Wunsch ebenfalls zur Verfügung.</p>
+            <p>Wir benutzen die Gelegenheit, Ihnen gleichzeitig ein Exemplar unserer soeben aus dem Druck erschienenen Karte „Das neue Europa“ zu übersenden. Dieselbe wird Ihnen sicher willkommen sein und beim Geographie-Unterricht vorzügliche Dienste leisten.</p>
+            <closer>
+               <salute>Wir halten uns Ihnen stets bestens empfohlen und begrüssen Sie</salute>
+               <lb/>
+               <salute>mit vorzüglicher Hochachtung</salute>
+               <lb/>
+               <signed>AKTIENGESELLSCHAFT CHOCOLAT TOBLER<note n="3" place="foot" type="editorial">
 Dieser Text hat weder einen Bezug zum Brief noch zum Schuchardt-Brevier und wurde offenbar als Kuriosität beigelegt.</note>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.4954" subtype="original" type="appendix" xml:lang="de">
-        <p>
-          <pb facs="#IMG.4" n="4"/>Betrag für die Festschrift Schuchardt<note n="4" place="foot"
-              type="editorial">Auf die Titelseite des Schuchardt-Breviers folgt unpaginiert eine Seite mit Namen: „Folgende schweizerische oder in der Schweiz lebende Forscher, Hoch- und Mittelschullehrer, eingedenk der reichen geistigen und wissenschaftlichen Förderung durch HUGO SCHUCHARDTS Arbeiten, haben durch opferfreudige Unterstützung das Erscheinen dieses Huldigungsbandes ermöglicht“. Es folgen in alphabetischer Reihenfolge die Namen von 49 Personen bzw. Einrichtungen. (In der zweiten Auflage von 1928 und den darauf basierenden Nachdrucken ist diese Seite nicht mehr enthalten.) Offenbar hat Hubschmied einen großen Teil der Spenden entgegengenommen, wie die folgenden Postabschnitte belegen. Allerdings ist rätselhaft, wie sie in den NL Schuchardt gelangt sind. Möglicherweise hat Hubschmied sie Schuchardt zugesandt, weil sich dieser bei den Subskribenten persönlich bedanken wollte und die Abschnitte die genauen Adressen der Absender enthielten. – <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Leo Spitzer</persName> war mit der Herausstellung der Schweizer offenbar nicht glücklich, denn er schreibt am 15.2.1922 an Schuchardt (HSA, Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.2177">333-11094</ref>; ed. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1599">Hurch, 2006</ref>
-            </bibl>, 247): „Auch mit den Schweizern bin ich nicht ganz zufrieden. Hubschmieds Feuilleton behandelt die Brevier-Angelegenheit als eine Schweizer Nationalangelegenheit (Das ,keine Gemeinsamkeiten mit deutschen Gelehrten‘ trat auch in den Vorverhandlungen zu Tage), ohne auch nur zu erwähnen, daß ein Bonner Universitätslehrer (sein Name tat gewiß nichts zur Sache) die eigentliche Arbeit leistete. Sind die Schweizer nun so hoffnungslos materialistisch, daß sie das Subskribieren eines Werkes, das sie ja dann erwerben, höherstellen als die geistige Arbeit der Herausgabe oder soll die Gemeinsamkeit mit einem Deutschen zurücktreten? Ich habe mein Befremden darüber Jud ausgedrückt. Doch scheint mir, daß auch Sie die Schweizer Initiative höherstellen [vgl. Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.101">
-                <hi rend="unknown" rendition="#none">Dank an die Schweizer Spender des ,Schuchardt-Breviers</hi>‘</ref>
-            </bibl>“, fliegendes Blatt, Graz 1922]), da Ihr gedruckter Dank nur an die Schweizer Spender ging“.</note>
-          <pb facs="#IMG.5" n="5"/> Fr. 15 Ct. – Dr. E. Abegg, Privatdozent Zürich Rütistraße 56 [ZÜRICH 10 – HOTTINGEN 15.VI.21].</p>
-        <p>
-          <pb facs="#IMG.6" n="6"/> Für Schuchardt-Festschrift. <pb facs="#IMG.7" n="7"/> Fr. 15 Ct. – Prof. Debrunner, Falkenweg 9 Bern [BERN – MANDATE 16.IV.21]</p>
-        <p>
-          <pb facs="#IMG.8" n="8"/> Für Schuchardt Herzl. Gruss Jaberg <pb facs="#IMG.9" n="9"/> Fr. 15 Ct. – PROF. DR. K. JABERG, Schänzlistrasse 57 BERN [BERN – BEUNDENFELD 9.V.21]</p>
-        <p>
-          <pb facs="#IMG.10" n="10"/> Für das Schuchardbuch im Namen von Dr. P. Scheuermeier. <pb facs="#IMG.11" n="11"/> Fr. 15. Ct. – WScheuermeier W‘thurerstr 55 Zürich 6 [ZÜRICH - FIL. SEIDENGASSE 30.IV.21]</p>
-        <p>
-          <pb facs="#IMG.12" n="12"/>Festgabe für Schuchardt <pb facs="#IMG.13" n="13"/> Fr. 15 Ct. – Prof.Dr.M Szadrowsky, Chur [CHUR – (POS)TE 1.VI.21]</p>
-        <p>
-          <pb facs="#IMG.14"
-            n="14"/> Pour le vol. en l’honneur de M. H. Schuchardt. Avec mes compliments et mes bonnes salutations, G. Bertoni, Fribourg (S.) le .12.V.1921 <pb
-            facs="#IMG.15" n="15"/> Fr. 15 Ct. – Prof. Dr. G. Bertoni Fribourg (Suisse) [FRIBOURG – PEROLLES 12.V.21]</p>
-        <p>
-          <pb facs="#IMG.16"
-            n="16"/> Als Beitrag für den schweiz. Festband an H. Prof. Schuchardt in Graz. M. Zweifel <pb facs="#IMG.17" n="17"/> Fr. 15 Ct. – Dr. M. Zweifel 23, Gartenstrasse Zürich 2 [ZÜRICH 1 – MANDATBUREAU 25.VI.21]</p>
-        <p>
-          <pb facs="#IMG.18" n="18"/> Dr. Th. Spoerri Gümlingen (Suskription für H. Schuchhardtband) Bern 15.4.21 [BERN 7 – KORNHAUS 15.IV.21]</p>
-        <p>
-          <pb facs="#IMG.19" n="19"/> Für das Schuchardt-Vademecum. <pb facs="#IMG.20" n="20"/> Fr. 15 Ct. – L. Gauchat Zürich 7 [ZÜRICH 9 – HIRSLANDEN 18.4.21]</p>
-        <p>
-          <pb facs="#IMG.21" n="21"/> Fr. 15 Ct. – Prof.Dr. E. Schwyzer [ZÜRICH – (PREDIGERPLATZ) 18.IV.21]</p>
-        <p>
-          <pb facs="#IMG.22" n="22"/> für Bändchen Hugo Schuchardt <pb facs="#IMG.23" n="23"/> Fr. 15 Ct. – ZENTRALBIBLIOTHEK ZÜRICH [ZÜRICH – CHECKB. K. I. 30.IV.21]</p>
-        <p>
-          <pb facs="#IMG.24" n="24"/> Fr. 15 Ct. – E. Eggenschwiler [SOLOTHURN – INDUSTRIEQUARTIER 2.V.21]</p>
-        <p>
-          <pb facs="#IMG.25" n="25"/> Contribution au volume Schuchardt. Avec ses meilleurs compliments. E. M. <pb
-            facs="#IMG.26" n="26"/> Fr. 15 Ct. – E. Muret SS Florissant Genève [GENÈVE 5 - BOURG DE FOUR 25.IV.21]</p>
-        <p>
-          <pb facs="#IMG.27" n="27"/> für das <hi rend="unknown" rendition="#none">
-Schuchardt-Buch</hi> frdl. Gruß <pb
-            facs="#IMG.28" n="28"/> 15 Fr. Ct. – Prof. Dr. A. Bachmann Zürich 7 Freie Str 111 [ZÜRICH 10 – HOTTINGEN 23.IV.21]</p>
-        <p>
-          <pb facs="#IMG.29"
-            n="29"/> An Herrn Prof. Hubschmied, Bern 19/IV/21 Im Auftrage von Herrn Dr. W. Hebeisen 96 Altenbergstr. <hi
-            rend="unknown" rendition="#none">
-Bern</hi>, bestelle <hi rend="unknown"
-            rendition="#none">ich</hi> ein Exemplar von Schuchardt’s Festschrift, Ernst Bandi, phil 96 Altenbergstr. <pb
-            facs="#IMG.30" n="30"/>
-          <hi rend="unknown" rendition="#none">Bern</hi> Fr. 15 Ct. – Ernst Bandi, phil. 96 Altenbergstr. 96 Bern [BERN – MANDATE 18.IV.21]</p>
-        <p>
-          <pb facs="#IMG.31" n="31"/> Anmeldung zum Schuchardt-Band. <pb facs="#IMG.32"
-            n="32"/> Huldr. Schmidt [ZÜRICH 5 (PREDIGERPLATZ) 8.IV.21]<note n="5" place="foot"
-              type="editorial">Diese Zusammenstellung ist nicht vollständig, denn es fehlen <persName>
-Paul Aebischer</persName> (Hauterive / Freiburg), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1076">Charles Bally</persName> (Genf), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1189">Ernest Bovet</persName>, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1191">Renward Brandstetter</persName> (Luzern), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1470">Franz Fankhauser</persName> (Winterthur), Deutsches Seminar Zürich, <persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.4954"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <p>
+               <pb facs="#IMG.4" n="4"/>Betrag für die Festschrift Schuchardt<note n="4" place="foot" type="editorial">Auf die Titelseite des Schuchardt-Breviers folgt unpaginiert eine Seite mit Namen: „Folgende schweizerische oder in der Schweiz lebende Forscher, Hoch- und Mittelschullehrer, eingedenk der reichen geistigen und wissenschaftlichen Förderung durch HUGO SCHUCHARDTS Arbeiten, haben durch opferfreudige Unterstützung das Erscheinen dieses Huldigungsbandes ermöglicht“. Es folgen in alphabetischer Reihenfolge die Namen von 49 Personen bzw. Einrichtungen. (In der zweiten Auflage von 1928 und den darauf basierenden Nachdrucken ist diese Seite nicht mehr enthalten.) Offenbar hat Hubschmied einen großen Teil der Spenden entgegengenommen, wie die folgenden Postabschnitte belegen. Allerdings ist rätselhaft, wie sie in den NL Schuchardt gelangt sind. Möglicherweise hat Hubschmied sie Schuchardt zugesandt, weil sich dieser bei den Subskribenten persönlich bedanken wollte und die Abschnitte die genauen Adressen der Absender enthielten. – <persName ref="[authorityLink]">Leo Spitzer</persName> war mit der Herausstellung der Schweizer offenbar nicht glücklich, denn er schreibt am 15.2.1922 an Schuchardt (HSA, Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.2177">333-11094</ref>; ed. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1599">Hurch, 2006</ref>
+                  </bibl>, 247): „Auch mit den Schweizern bin ich nicht ganz zufrieden. Hubschmieds Feuilleton behandelt die Brevier-Angelegenheit als eine Schweizer Nationalangelegenheit (Das ,keine Gemeinsamkeiten mit deutschen Gelehrten‘ trat auch in den Vorverhandlungen zu Tage), ohne auch nur zu erwähnen, daß ein Bonner Universitätslehrer (sein Name tat gewiß nichts zur Sache) die eigentliche Arbeit leistete. Sind die Schweizer nun so hoffnungslos materialistisch, daß sie das Subskribieren eines Werkes, das sie ja dann erwerben, höherstellen als die geistige Arbeit der Herausgabe oder soll die Gemeinsamkeit mit einem Deutschen zurücktreten? Ich habe mein Befremden darüber Jud ausgedrückt. Doch scheint mir, daß auch Sie die Schweizer Initiative höherstellen [vgl. Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.101">
+                        <hi rend="unknown" rendition="#none">Dank an die Schweizer Spender des ,Schuchardt-Breviers</hi>‘</ref>
+                  </bibl>“, fliegendes Blatt, Graz 1922]), da Ihr gedruckter Dank nur an die Schweizer Spender ging“.</note>
+               <pb facs="#IMG.5" n="5"/> Fr. 15 Ct. – Dr. E. Abegg, Privatdozent Zürich Rütistraße 56 [ZÜRICH 10 – HOTTINGEN 15.VI.21].</p>
+            <p>
+               <pb facs="#IMG.6" n="6"/> Für Schuchardt-Festschrift. <pb facs="#IMG.7" n="7"/> Fr. 15 Ct. – Prof. Debrunner, Falkenweg 9 Bern [BERN – MANDATE 16.IV.21]</p>
+            <p>
+               <pb facs="#IMG.8" n="8"/> Für Schuchardt Herzl. Gruss Jaberg <pb facs="#IMG.9" n="9"/> Fr. 15 Ct. – PROF. DR. K. JABERG, Schänzlistrasse 57 BERN [BERN – BEUNDENFELD 9.V.21]</p>
+            <p>
+               <pb facs="#IMG.10" n="10"/> Für das Schuchardbuch im Namen von Dr. P. Scheuermeier. <pb facs="#IMG.11" n="11"/> Fr. 15. Ct. – WScheuermeier W‘thurerstr 55 Zürich 6 [ZÜRICH - FIL. SEIDENGASSE 30.IV.21]</p>
+            <p>
+               <pb facs="#IMG.12" n="12"/>Festgabe für Schuchardt <pb facs="#IMG.13" n="13"/> Fr. 15 Ct. – Prof.Dr.M Szadrowsky, Chur [CHUR – (POS)TE 1.VI.21]</p>
+            <p>
+               <pb facs="#IMG.14" n="14"/> Pour le vol. en l’honneur de M. H. Schuchardt. Avec mes compliments et mes bonnes salutations, G. Bertoni, Fribourg (S.) le .12.V.1921 <pb facs="#IMG.15" n="15"/> Fr. 15 Ct. – Prof. Dr. G. Bertoni Fribourg (Suisse) [FRIBOURG – PEROLLES 12.V.21]</p>
+            <p>
+               <pb facs="#IMG.16" n="16"/> Als Beitrag für den schweiz. Festband an H. Prof. Schuchardt in Graz. M. Zweifel <pb facs="#IMG.17" n="17"/> Fr. 15 Ct. – Dr. M. Zweifel 23, Gartenstrasse Zürich 2 [ZÜRICH 1 – MANDATBUREAU 25.VI.21]</p>
+            <p>
+               <pb facs="#IMG.18" n="18"/> Dr. Th. Spoerri Gümlingen (Suskription für H. Schuchhardtband) Bern 15.4.21 [BERN 7 – KORNHAUS 15.IV.21]</p>
+            <p>
+               <pb facs="#IMG.19" n="19"/> Für das Schuchardt-Vademecum. <pb facs="#IMG.20" n="20"/> Fr. 15 Ct. – L. Gauchat Zürich 7 [ZÜRICH 9 – HIRSLANDEN 18.4.21]</p>
+            <p>
+               <pb facs="#IMG.21" n="21"/> Fr. 15 Ct. – Prof.Dr. E. Schwyzer [ZÜRICH – (PREDIGERPLATZ) 18.IV.21]</p>
+            <p>
+               <pb facs="#IMG.22" n="22"/> für Bändchen Hugo Schuchardt <pb facs="#IMG.23" n="23"/> Fr. 15 Ct. – ZENTRALBIBLIOTHEK ZÜRICH [ZÜRICH – CHECKB. K. I. 30.IV.21]</p>
+            <p>
+               <pb facs="#IMG.24" n="24"/> Fr. 15 Ct. – E. Eggenschwiler [SOLOTHURN – INDUSTRIEQUARTIER 2.V.21]</p>
+            <p>
+               <pb facs="#IMG.25" n="25"/> Contribution au volume Schuchardt. Avec ses meilleurs compliments. E. M. <pb facs="#IMG.26" n="26"/> Fr. 15 Ct. – E. Muret SS Florissant Genève [GENÈVE 5 - BOURG DE FOUR 25.IV.21]</p>
+            <p>
+               <pb facs="#IMG.27" n="27"/> für das <hi rend="unknown" rendition="#none">
+Schuchardt-Buch</hi> frdl. Gruß <pb facs="#IMG.28" n="28"/> 15 Fr. Ct. – Prof. Dr. A. Bachmann Zürich 7 Freie Str 111 [ZÜRICH 10 – HOTTINGEN 23.IV.21]</p>
+            <p>
+               <pb facs="#IMG.29" n="29"/> An Herrn Prof. Hubschmied, Bern 19/IV/21 Im Auftrage von Herrn Dr. W. Hebeisen 96 Altenbergstr. <hi rend="unknown" rendition="#none">
+Bern</hi>, bestelle <hi rend="unknown" rendition="#none">ich</hi> ein Exemplar von Schuchardt’s Festschrift, Ernst Bandi, phil 96 Altenbergstr. <pb facs="#IMG.30" n="30"/>
+               <hi rend="unknown" rendition="#none">Bern</hi> Fr. 15 Ct. – Ernst Bandi, phil. 96 Altenbergstr. 96 Bern [BERN – MANDATE 18.IV.21]</p>
+            <p>
+               <pb facs="#IMG.31" n="31"/> Anmeldung zum Schuchardt-Band. <pb facs="#IMG.32" n="32"/> Huldr. Schmidt [ZÜRICH 5 (PREDIGERPLATZ) 8.IV.21]<note n="5" place="foot" type="editorial">Diese Zusammenstellung ist nicht vollständig, denn es fehlen <persName>
+Paul Aebischer</persName> (Hauterive / Freiburg), <persName ref="[authorityLink]">Charles Bally</persName> (Genf), <persName ref="[authorityLink]">Ernest Bovet</persName>, <persName ref="[authorityLink]">Renward Brandstetter</persName> (Luzern), <persName ref="[authorityLink]">Franz Fankhauser</persName> (Winterthur), Deutsches Seminar Zürich, <persName>
 
 Karl Göhri</persName> (Zürich)*, <persName>
 
-Paul Herzog</persName> (Zürich), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1780">Eduard Hoffmann-Krayer</persName> (Basel), <persName>
+Paul Herzog</persName> (Zürich), <persName ref="[authorityLink]">Eduard Hoffmann-Krayer</persName> (Basel), <persName>
 
 Carlo Hoppeler</persName> (Olten), <persName>
 
-Gustave Huber</persName> (Zürich)*, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1841">Jules Jeanjaquet</persName> (Neuchâtel), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1858">Jakob Jud</persName> (Zürich), <persName>
+Gustave Huber</persName> (Zürich)*, <persName ref="[authorityLink]">Jules Jeanjaquet</persName> (Neuchâtel), <persName ref="[authorityLink]">Jakob Jud</persName> (Zürich), <persName>
 G Kuhn</persName> (Maur bei Zürich), <persName>
 
 Peider Lansel</persName> (Sent)*, <persName>
 
-Christoph Luchsinger</persName>* (St. Gallen), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2295">Max Niedermann</persName> (Basel), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2420">Robert von Planta</persName> (Fürstenau, Graubünden), <persName>
-Chasper Pult</persName> (St. Gallen), Romanisches Seminar Basel, Romanisches Seminar Zürich, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2552">Jules Ronjat</persName> (Genf*), <persName>
-Ernst Schopf</persName> (Zürich*, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2714">Charles Albert Sechehay</persName>e (Genf), Seminar für indogermanische Sprachwissenschaft, Basel; <persName>
+Christoph Luchsinger</persName>* (St. Gallen), <persName ref="[authorityLink]">Max Niedermann</persName> (Basel), <persName ref="[authorityLink]">Robert von Planta</persName> (Fürstenau, Graubünden), <persName>
+Chasper Pult</persName> (St. Gallen), Romanisches Seminar Basel, Romanisches Seminar Zürich, <persName ref="[authorityLink]">Jules Ronjat</persName> (Genf*), <persName>
+Ernst Schopf</persName> (Zürich*, <persName ref="[authorityLink]">Charles Albert Sechehay</persName>e (Genf), Seminar für indogermanische Sprachwissenschaft, Basel; <persName>
 Samuel Singer</persName> (Bern), <persName>
-Arnald Steiger</persName> (Zürich), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2838">Ernst Tappolet</persName> (Basel), <persName>
-Jakob Vetsch</persName> (Zürich)*, <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2959">Jakob Wackernagel</persName> (Basel), <persName>
+Arnald Steiger</persName> (Zürich), <persName ref="[authorityLink]">Ernst Tappolet</persName> (Basel), <persName>
+Jakob Vetsch</persName> (Zürich)*, <persName ref="[authorityLink]">Jakob Wackernagel</persName> (Basel), <persName>
 Ernestine Werder</persName> (Zürich)*. [Die mit * gekennzeichneten Namen kommen nur in der Schuchardt übermittelten Liste (s.o.) vor].</note>
-        </p>
-      </div>
-    </body>
-  </text>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

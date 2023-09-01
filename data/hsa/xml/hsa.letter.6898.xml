@@ -1,455 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Alois Pogatscher an Hugo Schuchardt (08-08896)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2427">
-            <forename>Alois</forename>
-            <surname>Pogatscher</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/6898" type="PID">o:hsa.letter.6898</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">08-08896</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">08896</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2427">
-                <forename>Alois</forename>
-                <surname>Pogatscher</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="10" unit="pages">10 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.499" ref="http://sws.geonames.org/2973783">Straßburg</origPlace>
-              <origDate ana="dcterms:created" when="1883-07-27">1883-07-27</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Alois Pogatscher und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2427"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.6898">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2427" ref="https://viaf.org/viaf/64753281">
-            <forename>Alois</forename>
-            <surname>Pogatscher</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.499" key="#GID.1" ref="http://sws.geonames.org/2973783">Straßburg</placeName>
-          <date when="1883-07-27">1883-07-27</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Strasbourg</settlement>
-                <name ref="http://geonames.org/2973783" type="fcode:PPLA">Strasbourg</name>
-                <location>
-                  <geo>7.74553,48.58392</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2427" type="context">
-                        Korrespondenz Alois Pogatscher - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3487" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Informationsbeschaffung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.531" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturhinweise / bibliographische Angaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.32" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kreolischsprachige Literatur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5770" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">L'année géographique (Paris)</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.230" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französischbasierte Kreolsprachen</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6898" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6898" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6898" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6898" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6898" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6898" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6898" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6898" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6898" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6898" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.6898" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Montrose, Thicket Road, Anerley S.E. London<lb/>27. Juli 1883.</dateline>
-        <opener>Verehrter Herr Professor!</opener>
-        <p>Beiligend übersende ich, leider spät wie gewöhnlich, einige kleine Notizen mit dem Wunsche, daß sie Ihnen nützlich sein mögen; aber ich fürchte, daß Sie wie gewöhnlich den guten Willen für das Werk nehmen müssen. Gleichwohl mag vielleicht die eine oder andere Andeutung Brauchbares enthalten.</p>
-        <p>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5769">Grandidier</persName>, der Herausgeber des großen Werkes über Madagaskar,<note
-            n="1" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5769">Alfred Grandidier</persName> (Hrsg.), <bibl>
-              <hi rend="unknown" rendition="#none">Histoire physique, naturelle et politique de Madagascar</hi>
-
-            </bibl>, Paris: Impr. Nationale, 1875-1911.</note> könnte vielleicht über manche Punkte Auskunft geben; seine Adresse wäre von Hachette in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.666">Paris</placeName> leicht zu erfahren.</p>
-        <p>In der Auswahl meiner Notizen habe ich mich auf einige Punkte beschränkt; ich glaube, <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5770">L’Année géographique</ref>
-          <note n="2" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5770">
-L'Année géographique</ref>: revue annuelle des voyages de terre et de mer, des explorations, missions, relations et publications diverses relatives aux sciences géographiques et ethnographiques</hi>, Paris: Hachette, 1.1862/63 - 14.1875[?]; 2.Sér. 1=15.1876/79 - 3=17.1878/80.</note> wäre wohl von Wien zu bekommen und <pb
-            facs="#IMG.2" n="2"/> würde mehr Ausbeute liefern als irgend ein anderes Buch.</p>
-        <p>Über <hi rend="unknown" rendition="#none">fellows</hi>, <hi rend="unknown" rendition="#none">Walerjargon</hi>
-          <note n="3" place="foot" type="editorial">Vgl. Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.617">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.6898" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Montrose, Thicket Road, Anerley S.E. London<lb/>27. Juli 1883.</dateline>
+            <opener>Verehrter Herr Professor!</opener>
+            <p>Beiligend übersende ich, leider spät wie gewöhnlich, einige kleine Notizen mit dem Wunsche, daß sie Ihnen nützlich sein mögen; aber ich fürchte, daß Sie wie gewöhnlich den guten Willen für das Werk nehmen müssen. Gleichwohl mag vielleicht die eine oder andere Andeutung Brauchbares enthalten.</p>
+            <p>
+               <persName ref="[authorityLink]">Grandidier</persName>, der Herausgeber des großen Werkes über Madagaskar,<note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Alfred Grandidier</persName> (Hrsg.), <bibl>
+                     <hi rend="unknown" rendition="#none">Histoire physique, naturelle et politique de Madagascar</hi>
+                  </bibl>, Paris: Impr. Nationale, 1875-1911.</note> könnte vielleicht über manche Punkte Auskunft geben; seine Adresse wäre von Hachette in <placeName ref="[authorityLink]">Paris</placeName> leicht zu erfahren.</p>
+            <p>In der Auswahl meiner Notizen habe ich mich auf einige Punkte beschränkt; ich glaube, <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5770">L’Année géographique</ref>
+               <note n="2" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5770">
+L'Année géographique</ref>: revue annuelle des voyages de terre et de mer, des explorations, missions, relations et publications diverses relatives aux sciences géographiques et ethnographiques</hi>, Paris: Hachette, 1.1862/63 - 14.1875[?]; 2.Sér. 1=15.1876/79 - 3=17.1878/80.</note> wäre wohl von Wien zu bekommen und <pb facs="#IMG.2" n="2"/> würde mehr Ausbeute liefern als irgend ein anderes Buch.</p>
+            <p>Über <hi rend="unknown" rendition="#none">fellows</hi>, <hi rend="unknown" rendition="#none">Walerjargon</hi>
+               <note n="3" place="foot" type="editorial">Vgl. Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.617">
 Kreolische Studien V. Ueber das Melaneso-englische</ref>
-
-            </bibl>“, Sitzungsberichte der philosophisch-historischen Classe der Kaiserlichen Akademie der Wissenschaften. Wien 105, 1884, 151-161, hier 155, 159.</note> und das Kinderlied Adam was the first man<note
-            n="4" place="foot"
-            type="editorial">Hier eine kanadische Version des Liedes:<lb/>„Adam was the first man that ever was invented<lb/>He lived all alone and he never was contented.<lb/>And then a-come a-Eve come a-stumble in the dark<lb/>He picked up an axe and he built himself an ark<lb/>They brought in the cattle one by one<lb/>First twas a elephant and the twas a bear<lb/>And then twas old tanglefoot without any hair“.</note> habe ich nichts in Erfahrung bringen können; vielleicht stoße ich später auf Brauchbares. Mein Aufenthalt in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6083">
-England</placeName> ist nun zu Ende, und nächsten Dienstag verlasse ich London, um nach Nord-<placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6047">
-Wales</placeName> auf einige Wochen zu gehen. Wie froh wäre ich, wenn ich ein bischen Welch könnte! So geht mir ein großer Genuß verloren. Kann ich in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6047">Wales</placeName> etwas für Sie thun, verehrtester Herr Professor? Wir gehen – ein englischer Freund und ich – nach Caernarvon und wollen uns in Llanberis oder Llanfairfechan niederlassen, oder dort in der Nähe. Ich weiß noch keine Adresse, allein meine Briefe können unter der alten Adresse hieher kommen und mir nachgeschickt werden. Falls ich etwas für Sie dort thun kann, bitte ich mir bald zu schreiben, da ich vielleicht nur vierzehn Tage in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.6047">Wales</placeName> bleibe und dann über Holland nach Hause gehe.</p>
-        <p>Hoffentlich werden Sie die Ferien ordentlich genießen <pb facs="#IMG.3" n="3"/> und den Büchern auf eine Zeit lang Lebewohl sagen. Ihr letztes Schreiben enthält keine Mitteilungen über Ihre Gesundheit; ich wünschte, Sie fühlten sich so gesund wie ich.</p>
-        <p>In wenigen Wochen bin ich wieder in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> zurück, wo ich Sie bald zu sehen hoffe.</p>
-        <closer>
-          <salute>Mit dem Ausdruck meiner besonderen Achtung zeichne ich mich</salute>
-          <lb/>
-          <salute>Ergebenst</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2427">A Pogatscher</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.6898" subtype="original" type="appendix" xml:lang="de">
-        <pb facs="#IMG.4" n="a1"/>
-        <p>Einige Notizen aus:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Vivien de St-Martin</hi>, L’Année géographique, Revue annuelle des voyages de terre et de mer, des explorations, missions, relations et publications diverses relatives aux sciences géographiques et ethnographiques</p>
-        <p>I-XIII, 1863-1876</p>
-        <p>Dasselbe, Seconde Série, publ. par <hi rend="unknown" rendition="#none">Maunoir</hi> &amp; <hi rend="unknown" rendition="#none">Duveyrier</hi> 1876 foll. Paris, Hachette</p>
-        <p>(Ausführliche Bibliographie mit kurzen Inhaltsangaben)</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Seychellen:</hi>
-        </p>
-        <p>vol. V p. 327: Lieu.-col. <hi rend="unknown" rendition="#none">Lewis Pelly</hi>: On the Island of Mahi, Seychelles. Journ. of the Roy. Geo. Soc. vol. xxxv p. 231-237.</p>
-        <p>(„Monographie des Seychelles en général, et de l’île Mahi en particulier … Le français-créole est la langue de la vie commune, dit l’auteur, avec les manières et les habitudes à l’avenant. … Pour l’administration, les S. sont une dépendance de l’île Maurice ce dont les colons se plaignent vivement …“</p>
-
-        <p>vol. VII, p. 274. E.P. Wright, M.D. Notes on the Seychelles islands. Lu à la dernière réunion de l’Association pour l’avancement de la science, septembre (1868). Extrait analytique dans l’<hi
-            rend="unknown" rendition="#none">Athenaeum</hi> n°. 2133, p. 341.</p>
-        <p>
-          <pb facs="#IMG.5" n="a2"/> vol. iii (für 1869, herausgg. 1870), p. 85</p>
-        <p>E. Perceval Wright, On the Seychelles islands. Report on the 38<hi rendition="#sup">
+                  </bibl>“, Sitzungsberichte der philosophisch-historischen Classe der Kaiserlichen Akademie der Wissenschaften. Wien 105, 1884, 151-161, hier 155, 159.</note> und das Kinderlied Adam was the first man<note n="4" place="foot" type="editorial">Hier eine kanadische Version des Liedes:<lb/>„Adam was the first man that ever was invented<lb/>He lived all alone and he never was contented.<lb/>And then a-come a-Eve come a-stumble in the dark<lb/>He picked up an axe and he built himself an ark<lb/>They brought in the cattle one by one<lb/>First twas a elephant and the twas a bear<lb/>And then twas old tanglefoot without any hair“.</note> habe ich nichts in Erfahrung bringen können; vielleicht stoße ich später auf Brauchbares. Mein Aufenthalt in <placeName ref="[authorityLink]">
+England</placeName> ist nun zu Ende, und nächsten Dienstag verlasse ich London, um nach Nord-<placeName ref="[authorityLink]">
+Wales</placeName> auf einige Wochen zu gehen. Wie froh wäre ich, wenn ich ein bischen Welch könnte! So geht mir ein großer Genuß verloren. Kann ich in <placeName ref="[authorityLink]">Wales</placeName> etwas für Sie thun, verehrtester Herr Professor? Wir gehen – ein englischer Freund und ich – nach Caernarvon und wollen uns in Llanberis oder Llanfairfechan niederlassen, oder dort in der Nähe. Ich weiß noch keine Adresse, allein meine Briefe können unter der alten Adresse hieher kommen und mir nachgeschickt werden. Falls ich etwas für Sie dort thun kann, bitte ich mir bald zu schreiben, da ich vielleicht nur vierzehn Tage in <placeName ref="[authorityLink]">Wales</placeName> bleibe und dann über Holland nach Hause gehe.</p>
+            <p>Hoffentlich werden Sie die Ferien ordentlich genießen <pb facs="#IMG.3" n="3"/> und den Büchern auf eine Zeit lang Lebewohl sagen. Ihr letztes Schreiben enthält keine Mitteilungen über Ihre Gesundheit; ich wünschte, Sie fühlten sich so gesund wie ich.</p>
+            <p>In wenigen Wochen bin ich wieder in <placeName ref="[authorityLink]">Graz</placeName> zurück, wo ich Sie bald zu sehen hoffe.</p>
+            <closer>
+               <salute>Mit dem Ausdruck meiner besonderen Achtung zeichne ich mich</salute>
+               <lb/>
+               <salute>Ergebenst</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">A Pogatscher</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.6898"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <pb facs="#IMG.4" n="a1"/>
+            <p>Einige Notizen aus:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Vivien de St-Martin</hi>, L’Année géographique, Revue annuelle des voyages de terre et de mer, des explorations, missions, relations et publications diverses relatives aux sciences géographiques et ethnographiques</p>
+            <p>I-XIII, 1863-1876</p>
+            <p>Dasselbe, Seconde Série, publ. par <hi rend="unknown" rendition="#none">Maunoir</hi> &amp; <hi rend="unknown" rendition="#none">Duveyrier</hi> 1876 foll. Paris, Hachette</p>
+            <p>(Ausführliche Bibliographie mit kurzen Inhaltsangaben)</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Seychellen:</hi>
+            </p>
+            <p>vol. V p. 327: Lieu.-col. <hi rend="unknown" rendition="#none">Lewis Pelly</hi>: On the Island of Mahi, Seychelles. Journ. of the Roy. Geo. Soc. vol. xxxv p. 231-237.</p>
+            <p>(„Monographie des Seychelles en général, et de l’île Mahi en particulier … Le français-créole est la langue de la vie commune, dit l’auteur, avec les manières et les habitudes à l’avenant. … Pour l’administration, les S. sont une dépendance de l’île Maurice ce dont les colons se plaignent vivement …“</p>
+            <p>vol. VII, p. 274. E.P. Wright, M.D. Notes on the Seychelles islands. Lu à la dernière réunion de l’Association pour l’avancement de la science, septembre (1868). Extrait analytique dans l’<hi rend="unknown" rendition="#none">Athenaeum</hi> n°. 2133, p. 341.</p>
+            <p>
+               <pb facs="#IMG.5" n="a2"/> vol. iii (für 1869, herausgg. 1870), p. 85</p>
+            <p>E. Perceval Wright, On the Seychelles islands. Report on the 38<hi rendition="#sup">
 th</hi> Meeting of the Brit. Assoc. for the advancement of Science. London 1869, Notices, p. 143-44.</p>
-
-        <p>vols. IX, X (1870-71) H. Jouan, Notes sur les archipels des Comores et des Seychelles. Mém. de la Soc. des sciences naturelles de Cherbourg, tom. XV, 1870, p. <hi
-            rend="unknown" rendition="#none">45-123</hi>.</p>
-        <p>ib. Alf. Grandidier: Notes sur les recherches géogr. faites dans l’île de Madagascar de 1865-70. Comptes-rendus de l’Acad. des sciences . 28 août 1871, p. 535-540.</p>
-        <p>Du même: Madagascar. Bulletin de la Soc. de géogr. août 1871, p. <hi rend="unknown" rendition="#none">81-108</hi>, avec une carte.</p>
-        <p>In einem vor der Akad. gehaltenen résumé sagt der Verf. „J’ai recueilli avec le plus grand soin tous les détails relatifs aux mœurs, à la langue, et aux traditions des diverses tribus“.</p>
-        <p>ib. Rev. Jul. Kessler: An Introduction to the lang. and lit. of Madagascar; with Hintes to Travellers, and a new Map. London 1870, 8°. 3/6 (Hunt) (L’auteur regarde la langue malgache ou malagasi comme un mélange de malais, de javanais, de bali, de nias et de toba)</p>
-        <p>XIII(1874) Carte des îles Seychelles (corrigée en 1873), p. 88.</p>
-        <p>
-          <pb facs="#IMG.6" n="a3"/> (Dépôt de la Marine, no. 1205)</p>
-        <p>XV, (1876) p. 300.</p>
-        <p>Pajot (Elie). Les îles Seychelles.<hi rend="unknown" rendition="#none">
+            <p>vols. IX, X (1870-71) H. Jouan, Notes sur les archipels des Comores et des Seychelles. Mém. de la Soc. des sciences naturelles de Cherbourg, tom. XV, 1870, p. <hi rend="unknown" rendition="#none">45-123</hi>.</p>
+            <p>ib. Alf. Grandidier: Notes sur les recherches géogr. faites dans l’île de Madagascar de 1865-70. Comptes-rendus de l’Acad. des sciences . 28 août 1871, p. 535-540.</p>
+            <p>Du même: Madagascar. Bulletin de la Soc. de géogr. août 1871, p. <hi rend="unknown" rendition="#none">81-108</hi>, avec une carte.</p>
+            <p>In einem vor der Akad. gehaltenen résumé sagt der Verf. „J’ai recueilli avec le plus grand soin tous les détails relatifs aux mœurs, à la langue, et aux traditions des diverses tribus“.</p>
+            <p>ib. Rev. Jul. Kessler: An Introduction to the lang. and lit. of Madagascar; with Hintes to Travellers, and a new Map. London 1870, 8°. 3/6 (Hunt) (L’auteur regarde la langue malgache ou malagasi comme un mélange de malais, de javanais, de bali, de nias et de toba)</p>
+            <p>XIII(1874) Carte des îles Seychelles (corrigée en 1873), p. 88.</p>
+            <p>
+               <pb facs="#IMG.6" n="a3"/> (Dépôt de la Marine, no. 1205)</p>
+            <p>XV, (1876) p. 300.</p>
+            <p>Pajot (Elie). Les îles Seychelles.<hi rend="unknown" rendition="#none">
 Explorateur</hi>, no. 68, p. 523-526.</p>
-        <p>Capitaine H. Les îles Seychelles, avec carte. Explorateur, no. 72, p. 629-631.</p>
-        <p>p. 298. Grandidier: Histoire physique, naturelle et politique de Madagascar. Paris, Hachette, (soll 24 Bände umfassen, 2 für Ethnographie, Anthropologie u. Linguistik, nach p. 303.</p>
-        <p> ------------------------------------------------------------ </p>
-        <p>XVI, p. 513. Hirschberg L. Indianer u. Kreolen. Kulturbild aus Mexiko „Der Welthandel“ 1877, p. 497.</p>
-        <p>Aus Katalog der Roy. Geo. Society, London:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Prior</hi>, James, Voyage in the Indian Seas, to … Isles of Bourbon, France &amp; Seychelles. 1810-11.</p>
-        <p>Ein paar interessante Kleinigkeiten, auf die ich gestoßen bin:</p>
-        <p>Bibliothèque Patoise de M. Burgaud des Marets (Katalog, sehr interessant u. reich, 1873 versteigert) daraus:</p>
-        <p>Paris, Maisonneuve 1873</p>
-        <p>
-          <pb facs="#IMG.7" n="a4"/> p. 67:</p>
-        <p>no. 704. Chanson créole, paroles et musique. 8°, cart.</p>
-
-        <p>705. Les Essais d’un bobre africain, 2 édition, augmentée de près du double, et dédiée à Mme Borel jeune, par F. Chrestien. Ile Maurice, G. Deroullede et C<hi rendition="#sup">ie</hi> 1831, pet. In-4.</p>
-        <p>(Poésies créoles et françaises. Exemplaire probablement unique, provenant du Cabinet de Ch. Nodier).</p>
-        <p>706. Manuel des habitants de Saint-Domingue, par Ducœurjoly. Paris, Lenoir 1802, in-8, cart.</p>
-        <p>(Extrait du tome II de cet ouvrage, pages <hi rend="unknown"
-            rendition="#none">
+            <p>Capitaine H. Les îles Seychelles, avec carte. Explorateur, no. 72, p. 629-631.</p>
+            <p>p. 298. Grandidier: Histoire physique, naturelle et politique de Madagascar. Paris, Hachette, (soll 24 Bände umfassen, 2 für Ethnographie, Anthropologie u. Linguistik, nach p. 303.</p>
+            <p> ------------------------------------------------------------ </p>
+            <p>XVI, p. 513. Hirschberg L. Indianer u. Kreolen. Kulturbild aus Mexiko „Der Welthandel“ 1877, p. 497.</p>
+            <p>Aus Katalog der Roy. Geo. Society, London:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Prior</hi>, James, Voyage in the Indian Seas, to … Isles of Bourbon, France &amp; Seychelles. 1810-11.</p>
+            <p>Ein paar interessante Kleinigkeiten, auf die ich gestoßen bin:</p>
+            <p>Bibliothèque Patoise de M. Burgaud des Marets (Katalog, sehr interessant u. reich, 1873 versteigert) daraus:</p>
+            <p>Paris, Maisonneuve 1873</p>
+            <p>
+               <pb facs="#IMG.7" n="a4"/> p. 67:</p>
+            <p>no. 704. Chanson créole, paroles et musique. 8°, cart.</p>
+            <p>705. Les Essais d’un bobre africain, 2 édition, augmentée de près du double, et dédiée à Mme Borel jeune, par F. Chrestien. Ile Maurice, G. Deroullede et C<hi rendition="#sup">ie</hi> 1831, pet. In-4.</p>
+            <p>(Poésies créoles et françaises. Exemplaire probablement unique, provenant du Cabinet de Ch. Nodier).</p>
+            <p>706. Manuel des habitants de Saint-Domingue, par Ducœurjoly. Paris, Lenoir 1802, in-8, cart.</p>
+            <p>(Extrait du tome II de cet ouvrage, pages <hi rend="unknown" rendition="#none">
 283-393</hi>, renfermant le <hi rend="unknown" rendition="#none">Vocabulaire français et créole</hi>, des dialogues et une chanson).</p>
-        <p>707. Catéchisme en langue créole, précédé d’un essai de grammaire sur l’idiome usité dans les colonies françaises, par M. Goux, missionnaire à la Martinique. Paris, Vrayet de Surcy 1842, in-18, cart. (Tous les exemplaires de ce petit volume ont été expédiés dans les colonies; il est très difficile de se le procurer).</p>
-        <p>708. Mosié l‘ bambou, chanson créole, chantée par Malézieux, paroles de Constantin et musique de Parizot. In-8, cart.</p>
-        <p>(Extrait de la 14<hi rendition="#sup">e</hi> livraison de l’Album des concerts et des salons).</p>
-        <p>
-          <pb facs="#IMG.8" n="a5"/> Der Katalog der Bibliothèque Patoise ist die reichhaltigste Dialektbibliographie für Romanische Sprachen (bes. Französisch) von der ich weiß (Auch Deutsch, Keltisch, Gauner-Zigeunersprachen).</p>
-        <p>Kennen Sie:</p>
-        <p>Bibliografia dei vocabolari ne‘ dialetti italiani, raccolti e posseduti da Gaetano Romagnoli, compilata da Alberto Bacchi della Lega. Seconda Edizione. Bologna, Gaetano Romagnoli. 1879. 103 pp.</p>
-        <p>Noch etwas über die <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5923">
+            <p>707. Catéchisme en langue créole, précédé d’un essai de grammaire sur l’idiome usité dans les colonies françaises, par M. Goux, missionnaire à la Martinique. Paris, Vrayet de Surcy 1842, in-18, cart. (Tous les exemplaires de ce petit volume ont été expédiés dans les colonies; il est très difficile de se le procurer).</p>
+            <p>708. Mosié l‘ bambou, chanson créole, chantée par Malézieux, paroles de Constantin et musique de Parizot. In-8, cart.</p>
+            <p>(Extrait de la 14<hi rendition="#sup">e</hi> livraison de l’Album des concerts et des salons).</p>
+            <p>
+               <pb facs="#IMG.8" n="a5"/> Der Katalog der Bibliothèque Patoise ist die reichhaltigste Dialektbibliographie für Romanische Sprachen (bes. Französisch) von der ich weiß (Auch Deutsch, Keltisch, Gauner-Zigeunersprachen).</p>
+            <p>Kennen Sie:</p>
+            <p>Bibliografia dei vocabolari ne‘ dialetti italiani, raccolti e posseduti da Gaetano Romagnoli, compilata da Alberto Bacchi della Lega. Seconda Edizione. Bologna, Gaetano Romagnoli. 1879. 103 pp.</p>
+            <p>Noch etwas über die <placeName ref="[authorityLink]">
 Seychellen</placeName>:</p>
-        <p>In the Globe Encycolpaedia finde ich: (vol. V, p. 585) Sir Edward Belcher: Account of the Seychelles.</p>
-        <p>J. Horne, Report on the S. (1875)</p>
-        <p>In Larousse, Dictionnaire Universel, XVI, 652:</p>
-
-        <p>La langue usitée aux S. est la langue franç.; mais elle s’est singulièrement corrompue, surtout dans la basse classe de la population. La conjugaison des des verbes, la déclinaison des pronoms et preque toutes les formes grammaticales ont disparu. Une des phrases que l’on entend le plus communément est celli-ci: Moi ne cont pas (Je ne connais pas, Je ne sais pas); beaucoup de mots sont accrus d’une voyelle intercalée dans l’intérieur; ainsi, l’on dit <hi
-            rend="unknown" rendition="#none">gelisser</hi> pour <hi rend="unknown" rendition="#none">
-glisser</hi>, <hi
-            rend="unknown" rendition="#none">belouse</hi> pour blouse, etc. Cette corruption est d’autant plus étrange qu’il y a trois générations à peine les habitants parlaient un français des plus corrects.</p>
-        <p>
-          <pb facs="#IMG.9"
-            n="a6"/> Den Index von Poole W. F. (ich glaube, Sie schrieben Bole), der die Jahre 1802-1852 umfaßt, habe ich gesehen und nichts Brauchbares darin gefunden, soweit ich nach bloßen Titeln urtheilen konnte. Über Walerjargon<note
-            n="5" place="foot" type="editorial">Vgl. oben <ref target="https://gams.uni-graz.at/o:hsa.letter.6898">Brief 08996</ref>.</note> kann ich nirgends etwas finden.</p>
-        <p>
-          <pb facs="#IMG.10" n="a7"/>
-          <note n="6" place="foot" type="editorial">Die in der Systematik hier eingeordnete Seite gehört vermutlich zu einer anderen Lieferung von „Quellenangaben“ Pogatschers.</note>
-        </p>
-        <p>Murray (1893) über <hi rend="unknown" rendition="#none">crow</hi> sb.,<hi
-            rendition="#sup">
-3</hi> getrennt behandelt von <hi rend="unknown" rendition="#none">crow</hi> sb‘<hi
-            rendition="#sup">1</hi> ,Krähe‘ etc. und von <hi rend="unknown" rendition="#none">crow</hi> sb.<hi rendition="#sup">2</hi> ,das Krähen‘.</p>
-        <p>[cf. MHG. <hi rend="unknown" rendition="#none">Kros</hi>, <hi rend="unknown" rendition="#none">Krös</hi>, <hi
-            rend="unknown" rendition="#none">Kalbskrös</hi>, <hi rend="unknown"
-            rendition="#none">schweinskrös</hi>, etc. mesentery, Du. <hi rend="unknown"
-            rendition="#none">Kroos</hi>, <hi rend="unknown"
-            rendition="#none">
-Kroost</hi> ,intestina, venter cum intestinis‘ (Kilian), mod. Du. <hi rend="unknown"
-            rendition="#none">Kroos</hi> ,giblets‘; but also LG. Krage ,gekröse‘, mesentery, and ist allied forms in Grimm s.v. <hi
-            rend="unknown" rendition="#none">Kragen</hi> 1962]. The mesentery of an animal.</p>
-        <p>Grimm, Wb. IV, I, 2 (1897, bearbeitet von Hildebrand und Wunderlich) p. 2839f.: <hi rend="unknown"
-            rendition="#none">Gekrös(e)</hi> n. coll. Bildung zur <hi rend="unknown"
-            rendition="#none">Krös</hi>, das aber selbst schon collectivisch gebildet scheint, ahd. wahrsch. <hi
-            rend="unknown" rendition="#none">chrôsi</hi> (s. <hi rend="unknown"
-            rendition="#none">Krös</hi> 3,a und unter <hi rend="unknown" rendition="#none">gehirn</hi>), mhd. neben <hi
-            rend="unknown" rendition="#none">
+            <p>In the Globe Encycolpaedia finde ich: (vol. V, p. 585) Sir Edward Belcher: Account of the Seychelles.</p>
+            <p>J. Horne, Report on the S. (1875)</p>
+            <p>In Larousse, Dictionnaire Universel, XVI, 652:</p>
+            <p>La langue usitée aux S. est la langue franç.; mais elle s’est singulièrement corrompue, surtout dans la basse classe de la population. La conjugaison des des verbes, la déclinaison des pronoms et preque toutes les formes grammaticales ont disparu. Une des phrases que l’on entend le plus communément est celli-ci: Moi ne cont pas (Je ne connais pas, Je ne sais pas); beaucoup de mots sont accrus d’une voyelle intercalée dans l’intérieur; ainsi, l’on dit <hi rend="unknown" rendition="#none">gelisser</hi> pour <hi rend="unknown" rendition="#none">
+glisser</hi>, <hi rend="unknown" rendition="#none">belouse</hi> pour blouse, etc. Cette corruption est d’autant plus étrange qu’il y a trois générations à peine les habitants parlaient un français des plus corrects.</p>
+            <p>
+               <pb facs="#IMG.9" n="a6"/> Den Index von Poole W. F. (ich glaube, Sie schrieben Bole), der die Jahre 1802-1852 umfaßt, habe ich gesehen und nichts Brauchbares darin gefunden, soweit ich nach bloßen Titeln urtheilen konnte. Über Walerjargon<note n="5" place="foot" type="editorial">Vgl. oben <ref target="https://gams.uni-graz.at/o:hsa.letter.6898">Brief 08996</ref>.</note> kann ich nirgends etwas finden.</p>
+            <p>
+               <pb facs="#IMG.10" n="a7"/>
+               <note n="6" place="foot" type="editorial">Die in der Systematik hier eingeordnete Seite gehört vermutlich zu einer anderen Lieferung von „Quellenangaben“ Pogatschers.</note>
+            </p>
+            <p>Murray (1893) über <hi rend="unknown" rendition="#none">crow</hi> sb.,<hi rendition="#sup">
+3</hi> getrennt behandelt von <hi rend="unknown" rendition="#none">crow</hi> sb‘<hi rendition="#sup">1</hi> ,Krähe‘ etc. und von <hi rend="unknown" rendition="#none">crow</hi> sb.<hi rendition="#sup">2</hi> ,das Krähen‘.</p>
+            <p>[cf. MHG. <hi rend="unknown" rendition="#none">Kros</hi>, <hi rend="unknown" rendition="#none">Krös</hi>, <hi rend="unknown" rendition="#none">Kalbskrös</hi>, <hi rend="unknown" rendition="#none">schweinskrös</hi>, etc. mesentery, Du. <hi rend="unknown" rendition="#none">Kroos</hi>, <hi rend="unknown" rendition="#none">
+Kroost</hi> ,intestina, venter cum intestinis‘ (Kilian), mod. Du. <hi rend="unknown" rendition="#none">Kroos</hi> ,giblets‘; but also LG. Krage ,gekröse‘, mesentery, and ist allied forms in Grimm s.v. <hi rend="unknown" rendition="#none">Kragen</hi> 1962]. The mesentery of an animal.</p>
+            <p>Grimm, Wb. IV, I, 2 (1897, bearbeitet von Hildebrand und Wunderlich) p. 2839f.: <hi rend="unknown" rendition="#none">Gekrös(e)</hi> n. coll. Bildung zur <hi rend="unknown" rendition="#none">Krös</hi>, das aber selbst schon collectivisch gebildet scheint, ahd. wahrsch. <hi rend="unknown" rendition="#none">chrôsi</hi> (s. <hi rend="unknown" rendition="#none">Krös</hi> 3,a und unter <hi rend="unknown" rendition="#none">gehirn</hi>), mhd. neben <hi rend="unknown" rendition="#none">
 kroese</hi> n. auch <hi rend="unknown" rendition="#none">gekroese</hi> Lexer I, 804.</p>
-        <p>1) die Eingeweide …………….</p>
-        <p>2) der runde krause Kragen, welchen jetzt nur noch an einigen Orten die Prediger tragen ,Adelung, eben nach dem vielfaltigen Kalbsgekröse benannt; so seit dem 16. Jahrh. …………….</p>
-        <p>3) auch <hi rend="unknown" rendition="#none">gekrüse</hi> mit Bdtg von 1), daher in md. Ausspr. <hi
-            rend="unknown" rendition="#none">Gekriese</hi>.</p>
-      </div>
-    </body>
-  </text>
+            <p>1) die Eingeweide …………….</p>
+            <p>2) der runde krause Kragen, welchen jetzt nur noch an einigen Orten die Prediger tragen ,Adelung, eben nach dem vielfaltigen Kalbsgekröse benannt; so seit dem 16. Jahrh. …………….</p>
+            <p>3) auch <hi rend="unknown" rendition="#none">gekrüse</hi> mit Bdtg von 1), daher in md. Ausspr. <hi rend="unknown" rendition="#none">Gekriese</hi>.</p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

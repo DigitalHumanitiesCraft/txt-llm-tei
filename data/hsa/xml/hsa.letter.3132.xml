@@ -1,609 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Alfredo Trombetti an Hugo Schuchardt (03-11784)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">
-            <forename>Alfredo</forename>
-            <surname>Trombetti</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3132" type="PID">o:hsa.letter.3132</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">03-11784</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11784</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">
-                <forename>Alfredo</forename>
-                <surname>Trombetti</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.420" ref="http://sws.geonames.org/3177700">Cuneo</origPlace>
-              <origDate ana="dcterms:created" when="1902-07-13">1902-07-13</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Alfredo Trombetti und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2881"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3132">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2881" ref="https://viaf.org/viaf/44384477">
-            <forename>Alfredo</forename>
-            <surname>Trombetti</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.420" key="#GID.1" ref="http://sws.geonames.org/3177700">Cuneo</placeName>
-          <date when="1902-07-13">1902-07-13</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Cuneo</settlement>
-                <name ref="http://geonames.org/3177700" type="fcode:PPLA2">Cuneo</name>
-                <location>
-                  <geo>7.54828,44.39071</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2881" type="context">
-                        Korrespondenz Alfredo Trombetti - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3090" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsche morgenländische Gesellschaft</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3132" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3132" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3132" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3132" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3132" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3132" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3132" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Cuneo, 13 luglio 1902</dateline>
-        <opener>Carm̃o Signor Professore</opener>
-        <p>La ringrazio della Sua lettera del 25 giugno e la prego d scusare il ritardo con cui Le rispondo, ritardo cagionato dalle occupazioni degli esami.</p>
-        <p>Perchè Ella possa giudicare della natura dei miei studi nel campo che La interessa, Le esporrò in forma assai succinta alcuni dei punti che nel mio grande lavoro saranno ampiamente svolti per dimostrare che le lingue del Caucaso e il Basco sono connessi col Berbero (più generalmente col Camitosemitico) e perciò anche tra di loro. Come Le scrissi nella mia lettera precedente, io non sono specialista in nessuna lingua o gruppo di lingue, ma mi sono sforzato di dominare come dall'alto tutte le lingue del mondo antico e di indagarne gl’intricati rapporti. Ciò era assolutamente necessario che si facesse, come credo di aver dimostrato nella lettera accennata; dopo sarà necessaria l’opera di studiosi che abbraccino un campo molto meno esteso, perchè lo coltivino intensamente.</p>
-        <p>E vengo senz’altro ai particolari. In questa lettera intanto raccoglierò alcuni dei fatti che, a mio giudizio, dimostrano chiaramente il nesso fra le lingue del Caucaso e le lingue camitosemitiche.</p>
-        <p>Il <hi rend="unknown"
-            rendition="#none">sistema fonetico</hi> delle lingue caucasiche, specialmente delle kharthweliche (come le chiama Lei), concorda moto bene con quello camitosemitico per l'abbondanza dei suoni gutturali e sibilanti. Si noti specialmente la presenza del <hi
-            rend="unknown" rendition="#none">q</hi> e del <hi rend="unknown" rendition="#none">ḥ</hi>. Per la costituzione delle sillabe si avvicinano più di tutto al Camitico settentrionale (egizio-berbero).</p>
-        <p>Quanto alla <hi rend="unknown"
-            rendition="#none">formazione delle parole</hi> le lingue caucasiche hanno prefissi e suffissi come le camitosemitiche. Il prefisso georgiano <hi
-            rend="unknown"
-            rendition="#none">m-</hi>, che forma nomina agentis e participi, è identico al prefisso camitosemitico <hi
-            rend="unknown" rendition="#none">
-m-</hi>, che ha la medesima funzione. L’origine è pronominale. Per <hi
-            rend="unknown" rendition="#none">sa-</hi> e <hi rend="unknown"
-            rendition="#none">
-na-</hi> v. più avanti sotto la voce georg. <hi rend="unknown"
-            rendition="#none">
-piri</hi>. Una certa variabilità nelle vocali radicali si osserva nel Georgiano, v. Brosset, Éléments XXXIII, 10.<note
-            n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4454">Brosset (1837)</ref>
-            </bibl>.</note>
-        </p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>Il suffisso caucasico del plurale <hi rend="unknown" rendition="#none">-ni</hi>, <hi rend="unknown"
-            rendition="#none">-n</hi> corrisponde al suffisso <hi rend="unknown"
-            rendition="#none">-n</hi> che caratterizza il plurale in tutte le lingue camitosemitiche. Al genitivo in <hi
-            rend="unknown" rendition="#none">-i</hi> del semitico corrisponde il genitivo caucasico in <hi
-            rend="unknown" rendition="#none">-i</hi>, per es. georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">tš-m-i</hi> lazo <hi rend="unknown"
-              rendition="#none">tški-m-i</hi>, <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3132" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Cuneo, 13 luglio 1902</dateline>
+            <opener>Carm̃o Signor Professore</opener>
+            <p>La ringrazio della Sua lettera del 25 giugno e la prego d scusare il ritardo con cui Le rispondo, ritardo cagionato dalle occupazioni degli esami.</p>
+            <p>Perchè Ella possa giudicare della natura dei miei studi nel campo che La interessa, Le esporrò in forma assai succinta alcuni dei punti che nel mio grande lavoro saranno ampiamente svolti per dimostrare che le lingue del Caucaso e il Basco sono connessi col Berbero (più generalmente col Camitosemitico) e perciò anche tra di loro. Come Le scrissi nella mia lettera precedente, io non sono specialista in nessuna lingua o gruppo di lingue, ma mi sono sforzato di dominare come dall'alto tutte le lingue del mondo antico e di indagarne gl’intricati rapporti. Ciò era assolutamente necessario che si facesse, come credo di aver dimostrato nella lettera accennata; dopo sarà necessaria l’opera di studiosi che abbraccino un campo molto meno esteso, perchè lo coltivino intensamente.</p>
+            <p>E vengo senz’altro ai particolari. In questa lettera intanto raccoglierò alcuni dei fatti che, a mio giudizio, dimostrano chiaramente il nesso fra le lingue del Caucaso e le lingue camitosemitiche.</p>
+            <p>Il <hi rend="unknown" rendition="#none">sistema fonetico</hi> delle lingue caucasiche, specialmente delle kharthweliche (come le chiama Lei), concorda moto bene con quello camitosemitico per l'abbondanza dei suoni gutturali e sibilanti. Si noti specialmente la presenza del <hi rend="unknown" rendition="#none">q</hi> e del <hi rend="unknown" rendition="#none">ḥ</hi>. Per la costituzione delle sillabe si avvicinano più di tutto al Camitico settentrionale (egizio-berbero).</p>
+            <p>Quanto alla <hi rend="unknown" rendition="#none">formazione delle parole</hi> le lingue caucasiche hanno prefissi e suffissi come le camitosemitiche. Il prefisso georgiano <hi rend="unknown" rendition="#none">m-</hi>, che forma nomina agentis e participi, è identico al prefisso camitosemitico <hi rend="unknown" rendition="#none">
+m-</hi>, che ha la medesima funzione. L’origine è pronominale. Per <hi rend="unknown" rendition="#none">sa-</hi> e <hi rend="unknown" rendition="#none">
+na-</hi> v. più avanti sotto la voce georg. <hi rend="unknown" rendition="#none">
+piri</hi>. Una certa variabilità nelle vocali radicali si osserva nel Georgiano, v. Brosset, Éléments XXXIII, 10.<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4454">Brosset (1837)</ref>
+                  </bibl>.</note>
+            </p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>Il suffisso caucasico del plurale <hi rend="unknown" rendition="#none">-ni</hi>, <hi rend="unknown" rendition="#none">-n</hi> corrisponde al suffisso <hi rend="unknown" rendition="#none">-n</hi> che caratterizza il plurale in tutte le lingue camitosemitiche. Al genitivo in <hi rend="unknown" rendition="#none">-i</hi> del semitico corrisponde il genitivo caucasico in <hi rend="unknown" rendition="#none">-i</hi>, per es. georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">tš-m-i</hi> lazo <hi rend="unknown" rendition="#none">tški-m-i</hi>, <hi rend="unknown" rendition="#none">
 ški-m-i</hi>
-          </foreign> „di me”(nom. georg. <hi rend="unknown" rendition="#none">
-me</hi>, lazo <hi rend="unknown"
-            rendition="#none">ma</hi>), georg. <hi rend="unknown" rendition="#none">mam-i.(sa)</hi> „del padre” da <hi
-            rend="unknown" rendition="#none">mama</hi>. </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Pronomi</hi>. Noterà per ora solo alcune forme assai importanti.</p>
-        <p>Il pronome „voi” georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+               </foreign> „di me”(nom. georg. <hi rend="unknown" rendition="#none">
+me</hi>, lazo <hi rend="unknown" rendition="#none">ma</hi>), georg. <hi rend="unknown" rendition="#none">mam-i.(sa)</hi> „del padre” da <hi rend="unknown" rendition="#none">mama</hi>. </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Pronomi</hi>. Noterà per ora solo alcune forme assai importanti.</p>
+            <p>Il pronome „voi” georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 thkhweri</hi>
-          </foreign>, mingr. <foreign xml:lang="xmf">
-            <hi rend="unknown" rendition="#none">thkhwa</hi>, lazo <hi rend="unknown" rendition="#none">
-tkua</hi>, <hi
-              rend="unknown" rendition="#none">tkuan</hi>
-          </foreign> (kürino <hi rend="unknown"
-            rendition="#none">khün</hi>!) è prezioso, perchè può spiegare l’alternarsi di <hi rend="unknown"
-            rendition="#none">T</hi> e di <hi rend="unknown"
-            rendition="#none">K</hi> nel pronome di 2. persona nelle lingue camitosemitiche, fenomeno rimasto finora oscurissimo. Infatti, si confrontino le forme berbere <hi
-            rend="unknown" rendition="#none">ka-u-en</hi>, <hi rend="unknown"
-            rendition="#none">kun-</hi>, il protosemitico <hi rend="unknown" rendition="#none">an-tunū</hi> e <hi
-            rend="unknown" rendition="#none">-kunū</hi> (Zimmern, Vgl. Gr. der sem. Sprachen)<note n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6520">Zimmern (1898)</ref>
-            </bibl>.</note> e apparirà assai probabile la derivazione de <hi rend="unknown"
-            rendition="#none">K</hi> da <hi rend="unknown" rendition="#none">
-TK</hi>: <hi rend="unknown"
-            rendition="#none">kauen</hi> da *<hi rend="unknown" rendition="#none">tkauen</hi> = georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">thkhwen</hi>
-          </foreign>. </p>
-        <p>Il pronome di 3. pers. plur. georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">i-si-ni</hi>, ingiloi <hi rend="unknown" rendition="#none">
+               </foreign>, mingr. <foreign xml:lang="xmf">
+                  <hi rend="unknown" rendition="#none">thkhwa</hi>, lazo <hi rend="unknown" rendition="#none">
+tkua</hi>, <hi rend="unknown" rendition="#none">tkuan</hi>
+               </foreign> (kürino <hi rend="unknown" rendition="#none">khün</hi>!) è prezioso, perchè può spiegare l’alternarsi di <hi rend="unknown" rendition="#none">T</hi> e di <hi rend="unknown" rendition="#none">K</hi> nel pronome di 2. persona nelle lingue camitosemitiche, fenomeno rimasto finora oscurissimo. Infatti, si confrontino le forme berbere <hi rend="unknown" rendition="#none">ka-u-en</hi>, <hi rend="unknown" rendition="#none">kun-</hi>, il protosemitico <hi rend="unknown" rendition="#none">an-tunū</hi> e <hi rend="unknown" rendition="#none">-kunū</hi> (Zimmern, Vgl. Gr. der sem. Sprachen)<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6520">Zimmern (1898)</ref>
+                  </bibl>.</note> e apparirà assai probabile la derivazione de <hi rend="unknown" rendition="#none">K</hi> da <hi rend="unknown" rendition="#none">
+TK</hi>: <hi rend="unknown" rendition="#none">kauen</hi> da *<hi rend="unknown" rendition="#none">tkauen</hi> = georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">thkhwen</hi>
+               </foreign>. </p>
+            <p>Il pronome di 3. pers. plur. georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">i-si-ni</hi>, ingiloi <hi rend="unknown" rendition="#none">
 i-se-n</hi>
-          </foreign> è vicinissimo all’egiziano <hi rend="unknown" rendition="#none">s-n</hi>, al berbero <hi
-            rend="unknown" rendition="#none">
+               </foreign> è vicinissimo all’egiziano <hi rend="unknown" rendition="#none">s-n</hi>, al berbero <hi rend="unknown" rendition="#none">
 -se-n</hi> ecc. La formazione è identica.</p>
-        <p>Gl’interrogativi del Lazo <hi rend="unknown" rendition="#none">mi</hi> chi?, <hi rend="unknown"
-            rendition="#none">mu</hi>, <hi rend="unknown" rendition="#none">
-muia</hi> che? (Suano <hi rend="unknown"
-            rendition="#none">mai</hi>, Erek. <hi rend="unknown" rendition="#none">mā</hi> ecc.) hanno i loro corrispondenti ben noti nel camitosemitico (ma anche in altri gruppi linguistici).</p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">-gi</hi> in <hi rend="unknown" rendition="#none">i-gi</hi>
-          </foreign> „quello, egli”: Kabilo <hi rend="unknown" rendition="#none">ua-gi</hi> „questo“ (<hi rend="unknown" rendition="#none">ua-hi</hi> „quello”).</p>
-        <p>Quanto al <hi rend="unknown"
-            rendition="#none">verbo</hi>, basti per ora citare le seguenti meravigliose concordanze.– Al segno del plurale nel verbo: georg. <hi
-            rend="unknown" rendition="#none">-th</hi> (Suano <hi rend="unknown" rendition="#none">-d</hi>, <hi
-            rend="unknown" rendition="#none">-th</hi> ecc.) corrisponde il <hi rend="unknown"
-            rendition="#none">-t</hi>, <hi rend="unknown" rendition="#none">-ϑ</hi> del plurale nei <hi rend="unknown" rendition="#none">verbes d’état</hi> del Berbero, per es. Zuana: </p>
-        <p>Sing. 1. pers. <hi rend="unknown" rendition="#none">berrik-e</hi>
-          <hi rend="unknown" rendition="#none">γ</hi> je suis noir Plur.    1. pers.<hi rend="unknown" rendition="#none"> berrik-i-</hi>
-          <hi rend="unknown" rendition="#none">ϑ</hi>
-        </p>
-        <p>2. <hi rend="unknown" rendition="#none">berrik-eḍ</hi>2.<hi rend="unknown" rendition="#none">berrik-i-</hi>
-          <hi rend="unknown" rendition="#none">ϑ</hi>
-        </p>
-        <p>3. <hi rend="unknown" rendition="#none">berrik</hi>, f. <hi rend="unknown" rendition="#none">berrik-e</hi>
-          <hi rend="unknown" rendition="#none">ϑ</hi> 3. <hi rend="unknown" rendition="#none">berrik-i-ϑ</hi>
-        </p>
-        <p>(V. René Basset, Études sur les dialectes berbères, Paris 1894, pag. 135 sgg.).<note n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6521">Basset (1894)</ref>
-            </bibl>.</note>
-        </p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>Dalla radice georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+            <p>Gl’interrogativi del Lazo <hi rend="unknown" rendition="#none">mi</hi> chi?, <hi rend="unknown" rendition="#none">mu</hi>, <hi rend="unknown" rendition="#none">
+muia</hi> che? (Suano <hi rend="unknown" rendition="#none">mai</hi>, Erek. <hi rend="unknown" rendition="#none">mā</hi> ecc.) hanno i loro corrispondenti ben noti nel camitosemitico (ma anche in altri gruppi linguistici).</p>
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">-gi</hi> in <hi rend="unknown" rendition="#none">i-gi</hi>
+               </foreign> „quello, egli”: Kabilo <hi rend="unknown" rendition="#none">ua-gi</hi> „questo“ (<hi rend="unknown" rendition="#none">ua-hi</hi> „quello”).</p>
+            <p>Quanto al <hi rend="unknown" rendition="#none">verbo</hi>, basti per ora citare le seguenti meravigliose concordanze.– Al segno del plurale nel verbo: georg. <hi rend="unknown" rendition="#none">-th</hi> (Suano <hi rend="unknown" rendition="#none">-d</hi>, <hi rend="unknown" rendition="#none">-th</hi> ecc.) corrisponde il <hi rend="unknown" rendition="#none">-t</hi>, <hi rend="unknown" rendition="#none">-ϑ</hi> del plurale nei <hi rend="unknown" rendition="#none">verbes d’état</hi> del Berbero, per es. Zuana: </p>
+            <p>Sing. 1. pers. <hi rend="unknown" rendition="#none">berrik-e</hi>
+               <hi rend="unknown" rendition="#none">γ</hi> je suis noir Plur.    1. pers.<hi rend="unknown" rendition="#none"> berrik-i-</hi>
+               <hi rend="unknown" rendition="#none">ϑ</hi>
+            </p>
+            <p>2. <hi rend="unknown" rendition="#none">berrik-eḍ</hi>2.<hi rend="unknown" rendition="#none">berrik-i-</hi>
+               <hi rend="unknown" rendition="#none">ϑ</hi>
+            </p>
+            <p>3. <hi rend="unknown" rendition="#none">berrik</hi>, f. <hi rend="unknown" rendition="#none">berrik-e</hi>
+               <hi rend="unknown" rendition="#none">ϑ</hi> 3. <hi rend="unknown" rendition="#none">berrik-i-ϑ</hi>
+            </p>
+            <p>(V. René Basset, Études sur les dialectes berbères, Paris 1894, pag. 135 sgg.).<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6521">Basset (1894)</ref>
+                  </bibl>.</note>
+            </p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>Dalla radice georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 su</hi>
-          </foreign> (Lazo <hi rend="unknown" rendition="#none">šu</hi>) bere = berb. <hi rend="unknown"
-            rendition="#none">su</hi> bere (eg. <hi rend="unknown" rendition="#none">swr</hi>, <hi rend="unknown"
-            rendition="#none">swrj</hi> ? Chamir <hi rend="unknown" rendition="#none">sü</hi>) si ha l’imperativo:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">su</hi>        bois <hi rend="unknown" rendition="#none">suath</hi>   buvez e nel Berbero:</p>
-        <p>Synah <hi rend="unknown" rendition="#none">su</hi>        bois <hi rend="unknown" rendition="#none">suet</hi>      buvez</p>
-        <p>Ma più meraviglioso ancora è il confronto seguente:</p>
-        <p>Georg. „j’ai bu” Berbero „j’ai bu”</p>
-        <p>Sing. 1. pers. <hi rend="unknown" rendition="#none">še-w-sw-<hi rend="unknown" rendition="#none">i</hi>
-          </hi>Cam.   <hi rend="unknown" rendition="#none">e-su-<hi rend="unknown"
-            rendition="#none">i</hi>-γ</hi>, Synah <hi rend="unknown" rendition="#none">a-su-<hi rend="unknown" rendition="#none">i</hi>-γ</hi>
-        </p>
-        <p>2. <hi rend="unknown" rendition="#none">še-sw-<hi rend="unknown"
-              rendition="#none">i </hi>                                   te-su-<hi rend="unknown"
-              rendition="#none">i</hi>-ḍ (ta)-su-<hi rend="unknown" rendition="#none">e</hi>-ṭ</hi>
-        </p>
-        <p>3. <hi rend="unknown" rendition="#none">še-sw-<hi rend="unknown"
-              rendition="#none">
-a</hi>                                   i-su-<hi rend="unknown"
-              rendition="#none">a</hi> i-su-<hi rend="unknown" rendition="#none">a</hi>
-          </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Numerali</hi>. Esaminerò qui solo i numerali 3, 9, 10, e 100.</p>
-        <p>3. Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+               </foreign> (Lazo <hi rend="unknown" rendition="#none">šu</hi>) bere = berb. <hi rend="unknown" rendition="#none">su</hi> bere (eg. <hi rend="unknown" rendition="#none">swr</hi>, <hi rend="unknown" rendition="#none">swrj</hi> ? Chamir <hi rend="unknown" rendition="#none">sü</hi>) si ha l’imperativo:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">su</hi>        bois <hi rend="unknown" rendition="#none">suath</hi>   buvez e nel Berbero:</p>
+            <p>Synah <hi rend="unknown" rendition="#none">su</hi>        bois <hi rend="unknown" rendition="#none">suet</hi>      buvez</p>
+            <p>Ma più meraviglioso ancora è il confronto seguente:</p>
+            <p>Georg. „j’ai bu” Berbero „j’ai bu”</p>
+            <p>Sing. 1. pers. <hi rend="unknown" rendition="#none">še-w-sw-<hi rend="unknown" rendition="#none">i</hi>
+               </hi>Cam.   <hi rend="unknown" rendition="#none">e-su-<hi rend="unknown" rendition="#none">i</hi>-γ</hi>, Synah <hi rend="unknown" rendition="#none">a-su-<hi rend="unknown" rendition="#none">i</hi>-γ</hi>
+            </p>
+            <p>2. <hi rend="unknown" rendition="#none">še-sw-<hi rend="unknown" rendition="#none">i </hi>                                   te-su-<hi rend="unknown" rendition="#none">i</hi>-ḍ (ta)-su-<hi rend="unknown" rendition="#none">e</hi>-ṭ</hi>
+            </p>
+            <p>3. <hi rend="unknown" rendition="#none">še-sw-<hi rend="unknown" rendition="#none">
+a</hi>                                   i-su-<hi rend="unknown" rendition="#none">a</hi> i-su-<hi rend="unknown" rendition="#none">a</hi>
+               </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Numerali</hi>. Esaminerò qui solo i numerali 3, 9, 10, e 100.</p>
+            <p>3. Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 sam-i</hi>
-          </foreign>  Mingr. <foreign xml:lang="xmf">
-            <hi rend="unknown" rendition="#none">sum-i</hi>
-          </foreign>  Lazo <hi rend="unknown" rendition="#none">
-šum</hi>, <hi rend="unknown"
-            rendition="#none">sum</hi>, <hi rend="unknown" rendition="#none">ǯum</hi>, <hi rend="unknown"
-            rendition="#none">dǯum</hi>  Suano <hi rend="unknown" rendition="#none">sem-i</hi>: <hi rend="unknown"
-            rendition="#none">
-ḫm-t</hi>  copto B <hi rend="unknown" rendition="#none">šom-t</hi> = sem. <hi
-            rend="unknown" rendition="#none">ϑam-</hi> in <hi rend="unknown"
-            rendition="#none">
-ϑam-ān-ī</hi>  8.  Ricordo per incidenza che <hi rend="unknown"
-            rendition="#none">
+               </foreign>  Mingr. <foreign xml:lang="xmf">
+                  <hi rend="unknown" rendition="#none">sum-i</hi>
+               </foreign>  Lazo <hi rend="unknown" rendition="#none">
+šum</hi>, <hi rend="unknown" rendition="#none">sum</hi>, <hi rend="unknown" rendition="#none">ǯum</hi>, <hi rend="unknown" rendition="#none">dǯum</hi>  Suano <hi rend="unknown" rendition="#none">sem-i</hi>: <hi rend="unknown" rendition="#none">
+ḫm-t</hi>  copto B <hi rend="unknown" rendition="#none">šom-t</hi> = sem. <hi rend="unknown" rendition="#none">ϑam-</hi> in <hi rend="unknown" rendition="#none">
+ϑam-ān-ī</hi>  8.  Ricordo per incidenza che <hi rend="unknown" rendition="#none">
 sam</hi>, <hi rend="unknown" rendition="#none">ϑam</hi> e sim à la forma del numerale 3 in tutte le lingue indonesi.</p>
-        <p>9. Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+            <p>9. Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 tsχ-ra</hi>
-          </foreign>  Mingr. e Lazo <foreign xml:lang="xmf">
-            <hi rend="unknown" rendition="#none">tšχ-oro</hi>
-          </foreign>   Suano <hi rend="unknown" rendition="#none">tšχ-ara</hi>: cfr. sem. <hi rend="unknown"
-            rendition="#none">tiš</hi> عo <hi rend="unknown" rendition="#none">tis</hi> عe forse anche il kušito <hi
-            rend="unknown" rendition="#none">sagal-</hi> (se sta per * <hi rend="unknown" rendition="#none">tsag-al-</hi>) forma assai antica, come dimostrerò altrove.</p>
-        <p>10. Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+               </foreign>  Mingr. e Lazo <foreign xml:lang="xmf">
+                  <hi rend="unknown" rendition="#none">tšχ-oro</hi>
+               </foreign>   Suano <hi rend="unknown" rendition="#none">tšχ-ara</hi>: cfr. sem. <hi rend="unknown" rendition="#none">tiš</hi> عo <hi rend="unknown" rendition="#none">tis</hi> عe forse anche il kušito <hi rend="unknown" rendition="#none">sagal-</hi> (se sta per * <hi rend="unknown" rendition="#none">tsag-al-</hi>) forma assai antica, come dimostrerò altrove.</p>
+            <p>10. Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 ath-i</hi>
-          </foreign>  Mingr. <foreign xml:lang="xmf">
-            <hi rend="unknown" rendition="#none">with-i</hi>
-          </foreign> ecc. (anche Cauc. settentrionele) : sem. <hi rend="unknown" rendition="#none">mi-at</hi> o <hi
-            rend="unknown" rendition="#none">m-iat</hi> 100, ma eg. <hi rend="unknown"
-            rendition="#none">
+               </foreign>  Mingr. <foreign xml:lang="xmf">
+                  <hi rend="unknown" rendition="#none">with-i</hi>
+               </foreign> ecc. (anche Cauc. settentrionele) : sem. <hi rend="unknown" rendition="#none">mi-at</hi> o <hi rend="unknown" rendition="#none">m-iat</hi> 100, ma eg. <hi rend="unknown" rendition="#none">
 m-t</hi> (copto <hi rend="unknown" rendition="#none">mēt</hi>) 10.</p>
-        <p>100. Suano <hi rend="unknown" rendition="#none">ašir</hi> (è genuino ?) Georg. <hi rend="unknown"
-            rendition="#none">asi</hi>  Mingr. <foreign xml:lang="xmf">
-            <hi rend="unknown" rendition="#none">oši</hi>
-          </foreign>  Lazo <hi rend="unknown" rendition="#none">oš</hi>, <hi rend="unknown"
-            rendition="#none">oši</hi> : sem. ع<hi rend="unknown" rendition="#none">ašr</hi>- (da * ع<hi rend="unknown"
-            rendition="#none">ašir</hi>, cfr. il plurale arabo  ع<hi rend="unknown"
-            rendition="#none">išrū́na</hi> 20, da * ع<hi rend="unknown"
-            rendition="#none">
-aširū́na</hi>; erra H. Zimmern, op.c. pag. 39) 10, ma eg. <hi rend="unknown"
-            rendition="#none">š</hi>ٔ ع copt. <hi rend="unknown"
-            rendition="#none">še</hi>  100. La radice trovasi nel sem. <hi rend="unknown" rendition="#none">ع</hi>
-          <hi rend="unknown" rendition="#none">šr</hi> = eg. <hi rend="unknown" rendition="#none">ع</hi>
-          <hi rend="unknown" rendition="#none">š </hi>
-          <hi rend="unknown" rendition="#none">ٔ</hi> essere molto numeroso. </p>
-        <p>Quanto ai rapporti lessicali, io mi limiterò qui ad alcuni esempi importanti, sceltifra i molti da me notati.</p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">da</hi>
-          </foreign>  „e”: Berb. <hi rend="unknown" rendition="#none">ed</hi>, <hi rend="unknown"
-            rendition="#none">d</hi>;  Agau  <hi rend="unknown" rendition="#none">-tā</hi> (nei numeraliI, <hi
-            rend="unknown" rendition="#none">-dī</hi>,  Barea <hi rend="unknown" rendition="#none">-tā</hi>,  Kunama <hi
-            rend="unknown" rendition="#none">-ta</hi>, <hi rend="unknown" rendition="#none">-te</hi>,  Beğa <hi
-            rend="unknown" rendition="#none">‑t</hi> ecc. (diffusissimo nell’Africa). Basco <hi rend="unknown" rendition="#none">eta</hi>.</p>
-        <p>Georg. <hi rend="unknown" rendition="#none">ara</hi>, <hi rend="unknown"
-            rendition="#none">ar</hi>  „non”, <hi rend="unknown"
-            rendition="#none">wer</hi>  „ne … pas” ecc. : Cam. Kab ecc. <hi rend="unknown"
-            rendition="#none">-ur</hi> (es. Cam. <hi rend="unknown" rendition="#none">ur essin-eγ</hi>, Kab. <hi
-            rend="unknown" rendition="#none">ur essin-eγ ara</hi>  „je ne sais pas”,  Ued Sahel <pb facs="#IMG.4" n="4"/>
-          <hi rend="unknown" rendition="#none">ur itsak nara</hi>  „il ne donnera pas”); sem <hi rend="unknown"
-            rendition="#none">al</hi>, <hi rend="unknown" rendition="#none">
+            <p>100. Suano <hi rend="unknown" rendition="#none">ašir</hi> (è genuino ?) Georg. <hi rend="unknown" rendition="#none">asi</hi>  Mingr. <foreign xml:lang="xmf">
+                  <hi rend="unknown" rendition="#none">oši</hi>
+               </foreign>  Lazo <hi rend="unknown" rendition="#none">oš</hi>, <hi rend="unknown" rendition="#none">oši</hi> : sem. ع<hi rend="unknown" rendition="#none">ašr</hi>- (da * ع<hi rend="unknown" rendition="#none">ašir</hi>, cfr. il plurale arabo  ع<hi rend="unknown" rendition="#none">išrū́na</hi> 20, da * ع<hi rend="unknown" rendition="#none">
+aširū́na</hi>; erra H. Zimmern, op.c. pag. 39) 10, ma eg. <hi rend="unknown" rendition="#none">š</hi>ٔ ع copt. <hi rend="unknown" rendition="#none">še</hi>  100. La radice trovasi nel sem. <hi rend="unknown" rendition="#none">ع</hi>
+               <hi rend="unknown" rendition="#none">šr</hi> = eg. <hi rend="unknown" rendition="#none">ع</hi>
+               <hi rend="unknown" rendition="#none">š </hi>
+               <hi rend="unknown" rendition="#none">ٔ</hi> essere molto numeroso. </p>
+            <p>Quanto ai rapporti lessicali, io mi limiterò qui ad alcuni esempi importanti, sceltifra i molti da me notati.</p>
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">da</hi>
+               </foreign>  „e”: Berb. <hi rend="unknown" rendition="#none">ed</hi>, <hi rend="unknown" rendition="#none">d</hi>;  Agau  <hi rend="unknown" rendition="#none">-tā</hi> (nei numeraliI, <hi rend="unknown" rendition="#none">-dī</hi>,  Barea <hi rend="unknown" rendition="#none">-tā</hi>,  Kunama <hi rend="unknown" rendition="#none">-ta</hi>, <hi rend="unknown" rendition="#none">-te</hi>,  Beğa <hi rend="unknown" rendition="#none">‑t</hi> ecc. (diffusissimo nell’Africa). Basco <hi rend="unknown" rendition="#none">eta</hi>.</p>
+            <p>Georg. <hi rend="unknown" rendition="#none">ara</hi>, <hi rend="unknown" rendition="#none">ar</hi>  „non”, <hi rend="unknown" rendition="#none">wer</hi>  „ne … pas” ecc. : Cam. Kab ecc. <hi rend="unknown" rendition="#none">-ur</hi> (es. Cam. <hi rend="unknown" rendition="#none">ur essin-eγ</hi>, Kab. <hi rend="unknown" rendition="#none">ur essin-eγ ara</hi>  „je ne sais pas”,  Ued Sahel <pb facs="#IMG.4" n="4"/>
+               <hi rend="unknown" rendition="#none">ur itsak nara</hi>  „il ne donnera pas”); sem <hi rend="unknown" rendition="#none">al</hi>, <hi rend="unknown" rendition="#none">
 lā</hi>, <hi rend="unknown" rendition="#none">ul</hi>.</p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown"
-            rendition="#none">dȝ-ma</hi> (ძმა)</foreign> „fratello” probabilmente = „figlio di mamma” (cfr. ძე <hi
-            rend="unknown" rendition="#none">dȝe</hi> „figlio” !), Mingr. <foreign xml:lang="xmf">
-            <hi rend="unknown" rendition="#none">dǯi-ma</hi>
-          </foreign>,  Lazo <hi rend="unknown" rendition="#none">dǯu-ma</hi>, <hi rend="unknown"
-            rendition="#none">ǯu-ma</hi> ecc. (nel Caucasico settentrionale manca il secondo termine <hi rend="unknown"
-            rendition="#none">-ma</hi>, v. Erck.)<note n="4" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4480">von Erckert (1895)</ref>
-            </bibl>.</note> : Kab. <hi rend="unknown"
-            rendition="#none">
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">dȝ-ma</hi> (ძმა)</foreign> „fratello” probabilmente = „figlio di mamma” (cfr. ძე <hi rend="unknown" rendition="#none">dȝe</hi> „figlio” !), Mingr. <foreign xml:lang="xmf">
+                  <hi rend="unknown" rendition="#none">dǯi-ma</hi>
+               </foreign>,  Lazo <hi rend="unknown" rendition="#none">dǯu-ma</hi>, <hi rend="unknown" rendition="#none">ǯu-ma</hi> ecc. (nel Caucasico settentrionale manca il secondo termine <hi rend="unknown" rendition="#none">-ma</hi>, v. Erck.)<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4480">von Erckert (1895)</ref>
+                  </bibl>.</note> : Kab. <hi rend="unknown" rendition="#none">
 eg-ma</hi> „fratello” = „figlio di mamma“ (cfr. Cam. ⴳ<note n="5" place="foot" type="editorial">Kommentar Johannes Mücke: In moderner Tifinaghschrift transkribiert [Zeichen in Unicode: U+2D33 (11571)]. Im Brief dargestellt um 90° nach rechts gedreht.</note>
-          <hi rend="unknown" rendition="#none">ag’</hi> „figlio“ ecc.). Questa equazione è di somma importanza per la posizione primitiva del genitivo nelle lingue kharthweliche.</p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+               <hi rend="unknown" rendition="#none">ag’</hi> „figlio“ ecc.). Questa equazione è di somma importanza per la posizione primitiva del genitivo nelle lingue kharthweliche.</p>
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 thow-li</hi>
-          </foreign> „neve”,  Mingr. <foreign xml:lang="xmf">
-            <hi rend="unknown" rendition="#none">the-ri</hi>, <hi rend="unknown" rendition="#none">thi-ri</hi>
-          </foreign>,  Lazo e Suano <hi rend="unknown" rendition="#none">thvi-ri</hi> (Erck.; Adjaria Lazo <hi
-            rend="unknown" rendition="#none">türi</hi> ecc. <hi rend="unknown"
-            rendition="#none">tu</hi> neiger), Čeč. <hi rend="unknown" rendition="#none">luo</hi>, <hi rend="unknown"
-            rendition="#none">lo</hi>; forma primitiva probabilmente  *<hi rend="unknown"
-            rendition="#none">thlow</hi> (v. B. Munkácsi, Kaukasischer Einfluss in den finnisch-magyarischen Sprachen, Keleti Szemle I 1900 pag. 211; noterò per incidenza che la parola ricorre anche nelle lingue uraliche: lapp. n. <hi
-            rend="unknown" rendition="#none">dälle</hi>,  lapp. sv. <hi rend="unknown"
-            rendition="#none">
-tele</hi> „harter schnee”,  perm. <hi rend="unknown" rendition="#none">tola</hi>, <hi
-            rend="unknown" rendition="#none">tova</hi> „vom winde zusammengehäufter schnee”  est. <hi rend="unknown"
-            rendition="#none">tal’v</hi> „winter, schnee” ecc. v. Donner, Vgl. W. d. finnisch-ugr. Sprachen I pag. 142 seg.) o forse anche  *<hi
-            rend="unknown" rendition="#none">thlog<hi rendition="#sup">w</hi>
-          </hi> : sem. <hi rend="unknown" rendition="#none">ϑalg-</hi> „neve”. Questa equazione è di grande importanza per la determinazione della sede primitiva dei Semiti.</p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+               </foreign> „neve”,  Mingr. <foreign xml:lang="xmf">
+                  <hi rend="unknown" rendition="#none">the-ri</hi>, <hi rend="unknown" rendition="#none">thi-ri</hi>
+               </foreign>,  Lazo e Suano <hi rend="unknown" rendition="#none">thvi-ri</hi> (Erck.; Adjaria Lazo <hi rend="unknown" rendition="#none">türi</hi> ecc. <hi rend="unknown" rendition="#none">tu</hi> neiger), Čeč. <hi rend="unknown" rendition="#none">luo</hi>, <hi rend="unknown" rendition="#none">lo</hi>; forma primitiva probabilmente  *<hi rend="unknown" rendition="#none">thlow</hi> (v. B. Munkácsi, Kaukasischer Einfluss in den finnisch-magyarischen Sprachen, Keleti Szemle I 1900 pag. 211; noterò per incidenza che la parola ricorre anche nelle lingue uraliche: lapp. n. <hi rend="unknown" rendition="#none">dälle</hi>,  lapp. sv. <hi rend="unknown" rendition="#none">
+tele</hi> „harter schnee”,  perm. <hi rend="unknown" rendition="#none">tola</hi>, <hi rend="unknown" rendition="#none">tova</hi> „vom winde zusammengehäufter schnee”  est. <hi rend="unknown" rendition="#none">tal’v</hi> „winter, schnee” ecc. v. Donner, Vgl. W. d. finnisch-ugr. Sprachen I pag. 142 seg.) o forse anche  *<hi rend="unknown" rendition="#none">thlog<hi rendition="#sup">w</hi>
+               </hi> : sem. <hi rend="unknown" rendition="#none">ϑalg-</hi> „neve”. Questa equazione è di grande importanza per la determinazione della sede primitiva dei Semiti.</p>
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 pi-ri</hi>
-          </foreign>  Mingr. <foreign xml:lang="xmf">
-            <hi rend="unknown" rendition="#none">pi-dǯi</hi>
-          </foreign> bocca, Georg. <hi rend="unknown" rendition="#none">proši</hi> labbro = * pir-óši : sem <hi
-            rend="unknown" rendition="#none">pī</hi> bocca. Il Kab. <hi rend="unknown"
-            rendition="#none">
-aš-en-afir</hi> "labbro" significò originariamente „ciò che è della bocca (* <hi
-            rend="unknown" rendition="#none">a-fir</hi>)” e corrisponde al georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">sa-na-pir-o</hi>
-          </foreign> „ce qui borde, bord” (<hi rend="unknown"
-            rendition="#none">na-piri</hi> „face, bord d’un fleuve”), cfr. anche ar. شَفير <hi rend="unknown"
-            rendition="#none">šafīr-</hi> Rand (شَفْرة Schneide, مِشْفَر Lefze !), syr. <hi rend="unknown"
-            rendition="#none">
-spārā</hi> Rand = eg. <hi rend="unknown"
-            rendition="#none">spr</hi> orlo, labbro. Qui va citato anche il sem. <hi rend="unknown"
-            rendition="#none">śapa-t</hi> f labbro = eg. <hi rend="unknown" rendition="#none">spt</hi>  copto <hi
-            rend="unknown" rendition="#none">spotu</hi> orlo, labbro (<hi rend="unknown"
-            rendition="#none">
-aspe</hi> f. lingua), la quale forma, senza il <hi rend="unknown"
-            rendition="#none">-t</hi>, trovasi anche nel gruppo caucasico settentrionale: Arči <hi rend="unknown"
-            rendition="#none">sob</hi> ecc. (e nelle lingue uraliche: Wogulo <hi rend="unknown"
-            rendition="#none">sūp</hi>, <hi rend="unknown" rendition="#none">sōp</hi> ecc.  magiaro száj bocca : <hi
-            rend="unknown" rendition="#none">aja-k</hi> labbra ?). Nel basco <hi rend="unknown"
-            rendition="#none">ez-pańa</hi>, <hi rend="unknown"
-            rendition="#none">es-paina</hi> la seconda parte ricorda l'ebr. פָּנִים faccia, os. Infine considero come probabile che appartenga alla mede<pb
-            facs="#IMG.5" n="5"/>sima radice <hi rend="unknown" rendition="#none">P</hi> anche il copto <hi
-            rend="unknown" rendition="#none">pi</hi> bacio, osculum (onde <hi rend="unknown"
-            rendition="#none">ti-pi</hi> bacare; cfr. <hi rend="unknown" rendition="#none">ti-pe</hi>, <hi
-            rend="unknown" rendition="#none">
-ti-pi</hi> f. = eg. <hi rend="unknown"
-            rendition="#none">d-pt</hi> gusto, <hi rend="unknown"
-            rendition="#none">tōp</hi> gustare), parola che giunge fino nell’Africa centrale col Bari <hi rend="unknown"
-            rendition="#none">pi-et</hi> f. bacio (<hi rend="unknown"
-            rendition="#none">pi-un</hi> baciare) e ritrovasi d'altra parte nel Caucaso: Thuš <hi rend="unknown"
-            rendition="#none">pai</hi>, Kas. <hi rend="unknown" rendition="#none">ṕai</hi>, Awar <hi rend="unknown"
-            rendition="#none">u-ba</hi> bacio (Osseto <hi rend="unknown" rendition="#none">
+               </foreign>  Mingr. <foreign xml:lang="xmf">
+                  <hi rend="unknown" rendition="#none">pi-dǯi</hi>
+               </foreign> bocca, Georg. <hi rend="unknown" rendition="#none">proši</hi> labbro = * pir-óši : sem <hi rend="unknown" rendition="#none">pī</hi> bocca. Il Kab. <hi rend="unknown" rendition="#none">
+aš-en-afir</hi> "labbro" significò originariamente „ciò che è della bocca (* <hi rend="unknown" rendition="#none">a-fir</hi>)” e corrisponde al georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">sa-na-pir-o</hi>
+               </foreign> „ce qui borde, bord” (<hi rend="unknown" rendition="#none">na-piri</hi> „face, bord d’un fleuve”), cfr. anche ar. شَفير <hi rend="unknown" rendition="#none">šafīr-</hi> Rand (شَفْرة Schneide, مِشْفَر Lefze !), syr. <hi rend="unknown" rendition="#none">
+spārā</hi> Rand = eg. <hi rend="unknown" rendition="#none">spr</hi> orlo, labbro. Qui va citato anche il sem. <hi rend="unknown" rendition="#none">śapa-t</hi> f labbro = eg. <hi rend="unknown" rendition="#none">spt</hi>  copto <hi rend="unknown" rendition="#none">spotu</hi> orlo, labbro (<hi rend="unknown" rendition="#none">
+aspe</hi> f. lingua), la quale forma, senza il <hi rend="unknown" rendition="#none">-t</hi>, trovasi anche nel gruppo caucasico settentrionale: Arči <hi rend="unknown" rendition="#none">sob</hi> ecc. (e nelle lingue uraliche: Wogulo <hi rend="unknown" rendition="#none">sūp</hi>, <hi rend="unknown" rendition="#none">sōp</hi> ecc.  magiaro száj bocca : <hi rend="unknown" rendition="#none">aja-k</hi> labbra ?). Nel basco <hi rend="unknown" rendition="#none">ez-pańa</hi>, <hi rend="unknown" rendition="#none">es-paina</hi> la seconda parte ricorda l'ebr. פָּנִים faccia, os. Infine considero come probabile che appartenga alla mede<pb facs="#IMG.5" n="5"/>sima radice <hi rend="unknown" rendition="#none">P</hi> anche il copto <hi rend="unknown" rendition="#none">pi</hi> bacio, osculum (onde <hi rend="unknown" rendition="#none">ti-pi</hi> bacare; cfr. <hi rend="unknown" rendition="#none">ti-pe</hi>, <hi rend="unknown" rendition="#none">
+ti-pi</hi> f. = eg. <hi rend="unknown" rendition="#none">d-pt</hi> gusto, <hi rend="unknown" rendition="#none">tōp</hi> gustare), parola che giunge fino nell’Africa centrale col Bari <hi rend="unknown" rendition="#none">pi-et</hi> f. bacio (<hi rend="unknown" rendition="#none">pi-un</hi> baciare) e ritrovasi d'altra parte nel Caucaso: Thuš <hi rend="unknown" rendition="#none">pai</hi>, Kas. <hi rend="unknown" rendition="#none">ṕai</hi>, Awar <hi rend="unknown" rendition="#none">u-ba</hi> bacio (Osseto <hi rend="unknown" rendition="#none">
 pa</hi>).</p>
-        <p>Ingiloi <hi rend="unknown" rendition="#none">tot</hi>  gen <hi rend="unknown"
-            rendition="#none">tot-i</hi> Pfote, Hand,  Suano <hi rend="unknown" rendition="#none">
-twet</hi>  gen. <hi
-            rend="unknown" rendition="#none">tot-i</hi> ecc. : eg. <hi rend="unknown"
-            rendition="#none">d-t</hi> f. mano,  copto atono <hi rend="unknown"
-            rendition="#none">te-</hi>, ma davanti a suffissi ­<hi rend="unknown" rendition="#none">toot-</hi> (<hi
-            rend="unknown" rendition="#none">
-toot-<hi
-            rendition="#sup">e</hi>f</hi>  la sua mano). La seconda dentale è nell'egiziano il suffisso del femminile e lo stesso dovette essere in origine la corrispondente dentale della parola nel numerale eg. <hi
-            rend="unknown" rendition="#none">dw<hi rendition="#sup">s</hi>
-          </hi>,  copto <hi rend="unknown" rendition="#none">tiu</hi> 5.</p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+            <p>Ingiloi <hi rend="unknown" rendition="#none">tot</hi>  gen <hi rend="unknown" rendition="#none">tot-i</hi> Pfote, Hand,  Suano <hi rend="unknown" rendition="#none">
+twet</hi>  gen. <hi rend="unknown" rendition="#none">tot-i</hi> ecc. : eg. <hi rend="unknown" rendition="#none">d-t</hi> f. mano,  copto atono <hi rend="unknown" rendition="#none">te-</hi>, ma davanti a suffissi ­<hi rend="unknown" rendition="#none">toot-</hi> (<hi rend="unknown" rendition="#none">
+toot-<hi rendition="#sup">e</hi>f</hi>  la sua mano). La seconda dentale è nell'egiziano il suffisso del femminile e lo stesso dovette essere in origine la corrispondente dentale della parola nel numerale eg. <hi rend="unknown" rendition="#none">dw<hi rendition="#sup">s</hi>
+               </hi>,  copto <hi rend="unknown" rendition="#none">tiu</hi> 5.</p>
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 qoweli</hi>
-          </foreign> tutto : etiopico <hi rend="unknown" rendition="#none">k<hi
-            rendition="#sup">u</hi>el</hi> ecc. Assai prima che fosse pubblicato nella ZDMG.<note n="6" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">Zeitschrift der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3090">deutschen morgenländischen Gesellschaft</ref>
-            </hi>.</note> 1901 il lavoro del Grimme: Theorie der ursemitischen labialisierten Gutturale, io avevo scoperto che le gutturali labializzate dell'etiopico e delle lingue kušitiche sono primitive. Io era pervenuto a questa conclusione dall'esame di radici comuni con gutturale labializzato nell'indoeuropeo e nel (camito)semitico. Qui darò ancora il seguente esempio:</p>
-        <p>Georg. <hi rend="unknown" rendition="#none">hur</hi> brûler; tñ. <hi rend="unknown" rendition="#none">g<hi
-            rendition="#sup">u</hi>āḥare</hi> sich entzünden, ar. <hi rend="unknown"
-            rendition="#none">ḥarra</hi>,  ebr. aram. <hi rend="unknown"
-            rendition="#none">ḥar</hi> brennen, heiss sein (ebr. <hi rend="unknown"
-            rendition="#none">ḥar-ḥur</hi> Entzündung, Fieber) ecc. : idg. <hi rend="unknown" rendition="#none">g<hi
-            rendition="#sup">u</hi>her</hi> heiss sein (gr. δερμóς  lat. <hi rend="unknown" rendition="#none">formus</hi> ecc.).</p>
-        <p>Georg. <hi rend="unknown" rendition="#none">qruĭ</hi> sordo : copto <hi rend="unknown" rendition="#none">kur</hi> sordo.</p>
-        <p>Georg. rad. <hi rend="unknown" rendition="#none">rtq</hi> cingere : ebr. <hi rend="unknown" rendition="#none">rtq</hi> cingere, legare.</p>
-        <p>Georg. <hi rend="unknown" rendition="#none">dum-</hi> tacere : ebr. <hi rend="unknown"
-            rendition="#none">dmm</hi>, <hi rend="unknown" rendition="#none">
+               </foreign> tutto : etiopico <hi rend="unknown" rendition="#none">k<hi rendition="#sup">u</hi>el</hi> ecc. Assai prima che fosse pubblicato nella ZDMG.<note n="6" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Zeitschrift der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3090">deutschen morgenländischen Gesellschaft</ref>
+                  </hi>.</note> 1901 il lavoro del Grimme: Theorie der ursemitischen labialisierten Gutturale, io avevo scoperto che le gutturali labializzate dell'etiopico e delle lingue kušitiche sono primitive. Io era pervenuto a questa conclusione dall'esame di radici comuni con gutturale labializzato nell'indoeuropeo e nel (camito)semitico. Qui darò ancora il seguente esempio:</p>
+            <p>Georg. <hi rend="unknown" rendition="#none">hur</hi> brûler; tñ. <hi rend="unknown" rendition="#none">g<hi rendition="#sup">u</hi>āḥare</hi> sich entzünden, ar. <hi rend="unknown" rendition="#none">ḥarra</hi>,  ebr. aram. <hi rend="unknown" rendition="#none">ḥar</hi> brennen, heiss sein (ebr. <hi rend="unknown" rendition="#none">ḥar-ḥur</hi> Entzündung, Fieber) ecc. : idg. <hi rend="unknown" rendition="#none">g<hi rendition="#sup">u</hi>her</hi> heiss sein (gr. δερμóς  lat. <hi rend="unknown" rendition="#none">formus</hi> ecc.).</p>
+            <p>Georg. <hi rend="unknown" rendition="#none">qruĭ</hi> sordo : copto <hi rend="unknown" rendition="#none">kur</hi> sordo.</p>
+            <p>Georg. rad. <hi rend="unknown" rendition="#none">rtq</hi> cingere : ebr. <hi rend="unknown" rendition="#none">rtq</hi> cingere, legare.</p>
+            <p>Georg. <hi rend="unknown" rendition="#none">dum-</hi> tacere : ebr. <hi rend="unknown" rendition="#none">dmm</hi>, <hi rend="unknown" rendition="#none">
 dmy</hi> tacere.</p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">smi</hi>
-          </foreign> (?), Lazo <hi rend="unknown" rendition="#none">simin</hi> udire : sem. <hi rend="unknown"
-            rendition="#none">šm</hi>ع <note n="7" place="foot"
-            type="editorial">Pers. comm. Dörte Borchers: „'smع' wären Wurzel oder auch Stammkonsonanten zum Obigen. mit initialem šīn (ش) anstelle von initialem sīn (س) bedeutet das Wort z.B. 'Wachs' (vokalisiert ʃu'muːʔ)“.</note> (arabo سَمِعَ <hi
-            rend="unknown" rendition="#none">sami</hi>ع<hi rend="unknown" rendition="#none">a</hi>) eg. <hi
-            rend="unknown" rendition="#none">s<hi rend="unknown" rendition="#none">d</hi>m</hi>. </p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">qar</hi>
-          </foreign> incontrare : sem. eg. e kušito <hi rend="unknown" rendition="#none">qar-</hi> incontrare.</p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">bru</hi>
-          </foreign> vertigine, <hi rend="unknown" rendition="#none">bruneba</hi> tourner, roule : Kab <hi
-            rend="unknown" rendition="#none">ebren</hi> tourner. Il Bopp confrontò l'ai. <hi rend="unknown" rendition="#none">bhram</hi> drehen !</p>
-        <p>Mingr. e Lazo <foreign xml:lang="xmf">
-            <hi rend="unknown" rendition="#none">zir</hi>, <hi rend="unknown" rendition="#none">dzir</hi>
-          </foreign> vedere : Berbereo <hi rend="unknown" rendition="#none">zer</hi> vedere.</p>
-        <pb facs="#IMG.6" n="6"/>
-        <p>Lazo <hi rend="unknown" rendition="#none">dis</hi> ridere, ecc. : Berbereo <hi rend="unknown" rendition="#none">eḍs</hi> ridere.</p>
-        <p>Citerò infine alcuni Kulturwörter:</p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">smi</hi>
+               </foreign> (?), Lazo <hi rend="unknown" rendition="#none">simin</hi> udire : sem. <hi rend="unknown" rendition="#none">šm</hi>ع <note n="7" place="foot" type="editorial">Pers. comm. Dörte Borchers: „'smع' wären Wurzel oder auch Stammkonsonanten zum Obigen. mit initialem šīn (ش) anstelle von initialem sīn (س) bedeutet das Wort z.B. 'Wachs' (vokalisiert ʃu'muːʔ)“.</note> (arabo سَمِعَ <hi rend="unknown" rendition="#none">sami</hi>ع<hi rend="unknown" rendition="#none">a</hi>) eg. <hi rend="unknown" rendition="#none">s<hi rend="unknown" rendition="#none">d</hi>m</hi>. </p>
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">qar</hi>
+               </foreign> incontrare : sem. eg. e kušito <hi rend="unknown" rendition="#none">qar-</hi> incontrare.</p>
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">bru</hi>
+               </foreign> vertigine, <hi rend="unknown" rendition="#none">bruneba</hi> tourner, roule : Kab <hi rend="unknown" rendition="#none">ebren</hi> tourner. Il Bopp confrontò l'ai. <hi rend="unknown" rendition="#none">bhram</hi> drehen !</p>
+            <p>Mingr. e Lazo <foreign xml:lang="xmf">
+                  <hi rend="unknown" rendition="#none">zir</hi>, <hi rend="unknown" rendition="#none">dzir</hi>
+               </foreign> vedere : Berbereo <hi rend="unknown" rendition="#none">zer</hi> vedere.</p>
+            <pb facs="#IMG.6" n="6"/>
+            <p>Lazo <hi rend="unknown" rendition="#none">dis</hi> ridere, ecc. : Berbereo <hi rend="unknown" rendition="#none">eḍs</hi> ridere.</p>
+            <p>Citerò infine alcuni Kulturwörter:</p>
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 thaph-li</hi>
-          </foreign>  Mingr. <foreign xml:lang="xmf">
-            <hi rend="unknown" rendition="#none">thophu-ri</hi>
-          </foreign>  miele : ebr. <hi rend="unknown" rendition="#none">d<hi
-            rendition="#sup">e</hi>b-áš</hi> miele,  <hi rend="unknown" rendition="#none">d<hi rendition="#sup">e</hi>b-ôrā</hi> ape.</p>
-        <p>Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+               </foreign>  Mingr. <foreign xml:lang="xmf">
+                  <hi rend="unknown" rendition="#none">thophu-ri</hi>
+               </foreign>  miele : ebr. <hi rend="unknown" rendition="#none">d<hi rendition="#sup">e</hi>b-áš</hi> miele,  <hi rend="unknown" rendition="#none">d<hi rendition="#sup">e</hi>b-ôrā</hi> ape.</p>
+            <p>Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 bathi</hi>
-          </foreign> oca : eg. <hi rend="unknown" rendition="#none">
-            <hi rendition="#sup">s</hi>pd</hi> Gans; Bantu orientale <hi rend="unknown"
-            rendition="#none">-bata</hi> e sim. „a duck” (v. Torrend, Comp. Gra. pag. 88 e 95); Samojedo Jur <hi
-            rend="unknown" rendition="#none">jabto</hi>, <hi rend="unknown" rendition="#none">jabtu</hi>, ecc. Quala sarà stato il luogo d'origine di questa parola quasi cosmopolita?</p>
-        <p>Lazo <hi rend="unknown" rendition="#none">džumu</hi>, <hi rend="unknown"
-            rendition="#none">tšumo</hi> sale, <hi rend="unknown" rendition="#none">džumori</hi> aceto (Georg. <foreign xml:lang="ka">
-            <hi rend="unknown" rendition="#none">
+               </foreign> oca : eg. <hi rend="unknown" rendition="#none">
+                  <hi rendition="#sup">s</hi>pd</hi> Gans; Bantu orientale <hi rend="unknown" rendition="#none">-bata</hi> e sim. „a duck” (v. Torrend, Comp. Gra. pag. 88 e 95); Samojedo Jur <hi rend="unknown" rendition="#none">jabto</hi>, <hi rend="unknown" rendition="#none">jabtu</hi>, ecc. Quala sarà stato il luogo d'origine di questa parola quasi cosmopolita?</p>
+            <p>Lazo <hi rend="unknown" rendition="#none">džumu</hi>, <hi rend="unknown" rendition="#none">tšumo</hi> sale, <hi rend="unknown" rendition="#none">džumori</hi> aceto (Georg. <foreign xml:lang="ka">
+                  <hi rend="unknown" rendition="#none">
 dzamari</hi>
-          </foreign> ecc.) :  eg. <hi rend="unknown" rendition="#none">hm<hi rendition="#sup">s</hi>-t</hi> copto <hi
-            rend="unknown" rendition="#none">hmu</hi> sale (copto <hi rend="unknown"
-            rendition="#none">hemǧ</hi> aceto), ebr.  חמץ  essere o divenire acido, fermentato, חֺמֶץ aceto, ar. حَمِضَ. Questa parola giunge fino nel Muzuk, al sud del lago Csad: muzuk <hi
-            rend="unknown" rendition="#none">ḥom</hi> sale !</p>
-        <p>Qui mi fermo, sebbene il molto materiale da me raccolto m'inviterebbe a seguitare. Io non dubito di affermare che le lingue kharthweliche sono assai affini alle lingue camitosemitiche. Ma esse sono d'altra parte collegate anche con altri gruppi linguistici, come dimostrerò nel mio maggior lavoro. Il fondo più antico mi sembra però camitosemitico o comune a più gruppi dell'Asia e dell'Africa.</p>
-        <p>Il presente scritto, alquanto ampliato, si pubblicherebbe presto, se ciò a Lei non dispiace, nel <hi
-            rend="unknown"
-            rendition="#none">Giornale della società asiatica italiana (Firenze)</hi> in forma di lettera aperta a Lei indirizzata.<note
-            n="8" place="foot" type="editorial">Diese Publikation Trombettis wird in der Tat realisiert: <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1633">
+               </foreign> ecc.) :  eg. <hi rend="unknown" rendition="#none">hm<hi rendition="#sup">s</hi>-t</hi> copto <hi rend="unknown" rendition="#none">hmu</hi> sale (copto <hi rend="unknown" rendition="#none">hemǧ</hi> aceto), ebr.  חמץ  essere o divenire acido, fermentato, חֺמֶץ aceto, ar. حَمِضَ. Questa parola giunge fino nel Muzuk, al sud del lago Csad: muzuk <hi rend="unknown" rendition="#none">ḥom</hi> sale !</p>
+            <p>Qui mi fermo, sebbene il molto materiale da me raccolto m'inviterebbe a seguitare. Io non dubito di affermare che le lingue kharthweliche sono assai affini alle lingue camitosemitiche. Ma esse sono d'altra parte collegate anche con altri gruppi linguistici, come dimostrerò nel mio maggior lavoro. Il fondo più antico mi sembra però camitosemitico o comune a più gruppi dell'Asia e dell'Africa.</p>
+            <p>Il presente scritto, alquanto ampliato, si pubblicherebbe presto, se ciò a Lei non dispiace, nel <hi rend="unknown" rendition="#none">Giornale della società asiatica italiana (Firenze)</hi> in forma di lettera aperta a Lei indirizzata.<note n="8" place="foot" type="editorial">Diese Publikation Trombettis wird in der Tat realisiert: <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1633">
 Trombetti (1902-1903)</ref>
-            </bibl>, sie ist als offener Brief an Schuchardt betitelt.</note> Si compiaceva perciò di significarmi se Ella gradisce l'omaggio non ostante i molti difetti dello scritto e la pochezza dello scrittore. Le sarei grato se avesse la bontà di scrivermi al più presto in proposito, acciocchè io possa regolarmi.</p>
-        <p>Mi auguro che almeno qualche cosa di ciò che ho scritto possa ottenere la Sua approvazione. Faccio poi voti che Ella si ristabilisca presto e bene in salute.</p>
-        <closer>
-          <salute>Con la massima stima</salute>
-          <lb/>
-          <salute>Suo devm̃o</salute>
-          <lb/>
-          <signed> Prof.<persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">Alfredo Trombetti</persName>
-          </signed>
-          <dateline>R. Liceo – Cuneo</dateline>
-        </closer>
-      </div>
-    </body>
-  </text>
+                  </bibl>, sie ist als offener Brief an Schuchardt betitelt.</note> Si compiaceva perciò di significarmi se Ella gradisce l'omaggio non ostante i molti difetti dello scritto e la pochezza dello scrittore. Le sarei grato se avesse la bontà di scrivermi al più presto in proposito, acciocchè io possa regolarmi.</p>
+            <p>Mi auguro che almeno qualche cosa di ciò che ho scritto possa ottenere la Sua approvazione. Faccio poi voti che Ella si ristabilisca presto e bene in salute.</p>
+            <closer>
+               <salute>Con la massima stima</salute>
+               <lb/>
+               <salute>Suo devm̃o</salute>
+               <lb/>
+               <signed> Prof.<persName ref="[authorityLink]">Alfredo Trombetti</persName>
+               </signed>
+               <dateline>R. Liceo – Cuneo</dateline>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

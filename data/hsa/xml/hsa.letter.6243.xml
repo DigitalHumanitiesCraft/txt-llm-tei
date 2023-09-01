@@ -1,350 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Emilio Teza (49-ST29)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/6243" type="PID">o:hsa.letter.6243</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">49-ST29</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Italien</country>
-            <region>Venetien</region>
-            <settlement>Venedig</settlement>
-            <institution>Biblioteca Nazionale Marciana</institution>
-            <repository ref="https://bibliotecanazionalemarciana.cultura.gov.it/la-biblioteca/il-patrimonio/patrimonio-librario/fondi/fondo-teza">Fondo Teza</repository>
-            <idno type="shelfmark">ST29</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.103" ref="http://sws.geonames.org/3172394">Neapel</origPlace>
-              <origDate ana="dcterms:created" when="1896-04-19">1896-04-19</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2018">2018</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Emilio Teza</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2852"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.6243">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.103" key="#GID.1" ref="http://sws.geonames.org/3172394">Neapel</placeName>
-          <date when="1896-04-19">1896-04-19</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2852" ref="https://viaf.org/viaf/64041974">
-            <forename>Emilio</forename>
-            <surname>Teza</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Naples</settlement>
-                <name ref="http://geonames.org/3172394" type="fcode:PPLA">Naples</name>
-                <location>
-                  <geo>14.26811,40.85216</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2852" type="context">
-                        Korrespondenz Hugo Schuchardt - Emilio Teza
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4545" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Großherzogliche Bibliothek Weimar</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6243" xml:id="IMG.1">
-        <desc>
-          <ref target="https://bibliotecanazionalemarciana.cultura.gov.it/la-biblioteca/il-patrimonio/patrimonio-librario/fondi/fondo-teza">Biblioteca Nazionale Marciana - Fondo Teza</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6243" xml:id="IMG.2">
-        <desc>
-          <ref target="https://bibliotecanazionalemarciana.cultura.gov.it/la-biblioteca/il-patrimonio/patrimonio-librario/fondi/fondo-teza">Biblioteca Nazionale Marciana - Fondo Teza</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6243" xml:id="IMG.3">
-        <desc>
-          <ref target="https://bibliotecanazionalemarciana.cultura.gov.it/la-biblioteca/il-patrimonio/patrimonio-librario/fondi/fondo-teza">Biblioteca Nazionale Marciana - Fondo Teza</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6243" xml:id="IMG.4">
-        <desc>
-          <ref target="https://bibliotecanazionalemarciana.cultura.gov.it/la-biblioteca/il-patrimonio/patrimonio-librario/fondi/fondo-teza">Biblioteca Nazionale Marciana - Fondo Teza</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6243" xml:id="IMG.5">
-        <desc>
-          <ref target="https://bibliotecanazionalemarciana.cultura.gov.it/la-biblioteca/il-patrimonio/patrimonio-librario/fondi/fondo-teza">Biblioteca Nazionale Marciana - Fondo Teza</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6243" xml:id="IMG.6">
-        <desc>
-          <ref target="https://bibliotecanazionalemarciana.cultura.gov.it/la-biblioteca/il-patrimonio/patrimonio-librario/fondi/fondo-teza">Biblioteca Nazionale Marciana - Fondo Teza</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.6243" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Neapel, Hotel Londres<lb/>19 April 1896</dateline>
-        <opener>Lieber Freund!</opener>
-
-        <p>Seit fast drei Wochen bin ich nun in Neapel, und habe bisher keinen einzigen Tag gehabt der nach meinem Geschmack gewesen wäre, und kaum einen oder zwei der anderen Menschen völlig befriedigt hätte. Meine Nerven haben darunter sehr gelitten und mich wiederum an Allem gehindert. Indessen habe ich doch in Bezug auf die georgischen Dinge einiges leisten können. Ich habe das Buch von <pb
-            facs="#IMG.2" n="2"/> P. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1315">Rocco</persName> eingesehen,<note n="1" place="foot"
-              type="editorial">Vgl. Schuchardts <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.6232">Brief 39-ST23 vom 23.2.1896</ref>.</note> und zunächst festgestellt dass es unvollendet geblieben ist, insbesondere über das 18. Jhrh., das für Ihre Grammatik in Betracht kommt, Nichts enthält. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1353">
-D’Ovidio</persName> hat an den Verfasser, jetzt Erzbischof von Chieti (Onkel des Professors E. Cocchia) für mich geschrieben<note
-            n="2" place="foot"
-              type="editorial">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.6243" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Neapel, Hotel Londres<lb/>19 April 1896</dateline>
+            <opener>Lieber Freund!</opener>
+            <p>Seit fast drei Wochen bin ich nun in Neapel, und habe bisher keinen einzigen Tag gehabt der nach meinem Geschmack gewesen wäre, und kaum einen oder zwei der anderen Menschen völlig befriedigt hätte. Meine Nerven haben darunter sehr gelitten und mich wiederum an Allem gehindert. Indessen habe ich doch in Bezug auf die georgischen Dinge einiges leisten können. Ich habe das Buch von <pb facs="#IMG.2" n="2"/> P. <persName ref="[authorityLink]">Rocco</persName> eingesehen,<note n="1" place="foot" type="editorial">Vgl. Schuchardts <ref target="https://gams.uni-graz.at/o:hsa.letter.6232">Brief 39-ST23 vom 23.2.1896</ref>.</note> und zunächst festgestellt dass es unvollendet geblieben ist, insbesondere über das 18. Jhrh., das für Ihre Grammatik in Betracht kommt, Nichts enthält. <persName ref="[authorityLink]">
+D’Ovidio</persName> hat an den Verfasser, jetzt Erzbischof von Chieti (Onkel des Professors E. Cocchia) für mich geschrieben<note n="2" place="foot" type="editorial">
 Vgl. die Briefe Bf. Cocchias (1830-1901) an Schuchardt, HSA, Bibl.Nr. 
-01648-01650. Der Kapuzinerpater <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1315">Rocco Cocchia</persName> wurde 1876 Titularerzbischof von Sirace in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.6090">Armenien</placeName>, 1883 Ebf. von Otranto und 1887 von Chieti. Auch mit dem Neffen, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1314">Enrico Cocchia</persName> (1859-1930), Prof. d. Klass. Philologie in Neapel, gibt es eine Korrespondenz (HSA, Bibl.Nr. 
+01648-01650. Der Kapuzinerpater <persName ref="[authorityLink]">Rocco Cocchia</persName> wurde 1876 Titularerzbischof von Sirace in <placeName ref="[authorityLink]">Armenien</placeName>, 1883 Ebf. von Otranto und 1887 von Chieti. Auch mit dem Neffen, <persName ref="[authorityLink]">Enrico Cocchia</persName> (1859-1930), Prof. d. Klass. Philologie in Neapel, gibt es eine Korrespondenz (HSA, Bibl.Nr. 
 
-01640-01647).</note> Sehr interessant sind die Nachrichten über Bernardo da Napoli und am Meisten die – von der Sie mir keine Mitteilung gemacht hatten – dass er ein Gedicht <hi
-            rend="unknown" rendition="#none">
-Rešaniani</hi> und eine Erzählung von König <hi rend="unknown"
-            rendition="#none">
+01640-01647).</note> Sehr interessant sind die Nachrichten über Bernardo da Napoli und am Meisten die – von der Sie mir keine Mitteilung gemacht hatten – dass er ein Gedicht <hi rend="unknown" rendition="#none">
+Rešaniani</hi> und eine Erzählung von König <hi rend="unknown" rendition="#none">
 Baaman</hi> in georgischer Sprache hinterlassen habe.<note n="3" place="foot" type="editorial">Schuchardt stützt sich hier auf <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6488">P. Apollinare a Valentia in Delphinatu, <hi
-                  rend="unknown" rendition="#none">Bibliotheca Fratrum Minorum Cappuccinorum Provinciae Neapolitanae</hi>, Rom-Neapel 1886</ref>
-
-            </bibl>, S. 165: „BERNARDUS-MARIA a Napoli I. n. 9: Il Rescianiano, o gli avvenimenti di Resciano e Manisgiana, Poemetto. <hi
-              rend="unknown" rendition="#none">In lingua Giorgiana. </hi>MSC. (1707). n. 8: Dal re Baaman. <hi
-              rend="unknown"
-            rendition="#none">In lingua Giorgiana</hi>. MSC. (1707).“</note> Vermutlich sind das nur Kopien von ächtgeorgischen Litteraturwerken. <pb
-            facs="#IMG.3"
-            n="3"/> Zumbini in Portici war so gütig für mich in dem benachbarten Torre del Greco Nachforschungen anzustellen, die zunächst kein Ergebnis hatten.<note
-            n="4" place="foot"
-              type="editorial">Es gibt zwei in diesem Zusammenhang wichtige Briefe Schuchardts an <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3068">Zumbini</persName> (Neapel 12.4. und 13.4.1896), die <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1587">Gerda Homeyer, <hi rend="unknown"
-              rendition="#none">Beiträge zur Geschichte der deutschen Romanistik</hi>, Frankfurt a.M. 1989</ref>, 59-60</bibl>, publiziert hat. Aus dem zweiten Brief wird der hier interessierende Passus mitgeteilt: „Heute habe ich endlich die Kraft gefunden um das Buch des Padre Rocco selbst einzusehen. Da entdeckte ich denn, dass <hi
-              rend="unknown"
-              rendition="#none">Bernardo Da Napoli’s</hi> Thätigkeit eine weit interessantere gewesen ist, als ich nach Teza’s auszugsweiser Angabe vermuthete. Er hat ein Gedicht geschrieben: <hi
-              rend="unknown" rendition="#none">Il Rescianiano</hi> (mit der Endung <hi rend="unknown"
-              rendition="#none">–iani</hi> bilden die Georgier Bezeichungen von Epen; sie entspricht unserem –<hi
-              rend="unknown" rendition="#none">ide</hi>: <hi rend="unknown" rendition="#none">Eneide</hi>, <hi
-              rend="unknown" rendition="#none">Teseide</hi>). Und eine Novelle von König <hi rend="unknown"
-              rendition="#none">Batman</hi>. Er hat also georgische Stoffe nach georgischer Art behandelt: dieser Napolitaner gehört der georgischen Litteratur an, und seine Landsleute müssen sich bemühen, die Zeugnisse für dieses in seiner Art einzige Factum wieder ans Licht zu bringen. Der Padre Rocco sagt, dass die Handschriften dieser beiden Arbeiten sowie die Übersetzungen und <hi
-              rend="unknown"
-              rendition="#none">zwei</hi> Entwürfe von Wörterbüchern sich im Kloster der Kapuziner in Torre del Greco befinden. <hi
-              rend="unknown"
-              rendition="#none">Sino alla soppressione</hi>. Wenn Sie nach dieser (wann mag sie stattgefunden haben; natürlich existiren noch genug Personen, die dabei gegenwärtig waren) nicht ins Municipio gekommen sind, so müssen sie, vielleicht in Anbetracht ihres besonderen Charakters an irgendeinen anderen ihrer würdigen Ort gekommen sein, etwa nach Rom, in die Propaganda? Das müsste sich doch ermitteln lassen“. Die Korrespondenz zwischen Schuchardt und Zumbini wurde wegen der Fehlerhaftigkeit der Bearbeitung durch Gerda Homeyer im HSA neu veröffentlicht, vgl. Lfd.Nr. <ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.3068">01-13052 - 12-13057</ref> [Anm. des Herausgebers].</note> Die Bibliothek der Kapuziner war in das Municipio gekommen, und hier fand sich gar nichts vor. Ich drängte zu weiteren Bemühungen, und infolge derselben ist, auf eine ganz unerwartete Weise, in der That Etwas gefunden worden, in dem jetzt Nonnen zum Aufenthalt dienenden Kloster selbst, an einem versteckten Platz: mit andern vernachlässigten und zerfetzten Handschriften das ziemlich umfangreiche <hi
-            rend="unknown" rendition="#none">Sbozzo eines georgisch=ital. Wtbs.</hi> und <hi rend="unknown"
-            rendition="#none">die Uebersetzung der vier Evangelien</hi> von der Hand des <hi rend="unknown"
-            rendition="#none">Bernardo da Napoli</hi>. <pb facs="#IMG.4"
-            n="4"/> Beide habe ich gestern in der Universitätsbibliothek eingehend untersucht und werde mich noch einmal mit ihnen beschäftigen.<note
-            n="5" place="foot" type="editorial">Vgl. die Einzelheiten bei <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6489">Vincenzo Oliviero, <hi rend="unknown" rendition="#none">La chiesa della SS. </hi>
-                <hi rend="unknown" rendition="#none">Annunziat: fede, storia, arte</hi>, Torre del Greco, 1986</ref>
-            </bibl>: „F. Castaldo nel 1896 ebbe l’incarico dal Comune di inventariare e riordinare tale biblioteca pur essendo la loro Storia di Torre già stata pubblicata nel 1890. A lavoro terminato presentò in data 27 maggio 1897 una relazione all’Amministrazione comunale da cui risulta che i volumi erano complessivamente 2649. […] A proposito dei manoscritti in lingua georgiana, il Di Donna enumera una quindicina. Essi contengono lettere, opere mistiche, epistolario Paolino, dizionario Italiano Georgiano, opere di letteratura georgiana ecc. Essi furono portati da Padre Bernardo da Napoli, cappuccino che da ritorno da una missione in Georgia fu destinato al Convento di Torre del Greco. Il Di Donna è ancora più esplicito sull’importanza di tale biblioteca. […] I manoscritti georgiani attualmente si trovano presso la Biblioteca Nazionale di Napoli“. - Die aktuellste Arbeit zum Thema stammt von <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6490">Gaga Shurgaia, „<hi rend="unknown" rendition="#none">Bernarde neap’oleliseuli xelnac’erebi [I manoscritti di Bernardo Maria da Napoli]“, </hi>
-                <hi rend="unknown" rendition="#none">SJANI</hi>, 17, 2016, 181-209</ref>
-
-            </bibl>.</note> So viel ich sehe, ist der Text der Evangelien der der alten georgischen Uebersetzung; es lässt sich auch schwer denken warum der Kapuziner sich die Mühe gegeben haben sollte, selbst eine Uebersetzung anzufertigen. Das Wörterbuch dürfte – freilich auch nur im Sinne der Geschichte der grammatischen Litteratur – von mehr Wert für uns sein. Ich werde sehen ob nicht Andres – auch an andern Orten – von der litterarischen Thätigkeit der georgischen Missionäre übrig ist. Die Hoffnung ist eine geringe, man scheint mit den Bibliotheken der Klöster im Jahre 1866<note
-            n="6" place="foot"
-            type="editorial">Das Jahr 1866 wird vom Dritten italienischen Unabhängigkeitskrieg geprägt, in dem Österreich zwar siegte, aber unter preußischem Druck auf Venetien verzichten musste. Allerdings ist ohne nähere Nachforschung nicht ersichtlich, welchen Einfluss die politischen Ereignisse auf den Umgang mit Kirchengut hatten.</note> unverantwortlich=fahrlässig und pietätlos umgegangen zu sein. Sobald ich noch einen oder zwei schöne Tage gehabt haben werde (um Pompei u.s.w. zu besuchen) – freilich kann ich nicht mehr gar lange <pb
-            facs="#IMG.5" n="5"/> warten – werde ich mich auf den Heimweg machen. Ist es mir irgendwie möglich, so bleibe ich ein paar Stunden in Padua, um Ihnen meine Sympathie und Verehrung persönlich zu bezeigen. </p>
-        <p>Dass Sie erst am Mittwoch den 1. April die Bücher erhalten haben, die am vorhergehenden Donnerstag um 3 Uhr Nachmittag in Graz aufgegeben worden waren, hat mich mit Verwunderung erfüllt. Ich werde Ihnen mein Recepisse von Graz aus schicken, vielleicht erkundigen Sie sich bei Ihrer Post wegen dieses Sachverhaltes.</p>
-        <p>Meine magyarische Expectoration über die Personennamen werden Sie erhalten haben.<note n="7" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.651">Schuchardt, „A keresztnevek ,fordítása‘”, <hi
-                  rend="unknown" rendition="#none">Magyar Nyelvőr</hi> 25, 1895, 97-107</ref>
-            </bibl> [Dt. „Die Übersetzung der Namen“].</note> Als Nachtrag <pb facs="#IMG.6"
-            n="6"/> dazu die Bemerkung, dass uns Deutschen <hi rend="unknown" rendition="#none">Rinaldo Köhler</hi>
-          <note n="8" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1933">Reinhold Köhler</persName> (1830-1892) war der Oberbibliothekar der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4545">Herzoglichen Bibliothek in Weimar</ref>.</note> besonders denjenigen die diesen <hi
-            rend="unknown"
-            rendition="#none">bravo e buono uomo</hi> persönlich gekannt haben, sehr lustig vorkommt; denn keinen gibt es dem dabei nicht der Räuberhauptmann Rinaldo Rinaldini<note
-            n="9" place="foot" type="editorial">Titel des Romans <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6491">
-                <hi rend="unknown" rendition="#none">Rinaldo Rinaldini, der Räuberhauptmann</hi>
-              </ref>
-
-            </bibl>, der in 3 Bänden 1778 in Leipzig erschien und den Goethe-Schwager Christian August Vulpius zum Verfasser hat. Zu Einzelheiten vgl. Schuchardts Karte an <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2776">Herbert Steiner</persName> (HSA, <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4672">Lfd.Nr. 24-57.35.83 vom 30.9.1921</ref>).</note> einfiele. Und ganz erstaunlich würde uns Deutschen ein <hi
-            rend="unknown" rendition="#none">Rüdiger Bonghi</hi>
-          <note n="10" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3135">
-Ruggero / Ruggiero Bonghi</persName> (1826-1895), ital. Altphilologe und <hi
-              rend="unknown" rendition="#none">homo politicus</hi>.</note> sein.</p>
-        <closer>
-          <salute>Mit herzlichem Grusse</salute>
-          <lb/>
-          <salute>Ihr ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HSchuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6488">P. Apollinare a Valentia in Delphinatu, <hi rend="unknown" rendition="#none">Bibliotheca Fratrum Minorum Cappuccinorum Provinciae Neapolitanae</hi>, Rom-Neapel 1886</ref>
+                  </bibl>, S. 165: „BERNARDUS-MARIA a Napoli I. n. 9: Il Rescianiano, o gli avvenimenti di Resciano e Manisgiana, Poemetto. <hi rend="unknown" rendition="#none">In lingua Giorgiana. </hi>MSC. (1707). n. 8: Dal re Baaman. <hi rend="unknown" rendition="#none">In lingua Giorgiana</hi>. MSC. (1707).“</note> Vermutlich sind das nur Kopien von ächtgeorgischen Litteraturwerken. <pb facs="#IMG.3" n="3"/> Zumbini in Portici war so gütig für mich in dem benachbarten Torre del Greco Nachforschungen anzustellen, die zunächst kein Ergebnis hatten.<note n="4" place="foot" type="editorial">Es gibt zwei in diesem Zusammenhang wichtige Briefe Schuchardts an <persName ref="[authorityLink]">Zumbini</persName> (Neapel 12.4. und 13.4.1896), die <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1587">Gerda Homeyer, <hi rend="unknown" rendition="#none">Beiträge zur Geschichte der deutschen Romanistik</hi>, Frankfurt a.M. 1989</ref>, 59-60</bibl>, publiziert hat. Aus dem zweiten Brief wird der hier interessierende Passus mitgeteilt: „Heute habe ich endlich die Kraft gefunden um das Buch des Padre Rocco selbst einzusehen. Da entdeckte ich denn, dass <hi rend="unknown" rendition="#none">Bernardo Da Napoli’s</hi> Thätigkeit eine weit interessantere gewesen ist, als ich nach Teza’s auszugsweiser Angabe vermuthete. Er hat ein Gedicht geschrieben: <hi rend="unknown" rendition="#none">Il Rescianiano</hi> (mit der Endung <hi rend="unknown" rendition="#none">–iani</hi> bilden die Georgier Bezeichungen von Epen; sie entspricht unserem –<hi rend="unknown" rendition="#none">ide</hi>: <hi rend="unknown" rendition="#none">Eneide</hi>, <hi rend="unknown" rendition="#none">Teseide</hi>). Und eine Novelle von König <hi rend="unknown" rendition="#none">Batman</hi>. Er hat also georgische Stoffe nach georgischer Art behandelt: dieser Napolitaner gehört der georgischen Litteratur an, und seine Landsleute müssen sich bemühen, die Zeugnisse für dieses in seiner Art einzige Factum wieder ans Licht zu bringen. Der Padre Rocco sagt, dass die Handschriften dieser beiden Arbeiten sowie die Übersetzungen und <hi rend="unknown" rendition="#none">zwei</hi> Entwürfe von Wörterbüchern sich im Kloster der Kapuziner in Torre del Greco befinden. <hi rend="unknown" rendition="#none">Sino alla soppressione</hi>. Wenn Sie nach dieser (wann mag sie stattgefunden haben; natürlich existiren noch genug Personen, die dabei gegenwärtig waren) nicht ins Municipio gekommen sind, so müssen sie, vielleicht in Anbetracht ihres besonderen Charakters an irgendeinen anderen ihrer würdigen Ort gekommen sein, etwa nach Rom, in die Propaganda? Das müsste sich doch ermitteln lassen“. Die Korrespondenz zwischen Schuchardt und Zumbini wurde wegen der Fehlerhaftigkeit der Bearbeitung durch Gerda Homeyer im HSA neu veröffentlicht, vgl. Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.persons#P.3068">01-13052 - 12-13057</ref> [Anm. des Herausgebers].</note> Die Bibliothek der Kapuziner war in das Municipio gekommen, und hier fand sich gar nichts vor. Ich drängte zu weiteren Bemühungen, und infolge derselben ist, auf eine ganz unerwartete Weise, in der That Etwas gefunden worden, in dem jetzt Nonnen zum Aufenthalt dienenden Kloster selbst, an einem versteckten Platz: mit andern vernachlässigten und zerfetzten Handschriften das ziemlich umfangreiche <hi rend="unknown" rendition="#none">Sbozzo eines georgisch=ital. Wtbs.</hi> und <hi rend="unknown" rendition="#none">die Uebersetzung der vier Evangelien</hi> von der Hand des <hi rend="unknown" rendition="#none">Bernardo da Napoli</hi>. <pb facs="#IMG.4" n="4"/> Beide habe ich gestern in der Universitätsbibliothek eingehend untersucht und werde mich noch einmal mit ihnen beschäftigen.<note n="5" place="foot" type="editorial">Vgl. die Einzelheiten bei <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6489">Vincenzo Oliviero, <hi rend="unknown" rendition="#none">La chiesa della SS. </hi>
+                        <hi rend="unknown" rendition="#none">Annunziat: fede, storia, arte</hi>, Torre del Greco, 1986</ref>
+                  </bibl>: „F. Castaldo nel 1896 ebbe l’incarico dal Comune di inventariare e riordinare tale biblioteca pur essendo la loro Storia di Torre già stata pubblicata nel 1890. A lavoro terminato presentò in data 27 maggio 1897 una relazione all’Amministrazione comunale da cui risulta che i volumi erano complessivamente 2649. […] A proposito dei manoscritti in lingua georgiana, il Di Donna enumera una quindicina. Essi contengono lettere, opere mistiche, epistolario Paolino, dizionario Italiano Georgiano, opere di letteratura georgiana ecc. Essi furono portati da Padre Bernardo da Napoli, cappuccino che da ritorno da una missione in Georgia fu destinato al Convento di Torre del Greco. Il Di Donna è ancora più esplicito sull’importanza di tale biblioteca. […] I manoscritti georgiani attualmente si trovano presso la Biblioteca Nazionale di Napoli“. - Die aktuellste Arbeit zum Thema stammt von <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6490">Gaga Shurgaia, „<hi rend="unknown" rendition="#none">Bernarde neap’oleliseuli xelnac’erebi [I manoscritti di Bernardo Maria da Napoli]“, </hi>
+                        <hi rend="unknown" rendition="#none">SJANI</hi>, 17, 2016, 181-209</ref>
+                  </bibl>.</note> So viel ich sehe, ist der Text der Evangelien der der alten georgischen Uebersetzung; es lässt sich auch schwer denken warum der Kapuziner sich die Mühe gegeben haben sollte, selbst eine Uebersetzung anzufertigen. Das Wörterbuch dürfte – freilich auch nur im Sinne der Geschichte der grammatischen Litteratur – von mehr Wert für uns sein. Ich werde sehen ob nicht Andres – auch an andern Orten – von der litterarischen Thätigkeit der georgischen Missionäre übrig ist. Die Hoffnung ist eine geringe, man scheint mit den Bibliotheken der Klöster im Jahre 1866<note n="6" place="foot" type="editorial">Das Jahr 1866 wird vom Dritten italienischen Unabhängigkeitskrieg geprägt, in dem Österreich zwar siegte, aber unter preußischem Druck auf Venetien verzichten musste. Allerdings ist ohne nähere Nachforschung nicht ersichtlich, welchen Einfluss die politischen Ereignisse auf den Umgang mit Kirchengut hatten.</note> unverantwortlich=fahrlässig und pietätlos umgegangen zu sein. Sobald ich noch einen oder zwei schöne Tage gehabt haben werde (um Pompei u.s.w. zu besuchen) – freilich kann ich nicht mehr gar lange <pb facs="#IMG.5" n="5"/> warten – werde ich mich auf den Heimweg machen. Ist es mir irgendwie möglich, so bleibe ich ein paar Stunden in Padua, um Ihnen meine Sympathie und Verehrung persönlich zu bezeigen. </p>
+            <p>Dass Sie erst am Mittwoch den 1. April die Bücher erhalten haben, die am vorhergehenden Donnerstag um 3 Uhr Nachmittag in Graz aufgegeben worden waren, hat mich mit Verwunderung erfüllt. Ich werde Ihnen mein Recepisse von Graz aus schicken, vielleicht erkundigen Sie sich bei Ihrer Post wegen dieses Sachverhaltes.</p>
+            <p>Meine magyarische Expectoration über die Personennamen werden Sie erhalten haben.<note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.651">Schuchardt, „A keresztnevek ,fordítása‘”, <hi rend="unknown" rendition="#none">Magyar Nyelvőr</hi> 25, 1895, 97-107</ref>
+                  </bibl> [Dt. „Die Übersetzung der Namen“].</note> Als Nachtrag <pb facs="#IMG.6" n="6"/> dazu die Bemerkung, dass uns Deutschen <hi rend="unknown" rendition="#none">Rinaldo Köhler</hi>
+               <note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Reinhold Köhler</persName> (1830-1892) war der Oberbibliothekar der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4545">Herzoglichen Bibliothek in Weimar</ref>.</note> besonders denjenigen die diesen <hi rend="unknown" rendition="#none">bravo e buono uomo</hi> persönlich gekannt haben, sehr lustig vorkommt; denn keinen gibt es dem dabei nicht der Räuberhauptmann Rinaldo Rinaldini<note n="9" place="foot" type="editorial">Titel des Romans <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6491">
+                        <hi rend="unknown" rendition="#none">Rinaldo Rinaldini, der Räuberhauptmann</hi>
+                     </ref>
+                  </bibl>, der in 3 Bänden 1778 in Leipzig erschien und den Goethe-Schwager Christian August Vulpius zum Verfasser hat. Zu Einzelheiten vgl. Schuchardts Karte an <persName ref="[authorityLink]">Herbert Steiner</persName> (HSA, <ref target="https://gams.uni-graz.at/o:hsa.letter.4672">Lfd.Nr. 24-57.35.83 vom 30.9.1921</ref>).</note> einfiele. Und ganz erstaunlich würde uns Deutschen ein <hi rend="unknown" rendition="#none">Rüdiger Bonghi</hi>
+               <note n="10" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
+Ruggero / Ruggiero Bonghi</persName> (1826-1895), ital. Altphilologe und <hi rend="unknown" rendition="#none">homo politicus</hi>.</note> sein.</p>
+            <closer>
+               <salute>Mit herzlichem Grusse</salute>
+               <lb/>
+               <salute>Ihr ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HSchuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

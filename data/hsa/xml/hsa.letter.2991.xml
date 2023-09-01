@@ -1,277 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Hermann Suchier (11-11r-12v)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2991" type="PID">o:hsa.letter.2991</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">11-11r-12v</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Deutschland</country>
-            <settlement>Berlin</settlement>
-            <institution>Staatsbibliothek zu Berlin</institution>
-            <repository ref="https://staatsbibliothek-berlin.de/">Preussischer Kulturbesitz (Nachl. Suchier XIII: Schuchardt, Hugo, Blatt 1-54</repository>
-            <idno type="shelfmark">11r</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1877-04-04">1877-04-04</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Hermann Suchier</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2815"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2991">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1877-04-04">1877-04-04</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2815" ref="https://viaf.org/viaf/2580237">
-            <forename>Hermann</forename>
-            <surname>Suchier</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2815" type="context">
-                        Korrespondenz Hugo Schuchardt - Hermann Suchier
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2991" xml:id="IMG.1">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2991" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>[H.S.] Graz, 4. 4. 77. [8 / 4] <note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Suchier</persName> vermerkt das Datum seiner Antwort.</note>
+            </dateline>
+            <opener>Geehrter Kollege !</opener>
+            <p>Meine Ansichten habe ich nur desshalb nicht bestimmter formulirt, weil ich dazu mich nicht Autorität genug fühle und weil gerade eine solche bestimmte Formulirung das Einverständniss erschweren könnte. Dass das was ich bean<pb facs="#IMG.2" n="2"/>trage etwas Billiges und Einfaches ist, werden Sie doch nicht bestreiten; ich wünsche, dass diejenigen welche ihr Geld beisteuern, – sofern sie fähig sind, in dieser Angelegenheit zu urtheilen – ihre Meinung aussprechen und dass diese Meinung gehörig berücksichtigt werde. Ich will keinen <hi rend="unknown" rendition="#none">
+Unitarismus</hi>, sondern einen <hi rend="unknown" rendition="#none">
+Foerderalismus</hi> wie er der Republik der Wissenschaft ziemt. Wenn der Ausgangspunkt des Unternehmens kein allgemeiner gewesen ist, so soll wenigstens der Endpunkt ein allgemeiner sein. – Warum sollte man in ein <pb facs="#IMG.3" n="3"/> Comité zu <placeName ref="[authorityLink]">Wien</placeName> keine Nichtromanisten hineinziehen? Hat man dasselbe nicht in <placeName>
 
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://staatsbibliothek-berlin.de/">Staatsbibliothek zu Berlin</ref> - Preussischer Kulturbesitz (Nachl. Suchier XIII: Schuchardt, Hugo, Blatt 1-54).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2991" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://staatsbibliothek-berlin.de/">Staatsbibliothek zu Berlin</ref> - Preussischer Kulturbesitz (Nachl. Suchier XIII: Schuchardt, Hugo, Blatt 1-54).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2991" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://staatsbibliothek-berlin.de/">Staatsbibliothek zu Berlin</ref> - Preussischer Kulturbesitz (Nachl. Suchier XIII: Schuchardt, Hugo, Blatt 1-54).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2991" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://staatsbibliothek-berlin.de/">Staatsbibliothek zu Berlin</ref> - Preussischer Kulturbesitz (Nachl. Suchier XIII: Schuchardt, Hugo, Blatt 1-54).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2991" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>[H.S.] Graz, 4. 4. 77. [8 / 4] <note n="1" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2815">Suchier</persName> vermerkt das Datum seiner Antwort.</note>
-        </dateline>
-        <opener>Geehrter Kollege !</opener>
-
-        <p>Meine Ansichten habe ich nur desshalb nicht bestimmter formulirt, weil ich dazu mich nicht Autorität genug fühle und weil gerade eine solche bestimmte Formulirung das Einverständniss erschweren könnte. Dass das was ich bean<pb
-            facs="#IMG.2"
-            n="2"/>trage etwas Billiges und Einfaches ist, werden Sie doch nicht bestreiten; ich wünsche, dass diejenigen welche ihr Geld beisteuern, – sofern sie fähig sind, in dieser Angelegenheit zu urtheilen – ihre Meinung aussprechen und dass diese Meinung gehörig berücksichtigt werde. Ich will keinen <hi
-            rend="unknown" rendition="#none">
-Unitarismus</hi>, sondern einen <hi rend="unknown"
-            rendition="#none">
-Foerderalismus</hi> wie er der Republik der Wissenschaft ziemt. Wenn der Ausgangspunkt des Unternehmens kein allgemeiner gewesen ist, so soll wenigstens der Endpunkt ein allgemeiner sein. – Warum sollte man in ein <pb
-            facs="#IMG.3" n="3"/> Comité zu <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName> keine Nichtromanisten hineinziehen? Hat man dasselbe nicht in <placeName>
-
-Berlin</placeName> gethan? Würde dann die Sache dort eher einen antideutschen Charakter bekommen, als hier einen antiromanischen? Das verstehe ich durchaus nicht. Ich will eben dass die Sache sowenig wie möglich von Nationalitätspolitik enthalte; Sie scheinen freilich etwas anderer Ansicht, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2867">Tobler</persName> auch, der mir von der “Reichshauptstadt” Berlin spricht. Wenn Sie die Wissenschaft nicht für etwas absolut internationales [sic] halten, dann <pb
-            facs="#IMG.4"
-            n="4"/> bitte ich Sie, das offen zu äussern, weil wir uns dann allerdings schwerlich verständigen werden. Sie können allerdings zur Verständigung zwischen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2867">Tobler</persName> und mir beitragen, indem Sie ihm zureden, sich nicht schroff und ablehnend gegen meine Vorschläge zu verhalten. Ich greife ja nicht in seine Sphäre ein; das Berliner Comité soll ja in seiner Wirkung nicht gehemmt sein, es soll nur die Thätigkeit “etwa auswärts sich bildenden [sic] Comités” (von denen ja im Aufruf die Rede ist) ermuthigen und fördern oder wenigstens nicht hindern. Werden in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5913">Oestreich</placeName>, <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5969">Italien</placeName> u. s. w. eigene Comités mit besondern Sammelstellen errichtet, die etwas mehr sind als postillons d’amour oder vielmehr d’argent für Berlin, so wird entschieden die materielle Theilnahme eine weit bedeutendere sein. – Uebrigens werden Sie in der <hi
-            rend="unknown" rendition="#none">Gegenwart</hi>
-          <note n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.316">
+Berlin</placeName> gethan? Würde dann die Sache dort eher einen antideutschen Charakter bekommen, als hier einen antiromanischen? Das verstehe ich durchaus nicht. Ich will eben dass die Sache sowenig wie möglich von Nationalitätspolitik enthalte; Sie scheinen freilich etwas anderer Ansicht, <persName ref="[authorityLink]">Tobler</persName> auch, der mir von der “Reichshauptstadt” Berlin spricht. Wenn Sie die Wissenschaft nicht für etwas absolut internationales [sic] halten, dann <pb facs="#IMG.4" n="4"/> bitte ich Sie, das offen zu äussern, weil wir uns dann allerdings schwerlich verständigen werden. Sie können allerdings zur Verständigung zwischen <persName ref="[authorityLink]">Tobler</persName> und mir beitragen, indem Sie ihm zureden, sich nicht schroff und ablehnend gegen meine Vorschläge zu verhalten. Ich greife ja nicht in seine Sphäre ein; das Berliner Comité soll ja in seiner Wirkung nicht gehemmt sein, es soll nur die Thätigkeit “etwa auswärts sich bildenden [sic] Comités” (von denen ja im Aufruf die Rede ist) ermuthigen und fördern oder wenigstens nicht hindern. Werden in <placeName ref="[authorityLink]">Oestreich</placeName>, <placeName ref="[authorityLink]">Italien</placeName> u. s. w. eigene Comités mit besondern Sammelstellen errichtet, die etwas mehr sind als postillons d’amour oder vielmehr d’argent für Berlin, so wird entschieden die materielle Theilnahme eine weit bedeutendere sein. – Uebrigens werden Sie in der <hi rend="unknown" rendition="#none">Gegenwart</hi>
+               <note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.316">
 Schuchardt (1877b)</ref>
-            </bibl>.</note> vom 6. April einen neuen Artikel von mir lesen.</p>
-        <closer>
-          <salute>Mit herzlichsten Grüssen</salute>
-          <lb/>
-          <salute>Ihr ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt.</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>In <hi rend="unknown" rendition="#none">grösster</hi> Eile!</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                  </bibl>.</note> vom 6. April einen neuen Artikel von mir lesen.</p>
+            <closer>
+               <salute>Mit herzlichsten Grüssen</salute>
+               <lb/>
+               <salute>Ihr ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt.</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>In <hi rend="unknown" rendition="#none">grösster</hi> Eile!</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

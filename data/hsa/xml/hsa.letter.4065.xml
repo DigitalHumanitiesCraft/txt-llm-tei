@@ -1,565 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">António Joaquim Ribeiro an Hugo Schuchardt (07-09527)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2512">
-            <forename>António Joaquim</forename>
-            <surname>Ribeiro</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Nélia</forename>
-            <surname>Alexandre</surname>
-          </persName>
-        </editor>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Jürgen</forename>
-            <surname>Lang</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4065" type="PID">o:hsa.letter.4065</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">07-09527</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">09527</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="pt"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2512">
-                <forename>António Joaquim</forename>
-                <surname>Ribeiro</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="10" unit="pages">10 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.529" ref="http://sws.geonames.org/3374333">Praia</origPlace>
-              <origDate ana="dcterms:created" when="1883-01-07">1883-01-07</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Nélia</forename>
-              <surname>Alexandre</surname>
-            </persName>
-          </author>
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Jürgen</forename>
-              <surname>Lang</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen António Joaquim Ribeiro und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2512"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4065">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2512">
-            <forename>António Joaquim</forename>
-            <surname>Ribeiro</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.529" key="#GID.1" ref="http://sws.geonames.org/3374333">Praia</placeName>
-          <date when="1883-01-07">1883-01-07</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Cabo Verde</country>
-                <settlement>Praia</settlement>
-                <name ref="http://geonames.org/3374333" type="fcode:PPLC">Praia</name>
-                <location>
-                  <geo>-23.51254,14.93152</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2512" type="context">
-                        Korrespondenz António Joaquim Ribeiro - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4046" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Grazer Anthropologischer Verein</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3181" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Boletim da Sociedade de Geografia de Lisboa</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3215" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsvorhaben</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.529" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kabardinisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="pt">Portugiesisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4065" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4065" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4065" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4065" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4065" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4065" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4065" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4065" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4065" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4065" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4065" xml:lang="pt">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Meu caro amigo Schuchardt</opener>
-        <dateline>Cidade da Praia, Caboverde, 7 de janeiro 1883</dateline>
-        <p>Antes de responder ás suas apreciavaes cartas de 19 e 28 de novembro do anno findo, começarei por pedir-lhe licença para banir de entre nós, o cerimonioso tratamento de Excellencia, muito bonito para encetar relações, mas muito pouco proprio entre amigos sinceros; contando antecipadamente com a sua annuencia, passo a responder por ordem:</p>
-
-        <p>Recebi e agradeço cordealmente o diploma que se dignou mandar-me, bem como o seu "Estudo sobre o creoulo de S. Thomé"; - infelizmente, como está em Alemão (lingua que me é totalmente desconhecida) não poude aprecial-o como merece; - não acha que seria conveniente vertel-o em Francez? assim seria mais bem apreciado, ao passo que, em Alemão o não póde ser, pela difficuldade d'encontrar quem conheça esta lingua cá por <pb
-            facs="#IMG.2" n="2"/> Africa. Se o verter em Francez, eu encarrego-me de o traduzir para Portuguez.</p>
-        <p>Sei que o am.<hi rendition="#sup">o</hi> é já socio correspondente da "Sociedade de Geographia de Lisbôa", e portanto, felicito-me por encontrar no amigo, novamente, um consocio, e que tanto honra pelos seuz meritoz, a sociedade que tem a gloria de contal-o no numero de seus membros. - Já ali foi lida uma parte dos seus estudos sobre o creoulo de Caboverde, segundo me disseram.</p>
-        <p>Escrevi ao meu amigo Julio Cesar Jansen Verdades, mas ainda me não respondeu; não sei se está doente, ou qual o motivo do seu silencio - que devéras tenho estranhado.</p>
-
-        <p>Rogo-lhe se não esqueça da minha pretenção ao lugar de vice-consul, ou Agente Consular, caso isso, como já lhe disse, não seja objecto de grande incommodo <pb
-            facs="#IMG.3" n="3"/> para o amigo.</p>
-        <p>Li com adimração [sic] a sua carta escripta em creoulo, aonde se notam bem poucas faltaz, e que na folha junta, encontrará notadas, e corrigidas.</p>
-        <p>Approveitando o seu conselho, vou escrever um artigo sobre - usos, indole e lingua dos filhos d'esta ilha, e envial-o-hei para a sociedade de "Geographia" d'onde tambem m'o pedem, e mandarei n'essa occasião uma cópia ao amigo.</p>
-        <p>Pergunta-me aonde nasci?- Sou natural de Portugal; nasci na Beira-baixa, mas vivo aqui á mais de 20 annos; vim para cá, ainda criança.</p>
-        <p>Os pretos d'aqui, são uma raça cruzada de Jalofos, Fulas, Mandingas, Papeis e Biafadaz - que para aqui vieram no tempo dos primeiros donatarios colonisadores.</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>Peço se não esqueça do meu pedido á cerca do nosso collega na sociedade de Geographia, e na Associação de Jornalistaz, o meu amigo Henrique Campan Garcia Torres, para a sua admissão a membro da Sociedade Anthropologica; é um mancebo que pelas suas qualidades, se torna a todo o ponto recommendavel.</p>
-
-        <p>Peço-lhe a fineza de mandar-lhe um exemplar do seu estudo sobre o creoulo de S. Thomé, e outro do creoulo d'aqui, q.<hi
-            rendition="#sup">do</hi> o publicar. - Móra na Travessa do Cabral, 35 - 1.<hi rendition="#sup">o</hi> - Lisbôa.</p>
-        <p>Não quizera mandar-me o seu retrato p.a ao menos ter o gosto de assim conhecel-o, já que não pósso conhecer o original, como tanto desejava?</p>
-        <closer>
-          <salute>Termina enviando-lhe um abraço o</salute>
-          <lb/>
-          <salute>Seu am.<hi rendition="#sup">o</hi> dedicado</salute>
-          <lb/>
-          <signed>
-            <persName>Antonio Joaq.<hi rendition="#sup">m</hi> Ribeiro</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.4065" subtype="original" type="appendix" xml:lang="pt">
-        <p>
-          <pb facs="#IMG.5" n="5"/>
-          <note n="1" place="foot" type="editorial">Hier beginnt die Transkription der in der Sektion Werkmanuskripte 11.23.10.1 aller Wahrscheinlichkeit ursprünglich diesem Brief beiliegenden Liste von Korrekturen zu einem verlorenen Brief Schuchardts an Ribeiro im Santiagokreol und von Kommentaren Ribeiros zu seiner Version der Parabel vom verlorenen Sohn im Santiagokreol, die Ribeiros siebten und letzten Brief an Schuchardt vom 07.01.1883 begleitete. Aus diesem Grund werden diese Materialien an dieser Stelle als Briefbeilagen mit veröffentlicht. Die Seitenumbrüche werden fortlaufend zum Brief kenntlich gemacht.</note>
-        </p>
-        <p>Da carta = </p>
-        <p>En caba = deve ser = ʼn cába</p>
-        <p>man = " " = ma-ʼn</p>
-        <p>góra ʼn tâ fassê uso d’ocasion</p>
-        <p>como em crioulo não] o termo [sic]–oc-</p>
-        <p>casião, nem nada que o substi-</p>
-        <p>túa, seria melhor = góra quin</p>
-        <p>lembra, ʼn tâ mandâ nhô</p>
-        <p>el, propi pan proba screbe</p>
-        <p>na criôlo</p>
-        <p>ampoz – é do creoulo da ilha</p>
-        <p>do Fogo, mas que não é uza-</p>
-        <p>do em S. Thiago.</p>
-        <p>Pabia nho câ ta screbe, = seria</p>
-        <p>melhor = pamódi nho câ</p>
-        <p>tâ screbe</p>
-        <p>Com relação ao plural, dir-lhe-</p>
-        <p>hei que é conforme o senti-</p>
-        <p>do da oração; por exemplo:</p>
-        <p>Tenho muitas vaccas, dizem:</p>
-        <p>ʼn ten bacca cheu; mas</p>
-        <p>quando dizem = as minhas vac-</p>
-        <p>cas, é = nha baccas.</p>
-        <p>mejhor = deve ser = mijhor</p>
-        <p>di alguen outro = deve ser = qui otro al-</p>
-        <p>guen</p>
-        <p>Nhôr = Só se emprega fallando</p>
-        <p>de Deus, que se diz nhor Dês,</p>
-        <p>e na affirmativa Sim Senhor,</p>
-        <p>que se diz nhor Sin, e na</p>
-        <pb facs="#IMG.6" n="6"/>
-        <p>negativa = não senhor, que se diz =</p>
-        <p>nhôr não em todos os mais ca-</p>
-        <p>sos ê nhô, tanto para designar</p>
-        <p>o senhor como o Sr. Fulano </p>
-        <p>
-          <hi rend="unknown" rendition="#none">publicou</hi> = diz-sê – pô n'imprensa</p>
-        <p>
-          <hi rend="unknown" rendition="#none">gente</hi> = = guente</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Undi jha nhu nace</hi>? – diz-se = undi</p>
-        <p>nho nece?</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Portugal</hi> = aqui tomam a parte</p>
-        <p>pelo todo, e assim para elles</p>
-        <p>Portugal, encerra-se em Lisbôa,</p>
-        <p>e assim as villas, cidades e</p>
-        <p>provincias portuguezas, é tudo</p>
-        <p>na Lisbôa</p>
-        <p>
-          <hi rend="unknown" rendition="#none">pôde</hi> – - melhor – podê</p>
-        <p>__________</p>
-        <p>
-          <hi rend="unknown" rendition="#none">a na bez di</hi> e <hi rend="unknown" rendition="#none">mi a bó</hi> é creou-</p>
-        <p>lo da Guiné, de que não pos-</p>
-        <p>so dizer-lhe nada</p>
-        <p>engenho = diz-se = ʼnguenho</p>
-        <p>t’oraqui, ou ti ora qui = até que</p>
-        <p>‘n pôde faceba = eu podia fazer</p>
-        <p>O <hi rend="unknown" rendition="#none">s</hi> entre vogaes, valle de <hi rend="unknown" rendition="#none">z</hi>; po-</p>
-        <p>rém cússa, fassê, cassa (habi-</p>
-        <p>tação, deve ser escripto com</p>
-        <p>
-          <hi rend="unknown" rendition="#none">ss</hi>, para dar-lhe o valor de</p>
-        <p>
-          <hi rend="unknown" rendition="#none">ç</hi> = Cáza = é cassa fazenda</p>
-        <p>fina de algodão p.<hi rendition="#sup">a</hi> vestidoz.</p>
-        <p>pâ el mandan informaçun</p>
-        <p>sobre = é melhor = pê contan</p>
-        <p>algun cussa di – </p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>2</p>
-        <p>Com relação aos acentos, per-</p>
-        <p>mitta-me que não concorde com</p>
-        <p>o amigo nas pallavraz que me</p>
-        <p>apontou; em lugar de = birá,</p>
-        <p>chigá, etc deve ser birâ, chigâ,</p>
-        <p>ficâ, fincâ, etc por que a ulti-</p>
-        <p>ma vogal no creoulo é sempre</p>
-        <p>longa, como nas ultimaz sylabaz</p>
-        <p>das pallavras portuguezas amo,</p>
-        <p>idade, uso, etc.</p>
-        <p>O acento circumflexo (^) ser-</p>
-        <p>ve para alongar ou prelongar</p>
-        <p>mais o som á vogal sobre que</p>
-        <p>assenta, como por exemplo na</p>
-        <p>segunda syllaba da palavra</p>
-        <p>portugueza am<hi rendition="#sup">ô</hi>r;</p>
-        <p>O acento agudo (´) serve</p>
-        <p>para tornar o som aberto á</p>
-        <p>vogal sobre que assenta, como por</p>
-        <p>exemplo na ultima syllaba da</p>
-        <p>palavra Portugueza oxal<hi rendition="#sup">á</hi>.</p>
-        <p>Já vê pois que ha grande</p>
-        <p>differença sónica, entre b<hi rendition="#sup">í</hi>râ, e</p>
-        <p>bir<hi rend="unknown" rendition="#none">á</hi>.</p>
-        <p>
-          <note n="2" place="foot" type="editorial">Ab hier beantwortet Ribeiro Fragen Schuchardts zu seiner kreolischen Fassung des Gleichnisses vom verlorenenen Sohn.</note>ê ál ben ardába = elle havia de</p>
-        <p>vir a herdar</p>
-        <p>ê al ardába = elle havia de herdar.</p>
-        <p>ê bên ardába = elle vinha herdar.</p>
-        <p>Sí pai dal mé = seu pai deu-</p>
-        <p>lhe effectivamente; este mé, é</p>
-        <pb facs="#IMG.8" n="8"/>
-        <p>uma segunda affirmativa, m.to</p>
-        <p>uzada no creoulo, e sem a qual</p>
-        <p>a oração fica incompleta.</p>
-        <p>Ê cá chiga lâ = acabou de lá</p>
-        <p>chegar = cá, é a abreviatura</p>
-        <p>de cába</p>
-        <p>Cando jh’ê cá gasta fépo =</p>
-        <p>quando acabou de gastar tudo</p>
-        <p>propi = mesmo</p>
-        <p>ê bá pidí ê dado un cábo =</p>
-        <p>foi pedir e deram-lhe um lugar</p>
-        <p>Cando jh’ê cuda té = não tem</p>
-        <p>traducção litteral; é uma phra-</p>
-        <p>se que significa = depois de</p>
-        <p>pensar maduramente</p>
-        <p>lí sí = aqui mesmo; ou nés</p>
-        <p>te lugar</p>
-        <p>Mórê, como digo no verso, lê-</p>
-        <p>se assentuando abertamente</p>
-        <p>a 1.<hi rendition="#sup">a</hi> syllaba, e longamente</p>
-        <p>a 2.<hi rendition="#sup">a</hi> = a 1.<hi rendition="#sup">a</hi> corresponde a 1.<hi rendition="#sup">a</hi>
-        </p>
-        <p>de f<hi rend="unknown" rendition="#none">ó</hi>me, e a 2.<hi rendition="#sup">a</hi>, á 1.<hi rendition="#sup">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4065" xml:lang="pt">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Meu caro amigo Schuchardt</opener>
+            <dateline>Cidade da Praia, Caboverde, 7 de janeiro 1883</dateline>
+            <p>Antes de responder ás suas apreciavaes cartas de 19 e 28 de novembro do anno findo, começarei por pedir-lhe licença para banir de entre nós, o cerimonioso tratamento de Excellencia, muito bonito para encetar relações, mas muito pouco proprio entre amigos sinceros; contando antecipadamente com a sua annuencia, passo a responder por ordem:</p>
+            <p>Recebi e agradeço cordealmente o diploma que se dignou mandar-me, bem como o seu "Estudo sobre o creoulo de S. Thomé"; - infelizmente, como está em Alemão (lingua que me é totalmente desconhecida) não poude aprecial-o como merece; - não acha que seria conveniente vertel-o em Francez? assim seria mais bem apreciado, ao passo que, em Alemão o não póde ser, pela difficuldade d'encontrar quem conheça esta lingua cá por <pb facs="#IMG.2" n="2"/> Africa. Se o verter em Francez, eu encarrego-me de o traduzir para Portuguez.</p>
+            <p>Sei que o am.<hi rendition="#sup">o</hi> é já socio correspondente da "Sociedade de Geographia de Lisbôa", e portanto, felicito-me por encontrar no amigo, novamente, um consocio, e que tanto honra pelos seuz meritoz, a sociedade que tem a gloria de contal-o no numero de seus membros. - Já ali foi lida uma parte dos seus estudos sobre o creoulo de Caboverde, segundo me disseram.</p>
+            <p>Escrevi ao meu amigo Julio Cesar Jansen Verdades, mas ainda me não respondeu; não sei se está doente, ou qual o motivo do seu silencio - que devéras tenho estranhado.</p>
+            <p>Rogo-lhe se não esqueça da minha pretenção ao lugar de vice-consul, ou Agente Consular, caso isso, como já lhe disse, não seja objecto de grande incommodo <pb facs="#IMG.3" n="3"/> para o amigo.</p>
+            <p>Li com adimração [sic] a sua carta escripta em creoulo, aonde se notam bem poucas faltaz, e que na folha junta, encontrará notadas, e corrigidas.</p>
+            <p>Approveitando o seu conselho, vou escrever um artigo sobre - usos, indole e lingua dos filhos d'esta ilha, e envial-o-hei para a sociedade de "Geographia" d'onde tambem m'o pedem, e mandarei n'essa occasião uma cópia ao amigo.</p>
+            <p>Pergunta-me aonde nasci?- Sou natural de Portugal; nasci na Beira-baixa, mas vivo aqui á mais de 20 annos; vim para cá, ainda criança.</p>
+            <p>Os pretos d'aqui, são uma raça cruzada de Jalofos, Fulas, Mandingas, Papeis e Biafadaz - que para aqui vieram no tempo dos primeiros donatarios colonisadores.</p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>Peço se não esqueça do meu pedido á cerca do nosso collega na sociedade de Geographia, e na Associação de Jornalistaz, o meu amigo Henrique Campan Garcia Torres, para a sua admissão a membro da Sociedade Anthropologica; é um mancebo que pelas suas qualidades, se torna a todo o ponto recommendavel.</p>
+            <p>Peço-lhe a fineza de mandar-lhe um exemplar do seu estudo sobre o creoulo de S. Thomé, e outro do creoulo d'aqui, q.<hi rendition="#sup">do</hi> o publicar. - Móra na Travessa do Cabral, 35 - 1.<hi rendition="#sup">o</hi> - Lisbôa.</p>
+            <p>Não quizera mandar-me o seu retrato p.a ao menos ter o gosto de assim conhecel-o, já que não pósso conhecer o original, como tanto desejava?</p>
+            <closer>
+               <salute>Termina enviando-lhe um abraço o</salute>
+               <lb/>
+               <salute>Seu am.<hi rendition="#sup">o</hi> dedicado</salute>
+               <lb/>
+               <signed>
+                  <persName>Antonio Joaq.<hi rendition="#sup">m</hi> Ribeiro</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.4065"
+              subtype="original"
+              type="appendix"
+              xml:lang="pt">
+            <p>
+               <pb facs="#IMG.5" n="5"/>
+               <note n="1" place="foot" type="editorial">Hier beginnt die Transkription der in der Sektion Werkmanuskripte 11.23.10.1 aller Wahrscheinlichkeit ursprünglich diesem Brief beiliegenden Liste von Korrekturen zu einem verlorenen Brief Schuchardts an Ribeiro im Santiagokreol und von Kommentaren Ribeiros zu seiner Version der Parabel vom verlorenen Sohn im Santiagokreol, die Ribeiros siebten und letzten Brief an Schuchardt vom 07.01.1883 begleitete. Aus diesem Grund werden diese Materialien an dieser Stelle als Briefbeilagen mit veröffentlicht. Die Seitenumbrüche werden fortlaufend zum Brief kenntlich gemacht.</note>
+            </p>
+            <p>Da carta = </p>
+            <p>En caba = deve ser = ʼn cába</p>
+            <p>man = " " = ma-ʼn</p>
+            <p>góra ʼn tâ fassê uso d’ocasion</p>
+            <p>como em crioulo não] o termo [sic]–oc-</p>
+            <p>casião, nem nada que o substi-</p>
+            <p>túa, seria melhor = góra quin</p>
+            <p>lembra, ʼn tâ mandâ nhô</p>
+            <p>el, propi pan proba screbe</p>
+            <p>na criôlo</p>
+            <p>ampoz – é do creoulo da ilha</p>
+            <p>do Fogo, mas que não é uza-</p>
+            <p>do em S. Thiago.</p>
+            <p>Pabia nho câ ta screbe, = seria</p>
+            <p>melhor = pamódi nho câ</p>
+            <p>tâ screbe</p>
+            <p>Com relação ao plural, dir-lhe-</p>
+            <p>hei que é conforme o senti-</p>
+            <p>do da oração; por exemplo:</p>
+            <p>Tenho muitas vaccas, dizem:</p>
+            <p>ʼn ten bacca cheu; mas</p>
+            <p>quando dizem = as minhas vac-</p>
+            <p>cas, é = nha baccas.</p>
+            <p>mejhor = deve ser = mijhor</p>
+            <p>di alguen outro = deve ser = qui otro al-</p>
+            <p>guen</p>
+            <p>Nhôr = Só se emprega fallando</p>
+            <p>de Deus, que se diz nhor Dês,</p>
+            <p>e na affirmativa Sim Senhor,</p>
+            <p>que se diz nhor Sin, e na</p>
+            <pb facs="#IMG.6" n="6"/>
+            <p>negativa = não senhor, que se diz =</p>
+            <p>nhôr não em todos os mais ca-</p>
+            <p>sos ê nhô, tanto para designar</p>
+            <p>o senhor como o Sr. Fulano </p>
+            <p>
+               <hi rend="unknown" rendition="#none">publicou</hi> = diz-sê – pô n'imprensa</p>
+            <p>
+               <hi rend="unknown" rendition="#none">gente</hi> = = guente</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Undi jha nhu nace</hi>? – diz-se = undi</p>
+            <p>nho nece?</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Portugal</hi> = aqui tomam a parte</p>
+            <p>pelo todo, e assim para elles</p>
+            <p>Portugal, encerra-se em Lisbôa,</p>
+            <p>e assim as villas, cidades e</p>
+            <p>provincias portuguezas, é tudo</p>
+            <p>na Lisbôa</p>
+            <p>
+               <hi rend="unknown" rendition="#none">pôde</hi> – - melhor – podê</p>
+            <p>__________</p>
+            <p>
+               <hi rend="unknown" rendition="#none">a na bez di</hi> e <hi rend="unknown" rendition="#none">mi a bó</hi> é creou-</p>
+            <p>lo da Guiné, de que não pos-</p>
+            <p>so dizer-lhe nada</p>
+            <p>engenho = diz-se = ʼnguenho</p>
+            <p>t’oraqui, ou ti ora qui = até que</p>
+            <p>‘n pôde faceba = eu podia fazer</p>
+            <p>O <hi rend="unknown" rendition="#none">s</hi> entre vogaes, valle de <hi rend="unknown" rendition="#none">z</hi>; po-</p>
+            <p>rém cússa, fassê, cassa (habi-</p>
+            <p>tação, deve ser escripto com</p>
+            <p>
+               <hi rend="unknown" rendition="#none">ss</hi>, para dar-lhe o valor de</p>
+            <p>
+               <hi rend="unknown" rendition="#none">ç</hi> = Cáza = é cassa fazenda</p>
+            <p>fina de algodão p.<hi rendition="#sup">a</hi> vestidoz.</p>
+            <p>pâ el mandan informaçun</p>
+            <p>sobre = é melhor = pê contan</p>
+            <p>algun cussa di – </p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>2</p>
+            <p>Com relação aos acentos, per-</p>
+            <p>mitta-me que não concorde com</p>
+            <p>o amigo nas pallavraz que me</p>
+            <p>apontou; em lugar de = birá,</p>
+            <p>chigá, etc deve ser birâ, chigâ,</p>
+            <p>ficâ, fincâ, etc por que a ulti-</p>
+            <p>ma vogal no creoulo é sempre</p>
+            <p>longa, como nas ultimaz sylabaz</p>
+            <p>das pallavras portuguezas amo,</p>
+            <p>idade, uso, etc.</p>
+            <p>O acento circumflexo (^) ser-</p>
+            <p>ve para alongar ou prelongar</p>
+            <p>mais o som á vogal sobre que</p>
+            <p>assenta, como por exemplo na</p>
+            <p>segunda syllaba da palavra</p>
+            <p>portugueza am<hi rendition="#sup">ô</hi>r;</p>
+            <p>O acento agudo (´) serve</p>
+            <p>para tornar o som aberto á</p>
+            <p>vogal sobre que assenta, como por</p>
+            <p>exemplo na ultima syllaba da</p>
+            <p>palavra Portugueza oxal<hi rendition="#sup">á</hi>.</p>
+            <p>Já vê pois que ha grande</p>
+            <p>differença sónica, entre b<hi rendition="#sup">í</hi>râ, e</p>
+            <p>bir<hi rend="unknown" rendition="#none">á</hi>.</p>
+            <p>
+               <note n="2" place="foot" type="editorial">Ab hier beantwortet Ribeiro Fragen Schuchardts zu seiner kreolischen Fassung des Gleichnisses vom verlorenenen Sohn.</note>ê ál ben ardába = elle havia de</p>
+            <p>vir a herdar</p>
+            <p>ê al ardába = elle havia de herdar.</p>
+            <p>ê bên ardába = elle vinha herdar.</p>
+            <p>Sí pai dal mé = seu pai deu-</p>
+            <p>lhe effectivamente; este mé, é</p>
+            <pb facs="#IMG.8" n="8"/>
+            <p>uma segunda affirmativa, m.to</p>
+            <p>uzada no creoulo, e sem a qual</p>
+            <p>a oração fica incompleta.</p>
+            <p>Ê cá chiga lâ = acabou de lá</p>
+            <p>chegar = cá, é a abreviatura</p>
+            <p>de cába</p>
+            <p>Cando jh’ê cá gasta fépo =</p>
+            <p>quando acabou de gastar tudo</p>
+            <p>propi = mesmo</p>
+            <p>ê bá pidí ê dado un cábo =</p>
+            <p>foi pedir e deram-lhe um lugar</p>
+            <p>Cando jh’ê cuda té = não tem</p>
+            <p>traducção litteral; é uma phra-</p>
+            <p>se que significa = depois de</p>
+            <p>pensar maduramente</p>
+            <p>lí sí = aqui mesmo; ou nés</p>
+            <p>te lugar</p>
+            <p>Mórê, como digo no verso, lê-</p>
+            <p>se assentuando abertamente</p>
+            <p>a 1.<hi rendition="#sup">a</hi> syllaba, e longamente</p>
+            <p>a 2.<hi rendition="#sup">a</hi> = a 1.<hi rendition="#sup">a</hi> corresponde a 1.<hi rendition="#sup">a</hi>
+            </p>
+            <p>de f<hi rend="unknown" rendition="#none">ó</hi>me, e a 2.<hi rendition="#sup">a</hi>, á 1.<hi rendition="#sup">
 a</hi> de</p>
-        <p>
-          <hi rend="unknown" rendition="#none">re</hi>i</p>
-        <p>Si diante = diante ?élle.</p>
-        <p>qué papai! Oh meu pai!</p>
-        <p>(não é gué, mas qué).</p>
-        <p>çumola ou melhor sumola</p>
-        <p>esmóla que se dá aos pedin-</p>
-        <p>tes, e mesmo sem ser a estes;</p>
-        <p>= nós dizemos, quando pedimoz</p>
-        <pb facs="#IMG.9" n="9"/>
-        <p>3</p>
-        <p>um grande favor = é uma esmo-</p>
-        <p>la, fazer-me isto.</p>
-        <p>Cando jh’ê fasse ês xintido su-</p>
-        <p>guro = quando formou esta</p>
-        <p>segura resolução.</p>
-        <p>Jhâ xintil jhâ = já o tinha</p>
-        <p>sentido</p>
-        <p>ê ca' ojhâ qu’ê ojhál = acabou</p>
-        <p>de vel-o; - litteral é: = acabou</p>
-        <p>de olhar, e vel-o.</p>
-        <p>ê bíra propi na si criados; =</p>
-        <p>virou-se pessoalmente para os</p>
-        <p>seus criados.</p>
-        <p>ê acha ma câ tâ pôde ser pâ</p>
-        <p>ta facído quél festa tudo =<note n="3" place="foot" type="editorial">An dieser Stelle fehlt eine Zeile, die nicht lesbar ist, da das Papier an dieser Stelle gefaltet wurde.</note>
-        </p>
-        <p>to regosijo = litteral = elle acha</p>
-        <p>que não póde ser para se estar</p>
-        <p>fazendo aquella festa toda.</p>
-        <p>Diz-se facído</p>
-        <p>A êl ê dado = deram-lhe</p>
-        <p>Elle recebe, é = ê tôma</p>
-        <p>Batuco, cu musgo ta tôca =</p>
-        <p>batuque (dança indigena,</p>
-        <p>ao som de violla, e acompa-</p>
-        <p>nhada de pancadaz batidaz</p>
-        <p>a compasso naz côxas, a que</p>
-        <p>chamam chabeta) e musi-</p>
-        <p>ca a tocar.</p>
-        <p>cômâ un pai câ tâ pode dis-</p>
-        <pb facs="#IMG.10" n="10"/>
-        <p>presiâ si fijho = como um</p>
-        <p>pai não póde nunca despre-</p>
-        <p>sar seu filho = aqui o ta</p>
-        <p>corresponde a nunca; sem</p>
-        <p>elle, ficaría = como um pai</p>
-        <p>não póde desprezar seu filho.</p>
-        <p>São variadissimas as fórmas</p>
-        <p>em que se empregam as particu-</p>
-        <p>las sâ e tâ, e sempre com di-</p>
-        <p>verso sentido. Por mais diligen-</p>
-        <p>cias que haja feito, ainda não</p>
-        <p>pude classificar conveniente-</p>
-        <p>mente estaz duas particulas.</p>
-        <p>Â es qui fassê qui bô ojhano</p>
-        <p>nô sta tudo contenti = o 2º</p>
-        <p>no, não está demais; a tradu-</p>
-        <p>ção litteral é = é isto que faz</p>
-        <p>com que tu nos vejas a nós</p>
-        <p>todoz contentez = e que deve</p>
-        <p>ler-se = eix a rasão da</p>
-        <p>nossa allegria.</p>
-        <p>_______________________________</p>
-        <p>Am.o Schuchardt.</p>
-        <p>A pressa com que escrevo, por</p>
-        <p>estár a malla a fechar, não me</p>
-        <p>dá tempo de rever; desculpe pois</p>
-        <p>algum erro que encontre, ao</p>
-        <closer>
-          <salute>Seu am.o</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2512">Ribeiro</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>
+               <hi rend="unknown" rendition="#none">re</hi>i</p>
+            <p>Si diante = diante ?élle.</p>
+            <p>qué papai! Oh meu pai!</p>
+            <p>(não é gué, mas qué).</p>
+            <p>çumola ou melhor sumola</p>
+            <p>esmóla que se dá aos pedin-</p>
+            <p>tes, e mesmo sem ser a estes;</p>
+            <p>= nós dizemos, quando pedimoz</p>
+            <pb facs="#IMG.9" n="9"/>
+            <p>3</p>
+            <p>um grande favor = é uma esmo-</p>
+            <p>la, fazer-me isto.</p>
+            <p>Cando jh’ê fasse ês xintido su-</p>
+            <p>guro = quando formou esta</p>
+            <p>segura resolução.</p>
+            <p>Jhâ xintil jhâ = já o tinha</p>
+            <p>sentido</p>
+            <p>ê ca' ojhâ qu’ê ojhál = acabou</p>
+            <p>de vel-o; - litteral é: = acabou</p>
+            <p>de olhar, e vel-o.</p>
+            <p>ê bíra propi na si criados; =</p>
+            <p>virou-se pessoalmente para os</p>
+            <p>seus criados.</p>
+            <p>ê acha ma câ tâ pôde ser pâ</p>
+            <p>ta facído quél festa tudo =<note n="3" place="foot" type="editorial">An dieser Stelle fehlt eine Zeile, die nicht lesbar ist, da das Papier an dieser Stelle gefaltet wurde.</note>
+            </p>
+            <p>to regosijo = litteral = elle acha</p>
+            <p>que não póde ser para se estar</p>
+            <p>fazendo aquella festa toda.</p>
+            <p>Diz-se facído</p>
+            <p>A êl ê dado = deram-lhe</p>
+            <p>Elle recebe, é = ê tôma</p>
+            <p>Batuco, cu musgo ta tôca =</p>
+            <p>batuque (dança indigena,</p>
+            <p>ao som de violla, e acompa-</p>
+            <p>nhada de pancadaz batidaz</p>
+            <p>a compasso naz côxas, a que</p>
+            <p>chamam chabeta) e musi-</p>
+            <p>ca a tocar.</p>
+            <p>cômâ un pai câ tâ pode dis-</p>
+            <pb facs="#IMG.10" n="10"/>
+            <p>presiâ si fijho = como um</p>
+            <p>pai não póde nunca despre-</p>
+            <p>sar seu filho = aqui o ta</p>
+            <p>corresponde a nunca; sem</p>
+            <p>elle, ficaría = como um pai</p>
+            <p>não póde desprezar seu filho.</p>
+            <p>São variadissimas as fórmas</p>
+            <p>em que se empregam as particu-</p>
+            <p>las sâ e tâ, e sempre com di-</p>
+            <p>verso sentido. Por mais diligen-</p>
+            <p>cias que haja feito, ainda não</p>
+            <p>pude classificar conveniente-</p>
+            <p>mente estaz duas particulas.</p>
+            <p>Â es qui fassê qui bô ojhano</p>
+            <p>nô sta tudo contenti = o 2º</p>
+            <p>no, não está demais; a tradu-</p>
+            <p>ção litteral é = é isto que faz</p>
+            <p>com que tu nos vejas a nós</p>
+            <p>todoz contentez = e que deve</p>
+            <p>ler-se = eix a rasão da</p>
+            <p>nossa allegria.</p>
+            <p>_______________________________</p>
+            <p>Am.o Schuchardt.</p>
+            <p>A pressa com que escrevo, por</p>
+            <p>estár a malla a fechar, não me</p>
+            <p>dá tempo de rever; desculpe pois</p>
+            <p>algum erro que encontre, ao</p>
+            <closer>
+               <salute>Seu am.o</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Ribeiro</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

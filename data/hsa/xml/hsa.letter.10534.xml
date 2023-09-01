@@ -1,300 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Lajos Katona (347-05067_416)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10534" type="PID">o:hsa.letter.10534</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">347-05067_416</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Ungarn</country>
-            <settlement>Budapest</settlement>
-            <repository ref="https://mta.hu/english/">Abteilung für Handschriften und Alte Bücher, Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften</repository>
-            <idno type="shelfmark">05067_416</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.104" ref="http://sws.geonames.org/360630">Kairo</origPlace>
-              <origDate ana="dcterms:created" when="1903-04-29">1903-04-29</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2023">2023</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Lajos Katona</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1888"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10534">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.104" key="#GID.1" ref="http://sws.geonames.org/360630">Kairo</placeName>
-          <date when="1903-04-29">1903-04-29</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1888" ref="https://viaf.org/viaf/53140754">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Egypt</country>
-                <settlement>Cairo</settlement>
-                <name ref="http://geonames.org/360630" type="fcode:PPLC">Cairo</name>
-                <location>
-                  <geo>31.24967,30.06263</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1888" type="context">
-                        Korrespondenz Hugo Schuchardt - Lajos Katona
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.271" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Todesfälle</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10534" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10534" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10534" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10534" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10534" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Grand Contintental Hotel<lb/> Cairo, 29 April 1903 </dateline>
-        <opener>Lieber Freund!</opener>
-
-        <p>Gestern erzählte mir mein Araber (ein Hiesiger) eine Anekdote die mich wegen Anklangs an eine mir dunkel vorschwebende interessirte und die ich hier zu Papier bringe, vielleicht dass Sie sie irgenwie verwerten können. Etwa in irgend einer – abgekürzten, erweiterten – Gestalt, mit einer Anfrage ob Entsprechendes in Ungarn bekannt o. ä. in der <hi
-            rend="unknown" rendition="#none">&gt;Ethnographia</hi>.</p>
-
-        <p>Zu einem Geizhals auf dem Land kommt um die Zeit des Mittagessens ein Gast, d. h. kein geladener, sondern ein Fremder der auf Gastfreundschaft rechnet. Diese wird ihm aber nicht zu teil; der Herr des Hauses lässt ihn stehen und zieht sich in sein Gemach zurück um hier allein zu speisen. Der Andere wartet einige Zeit vergeblich, dann schickt er ihm folgende zwei Verse hinein: <pb
-            facs="#IMG.2" n="2"/> [es folgten zwei Zeilen in arabischer Schrift, die dann lateinisch transkribiert werden]</p>
-        <p>Ga ‘alt qôli nuṣḥan liḥâlî:<lb/> iḫzif illâmên; tifham su‘ âlî.</p>
-        <p>„ich habe mein Wort zum (guten) Rat für mich gemacht; nimm die beiden Lâm [L] weg; du wirst meine Frage verstehen“. Wenn in den ersten beiden Wörtern die beiden L beseitigt werden, so erhält man</p>
-        <p>[es folgen zwei arabische Worte]</p>
-        <p>gu’t qawî</p>
-        <p>„ich bin sehr hungrig“. Vielleicht kennen Ihre Orientalisten diese Anekdote, so oder in einer andern Gestalt. Bruchstücke einer entsprechenden, bei der es sich aber um eine Schrift (gestr. Rede) und Rückschrift (gestr. Gegenrede) handelt und wie ich glaube, Friedrich d. Gr. eine der Personen ist, sind mir aus meiner Schülerzeit erinnerlich</p>
-        <p>
-          <hi rend="unknown" rendition="#none">&gt;G a</hi>
-        </p>
-        <p>G grand, a petit = j’ai grand appétit.</p>
-        <p>p</p>
-        <p>Und auf der andern Seite war von einem Souper die Rede : ….. = sous pé.</p>
-        <p>Diese Anekdote würde ich so bestimmen: Genus : Verschleierte Bitte, Species: Verschleierung in Schriftzeichen, Suspecies: Gegenstand der Bitte eine Mahlzeit.</p>
-
-        <p>Bei dieser Gelegenheit will ich ein neues, wenngleich nicht besonders glänzendes Beispiel dafür mitteilen wie Anekdote und wirkliches Geschehen zusammen= <pb
-            facs="#IMG.3" n="3"/> stossen. Ich entsinne mich mit vielem Vergnügen eines Bildes in den <hi rend="unknown" rendition="#none">&gt;Fliegenden Bl.</hi> auf welchen ein angezechter Dorfschulmeister der seinen Heimweg durch eine Pappelallee zu machen hat, über jeden Schatten einer Pappel – es ist Mondschein – hinwegspringt, und dabei ausruft: Nein, was aber hier für viele Gräben sind. Vor einiger Zeit erzählte mir ein Herr eine lange Geschichte von einer Dame die bei Mondschein in den Tempelruinen von Karnak zu Schaden gekommen war; sie war über die Schatten der Säulen hinweggesprungen die sie für Gräben oder dergleichen gehalten.</p>
-
-        <p>Kennen Sie – bei Anekdoten darf einem ja Sacchetti einfallen – das Buch von Letterio di Francia Fr. Sacch. Novelliere Pisa 1902 (340 S.)?<note
-            n="1" place="foot" type="editorial">Letterio Di Francia, <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10534" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Grand Contintental Hotel<lb/> Cairo, 29 April 1903 </dateline>
+            <opener>Lieber Freund!</opener>
+            <p>Gestern erzählte mir mein Araber (ein Hiesiger) eine Anekdote die mich wegen Anklangs an eine mir dunkel vorschwebende interessirte und die ich hier zu Papier bringe, vielleicht dass Sie sie irgenwie verwerten können. Etwa in irgend einer – abgekürzten, erweiterten – Gestalt, mit einer Anfrage ob Entsprechendes in Ungarn bekannt o. ä. in der <hi rend="unknown" rendition="#none">&gt;Ethnographia</hi>.</p>
+            <p>Zu einem Geizhals auf dem Land kommt um die Zeit des Mittagessens ein Gast, d. h. kein geladener, sondern ein Fremder der auf Gastfreundschaft rechnet. Diese wird ihm aber nicht zu teil; der Herr des Hauses lässt ihn stehen und zieht sich in sein Gemach zurück um hier allein zu speisen. Der Andere wartet einige Zeit vergeblich, dann schickt er ihm folgende zwei Verse hinein: <pb facs="#IMG.2" n="2"/> [es folgten zwei Zeilen in arabischer Schrift, die dann lateinisch transkribiert werden]</p>
+            <p>Ga ‘alt qôli nuṣḥan liḥâlî:<lb/> iḫzif illâmên; tifham su‘ âlî.</p>
+            <p>„ich habe mein Wort zum (guten) Rat für mich gemacht; nimm die beiden Lâm [L] weg; du wirst meine Frage verstehen“. Wenn in den ersten beiden Wörtern die beiden L beseitigt werden, so erhält man</p>
+            <p>[es folgen zwei arabische Worte]</p>
+            <p>gu’t qawî</p>
+            <p>„ich bin sehr hungrig“. Vielleicht kennen Ihre Orientalisten diese Anekdote, so oder in einer andern Gestalt. Bruchstücke einer entsprechenden, bei der es sich aber um eine Schrift (gestr. Rede) und Rückschrift (gestr. Gegenrede) handelt und wie ich glaube, Friedrich d. Gr. eine der Personen ist, sind mir aus meiner Schülerzeit erinnerlich</p>
+            <p>
+               <hi rend="unknown" rendition="#none">&gt;G a</hi>
+            </p>
+            <p>G grand, a petit = j’ai grand appétit.</p>
+            <p>p</p>
+            <p>Und auf der andern Seite war von einem Souper die Rede : ….. = sous pé.</p>
+            <p>Diese Anekdote würde ich so bestimmen: Genus : Verschleierte Bitte, Species: Verschleierung in Schriftzeichen, Suspecies: Gegenstand der Bitte eine Mahlzeit.</p>
+            <p>Bei dieser Gelegenheit will ich ein neues, wenngleich nicht besonders glänzendes Beispiel dafür mitteilen wie Anekdote und wirkliches Geschehen zusammen= <pb facs="#IMG.3" n="3"/> stossen. Ich entsinne mich mit vielem Vergnügen eines Bildes in den <hi rend="unknown" rendition="#none">&gt;Fliegenden Bl.</hi> auf welchen ein angezechter Dorfschulmeister der seinen Heimweg durch eine Pappelallee zu machen hat, über jeden Schatten einer Pappel – es ist Mondschein – hinwegspringt, und dabei ausruft: Nein, was aber hier für viele Gräben sind. Vor einiger Zeit erzählte mir ein Herr eine lange Geschichte von einer Dame die bei Mondschein in den Tempelruinen von Karnak zu Schaden gekommen war; sie war über die Schatten der Säulen hinweggesprungen die sie für Gräben oder dergleichen gehalten.</p>
+            <p>Kennen Sie – bei Anekdoten darf einem ja Sacchetti einfallen – das Buch von Letterio di Francia Fr. Sacch. Novelliere Pisa 1902 (340 S.)?<note n="1" place="foot" type="editorial">Letterio Di Francia, <hi rend="unknown" rendition="#none">
 &gt;
 <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8210">
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8210">
 Franco Sacchetti novelliere</ref>
-              </bibl>
-
-            </hi>, Pisa: Nistri, 1902, 342 S. (S.-Abdr.aus: Annali della R. Scuola Normale Superiore di Pisa, Vol.XVI). Di Francia (1877-1940) arbeitete sich aus einfachen Verhältnissen zum Gymnasiallehrer hoch und konzentrierte sich in seinen Publikationen auf die italienische Novellistik. Eine akademische Karriere blieb ihm verwehrt. Er unterrichtete u. a. in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6008">
+                     </bibl>
+                  </hi>, Pisa: Nistri, 1902, 342 S. (S.-Abdr.aus: Annali della R. Scuola Normale Superiore di Pisa, Vol.XVI). Di Francia (1877-1940) arbeitete sich aus einfachen Verhältnissen zum Gymnasiallehrer hoch und konzentrierte sich in seinen Publikationen auf die italienische Novellistik. Eine akademische Karriere blieb ihm verwehrt. Er unterrichtete u. a. in <placeName ref="[authorityLink]">
 Tunis</placeName> und <placeName>
-Shkodër</placeName> (Scutari).</note> Der Verf. ist ein ganz junger Mann, ist hier Lehrer; es ist ein Schüler Rajnas der ihn veranlasste mich aufzusuchen. Das Buch, das er mir in diesen Tagen gebracht hat, macht mir einen sehr guten Eindruck. Auch G. Paris – an den ich <pb
-            facs="#IMG.4" n="4"/> jeden Tag denke<note n="2" place="foot"
-              type="editorial">
-Schuchardt hatte vermutlich von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2350">seinem</persName>
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.271">Tod</ref> am 5. März 1903 in <placeName>
+Shkodër</placeName> (Scutari).</note> Der Verf. ist ein ganz junger Mann, ist hier Lehrer; es ist ein Schüler Rajnas der ihn veranlasste mich aufzusuchen. Das Buch, das er mir in diesen Tagen gebracht hat, macht mir einen sehr guten Eindruck. Auch G. Paris – an den ich <pb facs="#IMG.4" n="4"/> jeden Tag denke<note n="2" place="foot" type="editorial">
+Schuchardt hatte vermutlich von <persName ref="[authorityLink]">seinem</persName>
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.271">Tod</ref> am 5. März 1903 in <placeName>
 Cannes</placeName> erfahren.</note> soll sich günstig darüber geäussert haben.</p>
-        <p>Ásboth<note n="3" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1055">Oszkar Asbóth</persName> (1852-1920), ungar. Slawist; vgl. HSA 00176-00200.</note> hat sich mit Feuereifer auf das Georgische gestürzt, zunächst wohl auf Munkácsi.<note
-            n="4" place="foot" type="editorial">Bernát Munkáksi, <hi rend="unknown" rendition="#none">
+            <p>Ásboth<note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Oszkar Asbóth</persName> (1852-1920), ungar. Slawist; vgl. HSA 00176-00200.</note> hat sich mit Feuereifer auf das Georgische gestürzt, zunächst wohl auf Munkácsi.<note n="4" place="foot" type="editorial">Bernát Munkáksi, <hi rend="unknown" rendition="#none">
 &gt;
 <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8179">A votják nyelv szótára; Lexicon linguae Votiacorum</ref>
-              </bibl>
-            </hi>, Budapest; Franklin-Társulat Nyomda. 1896 [Das Votiakische gehört zu den finno-ugrischen Sprachen].</note> Feindschaft und Liebe gehen ja so oft miteinander. Er machte mir eine Andeutung als ob er schon etwas in dieser Hinsicht veröffentlicht hat. Nun das werde ich wohl zu Hause vorfinden.</p>
-        <p>Haben Sie je mit Alecsi Gy.<note n="5" place="foot" type="editorial">Gem. ist wohl <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1025">György Alexics</persName> (1864-1936), ungar. Sprachwissenschaftler; vgl. HSA 00031-00046.</note> über mich gesprochen? Ich möchte so gern wissen ob ich ihn ohne zu wollen, irgendwie gekränkt habe.</p>
-        <p>Ich werde am 3. Mai mit dem nach Genua gehenden „Rhein“ Ägypten verlassen.</p>
-        <closer>
-          <salute>Herzlichst Ihr und der Ihrigen</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8179">A votják nyelv szótára; Lexicon linguae Votiacorum</ref>
+                     </bibl>
+                  </hi>, Budapest; Franklin-Társulat Nyomda. 1896 [Das Votiakische gehört zu den finno-ugrischen Sprachen].</note> Feindschaft und Liebe gehen ja so oft miteinander. Er machte mir eine Andeutung als ob er schon etwas in dieser Hinsicht veröffentlicht hat. Nun das werde ich wohl zu Hause vorfinden.</p>
+            <p>Haben Sie je mit Alecsi Gy.<note n="5" place="foot" type="editorial">Gem. ist wohl <persName ref="[authorityLink]">György Alexics</persName> (1864-1936), ungar. Sprachwissenschaftler; vgl. HSA 00031-00046.</note> über mich gesprochen? Ich möchte so gern wissen ob ich ihn ohne zu wollen, irgendwie gekränkt habe.</p>
+            <p>Ich werde am 3. Mai mit dem nach Genua gehenden „Rhein“ Ägypten verlassen.</p>
+            <closer>
+               <salute>Herzlichst Ihr und der Ihrigen</salute>
+               <signed>
+                  <persName ref="[authorityLink]">
 HSchuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

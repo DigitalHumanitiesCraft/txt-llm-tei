@@ -1,282 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Georges Lacombe (099-066)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Katrin</forename>
-            <surname>Purgay</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3995" type="PID">o:hsa.letter.3995</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">099-066</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</repository>
-            <idno type="shelfmark">066</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1910-03-21">1910-03-21</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Katrin</forename>
-              <surname>Purgay</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Georges Lacombe</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1977"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3995">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1910-03-21">1910-03-21</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1977" ref="https://viaf.org/viaf/34446283">
-            <forename>Georges</forename>
-            <surname>Lacombe</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1977" type="context">
-                        Korrespondenz Hugo Schuchardt - Georges Lacombe
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3995" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3995" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3995" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3995" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3995" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 21.3.’10</dateline>
-        <opener>Sehr geehrter Herr und Freund,</opener>
-        <p>Meine Kreuzbandsendung – eine gleiche geht an <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2906">de Urquijo</persName> ab – begleite ich mit einigen Worten.</p>
-
-        <p>Die ganze Abhandlung würde für einen Nichtfachmann schwierig zu verstehen sein. Wir Sprachforscher bedienen uns einer abgekürzten Ausdrucksweise, und dabei hat wieder jeder von uns seine Eigentümlichkeiten. Dass hypothetische Formen mit einem * bezeichnet werden, das wissen Sie ja wohl; aber schwerlich was bei <hi
-            rend="unknown" rendition="#none">mir</hi> ein <hi
-            rendition="#sub">*</hi> bedeuten soll; Ich setze den Stern <hi rend="unknown"
-            rendition="#none">unten</hi> vor einer lat. Wortform wenn ich darunter die <pb facs="#IMG.2"
-            n="2"/> Gesamtheit der ihr entsprechenden romanischen Formen verstanden haben will, z.B. <hi rendition="#sub">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3995" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 21.3.’10</dateline>
+            <opener>Sehr geehrter Herr und Freund,</opener>
+            <p>Meine Kreuzbandsendung – eine gleiche geht an <persName ref="[authorityLink]">de Urquijo</persName> ab – begleite ich mit einigen Worten.</p>
+            <p>Die ganze Abhandlung würde für einen Nichtfachmann schwierig zu verstehen sein. Wir Sprachforscher bedienen uns einer abgekürzten Ausdrucksweise, und dabei hat wieder jeder von uns seine Eigentümlichkeiten. Dass hypothetische Formen mit einem * bezeichnet werden, das wissen Sie ja wohl; aber schwerlich was bei <hi rend="unknown" rendition="#none">mir</hi> ein <hi rendition="#sub">*</hi> bedeuten soll; Ich setze den Stern <hi rend="unknown" rendition="#none">unten</hi> vor einer lat. Wortform wenn ich darunter die <pb facs="#IMG.2" n="2"/> Gesamtheit der ihr entsprechenden romanischen Formen verstanden haben will, z.B. <hi rendition="#sub">
 *</hi>
-          <hi rend="unknown" rendition="#none">factum</hi> ist so viel wie <hi rend="unknown" rendition="#none">fait, fatto, hecho</hi> usw.</p>
-        <p>Ich danke Ihnen für die gedruckten Proben aus Azkues romanisch-baskischem Wörterbuch. Wie weit sind wir noch vom Ende!</p>
-        <p>M. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1712">Harriet</persName>s Wörterbuch sollte doch unter allen Umständen gedruckt werden, zum Mindesten insoweit als er <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1062">Azkue</persName>s Werk ergänzt. Ich war sehr vergesslich als ich Sie um Auskunft über ihn bat; ich habe ja einen längeren Brief von ihm (Halsou Aug. 1887) bekommen als Antwort auf gewisse Anfragen die ich an ihn gerichtet hatte. Er spricht von seinem Wörterbuch…. „tout mon désir c’est de le laisser fini et manuscrit. Quant à l’imprimer je n’y pense pas, content de rassembler et de <pb
-            facs="#IMG.3" n="3"/> mettre en ordre des notes que j’ai commencé à prendre il y a plus de 25 ans et que personne autre que moi ne pourra même lire.“</p>
-
-        <p>Indem ich in meinen baskischen Papieren herumkrame, finde ich auch den Brief einer Engländerin mit der ich wegen Dodgsons korrespondiert hatte. Andere Briefe scheinen vorangegangen zu sein; der übrig gebliebene ist <hi
-            rend="unknown"
-            rendition="#none">
-ohne Jahreszahl</hi>. Sie war die Freundin seiner Mutter und besitzt grosse Anhänglichkeit zu ihm<note
-            n="1" place="foot"
-            type="editorial">an ihn und zu ihm sind übereinandergeschrieben und es ist schwer zu sagen, welches die korrigierte Fassung ist.</note> selbst. Sie erklärt seine Psyche bis zu einem gewissen Grad; stellt aber das Tatsächliche nicht anders dar als ich es auffasse, und gibt mir den Rat nicht nur den Briefwechsel mit ihm abzubrechen, sondern auch [no]ch<note
-            n="2" place="foot" type="editorial">Schuchardt hat sich an dieser Stelle wieder selbst korrigiert, sodass die ersten Buchstaben nicht eindeutig zu entziffern sind.</note> Massregeln zu treffen dass mich seine Briefe überhaupt nicht erreichen. Ihr Brief schliesst „I do not think he is always master of his reason“. </p>
-        <p>
-          <pb facs="#IMG.4" n="4"/> Mit <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2047">
-            <hi rend="unknown" rendition="#none">Linschmann</hi>
-
-          </persName> bin ich, ganz ohne meine Schuld, seit vielen Jahren auseinander. Er sprach mir seine Unzufriedenheit darüber aus dass ich in meiner Vorrede zum Leicarraga seinen Anteil an der Arbeit nicht genügend hervorgehoben hätte. Stehen Sie und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2906">de Urquijo</persName>in Beziehungen zu ihm?</p>
-        <p>Was ist aus <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2001">
-            <hi rend="unknown" rendition="#none">Larrieu</hi>
-          </persName> geworden mit dem ich seiner Zeit manche Briefe gewechselt habe?</p>
-        <closer>
-          <salute>Mit herzlichem Gruss</salute>
-          <lb/>
-          <salute>Ihr ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Sachwortgeschichte (bez. -forschung) ist „de mon cru“; es soll soviel bedeuten wie Geschichte von Sache und Wort in ihrem gegenseitigen Verhältnis; „Sach- und Wortgeschichte“ würde soviel sein wie Sachgeschichte und Wortgeschichte, die ja mehr oder weniger auseinanderfallen können.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+               <hi rend="unknown" rendition="#none">factum</hi> ist so viel wie <hi rend="unknown" rendition="#none">fait, fatto, hecho</hi> usw.</p>
+            <p>Ich danke Ihnen für die gedruckten Proben aus Azkues romanisch-baskischem Wörterbuch. Wie weit sind wir noch vom Ende!</p>
+            <p>M. <persName ref="[authorityLink]">Harriet</persName>s Wörterbuch sollte doch unter allen Umständen gedruckt werden, zum Mindesten insoweit als er <persName ref="[authorityLink]">Azkue</persName>s Werk ergänzt. Ich war sehr vergesslich als ich Sie um Auskunft über ihn bat; ich habe ja einen längeren Brief von ihm (Halsou Aug. 1887) bekommen als Antwort auf gewisse Anfragen die ich an ihn gerichtet hatte. Er spricht von seinem Wörterbuch…. „tout mon désir c’est de le laisser fini et manuscrit. Quant à l’imprimer je n’y pense pas, content de rassembler et de <pb facs="#IMG.3" n="3"/> mettre en ordre des notes que j’ai commencé à prendre il y a plus de 25 ans et que personne autre que moi ne pourra même lire.“</p>
+            <p>Indem ich in meinen baskischen Papieren herumkrame, finde ich auch den Brief einer Engländerin mit der ich wegen Dodgsons korrespondiert hatte. Andere Briefe scheinen vorangegangen zu sein; der übrig gebliebene ist <hi rend="unknown" rendition="#none">
+ohne Jahreszahl</hi>. Sie war die Freundin seiner Mutter und besitzt grosse Anhänglichkeit zu ihm<note n="1" place="foot" type="editorial">an ihn und zu ihm sind übereinandergeschrieben und es ist schwer zu sagen, welches die korrigierte Fassung ist.</note> selbst. Sie erklärt seine Psyche bis zu einem gewissen Grad; stellt aber das Tatsächliche nicht anders dar als ich es auffasse, und gibt mir den Rat nicht nur den Briefwechsel mit ihm abzubrechen, sondern auch [no]ch<note n="2" place="foot" type="editorial">Schuchardt hat sich an dieser Stelle wieder selbst korrigiert, sodass die ersten Buchstaben nicht eindeutig zu entziffern sind.</note> Massregeln zu treffen dass mich seine Briefe überhaupt nicht erreichen. Ihr Brief schliesst „I do not think he is always master of his reason“. </p>
+            <p>
+               <pb facs="#IMG.4" n="4"/> Mit <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Linschmann</hi>
+               </persName> bin ich, ganz ohne meine Schuld, seit vielen Jahren auseinander. Er sprach mir seine Unzufriedenheit darüber aus dass ich in meiner Vorrede zum Leicarraga seinen Anteil an der Arbeit nicht genügend hervorgehoben hätte. Stehen Sie und <persName ref="[authorityLink]">de Urquijo</persName>in Beziehungen zu ihm?</p>
+            <p>Was ist aus <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Larrieu</hi>
+               </persName> geworden mit dem ich seiner Zeit manche Briefe gewechselt habe?</p>
+            <closer>
+               <salute>Mit herzlichem Gruss</salute>
+               <lb/>
+               <salute>Ihr ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Sachwortgeschichte (bez. -forschung) ist „de mon cru“; es soll soviel bedeuten wie Geschichte von Sache und Wort in ihrem gegenseitigen Verhältnis; „Sach- und Wortgeschichte“ würde soviel sein wie Sachgeschichte und Wortgeschichte, die ja mehr oder weniger auseinanderfallen können.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,331 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Lajos Katona (165-05067_306)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10353" type="PID">o:hsa.letter.10353</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">165-05067_306</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Ungarn</country>
-            <settlement>Budapest</settlement>
-            <repository ref="https://mta.hu/english/">Abteilung für Handschriften und Alte Bücher, Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften</repository>
-            <idno type="shelfmark">05067_306</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1891-10-04">1891-10-04</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2023">2023</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Lajos Katona</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1888"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10353">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1891-10-04">1891-10-04</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1888" ref="https://viaf.org/viaf/53140754">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1888" type="context">
-                        Korrespondenz Hugo Schuchardt - Lajos Katona
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5239" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Allgemeiner Deutscher Sprachverein</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10353" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10353" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10353" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10353" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10353" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10353" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10353" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 4 Okt. 91.</dateline>
-        <opener>Lieber Freund,</opener>
-
-        <p>Ich habe Ihren dankenswerthen Brief noch in Friedrichsroda – von wo ich erst diese Nacht zurückgekehrt bin – erhalten. Ueber das Gedicht auf <hi
-            rend="unknown" rendition="#none">Guadányi</hi>
-          <note n="1" place="foot"
-            type="editorial">Sándor Petöfi, „<bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10353" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 4 Okt. 91.</dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Ich habe Ihren dankenswerthen Brief noch in Friedrichsroda – von wo ich erst diese Nacht zurückgekehrt bin – erhalten. Ueber das Gedicht auf <hi rend="unknown" rendition="#none">Guadányi</hi>
+               <note n="1" place="foot" type="editorial">Sándor Petöfi, „<bibl>
 
 A régi jó Gvadányi
-</bibl>“ (Pest, 1844 július – augusztus).</note> bedarf es wohl keiner näheren Auskunft; es ist natürlich ganz ernst gemeint – auf uns Deutsche würde allerdings ein in Sprache und Dichtweise Hofmannswaldau’s gehaltenes Erzeugniss durchaus nicht den Eindruck hervorrufen <pb
-            facs="#IMG.2" n="2"/> welchen Petöfi mit dem seinigen beabsichtigte.</p>
-        <p>Wer redigirt denn das Hunfalvy-album und wann wird es abgeschlossen werden?<note n="2" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
+</bibl>“ (Pest, 1844 július – augusztus).</note> bedarf es wohl keiner näheren Auskunft; es ist natürlich ganz ernst gemeint – auf uns Deutsche würde allerdings ein in Sprache und Dichtweise Hofmannswaldau’s gehaltenes Erzeugniss durchaus nicht den Eindruck hervorrufen <pb facs="#IMG.2" n="2"/> welchen Petöfi mit dem seinigen beabsichtigte.</p>
+            <p>Wer redigirt denn das Hunfalvy-album und wann wird es abgeschlossen werden?<note n="2" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Hunfalvy-album; félszázados akadémiai tagsága emlékére
 </bibl>
-            </hi>, Budapest; Hornyánszky Viktor, 1891; XXIV, 272 Seiten. Katona ist darin vertreten mit <hi
-              rend="unknown"
-            rendition="#none">A mesevizsgálat legközelebbi feladatairól [= Die Aufgaben der Märchenforschung]</hi>.</note> Ich frage nur so auf alle Fälle; denn – nach einem halben Jahre nicht bloss der Unthätigkeit, sondern geradezu kulturfeindlichen Stimmung vor einer Gletscherwand der verschiedenartigsten Arbeit stehend - <pb
-            facs="#IMG.3"
-            n="3"/> kann ich kaum hoffen irgendeinen Beitrag dazu zu liefern. – Vermittelst einer eigenthümlichen – romano-magyarischen – Gedankenverbindung komme ich von Hunfalvy auf das mir räthselhafte Wort <hi
-            rend="unknown"
-            rendition="#none">
-bitor</hi>, welches ein junges sein muss da es das hist Wtb. nicht aufweist. Es erinnert mich nämlich an das span. <hi
-            rend="unknown"
-            rendition="#none">vitor</hi> „Sieger“, dann „bravo!“, hat natürlich damit nichts zu thun, scheint slawisch zu <pb
-            facs="#IMG.4"
-            n="4"/> sein – ich kann die Sache augenblicklich nicht verfolgen – aber haben denn die Magyaren in jüngster Zeit aus dem Slawischen entlehnt? – Das Deutsche scheint, soviel ich aus den unterwegs gelesenen Zeitungen ersehe, bei Ihnen am gründlichsten ausgerottet zu werden. Auch in den Salons! Meinetwegen; Sie wissen wie ich über diese Dinge denke – soeben habe ich den Aufruf des „Allgemeinen Deutschen Verbandes“ (zu Berlin)<note
-            n="3" place="foot" type="editorial">
-            <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5239">Alldeutscher Verband</ref>, bis 1894 Allgemeiner Deutscher Verband; gem. ist möglicherweise der Gründungsaufruf vom 24.6.1890, den vier in der Schweiz lebende Deutsche (<persName>
+                  </hi>, Budapest; Hornyánszky Viktor, 1891; XXIV, 272 Seiten. Katona ist darin vertreten mit <hi rend="unknown" rendition="#none">A mesevizsgálat legközelebbi feladatairól [= Die Aufgaben der Märchenforschung]</hi>.</note> Ich frage nur so auf alle Fälle; denn – nach einem halben Jahre nicht bloss der Unthätigkeit, sondern geradezu kulturfeindlichen Stimmung vor einer Gletscherwand der verschiedenartigsten Arbeit stehend - <pb facs="#IMG.3" n="3"/> kann ich kaum hoffen irgendeinen Beitrag dazu zu liefern. – Vermittelst einer eigenthümlichen – romano-magyarischen – Gedankenverbindung komme ich von Hunfalvy auf das mir räthselhafte Wort <hi rend="unknown" rendition="#none">
+bitor</hi>, welches ein junges sein muss da es das hist Wtb. nicht aufweist. Es erinnert mich nämlich an das span. <hi rend="unknown" rendition="#none">vitor</hi> „Sieger“, dann „bravo!“, hat natürlich damit nichts zu thun, scheint slawisch zu <pb facs="#IMG.4" n="4"/> sein – ich kann die Sache augenblicklich nicht verfolgen – aber haben denn die Magyaren in jüngster Zeit aus dem Slawischen entlehnt? – Das Deutsche scheint, soviel ich aus den unterwegs gelesenen Zeitungen ersehe, bei Ihnen am gründlichsten ausgerottet zu werden. Auch in den Salons! Meinetwegen; Sie wissen wie ich über diese Dinge denke – soeben habe ich den Aufruf des „Allgemeinen Deutschen Verbandes“ (zu Berlin)<note n="3" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5239">Alldeutscher Verband</ref>, bis 1894 Allgemeiner Deutscher Verband; gem. ist möglicherweise der Gründungsaufruf vom 24.6.1890, den vier in der Schweiz lebende Deutsche (<persName>
 Adolf Eugen Fick</persName>, <persName>
 
 Walther Felix</persName>, <persName>
 Otto Lubarsch</persName> und <persName>
-Albert Müller</persName>) in mehreren deutschen Tageszeitungen lanciert hatten.</note> zur „Belebung des <hi
-            rend="unknown"
-            rendition="#none">nationalstolzen</hi> Geistes“ dankend beseite gelegt. Aber wenn ich mich ganz auf den magyarischen Standpunkt stelle, finde ich diese Germanophobie ebenso unnütz wie unklug. <pb
-            facs="#IMG.5"
-            n="5"/> Und dabei will ich gar nicht in Rechnung ziehen dass von allen umgebenden Völkern doch die <hi
-            rend="unknown"
-            rendition="#none">Deutschen</hi> die einzigen sind, zunächst wenigstens, mit denen die Magyaren in Friede und Freundschaft leben können. Wie die Deutschfeindlichkeit Russen und Franzosen zusammengeführt hat, so haben neulich sogar, um der gehassten Deutschen willen, schmausend-vereinte Tschechen und Kroaten für die Magyaren gute Worte gehabt und wiederum haben neulich die ungarisch-rumänischen Besucher der Prager Ausstellung<note
-            n="4" place="foot"
-            type="editorial">Prager Landes-Jubiläumsausstellung 1891 (Jubilejní zemská výstava), eine Präsentation des tschechischen Wirtschaftslebens.</note> (Muresianu<note
-            n="5" place="foot"
-            type="editorial">Wohl <persName>
+Albert Müller</persName>) in mehreren deutschen Tageszeitungen lanciert hatten.</note> zur „Belebung des <hi rend="unknown" rendition="#none">nationalstolzen</hi> Geistes“ dankend beseite gelegt. Aber wenn ich mich ganz auf den magyarischen Standpunkt stelle, finde ich diese Germanophobie ebenso unnütz wie unklug. <pb facs="#IMG.5" n="5"/> Und dabei will ich gar nicht in Rechnung ziehen dass von allen umgebenden Völkern doch die <hi rend="unknown" rendition="#none">Deutschen</hi> die einzigen sind, zunächst wenigstens, mit denen die Magyaren in Friede und Freundschaft leben können. Wie die Deutschfeindlichkeit Russen und Franzosen zusammengeführt hat, so haben neulich sogar, um der gehassten Deutschen willen, schmausend-vereinte Tschechen und Kroaten für die Magyaren gute Worte gehabt und wiederum haben neulich die ungarisch-rumänischen Besucher der Prager Ausstellung<note n="4" place="foot" type="editorial">Prager Landes-Jubiläumsausstellung 1891 (Jubilejní zemská výstava), eine Präsentation des tschechischen Wirtschaftslebens.</note> (Muresianu<note n="5" place="foot" type="editorial">Wohl <persName>
 
-Iacob Mureşianu</persName> (1857-1917), rumän. Musiker; Komponist und Dirigent.</note> an der Spitze) die Tschechen als „mitduldende Brüder“ gegenüber der deutschen und magyarischen <pb
-            facs="#IMG.6" n="6"/> Bedrückern gefeiert! U.s.w. Kann man sich buntere Figuren für eine verlängerte Quadrille denken, und wäre es nicht der Mühe werth, sich einmal für einige Zeit seiner Nationalität zu entäussern um unparteiisch darüber zu schreiben?</p>
-        <p>Meine Mama ist sehr erkenntlich für Ihr freundliches Gedenken, ich nicht minder. Seien Sie überzeugt dass ich an Ihrem und der Ihren Wohl stets den lebhaftesten Antheil nehme.</p>
-        <closer>
-          <salute>B. gr. Ihr ganz ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. S.</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Sie schreiben so ausführlich über Fischer’s Petöfibiographie,<note n="6" place="foot"
-                type="editorial">Alexander Fischer, <hi rend="unknown" rendition="#none">
-                <bibl>
+Iacob Mureşianu</persName> (1857-1917), rumän. Musiker; Komponist und Dirigent.</note> an der Spitze) die Tschechen als „mitduldende Brüder“ gegenüber der deutschen und magyarischen <pb facs="#IMG.6" n="6"/> Bedrückern gefeiert! U.s.w. Kann man sich buntere Figuren für eine verlängerte Quadrille denken, und wäre es nicht der Mühe werth, sich einmal für einige Zeit seiner Nationalität zu entäussern um unparteiisch darüber zu schreiben?</p>
+            <p>Meine Mama ist sehr erkenntlich für Ihr freundliches Gedenken, ich nicht minder. Seien Sie überzeugt dass ich an Ihrem und der Ihren Wohl stets den lebhaftesten Antheil nehme.</p>
+            <closer>
+               <salute>B. gr. Ihr ganz ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. S.</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Sie schreiben so ausführlich über Fischer’s Petöfibiographie,<note n="6" place="foot" type="editorial">Alexander Fischer, <hi rend="unknown" rendition="#none">
+                        <bibl>
 
 Petöfi's Leben und Werke : Mit den Porträts von Alexander und Julia Petöfi, drei Handzeichnungen von Petöfi, einem autobiographischen Blatte in Facsimiledruck und einer Copie der „Zwölf Punkte", des ersten censurfreien Preßerzeugnisses in Ungarn
 </bibl>
-              </hi>, Leipzig: Friedrich Wilhelm, 1889, 628 S.; ungar. <hi rend="unknown"
-              rendition="#none">Petöfi élete és müvei … Elöszóval-ellátta Jokai M. Németbäö forditotta Tolnai L.</hi>, Budapest 1890.</note> dass ich wahrscheinlich statt <hi
-              rend="unknown" rendition="#none">Bibliographie</hi> geschrieben habe: <hi rend="unknown"
-              rendition="#none">Biographie</hi>. – Wenn Sie einen Budapester Studenten sehen, fragen Sie ihn doch ob Exemplare Ihrer Erwiderungsschrift bloss an die auswärtigen Universitäten wo man Budapest und Bucarest miteinander verwechselt, gegangen sind? – Ist das geschichtl. Wörterbuch noch nicht fertig?<note
-              n="7" place="foot" type="editorial">Vgl. Katonas Antwort HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.10354">05384</ref> (12.10.1891).</note>
-          </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                     </hi>, Leipzig: Friedrich Wilhelm, 1889, 628 S.; ungar. <hi rend="unknown" rendition="#none">Petöfi élete és müvei … Elöszóval-ellátta Jokai M. Németbäö forditotta Tolnai L.</hi>, Budapest 1890.</note> dass ich wahrscheinlich statt <hi rend="unknown" rendition="#none">Bibliographie</hi> geschrieben habe: <hi rend="unknown" rendition="#none">Biographie</hi>. – Wenn Sie einen Budapester Studenten sehen, fragen Sie ihn doch ob Exemplare Ihrer Erwiderungsschrift bloss an die auswärtigen Universitäten wo man Budapest und Bucarest miteinander verwechselt, gegangen sind? – Ist das geschichtl. Wörterbuch noch nicht fertig?<note n="7" place="foot" type="editorial">Vgl. Katonas Antwort HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.10354">05384</ref> (12.10.1891).</note>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

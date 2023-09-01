@@ -1,349 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Henri Gaidoz (093-SG21)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Magdalena</forename>
-            <surname>Rattey</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5253" type="PID">o:hsa.letter.5253</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">093-SG21</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</repository>
-            <idno type="shelfmark">SG21</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1898-11-20">1898-11-20</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Magdalena</forename>
-              <surname>Rattey</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Henri Gaidoz</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1541"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5253">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1898-11-20">1898-11-20</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1541" ref="https://viaf.org/viaf/9972548">
-            <forename>Henri</forename>
-            <surname>Gaidoz</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1541" type="context">
-                        Korrespondenz Hugo Schuchardt - Henri Gaidoz
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5467" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Budapesti Hírlap</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5253" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5253" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5253" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5253" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5253" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5253" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 20 Nov 98.</dateline>
-        <opener>Verehrter Herr, </opener>
-        <p>Ich danke Ihnen bestens für Brief und Recension. Es hat mich überrascht dass Sie von dem <hi rend="unknown"
-            rendition="#none">Index</hi> im <hi rend="unknown" rendition="#none">Budapesti</hi>
-          <hi rend="unknown" rendition="#none">Hírlap</hi>,<note n="1" place="foot"
-              type="editorial">Leider ist hier der Bezug nicht klar. Im nächsten Brief vom 11. Dezember 1898 (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.5254">093-03283</ref>) schreibt Gaidoz hierzu: „C’est par vous que j’avais appris (cet été) qu’<persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1059">Auerbach</persName> avait été mis à l’Index par le <hi
-              rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5467">Budapesti Hirlap</ref>
-            </hi>.“</note> meinem Leibblatt, Kenntniss bekommen haben. - Körösy hat mir einen langen Brief<note n="2"
-            place="foot" type="editorial">Von der Korrespondenz zwischen <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1943">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5253" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 20 Nov 98.</dateline>
+            <opener>Verehrter Herr, </opener>
+            <p>Ich danke Ihnen bestens für Brief und Recension. Es hat mich überrascht dass Sie von dem <hi rend="unknown" rendition="#none">Index</hi> im <hi rend="unknown" rendition="#none">Budapesti</hi>
+               <hi rend="unknown" rendition="#none">Hírlap</hi>,<note n="1" place="foot" type="editorial">Leider ist hier der Bezug nicht klar. Im nächsten Brief vom 11. Dezember 1898 (<ref target="https://gams.uni-graz.at/o:hsa.letter.5254">093-03283</ref>) schreibt Gaidoz hierzu: „C’est par vous que j’avais appris (cet été) qu’<persName ref="[authorityLink]">Auerbach</persName> avait été mis à l’Index par le <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5467">Budapesti Hirlap</ref>
+                  </hi>.“</note> meinem Leibblatt, Kenntniss bekommen haben. - Körösy hat mir einen langen Brief<note n="2" place="foot" type="editorial">Von der Korrespondenz zwischen <persName ref="[authorityLink]">
 Josef Körösy von Szántó</persName> und Schuchardt sind drei Briefe von Körösy an Schuchardt im Schuchardt-Nachlass erhalten (05736-05738). Vermutlich ist jener Brief vom 13.11.1898 (
 05736) hier gemeint. Körösy (1844-1906) zuerst als Beamter bei einer Versicherungsanstalt in <placeName>
-Budapest</placeName>, ab 1868 als Journalist tätig, fand seine Berufung in der Statistik. So organisierte er ab 1869 das statistische Bureau in Budapest, dessen Leitung er bis 1906 inne hatte (vgl. ÖNB (Hg.). 2002. <hi
-              rend="unknown" rendition="#none">
-              <bibl>
+Budapest</placeName>, ab 1868 als Journalist tätig, fand seine Berufung in der Statistik. So organisierte er ab 1869 das statistische Bureau in Budapest, dessen Leitung er bis 1906 inne hatte (vgl. ÖNB (Hg.). 2002. <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 Handbuch der österreichischer Autorinnen und Autoren jüdischer Herkunft 18. bis 20. Jahrhundert
 </bibl>
-            </hi>, Band 1. München: K.G. Saur). Vgl. auch Brief vom 16. Jänner 1899 (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.1885">58-356</ref>) in Eismann, Wolfgang &amp; Bernhard Hurch. 2014. 'Die Korrespondenz zwischen Jan Baudouin de Courtenay und Hugo Schuchardt'. In Bernhard Hurch (Hg.) (2007-). <hi
-              rend="unknown" rendition="#none">Hugo Schuchardt Archiv</hi>, siehe <ref
-              target="https://gams.uni-graz.at/o:hsa.persons#P.1943">Webedition</ref>. Schuchardt schreibt hierin an <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1097">Baudouin de Courtenay</persName>: „Mit den Slowaken in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5936">Ungarn</placeName> habe ich mich vorübergehend beschäftigt, gelegentlich der ersten Studie des magyarischen Statistikus J. Körösy „<bibl>
+                  </hi>, Band 1. München: K.G. Saur). Vgl. auch Brief vom 16. Jänner 1899 (<ref target="https://gams.uni-graz.at/o:hsa.letter.1885">58-356</ref>) in Eismann, Wolfgang &amp; Bernhard Hurch. 2014. 'Die Korrespondenz zwischen Jan Baudouin de Courtenay und Hugo Schuchardt'. In Bernhard Hurch (Hg.) (2007-). <hi rend="unknown" rendition="#none">Hugo Schuchardt Archiv</hi>, siehe <ref target="https://gams.uni-graz.at/o:hsa.persons#P.1943">Webedition</ref>. Schuchardt schreibt hierin an <persName ref="[authorityLink]">Baudouin de Courtenay</persName>: „Mit den Slowaken in <placeName ref="[authorityLink]">Ungarn</placeName> habe ich mich vorübergehend beschäftigt, gelegentlich der ersten Studie des magyarischen Statistikus J. Körösy „<bibl>
 
 Die Slowakisirung Oberungarns
-</bibl>“ (magy.), die er mir zugeschickt hatte. Da ich mich dem magyarischen Chauvinismus, der darin ausgesprochen war, entgegenstellte, so habe ich von dem Verfasser darüber in freundschaftlichster Weise nähere Aufklärung erhalten.“</note> geschrieben; er bekennt sich als aufrichtigen und praktisirenden Anhänger der „auf dem Selbsterhaltungstrieb beruhenden energischen Nationalitätspolitik“. Auch von B. Auerbach habe ich einen liebenswürdigen Brief<note
-            n="3" place="foot" type="editorial">Von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1059">Bertrand Auerbach</persName> ist ein Brief vom 13.11.1898 im Hugo Schuchardt Nachlass erhalten (
+</bibl>“ (magy.), die er mir zugeschickt hatte. Da ich mich dem magyarischen Chauvinismus, der darin ausgesprochen war, entgegenstellte, so habe ich von dem Verfasser darüber in freundschaftlichster Weise nähere Aufklärung erhalten.“</note> geschrieben; er bekennt sich als aufrichtigen und praktisirenden Anhänger der „auf dem Selbsterhaltungstrieb beruhenden energischen Nationalitätspolitik“. Auch von B. Auerbach habe ich einen liebenswürdigen Brief<note n="3" place="foot" type="editorial">Von <persName ref="[authorityLink]">Bertrand Auerbach</persName> ist ein Brief vom 13.11.1898 im Hugo Schuchardt Nachlass erhalten (
 
-00373).</note> erhalten, durch den freilich mein Vorwurf nicht entkräftet wird, dass er sich über das „böhmische Staatsrecht“ schwankend und widerspruchsvoll ausdrücke.<note
-            n="4" place="foot" type="editorial">
+00373).</note> erhalten, durch den freilich mein Vorwurf nicht entkräftet wird, dass er sich über das „böhmische Staatsrecht“ schwankend und widerspruchsvoll ausdrücke.<note n="4" place="foot" type="editorial">
 Schuchardt kommentiert Auerbachs Buch <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5757">Les races et les nationalités en Autriche-Hongrie</ref>
-              </bibl>
-            </hi>in seinem Artikel 'Zur Literatur über die Sprachenkämpfe I-II' in der <hi rend="unknown"
-              rendition="#none">Beilage zur Allgemeinen Zeit</hi> vgl. [Archiv-/Breviernummer: <ref
-            target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.931">325</ref>].</note> Mögen die Franzosen die Gleichberechtigung zwischen den östreichischen Nationen vertreten, sich <pb
-            facs="#IMG.2"
-            n="2"/> gegen die Hegemonie der Deutschen aussprechen - gut; sie sollen aber dann auch nicht die Hegemonie der Tschechen predigen und sich mit klaren und bestimmten Worten gegen diese wahnsinnige Idee der Errichtung eines slawischen Nationalstaates mitten unter Deutschen wenden. Was mich anlangt, so missbillige ich das Vorgehen der Reichsdeutschen gegen die Polen ebenfalls, aber allerdings in minderem Grade als das gegen die Dänen. Denn es scheint nicht möglich mit dem polnischen Klerus in ein friedliches Einvernehmen zu kommen. Und wir in Oestreich sehen nun täglich wie wenig die Polen und Tschechen da wo sie Gewalt besitzen, daran denken Gerechtigkeit zu üben, dass es an Donquixoterie grenzen würde, wollten wir jetzt nur das Bestreben haben selbst gerecht zu sein. Es wäre mir ange<pb
-            facs="#IMG.3"
-            n="3"/>nehm zu wissen, wie Sie über die Expansion der Tschechen selbst über die Grenzen ihres Königreiches hinaus denken die nicht in national indifferenter Weise geschieht wie anderswo in entsprechenden Fällen, sondern in provocirender, herrschgieriger Weise. Es wundert mich dass Lángs Artikel<note
-            n="5" place="foot" type="editorial">L. Lang. 1898. 'Les nationalités en Hongrie et en Autriche'. In: <hi
-              rend="unknown" rendition="#none">Revue politique et parlementaire, </hi>Band XVIII, Nummer 52, Oktober<hi
-              rend="unknown" rendition="#none">.</hi> Paris: Colin (vgl. in <hi rend="unknown" rendition="#none">
-              <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k14079d/f30">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5757">Les races et les nationalités en Autriche-Hongrie</ref>
+                     </bibl>
+                  </hi>in seinem Artikel 'Zur Literatur über die Sprachenkämpfe I-II' in der <hi rend="unknown" rendition="#none">Beilage zur Allgemeinen Zeit</hi> vgl. [Archiv-/Breviernummer: <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.931">325</ref>].</note> Mögen die Franzosen die Gleichberechtigung zwischen den östreichischen Nationen vertreten, sich <pb facs="#IMG.2" n="2"/> gegen die Hegemonie der Deutschen aussprechen - gut; sie sollen aber dann auch nicht die Hegemonie der Tschechen predigen und sich mit klaren und bestimmten Worten gegen diese wahnsinnige Idee der Errichtung eines slawischen Nationalstaates mitten unter Deutschen wenden. Was mich anlangt, so missbillige ich das Vorgehen der Reichsdeutschen gegen die Polen ebenfalls, aber allerdings in minderem Grade als das gegen die Dänen. Denn es scheint nicht möglich mit dem polnischen Klerus in ein friedliches Einvernehmen zu kommen. Und wir in Oestreich sehen nun täglich wie wenig die Polen und Tschechen da wo sie Gewalt besitzen, daran denken Gerechtigkeit zu üben, dass es an Donquixoterie grenzen würde, wollten wir jetzt nur das Bestreben haben selbst gerecht zu sein. Es wäre mir ange<pb facs="#IMG.3" n="3"/>nehm zu wissen, wie Sie über die Expansion der Tschechen selbst über die Grenzen ihres Königreiches hinaus denken die nicht in national indifferenter Weise geschieht wie anderswo in entsprechenden Fällen, sondern in provocirender, herrschgieriger Weise. Es wundert mich dass Lángs Artikel<note n="5" place="foot" type="editorial">L. Lang. 1898. 'Les nationalités en Hongrie et en Autriche'. In: <hi rend="unknown" rendition="#none">Revue politique et parlementaire, </hi>Band XVIII, Nummer 52, Oktober<hi rend="unknown" rendition="#none">.</hi> Paris: Colin (vgl. in <hi rend="unknown" rendition="#none">
+                     <ref target="https://gallica.bnf.fr/ark:/12148/bpt6k14079d/f30">
 Gallica</ref>
-            </hi>).</note> in der <hi rend="unknown"
-            rendition="#none">
-Revue politique et parlementaire</hi> erschienen ist. Wenn man bei Ihnen so viel Interesse an unsern Angelegenheiten nimmt, so muss ich eigentlich darüber empfindlich sein dass von allen Zeitungen und Zeitschriften in Paris an die H.<note
-            n="6" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2994">Hubert Welter</persName> war der Verleger der Publikation, wie aus Schuchardts Brief vom 31. Dezember 1898 (<ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5256">096-SG22</ref>) hervorgeht.</note> Welter meine Broschüre<note
-            n="7" place="foot" type="editorial">
-Schuchardt, Hugo. 1898. <hi rend="unknown"
-              rendition="#none">Tchèques et Allemands. Lettre de M. Hugo Schuchardt, Correspondant étranger de l'Institut de France à M. ***</hi>. Paris : Welter [Archiv-/Breviernummer: <ref
-            target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.317">324</ref>].</note> geschickt hatte (gegen dreissig!), keine einzige davon Notiz genommen hat (auch die <hi
-            rend="unknown"
-            rendition="#none">Rev. pol. et parl.</hi> nicht). Bei Lichte besehen, ist das allerdings keine Ungerechtigkeit gegen meine Person, wohl aber eine solche gegen die Deutschen im Allgemeinen, wenigstens kann ich mir <pb
-            facs="#IMG.4"
-            n="4"/> dies Stillschweigen nur aus der Slawophilie der Franzosen erklären. Und selbst so nicht einmal recht; man hätte mich ja widerlegen, man hätte vernichtende Kritiken gegen mich schreiben können<note
-            n="8" place="foot"
-              type="editorial">Als Reaktion auf diese Bemerkung schreibt Gaidoz im Brief vom 28. Dezember 1898 (<ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5255">095-03284</ref>) an Schuchardt: „j’ai pu rédiger un compte-rendu de votre brochure“.</note> - es wäre mir erwünschter gewesen als ganz ignoriert zu werden. Wahrscheinlich wird man bei Ihnen auch über die empörende Weise wie in Russland Murawiews Andenken gefeiert wird,<note
-            n="9" place="foot" type="editorial">
-
-            <persName>
+                  </hi>).</note> in der <hi rend="unknown" rendition="#none">
+Revue politique et parlementaire</hi> erschienen ist. Wenn man bei Ihnen so viel Interesse an unsern Angelegenheiten nimmt, so muss ich eigentlich darüber empfindlich sein dass von allen Zeitungen und Zeitschriften in Paris an die H.<note n="6" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Hubert Welter</persName> war der Verleger der Publikation, wie aus Schuchardts Brief vom 31. Dezember 1898 (<ref target="https://gams.uni-graz.at/o:hsa.letter.5256">096-SG22</ref>) hervorgeht.</note> Welter meine Broschüre<note n="7" place="foot" type="editorial">
+Schuchardt, Hugo. 1898. <hi rend="unknown" rendition="#none">Tchèques et Allemands. Lettre de M. Hugo Schuchardt, Correspondant étranger de l'Institut de France à M. ***</hi>. Paris : Welter [Archiv-/Breviernummer: <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.317">324</ref>].</note> geschickt hatte (gegen dreissig!), keine einzige davon Notiz genommen hat (auch die <hi rend="unknown" rendition="#none">Rev. pol. et parl.</hi> nicht). Bei Lichte besehen, ist das allerdings keine Ungerechtigkeit gegen meine Person, wohl aber eine solche gegen die Deutschen im Allgemeinen, wenigstens kann ich mir <pb facs="#IMG.4" n="4"/> dies Stillschweigen nur aus der Slawophilie der Franzosen erklären. Und selbst so nicht einmal recht; man hätte mich ja widerlegen, man hätte vernichtende Kritiken gegen mich schreiben können<note n="8" place="foot" type="editorial">Als Reaktion auf diese Bemerkung schreibt Gaidoz im Brief vom 28. Dezember 1898 (<ref target="https://gams.uni-graz.at/o:hsa.letter.5255">095-03284</ref>) an Schuchardt: „j’ai pu rédiger un compte-rendu de votre brochure“.</note> - es wäre mir erwünschter gewesen als ganz ignoriert zu werden. Wahrscheinlich wird man bei Ihnen auch über die empörende Weise wie in Russland Murawiews Andenken gefeiert wird,<note n="9" place="foot" type="editorial">
+                  <persName>
 
 Michail Nikolajewitsch Murawjow-Wilenski</persName> (1796-1866), russischer Staatsmann (Generalgouverneur im nordwestl. Kraj). Er trug wesentlich zur Niederschlagung der polnischen Aufstände in <placeName>
 
 Weißrussland</placeName> und <placeName>
 
 Litauen</placeName> 1830/31 und im nordwestl. Kraj 1863 bei. 1898 wurde in <placeName>
-Vilnius</placeName> vor dem Schloss, in dem er gewohnt hatte, ihm zu Ehren ein Denkmal aufgestellt. Der Rubrik „Telegramme des Correspondenz-Bureau“ in der <hi
-              rend="unknown"
-              rendition="#none">
+Vilnius</placeName> vor dem Schloss, in dem er gewohnt hatte, ihm zu Ehren ein Denkmal aufgestellt. Der Rubrik „Telegramme des Correspondenz-Bureau“ in der <hi rend="unknown" rendition="#none">
 Neuen Freien Presse</hi> (S. 8, Sp. 2) vom 18. November 1898 (Nr. 12299) ist zu entnehmen: „Der Minister des Auswärtigen Amtes, Graf Murawiew [Enkel Murawjows], hat sich zur Einweihung des Murawiew-Denkmals nach Wilna begeben.“ (Vgl. die Ausgabe in <ref target="http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=18981118&amp;query=%22Murawiew%22&amp;provider=P02&amp;ref=anno-search&amp;seite=8">
 ANNO/Österreichische Nationalbibliothek</ref> abgerufen am 26.08.2021).</note> schweigen. In Oestreich hat man meine Flugschrift ebenfalls nicht berücksichtigt - offenbar weil sie französisch geschrieben war und den Oestreichern nichts Neues sagen konnte. </p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Slovaken</hi> an der von Ihnen angeführten Stelle ist richtig; ich meinte dass die <hi
-            rend="unknown" rendition="#none">
+            <p>
+               <hi rend="unknown" rendition="#none">Slovaken</hi> an der von Ihnen angeführten Stelle ist richtig; ich meinte dass die <hi rend="unknown" rendition="#none">
 Slovaken</hi> Ungarns und die <hi rend="unknown" rendition="#none">Slovenen</hi> Oestreichs im grossen Ganzen auf dem gleichen kulturellen Niveau stehen.</p>
-        <salute>Mit herzlichem Grusse</salute>
-        <lb/>
-        <salute>Ihr ergebener</salute>
-        <lb/>
-        <signed>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Hugo Schuchardt</persName>
-        </signed>
-        <pb facs="#IMG.5" n="5"/>
-      </div>
-    </body>
-  </text>
+            <salute>Mit herzlichem Grusse</salute>
+            <lb/>
+            <salute>Ihr ergebener</salute>
+            <lb/>
+            <signed>
+               <persName ref="[authorityLink]">Hugo Schuchardt</persName>
+            </signed>
+            <pb facs="#IMG.5" n="5"/>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

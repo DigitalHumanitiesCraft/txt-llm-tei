@@ -1,301 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Georges Lacombe (092-002)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Katrin</forename>
-            <surname>Purgay</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3988" type="PID">o:hsa.letter.3988</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">092-002</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</repository>
-            <idno type="shelfmark">002</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1910-02-14">1910-02-14</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Katrin</forename>
-              <surname>Purgay</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Georges Lacombe</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1977"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3988">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1910-02-14">1910-02-14</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1977" ref="https://viaf.org/viaf/34446283">
-            <forename>Georges</forename>
-            <surname>Lacombe</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1977" type="context">
-                        Korrespondenz Hugo Schuchardt - Georges Lacombe
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3988" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3988" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3988" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3988" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3988" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 14.2.'10<note n="1" place="foot" type="editorial">Das Datum wurde vermutlich als ’00 gelesen, was die Nummerierung erklären würde.</note>
-        </dateline>
-        <opener>Sehr geehrter Herr und Freund,</opener>
-        <p>Obwohl ich wegen des mir verloren gegangenen Briefes noch beunruhigt bin, will ich Ihnen doch für den eben eingetroffenen neuen Brief Darricarrères vielmals danken (er soll in sichrerer Weise zurückerfolgen).</p>
-        <p>Er enthält interessante Tatsachen, die aber durch D.s Bemerkungen keine wirkliche Beleuchtung erfahren.</p>
-        <p>1. <hi rend="unknown" rendition="#none">tripai</hi>
-          <hi rend="unknown" rendition="#none">l̃uak </hi>ist mir als Variante willkommen; aber mit<hi rend="unknown" rendition="#none"> pa</hi>
-          <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3988" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 14.2.'10<note n="1" place="foot" type="editorial">Das Datum wurde vermutlich als ’00 gelesen, was die Nummerierung erklären würde.</note>
+            </dateline>
+            <opener>Sehr geehrter Herr und Freund,</opener>
+            <p>Obwohl ich wegen des mir verloren gegangenen Briefes noch beunruhigt bin, will ich Ihnen doch für den eben eingetroffenen neuen Brief Darricarrères vielmals danken (er soll in sichrerer Weise zurückerfolgen).</p>
+            <p>Er enthält interessante Tatsachen, die aber durch D.s Bemerkungen keine wirkliche Beleuchtung erfahren.</p>
+            <p>1. <hi rend="unknown" rendition="#none">tripai</hi>
+               <hi rend="unknown" rendition="#none">l̃uak </hi>ist mir als Variante willkommen; aber mit<hi rend="unknown" rendition="#none"> pa</hi>
+               <hi rend="unknown" rendition="#none">
 l̃eruak </hi>, <hi rend="unknown" rendition="#none">pa</hi>
-          <hi rend="unknown" rendition="#none">l̃eriak</hi> weiss ich noch <pb facs="#IMG.2"
-            n="2"/> nichts anzufangen, es geht mir weder mit <hi rend="unknown"
-            rendition="#none">palus</hi> noch mit <hi rend="unknown" rendition="#none">flagellum</hi> zusammen.</p>
-        <p>2. <hi rend="unknown" rendition="#none">estrazia</hi> (gewiss von span. <hi rend="unknown"
-            rendition="#none">estrazar</hi>, déchirer) übersetzt <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1361">Darr.</persName> richtig mit <hi rend="unknown"
-            rendition="#none">trillo</hi>, aber er scheint dieses im Sinne von <hi rend="unknown"
-            rendition="#none">fléau</hi> zu nehmen, was ja möglich, aber doch nicht regelrecht ist (<hi rend="unknown"
-            rendition="#none">mayal</hi> ist der eigentliche spanische Ausdruck für <hi rend="unknown"
-            rendition="#none">fléau</hi>; allerdings sagt man auch <hi rend="unknown"
-            rendition="#none">trillo de mano</hi>). Demnach würde <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1062">
-Azkue</persName>s Definition die richtige sein,*<hi
-            rendition="#sup">)</hi> aber die Übersetzung <hi rend="unknown" rendition="#none">herse</hi> = <hi
-            rend="unknown" rendition="#none">trillo</hi> ist jedenfalls falsch; es ist der traîneau hérissé de pointes mit der ähnlich beschaffenen Egge verwechselt worden.</p>
-        <p>3.<hi rend="unknown" rendition="#none"> indarra, menderra.</hi> Das <hi rend="unknown"
-            rendition="#none">in</hi>-, <hi rend="unknown"
-            rendition="#none">
+               <hi rend="unknown" rendition="#none">l̃eriak</hi> weiss ich noch <pb facs="#IMG.2" n="2"/> nichts anzufangen, es geht mir weder mit <hi rend="unknown" rendition="#none">palus</hi> noch mit <hi rend="unknown" rendition="#none">flagellum</hi> zusammen.</p>
+            <p>2. <hi rend="unknown" rendition="#none">estrazia</hi> (gewiss von span. <hi rend="unknown" rendition="#none">estrazar</hi>, déchirer) übersetzt <persName ref="[authorityLink]">Darr.</persName> richtig mit <hi rend="unknown" rendition="#none">trillo</hi>, aber er scheint dieses im Sinne von <hi rend="unknown" rendition="#none">fléau</hi> zu nehmen, was ja möglich, aber doch nicht regelrecht ist (<hi rend="unknown" rendition="#none">mayal</hi> ist der eigentliche spanische Ausdruck für <hi rend="unknown" rendition="#none">fléau</hi>; allerdings sagt man auch <hi rend="unknown" rendition="#none">trillo de mano</hi>). Demnach würde <persName ref="[authorityLink]">
+Azkue</persName>s Definition die richtige sein,*<hi rendition="#sup">)</hi> aber die Übersetzung <hi rend="unknown" rendition="#none">herse</hi> = <hi rend="unknown" rendition="#none">trillo</hi> ist jedenfalls falsch; es ist der traîneau hérissé de pointes mit der ähnlich beschaffenen Egge verwechselt worden.</p>
+            <p>3.<hi rend="unknown" rendition="#none"> indarra, menderra.</hi> Das <hi rend="unknown" rendition="#none">in</hi>-, <hi rend="unknown" rendition="#none">
 men</hi>- sind nicht wie D. zu glauben scheint, Präfixe, sondern <pb facs="#IMG.3" n="3"/>
-          <hi rend="unknown" rendition="#none">stammhaft</hi>; und umgekehrt das <hi rend="unknown"
-            rendition="#none">s̃i</hi> (auch Azkue hat <hi rend="unknown" rendition="#none">
+               <hi rend="unknown" rendition="#none">stammhaft</hi>; und umgekehrt das <hi rend="unknown" rendition="#none">s̃i</hi> (auch Azkue hat <hi rend="unknown" rendition="#none">
 indarre</hi>
-          <hi rend="unknown" rendition="#none">s̃i menderts̃i</hi>) <hi rend="unknown"
-            rendition="#none">nicht stammhaft</hi>. An das deutsche <hi rend="unknown"
-            rendition="#none">dreschen</hi> wäre auf keinen Fall zu denken gewesen, das <hi rend="unknown"
-            rendition="#none">-sk-</hi> gehört zum Stamm. Ich biete Darr. zum Ersatze das arab.<hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">###</hi>
-          </hi> <hi rend="unknown"
-            rendition="#none">darasa </hi>„dreschen“ an. Ich vermute, auf Grund des schwankenden Anlautes ein romanisches Wort, eine Ableitung von <hi
-            rend="unknown" rendition="#none">findere</hi> etwa. <hi rend="unknown"
-            rendition="#none">Ventilare</hi> passt wegen der Bedeutung nicht. Ob etwa Chaho Dict. das Wort <hi
-            rend="unknown" rendition="#none">menderra</hi> hat (meinem Exemplar fehlt die letzte Lieferung: <hi
-            rend="unknown" rendition="#none">mantelina</hi> ...)?</p>
-        <p>Soviel was ich <hi rend="unknown" rendition="#none">prima vista</hi> erkannt oder vielmehr nicht erkannt <pb
-            facs="#IMG.4"
-            n="4"/> habe. - Weshalb Sie Darr. nichts von mir gesagt haben, müssen Sie mir doch bald mitteilen; es könnte die Art meiner Zitierung beeinflussen, und ich habe vielleicht schon in 8 Tagen die erste Druckprobe zu korrigieren. Ich habe Mitleid mit solchen Leuten wie Darr., die mit dem lebhaftesten Interesse für die Sprachwissenschaft sich in ein Garn verirrt haben aus dem sie sich nicht mehr frei machen können. In einem hat er vollkommen Recht ‒ er sagt es mit Beziehung auf <hi
-            rend="unknown" rendition="#none">aizebilo</hi> (das ich übrigens glaube erklären zu können) ‒ dass man die Bedeutung der Wörter kennen muss ehe man daran denkt ihre Herkunft zu finden. Aber es ist schwer die Fälle in den Wörterbüchern zu erkennen die überhaupt bedenklich sind, und noch schwieriger über sie eine völlig zuverlässige Auskunft zu bekommen.</p>
-        <closer>
-          <salute>Mit bestem Gruss und aufrichtigstem Dank</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-
-          <p>Ich habe noch eine Bitte. Ich besitze von Rolland, durch seine eigene Güte, Band I-V, sowie Band VII sowie Flore populaire; nun kann ich nicht feststellen ob Band VI erschienen ist, und mag natürlich bei ihm selbst nicht anfragen. Können Sie es vielleicht <hi
-              rend="unknown" rendition="#none">gelegentlich</hi> erfahren?</p>
-          <p>*) Ich verstehe nicht recht das (<hi rend="unknown" rendition="#none">estracien pean</hi>) <hi
-              rend="unknown" rendition="#none">
-              <hi rend="unknown" rendition="#none">edo azpian</hi>
-            </hi> (<hi rend="unknown" rendition="#none">menderchi</hi>)</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+               <hi rend="unknown" rendition="#none">s̃i menderts̃i</hi>) <hi rend="unknown" rendition="#none">nicht stammhaft</hi>. An das deutsche <hi rend="unknown" rendition="#none">dreschen</hi> wäre auf keinen Fall zu denken gewesen, das <hi rend="unknown" rendition="#none">-sk-</hi> gehört zum Stamm. Ich biete Darr. zum Ersatze das arab.<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">###</hi>
+               </hi> <hi rend="unknown" rendition="#none">darasa </hi>„dreschen“ an. Ich vermute, auf Grund des schwankenden Anlautes ein romanisches Wort, eine Ableitung von <hi rend="unknown" rendition="#none">findere</hi> etwa. <hi rend="unknown" rendition="#none">Ventilare</hi> passt wegen der Bedeutung nicht. Ob etwa Chaho Dict. das Wort <hi rend="unknown" rendition="#none">menderra</hi> hat (meinem Exemplar fehlt die letzte Lieferung: <hi rend="unknown" rendition="#none">mantelina</hi> ...)?</p>
+            <p>Soviel was ich <hi rend="unknown" rendition="#none">prima vista</hi> erkannt oder vielmehr nicht erkannt <pb facs="#IMG.4" n="4"/> habe. - Weshalb Sie Darr. nichts von mir gesagt haben, müssen Sie mir doch bald mitteilen; es könnte die Art meiner Zitierung beeinflussen, und ich habe vielleicht schon in 8 Tagen die erste Druckprobe zu korrigieren. Ich habe Mitleid mit solchen Leuten wie Darr., die mit dem lebhaftesten Interesse für die Sprachwissenschaft sich in ein Garn verirrt haben aus dem sie sich nicht mehr frei machen können. In einem hat er vollkommen Recht ‒ er sagt es mit Beziehung auf <hi rend="unknown" rendition="#none">aizebilo</hi> (das ich übrigens glaube erklären zu können) ‒ dass man die Bedeutung der Wörter kennen muss ehe man daran denkt ihre Herkunft zu finden. Aber es ist schwer die Fälle in den Wörterbüchern zu erkennen die überhaupt bedenklich sind, und noch schwieriger über sie eine völlig zuverlässige Auskunft zu bekommen.</p>
+            <closer>
+               <salute>Mit bestem Gruss und aufrichtigstem Dank</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Ich habe noch eine Bitte. Ich besitze von Rolland, durch seine eigene Güte, Band I-V, sowie Band VII sowie Flore populaire; nun kann ich nicht feststellen ob Band VI erschienen ist, und mag natürlich bei ihm selbst nicht anfragen. Können Sie es vielleicht <hi rend="unknown" rendition="#none">gelegentlich</hi> erfahren?</p>
+               <p>*) Ich verstehe nicht recht das (<hi rend="unknown" rendition="#none">estracien pean</hi>) <hi rend="unknown" rendition="#none">
+                     <hi rend="unknown" rendition="#none">edo azpian</hi>
+                  </hi> (<hi rend="unknown" rendition="#none">menderchi</hi>)</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

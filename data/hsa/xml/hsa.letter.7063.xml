@@ -1,389 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Julius Cornu an Hugo Schuchardt (021-01730)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">
-            <forename>Julius</forename>
-            <surname>Cornu</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Katrin</forename>
-            <surname>Purgay</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7063" type="PID">o:hsa.letter.7063</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">021-01730</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">01730</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="fr"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">
-                <forename>Julius</forename>
-                <surname>Cornu</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.343" ref="http://sws.geonames.org/3067696">Prag</origPlace>
-              <origDate ana="dcterms:created" when="1883-01-05">1883-01-05</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Katrin</forename>
-              <surname>Purgay</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Julius Cornu und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1328"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7063">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1328" ref="https://viaf.org/viaf/67223190">
-            <forename>Julius</forename>
-            <surname>Cornu</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.343" key="#GID.1" ref="http://sws.geonames.org/3067696">Prag</placeName>
-          <date when="1883-01-05">1883-01-05</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Czechia</country>
-                <settlement>Prague</settlement>
-                <name ref="http://geonames.org/3067696" type="fcode:PPLC">Prague</name>
-                <location>
-                  <geo>14.42076,50.08804</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1328" type="context">
-                        Korrespondenz Julius Cornu - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.220" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Phonetik</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.844" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.172" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesischbasierte Kreolsprachen</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="fr">Französisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7063" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7063" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7063" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7063" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7063" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7063" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Prague, Salmgasse 9, le 5 janvier 1883.</dateline>
-        <opener>Cher ami,</opener>
-        <p>Si vous aviez le 21 décembre écrit en Portugal, vous auriez peut-être déjà une réponse. Mais j’ai cette fois une bonne raison pour que vous m’excusiez. L’heureux événement du 26 qui m’a donné une augmentation de correspondance est aussi la cause du retard de cette lettre.</p>
-        <p>Je viens de lire pour une étude sur la rencontre des voyelles en portugais le <hi rend="unknown"
-            rendition="#none">Canc. geral</hi>.<note n="1" place="foot" type="editorial">Garcia de Resende, <bibl>
-              <hi rend="unknown" rendition="#none">Cancioneiro geral</hi>
-            </bibl>, Lixboa: Herman de Campos, 1516.</note> Je n’y ai pas trouvé <hi rend="unknown"
-            rendition="#none">gerecer</hi> et je ne puis pas me rappeler avoir rencontré ce mot dans un autre auteur que dans Gil Vicente qui se distingue par la richesse de son vocabulaire emprunté avec un tact admirable à toutes les classes de la société. <hi
-            rend="unknown" rendition="#none">Veairo</hi> est évidemment le même mot que <hi rend="unknown"
-            rendition="#none">viaire</hi> et se rencontre plus d’une fois dans le même <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.752">Gil Vicente</ref>. Vous me demandez s’il n’existe pas une autre édition du comique portugais.<note
-            n="2" place="foot" type="editorial">Im Jahr 1562 gab <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.752">Vicentes</ref> Sohn <persName>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7063" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Prague, Salmgasse 9, le 5 janvier 1883.</dateline>
+            <opener>Cher ami,</opener>
+            <p>Si vous aviez le 21 décembre écrit en Portugal, vous auriez peut-être déjà une réponse. Mais j’ai cette fois une bonne raison pour que vous m’excusiez. L’heureux événement du 26 qui m’a donné une augmentation de correspondance est aussi la cause du retard de cette lettre.</p>
+            <p>Je viens de lire pour une étude sur la rencontre des voyelles en portugais le <hi rend="unknown" rendition="#none">Canc. geral</hi>.<note n="1" place="foot" type="editorial">Garcia de Resende, <bibl>
+                     <hi rend="unknown" rendition="#none">Cancioneiro geral</hi>
+                  </bibl>, Lixboa: Herman de Campos, 1516.</note> Je n’y ai pas trouvé <hi rend="unknown" rendition="#none">gerecer</hi> et je ne puis pas me rappeler avoir rencontré ce mot dans un autre auteur que dans Gil Vicente qui se distingue par la richesse de son vocabulaire emprunté avec un tact admirable à toutes les classes de la société. <hi rend="unknown" rendition="#none">Veairo</hi> est évidemment le même mot que <hi rend="unknown" rendition="#none">viaire</hi> et se rencontre plus d’une fois dans le même <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.752">Gil Vicente</ref>. Vous me demandez s’il n’existe pas une autre édition du comique portugais.<note n="2" place="foot" type="editorial">Im Jahr 1562 gab <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.752">Vicentes</ref> Sohn <persName>
 Luis</persName> mit seiner Schwester <persName>
 Paula</persName> in <placeName>
 
 Lissabon</placeName> die <bibl>
-              <hi rend="unknown" rendition="#none">Copilagem de todas las obras de Gil Vicente</hi>
-
-            </bibl> in fünf Bänden heraus.</note> Oui, il y en a une de Lisbonne de 1852, mais ce n’est qu’une copie de celle de Hambourg, où les absurdités du glossaire <pb
-            facs="#IMG.2"
-            n="2"/> si insuffisant ne sont pas même corrigées. Aussi souvent que j’ai lu les Autos, Farças et Tragicomedias, j’ai cru reconnaître dans l’Édition de Hambourg<note
-            n="3" place="foot" type="editorial">
-            <bibl>
-              <hi rend="unknown" rendition="#none">Obras de Gil Vicente</hi>
-
-            </bibl> correctas e emendadas pelo cuidado e diligencia de J. V. Barreto Feio e J. G. Monteiro, Hamburg: Langhof, 1834, 3 Bde.</note> de graves défauts. Aujourd’hui, après avoir étudié le <hi
-            rend="unknown"
-            rendition="#none">Canc. geral</hi>, je suis persuadé de la nécessité d’une revision du texte.<note n="4"
-            place="foot" type="editorial">Cornu, „<bibl>
+                     <hi rend="unknown" rendition="#none">Copilagem de todas las obras de Gil Vicente</hi>
+                  </bibl> in fünf Bänden heraus.</note> Oui, il y en a une de Lisbonne de 1852, mais ce n’est qu’une copie de celle de Hambourg, où les absurdités du glossaire <pb facs="#IMG.2" n="2"/> si insuffisant ne sont pas même corrigées. Aussi souvent que j’ai lu les Autos, Farças et Tragicomedias, j’ai cru reconnaître dans l’Édition de Hambourg<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <hi rend="unknown" rendition="#none">Obras de Gil Vicente</hi>
+                  </bibl> correctas e emendadas pelo cuidado e diligencia de J. V. Barreto Feio e J. G. Monteiro, Hamburg: Langhof, 1834, 3 Bde.</note> de graves défauts. Aujourd’hui, après avoir étudié le <hi rend="unknown" rendition="#none">Canc. geral</hi>, je suis persuadé de la nécessité d’une revision du texte.<note n="4" place="foot" type="editorial">Cornu, „<bibl>
 
 Phonologie syntactique du Cancioneiro geral
-</bibl>“, <hi
-              rend="unknown"
-            rendition="#none">
-Romania</hi> 12, 1883, 243-306.</note> Tout ce que les éditeurs n’auront pas compris ou ce qu’ils auront compris a demi, est bon probablement. J’ai l’intention si la B. de Goettingue veut me prêter l’édition originale pour quelque temps de la comparer avec le texte de Hambourg. Une comparaison est nécessaire si je veux poursuivre avec une certaine sûreté mon étude sur la rencontre des voyelles. Car Gil Vicente, quoique contemporain des poètes du <hi
-            rend="unknown" rendition="#none">
+</bibl>“, <hi rend="unknown" rendition="#none">
+Romania</hi> 12, 1883, 243-306.</note> Tout ce que les éditeurs n’auront pas compris ou ce qu’ils auront compris a demi, est bon probablement. J’ai l’intention si la B. de Goettingue veut me prêter l’édition originale pour quelque temps de la comparer avec le texte de Hambourg. Une comparaison est nécessaire si je veux poursuivre avec une certaine sûreté mon étude sur la rencontre des voyelles. Car Gil Vicente, quoique contemporain des poètes du <hi rend="unknown" rendition="#none">
 Canc. geral</hi>, n’élide et ne contracte pas comme eux. – Pour vos études sur le jargon nègre je me fais un plaisir de vous indiquer quatre passages du Canc. geral, vol. I p. 172, vol. III pp. 106, 413 &amp;amp; 478.</p>
-        <p>Si vous voulez bien, je m’adresserai à mon ami <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3376">Consiglieri Pedroso</persName>
-          <note n="5" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3376">Zófimo Consiglieri Pedroso</persName> (1851-1940), portug. Historiker, Schriftsteller, Lehrer, Ethnograph, Essayist und Folklorist.</note> pour les Autos du Chiado.<note
-            n="6" place="foot" type="editorial">Antônio Ribeiro Chiado, <bibl>
-              <hi rend="unknown" rendition="#none">
+            <p>Si vous voulez bien, je m’adresserai à mon ami <persName ref="[authorityLink]">Consiglieri Pedroso</persName>
+               <note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Zófimo Consiglieri Pedroso</persName> (1851-1940), portug. Historiker, Schriftsteller, Lehrer, Ethnograph, Essayist und Folklorist.</note> pour les Autos du Chiado.<note n="6" place="foot" type="editorial">Antônio Ribeiro Chiado, <bibl>
+                     <hi rend="unknown" rendition="#none">
 Autos</hi>
+                  </bibl>. Zu diesem Zeitpunkt gab es noch keine moderne Ausgabe, sondern nur einzelne Texte vom Anfang des 17. Jhdts., z.B. <hi rend="unknown" rendition="#none">Auto de Goncalo Chambao, Auto das Regateiras</hi> u. a. mehr.</note> Peut-être qu’un de ses élèves vous fera ce travail sans rémunération. Lors de mon dernier voyage à <pb facs="#IMG.3" n="3"/> Lisbonne, si j’en avais eu le temps, j’eusse étudié aussi ces Autos qui étaient ainsi que bien d’autres textes dans mon programme. En Portugal il y a dix personnes au plus qui lisent d’anciens textes portugais. J’ai connu des jeunes gens qui avaient reçu une excellente éducation et qui ne connaissaient de Camões que les Lusiades et de Gil Vicente que le nom. Les libraires savent fort bien que imprimer un texte qui n’est pas un roman est jeter son argent par la fenêtre. Cependant je dois avouer qu’ils auraient mieux fait d’imprimer les Autos d’Antonio Ribeiro Chiado<note n="7" place="foot" type="editorial">
+                  <persName>
 
-            </bibl>. Zu diesem Zeitpunkt gab es noch keine moderne Ausgabe, sondern nur einzelne Texte vom Anfang des 17. Jhdts., z.B. <hi
-              rend="unknown"
-            rendition="#none">Auto de Goncalo Chambao, Auto das Regateiras</hi> u. a. mehr.</note> Peut-être qu’un de ses élèves vous fera ce travail sans rémunération. Lors de mon dernier voyage à <pb
-            facs="#IMG.3"
-            n="3"/> Lisbonne, si j’en avais eu le temps, j’eusse étudié aussi ces Autos qui étaient ainsi que bien d’autres textes dans mon programme. En Portugal il y a dix personnes au plus qui lisent d’anciens textes portugais. J’ai connu des jeunes gens qui avaient reçu une excellente éducation et qui ne connaissaient de Camões que les Lusiades et de Gil Vicente que le nom. Les libraires savent fort bien que imprimer un texte qui n’est pas un roman est jeter son argent par la fenêtre. Cependant je dois avouer qu’ils auraient mieux fait d’imprimer les Autos d’Antonio Ribeiro Chiado<note
-            n="7" place="foot" type="editorial">
-
-            <persName>
-
-António Ribeiro Chiado</persName> (um 1520-1591), bedeutender Dramatiker und Dichter (Lyrik und Theater).</note> que ceux d’Antonio Prestes;<note
-            n="8" place="foot" type="editorial">
-            <persName>
+António Ribeiro Chiado</persName> (um 1520-1591), bedeutender Dramatiker und Dichter (Lyrik und Theater).</note> que ceux d’Antonio Prestes;<note n="8" place="foot" type="editorial">
+                  <persName>
 
 Antonio Prestes</persName>, Verf. von Autos, Porto: Moré, 1871.</note> car ce que j’en ai lu me paraît excessivement ennuyeux. Heureusement ou malheureusement pour vous ils ne renferment point de passage en jargon nègre.</p>
-        <p>Tous les ouvrages dont vous me demandez le prix sont très bon marché. Gomez Eannes de Azurara<note n="9"
-            place="foot" type="editorial">
-            <persName>
+            <p>Tous les ouvrages dont vous me demandez le prix sont très bon marché. Gomez Eannes de Azurara<note n="9" place="foot" type="editorial">
+                  <persName>
 
-Gomez Eanes / Eannes de Azurara</persName> (um 1410-um 1474), Verf. verschiedener <hi
-              rend="unknown"
-            rendition="#none">
-Chronicas</hi>.</note> est certainement à la B. impériale de Vienne où l’on vous servira probablement mieux que moi. Si vous ne voulez l’étudier qu’au point de vue philologique, je suis prêt à vous prêter mes notes. Mon exemplaire de G. E. de Azurara <pb
-            facs="#IMG.4"
-            n="4"/> est du reste à votre disposition, ainsi que une édition de J. de Moraes Madureira Feyjó<note n="10"
-            place="foot" type="editorial">
-            <persName>
+Gomez Eanes / Eannes de Azurara</persName> (um 1410-um 1474), Verf. verschiedener <hi rend="unknown" rendition="#none">
+Chronicas</hi>.</note> est certainement à la B. impériale de Vienne où l’on vous servira probablement mieux que moi. Si vous ne voulez l’étudier qu’au point de vue philologique, je suis prêt à vous prêter mes notes. Mon exemplaire de G. E. de Azurara <pb facs="#IMG.4" n="4"/> est du reste à votre disposition, ainsi que une édition de J. de Moraes Madureira Feyjó<note n="10" place="foot" type="editorial">
+                  <persName>
 João Moraes Madureira Feijó</persName> (1688-1741), port. Gelehrter: <bibl>
-              <hi rend="unknown" rendition="#none">Orthographia, ou arte de escrever, e pronunciar com acerto a lingua portugueza para uso do excellentissimo Duque de Lafoens</hi>
-
-            </bibl> / pelo seu mestre João de Moraes Madureyra Feyjo.... - Lisboa Occidental: na Officina de Miguel Rodrigues, Impressor do Senhor Patriarca, 1734.</note> – celle de 1836,<note
-            n="11" place="foot"
-            type="editorial">Lisboa: E. Augusto, 1836.</note> car la plus ancienne je m’en sers très souvent – et les <hi
-            rend="unknown" rendition="#none">
+                     <hi rend="unknown" rendition="#none">Orthographia, ou arte de escrever, e pronunciar com acerto a lingua portugueza para uso do excellentissimo Duque de Lafoens</hi>
+                  </bibl> / pelo seu mestre João de Moraes Madureyra Feyjo.... - Lisboa Occidental: na Officina de Miguel Rodrigues, Impressor do Senhor Patriarca, 1734.</note> – celle de 1836,<note n="11" place="foot" type="editorial">Lisboa: E. Augusto, 1836.</note> car la plus ancienne je m’en sers très souvent – et les <hi rend="unknown" rendition="#none">
 Exercicios de cacographia</hi>.<note n="12" place="foot" type="editorial">
-            <bibl>
-              <hi rend="unknown" rendition="#none">Exercicios de cacographia portugueza para substituirem os dictados d'orthographia no curso de lingua portugueza creado nos lyceus nacionaes pelo decreto de lo d'abril de 1860</hi>
-            </bibl>, Lisboa: José Rodrigues, 1864.</note> Ces deux derniers ouvrages sont chers à Lisbonne s’ils vous coûtent ensemble un florin.</p>
-        <p>Sur la prononciation du portugais ne vous tenez pas à João de Deus<note n="13" place="foot"
-            type="editorial">Vgl. Brief 01761.</note> seul qui a des particularités que mes amis de Lisbonne ne m’ont point confirmées. Il y a de bonnes choses dans la Grammaire de Paulino de Souza.<note
-            n="14" place="foot" type="editorial">Paulino de Sousa, <bibl>
-              <hi rend="unknown" rendition="#none">Grammaire portugaise raisonnée et simpifiée contenat un traité complet sur la prononciation et l’orthographe</hi>
-
-            </bibl>, Paris: Garnier, (1870).</note> Mais ce qu’il y a de mieux se trouve dans un ouvrage qui vient de paraître, dans la <hi
-            rend="unknown"
-            rendition="#none">Nouvelle méthode pratique et facile pour apprendre la langue portugaise composée d’après les principes de F. Ahn par F. de Lencastr</hi>e, Leipzig, Brockhaus 1883. J’y trouve les observations que j’ai faites avec un Lisbonnais, en lisant les œuvres de Camões, pleinement confirmées. Si vous désirez du reste des renseignements sur la prononciation, je suis prêt à vous les donner. Car je l’ai étudiée le plus soigneusement que j’ai pû lors de mes deux séjours à Lisbonne et le travail que j’ai entrepris sur le traitement des voyelles qui viennent à se rencontrer s’occupera également du portugais moderne. <pb
-            facs="#IMG.5" n="5"/> L‘<hi rend="unknown"
-            rendition="#none">u</hi> (= o des imprimés) final sonne toujours d’une manière tout à fait distincte. L‘ẹ final qui a la même prononciation que l’e muet français me paraît encore bien perceptible dans le langage des gens cultivés. La preuve bien sûre de sa prononciation est que dans la liaison d’un mot finissant par ẹ avec un autre mot commençant par une voyelle l‘ẹ d’ordinaire ne s’élide pas, mais se change en i: <hi
-            rend="unknown" rendition="#none">
-deintẹ</hi>, mais <hi rend="unknown"
-            rendition="#none">deintiạgudu</hi>. Mais une fille de chambre de l’Hôtel Borges à Lisbonne, née à Coimbre, prononçait toujours: <hi
-            rend="unknown" rendition="#none">Boạj nƍitx</hi>.</p>
-        <p>Au commencement du 16<hi rendition="#sup">ème</hi> siècle et, a plus forte raison, au 15<hi
-            rendition="#sup">ème</hi> toutes les voyelles finales se prononçaient. Les poètes du Canc. geral en donnent des preuves innombrables. L’élision, ou pour mieux dire, la contraction des voyelles est possible, mais elle n’est point nécessaire. A côté de <hi
-            rend="unknown" rendition="#none">grande_amigo</hi> on trouve <hi rend="unknown"
-            rendition="#none">grande|amigo</hi>. Pas même cette liaison si fréquente n’a amené la chute ou la contraction de l’<hi
-            rend="unknown" rendition="#none">e</hi> avec l’<hi rend="unknown"
-            rendition="#none">a</hi> suivant. Au seizième siècle l’<hi rend="unknown"
-            rendition="#none">o</hi> final sonnait o, c’est ce que prouve la contraction <hi rend="unknown"
-            rendition="#none">todou mundo = todo o mundo</hi>, aujourd’hui <hi rend="unknown"
-            rendition="#none">tƍdƍ</hi> mundu à côté de <hi rend="unknown" rendition="#none">tƍdû mundu (u + u = û)</hi>.</p>
-        <p>Ma femme et moi nous vous remercions de votre carte postale et de vos aimables félicitations. Mais, si vous aviez un fils, voudriez-vous qu’il fût philologue?</p>
-        <closer>
-          <salute>Bien à vous</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">Cornu</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                  <bibl>
+                     <hi rend="unknown" rendition="#none">Exercicios de cacographia portugueza para substituirem os dictados d'orthographia no curso de lingua portugueza creado nos lyceus nacionaes pelo decreto de lo d'abril de 1860</hi>
+                  </bibl>, Lisboa: José Rodrigues, 1864.</note> Ces deux derniers ouvrages sont chers à Lisbonne s’ils vous coûtent ensemble un florin.</p>
+            <p>Sur la prononciation du portugais ne vous tenez pas à João de Deus<note n="13" place="foot" type="editorial">Vgl. Brief 01761.</note> seul qui a des particularités que mes amis de Lisbonne ne m’ont point confirmées. Il y a de bonnes choses dans la Grammaire de Paulino de Souza.<note n="14" place="foot" type="editorial">Paulino de Sousa, <bibl>
+                     <hi rend="unknown" rendition="#none">Grammaire portugaise raisonnée et simpifiée contenat un traité complet sur la prononciation et l’orthographe</hi>
+                  </bibl>, Paris: Garnier, (1870).</note> Mais ce qu’il y a de mieux se trouve dans un ouvrage qui vient de paraître, dans la <hi rend="unknown" rendition="#none">Nouvelle méthode pratique et facile pour apprendre la langue portugaise composée d’après les principes de F. Ahn par F. de Lencastr</hi>e, Leipzig, Brockhaus 1883. J’y trouve les observations que j’ai faites avec un Lisbonnais, en lisant les œuvres de Camões, pleinement confirmées. Si vous désirez du reste des renseignements sur la prononciation, je suis prêt à vous les donner. Car je l’ai étudiée le plus soigneusement que j’ai pû lors de mes deux séjours à Lisbonne et le travail que j’ai entrepris sur le traitement des voyelles qui viennent à se rencontrer s’occupera également du portugais moderne. <pb facs="#IMG.5" n="5"/> L‘<hi rend="unknown" rendition="#none">u</hi> (= o des imprimés) final sonne toujours d’une manière tout à fait distincte. L‘ẹ final qui a la même prononciation que l’e muet français me paraît encore bien perceptible dans le langage des gens cultivés. La preuve bien sûre de sa prononciation est que dans la liaison d’un mot finissant par ẹ avec un autre mot commençant par une voyelle l‘ẹ d’ordinaire ne s’élide pas, mais se change en i: <hi rend="unknown" rendition="#none">
+deintẹ</hi>, mais <hi rend="unknown" rendition="#none">deintiạgudu</hi>. Mais une fille de chambre de l’Hôtel Borges à Lisbonne, née à Coimbre, prononçait toujours: <hi rend="unknown" rendition="#none">Boạj nƍitx</hi>.</p>
+            <p>Au commencement du 16<hi rendition="#sup">ème</hi> siècle et, a plus forte raison, au 15<hi rendition="#sup">ème</hi> toutes les voyelles finales se prononçaient. Les poètes du Canc. geral en donnent des preuves innombrables. L’élision, ou pour mieux dire, la contraction des voyelles est possible, mais elle n’est point nécessaire. A côté de <hi rend="unknown" rendition="#none">grande_amigo</hi> on trouve <hi rend="unknown" rendition="#none">grande|amigo</hi>. Pas même cette liaison si fréquente n’a amené la chute ou la contraction de l’<hi rend="unknown" rendition="#none">e</hi> avec l’<hi rend="unknown" rendition="#none">a</hi> suivant. Au seizième siècle l’<hi rend="unknown" rendition="#none">o</hi> final sonnait o, c’est ce que prouve la contraction <hi rend="unknown" rendition="#none">todou mundo = todo o mundo</hi>, aujourd’hui <hi rend="unknown" rendition="#none">tƍdƍ</hi> mundu à côté de <hi rend="unknown" rendition="#none">tƍdû mundu (u + u = û)</hi>.</p>
+            <p>Ma femme et moi nous vous remercions de votre carte postale et de vos aimables félicitations. Mais, si vous aviez un fils, voudriez-vous qu’il fût philologue?</p>
+            <closer>
+               <salute>Bien à vous</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Cornu</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

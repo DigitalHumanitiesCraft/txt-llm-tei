@@ -1,572 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Lajos Katona an Hugo Schuchardt (164-05383)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1888">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10352" type="PID">o:hsa.letter.10352</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">164-05383</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">05383</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1888">
-                <forename>Lajos</forename>
-                <surname>Katona</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="9" unit="pages">9 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.431" ref="http://sws.geonames.org/3054643">Budapest</origPlace>
-              <origDate ana="dcterms:created" when="1891-10-04">1891-10-04</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2023">2023</date>
-          <title>Die Korrespondenz zwischen Lajos Katona und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1888"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10352">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1888" ref="https://viaf.org/viaf/53140754">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.431" key="#GID.1" ref="http://sws.geonames.org/3054643">Budapest</placeName>
-          <date when="1891-10-04">1891-10-04</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Hungary</country>
-                <settlement>Budapest</settlement>
-                <name ref="http://geonames.org/3054643" type="fcode:PPLC">Budapest</name>
-                <location>
-                  <geo>19.04045,47.49835</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1888" type="context">
-                        Korrespondenz Lajos Katona - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10352" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10352" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10352" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10352" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10352" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10352" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10352" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10352" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10352" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10352" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Budapest, Országház-uzca 19.<lb/> 91.4.X. [=4.10.1891] </dateline>
-        <opener>Hochgeehrter Herr Professor!</opener>
-        <p>Einen Theil Ihrer Fragen will ich sofort beantworten, über den anderen kann ich aber erst morgen mit näherer Auskunft dienen. Hoffentlich trifft Sie mein ergänzendes Schreiben noch in Friedrichsroda.</p>
-        <p>Meines Wissens ist die Melas’sche P. Übers. die vollständigste von allen bisher erschienenen,<note n="1"
-            place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.720">Gedichte von Alexander Petöfi</ref>
-              </bibl>
-
-            </hi>. Aus dem Magyarischen übertragen von Heinrich Melas, Hermannstadt: W. Krafft, 1891.</note> und das schon darum, weil den früheren die älteren, seitdem um ein Beträchtliches ergänzten Originalausgaben zur Grundlage gedient haben. <pb
-            facs="#IMG.2" n="2"/> Freilich ist mir die Opitz’sche Übers. ganz unbekannt,<note n="2" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10352" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Budapest, Országház-uzca 19.<lb/> 91.4.X. [=4.10.1891] </dateline>
+            <opener>Hochgeehrter Herr Professor!</opener>
+            <p>Einen Theil Ihrer Fragen will ich sofort beantworten, über den anderen kann ich aber erst morgen mit näherer Auskunft dienen. Hoffentlich trifft Sie mein ergänzendes Schreiben noch in Friedrichsroda.</p>
+            <p>Meines Wissens ist die Melas’sche P. Übers. die vollständigste von allen bisher erschienenen,<note n="1" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.720">Gedichte von Alexander Petöfi</ref>
+                     </bibl>
+                  </hi>. Aus dem Magyarischen übertragen von Heinrich Melas, Hermannstadt: W. Krafft, 1891.</note> und das schon darum, weil den früheren die älteren, seitdem um ein Beträchtliches ergänzten Originalausgaben zur Grundlage gedient haben. <pb facs="#IMG.2" n="2"/> Freilich ist mir die Opitz’sche Übers. ganz unbekannt,<note n="2" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Alexander Petöfi
 </bibl>
+                  </hi>, hrsg von Theodor Opitz, Bern: Haller'sche Verlagshandlung. 1868; 2 Bde.</note> so daß ich mich in meiner Annahme insofern irren kann, als vielleicht die letztere auch die epischen Gedichte P.-s enthalten mag, welche bei Melas fehlen.<note n="3" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.720">[Rez. von:] Alexander Petõfi, Gedichte. Aus dem Magyarischen übertragen von Heinrich Melas</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">Deutsche Literaturzeitung</hi> 12, 1891, 1923-1927. - In der Besprechung wird Katona nicht erwähnt.</note>
+            </p>
+            <p>Ob und wo Dóczy’s<note n="4" place="foot" type="editorial">
+                  <persName>
 
-            </hi>, hrsg von Theodor Opitz, Bern: Haller'sche Verlagshandlung. 1868; 2 Bde.</note> so daß ich mich in meiner Annahme insofern irren kann, als vielleicht die letztere auch die epischen Gedichte P.-s enthalten mag, welche bei Melas fehlen.<note
-            n="3" place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.720">[Rez. von:] Alexander Petõfi, Gedichte. Aus dem Magyarischen übertragen von Heinrich Melas</ref>
-            </bibl>“, <hi rend="unknown" rendition="#none">Deutsche Literaturzeitung</hi> 12, 1891, 1923-1927. - In der Besprechung wird Katona nicht erwähnt.</note>
-        </p>
-        <p>Ob und wo Dóczy’s<note n="4" place="foot" type="editorial">
-
-            <persName>
-
-Lajos Dóczi</persName> (1845-1918), auch: Ludwig Dux, Louis Dux, Ludwig von Dóczi, ungar. Dichter und Dramenautor; erster deutscher Petöfi-Übersetzer, den er im deutschen Sprachraum bekannt machte. Seine Petöfi-Übersetzungen erschienen 1845 in den <hi
-              rend="unknown"
-            rendition="#none">
-Sonntagsblättern</hi> (Pest).</note> Übersetzungen (von denen ich nur einige zerstreute kenne) gesammelt erschienen sind: ist mir unbekannt. Möglicherweise werde ich Ihnen aber morgen auch hierüber berichten können. Die ausführlichste und – faute de mieux – die beste Petöfi-Biogra- <pb
-            facs="#IMG.3" n="3"/> phie ist die von <hi rend="unknown"
-            rendition="#none">Alexander Fischer</hi>, erst vor einigen Jahren ursprünglich in <hi rend="unknown" rendition="#none">deutscher</hi>
-          <note n="5" place="foot" type="editorial">Alexander <hi rend="unknown" rendition="#none">
-              <bibl>
+Lajos Dóczi</persName> (1845-1918), auch: Ludwig Dux, Louis Dux, Ludwig von Dóczi, ungar. Dichter und Dramenautor; erster deutscher Petöfi-Übersetzer, den er im deutschen Sprachraum bekannt machte. Seine Petöfi-Übersetzungen erschienen 1845 in den <hi rend="unknown" rendition="#none">
+Sonntagsblättern</hi> (Pest).</note> Übersetzungen (von denen ich nur einige zerstreute kenne) gesammelt erschienen sind: ist mir unbekannt. Möglicherweise werde ich Ihnen aber morgen auch hierüber berichten können. Die ausführlichste und – faute de mieux – die beste Petöfi-Biogra- <pb facs="#IMG.3" n="3"/> phie ist die von <hi rend="unknown" rendition="#none">Alexander Fischer</hi>, erst vor einigen Jahren ursprünglich in <hi rend="unknown" rendition="#none">deutscher</hi>
+               <note n="5" place="foot" type="editorial">Alexander <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Fischer, Petöfi's Leben und Werke: Mit den Porträts von Alexander und Julia Petöfi, drei Handzeichnungen von Petöfi, einem autobiographischen Blatte in Facsimiledruck und einer Copie der „Zwölf Punkte", des ersten censurfreien Preßerzeugnisses in Ungarn
 </bibl>
-            </hi>, Leipzig: Friedrich Wilhelm, 1889, 628 S.; ungar. <hi rend="unknown"
-            rendition="#none">Petöfi élete és müvei … Elöszóval-ellátta Jokai M. Németbäö forditotta Tolnai L.</hi>, Budapest 1890.</note> und erst hernach in ung. Sprache erschienen. Es ist das ein dickleibiger Band und die Frucht schätzenswerten Dilettantenfleißes und einer wahrhaft rührenden Begeisterung für den Gegenstand. Der Verfasser hat darin so ziemlich Alles, was ihm zugänglich war, für eine von hierzu berufener Hand zu schreibende Biographie zusammengestellt. Das Buch ist durch jeden Budapester Buchhändler leicht zu beziehen. Ich kann es Ihnen auf <pb
-            facs="#IMG.4" n="4"/> Ihren Wunsch sofort zusenden lassen. - - </p>
-
-        <p>Das Hunfalvy-Jubiläum wurde bereits heute in aller Stille durch Überreichung einer Begüßungsadresse vonseiten der Akademie gefeiert. Eine demonstrativere Begehung des Festes wird für den Zeitpunkt geplant, wenn das in Vorbereitung befindliche Hunfalvy-Album<note
-            n="6" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>, Leipzig: Friedrich Wilhelm, 1889, 628 S.; ungar. <hi rend="unknown" rendition="#none">Petöfi élete és müvei … Elöszóval-ellátta Jokai M. Németbäö forditotta Tolnai L.</hi>, Budapest 1890.</note> und erst hernach in ung. Sprache erschienen. Es ist das ein dickleibiger Band und die Frucht schätzenswerten Dilettantenfleißes und einer wahrhaft rührenden Begeisterung für den Gegenstand. Der Verfasser hat darin so ziemlich Alles, was ihm zugänglich war, für eine von hierzu berufener Hand zu schreibende Biographie zusammengestellt. Das Buch ist durch jeden Budapester Buchhändler leicht zu beziehen. Ich kann es Ihnen auf <pb facs="#IMG.4" n="4"/> Ihren Wunsch sofort zusenden lassen. - - </p>
+            <p>Das Hunfalvy-Jubiläum wurde bereits heute in aller Stille durch Überreichung einer Begüßungsadresse vonseiten der Akademie gefeiert. Eine demonstrativere Begehung des Festes wird für den Zeitpunkt geplant, wenn das in Vorbereitung befindliche Hunfalvy-Album<note n="6" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Hunfalvy-album; félszázados akadémiai tagsága emlékére
 </bibl>
-            </hi>, Budapest: Hornyánszky Viktor, 1891; darin Katona, <hi rend="unknown"
-              rendition="#none">A mesevizsgálat legközelebbi feladatairól</hi> [= <hi rend="unknown"
-            rendition="#none">
-Zukünftige Aufgaben des Geschichtenerzählens</hi>].</note> (für welches Beiträge von allen Verehrern und Schülern des Gefeierten<note
-            n="7" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1815">
+                  </hi>, Budapest: Hornyánszky Viktor, 1891; darin Katona, <hi rend="unknown" rendition="#none">A mesevizsgálat legközelebbi feladatairól</hi> [= <hi rend="unknown" rendition="#none">
+Zukünftige Aufgaben des Geschichtenerzählens</hi>].</note> (für welches Beiträge von allen Verehrern und Schülern des Gefeierten<note n="7" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
 Pál Hunfalvy</persName> (1810-1891), ungar. Sprachwissenschaftler und Ethnograph; vgl. HSA 04915-04919.</note>
-          <hi rend="unknown"
-            rendition="#none">noch immer erwünscht</hi> sind) fertiggestellt sein wird. Hiebei wird auch die ethnogr. Gesellschaft (deren Präses der Jubilar ist)<note
-            n="8" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1815">Hunfalvy</persName> war am 12. März 1890 achtzig Jahre alt geworden.</note> auf näher noch zu bestimmende Weise bethei- <pb
-            facs="#IMG.5"
-            n="5"/> ligt sein. Den beiden anderen, gleichzeitig mit H. jubilierenden Akademikern: dem alten Pulszky<note
-            n="9" place="foot" type="editorial">
-
-            <persName>
-Ferenc Pulszky</persName> (1814-1897), Sekretar der Geisteswiss. Klasse der Budapester Akademie.</note> und dem noch älteren Grafen Vay<note
-            n="10" place="foot" type="editorial">
-            <persName>
+               <hi rend="unknown" rendition="#none">noch immer erwünscht</hi> sind) fertiggestellt sein wird. Hiebei wird auch die ethnogr. Gesellschaft (deren Präses der Jubilar ist)<note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Hunfalvy</persName> war am 12. März 1890 achtzig Jahre alt geworden.</note> auf näher noch zu bestimmende Weise bethei- <pb facs="#IMG.5" n="5"/> ligt sein. Den beiden anderen, gleichzeitig mit H. jubilierenden Akademikern: dem alten Pulszky<note n="9" place="foot" type="editorial">
+                  <persName>
+Ferenc Pulszky</persName> (1814-1897), Sekretar der Geisteswiss. Klasse der Budapester Akademie.</note> und dem noch älteren Grafen Vay<note n="10" place="foot" type="editorial">
+                  <persName>
 Miklos Baron Vay de Vaja</persName> (1802-1894),Vorstandsmitglied der 
 Ungarischen Akademie der Wissenschaften.</note> wurden ebenfalls heute die üblichen Adressen übergeben.</p>
-        <p>Wenn in der Nationalitätenfrage etwas Beachtenswertes und Sie Interessierendes erscheinen sollte, so will ich Ihnen das Betreffende sofort notificieren resp. zusenden. </p>
-
-        <p>Besten Dank für das freundliche Gedenken, das Sie den Meinigen zu widmen die Güte hatten und hochachtungsvolle <pb
-            facs="#IMG.6" n="6"/> Grüße und Handkuß an Ihre gnädige Frau Mutter.</p>
-        <p>Bleiben Sie, lieber Herr Professor, auch ferner so gesund, wie ich Sie nach vierjähriger Trennung unlängst wiederzusehen die Freude gehabt habe* (*Den Schnupfen natürlich abgrechnet, den Sie damals gehabt haben.), und lassen Sie – uns der Hoffnung leben, daß wir Sie – Ihrem erfreulichen Versprechen gemäß – recht bald wieder in unserer Mitte begrüßen können werden.</p>
-        <closer>
-          <salute>Ihr dankbar ergebener</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1888">Katona</persName>. </signed>
-        </closer>
-        <postscript>
-          <p>
-            <pb facs="#IMG.7"
-              n="7"/> PS. Ich erinnere mich während unseres Spazierganges auf der Margarethen-Insel der italienischen Petöfi-Übers. erwähnt zu haben, deren Autor mir damals nicht einfallen wollte. Er heißt Pietro <hi
-              rend="unknown" rendition="#none">Cassone</hi> und hat erst neulich wieder der Kisfaludy-Ges.<note n="11"
-              place="foot" type="editorial">
-
-              <persName>
-Sándor Kisfaludy</persName> (1772-1844), ungarischer Dichter und Dramatiker.</note> (deren corresp. Mitglied er ist) neuere Übersetzungen eingesandt, wie ich in den Tageblättern gelesen habe.<note
-              n="12" place="foot" type="editorial">Petöfi, <hi rend="unknown" rendition="#none">
-                <bibl>
+            <p>Wenn in der Nationalitätenfrage etwas Beachtenswertes und Sie Interessierendes erscheinen sollte, so will ich Ihnen das Betreffende sofort notificieren resp. zusenden. </p>
+            <p>Besten Dank für das freundliche Gedenken, das Sie den Meinigen zu widmen die Güte hatten und hochachtungsvolle <pb facs="#IMG.6" n="6"/> Grüße und Handkuß an Ihre gnädige Frau Mutter.</p>
+            <p>Bleiben Sie, lieber Herr Professor, auch ferner so gesund, wie ich Sie nach vierjähriger Trennung unlängst wiederzusehen die Freude gehabt habe* (*Den Schnupfen natürlich abgrechnet, den Sie damals gehabt haben.), und lassen Sie – uns der Hoffnung leben, daß wir Sie – Ihrem erfreulichen Versprechen gemäß – recht bald wieder in unserer Mitte begrüßen können werden.</p>
+            <closer>
+               <salute>Ihr dankbar ergebener</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Katona</persName>. </signed>
+            </closer>
+            <postscript>
+               <p>
+                  <pb facs="#IMG.7" n="7"/> PS. Ich erinnere mich während unseres Spazierganges auf der Margarethen-Insel der italienischen Petöfi-Übers. erwähnt zu haben, deren Autor mir damals nicht einfallen wollte. Er heißt Pietro <hi rend="unknown" rendition="#none">Cassone</hi> und hat erst neulich wieder der Kisfaludy-Ges.<note n="11" place="foot" type="editorial">
+                     <persName>
+Sándor Kisfaludy</persName> (1772-1844), ungarischer Dichter und Dramatiker.</note> (deren corresp. Mitglied er ist) neuere Übersetzungen eingesandt, wie ich in den Tageblättern gelesen habe.<note n="12" place="foot" type="editorial">Petöfi, <hi rend="unknown" rendition="#none">
+                        <bibl>
 
 Nuvole (Felhok)
 </bibl>
-              </hi>, prima traduzione italiana di G. Cassone, Noto: Zammit, 1891. - Giuseppe Cassone (1842-1910) hat auch andere Texte Petöfis übersetzt.</note> Ich werde bestrebt sein, Ihnen seine Übersetzungen so bald als möglich vorlegen zu können</p>
-          <pb facs="#IMG.8" n="8"/>
-          <table>
-            <row>
-              <cell>
-                <hi rend="unknown" rendition="#none">Mily szép a világ!</hi> 4<hi rendition="#sup">e</hi> Str.:</cell>
-              <cell>Entschieden <hi rend="unknown" rendition="#none">ich</hi>.</cell>
-            </row>
-            <row>
-              <cell>
-                <hi rend="unknown" rendition="#none">A bizodalom, kit</hi>
-              </cell>
-              <cell>
-                <hi rend="unknown" rendition="#none">Eluzék</hi> kann hier nur 1. Pers. sing. des Praet.</cell>
-            </row>
-            <row>
-              <cell>
-                <hi rend="unknown" rendition="#none">Oly ruful elüzék</hi>
-              </cell>
-              <cell>narrat. In der subj. Conjug. sein. <hi rend="unknown" rendition="#none">
+                     </hi>, prima traduzione italiana di G. Cassone, Noto: Zammit, 1891. - Giuseppe Cassone (1842-1910) hat auch andere Texte Petöfis übersetzt.</note> Ich werde bestrebt sein, Ihnen seine Übersetzungen so bald als möglich vorlegen zu können</p>
+               <pb facs="#IMG.8" n="8"/>
+               <table>
+                  <row>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">Mily szép a világ!</hi> 4<hi rendition="#sup">e</hi> Str.:</cell>
+                     <cell>Entschieden <hi rend="unknown" rendition="#none">ich</hi>.</cell>
+                  </row>
+                  <row>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">A bizodalom, kit</hi>
+                     </cell>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">Eluzék</hi> kann hier nur 1. Pers. sing. des Praet.</cell>
+                  </row>
+                  <row>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">Oly ruful elüzék</hi>
+                     </cell>
+                     <cell>narrat. In der subj. Conjug. sein. <hi rend="unknown" rendition="#none">
 Sonst</hi>
-              </cell>
-            </row>
-          </table>
-          <table>
-            <row>
-              <cell>Str. II, 143 „Das Vertrauen, das <hi rend="unknown" rendition="#none">
+                     </cell>
+                  </row>
+               </table>
+               <table>
+                  <row>
+                     <cell>Str. II, 143 „Das Vertrauen, das <hi rend="unknown" rendition="#none">
 manu</hi>
-              </cell>
-              <cell>
-                <hi rend="unknown" rendition="#none">könnte es noch 3. Pers. plur. ders. Zeit</hi>
-              </cell>
-            </row>
-            <row>
-              <cell>Roh von mir vertrieben“.</cell>
-              <cell>n der obj. Conjug. sein</cell>
-            </row>
-            <row>
-              <cell>
-                <hi rend="unknown" rendition="#none">Nicht ich? Man wäre doch elüzeneh.</hi>
-              </cell>
-              <cell/>
-            </row>
-          </table>
-          <p>____________________________</p>
-          <p>
-            <hi rend="unknown" rendition="#none">Lérel Arauy I.-hoz:</hi> V. 26:</p>
-          <table>
-            <row>
-              <cell>Mert ne is írj inkább, hogysem</cell>
-              <cell/>
-            </row>
-            <row>
-              <cell>M. II,171 „Schreibe lieber recht viel,</cell>
-              <cell/>
-            </row>
-            <row>
-              <cell>als“. Ist es nicht: „Denn schreibe</cell>
-              <cell>
-                <hi rend="unknown" rendition="#none">Ihre</hi> Übers. ist die richtige</cell>
-            </row>
-            <row>
-              <cell>lieber gar nicht als“</cell>
-              <cell/>
-            </row>
-          </table>
-          <p>____________________________</p>
-          <table>
-            <row>
-              <cell>
-                <hi rend="unknown" rendition="#none">A Költészet</hi> gegen Ende:</cell>
-              <cell>Gewiss + und nicht x.</cell>
-            </row>
-            <row>
-              <cell>
-                <hi rend="unknown" rendition="#none">boldog-boldogtalannak</hi>
-              </cell>
-              <cell>
-                <hi rend="unknown" rendition="#none">Boldok-boldogtalamek</hi>
-              </cell>
-            </row>
-            <row>
-              <cell>M. II, 176 „dem seligen Beladenen“</cell>
-              <cell>ist ein Idiotismus, der eigentlich nur „jedem</cell>
-            </row>
-            <row>
-              <cell>Nicht vielmehr „dem Glück-</cell>
-              <cell>Menschenkinde“ (ob gl. ob </cell>
-            </row>
-            <row>
-              <cell>Lichen wie dem Unglücklichen“</cell>
-              <cell>ungl.) bedeuten will.</cell>
-            </row>
-            <row>
-              <cell>sodass eine +, keine x: Zusammen- setzung vorliegt? </cell>
-              <cell/>
-            </row>
-          </table>
-          <p>____________________________</p>
-          <table>
-            <row>
-              <cell>
-                <hi rend="unknown" rendition="#none">A kís beres</hi> Str. 3 <hi rend="unknown" rendition="#none">cseló, csákó, cselö</hi>
-              </cell>
-              <cell>Hier hat sich Melas wieder geirrt. <hi rend="unknown"
-                  rendition="#none">
-Cselö</hi> ist eine die Ochsen an treibende Interjection und kein Ochsenname wie <hi
-                  rend="unknown" rendition="#none">Czákó</hi>.</cell>
-            </row>
-            <row>
-              <cell>M. II, 197 Tschelö, Tschako – </cell>
-              <cell/>
-            </row>
-            <row>
-              <cell>Im Deutschen nimmt sich </cell>
-              <cell>Das aus als ob <hi rend="unknown" rendition="#none">Tschelö</hi> ebenso</cell>
-            </row>
-            <row>
-              <cell>gut ein Ochs wäre wie Tschako.</cell>
-              <cell/>
-            </row>
-          </table>
-          <p>____________________________</p>
-          <table>
-            <row>
-              <cell>Ist <hi rend="unknown" rendition="#none">szöke habok</hi> in <hi rend="unknown" rendition="#none">Homér</hi>
-              </cell>
-              <cell>Bei magy. „<hi rend="unknown" rendition="#none">szölke</hi>“ od.</cell>
-            </row>
-            <row>
-              <cell>
-                <hi rend="unknown" rendition="#none">és Oszian</hi> ebenso kühn wie</cell>
-              <cell>
-                <hi rend="unknown" rendition="#none">szöke habok</hi> und „<hi rend="unknown" rendition="#none">szöke</hi>
-              </cell>
-            </row>
-            <row>
-              <cell>unser: <hi rend="unknown" rendition="#none">blonde Wogen</hi>? Interes-</cell>
-              <cell>Duna“ etc. ist vielleicht auch </cell>
-            </row>
-            <row>
-              <cell>sant für die Geschichte der</cell>
-              <cell>an die Identität von</cell>
-            </row>
-            <row>
-              <cell>Farbenbezeichnungen; <hi rend="unknown" rendition="#none">blond</hi> und</cell>
-              <cell>
-                <hi rend="unknown" rendition="#none">szölke und szürke</hi> (grau)</cell>
-            </row>
-            <row>
-              <cell>
-                <hi rend="unknown" rendition="#none">blau</hi> vertauschen sich öfter</cell>
-              <cell>zu denken.</cell>
-            </row>
-          </table>
-          <pb facs="#IMG.9" n="9"/>
-          <table>
-            <row>
-              <cell>
-                <hi rend="unknown"
-                  rendition="#none">harom a tanc</hi>, „Hui im Dreischritt: „M. I. 26. Heisst es nicht: „Von Neuem!“ „Da capo!“ eig. „Zum dritten Male“, etwa unserem „Aller Guten Dinge sind drei“ (= <hi
-                  rend="unknown" rendition="#none">Három a szám</hi>) entsprechend?</cell>
-
-              <cell>Ihr Auffassung ist entschieden die richtige. Hier hat sich M. recht arg vergriffen. – Man sagt auch im Magy. „<hi
-                  rend="unknown" rendition="#none">
+                     </cell>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">könnte es noch 3. Pers. plur. ders. Zeit</hi>
+                     </cell>
+                  </row>
+                  <row>
+                     <cell>Roh von mir vertrieben“.</cell>
+                     <cell>n der obj. Conjug. sein</cell>
+                  </row>
+                  <row>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">Nicht ich? Man wäre doch elüzeneh.</hi>
+                     </cell>
+                     <cell/>
+                  </row>
+               </table>
+               <p>____________________________</p>
+               <p>
+                  <hi rend="unknown" rendition="#none">Lérel Arauy I.-hoz:</hi> V. 26:</p>
+               <table>
+                  <row>
+                     <cell>Mert ne is írj inkább, hogysem</cell>
+                     <cell/>
+                  </row>
+                  <row>
+                     <cell>M. II,171 „Schreibe lieber recht viel,</cell>
+                     <cell/>
+                  </row>
+                  <row>
+                     <cell>als“. Ist es nicht: „Denn schreibe</cell>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">Ihre</hi> Übers. ist die richtige</cell>
+                  </row>
+                  <row>
+                     <cell>lieber gar nicht als“</cell>
+                     <cell/>
+                  </row>
+               </table>
+               <p>____________________________</p>
+               <table>
+                  <row>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">A Költészet</hi> gegen Ende:</cell>
+                     <cell>Gewiss + und nicht x.</cell>
+                  </row>
+                  <row>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">boldog-boldogtalannak</hi>
+                     </cell>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">Boldok-boldogtalamek</hi>
+                     </cell>
+                  </row>
+                  <row>
+                     <cell>M. II, 176 „dem seligen Beladenen“</cell>
+                     <cell>ist ein Idiotismus, der eigentlich nur „jedem</cell>
+                  </row>
+                  <row>
+                     <cell>Nicht vielmehr „dem Glück-</cell>
+                     <cell>Menschenkinde“ (ob gl. ob </cell>
+                  </row>
+                  <row>
+                     <cell>Lichen wie dem Unglücklichen“</cell>
+                     <cell>ungl.) bedeuten will.</cell>
+                  </row>
+                  <row>
+                     <cell>sodass eine +, keine x: Zusammen- setzung vorliegt? </cell>
+                     <cell/>
+                  </row>
+               </table>
+               <p>____________________________</p>
+               <table>
+                  <row>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">A kís beres</hi> Str. 3 <hi rend="unknown" rendition="#none">cseló, csákó, cselö</hi>
+                     </cell>
+                     <cell>Hier hat sich Melas wieder geirrt. <hi rend="unknown" rendition="#none">
+Cselö</hi> ist eine die Ochsen an treibende Interjection und kein Ochsenname wie <hi rend="unknown" rendition="#none">Czákó</hi>.</cell>
+                  </row>
+                  <row>
+                     <cell>M. II, 197 Tschelö, Tschako – </cell>
+                     <cell/>
+                  </row>
+                  <row>
+                     <cell>Im Deutschen nimmt sich </cell>
+                     <cell>Das aus als ob <hi rend="unknown" rendition="#none">Tschelö</hi> ebenso</cell>
+                  </row>
+                  <row>
+                     <cell>gut ein Ochs wäre wie Tschako.</cell>
+                     <cell/>
+                  </row>
+               </table>
+               <p>____________________________</p>
+               <table>
+                  <row>
+                     <cell>Ist <hi rend="unknown" rendition="#none">szöke habok</hi> in <hi rend="unknown" rendition="#none">Homér</hi>
+                     </cell>
+                     <cell>Bei magy. „<hi rend="unknown" rendition="#none">szölke</hi>“ od.</cell>
+                  </row>
+                  <row>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">és Oszian</hi> ebenso kühn wie</cell>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">szöke habok</hi> und „<hi rend="unknown" rendition="#none">szöke</hi>
+                     </cell>
+                  </row>
+                  <row>
+                     <cell>unser: <hi rend="unknown" rendition="#none">blonde Wogen</hi>? Interes-</cell>
+                     <cell>Duna“ etc. ist vielleicht auch </cell>
+                  </row>
+                  <row>
+                     <cell>sant für die Geschichte der</cell>
+                     <cell>an die Identität von</cell>
+                  </row>
+                  <row>
+                     <cell>Farbenbezeichnungen; <hi rend="unknown" rendition="#none">blond</hi> und</cell>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">szölke und szürke</hi> (grau)</cell>
+                  </row>
+                  <row>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">blau</hi> vertauschen sich öfter</cell>
+                     <cell>zu denken.</cell>
+                  </row>
+               </table>
+               <pb facs="#IMG.9" n="9"/>
+               <table>
+                  <row>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">harom a tanc</hi>, „Hui im Dreischritt: „M. I. 26. Heisst es nicht: „Von Neuem!“ „Da capo!“ eig. „Zum dritten Male“, etwa unserem „Aller Guten Dinge sind drei“ (= <hi rend="unknown" rendition="#none">Három a szám</hi>) entsprechend?</cell>
+                     <cell>Ihr Auffassung ist entschieden die richtige. Hier hat sich M. recht arg vergriffen. – Man sagt auch im Magy. „<hi rend="unknown" rendition="#none">
 harom a magyar szín</hi>“ mit Anspielung auf die ung. Tricolore.</cell>
-            </row>
-          </table>
-          <p>____________________________</p>
-          <table>
-            <row>
-              <cell>Die Tendenz des Gedichtes <hi rend="unknown"
-                  rendition="#none">A régi jó Gvadányi</hi> ist mir nicht ganz klar, oder vielmehr ich weiss nicht mit welcher Absicht solche veral- tete Ausdrücke und zwar Latinismen wie <hi
-                  rend="unknown"
-                  rendition="#none">constructio fundamentomos, appet- titusorn, calamus</hi> aufge- nommen worden sind, durch welche doch <hi
-                  rend="unknown" rendition="#none">Könyvének igazi magyar beszédje</hi> nicht veranschaulicht wird. </cell>
-              <cell>Erklärung folgt morgen nach!</cell>
-            </row>
-          </table>
-          <table>
-            <row>
-              <cell>In der letzten Strophe von <hi rend="unknown"
-                  rendition="#none">A munkácsi rázban</hi> verstehe ich nicht ganz: Hát <hi rend="unknown"
-                  rendition="#none">ha még benu colnék</hi> M. II,165: „Ha wenn ich Erst unten wäre“; das <hi
-                  rend="unknown" rendition="#none">Erst</hi> unten wäre“; das müsste doch magy. heissen „hát ha csak benu colnék már“. Was </cell>
-              <cell>
-                <hi rend="unknown" rendition="#none">Hát ha még benu colnék</hi> würde auch ich mit: „und wenn ich <hi
-                  rend="unknown"
-                  rendition="#none">erst</hi> drunten wäre übersetzen, aber damit keinen Wunsch, sondern vielmehr die Befürchtung vor einer schlimmen Möglichkeit ausdrücken. Den Wunsch würde man magy. mit „<hi
-                  rend="unknown" rendition="#none">Volnék csak lenn!</hi> Wiedergeben.</cell>
-            </row>
-          </table>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                  </row>
+               </table>
+               <p>____________________________</p>
+               <table>
+                  <row>
+                     <cell>Die Tendenz des Gedichtes <hi rend="unknown" rendition="#none">A régi jó Gvadányi</hi> ist mir nicht ganz klar, oder vielmehr ich weiss nicht mit welcher Absicht solche veral- tete Ausdrücke und zwar Latinismen wie <hi rend="unknown" rendition="#none">constructio fundamentomos, appet- titusorn, calamus</hi> aufge- nommen worden sind, durch welche doch <hi rend="unknown" rendition="#none">Könyvének igazi magyar beszédje</hi> nicht veranschaulicht wird. </cell>
+                     <cell>Erklärung folgt morgen nach!</cell>
+                  </row>
+               </table>
+               <table>
+                  <row>
+                     <cell>In der letzten Strophe von <hi rend="unknown" rendition="#none">A munkácsi rázban</hi> verstehe ich nicht ganz: Hát <hi rend="unknown" rendition="#none">ha még benu colnék</hi> M. II,165: „Ha wenn ich Erst unten wäre“; das <hi rend="unknown" rendition="#none">Erst</hi> unten wäre“; das müsste doch magy. heissen „hát ha csak benu colnék már“. Was </cell>
+                     <cell>
+                        <hi rend="unknown" rendition="#none">Hát ha még benu colnék</hi> würde auch ich mit: „und wenn ich <hi rend="unknown" rendition="#none">erst</hi> drunten wäre übersetzen, aber damit keinen Wunsch, sondern vielmehr die Befürchtung vor einer schlimmen Möglichkeit ausdrücken. Den Wunsch würde man magy. mit „<hi rend="unknown" rendition="#none">Volnék csak lenn!</hi> Wiedergeben.</cell>
+                  </row>
+               </table>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

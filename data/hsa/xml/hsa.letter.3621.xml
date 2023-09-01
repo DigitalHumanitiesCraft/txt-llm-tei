@@ -1,388 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Émile Trouette an Hugo Schuchardt (05-11849)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">
-            <forename>Émile</forename>
-            <surname>Trouette</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Martina</forename>
-            <surname>Pelz</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3621" type="PID">o:hsa.letter.3621</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">05-11849</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11849</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="fr"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">
-                <forename>Émile</forename>
-                <surname>Trouette</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="7" unit="pages">7 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" ref="http://sws.geonames.org/2988507">Paris</origPlace>
-              <origDate ana="dcterms:created" when="1882-10-31">1882-10-31</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Martina</forename>
-              <surname>Pelz</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Émile Trouette und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2884"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3621">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2884" ref="https://viaf.org/viaf/194120079">
-            <forename>Émile</forename>
-            <surname>Trouette</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" key="#GID.1" ref="http://sws.geonames.org/2988507">Paris</placeName>
-          <date when="1882-10-31">1882-10-31</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Paris</settlement>
-                <name ref="http://geonames.org/2988507" type="fcode:PPLC">Paris</name>
-                <location>
-                  <geo>2.3488,48.85341</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2884" type="context">
-                        Korrespondenz Émile Trouette - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="fr">Französisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3621" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3621" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3621" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3621" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3621" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3621" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3621" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3621" xml:lang="fr">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Paris le 31 octobre 1882</dateline>
-        <opener>Monsieur,</opener>
-        <p>La suite des documents qui vous sont envoyés par mon beau-frère Auguste Vinson<note n="1" place="foot"
-            type="editorial"/> m’est arrivée par le dernier paquebot ;<note n="2" place="foot"
-            type="editorial"/> j’y trouve la chanson de M. Pierre Duclos<note n="3" place="foot"
-            type="editorial"/> intitulée <hi rend="unknown" rendition="#none">Li cœr n’a pas magasin</hi>.<note n="4"
-            place="foot" type="editorial"/>
-        </p>
-
-        <p>Je continue à ce sujet les observations que j’ai commencé à vous fournir. Il est bien entendu que je laisse de côté tout ce qui peut être critiqué comme poésie, et même justesse de pensée, clarté d’expression. ; je n’ai à m’occuper ici que de la question de savoir si vous recevez du créole sincère. Si la vérification a crée pour l’auteur du morceau <pb
-            facs="#IMG.2" n="2"/> une difficulté plus ou moins grande, c’était à lui de la surmonter.<note n="5"
-            place="foot" type="editorial"/>
-        </p>
-        <p>1<hi rendition="#sup">er</hi> complet. 2<hi rendition="#sup">e</hi> vers. <hi rend="unknown"
-            rendition="#none">Vi</hi>, pour <hi rend="unknown" rendition="#none">vous</hi>,<note n="6" place="foot"
-            type="editorial"/> à remarquer. Il serait mieux de ne pas les mettre dans la même bouche ; mais je crois qu’ils peuvent s’y rencontrer. Même observation pour <hi
-            rend="unknown" rendition="#none">ar’pousse</hi> sans sujet dans le quatrième vers,<note n="7" place="foot"
-            type="editorial"/> après d’autres verbes précédés de leurs sujets. L’inversion qui se trouve dans le 5<hi
-            rendition="#sup">e</hi> vers et l’usage <hi rend="unknown"
-            rendition="#none">la porte du cœur</hi> me semblent moins acceptables,<note n="8" place="foot"
-            type="editorial"/> comme aussi dans le 6<hi rendition="#sup">e</hi>, l’apposition. <hi rend="unknown"
-            rendition="#none">
-Moin vot’ cousin</hi>,<note n="9" place="foot"
-            type="editorial"/> qui suspend la phrase et tient l’esprit tendu entre le verbe <hi rend="unknown"
-            rendition="#none">
-crie</hi> et son complément <hi rend="unknown"
-            rendition="#none">Sorte à vous</hi> etc.<note n="10" place="foot" type="editorial"/>
-        </p>
-        <p>2° Complet. 1<hi rendition="#sup">er</hi> vers. Au lieu de <hi rend="unknown"
-            rendition="#none">crï</hi> tout cours, j’aimerais mieux <hi rend="unknown"
-            rendition="#none">crie</hi> que l’on prononcerait comme <hi rend="unknown"
-            rendition="#none">crille</hi>.<note n="11" place="foot" type="editorial"/>
-        </p>
-        <p>4<hi rendition="#sup">e</hi> vers. On dirait un conseil donné plutôt que la constatation d’un fait. <pb
-            facs="#IMG.3" n="3"/> J’aimerais mieux : <hi rend="unknown"
-            rendition="#none">Di paqu’moui çanze</hi>, ou <hi rend="unknown"
-            rendition="#none">di pas moui çanze</hi> ou encore <hi rend="unknown"
-            rendition="#none">di pa a moin y çanze</hi>, pour dire <hi rend="unknown" rendition="#none">ne dis pas que je change, ne me fais pas le reproche de changer</hi>
-          <note n="12" place="foot" type="editorial"/>
-        </p>
-        <p>Vers 6<hi
-            rendition="#sup">e</hi> L’idée du Cupidon des Grecs n’est jamais entrée dans la tête d’un noir.<note n="13"
-            place="foot" type="editorial"/>
-        </p>
-        <p>3<hi rendition="#sup">e</hi> complet. Vers 1<hi rendition="#sup">er</hi> Pourquoi pas tout de suite : <hi
-            rend="unknown" rendition="#none">Là bas marin y entasse</hi>, si toutefois <hi rend="unknown"
-            rendition="#none">entasse</hi> est créole, ce que je ne crois pas ; ou dira plutôt <hi rend="unknown" rendition="#none">mett’en tas, y fé ain tas.</hi>
-          <note n="14" place="foot" type="editorial"/>
-        </p>
-        <p>vers 2<hi rendition="#sup">e </hi>Je ne sais ce que c’est que <hi rend="unknown"
-            rendition="#none">beng’</hi>. Les navires nous arrivant pleines de sacs de riz du Bengale, ou a peut-être voulu dire : <hi
-            rend="unknown" rendition="#none">Gros sacs Bengal’</hi>.<note n="15" place="foot" type="editorial"/>
-        </p>
-        <p>Vers 5<hi rendition="#sup">e</hi> Pourquoi l’<hi rend="unknown" rendition="#none">s</hi> de fill’<hi
-            rend="unknown" rendition="#none">s</hi> qui fera prononcer <hi rend="unknown" rendition="#none">fill’</hi>
-          <hi rend="unknown" rendition="#none">z</hi>
-          <hi rend="unknown"
-            rendition="#none"> y aime ça</hi>, prononciation inusitée. – Fidèle me paraît bien rapproché du français.<note
-            n="16" place="foot" type="editorial"/>
-        </p>
-        <p>Vers 7<hi rendition="#sup">e</hi> Ça est de trop. – Tourterelle et turtereau pour dire des amoureux <pb
-            facs="#IMG.4" n="4"/> inconnus.<note n="17" place="foot" type="editorial"/>
-        </p>
-        <p>4<hi rendition="#sup">e</hi> complet. <hi rend="unknown"
-            rendition="#none">M’a ein</hi>, oui ; mais j’aimerais mieux <hi rend="unknown"
-            rendition="#none">nana</hi>.<note n="18" place="foot" type="editorial"/>
-        </p>
-        <p>2<hi rendition="#sup">e</hi> vers. Inversion peu vraissemblable.<note n="19" place="foot" type="editorial"/>
-        </p>
-        <p>5<hi rendition="#sup">e</hi> vers. Pourquoi pas <hi rend="unknown" rendition="#none">
-moin</hi>.<note n="20"
-            place="foot" type="editorial"/>
-        </p>
-        <p>5<hi rendition="#sup">e</hi> complet. Vers 4<hi rendition="#sup">e</hi>
-          <hi rend="unknown" rendition="#none">Siguid</hi>, inconnu.<note n="21" place="foot" type="editorial"/>
-        </p>
-        <p>Vers 5<hi rendition="#sup">e</hi>
-          <hi rend="unknown" rendition="#none">Mavouze</hi> veut dire <hi rend="unknown"
-            rendition="#none">dépourvu d’énergie</hi>.<note n="22" place="foot" type="editorial"/>
-        </p>
-        <p>6<hi rendition="#sup">e</hi> complet. <hi rend="unknown" rendition="#none">Reine</hi>, douteux. <hi
-            rend="unknown" rendition="#none">Roi</hi> s’emploie souvent dans le sens de maître.<note n="23" place="foot" type="editorial"/>
-        </p>
-        <p>2<hi rendition="#sup">e</hi> vers. <hi rend="unknown" rendition="#none">Petit mimi</hi>, douteux.<note n="24"
-            place="foot" type="editorial"/>
-        </p>
-        <p>5<hi rendition="#sup">e</hi>
-          <hi rend="unknown" rendition="#none">M’hâlé la flamme</hi> ; je ne sais ce que c’est.<note n="25" place="foot" type="editorial"/>
-        </p>
-        <p>6<hi rendition="#sup">e </hi>vers. <hi rend="unknown" rendition="#none">Griller du café</hi>, plus bas <hi
-            rend="unknown" rendition="#none">planter cent gaulettes de vanille</hi>, c’est d’un aristocrate<note n="26"
-            place="foot" type="editorial"/>.</p>
-        <p>7<hi rendition="#sup">e</hi> complet. Vers 7<hi rendition="#sup">e</hi>. <hi rend="unknown"
-            rendition="#none">Va</hi> demanderait un sujet.<note n="27" place="foot" type="editorial"/>
-        </p>
-        <p>8<hi rendition="#sup">e</hi> complet. Dans <hi rend="unknown"
-            rendition="#none">zaut’ milan</hi>, pour dire <hi rend="unknown"
-            rendition="#none">au milieu d’eux</hi>, douteux.<note n="28" place="foot" type="editorial"/>
-        </p>
-        <p>7<hi rendition="#sup">e</hi> vers<hi rend="unknown" rendition="#none">. Çaute avec cayambe</hi>. <pb
-            facs="#IMG.5" n="5"/>
-        </p>
-        <p>Voici ce que c’est que le <hi rend="unknown"
-            rendition="#none">cayambe</hi>. Prenez trente cinq à 40 hampes de fleurs de cannes d’un centimètre de diamètre sur 50 de longueur ; rangez-les à côté les unes des autres, de manière à avoir une surface rectangulaire de 35 à 40 centimètres sur 50. Fixez ces baguettes à l’aide de fils qui les rattacheront à des traverses perpendiculaires. Sur ces traverses posez dans le même sens que les premières hampes d’autres hampes en même nombre de manière à former une seconde surface semblable à la première, les baguettes laissant un intervalle vide entre les deux surfaces. Dans chacun des deux compartiments de cet intervalle, faites entrer une cinquantaine de graines quelconques, rondes et polies, celles du balisier (Canna indica) ou de <pb
-            facs="#IMG.6" n="6"/> l<hi rend="unknown" rendition="#none">’abrus precatorius</hi>, que nous appelons <hi
-            rend="unknown"
-            rendition="#none">Cascavelle</hi>, assez petites pour jouer librement dans l’intervalle, et formez les côtes de l’instrument pour que les graines introduites ne puissent sortir, et vous avez votre <hi
-            rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3621" xml:lang="fr">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Paris le 31 octobre 1882</dateline>
+            <opener>Monsieur,</opener>
+            <p>La suite des documents qui vous sont envoyés par mon beau-frère Auguste Vinson<note n="1" place="foot" type="editorial"/> m’est arrivée par le dernier paquebot ;<note n="2" place="foot" type="editorial"/> j’y trouve la chanson de M. Pierre Duclos<note n="3" place="foot" type="editorial"/> intitulée <hi rend="unknown" rendition="#none">Li cœr n’a pas magasin</hi>.<note n="4" place="foot" type="editorial"/>
+            </p>
+            <p>Je continue à ce sujet les observations que j’ai commencé à vous fournir. Il est bien entendu que je laisse de côté tout ce qui peut être critiqué comme poésie, et même justesse de pensée, clarté d’expression. ; je n’ai à m’occuper ici que de la question de savoir si vous recevez du créole sincère. Si la vérification a crée pour l’auteur du morceau <pb facs="#IMG.2" n="2"/> une difficulté plus ou moins grande, c’était à lui de la surmonter.<note n="5" place="foot" type="editorial"/>
+            </p>
+            <p>1<hi rendition="#sup">er</hi> complet. 2<hi rendition="#sup">e</hi> vers. <hi rend="unknown" rendition="#none">Vi</hi>, pour <hi rend="unknown" rendition="#none">vous</hi>,<note n="6" place="foot" type="editorial"/> à remarquer. Il serait mieux de ne pas les mettre dans la même bouche ; mais je crois qu’ils peuvent s’y rencontrer. Même observation pour <hi rend="unknown" rendition="#none">ar’pousse</hi> sans sujet dans le quatrième vers,<note n="7" place="foot" type="editorial"/> après d’autres verbes précédés de leurs sujets. L’inversion qui se trouve dans le 5<hi rendition="#sup">e</hi> vers et l’usage <hi rend="unknown" rendition="#none">la porte du cœur</hi> me semblent moins acceptables,<note n="8" place="foot" type="editorial"/> comme aussi dans le 6<hi rendition="#sup">e</hi>, l’apposition. <hi rend="unknown" rendition="#none">
+Moin vot’ cousin</hi>,<note n="9" place="foot" type="editorial"/> qui suspend la phrase et tient l’esprit tendu entre le verbe <hi rend="unknown" rendition="#none">
+crie</hi> et son complément <hi rend="unknown" rendition="#none">Sorte à vous</hi> etc.<note n="10" place="foot" type="editorial"/>
+            </p>
+            <p>2° Complet. 1<hi rendition="#sup">er</hi> vers. Au lieu de <hi rend="unknown" rendition="#none">crï</hi> tout cours, j’aimerais mieux <hi rend="unknown" rendition="#none">crie</hi> que l’on prononcerait comme <hi rend="unknown" rendition="#none">crille</hi>.<note n="11" place="foot" type="editorial"/>
+            </p>
+            <p>4<hi rendition="#sup">e</hi> vers. On dirait un conseil donné plutôt que la constatation d’un fait. <pb facs="#IMG.3" n="3"/> J’aimerais mieux : <hi rend="unknown" rendition="#none">Di paqu’moui çanze</hi>, ou <hi rend="unknown" rendition="#none">di pas moui çanze</hi> ou encore <hi rend="unknown" rendition="#none">di pa a moin y çanze</hi>, pour dire <hi rend="unknown" rendition="#none">ne dis pas que je change, ne me fais pas le reproche de changer</hi>
+               <note n="12" place="foot" type="editorial"/>
+            </p>
+            <p>Vers 6<hi rendition="#sup">e</hi> L’idée du Cupidon des Grecs n’est jamais entrée dans la tête d’un noir.<note n="13" place="foot" type="editorial"/>
+            </p>
+            <p>3<hi rendition="#sup">e</hi> complet. Vers 1<hi rendition="#sup">er</hi> Pourquoi pas tout de suite : <hi rend="unknown" rendition="#none">Là bas marin y entasse</hi>, si toutefois <hi rend="unknown" rendition="#none">entasse</hi> est créole, ce que je ne crois pas ; ou dira plutôt <hi rend="unknown" rendition="#none">mett’en tas, y fé ain tas.</hi>
+               <note n="14" place="foot" type="editorial"/>
+            </p>
+            <p>vers 2<hi rendition="#sup">e </hi>Je ne sais ce que c’est que <hi rend="unknown" rendition="#none">beng’</hi>. Les navires nous arrivant pleines de sacs de riz du Bengale, ou a peut-être voulu dire : <hi rend="unknown" rendition="#none">Gros sacs Bengal’</hi>.<note n="15" place="foot" type="editorial"/>
+            </p>
+            <p>Vers 5<hi rendition="#sup">e</hi> Pourquoi l’<hi rend="unknown" rendition="#none">s</hi> de fill’<hi rend="unknown" rendition="#none">s</hi> qui fera prononcer <hi rend="unknown" rendition="#none">fill’</hi>
+               <hi rend="unknown" rendition="#none">z</hi>
+               <hi rend="unknown" rendition="#none"> y aime ça</hi>, prononciation inusitée. – Fidèle me paraît bien rapproché du français.<note n="16" place="foot" type="editorial"/>
+            </p>
+            <p>Vers 7<hi rendition="#sup">e</hi> Ça est de trop. – Tourterelle et turtereau pour dire des amoureux <pb facs="#IMG.4" n="4"/> inconnus.<note n="17" place="foot" type="editorial"/>
+            </p>
+            <p>4<hi rendition="#sup">e</hi> complet. <hi rend="unknown" rendition="#none">M’a ein</hi>, oui ; mais j’aimerais mieux <hi rend="unknown" rendition="#none">nana</hi>.<note n="18" place="foot" type="editorial"/>
+            </p>
+            <p>2<hi rendition="#sup">e</hi> vers. Inversion peu vraissemblable.<note n="19" place="foot" type="editorial"/>
+            </p>
+            <p>5<hi rendition="#sup">e</hi> vers. Pourquoi pas <hi rend="unknown" rendition="#none">
+moin</hi>.<note n="20" place="foot" type="editorial"/>
+            </p>
+            <p>5<hi rendition="#sup">e</hi> complet. Vers 4<hi rendition="#sup">e</hi>
+               <hi rend="unknown" rendition="#none">Siguid</hi>, inconnu.<note n="21" place="foot" type="editorial"/>
+            </p>
+            <p>Vers 5<hi rendition="#sup">e</hi>
+               <hi rend="unknown" rendition="#none">Mavouze</hi> veut dire <hi rend="unknown" rendition="#none">dépourvu d’énergie</hi>.<note n="22" place="foot" type="editorial"/>
+            </p>
+            <p>6<hi rendition="#sup">e</hi> complet. <hi rend="unknown" rendition="#none">Reine</hi>, douteux. <hi rend="unknown" rendition="#none">Roi</hi> s’emploie souvent dans le sens de maître.<note n="23" place="foot" type="editorial"/>
+            </p>
+            <p>2<hi rendition="#sup">e</hi> vers. <hi rend="unknown" rendition="#none">Petit mimi</hi>, douteux.<note n="24" place="foot" type="editorial"/>
+            </p>
+            <p>5<hi rendition="#sup">e</hi>
+               <hi rend="unknown" rendition="#none">M’hâlé la flamme</hi> ; je ne sais ce que c’est.<note n="25" place="foot" type="editorial"/>
+            </p>
+            <p>6<hi rendition="#sup">e </hi>vers. <hi rend="unknown" rendition="#none">Griller du café</hi>, plus bas <hi rend="unknown" rendition="#none">planter cent gaulettes de vanille</hi>, c’est d’un aristocrate<note n="26" place="foot" type="editorial"/>.</p>
+            <p>7<hi rendition="#sup">e</hi> complet. Vers 7<hi rendition="#sup">e</hi>. <hi rend="unknown" rendition="#none">Va</hi> demanderait un sujet.<note n="27" place="foot" type="editorial"/>
+            </p>
+            <p>8<hi rendition="#sup">e</hi> complet. Dans <hi rend="unknown" rendition="#none">zaut’ milan</hi>, pour dire <hi rend="unknown" rendition="#none">au milieu d’eux</hi>, douteux.<note n="28" place="foot" type="editorial"/>
+            </p>
+            <p>7<hi rendition="#sup">e</hi> vers<hi rend="unknown" rendition="#none">. Çaute avec cayambe</hi>. <pb facs="#IMG.5" n="5"/>
+            </p>
+            <p>Voici ce que c’est que le <hi rend="unknown" rendition="#none">cayambe</hi>. Prenez trente cinq à 40 hampes de fleurs de cannes d’un centimètre de diamètre sur 50 de longueur ; rangez-les à côté les unes des autres, de manière à avoir une surface rectangulaire de 35 à 40 centimètres sur 50. Fixez ces baguettes à l’aide de fils qui les rattacheront à des traverses perpendiculaires. Sur ces traverses posez dans le même sens que les premières hampes d’autres hampes en même nombre de manière à former une seconde surface semblable à la première, les baguettes laissant un intervalle vide entre les deux surfaces. Dans chacun des deux compartiments de cet intervalle, faites entrer une cinquantaine de graines quelconques, rondes et polies, celles du balisier (Canna indica) ou de <pb facs="#IMG.6" n="6"/> l<hi rend="unknown" rendition="#none">’abrus precatorius</hi>, que nous appelons <hi rend="unknown" rendition="#none">Cascavelle</hi>, assez petites pour jouer librement dans l’intervalle, et formez les côtes de l’instrument pour que les graines introduites ne puissent sortir, et vous avez votre <hi rend="unknown" rendition="#none">
 cayambe</hi>. On en joue en le tenant des deux mains, les pouces dessus, les quatre autres doigts dessous ; on l’agite de droite à gauche et de gauche à droite, en frappant avec les pouces de manière à déterminer un ébranlement bruyant des graines, pour accompagner le mouvement d’une danse au son du bobre.</p>
-        <p>9<hi rendition="#sup">e</hi> complet. Philémon et Baucis, c’est une plaisanterie. </p>
-        <p>            3<hi rendition="#sup">e</hi> vers. Dire plutôt <hi rend="unknown"
-            rendition="#none">cent ans passés</hi>.<note n="29" place="foot" type="editorial"/>
-        </p>
-        <closer>
-          <salute>J’attends, Monsieur, une nouvelle occasion de vous être utile, en vous <pb facs="#IMG.7" n="7"/> priant d’agréer l’expression de ma vive sympathie pour votre travail et de ma considération la plus distinguée pour votre personne.</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">E L Trouette</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>9<hi rendition="#sup">e</hi> complet. Philémon et Baucis, c’est une plaisanterie. </p>
+            <p>            3<hi rendition="#sup">e</hi> vers. Dire plutôt <hi rend="unknown" rendition="#none">cent ans passés</hi>.<note n="29" place="foot" type="editorial"/>
+            </p>
+            <closer>
+               <salute>J’attends, Monsieur, une nouvelle occasion de vous être utile, en vous <pb facs="#IMG.7" n="7"/> priant d’agréer l’expression de ma vive sympathie pour votre travail et de ma considération la plus distinguée pour votre personne.</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">E L Trouette</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

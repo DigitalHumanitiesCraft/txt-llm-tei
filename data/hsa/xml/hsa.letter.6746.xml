@@ -1,338 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Reinhold Köhler (096-S.189-192)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/6746" type="PID">o:hsa.letter.6746</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">096-S.189-192</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Deutschland</country>
-            <region>Thüringen</region>
-            <settlement>Weimar</settlement>
-            <repository ref="https://www.klassik-stiftung.de/goethe-und-schiller-archiv/">Archivdatenbank des Goethe- und Schiller-Archivs</repository>
-            <idno type="shelfmark">S.189</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="3" unit="pages">3 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" ref="http://sws.geonames.org/2918752">Gotha</origPlace>
-              <origDate ana="dcterms:created" when="1873-12-31">1873-12-31</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Reinhold Köhler</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1933"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.6746">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" key="#GID.1" ref="http://sws.geonames.org/2918752">Gotha</placeName>
-          <date when="1873-12-31">1873-12-31</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1933" ref="https://viaf.org/viaf/49335637">
-            <forename>Reinhold</forename>
-            <surname>Köhler</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Gotha</settlement>
-                <name ref="http://geonames.org/2918752" type="fcode:PPLA3">Gotha</name>
-                <location>
-                  <geo>10.70193,50.94823</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1933" type="context">
-                        Korrespondenz Hugo Schuchardt - Reinhold Köhler
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4199" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Neujahrsgrüße</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4545" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Großherzogliche Bibliothek Weimar</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.989" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Volkslied</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4154" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Nuova Antologia</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.26" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienischsprachige Literatur</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.854" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rumänisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.860" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6746" xml:id="IMG.1">
-        <desc>
-                  
-Die Verwendung dieses Exemplars im „Hugo Schuchardt Archiv” wurde von der <ref target="https://www.klassik-stiftung.de/goethe-und-schiller-archiv/">Archivdatenbank des Goethe- und Schiller-Archivs</ref> gestattet.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6746" xml:id="IMG.2">
-        <desc>
-                  
-Die Verwendung dieses Exemplars im „Hugo Schuchardt Archiv” wurde von der <ref target="https://www.klassik-stiftung.de/goethe-und-schiller-archiv/">Archivdatenbank des Goethe- und Schiller-Archivs</ref> gestattet.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6746" xml:id="IMG.3">
-        <desc>
-                  
-Die Verwendung dieses Exemplars im „Hugo Schuchardt Archiv” wurde von der <ref target="https://www.klassik-stiftung.de/goethe-und-schiller-archiv/">Archivdatenbank des Goethe- und Schiller-Archivs</ref> gestattet.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.6746" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline> G. Silv. 73.<note n="1" place="foot" type="editorial">Es folgt in blauem Druck ein Monogramm (H und S kunstvoll ineinander verschlungen). -  Die Tinte des Briefs ist verblasst und stellenweise kaum lesbar!</note>
-        </dateline>
-        <lb/>
-        <opener> Lieber Freund! </opener>
-        <p>[<hi rend="unknown" rendition="#none">S. 189-192</hi>]</p>
-        <p>Zunächst beste Wünsche zum <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4199">
-Neuen Jahre</ref> und dann die Bemerkung, dass ich mich am Freitag gern wieder etwas in der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4545">Weim. Bibl.</ref> umsehen würde, wenn es Ihnen Ihre Zeit gestattet. Da ich morgen den Neujahrsball mitmachen werde, so sag ich schon voraus, daß ich erst Freitag <hi
-            rend="unknown" rendition="#none">Nachmittag</hi> nach <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.441">Weimar</placeName> kommen werde.</p>
-        <p>Ich will Ihnen zugleich mittheilen, worauf es mir noch ankommt.</p>
-        <p>1)    möchte ich auch die <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.989">
-Volksliederlitteratur</ref> der übrigen südeuropäischen Völker wegen Blumenanreden und Blumenanspielungen einmal flüchtig durchgehen; vielleicht aber können Sie mir von vornherein sagen, ob ich erwarten darf, irgend etwas für meinen Zweck Wesentliches zu finden. Speziell wäre dann nachzusehen, ob bei den übrigen <pb
-            facs="#IMG.2" n="2"/> romanischen Völkern etwas den Ritornellen ähnliches vorkommt. Haben Sie Damase <hi
-            rend="unknown" rendition="#none">Arbaud</hi> Chants populaires de la Provence 1862.I (I, 189. 220)?</p>
-        <p>2)    Verschiedene ital. Liedersammlungen (wie die von Nigra)<note n="2" place="foot" type="editorial">
-            <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.6746" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline> G. Silv. 73.<note n="1" place="foot" type="editorial">Es folgt in blauem Druck ein Monogramm (H und S kunstvoll ineinander verschlungen). -  Die Tinte des Briefs ist verblasst und stellenweise kaum lesbar!</note>
+            </dateline>
+            <lb/>
+            <opener> Lieber Freund! </opener>
+            <p>[<hi rend="unknown" rendition="#none">S. 189-192</hi>]</p>
+            <p>Zunächst beste Wünsche zum <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4199">
+Neuen Jahre</ref> und dann die Bemerkung, dass ich mich am Freitag gern wieder etwas in der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4545">Weim. Bibl.</ref> umsehen würde, wenn es Ihnen Ihre Zeit gestattet. Da ich morgen den Neujahrsball mitmachen werde, so sag ich schon voraus, daß ich erst Freitag <hi rend="unknown" rendition="#none">Nachmittag</hi> nach <placeName ref="[authorityLink]">Weimar</placeName> kommen werde.</p>
+            <p>Ich will Ihnen zugleich mittheilen, worauf es mir noch ankommt.</p>
+            <p>1)    möchte ich auch die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.989">
+Volksliederlitteratur</ref> der übrigen südeuropäischen Völker wegen Blumenanreden und Blumenanspielungen einmal flüchtig durchgehen; vielleicht aber können Sie mir von vornherein sagen, ob ich erwarten darf, irgend etwas für meinen Zweck Wesentliches zu finden. Speziell wäre dann nachzusehen, ob bei den übrigen <pb facs="#IMG.2" n="2"/> romanischen Völkern etwas den Ritornellen ähnliches vorkommt. Haben Sie Damase <hi rend="unknown" rendition="#none">Arbaud</hi> Chants populaires de la Provence 1862.I (I, 189. 220)?</p>
+            <p>2)    Verschiedene ital. Liedersammlungen (wie die von Nigra)<note n="2" place="foot" type="editorial">
+                  <bibl>
 
 Constantino Nigra, <hi rend="unknown" rendition="#none">Canzoni popolari del Piemonte [Fascicolo 1 - 6]</hi>, Torino: Barera, 1862.
 </bibl>
+               </note> und Schriften über ital. Volkslieder (haben Sie die 
 
-          </note> und Schriften über ital. Volkslieder (haben Sie die 
-
-Rivista europea 1872 Ferraro über die monferr. Volkslieder<note
-            n="3" place="foot" type="editorial">
-            <bibl>
+Rivista europea 1872 Ferraro über die monferr. Volkslieder<note n="3" place="foot" type="editorial">
+                  <bibl>
 
 
 Giuseppe Ferraro, <hi rend="unknown" rendition="#none">Canti popolari monferrini, raccolti ed annotati dal dr. Giuseppe Ferraro della R. Scuola Normale Sup. di Pisa</hi>, Turin-Florenz: Loescher, 1870.
 </bibl>
-          </note> und die <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4154">Nuova Antologia</ref> 1870? <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">Ancona</persName> über Pitrè’s Racc.?).</p>
-        <p>3)    <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4219">
-Dante</persName>litter. und <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.26">
-ital. Litterturgeschichte</ref> (de Sanctis, Settembrini, <hi
-            rend="unknown" rendition="#none">Affò</hi> Dizion. Istor. sulla volg. Poesia).<note n="4" place="foot" type="editorial">
-            <bibl>
+               </note> und die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4154">Nuova Antologia</ref> 1870? <persName ref="[authorityLink]">Ancona</persName> über Pitrè’s Racc.?).</p>
+            <p>3)    <persName ref="[authorityLink]">
+Dante</persName>litter. und <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.26">
+ital. Litterturgeschichte</ref> (de Sanctis, Settembrini, <hi rend="unknown" rendition="#none">Affò</hi> Dizion. Istor. sulla volg. Poesia).<note n="4" place="foot" type="editorial">
+                  <bibl>
 
 Ireneo Affò, <hi rend="unknown" rendition="#none">Dizionario precettivo, critico ed istorico della poesia volgare</hi>, Mailand: Giovanni Silvestri, 1824 (Biblioteca scelta di opere italiane antiche e moderne, vol. 150).
 </bibl>
-          </note>
-        </p>
-        <p>4)    Verschiedenes Einzelnes: das neue sizil. Wtb.;<note n="5" place="foot" type="editorial">
-            <bibl>
+               </note>
+            </p>
+            <p>4)    Verschiedenes Einzelnes: das neue sizil. Wtb.;<note n="5" place="foot" type="editorial">
+                  <bibl>
 
 Rosario Rocca, <hi rend="unknown" rendition="#none">Dizionario siciliano-italiano compilato su quello del Pasqualino con aggiunte e correzioni per opera del Sac. </hi>
-              <hi rend="unknown" rendition="#none">Rosario Rocca</hi>, Catania: Giunti, 1859.
+                     <hi rend="unknown" rendition="#none">Rosario Rocca</hi>, Catania: Giunti, 1859.
 </bibl>
-          </note> Quadrio (den sie hier merkwürdiger Weise nicht haben),<note n="6" place="foot" type="editorial">
-            <bibl>
+               </note> Quadrio (den sie hier merkwürdiger Weise nicht haben),<note n="6" place="foot" type="editorial">
+                  <bibl>
 
 
 Francesco Saverio Quadrio, <hi rend="unknown" rendition="#none">Della Storia e della ragione d'ogni poesia</hi>, Bologna 1742.
 </bibl>
-          </note> Libro dell’arte (d. h. Traum= und lottobuch; oder haben Sie ein Exemplar von einem solchen?) u. s. w. </p>
-        <p>Für die Notiz wegen der <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.854">
-rum.</ref> Volkslieder danke ich bestens. Ich weiß noch nicht recht, wie ich mir das <foreign
-            xml:lang="ro">frunḑă verde</foreign> erklären soll.<note n="7" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.612">Schuchardt, <hi rend="unknown" rendition="#none">Ritornell</hi>, S. 60.</ref>
-            </bibl>
-          </note> Mit der Zusammenstellung mit dem <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">ital.</ref>
-          <foreign
-            xml:lang="it">fiore de</foreign> …. ! ist Nichts gewonnen; denn es steht mir nun ganz sicher, daß unter diesem Blumenanruf ursprünglich die Anrede an die Geliebte oder den Geliebten steckt. Man müßte in rumä- <pb
-            facs="#IMG.3" n="3"/> nischen Sitten den Grund davon aufsuchen. Cipariu Elemente de poetica<note n="8"
-            place="foot" type="editorial">
-            <bibl>
+               </note> Libro dell’arte (d. h. Traum= und lottobuch; oder haben Sie ein Exemplar von einem solchen?) u. s. w. </p>
+            <p>Für die Notiz wegen der <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">
+rum.</ref> Volkslieder danke ich bestens. Ich weiß noch nicht recht, wie ich mir das <foreign xml:lang="ro">frunḑă verde</foreign> erklären soll.<note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.612">Schuchardt, <hi rend="unknown" rendition="#none">Ritornell</hi>, S. 60.</ref>
+                  </bibl>
+               </note> Mit der Zusammenstellung mit dem <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">ital.</ref>
+               <foreign xml:lang="it">fiore de</foreign> …. ! ist Nichts gewonnen; denn es steht mir nun ganz sicher, daß unter diesem Blumenanruf ursprünglich die Anrede an die Geliebte oder den Geliebten steckt. Man müßte in rumä- <pb facs="#IMG.3" n="3"/> nischen Sitten den Grund davon aufsuchen. Cipariu Elemente de poetica<note n="8" place="foot" type="editorial">
+                  <bibl>
 
 Timotei Cipariu, <hi rend="unknown" rendition="#none">Elemente de poetică metrică și versificațiune (Éléments de la métrique et de la versification)</hi>, Blaj, 1860
 </bibl>
-          </note> besitzen Sie wahrscheinlich nicht. Es gibt mancherlei sinnlose Sprüche mit und ohne Blumen; aber sie haben natürlich alle niemals eine Bedeutung gehabt. Vielleicht findet sich auch in den poetischen Formeln, welche Märchen abschließen, noch hierhergehöriges.</p>
-        <p>Trotz dieses reichen Programms hoffe ich Sie nicht allzu lange in Anspruch zu nehmen.</p>
-        <closer>
-          <salute>Mit bestem Gruß, in großer Eile,</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-
-          <p>Sollten Sie verhindert sein, so würde ich allerdings um Benachrichtigung per Korrespondenzkarte bitten. Ich hielte in diesem Falle nicht in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.441">Weimar</placeName> an.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+               </note> besitzen Sie wahrscheinlich nicht. Es gibt mancherlei sinnlose Sprüche mit und ohne Blumen; aber sie haben natürlich alle niemals eine Bedeutung gehabt. Vielleicht findet sich auch in den poetischen Formeln, welche Märchen abschließen, noch hierhergehöriges.</p>
+            <p>Trotz dieses reichen Programms hoffe ich Sie nicht allzu lange in Anspruch zu nehmen.</p>
+            <closer>
+               <salute>Mit bestem Gruß, in großer Eile,</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Sollten Sie verhindert sein, so würde ich allerdings um Benachrichtigung per Korrespondenzkarte bitten. Ich hielte in diesem Falle nicht in <placeName ref="[authorityLink]">Weimar</placeName> an.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

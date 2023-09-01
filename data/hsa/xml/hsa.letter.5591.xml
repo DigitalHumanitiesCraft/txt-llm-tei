@@ -1,418 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Matthias Friedwagner an Hugo Schuchardt (23-03171)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1531">
-            <forename>Matthias</forename>
-            <surname>Friedwagner</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5591" type="PID">o:hsa.letter.5591</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">23-03171</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">03171</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1531">
-                <forename>Matthias</forename>
-                <surname>Friedwagner</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.284" ref="http://sws.geonames.org/2925533">Frankfurt am Main</origPlace>
-              <origDate ana="dcterms:created" when="1922-03-04">1922-03-04</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Matthias Friedwagner und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1531"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5591">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1531" ref="https://viaf.org/viaf/34521429">
-            <forename>Matthias</forename>
-            <surname>Friedwagner</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.284" key="#GID.1" ref="http://sws.geonames.org/2925533">Frankfurt am Main</placeName>
-          <date when="1922-03-04">1922-03-04</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Frankfurt am Main</settlement>
-                <name ref="http://geonames.org/2925533" type="fcode:PPLA3">Frankfurt am Main</name>
-                <location>
-                  <geo>8.68417,50.11552</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1531" type="context">
-                        Korrespondenz Matthias Friedwagner - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4776" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Empfangsbestätigung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4125" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Leipziger Illustrierte Zeitung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3535" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Frankfurter Zeitung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.19" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschriften-Beitrag</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.835" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Festschrift</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4485" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Reflexion über das Publizieren</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3080" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dankschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5037" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Villa Malwine</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.142" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universitätspolitik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3215" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsvorhaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.262" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">80. Geburtstag</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3934" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Wien</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5591" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5591" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5591" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5591" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5591" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5591" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5591" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5591" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5591" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Frankfurt a.M. 4. März 1922<lb/>Krögerstr. 2</dateline>
-        <opener>Hochverehrter Herr Hofrat!</opener>
-
-        <p>Mit vielem Dank bestätige ich den richtigen Empfang Ihres gütigen Briefes und der vorgefertigten Karte. Es wird wohl die ,<ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4125">Illustr. Zeitung</ref>‘, die ich gleich absandte, heute schon in Ihre Hände gelangt sein.<note
-            n="1" place="foot" type="editorial">Vgl. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5590">
-22-03170</ref>.</note> Ich war sehr überrascht zu erfahren, daß die Verwaltung dieses Blattes trotz zweimaliger Bitte meinerseits nichts geschickt hat. Auch mir sandte man erst auf neuerliches Drängen eine Nummer. So ist heute alles außer Rand und Band; kein Verlaß auf die einst anständigen Leute und Einrichtungen. Gleich bei Übersendung des Manuskripts hatte ich diese Bedingung gestellt, ohne welche der Artikel dem Zufall an- <pb
-            facs="#IMG.2" n="2"/> heimgegeben bliebe. Die „<ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4125">Illustr. Zeitung</ref>“ erscheint jetzt nur alle 14 Tage, und so kam mein Gruß nicht mehr rechtzeitig, wie denn auch die „<ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3535">Frankfurter Zeitung</ref>“ ihre Zusage nicht einhielt und einige Tage nachtrabte. Ich war am 29. Januar beim Hauptschriftleiter und er sagte mir das richtige Erscheinen zu. Da wurde er an Grippe krank, zugleich brach der Streik aus und das <hi
-            rend="unknown" rendition="#none">Politische</hi> erhielt die Oberhand. Dazu Papiernot, daß einem nicht bloß die Zeilen-, sondern die Silbenzahl begrenzt wird. So konnte ich in beiden Fällen zufrieden sein daß ich ungefähr die Zeit eingehalten sah.</p>
-
-        <p>Über Form und Inhalt kann ich mich schwer äußern. Hier gehörte ein gründliches Studium der vielen Arbeiten, die eine Bibliothek bilden, dazu, um einen Begriff zu geben von dem, was Sie gewirkt und erforscht haben. Dann fehlte der Raum, und es ist nicht leicht, aus so viel Bedeutendem und Interessanten einiges herauszugreifen und zu <pb
-            facs="#IMG.3" n="3"/> nennen. Es ist nicht möglich, daß man einem Jubilar eine ungetrübte Freude machen könne. Auch in diesem Fall blieb es beim guten Willen. Aber ich fand allerlei Zustimmung und habe mit Überzeugung geschrieben. So wollen Sie, hoch verehrter Meister, mit dem kleinen Festgeschenk nachsichtig sein und das Gewollte höher bewerten als das Getane.</p>
-        <p>Ich habe vor etwa 20 Jahren meinem Lehrer <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2079">Lotheissen</persName> bei Enthüllung seines Denkmals im <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3934">Wiener Universität</ref>shofe<note n="2"
-            place="foot" type="editorial">Das Denkmal im Arkadenhof für den Romanisten <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2079">Ferdinand Lotheissen</persName> wurde von <persName>
-Hans Bitterlich</persName> gestaltet und 1902 enthüllt. Die Initiative zu diesem Denkmal ging auf <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1531">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5591" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Frankfurt a.M. 4. März 1922<lb/>Krögerstr. 2</dateline>
+            <opener>Hochverehrter Herr Hofrat!</opener>
+            <p>Mit vielem Dank bestätige ich den richtigen Empfang Ihres gütigen Briefes und der vorgefertigten Karte. Es wird wohl die ,<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4125">Illustr. Zeitung</ref>‘, die ich gleich absandte, heute schon in Ihre Hände gelangt sein.<note n="1" place="foot" type="editorial">Vgl. <ref target="https://gams.uni-graz.at/o:hsa.letter.5590">
+22-03170</ref>.</note> Ich war sehr überrascht zu erfahren, daß die Verwaltung dieses Blattes trotz zweimaliger Bitte meinerseits nichts geschickt hat. Auch mir sandte man erst auf neuerliches Drängen eine Nummer. So ist heute alles außer Rand und Band; kein Verlaß auf die einst anständigen Leute und Einrichtungen. Gleich bei Übersendung des Manuskripts hatte ich diese Bedingung gestellt, ohne welche der Artikel dem Zufall an- <pb facs="#IMG.2" n="2"/> heimgegeben bliebe. Die „<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4125">Illustr. Zeitung</ref>“ erscheint jetzt nur alle 14 Tage, und so kam mein Gruß nicht mehr rechtzeitig, wie denn auch die „<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3535">Frankfurter Zeitung</ref>“ ihre Zusage nicht einhielt und einige Tage nachtrabte. Ich war am 29. Januar beim Hauptschriftleiter und er sagte mir das richtige Erscheinen zu. Da wurde er an Grippe krank, zugleich brach der Streik aus und das <hi rend="unknown" rendition="#none">Politische</hi> erhielt die Oberhand. Dazu Papiernot, daß einem nicht bloß die Zeilen-, sondern die Silbenzahl begrenzt wird. So konnte ich in beiden Fällen zufrieden sein daß ich ungefähr die Zeit eingehalten sah.</p>
+            <p>Über Form und Inhalt kann ich mich schwer äußern. Hier gehörte ein gründliches Studium der vielen Arbeiten, die eine Bibliothek bilden, dazu, um einen Begriff zu geben von dem, was Sie gewirkt und erforscht haben. Dann fehlte der Raum, und es ist nicht leicht, aus so viel Bedeutendem und Interessanten einiges herauszugreifen und zu <pb facs="#IMG.3" n="3"/> nennen. Es ist nicht möglich, daß man einem Jubilar eine ungetrübte Freude machen könne. Auch in diesem Fall blieb es beim guten Willen. Aber ich fand allerlei Zustimmung und habe mit Überzeugung geschrieben. So wollen Sie, hoch verehrter Meister, mit dem kleinen Festgeschenk nachsichtig sein und das Gewollte höher bewerten als das Getane.</p>
+            <p>Ich habe vor etwa 20 Jahren meinem Lehrer <persName ref="[authorityLink]">Lotheissen</persName> bei Enthüllung seines Denkmals im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3934">Wiener Universität</ref>shofe<note n="2" place="foot" type="editorial">Das Denkmal im Arkadenhof für den Romanisten <persName ref="[authorityLink]">Ferdinand Lotheissen</persName> wurde von <persName>
+Hans Bitterlich</persName> gestaltet und 1902 enthüllt. Die Initiative zu diesem Denkmal ging auf <persName ref="[authorityLink]">
 Friedwagner</persName> zurück, der am 12.1.1902 die Festrede hielt (UAW Senat S 95.6.). Vgl. auch Friedwagner, „<bibl>
 
 
 Ferdinand Lotheissen. Gedächtnisrede, gehalten am 12. Jan. 1902 im Festsaal der Wiener Universität aus Anlaß der Aufstellung eines Reliefbildes
-</bibl>“, <hi
-              rend="unknown"
-            rendition="#none">Beilage zur Allg. Zeitung</hi> Nr. 67, 21.3.1902.</note> eine Rede gehalten, die mich mit der Familie, in der ich früher gern gesehen schien, fast übers Kreuz gebracht hatte. Offenbar hatte ich in meinem Bestreben, Phrasen zu meiden, die ihr angemessenen Grenzen überschritten und die Verwandten enttäuscht. Seither schreiben wir uns nicht mehr. Und doch hatte ich alles Gute über ihn sagen wollen u. vielleicht auch wirklich nur so sagen können. Bis auf <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">Cornu</persName> habe ich dann dergleichen nicht mehr getan und selbst für <pb
-            facs="#IMG.4" n="4"/> [ihn] schwankte ich lange über Ort und Form; da mir auch lang kein Bild geschickt wurde, fürchtete ich sehr, überhaupt nicht ankommen zu können. Nicht alles wird heute gedruckt, was man früher einzusenden pflegte. So bin ich froh, in beiden Fällen nicht abgewiesen worden zu sein. Die Schriftleiter sind heute alle zukünftige Minister und größere Herren als früher; beim Professor trifft jenes nicht zu und dieses im umgekehrten Verhältnis.</p>
+</bibl>“, <hi rend="unknown" rendition="#none">Beilage zur Allg. Zeitung</hi> Nr. 67, 21.3.1902.</note> eine Rede gehalten, die mich mit der Familie, in der ich früher gern gesehen schien, fast übers Kreuz gebracht hatte. Offenbar hatte ich in meinem Bestreben, Phrasen zu meiden, die ihr angemessenen Grenzen überschritten und die Verwandten enttäuscht. Seither schreiben wir uns nicht mehr. Und doch hatte ich alles Gute über ihn sagen wollen u. vielleicht auch wirklich nur so sagen können. Bis auf <persName ref="[authorityLink]">Cornu</persName> habe ich dann dergleichen nicht mehr getan und selbst für <pb facs="#IMG.4" n="4"/> [ihn] schwankte ich lange über Ort und Form; da mir auch lang kein Bild geschickt wurde, fürchtete ich sehr, überhaupt nicht ankommen zu können. Nicht alles wird heute gedruckt, was man früher einzusenden pflegte. So bin ich froh, in beiden Fällen nicht abgewiesen worden zu sein. Die Schriftleiter sind heute alle zukünftige Minister und größere Herren als früher; beim Professor trifft jenes nicht zu und dieses im umgekehrten Verhältnis.</p>
+            <p>So freue ich mich, daß von sovielen Seiten Ihnen Huldigungen bereitet wurden und Sie Rückschau halten konnten im vollen Bewußtsein der Gegenwärtigkeit. Noch sind Sie tätig und unermüdlich; fast auch meine Generation geht an Ihnen vorbei, ohne daß Sie Ihren Platz verändern. Möge es Ihnen beschieden sein, noch bessere Zeiten zu sehen und Deutschlands Wiederaufbau zu erleben! Ob auch die Vereinigung mit <placeName ref="[authorityLink]">Oesterreich</placeName>? <pb facs="#IMG.5" n="5"/> Ich fürchte, diese erlebt kein schon Geborener! – Es kommt wieder ein Frühling und im schönen <placeName ref="[authorityLink]">
+Graz</placeName> werden Sie frohe Stunden haben, wenn Sie von Ihrer Villa hinabschauen auf die Stadt und die Universität, hinabschauen mit wohlwollender Güte und Nachsicht. Es ist mir im Leben ein froher Augenblick gewesen, als man mich einst auf die Liste Ihres Nachfolgers anno 1900 gesetzt hatte. Es ist kaum ohne Ihre Zustimmung geschehen, und dafür danke ich Ihnen noch heute. Es ist bei dieser <hi rend="unknown" rendition="#none">mention honorable</hi> geblieben und mir ein Stein vom Herzen gefallen. Denn wie hätte ich, nach Ihnen, eine „anständige Figur“ machen können! Das Selbstgefühl, das <persName ref="[authorityLink]">Ettmayer</persName>
+               <note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Karl von Ettmayer</persName> (1874-1938), österr. Romanist.</note> so schwellt, war mir nie gegeben und auch das wenige, was ich von mir gehalten, hatten ja <persName ref="[authorityLink]">Lübkes</persName> gründlich und erbarmungslos zerstört. So sagte ich mir bisweilen: „Du brauchst nichts zu veröffentlichen, denn die Welt Lübkes erwartet nichts – oder nichts Besonderes, Eigenes von Dir“.</p>
+            <p>
+               <pb facs="#IMG.6" n="6"/> So ist manches unterblieben und manches nicht gedruckt worden, worauf ich Zeit verwendet hatte. Es wird sich auch nicht lohnen, darauf zurückzukommen. Nun, <persName ref="[authorityLink]">
+Lübkes</persName> Herrschaft und <hi rend="unknown" rendition="#none">
+Tyrannis</hi> ist vorüber. Es mag ihnen bitter sein, und in Innsbruck sagte man mir im Sommer, daß sie offen jammern darüber, daß sie, sein herrschbegieriges und starrköpfiges Weib und er, der Schwache, aber charakterlose Mann, jetzt nicht mehr viel zu sagen und zu regieren haben.<note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
+Meyer-Lübke</persName> hatte bei seiner Rufannahme nach <placeName ref="[authorityLink]">Bonn</placeName> unterschätzt, dass er aus der Weltstadt <placeName>
 
-        <p>So freue ich mich, daß von sovielen Seiten Ihnen Huldigungen bereitet wurden und Sie Rückschau halten konnten im vollen Bewußtsein der Gegenwärtigkeit. Noch sind Sie tätig und unermüdlich; fast auch meine Generation geht an Ihnen vorbei, ohne daß Sie Ihren Platz verändern. Möge es Ihnen beschieden sein, noch bessere Zeiten zu sehen und Deutschlands Wiederaufbau zu erleben! Ob auch die Vereinigung mit <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5913">Oesterreich</placeName>? <pb facs="#IMG.5"
-            n="5"/> Ich fürchte, diese erlebt kein schon Geborener! – Es kommt wieder ein Frühling und im schönen <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6">
-Graz</placeName> werden Sie frohe Stunden haben, wenn Sie von Ihrer Villa hinabschauen auf die Stadt und die Universität, hinabschauen mit wohlwollender Güte und Nachsicht. Es ist mir im Leben ein froher Augenblick gewesen, als man mich einst auf die Liste Ihres Nachfolgers anno 1900 gesetzt hatte. Es ist kaum ohne Ihre Zustimmung geschehen, und dafür danke ich Ihnen noch heute. Es ist bei dieser <hi
-            rend="unknown"
-            rendition="#none">mention honorable</hi> geblieben und mir ein Stein vom Herzen gefallen. Denn wie hätte ich, nach Ihnen, eine „anständige Figur“ machen können! Das Selbstgefühl, das <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1459">Ettmayer</persName>
-          <note n="3" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1459">Karl von Ettmayer</persName> (1874-1938), österr. Romanist.</note> so schwellt, war mir nie gegeben und auch das wenige, was ich von mir gehalten, hatten ja <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">Lübkes</persName> gründlich und erbarmungslos zerstört. So sagte ich mir bisweilen: „Du brauchst nichts zu veröffentlichen, denn die Welt Lübkes erwartet nichts – oder nichts Besonderes, Eigenes von Dir“.</p>
-        <p>
-          <pb facs="#IMG.6"
-            n="6"/> So ist manches unterblieben und manches nicht gedruckt worden, worauf ich Zeit verwendet hatte. Es wird sich auch nicht lohnen, darauf zurückzukommen. Nun, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-Lübkes</persName> Herrschaft und <hi rend="unknown"
-            rendition="#none">
-Tyrannis</hi> ist vorüber. Es mag ihnen bitter sein, und in Innsbruck sagte man mir im Sommer, daß sie offen jammern darüber, daß sie, sein herrschbegieriges und starrköpfiges Weib und er, der Schwache, aber charakterlose Mann, jetzt nicht mehr viel zu sagen und zu regieren haben.<note
-            n="4" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-Meyer-Lübke</persName> hatte bei seiner Rufannahme nach <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> unterschätzt, dass er aus der Weltstadt <placeName>
+Wien</placeName> in eine Provinzstadt gegangen war, weshalb man in Romanisten-Kreisen munkelte, er wolle sich wieder woandershin berufen lassen.</note> Es war wohl nur in <placeName ref="[authorityLink]">Oesterreich</placeName> möglich, daß eine Frau<note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Hermine Lübke</persName> (1869-1933) aus Burg b. <placeName>
 
-Wien</placeName> in eine Provinzstadt gegangen war, weshalb man in Romanisten-Kreisen munkelte, er wolle sich wieder woandershin berufen lassen.</note> Es war wohl nur in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5913">Oesterreich</placeName> möglich, daß eine Frau<note
-            n="5" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.5334">Hermine Lübke</persName> (1869-1933) aus Burg b. <placeName>
+Magdeburg</placeName>, die <persName ref="[authorityLink]">Wilhelm Meyer(-Lübke)</persName> in <placeName>
 
-Magdeburg</placeName>, die <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">Wilhelm Meyer(-Lübke)</persName> in <placeName>
-
-Berlin</placeName> kennengelernt und 1889 geheiratet hatte.</note> nicht nur die Lehrkanzeln des Faches ihres Mannes, sondern auch andere besetzt oder zu besetzen sucht mit eigenen Liebedienern. In Deutschland ist vieles besserungsbedürftig; aber sonst ist man in Universitätskreisen doch nicht herabgekommen. Famuli gibt’s natürlich auch hier, aber sie treiben die Lobhudelei innerhalb gewisser Grenzen. Wenn Er wirklich wieder <pb
-            facs="#IMG.7" n="7"/> sein Sultanat in Wien aufzurichten wünscht, so steht dem nichts im Wege als <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1459">Ettmayer</persName>. Ist dessen Liebe wirklich so echt, wie er einst schwur zu jeder Stund, dann kann er seinem Gebieter ja durch Harakiri Platz schaffen! Aber ich hörte, auch in Wien ist der Weihrauch seither teurer geworden. Ob die Luft reiner wurde, kann ich nicht sagen, da ich seit Jahren nicht mehr dort war.</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Sub specie aeternitatis</hi> wird sich ja manches anders betrachten lassen, als die Schmeichler es bisher trieben und aus Selbsterhaltung treiben mußten. Auch ich habe einmal eine Rezension geschrieben, im Auftrag seiner German.-roman. Monatsschrift, und ich hatte keine Wahl, es zu tun – oder zu verschwinden. Es wundert mich heute, daß ihm an ein paar Zeilen eines so unkundigen Beurteilers etwas und sogar viel gelegen war. Durch einen Druckfehler war aus „ein nicht so leichtes Buch“ „ein nicht so seichtes Buch“ geworden, doch konnte ich’s noch rechtzeitig verhüten!<note
-            n="6" place="foot" type="editorial">Es handelt sich um die <bibl>
+Berlin</placeName> kennengelernt und 1889 geheiratet hatte.</note> nicht nur die Lehrkanzeln des Faches ihres Mannes, sondern auch andere besetzt oder zu besetzen sucht mit eigenen Liebedienern. In Deutschland ist vieles besserungsbedürftig; aber sonst ist man in Universitätskreisen doch nicht herabgekommen. Famuli gibt’s natürlich auch hier, aber sie treiben die Lobhudelei innerhalb gewisser Grenzen. Wenn Er wirklich wieder <pb facs="#IMG.7" n="7"/> sein Sultanat in Wien aufzurichten wünscht, so steht dem nichts im Wege als <persName ref="[authorityLink]">Ettmayer</persName>. Ist dessen Liebe wirklich so echt, wie er einst schwur zu jeder Stund, dann kann er seinem Gebieter ja durch Harakiri Platz schaffen! Aber ich hörte, auch in Wien ist der Weihrauch seither teurer geworden. Ob die Luft reiner wurde, kann ich nicht sagen, da ich seit Jahren nicht mehr dort war.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Sub specie aeternitatis</hi> wird sich ja manches anders betrachten lassen, als die Schmeichler es bisher trieben und aus Selbsterhaltung treiben mußten. Auch ich habe einmal eine Rezension geschrieben, im Auftrag seiner German.-roman. Monatsschrift, und ich hatte keine Wahl, es zu tun – oder zu verschwinden. Es wundert mich heute, daß ihm an ein paar Zeilen eines so unkundigen Beurteilers etwas und sogar viel gelegen war. Durch einen Druckfehler war aus „ein nicht so leichtes Buch“ „ein nicht so seichtes Buch“ geworden, doch konnte ich’s noch rechtzeitig verhüten!<note n="6" place="foot" type="editorial">Es handelt sich um die <bibl>
 
 Besprechung
-</bibl> von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
+</bibl> von <persName ref="[authorityLink]">
 Meyer-Lübkes</persName>
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3373">
-                <hi rend="unknown" rendition="#none">Historische Grammatik der französischen Sprache</hi>
-              </ref>
-            </bibl>, Bd. I, Heidelberg 1908, <hi rend="unknown"
-              rendition="#none">GRM</hi> 1,1909, 267-270. Zu diesem Zeitpunkt war <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1531">Friedwagner</persName>, Ordinarius in <placeName>
-Czernowitz</placeName>, aber nicht mehr von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3373">
+                        <hi rend="unknown" rendition="#none">Historische Grammatik der französischen Sprache</hi>
+                     </ref>
+                  </bibl>, Bd. I, Heidelberg 1908, <hi rend="unknown" rendition="#none">GRM</hi> 1,1909, 267-270. Zu diesem Zeitpunkt war <persName ref="[authorityLink]">Friedwagner</persName>, Ordinarius in <placeName>
+Czernowitz</placeName>, aber nicht mehr von <persName ref="[authorityLink]">
 Meyer-Lübke</persName> abhängig, so daß von einem „Müssen“ nicht die Rede sein kann. Die zitierte Stelle („ein nicht so leichtes Buch“) findet sich nicht, sondern „im Ganzen also nicht immer ein Buch für Anfänger“).</note>
-        </p>
-        <p>
-          <pb facs="#IMG.8" n="8"/> An all diesen Dingen, die Sie ja auch kennen lernten, sind Sie seit Jahren glücklich vorüber und leben im Zeichen der reinen Wissenschaft, im Kreise treuer, ausgesuchter Menschen. So ist Ihnen viel Kleines und Erbärmliches zu schauen und zu ertragen erspart geblieben. Auch die Verwaltung akademischer Geschäfte ist nicht immer ein Genuß. Freitag schlossen wir die Vorlesungen und gestern saßen wir vier Stunden als Fakultät zweien Habilitanden gegenüber. Das ist nicht langweilig, aber manches andere ist’s wirklich. </p>
-        <p>So möchte ich schließen mit dem Ausdruck der Freude darüber, daß Sie in solcher Rüstigkeit die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.262">80. Geburtstag</ref>sfeier erlebt und überstanden haben. Es wird keine Kleinigkeit gewesen sein, all den vielen Kundgebungen zu antworten.</p>
-        <p>Und nun geht es wieder weiter. Das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">
-            <hi rend="unknown" rendition="#none">Baskische</hi>
-          </ref> hat zunächst den Nutzen, aber noch viele andere Artikel werden in die Druckerei wandern. Das walte Gott! Ad multos annos. </p>
-        <closer>
-          <salute>Mit ausgezeichneter Verehrung und Dankbarkeit</salute>
-          <lb/>
-          <salute>Ihr treu ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1531">M. Friedwagner</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            </p>
+            <p>
+               <pb facs="#IMG.8" n="8"/> An all diesen Dingen, die Sie ja auch kennen lernten, sind Sie seit Jahren glücklich vorüber und leben im Zeichen der reinen Wissenschaft, im Kreise treuer, ausgesuchter Menschen. So ist Ihnen viel Kleines und Erbärmliches zu schauen und zu ertragen erspart geblieben. Auch die Verwaltung akademischer Geschäfte ist nicht immer ein Genuß. Freitag schlossen wir die Vorlesungen und gestern saßen wir vier Stunden als Fakultät zweien Habilitanden gegenüber. Das ist nicht langweilig, aber manches andere ist’s wirklich. </p>
+            <p>So möchte ich schließen mit dem Ausdruck der Freude darüber, daß Sie in solcher Rüstigkeit die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.262">80. Geburtstag</ref>sfeier erlebt und überstanden haben. Es wird keine Kleinigkeit gewesen sein, all den vielen Kundgebungen zu antworten.</p>
+            <p>Und nun geht es wieder weiter. Das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">
+                  <hi rend="unknown" rendition="#none">Baskische</hi>
+               </ref> hat zunächst den Nutzen, aber noch viele andere Artikel werden in die Druckerei wandern. Das walte Gott! Ad multos annos. </p>
+            <closer>
+               <salute>Mit ausgezeichneter Verehrung und Dankbarkeit</salute>
+               <lb/>
+               <salute>Ihr treu ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">M. Friedwagner</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,337 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Julius Cornu an Hugo Schuchardt (032-01741)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">
-            <forename>Julius</forename>
-            <surname>Cornu</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Katrin</forename>
-            <surname>Purgay</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7081" type="PID">o:hsa.letter.7081</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">032-01741</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">01741</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">
-                <forename>Julius</forename>
-                <surname>Cornu</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="3" unit="pages">3 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.343" ref="http://sws.geonames.org/3067696">Prag</origPlace>
-              <origDate ana="dcterms:created" when="1884-04-01">1884-04-01</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Katrin</forename>
-              <surname>Purgay</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Julius Cornu und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1328"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7081">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1328" ref="https://viaf.org/viaf/67223190">
-            <forename>Julius</forename>
-            <surname>Cornu</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.343" key="#GID.1" ref="http://sws.geonames.org/3067696">Prag</placeName>
-          <date when="1884-04-01">1884-04-01</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Czechia</country>
-                <settlement>Prague</settlement>
-                <name ref="http://geonames.org/3067696" type="fcode:PPLC">Prague</name>
-                <location>
-                  <geo>14.42076,50.08804</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1328" type="context">
-                        Korrespondenz Julius Cornu - Hugo Schuchardt
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7081" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Prag, den 1. April 1884.</dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Mit einer ausserordentlichen Freude habe ich Ihre so inhaltsschwere Rezension der Abhandlung Mussafias zur Praesensbildung im Romanischen durchgelesen.<note n="1" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.57">[Rez. von:] Mussafia, A., Zur Präsensbildung im Romanischen</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 5, 1884, 61-68.</note> Ich war im Begriffe Ihnen meine Freude, meine Bewunderung über Ihre überraschenden Erklärungen auszudrücken, als ich plötzlich von Prag auf einige Tage verreisen musste. Und so blieb ich einige Wochen meinen Dank schuldig. – <foreign xml:lang="es">
+                  <hi rend="unknown" rendition="#none">Baptēar</hi>
+               </foreign> ist auch <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">altsp</ref>..<note n="2" place="foot" type="editorial">Dazu <persName ref="[authorityLink]">Schuchardt</persName> in der Mussafia-Rez. Sp. 62.</note> Aehnliche Übertragungen des Akzentes wie Col. 5 angedeutet ist, sind in den Mundarten von Waadt und Freiburg sehr häufig. Die dritte Conjugation scheint massgebend gewesen zu sein:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">âmen</hi> = } <hi rend="unknown" rendition="#none">vénden vendimus</hi>.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">pârten = }</hi>
+            </p>
+            <p>
+               <pb facs="#IMG.2" n="2"/> Ich habe <persName ref="[authorityLink]">A. Socin</persName>
+               <note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Adolf Socin</persName> (1859-1904), Schweizer Germanist in <placeName>
+
+Basel</placeName>.</note> über <hi rend="unknown" rendition="#none">alerce</hi>
+               <note n="4" place="foot" type="editorial">„Patagonische Zypresse“. Zusammenhang hier unklar! Das Wort kommt vor in <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.145">
+                        <hi rend="unknown" rendition="#none">Der Vokalismus des Vulgärlateins</hi>
                      </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3426" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Verb</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.477" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Etymologie</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.57" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Novilatin</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.779" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.844" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7081" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7081" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7081" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7081" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Prag, den 1. April 1884.</dateline>
-        <opener>Lieber Freund,</opener>
-
-        <p>Mit einer ausserordentlichen Freude habe ich Ihre so inhaltsschwere Rezension der Abhandlung Mussafias zur Praesensbildung im Romanischen durchgelesen.<note
-            n="1" place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.57">[Rez. von:] Mussafia, A., Zur Präsensbildung im Romanischen</ref>
-            </bibl>“, <hi rend="unknown"
-            rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 5, 1884, 61-68.</note> Ich war im Begriffe Ihnen meine Freude, meine Bewunderung über Ihre überraschenden Erklärungen auszudrücken, als ich plötzlich von Prag auf einige Tage verreisen musste. Und so blieb ich einige Wochen meinen Dank schuldig. – <foreign xml:lang="es">
-            <hi rend="unknown" rendition="#none">Baptēar</hi>
-          </foreign> ist auch <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">altsp</ref>..<note n="2"
-            place="foot" type="editorial">Dazu <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Schuchardt</persName> in der Mussafia-Rez. Sp. 62.</note> Aehnliche Übertragungen des Akzentes wie Col. 5 angedeutet ist, sind in den Mundarten von Waadt und Freiburg sehr häufig. Die dritte Conjugation scheint massgebend gewesen zu sein:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">âmen</hi> = } <hi rend="unknown" rendition="#none">vénden vendimus</hi>.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">pârten = }</hi>
-        </p>
-        <p>
-          <pb facs="#IMG.2" n="2"/> Ich habe <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2748">A. Socin</persName>
-          <note n="3" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2748">Adolf Socin</persName> (1859-1904), Schweizer Germanist in <placeName>
-
-Basel</placeName>.</note> über <hi
-            rend="unknown" rendition="#none">alerce</hi>
-          <note n="4" place="foot" type="editorial">„Patagonische Zypresse“. Zusammenhang hier unklar! Das Wort kommt vor in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.145">
-                <hi rend="unknown" rendition="#none">Der Vokalismus des Vulgärlateins</hi>
-              </ref>
-            </bibl>, S. 365, wo es heißt. „<hi rend="unknown" rendition="#none">abab</hi>, <hi rend="unknown"
-              rendition="#none">abedul</hi>, <hi rend="unknown" rendition="#none">alerce</hi> u.s.w. schimmert der arabische Artikel durch“.</note> gefragt, da Ihre Mittheilungen und Einwände mir keine Ruhe liessen. Es ist ein arabisches Wort.</p>
-        <p>In Ihrem so wohlwollenden Briefe schrieben Sie mir: „<hi rend="unknown"
-            rendition="#none">Vendió</hi> neben <hi rend="unknown"
-            rendition="#none">sintió</hi>, weil jenes ursprünglich ein <hi rend="unknown"
-            rendition="#none">e</hi>, kein <hi rend="unknown" rendition="#none">i </hi>hinter dem <hi rend="unknown"
-            rendition="#none">d</hi> hatte“. Aber wie stimmt <hi rend="unknown" rendition="#none">
-vendió</hi> und <hi
-            rend="unknown" rendition="#none">vendieron</hi> zu <hi rend="unknown"
-            rendition="#none">tinieblas</hi>? Es sollten diese Formen, wenn ich sie richtig deute, doch auch <hi
-            rend="unknown" rendition="#none">i </hi>haben, wenn die <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">Diez</persName>sche Erklärung von <hi rend="unknown" rendition="#none">tinieblas</hi> richtig wäre. </p>
-        <p>Denn <hi rend="unknown" rendition="#none">vendió</hi> ist doch wohl <hi rend="unknown"
-            rendition="#none">vendie+o </hi>und <hi rend="unknown" rendition="#none">v<hi rend="unknown"
-            rendition="#none">e</hi>ndieron</hi> ist <hi rend="unknown" rendition="#none">vendĕderunt</hi>. Weder <hi
-            rend="unknown" rendition="#none">
+                  </bibl>, S. 365, wo es heißt. „<hi rend="unknown" rendition="#none">abab</hi>, <hi rend="unknown" rendition="#none">abedul</hi>, <hi rend="unknown" rendition="#none">alerce</hi> u.s.w. schimmert der arabische Artikel durch“.</note> gefragt, da Ihre Mittheilungen und Einwände mir keine Ruhe liessen. Es ist ein arabisches Wort.</p>
+            <p>In Ihrem so wohlwollenden Briefe schrieben Sie mir: „<hi rend="unknown" rendition="#none">Vendió</hi> neben <hi rend="unknown" rendition="#none">sintió</hi>, weil jenes ursprünglich ein <hi rend="unknown" rendition="#none">e</hi>, kein <hi rend="unknown" rendition="#none">i </hi>hinter dem <hi rend="unknown" rendition="#none">d</hi> hatte“. Aber wie stimmt <hi rend="unknown" rendition="#none">
+vendió</hi> und <hi rend="unknown" rendition="#none">vendieron</hi> zu <hi rend="unknown" rendition="#none">tinieblas</hi>? Es sollten diese Formen, wenn ich sie richtig deute, doch auch <hi rend="unknown" rendition="#none">i </hi>haben, wenn die <persName ref="[authorityLink]">Diez</persName>sche Erklärung von <hi rend="unknown" rendition="#none">tinieblas</hi> richtig wäre. </p>
+            <p>Denn <hi rend="unknown" rendition="#none">vendió</hi> ist doch wohl <hi rend="unknown" rendition="#none">vendie+o </hi>und <hi rend="unknown" rendition="#none">v<hi rend="unknown" rendition="#none">e</hi>ndieron</hi> ist <hi rend="unknown" rendition="#none">vendĕderunt</hi>. Weder <hi rend="unknown" rendition="#none">
 sintió</hi> noch <hi rend="unknown" rendition="#none">sintieron</hi> können ursprünglich sein. Nach meiner Ansicht, „si je ne cherche pas midi à quatorze heures“, wäre die theoretische Conjugation dieser Verba die folgende:</p>
-        <p>vendi = vendĕdi sinti vendiestes</p>
-        <p>vendisti = vendɇdisti sintisti = vendiemos</p>
-        <p>vendieo = vendede+o sintíu vendieron.</p>
-        <p>vendiemos = vendedɨmus sintimos </p>
-        <p>vendestes = vendɇdistis sintistes</p>
-        <p>vendieron = vendĕderunt sintiron</p>
-        <p>
-          <pb facs="#IMG.3" n="3"/> Unter dem Einflusse von <hi rend="unknown"
-            rendition="#none">vendi</hi> und von ähnlichen Zeitwörtern wurde conjugirt <hi rend="unknown" rendition="#none">sintió</hi>
-          <hi rend="unknown" rendition="#none">sintiemos</hi>
-          <hi rend="unknown" rendition="#none">sintiestes</hi>
-          <hi rend="unknown" rendition="#none">sintieron</hi>. Der i Laut hat den ersten <hi rend="unknown"
-            rendition="#none">i</hi> hervorgebracht. Der Jotlaut hat ihn erhalten. Mit dieser Deutung stimmt das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.844">Port.</ref> gut überein. Aber <hi rend="unknown"
-            rendition="#none">tinieblas</hi> und die übrigen Beispiele? Das Gesetz, welches <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">
+            <p>vendi = vendĕdi sinti vendiestes</p>
+            <p>vendisti = vendɇdisti sintisti = vendiemos</p>
+            <p>vendieo = vendede+o sintíu vendieron.</p>
+            <p>vendiemos = vendedɨmus sintimos </p>
+            <p>vendestes = vendɇdistis sintistes</p>
+            <p>vendieron = vendĕderunt sintiron</p>
+            <p>
+               <pb facs="#IMG.3" n="3"/> Unter dem Einflusse von <hi rend="unknown" rendition="#none">vendi</hi> und von ähnlichen Zeitwörtern wurde conjugirt <hi rend="unknown" rendition="#none">sintió</hi>
+               <hi rend="unknown" rendition="#none">sintiemos</hi>
+               <hi rend="unknown" rendition="#none">sintiestes</hi>
+               <hi rend="unknown" rendition="#none">sintieron</hi>. Der i Laut hat den ersten <hi rend="unknown" rendition="#none">i</hi> hervorgebracht. Der Jotlaut hat ihn erhalten. Mit dieser Deutung stimmt das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.844">Port.</ref> gut überein. Aber <hi rend="unknown" rendition="#none">tinieblas</hi> und die übrigen Beispiele? Das Gesetz, welches <persName ref="[authorityLink]">
 Diez</persName> aufgestellt hat, ist, wie ich glaube, unhaltbar. Aber was sagt Ihr Scharfsinn dazu? Denn Ihr Urtheil ist mir ungemein werthvoll.</p>
-        <closer>
-          <salute>Mit herzlichen Grüssen</salute>
-          <lb/>
-          <salute>Ihr ganz ergebener und für die mir durch Ihren Aufsatz gewordene Belehrung dankender</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">J Cornu</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <closer>
+               <salute>Mit herzlichen Grüssen</salute>
+               <lb/>
+               <salute>Ihr ganz ergebener und für die mir durch Ihren Aufsatz gewordene Belehrung dankender</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">J Cornu</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,286 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Ernesto Monaci an Hugo Schuchardt (07-07441)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">
-            <forename>Ernesto</forename>
-            <surname>Monaci</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7225" type="PID">o:hsa.letter.7225</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">07-07441</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">07441</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">
-                <forename>Ernesto</forename>
-                <surname>Monaci</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.86" ref="http://sws.geonames.org/3169070">Rom</origPlace>
-              <origDate ana="dcterms:created" when="1877-04-22">1877-04-22</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Jürgen</forename>
-              <surname>Storost</surname>
-            </persName>
-          </author>
-          <date when="1992">1992</date>
-          <title>Hugo Schuchardt und die Gründungsphase der Diezstiftung. Stimmen in
-               Briefen</title>
-          <pubPlace>Bonn</pubPlace>
-          <publisher>Romanistischer Verlag</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Ernesto Monaci und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2219"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7225">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2219" ref="https://viaf.org/viaf/64080350">
-            <forename>Ernesto</forename>
-            <surname>Monaci</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.86" key="#GID.1" ref="http://sws.geonames.org/3169070">Rom</placeName>
-          <date when="1877-04-22">1877-04-22</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Rome</settlement>
-                <name ref="http://geonames.org/3169070" type="fcode:PPLC">Rome</name>
-                <location>
-                  <geo>12.51133,41.89193</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2219" type="context">
-                        Korrespondenz Ernesto Monaci - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.321" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Diezstiftung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.290" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Accademia dei Lincei (Rom)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7225" xml:lang="it">
-        <pb n="1"/>
-        <dateline>Roma 22 Apr. 77<note n="1" place="foot" type="editorial">Antwort auf Schuchardt <ref target="https://gams.uni-graz.at/o:hsa.letter.7221">Brief 3</ref> (19.4.1877).</note>
-        </dateline>
-        <opener>Carissimo Collega</opener>
-
-        <p>Per non perdere tempo, senza aspettare la Sua risposta giuntami jersera, già da tre giorni io scrissi una seconda lettera all’Ascoli, communicandogli la notizia datami da Lei della costituzione del Comitatato Viennese<note
-            n="2" place="foot" type="editorial">Zu Einzelheiten vgl. die frühen Briefe <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2867">Tobler</persName>s an Schuchardt (HSA 11710-11712). Schuchardts „Skepsis“ wird in einem Brief an <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2264">Mussafia</persName> [(Graz 15.12.1877), <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1580">Storost, 1992</ref>
-
-            </bibl>, 8] auf den Punkt gebracht: „Tobler schickte mir vor einigen Tagen den Aufruf zur Diezstiftung zu und begleitete denselben mit einigen Zeilen, in denen er mich aufforderte, in Oesterreich dafür zu werben und vielleicht in der Augsb. Allg. Zeit. dazu anzuregen. Dem letzten Wunsch bin ich nachgekommen, aber nicht ganz in dem Sinne Tobler’s. So sehr ich mich 3für eine Diezstiftung im Allgemeinen begeistere, so wenig für eine Berliner Diezstiftung. Der Plan ist viel zu eng und kühl entworfen, bei diesem Unternehmen müssen Romanen und Deutsche in gleichem Maße betheiligt sein, um so mehr, als Erstere in neuester Zeit für unsere Wissenschaft sehr viel gethan haben“.</note> e dicendogli che io mi tenevo pronto ad un suo cenno per fare altrettanto in Italia. Questo atto verso l’<persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">Ascoli</persName>, in me era di dovere, avendogli io già dato parola di stare unito a lui in questa faccenda della <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.321">
-Diez-Stiftung</ref>. Io spero che una risposta dell’Ascoli non tarderà molto, e credo di non ingannarmi pensando che egli – o s’indurrà alla costituzione del comitato italiano indipendente – o almeno, restando neutrale, secondo scrisse a Lei, renderà a me la mia libertà di azione. Nell’un casto e nell’altro io mi tengo pronto ad aprire subito la campagna, e ho già scritto in proposito al <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">D’Ancona</persName>; oggi scriverò al <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1254">
-Canello</persName>, al <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1353">
-d’Ovidio</persName>, al <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1089">Bartoli</persName>; domani, se ancora tardasse una risposta dell’<persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">Ascoli</persName>, scriverò al <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2467">Rajna</persName>, e al <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1493">Flechia</persName>. Quanto all’<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.290">Accademia dei Lincei</ref>
-          <pb
-            n="2"/> io sono perfettamente della Sua opinione, non doversi, cioè, aspettare da lei nessuna iniziativa. Nondimeno ho creduto opportuno di non perderla d’occhio, affinché non si facci compromettere verso Berlino. Quella gente ha molto buon volere per questa faccenda, ma non ha idee troppo chiare; e il Sig. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1768">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7225" xml:lang="it">
+            <pb n="1"/>
+            <dateline>Roma 22 Apr. 77<note n="1" place="foot" type="editorial">Antwort auf Schuchardt <ref target="https://gams.uni-graz.at/o:hsa.letter.7221">Brief 3</ref> (19.4.1877).</note>
+            </dateline>
+            <opener>Carissimo Collega</opener>
+            <p>Per non perdere tempo, senza aspettare la Sua risposta giuntami jersera, già da tre giorni io scrissi una seconda lettera all’Ascoli, communicandogli la notizia datami da Lei della costituzione del Comitatato Viennese<note n="2" place="foot" type="editorial">Zu Einzelheiten vgl. die frühen Briefe <persName ref="[authorityLink]">Tobler</persName>s an Schuchardt (HSA 11710-11712). Schuchardts „Skepsis“ wird in einem Brief an <persName ref="[authorityLink]">Mussafia</persName> [(Graz 15.12.1877), <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1580">Storost, 1992</ref>
+                  </bibl>, 8] auf den Punkt gebracht: „Tobler schickte mir vor einigen Tagen den Aufruf zur Diezstiftung zu und begleitete denselben mit einigen Zeilen, in denen er mich aufforderte, in Oesterreich dafür zu werben und vielleicht in der Augsb. Allg. Zeit. dazu anzuregen. Dem letzten Wunsch bin ich nachgekommen, aber nicht ganz in dem Sinne Tobler’s. So sehr ich mich 3für eine Diezstiftung im Allgemeinen begeistere, so wenig für eine Berliner Diezstiftung. Der Plan ist viel zu eng und kühl entworfen, bei diesem Unternehmen müssen Romanen und Deutsche in gleichem Maße betheiligt sein, um so mehr, als Erstere in neuester Zeit für unsere Wissenschaft sehr viel gethan haben“.</note> e dicendogli che io mi tenevo pronto ad un suo cenno per fare altrettanto in Italia. Questo atto verso l’<persName ref="[authorityLink]">Ascoli</persName>, in me era di dovere, avendogli io già dato parola di stare unito a lui in questa faccenda della <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.321">
+Diez-Stiftung</ref>. Io spero che una risposta dell’Ascoli non tarderà molto, e credo di non ingannarmi pensando che egli – o s’indurrà alla costituzione del comitato italiano indipendente – o almeno, restando neutrale, secondo scrisse a Lei, renderà a me la mia libertà di azione. Nell’un casto e nell’altro io mi tengo pronto ad aprire subito la campagna, e ho già scritto in proposito al <persName ref="[authorityLink]">D’Ancona</persName>; oggi scriverò al <persName ref="[authorityLink]">
+Canello</persName>, al <persName ref="[authorityLink]">
+d’Ovidio</persName>, al <persName ref="[authorityLink]">Bartoli</persName>; domani, se ancora tardasse una risposta dell’<persName ref="[authorityLink]">Ascoli</persName>, scriverò al <persName ref="[authorityLink]">Rajna</persName>, e al <persName ref="[authorityLink]">Flechia</persName>. Quanto all’<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.290">Accademia dei Lincei</ref>
+               <pb n="2"/> io sono perfettamente della Sua opinione, non doversi, cioè, aspettare da lei nessuna iniziativa. Nondimeno ho creduto opportuno di non perderla d’occhio, affinché non si facci compromettere verso Berlino. Quella gente ha molto buon volere per questa faccenda, ma non ha idee troppo chiare; e il Sig. <persName ref="[authorityLink]">
 Hillebrand</persName>
-          <note n="3" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1768">Karl Hillebrand</persName> (1829-1884), deutscher Publizist und Kulturwissenschaftler; vgl. HSA 04737-04743.</note>, volendo giovare nel senso nostro, poco ha mancato che non guastasse tutto. Ella conosce la risposta data dal <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2116">Mamiani</persName>
-          <note n="4" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2116">Terrenzio Mamiani della Rovere</persName> (1799-1885), ital. Philosoph, Politiker und Schrifsteller; vgl. 
-HSA 06829.</note> in seguito agli officj del Sig. Hillebrand. Fortunatamente, mentre il Mamiani rispondeva così al Sig. H., il Ferri (altro Linceo)<note
-            n="5" place="foot" type="editorial">
-
-            <persName>
-Luigi Ferri</persName> (1826-1895), ital. Philosoph.</note> chiedeva informazioni a me ed io gli facevo conoscere il dualismo sorto, e la convenienza di esigere che almeno il Comit. Berlin. si trasformasse in Comit. internazionale, se volevasi appoggio e cooperazione da Roma. Io fui allora incaricato di far ciò sapere a <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2867">Tobler</persName>; e lo feci <hi rend="unknown"
-            rendition="#none">indirettamente</hi>, calcando la mano sulle esigenze, per quanto lo permetteva il mandato ricevuto. Il Sigr. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2867">Tobler</persName> sembra che abbia creduto che io fossi geloso dell’incarico dato dal Comit. Berlin. all’<persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">Ascoli</persName> (!!!), e ha risposto, prendendo le mosse da questo punto. I suoi termini sono mol- <pb
-            n="3"/> to concilianti in apparenza, egli sembra disposto ad ottenere alcune modificazioni di forma del Comit. Berlin., ma in fondo si vede bene che la sostanza della cosa non sarebbe modificata. Io dunque ho mostrato il documento al Ferri, egli è rimasto persuaso che in simili trattative non ci è da sperare, e ho avuto la promessa che l’Accademia non farà nulla per la D.-St. fino a che non sia costituito il Comitato italiano. – Non occorre che le dica come queste notizie sono affatto riservate a Lei, ed io spero che Ella si persuaderà come dal mio canto io non sia inerte ed abbia agito per quanto mi era possibile. Se non che, qui, prima di edificare, si è dovuto distruggere: ciò fa perdere tempo, e impedisce quella rapidità di movimenti che è stata possibile al Comit. Viennese. Ormai spero che fra una diecina di giorni sarà tutto concluso: ma se ciò non avvenisse, credo, caro amico, che non è dipeso da me. Io sono solo in Roma, e se i miei colleghi delle altre città non si uniscono meco, resterei <hi
-            rend="unknown" rendition="#none">vox clamantis in deserto</hi>. Sarebbe ciò buono? Non esporrei me, <pb n="4"/> e, peggio che me l’impresa, al ridicolo della burbanza berlinese?</p>
-
-        <p>Per il Portogallo si è pensato? Costituiranno pur là un comitato? Ho da scrivere io? In Ispagna faccio scrivere dal mio allievo Navone,<note
-            n="6" place="foot" type="editorial">
-            <persName>
+               <note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Karl Hillebrand</persName> (1829-1884), deutscher Publizist und Kulturwissenschaftler; vgl. HSA 04737-04743.</note>, volendo giovare nel senso nostro, poco ha mancato che non guastasse tutto. Ella conosce la risposta data dal <persName ref="[authorityLink]">Mamiani</persName>
+               <note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Terrenzio Mamiani della Rovere</persName> (1799-1885), ital. Philosoph, Politiker und Schrifsteller; vgl. 
+HSA 06829.</note> in seguito agli officj del Sig. Hillebrand. Fortunatamente, mentre il Mamiani rispondeva così al Sig. H., il Ferri (altro Linceo)<note n="5" place="foot" type="editorial">
+                  <persName>
+Luigi Ferri</persName> (1826-1895), ital. Philosoph.</note> chiedeva informazioni a me ed io gli facevo conoscere il dualismo sorto, e la convenienza di esigere che almeno il Comit. Berlin. si trasformasse in Comit. internazionale, se volevasi appoggio e cooperazione da Roma. Io fui allora incaricato di far ciò sapere a <persName ref="[authorityLink]">Tobler</persName>; e lo feci <hi rend="unknown" rendition="#none">indirettamente</hi>, calcando la mano sulle esigenze, per quanto lo permetteva il mandato ricevuto. Il Sigr. <persName ref="[authorityLink]">Tobler</persName> sembra che abbia creduto che io fossi geloso dell’incarico dato dal Comit. Berlin. all’<persName ref="[authorityLink]">Ascoli</persName> (!!!), e ha risposto, prendendo le mosse da questo punto. I suoi termini sono mol- <pb n="3"/> to concilianti in apparenza, egli sembra disposto ad ottenere alcune modificazioni di forma del Comit. Berlin., ma in fondo si vede bene che la sostanza della cosa non sarebbe modificata. Io dunque ho mostrato il documento al Ferri, egli è rimasto persuaso che in simili trattative non ci è da sperare, e ho avuto la promessa che l’Accademia non farà nulla per la D.-St. fino a che non sia costituito il Comitato italiano. – Non occorre che le dica come queste notizie sono affatto riservate a Lei, ed io spero che Ella si persuaderà come dal mio canto io non sia inerte ed abbia agito per quanto mi era possibile. Se non che, qui, prima di edificare, si è dovuto distruggere: ciò fa perdere tempo, e impedisce quella rapidità di movimenti che è stata possibile al Comit. Viennese. Ormai spero che fra una diecina di giorni sarà tutto concluso: ma se ciò non avvenisse, credo, caro amico, che non è dipeso da me. Io sono solo in Roma, e se i miei colleghi delle altre città non si uniscono meco, resterei <hi rend="unknown" rendition="#none">vox clamantis in deserto</hi>. Sarebbe ciò buono? Non esporrei me, <pb n="4"/> e, peggio che me l’impresa, al ridicolo della burbanza berlinese?</p>
+            <p>Per il Portogallo si è pensato? Costituiranno pur là un comitato? Ho da scrivere io? In Ispagna faccio scrivere dal mio allievo Navone,<note n="6" place="foot" type="editorial">
+                  <persName>
 Giulio Navone</persName> (1853-1949), ital. Historiker, Romanist, Neulateiner und Hispanist.</note> il quale là può disporre di alte influenze e vi ha pure buone relazioni letterarie.</p>
-        <p>Appena avrò qualcosa, riscriverò. Intanto un saluto e una cordiale stretta di mano.</p>
-        <closer>
-          <salute>Tutto suo</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">E Monaci.</persName>
-            <note n="7" place="foot" type="editorial">Text auch bei <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1580">
+            <p>Appena avrò qualcosa, riscriverò. Intanto un saluto e una cordiale stretta di mano.</p>
+            <closer>
+               <salute>Tutto suo</salute>
+               <signed>
+                  <persName ref="[authorityLink]">E Monaci.</persName>
+                  <note n="7" place="foot" type="editorial">Text auch bei <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1580">
 Jürgen Storost, <hi rend="unknown" rendition="#none">Hugo Schuchardt und die Gründungsphase der Diezstiftung. Stimmen in Briefen</hi>, Bonn: Roman. Verlag, 1992</ref>
-              </bibl> (Abhandlungen zur Sprache und Literatur; 59), Brief 52, 59-60.</note>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                     </bibl> (Abhandlungen zur Sprache und Literatur; 59), Brief 52, 59-60.</note>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

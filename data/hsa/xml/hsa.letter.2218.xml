@@ -1,416 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (372-11213)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2218" type="PID">o:hsa.letter.2218</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">372-11213</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11213</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="2" unit="pages">2 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.59" ref="http://sws.geonames.org/2768497">Pörtschach</origPlace>
-              <origDate ana="dcterms:created" when="1923">1923</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2218">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.59" key="#GID.1" ref="http://sws.geonames.org/2768497">Pörtschach</placeName>
-          <date when="1923">1923</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Pörtschach am Wörthersee</settlement>
-                <name ref="http://geonames.org/2768497" type="fcode:PPL">Pörtschach am Wörthersee</name>
-                <location>
-                  <geo>14.14639,46.63639</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4843" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschrift für französische Sprache und Literatur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4308" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Euphorion. Zeitschrift für Literaturgeschichte</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.779" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.864" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Katalanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.803" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Ungarisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.886" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Latein</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2218" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2218" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2218" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <p>[Beginn fehlt]</p>
-        <p>selbst zu "machen", sondern "auszumachen" braucht. Trotzdem bin ich durch Ihre Ausstellungen auf manchen Punkt aufmerksam gemacht worden, den ich hätte klarer stellen sollen. Haben Sie jedenfalls vielen Dank!</p>
-        <p>Gestern waren wir mit <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2218" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <p>[Beginn fehlt]</p>
+            <p>selbst zu "machen", sondern "auszumachen" braucht. Trotzdem bin ich durch Ihre Ausstellungen auf manchen Punkt aufmerksam gemacht worden, den ich hätte klarer stellen sollen. Haben Sie jedenfalls vielen Dank!</p>
+            <p>Gestern waren wir mit <persName ref="[authorityLink]">
 Rieglers</persName> zusammen und haben uns hauptsächlich mit Ihnen beschäftigt. Haben Ihnen die Ohren nicht geklungen?</p>
-        <p>Ich habe kürzlich wieder einmal Ihre "roman. Nominalsuff. im Bask."<note n="1" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.39">H.S., "Die romanischen Nominalsuffixe im Baskischen", in: <hi
-                  rend="unknown" rendition="#none">Zeitschrift für romanische Philologie</hi> 30 (1906)</ref>: 1-10.</bibl>
-          </note> durchgenommen und möchte hiezu bemerken, daß außer <hi rend="unknown"
-            rendition="#none">jocularius</hi> für die <hi rend="unknown"
-            rendition="#none">-lari-</hi> Bildungen auch <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.779">span</ref>. <foreign xml:lang="es">
-            <hi rend="unknown" rendition="#none">perdulário</hi>
-          </foreign> Muster gewesen sein kann, für <hi rend="unknown" rendition="#none">sentiera</hi>, <hi
-            rend="unknown" rendition="#none">ibilera</hi> ich in den <hi rend="unknown" rendition="#none">Mitt.d.rom.Sem.</hi>
-          <ref target="https://gams.uni-graz.at/o:hsa.languages#L.864">katal</ref>. <foreign xml:lang="ca">
-            <hi rend="unknown" rendition="#none">-era</hi>
-          </foreign> [sc. gana etc.], Brüch in <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4843">
-Ztsch.f.frz.Spr.</ref> (über <hi rend="unknown"
-            rendition="#none">
-fortersse</hi>!) romanische Parallelen zusammengestellt hat, daß ich nicht weiß, ob nicht <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.803">ungar</ref>. <foreign xml:lang="hu">
-            <hi rend="unknown" rendition="#none">ronda</hi>
-          </foreign> 'grob' mit <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">bask</ref>. <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">arrunter</hi>
-
-          </foreign> 'gemeiner Mann' (= rotundus) parallelisiert werden sollte (Sie scheinen mir meine wissenschaftl. Verhältnis-Riecherei zu verübeln!), daß ich <hi
-            rend="unknown"
-            rendition="#none">zabarreri</hi> 'Schwerfälligkeit' gern etymologisiert wüßte (es gibt noch mehrere <hi
-            rend="unknown" rendition="#none">zabarr</hi>-Wörter im <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">Bask</ref>., die mir mit <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.886">lt</ref>. <foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">saburra</hi>
-          </foreign>, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">frz</ref>. <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">sabrenaud</hi>
-          </foreign> 'Pfuscher', 'Flick-Schuster' zusammenzuhängen scheinen) etc.</p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>Nun eine Bitte, die der unbequeme junge Fant an Sie richtet: hätten Sie <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.779">span</ref>. Dialektwbb., die Sie mir auf ganz kurze Zeit (etwa durch eingeschriebene Sendung, deren Kosten ich auf mich nähme) leihen könnten? Sie scheinen z.B. ein cubanisches Wb., dann den als "allerliebst" (für den Besitzer?) bezeichneten Arriaga<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3940">Emiliano de Arriaga, <hi
-                  rend="unknown" rendition="#none">Lexicón etimológico, naturalista y popular del bilbaíno neto, compilado por un chimbo</hi>
-              </ref>. Bilbao: Astuy 1886</bibl>. Den Ausdruck „allerliebst“ verwendet HS in seinem Aufsatz <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.157">„Baskisch und Romanisch“</ref>
-            </bibl> aus dem Jahre 1906.</note> und noch vieles mehr zu haben. Ich kenne Echeverria<note n="3"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3818">Aníbal Echeverría i Reyes, <hi
-                  rend="unknown" rendition="#none">Voces usadas en Chile</hi>
-              </ref>. Santiago: Imprenta Elzeviriana 1900.</bibl>
-          </note>, Bayo<note n="4" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2146">Ciro Bayo, <hi rend="unknown" rendition="#none">Vocabulario Criollo-Español Sud-Americano.</hi>
-              </ref> Madrid: Succ. de Hernando 1911.</bibl>
-          </note>, Rato<note n="5" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3817">Apolinar de Rato und Hevia de Argüelles, <hi
-                  rend="unknown" rendition="#none">
+            <p>Ich habe kürzlich wieder einmal Ihre "roman. Nominalsuff. im Bask."<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.39">H.S., "Die romanischen Nominalsuffixe im Baskischen", in: <hi rend="unknown" rendition="#none">Zeitschrift für romanische Philologie</hi> 30 (1906)</ref>: 1-10.</bibl>
+               </note> durchgenommen und möchte hiezu bemerken, daß außer <hi rend="unknown" rendition="#none">jocularius</hi> für die <hi rend="unknown" rendition="#none">-lari-</hi> Bildungen auch <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">span</ref>. <foreign xml:lang="es">
+                  <hi rend="unknown" rendition="#none">perdulário</hi>
+               </foreign> Muster gewesen sein kann, für <hi rend="unknown" rendition="#none">sentiera</hi>, <hi rend="unknown" rendition="#none">ibilera</hi> ich in den <hi rend="unknown" rendition="#none">Mitt.d.rom.Sem.</hi>
+               <ref target="https://gams.uni-graz.at/o:hsa.languages#L.864">katal</ref>. <foreign xml:lang="ca">
+                  <hi rend="unknown" rendition="#none">-era</hi>
+               </foreign> [sc. gana etc.], Brüch in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4843">
+Ztsch.f.frz.Spr.</ref> (über <hi rend="unknown" rendition="#none">
+fortersse</hi>!) romanische Parallelen zusammengestellt hat, daß ich nicht weiß, ob nicht <ref target="https://gams.uni-graz.at/o:hsa.languages#L.803">ungar</ref>. <foreign xml:lang="hu">
+                  <hi rend="unknown" rendition="#none">ronda</hi>
+               </foreign> 'grob' mit <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">bask</ref>. <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">arrunter</hi>
+               </foreign> 'gemeiner Mann' (= rotundus) parallelisiert werden sollte (Sie scheinen mir meine wissenschaftl. Verhältnis-Riecherei zu verübeln!), daß ich <hi rend="unknown" rendition="#none">zabarreri</hi> 'Schwerfälligkeit' gern etymologisiert wüßte (es gibt noch mehrere <hi rend="unknown" rendition="#none">zabarr</hi>-Wörter im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">Bask</ref>., die mir mit <ref target="https://gams.uni-graz.at/o:hsa.languages#L.886">lt</ref>. <foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">saburra</hi>
+               </foreign>, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">frz</ref>. <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">sabrenaud</hi>
+               </foreign> 'Pfuscher', 'Flick-Schuster' zusammenzuhängen scheinen) etc.</p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>Nun eine Bitte, die der unbequeme junge Fant an Sie richtet: hätten Sie <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">span</ref>. Dialektwbb., die Sie mir auf ganz kurze Zeit (etwa durch eingeschriebene Sendung, deren Kosten ich auf mich nähme) leihen könnten? Sie scheinen z.B. ein cubanisches Wb., dann den als "allerliebst" (für den Besitzer?) bezeichneten Arriaga<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3940">Emiliano de Arriaga, <hi rend="unknown" rendition="#none">Lexicón etimológico, naturalista y popular del bilbaíno neto, compilado por un chimbo</hi>
+                     </ref>. Bilbao: Astuy 1886</bibl>. Den Ausdruck „allerliebst“ verwendet HS in seinem Aufsatz <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.157">„Baskisch und Romanisch“</ref>
+                  </bibl> aus dem Jahre 1906.</note> und noch vieles mehr zu haben. Ich kenne Echeverria<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3818">Aníbal Echeverría i Reyes, <hi rend="unknown" rendition="#none">Voces usadas en Chile</hi>
+                     </ref>. Santiago: Imprenta Elzeviriana 1900.</bibl>
+               </note>, Bayo<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2146">Ciro Bayo, <hi rend="unknown" rendition="#none">Vocabulario Criollo-Español Sud-Americano.</hi>
+                     </ref> Madrid: Succ. de Hernando 1911.</bibl>
+               </note>, Rato<note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3817">Apolinar de Rato und Hevia de Argüelles, <hi rend="unknown" rendition="#none">
 Vocabulario de las palabras y frases bables que se hablaron antiguamente y de las que hoy se hablan en el Principado de Asturias seguido de un Compendio gramatical</hi>
-              </ref>. Madrid: Manuel Ginés Hernández 1891.</bibl>
-          </note>, Baráibar, Garrote<note n="6" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2117">Santiago Alonso Garrote, <hi
-                  rend="unknown" rendition="#none">El dialecto vulgar leonés hablado en Maragateria y Tierra de Astorga. Notas gramaticales y vocabulario</hi>. 3 Bde.</ref> Astorga: P. López, 1909</bibl>; <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2151">Federico Baraibar y Zumáraga, <hi
-                  rend="unknown" rendition="#none">Vocabulario de palabras usadas en Alava y no incluídas en el Diccionario de la Real Aca­demia Española [...]</hi>. 13. Auflage</ref>, Madrid 1903.</bibl>
-          </note>, Borao<note n="7" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3943">Jerónimo Borao, <hi rend="unknown" rendition="#none">Diccionario de voces aragonesas</hi>
-              </ref>. Zaragoza: Calisto Arino 1859.</bibl>
-          </note>, Piñol<note n="8" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6229">Juan Cuveiro Piñol, <hi rend="unknown" rendition="#none">Diccionario Gallego: el mas completo en terminos y acepciones de todo lo publicado hasta el dia; con las voces antiguas</hi>
-              </ref>. Barcelona 1876.</bibl>
-          </note>, Lenz<note n="9" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3852">Rodolfo Lenz, <hi rend="unknown" rendition="#none">Diccionario etimolójico de las voces chilenas derivadas de lenguas indijenas americanas</hi>
-              </ref>. Santiago de Chile: Impr. Cervantes 1904-10.</bibl>
-          </note>, Amunátegui<note n="10" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3815">Miguel Luis Amunategui-Reyes, <hi
-                  rend="unknown" rendition="#none">Apuntaciones Lexicograficas</hi> (3 Bde.)</ref>. Santiago de Chile: Impr. Barcelona 1907-1909.</bibl>
-          </note>, Toro Gisbert<note n="11" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3970">Miguel de Toro y Gisbert, <hi
-                  rend="unknown" rendition="#none">Americanismos</hi>
-              </ref>. Paris: Ollendorff 1912.</bibl>
-          </note>, Múgica<note n="12" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3816">Pedro de Mugica, <hi rend="unknown" rendition="#none">Dialectos Castellanos Montañés, Vizcaino, Aragonés</hi>
-              </ref>. Berlin: Heinrich &amp; Kemke 1892</bibl>; sowie ders., <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3814">
-                <hi rend="unknown" rendition="#none">Einführung in die spanische Umgangs- und Geschäftssprache</hi>
-              </ref>. Leipzig: Handels-Akademie, 1902.</bibl>
-          </note>, Cuervo (<hi rend="unknown" rendition="#none">
+                     </ref>. Madrid: Manuel Ginés Hernández 1891.</bibl>
+               </note>, Baráibar, Garrote<note n="6" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2117">Santiago Alonso Garrote, <hi rend="unknown" rendition="#none">El dialecto vulgar leonés hablado en Maragateria y Tierra de Astorga. Notas gramaticales y vocabulario</hi>. 3 Bde.</ref> Astorga: P. López, 1909</bibl>; <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2151">Federico Baraibar y Zumáraga, <hi rend="unknown" rendition="#none">Vocabulario de palabras usadas en Alava y no incluídas en el Diccionario de la Real Aca­demia Española [...]</hi>. 13. Auflage</ref>, Madrid 1903.</bibl>
+               </note>, Borao<note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3943">Jerónimo Borao, <hi rend="unknown" rendition="#none">Diccionario de voces aragonesas</hi>
+                     </ref>. Zaragoza: Calisto Arino 1859.</bibl>
+               </note>, Piñol<note n="8" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6229">Juan Cuveiro Piñol, <hi rend="unknown" rendition="#none">Diccionario Gallego: el mas completo en terminos y acepciones de todo lo publicado hasta el dia; con las voces antiguas</hi>
+                     </ref>. Barcelona 1876.</bibl>
+               </note>, Lenz<note n="9" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3852">Rodolfo Lenz, <hi rend="unknown" rendition="#none">Diccionario etimolójico de las voces chilenas derivadas de lenguas indijenas americanas</hi>
+                     </ref>. Santiago de Chile: Impr. Cervantes 1904-10.</bibl>
+               </note>, Amunátegui<note n="10" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3815">Miguel Luis Amunategui-Reyes, <hi rend="unknown" rendition="#none">Apuntaciones Lexicograficas</hi> (3 Bde.)</ref>. Santiago de Chile: Impr. Barcelona 1907-1909.</bibl>
+               </note>, Toro Gisbert<note n="11" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3970">Miguel de Toro y Gisbert, <hi rend="unknown" rendition="#none">Americanismos</hi>
+                     </ref>. Paris: Ollendorff 1912.</bibl>
+               </note>, Múgica<note n="12" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3816">Pedro de Mugica, <hi rend="unknown" rendition="#none">Dialectos Castellanos Montañés, Vizcaino, Aragonés</hi>
+                     </ref>. Berlin: Heinrich &amp; Kemke 1892</bibl>; sowie ders., <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3814">
+                        <hi rend="unknown" rendition="#none">Einführung in die spanische Umgangs- und Geschäftssprache</hi>
+                     </ref>. Leipzig: Handels-Akademie, 1902.</bibl>
+               </note>, Cuervo (<hi rend="unknown" rendition="#none">
 Apunt.</hi>)<note n="13" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3652">Rufino José Cuervo, <hi rend="unknown" rendition="#none">Apuntaciones críticas sobre el lenguaje bogotano</hi>
-              </ref>. Bogotá: A.M. Guarin 1867-1872.</bibl>
-          </note>. Hätten Sie Torres Fornes, Voces Aragonesas<note n="14" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3813">Cayetano Torres Fornes, <hi
-                  rend="unknown" rendition="#none">Sobre voces aragonesas usadas en Segorbe</hi>
-              </ref>. Valencia 1903.</bibl>
-          </note>, Calcaño (Venezuela)<note n="15" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3812">Julio Calcaño, <hi rend="unknown" rendition="#none">El Castellano en Venezuela</hi>
-              </ref>. Caracas: Tip. univ. 1897.</bibl>
-          </note>, Pichardo (Cuba)<note n="16" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2208">Esteban Pichardo y Tapia, <hi
-                  rend="unknown" rendition="#none">Diccionario provincial casi razonado de vozes y frases cubanas</hi>
-              </ref>. Matauras 1836.</bibl>
-          </note>, Membreño (Honduras)<note n="17" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2093">Alberto Membreño, <hi rend="unknown"
-                  rendition="#none">Hondurenismos</hi>. <hi rend="unknown" rendition="#none">Vocabulario de los provincialismos de Honduras</hi>.</ref> Tegucigalpa 1895.</bibl>
-          </note>, Gagini (Costa Rica)<note n="18" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3811">Carlos Gagini, <hi rend="unknown" rendition="#none">Diccionario de barbarismos y provincialismos de Costa Rica</hi>
-              </ref>. San José de Costa Rica: Tip. Nacional 1893.</bibl>
-          </note>, Salillas (El delincuente español)<note n="19" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3914">Rafael Salillas, <hi rend="unknown" rendition="#none">El delincuente español: el lenguaje (estudio filológico, psicológico y sociológico). Con dos vocabularios jergales</hi>
-              </ref>. Madrid: Librería de Victoriano Subrez 1896.</bibl>
-
-          </note>, ferner Saroïhandy's Artikel in Revista de Aragón (übers Aragonesische)? Und sonstiges? Verzeihen Sie mir bitte meine Unbescheidenheit, aber ich habe eine Entschuldigung, die Sie am besten würdigen werden: den Wissensdurst. Ich arbeite nämlich über <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3652">Rufino José Cuervo, <hi rend="unknown" rendition="#none">Apuntaciones críticas sobre el lenguaje bogotano</hi>
+                     </ref>. Bogotá: A.M. Guarin 1867-1872.</bibl>
+               </note>. Hätten Sie Torres Fornes, Voces Aragonesas<note n="14" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3813">Cayetano Torres Fornes, <hi rend="unknown" rendition="#none">Sobre voces aragonesas usadas en Segorbe</hi>
+                     </ref>. Valencia 1903.</bibl>
+               </note>, Calcaño (Venezuela)<note n="15" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3812">Julio Calcaño, <hi rend="unknown" rendition="#none">El Castellano en Venezuela</hi>
+                     </ref>. Caracas: Tip. univ. 1897.</bibl>
+               </note>, Pichardo (Cuba)<note n="16" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2208">Esteban Pichardo y Tapia, <hi rend="unknown" rendition="#none">Diccionario provincial casi razonado de vozes y frases cubanas</hi>
+                     </ref>. Matauras 1836.</bibl>
+               </note>, Membreño (Honduras)<note n="17" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2093">Alberto Membreño, <hi rend="unknown" rendition="#none">Hondurenismos</hi>. <hi rend="unknown" rendition="#none">Vocabulario de los provincialismos de Honduras</hi>.</ref> Tegucigalpa 1895.</bibl>
+               </note>, Gagini (Costa Rica)<note n="18" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3811">Carlos Gagini, <hi rend="unknown" rendition="#none">Diccionario de barbarismos y provincialismos de Costa Rica</hi>
+                     </ref>. San José de Costa Rica: Tip. Nacional 1893.</bibl>
+               </note>, Salillas (El delincuente español)<note n="19" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3914">Rafael Salillas, <hi rend="unknown" rendition="#none">El delincuente español: el lenguaje (estudio filológico, psicológico y sociológico). Con dos vocabularios jergales</hi>
+                     </ref>. Madrid: Librería de Victoriano Subrez 1896.</bibl>
+               </note>, ferner Saroïhandy's Artikel in Revista de Aragón (übers Aragonesische)? Und sonstiges? Verzeihen Sie mir bitte meine Unbescheidenheit, aber ich habe eine Entschuldigung, die Sie am besten würdigen werden: den Wissensdurst. Ich arbeite nämlich über <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">
 span</ref>. Wortbildungslehre was den benachbarten Baskologen vielleicht nicht unangenehm ist.</p>
-        <p>Haben Sie <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-Meyer-Lübke</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4363">Sperber</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1877">Kammerer</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4368">Körner</persName> auch ein Sep. des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4308">Euphorion</ref> geschickt? Wenn Sie es könnten, so glaube ich, würden Sie bei all diesen Männern ein gleiches, wenn auch nicht ein gleichgeartetes, Interesse vorfinden.</p>
-        <closer>
-          <salute>Ergebenste Grüße</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Eine Eifersuchtsfrage: Warum haben Sie Kammerer und nicht mir ein Bild von sich gesandt? Bin ich ein nemico tuo chi dell'arte tua?</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            <p>Haben Sie <persName ref="[authorityLink]">
+Meyer-Lübke</persName>, <persName ref="[authorityLink]">Vossler</persName>, <persName ref="[authorityLink]">Sperber</persName>, <persName ref="[authorityLink]">Kammerer</persName>, <persName ref="[authorityLink]">Körner</persName> auch ein Sep. des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4308">Euphorion</ref> geschickt? Wenn Sie es könnten, so glaube ich, würden Sie bei all diesen Männern ein gleiches, wenn auch nicht ein gleichgeartetes, Interesse vorfinden.</p>
+            <closer>
+               <salute>Ergebenste Grüße</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Eine Eifersuchtsfrage: Warum haben Sie Kammerer und nicht mir ein Bild von sich gesandt? Bin ich ein nemico tuo chi dell'arte tua?</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

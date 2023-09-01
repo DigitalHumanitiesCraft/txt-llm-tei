@@ -1,322 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Bogdan Petriceicu Hasdeu (36-1179)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bruno</forename>
-            <surname>Mazzoni</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4493" type="PID">o:hsa.letter.4493</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">36-1179</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <repository>Unbekannt</repository>
-            <idno type="shelfmark">1179</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1878-04-17">1878-04-17</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bruno</forename>
-              <surname>Mazzoni</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Bogdan Petriceicu Hasdeu</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1720"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4493">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1878-04-17">1878-04-17</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1720" ref="https://viaf.org/viaf/65406496">
-            <forename>Bogdan Petriceicu</forename>
-            <surname>Hasdeu</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1720" type="context">
-                        Korrespondenz Hugo Schuchardt - Bogdan Petriceicu Hasdeu
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.893" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Albanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.854" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rumänisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4492" xml:lang="de">
-        <pb n="1"/>
-        <dateline> Graz 17. 4. 78. </dateline>
-        <opener> Verehrter Freund! </opener>
-        <p>Es ist mir sehr angenehm, dass Sie meinen kürzesten Brief <hi rend="unknown"
-            rendition="#none">wahrhaft freundschaftlich</hi> gefunden haben<note n="1" place="foot"
-              type="editorial">V. lettera precedente del Hasdeu (<ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4492">XXXV</ref>).</note>; es wäre mir aber lieb gewesen, wenn Sie auch in meinen beiden langen Briefen
-<note
-            n="2" place="foot" type="editorial">Lo Schuchardt si riferisce alle lettere qui numerate <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref> e <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4490">XXXIII</ref>.</note> Spuren wahrer Freundschaft entdeckt hätten. Ich bin im Ganzen kein Freund vom Briefschreiben und solche lange gar lasse ich nur im äussersten Nothfall vom Stapel. Hätten Sie nur eine Andeutung darüber gegeben wie weit Sie den von mir dargelegten Gründen Anerkennung gewähren! Ihnen kommt es vor Allem auf das <hi
-            rend="unknown" rendition="#none">Ergebniss</hi> an, mir auf den <hi rend="unknown"
-            rendition="#none">
-Modus.</hi> Und so auch in der Wissenschaft selbst. Wie viele Bücher, an deren Ergebnissen ich absolut Nichts auszusetzen habe, langweilen mich! und umgekehrt interessiren mich viele, wo ich gegen einzelne Ergebnisse Einwendungen zu machen habe, im allerhöchsten Grade. Es kommt doch überall nur auf den <hi
-            rend="unknown" rendition="#none">Weg</hi> an, der uns zu Etwas führt! Der schalste Kopf kann einen <hi
-            rend="unknown" rendition="#none">glücklichen Fund</hi> thun und der scharfsinnigste Kopf kann das Ziel verfehlen, zu dem er gelangen wollte; aber sein Spaziergang wird so mannigfache Veduten nach allen Seiten eröffnen, dass man dadurch auf’s Lebhafteste angeregt und erfreut wird. Und wenn er das Gewollte nicht findet, wird er unterwegs vielleicht Wichtigeres finden.</p>
-        <p>Wie werden wir uns über die <hi rend="unknown"
-            rendition="#none">strittigen</hi> Punkte verständigen? Mündlich ginge das sehr rasch; aber schriftlich wird das länger dauern, als Ihnen und mir lieb sein würde. Ich sage: <hi
-            rend="unknown"
-            rendition="#none">mir</hi>; denn ich hätte sehr gern meine Einleitung gegen Mitte Mai fertig in Händen gehabt. Eines macht mir <hi
-            rend="unknown" rendition="#none">
-ernste</hi> Bedenken, dass Sie nämlich meine Gleichung -<hi rend="unknown"
-            rendition="#none">lla</hi> : <hi rend="unknown" rendition="#none">-o</hi> nicht annehmen<note n="3"
-            place="foot" type="editorial">Lo Schuchardt risponde qui alle riserve avanzate dal Hasdeu nella lettera precedente. Sul problema cf. <bibl>
-              <hi rend="unknown" rendition="#none">
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
-              </hi>, pp. xxxvi-xxxix</bibl>, e v. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref>, n. 28.</note>. Ich gestehe Ihnen offen, ich halte dieselbe sicherer, als Alles was Sie oder ich je aufgestellt haben. Ich weiss nicht, welche Lücke in der Beweisführung ist. Die Analogie der Formen in <hi
-            rend="unknown" rendition="#none">-oa</hi> mit <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.893">alban.</ref> in -<hi rend="unknown"
-            rendition="#none">ia</hi> und <hi rend="unknown"
-            rendition="#none">
--ua</hi> wird man auf’s Entschiedenste bestreiten müssen, da ja das <hi rend="unknown"
-            rendition="#none">o</hi> zum Wortstamm gehört, wie 
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4492" xml:lang="de">
+            <pb n="1"/>
+            <dateline> Graz 17. 4. 78. </dateline>
+            <opener> Verehrter Freund! </opener>
+            <p>Es ist mir sehr angenehm, dass Sie meinen kürzesten Brief <hi rend="unknown" rendition="#none">wahrhaft freundschaftlich</hi> gefunden haben<note n="1" place="foot" type="editorial">V. lettera precedente del Hasdeu (<ref target="https://gams.uni-graz.at/o:hsa.letter.4492">XXXV</ref>).</note>; es wäre mir aber lieb gewesen, wenn Sie auch in meinen beiden langen Briefen
+<note n="2" place="foot" type="editorial">Lo Schuchardt si riferisce alle lettere qui numerate <ref target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref> e <ref target="https://gams.uni-graz.at/o:hsa.letter.4490">XXXIII</ref>.</note> Spuren wahrer Freundschaft entdeckt hätten. Ich bin im Ganzen kein Freund vom Briefschreiben und solche lange gar lasse ich nur im äussersten Nothfall vom Stapel. Hätten Sie nur eine Andeutung darüber gegeben wie weit Sie den von mir dargelegten Gründen Anerkennung gewähren! Ihnen kommt es vor Allem auf das <hi rend="unknown" rendition="#none">Ergebniss</hi> an, mir auf den <hi rend="unknown" rendition="#none">
+Modus.</hi> Und so auch in der Wissenschaft selbst. Wie viele Bücher, an deren Ergebnissen ich absolut Nichts auszusetzen habe, langweilen mich! und umgekehrt interessiren mich viele, wo ich gegen einzelne Ergebnisse Einwendungen zu machen habe, im allerhöchsten Grade. Es kommt doch überall nur auf den <hi rend="unknown" rendition="#none">Weg</hi> an, der uns zu Etwas führt! Der schalste Kopf kann einen <hi rend="unknown" rendition="#none">glücklichen Fund</hi> thun und der scharfsinnigste Kopf kann das Ziel verfehlen, zu dem er gelangen wollte; aber sein Spaziergang wird so mannigfache Veduten nach allen Seiten eröffnen, dass man dadurch auf’s Lebhafteste angeregt und erfreut wird. Und wenn er das Gewollte nicht findet, wird er unterwegs vielleicht Wichtigeres finden.</p>
+            <p>Wie werden wir uns über die <hi rend="unknown" rendition="#none">strittigen</hi> Punkte verständigen? Mündlich ginge das sehr rasch; aber schriftlich wird das länger dauern, als Ihnen und mir lieb sein würde. Ich sage: <hi rend="unknown" rendition="#none">mir</hi>; denn ich hätte sehr gern meine Einleitung gegen Mitte Mai fertig in Händen gehabt. Eines macht mir <hi rend="unknown" rendition="#none">
+ernste</hi> Bedenken, dass Sie nämlich meine Gleichung -<hi rend="unknown" rendition="#none">lla</hi> : <hi rend="unknown" rendition="#none">-o</hi> nicht annehmen<note n="3" place="foot" type="editorial">Lo Schuchardt risponde qui alle riserve avanzate dal Hasdeu nella lettera precedente. Sul problema cf. <bibl>
+                     <hi rend="unknown" rendition="#none">
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
+                     </hi>, pp. xxxvi-xxxix</bibl>, e v. <ref target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref>, n. 28.</note>. Ich gestehe Ihnen offen, ich halte dieselbe sicherer, als Alles was Sie oder ich je aufgestellt haben. Ich weiss nicht, welche Lücke in der Beweisführung ist. Die Analogie der Formen in <hi rend="unknown" rendition="#none">-oa</hi> mit <ref target="https://gams.uni-graz.at/o:hsa.languages#L.893">alban.</ref> in -<hi rend="unknown" rendition="#none">ia</hi> und <hi rend="unknown" rendition="#none">
+-ua</hi> wird man auf’s Entschiedenste bestreiten müssen, da ja das <hi rend="unknown" rendition="#none">o</hi> zum Wortstamm gehört, wie 
 
-makedorum. st<hi rend="unknown"
-            rendition="#none">ea</hi>o = st<hi rend="unknown" rendition="#none">ell</hi>a, š<hi rend="unknown"
-            rendition="#none">ao</hi> = s<hi rend="unknown"
-            rendition="#none">
-ell</hi>a u.s.w. unwiderleglich zeigen. Und wie erklären Sie <hi rend="unknown"
-            rendition="#none">stea = stiella?</hi> Wegfall von -<hi rend="unknown" rendition="#none">lla</hi>!</p>
-        <p>Sie fragen, ob 
-makedor. <hi rend="unknown" rendition="#none">sté-o-lĭi = sté-la-lĭi</hi>, also <hi
-            rend="unknown" rendition="#none">illa</hi> zweimal differenzirt sei. Das ist ja gerade <hi rend="unknown"
-            rendition="#none">nicht</hi> meine Meinung; sondern <hi rend="unknown"
-            rendition="#none">stéo-lĭi</hi> ist = stella illae (Nominativ des Nomens mit Dativ des Artikels, wie auch in andern Fällen verbunden). Sie sprechen auch von <hi
-            rend="unknown" rendition="#none">oa</hi> = <hi rend="unknown"
-            rendition="#none">la</hi>; ich meine ja aber <hi rend="unknown" rendition="#none">
-o</hi> = <hi
-            rend="unknown" rendition="#none">lla.</hi> Auch in Bezug auf <hi rend="unknown"
-            rendition="#none">fughicel</hi> verstehen Sie mich immer noch nicht; ich verlange ein Beispiel für <hi
-            rend="unknown" rendition="#none">n</hi> = <hi rend="unknown" rendition="#none">ngh</hi> (<hi rend="unknown"
-            rendition="#none">funicel</hi> = <hi rend="unknown" rendition="#none">
-funghicel</hi>)<note n="4"
-            place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4492">XXXV</ref> e n. 8.</note>. Für <hi rend="unknown"
-            rendition="#none">u</hi> = <hi rend="unknown" rendition="#none">i</hi> nach Palatalen kommt <hi
-            rend="unknown" rendition="#none">
-giur</hi> allerdings in Betracht; ich verzichte sogar darauf, <hi
-            rend="unknown" rendition="#none">u</hi> aus <hi rend="unknown"
-            rendition="#none">
-y</hi> abzuleiten, wie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">
-Diez</persName> thut; denn vor <hi rend="unknown"
-            rendition="#none">u = y</hi> bleibt der Guttural. <hi rendition="#sup">+</hi> Aber <hi rend="unknown"
-            rendition="#none">
-acioae =</hi> it. <hi rend="unknown" rendition="#none">ačaio</hi> (das <hi rend="unknown"
-            rendition="#none">i</hi> nach dem <hi rend="unknown"
-            rendition="#none">c</hi> ist ja nur graphisch) verstehe ich nicht. In <hi rend="unknown"
-            rendition="#none">aciuare</hi> ist auch die Endung <hi rend="unknown"
-            rendition="#none">are</hi> bedenklich und, mir wenigstens, der Bedeutungsübergang<note n="5" place="foot"
-              type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4495">XXXVIII</ref> e n. 40.</note>. Wie dem aber auch sein mag, <hi
-            rend="unknown" rendition="#none">diese phonetischen Auseinandersetzungen <hi rend="unknown" rendition="#none">
+makedorum. st<hi rend="unknown" rendition="#none">ea</hi>o = st<hi rend="unknown" rendition="#none">ell</hi>a, š<hi rend="unknown" rendition="#none">ao</hi> = s<hi rend="unknown" rendition="#none">
+ell</hi>a u.s.w. unwiderleglich zeigen. Und wie erklären Sie <hi rend="unknown" rendition="#none">stea = stiella?</hi> Wegfall von -<hi rend="unknown" rendition="#none">lla</hi>!</p>
+            <p>Sie fragen, ob 
+makedor. <hi rend="unknown" rendition="#none">sté-o-lĭi = sté-la-lĭi</hi>, also <hi rend="unknown" rendition="#none">illa</hi> zweimal differenzirt sei. Das ist ja gerade <hi rend="unknown" rendition="#none">nicht</hi> meine Meinung; sondern <hi rend="unknown" rendition="#none">stéo-lĭi</hi> ist = stella illae (Nominativ des Nomens mit Dativ des Artikels, wie auch in andern Fällen verbunden). Sie sprechen auch von <hi rend="unknown" rendition="#none">oa</hi> = <hi rend="unknown" rendition="#none">la</hi>; ich meine ja aber <hi rend="unknown" rendition="#none">
+o</hi> = <hi rend="unknown" rendition="#none">lla.</hi> Auch in Bezug auf <hi rend="unknown" rendition="#none">fughicel</hi> verstehen Sie mich immer noch nicht; ich verlange ein Beispiel für <hi rend="unknown" rendition="#none">n</hi> = <hi rend="unknown" rendition="#none">ngh</hi> (<hi rend="unknown" rendition="#none">funicel</hi> = <hi rend="unknown" rendition="#none">
+funghicel</hi>)<note n="4" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4492">XXXV</ref> e n. 8.</note>. Für <hi rend="unknown" rendition="#none">u</hi> = <hi rend="unknown" rendition="#none">i</hi> nach Palatalen kommt <hi rend="unknown" rendition="#none">
+giur</hi> allerdings in Betracht; ich verzichte sogar darauf, <hi rend="unknown" rendition="#none">u</hi> aus <hi rend="unknown" rendition="#none">
+y</hi> abzuleiten, wie <persName ref="[authorityLink]">
+Diez</persName> thut; denn vor <hi rend="unknown" rendition="#none">u = y</hi> bleibt der Guttural. <hi rendition="#sup">+</hi> Aber <hi rend="unknown" rendition="#none">
+acioae =</hi> it. <hi rend="unknown" rendition="#none">ačaio</hi> (das <hi rend="unknown" rendition="#none">i</hi> nach dem <hi rend="unknown" rendition="#none">c</hi> ist ja nur graphisch) verstehe ich nicht. In <hi rend="unknown" rendition="#none">aciuare</hi> ist auch die Endung <hi rend="unknown" rendition="#none">are</hi> bedenklich und, mir wenigstens, der Bedeutungsübergang<note n="5" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4495">XXXVIII</ref> e n. 40.</note>. Wie dem aber auch sein mag, <hi rend="unknown" rendition="#none">diese phonetischen Auseinandersetzungen <hi rend="unknown" rendition="#none">
 durften</hi> Sie sich nicht ersparen</hi>; denn Sie können unmöglich behaupten, dass es sich um selbstverständliche Dinge handelt.</p>
-        <p>Schicken Sie mir Ihre Liste<note n="6" place="foot" type="editorial">V. lettera <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4495">XXXVIII</ref>.</note> möglichst bald; ich werde entweder Ihre Gründe widerlegen, resp. meine Auffassung durch weitere Gründe stützen oder mich besiegt bekennen. Dann aber müssen die Verhandlungen ein Ende haben. Wir dürfen die Schwierigkeiten, die wegen des Friedens von S. Stefano<note
-            n="7" place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref>, n. 37.</note> entstehen, nicht nachahmen. Wir könnten ja die Sache so machen. In Bezug auf Vieles werden wir uns vollkommen verständigen, in Bezug auf Anderes uns wenigstens annähern; was dann von Meinungsdifferenzen zwischen uns übrig bleibt, legen wir dem Publikum in der Gestalt vor, dass Sie Anmerkungen unmittelbar unter den Text meiner Einleitung geben sei es in <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.854">
+            <p>Schicken Sie mir Ihre Liste<note n="6" place="foot" type="editorial">V. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4495">XXXVIII</ref>.</note> möglichst bald; ich werde entweder Ihre Gründe widerlegen, resp. meine Auffassung durch weitere Gründe stützen oder mich besiegt bekennen. Dann aber müssen die Verhandlungen ein Ende haben. Wir dürfen die Schwierigkeiten, die wegen des Friedens von S. Stefano<note n="7" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref>, n. 37.</note> entstehen, nicht nachahmen. Wir könnten ja die Sache so machen. In Bezug auf Vieles werden wir uns vollkommen verständigen, in Bezug auf Anderes uns wenigstens annähern; was dann von Meinungsdifferenzen zwischen uns übrig bleibt, legen wir dem Publikum in der Gestalt vor, dass Sie Anmerkungen unmittelbar unter den Text meiner Einleitung geben sei es in <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">
 rumänischer</ref>, sei es in <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">französischer</ref> Sprache. Gefällt Ihnen dieser Vorschlag?</p>
-        <p>Das <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1537">Frollo</persName> die Jassier Professur erhalten möge, wünsche ich ihm von Herzen<note
-            n="8" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1537">G.L. Frollo</persName>: v. <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.4492">
+            <p>Das <persName ref="[authorityLink]">Frollo</persName> die Jassier Professur erhalten möge, wünsche ich ihm von Herzen<note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">G.L. Frollo</persName>: v. <ref target="https://gams.uni-graz.at/o:hsa.letter.4492">
 XXXV</ref> e n. 5; <ref target="https://gams.uni-graz.at/o:hsa.letter.4495">
 XXXVIII</ref> e n. 2.</note>; bitte, grüssen Sie ihn bestens von mir.</p>
-        <closer>
-          <salute>Mit der Hoffnung auf glückliches rasches Einvernehmen</salute>
-          <lb/>
-          <salute>Ihr ganz ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Gegen <hi rend="unknown" rendition="#none">lu</hi> = <hi rend="unknown"
-              rendition="#none">le</hi> habe ich <hi rend="unknown"
-              rendition="#none">an sich</hi> ja Nichts (obwohl ich <hi rend="unknown"
-              rendition="#none">luturghi = liturghi</hi> nicht citiren würde)<note n="9" place="foot"
-                type="editorial">V. lettera del Hasdeu immediatamente precedente (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.4492">XXXV</ref>).</note>; aber was haben Sie gegen <hi
-              rend="unknown" rendition="#none">luò</hi> : <hi rend="unknown" rendition="#none">luà = ploò</hi> : <hi
-              rend="unknown" rendition="#none">ploà</hi>
-            <note n="10" place="foot" type="editorial">Cf. quanto scriverà lo Schuchardt in <bibl>
-                <hi rend="unknown" rendition="#none">
-                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
-                </hi>, p. xxxv</bibl> e n. 9 (e v. <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref>, n. 24).</note>?</p>
-          <p>
-            <hi rendition="#sup">+</hi> Und sollte unbetontes <hi rend="unknown"
-              rendition="#none">
-i</hi> vor Vokal zu <hi rend="unknown" rendition="#none">u</hi> geworden sein. Aus <hi
-              rend="unknown" rendition="#none">acquiere</hi> war doch <hi rend="unknown"
-              rendition="#none">ačere</hi> zu erwarten, wie aus <hi rend="unknown"
-              rendition="#none">quietus</hi>: (in)<hi rend="unknown" rendition="#none">cet</hi>
-            <note n="11" place="foot" type="editorial">V. <hi rend="unknown" rendition="#none">supra</hi>, n. 5.</note>.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            <closer>
+               <salute>Mit der Hoffnung auf glückliches rasches Einvernehmen</salute>
+               <lb/>
+               <salute>Ihr ganz ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Gegen <hi rend="unknown" rendition="#none">lu</hi> = <hi rend="unknown" rendition="#none">le</hi> habe ich <hi rend="unknown" rendition="#none">an sich</hi> ja Nichts (obwohl ich <hi rend="unknown" rendition="#none">luturghi = liturghi</hi> nicht citiren würde)<note n="9" place="foot" type="editorial">V. lettera del Hasdeu immediatamente precedente (<ref target="https://gams.uni-graz.at/o:hsa.letter.4492">XXXV</ref>).</note>; aber was haben Sie gegen <hi rend="unknown" rendition="#none">luò</hi> : <hi rend="unknown" rendition="#none">luà = ploò</hi> : <hi rend="unknown" rendition="#none">ploà</hi>
+                  <note n="10" place="foot" type="editorial">Cf. quanto scriverà lo Schuchardt in <bibl>
+                        <hi rend="unknown" rendition="#none">
+                           <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
+                        </hi>, p. xxxv</bibl> e n. 9 (e v. <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref>, n. 24).</note>?</p>
+               <p>
+                  <hi rendition="#sup">+</hi> Und sollte unbetontes <hi rend="unknown" rendition="#none">
+i</hi> vor Vokal zu <hi rend="unknown" rendition="#none">u</hi> geworden sein. Aus <hi rend="unknown" rendition="#none">acquiere</hi> war doch <hi rend="unknown" rendition="#none">ačere</hi> zu erwarten, wie aus <hi rend="unknown" rendition="#none">quietus</hi>: (in)<hi rend="unknown" rendition="#none">cet</hi>
+                  <note n="11" place="foot" type="editorial">V. <hi rend="unknown" rendition="#none">supra</hi>, n. 5.</note>.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

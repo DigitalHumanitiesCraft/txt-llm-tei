@@ -1,349 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Henri Gaidoz (118-SG34)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Magdalena</forename>
-            <surname>Rattey</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5278" type="PID">o:hsa.letter.5278</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">118-SG34</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</repository>
-            <idno type="shelfmark">SG34</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="7" unit="pages">7 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" ref="http://sws.geonames.org/2918752">Gotha</origPlace>
-              <origDate ana="dcterms:created" when="1899-04-12">1899-04-12</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Magdalena</forename>
-              <surname>Rattey</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Henri Gaidoz</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1541"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5278">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" key="#GID.1" ref="http://sws.geonames.org/2918752">Gotha</placeName>
-          <date when="1899-04-12">1899-04-12</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1541" ref="https://viaf.org/viaf/9972548">
-            <forename>Henri</forename>
-            <surname>Gaidoz</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Gotha</settlement>
-                <name ref="http://geonames.org/2918752" type="fcode:PPLA3">Gotha</name>
-                <location>
-                  <geo>10.70193,50.94823</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1541" type="context">
-                        Korrespondenz Hugo Schuchardt - Henri Gaidoz
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3080" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dankschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3082" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Photographie (Bild)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3216" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Druckfehler</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.461" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Politik- und Zeitgeschichte</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3972" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Grazer Tagespost</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5278" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5278" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5278" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5278" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5278" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5278" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5278" xml:id="IMG.7">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5278" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Gotha 12 April 99.</dateline>
-        <opener>Verehrter Herr,</opener>
-        <p>Zunächst meinen herzlichsten Dank für Ihr Bildniss. Sie schauen sehr gesund aus, durchaus nicht wie Jemand der mit seinem Magen zu thun hat; in meiner Erinnerung (ich sah Sie vor einem Vierteljahrhundert in Paris) leben Sie als ein hagerer Mann. Auch ich habe mich gerade 1895 photographiren lassen; seither zwar wieder und zwar vor wenigen Monaten, aber mit dem kleinen hübschem Töchterchen eines Freundes zusammen - sie ist missrathen, aber ich bin, wie meine Bekannten sagen, sehr gut getroffen. </p>
-        <p>Für <hi rend="unknown" rendition="#none">bouille</hi> &amp; <hi rend="unknown"
-            rendition="#none">thie</hi> besten Dank!<note n="1" place="foot"
-              type="editorial">
-Dieser Brief ist die Antwort auf den Brief vom 7. April 1899 (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.5275">115-03294</ref>). Gaidoz hatte in diesem die Sendung zweier Artikel über <hi
-              rend="unknown" rendition="#none">bouille</hi> und <hi rend="unknown" rendition="#none">thie</hi> angekündigt.</note>
-        </p>
-
-        <p>Die Druckfehler in Ihrem Briefe zu verbessern hab ich allerdings versäumt; es wird aber kein grosser Schaden dadurch angerichtet werden (ich habe noch an Leskien<note
-            n="2" place="foot" type="editorial">Zur Korrespondenz zwischen <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2031">August Leskien</persName> und Schuchardt vgl. Mücke, Johannes. 2015. 'Die Korrespondenz zwischen August Leskien und Hugo Schuchardt'. In Bernhard Hurch (Hg.) (2007-). <hi
-              rend="unknown" rendition="#none">Hugo Schuchardt Archiv</hi>, siehe <ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.2031">Webedition</ref>.</note> in Leipzig, mit dem ich sehr befreundet bin, ein Exemplar gesandt). Anbei der Brief von Jagić den er mir in Bezug auf die Kreuzbandsendung (die ich mit keinem Worte begleitet hatte) schrieb; Sie werden natürlich dem Redakteur der <hi
-            rend="unknown" rendition="#none">Pensée slave </hi>oder seinen Mitarbeitern gegenüber keinen Gebrauch davon machen, obgleich ich überzeugt bin dass ihm das durchaus gleichgültig sein würde. </p>
-
-        <p>Was Elsass-Lothringen anlangt, so würde ich es vorziehen wenn wir uns nicht darüber unterhielten. Ich glaube dass bei dem <pb
-            facs="#IMG.2" n="2"/> grössten Bestreben <hi rend="unknown"
-            rendition="#none">objektiv</hi> zu urtheilen, bei Jedem von uns Beiden persönliche Beziehungen und Erfahrungen mitwirken werden. Über die Sprachbehandlung selbst sind zwar unsere Ansichten wesentlich die gleichen, und wenn wir über <hi
-            rend="unknown"
-            rendition="#none">Jenny</hi> u.s.w., aneinander und zeitweilig, ich bedauere es, auseinander gekommen sind, so beruhte das mehr auf Missverständnissen. Aber ich glaube nicht dass wir alles Vorhergegangene, Krieg und Eroberung mit gleichen Augen anzusehen vermögen. Anderseits würde ich Erörterungen über Plebiscite im Allgemeinen durchaus nicht aus dem Wege gehen. Ich habe mich auch mal mit dem Gedanken beschäftigt: in welchem Umfange sind sie überhaupt zulässig? und wie würden ihre Ergebnisse in die Praxis umzusetzen sein? Wie lange muss die Staatszugehörigkeit gedauert haben, auf welchen Ursachen (Annexion, friedlichen Verträgen, Erbschaft) beruhen nun vermittelst Volkswillens gelöst werden zu dürfen? Ich denke dabei fast an sämtliche Staaten Europas, und insbesondere werde ich auf die Sonderbundskriege der Schweiz und Nordamerikas geführt. Und zweitens soll die Abstimmung nach Kreisen, Bezirken, Ortschaften gültig sein? Die einfache Majorität, die 2/3 Majorität? U.s.w. Ich verliere mich, und tauche schliesslich mit der <pb
-            facs="#IMG.3" n="3"/> Ueberzeugung auf dass wenn überall den Bevölkerungen ihre berechtigten Wünsche zugestanden würden, die staatliche Zugehörigkeit etwas ganz Gleichgültiges sein würde.</p>
-        <p>Wenn Sie sagen dass die kosmopolitische Schwärmerei der Deutschen „prähistorisch” sei,<note n="3"
-            place="foot" type="editorial">Siehe Brief vom 7. April 1899 (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.5275">115-03294</ref>), Gaidoz an Schuchardt: „La <hi
-              rend="unknown"
-            rendition="#none">Schwärmerei</hi> humanitaire des Allemands est chose préhistorique“.</note> so sagen Sie ja im Grunde dasselbe was ich sage. Nur habe ich hinzugefügt dass die andern Nationen die Deutschen von dieser Schwärmerei kurirt haben. Mit welcher Verachtung haben sie, vor Allem unsere guten Vettern, die Engländer, auf die Deutschen in politischer Beziehung herabgesehen! Wir sind hierin unvergleichlich schlechter behandelt worden als die ebenfalls politisch ohnmächtigen und zerrissenen Italiener. Der Rückschlag ist erklärlich, aber ich billige ihn nicht. Auch heute sehen Sie übrigens dass z.B. die Polenpolitik der Regierung von einem grossen Theil der Deutschen, mindestens von der freisinnigen Partei, perhorrescirt wird. Heine lässt sich in Politicis wohl nicht citiren: er macht sich über die Polenschwärmerei der Deutschen lustig, wie anderswo über die Deutschen im Allgemeinen, und ist bei denen von der strengen Observanz wegen seines mangelnden Patriotismus in Verruf gethan. Ich glaube in der That nicht dass den <pb
-            facs="#IMG.4" n="4"/> Polen die Zusagen gehalten worden sind die ihnen bei der Uebernahme in dem preussischen Staatsverband gemacht worden sind; ich bin darüber nicht näher unterrichtet – ich erinnere mich nur dass man die Revolution der Polen (in Preussen) als Entschuldigung für die Nichterfüllung dieser Zusagen angeführt hat. Loyale Unterthanen sind die Polen allerdings im Allgemeinen nicht gewesen, und sie lassen sich in dieser Hinsicht nicht mit den Finnen vergleichen. Was die Deutschen besonders ernüchtert hat, war die Erkenntniss dass wenn von Polen im historischen Sinn geredet wurde, immer nur um die Interessen des Adels, nicht des Bürger- und Bauernthums handelte. Beiläufig gesagt habe ich noch 1863 einem (russisch-)polnischen Rebellen mit meinem Passe geholfen. </p>
-        <p>Ich muss Ihren Ausspruch dass die Seele der Deutschen nicht mehr „schwäbisch”, sondern „preussisch” sei,<note
-            n="4" place="foot"
-            type="editorial">Vgl. ebd. „l’âme de l’Allemagne n’est plus souabe, elle est prussienne“. </note> als ungerecht oder vielmehr unrichtig bezeichnen. Die verschiedenen „Kulturen” leben noch nebeneinander fort, wie vor 1870; oder mit andern Worten, mehr Partikularismus als Manchen lieb ist, nur in Bezug auf die politische Einheit sind die Deutschen einen Sinnes. Gewisse Borussiaca sind dem Bajuvaren oder dem cisrhenanischen Alemannen ebenso unsympathisch wie dem transrhenanischen, dem Elsässer. Damit lässt sich nicht so operiren wie Sie vermeinen. Deutschland ist im Gemüthe so wenig preussisch wie Italien piemontisch ist; denn wenn auch der Chauvinismus der doch keine Eigenthümlichkeit der Deutschen ist, vielmehr sich bei ihnen ziemlich spät eingestellt hat, mehr oder weniger in ganz Deutsch<pb
-            facs="#IMG.5" n="5"/>land verbreitet ist, so bestehen doch die sonstigen seelischen Eigenschaften in ihrer provinziellen Art fort. </p>
-        <p>Ich habe das Buch von Loiseau<note n="5" place="foot" type="editorial">Loiseau, Charles. 1898. <hi
-              rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5756">Le Balkan slave et la crise autrichienne</ref>
-              </bibl>
-            </hi>. Paris: Perrin et Cie.</note> gelesen, ich kann nicht sagen dass seine <hi rend="unknown"
-            rendition="#none">termes mesurés</hi> seien, er hat die Personen nicht angegriffen, aber in leidenschaftlicher und parteiischer Weise Alles was östreichisch ist. Ich habe meine ungünstige Meinung über ihn geraume Zeit vor seiner Ausweisung ausgesprochen.<note
-            n="6" place="foot"
-              type="editorial">Vgl. Schuchardt, Hugo. 1898. 'Zur Literatur über die Sprachenkämpfe I-II'. In <hi
-              rend="unknown"
-              rendition="#none">Beilage zur Allgemeinen Zeitung (Augsburg, München) (3. November 1898)</hi>. <ref
-            target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.932">[Archiv-/Breviernummer: 325</ref>].</note> Ich habe Nichts dagegen dass man fremdländischen Agitatoren die Freiheit der Rede verstatte, aber das möge dann in <hi
-            rend="unknown" rendition="#none">allen</hi> Staaten geschehen. Vom Standpunkt der Staatssicherheit ist doch ein Mann wie Loiseau der mit einem Theil der östreichischen Bevölkerung innige Beziehungen unterhält, um nicht zu sagen conspirirt, weit bedenklicher als irgend ein Journalist, der den Einheimischen gegenüber mehr oder weniger isolirt ist, mit irgendwelcher Depesche im Ausland.</p>
-        <p>Dass Oestreich und ebenso Ungarn sich nach der Schweiz richten solle,<note n="7" place="foot"
-              type="editorial">Diese Aufforderung tut Gaidoz in seinem Brief an die <hi rend="unknown"
-              rendition="#none">Pensée Slave</hi> (1. April 1899) mit folgenden Worten kund: „(…) et je ne saurais trop vous recommander l’exemple de la Suisse, exemple sur lequel devraient se régler ceux surtout qui veulent transformer l’Autriche-Hongrie dans le sens féderatif.“ Vgl. S. 483-484 in [<ref
-            target="http://gallica.bnf.fr/ark:/12148/bpt6k2004994/f480">Gaidoz 1899b</ref>].</note> ist oft gesagt worden, aber ebenso oft sind die entgegenstehenden Schwierigkeiten hervorgehoben worden. Es sind nicht bloss die grössere Menge der Sprachen, sondern was Östreich anlangt, die staatsrechtlichen Tendenzen. Wenn Sie je gewünscht haben dass Oestreich der Schweiz ähnlich werden möchte, so durften <pb
-            facs="#IMG.6" n="6"/> Sie nicht an eine Wiederaufrichtung des Königreichs Böhmen denken.</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Neu-Babylon</hi> von meinem Landsmann Hochenburger habe ich wenig bedeutend gefunden (ich meine als intellektuelle Leistung) und habe Ihnen aus diesem Grunde die Nummern der <hi
-            rend="unknown" rendition="#none">Tagespost</hi>, in dem es zuerst abgedruckt war, nicht geschickt.</p>
-        <p>Ich bin immer in sehr gedrückter Stimmung; ich kann mich von meiner Mutter nicht trennen deren Lebenspfad stark nach abwärts geht, auf der andern Seite erschreckt mich die Aussicht Monate lang in diesem Gotha zu bleiben, das mir keine Erholung bietet und wo ich die verschiedenen Arbeiten die ich begonnen habe, nicht fortsetzen kann.</p>
-        <closer>
-          <salute>Mit bestem Grusse</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H.Sch.</persName>
-          </signed>
-        </closer>
-        <pb facs="#IMG.7" n="7"/>
-      </div>
-    </body>
-  </text>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5278" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Gotha 12 April 99.</dateline>
+            <opener>Verehrter Herr,</opener>
+            <p>Zunächst meinen herzlichsten Dank für Ihr Bildniss. Sie schauen sehr gesund aus, durchaus nicht wie Jemand der mit seinem Magen zu thun hat; in meiner Erinnerung (ich sah Sie vor einem Vierteljahrhundert in Paris) leben Sie als ein hagerer Mann. Auch ich habe mich gerade 1895 photographiren lassen; seither zwar wieder und zwar vor wenigen Monaten, aber mit dem kleinen hübschem Töchterchen eines Freundes zusammen - sie ist missrathen, aber ich bin, wie meine Bekannten sagen, sehr gut getroffen. </p>
+            <p>Für <hi rend="unknown" rendition="#none">bouille</hi> &amp; <hi rend="unknown" rendition="#none">thie</hi> besten Dank!<note n="1" place="foot" type="editorial">
+Dieser Brief ist die Antwort auf den Brief vom 7. April 1899 (<ref target="https://gams.uni-graz.at/o:hsa.letter.5275">115-03294</ref>). Gaidoz hatte in diesem die Sendung zweier Artikel über <hi rend="unknown" rendition="#none">bouille</hi> und <hi rend="unknown" rendition="#none">thie</hi> angekündigt.</note>
+            </p>
+            <p>Die Druckfehler in Ihrem Briefe zu verbessern hab ich allerdings versäumt; es wird aber kein grosser Schaden dadurch angerichtet werden (ich habe noch an Leskien<note n="2" place="foot" type="editorial">Zur Korrespondenz zwischen <persName ref="[authorityLink]">August Leskien</persName> und Schuchardt vgl. Mücke, Johannes. 2015. 'Die Korrespondenz zwischen August Leskien und Hugo Schuchardt'. In Bernhard Hurch (Hg.) (2007-). <hi rend="unknown" rendition="#none">Hugo Schuchardt Archiv</hi>, siehe <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2031">Webedition</ref>.</note> in Leipzig, mit dem ich sehr befreundet bin, ein Exemplar gesandt). Anbei der Brief von Jagić den er mir in Bezug auf die Kreuzbandsendung (die ich mit keinem Worte begleitet hatte) schrieb; Sie werden natürlich dem Redakteur der <hi rend="unknown" rendition="#none">Pensée slave </hi>oder seinen Mitarbeitern gegenüber keinen Gebrauch davon machen, obgleich ich überzeugt bin dass ihm das durchaus gleichgültig sein würde. </p>
+            <p>Was Elsass-Lothringen anlangt, so würde ich es vorziehen wenn wir uns nicht darüber unterhielten. Ich glaube dass bei dem <pb facs="#IMG.2" n="2"/> grössten Bestreben <hi rend="unknown" rendition="#none">objektiv</hi> zu urtheilen, bei Jedem von uns Beiden persönliche Beziehungen und Erfahrungen mitwirken werden. Über die Sprachbehandlung selbst sind zwar unsere Ansichten wesentlich die gleichen, und wenn wir über <hi rend="unknown" rendition="#none">Jenny</hi> u.s.w., aneinander und zeitweilig, ich bedauere es, auseinander gekommen sind, so beruhte das mehr auf Missverständnissen. Aber ich glaube nicht dass wir alles Vorhergegangene, Krieg und Eroberung mit gleichen Augen anzusehen vermögen. Anderseits würde ich Erörterungen über Plebiscite im Allgemeinen durchaus nicht aus dem Wege gehen. Ich habe mich auch mal mit dem Gedanken beschäftigt: in welchem Umfange sind sie überhaupt zulässig? und wie würden ihre Ergebnisse in die Praxis umzusetzen sein? Wie lange muss die Staatszugehörigkeit gedauert haben, auf welchen Ursachen (Annexion, friedlichen Verträgen, Erbschaft) beruhen nun vermittelst Volkswillens gelöst werden zu dürfen? Ich denke dabei fast an sämtliche Staaten Europas, und insbesondere werde ich auf die Sonderbundskriege der Schweiz und Nordamerikas geführt. Und zweitens soll die Abstimmung nach Kreisen, Bezirken, Ortschaften gültig sein? Die einfache Majorität, die 2/3 Majorität? U.s.w. Ich verliere mich, und tauche schliesslich mit der <pb facs="#IMG.3" n="3"/> Ueberzeugung auf dass wenn überall den Bevölkerungen ihre berechtigten Wünsche zugestanden würden, die staatliche Zugehörigkeit etwas ganz Gleichgültiges sein würde.</p>
+            <p>Wenn Sie sagen dass die kosmopolitische Schwärmerei der Deutschen „prähistorisch” sei,<note n="3" place="foot" type="editorial">Siehe Brief vom 7. April 1899 (<ref target="https://gams.uni-graz.at/o:hsa.letter.5275">115-03294</ref>), Gaidoz an Schuchardt: „La <hi rend="unknown" rendition="#none">Schwärmerei</hi> humanitaire des Allemands est chose préhistorique“.</note> so sagen Sie ja im Grunde dasselbe was ich sage. Nur habe ich hinzugefügt dass die andern Nationen die Deutschen von dieser Schwärmerei kurirt haben. Mit welcher Verachtung haben sie, vor Allem unsere guten Vettern, die Engländer, auf die Deutschen in politischer Beziehung herabgesehen! Wir sind hierin unvergleichlich schlechter behandelt worden als die ebenfalls politisch ohnmächtigen und zerrissenen Italiener. Der Rückschlag ist erklärlich, aber ich billige ihn nicht. Auch heute sehen Sie übrigens dass z.B. die Polenpolitik der Regierung von einem grossen Theil der Deutschen, mindestens von der freisinnigen Partei, perhorrescirt wird. Heine lässt sich in Politicis wohl nicht citiren: er macht sich über die Polenschwärmerei der Deutschen lustig, wie anderswo über die Deutschen im Allgemeinen, und ist bei denen von der strengen Observanz wegen seines mangelnden Patriotismus in Verruf gethan. Ich glaube in der That nicht dass den <pb facs="#IMG.4" n="4"/> Polen die Zusagen gehalten worden sind die ihnen bei der Uebernahme in dem preussischen Staatsverband gemacht worden sind; ich bin darüber nicht näher unterrichtet – ich erinnere mich nur dass man die Revolution der Polen (in Preussen) als Entschuldigung für die Nichterfüllung dieser Zusagen angeführt hat. Loyale Unterthanen sind die Polen allerdings im Allgemeinen nicht gewesen, und sie lassen sich in dieser Hinsicht nicht mit den Finnen vergleichen. Was die Deutschen besonders ernüchtert hat, war die Erkenntniss dass wenn von Polen im historischen Sinn geredet wurde, immer nur um die Interessen des Adels, nicht des Bürger- und Bauernthums handelte. Beiläufig gesagt habe ich noch 1863 einem (russisch-)polnischen Rebellen mit meinem Passe geholfen. </p>
+            <p>Ich muss Ihren Ausspruch dass die Seele der Deutschen nicht mehr „schwäbisch”, sondern „preussisch” sei,<note n="4" place="foot" type="editorial">Vgl. ebd. „l’âme de l’Allemagne n’est plus souabe, elle est prussienne“. </note> als ungerecht oder vielmehr unrichtig bezeichnen. Die verschiedenen „Kulturen” leben noch nebeneinander fort, wie vor 1870; oder mit andern Worten, mehr Partikularismus als Manchen lieb ist, nur in Bezug auf die politische Einheit sind die Deutschen einen Sinnes. Gewisse Borussiaca sind dem Bajuvaren oder dem cisrhenanischen Alemannen ebenso unsympathisch wie dem transrhenanischen, dem Elsässer. Damit lässt sich nicht so operiren wie Sie vermeinen. Deutschland ist im Gemüthe so wenig preussisch wie Italien piemontisch ist; denn wenn auch der Chauvinismus der doch keine Eigenthümlichkeit der Deutschen ist, vielmehr sich bei ihnen ziemlich spät eingestellt hat, mehr oder weniger in ganz Deutsch<pb facs="#IMG.5" n="5"/>land verbreitet ist, so bestehen doch die sonstigen seelischen Eigenschaften in ihrer provinziellen Art fort. </p>
+            <p>Ich habe das Buch von Loiseau<note n="5" place="foot" type="editorial">Loiseau, Charles. 1898. <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5756">Le Balkan slave et la crise autrichienne</ref>
+                     </bibl>
+                  </hi>. Paris: Perrin et Cie.</note> gelesen, ich kann nicht sagen dass seine <hi rend="unknown" rendition="#none">termes mesurés</hi> seien, er hat die Personen nicht angegriffen, aber in leidenschaftlicher und parteiischer Weise Alles was östreichisch ist. Ich habe meine ungünstige Meinung über ihn geraume Zeit vor seiner Ausweisung ausgesprochen.<note n="6" place="foot" type="editorial">Vgl. Schuchardt, Hugo. 1898. 'Zur Literatur über die Sprachenkämpfe I-II'. In <hi rend="unknown" rendition="#none">Beilage zur Allgemeinen Zeitung (Augsburg, München) (3. November 1898)</hi>. <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.932">[Archiv-/Breviernummer: 325</ref>].</note> Ich habe Nichts dagegen dass man fremdländischen Agitatoren die Freiheit der Rede verstatte, aber das möge dann in <hi rend="unknown" rendition="#none">allen</hi> Staaten geschehen. Vom Standpunkt der Staatssicherheit ist doch ein Mann wie Loiseau der mit einem Theil der östreichischen Bevölkerung innige Beziehungen unterhält, um nicht zu sagen conspirirt, weit bedenklicher als irgend ein Journalist, der den Einheimischen gegenüber mehr oder weniger isolirt ist, mit irgendwelcher Depesche im Ausland.</p>
+            <p>Dass Oestreich und ebenso Ungarn sich nach der Schweiz richten solle,<note n="7" place="foot" type="editorial">Diese Aufforderung tut Gaidoz in seinem Brief an die <hi rend="unknown" rendition="#none">Pensée Slave</hi> (1. April 1899) mit folgenden Worten kund: „(…) et je ne saurais trop vous recommander l’exemple de la Suisse, exemple sur lequel devraient se régler ceux surtout qui veulent transformer l’Autriche-Hongrie dans le sens féderatif.“ Vgl. S. 483-484 in [<ref target="http://gallica.bnf.fr/ark:/12148/bpt6k2004994/f480">Gaidoz 1899b</ref>].</note> ist oft gesagt worden, aber ebenso oft sind die entgegenstehenden Schwierigkeiten hervorgehoben worden. Es sind nicht bloss die grössere Menge der Sprachen, sondern was Östreich anlangt, die staatsrechtlichen Tendenzen. Wenn Sie je gewünscht haben dass Oestreich der Schweiz ähnlich werden möchte, so durften <pb facs="#IMG.6" n="6"/> Sie nicht an eine Wiederaufrichtung des Königreichs Böhmen denken.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Neu-Babylon</hi> von meinem Landsmann Hochenburger habe ich wenig bedeutend gefunden (ich meine als intellektuelle Leistung) und habe Ihnen aus diesem Grunde die Nummern der <hi rend="unknown" rendition="#none">Tagespost</hi>, in dem es zuerst abgedruckt war, nicht geschickt.</p>
+            <p>Ich bin immer in sehr gedrückter Stimmung; ich kann mich von meiner Mutter nicht trennen deren Lebenspfad stark nach abwärts geht, auf der andern Seite erschreckt mich die Aussicht Monate lang in diesem Gotha zu bleiben, das mir keine Erholung bietet und wo ich die verschiedenen Arbeiten die ich begonnen habe, nicht fortsetzen kann.</p>
+            <closer>
+               <salute>Mit bestem Grusse</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H.Sch.</persName>
+               </signed>
+            </closer>
+            <pb facs="#IMG.7" n="7"/>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

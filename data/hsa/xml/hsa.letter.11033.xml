@@ -1,300 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Zsigmond Simonyi (116-HSZS29)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/11033" type="PID">o:hsa.letter.11033</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">116-HSZS29</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Ungarn</country>
-            <settlement>Budapest</settlement>
-            <repository ref="https://mta.hu/english/">Abteilung für Handschriften und Alte Bücher, Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften</repository>
-            <idno type="shelfmark">HSZS29</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1918-09-23">1918-09-23</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2020">2020</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Zsigmond Simonyi</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2738"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.11033">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1918-09-23">1918-09-23</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2738" ref="https://viaf.org/viaf/51710141">
-            <forename>Zsigmond</forename>
-            <surname>Simonyi</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2738" type="context">
-                        Korrespondenz Hugo Schuchardt - Zsigmond Simonyi
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3971" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Magyar Nyelvör</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.11033" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://mta.hu/english/">Ungarischen Akademie der Wissenschaften</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.11033" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://mta.hu/english/">Ungarischen Akademie der Wissenschaften</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.11033" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://mta.hu/english/">Ungarischen Akademie der Wissenschaften</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.11033" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://mta.hu/english/">Ungarischen Akademie der Wissenschaften</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.11033" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>G. 23.9.‘18</dateline>
-        <opener>Lieber Freund,</opener>
-        <p> Als ich vor längerer Zeit eine Karte von der Hand Ihrer Fräulein Tochter erhielt,<note n="1" place="foot" type="editorial">Die Karte ist erhalten, 
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.11033" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>G. 23.9.‘18</dateline>
+            <opener>Lieber Freund,</opener>
+            <p> Als ich vor längerer Zeit eine Karte von der Hand Ihrer Fräulein Tochter erhielt,<note n="1" place="foot" type="editorial">Die Karte ist erhalten, 
 HSA 10577 (16.8.1916 <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1600">[Wolf, <hi rend="unknown" rendition="#none">Nachlaß</hi>, 355</ref>
-
-            </bibl>, fälschliche Dat. 16.8.1918].</note> freut ich mich sehr, da der Anblick des Parkbrunnens mir ihre oder der Familie Anwesenheit in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> anzuzeigen schien. Der Anblick des Ehepaars – es <hi
-            rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1600">[Wolf, <hi rend="unknown" rendition="#none">Nachlaß</hi>, 355</ref>
+                  </bibl>, fälschliche Dat. 16.8.1918].</note> freut ich mich sehr, da der Anblick des Parkbrunnens mir ihre oder der Familie Anwesenheit in <placeName ref="[authorityLink]">Graz</placeName> anzuzeigen schien. Der Anblick des Ehepaars – es <hi rend="unknown" rendition="#none">
 klingt</hi> das nur unschmeichelhaft – bereitete mir eine herbe Enttäuschung. Eine vorjährige, also stark abgelagerte Ansichtskarte! </p>
-        <p>Entschuldigen Sie mich bei Ihrer Fräulein Tochter wegen meines Schweigens; ich gehöre zu den Hühnern<note
-            n="2" place="foot" type="editorial">Am unteren Rand ein P.S. „Der džekische Dolch von K. Kramář hat mich nicht aufgekitzelt; übrigens scheint dieser Kr. ebenso gefährlich wie sein Namensvetter“.</note>
-          <pb facs="#IMG.2"
-            n="2"/>die im Sommer keine Ostereier legen. Jetzt brieflenzelt es wieder ein wenig bei mir. Ich wollte, offen gestanden Ihnen nicht eher schreiben, als bis ich Ihnen etwas zu senden hätte: Gedrucktes oder Druckfähiges. Der erstere Fall ist nun eingetreten: ich schicke Ihnen meine berberische Abhandlung, deren Abdruck ich beschleunigt habe,<note
-            n="3" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.556">Schuchardt, „Die romanischen Lehnwörter im Berberischen“, <hi
-                  rend="unknown" rendition="#none">SB d. Wien. Ak.</hi> 188, IV, 1918, 1-82.</ref>
-            </bibl>
-
-          </note> weil ich solche Korrekturen bald nicht mehr werde erledigen können (obwohl meine Linsentrübung seit zwei Jahren keine allzustarken Fortschritte gemacht hat). Ich habe sonst kein Exemplar nach drüben geschickt; man wird mir das hoffentlich von keiner Seite übelnehmen. Auch Sie werden nicht viel Nutzbares darin finden, vielleicht hie und da etwas Methodologisches ausgenommen (wie 27f.) <pb
-            facs="#IMG.3" n="3"/> Beinahe hätte ich für den <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">M. Nyv.</ref> etwas eingeschickt. Da ich gerade bei der Fremdwörterfrage war und bin, regten mich L.s Ausfälle gegen die madjarische Terminologie von Schm. auf und an. Aber das ist ein weites und schwieriges Gebiet, zugleich ein internationales (soweit es sich um die Sprache der <hi
-            rend="unknown" rendition="#none">Wissenschaft</hi> handelt). Vielleicht komme ich doch wenn Anderes, schon lange Erliegendes, erledigt sein wird, dazu einige unpassende Worte über diesen Gegenstand, ich weiß noch nicht in welchem Sinne, aufzusetzen. </p>
-        <p>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">L. Spitzer</persName> hat sich zu Anfang August mit einer Antrittsvorlesung über Methoden der Syntax<note
-            n="4" place="foot" type="editorial">Nicht im Druck nachgewiesen.</note> habilitiert. Seine Seele <pb
-            facs="#IMG.4" n="4"/> ist in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName>, zu den Füßen von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-Meyer-Lübke</persName>; sein Leib in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName>, feldgrau. Er ist mir manchmal zu hypergescheit; sagen wir es rund heraus, zu talmudistisch. Im Anschluß an einen frühen Nyv.-aufsatz von Ihnen schrieb er kürzlich über den <hi
-            rend="unknown"
-            rendition="#none">Kannitverstan</hi>-typus; ich erinnerte ihn daran daß ich ausführlich den gleichen Gegenstand erörtert hätte, mit den Worten: „zu Simonyi … und zu Schuchardt Rom. Etym. I …!! Er erwiderte darauf, er kenne meine Rom. Etym. I sehr gut, aber er habe eben nur einen Nachtrag zu Ihnen geben wollen. Ich replizierte: Also ein Jubiläumsnachtrag? <note
-            n="5" place="foot" type="editorial">In der von Bernhard Hurch besorgten Edition <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1599">
-                <hi rend="unknown" rendition="#none">Leo Spitzers Briefe an Hugo Schuchardt</hi> (2006)</ref>
-            </bibl> findet sich kein in diese Richtung weisender Hinweis.</note>
-        </p>
-        <p>Ich schließe mit dem, womit ich beginnen wollte (meine Zerstreutheit ist daran schuld), nämlich mit der Frage ob Sie seither nicht von Ihrem Herrn Sohn Nachricht erhalten haben. Jedenfalls bedaure ich aufrichtig daß Sie so lange in Sorge gewesen sind. Ich bitte mich Ihren Damen zu empfehlen. </p>
-        <closer>
-          <salute>Mit herzl. Gruß</salute>
-          <lb/>
-          <salute>Ihr ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+            <p>Entschuldigen Sie mich bei Ihrer Fräulein Tochter wegen meines Schweigens; ich gehöre zu den Hühnern<note n="2" place="foot" type="editorial">Am unteren Rand ein P.S. „Der džekische Dolch von K. Kramář hat mich nicht aufgekitzelt; übrigens scheint dieser Kr. ebenso gefährlich wie sein Namensvetter“.</note>
+               <pb facs="#IMG.2" n="2"/>die im Sommer keine Ostereier legen. Jetzt brieflenzelt es wieder ein wenig bei mir. Ich wollte, offen gestanden Ihnen nicht eher schreiben, als bis ich Ihnen etwas zu senden hätte: Gedrucktes oder Druckfähiges. Der erstere Fall ist nun eingetreten: ich schicke Ihnen meine berberische Abhandlung, deren Abdruck ich beschleunigt habe,<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.556">Schuchardt, „Die romanischen Lehnwörter im Berberischen“, <hi rend="unknown" rendition="#none">SB d. Wien. Ak.</hi> 188, IV, 1918, 1-82.</ref>
+                  </bibl>
+               </note> weil ich solche Korrekturen bald nicht mehr werde erledigen können (obwohl meine Linsentrübung seit zwei Jahren keine allzustarken Fortschritte gemacht hat). Ich habe sonst kein Exemplar nach drüben geschickt; man wird mir das hoffentlich von keiner Seite übelnehmen. Auch Sie werden nicht viel Nutzbares darin finden, vielleicht hie und da etwas Methodologisches ausgenommen (wie 27f.) <pb facs="#IMG.3" n="3"/> Beinahe hätte ich für den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">M. Nyv.</ref> etwas eingeschickt. Da ich gerade bei der Fremdwörterfrage war und bin, regten mich L.s Ausfälle gegen die madjarische Terminologie von Schm. auf und an. Aber das ist ein weites und schwieriges Gebiet, zugleich ein internationales (soweit es sich um die Sprache der <hi rend="unknown" rendition="#none">Wissenschaft</hi> handelt). Vielleicht komme ich doch wenn Anderes, schon lange Erliegendes, erledigt sein wird, dazu einige unpassende Worte über diesen Gegenstand, ich weiß noch nicht in welchem Sinne, aufzusetzen. </p>
+            <p>
+               <persName ref="[authorityLink]">L. Spitzer</persName> hat sich zu Anfang August mit einer Antrittsvorlesung über Methoden der Syntax<note n="4" place="foot" type="editorial">Nicht im Druck nachgewiesen.</note> habilitiert. Seine Seele <pb facs="#IMG.4" n="4"/> ist in <placeName ref="[authorityLink]">Bonn</placeName>, zu den Füßen von <persName ref="[authorityLink]">
+Meyer-Lübke</persName>; sein Leib in <placeName ref="[authorityLink]">Wien</placeName>, feldgrau. Er ist mir manchmal zu hypergescheit; sagen wir es rund heraus, zu talmudistisch. Im Anschluß an einen frühen Nyv.-aufsatz von Ihnen schrieb er kürzlich über den <hi rend="unknown" rendition="#none">Kannitverstan</hi>-typus; ich erinnerte ihn daran daß ich ausführlich den gleichen Gegenstand erörtert hätte, mit den Worten: „zu Simonyi … und zu Schuchardt Rom. Etym. I …!! Er erwiderte darauf, er kenne meine Rom. Etym. I sehr gut, aber er habe eben nur einen Nachtrag zu Ihnen geben wollen. Ich replizierte: Also ein Jubiläumsnachtrag? <note n="5" place="foot" type="editorial">In der von Bernhard Hurch besorgten Edition <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1599">
+                        <hi rend="unknown" rendition="#none">Leo Spitzers Briefe an Hugo Schuchardt</hi> (2006)</ref>
+                  </bibl> findet sich kein in diese Richtung weisender Hinweis.</note>
+            </p>
+            <p>Ich schließe mit dem, womit ich beginnen wollte (meine Zerstreutheit ist daran schuld), nämlich mit der Frage ob Sie seither nicht von Ihrem Herrn Sohn Nachricht erhalten haben. Jedenfalls bedaure ich aufrichtig daß Sie so lange in Sorge gewesen sind. Ich bitte mich Ihren Damen zu empfehlen. </p>
+            <closer>
+               <salute>Mit herzl. Gruß</salute>
+               <lb/>
+               <salute>Ihr ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">
 HSchuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Haben Sie zum 70. von Winkler (28. Sept.) etwas vorbereitet?<note n="6" place="foot" type="editorial">
-              <persName
-                ref="https://gams.uni-graz.at/o:hsa.persons#P.3021">Heinrich August Winkler</persName> (1848-1930), Sprach- und Völkerkundler, Prof. in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.191">
+               </signed>
+            </closer>
+            <postscript>
+               <p>Haben Sie zum 70. von Winkler (28. Sept.) etwas vorbereitet?<note n="6" place="foot" type="editorial">
+                     <persName ref="[authorityLink]">Heinrich August Winkler</persName> (1848-1930), Sprach- und Völkerkundler, Prof. in <placeName ref="[authorityLink]">
 Breslau</placeName>. Er war am 28.9.1848 in Oppeln geboren.</note>
-          </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

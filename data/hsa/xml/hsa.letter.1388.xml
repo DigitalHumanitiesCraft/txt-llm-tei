@@ -1,315 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Adolphe Dietrich an Hugo Schuchardt (01-02307)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1391">
-            <forename>Adolphe</forename>
-            <surname>Dietrich</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Philipp</forename>
-            <surname>Krämer</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/1388" type="PID">o:hsa.letter.1388</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-02307</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">02307</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="fr"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1391">
-                <forename>Adolphe</forename>
-                <surname>Dietrich</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" ref="http://sws.geonames.org/2988507">Paris</origPlace>
-              <origDate ana="dcterms:created" when="1891-10-18">1891-10-18</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Philipp</forename>
-              <surname>Krämer</surname>
-            </persName>
-          </author>
-          <date when="2013">2013</date>
-          <title>Die Korrespondenz zwischen Adolphe Dietrich und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1391"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.1388">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1391">
-            <forename>Adolphe</forename>
-            <surname>Dietrich</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" key="#GID.1" ref="http://sws.geonames.org/2988507">Paris</placeName>
-          <date when="1891-10-18">1891-10-18</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Paris</settlement>
-                <name ref="http://geonames.org/2988507" type="fcode:PPLC">Paris</name>
-                <location>
-                  <geo>2.3488,48.85341</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1391" type="context">
-                        Korrespondenz Adolphe Dietrich - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3215" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsvorhaben</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.353" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französischbasierte Kreolsprache (Guadeloupe)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.348" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französischbasierte Kreolsprache (Réunion)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="fr">Französisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1388" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1388" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1388" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1388" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1388" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1388" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.1388" xml:lang="fr">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Monsieur le Professeur,</opener>
-        <p>C’est bien plus que audace que de vous prendre au mot: je voudrais vous écrire dorénavant tout en français, si vous me le permettiez. Vous pourriez alors même tirer profit de mes lettres, en écrivant une brochure sur l’allemand-français d’un maître de français. Ce serait une drôle d’histoire!</p>
-        <p>Pardonnez-moi cette plaisanterie! Je suis aujourd’hui de si bonne humeur que j’ai failli en oublier la cause. C’est votre lettre qui m’a fait revivre et je vous en remercie de tout mon cœur.</p>
-
-        <p>Les premières semaines que j’ai passées à Paris étaient bien peu agréables: D’abord des troubles affreux de mon cœur – je parle très-sérieusement –, l’acclimatation en tout cas désagréable, l’isolement absolu dans une ville étrangère, l’impossibilité de faire des connaissances comme il faut, et par là pas de moyen d’atteindre un des buts principaux de mon voyage, une ambassade autrichienne – <pb
-            facs="#IMG.2" n="2"/>spécialement chargée de m’aider – s’opposant à des démarches toutes simples à cause du manque d’un précédent, - et en fin de conte des proviseurs de lycées ne me permettant d’assister aux course – quoique le Vice-Recteur m’y ait autorisé – qu’avant le vingt octobre (au Lycée Louis-le-Grand) et le premier de novembre (au Lycée St. Louis) – tout cela avait fait disparaître ma bonne humeur – j’étais devenu plus malheureux que jamais.</p>
-        <p>Puis, je me suis obstiné – c’était le plus grand malheur – à faire des connaissances: j’ai prié M. Bérenger (président de l’Association générale des étudiants de Paris) de me mettre en rapport avec des étudiants en lettres. Il n’y en a pas encore, m’a-t-il répondu, et quand il y en aura, vous ferez leur connaissance vous-même aux cours ou dans la salle des journaux.</p>
-        <p>Quant aux leçons d’allemand, M. Psichari et M. Henry ne m’ont pu guère promettre. L’affiche dans la salle des journaux est restée sans résultat.</p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>Pour employer utilement mon temps, j’ai fait des études sur la prononciation, au Théâtre français et à l’Odéon: je me suis acheté des pièces qu’on donnait et j’ai pris des notes. Mais ça coûtait trop cher – il a fallu régler ma dépense sur ma bourse malheureusement trop plate. M. Larroumet, pour qui M. Bérenger me donne un mot afin que j’obtienne la permission d’assister aux répétitions au Théâtre français et à l’Odéon, n’est plus visible – un sous-préfet va lui succéder – disent les journaux. J’ai laissé là ma lettre et ma carte – sans résultat.</p>
-
-        <p>Voilà enfin des cours gratuits qui commencent: je m’y précipite comme un insensé – enfin pourrai-je atteindre quelques buts de mon voyage: étudier la prononciation, étudier l’enseignement des langues et peut-être faire des connaissances. C’est aujourd’hui que je suis inscrit pour le Cours gratuit de lecture et de récitation (dimanche de 10 heures à midi) dans la Mairie du VI<hi rendition="#sup">e</hi> Arrondissement.</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>Et je suis content. Ç’a été curieux pour moi que de voir, assis sur les bancs devant un professeur, des vieillards, des jeunes gens, des petites filles, des vieilles virginités et de grosses dames – des petits-maîtres et des gens du peuple – et tous forcés de lire tour à tour des poésies et des proses, après que le professeur les a lues, et de réciter des poésies et – je crois – aussi des proses qu’ils avaient apprises par cœur. Pour moi, je préférerais ces dernières, parce que je pourrais en profiter pour le style familier.</p>
-        <p>Le 19 octobre 1891</p>
-        <p>Ce matin, je suis allé voir M. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2923">Vauchelet</persName>. Il a été ravi de ce que vous lui avez fait vos amitiés et vous présente ses respects. Il s’informe si vous avez déjà publié l’article sur le créole de Guadeloupe. Il a l’air presque fâché voyant que j’avais laissé là le <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.353">français-créole de Guadeloupe</ref> dans mon article; mais enfin il devient de plus en plus aimable, me permet de venir le voir <pb
-            facs="#IMG.5" n="5"/>et me promet de me présenter à des <ref target="https://gams.uni-graz.at/o:hsa.languages#L.348">créoles de la Réunion</ref>.</p>
-        <p>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1541">M. Gaidoz</persName>, à qui j’ai voulu me présenter après-midi, est parti pour une dizaine de jours.</p>
-        <p>Le 20 octobre 1891</p>
-
-        <p>Hier au soir, je suis allé m’inscrire pour des cours populaires gratuits; ils ont lieu tous les soirs de 8 à 10 heures: hygiène, comptabilité, arithmétique, langue française, langue anglaise, langue allemande (ça sera drôle pour moi!), langue espagnole etc.; et là j’ai déjà fait la connaissance d’un jeune homme de Lyon d’à peu près seize ans – il est dans le commerce – pas très élégant – mais qui importe – j’espère me faire son ami. Aussi au cours de lecture et de récitation, il y a eu un commencement d’amitié avec un jeune homme <pb
-            facs="#IMG.6" n="6"/>très comme il faut et très aimable.</p>
-        <p>Aujourd’hui, à trois heures, M. Gidel, proviseur du Lycée Louis-le-Grand, m’introduira dans un cours de langues étrangères.</p>
-        <closer>
-          <salute>Ne m’en voulez pas,</salute>
-          <lb/>
-          <salute>Monsieur,</salute>
-          <lb/>
-          <salute>Je vous en prie encore une fois, de vous avoir écrit en français, et veuillez bien croire aux sentiments de respect et d’estime bien sincères que vous a voués</salute>
-          <lb/>
-          <salute>Votre très obéissant et très humble élève</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1391">Adolphe Dietrich.</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.1388" xml:lang="fr">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Monsieur le Professeur,</opener>
+            <p>C’est bien plus que audace que de vous prendre au mot: je voudrais vous écrire dorénavant tout en français, si vous me le permettiez. Vous pourriez alors même tirer profit de mes lettres, en écrivant une brochure sur l’allemand-français d’un maître de français. Ce serait une drôle d’histoire!</p>
+            <p>Pardonnez-moi cette plaisanterie! Je suis aujourd’hui de si bonne humeur que j’ai failli en oublier la cause. C’est votre lettre qui m’a fait revivre et je vous en remercie de tout mon cœur.</p>
+            <p>Les premières semaines que j’ai passées à Paris étaient bien peu agréables: D’abord des troubles affreux de mon cœur – je parle très-sérieusement –, l’acclimatation en tout cas désagréable, l’isolement absolu dans une ville étrangère, l’impossibilité de faire des connaissances comme il faut, et par là pas de moyen d’atteindre un des buts principaux de mon voyage, une ambassade autrichienne – <pb facs="#IMG.2" n="2"/>spécialement chargée de m’aider – s’opposant à des démarches toutes simples à cause du manque d’un précédent, - et en fin de conte des proviseurs de lycées ne me permettant d’assister aux course – quoique le Vice-Recteur m’y ait autorisé – qu’avant le vingt octobre (au Lycée Louis-le-Grand) et le premier de novembre (au Lycée St. Louis) – tout cela avait fait disparaître ma bonne humeur – j’étais devenu plus malheureux que jamais.</p>
+            <p>Puis, je me suis obstiné – c’était le plus grand malheur – à faire des connaissances: j’ai prié M. Bérenger (président de l’Association générale des étudiants de Paris) de me mettre en rapport avec des étudiants en lettres. Il n’y en a pas encore, m’a-t-il répondu, et quand il y en aura, vous ferez leur connaissance vous-même aux cours ou dans la salle des journaux.</p>
+            <p>Quant aux leçons d’allemand, M. Psichari et M. Henry ne m’ont pu guère promettre. L’affiche dans la salle des journaux est restée sans résultat.</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>Pour employer utilement mon temps, j’ai fait des études sur la prononciation, au Théâtre français et à l’Odéon: je me suis acheté des pièces qu’on donnait et j’ai pris des notes. Mais ça coûtait trop cher – il a fallu régler ma dépense sur ma bourse malheureusement trop plate. M. Larroumet, pour qui M. Bérenger me donne un mot afin que j’obtienne la permission d’assister aux répétitions au Théâtre français et à l’Odéon, n’est plus visible – un sous-préfet va lui succéder – disent les journaux. J’ai laissé là ma lettre et ma carte – sans résultat.</p>
+            <p>Voilà enfin des cours gratuits qui commencent: je m’y précipite comme un insensé – enfin pourrai-je atteindre quelques buts de mon voyage: étudier la prononciation, étudier l’enseignement des langues et peut-être faire des connaissances. C’est aujourd’hui que je suis inscrit pour le Cours gratuit de lecture et de récitation (dimanche de 10 heures à midi) dans la Mairie du VI<hi rendition="#sup">e</hi> Arrondissement.</p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>Et je suis content. Ç’a été curieux pour moi que de voir, assis sur les bancs devant un professeur, des vieillards, des jeunes gens, des petites filles, des vieilles virginités et de grosses dames – des petits-maîtres et des gens du peuple – et tous forcés de lire tour à tour des poésies et des proses, après que le professeur les a lues, et de réciter des poésies et – je crois – aussi des proses qu’ils avaient apprises par cœur. Pour moi, je préférerais ces dernières, parce que je pourrais en profiter pour le style familier.</p>
+            <p>Le 19 octobre 1891</p>
+            <p>Ce matin, je suis allé voir M. <persName ref="[authorityLink]">Vauchelet</persName>. Il a été ravi de ce que vous lui avez fait vos amitiés et vous présente ses respects. Il s’informe si vous avez déjà publié l’article sur le créole de Guadeloupe. Il a l’air presque fâché voyant que j’avais laissé là le <ref target="https://gams.uni-graz.at/o:hsa.languages#L.353">français-créole de Guadeloupe</ref> dans mon article; mais enfin il devient de plus en plus aimable, me permet de venir le voir <pb facs="#IMG.5" n="5"/>et me promet de me présenter à des <ref target="https://gams.uni-graz.at/o:hsa.languages#L.348">créoles de la Réunion</ref>.</p>
+            <p>
+               <persName ref="[authorityLink]">M. Gaidoz</persName>, à qui j’ai voulu me présenter après-midi, est parti pour une dizaine de jours.</p>
+            <p>Le 20 octobre 1891</p>
+            <p>Hier au soir, je suis allé m’inscrire pour des cours populaires gratuits; ils ont lieu tous les soirs de 8 à 10 heures: hygiène, comptabilité, arithmétique, langue française, langue anglaise, langue allemande (ça sera drôle pour moi!), langue espagnole etc.; et là j’ai déjà fait la connaissance d’un jeune homme de Lyon d’à peu près seize ans – il est dans le commerce – pas très élégant – mais qui importe – j’espère me faire son ami. Aussi au cours de lecture et de récitation, il y a eu un commencement d’amitié avec un jeune homme <pb facs="#IMG.6" n="6"/>très comme il faut et très aimable.</p>
+            <p>Aujourd’hui, à trois heures, M. Gidel, proviseur du Lycée Louis-le-Grand, m’introduira dans un cours de langues étrangères.</p>
+            <closer>
+               <salute>Ne m’en voulez pas,</salute>
+               <lb/>
+               <salute>Monsieur,</salute>
+               <lb/>
+               <salute>Je vous en prie encore une fois, de vous avoir écrit en français, et veuillez bien croire aux sentiments de respect et d’estime bien sincères que vous a voués</salute>
+               <lb/>
+               <salute>Votre très obéissant et très humble élève</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Adolphe Dietrich.</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

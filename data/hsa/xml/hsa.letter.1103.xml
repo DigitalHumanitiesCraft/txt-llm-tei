@@ -1,330 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Nicolaas Mansvelt (01-s.n.)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Gerald</forename>
-            <surname>Russow</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/1103" type="PID">o:hsa.letter.1103</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-s.n.</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Niederlande</country>
-            <settlement>Leiden</settlement>
-            <institution>Universiteitsbibliotheek Leiden</institution>
-            <repository ref="http://www.library.leiden.edu/">Universiteitsbibliotheek Leiden, Abteilung Bijzondere Collecties</repository>
-            <idno type="shelfmark">s.n.</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1885-09-09">1885-09-09</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Gerald</forename>
-              <surname>Russow</surname>
-            </persName>
-          </author>
-          <date when="2013">2013</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Nicolaas Mansvelt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2121"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.1103">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1885-09-09">1885-09-09</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2121" ref="https://viaf.org/viaf/24965885">
-            <forename>Nicolaas</forename>
-            <surname>Mansvelt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2121" type="context">
-                        Korrespondenz Hugo Schuchardt - Nicolaas Mansvelt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.943" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Afrikaans</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.3202" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Nama</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1103" xml:id="IMG.1">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.1103" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz (Oestreich), 9 Sept. 1885,</dateline>
+            <opener>Sehr geehrter Herr,</opener>
+            <p>Vor geraumer Zeit schon kam Ihre treffliche „Proeve van een Kaapsch-Hollandsch Idioticon“ in meinen Besitz und heute habe ich einen längeren für das „Literaturblatt f. germ. u. rom. Phil.“ bestimmten Artikel darüber geschrieben, den ich Ihnen seiner Zeit senden werde.</p>
+            <p>Sie sehen daraus dass ich für „die Afrikaanse Taal“ ein lebhaftes Interesse besitze und um dieses Interesses willen wage ich es nun Sie zu bitten meine diesbezüglichen Studien ein wenig zu unterstützen.</p>
+            <p>Ich besitze genügend Proben des Afrikanischen, wünschte aber gern mir Alles zu verschaffen was <pb facs="#IMG.2" n="2"/>(in philologischem Sinne) darüber geschrieben worden ist. Ich möchte Sie daher fragen auf welchem Wege ich die von Ihnen gerühmten Artikel im <hi rend="unknown" rendition="#none">Cape Monthly Magazine</hi>
+               <note n="1" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Cape Monthly Magazine</hi>
+ (1857-1862 und 1870-1881, später <hi rend="unknown" rendition="#none">The Cape Quarterly Review</hi> bis Juli 1883) war eine populäre Monatsschrift historischen, biographischen, ethnologischen Inhalts (SESA, s. v. Newspapers and periodicals).</note> (Juni, Juli, August 1880) erlangen könnte. Auch das Büchlein <hi rend="unknown" rendition="#none">Die eerste Beginsels v. d. Afr. T.</hi>
+               <note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2798">Du Toit (1876)</ref>
+                  </bibl>.</note> und was sonst noch separativ oder in Zeitschriften (z. B. <hi rend="unknown" rendition="#none">Het Zuid-Afr. Tijdschr.</hi>)<note n="3" place="foot" type="editorial">Erschien ursprünglich unter dem Titel 
 
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv“ erfolgt mit freundlicher Genehmigung der <ref target="http://www.library.leiden.edu/">Universiteitsbibliotheek Leiden, Abteilung Bijzondere Collecties</ref>, Signatur LTK 1934.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1103" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv“ erfolgt mit freundlicher Genehmigung der <ref target="http://www.library.leiden.edu/">Universiteitsbibliotheek Leiden, Abteilung Bijzondere Collecties</ref>, Signatur LTK 1934.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1103" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv“ erfolgt mit freundlicher Genehmigung der <ref target="http://www.library.leiden.edu/">Universiteitsbibliotheek Leiden, Abteilung Bijzondere Collecties</ref>, Signatur LTK 1934.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1103" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv“ erfolgt mit freundlicher Genehmigung der <ref target="http://www.library.leiden.edu/">Universiteitsbibliotheek Leiden, Abteilung Bijzondere Collecties</ref>, Signatur LTK 1934.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.1103" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz (Oestreich), 9 Sept. 1885,</dateline>
-        <opener>Sehr geehrter Herr,</opener>
-        <p>Vor geraumer Zeit schon kam Ihre treffliche „Proeve van een Kaapsch-Hollandsch Idioticon“ in meinen Besitz und heute habe ich einen längeren für das „Literaturblatt f. germ. u. rom. Phil.“ bestimmten Artikel darüber geschrieben, den ich Ihnen seiner Zeit senden werde.</p>
-        <p>Sie sehen daraus dass ich für „die Afrikaanse Taal“ ein lebhaftes Interesse besitze und um dieses Interesses willen wage ich es nun Sie zu bitten meine diesbezüglichen Studien ein wenig zu unterstützen.</p>
-        <p>Ich besitze genügend Proben des Afrikanischen, wünschte aber gern mir Alles zu verschaffen was <pb
-            facs="#IMG.2"
-            n="2"/>(in philologischem Sinne) darüber geschrieben worden ist. Ich möchte Sie daher fragen auf welchem Wege ich die von Ihnen gerühmten Artikel im <hi
-            rend="unknown" rendition="#none">Cape Monthly Magazine</hi>
-          <note n="1" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">Cape Monthly Magazine</hi>
- (1857-1862 und 1870-1881, später <hi
-              rend="unknown"
-            rendition="#none">The Cape Quarterly Review</hi> bis Juli 1883) war eine populäre Monatsschrift historischen, biographischen, ethnologischen Inhalts (SESA, s. v. Newspapers and periodicals).</note> (Juni, Juli, August 1880) erlangen könnte. Auch das Büchlein <hi
-            rend="unknown" rendition="#none">Die eerste Beginsels v. d. Afr. T.</hi>
-          <note n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2798">Du Toit (1876)</ref>
-            </bibl>.</note> und was sonst noch separativ oder in Zeitschriften (z. B. <hi rend="unknown"
-            rendition="#none">Het Zuid-Afr. Tijdschr.</hi>)<note n="3" place="foot"
-              type="editorial">Erschien ursprünglich unter dem Titel 
-
-<hi rend="unknown"
-              rendition="#none">Het Nederduitsch Zuid-Afrikaansch Tydschrift</hi>
- 1824-1843, wurde von Jan Hofmeyr 1873 wiederbelebt, der das <hi
-              rend="unknown" rendition="#none">Nederduitsch</hi> aus dem Titel strich, und erschien dann bis 1893 (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2409">Bosman 1973</ref>
-
-            </bibl>).</note> in dieser Beziehung erschienen ist. Die doppelte Schwierigkeit ist die: 1) Jemanden d.h. einen Buchhändler zu finden der Beziehungen zu Europa hat, sodass die Bezahlung sich bewerkstelligen lässt; 2) <hi
-            rend="unknown" rendition="#none">einzelne</hi> Nummern von Zeitschriften herauszubekommen.</p>
-        <p>Worauf es mir vor Allem ankommt, das ist, <hi rend="unknown"
-            rendition="#none">die Ursache der grammatischen Zersetzung des Kapholländischen</hi> festzustellen. Dass die Franzosen dabei wesentlich betheiligt gewesen sind, kann ich doch nicht glauben; und es bleibt wohl nichts Anderes übrig als die Hottentotten dafür verantwortlich zu machen. Vermittelst Experimenten könnte <pb
-            facs="#IMG.3" n="3"/>man der Sache auf den <hi rend="unknown" rendition="#none">Grund</hi> kommen: <hi
-            rend="unknown"
-            rendition="#none">welche Fehler begeht ein Hottentotte</hi> wenn er Hochholländisch erlernt, oder da das jetzt wohl nur ausnahmsweise noch vorkommt, gibt es nicht Specimina von <hi
-            rend="unknown"
-            rendition="#none">einem englischen Jargon hottentottischer Anfänger</hi>? Solche Wendungen wie <hi
-            rend="unknown"
-            rendition="#none">ik is honger, ik is jammer, ik eet lê-l</hi>ê weisen meiner Ansicht nach auf Einflüsse hin die ausserhalb der weissen Rasse liegen. Können Sie mir endlich nicht etwas Näheres über eine Moslem oder Mahometan Mission in der Kapstadt sagen? Sie soll einen <hi
-            rend="unknown"
-            rendition="#none">Report</hi> herausgeben und in irgend einem Jahrgang desselben Etwas über holländisches Patois der Malaien stehen.<note
-            n="4" place="foot" type="editorial">Dieser Text konnte bislang nicht identifiziert werden.</note>
-        </p>
-        <p>Ich habe schon mit einigen Herren in Südafrika wegen des Kapholländisch correspondirt, mit Dr. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1202">
+<hi rend="unknown" rendition="#none">Het Nederduitsch Zuid-Afrikaansch Tydschrift</hi>
+ 1824-1843, wurde von Jan Hofmeyr 1873 wiederbelebt, der das <hi rend="unknown" rendition="#none">Nederduitsch</hi> aus dem Titel strich, und erschien dann bis 1893 (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2409">Bosman 1973</ref>
+                  </bibl>).</note> in dieser Beziehung erschienen ist. Die doppelte Schwierigkeit ist die: 1) Jemanden d.h. einen Buchhändler zu finden der Beziehungen zu Europa hat, sodass die Bezahlung sich bewerkstelligen lässt; 2) <hi rend="unknown" rendition="#none">einzelne</hi> Nummern von Zeitschriften herauszubekommen.</p>
+            <p>Worauf es mir vor Allem ankommt, das ist, <hi rend="unknown" rendition="#none">die Ursache der grammatischen Zersetzung des Kapholländischen</hi> festzustellen. Dass die Franzosen dabei wesentlich betheiligt gewesen sind, kann ich doch nicht glauben; und es bleibt wohl nichts Anderes übrig als die Hottentotten dafür verantwortlich zu machen. Vermittelst Experimenten könnte <pb facs="#IMG.3" n="3"/>man der Sache auf den <hi rend="unknown" rendition="#none">Grund</hi> kommen: <hi rend="unknown" rendition="#none">welche Fehler begeht ein Hottentotte</hi> wenn er Hochholländisch erlernt, oder da das jetzt wohl nur ausnahmsweise noch vorkommt, gibt es nicht Specimina von <hi rend="unknown" rendition="#none">einem englischen Jargon hottentottischer Anfänger</hi>? Solche Wendungen wie <hi rend="unknown" rendition="#none">ik is honger, ik is jammer, ik eet lê-l</hi>ê weisen meiner Ansicht nach auf Einflüsse hin die ausserhalb der weissen Rasse liegen. Können Sie mir endlich nicht etwas Näheres über eine Moslem oder Mahometan Mission in der Kapstadt sagen? Sie soll einen <hi rend="unknown" rendition="#none">Report</hi> herausgeben und in irgend einem Jahrgang desselben Etwas über holländisches Patois der Malaien stehen.<note n="4" place="foot" type="editorial">Dieser Text konnte bislang nicht identifiziert werden.</note>
+            </p>
+            <p>Ich habe schon mit einigen Herren in Südafrika wegen des Kapholländisch correspondirt, mit Dr. <persName ref="[authorityLink]">
 Brill</persName>
-          <note n="5" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1202">Johannes Brill (1842-1924)</persName> kam ein Jahr vor Mansvelt ans Kap und durchlief eine ähnliche Laufbahn. Auch er bekleidete hohe Funktionen im Schulsystem, allerdings in Bloemfontein, im Oranjefreistaat. 35 Jahre lang wirkte er dort als Rektor, war 1881 im Freistaat Mitbegründer des Afrikaner Bond. In einem Aufsatz in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2368">
-                <hi rend="unknown" rendition="#none">De landstaal</hi>
-              </ref>
-            </bibl> vertrat er schon 1875 die Ansicht, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.943">Afrikaans</ref> und nicht Niederländisch sei die Sprache der Buren (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2746">Schoor 1970</ref>
+               <note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Johannes Brill (1842-1924)</persName> kam ein Jahr vor Mansvelt ans Kap und durchlief eine ähnliche Laufbahn. Auch er bekleidete hohe Funktionen im Schulsystem, allerdings in Bloemfontein, im Oranjefreistaat. 35 Jahre lang wirkte er dort als Rektor, war 1881 im Freistaat Mitbegründer des Afrikaner Bond. In einem Aufsatz in <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2368">
+                        <hi rend="unknown" rendition="#none">De landstaal</hi>
+                     </ref>
+                  </bibl> vertrat er schon 1875 die Ansicht, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.943">Afrikaans</ref> und nicht Niederländisch sei die Sprache der Buren (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2746">Schoor 1970</ref>
+                  </bibl>). Im Nachlass Hugo Schuchardts in der Universitätsbibliothek der Karl-Franzens-Universität Graz gibt es einen bisher nicht veröffentlichten Brief von Brill aus dem Jahre 1882, in dem er Schuchardt seine Sicht des Sprachgebrauchs der Buren darlegt (Briefnummer <ref target="https://gams.uni-graz.at/o:hsa.letter.1178">01374</ref>). </note> in Bloemfontein, mit dem Missionär <persName ref="[authorityLink]">Krönlein</persName>
+               <note n="6" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Johann Georg Krönlein (1826-1892)</persName> folgte Samuel Hahn als Missionar in Berseba (Station in Südwestafrika) nach, wo er sich intensiv mit der <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3202">Nama-Sprache</ref> beschäftigte (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2370">
+Trümpelmann 1972</ref>: 463a</bibl>). Im Schuchardt-Nachlass gibt es einen Brief (Nummer 5834) vom 8.7.1882, der bisher weder veröffentlicht noch transkribiert ist.</note> in der Kapstadt; letzterer hat aber über das Afrikanische und alles Holländische etwas zu herbe Ansichten. <pb facs="#IMG.4" n="4"/>Wenn Sie die Güte haben werden, mir zu antworten – wofür ich Ihnen im Voraus danke – so bitte ich Sie nur wenn es Ihnen bequemer ist, sich der holländischen oder der englischen Sprache zu bedienen.</p>
+            <closer>
+               <salute>In grösster Hochachtung</salute>
+               <lb/>
+               <salute>Ihr ergebenster</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Dr. Hugo Schuchardt</persName>
+                  <lb/> k.k. Universitätsprofessor in <hi rend="unknown" rendition="#none">Graz</hi> und c. M. der Kaiserlichen Akademie in Wien.</signed>
+            </closer>
+            <postscript>
+               <p>Wahrscheinlich ist es Ihnen bekannt dass in dem Prospectus der Zeitschrift „Onze Volkstaal“<note n="7" place="foot" type="editorial">
+                     <hi rend="unknown" rendition="#none">Onze volkstaal.</hi>
+ Blom &amp; Olivierse, Culemborg/De Seijn Verougstraete, Roeselare 1882-1890. Zeitschrift herausgegeben von Beer, Taco H. de. Online verfügbar unter <ref target="http://www.dbnl.org/tekst/beer004onze01_01/index.php">
+http://www.dbnl.org/tekst/beer004onze01_01/index.php</ref>.</note> vom Febr. 1884 folgende Arbeiten angekündigt sind<note n="8" place="foot" type="editorial">Im Nachlass Schuchardts befindet sich dieser <hi rend="unknown" rendition="#none">Prospectus</hi> unter der Signatur 11.7.1. mit dem Titel „2 Druckschriften. Literaturangaben“ (in 11.7. „Niederländisch: Südliches Afrika“). Die von Schuchardt angesprochenen Schriften sind dort rot unterstrichen.</note>
+               </p>
+               <p>32. Bijdrage tot de Kennis der Taal van Zuid-Afrika, door A.P. te Paarl<note n="9" place="foot" type="editorial">A.P. = <persName>
 
-            </bibl>). Im Nachlass Hugo Schuchardts in der Universitätsbibliothek der Karl-Franzens-Universität Graz gibt es einen bisher nicht veröffentlichten Brief von Brill aus dem Jahre 1882, in dem er Schuchardt seine Sicht des Sprachgebrauchs der Buren darlegt (Briefnummer <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.1178">01374</ref>). </note> in Bloemfontein, mit dem Missionär <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1967">Krönlein</persName>
-          <note n="6" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1967">Johann Georg Krönlein (1826-1892)</persName> folgte Samuel Hahn als Missionar in Berseba (Station in Südwestafrika) nach, wo er sich intensiv mit der <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3202">Nama-Sprache</ref> beschäftigte (<bibl>
-              <ref
-            target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2370">
-Trümpelmann 1972</ref>: 463a</bibl>). Im Schuchardt-Nachlass gibt es einen Brief (Nummer 5834) vom 8.7.1882, der bisher weder veröffentlicht noch transkribiert ist.</note> in der Kapstadt; letzterer hat aber über das Afrikanische und alles Holländische etwas zu herbe Ansichten. <pb
-            facs="#IMG.4" n="4"/>Wenn Sie die Güte haben werden, mir zu antworten – wofür ich Ihnen im Voraus danke – so bitte ich Sie nur wenn es Ihnen bequemer ist, sich der holländischen oder der englischen Sprache zu bedienen.</p>
-        <closer>
-          <salute>In grösster Hochachtung</salute>
-          <lb/>
-          <salute>Ihr ergebenster</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Dr. Hugo Schuchardt</persName>
-            <lb/> k.k. Universitätsprofessor in <hi rend="unknown" rendition="#none">Graz</hi> und c. M. der Kaiserlichen Akademie in Wien.</signed>
-        </closer>
-        <postscript>
-          <p>Wahrscheinlich ist es Ihnen bekannt dass in dem Prospectus der Zeitschrift „Onze Volkstaal“<note n="7"
-              place="foot" type="editorial">
-              <hi rend="unknown"
-                rendition="#none">Onze volkstaal.</hi>
- Blom &amp; Olivierse, Culemborg/De Seijn Verougstraete, Roeselare 1882-1890. Zeitschrift herausgegeben von Beer, Taco H. de. Online verfügbar unter <ref
-              target="http://www.dbnl.org/tekst/beer004onze01_01/index.php">
-http://www.dbnl.org/tekst/beer004onze01_01/index.php</ref>.</note> vom Febr. 1884 folgende Arbeiten angekündigt sind<note
-              n="8" place="foot" type="editorial">Im Nachlass Schuchardts befindet sich dieser <hi rend="unknown" rendition="#none">Prospectus</hi> unter der Signatur 11.7.1. mit dem Titel „2 Druckschriften. Literaturangaben“ (in 11.7. „Niederländisch: Südliches Afrika“). Die von Schuchardt angesprochenen Schriften sind dort rot unterstrichen.</note>
-          </p>
-          <p>32. Bijdrage tot de Kennis der Taal van Zuid-Afrika, door A.P. te Paarl<note n="9" place="foot"
-                type="editorial">A.P. = <persName>
+Arnoldus Pannevis</persName> (1838-1884), Philologe und Lehrer am Paarl-Gymnasium. Er war sich bald nach seiner Ankunft in Südafrika 1860 bewusst, dass <ref target="https://gams.uni-graz.at/o:hsa.languages#L.943">Afrikaans</ref> eine eigene Sprache war und wollte die Bibel darin übersetzen lassen; schrieb für 
 
-Arnoldus Pannevis</persName> (1838-1884), Philologe und Lehrer am Paarl-Gymnasium. Er war sich bald nach seiner Ankunft in Südafrika 1860 bewusst, dass <ref
-                target="https://gams.uni-graz.at/o:hsa.languages#L.943">Afrikaans</ref> eine eigene Sprache war und wollte die Bibel darin übersetzen lassen; schrieb für 
-
-<hi
-                rend="unknown" rendition="#none">
+<hi rend="unknown" rendition="#none">
 De Zuid-Afrikaan</hi>
  und 
 
@@ -332,34 +92,28 @@ De Zuid-Afrikaan</hi>
 <hi rend="unknown" rendition="#none">Het Zuid-Afrikaansche Tijdschrift</hi>
 . Pannevis war am 14.8.1884 verstorben, der angekündigte Beitrag erschien in der Ausgabe der 
 Volkstaal nicht (<bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2387">Nienaber 1973</ref>: 440b-d</bibl>).</note>
-          </p>
-          <p>33. Het Kaapsch-Hollandsch Taaleigen door N.<note n="10" place="foot"
-                type="editorial">Mansvelt vermutet im folgenden Brief, dass es sich hierbei um eine frühe Ankündigung seines eigenen <hi
-                rend="unknown" rendition="#none">Idioticon</hi> (<bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2763">
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2387">Nienaber 1973</ref>: 440b-d</bibl>).</note>
+               </p>
+               <p>33. Het Kaapsch-Hollandsch Taaleigen door N.<note n="10" place="foot" type="editorial">Mansvelt vermutet im folgenden Brief, dass es sich hierbei um eine frühe Ankündigung seines eigenen <hi rend="unknown" rendition="#none">Idioticon</hi> (<bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2763">
 Mansvelt 1884</ref>
-              </bibl>) handeln könnte. Vgl. Mansvelts Brief vom 13.10.1885 (<ref target="https://gams.uni-graz.at/o:hsa.letter.1104">Lfd.Nr. 02</ref>).</note>
-          </p>
-          <p>38. Tweede Bijdrage voor ‘t Kaapsch door A.P. te Paarl<note n="11" place="foot" type="editorial"> Siehe FN 9.</note>
-          </p>
-          <p>46. Transvaalsch woordenboek van wege der Red. bewerke door L. van Ankum.<note n="12" place="foot"
-                type="editorial">Es handelt sich um <persName>
+                     </bibl>) handeln könnte. Vgl. Mansvelts Brief vom 13.10.1885 (<ref target="https://gams.uni-graz.at/o:hsa.letter.1104">Lfd.Nr. 02</ref>).</note>
+               </p>
+               <p>38. Tweede Bijdrage voor ‘t Kaapsch door A.P. te Paarl<note n="11" place="foot" type="editorial"> Siehe FN 9.</note>
+               </p>
+               <p>46. Transvaalsch woordenboek van wege der Red. bewerke door L. van Ankum.<note n="12" place="foot" type="editorial">Es handelt sich um <persName>
 
-Leenardus Huizing</persName> (1851-1907), der als Lehrer und Organist in Oosterhoogebrug bei Groningen wirkte. Er war damals bekannt als Verfasser von zahlreichen Schulbüchern und unter dem Pseudonym L. van Ankum veröffentlichte er Werke in Zeitschriften wie <hi
-                rend="unknown" rendition="#none">
+Leenardus Huizing</persName> (1851-1907), der als Lehrer und Organist in Oosterhoogebrug bei Groningen wirkte. Er war damals bekannt als Verfasser von zahlreichen Schulbüchern und unter dem Pseudonym L. van Ankum veröffentlichte er Werke in Zeitschriften wie <hi rend="unknown" rendition="#none">
 
 Onze Volkstaal, 
 Noord en Zuid, 
 Bladen voor Opvoeding en Onderwijs
 </hi>. vgl. <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2380">Noordegraaf (s.a.)</ref>
-              </bibl>.</note>
-          </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2380">Noordegraaf (s.a.)</ref>
+                     </bibl>.</note>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

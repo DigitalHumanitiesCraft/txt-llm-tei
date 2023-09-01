@@ -1,309 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Jakob Jud (31-HSJJ02)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8511" type="PID">o:hsa.letter.8511</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">31-HSJJ02</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Bern</settlement>
-            <institution>Universität Bern</institution>
-            <repository ref="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">AIS Archiv</repository>
-            <idno type="shelfmark">HSJJ02</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1916-09-25">1916-09-25</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Jakob Jud</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1858"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8511">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1916-09-25">1916-09-25</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1858" ref="https://viaf.org/viaf/88644299">
-            <forename>Jakob</forename>
-            <surname>Jud</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1858" type="context">
-                        Korrespondenz Hugo Schuchardt - Jakob Jud
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8511" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8511" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8511" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8511" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8511" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Gr. 25.9. ‘16</dateline>
-        <opener>Lieber Freund,</opener>
-        <p>Der Hoffnungsstrahl (der wohl von Schroefl<note n="1" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2680">Othmar Schroefl</persName>, Romanist; vgl. HSA 10263-10268. Schroefl hatte 1915 in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.215">Zürich</placeName> über das Thema <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3999">Die Ausdrücke für den Mohn im Galloromanischen. Eine onomasiologische Studie</ref>
-              </bibl>
-            </hi> promoviert.</note> ausgegangen ist) dürfte ein trügerischer sein. Ich habe aus gewissen Ursachen, Vater Nedwed noch nicht aufgesucht; ihm aber eben brieflich meinen Besuch angekündigt. Dann werde ich über alles unterrichtet werden.</p>
-        <p>Alle Nummern die Sie mir ausgegeben haben,<note n="2" place="foot" type="editorial">
-Vgl. HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.8510">
-05177</ref>.</note> stehen so weit ich überflüssige zur Verfügung habe, Ihnen zudiensten. Von sehr vielen besitze ich aber nur ein Exemplar (das Lit.-Ztrbl. z. B. gibt, oder gab, keine Sonderdabdrücke ab). Doch nun die Hauptsache: ich kann ja während des Krieges keine Drucksachen nach neutralen<note
-            n="3" place="foot" type="editorial">Am Ende der Seite: „Gibt wohl <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1076">Bally</persName>: <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3305">Saussure</persName> … Leçon d’ouverture du Cours du ling. gén. 23 oct. 1913 weitere Aufklärung über S. 3“.</note>
-          <pb facs="#IMG.2" n="2"/> Staaten absenden. Das habe ich Ihnen schon mehrmals geschrieben, daher habe ich Ihnen auch nichts von meinen letzten Drucksachen zustellen lassen können. Auf dem Buchhändlerweg geht es auch nicht; also warten?</p>
-
-        <p>Ihre Anregung bezüglich Saussure ist auf fruchtbaren Boden gefallen, da ich jetzt ein ganz klein wenig mehr Stimmung und Kraft als in dem mich stets erschlaffenden Sommer besitze. Kurz, die Sache liegt mir. Darin liegt nun aber auch das Bedenkliche. Sie liegt mir so sehr, daß ich, der ich so lange Zeit mit den allgemein sprachwissenschaftlichen Problemen gerungen habe, Gefahr laufen würde von Saussures Gedankengängen auf die meinen wohl vielen recht ketzerisch erscheinenden überzugleiten oder überzuspringen und <pb
-            facs="#IMG.3"
-            n="3"/> in unzulässiger Weise darauf zu beharren. Und weiter: es soll doch die Beziehung auf das Romanische durchgängig hervortreten. Das verstehe ich im Allgemeinen – nicht ganz Ihre besonderen Andeutungen; und dem könnte ich ja auch Rechnung tragen, obwohl ich jetzt mehr vom Romanischen ins Allgemeine (was ich zentripetal nenne) strebe als vom Allgemeinen ins Romanische (was Sie so nennen würden). Alles das ließe sich aber wohl einrichten, schwerlich die Hauptsache. Wenn mir – um es noch einmal zu sagen – die Sache liegt, so hauptsächlich deshalb weil mir daran liegt. Wenn ich dazu käme, zu Saussure etwas zu schreiben, so würde das jetzt sein, Ihr Unternehmen aber wird wohl nicht so bald verwirklicht werden; <pb
-            facs="#IMG.4"
-            n="4"/> und dann würde von meinem Aufsatz mit Recht das gelten, was man so oft mit Bezug auf Alltägliches hört: das ist schon so lange her daß es nicht mehr wahr ist. Und es würde sich vielleicht sogar, eine unliebsame Kreuzung mit Etwas das ich als selbständiges Schriftchen plane, ergeben. Genug davon.<note
-            n="4" place="foot" type="editorial">Vgl. Peter Wunderli, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1539">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8511" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Gr. 25.9. ‘16</dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Der Hoffnungsstrahl (der wohl von Schroefl<note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Othmar Schroefl</persName>, Romanist; vgl. HSA 10263-10268. Schroefl hatte 1915 in <placeName ref="[authorityLink]">Zürich</placeName> über das Thema <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3999">Die Ausdrücke für den Mohn im Galloromanischen. Eine onomasiologische Studie</ref>
+                     </bibl>
+                  </hi> promoviert.</note> ausgegangen ist) dürfte ein trügerischer sein. Ich habe aus gewissen Ursachen, Vater Nedwed noch nicht aufgesucht; ihm aber eben brieflich meinen Besuch angekündigt. Dann werde ich über alles unterrichtet werden.</p>
+            <p>Alle Nummern die Sie mir ausgegeben haben,<note n="2" place="foot" type="editorial">
+Vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.8510">
+05177</ref>.</note> stehen so weit ich überflüssige zur Verfügung habe, Ihnen zudiensten. Von sehr vielen besitze ich aber nur ein Exemplar (das Lit.-Ztrbl. z. B. gibt, oder gab, keine Sonderdabdrücke ab). Doch nun die Hauptsache: ich kann ja während des Krieges keine Drucksachen nach neutralen<note n="3" place="foot" type="editorial">Am Ende der Seite: „Gibt wohl <persName ref="[authorityLink]">Bally</persName>: <persName ref="[authorityLink]">Saussure</persName> … Leçon d’ouverture du Cours du ling. gén. 23 oct. 1913 weitere Aufklärung über S. 3“.</note>
+               <pb facs="#IMG.2" n="2"/> Staaten absenden. Das habe ich Ihnen schon mehrmals geschrieben, daher habe ich Ihnen auch nichts von meinen letzten Drucksachen zustellen lassen können. Auf dem Buchhändlerweg geht es auch nicht; also warten?</p>
+            <p>Ihre Anregung bezüglich Saussure ist auf fruchtbaren Boden gefallen, da ich jetzt ein ganz klein wenig mehr Stimmung und Kraft als in dem mich stets erschlaffenden Sommer besitze. Kurz, die Sache liegt mir. Darin liegt nun aber auch das Bedenkliche. Sie liegt mir so sehr, daß ich, der ich so lange Zeit mit den allgemein sprachwissenschaftlichen Problemen gerungen habe, Gefahr laufen würde von Saussures Gedankengängen auf die meinen wohl vielen recht ketzerisch erscheinenden überzugleiten oder überzuspringen und <pb facs="#IMG.3" n="3"/> in unzulässiger Weise darauf zu beharren. Und weiter: es soll doch die Beziehung auf das Romanische durchgängig hervortreten. Das verstehe ich im Allgemeinen – nicht ganz Ihre besonderen Andeutungen; und dem könnte ich ja auch Rechnung tragen, obwohl ich jetzt mehr vom Romanischen ins Allgemeine (was ich zentripetal nenne) strebe als vom Allgemeinen ins Romanische (was Sie so nennen würden). Alles das ließe sich aber wohl einrichten, schwerlich die Hauptsache. Wenn mir – um es noch einmal zu sagen – die Sache liegt, so hauptsächlich deshalb weil mir daran liegt. Wenn ich dazu käme, zu Saussure etwas zu schreiben, so würde das jetzt sein, Ihr Unternehmen aber wird wohl nicht so bald verwirklicht werden; <pb facs="#IMG.4" n="4"/> und dann würde von meinem Aufsatz mit Recht das gelten, was man so oft mit Bezug auf Alltägliches hört: das ist schon so lange her daß es nicht mehr wahr ist. Und es würde sich vielleicht sogar, eine unliebsame Kreuzung mit Etwas das ich als selbständiges Schriftchen plane, ergeben. Genug davon.<note n="4" place="foot" type="editorial">Vgl. Peter Wunderli, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1539">
 Hugo Schuchardt inspirateur et critique de Ferdinand de Saussure</ref>
-            </bibl>“, in: Alberto Várvaro (ed.), <hi rend="unknown" rendition="#none">XIV Congresso internazionale di linguistica e filologia romanza. Napoli, 15-20 Aprile 1974</hi>. Atti. Napoli, Amsterdam: Macchiaroli, Benjamins, 707-719.</note>
-        </p>
-        <p>Was das spanisch-mundartliche Wtb. angeht, so dürfte Ihre <hi rend="unknown"
-            rendition="#none">Lokalisierung</hi> nicht ganz zutreffend sein. In den oberen Fächern steht bei mir eines das Ihnen unbekannt sein dürfte: F. Baráibar y Zumárraga, De palabras usadas en Álava 1903 (325 S.)<note
-            n="5" place="foot" type="editorial">
+                  </bibl>“, in: Alberto Várvaro (ed.), <hi rend="unknown" rendition="#none">XIV Congresso internazionale di linguistica e filologia romanza. Napoli, 15-20 Aprile 1974</hi>. Atti. Napoli, Amsterdam: Macchiaroli, Benjamins, 707-719.</note>
+            </p>
+            <p>Was das spanisch-mundartliche Wtb. angeht, so dürfte Ihre <hi rend="unknown" rendition="#none">Lokalisierung</hi> nicht ganz zutreffend sein. In den oberen Fächern steht bei mir eines das Ihnen unbekannt sein dürfte: F. Baráibar y Zumárraga, De palabras usadas en Álava 1903 (325 S.)<note n="5" place="foot" type="editorial">
 Federico Baráibar y Zumárraga, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2151">Vocabulario de palabras usadas en Álava. Y no incluídas en el diccionario de la Real Academia española (13. Edición) ó que lo están en otras acepciones ó como anticuadas</ref>
-              </bibl>
-            </hi>, Madrid 1903.</note>. Oder ist es: <hi rend="unknown"
-            rendition="#none">Emiliano de Arriaga</hi>, Lexicon bilbaino 1896 (317 S.)<note n="6" place="foot"
-              type="editorial">Emiliano de Arriaga, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3940">Lexicón etimológico, naturalista y popular del bilbaíno neto</ref>
-              </bibl>
-            </hi>, 1896 (kein Bibliotheksnachweis, nur die 2. Aufl. Madrid: Ed. Minotauro, 1960.</note>? Denn <hi
-            rend="unknown" rendition="#none">Br. Vigon</hi>, Vocabulario dialectológico del Concejo de Colunga 1896<note
-            n="7" place="foot" type="editorial">Braulio Vigón, <hi rend="unknown" rendition="#none">
-              <bibl>
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2151">Vocabulario de palabras usadas en Álava. Y no incluídas en el diccionario de la Real Academia española (13. Edición) ó que lo están en otras acepciones ó como anticuadas</ref>
+                     </bibl>
+                  </hi>, Madrid 1903.</note>. Oder ist es: <hi rend="unknown" rendition="#none">Emiliano de Arriaga</hi>, Lexicon bilbaino 1896 (317 S.)<note n="6" place="foot" type="editorial">Emiliano de Arriaga, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3940">Lexicón etimológico, naturalista y popular del bilbaíno neto</ref>
+                     </bibl>
+                  </hi>, 1896 (kein Bibliotheksnachweis, nur die 2. Aufl. Madrid: Ed. Minotauro, 1960.</note>? Denn <hi rend="unknown" rendition="#none">Br. Vigon</hi>, Vocabulario dialectológico del Concejo de Colunga 1896<note n="7" place="foot" type="editorial">Braulio Vigón, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Vocabulario dialectológico del concejo de Colunga
 </bibl>
-            </hi>, Villaviciosa: Imprenta de La Opinión, 1896.</note> kennen Sie doch?</p>
-        <closer>
-          <salute>Mit herzl. Gruß<lb/> Ihr </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HSchuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Bedenken Sie bei <hi rend="unknown"
-              rendition="#none">allem</hi> mein Alter; eben erhalte ich die Nachricht vom Tode Leskiens<note n="8"
-              place="foot" type="editorial">
-              <persName
-                ref="https://gams.uni-graz.at/o:hsa.persons#P.2031">August Leskien</persName> (1840-1916); der <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.177">Leipziger</placeName> Indogermanist und Slavist verstarb am 20. September.</note> meinem Tischgenossen von 1870 (auch ein Schweizer, <hi
-              rend="unknown" rendition="#none">
+                  </hi>, Villaviciosa: Imprenta de La Opinión, 1896.</note> kennen Sie doch?</p>
+            <closer>
+               <salute>Mit herzl. Gruß<lb/> Ihr </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HSchuchardt</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Bedenken Sie bei <hi rend="unknown" rendition="#none">allem</hi> mein Alter; eben erhalte ich die Nachricht vom Tode Leskiens<note n="8" place="foot" type="editorial">
+                     <persName ref="[authorityLink]">August Leskien</persName> (1840-1916); der <placeName ref="[authorityLink]">Leipziger</placeName> Indogermanist und Slavist verstarb am 20. September.</note> meinem Tischgenossen von 1870 (auch ein Schweizer, <hi rend="unknown" rendition="#none">
 von der Mühll</hi> (Physiker)<note n="9" place="foot" type="editorial">
-
-              <persName>
+                     <persName>
 Karl von der Mühll</persName> (1841-1912) war, bevor er 1889 nach <placeName>
 
-Basel</placeName> berufen wurde, Extraordinarius in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.177">
+Basel</placeName> berufen wurde, Extraordinarius in <placeName ref="[authorityLink]">
 Leipzig</placeName>. Er war am 9. Mai 1912 verstorben.</note>, war dabei, wohl auch todt?)</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

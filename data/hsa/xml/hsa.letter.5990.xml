@@ -1,428 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Emilio Teza an Hugo Schuchardt (07-11610)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2852">
-            <forename>Emilio</forename>
-            <surname>Teza</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5990" type="PID">o:hsa.letter.5990</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">07-11610</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11610</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2852">
-                <forename>Emilio</forename>
-                <surname>Teza</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="10" unit="pages">10 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.429" ref="http://sws.geonames.org/3170647">Pisa</origPlace>
-              <origDate ana="dcterms:created" when="1883-08-01">1883-08-01</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2018">2018</date>
-          <title>Die Korrespondenz zwischen Emilio Teza und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2852"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5990">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2852" ref="https://viaf.org/viaf/64041974">
-            <forename>Emilio</forename>
-            <surname>Teza</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.429" key="#GID.1" ref="http://sws.geonames.org/3170647">Pisa</placeName>
-          <date when="1883-08-01">1883-08-01</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Pisa</settlement>
-                <name ref="http://geonames.org/3170647" type="fcode:PPLA2">Pisa</name>
-                <location>
-                  <geo>10.4036,43.70853</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2852" type="context">
-                        Korrespondenz Emilio Teza - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5990" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5990" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5990" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5990" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5990" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5990" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5990" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5990" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5990" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5990" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5990" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Pisa, 1° ag. 83</dateline>
-        <opener>Caro collega: e, se permette, amico;</opener>
-        <p>Mille grazie della interpretazione liberale data all regolamento<note n="1" place="foot"
-              type="editorial">Vgl. Schuchardts <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5989">Brief 005</ref>.</note> e quindi del caro suo dono. Vidi subito il D’Ancona, che la saluta; nè l’amico nè io rammentiamo commedie nelle quali si parli il <hi
-            rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5990" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Pisa, 1° ag. 83</dateline>
+            <opener>Caro collega: e, se permette, amico;</opener>
+            <p>Mille grazie della interpretazione liberale data all regolamento<note n="1" place="foot" type="editorial">Vgl. Schuchardts <ref target="https://gams.uni-graz.at/o:hsa.letter.5989">Brief 005</ref>.</note> e quindi del caro suo dono. Vidi subito il D’Ancona, che la saluta; nè l’amico nè io rammentiamo commedie nelle quali si parli il <hi rend="unknown" rendition="#none">
 franco</hi>; ma, per mille ragioni, al caso se ne terrà nota.</p>
-
-        <p>Ella dimenticò, e non se ne dimenticherà un‘altra volta, di dirmi in che giornale io debba pescare i suoi studi andalusiani:<note
-            n="2" place="foot" type="editorial">Es handelt sich um verschiedene Titel; vgl. die Einzelheiten bei <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1478">Adolf Sawoff, „La aportación de Hugo Schuchardt a los estudios andaluces“, in: Antonio Narbona Jiménez / Miguel Ropero Núñez (eds.), <hi
-                  rend="unknown" rendition="#none">
+            <p>Ella dimenticò, e non se ne dimenticherà un‘altra volta, di dirmi in che giornale io debba pescare i suoi studi andalusiani:<note n="2" place="foot" type="editorial">Es handelt sich um verschiedene Titel; vgl. die Einzelheiten bei <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1478">Adolf Sawoff, „La aportación de Hugo Schuchardt a los estudios andaluces“, in: Antonio Narbona Jiménez / Miguel Ropero Núñez (eds.), <hi rend="unknown" rendition="#none">
 El Habla Andaluza. Actas del Congreso del Habla Andaluza</hi>. Sevilla, 4-7 marzo 1997. Sevilla 1997, 53-67</ref>
-            </bibl>.</note> ne ho curiosità e bisogno. <pb facs="#IMG.2"
-            n="2"/> Ho parecchi libri spagnoli, scritti da ebrei: o rituali o versioni della Bibbia. Naturalmente si tengono così stretti stretti alla costruzione dell’ebraico che si troverebbe imbarazzato chi non ne sapesse nulla. Di saggi forse ella non ha bisogno; ma pure ancora uno: Y diste à nos. A. N. D. con amor à dia del Sabath, à dia de la membrança este, à dia bueno llamamiento de santidad este, membrança de aublaciò, con amor llamamiento de santidad memoria à salida de Egypto.<note
-            n="3" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">Orden de roshasanah y kipur, traslado en español, y de nuevo</hi> …, Estampado por industria y despeza de Franco de Mendoça y Compañia a primero de nisan, 5364 i.e. 1604], S. 6.</note>
-        </p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>Ella noterà il nome divino che diventa un trigrammato .A.: e nell’uso che hanno di porre <hi rend="unknown"
-            rendition="#none">Dio</hi> anzi che <hi rend="unknown" rendition="#none">Dios</hi> sono incerto se n’abbiamo una reminiscenza di tempi antichi o il tentativo di non dire intero il nome temibile.</p>
-
-        <p>Ma ho altri libri spagnoli in lettere ebraiche e a quando a quando mi viene la voglia di scrivere intorno a loro qualche appunto. La mia paura è, come sempre, di ripetere le cose note: e tra le altre ho bisogno conoscere che cosa abbia <pb
-            facs="#IMG.4" n="4"/> di importante sulla <hi rend="unknown" rendition="#none">
-fonetica</hi>, sulla <hi
-            rend="unknown"
-            rendition="#none">morfologia</hi> e anche sulle origini storiche la memoria che credo dell’Jost sul <hi
-            rend="unknown"
-            rendition="#none">ladino</hi> in Turchia. Se non erro c‘è nella Encicl. di Ersch e Gruber: non so in che volume: certo allla pag. 324.<note
-            n="4" place="foot" type="editorial">Nicht identifiziert; der Artikel „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6431">Ladino (Jüdisch-Spanisch oder Spaniolisch)“ in: Ersch-Gruber, Leipzig 1887, 150-152</ref>
-            </bibl>) stammt aus der Feder von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1890">Mayer Kayserling</persName>. – <persName>
-Jakob Jost (Joosten)</persName> ist ein Niederländer, dessen Reisebeschreibungen unter dem Namen Jakob Jost früh ins Deutsche übersetzt wurden. Der Originaltitel lautet: <hi
-              rend="unknown"
-              rendition="#none">De kleyne wonderlijke werelt, waer in vertont worden veele rarigheden van de wereldt […]</hi>, Amsterdam 1649. Darin ist auch ein die Türkei betreffender Teil; die dt. Ausg. erschien 1652 erstmals in Thorn: <hi
-              rend="unknown" rendition="#none">Die kleine wunderliche Welt in Türkeyen, Ungarn, Pohlen, Reussen Böhmen, Osterreich, Deutschland</hi> und umfasst 65 Bl.</note> – Ho bisogno di lei.</p>
-
-        <p>Sulla trascrizione di spagnolo in lettere ebraiche conosco il Sacy (lxfr. IV, 626 e XI, 311): sul francese il Böhmer (Rom. Stud.) il Darmesteter (Romania I, 146) e la Hist. Litter. XXVII, 488. XXVIII, 498. 506: e un Neubauer ch’ella conosce e ne parlò nella K. Zeit. XXI, <pb
-            facs="#IMG.5" n="5"/> 451).<note n="5" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.202">Hugo Schuchardt, „Aus Zeitschriften“, <hi
-                  rend="unknown" rendition="#none">Zeitschrift für vergleichende Sprachforschung auf dem Gebiete des Deutschen, Griechischen und Lateinischen</hi> (Kuhns Zeitschrift) 21, 1872, 434-461</ref>
-            </bibl>.</note> – Lo Steinschneider nella stessa encicl. Erschiana (s.v. Jüdische Litteratur)<note n="6"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6432">Ersch-Gruber, <hi rend="unknown" rendition="#none">Enc.</hi> II, 27, 357-376.</ref>
-            </bibl>
-          </note> cita uno scritto del Delitzsch sullo spagnolo in … Italia.<note n="7" place="foot" type="editorial">&gt;Gemeint ist <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6433">Franz Delitzsch, <hi rend="unknown" rendition="#none">Zur Geschichte der jüdischen Poesie: vom Abschluss der heiligen Schriften Alten Bundes bis auf die neueste Zeit</hi>, Leipzig 1836.</ref>
-            </bibl>
-          </note> Poterlo avere! ma almeno qualche notizia.</p>
-
-        <p>Non tutti i libri hanno la stessa grafia: più rari e più importanti sono quelli coi punti vocali (io ho p. es. <hi
-            rend="unknown" rendition="#none">El libro llamado en ladino Obligacion de los corazones</hi>):<note n="8"
-            place="foot" type="editorial">
+                  </bibl>.</note> ne ho curiosità e bisogno. <pb facs="#IMG.2" n="2"/> Ho parecchi libri spagnoli, scritti da ebrei: o rituali o versioni della Bibbia. Naturalmente si tengono così stretti stretti alla costruzione dell’ebraico che si troverebbe imbarazzato chi non ne sapesse nulla. Di saggi forse ella non ha bisogno; ma pure ancora uno: Y diste à nos. A. N. D. con amor à dia del Sabath, à dia de la membrança este, à dia bueno llamamiento de santidad este, membrança de aublaciò, con amor llamamiento de santidad memoria à salida de Egypto.<note n="3" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Orden de roshasanah y kipur, traslado en español, y de nuevo</hi> …, Estampado por industria y despeza de Franco de Mendoça y Compañia a primero de nisan, 5364 i.e. 1604], S. 6.</note>
+            </p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>Ella noterà il nome divino che diventa un trigrammato .A.: e nell’uso che hanno di porre <hi rend="unknown" rendition="#none">Dio</hi> anzi che <hi rend="unknown" rendition="#none">Dios</hi> sono incerto se n’abbiamo una reminiscenza di tempi antichi o il tentativo di non dire intero il nome temibile.</p>
+            <p>Ma ho altri libri spagnoli in lettere ebraiche e a quando a quando mi viene la voglia di scrivere intorno a loro qualche appunto. La mia paura è, come sempre, di ripetere le cose note: e tra le altre ho bisogno conoscere che cosa abbia <pb facs="#IMG.4" n="4"/> di importante sulla <hi rend="unknown" rendition="#none">
+fonetica</hi>, sulla <hi rend="unknown" rendition="#none">morfologia</hi> e anche sulle origini storiche la memoria che credo dell’Jost sul <hi rend="unknown" rendition="#none">ladino</hi> in Turchia. Se non erro c‘è nella Encicl. di Ersch e Gruber: non so in che volume: certo allla pag. 324.<note n="4" place="foot" type="editorial">Nicht identifiziert; der Artikel „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6431">Ladino (Jüdisch-Spanisch oder Spaniolisch)“ in: Ersch-Gruber, Leipzig 1887, 150-152</ref>
+                  </bibl>) stammt aus der Feder von <persName ref="[authorityLink]">Mayer Kayserling</persName>. – <persName>
+Jakob Jost (Joosten)</persName> ist ein Niederländer, dessen Reisebeschreibungen unter dem Namen Jakob Jost früh ins Deutsche übersetzt wurden. Der Originaltitel lautet: <hi rend="unknown" rendition="#none">De kleyne wonderlijke werelt, waer in vertont worden veele rarigheden van de wereldt […]</hi>, Amsterdam 1649. Darin ist auch ein die Türkei betreffender Teil; die dt. Ausg. erschien 1652 erstmals in Thorn: <hi rend="unknown" rendition="#none">Die kleine wunderliche Welt in Türkeyen, Ungarn, Pohlen, Reussen Böhmen, Osterreich, Deutschland</hi> und umfasst 65 Bl.</note> – Ho bisogno di lei.</p>
+            <p>Sulla trascrizione di spagnolo in lettere ebraiche conosco il Sacy (lxfr. IV, 626 e XI, 311): sul francese il Böhmer (Rom. Stud.) il Darmesteter (Romania I, 146) e la Hist. Litter. XXVII, 488. XXVIII, 498. 506: e un Neubauer ch’ella conosce e ne parlò nella K. Zeit. XXI, <pb facs="#IMG.5" n="5"/> 451).<note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.202">Hugo Schuchardt, „Aus Zeitschriften“, <hi rend="unknown" rendition="#none">Zeitschrift für vergleichende Sprachforschung auf dem Gebiete des Deutschen, Griechischen und Lateinischen</hi> (Kuhns Zeitschrift) 21, 1872, 434-461</ref>
+                  </bibl>.</note> – Lo Steinschneider nella stessa encicl. Erschiana (s.v. Jüdische Litteratur)<note n="6" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6432">Ersch-Gruber, <hi rend="unknown" rendition="#none">Enc.</hi> II, 27, 357-376.</ref>
+                  </bibl>
+               </note> cita uno scritto del Delitzsch sullo spagnolo in … Italia.<note n="7" place="foot" type="editorial">&gt;Gemeint ist <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6433">Franz Delitzsch, <hi rend="unknown" rendition="#none">Zur Geschichte der jüdischen Poesie: vom Abschluss der heiligen Schriften Alten Bundes bis auf die neueste Zeit</hi>, Leipzig 1836.</ref>
+                  </bibl>
+               </note> Poterlo avere! ma almeno qualche notizia.</p>
+            <p>Non tutti i libri hanno la stessa grafia: più rari e più importanti sono quelli coi punti vocali (io ho p. es. <hi rend="unknown" rendition="#none">El libro llamado en ladino Obligacion de los corazones</hi>):<note n="8" place="foot" type="editorial">
 Vermutlich <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6434">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6434">
 Yosef Formón, <hi rend="unknown" rendition="#none">Séfer Hovat halevavot [Obligación de los corazones] (Traducción del hebreo al latino)</hi>, Venedig: Stamperia Bragadina 5473 [1713]</ref>
-            </bibl>.</note> da per tutto voci e usi arcaici e con pronuncia che, in alcuni casi, si accosta <pb
-            facs="#IMG.6"
-            n="6"/> alǀ‘andalusiano. Molte volte la importazione della scrittura lasciando libero il leggere <hi
-            rend="unknown" rendition="#none">i</hi> o <hi rend="unknown" rendition="#none">e</hi>, <hi rend="unknown"
-            rendition="#none">
+                  </bibl>.</note> da per tutto voci e usi arcaici e con pronuncia che, in alcuni casi, si accosta <pb facs="#IMG.6" n="6"/> alǀ‘andalusiano. Molte volte la importazione della scrittura lasciando libero il leggere <hi rend="unknown" rendition="#none">i</hi> o <hi rend="unknown" rendition="#none">e</hi>, <hi rend="unknown" rendition="#none">
 u</hi> oppure <hi rend="unknown" rendition="#none">o</hi> è causa di confusione; senza contare gli errori delle stampe sempre numerosissimi.</p>
-        <p>Non intendo di insegnarle nulla: dico cose che ella sa di certo; ma desidero da lei una parola che mi faccia o smettere o continuare.</p>
-        <p>Tolgo esempi da un libro solo, e molto curioso anche per il racconto midrascico: ed è il <hi rend="unknown"
-            rendition="#none">Sefer Alegrias de Purim</hi>.<note n="9" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6435">
-                <hi rend="unknown" rendition="#none">Allegria de Purim. Erzählung der Geschichte Esther, Lieder und Parodien, spaniolisch</hi>. Hrsg. von Jsf abbatai Fari, Livorno 1875.</ref>
-            </bibl>
-          </note>
-        </p>
-        <pb facs="#IMG.7" n="7"/>
-        <p>Fra i punti degni di note sono questi:</p>
-        <p>a) <hi rend="unknown" rendition="#none">muestro</hi> = nuestro : <hi rend="unknown"
-            rendition="#none">mueve</hi> = nueve : <hi rend="unknown" rendition="#none">mos</hi> = nos : <hi
-            rend="unknown" rendition="#none">mosotros</hi> = nosotros</p>
-        <p>b) Tralasciate la asp. iniziale : onde <hi rend="unknown" rendition="#none">
+            <p>Non intendo di insegnarle nulla: dico cose che ella sa di certo; ma desidero da lei una parola che mi faccia o smettere o continuare.</p>
+            <p>Tolgo esempi da un libro solo, e molto curioso anche per il racconto midrascico: ed è il <hi rend="unknown" rendition="#none">Sefer Alegrias de Purim</hi>.<note n="9" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6435">
+                        <hi rend="unknown" rendition="#none">Allegria de Purim. Erzählung der Geschichte Esther, Lieder und Parodien, spaniolisch</hi>. Hrsg. von Jsf abbatai Fari, Livorno 1875.</ref>
+                  </bibl>
+               </note>
+            </p>
+            <pb facs="#IMG.7" n="7"/>
+            <p>Fra i punti degni di note sono questi:</p>
+            <p>a) <hi rend="unknown" rendition="#none">muestro</hi> = nuestro : <hi rend="unknown" rendition="#none">mueve</hi> = nueve : <hi rend="unknown" rendition="#none">mos</hi> = nos : <hi rend="unknown" rendition="#none">mosotros</hi> = nosotros</p>
+            <p>b) Tralasciate la asp. iniziale : onde <hi rend="unknown" rendition="#none">
 avlar</hi> = habler :</p>
-        <p>c) Trasposizioni, usate nello spag. archaico : <hi rend="unknown"
-            rendition="#none">
+            <p>c) Trasposizioni, usate nello spag. archaico : <hi rend="unknown" rendition="#none">
 vedres</hi> = verdes : <hi rend="unknown" rendition="#none">probe</hi> = pobre :</p>
-        <p>d) <hi rend="unknown" rendition="#none">Dinguno</hi> = ninguno.</p>
-        <p>e) <hi rend="unknown" rendition="#none">Guerfano</hi> = huerfano : <hi rend="unknown"
-            rendition="#none">guerta</hi> : huerta : <hi rend="unknown" rendition="#none">guestro</hi> : vuestro</p>
-        <p>f) Sparita la elle dorsale : <hi rend="unknown" rendition="#none">donceas</hi> : doncellas : <hi
-            rend="unknown" rendition="#none">caente</hi> : callente : yamar : llamar</p>
-        <p>g) <hi rend="unknown" rendition="#none">Llo</hi> = yo. </p>
-        <p>h) Varietà : <hi rend="unknown" rendition="#none">setencia</hi> : sentencia : <hi rend="unknown"
-            rendition="#none">santuvario</hi> : santuario : <hi rend="unknown" rendition="#none">esclavitu</hi> = <hi
-            rend="unknown" rendition="#none">e – tud</hi> : <hi rend="unknown"
-            rendition="#none">piadad</hi> = pie– : <hi rend="unknown" rendition="#none">ambizar</hi> = avisar : <hi
-            rend="unknown" rendition="#none">muncho</hi> = mucho : <hi rend="unknown" rendition="#none">golores buenos</hi> : colores buenos:</p>
-        <p>i). Forme : <hi rend="unknown" rendition="#none">anda dizelde</hi> : andad dizedle : <hi rend="unknown" rendition="#none">alabar</hi>
-          <hi rend="unknown" rendition="#none">sen</hi> = alabarse : <hi rend="unknown" rendition="#none">arefrescarsen</hi> = refrescarse.</p>
-        <p>j). Il <hi rend="unknown" rendition="#none">ch</hi> è trascritto con ‘z (onde escu <hi rend="unknown"
-            rendition="#none">ch</hi>ar : o <hi rend="unknown"
-            rendition="#none">ch</hi>enta). Ma lo stesso segno troviamo in <hi rend="unknown"
-            rendition="#none">g</hi>ente : ver <hi rend="unknown" rendition="#none">g</hi>el : <hi rend="unknown"
-            rendition="#none">j</hi>uya : conse <hi rend="unknown" rendition="#none">j</hi>o e <pb facs="#IMG.8"
-            n="8"/> si resta incerti se sia trascrizione imperfetta o sia pronuncia costante della palatale tenue: e lo stesso č troviamo in <hi
-            rend="unknown" rendition="#none">čidio</hi> (mai čudio per judio : laddove nel femm. torna l‘ <hi
-            rend="unknown" rendition="#none">u</hi> comune, <hi rend="unknown" rendition="#none">čudia</hi>.</p>
-        <p>Nulla dico di voci più rare ( <hi rend="unknown" rendition="#none">los gavientos</hi>, la <hi rend="unknown"
-            rendition="#none">negregura</hi> : <hi rend="unknown" rendition="#none">el trecer</hi> (tercero) : la <hi
-            rend="unknown" rendition="#none">sfuerte</hi> (= suerte) : el cuarteno.</p>
-        <p>Insomma se le osservazioni che faccio qui, e altre parecchie, non sono comunissime è bene raccoglierle; ma ella solo può dirmi che cose vi sarebbero di nuovo.</p>
-        <pb facs="#IMG.9" n="9"/>
-        <p>Io parto dopo domani e fo una giratina nella Svizzera: spero, al mio ritorno, trovare sua lettera e, nel caso che questa avesse ad aspettarmi in Pisa ella non mi accuserà della tardata risposta. Ma sopra tutto non mi voglia dimenticare.</p>
-        <closer>
-          <salute>Con tutta l’affezione me Le protesto</salute>
-          <lb/>
-          <salute>Suo dev.</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2852">E. T.</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>P.S. Non sarà certo tornato il suo collega <pb facs="#IMG.10" n="10"/> il prof. <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2185">
+            <p>d) <hi rend="unknown" rendition="#none">Dinguno</hi> = ninguno.</p>
+            <p>e) <hi rend="unknown" rendition="#none">Guerfano</hi> = huerfano : <hi rend="unknown" rendition="#none">guerta</hi> : huerta : <hi rend="unknown" rendition="#none">guestro</hi> : vuestro</p>
+            <p>f) Sparita la elle dorsale : <hi rend="unknown" rendition="#none">donceas</hi> : doncellas : <hi rend="unknown" rendition="#none">caente</hi> : callente : yamar : llamar</p>
+            <p>g) <hi rend="unknown" rendition="#none">Llo</hi> = yo. </p>
+            <p>h) Varietà : <hi rend="unknown" rendition="#none">setencia</hi> : sentencia : <hi rend="unknown" rendition="#none">santuvario</hi> : santuario : <hi rend="unknown" rendition="#none">esclavitu</hi> = <hi rend="unknown" rendition="#none">e – tud</hi> : <hi rend="unknown" rendition="#none">piadad</hi> = pie– : <hi rend="unknown" rendition="#none">ambizar</hi> = avisar : <hi rend="unknown" rendition="#none">muncho</hi> = mucho : <hi rend="unknown" rendition="#none">golores buenos</hi> : colores buenos:</p>
+            <p>i). Forme : <hi rend="unknown" rendition="#none">anda dizelde</hi> : andad dizedle : <hi rend="unknown" rendition="#none">alabar</hi>
+               <hi rend="unknown" rendition="#none">sen</hi> = alabarse : <hi rend="unknown" rendition="#none">arefrescarsen</hi> = refrescarse.</p>
+            <p>j). Il <hi rend="unknown" rendition="#none">ch</hi> è trascritto con ‘z (onde escu <hi rend="unknown" rendition="#none">ch</hi>ar : o <hi rend="unknown" rendition="#none">ch</hi>enta). Ma lo stesso segno troviamo in <hi rend="unknown" rendition="#none">g</hi>ente : ver <hi rend="unknown" rendition="#none">g</hi>el : <hi rend="unknown" rendition="#none">j</hi>uya : conse <hi rend="unknown" rendition="#none">j</hi>o e <pb facs="#IMG.8" n="8"/> si resta incerti se sia trascrizione imperfetta o sia pronuncia costante della palatale tenue: e lo stesso č troviamo in <hi rend="unknown" rendition="#none">čidio</hi> (mai čudio per judio : laddove nel femm. torna l‘ <hi rend="unknown" rendition="#none">u</hi> comune, <hi rend="unknown" rendition="#none">čudia</hi>.</p>
+            <p>Nulla dico di voci più rare ( <hi rend="unknown" rendition="#none">los gavientos</hi>, la <hi rend="unknown" rendition="#none">negregura</hi> : <hi rend="unknown" rendition="#none">el trecer</hi> (tercero) : la <hi rend="unknown" rendition="#none">sfuerte</hi> (= suerte) : el cuarteno.</p>
+            <p>Insomma se le osservazioni che faccio qui, e altre parecchie, non sono comunissime è bene raccoglierle; ma ella solo può dirmi che cose vi sarebbero di nuovo.</p>
+            <pb facs="#IMG.9" n="9"/>
+            <p>Io parto dopo domani e fo una giratina nella Svizzera: spero, al mio ritorno, trovare sua lettera e, nel caso che questa avesse ad aspettarmi in Pisa ella non mi accuserà della tardata risposta. Ma sopra tutto non mi voglia dimenticare.</p>
+            <closer>
+               <salute>Con tutta l’affezione me Le protesto</salute>
+               <lb/>
+               <salute>Suo dev.</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">E. T.</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>P.S. Non sarà certo tornato il suo collega <pb facs="#IMG.10" n="10"/> il prof. <persName ref="[authorityLink]">
 Meyer</persName>.<note n="10" place="foot" type="editorial">
-              <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2185">Gustav Meyer</persName> (1850-1900), Sprachwissenschaftler, Grazer Fakultätskollege Schuchardts.</note> Quando lo vede abbia la bontà di dirgli che tra i miei libri albanesi ne ho uno molto raro che egli conosce di certo e forse non ha: è <hi
-              rend="unknown"
-              rendition="#none">l’Infallibile</hi> verità della cattolica fede … di Petro Bogdano (Ven. 1691).<note
-              n="11" place="foot" type="editorial">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6436">Petar Bogdan, <hi rend="unknown" rendition="#none">L'infallibile verità della cattolica fede, dimostrata sino all'evidenza ad ogni qualità di persone; ... per opera di monsignor Pietro Bogdano arcivescovo di Scopia, ... Opera utilissima ... spiegata in due copiose lingue italiana, e schiava; adornata con molte figure in rame. Et in due parti divisa</hi>, In Venetia: per Girolamo Albrizzi, 1691.</ref>
-              </bibl>
-            </note> Può interessargli di saperlo.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                     <persName ref="[authorityLink]">Gustav Meyer</persName> (1850-1900), Sprachwissenschaftler, Grazer Fakultätskollege Schuchardts.</note> Quando lo vede abbia la bontà di dirgli che tra i miei libri albanesi ne ho uno molto raro che egli conosce di certo e forse non ha: è <hi rend="unknown" rendition="#none">l’Infallibile</hi> verità della cattolica fede … di Petro Bogdano (Ven. 1691).<note n="11" place="foot" type="editorial">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6436">Petar Bogdan, <hi rend="unknown" rendition="#none">L'infallibile verità della cattolica fede, dimostrata sino all'evidenza ad ogni qualità di persone; ... per opera di monsignor Pietro Bogdano arcivescovo di Scopia, ... Opera utilissima ... spiegata in due copiose lingue italiana, e schiava; adornata con molte figure in rame. Et in due parti divisa</hi>, In Venetia: per Girolamo Albrizzi, 1691.</ref>
+                     </bibl>
+                  </note> Può interessargli di saperlo.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

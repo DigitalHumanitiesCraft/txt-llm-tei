@@ -1,459 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Eugen Lerch an Hugo Schuchardt (02-06413)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">
-            <forename>Eugen</forename>
-            <surname>Lerch</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4303" type="PID">o:hsa.letter.4303</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-06413</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">06413</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">
-                <forename>Eugen</forename>
-                <surname>Lerch</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="10" unit="pages">10 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.555" ref="http://sws.geonames.org/2855334">Pasing</origPlace>
-              <origDate ana="dcterms:created" when="1923-01-19">1923-01-19</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Eugen Lerch und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2029"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4303">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2029" ref="https://viaf.org/viaf/117015826">
-            <forename>Eugen</forename>
-            <surname>Lerch</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.555" key="#GID.1" ref="http://sws.geonames.org/2855334">Pasing</placeName>
-          <date when="1923-01-19">1923-01-19</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Pasing</settlement>
-                <name ref="http://geonames.org/2855334" type="fcode:PPLX">Pasing</name>
-                <location>
-                  <geo>11.45599,48.14146</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2029" type="context">
-                        Korrespondenz Eugen Lerch - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3081" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Korrespondenzbeilagen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4775" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Manuskriptversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.317" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Hugo-Schuchardt-Brevier</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3347" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Archiv für das Studium der neueren Sprachen und Literaturen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4485" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Reflexion über das Publizieren</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3348" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Herrigs Archiv</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4230" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Max Niemeyer Verlag</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4303" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4303" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4303" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4303" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4303" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4303" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4303" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4303" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4303" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4303" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4303" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Pasing vor München <lb/>Richard Wagnerstr. 30 <lb/>19.I.23</dateline>
-        <opener>Hochverehrter Meister!</opener>
-        <p>Beifolgend erlaube ich mir, Ihnen eine Niederschrift meiner Besprechung des <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.317">,Breviers‘</ref> (für <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3348">Herrigs Archiv</ref>) zu senden; die diesem übersandte Fassung stimmt bis auf kleine Zusätze und stilistische Änderungen damit überein. Es wird nämlich mindestens ein Jahr dauern, bis sie erscheint (vorausgesetzt, daß dann überhaupt noch ein ,Archiv‘ erscheint:<note
-            n="1" place="foot" type="editorial">Erschienen in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1070">
-                <hi rend="unknown" rendition="#none">ASNSpr</hi> 77. Jg., 145. Band, N.S. 45. Band, 1923, 134-137.</ref>
-            </bibl>
-          </note> wer heute wissenschaftliche Aufsätze einschickt, gibt ein „flüchtig Blatt den Winden“<note n="2"
-            place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5622">
-Ludwig Uhland</persName>, „Freie Kunst“, v. 19 („gieb ein fliegend Blatt den Winden“).</note>). Und in meiner Autoren-Eitelkeit bilde ich mir ein, es könnte Sie interessieren, was über Sie geschrieben wird. Rücksendung wird nicht erwartet, und wenn Sie sonst nichts damit anzufangen wissen, so benutzen Sie bitte die Rückseiten, um Wertvolleres darauf zu schreiben. <pb
-            facs="#IMG.2" n="2"/> – Sobald ich von <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4230">Niemeyer</ref> die bestellten Abzüge erhalte, werde ich mir gestatten, Ihnen mein „Imperfektum“ zu senden, dessen Schluß eben in der ZrPh erschienen ist<note
-            n="3" place="foot" type="editorial">Vgl. Anm. 3 zu Lfd. Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.4304">01-06412.</ref>
-          </note>.</p>
-        <closer>
-          <salute>Mit den herzlichsten Wünschen für dieses Jahr, das unmöglich so trüb enden kann, wie es begonnen hat,</salute>
-          <lb/>
-          <salute>begrüßt Sie</salute>
-          <lb/>
-          <salute>in großer Verehrung</salute>
-          <lb/>
-          <salute>Ihr sehr ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Lerch</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.4303" subtype="original" type="appendix" xml:lang="de">
-        <pb facs="#IMG.3" n="3"/>
-        <dateline>Univ.-Prof. Dr. Eugen Lerch <lb/>München-Pasing, Richard Wagnerstr. 30</dateline>
-        <p>Hugo Schuchardt-Brevier. Ein Vademekum der allgemeinen Sprachwissenschaft. Als Festgabe zum 80. Geburtstag des Meisters zusammengestellt und engeleitet von Leo Spitzer. Gedruckt mit Unterstützung einer Anzahl schweizerischer Forscher und Lehrer. Mit einem Porträt Hugo Schuchardts. Halle, Verlag Max Niemeyer, 1922. 375 S. 8°.</p>
-
-        <p>Zum Ruhme H Schuchardts wäre nichts mehr zu sagen – wäre er nur in dem Grade, wie er berühmt ist, auch bekannt, auch gelesen. Aber darin steht es mit ihm nicht viel anders als mit Kant … Will man sein Verdienst und die Eigenart seiner Leistung in wenige Worte zusammenfassen, so wird man sie suchen müssen in seinem klaren Blick für den innigen Zusammenhang des Sprachlichen mit dem Seelischen und Sachlichen. Er, der Sohn eines Mannes, der noch bei Goethe zu Gast war; er, der weltgewandte, nicht nur in den Sprachen, sondern auch in den Ländern, den Literaturen, bei den Völkern heimische Gelehrte konnte niemals in den positivistischen Irrtum verfallen, als sei die Sprache ein Etwas, das sich isoliert, unabhängig von allen anderen Erscheinungen, ja sogar vom Bewußtsein der Sprechenden, nach eigenen Gesetzen entwickle – eine Anschauung, wie sich [gem. „sie“] in der Aufstellung von ausnahmslos wirkenden Lautgesetzen, in dem Schlagwort ,Sprachbiologie‘ und dergl. zum Ausdruck kam. Er, der gleich seinem Lehrer <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">
-Diez</persName> und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5237">
-Jacob Grimm</persName>, noch in der Tradition des deutschen Humanismus wurzelt, hat die Ursachen der sprachlichen Wandlungen niemals in der Sprache selbst gesucht, <pb
-            facs="#IMG.4"
-            n="4"/> sondern in den Wandlungen der seelischen Einstellung der sprechenden Menschen, die natürlich wesentlich verschieden ist je nach dem jeweils erreichten Kulturzustand. So ist ihm die Sprachgeschichte zur Kulturgeschichte geworden, so ist er von den Wörtern zu den Sachen vorgedrungen; so hat er bei der Aufstellung seiner zahlreichen Etymologien den Akzent auf die begriffliche Seite gelegt, während andere mit dem rein Lautlichen, mit der Anwendung der ermittelten Lautgesetze in umgekehrter Richtung glaubten auskommen zu können und geradezu lehrten, die historische Phonetik bestehe für sich, unabhängig von der Bedeutung der Wörter – die Semantik dagegen befinde sich in enger Abhängigkeit von der Phonetik (ZrPh 26, 385ff., Brevier S. 102). So ist er denn in den Jahrzehnten, da die Sprachwissenschaft es den so erfolgreichen Naturwissenschaften gleich tun wollte und möglichst nach naturwissenschaftlicher Weise verfuhr (wobei nur leider die Sprache völlig isoliert, vom sprechenden Menschen und seinen seelischen Erlebnissen entfernt wurde), ein Außenseiter gewesen; vielleicht hängt es damit zusammen, daß er niemals ein Lehrbuch geschrieben hat. Erst heute, da die naturwissenschaftliche Denkweise mehr und mehr überwunden wird, ist seine Bedeutung ganz erkannt worden; zumal wir Jüngeren verehren in ihm unseren Führer und Meister. Er hat, wie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1531">Friedwagner</persName> sagt, zahllose Quadern zurechtgehauen für viele Teile eines <hi
-            rend="unknown" rendition="#none">neuen</hi> (von mir gesperrt) eines neuen Baues der romanischen <pb
-            facs="#IMG.5"
-            n="5"/> und allgemeinen Sprachwissenschaft; ohne Übertreibung könne man sagen, daß für lange Zeit hinaus nur mit solchen Formen und nach seinem Entwurfe wird gebaut werden können (Frkf. Ztg., 7.II.22).Zu seinen Anschauungen wird jeder sich bekennen müssen, der sich den offenen Blick für die Wirklichkeit der Sprache bewahrt hat; die isolierende, abstrakte Sprachwissenschaft war eine Verirrung, die nur in der Isolierzelle der Studierstube gedeihen konnte. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">Gilliéron</persName>, der Schöpfer des französischen Sprachatlas, der ihm die erste Serie seiner sprachgeographischen Studien gewidmet hat, hat seine Anschauung, daß die Sprache ein soziales Phänomen sei und nicht ein Organismus für sich, durchaus bestätigt, und zumal die Schweizer Romanisten (zu denen auch der unvergeßliche, in der Einleitung dieses Breviers leider nicht erwähnte <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2233">Heinrich <hi rend="unknown" rendition="#none">Morf</hi>
-
-          </persName> gehört), die ihm bereits zum 70. Geburtstag mit einem Festband huldigten, und deren einer, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1858">Jakob <hi rend="unknown" rendition="#none">Jud</hi>
-          </persName>, das vorliegende Brevier angeregt hat, arbeiten<note n="4" place="foot"
-              type="editorial">Im gedruckten Text S. 135 heißt es: „arbeiten – bei den Angehörigen eines Landes, wo einem die sprachliche Wirklichkeit so besonders deutlich entgegentritt gewiß kein Zufall – in seinem Sinne weiter: <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2590">
-Salvioni</persName>, der Tessiner, und <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2838">Tappolet</persName>, wenn sie als erste von der Bedeutungs- zur Bezeichungslehre fortschreiten (andere wie <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3054">Zauner</persName>, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2172">Merlo</persName>, Luchsinger, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">
-Gilliéron</persName>, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1832">Jaberg</persName>, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1544">Gamillscheg</persName>, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>, Gust. Huber, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2977">v. Wartburg</persName> usw. sind bald nachgefolgt), <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1557">Gauchat</persName> …“</note> in seinem Sinne weiter: <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2838">
-Tappolet</persName>, wenn er als erster von der Bedeutungs- und Bezeichnungslehre fortschreitet (Die romanischen Verwandtschaftsnamen, Straßburg 1895), Gauchat, wenn er „Sprachforschung im Terrain“ treibt und die angebliche Einheit eines Dorfdialekts untersucht oder Jud mit seinen schönen wortgeographisch-kulturhistorischen Arbeiten, welche zeigen, wie die Sprachwissenschaft auch da noch etwas ermitteln kann, wo alle historischen Dokumente fehlen. – Und daß <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Voßler</persName> auf Schuchardts Schultern steht, weiß jeder, der seine Schriften kennt. – So kann der Meister denn heute eine stattliche Gefolgschaft sein eigen nennen, eine Gefolgschaft, die freilich durchaus nicht homogen ist <pb
-            facs="#IMG.6" n="6"/> (sie vereinigt in sich so verschiedenartige Forschercharaktere wie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">Gilliéron</persName> und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Voßler</persName>), die aber doch darin einig ist, daß sie hinter den sprachlichen Erscheinungen den deutenden und fühlenden Menschen sieht und die naturwissenschaftlich-mechanistische Sprachbetrachtung mit ihren „Lautgesetzen“ ablehnt, daß sie nicht mehr gerade <hi
-            rend="unknown"
-            rendition="#none">die</hi> Gebiete der Sprachwissenschaft, in denen man von der Beziehung zum Bewußtsein des Sprechenden völlig absehen zu können glaubt, „in den Mittelpunkt der Forschung“ rückt. Und wenn Schuchardt selbst einmal gesagt hat, in aller Sprachwissenschaft komme den Romanisten die Leitung zu, weil sie in den Besitz der festesten Maßstäbe und der feinsten Werkzeuge gelangt seien, so gilt dieses stolze Wort nur insoweit, als mit <hi
-            rend="unknown" rendition="#none">
-seinen</hi> Maßstäben und mit <hi rend="unknown"
-            rendition="#none">seinen </hi>Werkzeugen gearbeitet wird. Dann aber werden Schuchardts Erkenntnisse auch für jedweden andern Zweig der Sprachwissenschaft fruchtbar werden, und so heißt dieses Brevier, das nur Äußerungen eines Romanisten bringt, mit Recht ein Vademekum der <hi
-            rend="unknown" rendition="#none">allgemeinen </hi>Sprachwissenschaft.</p>
-
-        <p>Da nun Schuchardts weit verstreute, z.T. auch im Buchhandel vergriffene Schriften längst nicht so bekannt sind, wie sie es sein sollten, war die Zusammenstellung dieses Breviers ein glücklicher Gedanke. Es konnte dafür auch kaum ein geeigneterer Zusammensteller gefunden werden als <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>, der dem Meister jedenfalls in der Zahl der beherrschten Sprachen noch am ehesten gleichkommt. [hier folgt Lerchs Anm. 1: Spitzer hat sich freilich der Anschauungsweise Schuchardts (und damit Voßlers) erst allmählich genähert: noch in seinem Aufsatz „Eine Strömung innerhalb der romanischen <pb
-            facs="#IMG.7" n="7"/> Sprachwissenschaft“ (hier Bd. 141, S. 111 ff) nannte er Schuchardt nur als <hi
-            rend="unknown"
-            rendition="#none">
-einen</hi> Vertreter der historischen Richtung (S. 130); er übersah, welchen Anteil Schuchardt (im Gegensatz zu anderen Vertretern der historischen Methode) dem <hi
-            rend="unknown"
-            rendition="#none">Bewußtsein</hi> beim Sprechen zuschreibt (und nicht erst seit 1898, sondern schon seit 1866), und bestritt daher aufs Energischste die Notwendigkeit einer Neuorientierung der gesamten Sprachwissenschaft. – Angesichts dieser Annäherung <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-Spitzers</persName> aber ist es mir Bedürfnis, eine von mir in der Besprechung seiner „Aufsätze“ (hier 140, 284) gebrauchte Wendung, die mißverstanden werden könnte, zu berichtigen. Ich sagte dort, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName> habe die (von ihm geteilte) kulturhistorische Ableitung von <hi
-            rend="unknown"
-            rendition="#none">
-Faites moi escouter</hi> dazu benutzt, um in einer Fußnote (S. 142 seiner „Aufsätze“) der Voßlerschen Zurückführung sprachlicher Erscheinungen auf die <hi
-            rend="unknown"
-            rendition="#none">besondere</hi> Geistesart von Völkern und Epochen einen Fußtritt zu versetzen. Mit letzterem Ausdruck wollte ich nicht etwa sagen, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzers</persName> Polemik an der angeführten Stelle sei ihrem <hi
-            rend="unknown"
-            rendition="#none">
-Tone</hi> nach unangemessen (das ist sie durchaus nicht!), sondern lediglich, daß sie in diesem Zusammenhang deplaciert, an den Haaren herbeigezogen wirke, da <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName> ja hier mit Voßler übereinstimmt; deshalb wirke sie feindselig. Und auch das war nur meine Empfindung, nicht <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-Spitzers</persName> Absicht.]<note n="5" place="foot"
-              type="editorial">Hans Ulrich Gumbrecht hat dem gespannten Verhältnis <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName> : <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Lerch</persName> einige treffende Bemerkungen gewidmet: „Seine [= Spitzers] Veröffentlichungen um 1920 lassen vielmehr ein fortwährendes Oszillieren zwischen dem eher ,idealistischen‘ und dem mehr ,positivistischen‘ Standpunkt erkennen. Welcher Seite er in jedem konkreten Fall den Vorzug gab, schien von der Position abzuhängen, von welcher er sich jeweils distanieren wollte. […] 1921 veröffentlichte er einen sehr aggressiven, um nicht zu sagen denunziatorischen Aufsatz gegen <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Voßler</persName>s Schüler Eugen Lerch, in welchem er nochmals die angebich ,nüchterne‘ Position des Positivismus einnahm, um Lerchs Programm, die Sprachwissenschaft, in eine Unterdisziplin der Kulturwissenschaften umzuwandeln, zu kritisieren. Voßlers Vorbild spielte für Lerch natürlich eine große Rolle – aber er bekam doch nur eine milde Dosis an expliziter Kritik“ (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4085">Gumbrecht, <hi rend="unknown" rendition="#none">Leo Spitzers Stil</hi>, Tübingen 2001, Schriften und Vorträge des Petrarca-Instituts Köln, NF 3</ref>
-            </bibl>), 31-32. Vgl. weiterhin <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4089">Hans Helmut Christmann, <hi
-                  rend="unknown" rendition="#none">Idealistische Philologie und moderne Sprachwissenschaft</hi>, München 1974 (Internationale Bibliothek für allgemeine Linguistik, 19)</ref>
-            </bibl>, passim (wichtig für die weitere Entwicklung Lerchs).</note>
-        </p>
-        <p>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName> hat sich seiner Aufgabe mit großer Sachkenntnis, die gerade hier nicht wohlfeil war, unterzogen; er hat sogar zu Schuchardts eigenem Verzeichnis seiner Druckschriften (1916) nebst Nachträgen noch eigene Nachträge gefunden, und dieses Verzeichnis von 744 Nummern (siehe Berichtigungen und Nachtrag S. 352f) geht dem Texte voran. Dieser selbst ist in 14 Abschnitte eingeteilt (Lautwandel und Lautgesetze, Sachen und Wörter, Sprachmischung, Sprachverwandtschaft, Sprachursprung, Sprache und Denken, Sprache und Nationalität und dergl.), und besteht aus Zitaten von sehr verschiedener Länge (von wenigen Zeilen bis zu 36 Seiten). Außerdem hat <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName> eine kurze Einleitung beigesteuert und ein Sachregister von dankenswerter Ausführlichkeit.</p>
-        <p>An Ausstellungen sind nur wenige zu machen. Vor <pb facs="#IMG.8" n="8"/> allem die, daß <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName> den Ton gar zu sehr auf das „allgemein“ im Titel gelegt und alles „Spezifisch-Romanische“ (das doch eben bei Schuchardt niemals spezifisch-romanisch ist, da auch jeder andere Philologe daraus Grundsätzliches daraus lernen kann) verbannt hat. So sind z.B. von den epochemachenden „Romanischen Etymologien I und II“ (aus den doch nur in Universitätsstädten erreichbaren „Wiener Sitzungsberichten“) nur 4½ Seiten abgedruckt, die eben nur das Allgemeinste enthalten. Auf diese Weise aber erhält man kein ganz richtiges Bild von der so ausgesprochenen Eigentümlichkeit<note
-            n="6" place="foot"
-            type="editorial">Im gedr. Text „Forscherpersönlichkeit“.</note> des Meisters: man sieht ihn wohl <hi
-            rend="unknown"
-            rendition="#none">vor</hi> der Arbeit – man lernt die Ideen kennen, von denen er (wie alle großen Gelehrten) ausgeht – und <hi
-            rend="unknown"
-            rendition="#none">nach</hi> der Arbeit, wie er die Resultate zieht, die Ernte einheimst – aber man sieht ihn nicht <hi
-            rend="unknown"
-            rendition="#none">bei</hi> der Arbeit, wie er ackert und pflügt und sät, wie er die Idee, von der er ausgeht, an den Tatsachen erprobt, sie revidiert, sie modifiziert – um sie dann erst gültig aussprechen zu können. Denn allgemeine Ideen über die Sprache oder über ein sonstiges Wissensgebiet sind billig wie Brombeeren – es kommt darauf an, daß sie vor den Tatsachen bestehen, daß sie an den Tatsachen erhärtert sind, und das ist ja gerade die Bedeutung der Schuchardtschen Lebensarbeit:daß er sich vor der Kleinarbeit, und mochte sie ihn noch so tief in die winzigsten Einzelheiten hineinführen, nicht fürchtete, dabei aber doch niemals die großen Gesichtspunkte, um derentwillen wir solche Kleinarbeit ja doch bloß unternehmen, aus den Augen verloren hat. Was uns weiter bringt, das sind eben <pb
-            facs="#IMG.9"
-            n="9"/> weder bloße allgemeine Ansichten (und seien sie noch so genial), noch auch bloße fleißige Kleinarbeit (und sei sie noch so undankbar und selbstverleugnend) – es ist allein die Verbindung beider, dieses Hinein in die Tatsachen und wieder Heraus, worin Schuchardts Meisterschaft gerade besteht. Sein Motto ist ja: „Das Kleinste nicht verachten und nach dem Größten trachten“. Kurz, der Extrakt dieses Breviers verhält sich zu dem wahren Schuchardt wie der Saft eines Apfels zu dem frischen Apfel (wobei nicht geleugnet werden soll, daß für gewisse Fälle auch der Apfelsaft seine Meriten hat). Ein gutes Brevier will die Kenntnisnahme des Gesamtwerkes nicht entbehrlich machen – sondern Appetit danach. Und deshalb kann auch folgender Satz der Einleitung (von anderem sei abgesehen) nicht unbeantwortet bleiben: Aufgabe des Herausgebers sei gewesen, das Ideengebäude Schuchardts „aus der Umklammerung des Speziellen, des Details, wie wir heute sagen: des Positivistischen loszulösen, Fern- und Tiefsichtspunkte zu eröffnen, ohne den Leser den Weg dahin nochmals zu führen“. Nein: Positivismus und Detailforschung sind durchaus nicht dasselbe, und den Gegnern des Positivismus liegt nichts ferner, als auch Gegner der Detailforschung zu sein. Positivismus ist vielmehr die Detailforschung ohne Gesichtspunkte, und andrerseits gibt es auch allgemeine Ideen, die ihrer Natur nach durchaus positivistisch sind (z.B. Comtes Hierarchie der Wissenschaften, die Tainesche Milieutheorie). Positivist ist vielmehr der, der das Kausalitätsprinzip in den <hi
-            rend="unknown" rendition="#none">Dingen</hi> sucht (statt im Menschen). [Anm. 2, Text s.u.] Aus Schuchardts Werk aber kann man das Positivistische einfach deshalb nicht erlösen, weil es nicht darin ist …</p>
-        <pb facs="#IMG.10" n="10"/>
-
-        <p>Sodann hätte bei den einzelnen Abschnitten jeweils das Jahr des Erscheinens angegeben werden sollen, da sie ja nicht chronologisch angeordnet sind und es doch wissenswert ist, daß Schuchardt die betreffende Äußerung schon damals getan hat; es ist lediglich auf die Nummern des Verzeichnisses verwiesen, und aus diesem läßt sich die Jahreszahl freilich ermitteln. Es hätte aber auch umgekehrt im Verzeichnis der Schriften jeweils auf die abgedruckten Auszüge verwiesen werden sollen, da man doch gern wissen möchte, was man z.B. aus der Schrift für <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2200">Miklosich</persName> (von 1884) hinten findet (es sind 4 verschiedene Stellen). Im Register endlich, das dankenswerterweise in Fußnoten jeweils auch sonstige, im Brevier nicht abgedruckte Stellen aufführt, vermißt man die Namen der im Text erwähnten Forscher; man will doch auch wissen, was Schuchardt z.B. über <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">Diez</persName> oder über <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">Meyer-Lübke</persName> oder über <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2638">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4303" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Pasing vor München <lb/>Richard Wagnerstr. 30 <lb/>19.I.23</dateline>
+            <opener>Hochverehrter Meister!</opener>
+            <p>Beifolgend erlaube ich mir, Ihnen eine Niederschrift meiner Besprechung des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.317">,Breviers‘</ref> (für <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3348">Herrigs Archiv</ref>) zu senden; die diesem übersandte Fassung stimmt bis auf kleine Zusätze und stilistische Änderungen damit überein. Es wird nämlich mindestens ein Jahr dauern, bis sie erscheint (vorausgesetzt, daß dann überhaupt noch ein ,Archiv‘ erscheint:<note n="1" place="foot" type="editorial">Erschienen in <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1070">
+                        <hi rend="unknown" rendition="#none">ASNSpr</hi> 77. Jg., 145. Band, N.S. 45. Band, 1923, 134-137.</ref>
+                  </bibl>
+               </note> wer heute wissenschaftliche Aufsätze einschickt, gibt ein „flüchtig Blatt den Winden“<note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
+Ludwig Uhland</persName>, „Freie Kunst“, v. 19 („gieb ein fliegend Blatt den Winden“).</note>). Und in meiner Autoren-Eitelkeit bilde ich mir ein, es könnte Sie interessieren, was über Sie geschrieben wird. Rücksendung wird nicht erwartet, und wenn Sie sonst nichts damit anzufangen wissen, so benutzen Sie bitte die Rückseiten, um Wertvolleres darauf zu schreiben. <pb facs="#IMG.2" n="2"/> – Sobald ich von <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4230">Niemeyer</ref> die bestellten Abzüge erhalte, werde ich mir gestatten, Ihnen mein „Imperfektum“ zu senden, dessen Schluß eben in der ZrPh erschienen ist<note n="3" place="foot" type="editorial">Vgl. Anm. 3 zu Lfd. Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.4304">01-06412.</ref>
+               </note>.</p>
+            <closer>
+               <salute>Mit den herzlichsten Wünschen für dieses Jahr, das unmöglich so trüb enden kann, wie es begonnen hat,</salute>
+               <lb/>
+               <salute>begrüßt Sie</salute>
+               <lb/>
+               <salute>in großer Verehrung</salute>
+               <lb/>
+               <salute>Ihr sehr ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Lerch</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.4303"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <pb facs="#IMG.3" n="3"/>
+            <dateline>Univ.-Prof. Dr. Eugen Lerch <lb/>München-Pasing, Richard Wagnerstr. 30</dateline>
+            <p>Hugo Schuchardt-Brevier. Ein Vademekum der allgemeinen Sprachwissenschaft. Als Festgabe zum 80. Geburtstag des Meisters zusammengestellt und engeleitet von Leo Spitzer. Gedruckt mit Unterstützung einer Anzahl schweizerischer Forscher und Lehrer. Mit einem Porträt Hugo Schuchardts. Halle, Verlag Max Niemeyer, 1922. 375 S. 8°.</p>
+            <p>Zum Ruhme H Schuchardts wäre nichts mehr zu sagen – wäre er nur in dem Grade, wie er berühmt ist, auch bekannt, auch gelesen. Aber darin steht es mit ihm nicht viel anders als mit Kant … Will man sein Verdienst und die Eigenart seiner Leistung in wenige Worte zusammenfassen, so wird man sie suchen müssen in seinem klaren Blick für den innigen Zusammenhang des Sprachlichen mit dem Seelischen und Sachlichen. Er, der Sohn eines Mannes, der noch bei Goethe zu Gast war; er, der weltgewandte, nicht nur in den Sprachen, sondern auch in den Ländern, den Literaturen, bei den Völkern heimische Gelehrte konnte niemals in den positivistischen Irrtum verfallen, als sei die Sprache ein Etwas, das sich isoliert, unabhängig von allen anderen Erscheinungen, ja sogar vom Bewußtsein der Sprechenden, nach eigenen Gesetzen entwickle – eine Anschauung, wie sich [gem. „sie“] in der Aufstellung von ausnahmslos wirkenden Lautgesetzen, in dem Schlagwort ,Sprachbiologie‘ und dergl. zum Ausdruck kam. Er, der gleich seinem Lehrer <persName ref="[authorityLink]">
+Diez</persName> und <persName ref="[authorityLink]">
+Jacob Grimm</persName>, noch in der Tradition des deutschen Humanismus wurzelt, hat die Ursachen der sprachlichen Wandlungen niemals in der Sprache selbst gesucht, <pb facs="#IMG.4" n="4"/> sondern in den Wandlungen der seelischen Einstellung der sprechenden Menschen, die natürlich wesentlich verschieden ist je nach dem jeweils erreichten Kulturzustand. So ist ihm die Sprachgeschichte zur Kulturgeschichte geworden, so ist er von den Wörtern zu den Sachen vorgedrungen; so hat er bei der Aufstellung seiner zahlreichen Etymologien den Akzent auf die begriffliche Seite gelegt, während andere mit dem rein Lautlichen, mit der Anwendung der ermittelten Lautgesetze in umgekehrter Richtung glaubten auskommen zu können und geradezu lehrten, die historische Phonetik bestehe für sich, unabhängig von der Bedeutung der Wörter – die Semantik dagegen befinde sich in enger Abhängigkeit von der Phonetik (ZrPh 26, 385ff., Brevier S. 102). So ist er denn in den Jahrzehnten, da die Sprachwissenschaft es den so erfolgreichen Naturwissenschaften gleich tun wollte und möglichst nach naturwissenschaftlicher Weise verfuhr (wobei nur leider die Sprache völlig isoliert, vom sprechenden Menschen und seinen seelischen Erlebnissen entfernt wurde), ein Außenseiter gewesen; vielleicht hängt es damit zusammen, daß er niemals ein Lehrbuch geschrieben hat. Erst heute, da die naturwissenschaftliche Denkweise mehr und mehr überwunden wird, ist seine Bedeutung ganz erkannt worden; zumal wir Jüngeren verehren in ihm unseren Führer und Meister. Er hat, wie <persName ref="[authorityLink]">Friedwagner</persName> sagt, zahllose Quadern zurechtgehauen für viele Teile eines <hi rend="unknown" rendition="#none">neuen</hi> (von mir gesperrt) eines neuen Baues der romanischen <pb facs="#IMG.5" n="5"/> und allgemeinen Sprachwissenschaft; ohne Übertreibung könne man sagen, daß für lange Zeit hinaus nur mit solchen Formen und nach seinem Entwurfe wird gebaut werden können (Frkf. Ztg., 7.II.22).Zu seinen Anschauungen wird jeder sich bekennen müssen, der sich den offenen Blick für die Wirklichkeit der Sprache bewahrt hat; die isolierende, abstrakte Sprachwissenschaft war eine Verirrung, die nur in der Isolierzelle der Studierstube gedeihen konnte. <persName ref="[authorityLink]">Gilliéron</persName>, der Schöpfer des französischen Sprachatlas, der ihm die erste Serie seiner sprachgeographischen Studien gewidmet hat, hat seine Anschauung, daß die Sprache ein soziales Phänomen sei und nicht ein Organismus für sich, durchaus bestätigt, und zumal die Schweizer Romanisten (zu denen auch der unvergeßliche, in der Einleitung dieses Breviers leider nicht erwähnte <persName ref="[authorityLink]">Heinrich <hi rend="unknown" rendition="#none">Morf</hi>
+               </persName> gehört), die ihm bereits zum 70. Geburtstag mit einem Festband huldigten, und deren einer, <persName ref="[authorityLink]">Jakob <hi rend="unknown" rendition="#none">Jud</hi>
+               </persName>, das vorliegende Brevier angeregt hat, arbeiten<note n="4" place="foot" type="editorial">Im gedruckten Text S. 135 heißt es: „arbeiten – bei den Angehörigen eines Landes, wo einem die sprachliche Wirklichkeit so besonders deutlich entgegentritt gewiß kein Zufall – in seinem Sinne weiter: <persName ref="[authorityLink]">
+Salvioni</persName>, der Tessiner, und <persName ref="[authorityLink]">Tappolet</persName>, wenn sie als erste von der Bedeutungs- zur Bezeichungslehre fortschreiten (andere wie <persName ref="[authorityLink]">Zauner</persName>, <persName ref="[authorityLink]">Merlo</persName>, Luchsinger, <persName ref="[authorityLink]">
+Gilliéron</persName>, <persName ref="[authorityLink]">Jaberg</persName>, <persName ref="[authorityLink]">Gamillscheg</persName>, <persName ref="[authorityLink]">Spitzer</persName>, Gust. Huber, <persName ref="[authorityLink]">v. Wartburg</persName> usw. sind bald nachgefolgt), <persName ref="[authorityLink]">Gauchat</persName> …“</note> in seinem Sinne weiter: <persName ref="[authorityLink]">
+Tappolet</persName>, wenn er als erster von der Bedeutungs- und Bezeichnungslehre fortschreitet (Die romanischen Verwandtschaftsnamen, Straßburg 1895), Gauchat, wenn er „Sprachforschung im Terrain“ treibt und die angebliche Einheit eines Dorfdialekts untersucht oder Jud mit seinen schönen wortgeographisch-kulturhistorischen Arbeiten, welche zeigen, wie die Sprachwissenschaft auch da noch etwas ermitteln kann, wo alle historischen Dokumente fehlen. – Und daß <persName ref="[authorityLink]">Voßler</persName> auf Schuchardts Schultern steht, weiß jeder, der seine Schriften kennt. – So kann der Meister denn heute eine stattliche Gefolgschaft sein eigen nennen, eine Gefolgschaft, die freilich durchaus nicht homogen ist <pb facs="#IMG.6" n="6"/> (sie vereinigt in sich so verschiedenartige Forschercharaktere wie <persName ref="[authorityLink]">Gilliéron</persName> und <persName ref="[authorityLink]">Voßler</persName>), die aber doch darin einig ist, daß sie hinter den sprachlichen Erscheinungen den deutenden und fühlenden Menschen sieht und die naturwissenschaftlich-mechanistische Sprachbetrachtung mit ihren „Lautgesetzen“ ablehnt, daß sie nicht mehr gerade <hi rend="unknown" rendition="#none">die</hi> Gebiete der Sprachwissenschaft, in denen man von der Beziehung zum Bewußtsein des Sprechenden völlig absehen zu können glaubt, „in den Mittelpunkt der Forschung“ rückt. Und wenn Schuchardt selbst einmal gesagt hat, in aller Sprachwissenschaft komme den Romanisten die Leitung zu, weil sie in den Besitz der festesten Maßstäbe und der feinsten Werkzeuge gelangt seien, so gilt dieses stolze Wort nur insoweit, als mit <hi rend="unknown" rendition="#none">
+seinen</hi> Maßstäben und mit <hi rend="unknown" rendition="#none">seinen </hi>Werkzeugen gearbeitet wird. Dann aber werden Schuchardts Erkenntnisse auch für jedweden andern Zweig der Sprachwissenschaft fruchtbar werden, und so heißt dieses Brevier, das nur Äußerungen eines Romanisten bringt, mit Recht ein Vademekum der <hi rend="unknown" rendition="#none">allgemeinen </hi>Sprachwissenschaft.</p>
+            <p>Da nun Schuchardts weit verstreute, z.T. auch im Buchhandel vergriffene Schriften längst nicht so bekannt sind, wie sie es sein sollten, war die Zusammenstellung dieses Breviers ein glücklicher Gedanke. Es konnte dafür auch kaum ein geeigneterer Zusammensteller gefunden werden als <persName ref="[authorityLink]">Spitzer</persName>, der dem Meister jedenfalls in der Zahl der beherrschten Sprachen noch am ehesten gleichkommt. [hier folgt Lerchs Anm. 1: Spitzer hat sich freilich der Anschauungsweise Schuchardts (und damit Voßlers) erst allmählich genähert: noch in seinem Aufsatz „Eine Strömung innerhalb der romanischen <pb facs="#IMG.7" n="7"/> Sprachwissenschaft“ (hier Bd. 141, S. 111 ff) nannte er Schuchardt nur als <hi rend="unknown" rendition="#none">
+einen</hi> Vertreter der historischen Richtung (S. 130); er übersah, welchen Anteil Schuchardt (im Gegensatz zu anderen Vertretern der historischen Methode) dem <hi rend="unknown" rendition="#none">Bewußtsein</hi> beim Sprechen zuschreibt (und nicht erst seit 1898, sondern schon seit 1866), und bestritt daher aufs Energischste die Notwendigkeit einer Neuorientierung der gesamten Sprachwissenschaft. – Angesichts dieser Annäherung <persName ref="[authorityLink]">
+Spitzers</persName> aber ist es mir Bedürfnis, eine von mir in der Besprechung seiner „Aufsätze“ (hier 140, 284) gebrauchte Wendung, die mißverstanden werden könnte, zu berichtigen. Ich sagte dort, <persName ref="[authorityLink]">Spitzer</persName> habe die (von ihm geteilte) kulturhistorische Ableitung von <hi rend="unknown" rendition="#none">
+Faites moi escouter</hi> dazu benutzt, um in einer Fußnote (S. 142 seiner „Aufsätze“) der Voßlerschen Zurückführung sprachlicher Erscheinungen auf die <hi rend="unknown" rendition="#none">besondere</hi> Geistesart von Völkern und Epochen einen Fußtritt zu versetzen. Mit letzterem Ausdruck wollte ich nicht etwa sagen, <persName ref="[authorityLink]">Spitzers</persName> Polemik an der angeführten Stelle sei ihrem <hi rend="unknown" rendition="#none">
+Tone</hi> nach unangemessen (das ist sie durchaus nicht!), sondern lediglich, daß sie in diesem Zusammenhang deplaciert, an den Haaren herbeigezogen wirke, da <persName ref="[authorityLink]">Spitzer</persName> ja hier mit Voßler übereinstimmt; deshalb wirke sie feindselig. Und auch das war nur meine Empfindung, nicht <persName ref="[authorityLink]">
+Spitzers</persName> Absicht.]<note n="5" place="foot" type="editorial">Hans Ulrich Gumbrecht hat dem gespannten Verhältnis <persName ref="[authorityLink]">Spitzer</persName> : <persName ref="[authorityLink]">Lerch</persName> einige treffende Bemerkungen gewidmet: „Seine [= Spitzers] Veröffentlichungen um 1920 lassen vielmehr ein fortwährendes Oszillieren zwischen dem eher ,idealistischen‘ und dem mehr ,positivistischen‘ Standpunkt erkennen. Welcher Seite er in jedem konkreten Fall den Vorzug gab, schien von der Position abzuhängen, von welcher er sich jeweils distanieren wollte. […] 1921 veröffentlichte er einen sehr aggressiven, um nicht zu sagen denunziatorischen Aufsatz gegen <persName ref="[authorityLink]">Voßler</persName>s Schüler Eugen Lerch, in welchem er nochmals die angebich ,nüchterne‘ Position des Positivismus einnahm, um Lerchs Programm, die Sprachwissenschaft, in eine Unterdisziplin der Kulturwissenschaften umzuwandeln, zu kritisieren. Voßlers Vorbild spielte für Lerch natürlich eine große Rolle – aber er bekam doch nur eine milde Dosis an expliziter Kritik“ (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4085">Gumbrecht, <hi rend="unknown" rendition="#none">Leo Spitzers Stil</hi>, Tübingen 2001, Schriften und Vorträge des Petrarca-Instituts Köln, NF 3</ref>
+                  </bibl>), 31-32. Vgl. weiterhin <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4089">Hans Helmut Christmann, <hi rend="unknown" rendition="#none">Idealistische Philologie und moderne Sprachwissenschaft</hi>, München 1974 (Internationale Bibliothek für allgemeine Linguistik, 19)</ref>
+                  </bibl>, passim (wichtig für die weitere Entwicklung Lerchs).</note>
+            </p>
+            <p>
+               <persName ref="[authorityLink]">Spitzer</persName> hat sich seiner Aufgabe mit großer Sachkenntnis, die gerade hier nicht wohlfeil war, unterzogen; er hat sogar zu Schuchardts eigenem Verzeichnis seiner Druckschriften (1916) nebst Nachträgen noch eigene Nachträge gefunden, und dieses Verzeichnis von 744 Nummern (siehe Berichtigungen und Nachtrag S. 352f) geht dem Texte voran. Dieser selbst ist in 14 Abschnitte eingeteilt (Lautwandel und Lautgesetze, Sachen und Wörter, Sprachmischung, Sprachverwandtschaft, Sprachursprung, Sprache und Denken, Sprache und Nationalität und dergl.), und besteht aus Zitaten von sehr verschiedener Länge (von wenigen Zeilen bis zu 36 Seiten). Außerdem hat <persName ref="[authorityLink]">Spitzer</persName> eine kurze Einleitung beigesteuert und ein Sachregister von dankenswerter Ausführlichkeit.</p>
+            <p>An Ausstellungen sind nur wenige zu machen. Vor <pb facs="#IMG.8" n="8"/> allem die, daß <persName ref="[authorityLink]">Spitzer</persName> den Ton gar zu sehr auf das „allgemein“ im Titel gelegt und alles „Spezifisch-Romanische“ (das doch eben bei Schuchardt niemals spezifisch-romanisch ist, da auch jeder andere Philologe daraus Grundsätzliches daraus lernen kann) verbannt hat. So sind z.B. von den epochemachenden „Romanischen Etymologien I und II“ (aus den doch nur in Universitätsstädten erreichbaren „Wiener Sitzungsberichten“) nur 4½ Seiten abgedruckt, die eben nur das Allgemeinste enthalten. Auf diese Weise aber erhält man kein ganz richtiges Bild von der so ausgesprochenen Eigentümlichkeit<note n="6" place="foot" type="editorial">Im gedr. Text „Forscherpersönlichkeit“.</note> des Meisters: man sieht ihn wohl <hi rend="unknown" rendition="#none">vor</hi> der Arbeit – man lernt die Ideen kennen, von denen er (wie alle großen Gelehrten) ausgeht – und <hi rend="unknown" rendition="#none">nach</hi> der Arbeit, wie er die Resultate zieht, die Ernte einheimst – aber man sieht ihn nicht <hi rend="unknown" rendition="#none">bei</hi> der Arbeit, wie er ackert und pflügt und sät, wie er die Idee, von der er ausgeht, an den Tatsachen erprobt, sie revidiert, sie modifiziert – um sie dann erst gültig aussprechen zu können. Denn allgemeine Ideen über die Sprache oder über ein sonstiges Wissensgebiet sind billig wie Brombeeren – es kommt darauf an, daß sie vor den Tatsachen bestehen, daß sie an den Tatsachen erhärtert sind, und das ist ja gerade die Bedeutung der Schuchardtschen Lebensarbeit:daß er sich vor der Kleinarbeit, und mochte sie ihn noch so tief in die winzigsten Einzelheiten hineinführen, nicht fürchtete, dabei aber doch niemals die großen Gesichtspunkte, um derentwillen wir solche Kleinarbeit ja doch bloß unternehmen, aus den Augen verloren hat. Was uns weiter bringt, das sind eben <pb facs="#IMG.9" n="9"/> weder bloße allgemeine Ansichten (und seien sie noch so genial), noch auch bloße fleißige Kleinarbeit (und sei sie noch so undankbar und selbstverleugnend) – es ist allein die Verbindung beider, dieses Hinein in die Tatsachen und wieder Heraus, worin Schuchardts Meisterschaft gerade besteht. Sein Motto ist ja: „Das Kleinste nicht verachten und nach dem Größten trachten“. Kurz, der Extrakt dieses Breviers verhält sich zu dem wahren Schuchardt wie der Saft eines Apfels zu dem frischen Apfel (wobei nicht geleugnet werden soll, daß für gewisse Fälle auch der Apfelsaft seine Meriten hat). Ein gutes Brevier will die Kenntnisnahme des Gesamtwerkes nicht entbehrlich machen – sondern Appetit danach. Und deshalb kann auch folgender Satz der Einleitung (von anderem sei abgesehen) nicht unbeantwortet bleiben: Aufgabe des Herausgebers sei gewesen, das Ideengebäude Schuchardts „aus der Umklammerung des Speziellen, des Details, wie wir heute sagen: des Positivistischen loszulösen, Fern- und Tiefsichtspunkte zu eröffnen, ohne den Leser den Weg dahin nochmals zu führen“. Nein: Positivismus und Detailforschung sind durchaus nicht dasselbe, und den Gegnern des Positivismus liegt nichts ferner, als auch Gegner der Detailforschung zu sein. Positivismus ist vielmehr die Detailforschung ohne Gesichtspunkte, und andrerseits gibt es auch allgemeine Ideen, die ihrer Natur nach durchaus positivistisch sind (z.B. Comtes Hierarchie der Wissenschaften, die Tainesche Milieutheorie). Positivist ist vielmehr der, der das Kausalitätsprinzip in den <hi rend="unknown" rendition="#none">Dingen</hi> sucht (statt im Menschen). [Anm. 2, Text s.u.] Aus Schuchardts Werk aber kann man das Positivistische einfach deshalb nicht erlösen, weil es nicht darin ist …</p>
+            <pb facs="#IMG.10" n="10"/>
+            <p>Sodann hätte bei den einzelnen Abschnitten jeweils das Jahr des Erscheinens angegeben werden sollen, da sie ja nicht chronologisch angeordnet sind und es doch wissenswert ist, daß Schuchardt die betreffende Äußerung schon damals getan hat; es ist lediglich auf die Nummern des Verzeichnisses verwiesen, und aus diesem läßt sich die Jahreszahl freilich ermitteln. Es hätte aber auch umgekehrt im Verzeichnis der Schriften jeweils auf die abgedruckten Auszüge verwiesen werden sollen, da man doch gern wissen möchte, was man z.B. aus der Schrift für <persName ref="[authorityLink]">Miklosich</persName> (von 1884) hinten findet (es sind 4 verschiedene Stellen). Im Register endlich, das dankenswerterweise in Fußnoten jeweils auch sonstige, im Brevier nicht abgedruckte Stellen aufführt, vermißt man die Namen der im Text erwähnten Forscher; man will doch auch wissen, was Schuchardt z.B. über <persName ref="[authorityLink]">Diez</persName> oder über <persName ref="[authorityLink]">Meyer-Lübke</persName> oder über <persName ref="[authorityLink]">
 Schleicher</persName> geäußert hat. –</p>
-        <p>Entbehrlich ist dieses Brevier nur für <hi rend="unknown"
-            rendition="#none">den</hi> Philologen, der Schuchardt’s sämtliche Veröffentlichungen kennt und besitzt – und wer könnte das von sich behaupten? Wer es aber könnte, der brauchte dieses Buch erst recht: als Register mit Auszügen. Deshalb sind wir dem Herausgeber großen Dank schuldig, und es gibt keinen Philologen, der seine Auswahl <hi
-            rend="unknown" rendition="#none">nicht</hi> haben müßte.<note n="7" place="foot" type="editorial">
+            <p>Entbehrlich ist dieses Brevier nur für <hi rend="unknown" rendition="#none">den</hi> Philologen, der Schuchardt’s sämtliche Veröffentlichungen kennt und besitzt – und wer könnte das von sich behaupten? Wer es aber könnte, der brauchte dieses Buch erst recht: als Register mit Auszügen. Deshalb sind wir dem Herausgeber großen Dank schuldig, und es gibt keinen Philologen, der seine Auswahl <hi rend="unknown" rendition="#none">nicht</hi> haben müßte.<note n="7" place="foot" type="editorial">
 Dieser letzte Satz lautet im Druck: „Da es also keinen Philologen gibt, der dieses Brevier nicht haben müßte, hat der Herausgeber eine sehr verdienstvolle Arbeit geleistet“.</note>
-        </p>
-
-        <p>[Anm. 2: Also wenn man glaubt, daß die Laute sich entwickeln, daß die Wortformen und die syntaktischen Wendungen „sich“ gegenseitig analogisch beeinflussen oder „sich“ kontaminieren u. dergl. Als abgekürzte Ausdrucksweise mag man so sagen – nur soll man sich durch diesen Sprachgebrauch nicht verleiten lassen zu glauben, es verhalte sich wirklich so und man habe schon damit etwas erklärt. Vielmehr spielen sich all diese Vorgänge nur insoweit ab, als der sprechende Mensch und die Sprachgemeinschaft sie sich gefallen lassen, und <hi
-            rend="unknown" rendition="#none">warum</hi> sie sich’s mitunter (nicht immer!) gefallen lassen, das ist jeweils zu untersuchen; das ist die eigentliche Frage.</p>
-        <p>München [Namens- und Adreßstempel] Eugen Lerch.</p>
-      </div>
-    </body>
-  </text>
+            </p>
+            <p>[Anm. 2: Also wenn man glaubt, daß die Laute sich entwickeln, daß die Wortformen und die syntaktischen Wendungen „sich“ gegenseitig analogisch beeinflussen oder „sich“ kontaminieren u. dergl. Als abgekürzte Ausdrucksweise mag man so sagen – nur soll man sich durch diesen Sprachgebrauch nicht verleiten lassen zu glauben, es verhalte sich wirklich so und man habe schon damit etwas erklärt. Vielmehr spielen sich all diese Vorgänge nur insoweit ab, als der sprechende Mensch und die Sprachgemeinschaft sie sich gefallen lassen, und <hi rend="unknown" rendition="#none">warum</hi> sie sich’s mitunter (nicht immer!) gefallen lassen, das ist jeweils zu untersuchen; das ist die eigentliche Frage.</p>
+            <p>München [Namens- und Adreßstempel] Eugen Lerch.</p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

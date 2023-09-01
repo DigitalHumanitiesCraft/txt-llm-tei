@@ -1,512 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Edward Spencer Dodgson an Hugo Schuchardt (032-02393)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1402">
-            <forename>Edward Spencer</forename>
-            <surname>Dodgson</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3094" type="PID">o:hsa.letter.3094</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">032-02393</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">02393</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="en"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1402">
-                <forename>Edward Spencer</forename>
-                <surname>Dodgson</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" ref="http://sws.geonames.org/2988507">Paris</origPlace>
-              <origDate ana="dcterms:created" when="1892-05-10">1892-05-10</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Edward Spencer Dodgson und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1402"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3094">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1402" ref="https://viaf.org/viaf/27433725">
-            <forename>Edward Spencer</forename>
-            <surname>Dodgson</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" key="#GID.1" ref="http://sws.geonames.org/2988507">Paris</placeName>
-          <date when="1892-05-10">1892-05-10</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Paris</settlement>
-                <name ref="http://geonames.org/2988507" type="fcode:PPLC">Paris</name>
-                <location>
-                  <geo>2.3488,48.85341</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1402" type="context">
-                        Korrespondenz Edward Spencer Dodgson - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3129" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Revue de linguistique et de philologie comparée</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5057" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bibliothèque Nationale de France</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5728" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Pastoralen (Baskenland)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.197" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Chanson de Roland</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4884" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">La Divina Commedia</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5732" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Boyveau (Boyveau et Chevillet)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5676" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Euskal-Erria: Revista bascongada</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5735" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bibliothèque de la Sorbonne (Paris)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5736" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bibliothèque Sainte-Geneviève (Paris)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5741" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Galignani's messenger</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5464" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Éditions A. Maisonneuve - Jean Maisonneuve succ.</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.854" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rumänisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.205" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Irisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="en">Englisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3094" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3094" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3094" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3094" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3094" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3094" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3094" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3094" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3094" xml:lang="en">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>My dear Doctor Schuchardt,</opener>
-
-        <p>after one of my too frequent sleepless nights, a trouble from which I suffer chiefly at Paris, your card received this morning in which you say a word in favour of my explanation of <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3094" xml:lang="en">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>My dear Doctor Schuchardt,</opener>
+            <p>after one of my too frequent sleepless nights, a trouble from which I suffer chiefly at Paris, your card received this morning in which you say a word in favour of my explanation of <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">
 laket</hi>
-          </foreign>, which also likes <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2939">
-            <hi rend="unknown" rendition="#none">Vinson</hi>
-          </persName> for a wonder! and of my translation in the latest <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3129">Revue de Linguistiques</ref>, where <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2939">
-            <hi rend="unknown" rendition="#none">Vinson</hi>
-
-          </persName>, without consulting me, and after I had corrected the proofs twice, turned “as beautiful as can possibly be”, which is the logical equivalent of <foreign
-            xml:lang="eu">“ecin haboro eger”</foreign>, into “<hi rend="unknown"
-            rendition="#none">more</hi> beautiful <hi rend="unknown"
-            rendition="#none">than</hi> can possibly be”, which is nonsense; was very refreshing. I had some difficulty in reading some of the words at first, but your disciple D<hi rendition="#sup">r</hi>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2445">Josef Priebsch</persName>, who has been a very kind and generous friend to me this last fortnight, and who is going to England next month helped me out. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2445">Priebsch</persName> talks too much of women, and is a bit too phlegmatic and lacking in imagination and mental quickness, but his buoyant cheerfulness and good nature are valuable qualities, and he seems fairly strong in the neolatin tongues. Of course I have urged him to take up <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">Basque</ref>. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2237">Mocochain</persName> died at the end of 1890, and his widow and son while keeping his stock of books do not seem to trouble themselves about selling them. The city of Bayonne might do worse than buy them. It has, like the <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5057">
-Bibliothèque Nationale</ref>, and likewise, I believe, by <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2939">
-            <hi rend="unknown" rendition="#none">Vinsons</hi>
-          </persName> baneful and baleful advice, refused to buy the Manuscript Basque French dictionary by M<hi
-            rendition="#sup">r</hi> Gustave Grandin, written out on separate slips in alphabetical order, which are pigeonholed in two neat oaken boxes, and to be bought of <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1291">Honoré Champion</persName> the bookseller of 9 Quai Voltaire here. <pb
-            facs="#IMG.2"
-            n="2"/> As far as Bayonne goes you should get books from Hourguet, the bookseller in the Arceaux du Pont Neuf. He is the most practical man there. I have always understood that <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2939">
-            <hi rend="unknown" rendition="#none">Vinsons Julien</hi>
-          </persName> of <ref
-            target="https://catalogue.bnf.fr/ark:/12148/cb33594484f">Antioch</ref> was only printed to the extent of 50 copies, but <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2939">
-            <hi rend="unknown" rendition="#none">Vinsons</hi>
-
-          </persName> assertions are not always gospel! It is certainly mentioned at the end of his Bibliography, and I possess a copy, <hi
-            rend="unknown" rendition="#none">given</hi> to me by M<hi rendition="#sup">r</hi>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5454">Stempf</persName> who will shortly be back at Hotel de Hollande, Rue Radziwill with his wife and only son on his return from his annual wine selling tour in Germany. He is a Baden man by birth. I returned to <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5729">
-Haristoy</persName> the curé of Ciboure (Zubiburu in the 17<hi
-            rendition="#sup">
-th</hi> century) yesterday my proofs of the rare supplement to <ref
-            target="https://catalogue.bnf.fr/ark:/12148/cb30576852k">Doihenarts proverbs</ref>, which he is about to publish, from my copy, in the <bibl>Eskualduna</bibl>. You shall have them in the <hi
-            rend="unknown" rendition="#none">tirage à part</hi>. I hope to copy out at Bayonne the whole of the <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5728">Helen pastoral</ref>, and to publish it with a translation. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2939">
-            <hi rend="unknown" rendition="#none">Vinson</hi>
-
-          </persName> has a quantity of unedited pastorals in his room at 5 Rue de Beaune here, which he neither publishes nor lends. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5730">Hannemann</persName> and <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2047">Linschmann</persName> have introduced some errors into my French, for which my manuscript was not to blame, and they have irritated me very much by <pb
-            facs="#IMG.3"
-            n="3"/> refusing, for the last two numbers at least, to let me have any proofsheets to correct. in the preface which I printed in last number, which bears date “End of March” but which I only received 28 April, with a translation made here in June 1890, an <hi
-            rend="unknown" rendition="#none">i</hi> is omitted <hi rend="unknown"
-            rendition="#none">bailicateque. </hi>“<hi rend="unknown"
-            rendition="#none">
-Eçagutu</hi>” at the top of the 2<hi
-            rendition="#sup">nd</hi> column has suffered an undue metathesis at the hands of the printer - for <hi
-            rend="unknown" rendition="#none">testamenta</hi> read testamen<hi rend="unknown"
-            rendition="#none">
-tu </hi>and for “voyelle” read “<hi rend="unknown"
-            rendition="#none">voyele</hi>” (sic), for “aux” read “ceux” and separate “auança” and “deçala”. Some accents are omitted.<note
-            n="1" place="foot"
-            type="editorial">Diese Stelle, ab „for “voyelle“ read“, ist offenbar nachträglich eingefügt worden, da Dodgson dafür die gleiche Farbe verwendete wie für die Randnotizen auf Seite 1 und Seite 4.</note> perhaps <hi
-            rend="unknown"
-            rendition="#none">iaquineco</hi> would be better rendered “in certain known places” rather than “known in certain places” - instead of “difficiles” read “<hi
-            rend="unknown" rendition="#none">les plus</hi> difficiles” as I believe I wrote. Chapter V of S<hi
-            rendition="#sup">t</hi> John has, perhaps owing to my protests about the first 4 been much better printed, I only find one mistake, namely <hi
-            rend="unknown" rendition="#none">orein</hi> instead of <hi rend="unknown"
-            rendition="#none">orain</hi>. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5712">Inchauspe</persName> having obtained from me copies of the text of <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.197">La Chanson de Roland</ref> and <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4884">La Divina Commedia</ref> by promising to translate both seems now to have abandonned his intention to go on! I had a postcard in Basque from <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1062">Azcue</persName> yesterday. he knows you want his grammar, but he sent one to the Eskualduna and another to <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5712">Inchauspe</persName>, and neither <pb facs="#IMG.4"
-            n="4"/> of them even thanked him for it! <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2939">
-            <hi rend="unknown" rendition="#none">Vinson</hi>
-          </persName> did so, but has not said a word about it in the <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3129">Revue de Linguistique</ref>. The poor fellow, who deserves every encouragement, has like <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5731">Oregui</persName>, whose madness seems incurable, no pupils! You might buy it through <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5732">Boyveau</ref>, libraire étranger Rue de la Banque, here. It swarms with errors but is very interesting. I received yesterday El III concilio de Toledo como base de la Nacionalidad Española with prologue by <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5733">F. X. Simonet</persName> whom I found when I was at Granada to be a student of Basque - It is <hi
-            rend="unknown" rendition="#none">a most interesting book</hi>. The Basque part is <hi rend="unknown"
-            rendition="#none">attributed</hi> to padre Arana. The Catalan, Gallego, Portuguese, Arabic, and Castillian parts are likewise anonymous. I am going this afternoon to Count de <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1294">Charenceys</persName> philological society - the sessions take place at 74 Rue Vaugirard, and are very dull. The President is meditating an edition of his Etymological Basque Dictionary and confesses I am right in changing “Souletine” into “Basse Navarraise” (it would be more logical to say “Bas Navarraise”) as the language is not low if the contry is in the title of his brochure published last year, which he gave me. I saw M<hi rendition="#sup">r</hi>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5682">D’Abbadie</persName> at the door of my hotel at Saturday - he is much aged but walks - like a Basque! I had some talk and <pb
-            facs="#IMG.5" n="5"/> a walk last Tuesday and Sunday with a zealous bascophile M<hi
-            rendition="#sup">r</hi> l’abbé <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5734">Piarres Harispe</persName>, born at <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.95">S<hi
-            rendition="#sup">t</hi> Jean de Luz</placeName>, who lives at 37 Cours de Vincennes here. He has published something in Basque in the <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5676">
-Euskalerria</ref> formerly, and also 8 volumes in French; like many of the Catholic priests he affects to think none too highly of <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5524">Liçarrague</persName>, whom <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5712">Inchauspe</persName> neither knows nor admires. My address till further notice is <hi
-            rend="unknown" rendition="#none">12</hi> Rue de la Sorbonne <hi rend="unknown"
-            rendition="#none">
-12</hi>. I shall probably start for Bayonne on the 8<hi
-            rendition="#sup">th</hi> of July - My library is a great encumbrance to me. I have given away a good part of it to the <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5735">Sorbonne</ref> and the <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5057">Bib: Nat</ref>: at <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.5736">S<hi
-            rendition="#sup">t</hi> Geneviève</ref> and other libraries here, but still it burdens me. Perhaps M<hi rendition="#sup">r</hi>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2403">Picot</persName> will consent to house it for me. I like him very much. <hi
-            rend="unknown" rendition="#none">Ba</hi> in <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">
-            <hi rend="unknown" rendition="#none">Roumanian</hi>
-          </ref> and <hi rend="unknown"
-            rendition="#none">
+               </foreign>, which also likes <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Vinson</hi>
+               </persName> for a wonder! and of my translation in the latest <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3129">Revue de Linguistiques</ref>, where <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Vinson</hi>
+               </persName>, without consulting me, and after I had corrected the proofs twice, turned “as beautiful as can possibly be”, which is the logical equivalent of <foreign xml:lang="eu">“ecin haboro eger”</foreign>, into “<hi rend="unknown" rendition="#none">more</hi> beautiful <hi rend="unknown" rendition="#none">than</hi> can possibly be”, which is nonsense; was very refreshing. I had some difficulty in reading some of the words at first, but your disciple D<hi rendition="#sup">r</hi>
+               <persName ref="[authorityLink]">Josef Priebsch</persName>, who has been a very kind and generous friend to me this last fortnight, and who is going to England next month helped me out. <persName ref="[authorityLink]">Priebsch</persName> talks too much of women, and is a bit too phlegmatic and lacking in imagination and mental quickness, but his buoyant cheerfulness and good nature are valuable qualities, and he seems fairly strong in the neolatin tongues. Of course I have urged him to take up <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">Basque</ref>. <persName ref="[authorityLink]">Mocochain</persName> died at the end of 1890, and his widow and son while keeping his stock of books do not seem to trouble themselves about selling them. The city of Bayonne might do worse than buy them. It has, like the <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5057">
+Bibliothèque Nationale</ref>, and likewise, I believe, by <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Vinsons</hi>
+               </persName> baneful and baleful advice, refused to buy the Manuscript Basque French dictionary by M<hi rendition="#sup">r</hi> Gustave Grandin, written out on separate slips in alphabetical order, which are pigeonholed in two neat oaken boxes, and to be bought of <persName ref="[authorityLink]">Honoré Champion</persName> the bookseller of 9 Quai Voltaire here. <pb facs="#IMG.2" n="2"/> As far as Bayonne goes you should get books from Hourguet, the bookseller in the Arceaux du Pont Neuf. He is the most practical man there. I have always understood that <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Vinsons Julien</hi>
+               </persName> of <ref target="https://catalogue.bnf.fr/ark:/12148/cb33594484f">Antioch</ref> was only printed to the extent of 50 copies, but <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Vinsons</hi>
+               </persName> assertions are not always gospel! It is certainly mentioned at the end of his Bibliography, and I possess a copy, <hi rend="unknown" rendition="#none">given</hi> to me by M<hi rendition="#sup">r</hi>
+               <persName ref="[authorityLink]">Stempf</persName> who will shortly be back at Hotel de Hollande, Rue Radziwill with his wife and only son on his return from his annual wine selling tour in Germany. He is a Baden man by birth. I returned to <persName ref="[authorityLink]">
+Haristoy</persName> the curé of Ciboure (Zubiburu in the 17<hi rendition="#sup">
+th</hi> century) yesterday my proofs of the rare supplement to <ref target="https://catalogue.bnf.fr/ark:/12148/cb30576852k">Doihenarts proverbs</ref>, which he is about to publish, from my copy, in the <bibl>Eskualduna</bibl>. You shall have them in the <hi rend="unknown" rendition="#none">tirage à part</hi>. I hope to copy out at Bayonne the whole of the <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5728">Helen pastoral</ref>, and to publish it with a translation. <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Vinson</hi>
+               </persName> has a quantity of unedited pastorals in his room at 5 Rue de Beaune here, which he neither publishes nor lends. <persName ref="[authorityLink]">Hannemann</persName> and <persName ref="[authorityLink]">Linschmann</persName> have introduced some errors into my French, for which my manuscript was not to blame, and they have irritated me very much by <pb facs="#IMG.3" n="3"/> refusing, for the last two numbers at least, to let me have any proofsheets to correct. in the preface which I printed in last number, which bears date “End of March” but which I only received 28 April, with a translation made here in June 1890, an <hi rend="unknown" rendition="#none">i</hi> is omitted <hi rend="unknown" rendition="#none">bailicateque. </hi>“<hi rend="unknown" rendition="#none">
+Eçagutu</hi>” at the top of the 2<hi rendition="#sup">nd</hi> column has suffered an undue metathesis at the hands of the printer - for <hi rend="unknown" rendition="#none">testamenta</hi> read testamen<hi rend="unknown" rendition="#none">
+tu </hi>and for “voyelle” read “<hi rend="unknown" rendition="#none">voyele</hi>” (sic), for “aux” read “ceux” and separate “auança” and “deçala”. Some accents are omitted.<note n="1" place="foot" type="editorial">Diese Stelle, ab „for “voyelle“ read“, ist offenbar nachträglich eingefügt worden, da Dodgson dafür die gleiche Farbe verwendete wie für die Randnotizen auf Seite 1 und Seite 4.</note> perhaps <hi rend="unknown" rendition="#none">iaquineco</hi> would be better rendered “in certain known places” rather than “known in certain places” - instead of “difficiles” read “<hi rend="unknown" rendition="#none">les plus</hi> difficiles” as I believe I wrote. Chapter V of S<hi rendition="#sup">t</hi> John has, perhaps owing to my protests about the first 4 been much better printed, I only find one mistake, namely <hi rend="unknown" rendition="#none">orein</hi> instead of <hi rend="unknown" rendition="#none">orain</hi>. <persName ref="[authorityLink]">Inchauspe</persName> having obtained from me copies of the text of <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.197">La Chanson de Roland</ref> and <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4884">La Divina Commedia</ref> by promising to translate both seems now to have abandonned his intention to go on! I had a postcard in Basque from <persName ref="[authorityLink]">Azcue</persName> yesterday. he knows you want his grammar, but he sent one to the Eskualduna and another to <persName ref="[authorityLink]">Inchauspe</persName>, and neither <pb facs="#IMG.4" n="4"/> of them even thanked him for it! <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Vinson</hi>
+               </persName> did so, but has not said a word about it in the <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3129">Revue de Linguistique</ref>. The poor fellow, who deserves every encouragement, has like <persName ref="[authorityLink]">Oregui</persName>, whose madness seems incurable, no pupils! You might buy it through <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5732">Boyveau</ref>, libraire étranger Rue de la Banque, here. It swarms with errors but is very interesting. I received yesterday El III concilio de Toledo como base de la Nacionalidad Española with prologue by <persName ref="[authorityLink]">F. X. Simonet</persName> whom I found when I was at Granada to be a student of Basque - It is <hi rend="unknown" rendition="#none">a most interesting book</hi>. The Basque part is <hi rend="unknown" rendition="#none">attributed</hi> to padre Arana. The Catalan, Gallego, Portuguese, Arabic, and Castillian parts are likewise anonymous. I am going this afternoon to Count de <persName ref="[authorityLink]">Charenceys</persName> philological society - the sessions take place at 74 Rue Vaugirard, and are very dull. The President is meditating an edition of his Etymological Basque Dictionary and confesses I am right in changing “Souletine” into “Basse Navarraise” (it would be more logical to say “Bas Navarraise”) as the language is not low if the contry is in the title of his brochure published last year, which he gave me. I saw M<hi rendition="#sup">r</hi>
+               <persName ref="[authorityLink]">D’Abbadie</persName> at the door of my hotel at Saturday - he is much aged but walks - like a Basque! I had some talk and <pb facs="#IMG.5" n="5"/> a walk last Tuesday and Sunday with a zealous bascophile M<hi rendition="#sup">r</hi> l’abbé <persName ref="[authorityLink]">Piarres Harispe</persName>, born at <placeName ref="[authorityLink]">S<hi rendition="#sup">t</hi> Jean de Luz</placeName>, who lives at 37 Cours de Vincennes here. He has published something in Basque in the <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5676">
+Euskalerria</ref> formerly, and also 8 volumes in French; like many of the Catholic priests he affects to think none too highly of <persName ref="[authorityLink]">Liçarrague</persName>, whom <persName ref="[authorityLink]">Inchauspe</persName> neither knows nor admires. My address till further notice is <hi rend="unknown" rendition="#none">12</hi> Rue de la Sorbonne <hi rend="unknown" rendition="#none">
+12</hi>. I shall probably start for Bayonne on the 8<hi rendition="#sup">th</hi> of July - My library is a great encumbrance to me. I have given away a good part of it to the <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5735">Sorbonne</ref> and the <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5057">Bib: Nat</ref>: at <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5736">S<hi rendition="#sup">t</hi> Geneviève</ref> and other libraries here, but still it burdens me. Perhaps M<hi rendition="#sup">r</hi>
+               <persName ref="[authorityLink]">Picot</persName> will consent to house it for me. I like him very much. <hi rend="unknown" rendition="#none">Ba</hi> in <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">
+                  <hi rend="unknown" rendition="#none">Roumanian</hi>
+               </ref> and <hi rend="unknown" rendition="#none">
 Gothic</hi> seems certainly more than a coincidence with Basque <foreign xml:lang="eus">
-            <hi rend="unknown" rendition="#none">ba</hi>
-          </foreign>. There is a river <hi rend="unknown" rendition="#none">Ibar</hi> in Servia and M<hi rendition="#sup">
+                  <hi rend="unknown" rendition="#none">ba</hi>
+               </foreign>. There is a river <hi rend="unknown" rendition="#none">Ibar</hi> in Servia and M<hi rendition="#sup">
 r</hi>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2403">Picot</persName> says that <hi rend="unknown"
-            rendition="#none">valle</hi> in Roumanian means not only valley but river - what are valleys but river beds where water falls? am I right in connecting germanic <hi
-            rend="unknown" rendition="#none">fall</hi> with latin <foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">vallis</hi>
-          </foreign>? Even the oldest medieval form of Yroue]e[rre in the Yonne (Ica-una) <pb facs="#IMG.6"
-            n="6"/> seems certainly basque; the other place names in the department which now look Euskarian are not so certainly so, but still it is not evident that they are not - see <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5737">Max Quentins</persName> topographical dictionary - What can Yonnais <hi
-            rend="unknown" rendition="#none">heri</hi>, an interrogative exclamation come from? Would Basque <hi
-            rend="unknown"
-            rendition="#none">chal</hi> have any connection with Germanic calb, calf? Novia (which they turned into <hi
-            rend="unknown" rendition="#none">Mariâ</hi> in <hi rend="unknown"
-            rendition="#none">Euskara</hi> XI!) de Salcedo is useful as a <hi rend="unknown"
-            rendition="#none">scarecrow</hi>! and is not always wrong in the meaning he attaches to words - But the best part of his dictionary, the index from the Castilian backwards and basquewards, is full of misprints, and he gives no authorities for his words and phrases, except here and there <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5695">
-Larramendi</persName>. What do you make of his “e<hi
-            rend="unknown" rendition="#none">nda</hi>” which even <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1253">Campion</persName> does not know? I once <hi
-            rend="unknown" rendition="#none">thought</hi> I heard it in a sermon at Tolosa. If you have not seen in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5741">
-            <hi rend="unknown" rendition="#none">the Galignani Messenger</hi>
-          </ref> of May 3 my translations in English prose of <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1253">
-Campions</persName> Orreaga and the Altabiscar of <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1426">Duvoisins</persName> cousin (which cousin? <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1712">
-Harriet</persName> the bird shooter, and lexicological priest, who lives on milk amid the alders of Haltsou, <pb
-            facs="#IMG.7"
-            n="7"/> &amp; who knew Erro is one of them) I may be able to get and send you a copy. Try to come with me to Basqueland this summer - a walking or riding tour in the mountains would do wonders for your health! Schwertfeger is as bad as Guisasola. I suppose he did not borrow <hi
-            rend="unknown" rendition="#none">ophir</hi> through <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2047">Linschmann</persName> from me, as he does not explain it as I have for some time past done, and that independently, by <hi
-            rend="unknown" rendition="#none">op</hi> wealth (also a latin root) and <hi rend="unknown"
-            rendition="#none">iri</hi> town - I have often thought <hi rend="unknown"
-            rendition="#none">Bethulia</hi> must be a Basque town-name - I told M<hi rendition="#sup">r</hi>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5682">D’Abbadie</persName> about your intention in the matter of Leiçarraga - he seems to be losing his enthusiasm about Basque, except in the matter of buying all <hi
-            rend="unknown" rendition="#none">
-mss</hi> and printed matter in it which he can lay hands on. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1466">Van Eys</persName> has most kindly sent me a <hi
-            rend="unknown"
-            rendition="#none">ms</hi> copy, made by himself from his original &amp; perfect exemplar, of nearly all the 2<hi
-            rendition="#sup">nd</hi> part of <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5681">
-Capanaga</persName> - the rest is promised me. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1062">Azcue</persName> and <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2906">Julio de Urquijo e’Ibarra</persName> at Bilbao are going to ask <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5719">Truebas</persName> nephew about the <pb facs="#IMG.8" n="8"/> unique <persName>
-            <hi rend="unknown" rendition="#none">
+               <persName ref="[authorityLink]">Picot</persName> says that <hi rend="unknown" rendition="#none">valle</hi> in Roumanian means not only valley but river - what are valleys but river beds where water falls? am I right in connecting germanic <hi rend="unknown" rendition="#none">fall</hi> with latin <foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">vallis</hi>
+               </foreign>? Even the oldest medieval form of Yroue]e[rre in the Yonne (Ica-una) <pb facs="#IMG.6" n="6"/> seems certainly basque; the other place names in the department which now look Euskarian are not so certainly so, but still it is not evident that they are not - see <persName ref="[authorityLink]">Max Quentins</persName> topographical dictionary - What can Yonnais <hi rend="unknown" rendition="#none">heri</hi>, an interrogative exclamation come from? Would Basque <hi rend="unknown" rendition="#none">chal</hi> have any connection with Germanic calb, calf? Novia (which they turned into <hi rend="unknown" rendition="#none">Mariâ</hi> in <hi rend="unknown" rendition="#none">Euskara</hi> XI!) de Salcedo is useful as a <hi rend="unknown" rendition="#none">scarecrow</hi>! and is not always wrong in the meaning he attaches to words - But the best part of his dictionary, the index from the Castilian backwards and basquewards, is full of misprints, and he gives no authorities for his words and phrases, except here and there <persName ref="[authorityLink]">
+Larramendi</persName>. What do you make of his “e<hi rend="unknown" rendition="#none">nda</hi>” which even <persName ref="[authorityLink]">Campion</persName> does not know? I once <hi rend="unknown" rendition="#none">thought</hi> I heard it in a sermon at Tolosa. If you have not seen in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5741">
+                  <hi rend="unknown" rendition="#none">the Galignani Messenger</hi>
+               </ref> of May 3 my translations in English prose of <persName ref="[authorityLink]">
+Campions</persName> Orreaga and the Altabiscar of <persName ref="[authorityLink]">Duvoisins</persName> cousin (which cousin? <persName ref="[authorityLink]">
+Harriet</persName> the bird shooter, and lexicological priest, who lives on milk amid the alders of Haltsou, <pb facs="#IMG.7" n="7"/> &amp; who knew Erro is one of them) I may be able to get and send you a copy. Try to come with me to Basqueland this summer - a walking or riding tour in the mountains would do wonders for your health! Schwertfeger is as bad as Guisasola. I suppose he did not borrow <hi rend="unknown" rendition="#none">ophir</hi> through <persName ref="[authorityLink]">Linschmann</persName> from me, as he does not explain it as I have for some time past done, and that independently, by <hi rend="unknown" rendition="#none">op</hi> wealth (also a latin root) and <hi rend="unknown" rendition="#none">iri</hi> town - I have often thought <hi rend="unknown" rendition="#none">Bethulia</hi> must be a Basque town-name - I told M<hi rendition="#sup">r</hi>
+               <persName ref="[authorityLink]">D’Abbadie</persName> about your intention in the matter of Leiçarraga - he seems to be losing his enthusiasm about Basque, except in the matter of buying all <hi rend="unknown" rendition="#none">
+mss</hi> and printed matter in it which he can lay hands on. <persName ref="[authorityLink]">Van Eys</persName> has most kindly sent me a <hi rend="unknown" rendition="#none">ms</hi> copy, made by himself from his original &amp; perfect exemplar, of nearly all the 2<hi rendition="#sup">nd</hi> part of <persName ref="[authorityLink]">
+Capanaga</persName> - the rest is promised me. <persName ref="[authorityLink]">Azcue</persName> and <persName ref="[authorityLink]">Julio de Urquijo e’Ibarra</persName> at Bilbao are going to ask <persName ref="[authorityLink]">Truebas</persName> nephew about the <pb facs="#IMG.8" n="8"/> unique <persName>
+                  <hi rend="unknown" rendition="#none">
 Ostolaza</hi>
-
-          </persName>, which that author had among his books - It and Capanaga ought to be published together. I have wondered whether <hi
-            rend="unknown" rendition="#none">Parisii</hi> coud be from Basque <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">ipar</hi>
-          </foreign> = north or Basque <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">
+               </persName>, which that author had among his books - It and Capanaga ought to be published together. I have wondered whether <hi rend="unknown" rendition="#none">Parisii</hi> coud be from Basque <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">ipar</hi>
+               </foreign> = north or Basque <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">
 ibar</hi>
-          </foreign> = valley. <persName>Alexandre Bailleu</persName>, &amp; <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5739">Le Chevalier Quai des Grands Augustins</persName> besides <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1291">Champion</persName> and <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5464">Maisonneuve</ref> often have Basque books for sale. <hi
-            rend="unknown"
-            rendition="#none">About a dozen</hi> new Basque books &amp; booklets have already been published this year on both sides of the Bidassoa. As for <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.205">
-Irish</ref>, which I find much more difficult than Basque, I think it ought to be written on some quite new phonetic plan, as its spelling both ancient and modern seems to have no relation to actual pronunciation, and is only of use as a clue to its etymologies. Instead of “<hi
-            rend="unknown" rendition="#none">bounden</hi>” in my translation of <hi rend="unknown"
-            rendition="#none">Helaine</hi> it would have been better to write “<hi rend="unknown"
-            rendition="#none">indebted</hi>” to bring out the force of <hi rend="unknown" rendition="#none">Zordun</hi>.</p>
-        <closer>
-          <salute>Pardon my inordinate length, and believe me yours sincerely</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1402">Edward S. Dodgson</persName>
-          </signed> - <dateline>Paris, May X, 1892.</dateline>Priebsch sends his <lb/>kind regards</closer>
-        <postscript>
-          <p>|1|<note n="2" place="foot" type="editorial">Diese Randnotiz auf der linken Seite wurde in einer anderen Farbe hinzugefügt.</note> Caer-Baris, May X, 1892.</p>
-          <p>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1062">Azkue</persName> goes to Pamplona in June on a visit to Campion whom he does not yet know except by letter.</p>
-          <p>|4|<note n="3" place="foot"
-              type="editorial">Randnotiz auf der linken Seite, ebenfalls in der anderen Farbe geschrieben.</note>M<hi
-              rendition="#sup">r</hi>. Landerretche the old curé of <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.1">Sare</placeName> died in April.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+               </foreign> = valley. <persName>Alexandre Bailleu</persName>, &amp; <persName ref="[authorityLink]">Le Chevalier Quai des Grands Augustins</persName> besides <persName ref="[authorityLink]">Champion</persName> and <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5464">Maisonneuve</ref> often have Basque books for sale. <hi rend="unknown" rendition="#none">About a dozen</hi> new Basque books &amp; booklets have already been published this year on both sides of the Bidassoa. As for <ref target="https://gams.uni-graz.at/o:hsa.languages#L.205">
+Irish</ref>, which I find much more difficult than Basque, I think it ought to be written on some quite new phonetic plan, as its spelling both ancient and modern seems to have no relation to actual pronunciation, and is only of use as a clue to its etymologies. Instead of “<hi rend="unknown" rendition="#none">bounden</hi>” in my translation of <hi rend="unknown" rendition="#none">Helaine</hi> it would have been better to write “<hi rend="unknown" rendition="#none">indebted</hi>” to bring out the force of <hi rend="unknown" rendition="#none">Zordun</hi>.</p>
+            <closer>
+               <salute>Pardon my inordinate length, and believe me yours sincerely</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Edward S. Dodgson</persName>
+               </signed> - <dateline>Paris, May X, 1892.</dateline>Priebsch sends his <lb/>kind regards</closer>
+            <postscript>
+               <p>|1|<note n="2" place="foot" type="editorial">Diese Randnotiz auf der linken Seite wurde in einer anderen Farbe hinzugefügt.</note> Caer-Baris, May X, 1892.</p>
+               <p>
+                  <persName ref="[authorityLink]">Azkue</persName> goes to Pamplona in June on a visit to Campion whom he does not yet know except by letter.</p>
+               <p>|4|<note n="3" place="foot" type="editorial">Randnotiz auf der linken Seite, ebenfalls in der anderen Farbe geschrieben.</note>M<hi rendition="#sup">r</hi>. Landerretche the old curé of <placeName ref="[authorityLink]">Sare</placeName> died in April.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

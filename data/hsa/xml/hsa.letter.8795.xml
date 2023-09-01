@@ -1,350 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Emil Metzger an Hugo Schuchardt (06-07127)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2178">
-            <forename>Emil</forename>
-            <surname>Metzger</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8795" type="PID">o:hsa.letter.8795</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">06-07127</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">07127</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2178">
-                <forename>Emil</forename>
-                <surname>Metzger</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6173" ref="http://sws.geonames.org/2825297">Stuttgart</origPlace>
-              <origDate ana="dcterms:created" when="1882-04-09">1882-04-09</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2020">2020</date>
-          <title>Die Korrespondenz zwischen Emil Metzger und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2178"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8795">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2178" ref="https://viaf.org/viaf/67230552">
-            <forename>Emil</forename>
-            <surname>Metzger</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6173" key="#GID.1" ref="http://sws.geonames.org/2825297">Stuttgart</placeName>
-          <date when="1882-04-09">1882-04-09</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Stuttgart</settlement>
-                <name ref="http://geonames.org/2825297" type="fcode:PPLA">Stuttgart</name>
-                <location>
-                  <geo>9.17702,48.78232</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2178" type="context">
-                        Korrespondenz Emil Metzger - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.943" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Afrikaans</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.535" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Niederländisch außerhalb Europas</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.779" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8795" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8795" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8795" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8795" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8795" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>
-          <hi rend="unknown" rendition="#none">
-            <placeName>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8795" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>
+               <hi rend="unknown" rendition="#none">
+                  <placeName>
 
 Stuttgart</placeName>, Kriegsbergstrasse 29<hi rendition="#sup">II</hi>
-          </hi>.<lb/> April 9<hi rendition="#sup">te</hi> 1882.<lb/>
-        </dateline>
-        <opener>Sehr geehrter Herr!</opener>
-        <p>Ihre Briefe vom 2<hi rendition="#sup">n</hi> 5<hi rendition="#sup">n</hi> und Karte vom 6<hi
-            rendition="#sup">n</hi> empfangen; ebenso die Beilage (mal. Zeitung).<note n="1" place="foot"
-              type="editorial">Vgl. HSA <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.8794">07126</ref> (bei der Zeitung handelt es sich vermutlich um ein Exemplar von <hi
-              rend="unknown" rendition="#none">
+               </hi>.<lb/> April 9<hi rendition="#sup">te</hi> 1882.<lb/>
+            </dateline>
+            <opener>Sehr geehrter Herr!</opener>
+            <p>Ihre Briefe vom 2<hi rendition="#sup">n</hi> 5<hi rendition="#sup">n</hi> und Karte vom 6<hi rendition="#sup">n</hi> empfangen; ebenso die Beilage (mal. Zeitung).<note n="1" place="foot" type="editorial">Vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.8794">07126</ref> (bei der Zeitung handelt es sich vermutlich um ein Exemplar von <hi rend="unknown" rendition="#none">
 
 Bintang Barat
 </hi>).</note> Da ich einige dringende Arbeiten abzumachen hatte die vor den Festtagen in die Druckerei mußten, komme ich erst heute dazu dieselben so gut wie möglich zu erledigen.</p>
-        <p>Gerne hätte ich auch noch den morgigen Tag auf die Entzifferung des Boeren-Hollandsch<note n="2" place="foot" type="editorial">
-            <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.943">Afrikaans</ref>; vgl. dazu z. B. auch Schuchardts Korrespondenz mit <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1370">Matthias de Vries</persName> (Doorn b. Utrecht), z. B. HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.1071">03-12553</ref> u. a.</note> verwendet, aber heute ist schon der 8<hi rendition="#sup">e</hi> Tag nachdem Sie Ihren Brief geschrieben und da Sie mich um baldige Erledigung ersucht haben, will ich es nicht länger anstehen lassen. –</p>
-        <p>Mit dem ersten Brief glaube ich so ziemlich fertig geworden zu sein, der zweite ist mir nicht nur theilweise ein unentwirrtes Räthsel geblieben, sondern mehrere meiner Combinationen sind mir sehr zweifelhaft. Was ich combinirt habe beruht auf dem Gehör; das Gesicht betrügt zu sehr wenn nicht nur die Orthographie sondern auch Syntax usw verdorben sind; doch kann natürlich auf diesem Wege (durch lautes Lesen) das gesprochene Wort nicht erstzt werden und man sollte den Versuch nach längeren Zwischenräumen wiederholen, um vorurtheilsfrei zu sein, und sich nicht auf eine einmal aufgefaßte Idee zu verbeißen. In dem gesprochenen Boeren Hollandsch würde ich wie ich hier bemerkt habe gar keine Schwierigkeit finden.</p>
-        <p>
-          <pb facs="#IMG.2" n="2"/>
-          <persName>
+            <p>Gerne hätte ich auch noch den morgigen Tag auf die Entzifferung des Boeren-Hollandsch<note n="2" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.languages#L.943">Afrikaans</ref>; vgl. dazu z. B. auch Schuchardts Korrespondenz mit <persName ref="[authorityLink]">Matthias de Vries</persName> (Doorn b. Utrecht), z. B. HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.1071">03-12553</ref> u. a.</note> verwendet, aber heute ist schon der 8<hi rendition="#sup">e</hi> Tag nachdem Sie Ihren Brief geschrieben und da Sie mich um baldige Erledigung ersucht haben, will ich es nicht länger anstehen lassen. –</p>
+            <p>Mit dem ersten Brief glaube ich so ziemlich fertig geworden zu sein, der zweite ist mir nicht nur theilweise ein unentwirrtes Räthsel geblieben, sondern mehrere meiner Combinationen sind mir sehr zweifelhaft. Was ich combinirt habe beruht auf dem Gehör; das Gesicht betrügt zu sehr wenn nicht nur die Orthographie sondern auch Syntax usw verdorben sind; doch kann natürlich auf diesem Wege (durch lautes Lesen) das gesprochene Wort nicht erstzt werden und man sollte den Versuch nach längeren Zwischenräumen wiederholen, um vorurtheilsfrei zu sein, und sich nicht auf eine einmal aufgefaßte Idee zu verbeißen. In dem gesprochenen Boeren Hollandsch würde ich wie ich hier bemerkt habe gar keine Schwierigkeit finden.</p>
+            <p>
+               <pb facs="#IMG.2" n="2"/>
+               <persName>
 Neubronner van der Tuuk</persName>
-          <note n="3" place="foot" type="editorial">
-            <persName>
+               <note n="3" place="foot" type="editorial">
+                  <persName>
 
-Herman Neubronner van der Tuuk</persName> (1824-1894), in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.5979">
-Malakka</placeName> geb. Bibelübersetzer und Sprachwissenschaftler, Spezialist für die Sprachen <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.535">
-Niederländisch-Indiens</ref>.</note> ist ein sehr verdienstlicher Forscher aber auch einer der bestgehaßten, wenn ich nicht irre; das betr. Buch datirt von 1868<note
-            n="4" place="foot" type="editorial">
-            <bibl>
+Herman Neubronner van der Tuuk</persName> (1824-1894), in <placeName ref="[authorityLink]">
+Malakka</placeName> geb. Bibelübersetzer und Sprachwissenschaftler, Spezialist für die Sprachen <ref target="https://gams.uni-graz.at/o:hsa.languages#L.535">
+Niederländisch-Indiens</ref>.</note> ist ein sehr verdienstlicher Forscher aber auch einer der bestgehaßten, wenn ich nicht irre; das betr. Buch datirt von 1868<note n="4" place="foot" type="editorial">
+                  <bibl>
 
 
 Neubronner, <hi rend="unknown" rendition="#none">
 Maleisch Leesboek</hi>
-
-            </bibl>. Uitg. Door het Koninklijk Institutt voor Taal-, Land- en Volkenkunde van Nederlandsch-Indie, s’Gravenhage: Nijhoff, 1868.</note> und wird wohl nicht <hi
-            rend="unknown"
-            rendition="#none">
-sprachwissenschaftlich</hi> sein; übrigens ist es mir ganz unbekannt, da ich nur praktisch mit Sprachen zu thun gehabt habe. Ueber Sprachwissenschaft in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5898">Indien</placeName> ist es für einen Laien schwer etwas zu sagen; die Herrn haben sich nach zwanzig jährigem Studiren nicht einmal einigen können ob im sundanesischen, einer der auf <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5971">Java</placeName> gesprochenen Hauptsprachen, eine hohe und eine niedere Sprache als ursprünglich angenommen werden müssen oder nicht.</p>
-
-        <p>Ihre Bemerkung über Spanier und Portugiesen ist im Allgemeinen vollkommen richtig, aber der holländische und der indische Sprachgebrauch ist dagegen. <hi
-            rend="unknown"
-            rendition="#none">Wir</hi> sprechen in allen Geschichtsbüchern vom Kampf mit den Portugiesen und zu meiner Schande muß ich bekennen, daß als die Frage einmal an mich herantrat, ich mich erst besinnen mußte wann die wirklichen Spanier in den Archipel gekommen sind (1521). Der Eingeborene kennt soweit mir bekannt kaum den Ausdruck <hi
-            rend="unknown" rendition="#none">
-            <foreign xml:lang="fil">orang castila</foreign>
-          </hi>
-          <note n="5" place="foot"
-            type="editorial">Wtl. „kastilische Person“, also „Spanier“.</note> und spricht immer von <hi rend="unknown" rendition="#none">
-            <foreign xml:lang="fil">orang portugees</foreign>
-          </hi> und <hi rend="unknown"
-            rendition="#none">nur</hi> in den Gegenden wo die Worte von denen ich Ihnen eine Liste geschickt habe,<note
-            n="6" place="foot" type="editorial">Nicht erhalten.</note> wirklich im Gebrauch sind spricht man <hi
-            rend="unknown" rendition="#none">nur</hi> von <hi rend="unknown" rendition="#none">
-            <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">spanisch</ref>
-          </hi> (hiernach bitte ich die Bemerkung in meinem Briefe vom 3<hi rend="unknown" rendition="#none">
-            <hi rendition="#sup">n</hi>
-          </hi> wo ich wenn ich mich recht erinnere von „Eingeborenen“ <hi rend="unknown"
-            rendition="#none">ohne</hi> die jetzt beigefügte Be- <pb facs="#IMG.3" n="3"/> schränkung gesprochen, richtig stellen zu wollen).</p>
-        <p>
-          <hi rend="unknown" rendition="#none">coleto</hi> = <hi rend="unknown"
-            rendition="#none">djepit</hi> gew. mal; „mit den Nägeln kneifen“ hat der Einsetzer hinzugefügt. Dies ist für <hi
-            rend="unknown"
-            rendition="#none">djepit</hi> richtig es heißt aber auch was man im Deutschen nennt: Jemanden <hi
-            rend="unknown" rendition="#none">zwiebeln</hi>, bis auf’s Blut quälen. <hi rend="unknown"
-            rendition="#none">Gewaltthätige</hi> Handlungen mit der Hand / nicht mit der Waffe / sind unter <hi
-            rend="unknown" rendition="#none">Eingeborenen</hi> eine große Ausnahme – er kneift um zu maltraitiren, zu strafen – die javanische Mutter kneift ihr Kind, d. h. sie kneift die Hautfalte dreht sie aber gleichzeitig durch Drehung des Handgelenks um wodurch noch eine Zerrung entsteht und so läßt sich der Begriff „kneifen“ auch wohl allgemein auf „mißhandeln“ nach unsern Begriffen anwenden. –</p>
-
-        <p>Auch ich bin neugierig auf die Antworten die ich aus Indien bekommen werde; die meiste Hoffnung setze ich auf einen Freund in Indien der viel Verbindungen auf Poeloe Penang<note
-            n="7" place="foot"
-              type="editorial">Heute meist „Pulau Pinang“, Insel, gegenwärtig Bundesstaat von Malaysia in der Straße von <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5979">Malakka</placeName>.</note> hat. Übrigens ist es gewiß kein böser Wille wenn die Beantwortung solcher Briefe nicht genügt, sondern die Leute verstehen oft nicht was man eigentlich will weshalb man immer positive, ganz bestimmt formulirte Fragen stellen sollte. Ich übersetzte Ihnen den ersten Artikel unter der Rubrick: <hi
-            rend="unknown" rendition="#none">
-            <foreign xml:lang="in">Soerat kiriman</foreign>
-          </hi> (Eingesandt).<note n="8" place="foot" type="editorial">Nicht beigefügt.</note> – es ist ein einfaches wenig verziertes Mal. „für täglichen Gebrauch“. Absichtlich habe ich es nachdem ich es übersetzt hatte vor der Zurückübersetzung einige Tage verlaufen lassen und später Nichts corrigirt und sie nicht einmal copirt.</p>
-        <p>
-          <pb facs="#IMG.4" n="4"/>Entschuldigen Sie die Unvollkommenheit meiner heutigen Sendung mit dem <hi
-            rend="unknown" rendition="#none">
-            <foreign xml:lang="la">non possumus</foreign>
-          </hi> an guten Willen hat es mit gewiß nicht gefehlt.</p>
-        <closer>
-          <salute>Hochachtungsvoll grüßend<lb/>
-          </salute>
-          <signed>Ihr ergebener<lb/>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2178">
-              <hi rend="unknown" rendition="#none">E Metzger</hi>
-            </persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                  </bibl>. Uitg. Door het Koninklijk Institutt voor Taal-, Land- en Volkenkunde van Nederlandsch-Indie, s’Gravenhage: Nijhoff, 1868.</note> und wird wohl nicht <hi rend="unknown" rendition="#none">
+sprachwissenschaftlich</hi> sein; übrigens ist es mir ganz unbekannt, da ich nur praktisch mit Sprachen zu thun gehabt habe. Ueber Sprachwissenschaft in <placeName ref="[authorityLink]">Indien</placeName> ist es für einen Laien schwer etwas zu sagen; die Herrn haben sich nach zwanzig jährigem Studiren nicht einmal einigen können ob im sundanesischen, einer der auf <placeName ref="[authorityLink]">Java</placeName> gesprochenen Hauptsprachen, eine hohe und eine niedere Sprache als ursprünglich angenommen werden müssen oder nicht.</p>
+            <p>Ihre Bemerkung über Spanier und Portugiesen ist im Allgemeinen vollkommen richtig, aber der holländische und der indische Sprachgebrauch ist dagegen. <hi rend="unknown" rendition="#none">Wir</hi> sprechen in allen Geschichtsbüchern vom Kampf mit den Portugiesen und zu meiner Schande muß ich bekennen, daß als die Frage einmal an mich herantrat, ich mich erst besinnen mußte wann die wirklichen Spanier in den Archipel gekommen sind (1521). Der Eingeborene kennt soweit mir bekannt kaum den Ausdruck <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="fil">orang castila</foreign>
+               </hi>
+               <note n="5" place="foot" type="editorial">Wtl. „kastilische Person“, also „Spanier“.</note> und spricht immer von <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="fil">orang portugees</foreign>
+               </hi> und <hi rend="unknown" rendition="#none">nur</hi> in den Gegenden wo die Worte von denen ich Ihnen eine Liste geschickt habe,<note n="6" place="foot" type="editorial">Nicht erhalten.</note> wirklich im Gebrauch sind spricht man <hi rend="unknown" rendition="#none">nur</hi> von <hi rend="unknown" rendition="#none">
+                  <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">spanisch</ref>
+               </hi> (hiernach bitte ich die Bemerkung in meinem Briefe vom 3<hi rend="unknown" rendition="#none">
+                  <hi rendition="#sup">n</hi>
+               </hi> wo ich wenn ich mich recht erinnere von „Eingeborenen“ <hi rend="unknown" rendition="#none">ohne</hi> die jetzt beigefügte Be- <pb facs="#IMG.3" n="3"/> schränkung gesprochen, richtig stellen zu wollen).</p>
+            <p>
+               <hi rend="unknown" rendition="#none">coleto</hi> = <hi rend="unknown" rendition="#none">djepit</hi> gew. mal; „mit den Nägeln kneifen“ hat der Einsetzer hinzugefügt. Dies ist für <hi rend="unknown" rendition="#none">djepit</hi> richtig es heißt aber auch was man im Deutschen nennt: Jemanden <hi rend="unknown" rendition="#none">zwiebeln</hi>, bis auf’s Blut quälen. <hi rend="unknown" rendition="#none">Gewaltthätige</hi> Handlungen mit der Hand / nicht mit der Waffe / sind unter <hi rend="unknown" rendition="#none">Eingeborenen</hi> eine große Ausnahme – er kneift um zu maltraitiren, zu strafen – die javanische Mutter kneift ihr Kind, d. h. sie kneift die Hautfalte dreht sie aber gleichzeitig durch Drehung des Handgelenks um wodurch noch eine Zerrung entsteht und so läßt sich der Begriff „kneifen“ auch wohl allgemein auf „mißhandeln“ nach unsern Begriffen anwenden. –</p>
+            <p>Auch ich bin neugierig auf die Antworten die ich aus Indien bekommen werde; die meiste Hoffnung setze ich auf einen Freund in Indien der viel Verbindungen auf Poeloe Penang<note n="7" place="foot" type="editorial">Heute meist „Pulau Pinang“, Insel, gegenwärtig Bundesstaat von Malaysia in der Straße von <placeName ref="[authorityLink]">Malakka</placeName>.</note> hat. Übrigens ist es gewiß kein böser Wille wenn die Beantwortung solcher Briefe nicht genügt, sondern die Leute verstehen oft nicht was man eigentlich will weshalb man immer positive, ganz bestimmt formulirte Fragen stellen sollte. Ich übersetzte Ihnen den ersten Artikel unter der Rubrick: <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="in">Soerat kiriman</foreign>
+               </hi> (Eingesandt).<note n="8" place="foot" type="editorial">Nicht beigefügt.</note> – es ist ein einfaches wenig verziertes Mal. „für täglichen Gebrauch“. Absichtlich habe ich es nachdem ich es übersetzt hatte vor der Zurückübersetzung einige Tage verlaufen lassen und später Nichts corrigirt und sie nicht einmal copirt.</p>
+            <p>
+               <pb facs="#IMG.4" n="4"/>Entschuldigen Sie die Unvollkommenheit meiner heutigen Sendung mit dem <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="la">non possumus</foreign>
+               </hi> an guten Willen hat es mit gewiß nicht gefehlt.</p>
+            <closer>
+               <salute>Hochachtungsvoll grüßend<lb/>
+               </salute>
+               <signed>Ihr ergebener<lb/>
+                  <persName ref="[authorityLink]">
+                     <hi rend="unknown" rendition="#none">E Metzger</hi>
+                  </persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

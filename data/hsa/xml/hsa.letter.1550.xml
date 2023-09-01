@@ -1,533 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Aniceto dos Reis Gonçalves Viana an Hugo Schuchardt (03-03877)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1613">
-            <forename>Aniceto dos</forename>
-            <surname>Reis Gonçalves Viana</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Silvio Moreira de</forename>
-            <surname>Sousa</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/1550" type="PID">o:hsa.letter.1550</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">03-03877</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">03877</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="pt"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1613">
-                <forename>Aniceto dos</forename>
-                <surname>Reis Gonçalves Viana</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.138" ref="http://sws.geonames.org/2267057">Lissabon</origPlace>
-              <origDate ana="dcterms:created" when="1888-09-12">1888-09-12</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Silvio Moreira de</forename>
-              <surname>Sousa</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Aniceto dos Reis Gonçalves Viana und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1613"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.1550">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1613" ref="https://viaf.org/viaf/23062207">
-            <forename>Aniceto dos</forename>
-            <surname>Reis Gonçalves Viana</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.138" key="#GID.1" ref="http://sws.geonames.org/2267057">Lissabon</placeName>
-          <date when="1888-09-12">1888-09-12</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Portugal</country>
-                <settlement>Lisbon</settlement>
-                <name ref="http://geonames.org/2267057" type="fcode:PPLC">Lisbon</name>
-                <location>
-                  <geo>-9.13333,38.71667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1613" type="context">
-                        Korrespondenz Aniceto dos Reis Gonçalves Viana - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.384" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Methodologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.324" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Syntax</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3181" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Boletim da Sociedade de Geografia de Lisboa</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3184" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Revista Lusitana: Archivo de Estudos Philologicos e Ethnologicos relativos a Portugal</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3374" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Revista de Educação e Ensino</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.177" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesischbasierte Kreolsprache (Kapverdische Inseln)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.844" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="pt">Portugiesisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1550" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1550" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1550" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1550" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1550" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1550" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1550" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1550" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.1550" xml:lang="pt">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Lisboa, 12 de Septembro de 1888</dateline>
-        <opener>Ex.mo Amigo e Snr.</opener>
-
-        <p>Agradeço infinitamente a remessa do seu, a todos os respeitos, excellente artigo acêrca do português-de-pretos, e diffusão do português em Africa:<note
-            n="1" place="foot" type="editorial"> Vermutlich ist folgendes Werk gemeint: Schuchardt, Hugo. 1888. '<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.752">Beiträge zur Kenntnis des kreolischen Romanisch I. Allgemeineres über das Negerportugiesische</ref>
-            </bibl>'. In <hi rend="unknown"
-            rendition="#none">
-Zeitschrift für romanische Philologie</hi> 12: 242-254. [Archiv-/Breviernummer: 207]</note> é um trabalho de verdadeira importancia e que não deve deixar de ser consultado por quem quer que se occupe deste momentoso assumpto. Li-o de <hi
-            rend="unknown" rendition="#none">uma assentada</hi>, com interesse que nunca afroxou.</p>
-
-        <p>A grammatica do dialecto crioulo de Cabo-Verde é escripta por individuo d’alli, que actualmente reside em Lisboa, mas a quem raras vezes vejo; não é padre, como o amigo #suppõe. O homem é intelligente, muito enthusiasta, como quasi todos os portugueses de alé-mar; de todo, porém, alheio a estudos, processos ou methodos glottologicos: Chama-se Brito, e tem mais outro appelido de que me não recordo. A grammatica deve ser publicada nos Boletins da Sociedade de Geographia de Lisboa,<note
-            n="2" place="foot"
-              type="editorial"> Gemeint ist folgendes Werk: Brito, António de Paula. 1887. '<bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.1550" xml:lang="pt">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Lisboa, 12 de Septembro de 1888</dateline>
+            <opener>Ex.mo Amigo e Snr.</opener>
+            <p>Agradeço infinitamente a remessa do seu, a todos os respeitos, excellente artigo acêrca do português-de-pretos, e diffusão do português em Africa:<note n="1" place="foot" type="editorial"> Vermutlich ist folgendes Werk gemeint: Schuchardt, Hugo. 1888. '<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.752">Beiträge zur Kenntnis des kreolischen Romanisch I. Allgemeineres über das Negerportugiesische</ref>
+                  </bibl>'. In <hi rend="unknown" rendition="#none">
+Zeitschrift für romanische Philologie</hi> 12: 242-254. [Archiv-/Breviernummer: 207]</note> é um trabalho de verdadeira importancia e que não deve deixar de ser consultado por quem quer que se occupe deste momentoso assumpto. Li-o de <hi rend="unknown" rendition="#none">uma assentada</hi>, com interesse que nunca afroxou.</p>
+            <p>A grammatica do dialecto crioulo de Cabo-Verde é escripta por individuo d’alli, que actualmente reside em Lisboa, mas a quem raras vezes vejo; não é padre, como o amigo #suppõe. O homem é intelligente, muito enthusiasta, como quasi todos os portugueses de alé-mar; de todo, porém, alheio a estudos, processos ou methodos glottologicos: Chama-se Brito, e tem mais outro appelido de que me não recordo. A grammatica deve ser publicada nos Boletins da Sociedade de Geographia de Lisboa,<note n="2" place="foot" type="editorial"> Gemeint ist folgendes Werk: Brito, António de Paula. 1887. '<bibl>
 
 Apontamentos para a Gramática do Crioulo que se fala na Ilha de Santiago de Cabo Verde
-</bibl>'. In <hi
-              rend="unknown"
-            rendition="#none">Boletim da Sociedade de Geografia de Lisboa</hi> 7a série, 10:611-669.</note> e, segundo ouvi, dar-se hão d’ella ao auctor exemplares separados. Eu apenas fui ouvido, e Coelho tambem, na parte que se refere á phonologia, e d’essa mesma pouco transparecerá que seja influencia nossa, por isso que o auctor não é muito transigente, e não tem a comprehensão clara de qual é a importancia do assumpto. Quanto a mim, é trabalho de pouco valor no que respeita a methodo; <pb
-            facs="#IMG.2"
-            n="2"/> conterá porém abundancia de factos. É redigida em português e crioulo (!) ou melhor dicto, português <hi
-            rend="unknown" rendition="#none">acrioulado</hi>, isto não obstante as ponderações de Coelho e as minhas, acêrca de artificialismo de semelhante expediente.</p>
-        <p>Permitta-me o meu amigo agora, e para isso lhe peço todas as vénias, dois reparos ao seu português, reparos que só um português lhe pode fazer.</p>
-        <p>Causa-me verdadeiro assombro a sua facilidade em redigir em uma lingua extraordinariamente avessa para estrangeiros, mais, em syntaxe, do que o próprio inglês. A sua construcção syntactica é em geral portuguesa, com excepção da collocação dos pronomes conjunctos, isto é, das formas atonas dos casos obliquos dos pronomes pessoaes, a qual o meu Amigo pauta commummente pela italiana, o que dá um aspecto brasileiro á phrase portuguesa, no mais perfeitamente disposto. E porque conheço plenamente que o meu Amigo pode, querendo, ser escriptor primoroso em português, como já o é em allemão e em francês, aventuro-me a suggerir-lhe umas observações com relação á collocação dos pronomes referida.</p>
-        <p>São ellas, e constituem regras geraes: </p>
-        <pb facs="#IMG.3" n="3"/>
-
-        <p>1.ª Orações enunciativas afirmativas, isto é, as de indicativo, imperativo, infinito não subordinado, e condicional, pedem os pronomes conjunctos <hi
-            rend="unknown" rendition="#none">
+</bibl>'. In <hi rend="unknown" rendition="#none">Boletim da Sociedade de Geografia de Lisboa</hi> 7a série, 10:611-669.</note> e, segundo ouvi, dar-se hão d’ella ao auctor exemplares separados. Eu apenas fui ouvido, e Coelho tambem, na parte que se refere á phonologia, e d’essa mesma pouco transparecerá que seja influencia nossa, por isso que o auctor não é muito transigente, e não tem a comprehensão clara de qual é a importancia do assumpto. Quanto a mim, é trabalho de pouco valor no que respeita a methodo; <pb facs="#IMG.2" n="2"/> conterá porém abundancia de factos. É redigida em português e crioulo (!) ou melhor dicto, português <hi rend="unknown" rendition="#none">acrioulado</hi>, isto não obstante as ponderações de Coelho e as minhas, acêrca de artificialismo de semelhante expediente.</p>
+            <p>Permitta-me o meu amigo agora, e para isso lhe peço todas as vénias, dois reparos ao seu português, reparos que só um português lhe pode fazer.</p>
+            <p>Causa-me verdadeiro assombro a sua facilidade em redigir em uma lingua extraordinariamente avessa para estrangeiros, mais, em syntaxe, do que o próprio inglês. A sua construcção syntactica é em geral portuguesa, com excepção da collocação dos pronomes conjunctos, isto é, das formas atonas dos casos obliquos dos pronomes pessoaes, a qual o meu Amigo pauta commummente pela italiana, o que dá um aspecto brasileiro á phrase portuguesa, no mais perfeitamente disposto. E porque conheço plenamente que o meu Amigo pode, querendo, ser escriptor primoroso em português, como já o é em allemão e em francês, aventuro-me a suggerir-lhe umas observações com relação á collocação dos pronomes referida.</p>
+            <p>São ellas, e constituem regras geraes: </p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>1.ª Orações enunciativas afirmativas, isto é, as de indicativo, imperativo, infinito não subordinado, e condicional, pedem os pronomes conjunctos <hi rend="unknown" rendition="#none">
 depois</hi> da forma verbal simples, <hi rend="unknown" rendition="#none">depois</hi> do auxiliar na composta ou syntactica, se é de participio passado passivo</p>
-        <table>
-          <row>
-            <cell>Ex.<hi rendition="#sup">os</hi>
-            </cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">dou-t'o</hi>,</cell>
-            <cell>castelhano</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">te lo doy</hi>
-            </cell>
-          </row>
-          <row>
-            <cell/>
-            <cell>
-              <hi rend="unknown" rendition="#none">dê-m’o</hi>,</cell>
-            <cell>"</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">démelo</hi>
-            </cell>
-          </row>
-          <row>
-            <cell/>
-            <cell>
-              <hi rend="unknown" rendition="#none">dar-t‘o</hi>
-            </cell>
-            <cell>"</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">dártelo</hi>
-            </cell>
-          </row>
-          <row>
-            <cell>{</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">dar-t’o-ia<lb/>dava-t‘o</hi>
-            </cell>
-            <cell>"</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">te lo daria<lb/>te lo daba (dábatelo)</hi>
-            </cell>
-          </row>
-        </table>
-        <p>Nas compostas com infinito ou gerundio, <hi rend="unknown" rendition="#none">depois</hi> do auxiliar ou do auxiliado.</p>
-
-        <p>2.ª Oração enunciativa negativa, oração de subjuntivo, de relativo, e em geral todas as que começam por adverbio, que não seja de tempo determinado como <hi
-            rend="unknown" rendition="#none">hontem</hi>, <hi rend="unknown"
-            rendition="#none">
-hoje</hi>, etc, ou por conjunção, ou locuções adverbiaes e conjuntivas – pede os pronomes <hi
-            rend="unknown" rendition="#none">antes</hi>:</p>
-        <table>
-          <row>
-            <cell>Exemplos:</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">não t‘ dou</hi> [sic],</cell>
-            <cell>castelhano</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">no te lo doy</hi>
-            </cell>
-          </row>
-          <row>
-            <cell/>
-            <cell>
-              <hi rend="unknown" rendition="#none">não t’o dar</hi>,</cell>
-            <cell>"</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">no te lo dar</hi>
-            </cell>
-          </row>
-          <row>
-            <cell>mas</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">hoje dás-mo?</hi>
-            </cell>
-            <cell>"</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">¿me lo dás hoy?</hi>
-            </cell>
-          </row>
-          <row>
-            <cell>a par de</cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">a todo o momento</hi>
-            </cell>
-            <cell/>
-            <cell>
-              <hi rend="unknown" rendition="#none">á todo momento</hi>
-            </cell>
-          </row>
-          <row>
-            <cell/>
-            <cell>
-              <hi rend="unknown" rendition="#none">me dizes</hi>
-            </cell>
-            <cell/>
-            <cell>
-              <hi rend="unknown" rendition="#none">me dices</hi>
-            </cell>
-          </row>
-        </table>
-
-        <p>3.ª Orações que começam por pronomes ou adverbios interrogativos pedem cambear antes do verbo os pronomes conjunctos – Ex. <hi
-            rend="unknown" rendition="#none">quem t’o disse?</hi>
-          <pb facs="#IMG.4" n="4"/>
-        </p>
-
-        <p>As contracções brasileira e italiana nesta parte são, a bem dizer, o inverso, e é mister acautelarem se, especialmente os estrangeiros, contra ellas, porque destoam a ouvido português; o mesmo se pode dizer das castelhanas, taes como, <hi
-            rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">te</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none"> digo qué nó</hi> = <hi rend="unknown" rendition="#none">digo-<hi
-              rend="unknown" rendition="#none">te</hi> que não</hi>.</p>
-        <p>Posto isto, diz o meu amigo no seu presado bilhete <hi rend="unknown"
-            rendition="#none">me apresso</hi> = português <hi rend="unknown"
-            rendition="#none">
-ạprésso-mẹ</hi>, brasileiro <hi rend="unknown"
-            rendition="#none">mi àprésso</hi>, castelhano <hi rend="unknown" rendition="#none">me doy prisa</hi>.</p>
-
-        <p>É também de advertir que as orações interrogativas em português correcto só pedem o sujeito depois do verbo, se começam por pronome ou adverbio interrogativo, por exemplo: <hi
-            rend="unknown" rendition="#none">Onde foi elle?</hi>, em brasileiro <hi rend="unknown" rendition="#none">onde elle foi?</hi>, o que será aqui ridiculo.</p>
-
-        <p>2º. Reparo – Diz o meu Amigo: “essa grammatica creoula na qual me tem fallado“; A construcção é toda portuguesissima, excepto o emprego do tempo composto. O preterito syntactico só pode empregar-se com referencia a acção repetida, continuada, é iterativo; ao passo que o pretérito simples é <hi
-            rend="unknown"
-            rendition="#none">
-semelfactivo</hi>. Se eu por diversas vezes houvesse fallado na dicta grammatica, dir-se-ia – <hi
-            rend="unknown" rendition="#none">tem fallado</hi>; como só uma vez o fiz, tem de dizer-se <hi rend="unknown"
-            rendition="#none">fallou</hi>. <pb facs="#IMG.5" n="5"/> Isto leva-me insensivelmente a uma observação geral. O português com o gallego, são as unicas linguas romanicas, que como o latim não conhecem a distinção funccional entre o aoristo e o perfeito gregos, tam rigorosamente observada nas demais juntamente com as germanicas, as quaes por sua parte não distinguem as funcções diversas do imperfeito e do perfeito. Com relação á primeira destas distinções pode dizer-se:</p>
-        <p>Distinção rigorosissima entre aoristo e perfeito: grego, allemão (tudesco, alto e baixo allemão) hollandês, e francês.</p>
-        <p>Menos rigorosa – escandinavas, inglês, italiano e castelhano, com as proençaes (provensal, catalão, etc)</p>
-        <p>Nulla – latim, português, gallego.</p>
-        <p>Quanto á 2ª distincção, entre imperfeito e pefeito:</p>
-        <p>Rigorosissima – Grego, latim, e todas as linguas romanicas</p>
-        <p>Vagamente expressa – inglês; ex. <hi rend="unknown" rendition="#none">she would sing</hi> = (ella) cantava.</p>
-        <p>Nulla – Germanicas em geral.</p>
-        <p>Da collocação dos pronomes conjunctos trac<pb facs="#IMG.6"
-            n="6"/>tarei de relance no ultimo nº da Revista Lusitana, ao dar noticia, para que se acautelem, d’uma amostra de grammatica portuguesa que por aqui appareceu, escripta em allemão, o que servirá somente para indugir em erro os estrangeiros[.]<note
-            n="3" place="foot"
-              type="editorial"> Viana, Aniceto dos Reis Gonçalves. 1890-1892. '<bibl>
+            <table>
+               <row>
+                  <cell>Ex.<hi rendition="#sup">os</hi>
+                  </cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">dou-t'o</hi>,</cell>
+                  <cell>castelhano</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">te lo doy</hi>
+                  </cell>
+               </row>
+               <row>
+                  <cell/>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">dê-m’o</hi>,</cell>
+                  <cell>"</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">démelo</hi>
+                  </cell>
+               </row>
+               <row>
+                  <cell/>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">dar-t‘o</hi>
+                  </cell>
+                  <cell>"</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">dártelo</hi>
+                  </cell>
+               </row>
+               <row>
+                  <cell>{</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">dar-t’o-ia<lb/>dava-t‘o</hi>
+                  </cell>
+                  <cell>"</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">te lo daria<lb/>te lo daba (dábatelo)</hi>
+                  </cell>
+               </row>
+            </table>
+            <p>Nas compostas com infinito ou gerundio, <hi rend="unknown" rendition="#none">depois</hi> do auxiliar ou do auxiliado.</p>
+            <p>2.ª Oração enunciativa negativa, oração de subjuntivo, de relativo, e em geral todas as que começam por adverbio, que não seja de tempo determinado como <hi rend="unknown" rendition="#none">hontem</hi>, <hi rend="unknown" rendition="#none">
+hoje</hi>, etc, ou por conjunção, ou locuções adverbiaes e conjuntivas – pede os pronomes <hi rend="unknown" rendition="#none">antes</hi>:</p>
+            <table>
+               <row>
+                  <cell>Exemplos:</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">não t‘ dou</hi> [sic],</cell>
+                  <cell>castelhano</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">no te lo doy</hi>
+                  </cell>
+               </row>
+               <row>
+                  <cell/>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">não t’o dar</hi>,</cell>
+                  <cell>"</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">no te lo dar</hi>
+                  </cell>
+               </row>
+               <row>
+                  <cell>mas</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">hoje dás-mo?</hi>
+                  </cell>
+                  <cell>"</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">¿me lo dás hoy?</hi>
+                  </cell>
+               </row>
+               <row>
+                  <cell>a par de</cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">a todo o momento</hi>
+                  </cell>
+                  <cell/>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">á todo momento</hi>
+                  </cell>
+               </row>
+               <row>
+                  <cell/>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">me dizes</hi>
+                  </cell>
+                  <cell/>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">me dices</hi>
+                  </cell>
+               </row>
+            </table>
+            <p>3.ª Orações que começam por pronomes ou adverbios interrogativos pedem cambear antes do verbo os pronomes conjunctos – Ex. <hi rend="unknown" rendition="#none">quem t’o disse?</hi>
+               <pb facs="#IMG.4" n="4"/>
+            </p>
+            <p>As contracções brasileira e italiana nesta parte são, a bem dizer, o inverso, e é mister acautelarem se, especialmente os estrangeiros, contra ellas, porque destoam a ouvido português; o mesmo se pode dizer das castelhanas, taes como, <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">te</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none"> digo qué nó</hi> = <hi rend="unknown" rendition="#none">digo-<hi rend="unknown" rendition="#none">te</hi> que não</hi>.</p>
+            <p>Posto isto, diz o meu amigo no seu presado bilhete <hi rend="unknown" rendition="#none">me apresso</hi> = português <hi rend="unknown" rendition="#none">
+ạprésso-mẹ</hi>, brasileiro <hi rend="unknown" rendition="#none">mi àprésso</hi>, castelhano <hi rend="unknown" rendition="#none">me doy prisa</hi>.</p>
+            <p>É também de advertir que as orações interrogativas em português correcto só pedem o sujeito depois do verbo, se começam por pronome ou adverbio interrogativo, por exemplo: <hi rend="unknown" rendition="#none">Onde foi elle?</hi>, em brasileiro <hi rend="unknown" rendition="#none">onde elle foi?</hi>, o que será aqui ridiculo.</p>
+            <p>2º. Reparo – Diz o meu Amigo: “essa grammatica creoula na qual me tem fallado“; A construcção é toda portuguesissima, excepto o emprego do tempo composto. O preterito syntactico só pode empregar-se com referencia a acção repetida, continuada, é iterativo; ao passo que o pretérito simples é <hi rend="unknown" rendition="#none">
+semelfactivo</hi>. Se eu por diversas vezes houvesse fallado na dicta grammatica, dir-se-ia – <hi rend="unknown" rendition="#none">tem fallado</hi>; como só uma vez o fiz, tem de dizer-se <hi rend="unknown" rendition="#none">fallou</hi>. <pb facs="#IMG.5" n="5"/> Isto leva-me insensivelmente a uma observação geral. O português com o gallego, são as unicas linguas romanicas, que como o latim não conhecem a distinção funccional entre o aoristo e o perfeito gregos, tam rigorosamente observada nas demais juntamente com as germanicas, as quaes por sua parte não distinguem as funcções diversas do imperfeito e do perfeito. Com relação á primeira destas distinções pode dizer-se:</p>
+            <p>Distinção rigorosissima entre aoristo e perfeito: grego, allemão (tudesco, alto e baixo allemão) hollandês, e francês.</p>
+            <p>Menos rigorosa – escandinavas, inglês, italiano e castelhano, com as proençaes (provensal, catalão, etc)</p>
+            <p>Nulla – latim, português, gallego.</p>
+            <p>Quanto á 2ª distincção, entre imperfeito e pefeito:</p>
+            <p>Rigorosissima – Grego, latim, e todas as linguas romanicas</p>
+            <p>Vagamente expressa – inglês; ex. <hi rend="unknown" rendition="#none">she would sing</hi> = (ella) cantava.</p>
+            <p>Nulla – Germanicas em geral.</p>
+            <p>Da collocação dos pronomes conjunctos trac<pb facs="#IMG.6" n="6"/>tarei de relance no ultimo nº da Revista Lusitana, ao dar noticia, para que se acautelem, d’uma amostra de grammatica portuguesa que por aqui appareceu, escripta em allemão, o que servirá somente para indugir em erro os estrangeiros[.]<note n="3" place="foot" type="editorial"> Viana, Aniceto dos Reis Gonçalves. 1890-1892. '<bibl>
 
 Gramáticas portuguesas para uso dos alemães
-</bibl>'. In <hi
-              rend="unknown" rendition="#none">Revista Lusitana</hi> II:88-90.</note>
-        </p>
-        <p>Sobre a orthographia dos nomes africanos tambem alli publicarei, e antes no Boletim da Soc. de Geogr.<note
-            n="4" place="foot" type="editorial">
-            <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3181">Boletim da Sociedade de Geografia de Lisboa</ref>.</note> ou na Revista de Educação e Ensino,<note
-            n="5" place="foot" type="editorial"> Die Zeitschrift <hi rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3374">
+</bibl>'. In <hi rend="unknown" rendition="#none">Revista Lusitana</hi> II:88-90.</note>
+            </p>
+            <p>Sobre a orthographia dos nomes africanos tambem alli publicarei, e antes no Boletim da Soc. de Geogr.<note n="4" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3181">Boletim da Sociedade de Geografia de Lisboa</ref>.</note> ou na Revista de Educação e Ensino,<note n="5" place="foot" type="editorial"> Die Zeitschrift <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3374">
 Revista de Educação e Ensino</ref>
+                  </hi> wurde 1885 von 
 
-            </hi> wurde 1885 von 
-
-Manuel António Ferreira Deusdado (1858-1918) gegründet.</note> algumas considerações, e na primeira uma transcripção portuguesa, que poderia muito bem servir para os crioulos portugueses <hi
-            rend="unknown" rendition="#none">todos</hi>, africanos ou outros.</p>
-        <closer>
-          <salute>Desculpe o meu amigo, o que deixo dicto, que em nada diminue o altissimo conceito e profunda admiração com que o venero<lb/> Seu Muito Amigo</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1613">Aniceto dos Reis Gonçalves Vianna</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.1550" subtype="original" type="appendix" xml:lang="pt">
-        <pb facs="#IMG.7" n="7"/>
-        <p>P.S. Se do seu agrado for, redija o meu amigo umas quaesquer phrases em allemão ou em francês, em que se exemplifiquem a collocação dos pronomes conjunctos e o emprego dos preteritos; eu lhes farei a traducção portuguesa, e servir-lhe-iam de paradigmas, por que, repito, estas construcções são embaraçosas para estrangeiros, por contrastarem quasi sempre com as castelhanas correspondentes. Pode dizer que em geral a collocação [destes] pronomes, nas orações subordinadas, coincide com a allemã.</p>
-        <p>Porque não escreve o meu amigo um artigo, pequenissimo que fosse, algumas linhas, em português para a „Revista Lusitana“, ultimo nº deste anno? Seria alli recebido por todos com o jubilo e acatamento devidos pelos discipulos ao mestre. Assumpto português.</p>
-
-        <p>Duas novidades á ultima hora. Vae ser publicada em Angola, por conta, creio eu, das missões americanas, uma traducção em <hi
-            rend="unknown" rendition="#none">bundo</hi> do Evangelho de S. João, editada por um polyglotta suisso <hi
-            rend="unknown" rendition="#none">Chatelain</hi>.<note n="6" place="foot"
-              type="editorial"> Gemeint ist vermutlich folgendes Werk: Chatelain, Héli. 1888. <hi rend="unknown" rendition="#none">
-              <bibl>
+Manuel António Ferreira Deusdado (1858-1918) gegründet.</note> algumas considerações, e na primeira uma transcripção portuguesa, que poderia muito bem servir para os crioulos portugueses <hi rend="unknown" rendition="#none">todos</hi>, africanos ou outros.</p>
+            <closer>
+               <salute>Desculpe o meu amigo, o que deixo dicto, que em nada diminue o altissimo conceito e profunda admiração com que o venero<lb/> Seu Muito Amigo</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Aniceto dos Reis Gonçalves Vianna</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.1550"
+              subtype="original"
+              type="appendix"
+              xml:lang="pt">
+            <pb facs="#IMG.7" n="7"/>
+            <p>P.S. Se do seu agrado for, redija o meu amigo umas quaesquer phrases em allemão ou em francês, em que se exemplifiquem a collocação dos pronomes conjunctos e o emprego dos preteritos; eu lhes farei a traducção portuguesa, e servir-lhe-iam de paradigmas, por que, repito, estas construcções são embaraçosas para estrangeiros, por contrastarem quasi sempre com as castelhanas correspondentes. Pode dizer que em geral a collocação [destes] pronomes, nas orações subordinadas, coincide com a allemã.</p>
+            <p>Porque não escreve o meu amigo um artigo, pequenissimo que fosse, algumas linhas, em português para a „Revista Lusitana“, ultimo nº deste anno? Seria alli recebido por todos com o jubilo e acatamento devidos pelos discipulos ao mestre. Assumpto português.</p>
+            <p>Duas novidades á ultima hora. Vae ser publicada em Angola, por conta, creio eu, das missões americanas, uma traducção em <hi rend="unknown" rendition="#none">bundo</hi> do Evangelho de S. João, editada por um polyglotta suisso <hi rend="unknown" rendition="#none">Chatelain</hi>.<note n="6" place="foot" type="editorial"> Gemeint ist vermutlich folgendes Werk: Chatelain, Héli. 1888. <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 O Njimbu ia mbote kua Nzua
 </bibl>
-
-            </hi>. London: British &amp; Foreign Bible Society.</note> Por conta do Governo português vae ser editada uma grammatica do dialecto banto de Lunda, sendo o auctor um major do exercito portugues,<note
-            n="7" place="foot" type="editorial"> Vermutlich ist <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3377">Henrique Dias de Carvalho</persName> (1843-1909) und das folgende Werk gemeint: Dias de Carvalho, Henrique A. (1890). <hi
-              rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>. London: British &amp; Foreign Bible Society.</note> Por conta do Governo português vae ser editada uma grammatica do dialecto banto de Lunda, sendo o auctor um major do exercito portugues,<note n="7" place="foot" type="editorial"> Vermutlich ist <persName ref="[authorityLink]">Henrique Dias de Carvalho</persName> (1843-1909) und das folgende Werk gemeint: Dias de Carvalho, Henrique A. (1890). <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Método prático para falar a língua da Lunda
 </bibl>
-            </hi>. Lissabon: Imprensa Nacional.</note> que alli <pb facs="#IMG.8"
-            n="8"/> esteve em serviço largo tempo. Será accompanhada de vocabulario e phraseologia de cinco dialectos mais, creio eu. O systema escolhido é ø, infelizmente o de Ollendorf [sic];<note
-            n="8" place="foot"
-            type="editorial"> Gemeint ist wahrscheinlich <persName>
-Heinrich Gottfried Ollendorff</persName> (1802-1865), der eine bekannte Methode für das Erlernen von Fremdsprachen durch Erwachsene entwickelte.</note> parece-me porém que convencemos, eu e Esteves<note
-            n="9" place="foot" type="editorial"> Vermutlich geht es hier um <persName>
+                  </hi>. Lissabon: Imprensa Nacional.</note> que alli <pb facs="#IMG.8" n="8"/> esteve em serviço largo tempo. Será accompanhada de vocabulario e phraseologia de cinco dialectos mais, creio eu. O systema escolhido é ø, infelizmente o de Ollendorf [sic];<note n="8" place="foot" type="editorial"> Gemeint ist wahrscheinlich <persName>
+Heinrich Gottfried Ollendorff</persName> (1802-1865), der eine bekannte Methode für das Erlernen von Fremdsprachen durch Erwachsene entwickelte.</note> parece-me porém que convencemos, eu e Esteves<note n="9" place="foot" type="editorial"> Vermutlich geht es hier um <persName>
 Francisco Maria Esteves Pereira</persName> (1854-1924).</note> (um orientalista , português tambem) o auctor a que dê um esboço da morphologia como prefacio.</p>
-        <p>Não é o auctor glottologo, e difficilmente pode ser convencido a dar ao seu trabalho character mais scientifico. Usa de uma transcripção monogrammatica, systema com o qual me não conformo no que respeita a dialectos fallados em possessões portuguesas, cujos nomes ethnicos e grande parte do vocabulario desce aos usos communs infiltrando-se no português, onde terão de receber nova orthographia[.]</p>
-        <p>No artigo que hei de publicar na “Revista Lusitana“ tractarei por miudos deste objecto, como já disse.</p>
-        <closer>
-          <salute>Desculpe-me por quem é ser eu tam extenso</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1613">Gonçalves Vianna</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Não é o auctor glottologo, e difficilmente pode ser convencido a dar ao seu trabalho character mais scientifico. Usa de uma transcripção monogrammatica, systema com o qual me não conformo no que respeita a dialectos fallados em possessões portuguesas, cujos nomes ethnicos e grande parte do vocabulario desce aos usos communs infiltrando-se no português, onde terão de receber nova orthographia[.]</p>
+            <p>No artigo que hei de publicar na “Revista Lusitana“ tractarei por miudos deste objecto, como já disse.</p>
+            <closer>
+               <salute>Desculpe-me por quem é ser eu tam extenso</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Gonçalves Vianna</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

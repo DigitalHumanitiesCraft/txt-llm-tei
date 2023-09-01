@@ -1,284 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Lajos Katona (72-05067_242)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10259" type="PID">o:hsa.letter.10259</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">72-05067_242</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Ungarn</country>
-            <settlement>Budapest</settlement>
-            <repository ref="https://mta.hu/english/">Abteilung für Handschriften und Alte Bücher, Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften</repository>
-            <idno type="shelfmark">05067_242</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="3" unit="pages">3 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1887-11-10">1887-11-10</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2023">2023</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Lajos Katona</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1888"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10259">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1887-11-10">1887-11-10</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1888" ref="https://viaf.org/viaf/53140754">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1888" type="context">
-                        Korrespondenz Hugo Schuchardt - Lajos Katona
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3971" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Magyar Nyelvör</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10259" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10259" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10259" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10259" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 10 Nov. 87</dateline>
-        <opener>Bester Herr Doktor!</opener>
-        <p>Werden Sie nicht gar zu ungeduldig, wenn ich Sie noch einmal wegen der <hi rend="unknown" rendition="#none">nyelvújítás</hi>
-          <note n="1" place="foot" type="editorial">„<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.716">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10259" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 10 Nov. 87</dateline>
+            <opener>Bester Herr Doktor!</opener>
+            <p>Werden Sie nicht gar zu ungeduldig, wenn ich Sie noch einmal wegen der <hi rend="unknown" rendition="#none">nyelvújítás</hi>
+               <note n="1" place="foot" type="editorial">„<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.716">
 Neologismen</ref>
-            </bibl>“, vielleicht ist auch gem. „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1">
+                  </bibl>“, vielleicht ist auch gem. „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1">
 Sprachneuerung</ref>
-
-            </bibl>“.</note> sekkire. Es kommt mir für den Augenblick eben nur auf das Allgemeinste an und das eben kann ich mir aus all den verschiedenen Artikeln des <hi
-            rend="unknown" rendition="#none">M. Ny.</hi>
-          <note n="2" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">Magyar nyelvőr; a magyar Tudományos Akadémia Magyar Nyelvi Bizottságának folyóirata</ref>
-
-            </hi>, Budapest 1872(-2001).</note> – als ein noch so langsamer Leser des Magyarischen – nicht gut zusammenlesen. Wie viel der kühnen, ohne Rücksicht auf die „Sprachgesetze“ gebildeten Neuerungen sind wohl trotz der orthologischen, durch den <hi
-            rend="unknown" rendition="#none">M. Ny.</hi>
-          <pb facs="#IMG.2" n="2"/> vertretenen Strömung ganz eingewurzelt? Ist z. B. <hi rend="unknown"
-            rendition="#none">árny</hi> = <hi rend="unknown" rendition="#none">
+                  </bibl>“.</note> sekkire. Es kommt mir für den Augenblick eben nur auf das Allgemeinste an und das eben kann ich mir aus all den verschiedenen Artikeln des <hi rend="unknown" rendition="#none">M. Ny.</hi>
+               <note n="2" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">Magyar nyelvőr; a magyar Tudományos Akadémia Magyar Nyelvi Bizottságának folyóirata</ref>
+                  </hi>, Budapest 1872(-2001).</note> – als ein noch so langsamer Leser des Magyarischen – nicht gut zusammenlesen. Wie viel der kühnen, ohne Rücksicht auf die „Sprachgesetze“ gebildeten Neuerungen sind wohl trotz der orthologischen, durch den <hi rend="unknown" rendition="#none">M. Ny.</hi>
+               <pb facs="#IMG.2" n="2"/> vertretenen Strömung ganz eingewurzelt? Ist z. B. <hi rend="unknown" rendition="#none">árny</hi> = <hi rend="unknown" rendition="#none">
 árnyék</hi>
-          <note n="3" place="foot"
-            type="editorial">dt. „Schatten“.</note> nicht ganz allgemein? Und anderseits ist nicht <hi rend="unknown"
-            rendition="#none">
-tekintély</hi>,<note n="4" place="foot"
-            type="editorial">dt. „Behörde“.</note> das von Szarvas<note n="5" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2827">Gábor Szarvas</persName> (1832-1895), ungar. Sprachwissenschaftler; vgl. HSA 11478-11488.</note> selbst gebraucht wird, ein wenig orthologischer Neologismus?</p>
-        <p>Über die <hi rend="unknown"
-            rendition="#none">ik-</hi>verba hat Szarvas in seiner gediegenen, nur allzu ausführlichen Weise im 3. Bd. der M. Ny.<note
-            n="6" place="foot" type="editorial">Szarvas Gábor, „<bibl>
+               <note n="3" place="foot" type="editorial">dt. „Schatten“.</note> nicht ganz allgemein? Und anderseits ist nicht <hi rend="unknown" rendition="#none">
+tekintély</hi>,<note n="4" place="foot" type="editorial">dt. „Behörde“.</note> das von Szarvas<note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Gábor Szarvas</persName> (1832-1895), ungar. Sprachwissenschaftler; vgl. HSA 11478-11488.</note> selbst gebraucht wird, ein wenig orthologischer Neologismus?</p>
+            <p>Über die <hi rend="unknown" rendition="#none">ik-</hi>verba hat Szarvas in seiner gediegenen, nur allzu ausführlichen Weise im 3. Bd. der M. Ny.<note n="6" place="foot" type="editorial">Szarvas Gábor, „<bibl>
 
 Az ikes ragozás kérdése
-</bibl>“, <hi
-              rend="unknown"
-            rendition="#none">Magyar Nyelvör</hi> 3, 1874, 481-485.</note> sechs Artikel geschrieben. Ich habe mir ein leidliches Bild von der Sache durch Herumblättern zu machen versucht, aber ich sehe dass ich Alles Wort für Wort lesen müsste um zum Ziel zu gelangen. Szarvaz bekämpft doch den Antrag von M. Riedl<note
-            n="7" place="foot"
-            type="editorial">Anselm M. Riedl, <bibl>
+</bibl>“, <hi rend="unknown" rendition="#none">Magyar Nyelvör</hi> 3, 1874, 481-485.</note> sechs Artikel geschrieben. Ich habe mir ein leidliches Bild von der Sache durch Herumblättern zu machen versucht, aber ich sehe dass ich Alles Wort für Wort lesen müsste um zum Ziel zu gelangen. Szarvaz bekämpft doch den Antrag von M. Riedl<note n="7" place="foot" type="editorial">Anselm M. Riedl, <bibl>
 
 Magyarische Grammatik
-</bibl>, Wien ; Braumüller, 1858 ; VII, 356 S.</note> auf Beseitigung der <hi
-            rend="unknown" rendition="#none">ik</hi>-konjugation und anderseits wiederum <pb facs="#IMG.3"
-            n="3"/> scheint er sie selbst für überflüssig zu halten; z. B. S. 485: „ennélfogva következetesen cselekszünk, ha … nem ragaszkodunk továbbra is a külön ikes ragozás hoz, a mely általában véve a nekül sem födöz jelentésbeli külonbseget“.<note
-            n="8" place="foot" type="editorial">Dt. etwa: „Deshalb handeln wir konsequent, wenn wir weiterhin auf zwei getrennten Konjugationen bestehen, da dies im allgemeinen keinen Bedeutungsunterschied macht“ (Übers. FRH).</note>
-        </p>
-        <p>Szarvas schrieb mir neulich<note n="9" place="foot" type="editorial">HSA 11483.</note> dass er sehr bedauere Sie in Budapest nicht gesehen zu haben; er hätte Sie gern auf Einiges aufmerksam gemacht.</p>
-        <closer>
-          <salute>Mit besten Grüssen<lb/> Ihres ergebenen </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HS</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+</bibl>, Wien ; Braumüller, 1858 ; VII, 356 S.</note> auf Beseitigung der <hi rend="unknown" rendition="#none">ik</hi>-konjugation und anderseits wiederum <pb facs="#IMG.3" n="3"/> scheint er sie selbst für überflüssig zu halten; z. B. S. 485: „ennélfogva következetesen cselekszünk, ha … nem ragaszkodunk továbbra is a külön ikes ragozás hoz, a mely általában véve a nekül sem födöz jelentésbeli külonbseget“.<note n="8" place="foot" type="editorial">Dt. etwa: „Deshalb handeln wir konsequent, wenn wir weiterhin auf zwei getrennten Konjugationen bestehen, da dies im allgemeinen keinen Bedeutungsunterschied macht“ (Übers. FRH).</note>
+            </p>
+            <p>Szarvas schrieb mir neulich<note n="9" place="foot" type="editorial">HSA 11483.</note> dass er sehr bedauere Sie in Budapest nicht gesehen zu haben; er hätte Sie gern auf Einiges aufmerksam gemacht.</p>
+            <closer>
+               <salute>Mit besten Grüssen<lb/> Ihres ergebenen </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HS</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,379 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Georg Friedrich Knapp an Hugo Schuchardt (01-05671)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1926">
-            <forename>Georg Friedrich</forename>
-            <surname>Knapp</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8248" type="PID">o:hsa.letter.8248</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-05671</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">05671</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1926">
-                <forename>Georg Friedrich</forename>
-                <surname>Knapp</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.177" ref="http://sws.geonames.org/2879139">Leipzig</origPlace>
-              <origDate ana="dcterms:created" when="1872-01-16">1872-01-16</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2021">2021</date>
-          <title>Die Korrespondenz zwischen Georg Friedrich Knapp und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1926"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8248">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1926" ref="https://viaf.org/viaf/67260519">
-            <forename>Georg Friedrich</forename>
-            <surname>Knapp</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.177" key="#GID.1" ref="http://sws.geonames.org/2879139">Leipzig</placeName>
-          <date when="1872-01-16">1872-01-16</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Leipzig</settlement>
-                <name ref="http://geonames.org/2879139" type="fcode:PPLA3">Leipzig</name>
-                <location>
-                  <geo>12.37129,51.33962</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1926" type="context">
-                        Korrespondenz Georg Friedrich Knapp - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3290" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Beilage zur Allgemeinen Zeitung</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8248" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8248" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8248" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8248" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8248" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8248" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8248" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline> Leipzig 16. Jan. 1872 <lb/> West Str. 61. B. </dateline>
-        <opener>Lieber Schuchardt</opener>
-        <p> Unser Tischgenosse Nitsche<note n="1" place="foot" type="editorial">
-
-            <persName>
- Hinrich Nitsche</persName> (1845-1902), deutscher Zoologe, seit 1871 Leipziger Privatdozent. </note>, der die A. A. Zeitung hält, colportirt einige Artikel von Ihnen<note
-            n="2" place="foot"
-              type="editorial"> Das Schriftenverzeichnis in HSA weist fünf Beiträge Schuchardts für das Jahr 1871 in der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3290"> „Beilage zur Allgemeinen Zeitung“ </ref> nach! </note> und jeder der dieselben bereits gelesen hat, erhöht durch beifälliges Urtheil meine Neugierde. Ich werde erst in einigen Tagen das Vergnügen haben, und benutze diese Frist (vor der Einschüchterung) Ihnen unter Kreuzband eine etwas ältliche Rede zugehen zu lassen, die ich Ihnen längst zugedacht habe.<note
-            n="3" place="foot" type="editorial"> Vermutlich <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8248" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline> Leipzig 16. Jan. 1872 <lb/> West Str. 61. B. </dateline>
+            <opener>Lieber Schuchardt</opener>
+            <p> Unser Tischgenosse Nitsche<note n="1" place="foot" type="editorial">
+                  <persName>
+ Hinrich Nitsche</persName> (1845-1902), deutscher Zoologe, seit 1871 Leipziger Privatdozent. </note>, der die A. A. Zeitung hält, colportirt einige Artikel von Ihnen<note n="2" place="foot" type="editorial"> Das Schriftenverzeichnis in HSA weist fünf Beiträge Schuchardts für das Jahr 1871 in der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3290"> „Beilage zur Allgemeinen Zeitung“ </ref> nach! </note> und jeder der dieselben bereits gelesen hat, erhöht durch beifälliges Urtheil meine Neugierde. Ich werde erst in einigen Tagen das Vergnügen haben, und benutze diese Frist (vor der Einschüchterung) Ihnen unter Kreuzband eine etwas ältliche Rede zugehen zu lassen, die ich Ihnen längst zugedacht habe.<note n="3" place="foot" type="editorial"> Vermutlich <bibl>
 
 
- Knapp, <hi rend="unknown"
-              rendition="#none"> Die neuern Ansichten über Moralstatistik. Vortrag, gehalten in der Aula der Universität zu Leipzig am 29. April 1871</hi>, Jena: Mauke, 1871.
-</bibl> [„Moralstatistik“ ist der Zweig der Statistik, „welcher sich mit den öffentlich wahrnehmbaren Willenshandlungen des Menschen beschäftigt“] (<hi
-              rend="unknown" rendition="#none">wikipedia</hi>). – Möglich wäre auch „Ertragsteuer oder Einkommensteuer? Vortrag über die Steuerreform im Königreich Sachsen“, gehalten in der Gemeinnützigen Gesellschaft zu Leipzig am 20. November 1871. </note>
-        </p>
-        <p> Ihre vielfachen, offenbar in guter Laune geschriebenen Artikel (zB. im </p>
-        <pb facs="#IMG.2" n="2"/>
-        <p> Neuen Reich über die Ringe)<note n="4" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.468"> Schuchardt, „Die Geschichte von den drei Ringen“, <hi
-                  rend="unknown" rendition="#none"> Im neuen Reich. Wochenschrift für das Leben des deutschen Volkes in Staat, Wissenschaft und Kunst</hi> 1, 1871, 481-485. </ref>
-            </bibl>
-
-          </note> gelten uns hier als Zeichen, dass Sie wenigstens nicht mehr ganz arbeitsunfähig sind, und bestärken uns in der Hoffnung, Sie im nächsten Sommer wieder unter uns zu sehen.<note
-            n="5" place="foot"
-            type="editorial"> Der Hintergrund dieser Bemerkung ist nicht ganz klar. Laut Leipziger Vorlesungsverzeichnis hatte Schuchardt für das WS 1871-72 die folgende Lehrveranstaltung angekündigt: „Vergleichende Grammatik der romanischen Sprachen“ („in 3 zu best. St.“). Möglicherweise hatte er sie aber „aus Gesundheitsgründen“ nicht abgehalten! </note> Auch <hi
-            rend="unknown" rendition="#none"> Walter</hi> (der blonde lievländische Philosoph)<note n="6" place="foot" type="editorial">
-
-            <persName>
+ Knapp, <hi rend="unknown" rendition="#none"> Die neuern Ansichten über Moralstatistik. Vortrag, gehalten in der Aula der Universität zu Leipzig am 29. April 1871</hi>, Jena: Mauke, 1871.
+</bibl> [„Moralstatistik“ ist der Zweig der Statistik, „welcher sich mit den öffentlich wahrnehmbaren Willenshandlungen des Menschen beschäftigt“] (<hi rend="unknown" rendition="#none">wikipedia</hi>). – Möglich wäre auch „Ertragsteuer oder Einkommensteuer? Vortrag über die Steuerreform im Königreich Sachsen“, gehalten in der Gemeinnützigen Gesellschaft zu Leipzig am 20. November 1871. </note>
+            </p>
+            <p> Ihre vielfachen, offenbar in guter Laune geschriebenen Artikel (zB. im </p>
+            <pb facs="#IMG.2" n="2"/>
+            <p> Neuen Reich über die Ringe)<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.468"> Schuchardt, „Die Geschichte von den drei Ringen“, <hi rend="unknown" rendition="#none"> Im neuen Reich. Wochenschrift für das Leben des deutschen Volkes in Staat, Wissenschaft und Kunst</hi> 1, 1871, 481-485. </ref>
+                  </bibl>
+               </note> gelten uns hier als Zeichen, dass Sie wenigstens nicht mehr ganz arbeitsunfähig sind, und bestärken uns in der Hoffnung, Sie im nächsten Sommer wieder unter uns zu sehen.<note n="5" place="foot" type="editorial"> Der Hintergrund dieser Bemerkung ist nicht ganz klar. Laut Leipziger Vorlesungsverzeichnis hatte Schuchardt für das WS 1871-72 die folgende Lehrveranstaltung angekündigt: „Vergleichende Grammatik der romanischen Sprachen“ („in 3 zu best. St.“). Möglicherweise hatte er sie aber „aus Gesundheitsgründen“ nicht abgehalten! </note> Auch <hi rend="unknown" rendition="#none"> Walter</hi> (der blonde lievländische Philosoph)<note n="6" place="foot" type="editorial">
+                  <persName>
  Julius Guido Willhelm Hermann Walter</persName> (1841-1922), deutscher Philosoph, in <placeName>
 
  Wolmar</placeName> als Sohn des Superintendenten von <placeName>
  Livland</placeName>, Bischof <persName>
- Ferdinand Walter</persName>, geboren, 1873 in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.216">
+ Ferdinand Walter</persName>, geboren, 1873 in <placeName ref="[authorityLink]">
 Jena</placeName> habilitiert, lehrte er ab 1875 in <placeName>
 
- Königsberg</placeName>, wo er Karriere machte (Rektor der Universität 1886/87). - Es ist keine Korr. mit Schuchardt überliefert. </note> ist weg: zwei sehr fühlbare Lücken. Dagegen ist ein junger Hanauer, Dr. <hi
-            rend="unknown" rendition="#none">Rühl</hi>,<note n="7" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2570"> Franz Rühl</persName> (1845-1916), Historiker; vgl. HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.2570">09811-09813</ref>. </note> als Privadocent für Geschichte eingetreten, der lang in Italien war und sehr lebhaft in der Unterhaltung ist. Ein anderer philologischer Docent ist Dr. <hi
-            rend="unknown" rendition="#none">Philippi</hi>
-          <note n="8" place="foot" type="editorial">
-
-            <persName>
- Adolf Philippi</persName> (1843-1918), deutscher Klass. Philologe u. Kunsthistoriker, 1871 in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.177">Leipzig</placeName> habilitiert. Er wurde in <placeName>
+ Königsberg</placeName>, wo er Karriere machte (Rektor der Universität 1886/87). - Es ist keine Korr. mit Schuchardt überliefert. </note> ist weg: zwei sehr fühlbare Lücken. Dagegen ist ein junger Hanauer, Dr. <hi rend="unknown" rendition="#none">Rühl</hi>,<note n="7" place="foot" type="editorial">
+                  <persName ref="[authorityLink]"> Franz Rühl</persName> (1845-1916), Historiker; vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2570">09811-09813</ref>. </note> als Privadocent für Geschichte eingetreten, der lang in Italien war und sehr lebhaft in der Unterhaltung ist. Ein anderer philologischer Docent ist Dr. <hi rend="unknown" rendition="#none">Philippi</hi>
+               <note n="8" place="foot" type="editorial">
+                  <persName>
+ Adolf Philippi</persName> (1843-1918), deutscher Klass. Philologe u. Kunsthistoriker, 1871 in <placeName ref="[authorityLink]">Leipzig</placeName> habilitiert. Er wurde in <placeName>
  Osterholz-Scharmbeck</placeName> geboren. </note>, hannöverisch umständlich, furchtbar gelehrt: der echte Norddeutsche. Ich glaube dass Sie hier – trotz Ihrer Ableugnung – doch unter den jungen Kräften zu wenige gefunden hatten, mit denen Sie durch Studien nähere Beziehungen pflegen konnten. Das würde vielleicht jetzt besser sein. Ich schrecke vor dem Gedanken </p>
-        <pb facs="#IMG.3" n="3"/>
-        <p> zurück Sie als gothaischen Privatgelehrten und Sonderling isolirt zu sehen. Sie haben eine gewisse Geringschätzung für die Universität. Das furchtbare Opfer an Zeit und Leben, das man als Specialforscher gebracht hat, macht jeden skeptisch gegen die alltäglich breite Ueberlieferung des Gewöhnlichen, und leichter ist es, aus der trockenen grundlegenden Arbeit überzuspringen in das Extrem einer unruhig geistvollen Beleuchtung der Disziplin, als in den wohlgeordneten Gang des nützlichen Unterrichts. Aber haben wir denn nicht einen Ueberfluss an „genügenden“ Lehrern? Auch die Spezialisten gehören an die Hochschulen und die welche zugleich ihr Gepäck einmal ablegen können, erst recht. Es wäre zu traurig wenn Sie – sobald es Ihre Gesundheit erlaubt – nicht hieher zurückkehrten. </p>
-        <pb facs="#IMG.4" n="4"/>
-        <p> Auch Windisch<note n="9" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3018"> Ernst Windisch</persName> (1844-1918), Keltist, seit 1871 a. o. Professor in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.177">Leipzig</placeName>, bereits 1872 Abgang nach <placeName>Heidelberg</placeName>, 1875 <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.499">
-Straßburg</placeName>. - Vgl. HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.3018">12806-12832</ref>. </note> ist wieder hier, ich gehe viel mit ihm um, er ist eine so kindliche Natur dass man sich immer wieder von neuem über ihn freuen muss. Leskien ist seit seiner Verheiratung unsichtbar.<note
-            n="10" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2031"> August Leskien</persName> (1840-1916), Slavist, verh. seit dem 15. April 1871 mit <persName>
+            <pb facs="#IMG.3" n="3"/>
+            <p> zurück Sie als gothaischen Privatgelehrten und Sonderling isolirt zu sehen. Sie haben eine gewisse Geringschätzung für die Universität. Das furchtbare Opfer an Zeit und Leben, das man als Specialforscher gebracht hat, macht jeden skeptisch gegen die alltäglich breite Ueberlieferung des Gewöhnlichen, und leichter ist es, aus der trockenen grundlegenden Arbeit überzuspringen in das Extrem einer unruhig geistvollen Beleuchtung der Disziplin, als in den wohlgeordneten Gang des nützlichen Unterrichts. Aber haben wir denn nicht einen Ueberfluss an „genügenden“ Lehrern? Auch die Spezialisten gehören an die Hochschulen und die welche zugleich ihr Gepäck einmal ablegen können, erst recht. Es wäre zu traurig wenn Sie – sobald es Ihre Gesundheit erlaubt – nicht hieher zurückkehrten. </p>
+            <pb facs="#IMG.4" n="4"/>
+            <p> Auch Windisch<note n="9" place="foot" type="editorial">
+                  <persName ref="[authorityLink]"> Ernst Windisch</persName> (1844-1918), Keltist, seit 1871 a. o. Professor in <placeName ref="[authorityLink]">Leipzig</placeName>, bereits 1872 Abgang nach <placeName>Heidelberg</placeName>, 1875 <placeName ref="[authorityLink]">
+Straßburg</placeName>. - Vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.persons#P.3018">12806-12832</ref>. </note> ist wieder hier, ich gehe viel mit ihm um, er ist eine so kindliche Natur dass man sich immer wieder von neuem über ihn freuen muss. Leskien ist seit seiner Verheiratung unsichtbar.<note n="10" place="foot" type="editorial">
+                  <persName ref="[authorityLink]"> August Leskien</persName> (1840-1916), Slavist, verh. seit dem 15. April 1871 mit <persName>
  Marie Elisabeth Judeich</persName>. Ihre Mutter <persName>
- Marie Pauline Judeich</persName> war eine Tochter von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4601">Heinrich</persName> und <persName>
+ Marie Pauline Judeich</persName> war eine Tochter von <persName ref="[authorityLink]">Heinrich</persName> und <persName>
  Therese Pauline Brockhaus</persName>. </note> Er ist eigenthümlich abgeschlossen, trotz seiner Jugend, in seinen Ansichten und bedarf daher weniger des Umgangs. </p>
-        <p> Ich bin diesen Winter wenig in Salongesellschaften gewesen, da ich dieselben schlecht vertrage (sie sind mir stimmungwidrig), aber sehr viel unter unsern Altersgenossen, und habe den Vortheil davon gehabt, einige Arbeiten zu vollenden und geistige Getränke wieder ziemlich zu vertragen. Ich hätte Ihnen noch viel einzelnes zu erzählen, von allerlei Vorträgen, gelesenen Büchern, „vorhabenden“ Abhandlungen usw., gering besuchten Collegien u. dgl. m. aber man kann nicht alles schreiben. </p>
-        <closer>
-          <salute>Mit den herzlichsten Wünschen für Ihre Gesundheit</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <signed>GFKnapp</signed>
-        </closer>
-      </div>
-      <div corresp="#L.8248" subtype="original" type="appendix" xml:lang="de">
-        <pb facs="#IMG.5" n="5"/>
-        <dateline>Leipzig 16. Jan 72.</dateline>
-        <p>P. S.</p>
-        <p> Ueber Spezialisten fällt mir ein: </p>
-        <p> Neulich las ich in der Nacht bei einem Glase Grog mit Rühl<note n="11" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2570">Franz Rühl</persName> (1845-1916), Historiker; vgl. HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.2570">09811-09813</ref>. </note> folgende Dantestelle (ich schreibe aus dem Gedächtnis):<note
-            n="12" place="foot" type="editorial"> Wenn <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1926"> Knapp</persName> wirklich aus dem Gedächtnis zitiert, spielt ihm dieses einen Streich, da er „vita“ mit „vista“ verwechselt. Möglich aber auch, dass er eine Ausg. benutzt, die tatsächlich „vita“ bietet. </note>
-        </p>
-        <p>
-          <foreign xml:lang="it">Mentre che gli occhi per la fronde verde</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="it">Ficcava io così, come far suole</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="it">Chi dietro all’uccellin <hi rend="unknown" rendition="#none">
+            <p> Ich bin diesen Winter wenig in Salongesellschaften gewesen, da ich dieselben schlecht vertrage (sie sind mir stimmungwidrig), aber sehr viel unter unsern Altersgenossen, und habe den Vortheil davon gehabt, einige Arbeiten zu vollenden und geistige Getränke wieder ziemlich zu vertragen. Ich hätte Ihnen noch viel einzelnes zu erzählen, von allerlei Vorträgen, gelesenen Büchern, „vorhabenden“ Abhandlungen usw., gering besuchten Collegien u. dgl. m. aber man kann nicht alles schreiben. </p>
+            <closer>
+               <salute>Mit den herzlichsten Wünschen für Ihre Gesundheit</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <signed>GFKnapp</signed>
+            </closer>
+         </div>
+         <div corresp="#L.8248"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <pb facs="#IMG.5" n="5"/>
+            <dateline>Leipzig 16. Jan 72.</dateline>
+            <p>P. S.</p>
+            <p> Ueber Spezialisten fällt mir ein: </p>
+            <p> Neulich las ich in der Nacht bei einem Glase Grog mit Rühl<note n="11" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Franz Rühl</persName> (1845-1916), Historiker; vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2570">09811-09813</ref>. </note> folgende Dantestelle (ich schreibe aus dem Gedächtnis):<note n="12" place="foot" type="editorial"> Wenn <persName ref="[authorityLink]"> Knapp</persName> wirklich aus dem Gedächtnis zitiert, spielt ihm dieses einen Streich, da er „vita“ mit „vista“ verwechselt. Möglich aber auch, dass er eine Ausg. benutzt, die tatsächlich „vita“ bietet. </note>
+            </p>
+            <p>
+               <foreign xml:lang="it">Mentre che gli occhi per la fronde verde</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="it">Ficcava io così, come far suole</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="it">Chi dietro all’uccellin <hi rend="unknown" rendition="#none">
 sua vista perde</hi>,</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="it">Vidi etc.</foreign>
-          <note n="13" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3866"> Dante, <hi rend="unknown" rendition="#none">La Divina Commedia</hi>, Purg. XXIII, 1-3</ref>
-            </bibl> (das „Vidi“ in Z. 4 steht nicht im Original). Dt. Übers. Streckfuß: „Indeß ins Laubwerk meine Blicke drangen, / So scharf und spähend, wie sie Einer spannt, / der seine Zeit verliert mit Vogelfangen“. </note>
-        </p>
-        <p> Die hochmütige Bezeichnung des Vogelstellers als eines der hinterm Vogel her sein Leben verliert, hat uns so überrascht, dass wir </p>
-        <pb facs="#IMG.6" n="6"/>
-        <p> seitdem das Wort Steckenpferd durch das viel drastischere <hi rend="unknown" rendition="#none">Uccellino</hi>
-          <note n="14" place="foot" type="editorial"> Drastisch wäre das – jedenfalls nach heutigem Sprachgebrauch – nur, wenn man zu „uccellino“ das Vulgärwort „vögeln“ assoziierte! </note> ersetzen. Dies müssen Sie wissen um bei Ihrer Rückkehr die Unterhaltung zu verstehen, die allerdings täglich ähnlicher einer Diebssprache wird. </p>
-        <closer>
-          <salute>Ihr</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1926">
+            </p>
+            <p>
+               <foreign xml:lang="it">Vidi etc.</foreign>
+               <note n="13" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3866"> Dante, <hi rend="unknown" rendition="#none">La Divina Commedia</hi>, Purg. XXIII, 1-3</ref>
+                  </bibl> (das „Vidi“ in Z. 4 steht nicht im Original). Dt. Übers. Streckfuß: „Indeß ins Laubwerk meine Blicke drangen, / So scharf und spähend, wie sie Einer spannt, / der seine Zeit verliert mit Vogelfangen“. </note>
+            </p>
+            <p> Die hochmütige Bezeichnung des Vogelstellers als eines der hinterm Vogel her sein Leben verliert, hat uns so überrascht, dass wir </p>
+            <pb facs="#IMG.6" n="6"/>
+            <p> seitdem das Wort Steckenpferd durch das viel drastischere <hi rend="unknown" rendition="#none">Uccellino</hi>
+               <note n="14" place="foot" type="editorial"> Drastisch wäre das – jedenfalls nach heutigem Sprachgebrauch – nur, wenn man zu „uccellino“ das Vulgärwort „vögeln“ assoziierte! </note> ersetzen. Dies müssen Sie wissen um bei Ihrer Rückkehr die Unterhaltung zu verstehen, die allerdings täglich ähnlicher einer Diebssprache wird. </p>
+            <closer>
+               <salute>Ihr</salute>
+               <signed>
+                  <persName ref="[authorityLink]">
 GFK.</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

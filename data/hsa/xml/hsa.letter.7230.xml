@@ -1,299 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Ernesto Monaci an Hugo Schuchardt (12-07444)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">
-            <forename>Ernesto</forename>
-            <surname>Monaci</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7230" type="PID">o:hsa.letter.7230</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">12-07444</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">07444</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">
-                <forename>Ernesto</forename>
-                <surname>Monaci</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.86" ref="http://sws.geonames.org/3169070">Rom</origPlace>
-              <origDate ana="dcterms:created" when="1883-07-07">1883-07-07</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Jürgen</forename>
-              <surname>Storost</surname>
-            </persName>
-          </author>
-          <date when="1992">1992</date>
-          <title>Hugo Schuchardt und die Gründungsphase der Diezstiftung. Stimmen in
-               Briefen</title>
-          <pubPlace>Bonn</pubPlace>
-          <publisher>Romanistischer Verlag</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Ernesto Monaci und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2219"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7230">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2219" ref="https://viaf.org/viaf/64080350">
-            <forename>Ernesto</forename>
-            <surname>Monaci</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.86" key="#GID.1" ref="http://sws.geonames.org/3169070">Rom</placeName>
-          <date when="1883-07-07">1883-07-07</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Rome</settlement>
-                <name ref="http://geonames.org/3169070" type="fcode:PPLC">Rome</name>
-                <location>
-                  <geo>12.51133,41.89193</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2219" type="context">
-                        Korrespondenz Ernesto Monaci - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7230" xml:lang="it">
-        <pb n="1"/>
-        <dateline>Roma, 7.VII.83</dateline>
-        <opener>Carissimo Amico</opener>
-
-        <p>Sono purtroppo uno smemorato che non merita scusa. Vi scrissi lo stesso giorno che avevo avuta la vostra lettera del 3 aprile,<note
-            n="1" place="foot" type="editorial">
-Vgl. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.7227">Brief 5</ref>.</note> e nemmeno vi accusai ricevuta delle dugento lire che mi avevate mandate (dugento me ne dovevate e non trecento, come dice la vostra lettera del 5 corrente)! Perdonatemi; sono tanto pochi i miei quattrini, che non ho motivo di pensarci mai. Del resto quel giorno – me ne ricordo – era molto allegro, come di rado m’avviene in tutto l’anno: avevo incontrata una bella giornata di primavera e mi sentivo più contento di un trovatore. – Se quel giorno ebbi una distrazione che vi ha fatto ripensare a me, poco dopo caddi malato abbastanza gravemente e la Dea Febbre mi visitò per 35 giorni di seguito. Mi aveva spossato; cosicché indugiai a riscrivervi, benché sentissi il dovere <pb
-            n="2"/> di ringraziarvi del carissimo dono che m’ avevate fatto; i n.i II e III delle vostre preziose <hi
-            rend="unknown" rendition="#none">Kreolische Studien</hi>.<note n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.54">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7230" xml:lang="it">
+            <pb n="1"/>
+            <dateline>Roma, 7.VII.83</dateline>
+            <opener>Carissimo Amico</opener>
+            <p>Sono purtroppo uno smemorato che non merita scusa. Vi scrissi lo stesso giorno che avevo avuta la vostra lettera del 3 aprile,<note n="1" place="foot" type="editorial">
+Vgl. <ref target="https://gams.uni-graz.at/o:hsa.letter.7227">Brief 5</ref>.</note> e nemmeno vi accusai ricevuta delle dugento lire che mi avevate mandate (dugento me ne dovevate e non trecento, come dice la vostra lettera del 5 corrente)! Perdonatemi; sono tanto pochi i miei quattrini, che non ho motivo di pensarci mai. Del resto quel giorno – me ne ricordo – era molto allegro, come di rado m’avviene in tutto l’anno: avevo incontrata una bella giornata di primavera e mi sentivo più contento di un trovatore. – Se quel giorno ebbi una distrazione che vi ha fatto ripensare a me, poco dopo caddi malato abbastanza gravemente e la Dea Febbre mi visitò per 35 giorni di seguito. Mi aveva spossato; cosicché indugiai a riscrivervi, benché sentissi il dovere <pb n="2"/> di ringraziarvi del carissimo dono che m’ avevate fatto; i n.i II e III delle vostre preziose <hi rend="unknown" rendition="#none">Kreolische Studien</hi>.<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.54">
 Schuchardt, <hi rend="unknown" rendition="#none">Kreolische Studien. 2. Ueber das Indoportugiesische von Cochim</hi>, Wien 1883 (Sitzungsberichte der Philosophisch-Historischen Classe der Kaiserlichen Akademie der Wissenschaften); 102,10, 799-816</ref>
-            </bibl>; <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.772">
-                <hi rend="unknown" rendition="#none">Kreolische Studien. 3. Ueber das Indoportugiesische von Diu</hi>, ebd. 103, 1, 3-18</ref>
-            </bibl>.</note> Mi perdonerete?</p>
-        <p>Non sono stato in Provenza. Ai tempi del concorso<note n="3" place="foot"
-              type="editorial">Es handelt sich vermutlich um die <hi rend="unknown"
-            rendition="#none">
-Académie des jeux floraux</hi> des Jahres 1883 in Toulouse.</note> io quasi credevo di dover andare a raggiungere il <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1247">Caix</persName>.<note n="4" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1247">Napoleone Caix</persName> (1845-1882), ital. Romanist und Sprachwissenschaftler; vgl. HSA 01491-01494.</note> Invece di me – chi l’avrebbe immaginato? – ci andò il povero <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1254">
+                  </bibl>; <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.772">
+                        <hi rend="unknown" rendition="#none">Kreolische Studien. 3. Ueber das Indoportugiesische von Diu</hi>, ebd. 103, 1, 3-18</ref>
+                  </bibl>.</note> Mi perdonerete?</p>
+            <p>Non sono stato in Provenza. Ai tempi del concorso<note n="3" place="foot" type="editorial">Es handelt sich vermutlich um die <hi rend="unknown" rendition="#none">
+Académie des jeux floraux</hi> des Jahres 1883 in Toulouse.</note> io quasi credevo di dover andare a raggiungere il <persName ref="[authorityLink]">Caix</persName>.<note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Napoleone Caix</persName> (1845-1882), ital. Romanist und Sprachwissenschaftler; vgl. HSA 01491-01494.</note> Invece di me – chi l’avrebbe immaginato? – ci andò il povero <persName ref="[authorityLink]">
 Canello</persName>!<note n="5" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1254">Ugo Angelo Canello</persName> (1848-1882), ital. Romanist u. Philologe; vgl. 
+                  <persName ref="[authorityLink]">Ugo Angelo Canello</persName> (1848-1882), ital. Romanist u. Philologe; vgl. 
 
 HSA 01529.</note> Era un Ercole; ma sapete come fu la sua fine? Cadde (così mi hanno detto) di carrozza; si ruppe un braccio, si sviluppò un‘eresipela, et questa crisi, nel clima di Padova, appena due mesi prima, rottosi esso pure un braccio in Roma per caduta, ebbe la stessa sorte dopo essere andato a curarsi nella sua umida patria …</p>
-        <p>Non ho ancor letto l’art. del Meyer,<note n="6" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6640">Gustav Meyer, „Die Reform der italienischen Universitäten“, <hi
-                  rend="unknown" rendition="#none">Unsere Zeit</hi> 1883, V, 876ff.</ref>
-            </bibl>
-
-          </note> e non l’attribuite a noncuranza. Per me non è facile l’andare spesso in biblioteca e frugare nelle riviste, e quelle che non ho in casa, le leggo mol- <pb
-            n="3"/> to in ritardo. Il sapere però che sta per uscire anche un articolo vostro, mia farà vincere la pigrizia. Del resto, permettetemi che dissenta da voi circa l’importanza che qui si attribuisce a simili articoli sulla questione del progetto Bacelli.<note
-            n="7" place="foot" type="editorial">
-            <persName>
+            <p>Non ho ancor letto l’art. del Meyer,<note n="6" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6640">Gustav Meyer, „Die Reform der italienischen Universitäten“, <hi rend="unknown" rendition="#none">Unsere Zeit</hi> 1883, V, 876ff.</ref>
+                  </bibl>
+               </note> e non l’attribuite a noncuranza. Per me non è facile l’andare spesso in biblioteca e frugare nelle riviste, e quelle che non ho in casa, le leggo mol- <pb n="3"/> to in ritardo. Il sapere però che sta per uscire anche un articolo vostro, mia farà vincere la pigrizia. Del resto, permettetemi che dissenta da voi circa l’importanza che qui si attribuisce a simili articoli sulla questione del progetto Bacelli.<note n="7" place="foot" type="editorial">
+                  <persName>
 
 Guido Baccelli</persName> (1830-1916), römischer Arzt und Poliker, der nach 1870 mehrere Ministerien leitete (Gesundheit, Unterrichtswesen usw.) und dazu beitrug, Rom zu einer repräsentativen Hauptstadt des Königreichs Italien zu machen. – Zu Einzelheiten vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7570">Ettore Coppi, „<hi rend="unknown" rendition="#none">La riforma universitaria e il disegno di legge Baccelli</hi>“, Rassegna di scienze sociali e politiche, Anno Primo, 1883</ref>
-            </bibl>; <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7571">Giovanni Gorrini, „<hi rend="unknown" rendition="#none">La riforma universitaria secondo il progetto Baccelli</hi>“, Riforma sociale, fasc. 11</ref>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7570">Ettore Coppi, „<hi rend="unknown" rendition="#none">La riforma universitaria e il disegno di legge Baccelli</hi>“, Rassegna di scienze sociali e politiche, Anno Primo, 1883</ref>
+                  </bibl>; <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7571">Giovanni Gorrini, „<hi rend="unknown" rendition="#none">La riforma universitaria secondo il progetto Baccelli</hi>“, Riforma sociale, fasc. 11</ref>
+                  </bibl>, a. V.</note> Molti valentuomini combattono quel progetto per ragioni personali (molti professori andrebbero colle gambe all’aria se passasse il progetto); interessa dunque che si sappia il parere di coloro che, più competenti per esperienza propria nella materia, non possono essere appassionati, nel dare il loro giudizio, da motivi politici o personali. Il vostro „Italia farà da sè“ nella Allg. Zeitung influirà ad attenuare la influenza della stampa tedesca nella questione.<note n="8" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.590">Schuchardt, „Zum Baccelli’schen Gesetze“, <hi rend="unknown" rendition="#none">Beilage zur Allgemeinen Zeitung</hi> (Augsburg, München) 1883, 2779-2780</ref>
+                  </bibl>. (Es geht bei diesem Gesetz um die Reform des Unterrichtswesens, wozu sich von deutschsprachiger Seite auch Wendelin Foerster [<hi rend="unknown" rendition="#none">Allg. Zeitung</hi>, Jan. 1883] und Gustav Meyer [<hi rend="unknown" rendition="#none">Unsere Zeit. Deutsche Revue der Gegenwart</hi>, 1883, H. V, 875f..] geäußert hatten. Schuchardt weist deutsche Besserwisserei zurück).</note> Sarà bene? E` certo che così vanno a restare padroni del campo coloro che aversano il progetto, e il quietismo di molti professori non potrà che guadagnarvi. Ma sarà ciò utile per le università? – Voi mi parla- <pb n="4"/> te di commedie italiane: purtroppe ne abbiamo a sazietà; ma se anche la commedia entra nella faccenda in discorso, vi assicuro, come già vi scrissi, che non c’entra nè punto nè poco il ministro. Lo conosco troppo per pure dubitarne. Del resto ho conosciuta la persona che fece l’appello a Meyer, e se questo vostro illustre collega fu indotto a scrivere per cortesia verso quell’invito più che per matura convinzione della cosa, il comico starebfoerstbe veramente qui …</p>
+            <p>Il Corvisieri<note n="9" place="foot" type="editorial">
+                  <persName>
 
-            </bibl>, a. V.</note> Molti valentuomini combattono quel progetto per ragioni personali (molti professori andrebbero colle gambe all’aria se passasse il progetto); interessa dunque che si sappia il parere di coloro che, più competenti per esperienza propria nella materia, non possono essere appassionati, nel dare il loro giudizio, da motivi politici o personali. Il vostro „Italia farà da sè“ nella Allg. Zeitung influirà ad attenuare la influenza della stampa tedesca nella questione.<note
-            n="8" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.590">Schuchardt, „Zum Baccelli’schen Gesetze“, <hi
-                  rend="unknown" rendition="#none">Beilage zur Allgemeinen Zeitung</hi> (Augsburg, München) 1883, 2779-2780</ref>
-
-            </bibl>. (Es geht bei diesem Gesetz um die Reform des Unterrichtswesens, wozu sich von deutschsprachiger Seite auch Wendelin Foerster [<hi
-              rend="unknown" rendition="#none">Allg. Zeitung</hi>, Jan. 1883] und Gustav Meyer [<hi rend="unknown"
-            rendition="#none">Unsere Zeit. Deutsche Revue der Gegenwart</hi>, 1883, H. V, 875f..] geäußert hatten. Schuchardt weist deutsche Besserwisserei zurück).</note> Sarà bene? E` certo che così vanno a restare padroni del campo coloro che aversano il progetto, e il quietismo di molti professori non potrà che guadagnarvi. Ma sarà ciò utile per le università? – Voi mi parla- <pb n="4"/> te di commedie italiane: purtroppe ne abbiamo a sazietà; ma se anche la commedia entra nella faccenda in discorso, vi assicuro, come già vi scrissi, che non c’entra nè punto nè poco il ministro. Lo conosco troppo per pure dubitarne. Del resto ho conosciuta la persona che fece l’appello a Meyer, e se questo vostro illustre collega fu indotto a scrivere per cortesia verso quell’invito più che per matura convinzione della cosa, il comico starebfoerstbe veramente qui …</p>
-        <p>Il Corvisieri<note n="9" place="foot" type="editorial">
-            <persName>
-
-Costantino / Constantino Corvisieri</persName> (1822-1899), ital. Antiquar u. Sammler; vgl. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.7228">HSA 07443</ref>.</note> da un pezzo è quasi irreperribile; so che sta cercando ragioni per la Commissione che vuol mettere il Monumento a Vittorio Emanuele sul Campidoglio,<note
-            n="10" place="foot"
-            type="editorial">Dieses Monument wurde anlässlich des Todes von König Vittorio Emanuele im Jahr 1878 beschlossen; 1885 wurde mit dem Bau begonnen, doch die Fertigstellung erfolgte erste 1927.</note> e non mi fa meraviglia che non si trovi più nemmeno lui. Il march. Ferrajoli<note
-            n="11" place="foot" type="editorial">
+Costantino / Constantino Corvisieri</persName> (1822-1899), ital. Antiquar u. Sammler; vgl. <ref target="https://gams.uni-graz.at/o:hsa.letter.7228">HSA 07443</ref>.</note> da un pezzo è quasi irreperribile; so che sta cercando ragioni per la Commissione che vuol mettere il Monumento a Vittorio Emanuele sul Campidoglio,<note n="10" place="foot" type="editorial">Dieses Monument wurde anlässlich des Todes von König Vittorio Emanuele im Jahr 1878 beschlossen; 1885 wurde mit dem Bau begonnen, doch die Fertigstellung erfolgte erste 1927.</note> e non mi fa meraviglia che non si trovi più nemmeno lui. Il march. Ferrajoli<note n="11" place="foot" type="editorial">
 Vermutlich Marchese Gaetano Ferrajoli di Filacciano (1838-1890) [oder sein Bruder Alessandro (1846-1919)]; die Familie war wohlhabend, besaß in Rom eine bedeutende Bibliothek und herausragende Kunstwerke. Vermutlich ist Brief 
 
 HSA 03029, den <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1600">Wolf, <hi rend="unknown" rendition="#none">Nachlaß</hi>
-              </ref>
-            </bibl>, 21 und 170 einem <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1482">Gaetao Ferrasoli</persName> zuweist, an Gaetano Ferrajoli gerichtet!</note> pure mi ha promesso di trovarmi commedie con lazzi di lingua franca; ma … sono sempre promesse.</p>
-        <closer>
-          <salute>Addio; vogliatemi bene e credetemi sempre il</salute>
-          <lb/>
-          <salute>Vostro aff<hi rendition="#sup">mo</hi>
-          </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1600">Wolf, <hi rend="unknown" rendition="#none">Nachlaß</hi>
+                     </ref>
+                  </bibl>, 21 und 170 einem <persName ref="[authorityLink]">Gaetao Ferrasoli</persName> zuweist, an Gaetano Ferrajoli gerichtet!</note> pure mi ha promesso di trovarmi commedie con lazzi di lingua franca; ma … sono sempre promesse.</p>
+            <closer>
+               <salute>Addio; vogliatemi bene e credetemi sempre il</salute>
+               <lb/>
+               <salute>Vostro aff<hi rendition="#sup">mo</hi>
+               </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">
 EMonaci</persName>.</signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

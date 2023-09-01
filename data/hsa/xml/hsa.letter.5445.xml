@@ -1,418 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Arturo Farinelli an Hugo Schuchardt (08-02882)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1471">
-            <forename>Arturo</forename>
-            <surname>Farinelli</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5445" type="PID">o:hsa.letter.5445</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">08-02882</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">02882</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1471">
-                <forename>Arturo</forename>
-                <surname>Farinelli</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.134" ref="http://sws.geonames.org/2775220">Innsbruck</origPlace>
-              <origDate ana="dcterms:created" when="1895-11-19">19.11.1895.</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Arturo Farinelli und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1471"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5445">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1471" ref="https://viaf.org/viaf/64133235">
-            <forename>Arturo</forename>
-            <surname>Farinelli</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.134" key="#GID.1" ref="http://sws.geonames.org/2775220">Innsbruck</placeName>
-          <date when="1895-11-19">19.11.1895.</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Innsbruck</settlement>
-                <name ref="http://geonames.org/2775220" type="fcode:PPLA">Innsbruck</name>
-                <location>
-                  <geo>11.39454,47.26266</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1471" type="context">
-                        Korrespondenz Arturo Farinelli - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3934" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Wien</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4147" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Innsbruck</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5445" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5445" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5445" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5445" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5445" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5445" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5445" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5445" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5445" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Illustre e caris<hi rendition="#sup">mo</hi> Sig<hi rendition="#sup">re</hi>
-        </opener>
-        <dateline>Innsbruck, 19 XI 95.</dateline>
-        <p>Sperava da Madrid la stampa del mio <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5445" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Illustre e caris<hi rendition="#sup">mo</hi> Sig<hi rendition="#sup">re</hi>
+            </opener>
+            <dateline>Innsbruck, 19 XI 95.</dateline>
+            <p>Sperava da Madrid la stampa del mio <hi rend="unknown" rendition="#none">
 Gracian</hi>
-          <note n="1" place="foot" type="editorial">Farinelli, <hi rend="unknown" rendition="#none">
-              <bibl>
+               <note n="1" place="foot" type="editorial">Farinelli, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 Gracián y la leteratura de corte en Alemania
 </bibl>
-            </hi>, Madrid 1896.</note> per servirle minutamente dei miei poveri affari, ma quei miei cari Spagnuoli di laggiù sono indolentissimi, né rispondono, né si insognano di pubblicare in qualsiasi modo il mio lavoro che mi costò davvero gravi fatiche. Forse prima di chiudersi l‘anno se ne farà qualche cosa.</p>
-
-        <p>Ho io risposto ad una Sua carissima lettera che mi parlava ancora dei miei tristi affari dell‘abilitazione? Non so più bene, stavo scrivendo al Gracian o ero assai occupato a valicare monti (fui a Courmayeur, al Gran <pb
-            facs="#IMG.2" n="2"/> S. Bernardo ecc) per dimenticare le mie noie.</p>
-        <p>E‘ Ella ancora a Graz per questo Natale? Io ho allora la miseria di dieci giorni di vacanza, e passerei per Graz prima di recarmi a Vienna, vorrei conoscerla una buona volta e dirle a voce ciò che è uggioso il comunicarle per iscritto.</p>
-
-        <p>Ho parlato col Demattio per la questione dell‘abilitazione attenendomi a ciò che Ella ed il decano mi scrissero. L'infelicissimo uomo a cui incomberebbe davvero l'obbligo di abilitarmi tutto tremante mi disse che egli era <hi
-            rend="unknown" rendition="#none">asino,</hi>
-          <hi rend="unknown" rendition="#none">asinissimo</hi> (sono le sue parole) e che quindi non era in grado di abilitarmi. Mi promise che avrebbe scritto a Lei in proposito.</p>
-        <p>Non ne fece nulla. La psicologia di questo <pb facs="#IMG.3"
-            n="3"/> sciagurato è facile a farsi. Egli per circa 30 anni occupò una cattedra senza merito, senza scienza alcuna, ma visse in pace e da assoluto padrone coadiuvato da un libero docente il D<hi
-            rendition="#sup">r</hi> W. Zingerle<note n="2" place="foot" type="editorial">
-            <persName>
-Wolfram Zingerle</persName> (1854-1913), österr. Bibliothekar und Romanist, 1884 in <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.3934">Wien</ref> von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2264">Mussafia</persName> habilitiert, hielt ab 1886 Lehrveranstaltungen in <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4147">Innsbruck</ref>.</note> più bibliotecario che il resto. Ora non vorrebbe che altri gli rompessero le uova nel paniere e deteriorasse la sua fama. Sente il bisogno di insegnare (sic) ancora per parecchi anni. L'idea che io potrei sopraggiungere e mostrare all‘università una dottrina che non è la sua gli fa venire una terribile tremerella Don Abbondiana<note
-            n="3" place="foot" type="editorial">Don Abbondio, eine der Hauptpersonen in Alessandro Manzonis <hi
-              rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>, Madrid 1896.</note> per servirle minutamente dei miei poveri affari, ma quei miei cari Spagnuoli di laggiù sono indolentissimi, né rispondono, né si insognano di pubblicare in qualsiasi modo il mio lavoro che mi costò davvero gravi fatiche. Forse prima di chiudersi l‘anno se ne farà qualche cosa.</p>
+            <p>Ho io risposto ad una Sua carissima lettera che mi parlava ancora dei miei tristi affari dell‘abilitazione? Non so più bene, stavo scrivendo al Gracian o ero assai occupato a valicare monti (fui a Courmayeur, al Gran <pb facs="#IMG.2" n="2"/> S. Bernardo ecc) per dimenticare le mie noie.</p>
+            <p>E‘ Ella ancora a Graz per questo Natale? Io ho allora la miseria di dieci giorni di vacanza, e passerei per Graz prima di recarmi a Vienna, vorrei conoscerla una buona volta e dirle a voce ciò che è uggioso il comunicarle per iscritto.</p>
+            <p>Ho parlato col Demattio per la questione dell‘abilitazione attenendomi a ciò che Ella ed il decano mi scrissero. L'infelicissimo uomo a cui incomberebbe davvero l'obbligo di abilitarmi tutto tremante mi disse che egli era <hi rend="unknown" rendition="#none">asino,</hi>
+               <hi rend="unknown" rendition="#none">asinissimo</hi> (sono le sue parole) e che quindi non era in grado di abilitarmi. Mi promise che avrebbe scritto a Lei in proposito.</p>
+            <p>Non ne fece nulla. La psicologia di questo <pb facs="#IMG.3" n="3"/> sciagurato è facile a farsi. Egli per circa 30 anni occupò una cattedra senza merito, senza scienza alcuna, ma visse in pace e da assoluto padrone coadiuvato da un libero docente il D<hi rendition="#sup">r</hi> W. Zingerle<note n="2" place="foot" type="editorial">
+                  <persName>
+Wolfram Zingerle</persName> (1854-1913), österr. Bibliothekar und Romanist, 1884 in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3934">Wien</ref> von <persName ref="[authorityLink]">Mussafia</persName> habilitiert, hielt ab 1886 Lehrveranstaltungen in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4147">Innsbruck</ref>.</note> più bibliotecario che il resto. Ora non vorrebbe che altri gli rompessero le uova nel paniere e deteriorasse la sua fama. Sente il bisogno di insegnare (sic) ancora per parecchi anni. L'idea che io potrei sopraggiungere e mostrare all‘università una dottrina che non è la sua gli fa venire una terribile tremerella Don Abbondiana<note n="3" place="foot" type="editorial">Don Abbondio, eine der Hauptpersonen in Alessandro Manzonis <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 I promessi sposi
 </bibl>
-
-            </hi>, Innbegriff der Feigheit und Untätigkeit.</note>. Costui adunque ad altre buone doti aggiunge quella della massima viltà. La storia è lunga a raccontare. Mi chiamò un tempo un secondo Ascoli un secondo Mezzofanti<note
-            n="4" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">Graziadio Isaia Ascoli</persName> (1829-1907), italienischer Romanist; <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4448">Giuseppe Mezzofanti</persName> (1774-1849), ital. Kardinal, Sprachgenie, das 57 Sprachen gesprochen haben soll.</note> ecc. poi, per disperazione, non sapendo far <pb
-            facs="#IMG.4" n="4"/> altro mi scrisse questo biglietto ch io le rimetto.<note n="5" place="foot" type="editorial">Nicht erhalten.</note> Siccome l‘infelice e demente non gli ho neppure risposto.</p>
-
-        <p>Ma io sono stato amareggiato in modo da volgere la mente ad altro che ad un‘abilitazione sotto auspici così edificanti. D'altra parte a Graz, com'Ella mi scrive, mi farebbero nuove difficoltà per l'esame ecc. Or io pur non contandomi per nulla non vorrei esser sottoposto ad un'umiliazione qualsiasi. Io credeva d'aver pubblicato abbastanza, di contare nella scienza in modo da risparmiarmi un colloquium così meschino e d'esser promosso in base ad uno o più discorsi su argomenti propostimi. Nello stesso modo come io potrei confondere cento potrebbero confonder anche me. Io poi ritornerei, come si <pb
-            facs="#IMG.5" n="5"/> dice da noi <hi rend="unknown" rendition="#none">bocciato</hi>
-          <note n="6" place="foot" type="editorial">„durchgefallen“.</note>, e farei nel mondo una gran bella figura!</p>
-        <p>Io credo adunque che il miglior partito per me sarà di mettere il cuore in pace e giacchè ebbi la disgrazia di lasciare la patria per ridurmi ad Innsbruck dove non vi sono nè uomini veri, nè libri, continuerò nella mia triste ed umiliante carica finchè, se l'Italia mia non pensa ad un serio rimedio, io incretinisca totalmente per progredire poi al posto di bidello o di portinaio. E‘ singolare poi che qui in Austria con dieci paginette a stampa (qui è molto in uso il contar le pagine) si diventi libero docente.</p>
-
-        <p>Non so cosa avrebbero fatto ad un Austriaco che non avesse scritto altro che il mio libro sul Grillparzer.<note
-            n="7" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4149">Grillparzer und Lope de Vega</ref>
-              </bibl>
-            </hi>, Berlin 1894.</note> Ho perdonato a tutti il male che m'hanno fatto nella mia <pb facs="#IMG.6"
-            n="6"/> triste ed errabonda vita, ad un Demattio stento a perdonare, gli vorrei far dare una lezione. Perchè non pubblicai una grammatichetta delle sue<note
-            n="8" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1380">Demattio</persName> ist Vf. einer Grammatik des Provenzalischen (1880) und einer <hi
-              rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>, Innbegriff der Feigheit und Untätigkeit.</note>. Costui adunque ad altre buone doti aggiunge quella della massima viltà. La storia è lunga a raccontare. Mi chiamò un tempo un secondo Ascoli un secondo Mezzofanti<note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Graziadio Isaia Ascoli</persName> (1829-1907), italienischer Romanist; <persName ref="[authorityLink]">Giuseppe Mezzofanti</persName> (1774-1849), ital. Kardinal, Sprachgenie, das 57 Sprachen gesprochen haben soll.</note> ecc. poi, per disperazione, non sapendo far <pb facs="#IMG.4" n="4"/> altro mi scrisse questo biglietto ch io le rimetto.<note n="5" place="foot" type="editorial">Nicht erhalten.</note> Siccome l‘infelice e demente non gli ho neppure risposto.</p>
+            <p>Ma io sono stato amareggiato in modo da volgere la mente ad altro che ad un‘abilitazione sotto auspici così edificanti. D'altra parte a Graz, com'Ella mi scrive, mi farebbero nuove difficoltà per l'esame ecc. Or io pur non contandomi per nulla non vorrei esser sottoposto ad un'umiliazione qualsiasi. Io credeva d'aver pubblicato abbastanza, di contare nella scienza in modo da risparmiarmi un colloquium così meschino e d'esser promosso in base ad uno o più discorsi su argomenti propostimi. Nello stesso modo come io potrei confondere cento potrebbero confonder anche me. Io poi ritornerei, come si <pb facs="#IMG.5" n="5"/> dice da noi <hi rend="unknown" rendition="#none">bocciato</hi>
+               <note n="6" place="foot" type="editorial">„durchgefallen“.</note>, e farei nel mondo una gran bella figura!</p>
+            <p>Io credo adunque che il miglior partito per me sarà di mettere il cuore in pace e giacchè ebbi la disgrazia di lasciare la patria per ridurmi ad Innsbruck dove non vi sono nè uomini veri, nè libri, continuerò nella mia triste ed umiliante carica finchè, se l'Italia mia non pensa ad un serio rimedio, io incretinisca totalmente per progredire poi al posto di bidello o di portinaio. E‘ singolare poi che qui in Austria con dieci paginette a stampa (qui è molto in uso il contar le pagine) si diventi libero docente.</p>
+            <p>Non so cosa avrebbero fatto ad un Austriaco che non avesse scritto altro che il mio libro sul Grillparzer.<note n="7" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4149">Grillparzer und Lope de Vega</ref>
+                     </bibl>
+                  </hi>, Berlin 1894.</note> Ho perdonato a tutti il male che m'hanno fatto nella mia <pb facs="#IMG.6" n="6"/> triste ed errabonda vita, ad un Demattio stento a perdonare, gli vorrei far dare una lezione. Perchè non pubblicai una grammatichetta delle sue<note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Demattio</persName> ist Vf. einer Grammatik des Provenzalischen (1880) und einer <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Grammatica della lingua italiana ad uso delle scuole
 </bibl>, </hi>(1874)<hi rend="unknown" rendition="#none">.</hi>
-          </note> non sono filologo! Il miserabile!</p>
-        <p>Perdoni, illustre Sig<hi rendition="#sup">re</hi>, non scrivo mai a nessuno senza avere il cuore alla mano, mentire il mio stato d'animo a Lei ch'io amo ed apprezzo come pochissimi altri fra gli eruditi sarebbe davvero follia. </p>
-
-        <p>Mi scriva di grazia come sta di salute. L'inverno è alla porta ed io temo per Lei. Ha Ella davvero seria intenzione di recarsi in Ispagna, a Sevilla? A proposito mi permetta Ella di <hi
-            rend="unknown" rendition="#none">decicarle</hi> il mio <hi rend="unknown"
-            rendition="#none">Don Giovanni</hi> che uscirà a Torino a principio del '96?<note n="9" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
+               </note> non sono filologo! Il miserabile!</p>
+            <p>Perdoni, illustre Sig<hi rendition="#sup">re</hi>, non scrivo mai a nessuno senza avere il cuore alla mano, mentire il mio stato d'animo a Lei ch'io amo ed apprezzo come pochissimi altri fra gli eruditi sarebbe davvero follia. </p>
+            <p>Mi scriva di grazia come sta di salute. L'inverno è alla porta ed io temo per Lei. Ha Ella davvero seria intenzione di recarsi in Ispagna, a Sevilla? A proposito mi permetta Ella di <hi rend="unknown" rendition="#none">decicarle</hi> il mio <hi rend="unknown" rendition="#none">Don Giovanni</hi> che uscirà a Torino a principio del '96?<note n="9" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Don Giovanni, note critiche
 </bibl>
-            </hi>, Turin 1896.</note>
-          <pb facs="#IMG.7"
-            n="7"/> Il lavoro appartiene a Lei di diritto a che fu si buono e si gentile di comunicarmi le sue note preziose. Peccato che io abbia sciupato il bellissimo soggetto. Composi il lavoro nell‘epoca più travagliata della mia vita. Tornerò sul D. Giov. pubblicando un edizione possibilmente critica del <hi
-            rend="unknown" rendition="#none">Burlador</hi> che vorrei pure dedicare a Lei.<note n="10" place="foot"
-              type="editorial">Zur Widmung Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.5447">10-02884</ref>.</note>
-        </p>
-        <p>Sto facendo uno studio su <hi rend="unknown" rendition="#none">Guillaume de Humboldt et l'Espagne</hi>
-          <note n="11" place="foot" type="editorial">„<bibl>
+                  </hi>, Turin 1896.</note>
+               <pb facs="#IMG.7" n="7"/> Il lavoro appartiene a Lei di diritto a che fu si buono e si gentile di comunicarmi le sue note preziose. Peccato che io abbia sciupato il bellissimo soggetto. Composi il lavoro nell‘epoca più travagliata della mia vita. Tornerò sul D. Giov. pubblicando un edizione possibilmente critica del <hi rend="unknown" rendition="#none">Burlador</hi> che vorrei pure dedicare a Lei.<note n="10" place="foot" type="editorial">Zur Widmung Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.5447">10-02884</ref>.</note>
+            </p>
+            <p>Sto facendo uno studio su <hi rend="unknown" rendition="#none">Guillaume de Humboldt et l'Espagne</hi>
+               <note n="11" place="foot" type="editorial">„<bibl>
 
 
 Guillaume de Humboldt et l’Espagne
-</bibl>“, <hi
-              rend="unknown"
-            rendition="#none">Revue hispanique</hi> 5, 1898, 219-250. Eine <persName>
-Francesco Flamini</persName> (1868-1922) gewidmete Schrift konnte nicht nachgewiesen werden.</note> ed io mi permetterò di importunarla chiendendole notizie sugli studi baschi di Humboldt e sul loro valore reale. Forse Ella mi potrebbe dare un giudizio suo autorevolissimo ed io mi terrei onorato di stamparlo o come aggiunta o in nota. Ma quest'è una sfacciataggine mia bell' e buona. <pb
-            facs="#IMG.8"
-            n="8"/> L'Humboldt lo dedicherò al Flamini, che ora alla mia età (ha 28 anni) è stato nominato prof<hi
-            rendition="#sup">
-re</hi> ordinario all'università di Messina ed è giovane valente e fortunato, il rovescio della mia medaglia in tutto e per tutto.<note
-            n="12" place="foot" type="editorial">Nachgewiesen ist nur: <hi rend="unknown" rendition="#none">
-              <bibl>
+</bibl>“, <hi rend="unknown" rendition="#none">Revue hispanique</hi> 5, 1898, 219-250. Eine <persName>
+Francesco Flamini</persName> (1868-1922) gewidmete Schrift konnte nicht nachgewiesen werden.</note> ed io mi permetterò di importunarla chiendendole notizie sugli studi baschi di Humboldt e sul loro valore reale. Forse Ella mi potrebbe dare un giudizio suo autorevolissimo ed io mi terrei onorato di stamparlo o come aggiunta o in nota. Ma quest'è una sfacciataggine mia bell' e buona. <pb facs="#IMG.8" n="8"/> L'Humboldt lo dedicherò al Flamini, che ora alla mia età (ha 28 anni) è stato nominato prof<hi rendition="#sup">
+re</hi> ordinario all'università di Messina ed è giovane valente e fortunato, il rovescio della mia medaglia in tutto e per tutto.<note n="12" place="foot" type="editorial">Nachgewiesen ist nur: <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Guillaume de Humboldt et l’Espagne. Avec une esquisse sur Goethe et l’Espagne
 </bibl>
-            </hi>, Turin 1924. – In <hi rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>, Turin 1924. – In <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Episodi di una vita
 </bibl>
-            </hi>, 1946, 123 lesen wir: „Mi appassiono, anche per impulso dello Schuchardt, a <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3539">Wilhelm von Humboldt</persName>, sedotto da quella volontà di studi e di tenace costanza che non dava crollo e dall’armonia di una vita vigiliatissima nel suo interiore che esplora nel profondo e penetra nelle viscere dell’umanità, svelando i misteri linguistici dei popoli più vari. E stendo l’opera su ,Guillaume de Humboldt e l’Espagne‘. Mi mancavano alcune indagini da compiere tra i Baschi per seguire l’Humboldt nelle sue divagazioni della lingua. Ottengo un permesso dall’Università, impacco, con le camicie e gli abiti, il manoscritto, e parto deciso a errare per mezza Spagna“.</note>
-        </p>
-        <p>Se Ella, illustre e caro Sig<hi rendition="#sup">re</hi> crede opportuno mi farà spedire dal decano di Graz le mie carte e le mie pubblicazioni. Ho sprecato tutto, non serbo più copia di nulla di questo che scrissi. </p>
-        <p>Mi dica adunque di grazia se io potrei vederla in questo Dicembre. Ma per carità non si dia nuove brighe per conto mio. L'amicizia Sua e la Sua benevolenza sono un gran conforto per me, ma io non vorrei che Le fassi di noia e d'affanno.</p>
-        <closer>
-          <salute>Mi creda colla massima stima</salute>
-          <lb/>
-          <salute>dev<hi rendition="#sup">mo</hi>
-          </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1471">Arturo Farinelli</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Perdoni gli innumerabili e madornali errori di stampa nella Revista crit.!<note n="13" place="foot"
-                type="editorial">Vermutlich Farinellis Aufsatz „<bibl>
+                  </hi>, 1946, 123 lesen wir: „Mi appassiono, anche per impulso dello Schuchardt, a <persName ref="[authorityLink]">Wilhelm von Humboldt</persName>, sedotto da quella volontà di studi e di tenace costanza che non dava crollo e dall’armonia di una vita vigiliatissima nel suo interiore che esplora nel profondo e penetra nelle viscere dell’umanità, svelando i misteri linguistici dei popoli più vari. E stendo l’opera su ,Guillaume de Humboldt e l’Espagne‘. Mi mancavano alcune indagini da compiere tra i Baschi per seguire l’Humboldt nelle sue divagazioni della lingua. Ottengo un permesso dall’Università, impacco, con le camicie e gli abiti, il manoscritto, e parto deciso a errare per mezza Spagna“.</note>
+            </p>
+            <p>Se Ella, illustre e caro Sig<hi rendition="#sup">re</hi> crede opportuno mi farà spedire dal decano di Graz le mie carte e le mie pubblicazioni. Ho sprecato tutto, non serbo più copia di nulla di questo che scrissi. </p>
+            <p>Mi dica adunque di grazia se io potrei vederla in questo Dicembre. Ma per carità non si dia nuove brighe per conto mio. L'amicizia Sua e la Sua benevolenza sono un gran conforto per me, ma io non vorrei che Le fassi di noia e d'affanno.</p>
+            <closer>
+               <salute>Mi creda colla massima stima</salute>
+               <lb/>
+               <salute>dev<hi rendition="#sup">mo</hi>
+               </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Arturo Farinelli</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Perdoni gli innumerabili e madornali errori di stampa nella Revista crit.!<note n="13" place="foot" type="editorial">Vermutlich Farinellis Aufsatz „<bibl>
 
 John Lyly, Guevara y el ,Euphuismo‘ in Inglaterra
-</bibl>“, der zuerst in der <hi
-                rend="unknown"
-                rendition="#none">Revista crítica de historia y literatura españolas</hi> von 1896 erschien und später, revidiert, als 10. Beitrag in Farinellis <hi
-                rend="unknown" rendition="#none">
-                <bibl>
+</bibl>“, der zuerst in der <hi rend="unknown" rendition="#none">Revista crítica de historia y literatura españolas</hi> von 1896 erschien und später, revidiert, als 10. Beitrag in Farinellis <hi rend="unknown" rendition="#none">
+                        <bibl>
 
 
 Ensayos y discursos de crítica literaria hispano-europea
 </bibl>
-              </hi>, Rom 1925, aufgenommen wurde.</note> Lo scrivere per la Spagna è una vera disperazione. </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                     </hi>, Rom 1925, aufgenommen wurde.</note> Lo scrivere per la Spagna è una vera disperazione. </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

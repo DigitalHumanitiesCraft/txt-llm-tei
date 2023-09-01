@@ -1,422 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Philipp August Becker an Hugo Schuchardt (02-00890)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1116">
-            <forename>Philipp August</forename>
-            <surname>Becker</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3226" type="PID">o:hsa.letter.3226</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-00890</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">00890</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1116">
-                <forename>Philipp August</forename>
-                <surname>Becker</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="7" unit="pages">7 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" ref="http://sws.geonames.org/2761368">Wien</origPlace>
-              <origDate ana="dcterms:created" when="1916-04-18">1916-04-18</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Philipp August Becker und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1116"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3226">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1116" ref="https://viaf.org/viaf/77118789">
-            <forename>Philipp August</forename>
-            <surname>Becker</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" key="#GID.1" ref="http://sws.geonames.org/2761368">Wien</placeName>
-          <date when="1916-04-18">1916-04-18</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <name ref="http://geonames.org/2761368" type="fcode:STM">Wien-Fluss</name>
-                <location>
-                  <geo>16.38409,48.2088</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1116" type="context">
-                        Korrespondenz Philipp August Becker - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.565" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Wörterbücher</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.297" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Magyar Tudományos Akadémia (Budapest)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3971" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Magyar Nyelvör</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4427" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachpflege</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4732" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Egyetemes philologiai közlöny</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4735" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschriften- und Zeitungsgeschichte</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3152" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Vergleichende Sprachwissenschaft</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4435" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Klassische Philologie</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.803" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Ungarisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3226" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3226" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3226" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3226" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3226" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3226" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3226" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3226" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Wien, den 18. April 1916</dateline>
-        <opener>Hochverehrter Herr Hofrat!</opener>
-        <p>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2676">Herr Professor v. Schroeder</persName>
-          <note n="1" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2676">Leopold von Schroeder</persName> (1851-1920) war ein deutsch-baltischer Indologe, 1896 o. Prof. <placeName>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3226" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Wien, den 18. April 1916</dateline>
+            <opener>Hochverehrter Herr Hofrat!</opener>
+            <p>
+               <persName ref="[authorityLink]">Herr Professor v. Schroeder</persName>
+               <note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Leopold von Schroeder</persName> (1851-1920) war ein deutsch-baltischer Indologe, 1896 o. Prof. <placeName>
 Innsbruck</placeName>, 1899 <placeName>
-Wien</placeName>, sowohl mit <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Schuchardt</persName> (vgl. die <ref
-              target="https://gams.uni-graz.at/o:hsa.persons#P.2676">Briefe Nr. 10205-10230</ref>), als auch mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1116">Becker</persName> bekannt, dessen Fakultätskollege er zum Zeitpunkt der Abfassung dieses Briefes war.</note> fragte mich in Ihrem Namen, was der Grund der anscheinend gegen <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2738">Simonyi</persName>
-          <note n="2" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2738">Zsigmond (Siegmund) Simonyi</persName> (1853-1919) [er hieß bis 1874 Steiner] war ein ungarischer Sprachwissenschaftler, der an der 
-Univ. (Buda)Pest <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.803">Ungarisch</ref>, <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.3152">Vergleichende Sprachwissenschaft</ref> und <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4435">Klassische Philologie</ref> studiert hatte. Nach Studienaufenthalten in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.177">Leipzig</placeName>, <placeName>
-Berlin</placeName> und <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.666">Paris</placeName> kehrte er 1876 nach <placeName>
+Wien</placeName>, sowohl mit <persName ref="[authorityLink]">Schuchardt</persName> (vgl. die <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2676">Briefe Nr. 10205-10230</ref>), als auch mit <persName ref="[authorityLink]">Becker</persName> bekannt, dessen Fakultätskollege er zum Zeitpunkt der Abfassung dieses Briefes war.</note> fragte mich in Ihrem Namen, was der Grund der anscheinend gegen <persName ref="[authorityLink]">Simonyi</persName>
+               <note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Zsigmond (Siegmund) Simonyi</persName> (1853-1919) [er hieß bis 1874 Steiner] war ein ungarischer Sprachwissenschaftler, der an der 
+Univ. (Buda)Pest <ref target="https://gams.uni-graz.at/o:hsa.languages#L.803">Ungarisch</ref>, <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3152">Vergleichende Sprachwissenschaft</ref> und <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4435">Klassische Philologie</ref> studiert hatte. Nach Studienaufenthalten in <placeName ref="[authorityLink]">Leipzig</placeName>, <placeName>
+Berlin</placeName> und <placeName ref="[authorityLink]">Paris</placeName> kehrte er 1876 nach <placeName>
 (Buda)Pest</placeName> zurück und habilitierte sich dort 1877 für ungarische Sprachwissenschaft. 1885 wurde er ao., 1889 o. Prof. für dieses Fach. Seit 1879 war er korr., seit 1893 o. Mitglied der Ung. Akad. d. Wiss. Epochemachend ist sein sprachhistorisches Wörterbuch <bibl>
-              <hi rend="unknown" rendition="#none">Magyar nyelvtörténeti szótár a legrégibb nyelvemlékektöl a nyelvújításig</hi>
-
-            </bibl>, 3 Bde., Budapest 1890-93 (=Ungarisches sprachgeschichtliches Wörterbuch von den ältesten Sprachdenkmälern bis zur Sprachneuerung), das er gemeinsam mit <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2827">Gábor Szarvas</persName> (1832-1895) hrsg. hatte.. Er war nach <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2827">Szarvas</persName>‘ Tod 1895 neuer Hrsg. des <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">Magyar nyelvör</ref>, Budapest 1872-1940 (=Ungarischer Sprachwart) geworden. Sein Buch über <bibl>
+                     <hi rend="unknown" rendition="#none">Magyar nyelvtörténeti szótár a legrégibb nyelvemlékektöl a nyelvújításig</hi>
+                  </bibl>, 3 Bde., Budapest 1890-93 (=Ungarisches sprachgeschichtliches Wörterbuch von den ältesten Sprachdenkmälern bis zur Sprachneuerung), das er gemeinsam mit <persName ref="[authorityLink]">Gábor Szarvas</persName> (1832-1895) hrsg. hatte.. Er war nach <persName ref="[authorityLink]">Szarvas</persName>‘ Tod 1895 neuer Hrsg. des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">Magyar nyelvör</ref>, Budapest 1872-1940 (=Ungarischer Sprachwart) geworden. Sein Buch über <bibl>
 
 Geschichte und Charakter der ung. Sprache
 </bibl> ist auch in einer deutschen Bearbeitung erschienen, vgl. ÖBL 12, 2001-2005, 287. Seine Briefe an Schuchardt tragen die <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2827">Nr. 10594-10691</ref>.</note> bestehenden feindseligen Stimmung ist. Ich will versuchen, die Sache so darzustellen, wie sie mir erscheint; selbstverständlich weiss ich nur, was ich sehen konnte, d.h. sehr wenig. </p>
-
-        <p>Schon lange sammelte sich langsam eine gewisse Abneigung gegen Simonyi, die, soviel ich sehe, in einer gar zu geschäftsmässigen <pb
-            facs="#IMG.2"
-            n="2"/>Ausnützung aller Vorteile der Unterstützungen der Akademie für verschiedene Wörterbücher, die meist etwas oberflächlich aus den Zettelsammlungen der Studenten zusammengestellt wurden, ihren Grund hatte. In diese gespannte Stimmung schlug nun um 1903 das durch <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4730">Ballagi</persName>
-          <note n="3" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4730">Aladár Ballagi</persName> (1853-1921), Sohn des bekannten ungarischer Sprachforschers u. Theologen <persName>
+            <p>Schon lange sammelte sich langsam eine gewisse Abneigung gegen Simonyi, die, soviel ich sehe, in einer gar zu geschäftsmässigen <pb facs="#IMG.2" n="2"/>Ausnützung aller Vorteile der Unterstützungen der Akademie für verschiedene Wörterbücher, die meist etwas oberflächlich aus den Zettelsammlungen der Studenten zusammengestellt wurden, ihren Grund hatte. In diese gespannte Stimmung schlug nun um 1903 das durch <persName ref="[authorityLink]">Ballagi</persName>
+               <note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Aladár Ballagi</persName> (1853-1921), Sohn des bekannten ungarischer Sprachforschers u. Theologen <persName>
 Mór Ballagi</persName> (1815-1891) und selber Sprachforscher, hatte das <bibl>
 
 Magyar nyelvtörténeti
 </bibl> einer harschen Kritik unterworfen: <bibl>
 
 Régi magyar nyelvünk és a Nyelvtörténeti Szótár
-</bibl>, Budapest 1903 (=Das ältere Ungarisch und das sprachhistorische Wörterbuch), die jedoch später von positivistischer Seite als amateurhaft zurückgewiesen wurde, z.B. von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2161">János Melich</persName> (1872-1963). Vgl. zu den Einzelheiten dieser Auseinandersetzung Krisztina Fehér, „<bibl>
+</bibl>, Budapest 1903 (=Das ältere Ungarisch und das sprachhistorische Wörterbuch), die jedoch später von positivistischer Seite als amateurhaft zurückgewiesen wurde, z.B. von <persName ref="[authorityLink]">János Melich</persName> (1872-1963). Vgl. zu den Einzelheiten dieser Auseinandersetzung Krisztina Fehér, „<bibl>
 
 Hungarian historical anthroponymy within the context of language theory and the history of science
-</bibl>“, in: Atti del XXII Congresso Internazionale di Scienze Onomastiche. Pisa, 28 agosto-4 settembre 2005, Bd. I, Pisa 2007, 495-504. - <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2738">Simonyi</persName> replizierte gegen „die tendentiöse und anmaßende Kritik <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4730">Aladár Ballagis</persName>“ mit <bibl>
+</bibl>“, in: Atti del XXII Congresso Internazionale di Scienze Onomastiche. Pisa, 28 agosto-4 settembre 2005, Bd. I, Pisa 2007, 495-504. - <persName ref="[authorityLink]">Simonyi</persName> replizierte gegen „die tendentiöse und anmaßende Kritik <persName ref="[authorityLink]">Aladár Ballagis</persName>“ mit <bibl>
 
 „A Nyelvtörténeti Szótáróll“
-</bibl> (=Über das sprachgeschichtliche Wörterbuch) in: Nyelvészetí Füzetek 15.</note> entfesselte Ungewitter ein. Er nahm – teils aus persönlichen Gründen, teils aus Interesse an der Sache – das historische Wörterbuch der Ung. Spr. scharf ins Gebet, und blieb in der daran anknüpfenden Polemik insofern Sieger, als er <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2738">
-Simonyi</persName> bei der Akademie schädigte und seine <pb
-            facs="#IMG.3" n="3"/>Wahl zum Dekan vereitelte. In jener Zeit war <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2827">Szarvas</persName>
-          <note n="4" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2827">Szarvas</persName> war am 12.10.1895 verstorben. – Vgl. seine Briefe an Schuchardt (Nr. 11478-11488).</note> gestorben und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2738">
-Simonyi</persName> hatte den <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">Nyelvör</ref> übernommen; hier führte er den Kampf für das, was er als sprachrichtig hält – sagen wir als ungarischer Vaugelas<note
-            n="5" place="foot" type="editorial">
-            <persName>
+</bibl> (=Über das sprachgeschichtliche Wörterbuch) in: Nyelvészetí Füzetek 15.</note> entfesselte Ungewitter ein. Er nahm – teils aus persönlichen Gründen, teils aus Interesse an der Sache – das historische Wörterbuch der Ung. Spr. scharf ins Gebet, und blieb in der daran anknüpfenden Polemik insofern Sieger, als er <persName ref="[authorityLink]">
+Simonyi</persName> bei der Akademie schädigte und seine <pb facs="#IMG.3" n="3"/>Wahl zum Dekan vereitelte. In jener Zeit war <persName ref="[authorityLink]">Szarvas</persName>
+               <note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Szarvas</persName> war am 12.10.1895 verstorben. – Vgl. seine Briefe an Schuchardt (Nr. 11478-11488).</note> gestorben und <persName ref="[authorityLink]">
+Simonyi</persName> hatte den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">Nyelvör</ref> übernommen; hier führte er den Kampf für das, was er als sprachrichtig hält – sagen wir als ungarischer Vaugelas<note n="5" place="foot" type="editorial">
+                  <persName>
 
 Claude Favre de Vaugelas</persName> (1585-1650) war ein bedeutender französischer Sprachnormierer, dessen <bibl>
 
 
 Remarques sur la langue française
 </bibl> (1647) bis heute nachwirken.</note>, nicht ohne Verdienst, aber wie alle solche Schulmeisterei der Sprache schliesslich zur Last der Geschulmeisterten.</p>
-        <p> Unterdessen war <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4731">Szily Kálmán</persName>
-          <note n="6" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4731">Szily Kálmán</persName> (1838-1924) war ein angesehener ungar. Sprachforscher und Verf. von <bibl>
+            <p> Unterdessen war <persName ref="[authorityLink]">Szily Kálmán</persName>
+               <note n="6" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Szily Kálmán</persName> (1838-1924) war ein angesehener ungar. Sprachforscher und Verf. von <bibl>
 
 A Magyar Nyelvujitás Szótára a kedveltebb képzök és jegyzékével
-</bibl> (=Wörterbuch der ungarischen Sprachneuerung nebst einem Verzeichnis der beliebteren Suffixe und Bildungsarten, Budapest 1902). - Vgl. seine Briefe an Schuchardt (<ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.4731">Nr. 11497-11523</ref>).</note>, der Generalsekretar der Akademie, von seinen naturwissenschaftlichen Studien nach und nach zu sprachgeschichtlichen geführt worden, und er gab die Anregung zur Gründung <pb
-            facs="#IMG.4" n="4"/>der neuen Gesellschaft und ihres Organs Magyar Nyelv,<note n="7" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3415">Magyar Nyelv</ref>
-            </bibl> (=Die ungarische Sprache), Budapest: Magyar Nyelvtudományi Társaság, 1, 1905f.; <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4732">Egyetemes philologiai közlöny</ref> (=Allgemeiner philologischer Anzeiger), Budapest: Akad., 1.1877 - 71.1948. Die „Magyar Nyelvtudományi Társaság“ ist die „Gesellschaft für ungarische Sprachwissenschaft“, die 1904 von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4731">Kálmán</persName> ins Leben gerufen wurde. – <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-Schuchardt</persName> hat mehrfach auf <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.803">Ungarisch</ref> in Magyar Nyelv (=Ungarische Sprache) bzw. <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">Magyar Nyelvör</ref> (=Ungarischer Sprachwart) publiziert.</note> gewiss mit einer kleinen Pointe gegen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2738">
+</bibl> (=Wörterbuch der ungarischen Sprachneuerung nebst einem Verzeichnis der beliebteren Suffixe und Bildungsarten, Budapest 1902). - Vgl. seine Briefe an Schuchardt (<ref target="https://gams.uni-graz.at/o:hsa.persons#P.4731">Nr. 11497-11523</ref>).</note>, der Generalsekretar der Akademie, von seinen naturwissenschaftlichen Studien nach und nach zu sprachgeschichtlichen geführt worden, und er gab die Anregung zur Gründung <pb facs="#IMG.4" n="4"/>der neuen Gesellschaft und ihres Organs Magyar Nyelv,<note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3415">Magyar Nyelv</ref>
+                  </bibl> (=Die ungarische Sprache), Budapest: Magyar Nyelvtudományi Társaság, 1, 1905f.; <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4732">Egyetemes philologiai közlöny</ref> (=Allgemeiner philologischer Anzeiger), Budapest: Akad., 1.1877 - 71.1948. Die „Magyar Nyelvtudományi Társaság“ ist die „Gesellschaft für ungarische Sprachwissenschaft“, die 1904 von <persName ref="[authorityLink]">Kálmán</persName> ins Leben gerufen wurde. – <persName ref="[authorityLink]">
+Schuchardt</persName> hat mehrfach auf <ref target="https://gams.uni-graz.at/o:hsa.languages#L.803">Ungarisch</ref> in Magyar Nyelv (=Ungarische Sprache) bzw. <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">Magyar Nyelvör</ref> (=Ungarischer Sprachwart) publiziert.</note> gewiss mit einer kleinen Pointe gegen <persName ref="[authorityLink]">
 Simonyi</persName>,<note n="8" place="foot" type="editorial">Die Pointe könnte darin bestehen, daß Simonyis wichtigstes Werk den Titel <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3415">A Magyar Nyelv</ref>
-            </bibl>, Budapest 1889 u. ö. (dt. Straßburg 1907 u. ö. unter dem Titel Die ungarische Sprache: Geschichte und Charakteristik) trägt und die neugegründete Zeitschrift bis auf den Artikel namensgleich ist.</note> aber andererseits auch in Vertretung durchaus berechtigter Gesichtspunkte. </p>
-        <p>Neuerdings scheint es nun, dass Simonyi eine etwas stark persönliche Fehde gegen alle ungarische Fachzeitschriften, <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3415">Magy. Nyelv</ref>
-          </bibl>, Philol. Közlöny<note n="9" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1116">Becker</persName> hatte nach seiner Berufung nach <placeName>Not in (Buda)Pest</placeName> schnell so gut <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.803">Ungarisch</ref> gelernt, dass er seine umstrittene Geschichte der spanischen Literatur in dem der lateinischen und den romanischen Literaturen gewidmeten Teil II (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3415">A Magyar Nyelv</ref>
+                  </bibl>, Budapest 1889 u. ö. (dt. Straßburg 1907 u. ö. unter dem Titel Die ungarische Sprache: Geschichte und Charakteristik) trägt und die neugegründete Zeitschrift bis auf den Artikel namensgleich ist.</note> aber andererseits auch in Vertretung durchaus berechtigter Gesichtspunkte. </p>
+            <p>Neuerdings scheint es nun, dass Simonyi eine etwas stark persönliche Fehde gegen alle ungarische Fachzeitschriften, <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3415">Magy. Nyelv</ref>
+               </bibl>, Philol. Közlöny<note n="9" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Becker</persName> hatte nach seiner Berufung nach <placeName>Not in (Buda)Pest</placeName> schnell so gut <ref target="https://gams.uni-graz.at/o:hsa.languages#L.803">Ungarisch</ref> gelernt, dass er seine umstrittene Geschichte der spanischen Literatur in dem der lateinischen und den romanischen Literaturen gewidmeten Teil II (<bibl>
 
 Rómaiak és románok
-</bibl>, 1905) der von seinem Pester Kollegen <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1734">Gustav Heinrich</persName> (Heinrich Gusztáv, 1845-1922) hrsg. <bibl>
+</bibl>, 1905) der von seinem Pester Kollegen <persName ref="[authorityLink]">Gustav Heinrich</persName> (Heinrich Gusztáv, 1845-1922) hrsg. <bibl>
 
 
 Geschichte der Weltliteratur
 </bibl> (Egyetemes irodalomtörténet, 1903) zunächst auf <ref target="https://gams.uni-graz.at/o:hsa.languages#L.803">Ungarisch</ref> verfaßt hatte.</note>, führt, indem er deren Sprachgefühl anzweifelt – ob mit Recht kann ich nicht beurteilen.</p>
-        <p>Im ganzen habe ich den Eindruck, dass <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2738">Simonyi</persName> neben unzweifelhaften Verdiensten <pb
-            facs="#IMG.5" n="5"/>seine Schwächen hatte, die persönliche Feinde wie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4730">
-Ballagi</persName> in gehässiger Weise ausnützten, um ihn zu schädigen, und dass <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2738">Simonyi</persName> sich verärgern und verbittern liess und durch unnötige Polemik den Streit in das Unendliche fortsetzt.</p>
-
-        <p>Wenn an den Vorwürfen, die man ihm machte, sachlich gewiss manches berechtigt war, so war der Ton jedenfalls ein durchaus ungerechter. Man übersah geflissentlich, dass vieles erst durch diese jahrelang fortgesetzte Sammelarbeit bekannt gemacht und geklärt worden war, und <pb
-            facs="#IMG.6" n="6"/>dass ohne <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2738">Simonyis</persName> Leistungen eine Kritik dieser Leistungen nicht möglich gewesen wäre.</p>
-        <p>Ich weiss nicht, ob diese Bemerkungen, die mir schriftlich niedergelegt nicht recht gefallen wollen, Ihre Frage richtig und genügend beantworten.</p>
-
-        <p>Ich möchte aber die Gelegenheit, die sich einmal bietet, wahrnehmen um Sie, Hochverehrter Herr Hofrat, zu bitten, die Versicherung meiner <pb
-            facs="#IMG.7" n="7"/> steten und ausnehmenden Verehrung und Ergebenheit entgegennehmen zu wollen.</p>
-        <closer>
-          <salute>In vorzüglicher Hochachtung</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1116">PhAug Becker</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Im ganzen habe ich den Eindruck, dass <persName ref="[authorityLink]">Simonyi</persName> neben unzweifelhaften Verdiensten <pb facs="#IMG.5" n="5"/>seine Schwächen hatte, die persönliche Feinde wie <persName ref="[authorityLink]">
+Ballagi</persName> in gehässiger Weise ausnützten, um ihn zu schädigen, und dass <persName ref="[authorityLink]">Simonyi</persName> sich verärgern und verbittern liess und durch unnötige Polemik den Streit in das Unendliche fortsetzt.</p>
+            <p>Wenn an den Vorwürfen, die man ihm machte, sachlich gewiss manches berechtigt war, so war der Ton jedenfalls ein durchaus ungerechter. Man übersah geflissentlich, dass vieles erst durch diese jahrelang fortgesetzte Sammelarbeit bekannt gemacht und geklärt worden war, und <pb facs="#IMG.6" n="6"/>dass ohne <persName ref="[authorityLink]">Simonyis</persName> Leistungen eine Kritik dieser Leistungen nicht möglich gewesen wäre.</p>
+            <p>Ich weiss nicht, ob diese Bemerkungen, die mir schriftlich niedergelegt nicht recht gefallen wollen, Ihre Frage richtig und genügend beantworten.</p>
+            <p>Ich möchte aber die Gelegenheit, die sich einmal bietet, wahrnehmen um Sie, Hochverehrter Herr Hofrat, zu bitten, die Versicherung meiner <pb facs="#IMG.7" n="7"/> steten und ausnehmenden Verehrung und Ergebenheit entgegennehmen zu wollen.</p>
+            <closer>
+               <salute>In vorzüglicher Hochachtung</salute>
+               <signed>
+                  <persName ref="[authorityLink]">PhAug Becker</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

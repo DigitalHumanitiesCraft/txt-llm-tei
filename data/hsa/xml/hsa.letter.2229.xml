@@ -1,409 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (383-11138)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2229" type="PID">o:hsa.letter.2229</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">383-11138</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11138</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" ref="http://sws.geonames.org/2946447">Bonn</origPlace>
-              <origDate ana="dcterms:created" when="1924-03-28">1924-03-28</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2229">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" key="#GID.1" ref="http://sws.geonames.org/2946447">Bonn</placeName>
-          <date when="1924-03-28">1924-03-28</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Bonn</settlement>
-                <name ref="http://geonames.org/2946447" type="fcode:PPLA3">Bonn</name>
-                <location>
-                  <geo>7.09549,50.73438</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4302" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Germanisch-Romanische Monatsschrift</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4090" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Marburg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4360" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Antisemitismus</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4788" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Gießen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4179" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Göttingen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3246" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Basel</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2229" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2229" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2229" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2229" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2229" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2229" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2229" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2229" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2229" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bonn, 28. III.</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-        <p>Vielen Dank für Ihre beiden Briefe. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5275">Pückchen</persName> ist tatsächlich wieder gesund und hat wieder nürnberger-spielzeug-rote Bäckchen. Er hat sich jedenfalls weniger Sorgen gemacht als seine Eltern – und selbst als der gütig teilnahmsvolle Papa Schuchardt.</p>
-        <p>Sehr gerührt hat mich, was Sie über Ihre taubblinde neue Freundin erzählen. Sie dürfen nicht nur deshalb nicht klagen, weil Sie nicht taub-blind sind, sondern weil Sie noch sich für ein solches Menschenkind mit jugendlichem Interesse erwärmen können. Das Alter macht ja sonst so ichsüchtig und ichwendig !</p>
-        <p>Die Angelegenheit mit dem französelnden deutschen ägyptologischen Rumänienreisenden interessiert mich deshalb, weil hier zu lesen war, daß die rumänischen Mumiologen ihre Einladungen zu einem Kongreß nur an Kulturnationen und "deshalb" nicht an Deutsche versandt hätten.</p>
-        <pb facs="#IMG.2" n="2"/>
-
-        <p>Eine mir sehr nahegehende Folge dieser "Kultur"tat ist es gewesen, daß unser hiesiger Verleger K. Schröder ein bis zum 5. Druckbogen ausgedrucktes schönes Buch über Toponomastik Rumäniens meines Freundes, des Rumänen <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5293">Jordan</persName>, zu Ende zu drucken sich weigert.</p>
-        <p>Ja, die Deutschfreundlichkeit <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.215">Zürichs</placeName> ist nicht groß. Seitdem ich den Artikel gegen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2156">Meillet</persName> geschrieben habe u. seit meiner ziemlich pessimistischen Karte über den Ital. Sprachatlas und seine Abnahme in Deutschland würdigt mich <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1858">Jud</persName> nicht mehr der Zusendung seiner Artikel und schweigt sich aus.</p>
-        <p>Übrigens noch einer, der sich ausschweigt, ist <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2909">Urtel</persName>, dessen letzte Zeile ich las, als ich ihm genau vor einem Jahr mitteilte, daß unsere Verhältnisse so desolat seien, daß ich nur durch den Auslandskurs mich aufrechterhalten könne. Darauf kam noch eine kurze, aber sentimentale Karte – und dann trotz Antwort meinerseits nichts mehr bis heute. Nun lese ich in <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4302">GRM</ref> einen schwärmerischen Artikel über <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1348">Curtius</persName>' Balzac von ihm,<note n="1"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3800">Ernst Robert Curtius, <hi
-                  rend="unknown" rendition="#none">Balzac</hi>
-              </ref>, Bonn: F. Cohen 1923</bibl>; besprochen von <bibl>
-              <ref
-                target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3799">Hermann Urtel, "Ein neues Balzacbuch"</ref>, in: <hi
-                rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2229" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bonn, 28. III.</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Vielen Dank für Ihre beiden Briefe. <persName ref="[authorityLink]">Pückchen</persName> ist tatsächlich wieder gesund und hat wieder nürnberger-spielzeug-rote Bäckchen. Er hat sich jedenfalls weniger Sorgen gemacht als seine Eltern – und selbst als der gütig teilnahmsvolle Papa Schuchardt.</p>
+            <p>Sehr gerührt hat mich, was Sie über Ihre taubblinde neue Freundin erzählen. Sie dürfen nicht nur deshalb nicht klagen, weil Sie nicht taub-blind sind, sondern weil Sie noch sich für ein solches Menschenkind mit jugendlichem Interesse erwärmen können. Das Alter macht ja sonst so ichsüchtig und ichwendig !</p>
+            <p>Die Angelegenheit mit dem französelnden deutschen ägyptologischen Rumänienreisenden interessiert mich deshalb, weil hier zu lesen war, daß die rumänischen Mumiologen ihre Einladungen zu einem Kongreß nur an Kulturnationen und "deshalb" nicht an Deutsche versandt hätten.</p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>Eine mir sehr nahegehende Folge dieser "Kultur"tat ist es gewesen, daß unser hiesiger Verleger K. Schröder ein bis zum 5. Druckbogen ausgedrucktes schönes Buch über Toponomastik Rumäniens meines Freundes, des Rumänen <persName ref="[authorityLink]">Jordan</persName>, zu Ende zu drucken sich weigert.</p>
+            <p>Ja, die Deutschfreundlichkeit <placeName ref="[authorityLink]">Zürichs</placeName> ist nicht groß. Seitdem ich den Artikel gegen <persName ref="[authorityLink]">Meillet</persName> geschrieben habe u. seit meiner ziemlich pessimistischen Karte über den Ital. Sprachatlas und seine Abnahme in Deutschland würdigt mich <persName ref="[authorityLink]">Jud</persName> nicht mehr der Zusendung seiner Artikel und schweigt sich aus.</p>
+            <p>Übrigens noch einer, der sich ausschweigt, ist <persName ref="[authorityLink]">Urtel</persName>, dessen letzte Zeile ich las, als ich ihm genau vor einem Jahr mitteilte, daß unsere Verhältnisse so desolat seien, daß ich nur durch den Auslandskurs mich aufrechterhalten könne. Darauf kam noch eine kurze, aber sentimentale Karte – und dann trotz Antwort meinerseits nichts mehr bis heute. Nun lese ich in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4302">GRM</ref> einen schwärmerischen Artikel über <persName ref="[authorityLink]">Curtius</persName>' Balzac von ihm,<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3800">Ernst Robert Curtius, <hi rend="unknown" rendition="#none">Balzac</hi>
+                     </ref>, Bonn: F. Cohen 1923</bibl>; besprochen von <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3799">Hermann Urtel, "Ein neues Balzacbuch"</ref>, in: <hi rend="unknown" rendition="#none">
 Germanisch-Romanische Monatsschrift</hi> 12 (1924): 42-47.</bibl>
-          </note> der mich wegen seines A tempo-Zusammentreffens mit der Bewerbung bei Curtius um <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4090">Mbg</ref>. etwas verstimmt. Mag sein, daß ich <pb
-            facs="#IMG.3" n="3"/>ihm Unrecht tue, aber Urtel hat mich eben als Mensch sehr enttäuscht: er macht sich selbst sentimentale Flausen vor.</p>
-        <p>Sie sehen, ich bin heute etwas pessimistisch. Freund <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4370">Frings</persName> ist von einer Mbger. Reise zurückgekehrt u. bringt Nachrichten über den Stand meiner Angelegenheit. In offener Fakultätssitzung haben die <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4360">Antisemiten</ref> erklärt, sie hätten nichts gegen mich, nur gegen den Juden, wogegen natürlich die anwesenden Juden protestierten. Sämtliche Fachvertreter sind für mich. Alle von Fachleuten eingezogenen Auskünfte (mit Ausnahme des nicht vorgebrachten <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName>'schen) waren für mich günstig, kein einziges negatives Urteil lag vor. Meine Fürsprecher haben nun aber doch die Empfindung, daß, wenn Heiss und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4365">Küchler</persName> abgeschlagen haben werden, die Minderheit neue Versuche machen wird, die Liste umzustoßen. Sie können sich natürlich vorstellen, wie sehr mich das deprimiert. Was hat es für einen Sinn zu arbeiten, wenn man für taube Ohren schreibt? Anderseits hat auch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4842">Behrens</persName>, der bald abgehen wird, mit Frings, der nach <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4788">Gießen</ref> berufen werden soll, über mich in einer Weise gesprochen, die auf eine dortige Kandidatur schließen lassen könnte.</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>In der 2. Auflage (1923) seines Vortrages "La Comedia espagnole du XVIIe siècle" hat Morel-Fatio<note n="2"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3650">Alfred Morel-Fatio, <hi rend="unknown" rendition="#none">La Comedia espagnole du XVIIe siècle</hi>
-
-              </ref>. 2. überarbeitete Auflage. Paris: Librairie Champion 1923</bibl> (die Erstausgabe stammt von 1885). Die aus dem "Avant-Propos" zitierte Passage lautet in Gänze: "Le plus ancien correspondant de l'Adadémie des Inscriptions (1890) et le savant linguiste, M. Hugo Schuchardt, - qui n'a pas signé le <hi
-              rend="unknown"
-              rendition="#none">Manifeste</hi> des intellectuels allemands de 1914 - m'adressa de <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> une carte postale: 'Cher Monsieur, Merci bien pour l'élégant résumé que vous donnez de la comédie espagnole du XVIIe siècle. Aussi les Italiens aiment à dire <hi
-              rend="unknown"
-            rendition="#none">Lopez de Vega</hi>. Je vous le répète que je lis les Comedias non seulement pour m'instruire, mais aussi parce que je les goûte. Nous autres Allemands, nous sommes des romantiques incorrigibles.'" (ebda., S.6f.)</note> einen Glückwunschbrief von Ihnen abgedruckt, der einen nur bei Ihnen nicht wahrscheinlichen Germanismus enthält: "Aussi les Italiens [auch die Italiener, nicht etwa "daher" ist der Sinn] aiment à dire Lopez de Vega". Sie werden dabei folgendermaßen beschrieben: "le plus ancien correspondant de l'Académie des Inscriptions (1890) et le savant linguiste, M. Hugo Schuchardt, – qui n'a pas signé le <hi
-            rend="unknown"
-            rendition="#none">Manifeste</hi> des intellectuels allemands de 1914 – ". Was für eine dumme Pedanterie, die Gelehrten in solche und so'ne einzuteilen? Wo doch nur eine Schlamperei (oder Mißachtung?) die Österreicher als Protestler verschont hat! So bleiben denn für die Franzosen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2233">Morf</persName> und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName> verdammt, während etwa die entschiedeneren Nationalisten wie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1459">Ettmayer</persName> und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1544">Gamillscheg</persName> als "Schafe" den "Böcken" vorgezogen werden! Der Sekretär irgend eines Werbecomités oder der Postbote sind also in letzter Linie für die Aufnahme oder Nicht-Aufnahme der Beziehungen verantwortlich.</p>
-        <pb facs="#IMG.5" n="5"/>
-        <p>Ich wünsche nicht so sehr Vernichtung einzelner Briefe jetzt, sondern ich wäre sehr dankbar, wenn meine Briefe an Sie, niemandem vererbt würden. Wenn in ihnen etwas Liebes für Sie enthalten ist, so genügt es ja, wenn Sie das wissen – ebenso wie manche Bitterkeit für meine übrigen Fachgenossen.</p>
-        <p>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1348">Curtius</persName> ist tatsächlich – ich sage das ohne irgendwie persönlich beeinflußt zu sein – ein ganz großer Literaturforscher, nicht ein so innerlich eitler Fant und Schulmeister wie <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName>. Tatsächlich ist er Irrationalist, wenn Sie wollen, Okkultist, Mystizist, Katholizist. Aber wie sollte man nicht nach dem Trans langen, wo uns das Cis so herb enttäuscht hat?</p>
-
-        <p>Vosslers Artikel habe ich absichtlich nicht neuerlich gelesen, sondern ich beantworte Ihre Frage nur so, wie ich es aus der Erinnerung kann. Was ich mir als neu gemerkt habe, ist offenbar die Feststellung von der Sprachgemeinschaft als dem wirklich lebendigen Nährboden der Sprache, während die Sprache der Interessensgemeinschaft nur rein intellektuelle Verständigung ermöglicht – also Fortbau von Vosslers <pb
-            facs="#IMG.6"
-            n="6"/>Ansicht von den "Grenzen" der Sprachsoziologie. Im übrigen unterschreibe ich alles was Sie sagen. Aber warum unterhöhlen Sie nicht durch kritische Äußerungen vor der Öffentlichkeit dieses Münchner Nationalromanistentum mit Hitlerdiktatur (<persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">
+               </note> der mich wegen seines A tempo-Zusammentreffens mit der Bewerbung bei Curtius um <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4090">Mbg</ref>. etwas verstimmt. Mag sein, daß ich <pb facs="#IMG.3" n="3"/>ihm Unrecht tue, aber Urtel hat mich eben als Mensch sehr enttäuscht: er macht sich selbst sentimentale Flausen vor.</p>
+            <p>Sie sehen, ich bin heute etwas pessimistisch. Freund <persName ref="[authorityLink]">Frings</persName> ist von einer Mbger. Reise zurückgekehrt u. bringt Nachrichten über den Stand meiner Angelegenheit. In offener Fakultätssitzung haben die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4360">Antisemiten</ref> erklärt, sie hätten nichts gegen mich, nur gegen den Juden, wogegen natürlich die anwesenden Juden protestierten. Sämtliche Fachvertreter sind für mich. Alle von Fachleuten eingezogenen Auskünfte (mit Ausnahme des nicht vorgebrachten <persName ref="[authorityLink]">M-L</persName>'schen) waren für mich günstig, kein einziges negatives Urteil lag vor. Meine Fürsprecher haben nun aber doch die Empfindung, daß, wenn Heiss und <persName ref="[authorityLink]">Küchler</persName> abgeschlagen haben werden, die Minderheit neue Versuche machen wird, die Liste umzustoßen. Sie können sich natürlich vorstellen, wie sehr mich das deprimiert. Was hat es für einen Sinn zu arbeiten, wenn man für taube Ohren schreibt? Anderseits hat auch <persName ref="[authorityLink]">Behrens</persName>, der bald abgehen wird, mit Frings, der nach <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4788">Gießen</ref> berufen werden soll, über mich in einer Weise gesprochen, die auf eine dortige Kandidatur schließen lassen könnte.</p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>In der 2. Auflage (1923) seines Vortrages "La Comedia espagnole du XVIIe siècle" hat Morel-Fatio<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3650">Alfred Morel-Fatio, <hi rend="unknown" rendition="#none">La Comedia espagnole du XVIIe siècle</hi>
+                     </ref>. 2. überarbeitete Auflage. Paris: Librairie Champion 1923</bibl> (die Erstausgabe stammt von 1885). Die aus dem "Avant-Propos" zitierte Passage lautet in Gänze: "Le plus ancien correspondant de l'Adadémie des Inscriptions (1890) et le savant linguiste, M. Hugo Schuchardt, - qui n'a pas signé le <hi rend="unknown" rendition="#none">Manifeste</hi> des intellectuels allemands de 1914 - m'adressa de <placeName ref="[authorityLink]">Graz</placeName> une carte postale: 'Cher Monsieur, Merci bien pour l'élégant résumé que vous donnez de la comédie espagnole du XVIIe siècle. Aussi les Italiens aiment à dire <hi rend="unknown" rendition="#none">Lopez de Vega</hi>. Je vous le répète que je lis les Comedias non seulement pour m'instruire, mais aussi parce que je les goûte. Nous autres Allemands, nous sommes des romantiques incorrigibles.'" (ebda., S.6f.)</note> einen Glückwunschbrief von Ihnen abgedruckt, der einen nur bei Ihnen nicht wahrscheinlichen Germanismus enthält: "Aussi les Italiens [auch die Italiener, nicht etwa "daher" ist der Sinn] aiment à dire Lopez de Vega". Sie werden dabei folgendermaßen beschrieben: "le plus ancien correspondant de l'Académie des Inscriptions (1890) et le savant linguiste, M. Hugo Schuchardt, – qui n'a pas signé le <hi rend="unknown" rendition="#none">Manifeste</hi> des intellectuels allemands de 1914 – ". Was für eine dumme Pedanterie, die Gelehrten in solche und so'ne einzuteilen? Wo doch nur eine Schlamperei (oder Mißachtung?) die Österreicher als Protestler verschont hat! So bleiben denn für die Franzosen <persName ref="[authorityLink]">Morf</persName> und <persName ref="[authorityLink]">Vossler</persName> verdammt, während etwa die entschiedeneren Nationalisten wie <persName ref="[authorityLink]">Ettmayer</persName> und <persName ref="[authorityLink]">Gamillscheg</persName> als "Schafe" den "Böcken" vorgezogen werden! Der Sekretär irgend eines Werbecomités oder der Postbote sind also in letzter Linie für die Aufnahme oder Nicht-Aufnahme der Beziehungen verantwortlich.</p>
+            <pb facs="#IMG.5" n="5"/>
+            <p>Ich wünsche nicht so sehr Vernichtung einzelner Briefe jetzt, sondern ich wäre sehr dankbar, wenn meine Briefe an Sie, niemandem vererbt würden. Wenn in ihnen etwas Liebes für Sie enthalten ist, so genügt es ja, wenn Sie das wissen – ebenso wie manche Bitterkeit für meine übrigen Fachgenossen.</p>
+            <p>
+               <persName ref="[authorityLink]">Curtius</persName> ist tatsächlich – ich sage das ohne irgendwie persönlich beeinflußt zu sein – ein ganz großer Literaturforscher, nicht ein so innerlich eitler Fant und Schulmeister wie <persName ref="[authorityLink]">Vossler</persName>. Tatsächlich ist er Irrationalist, wenn Sie wollen, Okkultist, Mystizist, Katholizist. Aber wie sollte man nicht nach dem Trans langen, wo uns das Cis so herb enttäuscht hat?</p>
+            <p>Vosslers Artikel habe ich absichtlich nicht neuerlich gelesen, sondern ich beantworte Ihre Frage nur so, wie ich es aus der Erinnerung kann. Was ich mir als neu gemerkt habe, ist offenbar die Feststellung von der Sprachgemeinschaft als dem wirklich lebendigen Nährboden der Sprache, während die Sprache der Interessensgemeinschaft nur rein intellektuelle Verständigung ermöglicht – also Fortbau von Vosslers <pb facs="#IMG.6" n="6"/>Ansicht von den "Grenzen" der Sprachsoziologie. Im übrigen unterschreibe ich alles was Sie sagen. Aber warum unterhöhlen Sie nicht durch kritische Äußerungen vor der Öffentlichkeit dieses Münchner Nationalromanistentum mit Hitlerdiktatur (<persName ref="[authorityLink]">
 Lerch</persName> ist natürlich der Ludendorff!)? Es wäre wahrhaftig an der Zeit, daß diese Aufgeblasenheit einen Merks bekäme – ich hätte dazu gerne Lust, aber mir glaubt man ja nicht.</p>
-        <p>Daß das Sieb kein Geräusch macht, hat mich auch geärgert.</p>
-        <p>Warum findet es <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2701">
+            <p>Daß das Sieb kein Geräusch macht, hat mich auch geärgert.</p>
+            <p>Warum findet es <persName ref="[authorityLink]">
 Schürr</persName> nicht der Mühe wert, die Nummer mit seinem Artikel käuflich zu erwerben u. Ihnen ein Ex. zu schicken? Sie erhalten also von mir eines.</p>
-        <p>Ihr zu mir hereinpurzelndes <hi rend="unknown"
-            rendition="#none">Purzel</hi>-Geschenk nehme ich lieber nicht an – und zwar deshalb, weil ich eben hierin zu Ihrer etymologischen Praxis im Gegensatz stehe: solche Anklänge möchte ich nicht berücksichtigen, so lange nicht nähere Beziehungen in der Sprache selbst zu entdecken sind: "<hi
-            rend="unknown" rendition="#none">burchi</hi>
-          <pb facs="#IMG.7" n="7"/>kommt von <hi rend="unknown"
-            rendition="#none">
-burchiare</hi>" ist ein Satz von m.E. bestrickender Einfachheit – und gegenüber den Kompliziertheiten, die uns <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">Gilliéron</persName> zumutet, betone ich diese in letzter Zeit.</p>
-        <p>Ich glaube wie Sie, daß eine siebenbürgische <hi rend="unknown"
-            rendition="#none">
-Cullura</hi> wenig Wirkungsmöglichkeit hat, außerdem daß sich <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2460">Puşcariu</persName> zersplittert: Universitätsprofessur, Völkerbunddelegation, 2 Zeitschriften, das ist zu viel – besonders wo das Allerwichtigere, das Wörterbuch der Akademie, nicht vom Fleck zu kommen scheint.</p>
-        <p>Wir haben auch einen Hamsterausflug nach <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.666">Paris</placeName> beabsichtigt, wobei ich meiner Frau diese Stätte einstigen wissenschaftlichen Glücks hätte zeigen können – aber der Paß, der mir von hiesigen französischen Behörden zugesichert wird, kommt nicht und ich fürchte, die Zusicherung, obwohl von höchster Stelle kommend, ist nur eine höfliche Antiphrase.</p>
-        <p>Am 11/12 April spreche ich in einem hiesigen Universitätsferienkurs – wahrscheinlich vor leeren Bänken – über neuere Richtungen in der Romanistik, wobei Sie als Einrahmung (am Anfang war... – Ende gut, alles gut) erscheinen werden.</p>
-        <pb facs="#IMG.8" n="8"/>
-        <p>Bei der <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2959">
-Wackernagel</persName>-Festschr.,<note
-            n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3798">
-                <hi rend="unknown" rendition="#none">Antidoron</hi>, Festschrift für Jacob Wackernagel zum 70. Geburtstag. Göttingen: Vandenhoeck &amp; Ruprecht 1923.</ref>
-            </bibl>
-          </note> die in Deutschland gedruckt wurde, haben J.Bloch, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2156">Meillet</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1632">Grammont</persName> mit übrigens keineswegs bedeutenden Artikeln mitgearbeitet. Wackernagel war lange Professor in <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4179">
+            <p>Ihr zu mir hereinpurzelndes <hi rend="unknown" rendition="#none">Purzel</hi>-Geschenk nehme ich lieber nicht an – und zwar deshalb, weil ich eben hierin zu Ihrer etymologischen Praxis im Gegensatz stehe: solche Anklänge möchte ich nicht berücksichtigen, so lange nicht nähere Beziehungen in der Sprache selbst zu entdecken sind: "<hi rend="unknown" rendition="#none">burchi</hi>
+               <pb facs="#IMG.7" n="7"/>kommt von <hi rend="unknown" rendition="#none">
+burchiare</hi>" ist ein Satz von m.E. bestrickender Einfachheit – und gegenüber den Kompliziertheiten, die uns <persName ref="[authorityLink]">Gilliéron</persName> zumutet, betone ich diese in letzter Zeit.</p>
+            <p>Ich glaube wie Sie, daß eine siebenbürgische <hi rend="unknown" rendition="#none">
+Cullura</hi> wenig Wirkungsmöglichkeit hat, außerdem daß sich <persName ref="[authorityLink]">Puşcariu</persName> zersplittert: Universitätsprofessur, Völkerbunddelegation, 2 Zeitschriften, das ist zu viel – besonders wo das Allerwichtigere, das Wörterbuch der Akademie, nicht vom Fleck zu kommen scheint.</p>
+            <p>Wir haben auch einen Hamsterausflug nach <placeName ref="[authorityLink]">Paris</placeName> beabsichtigt, wobei ich meiner Frau diese Stätte einstigen wissenschaftlichen Glücks hätte zeigen können – aber der Paß, der mir von hiesigen französischen Behörden zugesichert wird, kommt nicht und ich fürchte, die Zusicherung, obwohl von höchster Stelle kommend, ist nur eine höfliche Antiphrase.</p>
+            <p>Am 11/12 April spreche ich in einem hiesigen Universitätsferienkurs – wahrscheinlich vor leeren Bänken – über neuere Richtungen in der Romanistik, wobei Sie als Einrahmung (am Anfang war... – Ende gut, alles gut) erscheinen werden.</p>
+            <pb facs="#IMG.8" n="8"/>
+            <p>Bei der <persName ref="[authorityLink]">
+Wackernagel</persName>-Festschr.,<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3798">
+                        <hi rend="unknown" rendition="#none">Antidoron</hi>, Festschrift für Jacob Wackernagel zum 70. Geburtstag. Göttingen: Vandenhoeck &amp; Ruprecht 1923.</ref>
+                  </bibl>
+               </note> die in Deutschland gedruckt wurde, haben J.Bloch, <persName ref="[authorityLink]">Meillet</persName>, <persName ref="[authorityLink]">Grammont</persName> mit übrigens keineswegs bedeutenden Artikeln mitgearbeitet. Wackernagel war lange Professor in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4179">
 Göttingen</ref>, jetzt ist er's in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3246">Basel</ref>. Daher kann man ihn jetzt huldigen.</p>
-        <p>Die Festschriften grassieren: nun wird wieder eine Walzel-Festschrift<note n="4" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3792">Victor Klemperer und Julius Wahle (Hrsg.), <hi
-                  rend="unknown" rendition="#none">Vom Geiste neuer Literaturforschung</hi>
-              </ref>. (Festschrift für Oskar Walzel.) Wildpark-Potsdam: Athenaion 1924.</bibl>
-          </note> vorbereitet. Und das in einem Moment, wo ein Kölner dtschnat. Blatt über ihn schreibt, er suche durch wissenschaftliches Sich-Geberden darüber hinwegzutäuschen, daß er "Ostjude" sei. Man hat es schwer, zwischen den die "Kultur" abgrenzenden rumänischen Ägyptologen, deutschschweizerischen Romanisten, französischen Indogermanisten, deutschen Deutschnationalen hindurchzutorkeln.....</p>
-        <closer>
-          <salute>Herzlichst Ihr altergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Die Festschriften grassieren: nun wird wieder eine Walzel-Festschrift<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3792">Victor Klemperer und Julius Wahle (Hrsg.), <hi rend="unknown" rendition="#none">Vom Geiste neuer Literaturforschung</hi>
+                     </ref>. (Festschrift für Oskar Walzel.) Wildpark-Potsdam: Athenaion 1924.</bibl>
+               </note> vorbereitet. Und das in einem Moment, wo ein Kölner dtschnat. Blatt über ihn schreibt, er suche durch wissenschaftliches Sich-Geberden darüber hinwegzutäuschen, daß er "Ostjude" sei. Man hat es schwer, zwischen den die "Kultur" abgrenzenden rumänischen Ägyptologen, deutschschweizerischen Romanisten, französischen Indogermanisten, deutschen Deutschnationalen hindurchzutorkeln.....</p>
+            <closer>
+               <salute>Herzlichst Ihr altergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

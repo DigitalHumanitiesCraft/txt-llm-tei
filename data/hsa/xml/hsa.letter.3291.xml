@@ -1,401 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Alessandro D´Ancona an Hugo Schuchardt (18-00079)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">
-            <forename>Alessandro</forename>
-            <surname>D´Ancona</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Daniele</forename>
-            <surname>Baglioni</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3291" type="PID">o:hsa.letter.3291</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">18-00079</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">00079</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">
-                <forename>Alessandro</forename>
-                <surname>D´Ancona</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.429" ref="http://sws.geonames.org/3170647">Pisa</origPlace>
-              <origDate ana="dcterms:created" when="1876-10-16">1876-10-16</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Daniele</forename>
-              <surname>Baglioni</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Alessandro D´Ancona und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1352"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3291">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1352" ref="https://viaf.org/viaf/49316306">
-            <forename>Alessandro</forename>
-            <surname>D´Ancona</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.429" key="#GID.1" ref="http://sws.geonames.org/3170647">Pisa</placeName>
-          <date when="1876-10-16">1876-10-16</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Pisa</settlement>
-                <name ref="http://geonames.org/3170647" type="fcode:PPLA2">Pisa</name>
-                <location>
-                  <geo>10.4036,43.70853</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1352" type="context">
-                        Korrespondenz Alessandro D´Ancona - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4801" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Lehrbücher</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.531" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturhinweise / bibliographische Angaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.264" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Berufungen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.693" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Graz</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3483" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Jubiläen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4826" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">G. Romagnoli (Bologna)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.23" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturstudien</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.26" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienischsprachige Literatur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3291" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3291" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3291" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3291" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3291" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Cariss. amico, </opener>
-        <dateline> 16 Ott. 76<note n="1" place="foot" type="editorial">Come dichiara lo stesso D’Ancona nella frase finale del primo capoverso, la lettera è stata scritta «in campagna, distante qualche miglio da <placeName>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3291" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Cariss. amico, </opener>
+            <dateline> 16 Ott. 76<note n="1" place="foot" type="editorial">Come dichiara lo stesso D’Ancona nella frase finale del primo capoverso, la lettera è stata scritta «in campagna, distante qualche miglio da <placeName>
 
 Pisa</placeName>», cioè con tutta probabilità a Bocca d’Arno, dove D’Ancona era solito villeggiare con la famiglia (cfr. <bibl>
 
 Alfredo Stussi, Sul carteggio D’Ancona-Ascoli [2005], in Id., Filologia e linguistica dell’Italia unita, Bologna, il Mulino, pp. 67-83, p. 72
 </bibl>).</note>
-        </dateline>
-        <p> Mi rallegro di sapervi trasferito a <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName>
-          <note n="2" place="foot" type="editorial">Cf. n. 1 alla <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.3303">lettera 17_HS_ADA_10</ref>.</note>, pensando che così siete più vicino all’<placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5969">Italia</placeName>, e sarà più facile il vederci. </p>
-
-        <p>Rispondo adesso alle vostre interrogazioni, e prima circa le grammatiche. Io sono poco forte in materia, e non so se risponderò come desiderate. Pure vi dico che per l’insegnamento della grammatica nelle nostre scuole non c’è nulla di eguale e di costante. Ogni regione segue quel testo che ha più reputazione regionale. A <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.103">Napoli</placeName> si adopera il <persName>
+            </dateline>
+            <p> Mi rallegro di sapervi trasferito a <placeName ref="[authorityLink]">Graz</placeName>
+               <note n="2" place="foot" type="editorial">Cf. n. 1 alla <ref target="https://gams.uni-graz.at/o:hsa.letter.3303">lettera 17_HS_ADA_10</ref>.</note>, pensando che così siete più vicino all’<placeName ref="[authorityLink]">Italia</placeName>, e sarà più facile il vederci. </p>
+            <p>Rispondo adesso alle vostre interrogazioni, e prima circa le grammatiche. Io sono poco forte in materia, e non so se risponderò come desiderate. Pure vi dico che per l’insegnamento della grammatica nelle nostre scuole non c’è nulla di eguale e di costante. Ogni regione segue quel testo che ha più reputazione regionale. A <placeName ref="[authorityLink]">Napoli</placeName> si adopera il <persName>
 Melga</persName>
-          <note n="3" place="foot" type="editorial">
-            <bibl>
+               <note n="3" place="foot" type="editorial">
+                  <bibl>
 
 
 Michele Melga, Nuova grammatica italiana compilata su le opere dei migliori filologi antichi e moderni, Napoli, Stamperia del Fibreno, 1863.
 </bibl>
-          </note> e il <persName>
+               </note> e il <persName>
 
 Rodinò</persName>
-          <note n="4" place="foot" type="editorial">
-            <bibl>
+               <note n="4" place="foot" type="editorial">
+                  <bibl>
 
 Grammatica novissima della lingua italiana per uso del liceo arcivescovile de’ seminari di Napoli, ricomposta da Leopoldo Rodinò sopra quella compilata nello studio di Basilio Puoti, Napoli, Trani, 1856.
 </bibl>
-          </note>: nelle Romagne il <persName>
+               </note>: nelle Romagne il <persName>
 
 Corticelli</persName>
-          <note n="5" place="foot" type="editorial">
-
-            <bibl>
+               <note n="5" place="foot" type="editorial">
+                  <bibl>
 
 Salvatore Corticelli, Regole ed osservazioni della lingua toscana (1a ed. Bologna 1875, seguita da varie ristampe)
-</bibl>.</note>: in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5941">Piemonte</placeName> il <persName>
+</bibl>.</note>: in <placeName ref="[authorityLink]">Piemonte</placeName> il <persName>
 Parato</persName> e <persName>
 
 Mottura</persName>
-          <note n="6" place="foot" type="editorial">Cf. n. 3 alla lettera 17_HS_ADA_10.</note>: in Toscana il Pera<note
-            n="7" place="foot" type="editorial">
-            <bibl>
+               <note n="6" place="foot" type="editorial">Cf. n. 3 alla lettera 17_HS_ADA_10.</note>: in Toscana il Pera<note n="7" place="foot" type="editorial">
+                  <bibl>
 
 
 Francesco Pera, Pratica e teoria della lingua italiana per uso delle scuole e delle famiglie, Livorno, Tipografia Fabbreschi e C., 1863.
 </bibl>
-          </note>, che sento lodare assai: il <persName>
+               </note>, che sento lodare assai: il <persName>
 
 Puoti</persName>
-          <note n="8" place="foot" type="editorial">
+               <note n="8" place="foot" type="editorial">
 Cf. n. 2 alla lettera 17_HS_ADA_10.</note> un po’ per tutto. Il <persName>
 
 Pària</persName>
-          <note n="9" place="foot"
-            type="editorial">
-Cf. n. 4 alla lettera 17_HS_ADA_10.</note> parmi abbandonato, e forse era migliore di altri che adesso vanno per la maggiore. Nel Bollettino d(e)ll’Istruzione Pubblica<note
-            n="10" place="foot"
-            type="editorial">Cioè il «
+               <note n="9" place="foot" type="editorial">
+Cf. n. 4 alla lettera 17_HS_ADA_10.</note> parmi abbandonato, e forse era migliore di altri che adesso vanno per la maggiore. Nel Bollettino d(e)ll’Istruzione Pubblica<note n="10" place="foot" type="editorial">Cioè il «
 
-Bollettino ufficiale del Ministero della Pubblica Istruzione», fondato nel 1874.</note> deve esserci stato circa un anno fa, a’ tempi d(e)l <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3135">
+Bollettino ufficiale del Ministero della Pubblica Istruzione», fondato nel 1874.</note> deve esserci stato circa un anno fa, a’ tempi d(e)l <persName ref="[authorityLink]">
 Bonghi</persName>
-          <note n="11" place="foot"
-            type="editorial">Ruggiero Bonghi (1826-1895), politico e filologo, fra i più influenti esponenti della Destra storica, fu ministro della Pubblica Istruzione dal 1874 al 1876.</note>, <pb
-            facs="#IMG.2" n="2"/> un quadro d(e)lle varie grammatiche od altri libri a testo, che si adoperavano nelle scuole. Se fossi in città potrei darci un occhiata: ma sono in campagna, distante qualche miglio da Pisa: e mi riservo a fare cotesto studio, se vi interessa, al mio ritorno. </p>
-
-        <p>Per la stessa ragione non posso fare l’Elenco ragionato d(e)lle pubblicazioni dei due centenarj ariosteo e boccaccesco. Vi piacerebbe un indice bibliografico? Potrò farvelo al ritorno, se desiderate. Vi dico intanto che quanto al centenario ariosteo, conosco 1o Discorso pronunziato alla festa d(e)l Prof. Zerbini<note
-            n="12" place="foot" type="editorial">
-            <bibl>
+               <note n="11" place="foot" type="editorial">Ruggiero Bonghi (1826-1895), politico e filologo, fra i più influenti esponenti della Destra storica, fu ministro della Pubblica Istruzione dal 1874 al 1876.</note>, <pb facs="#IMG.2" n="2"/> un quadro d(e)lle varie grammatiche od altri libri a testo, che si adoperavano nelle scuole. Se fossi in città potrei darci un occhiata: ma sono in campagna, distante qualche miglio da Pisa: e mi riservo a fare cotesto studio, se vi interessa, al mio ritorno. </p>
+            <p>Per la stessa ragione non posso fare l’Elenco ragionato d(e)lle pubblicazioni dei due centenarj ariosteo e boccaccesco. Vi piacerebbe un indice bibliografico? Potrò farvelo al ritorno, se desiderate. Vi dico intanto che quanto al centenario ariosteo, conosco 1o Discorso pronunziato alla festa d(e)l Prof. Zerbini<note n="12" place="foot" type="editorial">
+                  <bibl>
 
 Luigi Zerbino, Al massimo epico italico Ludovico Ariosto per prodigiosa potenza di creazione prossimo all’Allighieri nella sua terza solenne commemorazione in Ferrara nel maggio D.A.D.D.S. 1875, Genova, Tip. Schenone, [1875?].
 </bibl>
-          </note> 2o Le Satire secondo l’autografo, a facsimile, stampate a Bologna<note n="13" place="foot" type="editorial">
-            <bibl>
+               </note> 2o Le Satire secondo l’autografo, a facsimile, stampate a Bologna<note n="13" place="foot" type="editorial">
+                  <bibl>
 
 
 Le satire autografe di Lodovico Ariosto, pubblicate a cura del Comitato ferrarese per la ricorrenza del 4. centenario ariosteo, Bologna, Zanichelli e Romagnoli, 1875.
 </bibl>
-          </note> 3o Una vita d(e)ll’Ariosto di un Barbi-Cinti di Ferrara<note n="14" place="foot" type="editorial">
-            <bibl>
+               </note> 3o Una vita d(e)ll’Ariosto di un Barbi-Cinti di Ferrara<note n="14" place="foot" type="editorial">
+                  <bibl>
 
 Francesco Barbi-Cinti, Vita di Lodovico Ariosto desunta da’ suoi più accreditati biografi antichi e moderni corredata di note e documenti inediti, Ferrara, Tipografia dell’Eridano, 1874.
 </bibl>
-          </note> 4o Cenni genealogici sulla famiglia Ariosto, d(e)l Cittadella di Ferrara<note n="15" place="foot" type="editorial">
-            <bibl>
+               </note> 4o Cenni genealogici sulla famiglia Ariosto, d(e)l Cittadella di Ferrara<note n="15" place="foot" type="editorial">
+                  <bibl>
 
 
 Luigi Napoleone Cittadella, Appunti intorno agli Ariosti di Ferrara, Ferrara, Tip. sociale Ambrosini, 1874.
 </bibl>
-          </note>. 5o Le <pb facs="#IMG.3" n="3"/> poesie latine d(e)ll’Ariosto, saggio d(e)l Carducci<note n="16"
-            place="foot" type="editorial">
-            <bibl>
+               </note>. 5o Le <pb facs="#IMG.3" n="3"/> poesie latine d(e)ll’Ariosto, saggio d(e)l Carducci<note n="16" place="foot" type="editorial">
+                  <bibl>
 
 Giosue Carducci, Delle poesie latine edite e inedite di Lodovico Ariosto: studi e ricerche, Bologna, Zanichelli, 1875.
 </bibl>
-          </note>. 6o Le fonti d(e)ll’Orlando, d(e)l Rajna or ora uscite a luce<note n="17" place="foot" type="editorial">
-            <bibl>
+               </note>. 6o Le fonti d(e)ll’Orlando, d(e)l Rajna or ora uscite a luce<note n="17" place="foot" type="editorial">
+                  <bibl>
 
 Pio Rajna, Le fonti dell’Orlando furioso. Ricerche e studi, Firenze, Sansoni, 1876.
 </bibl>
-          </note>. Non credo ci sia altro, se non si volessero contare cose di piccolissima mole e minimo valore. </p>
-        <p>Del Boccaccio: 1o il Discorso d(e)l Carducci<note n="18" place="foot" type="editorial">
-            <bibl>
+               </note>. Non credo ci sia altro, se non si volessero contare cose di piccolissima mole e minimo valore. </p>
+            <p>Del Boccaccio: 1o il Discorso d(e)l Carducci<note n="18" place="foot" type="editorial">
+                  <bibl>
 
 Giosue Carducci, Ai parentali di Giovanni Boccaccio in Certaldo: discorso, Bologna, Zanichelli, 1874.
 </bibl>
-          </note> 2o La Bibliografia boccaccesca d(e)l Zambrini e Bacchi della Lega<note n="19" place="foot" type="editorial">
-            <bibl>
+               </note> 2o La Bibliografia boccaccesca d(e)l Zambrini e Bacchi della Lega<note n="19" place="foot" type="editorial">
+                  <bibl>
 
 
 Bibliografia boccaccesca. Serie delle edizioni delle opere di Giovanni Boccacci latine, volgari, tradotte e trasformate, a cura di Alberto Bacchi della Lega e Francesco Zambrini, Bologna, presso Gaetano Romagnoli, 1875.
 </bibl>
-          </note> (autore quest’ultimo di una bibliografia dei Vocabolarj di dialetti italiani<note n="20" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5398">Alberto Bacchi della Lega, Bibliografia dei vocabolari ne’ dialetti italiani raccolti e posseduti da Gaetano Romagnoli, Bologna, presso Gaetano Romagnoli, 1876.</ref>
-            </bibl>
-
-          </note>, che potrà farvi comodo) 3o la Novella d(e)l Re di Cipri in non so quanti dialetti italiani, per cura d(e)l <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4825">Papanti</persName>
-          <note n="21" place="foot" type="editorial">
-            <bibl>
+               </note> (autore quest’ultimo di una bibliografia dei Vocabolarj di dialetti italiani<note n="20" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5398">Alberto Bacchi della Lega, Bibliografia dei vocabolari ne’ dialetti italiani raccolti e posseduti da Gaetano Romagnoli, Bologna, presso Gaetano Romagnoli, 1876.</ref>
+                  </bibl>
+               </note>, che potrà farvi comodo) 3o la Novella d(e)l Re di Cipri in non so quanti dialetti italiani, per cura d(e)l <persName ref="[authorityLink]">Papanti</persName>
+               <note n="21" place="foot" type="editorial">
+                  <bibl>
 
 
 Giovanni Papanti, I parlari italiani in Certaldo alla festa del V centenario di messer Giovanni Boccacci, Livorno, coi tipi di Francesco Vigo, 1875.
 </bibl>
-          </note>, che già conoscerete 4o alcune pubblicazioni d(e)l <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4827">
+               </note>, che già conoscerete 4o alcune pubblicazioni d(e)l <persName ref="[authorityLink]">
 Zambrini</persName>, nella raccolta piccola e grande d(e)l 
 
 Romagnoli
-<note
-            n="22" place="foot" type="editorial">
+<note n="22" place="foot" type="editorial">
 Per l’editore bolognese Romagnoli, tra il 1874 e il 1876, Zambrini pubblica i seguenti titoli, nessuno di diretta attinenza con Boccaccio: <bibl>
 
 
@@ -413,42 +165,35 @@ La difensione delle donne d’autore anonimo: scrittura inedita del sec. 15 (187
 L’Ave Maria in rima fatta per messer Giovanni Boccaccio da Certaldo non mai fin qui ristampata
 </bibl>, che Zambrini pubblica nel 1874 a Imola per i tipi di <persName>
 Ignazio Galeati</persName> e figlio.</note>, delle quali ora non posso darvi informazione precisa. Torno a dirvi che se desiderate qualche cosa di meglio, potrò farvelo quando sia fra mezzo ai miei libri a Pisa. </p>
-        <p>Sto lavorando su una ma- <pb facs="#IMG.4"
-            n="4"/>teria che v’interesserà: a un Saggio sulla Origine, Antichità e Carattere d(e)lla poesia popolare italiana, che farà parte di un volume di Saggi sulla letteratura popolare<note
-            n="23" place="foot" type="editorial">Il riferimento è a <bibl>
+            <p>Sto lavorando su una ma- <pb facs="#IMG.4" n="4"/>teria che v’interesserà: a un Saggio sulla Origine, Antichità e Carattere d(e)lla poesia popolare italiana, che farà parte di un volume di Saggi sulla letteratura popolare<note n="23" place="foot" type="editorial">Il riferimento è a <bibl>
 
 
 Alessandro D’Ancona, La poesia popolare italiana, Livorno, coi tipi di Francesco Vigo, 1878.
 </bibl>
-          </note>. Ho trovato documenti curiosi circa l’antichità, e circa il carattere letterario di questi canti. Appena sarà in ordine, ma non sarà fra breve, avrete il volume.</p>
-        <closer>
-          <salute>Se in alcuna cosa posso servirvi, adoperatemi in quel poco che posso. Vogliatemi bene e crediatemi</salute>
-          <lb/>
-          <salute>vostro</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">A. D’Ancona </persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Avete avuto un libercoletto contenente alcuni Saggi di rispetti d(e)l Quattrocento<note n="24" place="foot" type="editorial">
-
-              <bibl>
+               </note>. Ho trovato documenti curiosi circa l’antichità, e circa il carattere letterario di questi canti. Appena sarà in ordine, ma non sarà fra breve, avrete il volume.</p>
+            <closer>
+               <salute>Se in alcuna cosa posso servirvi, adoperatemi in quel poco che posso. Vogliatemi bene e crediatemi</salute>
+               <lb/>
+               <salute>vostro</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">A. D’Ancona </persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Avete avuto un libercoletto contenente alcuni Saggi di rispetti d(e)l Quattrocento<note n="24" place="foot" type="editorial">
+                     <bibl>
 
 
 Alessandro D’Ancona, Rispetti del secolo XV, Livorno, coi tipi di Francesco Vigo, 1876
-</bibl>. Il saggio verrà poi ristampato nel volume sulla poesia popolare italiana del 1878.</note>, che fra breve pubblicherò. Alla bibliogr. bocaccesca aggiungasi il saggio d(e)l <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4828">Bartoli</persName> sui precursori d(e)l Boccaccio<note
-              n="25" place="foot" type="editorial">
-              <bibl>
+</bibl>. Il saggio verrà poi ristampato nel volume sulla poesia popolare italiana del 1878.</note>, che fra breve pubblicherò. Alla bibliogr. bocaccesca aggiungasi il saggio d(e)l <persName ref="[authorityLink]">Bartoli</persName> sui precursori d(e)l Boccaccio<note n="25" place="foot" type="editorial">
+                     <bibl>
 
 Alfredo Bartoli, I precursori del Boccaccio e alcune delle sue fonti, Firenze, Sansoni, 1876.
 </bibl>
-            </note>. </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                  </note>. </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

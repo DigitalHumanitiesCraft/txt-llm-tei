@@ -1,369 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (348-11109)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2192" type="PID">o:hsa.letter.2192</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">348-11109</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11109</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.59" ref="http://sws.geonames.org/2768497">Pörtschach</origPlace>
-              <origDate ana="dcterms:created" when="1922-07-30">1922-07-30</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2192">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.59" key="#GID.1" ref="http://sws.geonames.org/2768497">Pörtschach</placeName>
-          <date when="1922-07-30">1922-07-30</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Pörtschach am Wörthersee</settlement>
-                <name ref="http://geonames.org/2768497" type="fcode:PPL">Pörtschach am Wörthersee</name>
-                <location>
-                  <geo>14.14639,46.63639</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3126" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Würzburg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4296" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Berlin (Friedrich-Wilhelms-Universität)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2192" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2192" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2192" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2192" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2192" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Pörtschach, 30. VII.</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-
-        <p>Nun bin ich endlich bei den Meinen. Allerdings brachten die ersten Tage neben der Freude des Wiedersehens mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2763">Gattin</persName> und aufs Doppelte gewachsenem <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5275">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2192" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Pörtschach, 30. VII.</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Nun bin ich endlich bei den Meinen. Allerdings brachten die ersten Tage neben der Freude des Wiedersehens mit <persName ref="[authorityLink]">Gattin</persName> und aufs Doppelte gewachsenem <persName ref="[authorityLink]">
 Kleinen</persName> auch manche Aufregung: da wir heuer die Villa zum größten Teil vermieten müssen, dem proletarisierenden (oder kapitalisierenden) Zug der Zeit gehorchend, hatte meine Frau auch Italiener aufgenommen, die aber den spontan eingegangenen Kontrakt brachen u. nichts oder fast nichts bezahlen wollten. Da mußte ich denn Ordnung machen, da ja der Schaden in die Millionen ginge. Aber nur ungern tu ich dergleichen, da mir nichts gräßlicher ist als dem eigenen Vorteil nachzulaufen, wenn dieses […] mit dem der Familie verbunden ist, zu kämpfen für materielle Rechte. – Die "Wortkunst" wird derzeit noch etwas ruhen müssen, da der Verleger zu stark engagiert ist, im Augenblick wenigstens. </p>
-        <p>Bezüglich <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3126">Würzburg</ref> verstehe ich nicht, warum ich mich giften soll. An eine katholische Universität berufen zu werden, wo dieser Glaubensparagraph eine conditio sine qua non bildet, konnte ich mir nie einbilden. Empört bin ich dann, wenn für ein Extraordinariat in <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4296">Berlin</ref> Dümmlinge wie Krüger in Betracht kommen. Der Vorschlag in Würzburg ist vom jetzt herrschenden süddeutschen (katholischen) Regionalismus beherrscht: Heiss der ehemalige Würzburger Privatdozent, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2963">
-Wagner</persName> der ehemalige Würzburger Student, <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1767">Hilka</persName> der Katholik. Was soll ich tun? Meine Freunde in einflußreichen Stellen oder die, die sich so nennen, tun nichts; Gerechtigkeit gibt es in deutschen Landen nicht; also –</p>
-        <p>Auch von der Herausgebertätigkeit Hilkas weiß ich ein Lied zu singen. Die perfide Erklärung <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1544">
-Gamillschegs</persName> am Ende des letzten Zeitschr.-Hefts <pb
-            facs="#IMG.2"
-            n="2"/>hat Hilka unbesehen aufgenommen, wo er in der Lage war, sie richtigzustellen. Aber in der Kritik <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">Rieglers</persName> über meine Liebeswörter<note n="1"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3963">L.S., <hi rend="unknown" rendition="#none">Über einige Wörter der Liebessprache</hi>
-              </ref>. Leipzig: Reisland 1918.</bibl>
-
-          </note> hat er einige Ausdrücke des Lobes gestrichen. Gleichzeitig kommen fortwährend huldvolle Beteuerungen der Sympathie, Bewunderung etc. von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1767">Hilka</persName> – <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Lerch</persName> hat er von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2542">Rohlfs</persName> anpöbeln lassen; da Lerch erwidern will, gibt ihm Hilka keinen Raum in der Ztschr. – Wo bleibt die Gerechtigkeit, die Grundtugend eines Herausgebers?</p>
-
-        <p>Wenn Sie sagen, der Zeitpunkt meiner Unübersehbarkeit sei längst da, so frage ich mich, warum keiner der freisinnigen Romanisten von Namen den Mut findet, offen meine Partei zu ergreifen und diesen Skandal – wenn er einer ist – zu rügen. Allerdings den Mut des Bekennens hat sich das deutsche Gelehrtentum durch die Verbeamtung längst abgewöhnt. Der Vorschlag <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4370">
-Frings</persName>, die Bonner Fakultät solle ihre Entrüstung über meine Nichtberufungen dem Ministerium kundgeben, würde vor allem an […] Furchtsamkeit ([…] Feindschaft) scheitern. Daß man mir die Nachfolgerschaft nach <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName> verspricht, ist ein Wechsel auf die Zukunft, den diese nicht einzulösen braucht, ein "Trampolin", von dem man ins Leere springen kann.</p>
-        <p>Ich verstehe nicht, wieso Sie mich gerade zum "Giften" antreiben und gleichzeitig bemerken, ich solle darüber hinwegkommen?</p>
-        <p>Auch Ihre Angst, Trivialitäten im Fall Rathenau zu sagen, ist mir nicht ganz verständlich. Es gibt Momente im Leben des Einzelnen wie der Nation, wo eine Trivialität auszusprechen von höchster Bedeutung ist. Ein Kondolenzbesuch im Privatleben ist z.B. gewöhnlich von solchen begleitet und doch notwendig und richtig. Die Hintanstellung aller geistigen Ansprüche unter das Gebot der Stunde ist notwendig. So war auch die Verurteilung des politischen Mordes an einem Gemeinwesen, das demokratisch geordnet ist, meiner Ansicht nach Pflicht aller deutschen Intellektuellen. Anstatt dessen sah man bei unserer Universitäts-Rathenau-Feier höchstens 10 Ordinarien und der Rektor fehlte, der auch nur in verklausulierter Form die Einladung hatte ergehen lassen. Daß meiner Verurteilung solcher Taten nicht nur der Empörung über antisemitische Verirrung entspricht, wird dadurch bewiesen, daß ich auch den Erzbergermord nicht anders auffaßte.</p>
-        <pb facs="#IMG.3" n="3"/>
-
-        <p>Ich finde die Lauheit in einer solchen moralischen Lebensfrage des deutschen Volkes viel weniger am Platze als zu den Kriegszeiten, da Deutschland seinen physischen Existenzkampf kämpfte. Daß das deutsche Volk durch den Krieg der Klassen und Weltanschauungen innerlich so zerrissen ist wie im Augenblick, bedroht ja auch seine Existenz mehr als alle Annexionen der Feinde beim Friedensschluß. Der Gegensatz zwischen Bayern und dem Reich ist größer als der zwischen Deutschböhmen und dem Reich, der zwischen Rechts- und Linksparteien größer als der zwischen Elsässern, Rheinländern und Preußen. Wir haben heute in Deutschland Völker im Volk – von dem verbissenen Haß der Rechten gegen die Linken, der Kommunisten und Unabhängigen gegen die übrigen, wie er in Deutschland besteht, weiß man in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5913">Österreich</placeName> nichts.</p>
-        <p>Von den <hi rend="unknown" rendition="#none">Miscellanea</hi> haben mir vor allem die Artikel <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2977">
-Wartburgs</persName> und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">Rieglers</persName>
-          <note n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3846">Richard Riegler, "Wind und Vogel"</ref>
-            </bibl>, sowie <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3845">W. v. Wartburg "Zur Neubildung von Präfixen"</ref>
-            </bibl>; beide in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1607">
-                <hi rend="unknown" rendition="#none">Miscellanea Linguistica dedicata a Hugo Schuchardt</hi> (Biblioteca dell'Archivum Romanicum Serie II, Vol.3).</ref> Genf: Olschki 1922.</bibl>
-          </note> gefallen. Daß <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1213">Brüch</persName>, ohne eine Spur Ihres Geistes, ohne die Spur auch eines Eingehens auf Ihre Denkweise mich abfertigt, hat mich nicht erbaut. Nicht der Widerspruch, auch nicht der Ton desselben, hat mich verstimmt, sondern daß man bei einem Glückwunsch den Jubilar ganz vergißt. Nun, Br. wird die gebührende Antwort von mir erhalten!</p>
-        <p>Den Stephan George von Gundolf<note n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3844">Friedrich Gundolf <hi rend="unknown" rendition="#none">Stefan George in unsrer Zeit</hi>
-              </ref>. Heidelberg: Weiss 1913</bibl>; und <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3843">
-                <hi rend="unknown" rendition="#none">George</hi>
-              </ref>. Berlin: Bondi 1920.</bibl>
-          </note> habe ich auch vor kurzem mit Bewunderung und Wundern durchtobt. Immerhin fällt manches Schöne für die Ergründung des Wesens lyrischer Dichtung ab. – Nebenbei, um auf die Rassenfrage zurückzukommen, wie stellt sich das Deutschtum dazu, daß repräsentative Männer wie Einstein, Gundolf, Rathenau Juden sind?</p>
-        <p>Ihr <hi rend="unknown" rendition="#none">coucou</hi> in den berber. Mundarten schließt ja an meine Liebeswörter an!</p>
-        <p>Die letzten Vorlesungen in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">
-Bonn</placeName> waren dem Weltsprachproblem gewidmet. Da sah ich wieder einmal, wie dumm doch s.g. große Männer oft sind. Ich las nämlich zu diesem Zweck <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1215">Brugmann</persName>-<persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2031">Leskien</persName>'s Broschüre "Zur Kritik künstlicher Weltspr."<note
-            n="4" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3842">Karl Brugmann und August Leskien, <hi
-                  rend="unknown" rendition="#none">Zur Kritik der künstlichen Weltsprachen</hi>
-              </ref>. Straßburg: Trübner 1907.</bibl>
-          </note> – hanebüchen! Am schönsten die Argumentation Br.'s, in Deutschland hätte <pb facs="#IMG.4"
-            n="4"/>deshalb die Weltsprachbewegung relativ so wenig um sich gegriffen gegenüber <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5905">Frankreich</placeName>, weil Werke wie das <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2358">H. Paul</persName>'s und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3036">
-Wundt</persName>'s die wissenschaftliche Auffassung vom Wesen der Spr. weiter verbreitet hätten. Daß da alte nationale Gegensätze (Frankreichs Überzeugung von der rationellen Bewältigbarkeit alles Seienden, Deutscher Glaube ans Organische) walten, hat der große Ursprachrekonstruktor nicht geahnt. Aber auch <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2031">Leskiens</persName> ironische Kritik fällt auf den Urheber zurück.</p>
-        <p>Das Wort "völkisch" hat in den letzten Werken, eben seit Rathenaus Ermordung, die Bdtg. bekommen, die Sie ihm urspr. zuschrieben, die pejorative: es heißt jetzt, die "Deutschnationalen" trennen sich von den "Deutschvölkischen", diese sind die extremeren. Zugleich ein schönes Beispiel für die in meiner Schrift belegte Konvivenz des Fremd- und des Ersatzwortes in verschiedenen Bedeutungen: statt national – nationalistisch haben wir jetzt national – völkisch, wobei das Fremdwort den höheren Begriff bedeutet.</p>
-        <p>Nun eine Bitte: könnten Sie mir auf meine Kosten Vendryès <hi rend="unknown" rendition="#none">Le langage</hi>
-          <note n="5" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3856">Joseph Vendryès, <hi rend="unknown" rendition="#none">Le langage. Introduction linguistique à l'histoire</hi>
-              </ref>. Paris: La Renaissance du livre 1921.</bibl>
-          </note> hiehersenden lassen? Ich würde es bald retournieren.</p>
-        <p>Am 31. kommt Familie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5266">
-Hahn</persName> (Mathematiker), gegen 3. Dr. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5388">Jordan</persName> und Frau (Rumänen), gegen 15. wohl <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5267">
-Maver</persName>'s und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2909">
-Urtel</persName>. Ich arbeite nichts. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">Rieglers</persName> fahren morgen ab.</p>
-        <p>Jetzt hoffe ich, daß Sie weniger an Hitze leiden, wir haben hier eher Kälte oder Kühle. Die lokale Nähe wird jetzt die Korrespondenz mehr befördern.</p>
-        <closer>
-          <salute>Jedenfalls beste Wünsche für Ihr Wohlergehen und alles Herzliche von den</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzers</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Notes and Queries?<note n="6" place="foot"
-                type="editorial"> Von 1849 bis 1923 in <placeName>
+            <p>Bezüglich <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3126">Würzburg</ref> verstehe ich nicht, warum ich mich giften soll. An eine katholische Universität berufen zu werden, wo dieser Glaubensparagraph eine conditio sine qua non bildet, konnte ich mir nie einbilden. Empört bin ich dann, wenn für ein Extraordinariat in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4296">Berlin</ref> Dümmlinge wie Krüger in Betracht kommen. Der Vorschlag in Würzburg ist vom jetzt herrschenden süddeutschen (katholischen) Regionalismus beherrscht: Heiss der ehemalige Würzburger Privatdozent, <persName ref="[authorityLink]">
+Wagner</persName> der ehemalige Würzburger Student, <persName ref="[authorityLink]">Hilka</persName> der Katholik. Was soll ich tun? Meine Freunde in einflußreichen Stellen oder die, die sich so nennen, tun nichts; Gerechtigkeit gibt es in deutschen Landen nicht; also –</p>
+            <p>Auch von der Herausgebertätigkeit Hilkas weiß ich ein Lied zu singen. Die perfide Erklärung <persName ref="[authorityLink]">
+Gamillschegs</persName> am Ende des letzten Zeitschr.-Hefts <pb facs="#IMG.2" n="2"/>hat Hilka unbesehen aufgenommen, wo er in der Lage war, sie richtigzustellen. Aber in der Kritik <persName ref="[authorityLink]">Rieglers</persName> über meine Liebeswörter<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3963">L.S., <hi rend="unknown" rendition="#none">Über einige Wörter der Liebessprache</hi>
+                     </ref>. Leipzig: Reisland 1918.</bibl>
+               </note> hat er einige Ausdrücke des Lobes gestrichen. Gleichzeitig kommen fortwährend huldvolle Beteuerungen der Sympathie, Bewunderung etc. von <persName ref="[authorityLink]">Hilka</persName> – <persName ref="[authorityLink]">Lerch</persName> hat er von <persName ref="[authorityLink]">Rohlfs</persName> anpöbeln lassen; da Lerch erwidern will, gibt ihm Hilka keinen Raum in der Ztschr. – Wo bleibt die Gerechtigkeit, die Grundtugend eines Herausgebers?</p>
+            <p>Wenn Sie sagen, der Zeitpunkt meiner Unübersehbarkeit sei längst da, so frage ich mich, warum keiner der freisinnigen Romanisten von Namen den Mut findet, offen meine Partei zu ergreifen und diesen Skandal – wenn er einer ist – zu rügen. Allerdings den Mut des Bekennens hat sich das deutsche Gelehrtentum durch die Verbeamtung längst abgewöhnt. Der Vorschlag <persName ref="[authorityLink]">
+Frings</persName>, die Bonner Fakultät solle ihre Entrüstung über meine Nichtberufungen dem Ministerium kundgeben, würde vor allem an […] Furchtsamkeit ([…] Feindschaft) scheitern. Daß man mir die Nachfolgerschaft nach <persName ref="[authorityLink]">M-L</persName> verspricht, ist ein Wechsel auf die Zukunft, den diese nicht einzulösen braucht, ein "Trampolin", von dem man ins Leere springen kann.</p>
+            <p>Ich verstehe nicht, wieso Sie mich gerade zum "Giften" antreiben und gleichzeitig bemerken, ich solle darüber hinwegkommen?</p>
+            <p>Auch Ihre Angst, Trivialitäten im Fall Rathenau zu sagen, ist mir nicht ganz verständlich. Es gibt Momente im Leben des Einzelnen wie der Nation, wo eine Trivialität auszusprechen von höchster Bedeutung ist. Ein Kondolenzbesuch im Privatleben ist z.B. gewöhnlich von solchen begleitet und doch notwendig und richtig. Die Hintanstellung aller geistigen Ansprüche unter das Gebot der Stunde ist notwendig. So war auch die Verurteilung des politischen Mordes an einem Gemeinwesen, das demokratisch geordnet ist, meiner Ansicht nach Pflicht aller deutschen Intellektuellen. Anstatt dessen sah man bei unserer Universitäts-Rathenau-Feier höchstens 10 Ordinarien und der Rektor fehlte, der auch nur in verklausulierter Form die Einladung hatte ergehen lassen. Daß meiner Verurteilung solcher Taten nicht nur der Empörung über antisemitische Verirrung entspricht, wird dadurch bewiesen, daß ich auch den Erzbergermord nicht anders auffaßte.</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>Ich finde die Lauheit in einer solchen moralischen Lebensfrage des deutschen Volkes viel weniger am Platze als zu den Kriegszeiten, da Deutschland seinen physischen Existenzkampf kämpfte. Daß das deutsche Volk durch den Krieg der Klassen und Weltanschauungen innerlich so zerrissen ist wie im Augenblick, bedroht ja auch seine Existenz mehr als alle Annexionen der Feinde beim Friedensschluß. Der Gegensatz zwischen Bayern und dem Reich ist größer als der zwischen Deutschböhmen und dem Reich, der zwischen Rechts- und Linksparteien größer als der zwischen Elsässern, Rheinländern und Preußen. Wir haben heute in Deutschland Völker im Volk – von dem verbissenen Haß der Rechten gegen die Linken, der Kommunisten und Unabhängigen gegen die übrigen, wie er in Deutschland besteht, weiß man in <placeName ref="[authorityLink]">Österreich</placeName> nichts.</p>
+            <p>Von den <hi rend="unknown" rendition="#none">Miscellanea</hi> haben mir vor allem die Artikel <persName ref="[authorityLink]">
+Wartburgs</persName> und <persName ref="[authorityLink]">Rieglers</persName>
+               <note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3846">Richard Riegler, "Wind und Vogel"</ref>
+                  </bibl>, sowie <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3845">W. v. Wartburg "Zur Neubildung von Präfixen"</ref>
+                  </bibl>; beide in <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1607">
+                        <hi rend="unknown" rendition="#none">Miscellanea Linguistica dedicata a Hugo Schuchardt</hi> (Biblioteca dell'Archivum Romanicum Serie II, Vol.3).</ref> Genf: Olschki 1922.</bibl>
+               </note> gefallen. Daß <persName ref="[authorityLink]">Brüch</persName>, ohne eine Spur Ihres Geistes, ohne die Spur auch eines Eingehens auf Ihre Denkweise mich abfertigt, hat mich nicht erbaut. Nicht der Widerspruch, auch nicht der Ton desselben, hat mich verstimmt, sondern daß man bei einem Glückwunsch den Jubilar ganz vergißt. Nun, Br. wird die gebührende Antwort von mir erhalten!</p>
+            <p>Den Stephan George von Gundolf<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3844">Friedrich Gundolf <hi rend="unknown" rendition="#none">Stefan George in unsrer Zeit</hi>
+                     </ref>. Heidelberg: Weiss 1913</bibl>; und <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3843">
+                        <hi rend="unknown" rendition="#none">George</hi>
+                     </ref>. Berlin: Bondi 1920.</bibl>
+               </note> habe ich auch vor kurzem mit Bewunderung und Wundern durchtobt. Immerhin fällt manches Schöne für die Ergründung des Wesens lyrischer Dichtung ab. – Nebenbei, um auf die Rassenfrage zurückzukommen, wie stellt sich das Deutschtum dazu, daß repräsentative Männer wie Einstein, Gundolf, Rathenau Juden sind?</p>
+            <p>Ihr <hi rend="unknown" rendition="#none">coucou</hi> in den berber. Mundarten schließt ja an meine Liebeswörter an!</p>
+            <p>Die letzten Vorlesungen in <placeName ref="[authorityLink]">
+Bonn</placeName> waren dem Weltsprachproblem gewidmet. Da sah ich wieder einmal, wie dumm doch s.g. große Männer oft sind. Ich las nämlich zu diesem Zweck <persName ref="[authorityLink]">Brugmann</persName>-<persName ref="[authorityLink]">Leskien</persName>'s Broschüre "Zur Kritik künstlicher Weltspr."<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3842">Karl Brugmann und August Leskien, <hi rend="unknown" rendition="#none">Zur Kritik der künstlichen Weltsprachen</hi>
+                     </ref>. Straßburg: Trübner 1907.</bibl>
+               </note> – hanebüchen! Am schönsten die Argumentation Br.'s, in Deutschland hätte <pb facs="#IMG.4" n="4"/>deshalb die Weltsprachbewegung relativ so wenig um sich gegriffen gegenüber <placeName ref="[authorityLink]">Frankreich</placeName>, weil Werke wie das <persName ref="[authorityLink]">H. Paul</persName>'s und <persName ref="[authorityLink]">
+Wundt</persName>'s die wissenschaftliche Auffassung vom Wesen der Spr. weiter verbreitet hätten. Daß da alte nationale Gegensätze (Frankreichs Überzeugung von der rationellen Bewältigbarkeit alles Seienden, Deutscher Glaube ans Organische) walten, hat der große Ursprachrekonstruktor nicht geahnt. Aber auch <persName ref="[authorityLink]">Leskiens</persName> ironische Kritik fällt auf den Urheber zurück.</p>
+            <p>Das Wort "völkisch" hat in den letzten Werken, eben seit Rathenaus Ermordung, die Bdtg. bekommen, die Sie ihm urspr. zuschrieben, die pejorative: es heißt jetzt, die "Deutschnationalen" trennen sich von den "Deutschvölkischen", diese sind die extremeren. Zugleich ein schönes Beispiel für die in meiner Schrift belegte Konvivenz des Fremd- und des Ersatzwortes in verschiedenen Bedeutungen: statt national – nationalistisch haben wir jetzt national – völkisch, wobei das Fremdwort den höheren Begriff bedeutet.</p>
+            <p>Nun eine Bitte: könnten Sie mir auf meine Kosten Vendryès <hi rend="unknown" rendition="#none">Le langage</hi>
+               <note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3856">Joseph Vendryès, <hi rend="unknown" rendition="#none">Le langage. Introduction linguistique à l'histoire</hi>
+                     </ref>. Paris: La Renaissance du livre 1921.</bibl>
+               </note> hiehersenden lassen? Ich würde es bald retournieren.</p>
+            <p>Am 31. kommt Familie <persName ref="[authorityLink]">
+Hahn</persName> (Mathematiker), gegen 3. Dr. <persName ref="[authorityLink]">Jordan</persName> und Frau (Rumänen), gegen 15. wohl <persName ref="[authorityLink]">
+Maver</persName>'s und <persName ref="[authorityLink]">
+Urtel</persName>. Ich arbeite nichts. <persName ref="[authorityLink]">Rieglers</persName> fahren morgen ab.</p>
+            <p>Jetzt hoffe ich, daß Sie weniger an Hitze leiden, wir haben hier eher Kälte oder Kühle. Die lokale Nähe wird jetzt die Korrespondenz mehr befördern.</p>
+            <closer>
+               <salute>Jedenfalls beste Wünsche für Ihr Wohlergehen und alles Herzliche von den</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzers</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Notes and Queries?<note n="6" place="foot" type="editorial"> Von 1849 bis 1923 in <placeName>
 London</placeName> unter dem kurzen Titel 
 
-<hi
-                rend="unknown"
-                rendition="#none">Notes and queries</hi>
- erscheinende Zeitschrift, die auch in einer französischen Ausgabe veröffentlicht wurde; heute <hi
-                rend="unknown" rendition="#none">Notes and queries for readers and writers, collectors and librarians: a medium of intercommunication for literary men, artists, antiquaries, genealogists, [etc.]</hi>.</note> Eher: eine Zeitschrift für Längstes, synthetische Artikel, etwa "les idées et les faits"! Des Fragmentarischen haben wir in der Epoche des Positivismus genug bekommen – ich habe ihm selbst schon genug Tribut gezollt.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+<hi rend="unknown" rendition="#none">Notes and queries</hi>
+ erscheinende Zeitschrift, die auch in einer französischen Ausgabe veröffentlicht wurde; heute <hi rend="unknown" rendition="#none">Notes and queries for readers and writers, collectors and librarians: a medium of intercommunication for literary men, artists, antiquaries, genealogists, [etc.]</hi>.</note> Eher: eine Zeitschrift für Längstes, synthetische Artikel, etwa "les idées et les faits"! Des Fragmentarischen haben wir in der Epoche des Positivismus genug bekommen – ich habe ihm selbst schon genug Tribut gezollt.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

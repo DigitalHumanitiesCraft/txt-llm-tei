@@ -1,274 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Bogdan Petriceicu Hasdeu (29-1214)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bruno</forename>
-            <surname>Mazzoni</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4486" type="PID">o:hsa.letter.4486</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">29-1214</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <repository>Unbekannt</repository>
-            <idno type="shelfmark">1214</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1878-03-30">1878-03-30</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bruno</forename>
-              <surname>Mazzoni</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Bogdan Petriceicu Hasdeu</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1720"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4486">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1878-03-30">1878-03-30</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1720" ref="https://viaf.org/viaf/65406496">
-            <forename>Bogdan Petriceicu</forename>
-            <surname>Hasdeu</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1720" type="context">
-                        Korrespondenz Hugo Schuchardt - Bogdan Petriceicu Hasdeu
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4486" xml:lang="de">
-        <pb n="1"/>
-        <dateline> Graz, 30 März [1878] </dateline>
-        <opener> Verehrter Freund! </opener>
-        <p>Ich danke Ihnen für Ihre letzte Sendung<note n="1" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4485">XXVIII</ref> e n. 1.</note> und bedauere sehr dass Sie unwohl sind. Was fehlt Ihnen? Sie haben sich gewiss überarbeitet.</p>
-
-        <p>Auch ich bin etwas leidend und so habe ich denn meine Arbeit nicht in besserer Form zu machen Zeit gehabt, als sie Ihnen vorliegt<note
-            n="2" place="foot"
-              type="editorial">Era allegata a questa lettera la seconda parte del manoscritto dell’introduzione dello Schuchardt a <hi
-              rend="unknown"
-            rendition="#none">CdB </hi>I, come verrà peraltro detto espressamente piú oltre.</note> Ich habe sie fast ganz nieder geschrieben, ohne erst ein Koncept angefertigt zu haben. Ein deutscher Setzer wird sich wohl herausfinden — und auch das Vorige war ja wohl von einem solchen gesetzt<note
-            n="3" place="foot" type="editorial">La replica del Hasdeu giungerà parecchie settimane dopo: v. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4495">XXXVIII</ref>, poscritto.</note> — sonst schicken Sie mir das Ganze wieder zurück und ich werde eine Abschrift davon nehmen, wozu es mir jetzt ganz an Zeit und Stimmung fehlt. Fahren Sie mir fort Ihre Randglossen zu machen und sagen Sie mir aufrichtig was Ihnen missfällt.</p>
-        <p>Einige Kleinigkeiten werde ich wohl im Fahnenabzug noch ändern; ich habe augenblicklich weder <hi
-            rend="unknown" rendition="#none">Quintescu</hi>, De deminutivis<note n="4" place="foot" type="editorial">
-            <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4486" xml:lang="de">
+            <pb n="1"/>
+            <dateline> Graz, 30 März [1878] </dateline>
+            <opener> Verehrter Freund! </opener>
+            <p>Ich danke Ihnen für Ihre letzte Sendung<note n="1" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4485">XXVIII</ref> e n. 1.</note> und bedauere sehr dass Sie unwohl sind. Was fehlt Ihnen? Sie haben sich gewiss überarbeitet.</p>
+            <p>Auch ich bin etwas leidend und so habe ich denn meine Arbeit nicht in besserer Form zu machen Zeit gehabt, als sie Ihnen vorliegt<note n="2" place="foot" type="editorial">Era allegata a questa lettera la seconda parte del manoscritto dell’introduzione dello Schuchardt a <hi rend="unknown" rendition="#none">CdB </hi>I, come verrà peraltro detto espressamente piú oltre.</note> Ich habe sie fast ganz nieder geschrieben, ohne erst ein Koncept angefertigt zu haben. Ein deutscher Setzer wird sich wohl herausfinden — und auch das Vorige war ja wohl von einem solchen gesetzt<note n="3" place="foot" type="editorial">La replica del Hasdeu giungerà parecchie settimane dopo: v. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4495">XXXVIII</ref>, poscritto.</note> — sonst schicken Sie mir das Ganze wieder zurück und ich werde eine Abschrift davon nehmen, wozu es mir jetzt ganz an Zeit und Stimmung fehlt. Fahren Sie mir fort Ihre Randglossen zu machen und sagen Sie mir aufrichtig was Ihnen missfällt.</p>
+            <p>Einige Kleinigkeiten werde ich wohl im Fahnenabzug noch ändern; ich habe augenblicklich weder <hi rend="unknown" rendition="#none">Quintescu</hi>, De deminutivis<note n="4" place="foot" type="editorial">
+                  <bibl>
 
 
 N. Quintescu, <hi rend="unknown" rendition="#none">
 De Deminutivis linguae rumanicae, vulgo walachicae nominatae</hi>, (Inaugural Diss.) Berolini 1867, 57 p.
 </bibl>
-          </note> noch <hi rend="unknown" rendition="#none">Maiorescu</hi>'s istrisches Wörterbuch<note n="5"
-            place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4479">XXII</ref>, n. 11.</note>, aus welchem ich Alles nehmen muss, was für meinen Excurs über <hi
-            rend="unknown" rendition="#none">o = uă = lla</hi> brauchbar ist<note n="6" place="foot"
-              type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref> e nn. 28, 30.</note>. Ich hoffe, in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName>, wohin ich nächstens gehe, den <hi
-            rend="unknown" rendition="#none">Majorescu</hi> zu finden; oder würden Sie mir die Wortformen für <hi
-            rend="unknown" rendition="#none">
-stella</hi>, <hi rend="unknown" rendition="#none">sella</hi>, <hi
-            rend="unknown" rendition="#none">gravis</hi>, <hi rend="unknown" rendition="#none">
-nova</hi>, <hi
-            rend="unknown" rendition="#none">mea</hi>, <hi rend="unknown" rendition="#none">rea</hi> u.s.w.<note n="7"
-            place="foot" type="editorial">Cf. <bibl>
-              <hi rend="unknown" rendition="#none">
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
-              </hi>, pp. xxxiv-xl</bibl> (dove lo Schuchardt utilizza ampiamente materiali aromeni e istroromeni).</note> ausziehen?</p>
-
-        <p>Einige Druckfehler in Ihrem und in meinem Texte werde Ich Ihnen später mittheilen. Die rumänische Orthographie bringt mich zur Verzweiflung; ich weiss nicht immer, wo ich <hi
-            rend="unknown" rendition="#none">ŭ</hi> und wo ich <hi rend="unknown"
-            rendition="#none">u</hi> zu setzen habe. Soll man <hi rend="unknown"
-            rendition="#none">dumésnic</hi> oder <hi rend="unknown" rendition="#none">
-dumesnic</hi>, <hi rend="unknown"
-            rendition="#none">pomélnic</hi> oder <hi rend="unknown" rendition="#none">pomelnic</hi>
-          <note n="8" place="foot" type="editorial">V. lettera <ref
-                target="https://gams.uni-graz.at/o:hsa.letter.4495">
+               </note> noch <hi rend="unknown" rendition="#none">Maiorescu</hi>'s istrisches Wörterbuch<note n="5" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4479">XXII</ref>, n. 11.</note>, aus welchem ich Alles nehmen muss, was für meinen Excurs über <hi rend="unknown" rendition="#none">o = uă = lla</hi> brauchbar ist<note n="6" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref> e nn. 28, 30.</note>. Ich hoffe, in <placeName ref="[authorityLink]">Wien</placeName>, wohin ich nächstens gehe, den <hi rend="unknown" rendition="#none">Majorescu</hi> zu finden; oder würden Sie mir die Wortformen für <hi rend="unknown" rendition="#none">
+stella</hi>, <hi rend="unknown" rendition="#none">sella</hi>, <hi rend="unknown" rendition="#none">gravis</hi>, <hi rend="unknown" rendition="#none">
+nova</hi>, <hi rend="unknown" rendition="#none">mea</hi>, <hi rend="unknown" rendition="#none">rea</hi> u.s.w.<note n="7" place="foot" type="editorial">Cf. <bibl>
+                     <hi rend="unknown" rendition="#none">
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
+                     </hi>, pp. xxxiv-xl</bibl> (dove lo Schuchardt utilizza ampiamente materiali aromeni e istroromeni).</note> ausziehen?</p>
+            <p>Einige Druckfehler in Ihrem und in meinem Texte werde Ich Ihnen später mittheilen. Die rumänische Orthographie bringt mich zur Verzweiflung; ich weiss nicht immer, wo ich <hi rend="unknown" rendition="#none">ŭ</hi> und wo ich <hi rend="unknown" rendition="#none">u</hi> zu setzen habe. Soll man <hi rend="unknown" rendition="#none">dumésnic</hi> oder <hi rend="unknown" rendition="#none">
+dumesnic</hi>, <hi rend="unknown" rendition="#none">pomélnic</hi> oder <hi rend="unknown" rendition="#none">pomelnic</hi>
+               <note n="8" place="foot" type="editorial">V. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4495">
 XXXVIII</ref>. Sul problema della doppia accentazione, anche in considerazione delle varianti dialettali del dacoromeno, cf. <bibl>
 
 
-I. Iordan, <hi
-                rend="unknown" rendition="#none">
+I. Iordan, <hi rend="unknown" rendition="#none">
 Gramatica limbii române</hi>, Bucureşti 1937, pp. 35-40
 </bibl>. L’ortografia romena moderna non prevede comunque l’uso dell’accento.</note> schreiben?</p>
-        <p>Wenn ich für meinen Sonderabzug denselben Umschlag bekommen könnte, wie ihn das ganze Werk erhalten wird (<hi
-            rend="unknown"
-            rendition="#none">Cuvente den betrani</hi>), so wäre mir das sehr angenehm. Haben Sie noch nicht an <hi
-            rend="unknown" rendition="#none">Niemeyer</hi> geschrieben<note n="9" place="foot"
-              type="editorial">
+            <p>Wenn ich für meinen Sonderabzug denselben Umschlag bekommen könnte, wie ihn das ganze Werk erhalten wird (<hi rend="unknown" rendition="#none">Cuvente den betrani</hi>), so wäre mir das sehr angenehm. Haben Sie noch nicht an <hi rend="unknown" rendition="#none">Niemeyer</hi> geschrieben<note n="9" place="foot" type="editorial">
 V. lettere <ref target="https://gams.uni-graz.at/o:hsa.letter.4473">XVI</ref>, <ref target="https://gams.uni-graz.at/o:hsa.letter.4475">XVIII</ref>.</note>? Ich werde Alles thun, um dem Werke Verbreitung zu verschaffen.</p>
-
-        <p>Läge mir, aus einem besondern Grunde, nicht selbst sehr viel daran, dass meine Einleitung baldigst gedruckt werde, so würde ich Ihnen den zweiten Theil derselben nicht in einer solchen Verfassung geschickt haben. Bitte schreiben Sie mir nach Empfang der Sendung gleich eine Zeile per <hi
-            rend="unknown" rendition="#none">
+            <p>Läge mir, aus einem besondern Grunde, nicht selbst sehr viel daran, dass meine Einleitung baldigst gedruckt werde, so würde ich Ihnen den zweiten Theil derselben nicht in einer solchen Verfassung geschickt haben. Bitte schreiben Sie mir nach Empfang der Sendung gleich eine Zeile per <hi rend="unknown" rendition="#none">
 Postkarte</hi>
-          <note n="10" place="foot" type="editorial">Il Hasdeu risponderà con la lunga <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">lettera del 5 aprile 1878</ref>, immediatamente seguente.</note>.</p>
-        <p>Kollege <hi rend="unknown" rendition="#none">Krek</hi>
-          <note n="11" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4754">
-Gregor Krek</persName>: v. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4474">XVII</ref>, n. 4.</note> lässt Ihnen für die Obiceie juridice<note
-            n="12" place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4474">XVII</ref>, n. 16.</note> bestens danken und Sie fragen, ob Sie ihm vielleicht das auf beigefügtem Zettel bezeichnete Schriftchen verschaffen könnten. Aber nur wenn es ganz mühlos zu erhalten ist! Würden Sie es dann gefälligst <hi
-            rend="unknown" rendition="#none">unter Kreuzband</hi> schicken<note n="13" place="foot"
-              type="editorial">V. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">
+               <note n="10" place="foot" type="editorial">Il Hasdeu risponderà con la lunga <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">lettera del 5 aprile 1878</ref>, immediatamente seguente.</note>.</p>
+            <p>Kollege <hi rend="unknown" rendition="#none">Krek</hi>
+               <note n="11" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
+Gregor Krek</persName>: v. <ref target="https://gams.uni-graz.at/o:hsa.letter.4474">XVII</ref>, n. 4.</note> lässt Ihnen für die Obiceie juridice<note n="12" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4474">XVII</ref>, n. 16.</note> bestens danken und Sie fragen, ob Sie ihm vielleicht das auf beigefügtem Zettel bezeichnete Schriftchen verschaffen könnten. Aber nur wenn es ganz mühlos zu erhalten ist! Würden Sie es dann gefälligst <hi rend="unknown" rendition="#none">unter Kreuzband</hi> schicken<note n="13" place="foot" type="editorial">V. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">
 XXX</ref>, poscritto.</note>?</p>
-        <closer>
-          <salute>Mit herzlichsten Grüssen und besten Wünschen für baldige Genesung</salute>
-          <lb/>
-          <salute>Ihr ergebenster </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <closer>
+               <salute>Mit herzlichsten Grüssen und besten Wünschen für baldige Genesung</salute>
+               <lb/>
+               <salute>Ihr ergebenster </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,347 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Jakob Jud (98-HSJJ31)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8578" type="PID">o:hsa.letter.8578</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">98-HSJJ31</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Bern</settlement>
-            <institution>Universität Bern</institution>
-            <repository ref="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">AIS Archiv</repository>
-            <idno type="shelfmark">HSJJ31</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1921-11-24">1921-11-24</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Jakob Jud</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1858"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8578">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1921-11-24">1921-11-24</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1858" ref="https://viaf.org/viaf/88644299">
-            <forename>Jakob</forename>
-            <surname>Jud</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1858" type="context">
-                        Korrespondenz Hugo Schuchardt - Jakob Jud
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3085" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschrift für romanische Philologie</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8578" xml:id="IMG.1">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8578" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 24. Nov. 21.</dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Ihr unter „dicken Nebelschwaden“ abgesandter Brief<note n="1" place="foot" type="editorial">HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.8577">
+05215</ref>.</note> ist hier bei wolkenlosem Himmel angekommen. Auch wir haben einige trüb-traurige Tage gehabt, sonst aber einen so prachtvollen Sommer und Herbst wie ich mich nicht entsinnen kann ihn je erlebt zu haben. Es ist das aber auch das einzige Gute das wir genossen haben und vorderhand noch genießen (neben Briand ↔ Ludendorff Robin <pb facs="#IMG.2" n="2"/> vaut bien Marion – dem Faschistenbrigantaccio, Oberschlesien, der Währungsnot usw. usw.).<note n="2" place="foot" type="editorial">Anspielungen auf aktuelle politische Ereignisse.</note> Ich freue mich daß Sie mit der Gattin sich eine schöne Reise nach dem Nordwesten geleistet haben; Sie scheinen mir einer solchen Ablenkung aus den Alltagsgedanken bedurft zu haben – aus des lieben H. Steiner, des geborenen Interviewers Mitteilungen glaubte ich ein wenig Niedergeschlagenheit bei Ihnen diagnostizieren zu können.<note n="3" place="foot" type="editorial">Kein entsprechender Brief (oder Postkarte) <persName ref="[authorityLink]">Steiners</persName> mit einer derartigen Mitteilung ist erhalten.</note> Sie selbst deuten ja einige Ursachen davon an.</p>
+            <p>Das Studium der Romanistik wird, in praktischem Sinne überall abflauen; das habe ich <pb facs="#IMG.3" n="3"/> Ihnen schon vor Jahr und Tag gesagt; aber bei uns in weiteren Maßen, das heißt, wir haben, in Folge des Mangels an Büchern, nicht die Möglichkeit sie zu produzieren, wie wir wünschen, und wenn schon, nicht die zu veröffentlichen. Zu etymologisieren wenn man das lexikographische Material nicht vollständig besitzt, ist Stümperei. Übrigens liegen meine letzten, recht unbedeutenden Etymologien seit 1920 bei Hilka<note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Alfons Hilka</persName> (1877-1939) war 1919 von <placeName>
 
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8578" xml:id="IMG.2">
+Greifswald</placeName> nach <placeName ref="[authorityLink]">Göttingen</placeName> gewechselt; er hatte 1920 (Band 40), nach der Übersiedelung <persName ref="[authorityLink]">Ernst (Ernest) Hoepffners</persName> nach <placeName ref="[authorityLink]">Straßburg</placeName>, die Herausgeberschaft der <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3085">Zeitschrift für romanische Philologie</ref>
+                  </hi> übernommen.</note> und ich habe schon fast vergessen was sie besagen. Die Zeitschrift stockt so bedenklich – die Übersiedelung Hilkas nach Göttingen macht es nicht völlig begreiflich – daß ich <pb facs="#IMG.4" n="4"/> schon denke, Sie werden Ihres Wohltätigkeitsamtes nun überhoben werden. Übrigens habe ich Ihnen noch für Meillets Sammelbuch nicht gedankt;<note n="5" place="foot" type="editorial">Antoine Meillet, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3860">Linguistique historique et linguistique générale</ref>
+                     </bibl>
+                  </hi>, Vol. 1, Paris 1921 (Collection linguistique; 8).</note> ich glaubte es von ihm selbst erhalten zu haben, wie sonstige Veröffentlichungen von ihm. – Als Baskologen allein stehen mir die beiden Möglichkeiten offen. Ich schickte vor kurzem einen längeren <hi rend="unknown" rendition="#none">Deutschen</hi> Aufsatz nach San Sebastián für die RB;<note n="6" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.177">Heimisches und fremdes Sprachgut</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">
+Revista Internacional de Estudios Vascos / Revue International des Études Basques</hi> 13, 1922, 69-82.</note> Empfangsbestätigung: „ist sofort in die Druckerei gewandert“. Griera<note n="7" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Antonio Griera y Gaja</persName> (1887-1974), span. Romanist und Katalanist. Der Brief, auf den Schuchardt anspielt, scheint nicht erhalten zu sein; vgl. jedoch HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.1446">09-03979</ref>.</note> schreibt mir deutsch. Beiläufig gesagt, es schrieb mir vor ein paar Monaten ein ganz junger Baske, eigentlich wohl ein baskisierter Spanier, Apraiz <pb facs="#IMG.5" n="5"/> mit Namen,<note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Odón de Apraiz Buesa</persName> (1896-1984), span. Baskologe; vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.1864">00139</ref>.</note> der Mitglied der <hi rend="unknown" rendition="#none">bask. Akademie</hi> (recte: der Akademie für baskische Sprache) ist, die Akademie wolle ihn behufs weiterer sprachwissenschaftlicher Studien (Paris hat er schon hinter sich) an deutsche Universitäten schicken. Ich habe ihn, da er an mich um Rat gewiesen wurde, geantwortet, er möge zunächst nach Zürich und besonders zu Ihnen gehen und sich dann weiter empfehlen lassen. Sie könnten ihn am besten für den geplanten baskischen Sprachatlas vorbereiten – dachte ich, ich weiß nicht, ob ich das in meinem Brief ausdrücklich gesagt habe.<note n="9" place="foot" type="editorial">
+                  <persName>
 
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8578" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8578" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8578" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8578" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8578" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 24. Nov. 21.</dateline>
-        <opener>Lieber Freund,</opener>
-        <p>Ihr unter „dicken Nebelschwaden“ abgesandter Brief<note n="1" place="foot" type="editorial">HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.8577">
-05215</ref>.</note> ist hier bei wolkenlosem Himmel angekommen. Auch wir haben einige trüb-traurige Tage gehabt, sonst aber einen so prachtvollen Sommer und Herbst wie ich mich nicht entsinnen kann ihn je erlebt zu haben. Es ist das aber auch das einzige Gute das wir genossen haben und vorderhand noch genießen (neben Briand ↔ Ludendorff Robin <pb
-            facs="#IMG.2"
-            n="2"/> vaut bien Marion – dem Faschistenbrigantaccio, Oberschlesien, der Währungsnot usw. usw.).<note n="2"
-            place="foot"
-            type="editorial">Anspielungen auf aktuelle politische Ereignisse.</note> Ich freue mich daß Sie mit der Gattin sich eine schöne Reise nach dem Nordwesten geleistet haben; Sie scheinen mir einer solchen Ablenkung aus den Alltagsgedanken bedurft zu haben – aus des lieben H. Steiner, des geborenen Interviewers Mitteilungen glaubte ich ein wenig Niedergeschlagenheit bei Ihnen diagnostizieren zu können.<note
-            n="3" place="foot" type="editorial">Kein entsprechender Brief (oder Postkarte) <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2776">Steiners</persName> mit einer derartigen Mitteilung ist erhalten.</note> Sie selbst deuten ja einige Ursachen davon an.</p>
-        <p>Das Studium der Romanistik wird, in praktischem Sinne überall abflauen; das habe ich <pb facs="#IMG.3"
-            n="3"/> Ihnen schon vor Jahr und Tag gesagt; aber bei uns in weiteren Maßen, das heißt, wir haben, in Folge des Mangels an Büchern, nicht die Möglichkeit sie zu produzieren, wie wir wünschen, und wenn schon, nicht die zu veröffentlichen. Zu etymologisieren wenn man das lexikographische Material nicht vollständig besitzt, ist Stümperei. Übrigens liegen meine letzten, recht unbedeutenden Etymologien seit 1920 bei Hilka<note
-            n="4" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1767">Alfons Hilka</persName> (1877-1939) war 1919 von <placeName>
-
-Greifswald</placeName> nach <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.20">Göttingen</placeName> gewechselt; er hatte 1920 (Band 40), nach der Übersiedelung <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1774">Ernst (Ernest) Hoepffners</persName> nach <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.499">Straßburg</placeName>, die Herausgeberschaft der <hi
-              rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3085">Zeitschrift für romanische Philologie</ref>
-
-            </hi> übernommen.</note> und ich habe schon fast vergessen was sie besagen. Die Zeitschrift stockt so bedenklich – die Übersiedelung Hilkas nach Göttingen macht es nicht völlig begreiflich – daß ich <pb
-            facs="#IMG.4"
-            n="4"/> schon denke, Sie werden Ihres Wohltätigkeitsamtes nun überhoben werden. Übrigens habe ich Ihnen noch für Meillets Sammelbuch nicht gedankt;<note
-            n="5" place="foot" type="editorial">Antoine Meillet, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3860">Linguistique historique et linguistique générale</ref>
-              </bibl>
-
-            </hi>, Vol. 1, Paris 1921 (Collection linguistique; 8).</note> ich glaubte es von ihm selbst erhalten zu haben, wie sonstige Veröffentlichungen von ihm. – Als Baskologen allein stehen mir die beiden Möglichkeiten offen. Ich schickte vor kurzem einen längeren <hi
-            rend="unknown" rendition="#none">Deutschen</hi> Aufsatz nach San Sebastián für die RB;<note n="6"
-            place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.177">Heimisches und fremdes Sprachgut</ref>
-            </bibl>“, <hi rend="unknown"
-            rendition="#none">
-Revista Internacional de Estudios Vascos / Revue International des Études Basques</hi> 13, 1922, 69-82.</note> Empfangsbestätigung: „ist sofort in die Druckerei gewandert“. Griera<note
-            n="7" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1641">Antonio Griera y Gaja</persName> (1887-1974), span. Romanist und Katalanist. Der Brief, auf den Schuchardt anspielt, scheint nicht erhalten zu sein; vgl. jedoch HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.1446">09-03979</ref>.</note> schreibt mir deutsch. Beiläufig gesagt, es schrieb mir vor ein paar Monaten ein ganz junger Baske, eigentlich wohl ein baskisierter Spanier, Apraiz <pb
-            facs="#IMG.5" n="5"/> mit Namen,<note n="8" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1044">Odón de Apraiz Buesa</persName> (1896-1984), span. Baskologe; vgl. HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.1864">00139</ref>.</note> der Mitglied der <hi rend="unknown"
-            rendition="#none">bask. Akademie</hi> (recte: der Akademie für baskische Sprache) ist, die Akademie wolle ihn behufs weiterer sprachwissenschaftlicher Studien (Paris hat er schon hinter sich) an deutsche Universitäten schicken. Ich habe ihn, da er an mich um Rat gewiesen wurde, geantwortet, er möge zunächst nach Zürich und besonders zu Ihnen gehen und sich dann weiter empfehlen lassen. Sie könnten ihn am besten für den geplanten baskischen Sprachatlas vorbereiten – dachte ich, ich weiß nicht, ob ich das in meinem Brief ausdrücklich gesagt habe.<note
-            n="9" place="foot" type="editorial">
-            <persName>
-
-José Velez de Mendizabal Azkarraga</persName> schreibt in seinem Eintrag (<ref
-              target="http://www.euskonews.eus/0545zbk/gaia54504es.html">
-euskonews</ref>) dazu: „De <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.5905">Francia</placeName>, y siguiendo el consejo del lingüista experto en <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.837">euskara</ref> Hugo Schuchardt, marchó a <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.6003">
-Suiza</placeName>, a estudiar con <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2898">Cristianis Uhlenbeck</persName>. En <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.215">Zurich</placeName> fue colaborador temporal del experto en lenguas romances Jakob Jud. Además de Jud, también tuvo la oportunidad de estudiar con el lingüista <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1557">Louis Gauchat</persName>, que ejercía en esa universidad“.</note> Wenn Sie ihn dann weitergeben, so berücksichtigen Sie daß er noch nicht Deutsch kann und daß er nicht einem der leider vielen undeutlich Redenden in die Hände falle. <pb
-            facs="#IMG.6" n="6"/> Nun eines, was mich zur <hi rend="unknown"
-            rendition="#none">sofortigen</hi> Beantwortung Ihres Briefes bestimmt hat. Gartner schrieb mir vor vierzehn Tagen, er fürchte seine „Ladinischen Wörter“ würden ein Opus posthumum bleiben<note
-            n="10" place="foot"
-            type="editorial">Vgl. insbesondere HSA 03542, 03544, 03547, 03548, 03551.</note> (wie wahrscheinlich meine bei der Berl. Akad. erliegende baskol. Arbeit). Niemeyer hat ihm mitgeteilt, an ihren Druck (in den Beiheften) wäre jetzt nicht zu denken: auf Hülfe der Wiener Akademie wagt er nicht zu hoffen – und da hat er ganz recht. Da ist mir eingefallen daß die rätoromanische Gesellschaft oder wie sie sich betitelt<note
-            n="11" place="foot"
-            type="editorial">Gemeint ist die 1919 gegründete 
+José Velez de Mendizabal Azkarraga</persName> schreibt in seinem Eintrag (<ref target="http://www.euskonews.eus/0545zbk/gaia54504es.html">
+euskonews</ref>) dazu: „De <placeName ref="[authorityLink]">Francia</placeName>, y siguiendo el consejo del lingüista experto en <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">euskara</ref> Hugo Schuchardt, marchó a <placeName ref="[authorityLink]">
+Suiza</placeName>, a estudiar con <persName ref="[authorityLink]">Cristianis Uhlenbeck</persName>. En <placeName ref="[authorityLink]">Zurich</placeName> fue colaborador temporal del experto en lenguas romances Jakob Jud. Además de Jud, también tuvo la oportunidad de estudiar con el lingüista <persName ref="[authorityLink]">Louis Gauchat</persName>, que ejercía en esa universidad“.</note> Wenn Sie ihn dann weitergeben, so berücksichtigen Sie daß er noch nicht Deutsch kann und daß er nicht einem der leider vielen undeutlich Redenden in die Hände falle. <pb facs="#IMG.6" n="6"/> Nun eines, was mich zur <hi rend="unknown" rendition="#none">sofortigen</hi> Beantwortung Ihres Briefes bestimmt hat. Gartner schrieb mir vor vierzehn Tagen, er fürchte seine „Ladinischen Wörter“ würden ein Opus posthumum bleiben<note n="10" place="foot" type="editorial">Vgl. insbesondere HSA 03542, 03544, 03547, 03548, 03551.</note> (wie wahrscheinlich meine bei der Berl. Akad. erliegende baskol. Arbeit). Niemeyer hat ihm mitgeteilt, an ihren Druck (in den Beiheften) wäre jetzt nicht zu denken: auf Hülfe der Wiener Akademie wagt er nicht zu hoffen – und da hat er ganz recht. Da ist mir eingefallen daß die rätoromanische Gesellschaft oder wie sie sich betitelt<note n="11" place="foot" type="editorial">Gemeint ist die 1919 gegründete 
 Lia Rumantscha mit Sitz in <placeName>
 Chur</placeName>, vgl. Gartners Brief 
-03549.</note> (an die ich durch Ihre Hand im vorigen Jahr die engadiner Briefe aus dem 17. Jhrh. übermittelte) vielleicht helfen könnte; Sie hatten mich ja ersucht, ich möge Gartner dazu bestimmen, seinen ladinischen Nachlaß dahin zu vermachen. Es ist das freilich etwas anderes als selbständig die Sache herauszugeben. Bitte nur um eine Karte mit vorläufiger Auskunft. – L. Spitzer ist zum Prof. (a. o.) ernannt worden.<note
-            n="12" place="foot" type="editorial">Vgl. Spitzers Brief (22.11.1921) an Schuchardt (HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.2148">317-11078</ref>), in dem zwar von der „Dienstbezeichnung außerordentlicher Professor“ die Rede ist, diese aber nur als „Ehrung“ bezeichnet wird.</note> Sie werden es in den Zeitungen gelesen haben; ob er – was ja das Wesentliche ist – mit Gehalt, weiß ich noch nicht. – Ive hat, da er die 70 erreicht hat, jetzt sein Ehrenjahr.<note
-            n="13" place="foot" type="editorial">Vgl. <ref target="https://gams.uni-graz.at/o:hsa.letter.8576">
+03549.</note> (an die ich durch Ihre Hand im vorigen Jahr die engadiner Briefe aus dem 17. Jhrh. übermittelte) vielleicht helfen könnte; Sie hatten mich ja ersucht, ich möge Gartner dazu bestimmen, seinen ladinischen Nachlaß dahin zu vermachen. Es ist das freilich etwas anderes als selbständig die Sache herauszugeben. Bitte nur um eine Karte mit vorläufiger Auskunft. – L. Spitzer ist zum Prof. (a. o.) ernannt worden.<note n="12" place="foot" type="editorial">Vgl. Spitzers Brief (22.11.1921) an Schuchardt (HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.2148">317-11078</ref>), in dem zwar von der „Dienstbezeichnung außerordentlicher Professor“ die Rede ist, diese aber nur als „Ehrung“ bezeichnet wird.</note> Sie werden es in den Zeitungen gelesen haben; ob er – was ja das Wesentliche ist – mit Gehalt, weiß ich noch nicht. – Ive hat, da er die 70 erreicht hat, jetzt sein Ehrenjahr.<note n="13" place="foot" type="editorial">Vgl. <ref target="https://gams.uni-graz.at/o:hsa.letter.8576">
 Brief 30</ref> (13.8.1921).</note>
-        </p>
-        <closer>
-          <salute>Herzlich gr Ihr</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Sch</persName>. </signed>
-        </closer>
-        <postscript>
-          <p>An Scheuermeier habe ich eben einige Zeilen geschrieben.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            </p>
+            <closer>
+               <salute>Herzlich gr Ihr</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Sch</persName>. </signed>
+            </closer>
+            <postscript>
+               <p>An Scheuermeier habe ich eben einige Zeilen geschrieben.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,357 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Lajos Katona (02-05067_214)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10188" type="PID">o:hsa.letter.10188</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-05067_214</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Ungarn</country>
-            <settlement>Budapest</settlement>
-            <repository ref="https://mta.hu/english/">Abteilung für Handschriften und Alte Bücher, Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften</repository>
-            <idno type="shelfmark">05067_214</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1885-03-02">1885-03-02</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2023">2023</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Lajos Katona</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1888"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10188">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1885-03-02">1885-03-02</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1888" ref="https://viaf.org/viaf/53140754">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1888" type="context">
-                        Korrespondenz Hugo Schuchardt - Lajos Katona
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.839" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kreolsprachen</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10188" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10188" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10188" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10188" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10188" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 2 März 85</dateline>
-        <opener>Sehr geehrter Herr,</opener>
-
-        <p>Da Ihr Brief mich gerade unter kreolischen Arbeiten überrascht, so will ich ihn auf der Stelle beantworten. Es freut mich sehr dass bei Ihnen die sprachliche Hybridität solches Interesse findet, insbesondere die welche sich in den kreolischen Idiomen offenbart. Die Beschäftigung mit letzeren hat, abgesehen von den wissenschaftlichen Resultaten, für mich auch deshalb einen eigenthümlichen Reiz weil sie mich in Beziehung zu Personen aller möglichen Racen, so zu Indern, Annamiten, Mulatten, Negern, gesetzt hat und vielfach ist diese Beziehung über weite Meere hin zu einer wirklich herzlichen und freundschaftlichen geworden. <pb
-            facs="#IMG.2"
-            n="2"/> Zunächst muss ich Ihnen sagen dass Sie indem Sie Belehrung verlangen, auch mir solche ertheilen. Obwohl ich ein sehr reiches gedrucktes und ungedrucktes Material beisammen habe, so fehlt mir doch noch Verschiedenes. Von dem Carillon dessen Sie gedenken, habe ich nicht einmal gehört.<note
-            n="1" place="foot" type="editorial">
-            <hi rend="unknown"
-              rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10188" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 2 März 85</dateline>
+            <opener>Sehr geehrter Herr,</opener>
+            <p>Da Ihr Brief mich gerade unter kreolischen Arbeiten überrascht, so will ich ihn auf der Stelle beantworten. Es freut mich sehr dass bei Ihnen die sprachliche Hybridität solches Interesse findet, insbesondere die welche sich in den kreolischen Idiomen offenbart. Die Beschäftigung mit letzeren hat, abgesehen von den wissenschaftlichen Resultaten, für mich auch deshalb einen eigenthümlichen Reiz weil sie mich in Beziehung zu Personen aller möglichen Racen, so zu Indern, Annamiten, Mulatten, Negern, gesetzt hat und vielfach ist diese Beziehung über weite Meere hin zu einer wirklich herzlichen und freundschaftlichen geworden. <pb facs="#IMG.2" n="2"/> Zunächst muss ich Ihnen sagen dass Sie indem Sie Belehrung verlangen, auch mir solche ertheilen. Obwohl ich ein sehr reiches gedrucktes und ungedrucktes Material beisammen habe, so fehlt mir doch noch Verschiedenes. Von dem Carillon dessen Sie gedenken, habe ich nicht einmal gehört.<note n="1" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
 
 Le Carillon. Journal peu politique, encore moins littéraire, pas du tout sérieux
 </hi> erschien von 1869 bis 1875 in <placeName>
 
 New Orleans</placeName> und enthielt auch <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.839">kreolische</ref> Texte.</note> Bitte schreiben Sie mir doch Näheres darüber besonders, wo er herausgekommen ist und in welchem kreolischen Dialekt er geschrieben ist.</p>
-        <p>Sie scheinen vor allem die <hi rend="unknown"
-            rendition="#none">französischen</hi> Negerdialekte im Auge zu haben; ich bemerke über die Quellen derselben Folgendes. In der <hi
-            rend="unknown" rendition="#none">Bibliographie créole</hi> welche ich in der <hi rend="unknown"
-            rendition="#none">Revue critique</hi> 16 avril 1883 gegeben habe,<note n="2" place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.338">Bibliographie créole</ref>
-            </bibl>“, <hi rend="unknown"
-            rendition="#none">Revue critique d’histoire et de littérature</hi> 17, 1883, 314-318.</note> weiss ich Gedrucktes von einiger Wichtigkeit nicht nachzutragen. In Zeitungen von <hi
-            rend="unknown"
-            rendition="#none">Mauritius</hi> u.s.w. kommt immer einiges Kreolische vor, so auch in den reizenden kleinen Erzählungen von M<hi rendition="#sup">
+            <p>Sie scheinen vor allem die <hi rend="unknown" rendition="#none">französischen</hi> Negerdialekte im Auge zu haben; ich bemerke über die Quellen derselben Folgendes. In der <hi rend="unknown" rendition="#none">Bibliographie créole</hi> welche ich in der <hi rend="unknown" rendition="#none">Revue critique</hi> 16 avril 1883 gegeben habe,<note n="2" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.338">Bibliographie créole</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">Revue critique d’histoire et de littérature</hi> 17, 1883, 314-318.</note> weiss ich Gedrucktes von einiger Wichtigkeit nicht nachzutragen. In Zeitungen von <hi rend="unknown" rendition="#none">Mauritius</hi> u.s.w. kommt immer einiges Kreolische vor, so auch in den reizenden kleinen Erzählungen von M<hi rendition="#sup">
 lle</hi>
-          <hi rend="unknown" rendition="#none">Doudou (Baissac’s</hi> Tochter).<note n="3" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1069">Basile Charles Baissac</persName> (1831-1892), britisch-französischer Romanist und Kreolist (französischer Herkunft) aus <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5933">Mauritius</placeName>; vgl. HSA 00443-00450; seine Tochter Jenny gen. Doudou war das älteste von sechs Kindern Baissacs aus seiner Ehe mit Louise Jeanne Charlotte Breton (keine Daten); vgl. HSA 00451-00453.</note> Neue Aufsätze über das Kreolische von <hi
-            rend="unknown" rendition="#none">Réunion</hi> finden sich im dortigen <hi rend="unknown"
-            rendition="#none">Sport national</hi>. <hi rend="unknown"
-            rendition="#none">
-Turiault</hi>, Étude sur le langage créole de la <hi rend="unknown"
-            rendition="#none">Martinique</hi> (Brest 1874 – ich glaube es kostet <pb facs="#IMG.3"
-            n="3"/> 7 francs)<note n="4" place="foot" type="editorial">Jean Turiault, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5234">Étude sur le langage créole de la Martinique</ref>
-              </bibl>
-
-            </hi>, Brest: Lefournier, 1874.</note> scheinen Sie nicht zu kennen, schon H. Gaidoz (in der Revue critique) hatte es angeführt. Haben Sie denn nicht die bekannten <hi
-            rend="unknown" rendition="#none">Bambous</hi>
-          <note n="5" place="foot" type="editorial">François Marbot, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2322">Les Bambous. Fables de La Fontaine travesties en patois créole par un vieux commandeur</ref>
-              </bibl>
-            </hi>, Fort de France: Thomas, 1869; <hi
-            rendition="#sup">2</hi>2002.</note> im Kreolischen von Martinique? ich habe das Buch in zwei Exemplaren und mache mir ein Vergnügen daraus, Ihnen das eine zu schicken. Einen <hi
-            rend="unknown"
-            rendition="#none">Katechismus</hi> in gleichem Kreolisch besitze ich auch; aber er ist sprachlich werthlos, d. h. das Kreolische übel zugerichtet.<note
-            n="6" place="foot" type="editorial">Vermutlich Abbé Paul Goux, <hi rend="unknown" rendition="#none">
-              <bibl>
+               <hi rend="unknown" rendition="#none">Doudou (Baissac’s</hi> Tochter).<note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Basile Charles Baissac</persName> (1831-1892), britisch-französischer Romanist und Kreolist (französischer Herkunft) aus <placeName ref="[authorityLink]">Mauritius</placeName>; vgl. HSA 00443-00450; seine Tochter Jenny gen. Doudou war das älteste von sechs Kindern Baissacs aus seiner Ehe mit Louise Jeanne Charlotte Breton (keine Daten); vgl. HSA 00451-00453.</note> Neue Aufsätze über das Kreolische von <hi rend="unknown" rendition="#none">Réunion</hi> finden sich im dortigen <hi rend="unknown" rendition="#none">Sport national</hi>. <hi rend="unknown" rendition="#none">
+Turiault</hi>, Étude sur le langage créole de la <hi rend="unknown" rendition="#none">Martinique</hi> (Brest 1874 – ich glaube es kostet <pb facs="#IMG.3" n="3"/> 7 francs)<note n="4" place="foot" type="editorial">Jean Turiault, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5234">Étude sur le langage créole de la Martinique</ref>
+                     </bibl>
+                  </hi>, Brest: Lefournier, 1874.</note> scheinen Sie nicht zu kennen, schon H. Gaidoz (in der Revue critique) hatte es angeführt. Haben Sie denn nicht die bekannten <hi rend="unknown" rendition="#none">Bambous</hi>
+               <note n="5" place="foot" type="editorial">François Marbot, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2322">Les Bambous. Fables de La Fontaine travesties en patois créole par un vieux commandeur</ref>
+                     </bibl>
+                  </hi>, Fort de France: Thomas, 1869; <hi rendition="#sup">2</hi>2002.</note> im Kreolischen von Martinique? ich habe das Buch in zwei Exemplaren und mache mir ein Vergnügen daraus, Ihnen das eine zu schicken. Einen <hi rend="unknown" rendition="#none">Katechismus</hi> in gleichem Kreolisch besitze ich auch; aber er ist sprachlich werthlos, d. h. das Kreolische übel zugerichtet.<note n="6" place="foot" type="editorial">Vermutlich Abbé Paul Goux, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 Catéchisme en langue créole, précédé d’un essai de grammaire sur l’idiome usité dans les colonie françaises
 </bibl>
-
-            </hi>, Paris: Impr. H. Vrayet de Surcy, 1842.</note> Über den so wichtigen Dialect von Haïti existirt fast gar Nichts; das Nützlichste ist noch ein Glossar aus dem Anfang dieses Jahrhunderts. <hi
-            rend="unknown" rendition="#none">Trinidad</hi> ist nur durch die Grammatik von <hi rend="unknown"
-            rendition="#none">Thomas</hi> vertreten.<note n="7" place="foot" type="editorial">
-John Jacob Thomas, <hi
-              rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2738">The Theory and practice of Creole Grammar</ref>
-              </bibl>
-            </hi>, San Fernando, Calif., 1869.</note> Ich sammele mit vieler Mühe Märchen aus Westindien und gedenke sie mit schon gedruckten in einer zu Paris erscheinenden Sammlung zu vereinen.</p>
-        <p>Was die Pariser Kataloge anlangt, so dürfte wohl vor Allem die <hi rend="unknown"
-            rendition="#none">Bibliotheca Americana</hi> von Maisonneuve (mit Suppl.) gemeint sein.<note n="8"
-            place="foot" type="editorial">Charles Leclerc, <hi rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>, Paris: Impr. H. Vrayet de Surcy, 1842.</note> Über den so wichtigen Dialect von Haïti existirt fast gar Nichts; das Nützlichste ist noch ein Glossar aus dem Anfang dieses Jahrhunderts. <hi rend="unknown" rendition="#none">Trinidad</hi> ist nur durch die Grammatik von <hi rend="unknown" rendition="#none">Thomas</hi> vertreten.<note n="7" place="foot" type="editorial">
+John Jacob Thomas, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2738">The Theory and practice of Creole Grammar</ref>
+                     </bibl>
+                  </hi>, San Fernando, Calif., 1869.</note> Ich sammele mit vieler Mühe Märchen aus Westindien und gedenke sie mit schon gedruckten in einer zu Paris erscheinenden Sammlung zu vereinen.</p>
+            <p>Was die Pariser Kataloge anlangt, so dürfte wohl vor Allem die <hi rend="unknown" rendition="#none">Bibliotheca Americana</hi> von Maisonneuve (mit Suppl.) gemeint sein.<note n="8" place="foot" type="editorial">Charles Leclerc, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Bibliotheca americana; histoire, géographie, voyages, archéologie et linguistique des deux Amériques et des Iles Philippines
 </bibl>
-
-            </hi>, Paris: Maisonneuve, 1878.</note> Auch in Auctionskatalogen, wie besonders dem der A. Pinart’schen Bibl. vom vorigen Jahre, findet sich Manches.<note
-            n="9" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">
+                  </hi>, Paris: Maisonneuve, 1878.</note> Auch in Auctionskatalogen, wie besonders dem der A. Pinart’schen Bibl. vom vorigen Jahre, findet sich Manches.<note n="9" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
 
 
 Catalogue de livres rares et précieux, manuscrits et imprimés principalement sur l’Amérique et sur les langues du monde entier: composant la bibliothèque de … Alph.-L. Pinart et comprenant en totalité la bibliothèque mexicoguatémalienne de … Brasseur de Bourbourg:
-</hi> [La vente aura lieu du lundi 28 janvier au mordi 5 février 1884, Paris: Labitte, 1883.</note> Was aber das französische Kreolisch Westindiens und Ostafrika’s anlangt, so dürften doch <pb
-            facs="#IMG.4" n="4"/> die Angaben in <hi rend="unknown"
-            rendition="#none">Trübner’s Rec.</hi> und in der Revue critique (von Gaidoz und mir) ziemlich erschöpfend sein. In <hi
-            rend="unknown" rendition="#none">Paris</hi> und <hi rend="unknown"
-            rendition="#none">London</hi> (Brit. Mus.) scheint wenig Apartes dieser Art zu sein; ich habe mich schon danach erkundigt. Aber mit Thomas,<note
-            n="10" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2858">Antoine Thomas</persName> (1857-1935), franz. Romanist; vgl. HSA 11658-11668.</note> St Quentin,<note
-            n="11" place="foot" type="editorial">
-
-            <persName>
-Alfred de St. Quentin</persName> (keine Daten), Chef de Bataillon, Membre de l’Académie des sciences, belles lettres et arts de Rouen; Wirken um 1872.</note> Baissac<note
-            n="12" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1069">Charles Baissac</persName> (1831-1892), franz. Philologe und Folklorist; vgl. HSA 00418-00442.</note> [und Turiault]<note
-            n="13" place="foot" type="editorial">Jean Turiault (keine Lebensdaten), Verf. von <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5234">Étude sur le langage de la Martinique</ref>
-              </bibl>
-
-            </hi>, Brest: Lefournier, 1874.</note> haben Sie eigentlich fast alles Material von wirklichem Werthe schon; denn die Publicationen, <hi
-            rend="unknown" rendition="#none">in</hi> kreolischer Sprache sind recht unzuverlässig, sie wimmeln von Gallicismen.</p>
-        <p>Ich werde Ihnen übrigens in dieser Beziehung gern zu Diensten sein, soweit ich es vermag; nur bitte ich Sie zu bedenken dass da meine kreolischen Studien, wenn auch mit Unterbrechungen, immer fortlaufen, ich selbst eines kleinen Theiles des gesammelten Materials nicht gut zu entrathen vermag. Ich kann selbst nicht einmal genau wissen was ich in der nächsten Zeit brauchen werde; denn beständig treffen, mehr oder weniger unerwartet, Briefe ein welche mich veranlassen Dinge aufzunehmen die ich momentan beiseite gelegt hatte.</p>
-
-        <p>Ich schliesse indem ich noch meiner Genugthuung Ausdruck gebe mit einem Angehörigen derjenigen Nation in Beziehung getreten zu sein, deren Sprache ich, allerdings erst seit einigen Tagen, mit grossem Eifer zu studiren begonnen habe. Nachdem ich in meiner Festschrift für Miklosich vor allem nur die cisleitanische Sprachmischung studirt habe,<note
-            n="14" place="foot" type="editorial">Schuchardt, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">Dem Herrn Franz von Miklosich zum 20. November 1883. Slawo-deutsches und Slawo-italienisches</ref>
-              </bibl>
-            </hi>. Graz: Leuschner &amp;amp; Lubensky, 1884.</note> denke ich später in ähnlichem Sinne weiter im Osten rumzuschauen.</p>
-        <closer>
-          <salute>Hochachtungsvollst Ihr ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+</hi> [La vente aura lieu du lundi 28 janvier au mordi 5 février 1884, Paris: Labitte, 1883.</note> Was aber das französische Kreolisch Westindiens und Ostafrika’s anlangt, so dürften doch <pb facs="#IMG.4" n="4"/> die Angaben in <hi rend="unknown" rendition="#none">Trübner’s Rec.</hi> und in der Revue critique (von Gaidoz und mir) ziemlich erschöpfend sein. In <hi rend="unknown" rendition="#none">Paris</hi> und <hi rend="unknown" rendition="#none">London</hi> (Brit. Mus.) scheint wenig Apartes dieser Art zu sein; ich habe mich schon danach erkundigt. Aber mit Thomas,<note n="10" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Antoine Thomas</persName> (1857-1935), franz. Romanist; vgl. HSA 11658-11668.</note> St Quentin,<note n="11" place="foot" type="editorial">
+                  <persName>
+Alfred de St. Quentin</persName> (keine Daten), Chef de Bataillon, Membre de l’Académie des sciences, belles lettres et arts de Rouen; Wirken um 1872.</note> Baissac<note n="12" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Charles Baissac</persName> (1831-1892), franz. Philologe und Folklorist; vgl. HSA 00418-00442.</note> [und Turiault]<note n="13" place="foot" type="editorial">Jean Turiault (keine Lebensdaten), Verf. von <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5234">Étude sur le langage de la Martinique</ref>
+                     </bibl>
+                  </hi>, Brest: Lefournier, 1874.</note> haben Sie eigentlich fast alles Material von wirklichem Werthe schon; denn die Publicationen, <hi rend="unknown" rendition="#none">in</hi> kreolischer Sprache sind recht unzuverlässig, sie wimmeln von Gallicismen.</p>
+            <p>Ich werde Ihnen übrigens in dieser Beziehung gern zu Diensten sein, soweit ich es vermag; nur bitte ich Sie zu bedenken dass da meine kreolischen Studien, wenn auch mit Unterbrechungen, immer fortlaufen, ich selbst eines kleinen Theiles des gesammelten Materials nicht gut zu entrathen vermag. Ich kann selbst nicht einmal genau wissen was ich in der nächsten Zeit brauchen werde; denn beständig treffen, mehr oder weniger unerwartet, Briefe ein welche mich veranlassen Dinge aufzunehmen die ich momentan beiseite gelegt hatte.</p>
+            <p>Ich schliesse indem ich noch meiner Genugthuung Ausdruck gebe mit einem Angehörigen derjenigen Nation in Beziehung getreten zu sein, deren Sprache ich, allerdings erst seit einigen Tagen, mit grossem Eifer zu studiren begonnen habe. Nachdem ich in meiner Festschrift für Miklosich vor allem nur die cisleitanische Sprachmischung studirt habe,<note n="14" place="foot" type="editorial">Schuchardt, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">Dem Herrn Franz von Miklosich zum 20. November 1883. Slawo-deutsches und Slawo-italienisches</ref>
+                     </bibl>
+                  </hi>. Graz: Leuschner &amp;amp; Lubensky, 1884.</note> denke ich später in ähnlichem Sinne weiter im Osten rumzuschauen.</p>
+            <closer>
+               <salute>Hochachtungsvollst Ihr ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,328 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (333-11094)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2177" type="PID">o:hsa.letter.2177</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">333-11094</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11094</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="3" unit="pages">3 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" ref="http://sws.geonames.org/2946447">Bonn</origPlace>
-              <origDate ana="dcterms:created" when="1922-02-15">1922-02-15</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2177">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" key="#GID.1" ref="http://sws.geonames.org/2946447">Bonn</placeName>
-          <date when="1922-02-15">1922-02-15</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Bonn</settlement>
-                <name ref="http://geonames.org/2946447" type="fcode:PPLA3">Bonn</name>
-                <location>
-                  <geo>7.09549,50.73438</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.854" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rumänisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2177" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2177" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2177" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2177" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bonn, 15. II.</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-
-        <p>Dank für Ihren ausführlichen Bericht. Ich finde zu oft das Wort "nichts" (Holland nichts etc.): ich glaube, Sie unterschätzen die Wirkung des Streikes, der manches verzögert oder verschlampt hat. So erwähnen Sie nicht die Feuilletons <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1807">Hubschmieds</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2516">El. Richters</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3054">Zauners</persName>, <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1531">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2177" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bonn, 15. II.</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Dank für Ihren ausführlichen Bericht. Ich finde zu oft das Wort "nichts" (Holland nichts etc.): ich glaube, Sie unterschätzen die Wirkung des Streikes, der manches verzögert oder verschlampt hat. So erwähnen Sie nicht die Feuilletons <persName ref="[authorityLink]">Hubschmieds</persName>, <persName ref="[authorityLink]">El. Richters</persName>, <persName ref="[authorityLink]">Zauners</persName>, <persName ref="[authorityLink]">
 Friedwagners</persName>.</p>
-        <p>Bezüglich der Blumenspende <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2763">
-meiner Frau</persName> ist etwas Eigenartiges passiert: der Beitrag meiner Frau sollte von <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">
-Wien</placeName> aus an <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">Rieglers</persName> Schwägerin nach <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> gehen, aber die Bestellkarte blieb wieder infolge des Streikes liegen u. so kam der Betrag an, nachdem die Blumengabe <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1858">Juds</persName> schon abgegangen war, so daß Frau Schober den Betrag an den Wiener Aufgeber zurücksandte. Sind von Wien (Buchh. Manz) an Sie H. Mann's "Betrachtgen" und <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3656">Wassermanns "Mein Weg als Deutscher u. als Jude"</ref>
-          </bibl> geliefert worden? Wenn nicht, so bitte ich Sie, bei obiger Buchhandlung 2 belletristische Bücher, die Sie interessieren (oder die erwähnten) für mein Konto zu bestellen, da die Buchhandlung offenbar meinen schon gegen Neujahr erteilten Auftrag ignoriert hat.</p>
-        <p>Nun zu Miscell.lingu.<note n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1607">
-                <hi rend="unknown"
-                  rendition="#none">Miscellanea linguistica dedicata a Hugo Schuchardt per il suo 80 anniversario</hi>, in: <hi
-                  rend="unknown" rendition="#none">Biblioteca dell''Archivum Romanicum</hi>' 3 (1922).</ref>
-            </bibl>
-          </note> Ich habe, um Ihre Bedenken wohl wissend, sofort als der Gedanke bei <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1134">
-Bertoni</persName>, offenbar von Riegler genährt, greifbare Form gewann, gegen eine Form der Festschrift protestiert, wie sie wohl im Sinn des Detailplans bei Bertoni liegt, aber Ihnen nicht entspricht – aber da schon einige Beiträge gedruckt waren (der Rieglers und der mit mir polemisierende, mit Ihnen wohl zusammenhanglose Brüchs), meinte Bertoni, er könne meine Einwände nicht mehr berücksichtigen und Sie würden sicher eine Freude haben. Darauf konnte ich nichts mehr tun u. ich sehe auch nicht, was sich machen ließe. Mein eigener Aufsatz ist ebenso wie der folkloristische Rieglers derart gehalten, daß eine Seite Ihrer etym. Tätigkeit, eben die Arbeit mit Onomatopöien, fortgeführt wird, u. ich hatte Bertoni den Titel "Beiträge z.rom.Wortforschung" <pb
-            facs="#IMG.2" n="2"/>vorgeschlagen. Nach meinem Gedanken sollte jeder Mitarbeiter eine andere Seite der Wort­forschung in Ihrem Sinn pflegen. Wollen Sie das ev. Bertoni nochmals mitteilen, da Riegler ja machtlos ist?</p>
-        <p>Ist es nur eine meiner unbegründeten Vermutungen oder Tatsache, daß mir vorkommt, daß trotz allen lieben Worten, die Sie für das <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1506">Brevier</ref>
-          </bibl> gefunden haben, dieses Sie ein bischen enttäuscht hat? Mir persönlich wäre es ja lieber gewesen, wenn Sie ohne vorherige Ankündigung das Büchlein zugeschickt bekommen hätten – ich überrasche ja so gern –; so aber haben Sie ein Jahr gewartet, bis dann ridiculus mus herauskam. Sagen Sie mir bitte rückhaltlos Ihre Meinung darüber, auch über die Einleitung.</p>
-        <p>Auch mit den Schweizern bin ich nicht ganz zufrieden. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1807">Hubschmieds</persName> Feuilleton behandelt die Brevier-Angelegenheit als eine Schweizer Nationalangelegenheit (Das "keine Gemeinsamkeiten mit deutschen Gelehrten" trat auch in den Vorverhandlungen zu Tage), ohne auch nur zu erwähnen, daß ein Bonner Universitätslehrer (sein Name tat gewiß nichts zur Sache) die eigentliche Arbeit leistete. Sind die Schweizer nun so hoffnungslos materialistisch, daß sie das Subskribieren eines Werkes, das sie ja dann erwerben, höherstellen als die geistige Arbeit der Herausgabe oder soll die Gemeinsamkeit mit einem Deutschen zurücktreten? Ich habe mein Befremden darüber <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1858">Jud</persName> ausgedrückt. Doch scheint mir, daß auch Sie die Schweizer Initiative höherstellen, da Ihr gedruckter Dank nur an die Schweizer Spender ging.<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.101">H.S., "Dank an die Schweizer Spender des <hi
-                  rend="unknown" rendition="#none">
+            <p>Bezüglich der Blumenspende <persName ref="[authorityLink]">
+meiner Frau</persName> ist etwas Eigenartiges passiert: der Beitrag meiner Frau sollte von <placeName ref="[authorityLink]">
+Wien</placeName> aus an <persName ref="[authorityLink]">Rieglers</persName> Schwägerin nach <placeName ref="[authorityLink]">Graz</placeName> gehen, aber die Bestellkarte blieb wieder infolge des Streikes liegen u. so kam der Betrag an, nachdem die Blumengabe <persName ref="[authorityLink]">Juds</persName> schon abgegangen war, so daß Frau Schober den Betrag an den Wiener Aufgeber zurücksandte. Sind von Wien (Buchh. Manz) an Sie H. Mann's "Betrachtgen" und <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3656">Wassermanns "Mein Weg als Deutscher u. als Jude"</ref>
+               </bibl> geliefert worden? Wenn nicht, so bitte ich Sie, bei obiger Buchhandlung 2 belletristische Bücher, die Sie interessieren (oder die erwähnten) für mein Konto zu bestellen, da die Buchhandlung offenbar meinen schon gegen Neujahr erteilten Auftrag ignoriert hat.</p>
+            <p>Nun zu Miscell.lingu.<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1607">
+                        <hi rend="unknown" rendition="#none">Miscellanea linguistica dedicata a Hugo Schuchardt per il suo 80 anniversario</hi>, in: <hi rend="unknown" rendition="#none">Biblioteca dell''Archivum Romanicum</hi>' 3 (1922).</ref>
+                  </bibl>
+               </note> Ich habe, um Ihre Bedenken wohl wissend, sofort als der Gedanke bei <persName ref="[authorityLink]">
+Bertoni</persName>, offenbar von Riegler genährt, greifbare Form gewann, gegen eine Form der Festschrift protestiert, wie sie wohl im Sinn des Detailplans bei Bertoni liegt, aber Ihnen nicht entspricht – aber da schon einige Beiträge gedruckt waren (der Rieglers und der mit mir polemisierende, mit Ihnen wohl zusammenhanglose Brüchs), meinte Bertoni, er könne meine Einwände nicht mehr berücksichtigen und Sie würden sicher eine Freude haben. Darauf konnte ich nichts mehr tun u. ich sehe auch nicht, was sich machen ließe. Mein eigener Aufsatz ist ebenso wie der folkloristische Rieglers derart gehalten, daß eine Seite Ihrer etym. Tätigkeit, eben die Arbeit mit Onomatopöien, fortgeführt wird, u. ich hatte Bertoni den Titel "Beiträge z.rom.Wortforschung" <pb facs="#IMG.2" n="2"/>vorgeschlagen. Nach meinem Gedanken sollte jeder Mitarbeiter eine andere Seite der Wort­forschung in Ihrem Sinn pflegen. Wollen Sie das ev. Bertoni nochmals mitteilen, da Riegler ja machtlos ist?</p>
+            <p>Ist es nur eine meiner unbegründeten Vermutungen oder Tatsache, daß mir vorkommt, daß trotz allen lieben Worten, die Sie für das <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1506">Brevier</ref>
+               </bibl> gefunden haben, dieses Sie ein bischen enttäuscht hat? Mir persönlich wäre es ja lieber gewesen, wenn Sie ohne vorherige Ankündigung das Büchlein zugeschickt bekommen hätten – ich überrasche ja so gern –; so aber haben Sie ein Jahr gewartet, bis dann ridiculus mus herauskam. Sagen Sie mir bitte rückhaltlos Ihre Meinung darüber, auch über die Einleitung.</p>
+            <p>Auch mit den Schweizern bin ich nicht ganz zufrieden. <persName ref="[authorityLink]">Hubschmieds</persName> Feuilleton behandelt die Brevier-Angelegenheit als eine Schweizer Nationalangelegenheit (Das "keine Gemeinsamkeiten mit deutschen Gelehrten" trat auch in den Vorverhandlungen zu Tage), ohne auch nur zu erwähnen, daß ein Bonner Universitätslehrer (sein Name tat gewiß nichts zur Sache) die eigentliche Arbeit leistete. Sind die Schweizer nun so hoffnungslos materialistisch, daß sie das Subskribieren eines Werkes, das sie ja dann erwerben, höherstellen als die geistige Arbeit der Herausgabe oder soll die Gemeinsamkeit mit einem Deutschen zurücktreten? Ich habe mein Befremden darüber <persName ref="[authorityLink]">Jud</persName> ausgedrückt. Doch scheint mir, daß auch Sie die Schweizer Initiative höherstellen, da Ihr gedruckter Dank nur an die Schweizer Spender ging.<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.101">H.S., "Dank an die Schweizer Spender des <hi rend="unknown" rendition="#none">
 Schuchardt-Breviers</hi>" (fliegendes Blatt).</ref> Graz 1922.</bibl>
-          </note>
-        </p>
-        <p>Folgen Sie der Einladung der Basken? <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1641">Griera</persName> will mich nun auch, ich glaube auf <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1471">
+               </note>
+            </p>
+            <p>Folgen Sie der Einladung der Basken? <persName ref="[authorityLink]">Griera</persName> will mich nun auch, ich glaube auf <persName ref="[authorityLink]">
 Farinelli</persName>'s Anregung hin, im nächsten Jahr zu Vorträgen nach Barcelona kommen lassen; ojalá !</p>
-        <p>Was ist das für eine Schrift, <hi rend="unknown" rendition="#none">Langage</hi> von Vendryès?<note n="3"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3856">Joseph Vendryès, <hi rend="unknown" rendition="#none">Le langage. Introduction linguistique à l'histoire</hi>
-              </ref>. Paris: La Renaissance du livre 1921.</bibl>
-          </note>
-        </p>
-        <p>Ist <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1097">Baudouin de Courtenay</persName> nicht gestorben?</p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>Über <hi rend="unknown" rendition="#none">papilio</hi> habe ich mich ja auch im <hi rend="unknown"
-            rendition="#none">Archiv</hi> vernehmen lassen u. nun will <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2542">Rohlfs</persName> an mich in einem neueren Artikel anknüpfen. Kennen Sie übrigens den Artikel über holl. Schmetterlingsnamen von Jos. Schrijnen; merkwürderweise scheint außer <hi
-            rend="unknown" rendition="#none">dlinder</hi> nichts Onomatopoet. vorzukommen. Das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.854">rum</ref>. <foreign xml:lang="ro">
-            <hi rend="unknown" rendition="#none">flútare</hi>
-          </foreign> = fluctulare, an dem Puşcariu noch immer festhält, ist nach dem tirol. <hi rend="unknown" rendition="#none">Flutterl</hi>, das ich a.a.O. erwähne wohl gerichtet.</p>
-
-        <p>Der Schluß Ihres Briefes "von J. Jud gegründet, von L. Spitzer aufgemacht", der mir die Rolle des Regisseurs (oder "Faiseurs"?) zuerkennt, stimmt mit dem überein, was Jud selbst und nach ihm <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2776">
-Herbert Steiner</persName> glaubt. Ich habe mich gelegentlich seines <hi
-            rend="unknown"
-            rendition="#none">Ztschr.</hi>-Aufsatzes mit letzterem über diesen Punkt unterhalten. Ich glaube nämlich nicht, daß Jud Sie erst "entdeckt" hat. Sie haben sich selbst "ent|deckt". So richtete Steiner an mich die Pistolenfrage: Hat <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName> je im Seminar oder sonst auf Sch. hingewiesen? Das "kostete mich einen Lacher". Woher denn hätte ich in meinen Anfängen von Ihnen gewußt. Die Tatsache, daß "4 Meyer-Lübke-Schüler" zu Ihrem Geburtstag das Wort ergriffen haben, zeigt doch, daß "M-Ls Schule" (bitte über das Wort nicht zu zürnen) Sie doch auch verstanden hat. Ich bin absolut unvoreingenommen gegenüber M-L, von dem ich in mehrfacher Beziehung entgeistert bin, aber die Gerechtigkeit gebietet anzuerkennen, daß M-L seit vielen Jahren Ihre Arbeiten im Hörsaal stets bewundernd zitiert hat.</p>
-        <p>Alles, was ich in meinem heutigen Briefe behandle, sind wohl Spitzfindigkeiten, vétilles, Quisquilien gegenüber der einen Tatsache, daß ich mich freue, daß Ihr Ehrentag von so vielen Seiten öffentlich zu liebevoller Beschäftigung mit Ihrer Persönlichkeit benützt wurde.</p>
-        <closer>
-          <salute>Und nun verargen Sie mir bitte nicht meine Fragen und lassen Sie bitte wieder bald von sich hören bei den</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzers</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Was ist das für eine Schrift, <hi rend="unknown" rendition="#none">Langage</hi> von Vendryès?<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3856">Joseph Vendryès, <hi rend="unknown" rendition="#none">Le langage. Introduction linguistique à l'histoire</hi>
+                     </ref>. Paris: La Renaissance du livre 1921.</bibl>
+               </note>
+            </p>
+            <p>Ist <persName ref="[authorityLink]">Baudouin de Courtenay</persName> nicht gestorben?</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>Über <hi rend="unknown" rendition="#none">papilio</hi> habe ich mich ja auch im <hi rend="unknown" rendition="#none">Archiv</hi> vernehmen lassen u. nun will <persName ref="[authorityLink]">Rohlfs</persName> an mich in einem neueren Artikel anknüpfen. Kennen Sie übrigens den Artikel über holl. Schmetterlingsnamen von Jos. Schrijnen; merkwürderweise scheint außer <hi rend="unknown" rendition="#none">dlinder</hi> nichts Onomatopoet. vorzukommen. Das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">rum</ref>. <foreign xml:lang="ro">
+                  <hi rend="unknown" rendition="#none">flútare</hi>
+               </foreign> = fluctulare, an dem Puşcariu noch immer festhält, ist nach dem tirol. <hi rend="unknown" rendition="#none">Flutterl</hi>, das ich a.a.O. erwähne wohl gerichtet.</p>
+            <p>Der Schluß Ihres Briefes "von J. Jud gegründet, von L. Spitzer aufgemacht", der mir die Rolle des Regisseurs (oder "Faiseurs"?) zuerkennt, stimmt mit dem überein, was Jud selbst und nach ihm <persName ref="[authorityLink]">
+Herbert Steiner</persName> glaubt. Ich habe mich gelegentlich seines <hi rend="unknown" rendition="#none">Ztschr.</hi>-Aufsatzes mit letzterem über diesen Punkt unterhalten. Ich glaube nämlich nicht, daß Jud Sie erst "entdeckt" hat. Sie haben sich selbst "ent|deckt". So richtete Steiner an mich die Pistolenfrage: Hat <persName ref="[authorityLink]">M-L</persName> je im Seminar oder sonst auf Sch. hingewiesen? Das "kostete mich einen Lacher". Woher denn hätte ich in meinen Anfängen von Ihnen gewußt. Die Tatsache, daß "4 Meyer-Lübke-Schüler" zu Ihrem Geburtstag das Wort ergriffen haben, zeigt doch, daß "M-Ls Schule" (bitte über das Wort nicht zu zürnen) Sie doch auch verstanden hat. Ich bin absolut unvoreingenommen gegenüber M-L, von dem ich in mehrfacher Beziehung entgeistert bin, aber die Gerechtigkeit gebietet anzuerkennen, daß M-L seit vielen Jahren Ihre Arbeiten im Hörsaal stets bewundernd zitiert hat.</p>
+            <p>Alles, was ich in meinem heutigen Briefe behandle, sind wohl Spitzfindigkeiten, vétilles, Quisquilien gegenüber der einen Tatsache, daß ich mich freue, daß Ihr Ehrentag von so vielen Seiten öffentlich zu liebevoller Beschäftigung mit Ihrer Persönlichkeit benützt wurde.</p>
+            <closer>
+               <salute>Und nun verargen Sie mir bitte nicht meine Fragen und lassen Sie bitte wieder bald von sich hören bei den</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzers</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

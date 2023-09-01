@@ -1,786 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Auguste Etcheverry (07-10295)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Maria Jose</forename>
-            <surname>Kerejeta</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3063" type="PID">o:hsa.letter.3063</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">07-10295</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="http://d-nb.info/gnd/2170570-7"> Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">10295</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="fr"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="15" unit="pages">15 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1889-04-04">1889-04-04</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Maria Jose</forename>
-              <surname>Kerejeta</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Auguste Etcheverry</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1456"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3063">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1889-04-04">1889-04-04</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1456" ref="https://viaf.org/viaf/99902922">
-            <forename>Auguste</forename>
-            <surname>Etcheverry</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1456" type="context">
-                        Korrespondenz Hugo Schuchardt - Auguste Etcheverry
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5666" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskischsprachige Literatur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3487" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Informationsbeschaffung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3222" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sitzungsberichte der philosophisch-historischen Classe der Kaiserlichen Akademie der Wissenschaften. Wien</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="fr">Französisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.1">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.2">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.3">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.4">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.5">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.6">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.7">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.8">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.9">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.10">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.11">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.12">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.13">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.14">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3063" xml:id="IMG.15">
-        <desc>
-          <ref target="http://d-nb.info/gnd/2170570-7">UB Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3063" xml:lang="fr">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 4 avril 1889</dateline>
-        <opener>Cher maître,</opener>
-
-        <p>Je vous écrirais en basque; mais je suis très pressé, voilà pourquoi je vous écris en français. Pendant cinq mois, j’ai eu en horreur tout ce qui est lire et écrire; je n’ai fait que flâner, patiner (savez-vous qu’est ce que c’est?), monter à cheval, danser, jouer aux cartes etc. Maintenant le goût des études m’est revenu; et c’est justement le <hi
-            rend="unknown"
-            rendition="#none">basque</hi> dans lequel je me suis plongé. Je prépare un travail destiné à être publié dans le <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3222">Bulletin de l’Académie de Vienne</ref>; c’est à cet égard que je vous demande des renseignements et vous m’obligeriez au plus haut degré, si vous vouliez me les donner <hi
-            rend="unknown" rendition="#none">le plus tôt possible</hi>. </p>
-        <p>J’ai lu votre fable <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.12" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.13" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.14" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.15" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3063" xml:lang="fr">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 4 avril 1889</dateline>
+            <opener>Cher maître,</opener>
+            <p>Je vous écrirais en basque; mais je suis très pressé, voilà pourquoi je vous écris en français. Pendant cinq mois, j’ai eu en horreur tout ce qui est lire et écrire; je n’ai fait que flâner, patiner (savez-vous qu’est ce que c’est?), monter à cheval, danser, jouer aux cartes etc. Maintenant le goût des études m’est revenu; et c’est justement le <hi rend="unknown" rendition="#none">basque</hi> dans lequel je me suis plongé. Je prépare un travail destiné à être publié dans le <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3222">Bulletin de l’Académie de Vienne</ref>; c’est à cet égard que je vous demande des renseignements et vous m’obligeriez au plus haut degré, si vous vouliez me les donner <hi rend="unknown" rendition="#none">le plus tôt possible</hi>. </p>
+            <p>J’ai lu votre fable <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">
 Chorien besta</hi>
-          </foreign>; elle est très-jolie; mais il y a des passages que je ne comprends pas bien.</p>
-        <p>Les voici: </p>
-        <p>1. <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">
-              <hi rend="unknown" rendition="#none">
+               </foreign>; elle est très-jolie; mais il y a des passages que je ne comprends pas bien.</p>
+            <p>Les voici: </p>
+            <p>1. <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">
+                     <hi rend="unknown" rendition="#none">
 Ase</hi>
-            </hi>
-            <hi rend="unknown" rendition="#none">
-              <hi rend="unknown" rendition="#none">baten</hi>
-            </hi>
-            <hi rend="unknown" rendition="#none"> ari da</hi>
-          </foreign>
-        </p>
-        <p>
-          <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">
-              <hi rend="unknown" rendition="#none"> Ona</hi>
-            </hi>
-            <hi rend="unknown" rendition="#none"> preparatzen.</hi>
-          </foreign>
-        </p>
-        <p>2. —— <foreign xml:lang="eu">arria lurrean</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="eu">Zenean puskatu</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">
-              <hi rend="unknown" rendition="#none"> Batek</hi>
-            </hi>
-            <hi rend="unknown" rendition="#none">: maingutu dela,</hi>
-          </foreign>
-        </p>
-        <p>
-          <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none"> Bertzea okertu.</hi>
-          </foreign>
-        </p>
-        <p>Est ce que c’est <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">batek erraiten du:</hi>
-            <hi rend="unknown" rendition="#none">maingutu dela, bertzea okertu</hi>
-          </foreign> (un, en devenant boiteux, l’autre borgne <hi rend="unknown" rendition="#none">
+                  </hi>
+                  <hi rend="unknown" rendition="#none">
+                     <hi rend="unknown" rendition="#none">baten</hi>
+                  </hi>
+                  <hi rend="unknown" rendition="#none"> ari da</hi>
+               </foreign>
+            </p>
+            <p>
+               <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">
+                     <hi rend="unknown" rendition="#none"> Ona</hi>
+                  </hi>
+                  <hi rend="unknown" rendition="#none"> preparatzen.</hi>
+               </foreign>
+            </p>
+            <p>2. —— <foreign xml:lang="eu">arria lurrean</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="eu">Zenean puskatu</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">
+                     <hi rend="unknown" rendition="#none"> Batek</hi>
+                  </hi>
+                  <hi rend="unknown" rendition="#none">: maingutu dela,</hi>
+               </foreign>
+            </p>
+            <p>
+               <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none"> Bertzea okertu.</hi>
+               </foreign>
+            </p>
+            <p>Est ce que c’est <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">batek erraiten du:</hi>
+                  <hi rend="unknown" rendition="#none">maingutu dela, bertzea okertu</hi>
+               </foreign> (un, en devenant boiteux, l’autre borgne <hi rend="unknown" rendition="#none">
 dit</hi>:)?</p>
-        <p>(<foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">usoen onetan</hi>
-          </foreign> c’est “au profit des pigeons”? [)]</p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>3. <hi rend="unknown" rendition="#none">Zeren askotan etsai zare bilhakatzen</hi>
-        </p>
-        <p>“Parce que souvent vous devenez des ennemis”; est-ce on n’aurait pas dû dire: parce que par là <hi
-            rend="unknown" rendition="#none">vous vous faites</hi> des ennemis?</p>
-        <p>Puis, au lieu de <hi rend="unknown"
-            rendition="#none">yan - eta - yan ari duk</hi>, ne dirait-on pas mieux <hi rend="unknown" rendition="#none">yaten - eta - yaten</hi> du?</p>
-
-        <p>Enfin, je sais bien que vous autres poètes du Labourd vous avez l’habitude d’adopter des mots bas navarrais et guipuzcoans: Ce sera votre bon droit seulement, dans l’intérêt de mes études, je voudrais être renseigné là-dessus: N’est-ce pas, on ne dit pas à <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.1">
+            <p>(<foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">usoen onetan</hi>
+               </foreign> c’est “au profit des pigeons”? [)]</p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>3. <hi rend="unknown" rendition="#none">Zeren askotan etsai zare bilhakatzen</hi>
+            </p>
+            <p>“Parce que souvent vous devenez des ennemis”; est-ce on n’aurait pas dû dire: parce que par là <hi rend="unknown" rendition="#none">vous vous faites</hi> des ennemis?</p>
+            <p>Puis, au lieu de <hi rend="unknown" rendition="#none">yan - eta - yan ari duk</hi>, ne dirait-on pas mieux <hi rend="unknown" rendition="#none">yaten - eta - yaten</hi> du?</p>
+            <p>Enfin, je sais bien que vous autres poètes du Labourd vous avez l’habitude d’adopter des mots bas navarrais et guipuzcoans: Ce sera votre bon droit seulement, dans l’intérêt de mes études, je voudrais être renseigné là-dessus: N’est-ce pas, on ne dit pas à <placeName ref="[authorityLink]">
 Sare</placeName>: </p>
-        <p>
-          <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">eguntto — gatekotan — ez ditezentzat </hi>
-          </foreign>?</p>
-
-        <p>Quand j’avais le plaisir de causer avec vous, vous m’avez signalé bien des fois des expressions et des formes qu’on n’emploie pas à <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.1">Sare</placeName>; par exemple <hi rend="unknown"
-            rendition="#none">orotan = guzietan</hi>. Maintenant, comment se fait-il que Joanes Berjes de <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.1">Sare</placeName> qui ne sait ni lire ni écrire, dise dans sa poésie:</p>
-        <p>
-          <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">Artzaingoa : bazterrak oro</hi> — <hi rend="unknown"
-              rendition="#none">orotan</hi> et aussi <hi rend="unknown" rendition="#none">nola</hi>
-            <hi rend="unknown" rendition="#none">ezagut <hi rend="unknown" rendition="#none">
+            <p>
+               <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">eguntto — gatekotan — ez ditezentzat </hi>
+               </foreign>?</p>
+            <p>Quand j’avais le plaisir de causer avec vous, vous m’avez signalé bien des fois des expressions et des formes qu’on n’emploie pas à <placeName ref="[authorityLink]">Sare</placeName>; par exemple <hi rend="unknown" rendition="#none">orotan = guzietan</hi>. Maintenant, comment se fait-il que Joanes Berjes de <placeName ref="[authorityLink]">Sare</placeName> qui ne sait ni lire ni écrire, dise dans sa poésie:</p>
+            <p>
+               <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">Artzaingoa : bazterrak oro</hi> — <hi rend="unknown" rendition="#none">orotan</hi> et aussi <hi rend="unknown" rendition="#none">nola</hi>
+                  <hi rend="unknown" rendition="#none">ezagut <hi rend="unknown" rendition="#none">
 dírok</hi>
-            </hi>
-          </foreign> (c’est bas-navarrais)?</p>
-        <p>En passant, je vous demande qu’est ce que signifie <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">trempu</hi>
-          </hi> dans la poésie <hi rend="unknown" rendition="#none">Artzain dohatsua</hi> de <hi rend="unknown" rendition="#none">Mendibil</hi>:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">eta bethi ene <hi rend="unknown"
-            rendition="#none">trempuaz</hi> da bekhaizti</hi> (est-ce <hi rend="unknown"
-            rendition="#none">appétit</hi> ou <hi rend="unknown" rendition="#none">soupe</hi>?) </p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>et <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">joria</hi>
-          </hi> dans la poésie <hi rend="unknown" rendition="#none">Maria</hi> de <hi rend="unknown" rendition="#none">Elizamburu</hi>:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Mariak balinbadu moltsa joria</hi>
-        </p>
-        <p>Comme vous êtes fabuliste, vous devriez connaître les fables de l’abbé <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1620">
-            <hi rend="unknown" rendition="#none">Goyhetche</hi>
-
-          </persName>. Je voudrais bien savoir quelle sorte de labourdin est celui dans lequel il a écrit (je crois, il était d’Urrugne). Il met: <hi
-            rend="unknown" rendition="#none">haiñ, zoiñ, eguiñ, griña</hi> etc., ce qui serait de <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.95">St.-Jean-de Luz</placeName>; mais à côté de cela nous y avons: <hi
-            rend="unknown" rendition="#none">guzier</hi> pour <hi rend="unknown" rendition="#none">guziei</hi>, <hi
-            rend="unknown" rendition="#none">ikusiren</hi>
-          <hi rend="unknown" rendition="#none">du</hi> pour <hi rend="unknown" rendition="#none">ikusiko du</hi>, <hi
-            rend="unknown" rendition="#none">aboro</hi> dans le sens “d’avantage”, <hi rend="unknown"
-            rendition="#none">ukhan</hi> “avoir”, <hi rend="unknown"
-            rendition="#none">yin</hi> “venir” etc. qui selon moi ne sont connus que dans <hi rend="unknown" rendition="#none">la Basse Navarre et dans la Soule.</hi>
-        </p>
-        <p>Maintenant parlons de nos <hi rend="unknown"
-            rendition="#none">dialogues</hi> que je vais faire imprimer avec une traduction et des annotations. Le premier que vous avez écrit quand j’étais encore à <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.1">Sare</placeName>, ne m’offre pas de difficultés. Seulement il y a là question d’un coup fait par Larronyo (<hi
-            rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">pikeko</hi>
-          </hi>
-          <hi rend="unknown"
-            rendition="#none">pilota ehun eta hamabortz metretan herriko etcheari paret eman zion</hi>), et après on dit: <hi
-            rend="unknown" rendition="#none">pilota hura <hi rend="unknown"
-              rendition="#none">piketik</hi> zuela, chachariek <hi rend="unknown"
-            rendition="#none">arraia</hi> yuiatu zioten</hi>.ǀ <hi rend="unknown" rendition="#none">Arraia</hi> et <hi
-            rend="unknown" rendition="#none">chacha</hi>
-          <pb facs="#IMG.4" n="4"/> sont, je crois, la même chose; mais <hi rend="unknown"
-            rendition="#none">falta</hi> est autre chose, et on m’avait dit qu’en rejetant une balle qui tombe <hi
-            rend="unknown" rendition="#none">piketik</hi> (ou <hi rend="unknown"
-            rendition="#none">pikean</hi> ?), on fait <hi rend="unknown" rendition="#none">falta</hi>. Dans la poésie <bibl>
-            <hi rend="unknown" rendition="#none">Pilotariak</hi> de <hi rend="unknown" rendition="#none">
-              <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1019">
+                  </hi>
+               </foreign> (c’est bas-navarrais)?</p>
+            <p>En passant, je vous demande qu’est ce que signifie <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">trempu</hi>
+               </hi> dans la poésie <hi rend="unknown" rendition="#none">Artzain dohatsua</hi> de <hi rend="unknown" rendition="#none">Mendibil</hi>:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">eta bethi ene <hi rend="unknown" rendition="#none">trempuaz</hi> da bekhaizti</hi> (est-ce <hi rend="unknown" rendition="#none">appétit</hi> ou <hi rend="unknown" rendition="#none">soupe</hi>?) </p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>et <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">joria</hi>
+               </hi> dans la poésie <hi rend="unknown" rendition="#none">Maria</hi> de <hi rend="unknown" rendition="#none">Elizamburu</hi>:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Mariak balinbadu moltsa joria</hi>
+            </p>
+            <p>Comme vous êtes fabuliste, vous devriez connaître les fables de l’abbé <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Goyhetche</hi>
+               </persName>. Je voudrais bien savoir quelle sorte de labourdin est celui dans lequel il a écrit (je crois, il était d’Urrugne). Il met: <hi rend="unknown" rendition="#none">haiñ, zoiñ, eguiñ, griña</hi> etc., ce qui serait de <placeName ref="[authorityLink]">St.-Jean-de Luz</placeName>; mais à côté de cela nous y avons: <hi rend="unknown" rendition="#none">guzier</hi> pour <hi rend="unknown" rendition="#none">guziei</hi>, <hi rend="unknown" rendition="#none">ikusiren</hi>
+               <hi rend="unknown" rendition="#none">du</hi> pour <hi rend="unknown" rendition="#none">ikusiko du</hi>, <hi rend="unknown" rendition="#none">aboro</hi> dans le sens “d’avantage”, <hi rend="unknown" rendition="#none">ukhan</hi> “avoir”, <hi rend="unknown" rendition="#none">yin</hi> “venir” etc. qui selon moi ne sont connus que dans <hi rend="unknown" rendition="#none">la Basse Navarre et dans la Soule.</hi>
+            </p>
+            <p>Maintenant parlons de nos <hi rend="unknown" rendition="#none">dialogues</hi> que je vais faire imprimer avec une traduction et des annotations. Le premier que vous avez écrit quand j’étais encore à <placeName ref="[authorityLink]">Sare</placeName>, ne m’offre pas de difficultés. Seulement il y a là question d’un coup fait par Larronyo (<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">pikeko</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none">pilota ehun eta hamabortz metretan herriko etcheari paret eman zion</hi>), et après on dit: <hi rend="unknown" rendition="#none">pilota hura <hi rend="unknown" rendition="#none">piketik</hi> zuela, chachariek <hi rend="unknown" rendition="#none">arraia</hi> yuiatu zioten</hi>.ǀ <hi rend="unknown" rendition="#none">Arraia</hi> et <hi rend="unknown" rendition="#none">chacha</hi>
+               <pb facs="#IMG.4" n="4"/> sont, je crois, la même chose; mais <hi rend="unknown" rendition="#none">falta</hi> est autre chose, et on m’avait dit qu’en rejetant une balle qui tombe <hi rend="unknown" rendition="#none">piketik</hi> (ou <hi rend="unknown" rendition="#none">pikean</hi> ?), on fait <hi rend="unknown" rendition="#none">falta</hi>. Dans la poésie <bibl>
+                  <hi rend="unknown" rendition="#none">Pilotariak</hi> de <hi rend="unknown" rendition="#none">
+                     <persName ref="[authorityLink]">
 Zalduby</persName>
-            </hi>
-          </bibl> il y a aussi des expressions que je ne comprends pas</p>
-        <p>str. 1. <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">elgarren bethe ziren</hi>
-          </foreign>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">esku hutska biac</hi>
-        </p>
-        <p> 4. <hi rend="unknown" rendition="#none">bai besain bai besazpi</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">bai pumpa lasterrak</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">denak eder zituen</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">kurutchet ezkerrak</hi>.</p>
-        <p> 4. <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">zafrari</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none"> supherrak</hi>. Est ce que c’est celui qui <hi rend="unknown" rendition="#none">botatzen du pilota</hi>?</p>
-        <p> 5. <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">goretik, aphaletik</hi>
-          </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">ari ziren berdin.</hi>
-        </p>
-        <p> 6.<hi rend="unknown" rendition="#none"> – ziren butatik pikean</hi>
-        </p>
-        <p> 7.<hi rend="unknown" rendition="#none"> lerratuz chirrichtan</hi>
-        </p>
-        <p> 7.<hi rend="unknown" rendition="#none"> yokoz bezala <hi rend="unknown" rendition="#none">
+                  </hi>
+               </bibl> il y a aussi des expressions que je ne comprends pas</p>
+            <p>str. 1. <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">elgarren bethe ziren</hi>
+               </foreign>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">esku hutska biac</hi>
+            </p>
+            <p> 4. <hi rend="unknown" rendition="#none">bai besain bai besazpi</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">bai pumpa lasterrak</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">denak eder zituen</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">kurutchet ezkerrak</hi>.</p>
+            <p> 4. <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">zafrari</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none"> supherrak</hi>. Est ce que c’est celui qui <hi rend="unknown" rendition="#none">botatzen du pilota</hi>?</p>
+            <p> 5. <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">goretik, aphaletik</hi>
+               </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">ari ziren berdin.</hi>
+            </p>
+            <p> 6.<hi rend="unknown" rendition="#none"> – ziren butatik pikean</hi>
+            </p>
+            <p> 7.<hi rend="unknown" rendition="#none"> lerratuz chirrichtan</hi>
+            </p>
+            <p> 7.<hi rend="unknown" rendition="#none"> yokoz bezala <hi rend="unknown" rendition="#none">
 kaskoz</hi>
-          </hi>
-        </p>
-        <p> 8. <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">pasolari </hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">bero</hi>
-        </p>
-        <p> 11.<hi rend="unknown" rendition="#none"> ai egun bezein gazte</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">balagozi</hi> bihar! </hi>[escrito por otra mano al margen: bezen gazte balagozi benaz]</p>
-        <pb facs="#IMG.5" n="5"/>
-        <p>1. <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">Jinkuak egun on <hi rend="unknown" rendition="#none">dizula</hi>
-            </hi>
-          </foreign>.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Jinkuak <hi rend="unknown" rendition="#none">digula</hi> osasuna.</hi>
-        </p>
-
-        <p> Españoleko mintzoaren arabera ezta errana hori? Iduritzen zait Sarako (edo Lapurdiko) eskuaran behar zela iskiribatu: <hi
-            rend="unknown" rendition="#none">
+               </hi>
+            </p>
+            <p> 8. <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">pasolari </hi>
+               </hi>
+               <hi rend="unknown" rendition="#none">bero</hi>
+            </p>
+            <p> 11.<hi rend="unknown" rendition="#none"> ai egun bezein gazte</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">balagozi</hi> bihar! </hi>[escrito por otra mano al margen: bezen gazte balagozi benaz]</p>
+            <pb facs="#IMG.5" n="5"/>
+            <p>1. <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">Jinkuak egun on <hi rend="unknown" rendition="#none">dizula</hi>
+                  </hi>
+               </foreign>.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Jinkuak <hi rend="unknown" rendition="#none">digula</hi> osasuna.</hi>
+            </p>
+            <p> Españoleko mintzoaren arabera ezta errana hori? Iduritzen zait Sarako (edo Lapurdiko) eskuaran behar zela iskiribatu: <hi rend="unknown" rendition="#none">
 dautzula, daukula</hi>.</p>
-        <p>2. <hi rend="unknown" rendition="#none">Ba, Ganes errana da ostatua azken ofizina dela, eta ezta ere <hi
-              rend="unknown" rendition="#none">egia erran</hi>
-            <hi rend="unknown"
-              rendition="#none">nihon den</hi> ofiziorik hoberena, bainan badakizu toki huntan ahal dena behar <hi
-              rend="unknown" rendition="#none">baita</hi>
-          </hi>. </p>
-        <p>Eztut ongi komprenitzen hori. Franz.: “<foreign
-              xml:lang="fr">Oui, Ganes, on dit que le métier d’hôtelier est le dernier de tous et <hi rend="unknown"
-              rendition="#none">pour dire la verité</hi> (?) il n’est pas le meilleur des métiers qui existent <hi
-              rend="unknown" rendition="#none">quelque part</hi> (?), mais vous savez, dans ce lieu, <hi rend="unknown"
-            rendition="#none">on doit faire</hi> (?) ce qu’on peut</foreign>.” Zertako ezta iskiribatua: <hi
-            rend="unknown" rendition="#none">ahal dena egin behar dela?</hi>
-        </p>
-        <p> 3. <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Debrukeria</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none"> nausitzen hari da</hi>
-        </p>
-        <p>Franz<hi rend="unknown" rendition="#none">. <foreign xml:lang="fr">c’est le diable qui s’y mêle, les affaires vont mal?</foreign>
-          </hi> Indaitzu <hi rend="unknown" rendition="#none">debrukeria</hi> hitzaren bertze etsenplu batzuek!</p>
-        <pb facs="#IMG.6" n="6"/>
-        <p>…4.<hi rend="unknown" rendition="#none"> Yar zaite <hi rend="unknown" rendition="#none">ori</hi> kadira</hi>
-        </p>
-        <p>Ez: <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">huna</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none"> edo <hi rend="unknown" rendition="#none">horra</hi> kadira?</hi>
-        </p>
-        <p> 5. <hi rend="unknown" rendition="#none">Andre <hi rend="unknown" rendition="#none">
+            <p>2. <hi rend="unknown" rendition="#none">Ba, Ganes errana da ostatua azken ofizina dela, eta ezta ere <hi rend="unknown" rendition="#none">egia erran</hi>
+                  <hi rend="unknown" rendition="#none">nihon den</hi> ofiziorik hoberena, bainan badakizu toki huntan ahal dena behar <hi rend="unknown" rendition="#none">baita</hi>
+               </hi>. </p>
+            <p>Eztut ongi komprenitzen hori. Franz.: “<foreign xml:lang="fr">Oui, Ganes, on dit que le métier d’hôtelier est le dernier de tous et <hi rend="unknown" rendition="#none">pour dire la verité</hi> (?) il n’est pas le meilleur des métiers qui existent <hi rend="unknown" rendition="#none">quelque part</hi> (?), mais vous savez, dans ce lieu, <hi rend="unknown" rendition="#none">on doit faire</hi> (?) ce qu’on peut</foreign>.” Zertako ezta iskiribatua: <hi rend="unknown" rendition="#none">ahal dena egin behar dela?</hi>
+            </p>
+            <p> 3. <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Debrukeria</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none"> nausitzen hari da</hi>
+            </p>
+            <p>Franz<hi rend="unknown" rendition="#none">. <foreign xml:lang="fr">c’est le diable qui s’y mêle, les affaires vont mal?</foreign>
+               </hi> Indaitzu <hi rend="unknown" rendition="#none">debrukeria</hi> hitzaren bertze etsenplu batzuek!</p>
+            <pb facs="#IMG.6" n="6"/>
+            <p>…4.<hi rend="unknown" rendition="#none"> Yar zaite <hi rend="unknown" rendition="#none">ori</hi> kadira</hi>
+            </p>
+            <p>Ez: <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">huna</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none"> edo <hi rend="unknown" rendition="#none">horra</hi> kadira?</hi>
+            </p>
+            <p> 5. <hi rend="unknown" rendition="#none">Andre <hi rend="unknown" rendition="#none">
 kochkorra</hi>
-          </hi>
-        </p>
-        <p>Zer da hori?</p>
-        <p> 6. <hi rend="unknown" rendition="#none">Nere <hi rend="unknown" rendition="#none">demboraco</hi> nekia seguratua dut</hi>
-        </p>
-        <p>Nahi du erraten bere emaztea berentzat <hi rend="unknown" rendition="#none">
-demborako</hi> nekia dela, (<hi
-            rend="unknown" rendition="#none">sekulako</hi> nekiaren edo gaztiguaren aldean?[)]</p>
-        <p> 7. Zertako Piarres eta Ganes haurreko lagunak direnak eztute <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">to</hi>
-          </hi>katzen elkar?</p>
-        <p> 8. <hi rend="unknown" rendition="#none">Eskolan ginabiltzalarik behin <hi rend="unknown" rendition="#none">biper eginik</hi> gan ginen mahats ebasteat</hi>
-        </p>
-        <p>Zer da <hi rend="unknown" rendition="#none">biper eginik</hi>?</p>
-        <p> 9. <hi rend="unknown" rendition="#none">Etcheat gan galtza zilhotik belhaun koskua ageri-ta ait-et-amak <hi
-              rend="unknown" rendition="#none">ederrak</hi> eman baitzarozkidaten</hi>
-          <hi rend="unknown" rendition="#none">Ederrak</hi> ematen — hitz zorrotzak edo eotzea? des mots ou des coups?</p>
-        <pb facs="#IMG.7" n="7"/>
-        <p>10. <hi rend="unknown" rendition="#none">Neroni ere egoten naiz orduko gure yostetak eta yikutriak gogoan</hi>.</p>
-        <p> Franz. <hi rend="unknown"
-            rendition="#none">je reste là à penser à nos jeux et nos drôleries d’enfants?</hi> Eztitake erran: <hi
-            rend="unknown" rendition="#none">
+               </hi>
+            </p>
+            <p>Zer da hori?</p>
+            <p> 6. <hi rend="unknown" rendition="#none">Nere <hi rend="unknown" rendition="#none">demboraco</hi> nekia seguratua dut</hi>
+            </p>
+            <p>Nahi du erraten bere emaztea berentzat <hi rend="unknown" rendition="#none">
+demborako</hi> nekia dela, (<hi rend="unknown" rendition="#none">sekulako</hi> nekiaren edo gaztiguaren aldean?[)]</p>
+            <p> 7. Zertako Piarres eta Ganes haurreko lagunak direnak eztute <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">to</hi>
+               </hi>katzen elkar?</p>
+            <p> 8. <hi rend="unknown" rendition="#none">Eskolan ginabiltzalarik behin <hi rend="unknown" rendition="#none">biper eginik</hi> gan ginen mahats ebasteat</hi>
+            </p>
+            <p>Zer da <hi rend="unknown" rendition="#none">biper eginik</hi>?</p>
+            <p> 9. <hi rend="unknown" rendition="#none">Etcheat gan galtza zilhotik belhaun koskua ageri-ta ait-et-amak <hi rend="unknown" rendition="#none">ederrak</hi> eman baitzarozkidaten</hi>
+               <hi rend="unknown" rendition="#none">Ederrak</hi> ematen — hitz zorrotzak edo eotzea? des mots ou des coups?</p>
+            <pb facs="#IMG.7" n="7"/>
+            <p>10. <hi rend="unknown" rendition="#none">Neroni ere egoten naiz orduko gure yostetak eta yikutriak gogoan</hi>.</p>
+            <p> Franz. <hi rend="unknown" rendition="#none">je reste là à penser à nos jeux et nos drôleries d’enfants?</hi> Eztitake erran: <hi rend="unknown" rendition="#none">
 Nerone </hi>[sic]<hi rend="unknown" rendition="#none"> ere orduko gure yostetak eta yikutriak gogoratzen nago</hi>. </p>
-        <p>11. <hi rend="unknown" rendition="#none">eta zuk, Piarres, gargehiago familia <hi rend="unknown" rendition="#none">egintchea</hi> duzu?</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none"> Familia hazia duzu?</hi>
-        </p>
-        <p> edo<hi rend="unknown" rendition="#none"> familia baduzu?</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none"> haurrik baduzu?</hi>
-        </p>
-        <p>12 <hi rend="unknown"
-              rendition="#none">zer iduritzen zait niri, zuri arno trago bat eskaini gabe hoinbertze demboraren buruan nire haurreko lagun <hi
-              rend="unknown" rendition="#none">
+            <p>11. <hi rend="unknown" rendition="#none">eta zuk, Piarres, gargehiago familia <hi rend="unknown" rendition="#none">egintchea</hi> duzu?</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none"> Familia hazia duzu?</hi>
+            </p>
+            <p> edo<hi rend="unknown" rendition="#none"> familia baduzu?</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none"> haurrik baduzu?</hi>
+            </p>
+            <p>12 <hi rend="unknown" rendition="#none">zer iduritzen zait niri, zuri arno trago bat eskaini gabe hoinbertze demboraren buruan nire haurreko lagun <hi rend="unknown" rendition="#none">
 bat</hi> ikhusterat <hi rend="unknown" rendition="#none">etorriko</hi>-ta</hi>. </p>
-        <p>Certako ez <hi rend="unknown" rendition="#none">nere haurreko lagun ba<hi rend="unknown"
-              rendition="#none">tek</hi> ni ikusterat etho<hi rend="unknown" rendition="#none">rri</hi>-ta?</hi> |12|</p>
-        <pb facs="#IMG.8" n="8"/>
-        <p>13. <hi rend="unknown" rendition="#none">edan errecha!</hi>
-        </p>
-        <p>Zer da? Arno mota bat zointek hainitz edatzen ahal baita?</p>
-        <p>14. <hi rend="unknown" rendition="#none">aurthen ethorri gogoa <hi rend="unknown" rendition="#none">
+            <p>Certako ez <hi rend="unknown" rendition="#none">nere haurreko lagun ba<hi rend="unknown" rendition="#none">tek</hi> ni ikusterat etho<hi rend="unknown" rendition="#none">rri</hi>-ta?</hi> |12|</p>
+            <pb facs="#IMG.8" n="8"/>
+            <p>13. <hi rend="unknown" rendition="#none">edan errecha!</hi>
+            </p>
+            <p>Zer da? Arno mota bat zointek hainitz edatzen ahal baita?</p>
+            <p>14. <hi rend="unknown" rendition="#none">aurthen ethorri gogoa <hi rend="unknown" rendition="#none">
 nintzen</hi>
-          </hi>
-        </p>
-        <p>Ez: <hi rend="unknown" rendition="#none">gogoa <hi rend="unknown" rendition="#none">nuen</hi>
-          </hi>?</p>
-        <p>15. <hi rend="unknown" rendition="#none">Ez-ten mirakuila! (<hi rend="unknown" rendition="#none">nonbait hala beharra aparantziaz</hi>)</hi>
-        </p>
-        <p>Batere eztut komprenitzen hori.</p>
-        <p>16. <hi rend="unknown" rendition="#none">Eztakit Eskualherrian bertze herriko besta bat<hi rend="unknown" rendition="#none">erat</hi>
-            <hi rend="unknown" rendition="#none">non</hi> biltzen othe den Sarara bezembat yende</hi>.</p>
-        <p> Ezta hobe iskiribatzea: <hi rend="unknown" rendition="#none">besta <hi rend="unknown" rendition="#none">
+               </hi>
+            </p>
+            <p>Ez: <hi rend="unknown" rendition="#none">gogoa <hi rend="unknown" rendition="#none">nuen</hi>
+               </hi>?</p>
+            <p>15. <hi rend="unknown" rendition="#none">Ez-ten mirakuila! (<hi rend="unknown" rendition="#none">nonbait hala beharra aparantziaz</hi>)</hi>
+            </p>
+            <p>Batere eztut komprenitzen hori.</p>
+            <p>16. <hi rend="unknown" rendition="#none">Eztakit Eskualherrian bertze herriko besta bat<hi rend="unknown" rendition="#none">erat</hi>
+                  <hi rend="unknown" rendition="#none">non</hi> biltzen othe den Sarara bezembat yende</hi>.</p>
+            <p> Ezta hobe iskiribatzea: <hi rend="unknown" rendition="#none">besta <hi rend="unknown" rendition="#none">
 bat norat</hi>
-          </hi>?</p>
-        <p>17. Eztuzu pronuntziatzen <hi rend="unknown" rendition="#none">manechak</hi> (franz. <hi rend="unknown"
-            rendition="#none">manège</hi>); iskribatu duzu: <hi rend="unknown" rendition="#none">manesak</hi>.</p>
-        <pb facs="#IMG.9" n="9"/>
-        <p>16. <hi rend="unknown" rendition="#none">Kas K0oindu dela fama</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none"> laster jarraik <hi rend="unknown" rendition="#none">
+               </hi>?</p>
+            <p>17. Eztuzu pronuntziatzen <hi rend="unknown" rendition="#none">manechak</hi> (franz. <hi rend="unknown" rendition="#none">manège</hi>); iskribatu duzu: <hi rend="unknown" rendition="#none">manesak</hi>.</p>
+            <pb facs="#IMG.9" n="9"/>
+            <p>16. <hi rend="unknown" rendition="#none">Kas K0oindu dela fama</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none"> laster jarraik <hi rend="unknown" rendition="#none">
 lero</hi>
-          </hi>.</p>
-        <p>18. <hi rend="unknown" rendition="#none">han du chachak abilki </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">hausten</hi> errefera</hi>.</p>
-        <p>19. <hi rend="unknown" rendition="#none">errechachako edo</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none"> arte jo murritza</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none"> kintze gudukatuan</hi>
-        </p>
-        <p>20. <hi rend="unknown" rendition="#none">pik arrasak ez badu</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none"> errefera hiltzen</hi>
-        </p>
-        <p>Voilà encore le <hi rend="unknown" rendition="#none">pik</hi>? Comment tue-t-il <hi rend="unknown" rendition="#none">
-            <foreign xml:lang="eu">
+               </hi>.</p>
+            <p>18. <hi rend="unknown" rendition="#none">han du chachak abilki </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">hausten</hi> errefera</hi>.</p>
+            <p>19. <hi rend="unknown" rendition="#none">errechachako edo</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none"> arte jo murritza</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none"> kintze gudukatuan</hi>
+            </p>
+            <p>20. <hi rend="unknown" rendition="#none">pik arrasak ez badu</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none"> errefera hiltzen</hi>
+            </p>
+            <p>Voilà encore le <hi rend="unknown" rendition="#none">pik</hi>? Comment tue-t-il <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="eu">
 l’errefera</foreign>
-          </hi>?</p>
-        <p>21. <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">huts</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none"> edo </hi>chacha. <hi rend="unknown"
-            rendition="#none">Huts</hi>, je suppose, est la même chose que <hi rend="unknown" rendition="#none">
-            <foreign xml:lang="eu">falta</foreign>
-          </hi>?</p>
-
-        <p>Vous voyez, presque toute la poésie aurait besoin de commentaire pour moi. Dans la Mémoire sur les fêtes de <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.119">
-Saint Sébastien</placeName> il y a une poésie sur <persName>José <note
-              n="1" place="foot" type="editorial">[raya sobre la s]</note> Juakiñ</persName>, laquelle je voudrais me faire expliquer; car quant au guipuzcoan, il me fait plus de difficultés encore que le labourdin. C’est surtout cette strophe qui m’intéresse:</p>
-        <pb facs="#IMG.10" n="10"/>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <foreign xml:lang="eu">Errebotian ere</foreign>
-          </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none"> etzan egoten lo, </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">ongi irabaziyak </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">ditu zenbait <hi rend="unknown" rendition="#none">
+               </hi>?</p>
+            <p>21. <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">huts</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none"> edo </hi>chacha. <hi rend="unknown" rendition="#none">Huts</hi>, je suppose, est la même chose que <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="eu">falta</foreign>
+               </hi>?</p>
+            <p>Vous voyez, presque toute la poésie aurait besoin de commentaire pour moi. Dans la Mémoire sur les fêtes de <placeName ref="[authorityLink]">
+Saint Sébastien</placeName> il y a une poésie sur <persName>José <note n="1" place="foot" type="editorial">[raya sobre la s]</note> Juakiñ</persName>, laquelle je voudrais me faire expliquer; car quant au guipuzcoan, il me fait plus de difficultés encore que le labourdin. C’est surtout cette strophe qui m’intéresse:</p>
+            <pb facs="#IMG.10" n="10"/>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="eu">Errebotian ere</foreign>
+               </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none"> etzan egoten lo, </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">ongi irabaziyak </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">ditu zenbait <hi rend="unknown" rendition="#none">
 chalo;</hi>
-          </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">saketik lautatik bat</hi>
-          </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">antzuben pikara</hi>
-          </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">errestalariyari</hi>
-          </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">sartubaz ikara</hi>
-          </hi>.</p>
-        <p>Les questions qui se rapportent à votre <hi rend="unknown" rendition="#none">
+               </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">saketik lautatik bat</hi>
+               </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">antzuben pikara</hi>
+               </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">errestalariyari</hi>
+               </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">sartubaz ikara</hi>
+               </hi>.</p>
+            <p>Les questions qui se rapportent à votre <hi rend="unknown" rendition="#none">
 seconde</hi> dialogue se trouvent ci-jointes; je les avais écrites avant de commencer cette lettre.</p>
-
-        <p>Je crois bien que vous aurez quelque difficulté à me satisfaire; il ne s’agit pour moi pas seulement de comprendre le sens général mais <hi
-            rend="unknown" rendition="#none">
-            <foreign xml:lang="eu">hitzez-hitz</foreign>
-
-          </hi> pour pouvoir expliquer tout à ceux qui ne savent pas grande chose en matière de basque. Écrivez-moi en basque; cherchez à trouver d’autres mots pour dire la même chose. Ne servez-vous <pb
-            facs="#IMG.11" n="11"/>
-        </p>
-
-        <p>pas du français, si ce n’est pas indispensable pour me faire comprendre le sens d’une phrase ou d’un mot. — En dehors de ce que je vous demande je serais toujours très aise d’apprendre de vous autant de basque que possible. Si vous n’avez rien de mieux à faire écrivez-moi tout ce que vous entendez, tout ce qui vous passe par la tête, mais en vrai basque de <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.1">
+            <p>Je crois bien que vous aurez quelque difficulté à me satisfaire; il ne s’agit pour moi pas seulement de comprendre le sens général mais <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="eu">hitzez-hitz</foreign>
+               </hi> pour pouvoir expliquer tout à ceux qui ne savent pas grande chose en matière de basque. Écrivez-moi en basque; cherchez à trouver d’autres mots pour dire la même chose. Ne servez-vous <pb facs="#IMG.11" n="11"/>
+            </p>
+            <p>pas du français, si ce n’est pas indispensable pour me faire comprendre le sens d’une phrase ou d’un mot. — En dehors de ce que je vous demande je serais toujours très aise d’apprendre de vous autant de basque que possible. Si vous n’avez rien de mieux à faire écrivez-moi tout ce que vous entendez, tout ce qui vous passe par la tête, mais en vrai basque de <placeName ref="[authorityLink]">
 Sare</placeName>
-          <hi rend="unknown" rendition="#none">
-            <foreign xml:lang="eu">Sarako mintzo arruntaren arabera</foreign>
-          </hi>. </p>
-
-        <p>J’ai entendu dire qu’une de vos filles s’est mariée; acceptez mes félicitations! Comment allez vous? Et M. et Mme <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1620">Goyetchey</persName>? Et M. le curé? Et tous les autres de la place? Est-ce qu’il s’est passé quelque chose de remarquable dans les derniers temps à <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.1">Sare</placeName>?<pb facs="#IMG.12" n="12"/>
-        </p>
-
-        <p>Travaillez, écrivez mon cher! Ne faites pas seulement des fables, mais quelque chose de plus large, de plus grand. Lisez et relisez <hi
-            rend="unknown" rendition="#none">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5667">
+               <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="eu">Sarako mintzo arruntaren arabera</foreign>
+               </hi>. </p>
+            <p>J’ai entendu dire qu’une de vos filles s’est mariée; acceptez mes félicitations! Comment allez vous? Et M. et Mme <persName ref="[authorityLink]">Goyetchey</persName>? Et M. le curé? Et tous les autres de la place? Est-ce qu’il s’est passé quelque chose de remarquable dans les derniers temps à <placeName ref="[authorityLink]">Sare</placeName>?<pb facs="#IMG.12" n="12"/>
+            </p>
+            <p>Travaillez, écrivez mon cher! Ne faites pas seulement des fables, mais quelque chose de plus large, de plus grand. Lisez et relisez <hi rend="unknown" rendition="#none">
+                  <persName ref="[authorityLink]">
 Axular</persName>
-          </hi>; c’est chez lui que se deploye toute la force, toute la grandeur de la langue basque.</p>
-        <p>Mes compliments à M. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2983">
+               </hi>; c’est chez lui que se deploye toute la force, toute la grandeur de la langue basque.</p>
+            <p>Mes compliments à M. <persName ref="[authorityLink]">
 Webster</persName>; je lui écrirai bientôt. <lb/>
-          <hi rend="unknown" rendition="#none">M. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1402">
+               <hi rend="unknown" rendition="#none">M. <persName ref="[authorityLink]">
 Dodgson</persName>
-          </hi> est entré en correspondance avec moi.</p>
-        <p>J’espère de vous lire</p>
-        <p>bientôt; n’oubliez pas que</p>
-        <p>je suis toujours prêt à</p>
-        <p>vous rendre les services que</p>
-        <p>vous me demanderez.</p>
-        <closer>
-          <salute>Bien à vous,</salute>
-          <lb/>
-          <salute>cher maître.</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.3063" subtype="original" type="appendix" xml:lang="eu">
-        <pb facs="#IMG.13" n="13"/>
-        <p>[1]8. <hi rend="unknown" rendition="#none">Zer, manesak ere etortzen dire hunaraino?</hi>
-        </p>
-        <p>G. <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Zaude</hi>
-          </hi>. Gero beste astelehenian…</p>
-        <p> Erran nahi du: “<foreign xml:lang="fr">soyez-en sûr</foreign>”, [“]<foreign
-            xml:lang="fr">fiez-vous-y</foreign>” (segurki) edo “<foreign xml:lang="fr">
+               </hi> est entré en correspondance avec moi.</p>
+            <p>J’espère de vous lire</p>
+            <p>bientôt; n’oubliez pas que</p>
+            <p>je suis toujours prêt à</p>
+            <p>vous rendre les services que</p>
+            <p>vous me demanderez.</p>
+            <closer>
+               <salute>Bien à vous,</salute>
+               <lb/>
+               <salute>cher maître.</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.3063"
+              subtype="original"
+              type="appendix"
+              xml:lang="eu">
+            <pb facs="#IMG.13" n="13"/>
+            <p>[1]8. <hi rend="unknown" rendition="#none">Zer, manesak ere etortzen dire hunaraino?</hi>
+            </p>
+            <p>G. <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Zaude</hi>
+               </hi>. Gero beste astelehenian…</p>
+            <p> Erran nahi du: “<foreign xml:lang="fr">soyez-en sûr</foreign>”, [“]<foreign xml:lang="fr">fiez-vous-y</foreign>” (segurki) edo “<foreign xml:lang="fr">
 attendez</foreign>” (igurikazu)?</p>
-        <p>19. Pegar yokoa</p>
-        <p> –<hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">errebote barneko</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none"> harri chabalak</hi>
-        </p>
-        <p> Hori da? —————à [Dibujo de un frontón]</p>
-        <p> –<hi rend="unknown" rendition="#none">Zeinek lehen herriko<hi rend="unknown" rendition="#none"> etchetik</hi>
-            <hi rend="unknown" rendition="#none">itzulia</hi>
-          </hi> egin:</p>
-        <p>Nola herriko etchetik <hi rend="unknown"
-            rendition="#none">itzulia</hi> egin? Eztu irabatzen zeinek lehen etorri baita herriko-etchera? Orduan, behar da beraz marka edo arraya bat egin. <hi
-            rend="unknown" rendition="#none">Itzulia</hi> hitz eztut komprenitzen. Eztire othe itzultzen errebotera?</p>
-        <p>20. <hi rend="unknown" rendition="#none">Gizonak ere <hi rend="unknown" rendition="#none">libro</hi> zien</hi>?</p>
-        <p> yokuaren partale egiteko libro edo zer bertzeko? <pb facs="#IMG.14" n="14"/>
-        </p>
-        <p>21. <hi rend="unknown" rendition="#none">Sinesten-dut <hi rend="unknown" rendition="#none">ahalkea athe chokhoan</hi> dute bai hek</hi> (kachkarotak).</p>
-        <p> Batere eztut komprenitzen.</p>
-        <p>22. <hi rend="unknown" rendition="#none">gero denak elkarrekin mokoka plaza guzia <hi rend="unknown" rendition="#none">airian iduki</hi> zuten</hi>.</p>
-        <p> elles tenaient toute la place en bonne humeur? Tous s’amusaient en les regardant?</p>
-        <p>23. <hi rend="unknown" rendition="#none">Kantak ee bagintuen gero</hi>
-        </p>
-        <p> G. <hi rend="unknown" rendition="#none">Zer kant<hi rend="unknown" rendition="#none">a</hi>
-          </hi>?</p>
-        <p> Certako ez: <hi rend="unknown" rendition="#none">zer kant<hi rend="unknown" rendition="#none">
+            <p>19. Pegar yokoa</p>
+            <p> –<hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">errebote barneko</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none"> harri chabalak</hi>
+            </p>
+            <p> Hori da? —————à [Dibujo de un frontón]</p>
+            <p> –<hi rend="unknown" rendition="#none">Zeinek lehen herriko<hi rend="unknown" rendition="#none"> etchetik</hi>
+                  <hi rend="unknown" rendition="#none">itzulia</hi>
+               </hi> egin:</p>
+            <p>Nola herriko etchetik <hi rend="unknown" rendition="#none">itzulia</hi> egin? Eztu irabatzen zeinek lehen etorri baita herriko-etchera? Orduan, behar da beraz marka edo arraya bat egin. <hi rend="unknown" rendition="#none">Itzulia</hi> hitz eztut komprenitzen. Eztire othe itzultzen errebotera?</p>
+            <p>20. <hi rend="unknown" rendition="#none">Gizonak ere <hi rend="unknown" rendition="#none">libro</hi> zien</hi>?</p>
+            <p> yokuaren partale egiteko libro edo zer bertzeko? <pb facs="#IMG.14" n="14"/>
+            </p>
+            <p>21. <hi rend="unknown" rendition="#none">Sinesten-dut <hi rend="unknown" rendition="#none">ahalkea athe chokhoan</hi> dute bai hek</hi> (kachkarotak).</p>
+            <p> Batere eztut komprenitzen.</p>
+            <p>22. <hi rend="unknown" rendition="#none">gero denak elkarrekin mokoka plaza guzia <hi rend="unknown" rendition="#none">airian iduki</hi> zuten</hi>.</p>
+            <p> elles tenaient toute la place en bonne humeur? Tous s’amusaient en les regardant?</p>
+            <p>23. <hi rend="unknown" rendition="#none">Kantak ee bagintuen gero</hi>
+            </p>
+            <p> G. <hi rend="unknown" rendition="#none">Zer kant<hi rend="unknown" rendition="#none">a</hi>
+               </hi>?</p>
+            <p> Certako ez: <hi rend="unknown" rendition="#none">zer kant<hi rend="unknown" rendition="#none">
 ak</hi>
-          </hi>?</p>
-        <p>24. <hi rend="unknown" rendition="#none">Kanta ederrak, <hi rend="unknown"
-              rendition="#none">lehengo</hi> pilotari <hi rend="unknown" rendition="#none">zaharren</hi> eta oraikoen gainean emanak</hi>
-        </p>
-        <p>Ezta orobat <hi rend="unknown" rendition="#none">lehengoak</hi> eta <hi rend="unknown"
-            rendition="#none">zaharrak</hi>? nere ustez, oraikoak eztire ahal izaten lehengoak. <pb facs="#IMG.15" n="15"/>
-        </p>
-        <p>25. <hi rend="unknown" rendition="#none">eta kantatu ziuzten?</hi>
-        </p>
-        <p> G. <hi rend="unknown" rendition="#none">ba, errepika ederrik egin zuten</hi>.</p>
-        <p> Franz. ils faisaient de belles répétitions? Ils commencaient toujours de nouveau? — bethi berriz hasi ziren, geroago eta hobekiago kantatzen zutenean?</p>
-        <p>26. <hi rend="unknown" rendition="#none">egon aldi bat eg<hi rend="unknown"
-              rendition="#none">in ere </hi>ba<hi rend="unknown" rendition="#none">dut</hi>
-          </hi>
-        </p>
-        <p>Erran nahi du egonaldi bat <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+               </hi>?</p>
+            <p>24. <hi rend="unknown" rendition="#none">Kanta ederrak, <hi rend="unknown" rendition="#none">lehengo</hi> pilotari <hi rend="unknown" rendition="#none">zaharren</hi> eta oraikoen gainean emanak</hi>
+            </p>
+            <p>Ezta orobat <hi rend="unknown" rendition="#none">lehengoak</hi> eta <hi rend="unknown" rendition="#none">zaharrak</hi>? nere ustez, oraikoak eztire ahal izaten lehengoak. <pb facs="#IMG.15" n="15"/>
+            </p>
+            <p>25. <hi rend="unknown" rendition="#none">eta kantatu ziuzten?</hi>
+            </p>
+            <p> G. <hi rend="unknown" rendition="#none">ba, errepika ederrik egin zuten</hi>.</p>
+            <p> Franz. ils faisaient de belles répétitions? Ils commencaient toujours de nouveau? — bethi berriz hasi ziren, geroago eta hobekiago kantatzen zutenean?</p>
+            <p>26. <hi rend="unknown" rendition="#none">egon aldi bat eg<hi rend="unknown" rendition="#none">in ere </hi>ba<hi rend="unknown" rendition="#none">dut</hi>
+               </hi>
+            </p>
+            <p>Erran nahi du egonaldi bat <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 luzea</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none"> egin duela</hi>?</p>
-        <p>27. <hi rend="unknown" rendition="#none">Ekaazu bortzekua</hi>!</p>
-        <p>
-          <foreign xml:lang="fr">Donnez-moi la main?</foreign>
-        </p>
-      </div>
-    </body>
-  </text>
+               </hi>
+               <hi rend="unknown" rendition="#none"> egin duela</hi>?</p>
+            <p>27. <hi rend="unknown" rendition="#none">Ekaazu bortzekua</hi>!</p>
+            <p>
+               <foreign xml:lang="fr">Donnez-moi la main?</foreign>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,806 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">John Henry Eaton an Hugo Schuchardt (01-02653)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1427">
-            <forename>John Henry</forename>
-            <surname>Eaton</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Shihan</forename>
-            <surname>De Silva Jayasuriya</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/1926" type="PID">o:hsa.letter.1926</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-02653</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">02653</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="en"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1427">
-                <forename>John Henry</forename>
-                <surname>Eaton</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.249" ref="http://sws.geonames.org/1241622">Kandy</origPlace>
-              <origDate ana="dcterms:created" when="1884-05-21">1884-05-21</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Shihan</forename>
-              <surname>De Silva Jayasuriya</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen John Henry Eaton und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1427"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.1926">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1427">
-            <forename>John Henry</forename>
-            <surname>Eaton</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.249" key="#GID.1" ref="http://sws.geonames.org/1241622">Kandy</placeName>
-          <date when="1884-05-21">1884-05-21</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Sri Lanka</country>
-                <settlement>Kandy</settlement>
-                <name ref="http://geonames.org/1241622" type="fcode:PPLA">Kandy</name>
-                <location>
-                  <geo>80.6336,7.2906</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1427" type="context">
-                        Korrespondenz John Henry Eaton - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.104" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachprobe</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.489" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachwissenschaft (Reflexion)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.180" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesischbasierte Kreolsprache (Sri Lanka/Ceylon)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.667" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.844" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.163" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesisch (Mangaluru/Mangalore)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.891" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Englisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="en">Englisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1926" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1926" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1926" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1926" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1926" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1926" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1926" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1926" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.1926" xml:lang="en">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>
-          <lb/>Woodlands <lb/>Kandy 21st May 1884 </dateline>
-        <opener>My dear Sir</opener>
-
-        <p>It was during a very busy time of our Midland Assizes, that your letter reached my hand. Since then I went travelling down to the South of the Island, and your letter went quite out of mind. But I have been overhauling all my papers and cannot think what has become of it. However, I will no longer delay writing to you, especially as I have just received your reminder by way of a post card. I was very much interested in your pamphlets, for altho’ I do not know <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.667">German</ref>, the <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.844">Portuguese</ref> extracts were quite comprehensible. Those given in your last no. (no. VI) the <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.163">Mangalore Portuguese</ref> were specially interesting. The language spoken there has a stronger affinity it seems to the Ceylon Portuguese, than the language spoken elsewhere. It seems to me that the specimens of lyrical poetry given in no. VI must have been copied out by a very illiterate man. He generally drops the final vowels, and in one of the lyrical pieces (IV p.9) an expletive (<hi
-            rend="unknown"
-            rendition="#none">ai</hi>) is introduced at the commencement of each verse, which not only does not add anything to the meaning, but, destroyed the rhythm as I think. I will by and by give you a specimen of the same song as sung in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5857">Ceylon</placeName>. You will have to remember that the <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.180">
-Indo-Portuguese of Ceylon</ref> is (so far as I am aware) not taught in any of the schools of Ceylon. Those who were earliest in the field as Educators were the Missionaries, and amongst these, ever since I have known them the popular belief has been that the patois spoken in Ceylon was not worth perpetuating, that it was not worth improving, be<pb
-            facs="#IMG.2"
-            n="2"/>cause it was a corrupt dialect, and that in the course of a few generations, the mongrel dialect would die out. I am now over half a century old, but I do not find that these vaticinations have come to pass. The Portuguese language is as vigorous today as it were in the days of my youth, and is just as extensively used by the labouring classes (called in Ceylon by a strange anomaly, Mechanics), such as shoemakers, tailors, carpenters, tinkerers. True it is that it has nothing like a literature of its own – nor is it likely that it would have one, when so many attempts have been made to frown it out of existence. Yet the tenacity with which the classes I have above indicated have stuck to the so-called patois, shows that there is more vitality in it than some folks have imagined. I do not at all believe that there is any immediate prospect of any body having to sing a funeral dirge over the grave of Ceylon Portuguese. I would like to guarantee its life for another half century at least. If the present race of labouring men and their children, were all of a sudden to die out then I think there would be some likelihood of Ceylon Portuguese becoming a thing of the past. The <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.891">English Language</ref> is no doubt making very rapid strides, and good many of the workmen of today speak it, though very imperfectly still, at least, better than their fathers did before them. Nevertheless, there is a large proportion of them, who do not speak the language at all, tho’ English has been the chief language of the country for so very many years past. I have been endeavouring, to carry on a religious work among these labouring classes, and have had some very striking cases of successful work among them. They are very tenacious of their language indeed. Tho’ I never studied the Portuguese language, but picked it up here and there during my boyhood’ years, I find <pb
-            facs="#IMG.3"
-            n="3"/>that I can express in this language, almost all I can express in the English language. A cossia verborum is all that one wants to make even this patois of Ceylon Portuguese, answer all the purposes that one can reasonably expect of any language. I have found it wonderfully flexible, and altho’ sometimes one cannot express his ideas while speaking in Portuguese, in as few words as he could in English – yet there is hardly any sentiment expressible in English, which cannot, tho’ in a more roundabout way, be expressed in Portuguese. You will see by the little books of Songs and Hymns I am sending you by this mail, how some of our English favourites have been made to reappear in a Portuguese dress. I cannot say whether you are conversant with our English Hymn books but if you are, you will find that the fifth of the English hymns, is preserved in the Portuguese translations. I shall mark the sources where the English hymns were taken – so that if they are at all accessible to you, you may compare for yourself the original with the translation. You will find that I have been endeavouring as much as possible, to rectify the loose spelling which is in vogue everywhere where the language is spoken and which is the result – the necessary result – of speaking and writing a language which is not taught in schools – nor as studied grammatically – nor has any literary standards of its own. I have tried therefore to assimilate the spelling as much as possible to that of the Continental Portuguese as given in Anthony Vieyra Transtagano’s Dictionary published in London in 1773. I am also indebted to his grammar for a few hints. I will just jot down a few particulars for you, which may be useful to you in the prosecution of your researches into the <pb
-            facs="#IMG.4"
-            n="4"/>varied dialects extant in reference to the Portuguese. In Ceylon Portuguese – there is but one article, the Definite, but it is indeclinable – having <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">o</hi>
-          </foreign> for the singular, and <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">os</hi>
-          </foreign> for the plural. The place of the indefinite which is supplied by <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">hum</hi>
-          </foreign>, contraction of <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">huma</hi>
-          </foreign> (one). <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">Hum rainha, a</hi>
-          </foreign> queen, = one queen. <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">O rainha</hi>
-          </foreign>, the queen. <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">Os rainhas</hi>
-          </foreign>, the queens.</p>
-        <p>Substantives, Adjectives and Pronouns, have no inflexions. Their different cases are formed not by terminal inflexions, but by the use of prepositions. They are declined thus.</p>
-        <table>
-          <row>
-            <cell>
-              <lb/>
-            </cell>
-            <cell>Singular</cell>
-            <cell>Plural</cell>
-          </row>
-          <row>
-            <cell>Nominative</cell>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">O rainha</hi>
-              </foreign>, - the queen -</cell>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Os rainhas</hi>
-              </foreign>, the queens, -</cell>
-          </row>
-          <row>
-            <cell>Genitive</cell>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">De o rainha</hi>
-              </foreign>, - of the queen</cell>
-            <cell>And so on for the different cases</cell>
-          </row>
-          <row>
-            <cell>Dative</cell>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Per o rainha</hi>
-              </foreign>, - to the queen</cell>
-            <cell>by the addition of prepositions</cell>
-          </row>
-          <row>
-            <cell>Accusative</cell>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">O rainha</hi>
-              </foreign> - the queen</cell>
-            <cell>as in the Singular.</cell>
-          </row>
-          <row>
-            <cell>Vocative</cell>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">O rainha</hi>
-              </foreign> - O queen</cell>
-            <cell>
-              <lb/>
-            </cell>
-          </row>
-          <row>
-            <cell>Ablative</cell>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none"> De o rainha</hi>
-              </foreign>, from the queen, or <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">com o rainha</hi>
-              </foreign>, with the queen.</cell>
-          </row>
-        </table>
-        <p>Very frequently in ordinary conversation, the singular <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">o</hi>
-          </foreign> goes even with the plural form of the noun, as <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">o rainhas</hi>
-
-          </foreign>. The general rule for the formation of the plural is by adding s to the singular. The only exception I can recall at this moment is <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">Deos</hi>
-          </foreign> God, which has <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.1926" xml:lang="en">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>
+               <lb/>Woodlands <lb/>Kandy 21st May 1884 </dateline>
+            <opener>My dear Sir</opener>
+            <p>It was during a very busy time of our Midland Assizes, that your letter reached my hand. Since then I went travelling down to the South of the Island, and your letter went quite out of mind. But I have been overhauling all my papers and cannot think what has become of it. However, I will no longer delay writing to you, especially as I have just received your reminder by way of a post card. I was very much interested in your pamphlets, for altho’ I do not know <ref target="https://gams.uni-graz.at/o:hsa.languages#L.667">German</ref>, the <ref target="https://gams.uni-graz.at/o:hsa.languages#L.844">Portuguese</ref> extracts were quite comprehensible. Those given in your last no. (no. VI) the <ref target="https://gams.uni-graz.at/o:hsa.languages#L.163">Mangalore Portuguese</ref> were specially interesting. The language spoken there has a stronger affinity it seems to the Ceylon Portuguese, than the language spoken elsewhere. It seems to me that the specimens of lyrical poetry given in no. VI must have been copied out by a very illiterate man. He generally drops the final vowels, and in one of the lyrical pieces (IV p.9) an expletive (<hi rend="unknown" rendition="#none">ai</hi>) is introduced at the commencement of each verse, which not only does not add anything to the meaning, but, destroyed the rhythm as I think. I will by and by give you a specimen of the same song as sung in <placeName ref="[authorityLink]">Ceylon</placeName>. You will have to remember that the <ref target="https://gams.uni-graz.at/o:hsa.languages#L.180">
+Indo-Portuguese of Ceylon</ref> is (so far as I am aware) not taught in any of the schools of Ceylon. Those who were earliest in the field as Educators were the Missionaries, and amongst these, ever since I have known them the popular belief has been that the patois spoken in Ceylon was not worth perpetuating, that it was not worth improving, be<pb facs="#IMG.2" n="2"/>cause it was a corrupt dialect, and that in the course of a few generations, the mongrel dialect would die out. I am now over half a century old, but I do not find that these vaticinations have come to pass. The Portuguese language is as vigorous today as it were in the days of my youth, and is just as extensively used by the labouring classes (called in Ceylon by a strange anomaly, Mechanics), such as shoemakers, tailors, carpenters, tinkerers. True it is that it has nothing like a literature of its own – nor is it likely that it would have one, when so many attempts have been made to frown it out of existence. Yet the tenacity with which the classes I have above indicated have stuck to the so-called patois, shows that there is more vitality in it than some folks have imagined. I do not at all believe that there is any immediate prospect of any body having to sing a funeral dirge over the grave of Ceylon Portuguese. I would like to guarantee its life for another half century at least. If the present race of labouring men and their children, were all of a sudden to die out then I think there would be some likelihood of Ceylon Portuguese becoming a thing of the past. The <ref target="https://gams.uni-graz.at/o:hsa.languages#L.891">English Language</ref> is no doubt making very rapid strides, and good many of the workmen of today speak it, though very imperfectly still, at least, better than their fathers did before them. Nevertheless, there is a large proportion of them, who do not speak the language at all, tho’ English has been the chief language of the country for so very many years past. I have been endeavouring, to carry on a religious work among these labouring classes, and have had some very striking cases of successful work among them. They are very tenacious of their language indeed. Tho’ I never studied the Portuguese language, but picked it up here and there during my boyhood’ years, I find <pb facs="#IMG.3" n="3"/>that I can express in this language, almost all I can express in the English language. A cossia verborum is all that one wants to make even this patois of Ceylon Portuguese, answer all the purposes that one can reasonably expect of any language. I have found it wonderfully flexible, and altho’ sometimes one cannot express his ideas while speaking in Portuguese, in as few words as he could in English – yet there is hardly any sentiment expressible in English, which cannot, tho’ in a more roundabout way, be expressed in Portuguese. You will see by the little books of Songs and Hymns I am sending you by this mail, how some of our English favourites have been made to reappear in a Portuguese dress. I cannot say whether you are conversant with our English Hymn books but if you are, you will find that the fifth of the English hymns, is preserved in the Portuguese translations. I shall mark the sources where the English hymns were taken – so that if they are at all accessible to you, you may compare for yourself the original with the translation. You will find that I have been endeavouring as much as possible, to rectify the loose spelling which is in vogue everywhere where the language is spoken and which is the result – the necessary result – of speaking and writing a language which is not taught in schools – nor as studied grammatically – nor has any literary standards of its own. I have tried therefore to assimilate the spelling as much as possible to that of the Continental Portuguese as given in Anthony Vieyra Transtagano’s Dictionary published in London in 1773. I am also indebted to his grammar for a few hints. I will just jot down a few particulars for you, which may be useful to you in the prosecution of your researches into the <pb facs="#IMG.4" n="4"/>varied dialects extant in reference to the Portuguese. In Ceylon Portuguese – there is but one article, the Definite, but it is indeclinable – having <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">o</hi>
+               </foreign> for the singular, and <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">os</hi>
+               </foreign> for the plural. The place of the indefinite which is supplied by <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">hum</hi>
+               </foreign>, contraction of <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">huma</hi>
+               </foreign> (one). <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">Hum rainha, a</hi>
+               </foreign> queen, = one queen. <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">O rainha</hi>
+               </foreign>, the queen. <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">Os rainhas</hi>
+               </foreign>, the queens.</p>
+            <p>Substantives, Adjectives and Pronouns, have no inflexions. Their different cases are formed not by terminal inflexions, but by the use of prepositions. They are declined thus.</p>
+            <table>
+               <row>
+                  <cell>
+                     <lb/>
+                  </cell>
+                  <cell>Singular</cell>
+                  <cell>Plural</cell>
+               </row>
+               <row>
+                  <cell>Nominative</cell>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">O rainha</hi>
+                     </foreign>, - the queen -</cell>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Os rainhas</hi>
+                     </foreign>, the queens, -</cell>
+               </row>
+               <row>
+                  <cell>Genitive</cell>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">De o rainha</hi>
+                     </foreign>, - of the queen</cell>
+                  <cell>And so on for the different cases</cell>
+               </row>
+               <row>
+                  <cell>Dative</cell>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Per o rainha</hi>
+                     </foreign>, - to the queen</cell>
+                  <cell>by the addition of prepositions</cell>
+               </row>
+               <row>
+                  <cell>Accusative</cell>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">O rainha</hi>
+                     </foreign> - the queen</cell>
+                  <cell>as in the Singular.</cell>
+               </row>
+               <row>
+                  <cell>Vocative</cell>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">O rainha</hi>
+                     </foreign> - O queen</cell>
+                  <cell>
+                     <lb/>
+                  </cell>
+               </row>
+               <row>
+                  <cell>Ablative</cell>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none"> De o rainha</hi>
+                     </foreign>, from the queen, or <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">com o rainha</hi>
+                     </foreign>, with the queen.</cell>
+               </row>
+            </table>
+            <p>Very frequently in ordinary conversation, the singular <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">o</hi>
+               </foreign> goes even with the plural form of the noun, as <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">o rainhas</hi>
+               </foreign>. The general rule for the formation of the plural is by adding s to the singular. The only exception I can recall at this moment is <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">Deos</hi>
+               </foreign> God, which has <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 Deoses</hi>
-          </foreign> for the plural.</p>
-
-        <p>Adjectives. In respect of degrees of comparison, there is no inflection of the words. So far as I can remember, there are only two adjectives, whose comparatives end in <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">or</hi>
-          </foreign>. These are <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+               </foreign> for the plural.</p>
+            <p>Adjectives. In respect of degrees of comparison, there is no inflection of the words. So far as I can remember, there are only two adjectives, whose comparatives end in <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">or</hi>
+               </foreign>. These are <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 bom</hi>
-          </foreign>, good, <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">melhor</hi>
-          </foreign>, better, and <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">mal</hi>
-          </foreign> bad, <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">peor</hi>
-          </foreign>, worse. The only ‘word’ in which <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+               </foreign>, good, <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">melhor</hi>
+               </foreign>, better, and <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">mal</hi>
+               </foreign> bad, <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">peor</hi>
+               </foreign>, worse. The only ‘word’ in which <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 mayor</hi>
-          </foreign>, greater, comes in is Good Friday,<foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none"> Sesta-feira mayor</hi>
-          </foreign>, or <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+               </foreign>, greater, comes in is Good Friday,<foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none"> Sesta-feira mayor</hi>
+               </foreign>, or <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 maior</hi>
-          </foreign>.</p>
-        <p>In all other cases the comparative is formed by <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">mais</hi>
-          </foreign> more and the superlative by <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">muito mais</hi>
-          </foreign>, or <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">de todos mais</hi>
-          </foreign>.<pb facs="#IMG.5" n="5"/>
-        </p>
-
-        <p>In respect of pronouns, the change of case is effected in the same way as the change in nouns is effected, by the addition of the prepositions, <hi
-            rend="unknown" rendition="#none">de, per, com</hi>. Thus</p>
-        <table rend="height=74;width=370;">
-          <row>
-            <cell>Nom. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">
+               </foreign>.</p>
+            <p>In all other cases the comparative is formed by <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">mais</hi>
+               </foreign> more and the superlative by <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">muito mais</hi>
+               </foreign>, or <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">de todos mais</hi>
+               </foreign>.<pb facs="#IMG.5" n="5"/>
+            </p>
+            <p>In respect of pronouns, the change of case is effected in the same way as the change in nouns is effected, by the addition of the prepositions, <hi rend="unknown" rendition="#none">de, per, com</hi>. Thus</p>
+            <table rend="height=74;width=370;">
+               <row>
+                  <cell>Nom. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">
 Eu</hi>
-              </foreign>. I</cell>
-            <cell>Nom. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">
+                     </foreign>. I</cell>
+                  <cell>Nom. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">
 Nos</hi>
-              </foreign>, We</cell>
-          </row>
-          <row>
-            <cell>Gen. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">De mi</hi>
-              </foreign> of me</cell>
-            <cell>Gen. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">De nos</hi>
-              </foreign> Of us</cell>
-          </row>
-          <row>
-            <cell>etc.</cell>
-            <cell>etc.</cell>
-          </row>
-        </table>
-        <p>And so of <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+                     </foreign>, We</cell>
+               </row>
+               <row>
+                  <cell>Gen. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">De mi</hi>
+                     </foreign> of me</cell>
+                  <cell>Gen. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">De nos</hi>
+                     </foreign> Of us</cell>
+               </row>
+               <row>
+                  <cell>etc.</cell>
+                  <cell>etc.</cell>
+               </row>
+            </table>
+            <p>And so of <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 Tu</hi>
-          </foreign>. Genitive <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">de ti</hi>
-          </foreign> etc.</p>
-        <p>The pronoun <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+               </foreign>. Genitive <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">de ti</hi>
+               </foreign> etc.</p>
+            <p>The pronoun <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 si</hi>
-          </foreign> is joined invariably to <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">mesmo</hi>
-          </foreign>. I cannot think of any instance in which it stands by itself e.g. <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">si mesmo</hi>
-          </foreign>. <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">Mesmo</hi>
-          </foreign> is also frequently joined to personal pronouns also, as <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">eu mesmo</hi>, <hi rend="unknown" rendition="#none">vos mesmo</hi>, <hi
-              rend="unknown" rendition="#none">elle mesmo, iste mesmo</hi>
-          </foreign> etc. I myself, you yourself, he himself, this itself etc.</p>
-        <p>In respect of possessive pronouns, <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">meu</hi>
-          </foreign> and <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">minha</hi>
-          </foreign> are used convertibly, irrespective of gender. <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+               </foreign> is joined invariably to <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">mesmo</hi>
+               </foreign>. I cannot think of any instance in which it stands by itself e.g. <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">si mesmo</hi>
+               </foreign>. <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">Mesmo</hi>
+               </foreign> is also frequently joined to personal pronouns also, as <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">eu mesmo</hi>, <hi rend="unknown" rendition="#none">vos mesmo</hi>, <hi rend="unknown" rendition="#none">elle mesmo, iste mesmo</hi>
+               </foreign> etc. I myself, you yourself, he himself, this itself etc.</p>
+            <p>In respect of possessive pronouns, <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">meu</hi>
+               </foreign> and <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">minha</hi>
+               </foreign> are used convertibly, irrespective of gender. <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 Meu amor</hi>
-          </foreign>, my love, <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">minha chasse</hi>
-          </foreign> my hat, <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">meu ferro</hi>
-          </foreign> my iron. <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">Meu filha</hi>
-          </foreign> my daughter. So also with <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">teu, tua, seu, sua, vossa, nossa</hi>
-
-          </foreign>, they are used irrespective of the gender of the noun, and are convertible. There are only two demonstrative pronouns, <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">iste</hi>
-          </foreign>, and <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">aquel</hi>
-          </foreign> – this and that. They are both indeclinable, and form their plural by adding s. Sometimes <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">aquel</hi>
-          </foreign>, in the plural is <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+               </foreign>, my love, <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">minha chasse</hi>
+               </foreign> my hat, <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">meu ferro</hi>
+               </foreign> my iron. <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">Meu filha</hi>
+               </foreign> my daughter. So also with <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">teu, tua, seu, sua, vossa, nossa</hi>
+               </foreign>, they are used irrespective of the gender of the noun, and are convertible. There are only two demonstrative pronouns, <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">iste</hi>
+               </foreign>, and <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">aquel</hi>
+               </foreign> – this and that. They are both indeclinable, and form their plural by adding s. Sometimes <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">aquel</hi>
+               </foreign>, in the plural is <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 aquelles</hi>
-          </foreign>, but this has gone out of use, and appears only in the older writings. <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+               </foreign>, but this has gone out of use, and appears only in the older writings. <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 Aqui</hi>
-          </foreign> here <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">ali</hi>
-          </foreign> or <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">alla</hi>
-          </foreign> there – may perhaps be reckoned amongst the demonstrative pronouns.</p>
-        <p>Of the relative pronouns those in use are <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">quem</hi>
-          </foreign>, who, <foreign xml:lang="cpp">que</foreign>, what, <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">quell</hi>
-          </foreign> which – and by the addition of <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">seja</hi>
-          </foreign>, we have <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+               </foreign> here <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">ali</hi>
+               </foreign> or <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">alla</hi>
+               </foreign> there – may perhaps be reckoned amongst the demonstrative pronouns.</p>
+            <p>Of the relative pronouns those in use are <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">quem</hi>
+               </foreign>, who, <foreign xml:lang="cpp">que</foreign>, what, <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">quell</hi>
+               </foreign> which – and by the addition of <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">seja</hi>
+               </foreign>, we have <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 quemseja</hi>
-          </foreign> whosoever and <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">queseja</hi>
-          </foreign> whatever.</p>
-        <p>Sometimes <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+               </foreign> whosoever and <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">queseja</hi>
+               </foreign> whatever.</p>
+            <p>Sometimes <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 tal</hi>
-          </foreign> is also used, in the sense of such, <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">tal pessão</hi>
-          </foreign> such a person. <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">tal</hi>
-          </foreign> is sometimes used adverbially <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">tal puro</hi>
-          </foreign>, entirely <pb facs="#IMG.6"
-            n="6"/>wholly pure. I fancy this must however be a corruption of, or abbreviation for total, for we use <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+               </foreign> is also used, in the sense of such, <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">tal pessão</hi>
+               </foreign> such a person. <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">tal</hi>
+               </foreign> is sometimes used adverbially <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">tal puro</hi>
+               </foreign>, entirely <pb facs="#IMG.6" n="6"/>wholly pure. I fancy this must however be a corruption of, or abbreviation for total, for we use <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 totalmente</hi>
-          </foreign> in the adverbial form for, wholly.</p>
-        <p>The conjugation of verbs, is comparatively easy, for there are no inflections of the words representing the verbs. For example,</p>
-        <p>Indicative Mood</p>
-        <table>
-          <row>
-            <cell>Singular</cell>
-            <cell>Plural</cell>
-          </row>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu te ama</hi>
-              </foreign> I love or am loving</cell>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Nos te ama</hi>
-              </foreign> We love</cell>
-          </row>
-          <row>
-            <cell>2. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Tu te ama</hi>
-              </foreign> Thou lovest</cell>
-            <cell>2. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Vos te ama</hi>
-              </foreign> Ye love</cell>
-          </row>
-          <row>
-            <cell>3. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Elle te ama</hi>
-              </foreign> He loves </cell>
-            <cell>3. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Elles or ellotros te ama</hi>
-              </foreign> They love</cell>
-          </row>
-        </table>
-        <table>
-          <row>
-            <cell>Singular</cell>
-            <cell>Plural</cell>
-          </row>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu ja ama</hi>
-              </foreign> I have or had loved</cell>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Nos ja ama</hi>
-              </foreign> We have or had</cell>
-          </row>
-          <row>
-            <cell>etc.</cell>
-            <cell>
-              <lb/>
-            </cell>
-          </row>
-          <row>
-            <cell>Singular</cell>
-            <cell>Plural</cell>
-          </row>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu lo ama</hi>
-              </foreign> I will love </cell>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">
+               </foreign> in the adverbial form for, wholly.</p>
+            <p>The conjugation of verbs, is comparatively easy, for there are no inflections of the words representing the verbs. For example,</p>
+            <p>Indicative Mood</p>
+            <table>
+               <row>
+                  <cell>Singular</cell>
+                  <cell>Plural</cell>
+               </row>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu te ama</hi>
+                     </foreign> I love or am loving</cell>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Nos te ama</hi>
+                     </foreign> We love</cell>
+               </row>
+               <row>
+                  <cell>2. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Tu te ama</hi>
+                     </foreign> Thou lovest</cell>
+                  <cell>2. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Vos te ama</hi>
+                     </foreign> Ye love</cell>
+               </row>
+               <row>
+                  <cell>3. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Elle te ama</hi>
+                     </foreign> He loves </cell>
+                  <cell>3. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Elles or ellotros te ama</hi>
+                     </foreign> They love</cell>
+               </row>
+            </table>
+            <table>
+               <row>
+                  <cell>Singular</cell>
+                  <cell>Plural</cell>
+               </row>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu ja ama</hi>
+                     </foreign> I have or had loved</cell>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Nos ja ama</hi>
+                     </foreign> We have or had</cell>
+               </row>
+               <row>
+                  <cell>etc.</cell>
+                  <cell>
+                     <lb/>
+                  </cell>
+               </row>
+               <row>
+                  <cell>Singular</cell>
+                  <cell>Plural</cell>
+               </row>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu lo ama</hi>
+                     </foreign> I will love </cell>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">
 Nos</hi>
-              </foreign> etc</cell>
-          </row>
-          <row>
-            <cell>Singular</cell>
-            <cell>
-              <lb/>
-            </cell>
-          </row>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu tinha ama</hi>
-              </foreign> I was loving </cell>
-            <cell>
-              <hi rend="unknown" rendition="#none">etc</hi>
-            </cell>
-          </row>
-        </table>
-        <p>Imperative Mood</p>
-        <table>
-          <row>
-            <cell>2. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Ama tu</hi>
-              </foreign> Love thou </cell>
-            <cell>2. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Ama vossotros</hi>
-              </foreign> – love ye</cell>
-          </row>
-        </table>
-        <p>Subjunctive Mood</p>
-        <table>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Si eu te ama</hi>
-              </foreign> If I love, or am loving </cell>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Si vos</hi>
-              </foreign> etc</cell>
-          </row>
-        </table>
-        <p>Potential Mood</p>
-        <table>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu podi ou miste ama</hi>
-              </foreign> I can or must love</cell>
-            <cell>etc.</cell>
-          </row>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu podia ou mistie ama</hi>
-              </foreign> I may or must have loved</cell>
-            <cell>etc.</cell>
-          </row>
-        </table>
-        <p>Infinitive - Gerund</p>
-        <table>
-          <row>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Per ama</hi>
-              </foreign> to love </cell>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">
+                     </foreign> etc</cell>
+               </row>
+               <row>
+                  <cell>Singular</cell>
+                  <cell>
+                     <lb/>
+                  </cell>
+               </row>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu tinha ama</hi>
+                     </foreign> I was loving </cell>
+                  <cell>
+                     <hi rend="unknown" rendition="#none">etc</hi>
+                  </cell>
+               </row>
+            </table>
+            <p>Imperative Mood</p>
+            <table>
+               <row>
+                  <cell>2. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Ama tu</hi>
+                     </foreign> Love thou </cell>
+                  <cell>2. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Ama vossotros</hi>
+                     </foreign> – love ye</cell>
+               </row>
+            </table>
+            <p>Subjunctive Mood</p>
+            <table>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Si eu te ama</hi>
+                     </foreign> If I love, or am loving </cell>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Si vos</hi>
+                     </foreign> etc</cell>
+               </row>
+            </table>
+            <p>Potential Mood</p>
+            <table>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu podi ou miste ama</hi>
+                     </foreign> I can or must love</cell>
+                  <cell>etc.</cell>
+               </row>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu podia ou mistie ama</hi>
+                     </foreign> I may or must have loved</cell>
+                  <cell>etc.</cell>
+               </row>
+            </table>
+            <p>Infinitive - Gerund</p>
+            <table>
+               <row>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Per ama</hi>
+                     </foreign> to love </cell>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">
 Amando</hi>
-              </foreign> Loving</cell>
-          </row>
-        </table>
-        <pb facs="#IMG.7" n="7"/>
-        <p>In the Passive Voice</p>
-        <p>Indicative</p>
-        <table>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu tem amado</hi>
-              </foreign> I am loved</cell>
-            <cell>etc.</cell>
-          </row>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu ja tem amado</hi>
-              </foreign> I have been loved </cell>
-            <cell>etc.</cell>
-          </row>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu tinha amado</hi>
-              </foreign> I was loved </cell>
-            <cell>etc.</cell>
-          </row>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu lo tem amado</hi>
-              </foreign> I shall or will be loved </cell>
-            <cell>etc.</cell>
-          </row>
-        </table>
-        <p>Potential</p>
-        <table>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu pode tem o miste tem amado</hi>
-              </foreign> I may or must be loved </cell>
-            <cell>etc.</cell>
-          </row>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Eu pode tinha amado</hi>
-              </foreign> I may have been loved</cell>
-            <cell>etc.</cell>
-          </row>
-        </table>
-        <p>Imperative</p>
-        <table>
-          <row>
-            <cell>2. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Fica vos amado</hi>
-              </foreign> Be thou loved </cell>
-            <cell>2. etc</cell>
-          </row>
-        </table>
-        <p>Subjunctive</p>
-        <table>
-          <row>
-            <cell>1. <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Si eu tem amado</hi>
-              </foreign> If I be loved </cell>
-            <cell>1. etc</cell>
-          </row>
-        </table>
-        <p>Infinitive Mood</p>
-        <table>
-          <row>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Per tem amado</hi>
-              </foreign> To be loved </cell>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Pertinha amado</hi>
-              </foreign> To have been loved</cell>
-          </row>
-        </table>
-        <p>Gerund</p>
-        <table>
-          <row>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Tendo amado</hi>
-              </foreign> Being loved</cell>
-            <cell>
-              <foreign xml:lang="cpp">
-                <hi rend="unknown" rendition="#none">Tendo amado</hi>
-              </foreign> Having been loved</cell>
-          </row>
-        </table>
-
-        <p>I think the foregoing will give you a tolerably fair idea, of what Ceylon Portuguese is like. I hardly need trouble you with any adverbs and prepositions. I omitted to mention that sometimes, instead of <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">Desse nos</hi>
-          </foreign>
-          <pb facs="#IMG.8" n="8"/>
-          <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">
+                     </foreign> Loving</cell>
+               </row>
+            </table>
+            <pb facs="#IMG.7" n="7"/>
+            <p>In the Passive Voice</p>
+            <p>Indicative</p>
+            <table>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu tem amado</hi>
+                     </foreign> I am loved</cell>
+                  <cell>etc.</cell>
+               </row>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu ja tem amado</hi>
+                     </foreign> I have been loved </cell>
+                  <cell>etc.</cell>
+               </row>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu tinha amado</hi>
+                     </foreign> I was loved </cell>
+                  <cell>etc.</cell>
+               </row>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu lo tem amado</hi>
+                     </foreign> I shall or will be loved </cell>
+                  <cell>etc.</cell>
+               </row>
+            </table>
+            <p>Potential</p>
+            <table>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu pode tem o miste tem amado</hi>
+                     </foreign> I may or must be loved </cell>
+                  <cell>etc.</cell>
+               </row>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Eu pode tinha amado</hi>
+                     </foreign> I may have been loved</cell>
+                  <cell>etc.</cell>
+               </row>
+            </table>
+            <p>Imperative</p>
+            <table>
+               <row>
+                  <cell>2. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Fica vos amado</hi>
+                     </foreign> Be thou loved </cell>
+                  <cell>2. etc</cell>
+               </row>
+            </table>
+            <p>Subjunctive</p>
+            <table>
+               <row>
+                  <cell>1. <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Si eu tem amado</hi>
+                     </foreign> If I be loved </cell>
+                  <cell>1. etc</cell>
+               </row>
+            </table>
+            <p>Infinitive Mood</p>
+            <table>
+               <row>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Per tem amado</hi>
+                     </foreign> To be loved </cell>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Pertinha amado</hi>
+                     </foreign> To have been loved</cell>
+               </row>
+            </table>
+            <p>Gerund</p>
+            <table>
+               <row>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Tendo amado</hi>
+                     </foreign> Being loved</cell>
+                  <cell>
+                     <foreign xml:lang="cpp">
+                        <hi rend="unknown" rendition="#none">Tendo amado</hi>
+                     </foreign> Having been loved</cell>
+               </row>
+            </table>
+            <p>I think the foregoing will give you a tolerably fair idea, of what Ceylon Portuguese is like. I hardly need trouble you with any adverbs and prepositions. I omitted to mention that sometimes, instead of <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">Desse nos</hi>
+               </foreign>
+               <pb facs="#IMG.8" n="8"/>
+               <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">
 ama</hi>
-          </foreign>, we would, say, <foreign xml:lang="cpp">
-            <hi rend="unknown" rendition="#none">amamos</hi>
-          </foreign>, let us love.</p>
-
-        <p>I have put these grammatical notes together rather hurriedly and have no time to revise. Perhaps if I have leisure I may hereafter more carefully prepare an article for the <hi
-            rend="unknown" rendition="#none">Orientalist</hi>, on the Indo-Portuguese of Ceylon, but that must steed more indefinitely.</p>
-
-        <p>You will receive by this post, a Portuguese New Testament, the one I see you quote from of 1826, is out of print here, and out of use too. A very great friend of mine, and <hi
-            rend="unknown"
-            rendition="#none">quondam</hi> teacher was the translator of the New Testament I send you. He has used a great many words taken from the Continental Portuguese (called here High Portuguese, <hi
-            rend="unknown"
-            rendition="#none">Portugueza alto</hi>), which are not ordinarily in use; but this could hardly be avoided in a translation. Mr Blake was the name of the translator. He has now been dead some years. I will also try to send you, in addition to my little Hymn book, some manuscript songs. The song, commencing “<hi
-            rend="unknown"
-            rendition="#none">Curre vi irmãos</hi>” is a total Abstinence song, composed by me for our Portuguese friends, and sung by me at one of their meetings to the wellknown and popular tune of “<hi
-            rend="unknown"
-            rendition="#none">Margarita Maria, Margaritta, Margatitta Senhoras</hi>”. That is the air usually sung to your lyric piece (no. IV) in p. 9 of your pamphlet No. VI of the Mangalore Portuguese. I have jotted down the music for you. The other song I send you “<hi
-            rend="unknown"
-            rendition="#none">Quem quer’ ovi</hi>”, has been written out for me, by a man here, who knows a good deal of the old songs. Any other information you may wish to get I shall be very glad to receive. Can you send me a complete set of your <hi
-            rend="unknown" rendition="#none">Kreolische Studien</hi>. I have parts, <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.54">2</ref>
-          </bibl>, <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.772">
+               </foreign>, we would, say, <foreign xml:lang="cpp">
+                  <hi rend="unknown" rendition="#none">amamos</hi>
+               </foreign>, let us love.</p>
+            <p>I have put these grammatical notes together rather hurriedly and have no time to revise. Perhaps if I have leisure I may hereafter more carefully prepare an article for the <hi rend="unknown" rendition="#none">Orientalist</hi>, on the Indo-Portuguese of Ceylon, but that must steed more indefinitely.</p>
+            <p>You will receive by this post, a Portuguese New Testament, the one I see you quote from of 1826, is out of print here, and out of use too. A very great friend of mine, and <hi rend="unknown" rendition="#none">quondam</hi> teacher was the translator of the New Testament I send you. He has used a great many words taken from the Continental Portuguese (called here High Portuguese, <hi rend="unknown" rendition="#none">Portugueza alto</hi>), which are not ordinarily in use; but this could hardly be avoided in a translation. Mr Blake was the name of the translator. He has now been dead some years. I will also try to send you, in addition to my little Hymn book, some manuscript songs. The song, commencing “<hi rend="unknown" rendition="#none">Curre vi irmãos</hi>” is a total Abstinence song, composed by me for our Portuguese friends, and sung by me at one of their meetings to the wellknown and popular tune of “<hi rend="unknown" rendition="#none">Margarita Maria, Margaritta, Margatitta Senhoras</hi>”. That is the air usually sung to your lyric piece (no. IV) in p. 9 of your pamphlet No. VI of the Mangalore Portuguese. I have jotted down the music for you. The other song I send you “<hi rend="unknown" rendition="#none">Quem quer’ ovi</hi>”, has been written out for me, by a man here, who knows a good deal of the old songs. Any other information you may wish to get I shall be very glad to receive. Can you send me a complete set of your <hi rend="unknown" rendition="#none">Kreolische Studien</hi>. I have parts, <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.54">2</ref>
+               </bibl>, <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.772">
 3</ref>
-          </bibl> and <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.299">6</ref>
-          </bibl>.</p>
-        <closer>
-          <salute>Yours very truly</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1427">J H Eaton</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </bibl> and <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.299">6</ref>
+               </bibl>.</p>
+            <closer>
+               <salute>Yours very truly</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">J H Eaton</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

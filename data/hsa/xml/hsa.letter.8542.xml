@@ -1,444 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Jakob Jud (62-HSJJ16)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8542" type="PID">o:hsa.letter.8542</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">62-HSJJ16</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Bern</settlement>
-            <institution>Universität Bern</institution>
-            <repository ref="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">AIS Archiv</repository>
-            <idno type="shelfmark">HSJJ16</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1919-08-16">1919-08-16</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Jakob Jud</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1858"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8542">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1919-08-16">1919-08-16</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1858" ref="https://viaf.org/viaf/88644299">
-            <forename>Jakob</forename>
-            <surname>Jud</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1858" type="context">
-                        Korrespondenz Hugo Schuchardt - Jakob Jud
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4783" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Atlas linguistique de la France</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3966" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Revue internationale des études basques</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5468" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dreyfus-Affäre</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8542" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8542" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8542" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8542" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8542" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8542" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8542" xml:id="IMG.7">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8542" xml:id="IMG.8">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8542" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>G., 16.8.‘19</dateline>
-        <opener>Lieber Freund</opener>
-        <p>Eben erhalte ich Ihren Brief vom 12.<note n="1" place="foot" type="editorial">HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.8541">05194</ref>.</note>(er hat also die Reise sehr rasch gemacht) und erwiedere ihn sofort; ich darf nichts aufschieben – Angabe des Grundes ist überflüssig. Zunächst muß ich Ihnen einen Wunsch aussprechen der mir schon lange auf den Lippen schwebt; einen Wunsch für Sie: können Sie von Ihrer <hi
-            rend="unknown"
-            rendition="#none">Lehrer</hi>arbeit, der der Mittelschule, nicht teilweise entlastet werden? Sie lieben diesen Beruf zwar, aber nimmt er Sie nicht allzusehr in Anspruch? So viel amtliche Stunden! Denken Sie auch daran, Ihre Gesundheit zu schonen, <pb
-            facs="#IMG.2" n="2"/> die ja gottlob sich bis jetzt eisenfest erwiesen hat. </p>
-
-        <p>Ich kann nur selten und nur wenig arbeiten. Ins Romanische darf ich eigentlich gar nicht mehr hineinreden; wie ich Ihnen schon sagte, bilden der <hi
-            rend="unknown" rendition="#none">Atlas ling.</hi>
-          <note n="2" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4783">Atlas linguistique de la France</ref> (ALF)</hi>, 1902-10</note> und andere „Wälzer“ für mich fast unüberwindliche Hindernisse und der fünfjährige Literaturausfall zwingt mich geradezu den Mund zu halten. Einen Ersatz für die Romania bietet mir die Vasconia; die baskischen Studien sind zu neuem Leben erwacht, die Revista<note
-            n="3" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3966">Revista Internacional de los Estudios Vascos</ref>
-
-            </hi>, 1907f.</note> wird fortgesetzt, der Plan des baskischen Sprachatlas (er wird, im allgemein sprachwissenschaftlichen Sinn noch lehrreicher ausfallen als der große franz.) rückt der Verwirklichung näher. Saroïhandy<note
-            n="4" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2593">Jean Saroïhandy</persName> (1867-1932), franz. Romanist und Baskologe.</note> hat sich zum Baskologen entwickelt; er hat über die baskische Konjugation mit bewundernswerter Einsicht geschrieben;<note
-            n="5" place="foot" type="editorial">Saroïhandy. „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4409">Remarques sur le verbe labourdin</ref>
-            </bibl>“, <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8542" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>G., 16.8.‘19</dateline>
+            <opener>Lieber Freund</opener>
+            <p>Eben erhalte ich Ihren Brief vom 12.<note n="1" place="foot" type="editorial">HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.8541">05194</ref>.</note>(er hat also die Reise sehr rasch gemacht) und erwiedere ihn sofort; ich darf nichts aufschieben – Angabe des Grundes ist überflüssig. Zunächst muß ich Ihnen einen Wunsch aussprechen der mir schon lange auf den Lippen schwebt; einen Wunsch für Sie: können Sie von Ihrer <hi rend="unknown" rendition="#none">Lehrer</hi>arbeit, der der Mittelschule, nicht teilweise entlastet werden? Sie lieben diesen Beruf zwar, aber nimmt er Sie nicht allzusehr in Anspruch? So viel amtliche Stunden! Denken Sie auch daran, Ihre Gesundheit zu schonen, <pb facs="#IMG.2" n="2"/> die ja gottlob sich bis jetzt eisenfest erwiesen hat. </p>
+            <p>Ich kann nur selten und nur wenig arbeiten. Ins Romanische darf ich eigentlich gar nicht mehr hineinreden; wie ich Ihnen schon sagte, bilden der <hi rend="unknown" rendition="#none">Atlas ling.</hi>
+               <note n="2" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4783">Atlas linguistique de la France</ref> (ALF)</hi>, 1902-10</note> und andere „Wälzer“ für mich fast unüberwindliche Hindernisse und der fünfjährige Literaturausfall zwingt mich geradezu den Mund zu halten. Einen Ersatz für die Romania bietet mir die Vasconia; die baskischen Studien sind zu neuem Leben erwacht, die Revista<note n="3" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3966">Revista Internacional de los Estudios Vascos</ref>
+                  </hi>, 1907f.</note> wird fortgesetzt, der Plan des baskischen Sprachatlas (er wird, im allgemein sprachwissenschaftlichen Sinn noch lehrreicher ausfallen als der große franz.) rückt der Verwirklichung näher. Saroïhandy<note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Jean Saroïhandy</persName> (1867-1932), franz. Romanist und Baskologe.</note> hat sich zum Baskologen entwickelt; er hat über die baskische Konjugation mit bewundernswerter Einsicht geschrieben;<note n="5" place="foot" type="editorial">Saroïhandy. „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4409">Remarques sur le verbe labourdin</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">
 RIEV</hi> 9, 1918, 73-212.</note>
-          <pb facs="#IMG.3" n="3"/>am meisten aber hat mich überrascht wie er in meine Bask. Stud. I<note n="6"
-            place="foot" type="editorial">Schuchardt, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.88">Baskische Studien I. Über die Entstehung der Bezugsformen des baskischen Zeitworts</ref>
-              </bibl>
-
-            </hi>, Wien: Tempsky, 1893.</note> sich vertieft und meinen Ausführungen ein volles Verständnis entgegengebracht hat, wenn er auch nicht immer mit mir übereinstimmt. Ich habe sofort an Urquijo einen langen Artikel darüber geschickt, in dem ich auch Sprachphilosophisches eingewoben habe.<note
-            n="7" place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.133">Baskische Konjugation (zu Rev. 9, 173 ff.)'</ref>
-            </bibl>“, <hi rend="unknown"
-              rendition="#none">RIEV</hi> 10, 1919, 157-163. Der Artikel beginnt: „Die Hoffnung, die ich 1914 (Rev. 8,73) aussprach, hat sich verwirklicht: <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2593">Saroïhandy</persName> hat den Weg den ihm sein Name vorzeichnete, fortgesetzt, zum <hi
-              rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4407">Imparfait basque</ref>
-              </bibl>
-            </hi> von 1916 und zu den <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4409">Remarques sur le verbe labourdin</ref>
-              </bibl>
-
-            </hi> von 1918 – aus dem Schüler ist ein Meister geworden. Er überblickt den Stoff, er meistert das Werkzeug und er findet sich sogar in meinen Ausführungen zurecht; dass ich dies als ein kleines Meisterstück ansehe, wird man mir hoffentlich nicht als Selbstüberschätzung auslegen“.</note> Denn auf das Allgemeine bin ich nun doch angewiesen. Ich habe vor kurzem „Sprachursprung I“ in den S. B. der Berl. Akad. drucken lassen (natürlich habe ich noch keine SA)<note
-            n="8" place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.555">
+               <pb facs="#IMG.3" n="3"/>am meisten aber hat mich überrascht wie er in meine Bask. Stud. I<note n="6" place="foot" type="editorial">Schuchardt, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.88">Baskische Studien I. Über die Entstehung der Bezugsformen des baskischen Zeitworts</ref>
+                     </bibl>
+                  </hi>, Wien: Tempsky, 1893.</note> sich vertieft und meinen Ausführungen ein volles Verständnis entgegengebracht hat, wenn er auch nicht immer mit mir übereinstimmt. Ich habe sofort an Urquijo einen langen Artikel darüber geschickt, in dem ich auch Sprachphilosophisches eingewoben habe.<note n="7" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.133">Baskische Konjugation (zu Rev. 9, 173 ff.)'</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">RIEV</hi> 10, 1919, 157-163. Der Artikel beginnt: „Die Hoffnung, die ich 1914 (Rev. 8,73) aussprach, hat sich verwirklicht: <persName ref="[authorityLink]">Saroïhandy</persName> hat den Weg den ihm sein Name vorzeichnete, fortgesetzt, zum <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4407">Imparfait basque</ref>
+                     </bibl>
+                  </hi> von 1916 und zu den <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4409">Remarques sur le verbe labourdin</ref>
+                     </bibl>
+                  </hi> von 1918 – aus dem Schüler ist ein Meister geworden. Er überblickt den Stoff, er meistert das Werkzeug und er findet sich sogar in meinen Ausführungen zurecht; dass ich dies als ein kleines Meisterstück ansehe, wird man mir hoffentlich nicht als Selbstüberschätzung auslegen“.</note> Denn auf das Allgemeine bin ich nun doch angewiesen. Ich habe vor kurzem „Sprachursprung I“ in den S. B. der Berl. Akad. drucken lassen (natürlich habe ich noch keine SA)<note n="8" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.555">
 Sprachursprung I</ref>
-            </bibl>'“, <hi rend="unknown" rendition="#none">
+                  </bibl>'“, <hi rend="unknown" rendition="#none">
 Sitzungsberichte der Preussischen Akademie der Wissenschaften</hi> 1919, 716-720. – „GILLIÉRONS <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3945">Genealogie der französischen Wörter für Biene</ref>
-
-            </bibl> (1918) ist besser begründet, als es irgendeine Genealogie der französischen Mundarten könnte“.</note>, worin ich gegen Trombetti<note
-            n="9" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">Alfredo Trombetti</persName> (1866-1929), ital. Linugist, lehrte in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.395">Bologna</placeName>, Hauptvertreter der Monoglottogenese, vgl. <hi
-              rend="unknown" rendition="#none">
-              <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3945">Genealogie der französischen Wörter für Biene</ref>
+                  </bibl> (1918) ist besser begründet, als es irgendeine Genealogie der französischen Mundarten könnte“.</note>, worin ich gegen Trombetti<note n="9" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Alfredo Trombetti</persName> (1866-1929), ital. Linugist, lehrte in <placeName ref="[authorityLink]">Bologna</placeName>, Hauptvertreter der Monoglottogenese, vgl. <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 L’unità d’origine del linguaggio
 </bibl>
-
-            </hi>, 1905.</note> behaupte daß es weder Polygenese noch Monogenese für sich gebe, sondern nur beides zusammen; hier habe ich Gilliérons Namen erwähnt. Die nur 5 Seiten umfassende enthält kein Zitat und keine Zahl. Ich habe mir vorgenommen künftighin (quousque tandem?) mich möglichst der Zitate zu enthalten; die der Andern stören und hemmen mich gar zu sehr. In „Sprachursprung II“ werde ich mit entsprechender Kürze über den <hi
-            rend="unknown"
-            rendition="#none">eingliedrigen</hi> Satz handeln. – Recht gut passte in meine jetzigen Betrachtungen ein Besuch der mir <pb
-            facs="#IMG.4"
-            n="4"/> gestern zu teil wurde von einem Herrn Steiner aus Wien, der Ihnen von Zürich her bekannt sein wird (Zeitgenosse von † Nedwed un Schroeffl).<note
-            n="10" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2280">Walter Nedwed</persName>, vgl. oben <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.8509">Brief 1</ref>; <ref
-              target="https://gams.uni-graz.at/o:hsa.persons#P.2680">Othmar Schroefl</ref> [sic], Romanist, vgl. Briefe HSA 10263-10268. -Schroefl hatte 1915 in Graz mit der Arbeit <hi
-              rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3999">Die Ausdrücke für Mohn im Galloromanischen: eine onomasiologische Studie</ref>
-              </bibl>
-            </hi> promoviert. Vgl. Steiner an Schuchardt (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.4685">5.7.1922</ref>): „Ich will noch schnell über eine Feier zu Ehren von Juds Ernennung berichten, die vom hiesigen Seminar in einer alten Kneipe veranstaltet wurde. Es wurden Reden gehalten in allen Farben und Sprachen: zwei vulgärlateinische, eine rumänische, eine romantsche, eine spanische und eine catalanische, eine portugiesische usw – Jud gedachte in seinen Dankesworten der verstorbenen Mitglieder des Seminars, an erster Stelle Nedweds. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1557">
-Gauchat</persName> hielt eine entzückende kleine Rede über seine Anfänge als Dozent, über die Schwierigkeiten, die Juds Ernennung vorausgehen mussten. Durch alles klang der Dank der Studenten für Juds stete Hilfsbereitschaft und rührende Mitarbeit mit jedem Einzelnen“. Vgl. insgesamt die Korr. Schuchardt-Steiner, die im HSA digitalisiert ist.</note> Ein ganz netter und gescheiter Mensch, Schüler von Vossler, aber „nicht Linguist“; über sich selbst hat er sich nicht weiter ausgelassen, ich denke, er wird Ästhetiker sein. Es war so eine Art Interview; er kennt sich in meinen Schriften gut aus und hat mich auf einige Lücken meiner Bibliographie aufmerksam gemacht. Über Vossler konnte ich ihm deshalb meine Meinung nicht mit nur einiger Prägnanz sagen, weil ich mir selbst noch nicht ganz klar über ihn als Sprachwissenschaftler bin; er erobert einen durch seine Darstellung, aber ich kann ihm nicht folgen wenn er sich gegen den „Psychologismus“ ereifert und die Ästhetik auf den Thron setzt.  <note
-            n="11" place="foot" type="editorial">Verena Schwägerl-Melchior, die den Briefwechsel Schuchardt-<persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">
+                  </hi>, 1905.</note> behaupte daß es weder Polygenese noch Monogenese für sich gebe, sondern nur beides zusammen; hier habe ich Gilliérons Namen erwähnt. Die nur 5 Seiten umfassende enthält kein Zitat und keine Zahl. Ich habe mir vorgenommen künftighin (quousque tandem?) mich möglichst der Zitate zu enthalten; die der Andern stören und hemmen mich gar zu sehr. In „Sprachursprung II“ werde ich mit entsprechender Kürze über den <hi rend="unknown" rendition="#none">eingliedrigen</hi> Satz handeln. – Recht gut passte in meine jetzigen Betrachtungen ein Besuch der mir <pb facs="#IMG.4" n="4"/> gestern zu teil wurde von einem Herrn Steiner aus Wien, der Ihnen von Zürich her bekannt sein wird (Zeitgenosse von † Nedwed un Schroeffl).<note n="10" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Walter Nedwed</persName>, vgl. oben <ref target="https://gams.uni-graz.at/o:hsa.letter.8509">Brief 1</ref>; <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2680">Othmar Schroefl</ref> [sic], Romanist, vgl. Briefe HSA 10263-10268. -Schroefl hatte 1915 in Graz mit der Arbeit <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3999">Die Ausdrücke für Mohn im Galloromanischen: eine onomasiologische Studie</ref>
+                     </bibl>
+                  </hi> promoviert. Vgl. Steiner an Schuchardt (<ref target="https://gams.uni-graz.at/o:hsa.letter.4685">5.7.1922</ref>): „Ich will noch schnell über eine Feier zu Ehren von Juds Ernennung berichten, die vom hiesigen Seminar in einer alten Kneipe veranstaltet wurde. Es wurden Reden gehalten in allen Farben und Sprachen: zwei vulgärlateinische, eine rumänische, eine romantsche, eine spanische und eine catalanische, eine portugiesische usw – Jud gedachte in seinen Dankesworten der verstorbenen Mitglieder des Seminars, an erster Stelle Nedweds. <persName ref="[authorityLink]">
+Gauchat</persName> hielt eine entzückende kleine Rede über seine Anfänge als Dozent, über die Schwierigkeiten, die Juds Ernennung vorausgehen mussten. Durch alles klang der Dank der Studenten für Juds stete Hilfsbereitschaft und rührende Mitarbeit mit jedem Einzelnen“. Vgl. insgesamt die Korr. Schuchardt-Steiner, die im HSA digitalisiert ist.</note> Ein ganz netter und gescheiter Mensch, Schüler von Vossler, aber „nicht Linguist“; über sich selbst hat er sich nicht weiter ausgelassen, ich denke, er wird Ästhetiker sein. Es war so eine Art Interview; er kennt sich in meinen Schriften gut aus und hat mich auf einige Lücken meiner Bibliographie aufmerksam gemacht. Über Vossler konnte ich ihm deshalb meine Meinung nicht mit nur einiger Prägnanz sagen, weil ich mir selbst noch nicht ganz klar über ihn als Sprachwissenschaftler bin; er erobert einen durch seine Darstellung, aber ich kann ihm nicht folgen wenn er sich gegen den „Psychologismus“ ereifert und die Ästhetik auf den Thron setzt.  <note n="11" place="foot" type="editorial">Verena Schwägerl-Melchior, die den Briefwechsel Schuchardt-<persName ref="[authorityLink]">
 Vossler</persName> im HSA transkribiert und kommentiert hat, merkt dazu an: „Die Korrespondenz zwischen Hugo Schuchardt und Karl Vossler (1872-1949) gibt Einblick in den geistigen Austausch zwischen zwei Wissenschaftlern, die in Bezug auf die Sprachwissenschaft und deren Beziehung zu anderen Disziplinen sowie auf allgemeine wissenschaftstheoretische Fragestellungen zum Teil ähnliche, insbesondere mit Blick auf den ihren Forschungen zugrunde liegenden Sprachbegriff aber auch stark voneinander abweichende Positionen vertraten. Es überrascht in Anbetracht dessen nicht, dass im kontinuierlichen und langjährigen Briefwechsel die wissenschaftliche Auseinandersetzung gegenüber anderen, insbesondere politischen und wissenschaftspolitischen Gegenständen, bei denen zwischen den Ansichten der beiden Wissenschaftler weniger unüberbrückbare Gegensätze klafften, weitgehend in den Hintergrund rückt“.</note>
-        </p>
-        <p>Nun noch Einiges von andern Personen. Über Morf<note n="12" place="foot"
-              type="editorial">Vgl. den Briefwechsel <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2232">Frida Morf</persName>-Schuchardt (HSA 07488-07491).</note> weiß ich nichts Neues (übrigens, Vossler ist nach Berlin berufen worden, was ich aber nicht von Steiner erfahren habe), auch Urtel hat mir nichts über ihn mitgeteilt – er ist selbst – durch häusliches Ungemach sehr in Anspruch genommen: seine Frau hat <pb
-            facs="#IMG.5" n="5"/> auf Scheidung bestanden, aber ohne irgend welchen dramatischen Anlaß:<note n="13"
-            place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2909">Urtels</persName> schwedische Frau kehrte zu ihm zurück, erkrankte aber schwer und verstarb einige Jahre später.</note> deutschlandmüde, Flucht aus den Haushaltungsnöten, Norastimmung, kurz: „Ritter, treue Schwesterliebe“. … <note
-            n="14" place="foot" type="editorial">
+            </p>
+            <p>Nun noch Einiges von andern Personen. Über Morf<note n="12" place="foot" type="editorial">Vgl. den Briefwechsel <persName ref="[authorityLink]">Frida Morf</persName>-Schuchardt (HSA 07488-07491).</note> weiß ich nichts Neues (übrigens, Vossler ist nach Berlin berufen worden, was ich aber nicht von Steiner erfahren habe), auch Urtel hat mir nichts über ihn mitgeteilt – er ist selbst – durch häusliches Ungemach sehr in Anspruch genommen: seine Frau hat <pb facs="#IMG.5" n="5"/> auf Scheidung bestanden, aber ohne irgend welchen dramatischen Anlaß:<note n="13" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Urtels</persName> schwedische Frau kehrte zu ihm zurück, erkrankte aber schwer und verstarb einige Jahre später.</note> deutschlandmüde, Flucht aus den Haushaltungsnöten, Norastimmung, kurz: „Ritter, treue Schwesterliebe“. … <note n="14" place="foot" type="editorial">
 Ballade von <persName>
 Schiller</persName>, in der ein Edelfräulein einen Ritter verabschiedet, der ins Heilige Land zieht. Als er, von Sehnsucht getrieben, nach einem Jahr zurückkommt, hat sie den Schleier genommen. </note>
-        </p>
-        <p>Von Puşcariu, der mir persönlich sehr gut gefallen hat,<note n="15" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2460">
-Sextil Iosif Pușcariu</persName> (1877-1948), rumänischer Romanist und Rumänist; vgl. HSA 09059-09076 (der erhaltene Briefwechsel setzt 1905 ein und weist Unterbrechungen für die Jahre 1918-20 auf; aus den Jahren 1921-23 stammt jeweils nur ein Brief. Der Briefwechsel ist von Luca Melchior und Katrin Purgay bearbeitet.</note> habe ich seit lange[m] nichts gehört. Cornu ist mir unbegreiflich;<note
-            n="16" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">Jules Cornu</persName> (1849-1919), österr. Romanist Schweizer Herkunft; vgl. HSA 01710-01842 (der Briefwechsel ist bearbeitet).</note> er hat weder auf meinen noch auf Pogatschers Glückwunsch geantwortet, und auf den von der Fakultät dargebrachten, so viel ich weiß, eigentlich auch nicht, oder doch nur mit einer Erwähnung daß er krank sei (Ischias? dann allerdings „hält ihn sein Heimatland mit allen Fasern fest“). Spitzer heiratet am 18. Aug., wen, hat er mir nicht mitgeteilt.<note
-            n="17" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Leo Spitzer</persName> heiratete am 18.8.1919 die „Reichsdeutsche“ <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2763">Emma</persName> geb. Kandziora aus <placeName>
+            </p>
+            <p>Von Puşcariu, der mir persönlich sehr gut gefallen hat,<note n="15" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
+Sextil Iosif Pușcariu</persName> (1877-1948), rumänischer Romanist und Rumänist; vgl. HSA 09059-09076 (der erhaltene Briefwechsel setzt 1905 ein und weist Unterbrechungen für die Jahre 1918-20 auf; aus den Jahren 1921-23 stammt jeweils nur ein Brief. Der Briefwechsel ist von Luca Melchior und Katrin Purgay bearbeitet.</note> habe ich seit lange[m] nichts gehört. Cornu ist mir unbegreiflich;<note n="16" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Jules Cornu</persName> (1849-1919), österr. Romanist Schweizer Herkunft; vgl. HSA 01710-01842 (der Briefwechsel ist bearbeitet).</note> er hat weder auf meinen noch auf Pogatschers Glückwunsch geantwortet, und auf den von der Fakultät dargebrachten, so viel ich weiß, eigentlich auch nicht, oder doch nur mit einer Erwähnung daß er krank sei (Ischias? dann allerdings „hält ihn sein Heimatland mit allen Fasern fest“). Spitzer heiratet am 18. Aug., wen, hat er mir nicht mitgeteilt.<note n="17" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Leo Spitzer</persName> heiratete am 18.8.1919 die „Reichsdeutsche“ <persName ref="[authorityLink]">Emma</persName> geb. Kandziora aus <placeName>
 Breslau</placeName>, die 1990 93-jährig in <placeName>
-Bronxville</placeName> verstarb.</note> Sein Vater ist vor kurzem gestorben; er scheint sehr vermögend zu sein.<note
-            n="18" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Leo Spitzer </persName>war der Sohn des aus Mähren stammenden Forstbesitzers und Holzindustriellen <persName>
-Wilhelm Sp.</persName>(1848-1919) und der Adele Wolf (1862-1899; verh. 1885); vgl. Johannes Sachslehner, <hi
-              rend="unknown" rendition="#none">
-              <bibl>
+Bronxville</placeName> verstarb.</note> Sein Vater ist vor kurzem gestorben; er scheint sehr vermögend zu sein.<note n="18" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Leo Spitzer </persName>war der Sohn des aus Mähren stammenden Forstbesitzers und Holzindustriellen <persName>
+Wilhelm Sp.</persName>(1848-1919) und der Adele Wolf (1862-1899; verh. 1885); vgl. Johannes Sachslehner, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Alle, alle will ich: Arthur Schnitzler und seine süßen Wiener Mädel
 </bibl>
-            </hi>, Wien: Styria Premium, 2015, 103f.</note>
-        </p>
-        <p>Und jetzt als Allerletztes: das Politische. Sie schreiben: Sie wüßten daß wir uns in gewissen Fragen <hi
-            rend="unknown"
-            rendition="#none">nie</hi> treffen würden. Warum nie? Ich gebe ja alles zu, was mir mit Recht zum Vorwurf gemacht wird. Es handelt sich eben nur um das <hi
-            rend="unknown" rendition="#none">mit Recht</hi>. <pb facs="#IMG.6" n="6"/> Sie versuchen sich über die <hi
-            rend="unknown" rendition="#none">
-rein volkliche</hi> Auffassung zu erheben, und ich über die <hi
-            rend="unknown"
-            rendition="#none">rein staatliche</hi>; so kommen wir zunächst beide ins „Unreine“, das schreiben wir ins Reine und sind schließlich im Reinen. In der <hi
-            rend="unknown"
-            rendition="#none">Gerechtigkeit</hi> müssen wir uns treffen: ich habe immer nach Gerechtigkeit gestrebt, wenn ich auch mich oft allzu leidenschaftlich in diesem Sinne geäußert habe.* (* Selbst alles zugegeben, finde ich doch daß die Neutralen immer mit zweierlei Maß messen; oder ist ihnen der Imperialismus ebenso gräßlich wie der Militarismus). Aber, wenn ich gern bekenne daß ich in rein politischen Dingen des sichern Urteils ermangle, so glaube ich doch daß ich in bezug auf <hi
-            rend="unknown"
-            rendition="#none">Sprach</hi>gerechtigkeit von jeher auf dem richtigen Wege gewesen bin, ebensowohl für die Deutschen als gegen die Deutschen – also so daß mir, Ihren eigenen Worten zufolge ein Wohlverhaltenszeugnis gebührt. Von aller Unterdrückung ist mir die niederträchtigste erschienen, welche Sprache und Eigenart eines Volksstammes betrifft. Ich darf empört sein, wenn deutsches Land an die Polen überantwortet <pb
-            facs="#IMG.7" n="7"/> wird<note n="19" place="foot"
-            type="editorial">Im Brief „bin“.</note>, zu deren gunsten ich, im Privatverkehr gegen den Kakatismus<note
-            n="20" place="foot"
-            type="editorial">Zu „k. u. k.“ gebildetes Substantiv.</note> gesprochen habe oder das deutsche Südtirol den Italienern, für die ich immer mich eingesetzt habe u.s.w. Von den Franzosen zu schweigen, die das linke Rheinufer mit der <hi
-            rend="unknown" rendition="#none">
+                  </hi>, Wien: Styria Premium, 2015, 103f.</note>
+            </p>
+            <p>Und jetzt als Allerletztes: das Politische. Sie schreiben: Sie wüßten daß wir uns in gewissen Fragen <hi rend="unknown" rendition="#none">nie</hi> treffen würden. Warum nie? Ich gebe ja alles zu, was mir mit Recht zum Vorwurf gemacht wird. Es handelt sich eben nur um das <hi rend="unknown" rendition="#none">mit Recht</hi>. <pb facs="#IMG.6" n="6"/> Sie versuchen sich über die <hi rend="unknown" rendition="#none">
+rein volkliche</hi> Auffassung zu erheben, und ich über die <hi rend="unknown" rendition="#none">rein staatliche</hi>; so kommen wir zunächst beide ins „Unreine“, das schreiben wir ins Reine und sind schließlich im Reinen. In der <hi rend="unknown" rendition="#none">Gerechtigkeit</hi> müssen wir uns treffen: ich habe immer nach Gerechtigkeit gestrebt, wenn ich auch mich oft allzu leidenschaftlich in diesem Sinne geäußert habe.* (* Selbst alles zugegeben, finde ich doch daß die Neutralen immer mit zweierlei Maß messen; oder ist ihnen der Imperialismus ebenso gräßlich wie der Militarismus). Aber, wenn ich gern bekenne daß ich in rein politischen Dingen des sichern Urteils ermangle, so glaube ich doch daß ich in bezug auf <hi rend="unknown" rendition="#none">Sprach</hi>gerechtigkeit von jeher auf dem richtigen Wege gewesen bin, ebensowohl für die Deutschen als gegen die Deutschen – also so daß mir, Ihren eigenen Worten zufolge ein Wohlverhaltenszeugnis gebührt. Von aller Unterdrückung ist mir die niederträchtigste erschienen, welche Sprache und Eigenart eines Volksstammes betrifft. Ich darf empört sein, wenn deutsches Land an die Polen überantwortet <pb facs="#IMG.7" n="7"/> wird<note n="19" place="foot" type="editorial">Im Brief „bin“.</note>, zu deren gunsten ich, im Privatverkehr gegen den Kakatismus<note n="20" place="foot" type="editorial">Zu „k. u. k.“ gebildetes Substantiv.</note> gesprochen habe oder das deutsche Südtirol den Italienern, für die ich immer mich eingesetzt habe u.s.w. Von den Franzosen zu schweigen, die das linke Rheinufer mit der <hi rend="unknown" rendition="#none">
 pénétration pacifique</hi>
-          <note n="21" place="foot"
-            type="editorial">Friedliche Durchdringung fremder Kulturen und Territorien mit dem Ziel der Abspaltung oder Annexion.</note> bedrohen. Und wenn das alles nur im Namen der Vergeltung geschähe, dagegen ließe sich nichts einwenden, denn die Deutschen haben ja in der Tat im Osten an Germanisierung gedacht – aber die Romanen reden von Zivilisation, Menschlichkeit usw., ihr ganzer Unterbau ist Lug und Trug. Zwei Fünftel der Deutschen Österreichs sollen entvolklicht werden; wir sollen uns nicht Deutschösterreich nennen, sondern Österreichische Republik, sollen uns nicht an Deutschland anschließen dürfen …. werden Sie mir es übel nehmen daß ich Clémenceau, der dabei mit der kleinlichen Rachsucht der Franzosen vorgeht, eine Kanaille nenne, umsomehr da er Wilson von seiner Stelle verdrängt hat? <pb
-            facs="#IMG.8"
-            n="8"/> Über die Sprach-, vulgo Territorialangelegenheiten kann ich mich nicht beruhigen, hier hängt der Lebende mit dem Wissenden zusammen. Mir kommt es wie ein komischer Widerspruch vor, mich für die alten Grenzen einer Mundart zu interessieren und betreff der heutigen Grenzen meiner (oder einer anderen) Sprache auf eine wohlgeneigte Revision zu warten. In Einem aber muß ich Ihnen entschieden widersprechen. Sie verstehen die Schuldfrage nicht sowohl bezüglich der <hi
-            rend="unknown" rendition="#none">Schuld am Kriege</hi>, als der <hi rend="unknown"
-            rendition="#none">Schuld am Kriegsausbruch</hi>. Was diese anlangt, so glaube ich nur daß die Deutschen die meiste Schuld tragen, aber keineswegs allein, und davon sind die meisten Deutschen überzeugt. Die Geheimarchive mögen ihre Schätze ausspeien; die „Beweise“ werden immer trügerisch oder unvollständig sein. J’accuse, das ich seiner Zeit las,<note
-            n="22" place="foot" type="editorial">Offener Brief von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4208">Émile Zola </persName>an den damaligen Präsidenten der Republik <persName>
-Félix Faure</persName>, der am 13.1.1898 in der Tageszeitung <hi
-              rend="unknown" rendition="#none">
+               <note n="21" place="foot" type="editorial">Friedliche Durchdringung fremder Kulturen und Territorien mit dem Ziel der Abspaltung oder Annexion.</note> bedrohen. Und wenn das alles nur im Namen der Vergeltung geschähe, dagegen ließe sich nichts einwenden, denn die Deutschen haben ja in der Tat im Osten an Germanisierung gedacht – aber die Romanen reden von Zivilisation, Menschlichkeit usw., ihr ganzer Unterbau ist Lug und Trug. Zwei Fünftel der Deutschen Österreichs sollen entvolklicht werden; wir sollen uns nicht Deutschösterreich nennen, sondern Österreichische Republik, sollen uns nicht an Deutschland anschließen dürfen …. werden Sie mir es übel nehmen daß ich Clémenceau, der dabei mit der kleinlichen Rachsucht der Franzosen vorgeht, eine Kanaille nenne, umsomehr da er Wilson von seiner Stelle verdrängt hat? <pb facs="#IMG.8" n="8"/> Über die Sprach-, vulgo Territorialangelegenheiten kann ich mich nicht beruhigen, hier hängt der Lebende mit dem Wissenden zusammen. Mir kommt es wie ein komischer Widerspruch vor, mich für die alten Grenzen einer Mundart zu interessieren und betreff der heutigen Grenzen meiner (oder einer anderen) Sprache auf eine wohlgeneigte Revision zu warten. In Einem aber muß ich Ihnen entschieden widersprechen. Sie verstehen die Schuldfrage nicht sowohl bezüglich der <hi rend="unknown" rendition="#none">Schuld am Kriege</hi>, als der <hi rend="unknown" rendition="#none">Schuld am Kriegsausbruch</hi>. Was diese anlangt, so glaube ich nur daß die Deutschen die meiste Schuld tragen, aber keineswegs allein, und davon sind die meisten Deutschen überzeugt. Die Geheimarchive mögen ihre Schätze ausspeien; die „Beweise“ werden immer trügerisch oder unvollständig sein. J’accuse, das ich seiner Zeit las,<note n="22" place="foot" type="editorial">Offener Brief von <persName ref="[authorityLink]">Émile Zola </persName>an den damaligen Präsidenten der Republik <persName>
+Félix Faure</persName>, der am 13.1.1898 in der Tageszeitung <hi rend="unknown" rendition="#none">
 
 L’Aurore
 </hi> erschien und der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5468">
 Dreyfus-Affäre</ref> eine neue Wende gab.</note> hat mich nicht überzeugt; ich glaube auch jetzt noch daß in Petersburg das Entscheidende geschah; aber ich weiß es nicht. Wohl aber weiß ich, daß die Franzosen Flüsse (z. B. den Rhein) und die Italiener Gebirge (z. B. die Alpen) als natürliche Grenzen ansehen.</p>
-        <closer>
-          <salute>Herzlichst Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HSchuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <closer>
+               <salute>Herzlichst Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HSchuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

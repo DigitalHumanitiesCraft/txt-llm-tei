@@ -1,361 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Eugen Lerch an Hugo Schuchardt (03-06414)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">
-            <forename>Eugen</forename>
-            <surname>Lerch</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4305" type="PID">o:hsa.letter.4305</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">03-06414</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">06414</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">
-                <forename>Eugen</forename>
-                <surname>Lerch</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="2" unit="pages">2 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.555" ref="http://sws.geonames.org/2855334">Pasing</origPlace>
-              <origDate ana="dcterms:created" when="1923-01-29">1923-01-29</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Eugen Lerch und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2029"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4305">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2029" ref="https://viaf.org/viaf/117015826">
-            <forename>Eugen</forename>
-            <surname>Lerch</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.555" key="#GID.1" ref="http://sws.geonames.org/2855334">Pasing</placeName>
-          <date when="1923-01-29">1923-01-29</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Pasing</settlement>
-                <name ref="http://geonames.org/2855334" type="fcode:PPLX">Pasing</name>
-                <location>
-                  <geo>11.45599,48.14146</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2029" type="context">
-                        Korrespondenz Eugen Lerch - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3080" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dankschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.429" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachwissenschaft (Traditionen, Schulen und Strömungen)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4293" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Wissenschaftliche Diskussionen und Kontroversen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.763" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rezension</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4775" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Manuskriptversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4360" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Antisemitismus</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.461" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Politik- und Zeitgeschichte</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3535" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Frankfurter Zeitung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.264" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Berufungen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.141" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universitätsangelegenheiten</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4295" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität München</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3126" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Würzburg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5238" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">La Critica. Rivista di storia, letteratura e filosofia.</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.271" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Todesfälle</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3123" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sonderabdruck</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.319" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Englischbasierte Kreolsprachen (Surinam)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4305" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4305" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4305" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Rich. Wagnerstr. 30 <lb/>Hochverehrter Pasing 29.I.23</dateline>
-        <opener>Meister,</opener>
-
-        <p>Herzlichen Dank für Ihre freundlichen Zeilen, die ich in Anbetracht der großen Mühe, die Ihnen das Schreiben in Ihrem biblischen Alter machen muß, besonders zu schätzen weiß. Auf Ihren Aufsatz, der sich nach Ihrer Mitteilung inhaltlich mit dem meinen berührt, bin ich sehr gespannt.<note
-            n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.319">„Individualismus“, <hi rend="unknown" rendition="#none">Euphorion</hi>, 16. Ergänzungsheft, Festschrift für Bernhard Seuffert. Zum 23. Mai 1923, 1-8.</ref>
-            </bibl>
-          </note> Daß Sie in einzelnen Punkten von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Voßler</persName> abweichen, war mir wohl bewußt, und Sie haben dieselben mit großer Klarheit ausgesprochen. Aber die Hauptsache scheint mir die Übereinstimmung in der Grundrichtung, in der Überzeugung, daß die Sprache nicht <hi
-            rend="unknown" rendition="#none">an sich</hi> existiere und nicht <hi rend="unknown"
-            rendition="#none">an sich</hi> zu verstehen sei. Daß Ihre Gefolgschaft durchaus nicht homogen sei, hab‘ ich ja angedeutet. Ja, <foreign xml:lang="fr">je vivrai, je verrai</foreign> – und werde vielleicht noch manche Wandlung durchmachen – vorausgesetzt, daß die Not des Vaterlandes ihm noch längere Zeit erlaubt, Universitäten zu halten und den Dozenten die Muße zu wissenschaftlichen Arbeiten zu geben.</p>
-        <p>Um Ihnen alle Sorgen wegen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-Spitzer</persName>, „der alles erfährt“, abzunehmen, habe ich auch diesem ein Exemplar der Recension geschickt. Ich kann mir zwar nicht denken, daß ihn meine Einwände, die ich in der denkbar mildesten Form vorgebracht habe, irgend kränken könnten (vorbringen mußte ich sie schließlich) – aber wenn er die Besprechung noch vor Erscheinen von mir selbst erhält, kann er <pb
-            facs="#IMG.2"
-            n="2"/> m. E. noch weniger gekränkt sein. Sollte er trotzdem deswegen an Sie schreiben, so verweisen Sie ihn nur einfach an mich. Seine Empfindlichkeit ist allerdings groß, und das ist angesichts des <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4360">
-Antisemitismus</ref> (er kann nur froh sein, nicht in Bayern leben zu müssen, wo man selbst die blondesten und blauäugigsten Zeitgenossen, sofern sie ‘mal eine Notiz in die Frankfurter Zeitung gesetzt haben, für Juden hält!) und der Zurücksetzung bei den Berufungen nur zu begreiflich.<note
-            n="2" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName> reagierte <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Schuchardt</persName> gegenüber (Brief Lfd.Nr. <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.2158">
-327-11088</ref>) höchst ungehalten auf Lerchs Zusendung: „Ich antworte auf den Ihnen wesentlichen Punkt, nämlich die Besprechung Lerchs. Ich finde diesen Menschen in allem, was er tut, namenlos geschmacklos – so auch die Sendung der Besprechung vor der Drucklegung. Mag er auch gedacht haben, Ihnen eine Freude zu bereiten, so ist das doch ein ganz ungewöhnlicher Vorgang. Auch inhaltlch bin ich natürlich nicht mit allem einverstanden. Für ihn ist tatsächlich, wie Sie andeuten, alles erledigt, wenn man <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName> anerkennt. Er unterwirft alle Forscher einer Musterung, bei der die Tauglichkeit nach der Vossler-Unterwürfigkeit bemessen wird. Dagegen müßte man sich einmal aufs schärfste zur Wehr setzen“ (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1599">ed. Hurch, S. 238</ref>
-
-            </bibl>; dieser undatierte Brief ist demnach auf Anfang bis Mitte Februar zu datieren).</note> Es sieht auch leider nicht so aus, als ob er in Heidelberg irgendwelche Aussichten hätte.<note
-            n="3" place="foot" type="editorial">Es ging um die Nachfolge von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2288">Friedrich (Fritz) Neumann</persName> (1854-1934), der am 31.3.1923 emeritiert worden war. Berufen wurde <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1348">Ernst Robert Curtius</persName>.</note>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Voßler</persName> hatte ihm mein Extraordinariat zugedacht, für den Fall, daß ich nach <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3126">Würzburg</ref> berufen würde – aber dieser Fall ist ja nicht eingetreten.<note
-            n="4" place="foot" type="editorial">Vgl. <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-Spitzers</persName> Brief an <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Schuchardt</persName> vom 27.10.1922: „In Wien lernte ich <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4365">Küchler</persName> samt Frau kennen. […] Küchler erzählte mir, was ich auch so schon wußte: er habe Lerch mit aller Macht durchsetzen wollen, sei aber auf eine Einheitsfront gestoßen. Durch Lerchs Avancement wäre dann München für mich in Frage gekommen, wie auch er bestätigte“ (HSA, Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.2202">356-11116</ref>, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1599">ed. Hurch</ref>
-            </bibl>, 276).</note>
-        </p>
-        <p>Croces Artikel in seiner <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5238">
-            <hi rend="unknown" rendition="#none">Critica</hi>
-
-          </ref> über die Krisis der Sprachwissenschaft ist nur drei Seiten lang und enthält nichts für Sie Neues (er schreibt aus Anlaß von Gilliéron, <hi
-            rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4305" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Rich. Wagnerstr. 30 <lb/>Hochverehrter Pasing 29.I.23</dateline>
+            <opener>Meister,</opener>
+            <p>Herzlichen Dank für Ihre freundlichen Zeilen, die ich in Anbetracht der großen Mühe, die Ihnen das Schreiben in Ihrem biblischen Alter machen muß, besonders zu schätzen weiß. Auf Ihren Aufsatz, der sich nach Ihrer Mitteilung inhaltlich mit dem meinen berührt, bin ich sehr gespannt.<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.319">„Individualismus“, <hi rend="unknown" rendition="#none">Euphorion</hi>, 16. Ergänzungsheft, Festschrift für Bernhard Seuffert. Zum 23. Mai 1923, 1-8.</ref>
+                  </bibl>
+               </note> Daß Sie in einzelnen Punkten von <persName ref="[authorityLink]">Voßler</persName> abweichen, war mir wohl bewußt, und Sie haben dieselben mit großer Klarheit ausgesprochen. Aber die Hauptsache scheint mir die Übereinstimmung in der Grundrichtung, in der Überzeugung, daß die Sprache nicht <hi rend="unknown" rendition="#none">an sich</hi> existiere und nicht <hi rend="unknown" rendition="#none">an sich</hi> zu verstehen sei. Daß Ihre Gefolgschaft durchaus nicht homogen sei, hab‘ ich ja angedeutet. Ja, <foreign xml:lang="fr">je vivrai, je verrai</foreign> – und werde vielleicht noch manche Wandlung durchmachen – vorausgesetzt, daß die Not des Vaterlandes ihm noch längere Zeit erlaubt, Universitäten zu halten und den Dozenten die Muße zu wissenschaftlichen Arbeiten zu geben.</p>
+            <p>Um Ihnen alle Sorgen wegen <persName ref="[authorityLink]">
+Spitzer</persName>, „der alles erfährt“, abzunehmen, habe ich auch diesem ein Exemplar der Recension geschickt. Ich kann mir zwar nicht denken, daß ihn meine Einwände, die ich in der denkbar mildesten Form vorgebracht habe, irgend kränken könnten (vorbringen mußte ich sie schließlich) – aber wenn er die Besprechung noch vor Erscheinen von mir selbst erhält, kann er <pb facs="#IMG.2" n="2"/> m. E. noch weniger gekränkt sein. Sollte er trotzdem deswegen an Sie schreiben, so verweisen Sie ihn nur einfach an mich. Seine Empfindlichkeit ist allerdings groß, und das ist angesichts des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4360">
+Antisemitismus</ref> (er kann nur froh sein, nicht in Bayern leben zu müssen, wo man selbst die blondesten und blauäugigsten Zeitgenossen, sofern sie ‘mal eine Notiz in die Frankfurter Zeitung gesetzt haben, für Juden hält!) und der Zurücksetzung bei den Berufungen nur zu begreiflich.<note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Spitzer</persName> reagierte <persName ref="[authorityLink]">Schuchardt</persName> gegenüber (Brief Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.2158">
+327-11088</ref>) höchst ungehalten auf Lerchs Zusendung: „Ich antworte auf den Ihnen wesentlichen Punkt, nämlich die Besprechung Lerchs. Ich finde diesen Menschen in allem, was er tut, namenlos geschmacklos – so auch die Sendung der Besprechung vor der Drucklegung. Mag er auch gedacht haben, Ihnen eine Freude zu bereiten, so ist das doch ein ganz ungewöhnlicher Vorgang. Auch inhaltlch bin ich natürlich nicht mit allem einverstanden. Für ihn ist tatsächlich, wie Sie andeuten, alles erledigt, wenn man <persName ref="[authorityLink]">Vossler</persName> anerkennt. Er unterwirft alle Forscher einer Musterung, bei der die Tauglichkeit nach der Vossler-Unterwürfigkeit bemessen wird. Dagegen müßte man sich einmal aufs schärfste zur Wehr setzen“ (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1599">ed. Hurch, S. 238</ref>
+                  </bibl>; dieser undatierte Brief ist demnach auf Anfang bis Mitte Februar zu datieren).</note> Es sieht auch leider nicht so aus, als ob er in Heidelberg irgendwelche Aussichten hätte.<note n="3" place="foot" type="editorial">Es ging um die Nachfolge von <persName ref="[authorityLink]">Friedrich (Fritz) Neumann</persName> (1854-1934), der am 31.3.1923 emeritiert worden war. Berufen wurde <persName ref="[authorityLink]">Ernst Robert Curtius</persName>.</note>
+               <persName ref="[authorityLink]">Voßler</persName> hatte ihm mein Extraordinariat zugedacht, für den Fall, daß ich nach <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3126">Würzburg</ref> berufen würde – aber dieser Fall ist ja nicht eingetreten.<note n="4" place="foot" type="editorial">Vgl. <persName ref="[authorityLink]">
+Spitzers</persName> Brief an <persName ref="[authorityLink]">Schuchardt</persName> vom 27.10.1922: „In Wien lernte ich <persName ref="[authorityLink]">Küchler</persName> samt Frau kennen. […] Küchler erzählte mir, was ich auch so schon wußte: er habe Lerch mit aller Macht durchsetzen wollen, sei aber auf eine Einheitsfront gestoßen. Durch Lerchs Avancement wäre dann München für mich in Frage gekommen, wie auch er bestätigte“ (HSA, Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.2202">356-11116</ref>, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1599">ed. Hurch</ref>
+                  </bibl>, 276).</note>
+            </p>
+            <p>Croces Artikel in seiner <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5238">
+                  <hi rend="unknown" rendition="#none">Critica</hi>
+               </ref> über die Krisis der Sprachwissenschaft ist nur drei Seiten lang und enthält nichts für Sie Neues (er schreibt aus Anlaß von Gilliéron, <hi rend="unknown" rendition="#none">
 Faillite</hi>).<note n="5" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6066">„A proposito della crisi nella scienza linguistica“, <hi
-                  rend="unknown" rendition="#none">La Critica</hi> 20, 1922, 177-180</ref>
-            </bibl> (zu <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3922">J. Gilliéron, <hi rend="unknown" rendition="#none">Études sur la défectivité des verbes. La faillite de l’Étymologie phonétique</hi>. Résumé de conférences faites à l’École Pratique des Haures Études, Bern 1919</ref>
-            </bibl>).</note>
-        </p>
-        <p>Ihre Anteilnahme an <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">
-Voßlers</persName> schwerem Verlust habe ich diesem ausgerichtet; er läßt Ihnen einstweilen durch mich danken und wird es noch direkt tun.<note
-            n="6" place="foot" type="editorial">Voßlers erste Frau, <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4309">Esterina (Ester) Gräfin Gnoli</persName>, war im November 1922 verstorben.</note>
-        </p>
-        <p>Von der 2. Hälfte meines <bibl>
-            <hi rend="unknown" rendition="#none">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6066">„A proposito della crisi nella scienza linguistica“, <hi rend="unknown" rendition="#none">La Critica</hi> 20, 1922, 177-180</ref>
+                  </bibl> (zu <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3922">J. Gilliéron, <hi rend="unknown" rendition="#none">Études sur la défectivité des verbes. La faillite de l’Étymologie phonétique</hi>. Résumé de conférences faites à l’École Pratique des Haures Études, Bern 1919</ref>
+                  </bibl>).</note>
+            </p>
+            <p>Ihre Anteilnahme an <persName ref="[authorityLink]">
+Voßlers</persName> schwerem Verlust habe ich diesem ausgerichtet; er läßt Ihnen einstweilen durch mich danken und wird es noch direkt tun.<note n="6" place="foot" type="editorial">Voßlers erste Frau, <persName ref="[authorityLink]">Esterina (Ester) Gräfin Gnoli</persName>, war im November 1922 verstorben.</note>
+            </p>
+            <p>Von der 2. Hälfte meines <bibl>
+                  <hi rend="unknown" rendition="#none">
 Imperfektum</hi>
-          </bibl>
-          <note n="7" place="foot"
-            type="editorial">Vgl. Anm. 3.</note> habe ich bis heute, trotz Mahnung, noch keinen Sonderabzug erhalten, weder die pflichtmäßigen noch die darüber hinaus bestellten. Aber nachdem Sie, hochverehrter Meister, das 4. Heft der Z. ohnehin erhalten haben, das diese 2. Hälfte vollständig enthält – darf ich Sie da, in Anbetracht der wenigen Exemplare, die ich gegen erhebliche Zuzahlung erhalten werde (<hi
-            rend="unknown"
-            rendition="#none">wenn </hi>ich Sie bekomme) nicht bitten, mich zugunsten solcher, die die Z. <hi
-            rend="unknown" rendition="#none">nicht </hi>erhalten, von meinem Versprechen zu entbinden?</p>
-        <closer>
-          <salute>Mit den herzlichsten Wünschen für Ihre Gesundheit und besonders für Ihre Augen</salute>
-          <lb/>
-          <salute>in dankbarer Verehrung</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Lerch</persName>. </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </bibl>
+               <note n="7" place="foot" type="editorial">Vgl. Anm. 3.</note> habe ich bis heute, trotz Mahnung, noch keinen Sonderabzug erhalten, weder die pflichtmäßigen noch die darüber hinaus bestellten. Aber nachdem Sie, hochverehrter Meister, das 4. Heft der Z. ohnehin erhalten haben, das diese 2. Hälfte vollständig enthält – darf ich Sie da, in Anbetracht der wenigen Exemplare, die ich gegen erhebliche Zuzahlung erhalten werde (<hi rend="unknown" rendition="#none">wenn </hi>ich Sie bekomme) nicht bitten, mich zugunsten solcher, die die Z. <hi rend="unknown" rendition="#none">nicht </hi>erhalten, von meinem Versprechen zu entbinden?</p>
+            <closer>
+               <salute>Mit den herzlichsten Wünschen für Ihre Gesundheit und besonders für Ihre Augen</salute>
+               <lb/>
+               <salute>in dankbarer Verehrung</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Lerch</persName>. </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,581 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Émile Trouette an Hugo Schuchardt (06-11850)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">
-            <forename>Émile</forename>
-            <surname>Trouette</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Martina</forename>
-            <surname>Pelz</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3624" type="PID">o:hsa.letter.3624</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">06-11850</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11850</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="fr"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">
-                <forename>Émile</forename>
-                <surname>Trouette</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="11" unit="pages">11 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" ref="http://sws.geonames.org/2988507">Paris</origPlace>
-              <origDate ana="dcterms:created" when="1882-11-06">1882-11-06</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Martina</forename>
-              <surname>Pelz</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Émile Trouette und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2884"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3624">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2884" ref="https://viaf.org/viaf/194120079">
-            <forename>Émile</forename>
-            <surname>Trouette</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" key="#GID.1" ref="http://sws.geonames.org/2988507">Paris</placeName>
-          <date when="1882-11-06">1882-11-06</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Paris</settlement>
-                <name ref="http://geonames.org/2988507" type="fcode:PPLC">Paris</name>
-                <location>
-                  <geo>2.3488,48.85341</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2884" type="context">
-                        Korrespondenz Émile Trouette - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="fr">Französisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3624" xml:id="IMG.11">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3624" xml:lang="fr">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Paris, le 6 novembre 1882</dateline>
-        <p>Monsieur, j’ai reçu votre lettre du 1<hi rendition="#sup">er</hi> de ce mois. J’y réponds dans l’ordre où se trouvent posées les questions pour n’en oublier aucune. </p>
-        <p>            Vous pourrez trouver des renseignements sur l’ethnographie de la Réunion dans les<hi
-            rend="unknown"
-            rendition="#none"> Notes de L. Maillard, chez Dentu libraire éditeur, Palais Royal, Galerie d’Orléans 13</hi>. M. Maillard<note
-            n="1" place="foot" type="editorial">Maillard, Louis (1862): <hi rend="unknown" rendition="#none">
-              <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3624" xml:lang="fr">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Paris, le 6 novembre 1882</dateline>
+            <p>Monsieur, j’ai reçu votre lettre du 1<hi rendition="#sup">er</hi> de ce mois. J’y réponds dans l’ordre où se trouvent posées les questions pour n’en oublier aucune. </p>
+            <p>            Vous pourrez trouver des renseignements sur l’ethnographie de la Réunion dans les<hi rend="unknown" rendition="#none"> Notes de L. Maillard, chez Dentu libraire éditeur, Palais Royal, Galerie d’Orléans 13</hi>. M. Maillard<note n="1" place="foot" type="editorial">Maillard, Louis (1862): <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Notes sur l‘île de la Réunion (Bourbon)
 </bibl>
-            </hi>, Paris, Dentu.</note>, l’un de mes amis, était un parfait honnête homme ; Ses <hi rend="unknown" rendition="#none">
+                  </hi>, Paris, Dentu.</note>, l’un de mes amis, était un parfait honnête homme ; Ses <hi rend="unknown" rendition="#none">
 Notes</hi> sont avant tout recommandables pour leur sincérité irréprochable. En voici les matières.</p>
-        <p> 1<hi
-            rendition="#sup">ère</hi> partie, chronologie, topographie, hydrographie, météorologie, géologie, volcan, sources thermales, botanique, ethnographie, immigration et esclavage, agriculture, industrie sucrière, commerce, gouvernement, législation, finances, instruction publique, <pb
-            facs="#IMG.2" n="2"/> culte, travaux publics, statistique, biographies, langage, chants, musique, beaux arts, courses. </p>
-        <p>2<hi rendition="#sup">ème</hi> partie : Oiseaux, coquilles, poissons, insectes, papillons, cartes, etc. C’est un volume grand en 8°, de 600 pages. Si j’en avais un à moi, il vous serait tout de suite expédié !</p>
-
-        <p>Dans quelques jours, lorsque j’aurai terminé une correspondance pour la Réunion, je vous copierai un travail intéressant que j’ai sous la main sur l’ethnographie de notre île. - Ce travail est du docteur Herland.<note
-            n="2" place="foot"
-              type="editorial">Herlands Informationen über die Bevölkerungsstruktur der Insel <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.5988">La Réunion</placeName> können in Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.3625">11851</ref>/1 nachgelesen werden.</note>
-        </p>
-        <p>Pour ce qui est de mon volume, il n’est pas possible qu’il paraisse avant un an, au plus tôt. Je n’ai pas encore tous les renseignements dont j’ai besoin. J’ai quitté la Réunion si précipitamment pour arriver à Paris avant le départ de l’un de mes fils qui se rendait en Cochimchine, que je serai peut-être dans la nécessité de faire un voyage pour avoir ce qui personne ne saurait m’envoyer. </p>
-        <p>Je n’ai encore rien dit à mon cousin <pb facs="#IMG.3" n="3"/> Julien Vinson, par la raison qu’il est allé prendre ses vacances au bout de la France du côté de Bayonne. </p>
-        <p>Je n’ai passé que deux heures aux îles Seychelles, sans avoir pu m’apercevoir de l’existence d’un créole de ces îles. </p>
-        <p>Mon petit-fils aura 16 mois dans cinq jours ; il est donc, vous le voyez, à l’extrême limite antérieure de la période bonbonné-vore, come vous l’appelez si bien. </p>
-        <p>Je ne vois pas quelle nuance M. Duclos veut indiquer par l’orthographe <hi rend="unknown"
-            rendition="#none">seil</hi> au lieu de <hi rend="unknown" rendition="#none">sel</hi>.<note n="3"
-            place="foot" type="editorial">Hier beginnt Trouette, auf die Fragen Schuchardts zum Lied <hi rend="unknown"
-            rendition="#none">
-Li coer n’a pas magazin</hi> zu beantworten. Schuchardts Fragen finden sich im Anschluss an diesen Brief ab Seite 9.</note> Prononcez <hi
-            rend="unknown" rendition="#none">li tout </hi>
-          <hi rend="unknown" rendition="#none">sel</hi> semi-ouvert comme dans <hi rend="unknown"
-            rendition="#none">seigneur</hi> ; prononcez <hi rend="unknown"
-            rendition="#none">de’, pe’, die’</hi> en les marquants d’un bel accent aigu, comme dans <hi rend="unknown"
-            rendition="#none">bonté</hi>.<note n="4" place="foot"
-              type="editorial">Hier antwortet Trouette auf Schuchardts 1. Frage in Bezug auf die Aussprache der Vokale. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1421">Duclos</persName> schlägt eine Änderung der Orthographie vor. Die Aussprache scheint Schuchardt jedoch nicht ganz klar gewesen zu sein. </note>
-        </p>
-        <p>Entre <hi rend="unknown" rendition="#none">moi</hi> et <hi rend="unknown"
-            rendition="#none">moua</hi>, je ne vois d’autre différence que quelque chose de plus lourd dans <hi
-            rend="unknown"
-            rendition="#none">moūā,</hi> qui devra se trouver plutôt dans la bouche des vieux les plus arriérés. - Les deux sont créoles ; mais bien évidemment <pb
-            facs="#IMG.4" n="4"/>
-          <hi rend="unknown" rendition="#none">moin</hi> et <hi rend="unknown" rendition="#none">moué</hi> le sont encore plus profondément. </p>
-        <p>Oui, <hi rend="unknown" rendition="#none">moin</hi>
-          <note n="5" place="foot"
-            type="editorial">Die folgenden Absätze beziehen sich auf Schuchardts 3. Frage.</note> comme régime toujours et comme sujet devant une consonne, mais aussi comme sujet <hi
-            rend="unknown" rendition="#none">moin y dit</hi>.</p>
-        <p>Oui, <hi rend="unknown" rendition="#none">moin dit</hi>, <hi rend="unknown"
-            rendition="#none">moué y dit</hi>, <hi rend="unknown" rendition="#none">moú y dit</hi>, <hi rend="unknown"
-            rendition="#none">mi dit</hi>, mais <hi rend="unknown" rendition="#none">moin dit pas</hi>, <hi
-            rend="unknown" rendition="#none">moin dit à vous</hi>, c’est à dire quelque chose après <hi rend="unknown" rendition="#none">moins dit</hi>
-          <note n="6" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">plutôt que</hi> ist an dieser Stelle durchgestrichen.</note> et non pas <hi rend="unknown"
-            rendition="#none">moin dit</hi> tout court. <hi rend="unknown" rendition="#none">Mi dit</hi>, plutôt dans la bouche d’un enfant ou d’une femme, jamais dans celle d’un gros cafre. </p>
-
-        <p>            Tout à peu près est possible dans le créole, qui n’a d’autre guide qu’un instinct presque toujours peu délicat, je veux dire peu intelligent, peu logique, peu préoccupé de la nécessité de certaines règles ; il est donc possible que quelques-uns disent <hi
-            rend="unknown"
-            rendition="#none">moué a dit</hi> pour un futur ; mais je n’en ai aucun souvenir , c’est au moins bien rare. <hi
-            rend="unknown" rendition="#none">Moú a dit</hi>, <hi rend="unknown" rendition="#none">m’a dit</hi>, (Duclos) pour le futur, oui, très souvent. </p>
-        <p>            Quand vous dites que<hi rend="unknown" rendition="#none"> moi y appelle <pb facs="#IMG.5"
-            n="5"/> y contredit souverainement,</hi> vous êtes parfaitement logique ;<hi rend="unknown" rendition="#none"> moi y appelle</hi> n’en est pas moins un de ces faits qui s’inquiètent peu de la logique.</p>
-        <p>            On dit <hi rend="unknown"
-            rendition="#none">moui attéle même, </hi>j’attèle, c’est cela même que je fais ; <hi rend="unknown"
-            rendition="#none">li qui tèle ça</hi>, c’est lui qui est chargé d’atteler cette bête ; talhère <hi
-            rend="unknown" rendition="#none">moi téler</hi>, ce qui peut s’écrire <hi rend="unknown"
-            rendition="#none">talhère moua téler</hi>, <note n="7" place="foot"
-              type="editorial">An dieser Stelle wurde <hi rend="unknown"
-            rendition="#none">ou talhere moua téler</hi> durchgestrichen.</note>ou <hi rend="unknown"
-            rendition="#none">talhère moú altéler</hi>, pour dire <hi rend="unknown" rendition="#none">tout à l’heure</hi>
-          <hi rend="unknown" rendition="#none">j’attellerai</hi> ; <hi rend="unknown"
-            rendition="#none">moi fini téler</hi>, j’ai attelé. <hi rend="unknown" rendition="#none">A cause vou télé</hi>
-          <hi rend="unknown" rendition="#none">pas ça milet là</hi>, <hi rend="unknown"
-            rendition="#none">à cause vou y télé pas ça milet là</hi> et encore <hi rend="unknown" rendition="#none">à cause vou atélé pas ça milet </hi>
-          <hi rend="unknown" rendition="#none">la</hi> ?</p>
-        <p>            On dit <hi rend="unknown" rendition="#none">mouí</hi>
-          <hi rend="unknown" rendition="#none">croce<note n="8" place="foot" type="editorial">
-Das <hi rend="unknown"
-                rendition="#none">h</hi> in <hi rend="unknown" rendition="#none">croche</hi> wurde hier durchgestrichen.</note>
-          </hi> ; je ne dis pas qu’aucun n’ait dit : <hi rend="unknown" rendition="#none">Moui acoroce</hi>, <hi
-            rend="unknown" rendition="#none">moin y acoroce</hi>, <hi rend="unknown" rendition="#none">moin y acouroce</hi>. </p>
-        <p>            <hi rend="unknown" rendition="#none">Ajouter</hi> n’est plus du pur créole ; il veut déjà le français pur. </p>
-        <p>            Certainement, très certainement : <hi rend="unknown" rendition="#none">A</hi>
-          <hi rend="unknown" rendition="#none">ppéle Jan</hi>, <hi rend="unknown" rendition="#none">a</hi>
-          <hi rend="unknown" rendition="#none">ppéle à li don </hi>M. Duclos dit très bien. <hi rend="unknown"
-            rendition="#none">Vi zire</hi>, <hi rend="unknown" rendition="#none">voui vé</hi>.</p>
-        <p>C’est parfaitement exact. Au futur <pb facs="#IMG.6" n="6"/> il peut écrire comme il veut puisqu’il n’y a pas d’orthographe ; je ne vois pas quel motif il peut avoir.</p>
-        <p>            <hi rend="unknown" rendition="#none">Li va canter, zaut’ va canter</hi>, oui</p>
-        <p>Je rebute <hi rend="unknown" rendition="#none">le li l’appelle</hi> de M. Héry ; oui ; mais comment l’ai-je fait ? Si j’ai été absolu, j’ai peut-être eu tort ; car tout est possible en créole. Il est donc plus facile de dire ce qui est que ce qui n’est pas. </p>
-        <p>M. Duclos a raison dire. <hi rend="unknown" rendition="#none">Vi aime </hi>
-        </p>
-        <p>            Oui, l’ ne s’emploie que devant <hi rend="unknown"
-            rendition="#none">
-a</hi> et e’, mes souvenirs ne me disent pas autre chose dans le moment du moins. – Une bonne fortune. Je causais hier avec un de mes amis de ma correspondance avec vous, Monsieur, au sujet du patois créole ; il m’enverra aujourd’hui ou demain deux morceaux dont il connaît l’existence dans un recueil qui date d’une trentaine d’années. Aussitôt que je l’aurais, je m’empresserais de vous le copier, s’il présente quelque <pb
-            facs="#IMG.7" n="7"/> intérêt. </p>
-        <p>            4. <hi rend="unknown" rendition="#none">Moin fini mandgie</hi> et <hi rend="unknown"
-            rendition="#none">moin la mandgie</hi> me paraissent être deux formes du même passé indéfini. <hi
-            rend="unknown"
-            rendition="#none">J’ai mangé</hi>, la première affirmant le fait avec plus d’insistance. Disons mieux : il y a là deux passés indéfinis, l’un de <hi
-            rend="unknown" rendition="#none">finir</hi>, l’autre de <hi rend="unknown" rendition="#none">manger</hi>. </p>
-        <p>            5. Il y a là ce me semble une idée très heureuse.</p>
-        <p>            6. Il me semble avoir déjà dit que <hi rend="unknown" rendition="#none">
-aura</hi> et <hi
-            rend="unknown" rendition="#none">s’ra</hi> sont des gallicismes.</p>
-        <p>            7. Moin-là zenfant misère. Liez inténsement <hi rend="unknown"
-            rendition="#none">là à moin</hi>, comme <hi rend="unknown" rendition="#none">là</hi> dans celui-<hi
-            rend="unknown" rendition="#none">là</hi>, <hi rend="unknown" rendition="#none">ci</hi> dans celui-<hi
-            rend="unknown" rendition="#none">ci</hi>, avec la même valeur, sans y rien voir du verbe.</p>
-        <p>8. <hi rend="unknown" rendition="#none">Èue vont la caze nana zaricot</hi> <hi rend="unknown" rendition="#none">?</hi>
-          <hi rend="unknown" rendition="#none">Ma point asthère</hi>. <hi rend="unknown"
-            rendition="#none">Mana</hi> affirmatif, pour <hi rend="unknown" rendition="#none">il y a</hi> ; <hi
-            rend="unknown" rendition="#none">na</hi> négatif avec <hi rend="unknown" rendition="#none">pas</hi> ou <hi
-            rend="unknown" rendition="#none">
-point</hi>. <hi rend="unknown" rendition="#none">Nana qu’nana</hi>, <hi
-            rend="unknown"
-            rendition="#none">nana qu’na point</hi>. Il y en a qui en ont, il y en a qui n’en ont point. Mais on dit à l’imparfait : <hi
-            rend="unknown" rendition="#none">Navait ain vie’</hi>
-          <pb facs="#IMG.8" n="8"/>
-          <hi rend="unknown" rendition="#none">bounhomme</hi> il y avait un vieux bonhomme ; <hi rend="unknown"
-            rendition="#none">n’aura miçan temps dimains</hi>. Il y aura du mauvais temps demain. <hi rend="unknown"
-            rendition="#none">Nous la gaigne malhèr</hi> ou bien <hi rend="unknown" rendition="#none">nous na gaigne malhèr</hi> nous avons eu du malheur.</p>
-        <p>9. Quelle est la place de la négation ? Toutes les formes citées sont exactes. A l’impératif <hi
-            rend="unknown" rendition="#none">Ma pas boudjié</hi> très bien, mais <hi rend="unknown" rendition="#none">boudjié pas</hi> plus souvent.</p>
-        <p>L’accent sur l’<hi rend="unknown" rendition="#none">é</hi> a l’impératif, sur <hi rend="unknown" rendition="#none">ou</hi> au présent de l’indicatif.</p>
-        <closer>
-          <salute>J’attends avec impatience les deux morceaux qui m’ont été promis. Je vous prie de croire, Monsieur, j’aurai du plaisir à vous les envoyer, comme j’en ai à vous suivre dans les détails de votre curiosité sur un patois que notre ministre de l’agriculture et moi nous vous surprenons à parler quand nous nous rencontrons ; mon plus complet dévouement vous est acquis.</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">E L Trouette</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.3624" subtype="original" type="appendix" xml:lang="fr">
-        <p>
-          <pb facs="#IMG.9" n="9"/> 1. M. Duclos veut qu’on écrive<note n="9" place="foot"
-              type="editorial">Die folgenden Fragen stammen von Schuchardt. Er bezieht sich hierbei auf die Kommentare <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1421">Duclos</persName> zum Lied <hi rend="unknown"
-              rendition="#none">Li coer n’a pas magazin.</hi> Schuchardt versuchte offenbar, das Mauritiuskreol (vgl. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1069">Baissac</persName>) und das Réunionkreol (vgl. Duclos) miteinander zu vergleichen und holt sich hier eine zusätzliche Meinung eines kreolischen Muttersprachlers aus La Réunion ein.</note>
-        </p>
-        <p>            <hi rend="unknown" rendition="#none">seil</hi>   au lieu de <hi rend="unknown"
-            rendition="#none">sel</hi> (seul)                    <hi rend="unknown"
-            rendition="#none">in</hi> au lieu de <hi rend="unknown" rendition="#none">ein</hi> (un)</p>
-        <p>            <hi rend="unknown" rendition="#none">deix</hi> -   -    -   <hi rend="unknown" rendition="#none">dé</hi>  (deux) </p>
-        <p>            <hi rend="unknown" rendition="#none">pei</hi>  -  -   -       <hi rend="unknown" rendition="#none">pé</hi> (pese)</p>
-        <p>            <hi rend="unknown" rendition="#none">Diei</hi>  -  -   -     <hi rend="unknown" rendition="#none">Dié</hi>  (Dieu) etc.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Ei</hi> (en <hi rend="unknown" rendition="#none">
-seigneur</hi>, <hi
-            rend="unknown" rendition="#none">bey</hi> etc.) a le son de l’<hi rend="unknown"
-            rendition="#none">e</hi> demi-ouvert, tandis que <hi rend="unknown"
-            rendition="#none">é</hi> indique la prononciation fermée. Mais l’<hi rend="unknown"
-            rendition="#none">e</hi> de <hi rend="unknown"
-            rendition="#none">sel</hi> est aussi demi-ouvert ; il ne s’agirait donc ici que de marquer la différence de la quantité : <hi
-            rend="unknown" rendition="#none">sēl</hi> – <hi rend="unknown"
-            rendition="#none">sĕl</hi> - Quelle nuance de la prononciation pourrait être exprimée par <hi rend="unknown"
-            rendition="#none">in</hi> au lieu de e<hi rend="unknown" rendition="#none">in</hi> ? Est-ce que <hi
-            rend="unknown" rendition="#none">vin</hi> et <hi rend="unknown" rendition="#none">frein</hi>, <hi
-            rend="unknown" rendition="#none">tin</hi> et <hi rend="unknown" rendition="#none">
+            <p> 1<hi rendition="#sup">ère</hi> partie, chronologie, topographie, hydrographie, météorologie, géologie, volcan, sources thermales, botanique, ethnographie, immigration et esclavage, agriculture, industrie sucrière, commerce, gouvernement, législation, finances, instruction publique, <pb facs="#IMG.2" n="2"/> culte, travaux publics, statistique, biographies, langage, chants, musique, beaux arts, courses. </p>
+            <p>2<hi rendition="#sup">ème</hi> partie : Oiseaux, coquilles, poissons, insectes, papillons, cartes, etc. C’est un volume grand en 8°, de 600 pages. Si j’en avais un à moi, il vous serait tout de suite expédié !</p>
+            <p>Dans quelques jours, lorsque j’aurai terminé une correspondance pour la Réunion, je vous copierai un travail intéressant que j’ai sous la main sur l’ethnographie de notre île. - Ce travail est du docteur Herland.<note n="2" place="foot" type="editorial">Herlands Informationen über die Bevölkerungsstruktur der Insel <placeName ref="[authorityLink]">La Réunion</placeName> können in Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.3625">11851</ref>/1 nachgelesen werden.</note>
+            </p>
+            <p>Pour ce qui est de mon volume, il n’est pas possible qu’il paraisse avant un an, au plus tôt. Je n’ai pas encore tous les renseignements dont j’ai besoin. J’ai quitté la Réunion si précipitamment pour arriver à Paris avant le départ de l’un de mes fils qui se rendait en Cochimchine, que je serai peut-être dans la nécessité de faire un voyage pour avoir ce qui personne ne saurait m’envoyer. </p>
+            <p>Je n’ai encore rien dit à mon cousin <pb facs="#IMG.3" n="3"/> Julien Vinson, par la raison qu’il est allé prendre ses vacances au bout de la France du côté de Bayonne. </p>
+            <p>Je n’ai passé que deux heures aux îles Seychelles, sans avoir pu m’apercevoir de l’existence d’un créole de ces îles. </p>
+            <p>Mon petit-fils aura 16 mois dans cinq jours ; il est donc, vous le voyez, à l’extrême limite antérieure de la période bonbonné-vore, come vous l’appelez si bien. </p>
+            <p>Je ne vois pas quelle nuance M. Duclos veut indiquer par l’orthographe <hi rend="unknown" rendition="#none">seil</hi> au lieu de <hi rend="unknown" rendition="#none">sel</hi>.<note n="3" place="foot" type="editorial">Hier beginnt Trouette, auf die Fragen Schuchardts zum Lied <hi rend="unknown" rendition="#none">
+Li coer n’a pas magazin</hi> zu beantworten. Schuchardts Fragen finden sich im Anschluss an diesen Brief ab Seite 9.</note> Prononcez <hi rend="unknown" rendition="#none">li tout </hi>
+               <hi rend="unknown" rendition="#none">sel</hi> semi-ouvert comme dans <hi rend="unknown" rendition="#none">seigneur</hi> ; prononcez <hi rend="unknown" rendition="#none">de’, pe’, die’</hi> en les marquants d’un bel accent aigu, comme dans <hi rend="unknown" rendition="#none">bonté</hi>.<note n="4" place="foot" type="editorial">Hier antwortet Trouette auf Schuchardts 1. Frage in Bezug auf die Aussprache der Vokale. <persName ref="[authorityLink]">Duclos</persName> schlägt eine Änderung der Orthographie vor. Die Aussprache scheint Schuchardt jedoch nicht ganz klar gewesen zu sein. </note>
+            </p>
+            <p>Entre <hi rend="unknown" rendition="#none">moi</hi> et <hi rend="unknown" rendition="#none">moua</hi>, je ne vois d’autre différence que quelque chose de plus lourd dans <hi rend="unknown" rendition="#none">moūā,</hi> qui devra se trouver plutôt dans la bouche des vieux les plus arriérés. - Les deux sont créoles ; mais bien évidemment <pb facs="#IMG.4" n="4"/>
+               <hi rend="unknown" rendition="#none">moin</hi> et <hi rend="unknown" rendition="#none">moué</hi> le sont encore plus profondément. </p>
+            <p>Oui, <hi rend="unknown" rendition="#none">moin</hi>
+               <note n="5" place="foot" type="editorial">Die folgenden Absätze beziehen sich auf Schuchardts 3. Frage.</note> comme régime toujours et comme sujet devant une consonne, mais aussi comme sujet <hi rend="unknown" rendition="#none">moin y dit</hi>.</p>
+            <p>Oui, <hi rend="unknown" rendition="#none">moin dit</hi>, <hi rend="unknown" rendition="#none">moué y dit</hi>, <hi rend="unknown" rendition="#none">moú y dit</hi>, <hi rend="unknown" rendition="#none">mi dit</hi>, mais <hi rend="unknown" rendition="#none">moin dit pas</hi>, <hi rend="unknown" rendition="#none">moin dit à vous</hi>, c’est à dire quelque chose après <hi rend="unknown" rendition="#none">moins dit</hi>
+               <note n="6" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">plutôt que</hi> ist an dieser Stelle durchgestrichen.</note> et non pas <hi rend="unknown" rendition="#none">moin dit</hi> tout court. <hi rend="unknown" rendition="#none">Mi dit</hi>, plutôt dans la bouche d’un enfant ou d’une femme, jamais dans celle d’un gros cafre. </p>
+            <p>            Tout à peu près est possible dans le créole, qui n’a d’autre guide qu’un instinct presque toujours peu délicat, je veux dire peu intelligent, peu logique, peu préoccupé de la nécessité de certaines règles ; il est donc possible que quelques-uns disent <hi rend="unknown" rendition="#none">moué a dit</hi> pour un futur ; mais je n’en ai aucun souvenir , c’est au moins bien rare. <hi rend="unknown" rendition="#none">Moú a dit</hi>, <hi rend="unknown" rendition="#none">m’a dit</hi>, (Duclos) pour le futur, oui, très souvent. </p>
+            <p>            Quand vous dites que<hi rend="unknown" rendition="#none"> moi y appelle <pb facs="#IMG.5" n="5"/> y contredit souverainement,</hi> vous êtes parfaitement logique ;<hi rend="unknown" rendition="#none"> moi y appelle</hi> n’en est pas moins un de ces faits qui s’inquiètent peu de la logique.</p>
+            <p>            On dit <hi rend="unknown" rendition="#none">moui attéle même, </hi>j’attèle, c’est cela même que je fais ; <hi rend="unknown" rendition="#none">li qui tèle ça</hi>, c’est lui qui est chargé d’atteler cette bête ; talhère <hi rend="unknown" rendition="#none">moi téler</hi>, ce qui peut s’écrire <hi rend="unknown" rendition="#none">talhère moua téler</hi>, <note n="7" place="foot" type="editorial">An dieser Stelle wurde <hi rend="unknown" rendition="#none">ou talhere moua téler</hi> durchgestrichen.</note>ou <hi rend="unknown" rendition="#none">talhère moú altéler</hi>, pour dire <hi rend="unknown" rendition="#none">tout à l’heure</hi>
+               <hi rend="unknown" rendition="#none">j’attellerai</hi> ; <hi rend="unknown" rendition="#none">moi fini téler</hi>, j’ai attelé. <hi rend="unknown" rendition="#none">A cause vou télé</hi>
+               <hi rend="unknown" rendition="#none">pas ça milet là</hi>, <hi rend="unknown" rendition="#none">à cause vou y télé pas ça milet là</hi> et encore <hi rend="unknown" rendition="#none">à cause vou atélé pas ça milet </hi>
+               <hi rend="unknown" rendition="#none">la</hi> ?</p>
+            <p>            On dit <hi rend="unknown" rendition="#none">mouí</hi>
+               <hi rend="unknown" rendition="#none">croce<note n="8" place="foot" type="editorial">
+Das <hi rend="unknown" rendition="#none">h</hi> in <hi rend="unknown" rendition="#none">croche</hi> wurde hier durchgestrichen.</note>
+               </hi> ; je ne dis pas qu’aucun n’ait dit : <hi rend="unknown" rendition="#none">Moui acoroce</hi>, <hi rend="unknown" rendition="#none">moin y acoroce</hi>, <hi rend="unknown" rendition="#none">moin y acouroce</hi>. </p>
+            <p>            <hi rend="unknown" rendition="#none">Ajouter</hi> n’est plus du pur créole ; il veut déjà le français pur. </p>
+            <p>            Certainement, très certainement : <hi rend="unknown" rendition="#none">A</hi>
+               <hi rend="unknown" rendition="#none">ppéle Jan</hi>, <hi rend="unknown" rendition="#none">a</hi>
+               <hi rend="unknown" rendition="#none">ppéle à li don </hi>M. Duclos dit très bien. <hi rend="unknown" rendition="#none">Vi zire</hi>, <hi rend="unknown" rendition="#none">voui vé</hi>.</p>
+            <p>C’est parfaitement exact. Au futur <pb facs="#IMG.6" n="6"/> il peut écrire comme il veut puisqu’il n’y a pas d’orthographe ; je ne vois pas quel motif il peut avoir.</p>
+            <p>            <hi rend="unknown" rendition="#none">Li va canter, zaut’ va canter</hi>, oui</p>
+            <p>Je rebute <hi rend="unknown" rendition="#none">le li l’appelle</hi> de M. Héry ; oui ; mais comment l’ai-je fait ? Si j’ai été absolu, j’ai peut-être eu tort ; car tout est possible en créole. Il est donc plus facile de dire ce qui est que ce qui n’est pas. </p>
+            <p>M. Duclos a raison dire. <hi rend="unknown" rendition="#none">Vi aime </hi>
+            </p>
+            <p>            Oui, l’ ne s’emploie que devant <hi rend="unknown" rendition="#none">
+a</hi> et e’, mes souvenirs ne me disent pas autre chose dans le moment du moins. – Une bonne fortune. Je causais hier avec un de mes amis de ma correspondance avec vous, Monsieur, au sujet du patois créole ; il m’enverra aujourd’hui ou demain deux morceaux dont il connaît l’existence dans un recueil qui date d’une trentaine d’années. Aussitôt que je l’aurais, je m’empresserais de vous le copier, s’il présente quelque <pb facs="#IMG.7" n="7"/> intérêt. </p>
+            <p>            4. <hi rend="unknown" rendition="#none">Moin fini mandgie</hi> et <hi rend="unknown" rendition="#none">moin la mandgie</hi> me paraissent être deux formes du même passé indéfini. <hi rend="unknown" rendition="#none">J’ai mangé</hi>, la première affirmant le fait avec plus d’insistance. Disons mieux : il y a là deux passés indéfinis, l’un de <hi rend="unknown" rendition="#none">finir</hi>, l’autre de <hi rend="unknown" rendition="#none">manger</hi>. </p>
+            <p>            5. Il y a là ce me semble une idée très heureuse.</p>
+            <p>            6. Il me semble avoir déjà dit que <hi rend="unknown" rendition="#none">
+aura</hi> et <hi rend="unknown" rendition="#none">s’ra</hi> sont des gallicismes.</p>
+            <p>            7. Moin-là zenfant misère. Liez inténsement <hi rend="unknown" rendition="#none">là à moin</hi>, comme <hi rend="unknown" rendition="#none">là</hi> dans celui-<hi rend="unknown" rendition="#none">là</hi>, <hi rend="unknown" rendition="#none">ci</hi> dans celui-<hi rend="unknown" rendition="#none">ci</hi>, avec la même valeur, sans y rien voir du verbe.</p>
+            <p>8. <hi rend="unknown" rendition="#none">Èue vont la caze nana zaricot</hi> <hi rend="unknown" rendition="#none">?</hi>
+               <hi rend="unknown" rendition="#none">Ma point asthère</hi>. <hi rend="unknown" rendition="#none">Mana</hi> affirmatif, pour <hi rend="unknown" rendition="#none">il y a</hi> ; <hi rend="unknown" rendition="#none">na</hi> négatif avec <hi rend="unknown" rendition="#none">pas</hi> ou <hi rend="unknown" rendition="#none">
+point</hi>. <hi rend="unknown" rendition="#none">Nana qu’nana</hi>, <hi rend="unknown" rendition="#none">nana qu’na point</hi>. Il y en a qui en ont, il y en a qui n’en ont point. Mais on dit à l’imparfait : <hi rend="unknown" rendition="#none">Navait ain vie’</hi>
+               <pb facs="#IMG.8" n="8"/>
+               <hi rend="unknown" rendition="#none">bounhomme</hi> il y avait un vieux bonhomme ; <hi rend="unknown" rendition="#none">n’aura miçan temps dimains</hi>. Il y aura du mauvais temps demain. <hi rend="unknown" rendition="#none">Nous la gaigne malhèr</hi> ou bien <hi rend="unknown" rendition="#none">nous na gaigne malhèr</hi> nous avons eu du malheur.</p>
+            <p>9. Quelle est la place de la négation ? Toutes les formes citées sont exactes. A l’impératif <hi rend="unknown" rendition="#none">Ma pas boudjié</hi> très bien, mais <hi rend="unknown" rendition="#none">boudjié pas</hi> plus souvent.</p>
+            <p>L’accent sur l’<hi rend="unknown" rendition="#none">é</hi> a l’impératif, sur <hi rend="unknown" rendition="#none">ou</hi> au présent de l’indicatif.</p>
+            <closer>
+               <salute>J’attends avec impatience les deux morceaux qui m’ont été promis. Je vous prie de croire, Monsieur, j’aurai du plaisir à vous les envoyer, comme j’en ai à vous suivre dans les détails de votre curiosité sur un patois que notre ministre de l’agriculture et moi nous vous surprenons à parler quand nous nous rencontrons ; mon plus complet dévouement vous est acquis.</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">E L Trouette</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.3624"
+              subtype="original"
+              type="appendix"
+              xml:lang="fr">
+            <p>
+               <pb facs="#IMG.9" n="9"/> 1. M. Duclos veut qu’on écrive<note n="9" place="foot" type="editorial">Die folgenden Fragen stammen von Schuchardt. Er bezieht sich hierbei auf die Kommentare <persName ref="[authorityLink]">Duclos</persName> zum Lied <hi rend="unknown" rendition="#none">Li coer n’a pas magazin.</hi> Schuchardt versuchte offenbar, das Mauritiuskreol (vgl. <persName ref="[authorityLink]">Baissac</persName>) und das Réunionkreol (vgl. Duclos) miteinander zu vergleichen und holt sich hier eine zusätzliche Meinung eines kreolischen Muttersprachlers aus La Réunion ein.</note>
+            </p>
+            <p>            <hi rend="unknown" rendition="#none">seil</hi>   au lieu de <hi rend="unknown" rendition="#none">sel</hi> (seul)                    <hi rend="unknown" rendition="#none">in</hi> au lieu de <hi rend="unknown" rendition="#none">ein</hi> (un)</p>
+            <p>            <hi rend="unknown" rendition="#none">deix</hi> -   -    -   <hi rend="unknown" rendition="#none">dé</hi>  (deux) </p>
+            <p>            <hi rend="unknown" rendition="#none">pei</hi>  -  -   -       <hi rend="unknown" rendition="#none">pé</hi> (pese)</p>
+            <p>            <hi rend="unknown" rendition="#none">Diei</hi>  -  -   -     <hi rend="unknown" rendition="#none">Dié</hi>  (Dieu) etc.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Ei</hi> (en <hi rend="unknown" rendition="#none">
+seigneur</hi>, <hi rend="unknown" rendition="#none">bey</hi> etc.) a le son de l’<hi rend="unknown" rendition="#none">e</hi> demi-ouvert, tandis que <hi rend="unknown" rendition="#none">é</hi> indique la prononciation fermée. Mais l’<hi rend="unknown" rendition="#none">e</hi> de <hi rend="unknown" rendition="#none">sel</hi> est aussi demi-ouvert ; il ne s’agirait donc ici que de marquer la différence de la quantité : <hi rend="unknown" rendition="#none">sēl</hi> – <hi rend="unknown" rendition="#none">sĕl</hi> - Quelle nuance de la prononciation pourrait être exprimée par <hi rend="unknown" rendition="#none">in</hi> au lieu de e<hi rend="unknown" rendition="#none">in</hi> ? Est-ce que <hi rend="unknown" rendition="#none">vin</hi> et <hi rend="unknown" rendition="#none">frein</hi>, <hi rend="unknown" rendition="#none">tin</hi> et <hi rend="unknown" rendition="#none">
 teint</hi> n’ont pas tout-à-fait le même son nasal ?</p>
-
-        <p>2. Vous avez certainement raison de supposer une confusion entre les influences malgaches et mozambiques. Pour étudier ce point-là il faudrait bien connaître l’histoire de la colonie. J’acceptais pour l’île Bourbon ce que M. Baissac dit de l’île Mauritius : « Dès la première heure de l’occupation française les esclaves noirs y furent introduits de <hi
-            rend="unknown" rendition="#none">Madagascar</hi> et le patois créole commença. » Par le bourbonnais pur j’entendais le bourbonnais malgache qui plus tard s’est modifié dans la bouche des esclaves mozambiques, de sorte qu’à côté d’un madegasso-créole nous aurions un créole madegasso-mozambique. Je n’admettais donc pas un créole mozambique pur.</p>
-        <p>3. Je dois vous avouer que <hi rend="unknown" rendition="#none">moú</hi> et <hi rend="unknown"
-            rendition="#none">moua</hi> (est-ce que ce n’est pas presque la même chose ?) me semblent être des gallicismes. La prononciation <hi
-            rend="unknown" rendition="#none">moué</hi> vulgaire aujourd’hui, était encore celle des <hi rend="unknown"
-            rendition="#none">honnêtes</hi> gens du XVII<hi
-            rendition="#sup">ème</hi> siècle. Comme les nègres aiment à nasaliser une voyelle précédée d’un <hi
-            rend="unknown" rendition="#none">m</hi> ou <hi rend="unknown" rendition="#none">n</hi>, ils firent de <hi
-            rend="unknown" rendition="#none">
-moué</hi> : <hi rend="unknown" rendition="#none">moin</hi>. <hi
-            rend="unknown" rendition="#none">Moin</hi> et <hi rend="unknown"
-            rendition="#none">moué</hi> s’employeraient ; selon moi, dans des cas différents ; <hi rend="unknown"
-            rendition="#none">moin</hi> comme régime <pb facs="#IMG.10"
-            n="10"/> toujours, et comme sujet avant une consonne, <hi rend="unknown"
-            rendition="#none">moué</hi> comme sujet avant une voyelle, aimant alors à perdre l’<hi rend="unknown"
-            rendition="#none">
+            <p>2. Vous avez certainement raison de supposer une confusion entre les influences malgaches et mozambiques. Pour étudier ce point-là il faudrait bien connaître l’histoire de la colonie. J’acceptais pour l’île Bourbon ce que M. Baissac dit de l’île Mauritius : « Dès la première heure de l’occupation française les esclaves noirs y furent introduits de <hi rend="unknown" rendition="#none">Madagascar</hi> et le patois créole commença. » Par le bourbonnais pur j’entendais le bourbonnais malgache qui plus tard s’est modifié dans la bouche des esclaves mozambiques, de sorte qu’à côté d’un madegasso-créole nous aurions un créole madegasso-mozambique. Je n’admettais donc pas un créole mozambique pur.</p>
+            <p>3. Je dois vous avouer que <hi rend="unknown" rendition="#none">moú</hi> et <hi rend="unknown" rendition="#none">moua</hi> (est-ce que ce n’est pas presque la même chose ?) me semblent être des gallicismes. La prononciation <hi rend="unknown" rendition="#none">moué</hi> vulgaire aujourd’hui, était encore celle des <hi rend="unknown" rendition="#none">honnêtes</hi> gens du XVII<hi rendition="#sup">ème</hi> siècle. Comme les nègres aiment à nasaliser une voyelle précédée d’un <hi rend="unknown" rendition="#none">m</hi> ou <hi rend="unknown" rendition="#none">n</hi>, ils firent de <hi rend="unknown" rendition="#none">
+moué</hi> : <hi rend="unknown" rendition="#none">moin</hi>. <hi rend="unknown" rendition="#none">Moin</hi> et <hi rend="unknown" rendition="#none">moué</hi> s’employeraient ; selon moi, dans des cas différents ; <hi rend="unknown" rendition="#none">moin</hi> comme régime <pb facs="#IMG.10" n="10"/> toujours, et comme sujet avant une consonne, <hi rend="unknown" rendition="#none">moué</hi> comme sujet avant une voyelle, aimant alors à perdre l’<hi rend="unknown" rendition="#none">
 é</hi> et même l’<hi rend="unknown" rendition="#none">óu</hi>. Aussi nous aurions (les formes votées d’un astérisque sont des formes que je suppose ; est-ce qu’elles existent ?) :</p>
-        <p>Prés.                <hi rend="unknown" rendition="#none">moin</hi>
-          <hi rend="unknown" rendition="#none">dit</hi> | <hi rend="unknown" rendition="#none">
-moué y dit</hi> | *<hi
-            rend="unknown" rendition="#none">moú y dit</hi>  | <hi rend="unknown" rendition="#none">m’i dit</hi> (Duclos).</p>
-        <p>
-          <hi rend="unknown" rendition="#none">*(nom se trouve dans le Ch. Botté)</hi>
-        </p>
-        <p>Passé.              <hi rend="unknown" rendition="#none">moin l’a dit</hi> –</p>
-        <p>Fut.                  *<hi rend="unknown" rendition="#none">moué a dit</hi>|                <hi
-            rend="unknown" rendition="#none">mou’ a dit</hi> |                  <hi rend="unknown" rendition="#none">m’a dit</hi> (Duclos).</p>
-        <p>(Duclos me fait :         (on écrit <hi rend="unknown" rendition="#none">moi dit</hi>)</p>
-        <p>
-          <hi rend="unknown" rendition="#none">moin s’embrasse</hi>)        </p>
-        <p>Quant à la forme créole pour <hi rend="unknown"
-            rendition="#none">appeler</hi> je croirais, d’après l’analogie, que ce fût <hi rend="unknown"
-            rendition="#none">
-peler</hi> ; mais <hi rend="unknown"
-            rendition="#none">moi y appelle-</hi>y contredit souverainement. Je m’explique donc : <hi rend="unknown"
-            rendition="#none">
-Moin l’appelle</hi> = <hi rend="unknown" rendition="#none">moin l’a</hi> ͡ <hi
-            rend="unknown" rendition="#none">appelle</hi>, <hi rend="unknown" rendition="#none">moi</hi>
-          <hi rend="unknown" rendition="#none">pelle</hi> = <hi rend="unknown" rendition="#none">moú a </hi>͡<hi
-            rend="unknown" rendition="#none"> appelle</hi>. Comment dit on en créole pour <hi rend="unknown"
-            rendition="#none">j’attèle</hi>, <hi rend="unknown" rendition="#none">j’accroche</hi>, <hi rend="unknown"
-            rendition="#none">j’ajoute-</hi> etc. (<hi rend="unknown" rendition="#none">moi</hi> je <hi rend="unknown"
-            rendition="#none">tèle</hi> on <hi rend="unknown"
-            rendition="#none">moi y attèle</hi>) ? Et comment pour : <hi rend="unknown"
-            rendition="#none">Appelez Jean</hi> ! (ou choisissez d’autres cas où <hi rend="unknown" rendition="#none">appeler</hi> n’est pas précédés d’une voyelle) ?</p>
-        <p>            M. Duclos fait la même contraction de <hi rend="unknown" rendition="#none">vou</hi> avec <hi
-            rend="unknown" rendition="#none">l’y</hi> : <hi rend="unknown" rendition="#none">vi zire</hi> = <hi
-            rend="unknown" rendition="#none">vou y zire</hi> (cependant il a aussi <hi rend="unknown"
-            rendition="#none">voui vé</hi>) : au futur il écrit toujours <hi rend="unknown"
-            rendition="#none">noua, voua</hi>. –Après <hi rend="unknown" rendition="#none">
-li</hi> et <hi
-            rend="unknown" rendition="#none">zaut’</hi> c’est toujours la forme <hi rend="unknown"
-            rendition="#none">va</hi> qui s’emploie (p.ex. <hi rend="unknown" rendition="#none">li va çanter</hi>) ?</p>
-        <p>            Venant aux rôles  de l<hi rend="unknown" rendition="#none">’y</hi> et l<hi rend="unknown" rendition="#none">’l</hi>
-          <hi rend="unknown"
-            rendition="#none">je dois</hi> abandonner mon idée que le dernier se trouve toujours avant une voyelle ; vous rebutez le <hi
-            rend="unknown" rendition="#none">li</hi>
-          <hi rend="unknown" rendition="#none">l’appelle</hi> etc. de M. Hery. M. Duclos écrit <hi rend="unknown"
-            rendition="#none">v’i aime</hi> etc. <hi rend="unknown"
-            rendition="#none">L</hi>’ ne s’emploiera donc qu’avant <hi rend="unknown" rendition="#none">a</hi> (<hi
-            rend="unknown" rendition="#none">habet</hi>) et <hi rend="unknown" rendition="#none">è</hi> (<hi
-            rend="unknown" rendition="#none">
+            <p>Prés.                <hi rend="unknown" rendition="#none">moin</hi>
+               <hi rend="unknown" rendition="#none">dit</hi> | <hi rend="unknown" rendition="#none">
+moué y dit</hi> | *<hi rend="unknown" rendition="#none">moú y dit</hi>  | <hi rend="unknown" rendition="#none">m’i dit</hi> (Duclos).</p>
+            <p>
+               <hi rend="unknown" rendition="#none">*(nom se trouve dans le Ch. Botté)</hi>
+            </p>
+            <p>Passé.              <hi rend="unknown" rendition="#none">moin l’a dit</hi> –</p>
+            <p>Fut.                  *<hi rend="unknown" rendition="#none">moué a dit</hi>|                <hi rend="unknown" rendition="#none">mou’ a dit</hi> |                  <hi rend="unknown" rendition="#none">m’a dit</hi> (Duclos).</p>
+            <p>(Duclos me fait :         (on écrit <hi rend="unknown" rendition="#none">moi dit</hi>)</p>
+            <p>
+               <hi rend="unknown" rendition="#none">moin s’embrasse</hi>)        </p>
+            <p>Quant à la forme créole pour <hi rend="unknown" rendition="#none">appeler</hi> je croirais, d’après l’analogie, que ce fût <hi rend="unknown" rendition="#none">
+peler</hi> ; mais <hi rend="unknown" rendition="#none">moi y appelle-</hi>y contredit souverainement. Je m’explique donc : <hi rend="unknown" rendition="#none">
+Moin l’appelle</hi> = <hi rend="unknown" rendition="#none">moin l’a</hi> ͡ <hi rend="unknown" rendition="#none">appelle</hi>, <hi rend="unknown" rendition="#none">moi</hi>
+               <hi rend="unknown" rendition="#none">pelle</hi> = <hi rend="unknown" rendition="#none">moú a </hi>͡<hi rend="unknown" rendition="#none"> appelle</hi>. Comment dit on en créole pour <hi rend="unknown" rendition="#none">j’attèle</hi>, <hi rend="unknown" rendition="#none">j’accroche</hi>, <hi rend="unknown" rendition="#none">j’ajoute-</hi> etc. (<hi rend="unknown" rendition="#none">moi</hi> je <hi rend="unknown" rendition="#none">tèle</hi> on <hi rend="unknown" rendition="#none">moi y attèle</hi>) ? Et comment pour : <hi rend="unknown" rendition="#none">Appelez Jean</hi> ! (ou choisissez d’autres cas où <hi rend="unknown" rendition="#none">appeler</hi> n’est pas précédés d’une voyelle) ?</p>
+            <p>            M. Duclos fait la même contraction de <hi rend="unknown" rendition="#none">vou</hi> avec <hi rend="unknown" rendition="#none">l’y</hi> : <hi rend="unknown" rendition="#none">vi zire</hi> = <hi rend="unknown" rendition="#none">vou y zire</hi> (cependant il a aussi <hi rend="unknown" rendition="#none">voui vé</hi>) : au futur il écrit toujours <hi rend="unknown" rendition="#none">noua, voua</hi>. –Après <hi rend="unknown" rendition="#none">
+li</hi> et <hi rend="unknown" rendition="#none">zaut’</hi> c’est toujours la forme <hi rend="unknown" rendition="#none">va</hi> qui s’emploie (p.ex. <hi rend="unknown" rendition="#none">li va çanter</hi>) ?</p>
+            <p>            Venant aux rôles  de l<hi rend="unknown" rendition="#none">’y</hi> et l<hi rend="unknown" rendition="#none">’l</hi>
+               <hi rend="unknown" rendition="#none">je dois</hi> abandonner mon idée que le dernier se trouve toujours avant une voyelle ; vous rebutez le <hi rend="unknown" rendition="#none">li</hi>
+               <hi rend="unknown" rendition="#none">l’appelle</hi> etc. de M. Hery. M. Duclos écrit <hi rend="unknown" rendition="#none">v’i aime</hi> etc. <hi rend="unknown" rendition="#none">L</hi>’ ne s’emploiera donc qu’avant <hi rend="unknown" rendition="#none">a</hi> (<hi rend="unknown" rendition="#none">habet</hi>) et <hi rend="unknown" rendition="#none">è</hi> (<hi rend="unknown" rendition="#none">
 est</hi>) : <hi rend="unknown" rendition="#none">vou l’a dit, vou l’é content</hi>.</p>
-        <p>4. vous dites, que <hi rend="unknown"
-            rendition="#none">moin fini mandjié</hi> est le passé indéfini ; mais comment diffère-t-il alors de <hi
-            rend="unknown" rendition="#none">moin l’a mandjïé</hi>. <pb facs="#IMG.11" n="11"/>
-        </p>
-
-        <p>5. Je me trouve maintenant orienté sur l’accentuation des formes du créole des Cafres- ; cependant je crois qu’on devrait marquer l’intonation prosodique dans un parler où l<hi
-            rend="unknown"
-            rendition="#none">’e muet</hi> est substitué par de vraies voyelles. Comme les accents ne peuvent pas remplir deux fonctions en même temps, on aurait à se servir de quelque moyen étranger à un système orthographique du français, p.ex. m<hi
-            rend="unknown" rendition="#none">a</hi>ndjie’ (mange), mandji<hi rend="unknown" rendition="#none">é</hi> mangé)</p>
-        <p>6. Les futurs <hi rend="unknown" rendition="#none">aura</hi>, <hi rend="unknown" rendition="#none">s’ra</hi> ne sont pas des gallicismes ?</p>
-        <p>7. Qu’est-ce que veut dire <hi rend="unknown" rendition="#none">là</hi> dans ces phrases ? </p>
-        <p>            <hi rend="unknown" rendition="#none">moin</hi>
-          <hi rend="unknown" rendition="#none">là zenfant misère</hi>
-        </p>
-        <p>            <hi rend="unknown" rendition="#none">lamour là un petit boug malin</hi>
-        </p>
-        <p>Ne serait-il pas mieux de dire <hi rend="unknown" rendition="#none">l’è </hi>?</p>
-        <p>8. Est-ce qu’on dit <hi rend="unknown" rendition="#none">na</hi> au lieu de <hi rend="unknown"
-            rendition="#none">nassa</hi> (il y a) ? <hi rend="unknown" rendition="#none">N’avait, n’aura</hi> (il y a) ?</p>
-        <p>9. Quelle est la place de la négation ? </p>
-        <p>            Gr. Ch. botté :</p>
-        <p>            Zanto dé <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">na pas</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">quérévé</hi>
-        </p>
-        <p>            çatta <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">na pas</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">écouté</hi>.</p>
-        <p>            <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">na pas</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">boudjié</hi> (Impératif).</p>
-        <p>            Leroi <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+            <p>4. vous dites, que <hi rend="unknown" rendition="#none">moin fini mandjié</hi> est le passé indéfini ; mais comment diffère-t-il alors de <hi rend="unknown" rendition="#none">moin l’a mandjïé</hi>. <pb facs="#IMG.11" n="11"/>
+            </p>
+            <p>5. Je me trouve maintenant orienté sur l’accentuation des formes du créole des Cafres- ; cependant je crois qu’on devrait marquer l’intonation prosodique dans un parler où l<hi rend="unknown" rendition="#none">’e muet</hi> est substitué par de vraies voyelles. Comme les accents ne peuvent pas remplir deux fonctions en même temps, on aurait à se servir de quelque moyen étranger à un système orthographique du français, p.ex. m<hi rend="unknown" rendition="#none">a</hi>ndjie’ (mange), mandji<hi rend="unknown" rendition="#none">é</hi> mangé)</p>
+            <p>6. Les futurs <hi rend="unknown" rendition="#none">aura</hi>, <hi rend="unknown" rendition="#none">s’ra</hi> ne sont pas des gallicismes ?</p>
+            <p>7. Qu’est-ce que veut dire <hi rend="unknown" rendition="#none">là</hi> dans ces phrases ? </p>
+            <p>            <hi rend="unknown" rendition="#none">moin</hi>
+               <hi rend="unknown" rendition="#none">là zenfant misère</hi>
+            </p>
+            <p>            <hi rend="unknown" rendition="#none">lamour là un petit boug malin</hi>
+            </p>
+            <p>Ne serait-il pas mieux de dire <hi rend="unknown" rendition="#none">l’è </hi>?</p>
+            <p>8. Est-ce qu’on dit <hi rend="unknown" rendition="#none">na</hi> au lieu de <hi rend="unknown" rendition="#none">nassa</hi> (il y a) ? <hi rend="unknown" rendition="#none">N’avait, n’aura</hi> (il y a) ?</p>
+            <p>9. Quelle est la place de la négation ? </p>
+            <p>            Gr. Ch. botté :</p>
+            <p>            Zanto dé <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">na pas</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none">quérévé</hi>
+            </p>
+            <p>            çatta <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">na pas</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none">écouté</hi>.</p>
+            <p>            <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">na pas</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none">boudjié</hi> (Impératif).</p>
+            <p>            Leroi <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 napas</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">dits</hi> Arien</p>
-        <p>mais :   mou y dit à li <hi rend="unknown" rendition="#none">rentiri</hi>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">pas</hi>
-          </hi>
-        </p>
-        <p>            çatta là malin bougan <hi rend="unknown" rendition="#none">boudjié</hi> * <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">pas</hi>
-          </hi>
-        </p>
-        <p>si zanto y <hi rend="unknown" rendition="#none">dit</hi>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">pas</hi>
-          </hi> au roi</p>
-        <p>li <hi rend="unknown" rendition="#none">dit</hi>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">pas</hi>
-          </hi> rien</p>
-        <p>*l’accent sur l’<hi rend="unknown" rendition="#none">ou</hi> ou sur l<hi rend="unknown" rendition="#none">’é</hi> ? </p>
-      </div>
-    </body>
-  </text>
+               </hi>
+               <hi rend="unknown" rendition="#none">dits</hi> Arien</p>
+            <p>mais :   mou y dit à li <hi rend="unknown" rendition="#none">rentiri</hi>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">pas</hi>
+               </hi>
+            </p>
+            <p>            çatta là malin bougan <hi rend="unknown" rendition="#none">boudjié</hi> * <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">pas</hi>
+               </hi>
+            </p>
+            <p>si zanto y <hi rend="unknown" rendition="#none">dit</hi>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">pas</hi>
+               </hi> au roi</p>
+            <p>li <hi rend="unknown" rendition="#none">dit</hi>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">pas</hi>
+               </hi> rien</p>
+            <p>*l’accent sur l’<hi rend="unknown" rendition="#none">ou</hi> ou sur l<hi rend="unknown" rendition="#none">’é</hi> ? </p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,557 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Robert Oppenheim an Hugo Schuchardt (21-08410)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2331">
-            <forename>Robert</forename>
-            <surname>Oppenheim</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/6417" type="PID">o:hsa.letter.6417</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">21-08410</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">08410</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2331">
-                <forename>Robert</forename>
-                <surname>Oppenheim</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.38" ref="http://sws.geonames.org/2950159">Berlin</origPlace>
-              <origDate ana="dcterms:created" when="1887-11-28">1887-11-28</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2018">2018</date>
-          <title>Die Korrespondenz zwischen Robert Oppenheim und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2331"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.6417">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2331">
-            <forename>Robert</forename>
-            <surname>Oppenheim</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.38" key="#GID.1" ref="http://sws.geonames.org/2950159">Berlin</placeName>
-          <date when="1887-11-28">1887-11-28</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Berlin</settlement>
-                <name ref="http://geonames.org/2950159" type="fcode:PPLC">Berlin</name>
-                <location>
-                  <geo>13.41053,52.52437</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2331" type="context">
-                        Korrespondenz Robert Oppenheim - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.329" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Lautgesetze</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3125" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literarisches Centralblatt für Deutschland</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3185" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsche Literaturzeitung für Kritik der internationalen Wissenschaft</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4714" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Verlag Walter de Gruyter</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4180" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschrift für Völkerpsychologie und Sprachwissenschaft</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3144" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturblatt für germanische und romanische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.1002" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Gebr. Henninger</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4113" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsche Rundschau</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3155" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Internationale Zeitschrift für allgemeine Sprachwissenschaft</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4579" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Die Gegenwart</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5505" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschrift für das Gymnasialwesen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4125" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Leipziger Illustrierte Zeitung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5222" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Magazin für die Literatur des Auslandes</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5079" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Göttingische Gelehrte Anzeigen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4538" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Stadtbibliothek Hamburg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4865" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">National-Zeitung (Berlin)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4852" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kölnische Zeitung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3535" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Frankfurter Zeitung</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.60" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Volapük</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6417" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6417" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6417" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6417" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6417" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6417" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6417" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6417" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.6417" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>ROBERT OPPENHEIM<lb/>25. Matthäikirchstrasse 25.<lb/>Berlin, W., den 28 Novb. 1887</dateline>
-        <opener>Hochgeehrter Herr<note n="1" place="foot" type="editorial">Professionelle Handschrift eines Büroangestellten.</note>
-        </opener>
-
-        <p>Auf die keineswegs unterschätzte Gefahr hin, Ihren Unwillen zu erregen, dadurch, daß ich Sie auf das erhoffte Telegramm vergeblich habe warten lassen (wenigstens in der von Ihnen erwarteten endgültigen Form),<note
-            n="2" place="foot" type="editorial">Dies als Ergänzung am Briefrand.</note> ziehe ich es doch vor Ihnen die Antwort auf Ihre heute früh empfangene werthe Zuschrift brieflich zu senden.</p>
-
-        <p>Denn mit einem einfachen, „ja“ od. „nein“, wie Sie es verlangen, ist die Sache nicht abgethan. Die Frage ist nämlich nicht die, ob ich Ihr Volapükschriftchen<note
-            n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.486">
-                <hi rend="unknown" rendition="#none">Auf Anlass des Volapüks</hi>, Berlin: Oppermann, 1888, 48 S. 8°.</ref>
-            </bibl>
-
-          </note> in Commissionsverlag zu nehmen bereit bin, sondern ob Sie überhaupt geneigt sein werden, mir den Vertrieb derselben zu übergeben, nachdem ich Ihnen das Ergebniß des Vertriebes der Schrift über die Lautgesetze mitgetheilt habe. Einfügen muß ich auch die Bitte um Entschuldigung, daß das erst jetzt geschieht, erst unmittelbar nach der Ostermesse dieses Jahres,<note
-            n="4" place="foot"
-            type="editorial">Sollte nicht „Herbstmesse“ gemeint sein?</note> doch waren Sie zu jener Zeit von Graz abwesend, u. mir Ihr Aufenthalt nicht bekannt, u. nachher ist mir die Sache wirklich aus dem gedächtniß gerathen. <pb
-            facs="#IMG:2" n="2"/> Wie Sie nun aus beiliegender Aufstellung ersehen,<note n="5" place="foot"
-              type="editorial">Diese Rechnung ist fälschlich als S. 4 an <ref target="https://gams.uni-graz.at/o:hsa.letter.6415">Brief 08409</ref> angehängt.</note> stellt sich die Rechnung über „Lautgesetze“ wie folgt. Gedruckt wurden 410 Exx., hiervon als Freiexemplare in Ihrem Auftrage von mir an verschiedene Zeitschriften u. an Sie gesandt 60 Exp. Es blieben somit zum Vertrieb 350 Exx. Bei dem Ladenpreis von 80 ₰ u. Netto von 60 ₰ würden diese 350 Exx. Gerade hinreichen, die Gestaltungskosten von ℳ 210 zu decken. Vorräthig waren zur Ostermesse 1887 noch 76 Exx., welche, wie gesagt, noch verkauft werden müssen, um die Herstellungskosten zu decken.</p>
-
-        <p>Als ich seiner Zeit so calculirte daß die 350 Exx. des ersten Druckes die Herstellungskosten decken sollten rechnete ich darauf es würden diese 350 Exx. schnell ausverkauft werden u. es würde mir möglich sein, eine neue mindest ebenso hohe Auflage zu drucken, deren Preis ja verhältnismäßig viel billiger sich gestellt hätte, da ich den Satz stehen ließ. Nun aber hat es sich ja heraus gestellt, daß ich in zweifacher Weise falsch kalkulirt habe. Erstens insofern, als sich die Auflage von 400 bez. 350 Exx. als den Gesammtbedarf deckend ergeben hat, u. zweitens, indem ich für diesen Absatz den Preis des Schriftchens hätte mindestens auf ℳ 1,20 gestellt werden müssen so daß beim Nettopreise von 90 ₰ der jetzige Absatz schon mehr als die Kosten gedeckt hätte, u. die ferneren 76 Exx. einen kleinen Gewinn abgewor- <pb
-            facs="#IMG.3" n="3"/> fen hätten.</p>
-
-        <p>Nach dieser Darlegung ist also wohl die Frage die, ob Sie mir Ihr Volapükschriftchen in Commission zu geben geneigt sind. Nach Ihrer Mittheilung belaufen sich dessen Herstellung auf 120 Gulden,<note
-            n="6" place="foot"
-            type="editorial">Die Schrift wurde gedruckt von der K. K. Universitätsdruckerei Styria, Graz.</note> d. h. etwa 240 ℳ, rechne ich nun, um glatt abzuschließen, für Porti, Frachten, Anzeigen, ℳ 60, so würden, um die Kosten zu decken, nöthig sein bei einem Ladenpreis von ℳ 1.20 (das wäre also der Bogen mit 40 ₰ gerechnet)<note
-            n="7" place="foot"
-            type="editorial">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.6417" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>ROBERT OPPENHEIM<lb/>25. Matthäikirchstrasse 25.<lb/>Berlin, W., den 28 Novb. 1887</dateline>
+            <opener>Hochgeehrter Herr<note n="1" place="foot" type="editorial">Professionelle Handschrift eines Büroangestellten.</note>
+            </opener>
+            <p>Auf die keineswegs unterschätzte Gefahr hin, Ihren Unwillen zu erregen, dadurch, daß ich Sie auf das erhoffte Telegramm vergeblich habe warten lassen (wenigstens in der von Ihnen erwarteten endgültigen Form),<note n="2" place="foot" type="editorial">Dies als Ergänzung am Briefrand.</note> ziehe ich es doch vor Ihnen die Antwort auf Ihre heute früh empfangene werthe Zuschrift brieflich zu senden.</p>
+            <p>Denn mit einem einfachen, „ja“ od. „nein“, wie Sie es verlangen, ist die Sache nicht abgethan. Die Frage ist nämlich nicht die, ob ich Ihr Volapükschriftchen<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.486">
+                        <hi rend="unknown" rendition="#none">Auf Anlass des Volapüks</hi>, Berlin: Oppermann, 1888, 48 S. 8°.</ref>
+                  </bibl>
+               </note> in Commissionsverlag zu nehmen bereit bin, sondern ob Sie überhaupt geneigt sein werden, mir den Vertrieb derselben zu übergeben, nachdem ich Ihnen das Ergebniß des Vertriebes der Schrift über die Lautgesetze mitgetheilt habe. Einfügen muß ich auch die Bitte um Entschuldigung, daß das erst jetzt geschieht, erst unmittelbar nach der Ostermesse dieses Jahres,<note n="4" place="foot" type="editorial">Sollte nicht „Herbstmesse“ gemeint sein?</note> doch waren Sie zu jener Zeit von Graz abwesend, u. mir Ihr Aufenthalt nicht bekannt, u. nachher ist mir die Sache wirklich aus dem gedächtniß gerathen. <pb facs="#IMG:2" n="2"/> Wie Sie nun aus beiliegender Aufstellung ersehen,<note n="5" place="foot" type="editorial">Diese Rechnung ist fälschlich als S. 4 an <ref target="https://gams.uni-graz.at/o:hsa.letter.6415">Brief 08409</ref> angehängt.</note> stellt sich die Rechnung über „Lautgesetze“ wie folgt. Gedruckt wurden 410 Exx., hiervon als Freiexemplare in Ihrem Auftrage von mir an verschiedene Zeitschriften u. an Sie gesandt 60 Exp. Es blieben somit zum Vertrieb 350 Exx. Bei dem Ladenpreis von 80 ₰ u. Netto von 60 ₰ würden diese 350 Exx. Gerade hinreichen, die Gestaltungskosten von ℳ 210 zu decken. Vorräthig waren zur Ostermesse 1887 noch 76 Exx., welche, wie gesagt, noch verkauft werden müssen, um die Herstellungskosten zu decken.</p>
+            <p>Als ich seiner Zeit so calculirte daß die 350 Exx. des ersten Druckes die Herstellungskosten decken sollten rechnete ich darauf es würden diese 350 Exx. schnell ausverkauft werden u. es würde mir möglich sein, eine neue mindest ebenso hohe Auflage zu drucken, deren Preis ja verhältnismäßig viel billiger sich gestellt hätte, da ich den Satz stehen ließ. Nun aber hat es sich ja heraus gestellt, daß ich in zweifacher Weise falsch kalkulirt habe. Erstens insofern, als sich die Auflage von 400 bez. 350 Exx. als den Gesammtbedarf deckend ergeben hat, u. zweitens, indem ich für diesen Absatz den Preis des Schriftchens hätte mindestens auf ℳ 1,20 gestellt werden müssen so daß beim Nettopreise von 90 ₰ der jetzige Absatz schon mehr als die Kosten gedeckt hätte, u. die ferneren 76 Exx. einen kleinen Gewinn abgewor- <pb facs="#IMG.3" n="3"/> fen hätten.</p>
+            <p>Nach dieser Darlegung ist also wohl die Frage die, ob Sie mir Ihr Volapükschriftchen in Commission zu geben geneigt sind. Nach Ihrer Mittheilung belaufen sich dessen Herstellung auf 120 Gulden,<note n="6" place="foot" type="editorial">Die Schrift wurde gedruckt von der K. K. Universitätsdruckerei Styria, Graz.</note> d. h. etwa 240 ℳ, rechne ich nun, um glatt abzuschließen, für Porti, Frachten, Anzeigen, ℳ 60, so würden, um die Kosten zu decken, nöthig sein bei einem Ladenpreis von ℳ 1.20 (das wäre also der Bogen mit 40 ₰ gerechnet)<note n="7" place="foot" type="editorial">
 Zusatz am Briefrand.</note> u. Nettopreis von von 90 ₰ für das Ex. etwa 335 Exx. Bei einem Bogenpreis von 1,15, etwa 260 Exx. Man würde also auch bei letzterem Preise doch wohl 500 Exx. drucken müssen, um sich die Aussicht auf einen kleinen Gewinn offen zu halten. Ob diese Auflage gerechtfertigt, bin ich allerdings auch nicht in der Lage zu bestimmen. Das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.60">
 Volapük</ref> wird doch wohl meistens von unwissenschaftlichen Leuten gepflegt, an welches [gem. welche] Ihre Schrift sich natürlich nicht wendet, u. ob der wissenschaftlichen Käufer schließlich mehr sein würden, wie der Käufer der Lautgesetzschrift, die doch zweifellos ein gewisses Aufsehen erregt hat, wage ich, nachdem ich eben meine falsche Rechnung habe eingestehen müssen, nicht zu bestimmen.</p>
-
-        <p>Eins dürfte jedenfalls meine Aufstellung beweisen, daß mit dem Volapükschriftchen auch wenn es zu einem verständigerweise höheren Preise, als die Lautgesetze verkauft u. in erheblich größerer Anzahl abgesetzt würde ein irgendwie nennens werther Gewinn nicht zu erzielen ist; gerade bei derartig kleinen Schriften sind die Vertriebskosten verhältnißmäßig hoch, u. wenn Sie meinen, es hätten <pb
-            facs="#IMG.4" n="4"/> Berufsgenossen von Ihnen beim Selbstverlag derartiger Schriften gute Geschäfte gemacht, so muß es sich entweder um umfangreichere Werke u. größere Auflagen gehandelt haben, od. die Herren calkuliren nicht richtig.</p>
-
-        <p>Wollen Sie mir nach allem Gesagten Ihr Volapükschriftchen zum Vertrieb in dem Buchhandel überlassen, so würde ich mich dessen freuen, weil ich die angeknüpfte Geschäftsverbindung gern weiter pflegen möchte. Sie würden dann so gut sein, die für den eigenen Bedarf u. für Recensionen nöthigen Exx. dort zu behalten u. die für den Handel bestimmten Exx. für mich an meinen Leipziger Vertreter „Herrn H. Haeßel 16 Lindenstraße“<note
-            n="8" place="foot" type="editorial">Das Leipziger Adressbuch von 1890, S. 190, nennt in der Lindenstraße 16 als „Besitzer: H. A. Hässel, Buchhändler; pt. Voß Sortiment (G. Haessel)“.</note> zu senden, sollte auch ich Exx. an Redactionen in Ihrem Auftrage zu verschicken haben, so würde ich bitten, dieselben besonders gezählt u. mit betreffender Anweisung versehen beizulegen. Preis würde ich, falls nicht von Ihnen festgesetzt, bestimmen. Erste Abrechnung erfolgte zur Ostermesse 1889.</p>
-        <p>Ob einige der hiesigen Zeitungen Volapük-freundlich, bin ich leider nicht in der Lage mitzutheilen, ich lese regelmäßig nur die Nationalzeitung, u. diese ist es nicht.</p>
-        <p>Die versprochene statistische Aufstellung über den Absatz der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.329">Lautgesetze</ref>, deren Zusendung nach der Ostermesse aus gleichem Grunde, wie eben angegeben, unterblieb, werde ich anfertigen lassen u. Ihnen demnächst senden. Ich muß noch hinzufügen, daß bei Vertrieb durch mich Ertrag des Absatzes bis zur Deckung Ihrer Auslagen, also bis zum Absatz von etwa 335, bezw. 260 Exx. Ihnen erstattet würde. Etwaiger Gewinn durch Absatz von Exx. über die zur Deckung der Herstellungskosten nöthigen Zahl wäre zu theilen.</p>
-      </div>
-      <div corresp="#L.6417" subtype="original" type="appendix" xml:lang="de">
-        <pb facs="#IMG.5" n="5"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Zeitschriften</hi>
-        </p>
-        <p>Welche vielleicht zu benachrichtigen</p>
-        <p>
-          <hi rend="unknown" rendition="#none">[linke Spalte:]</hi> Blatt f. lit. Unterhaltung;<note n="9" place="foot"
-              type="editorial">Wohl 
+            <p>Eins dürfte jedenfalls meine Aufstellung beweisen, daß mit dem Volapükschriftchen auch wenn es zu einem verständigerweise höheren Preise, als die Lautgesetze verkauft u. in erheblich größerer Anzahl abgesetzt würde ein irgendwie nennens werther Gewinn nicht zu erzielen ist; gerade bei derartig kleinen Schriften sind die Vertriebskosten verhältnißmäßig hoch, u. wenn Sie meinen, es hätten <pb facs="#IMG.4" n="4"/> Berufsgenossen von Ihnen beim Selbstverlag derartiger Schriften gute Geschäfte gemacht, so muß es sich entweder um umfangreichere Werke u. größere Auflagen gehandelt haben, od. die Herren calkuliren nicht richtig.</p>
+            <p>Wollen Sie mir nach allem Gesagten Ihr Volapükschriftchen zum Vertrieb in dem Buchhandel überlassen, so würde ich mich dessen freuen, weil ich die angeknüpfte Geschäftsverbindung gern weiter pflegen möchte. Sie würden dann so gut sein, die für den eigenen Bedarf u. für Recensionen nöthigen Exx. dort zu behalten u. die für den Handel bestimmten Exx. für mich an meinen Leipziger Vertreter „Herrn H. Haeßel 16 Lindenstraße“<note n="8" place="foot" type="editorial">Das Leipziger Adressbuch von 1890, S. 190, nennt in der Lindenstraße 16 als „Besitzer: H. A. Hässel, Buchhändler; pt. Voß Sortiment (G. Haessel)“.</note> zu senden, sollte auch ich Exx. an Redactionen in Ihrem Auftrage zu verschicken haben, so würde ich bitten, dieselben besonders gezählt u. mit betreffender Anweisung versehen beizulegen. Preis würde ich, falls nicht von Ihnen festgesetzt, bestimmen. Erste Abrechnung erfolgte zur Ostermesse 1889.</p>
+            <p>Ob einige der hiesigen Zeitungen Volapük-freundlich, bin ich leider nicht in der Lage mitzutheilen, ich lese regelmäßig nur die Nationalzeitung, u. diese ist es nicht.</p>
+            <p>Die versprochene statistische Aufstellung über den Absatz der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.329">Lautgesetze</ref>, deren Zusendung nach der Ostermesse aus gleichem Grunde, wie eben angegeben, unterblieb, werde ich anfertigen lassen u. Ihnen demnächst senden. Ich muß noch hinzufügen, daß bei Vertrieb durch mich Ertrag des Absatzes bis zur Deckung Ihrer Auslagen, also bis zum Absatz von etwa 335, bezw. 260 Exx. Ihnen erstattet würde. Etwaiger Gewinn durch Absatz von Exx. über die zur Deckung der Herstellungskosten nöthigen Zahl wäre zu theilen.</p>
+         </div>
+         <div corresp="#L.6417"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <pb facs="#IMG.5" n="5"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Zeitschriften</hi>
+            </p>
+            <p>Welche vielleicht zu benachrichtigen</p>
+            <p>
+               <hi rend="unknown" rendition="#none">[linke Spalte:]</hi> Blatt f. lit. Unterhaltung;<note n="9" place="foot" type="editorial">Wohl 
 
 
-<hi rend="unknown"
-            rendition="#none">Blätter für literarische Unterhaltung</hi>
-, Leipzig, F.A. Brockhaus, 1826-1898.</note> Literar Centralblatt;<note
-            n="10" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3125">
-              <hi rend="unknown" rendition="#none">Litterarisches Centralblatt für Deutschland [=Literarisches Zentralblatt für Deutschland]</hi>
-            </ref>, Leipzig: Harrassowitz, 1850-1944.</note> Deutsche Literatur Ztg;<note n="11" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3185">
-              <hi rend="unknown" rendition="#none">Deutsche Literaturzeitung für Kritik der Internationalen Wissenschaft</hi>
-
-            </ref>, begr. 1880 von <persName>
+<hi rend="unknown" rendition="#none">Blätter für literarische Unterhaltung</hi>
+, Leipzig, F.A. Brockhaus, 1826-1898.</note> Literar Centralblatt;<note n="10" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3125">
+                     <hi rend="unknown" rendition="#none">Litterarisches Centralblatt für Deutschland [=Literarisches Zentralblatt für Deutschland]</hi>
+                  </ref>, Leipzig: Harrassowitz, 1850-1944.</note> Deutsche Literatur Ztg;<note n="11" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3185">
+                     <hi rend="unknown" rendition="#none">Deutsche Literaturzeitung für Kritik der Internationalen Wissenschaft</hi>
+                  </ref>, begr. 1880 von <persName>
 
 Max Roediger</persName>, Berlin: Weidmann; ab 1886 hrsg. von <persName>
 August Wilhelm Fresenius</persName>, ab 1892 von <persName>
-Paul Hinneberg</persName> (1906-1944 <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4714">de Gruyter</ref>).</note> Zeitschr f Völkerpsychol.;<note
-            n="12" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4180">
-              <hi rend="unknown" rendition="#none">Zeitschrift für Völkerpsychologie und Sprachwissenschaft</hi>
-            </ref>, 1860f., Berlin: Dümmler; hrsg. von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4417">Theodor Waitz</persName> u. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1572">Georg Gerland</persName>.</note> … f Literaturgesch. v. Prof. Koch Marburg;<note
-            n="13" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Zeitschrift für vergleichende Literaturgeschichte</hi>
-, hrsg von Max Koch, Berlin: Felber, 1887f.</note> Literaturbl f germ u rom Philol;<note
-            n="14" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3144">
-              <hi rend="unknown" rendition="#none">Literaturblatt für Germanische und Romanische Philologie</hi>
-            </ref>, Leipzig: Reisland, 1880-1944, hrsg. von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1121">Otto Behagel</persName> und <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2288">Fritz Neumann</persName> (zunächst verlegt von <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.1002">
-Henninger</ref> in Heilbronn).</note> Deutsche Rundschau;<note
-            n="15" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4113">
-              <hi rend="unknown" rendition="#none">Deutsche Rundschau</hi>
-            </ref>, Berlin: Gebr. Paetel, hrsg. von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2534">Julius Rodenberg</persName>, 1874f.</note> Wochenschrift f klass. Philol. Prof. Hirschfeld. Berlin;<note
-            n="16" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Wochenschrift für klassische Philologie</hi>
+Paul Hinneberg</persName> (1906-1944 <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4714">de Gruyter</ref>).</note> Zeitschr f Völkerpsychol.;<note n="12" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4180">
+                     <hi rend="unknown" rendition="#none">Zeitschrift für Völkerpsychologie und Sprachwissenschaft</hi>
+                  </ref>, 1860f., Berlin: Dümmler; hrsg. von <persName ref="[authorityLink]">Theodor Waitz</persName> u. <persName ref="[authorityLink]">Georg Gerland</persName>.</note> … f Literaturgesch. v. Prof. Koch Marburg;<note n="13" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Zeitschrift für vergleichende Literaturgeschichte</hi>
+, hrsg von Max Koch, Berlin: Felber, 1887f.</note> Literaturbl f germ u rom Philol;<note n="14" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3144">
+                     <hi rend="unknown" rendition="#none">Literaturblatt für Germanische und Romanische Philologie</hi>
+                  </ref>, Leipzig: Reisland, 1880-1944, hrsg. von <persName ref="[authorityLink]">Otto Behagel</persName> und <persName ref="[authorityLink]">Fritz Neumann</persName> (zunächst verlegt von <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.1002">
+Henninger</ref> in Heilbronn).</note> Deutsche Rundschau;<note n="15" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4113">
+                     <hi rend="unknown" rendition="#none">Deutsche Rundschau</hi>
+                  </ref>, Berlin: Gebr. Paetel, hrsg. von <persName ref="[authorityLink]">Julius Rodenberg</persName>, 1874f.</note> Wochenschrift f klass. Philol. Prof. Hirschfeld. Berlin;<note n="16" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Wochenschrift für klassische Philologie</hi>
 , Berlin: Gaertner, 1874f., 1884-86 hrsg. von <persName>
-Wilhelm Hirschfelder</persName>.</note> Centralorg. f d Interess d. Realschulwesens: Berlin;<note
-            n="17" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Centralorgan für die Interessen des Realschulwesens</hi>
-, Berlin: Gülker, 1873-96.</note> Internat Zeitschr f allg Sprachwissensch;<note
-            n="18" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3155">
-              <hi rend="unknown" rendition="#none">Internationale Zeitschrift für allgemeine Sprachwissenschaft</hi>
-            </ref>, Heilbronn: Henninger, 1884f.; ab 1887-90 Leipzig; hrsg.. von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2841">
-Friedrich Heinrich Techmer</persName>.</note> Gegenwart: Berlin;<note
-            n="19" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4579">
-              <hi rend="unknown" rendition="#none">Die Gegenwart, Wochenschrift für Literatur, Kunst und öffentliches Leben</hi>
-            </ref>, Berlin: Stilke, 1872-1931 (ab 1892 wechselnde Verlage).</note> Nation, dit]o;<note n="20"
-            place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Die Nation: Wochenschrift für Politik, Volkswirtschaft und Literatur</hi>
-, 1883/84f., Verlag Hermann in Kommission (bis Jg. 24,1906/07).</note> Berliner philol. Wochenschr.;<note
-            n="21" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Philologische Wochenschrift</hi>
-, 1881-1944, Berlin: S. Calvary, ab 1921 Verlag Philipp Reisland.</note> Zeitschr f Gymnasialwesen;<note
-            n="22" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5505">
-              <hi rend="unknown" rendition="#none">Zeitschrift für das Gymnasialwesen (Sokrates)</hi>
-
-            </ref>, 1, 1847-20, 1866; N.F.21, 1867-66, 1912, Berlin: Enslin, danach Weidmannsche Buchhandlung.</note> Nord u Süd: Breslau;<note
-            n="23" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">Nord und Süd</hi>
-, gegr. 1877 von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4866">Paul Lindau</persName>, Breslau, später Berlin (bis 1920).</note> Ueber Land u Meer: Stuttgart;<note
-            n="24" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Ueber Land und Meer. Allgemeine Illustrirte Zeitung</hi>
-, Stuttgart 1858-1923.</note> Illustr Ztg. Leipzig;<note
-            n="25" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4125">
-              <hi rend="unknown" rendition="#none">Illustrirte Zeitung</hi>
-            </ref>, Leipzig: J.J. Weber, 1843-1944.</note> Magazin f. d. Lit. d. In u Auslandes, Lpzig;<note n="26"
-            place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5222">
-              <hi rend="unknown" rendition="#none">Magazin für die Literatur des In- und Auslandes</hi>
-
-            </ref>. Gegründet von <persName>
-Joseph Lehmann</persName>, Leipzig: Friedrich, 1, 1832-49, 1880.</note> Deutsche Revue: Breslau;<note
-            n="27" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Deutsche Revue über das gesammte nationale Leben der Gegenwart</hi>
+Wilhelm Hirschfelder</persName>.</note> Centralorg. f d Interess d. Realschulwesens: Berlin;<note n="17" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Centralorgan für die Interessen des Realschulwesens</hi>
+, Berlin: Gülker, 1873-96.</note> Internat Zeitschr f allg Sprachwissensch;<note n="18" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3155">
+                     <hi rend="unknown" rendition="#none">Internationale Zeitschrift für allgemeine Sprachwissenschaft</hi>
+                  </ref>, Heilbronn: Henninger, 1884f.; ab 1887-90 Leipzig; hrsg.. von <persName ref="[authorityLink]">
+Friedrich Heinrich Techmer</persName>.</note> Gegenwart: Berlin;<note n="19" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4579">
+                     <hi rend="unknown" rendition="#none">Die Gegenwart, Wochenschrift für Literatur, Kunst und öffentliches Leben</hi>
+                  </ref>, Berlin: Stilke, 1872-1931 (ab 1892 wechselnde Verlage).</note> Nation, dit]o;<note n="20" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Die Nation: Wochenschrift für Politik, Volkswirtschaft und Literatur</hi>
+, 1883/84f., Verlag Hermann in Kommission (bis Jg. 24,1906/07).</note> Berliner philol. Wochenschr.;<note n="21" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Philologische Wochenschrift</hi>
+, 1881-1944, Berlin: S. Calvary, ab 1921 Verlag Philipp Reisland.</note> Zeitschr f Gymnasialwesen;<note n="22" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5505">
+                     <hi rend="unknown" rendition="#none">Zeitschrift für das Gymnasialwesen (Sokrates)</hi>
+                  </ref>, 1, 1847-20, 1866; N.F.21, 1867-66, 1912, Berlin: Enslin, danach Weidmannsche Buchhandlung.</note> Nord u Süd: Breslau;<note n="23" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Nord und Süd</hi>
+, gegr. 1877 von <persName ref="[authorityLink]">Paul Lindau</persName>, Breslau, später Berlin (bis 1920).</note> Ueber Land u Meer: Stuttgart;<note n="24" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Ueber Land und Meer. Allgemeine Illustrirte Zeitung</hi>
+, Stuttgart 1858-1923.</note> Illustr Ztg. Leipzig;<note n="25" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4125">
+                     <hi rend="unknown" rendition="#none">Illustrirte Zeitung</hi>
+                  </ref>, Leipzig: J.J. Weber, 1843-1944.</note> Magazin f. d. Lit. d. In u Auslandes, Lpzig;<note n="26" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5222">
+                     <hi rend="unknown" rendition="#none">Magazin für die Literatur des In- und Auslandes</hi>
+                  </ref>. Gegründet von <persName>
+Joseph Lehmann</persName>, Leipzig: Friedrich, 1, 1832-49, 1880.</note> Deutsche Revue: Breslau;<note n="27" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Deutsche Revue über das gesammte nationale Leben der Gegenwart</hi>
 , hrsg. von <persName>
 
-Richard Fleischer</persName>, Breslau u. Berlin: Carl Habel, 1877-1922</note> Gött. Gelehrte Anz.<note
-            n="28" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5079">
-              <hi rend="unknown" rendition="#none">Göttingische gelehrte Anzeigen</hi>
-            </ref>, Göttingen 1739 (bis heute).</note>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">[Rechte Spalte:]</hi> Allg Ztg / München;<note n="29" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Allgemeine Zeitung</hi>
-, Stuttgart / München: Cotta, 1883-1889.</note> Weser Ztg. zu senden an Prof. D<hi
-            rendition="#sup">r</hi> Hugo Elard Meyer in Freiburg i/ B;<note n="30" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Weser-Zeitung, ein politisch-merkantilistisches Abendblatt</hi>
+Richard Fleischer</persName>, Breslau u. Berlin: Carl Habel, 1877-1922</note> Gött. Gelehrte Anz.<note n="28" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5079">
+                     <hi rend="unknown" rendition="#none">Göttingische gelehrte Anzeigen</hi>
+                  </ref>, Göttingen 1739 (bis heute).</note>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">[Rechte Spalte:]</hi> Allg Ztg / München;<note n="29" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Allgemeine Zeitung</hi>
+, Stuttgart / München: Cotta, 1883-1889.</note> Weser Ztg. zu senden an Prof. D<hi rendition="#sup">r</hi> Hugo Elard Meyer in Freiburg i/ B;<note n="30" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Weser-Zeitung, ein politisch-merkantilistisches Abendblatt</hi>
 , Bremen: Schünemann, 1844-1934. – <persName>
-Elard Hugo Meyer</persName> (1837-1908), aus Bremen stammender Volkskundler und Indogermanist, Honorarprofessor für Volkskunde in Freiburg i. Br.</note> Hamburger Nachrichten zu senden an Prof. D<hi
-            rendition="#sup">r</hi> Eyssenhardt 7 Dom Str: Hamburg;<note n="31" place="foot" type="editorial">
-            <hi rend="unknown"
-              rendition="#none">Hamburger Nachrichten. Morgenzeitung für Politik, Handel und Schiffahrt</hi>
+Elard Hugo Meyer</persName> (1837-1908), aus Bremen stammender Volkskundler und Indogermanist, Honorarprofessor für Volkskunde in Freiburg i. Br.</note> Hamburger Nachrichten zu senden an Prof. D<hi rendition="#sup">r</hi> Eyssenhardt 7 Dom Str: Hamburg;<note n="31" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Hamburger Nachrichten. Morgenzeitung für Politik, Handel und Schiffahrt</hi>
 ; Organ für Hamburgische Angelegenheiten ; Anzeiger Schifffahrt, Hamburg: Hermann, 1849-1939. – <persName>
-Franz Eyssenhardt</persName> (1838-1901), Altphilologe, Professor am Hamburger Johanneum, ab 1882 Leiter der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4538">Hamburger Stadtbibliothek</ref>.</note> National<note
-            n="32" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4865">
-              <hi rend="unknown" rendition="#none">National-Zeitung (Berlin)</hi>
-
-            </ref>, 1848-1939 (wichtige liberale Tageszeitung, die ihren Einfluss dem Verleger <persName>
-Bernhard Wolff</persName> verdankt).</note> Vossische<note
-            n="33" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">
+Franz Eyssenhardt</persName> (1838-1901), Altphilologe, Professor am Hamburger Johanneum, ab 1882 Leiter der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4538">Hamburger Stadtbibliothek</ref>.</note> National<note n="32" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4865">
+                     <hi rend="unknown" rendition="#none">National-Zeitung (Berlin)</hi>
+                  </ref>, 1848-1939 (wichtige liberale Tageszeitung, die ihren Einfluss dem Verleger <persName>
+Bernhard Wolff</persName> verdankt).</note> Vossische<note n="33" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
 Vossische Zeitung</hi>
-, älteste Berliner Zeitung, gegr. 1704 oder 1721. Seit 1806 führte sie den Kopfvermerk „Im Verlage Vossischer Erben“. Am 31.3.1934 stellte der Ullstein-Verlag, dem die Zeitung inzwischen gehörte, unter dem Druck der nationalsozialistischen Rassengesetze ihr Erscheinen ein.</note> Neue Preuß Ztg B;<note
-            n="34" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Neue Preußische Zeitung (Kreuzzeitung)</hi>
- , überregionale Zeitung, die von 1848 bis 1939 bestand. Die B-Ausgabe war die Abendausg.</note> Bund / Dr Widmann Bern;<note
-            n="35" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Der Bund</hi>
+, älteste Berliner Zeitung, gegr. 1704 oder 1721. Seit 1806 führte sie den Kopfvermerk „Im Verlage Vossischer Erben“. Am 31.3.1934 stellte der Ullstein-Verlag, dem die Zeitung inzwischen gehörte, unter dem Druck der nationalsozialistischen Rassengesetze ihr Erscheinen ein.</note> Neue Preuß Ztg B;<note n="34" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Neue Preußische Zeitung (Kreuzzeitung)</hi>
+ , überregionale Zeitung, die von 1848 bis 1939 bestand. Die B-Ausgabe war die Abendausg.</note> Bund / Dr Widmann Bern;<note n="35" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Der Bund</hi>
 , Bern 1850 f. (diese Schweizer Tageszeitung besteht bis heute). – <persName>
 
-Josef Viktor Widmann</persName> (1842-1911) war von 1880-1911 Feuilletonredakteur der Zeitung.</note> Schlesische Ztg / v. Rentz Breslau;<note
-            n="36" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Schlesische Zeitung</hi>
-, ersch. (ab 1881 dreimal täglich) von 1742 bis 1945. – Zu Freiherr von Rentz konnten keine weiteren Nachrichten gefunden werden.</note> Breslauer Ztg do.;<note
-            n="37" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Breslauer Zeitung</hi>, 1828-1937, Verlag Trewendt (3 Ausg. pro Tag).</note> Tägl Rundschau: Berlin;<note
-            n="38" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">
+Josef Viktor Widmann</persName> (1842-1911) war von 1880-1911 Feuilletonredakteur der Zeitung.</note> Schlesische Ztg / v. Rentz Breslau;<note n="36" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Schlesische Zeitung</hi>
+, ersch. (ab 1881 dreimal täglich) von 1742 bis 1945. – Zu Freiherr von Rentz konnten keine weiteren Nachrichten gefunden werden.</note> Breslauer Ztg do.;<note n="37" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Breslauer Zeitung</hi>, 1828-1937, Verlag Trewendt (3 Ausg. pro Tag).</note> Tägl Rundschau: Berlin;<note n="38" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
 Tägliche Rundschau, Zeitung für Nichtpolitiker, zugleich Ergänzungsblatt zu den politischen Organen jeder Partei</hi>
-, Berlin 1881-1933.</note> Schwäb Merkur;<note
-            n="39" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">
+, Berlin 1881-1933.</note> Schwäb Merkur;<note n="39" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
 
 Schwäbischer Merkur und 
 Schwäbische Chronik
-</hi>, Stuttgart 1785-1941 (zwei zusammengehörende Tageszeitungen).</note> Stuttg; Köln Ztg: Koeln;<note
-            n="40" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4852">
-              <hi rend="unknown" rendition="#none">Kölnische Zeitung</hi>
-            </ref>, Köln: DuMont-Schauberg, 1798-1945 (mit zweiwöchiger Sonntagsausgabe).</note> Frankfurter Ztg: F <hi
-            rendition="#sup">a</hi>/Main<note n="41" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3535">
-              <hi rend="unknown" rendition="#none">Frankfurter Zeitung</hi>
-            </ref>, 1856 als Frankfurter Geschäftsbericht gegr., ab 1866 Frankfurter Zeitung und Handelsblatt (letztmalig 31.8.1941)</note>
-        </p>
-        <pb facs="#IMG.6" n="6"/>
-        <pb facs="#IMG.7" n="7"/>
-        <p>[Auf diesen beiden Seiten werden in gut lesbarer Form die Absatzzahlen von Schuchardt, Lautgesetze, für die Jahre 1885 bis 1887 aufgelistet, die nicht eigens transkribiert werden].</p>
-        <pb facs="#IMG.8" n="8"/>
-        <p>Offenbar von Schuchardts Hand die Absatzzahlen für das Ausland: Italien 2, England 4, Dänemark 5, Schweden-Norwegen 18 (Upsala 8), Rumänien 1, Niederlande 3, Frankreich 3, Ver Staaten 12, Belgien 3, Schweiz 1, Russland 14 (Petersb. 5).</p>
-      </div>
-    </body>
-  </text>
+</hi>, Stuttgart 1785-1941 (zwei zusammengehörende Tageszeitungen).</note> Stuttg; Köln Ztg: Koeln;<note n="40" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4852">
+                     <hi rend="unknown" rendition="#none">Kölnische Zeitung</hi>
+                  </ref>, Köln: DuMont-Schauberg, 1798-1945 (mit zweiwöchiger Sonntagsausgabe).</note> Frankfurter Ztg: F <hi rendition="#sup">a</hi>/Main<note n="41" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3535">
+                     <hi rend="unknown" rendition="#none">Frankfurter Zeitung</hi>
+                  </ref>, 1856 als Frankfurter Geschäftsbericht gegr., ab 1866 Frankfurter Zeitung und Handelsblatt (letztmalig 31.8.1941)</note>
+            </p>
+            <pb facs="#IMG.6" n="6"/>
+            <pb facs="#IMG.7" n="7"/>
+            <p>[Auf diesen beiden Seiten werden in gut lesbarer Form die Absatzzahlen von Schuchardt, Lautgesetze, für die Jahre 1885 bis 1887 aufgelistet, die nicht eigens transkribiert werden].</p>
+            <pb facs="#IMG.8" n="8"/>
+            <p>Offenbar von Schuchardts Hand die Absatzzahlen für das Ausland: Italien 2, England 4, Dänemark 5, Schweden-Norwegen 18 (Upsala 8), Rumänien 1, Niederlande 3, Frankreich 3, Ver Staaten 12, Belgien 3, Schweiz 1, Russland 14 (Petersb. 5).</p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

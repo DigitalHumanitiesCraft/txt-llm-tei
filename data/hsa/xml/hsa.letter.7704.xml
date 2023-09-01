@@ -1,495 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Francesco D´Ovidio (93-HSFDO36)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Sandra</forename>
-            <surname>Covino</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7704" type="PID">o:hsa.letter.7704</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">93-HSFDO36</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Italien</country>
-            <settlement>Pisa</settlement>
-            <repository ref="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</repository>
-            <idno type="shelfmark">HSFDO36</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="10" unit="pages">10 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1921-01-03">1921-01-03</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Sandra</forename>
-              <surname>Covino</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Francesco D´Ovidio</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1353"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7704">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1921-01-03">1921-01-03</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1353" ref="https://viaf.org/viaf/29528295">
-            <forename>Francesco</forename>
-            <surname>D´Ovidio</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1353" type="context">
-                        Korrespondenz Hugo Schuchardt - Francesco D´Ovidio
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.290" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Accademia dei Lincei (Rom)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4504" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Premio dei Lincei</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4698" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Zürich</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3981" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Wissen und Leben: neue Schweizer Rundschau</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7704" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7704" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7704" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7704" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7704" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7704" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7704" xml:id="IMG.7">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7704" xml:id="IMG.8">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7704" xml:id="IMG.9">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7704" xml:id="IMG.10">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7704" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 3.1.’21</dateline>
-        <opener>Lieber Freund,</opener>
-
-        <p>Wundere Dich nicht darüber daß Du schon wieder einen Brief von mir bekommst. Es ist nur die Fortsetzung des letzten, den ich aus Erschöpfung abbrechen mußte. Inzwischen sind mir auch die bisher noch fehlenden Schriften der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.290">
-            <hi rend="unknown" rendition="#none">Accademia dei Lincei</hi>
-
-          </ref> zugekommen und ich spreche für diesen Berg von Wissenschaft meinen wärmsten Dank aus. Doch vor allem drängt es mich meine Teilnahme an den Verlusten der Akademie auszudrücken, insoweit sie sich auf Personen beziehen, die auch mir nahe gestanden sind, wie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">A. d’Ancona</persName>, der erste italienische Gelehrte, dessen Bekanntschaft ich machte (Weihnachten 1867), <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1321">
-Comparetti</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">E. Monaci</persName>. Ich suche vergebens mich darauf zu besinnen wann und unter welchen Umständen ich den lieben <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">
-Monaci</persName> habe kennen lernen; <pb facs="#IMG.2"
-            n="2"/> hatte er sich schon 1868 wissenschaftlich tätig erwiesen? 1875 schrieb er mir u.a.: denken Sie noch an <hi
-            rend="unknown" rendition="#none">Ihr</hi> Rom<note n="1" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">
-Ernesto Monaci</persName>, proprio negli anni del soggiorno giovanile di Schuchardt a <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.86">
-Roma</placeName>, stava maturando la decisione di abbandonare la professione di avvocato per dedicarsi completamente agli studi filologici e linguistici. Tuttavia, in una <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.3289">lettera del novembre 1873</ref>, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">D’Ancona</persName> parlava di <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">Monaci</persName> a Schuchardt come persona a lui non ancora nota. Quanto alla domanda rivolta a Schuchardt «denken Sie noch an Ihr Rom?», essa si trova in una <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.7240">cartolina</ref> di <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">Monaci</persName> non del 1875 ma di trent’anni dopo, ovvero del 30 aprile 1905.</note>? Ich selbst war ja damals noch nicht Romanist, höchstens Roma-ist, das heißt, ich interessierte mich im Grunde nur für Römisches und verkehrte daher mit Leuten von verschiedenster Farbe wie Rossi, Corvisieri, Peter Theiner, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1592">Gnoli</persName>, Marchese <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1482">
-Ferrajoli</persName>. Gehörte Monaci etwa zum Kreise des letzten<note
-            n="2" place="foot"
-              type="editorial">Nel suo viaggio verso Roma, dove si tratterà a lungo tra il 1868 e il 1869, Schuchardt aveva fatto una tappa a Pisa. Qui, tramite <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">Alessandro D’Ancona</persName> (Pisa 1835-Firenze 1914), conobbe <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1321">Domenico Comparetti</persName> (Roma 1835-Firenze 1927), il quale gli fornì un biglietto di presentazione all’aristocratico e influente intellettuale romano <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4792">Michelangelo Caetani</persName> (cf. la <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.3216">prima lettera</ref> di D’Ancona a Schuchardt). Schuchardt entrò così in contatto con il variegato ambiente colto romano, di cui in questa lettera ricorda l’archeologo <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2560">Giovanni Battista De Rossi</persName> (Roma 1822-Castel Gandolfo 1894); l’erudito <persName>Costantino Corvisieri</persName> (Roma 1822-1898); lo storico della Chiesa Augustin (non Peter) <persName>Theiner</persName> (Breslavia 1804-Civitavecchia 1874), all’epoca prefetto dell’Archivio Vaticano; l’eclettico letterato <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1592">Domenico Gnoli</persName> (Roma 1838-1915) e il bibliofilo <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1482">Gaetano Ferraioli</persName> (Roma 1849-1890). A Roma Schuchardt aveva intenzione di preparare il suo scritto di abilitazione alla libera docenza, che poi invece dedicherà non al romanesco ma al Churwälsch (cf. <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1787">L. Melchior &amp; V. Schwägerl-Melchior, <hi
-                  rend="unknown" rendition="#none">Raetoromanica dal lascito di Schuchardt</hi>, in Ad limina Alpium. VI Colloquium retoromanistich, a c. di Federico Vicario, Udine, Società Filologica Friulana, 2016, pp. 361-390</ref>
-            </bibl>).</note>? Mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2590">Salvioni</persName>, der im Kriege schon zwei Söhne verloren hatte, stand ich von Haus aus in guten Beziehungen<note
-            n="3" place="foot"
-              type="editorial">Nonostante la militanza giovanile in ambienti anarchici e internazionalisti, il ticinese <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2590">Carlo Salvioni</persName> si era convertito a un fervente patriottismo italiano. A tale ideale erano stati educati i figli Ferruccio ed Enrico, morti entrambi in guerra nel maggio 1916. Cf. i saggi di Romano Broggini e di Michele Loporcaro sulla biografia e sul profilo scientifico dello studioso (con ampia bibliografia secondaria), in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2049">C. Salvioni, <hi rend="unknown" rendition="#none">Scritti linguistici</hi>, a c. di M. Loporcaro et al., 5 voll., Bellinzona, Edizioni dello Stato del Canton Ticino, 2008, V, pp. 17-44 e 45-97</ref>
-
-            </bibl>.</note>; doch als ich ihn 1905 in Mailand besucht, erhielt ich einen etwas befremdlichen Eindruck. Ich weiß nicht wer flüsterte mir ein, er verdenke mir den Anteil den ich an <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">Trombetti</persName>s Angelegenheit genommen hatte<note
-            n="4" place="foot" type="editorial">Il riferimento è al <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4504">Premio Reale di Filolgia e Linguistica dell’Accademia dei Lincei</ref> di cui era risultato vincitore nel 1902 <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7704" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 3.1.’21</dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Wundere Dich nicht darüber daß Du schon wieder einen Brief von mir bekommst. Es ist nur die Fortsetzung des letzten, den ich aus Erschöpfung abbrechen mußte. Inzwischen sind mir auch die bisher noch fehlenden Schriften der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.290">
+                  <hi rend="unknown" rendition="#none">Accademia dei Lincei</hi>
+               </ref> zugekommen und ich spreche für diesen Berg von Wissenschaft meinen wärmsten Dank aus. Doch vor allem drängt es mich meine Teilnahme an den Verlusten der Akademie auszudrücken, insoweit sie sich auf Personen beziehen, die auch mir nahe gestanden sind, wie <persName ref="[authorityLink]">A. d’Ancona</persName>, der erste italienische Gelehrte, dessen Bekanntschaft ich machte (Weihnachten 1867), <persName ref="[authorityLink]">
+Comparetti</persName>, <persName ref="[authorityLink]">E. Monaci</persName>. Ich suche vergebens mich darauf zu besinnen wann und unter welchen Umständen ich den lieben <persName ref="[authorityLink]">
+Monaci</persName> habe kennen lernen; <pb facs="#IMG.2" n="2"/> hatte er sich schon 1868 wissenschaftlich tätig erwiesen? 1875 schrieb er mir u.a.: denken Sie noch an <hi rend="unknown" rendition="#none">Ihr</hi> Rom<note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
+Ernesto Monaci</persName>, proprio negli anni del soggiorno giovanile di Schuchardt a <placeName ref="[authorityLink]">
+Roma</placeName>, stava maturando la decisione di abbandonare la professione di avvocato per dedicarsi completamente agli studi filologici e linguistici. Tuttavia, in una <ref target="https://gams.uni-graz.at/o:hsa.letter.3289">lettera del novembre 1873</ref>, <persName ref="[authorityLink]">D’Ancona</persName> parlava di <persName ref="[authorityLink]">Monaci</persName> a Schuchardt come persona a lui non ancora nota. Quanto alla domanda rivolta a Schuchardt «denken Sie noch an Ihr Rom?», essa si trova in una <ref target="https://gams.uni-graz.at/o:hsa.letter.7240">cartolina</ref> di <persName ref="[authorityLink]">Monaci</persName> non del 1875 ma di trent’anni dopo, ovvero del 30 aprile 1905.</note>? Ich selbst war ja damals noch nicht Romanist, höchstens Roma-ist, das heißt, ich interessierte mich im Grunde nur für Römisches und verkehrte daher mit Leuten von verschiedenster Farbe wie Rossi, Corvisieri, Peter Theiner, <persName ref="[authorityLink]">Gnoli</persName>, Marchese <persName ref="[authorityLink]">
+Ferrajoli</persName>. Gehörte Monaci etwa zum Kreise des letzten<note n="2" place="foot" type="editorial">Nel suo viaggio verso Roma, dove si tratterà a lungo tra il 1868 e il 1869, Schuchardt aveva fatto una tappa a Pisa. Qui, tramite <persName ref="[authorityLink]">Alessandro D’Ancona</persName> (Pisa 1835-Firenze 1914), conobbe <persName ref="[authorityLink]">Domenico Comparetti</persName> (Roma 1835-Firenze 1927), il quale gli fornì un biglietto di presentazione all’aristocratico e influente intellettuale romano <persName ref="[authorityLink]">Michelangelo Caetani</persName> (cf. la <ref target="https://gams.uni-graz.at/o:hsa.letter.3216">prima lettera</ref> di D’Ancona a Schuchardt). Schuchardt entrò così in contatto con il variegato ambiente colto romano, di cui in questa lettera ricorda l’archeologo <persName ref="[authorityLink]">Giovanni Battista De Rossi</persName> (Roma 1822-Castel Gandolfo 1894); l’erudito <persName>Costantino Corvisieri</persName> (Roma 1822-1898); lo storico della Chiesa Augustin (non Peter) <persName>Theiner</persName> (Breslavia 1804-Civitavecchia 1874), all’epoca prefetto dell’Archivio Vaticano; l’eclettico letterato <persName ref="[authorityLink]">Domenico Gnoli</persName> (Roma 1838-1915) e il bibliofilo <persName ref="[authorityLink]">Gaetano Ferraioli</persName> (Roma 1849-1890). A Roma Schuchardt aveva intenzione di preparare il suo scritto di abilitazione alla libera docenza, che poi invece dedicherà non al romanesco ma al Churwälsch (cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1787">L. Melchior &amp; V. Schwägerl-Melchior, <hi rend="unknown" rendition="#none">Raetoromanica dal lascito di Schuchardt</hi>, in Ad limina Alpium. VI Colloquium retoromanistich, a c. di Federico Vicario, Udine, Società Filologica Friulana, 2016, pp. 361-390</ref>
+                  </bibl>).</note>? Mit <persName ref="[authorityLink]">Salvioni</persName>, der im Kriege schon zwei Söhne verloren hatte, stand ich von Haus aus in guten Beziehungen<note n="3" place="foot" type="editorial">Nonostante la militanza giovanile in ambienti anarchici e internazionalisti, il ticinese <persName ref="[authorityLink]">Carlo Salvioni</persName> si era convertito a un fervente patriottismo italiano. A tale ideale erano stati educati i figli Ferruccio ed Enrico, morti entrambi in guerra nel maggio 1916. Cf. i saggi di Romano Broggini e di Michele Loporcaro sulla biografia e sul profilo scientifico dello studioso (con ampia bibliografia secondaria), in <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2049">C. Salvioni, <hi rend="unknown" rendition="#none">Scritti linguistici</hi>, a c. di M. Loporcaro et al., 5 voll., Bellinzona, Edizioni dello Stato del Canton Ticino, 2008, V, pp. 17-44 e 45-97</ref>
+                  </bibl>.</note>; doch als ich ihn 1905 in Mailand besucht, erhielt ich einen etwas befremdlichen Eindruck. Ich weiß nicht wer flüsterte mir ein, er verdenke mir den Anteil den ich an <persName ref="[authorityLink]">Trombetti</persName>s Angelegenheit genommen hatte<note n="4" place="foot" type="editorial">Il riferimento è al <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4504">Premio Reale di Filolgia e Linguistica dell’Accademia dei Lincei</ref> di cui era risultato vincitore nel 1902 <persName ref="[authorityLink]">
 Alfredo Trombetti</persName> (Bologna 1866-Venezia 1929), per il lavoro sui <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4176">
-                <hi rend="unknown" rendition="#none">Nessi genealogici</hi>
-              </ref>
-
-            </bibl> fra le lingue del mondo antico, che il candidato aveva presentato manoscritto. Della commissione giudicatrice, presieduta da <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">Ascoli</persName>, aveva fatto parte anche Schuchardt (cf. <ref
-              target="https://gams.uni-graz.at/archive/objects/context:hsa/methods/sdef:Context/get?mode=work-reports">
-Gutachten</ref>), insieme a <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1321">Comparetti</persName>, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2219">Monaci</persName> e allo stesso D’Ovidio. Alla decisione della commissione giudicatrice furono rivolte molte critiche; <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2590">Salvioni</persName>, in particolare, la giudicò uno «scandalo» (cf. Sebastiano Timpanaro, <hi
-              rend="unknown"
-              rendition="#none">Classicismo e illuminismo nell’Ottocento italiano</hi>, a c. di Corrado Pestelli, Firenze, Le Lettere, 2011, p. 419 e nota 302; Alfredo Stussi, <hi
-              rend="unknown" rendition="#none">Filologia e linguistica dell’Italia unita</hi>, Bologna, il Mulino, 2014, pp. 101-102; <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7641">
-                <hi rend="unknown" rendition="#none">D’Ov.-D’A.</hi>
-              </ref>
-            </bibl>, pp. 378-379, nota 1, e <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7642">
-                <hi rend="unknown" rendition="#none">D’Ov.-Rajna</hi>
-              </ref>
-
-            </bibl>, pp. 873-874, nota 8). Il dialogo scientifico fra Schuchardt e Trombetti non privo di dissensi, è testimoniato <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.2881">
-dal loro carteggio</ref> (1902-1926), edito da B. Hurch, ed emerge in varie pubblicazioni di entrambi.</note>. Unsere Polemik über <hi
-            rend="unknown" rendition="#none">trovare</hi> und <hi rend="unknown"
-            rendition="#none">negossa</hi> war dabei kaum im Spiel; allerdings kamen mir – so sehr ich seine Verdienste in der Einzel<pb
-            facs="#IMG.3"
-            n="3"/>forschung anerkenne – seine allgemeinen sprachwissenschaftlichen Anschauungen immer mehr als wunderlich vor<note
-            n="5" place="foot" type="editorial">L’approccio neogrammaticale di <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2590">Salvioni</persName> alla ricerca etimologica restò sempre ancorato al primato della fonetica e alla validità delle sue leggi: v. il discorso inaugurale <hi
-              rend="unknown" rendition="#none">Di qualche criterio dell’indagine etimologica</hi>, pronunciato nel 1905 presso l’Accademia Scientifico-Letteraria di Milano (rist. in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2049">Salvioni, <hi rend="unknown" rendition="#none">Scritti linguistici</hi>
-              </ref>
-            </bibl>, cit., IV, pp. 13-38: 26), a cui Schuchardt replicò con l’articolo <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.263">
-                <hi rend="unknown" rendition="#none">Zur Methodik der Wortgeschichte</hi>, in ZRPh, XXXI, 1907, pp. 107-109</ref>
-            </bibl>. Per quanto riguarda la polemica su derla e negossa, cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5916">Salvioni, <hi rend="unknown" rendition="#none">Illusori celtismi nell’alta Italia</hi>, in ZRPh, XXX, 1906, pp. 79-83</ref>
-            </bibl> (rist. in Salvioni, <hi rend="unknown" rendition="#none">Scritti linguistici</hi>, cit., IV, pp. 143-147) e la risposta di <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.672">Schuchardt, <hi rend="unknown" rendition="#none">Zur Wortgeschichte. Derla. Negossa […]</hi>, in ZRPh, XXX, 1906, pp. 207-210</ref>
-
-            </bibl>. Su questa disputa, alla cui base ci fu la diversa opinione dei due linguisti sul ricorso a ipotesi sostratistiche nelle spiegazioni etimologiche, cf. Luca Lorenzetti, <hi
-              rend="unknown"
-            rendition="#none">Salvioni sul sostrato fra Ascoli e Merlo</hi>, in Itinerari salvioniani. Per Carlo Salvioni nel centocinquantenario della nascita, a c. di M. Loporcaro, Tübingen-Basel, Francke, 2011, pp. 69-79: 77-78 e nota 11.</note>. Mit Ergriffenheit habe ich auch die Worte gelesen die Du und De Petra dem liebenswürdigen W. Helbig gewidmet haben, mit der Hoffnung auf „una pace che sancisca ogni giustizia“<note
-            n="6" place="foot"
-            type="editorial">Le citazioni sono tratte dal necrologio di <persName>Wolfgang Helbig</persName> (Dresda 1839-Roma 1915), socio dell’Accademia dei Lincei dal 1875, che D’Ovidio pronunciò nella seduta del 21 novembre 1915 (cf. RAL, serie V, XXIV, 1915, pp. 633-634; rist. in Opere, XIV, pp. 337-338). Nella stessa circostanza, D’Ovidio presentò, a nome dell’autore, anche la più ampia commemorazione redatta dall’archeologo <persName>Giulio De Petra</persName> (Casoli, Chieti, 1841-Napoli 1925): cf. RAL, pp. 634-638. Chiara l’autoidentificazione di Schuchardt con Helbig, che, come aveva affermato D’Ovidio, ebbe «il cuore diviso fra più patrie, per diversi rispetti a lui care». Nel 1862 Helbig era approdato, con una borsa di studio del governo prussiano, all’Istituto di corrispondenza archeologica di Roma. Rimasto poi in Italia, dette vita a una straordinaria serie di ricerche e di iniziative in vari settori dell’archeologia (romano, pompeiano, etrusco, villanoviano, ecc.).</note>– „una pace saldamente fondata sulla giustizia“ . Endlich bezeige ich Dir persönlich meine Teilnahme an deine Familienunglück das Dich beim Erdbeben von Avezzano betroffen hat. Das Nähere ist in den RC nicht angegeben; handelte es sich etwa um Deine Frau Tochter ?<note
-            n="7" place="foot" type="editorial">In RAL, serie V, XXIV, 1915, p. 33, Schuchardt aveva letto che D’Ovidio scusava la sua assenza alla seduta del 17 gennaio 1915 per «una gravissima disgrazia famigliare causata dal recente e terribile disastro sismico di Avezzano». Nella sciagura aveva perso la vita il figlio di una sorella (cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7642">
-                <hi rend="unknown" rendition="#none">D’Ov.-Rajna</hi>
-              </ref>
-            </bibl>, II, pp. 837-839). I timori di Schuchardt per la secondogenita di D’Ovidio si spiegano con il fatto che <persName>Elvira D’Ovidio</persName> era moglie di <persName>Carlo Lefebvre</persName>, conte di Balsorano, comune poco distante da Avezzano.</note>
-        </p>
-
-        <p>Diese blauen Hefte doppelter Gestalt haben nun aber auch Betrachtungen in mir angeregt oder wieder belebt die sich auf die Zukunft unserer Wissenschaft beziehen. Daß die Germania sich mehr in die Romania versenkt <pb
-            facs="#IMG.4"
-            n="4"/> hat als die Romania in die Germania, das steht fest und erklärt sich von selbst. Von einem Wettbewerb zwischen deutschen und romanischen Romanisten kann gar nicht gesprochen werden weil diese, dank den natürlichen Bedingungen, unter denen sie arbeiten, jenen hundertfach überlegen sind. Ich halte es für unrichtig wenn Freund <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1189">E. Bovet</persName>
-          <note n="8" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1189">Ernest Bovet</persName> (Lausanne 1870-1941), professore di letterature e di lingue francese e italiana presso l’<ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4698">Università di Zurigo</ref>. Lavorò anche come giornalista e nel 1907 fondò la rivista bilingue <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3981">
-              <hi rend="unknown" rendition="#none">Wissen und Leben</hi>
-
-            </ref>, che tra il 1914 e il 1919 si pose l’obiettivo di far dialogare e di riconciliare le parti in conflitto. La <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.1189">maggior parte della sua corrispondenza</ref> con Schuchardt (edita da F.-R. Hausmann, 2016) ruota intorno alla collaborazione del linguista di Graz a questo periodico.</note> kürzlich behauptete, daß das Niveau des wissenschaftlichen Studiums (wobei er zunächst an seien eigenes Fach denkt) in den letzten dreißig Jahren sich in Deutschland gesenkt, in Frankreich und Italien gehoben habe. Der Wendepunkt liegt nicht dreißig sondern fünfzig Jahre zurück, er knüpft an die Namen von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2350">G. Paris</persName>
-          <note n="9" place="foot" type="editorial">Com’è noto, una delle più grandi figure, insieme a <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2188">Paul Meyer</persName>, della filologia romanza in Francia nella seconda metà del XIX secolo. Sul carteggio <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2350">
-Paris</persName>-Schuchardt, cf. la nota 6 alla <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.7615">lettera IV, CASNS, FDO, HS 02</ref>.</note> und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">Ascoli</persName>
-          <note n="10" place="foot" type="editorial">L’alta considerazione che Schuchardt nutrì per il padre della glottologia italiana è confermata dal giudizio espresso in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.580">
-                <hi rend="unknown" rendition="#none">AHR</hi>
-              </ref>
-
-            </bibl>, p. 11: «Den deutschen Romanisten sind die romanischen Romanisten gefolgt; unter diesen befindet sich derjenige der alle an Geisteskraft überragt, Ascoli» e dal saluto affettuoso rivolto all’amico defunto nella parte finale del libello (p. 14).</note> an. Jetzt stehen die Sachen so. Die Einzelforschung auf romanischem Gebiete, mag es sich um Sprache oder um Literatur handeln, wird stets am besten von Ein<pb
-            facs="#IMG.5"
-            n="5"/>heimischen ausgeführt werden; die Deutschen können nur beanspruchen, Vorläufer gewesen zu sein, Anregungen gegeben zu haben. Wir dürfen nie vergessen daß aus unsern Schülern unsere Meister geworden sind. Ich stoße auf eine Äußerung von Pais (1917) daß bei italienischen Dingen nur die italienischen Gelehrten „siano in grado di portare quella serenità e quella piena conoscenza di uomini e di cose che ai dotti stranieri qualche volta è mancata“<note
-            n="11" place="foot" type="editorial">La citazione è tratta dalla nota <hi rend="unknown"
-            rendition="#none">La buona fede di Jacopo Durandi rispetto all’epigrafia piemontese</hi>, presentata dal socio Ettore Pais nella seduta lincea del 21 gennaio 1917 (in RAL, serie V, XXVI, pp. 3-7: 7). </note>. Er hat sich sehr bescheiden ausgedrückt, nicht manchmal, sondern gewöhnlich hat es daran gefehlt und es mußte daran fehlen, besonders wenn es sich um Sprachliches handelte. Vergegenwärtigen wir uns doch was herauskommen würde wenn ein Italiener die Beschreibung einer deutschen Mundart unternähme; müssen wir denn in umgekehrten Falle glücklicher sein? Ich schäme mich noch, <pb
-            facs="#IMG.6"
-            n="6"/> wenn ich daran denke daß ich eine Darstellung der römischen Mundart plante kaum als ich ein wenig italienisch gelernt hatte<note
-            n="12" place="foot" type="editorial">Anche se Schuchardt non pubblicò lavori specifici sul romanesco, i carteggi privati, come quello con D’Ancona, confermano i tanti materiali da lui raccolti e le profonde conoscenze acquisite durante il soggiorno romano rievocato in questa lettera. All’esempio del romanesco e ai processi diffusionali alla base della sua variazione, fece per altro riferimento nelle critiche ai neogrammatici e nell’elaborazione della teoria delle onde: cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1567">D. Baglioni, <hi rend="unknown" rendition="#none">In tutte queste ricerche m’interessa il più lo svariamento graduale de’ dialetti. La variazione linguistica nelle lettere di Hugo Schuchardt ad Alessandro D’Ancona (1868-1891)</hi>, in La Variazione nell’Italiano e nella sua Storia. Varietà e varianti linguistiche e testuali. Atti dell’XI Congresso SILFI (Napoli, 5-7 ottobre 2010)</ref>
-            </bibl>, a c. di P. Bianchi et al., 2 voll., Firenze, Cesati, 2012, pp. 43–51 e Id., <hi rend="unknown"
-            rendition="#none">Il romanesco di Hugo Schuchardt, in Vicende storiche della lingua di Roma</hi>, a c. di M. Loporcaro et al., Alessandria, Edizioni dell’Orso, pp. 195-212.</note>. Wir müssen uns darüber klar werden daß die Aufgaben eines deutschen Romanisten und die eines romanischen insbesondere italienischen Romanisten sich nie völlig decken können, nicht der Art, aber auch nicht dem Umfang nach. Wir müssen uns von allen Einzeluntersuchungen fernhalten, die einen langen Aufenthalt an Ort und Stelle erfordern, anderseits aber werden wir über die Grenzen der Romania hinausgehen und die Vergleichung, die wir innerhalb begonnen haben, jenseits fortsetzen, selbst in der Wortforschung, mehr noch in der Syntax, am weitesten in der Phonetik; es gibt keine eigene romanische Lautbeschreibung noch Lautgeschichte. Und was die Lite<pb
-            facs="#IMG.7" n="7"/>raturwissenschaft anlangt, so ist ja gerade hier das Prinzip der Vergleichung am festesten eingebürgert.</p>
-
-        <p>Alles das ist vorderhand nur müssiges Gerede, angesichts der trost- und hoffnungslosen. Wirklichkeit. Der Betrieb aller Wissenschaft ist gefährdet, ich meine bei uns. Die romanische Philologie ist augenblicklich eine unnütze Wissenschaft; uns fehlen die Mittel zur Pflege solcher<note
-            n="13" place="foot" type="editorial">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4176">
+                        <hi rend="unknown" rendition="#none">Nessi genealogici</hi>
+                     </ref>
+                  </bibl> fra le lingue del mondo antico, che il candidato aveva presentato manoscritto. Della commissione giudicatrice, presieduta da <persName ref="[authorityLink]">Ascoli</persName>, aveva fatto parte anche Schuchardt (cf. <ref target="https://gams.uni-graz.at/archive/objects/context:hsa/methods/sdef:Context/get?mode=work-reports">
+Gutachten</ref>), insieme a <persName ref="[authorityLink]">Comparetti</persName>, <persName ref="[authorityLink]">Monaci</persName> e allo stesso D’Ovidio. Alla decisione della commissione giudicatrice furono rivolte molte critiche; <persName ref="[authorityLink]">Salvioni</persName>, in particolare, la giudicò uno «scandalo» (cf. Sebastiano Timpanaro, <hi rend="unknown" rendition="#none">Classicismo e illuminismo nell’Ottocento italiano</hi>, a c. di Corrado Pestelli, Firenze, Le Lettere, 2011, p. 419 e nota 302; Alfredo Stussi, <hi rend="unknown" rendition="#none">Filologia e linguistica dell’Italia unita</hi>, Bologna, il Mulino, 2014, pp. 101-102; <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7641">
+                        <hi rend="unknown" rendition="#none">D’Ov.-D’A.</hi>
+                     </ref>
+                  </bibl>, pp. 378-379, nota 1, e <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7642">
+                        <hi rend="unknown" rendition="#none">D’Ov.-Rajna</hi>
+                     </ref>
+                  </bibl>, pp. 873-874, nota 8). Il dialogo scientifico fra Schuchardt e Trombetti non privo di dissensi, è testimoniato <ref target="https://gams.uni-graz.at/o:hsa.letter.2881">
+dal loro carteggio</ref> (1902-1926), edito da B. Hurch, ed emerge in varie pubblicazioni di entrambi.</note>. Unsere Polemik über <hi rend="unknown" rendition="#none">trovare</hi> und <hi rend="unknown" rendition="#none">negossa</hi> war dabei kaum im Spiel; allerdings kamen mir – so sehr ich seine Verdienste in der Einzel<pb facs="#IMG.3" n="3"/>forschung anerkenne – seine allgemeinen sprachwissenschaftlichen Anschauungen immer mehr als wunderlich vor<note n="5" place="foot" type="editorial">L’approccio neogrammaticale di <persName ref="[authorityLink]">Salvioni</persName> alla ricerca etimologica restò sempre ancorato al primato della fonetica e alla validità delle sue leggi: v. il discorso inaugurale <hi rend="unknown" rendition="#none">Di qualche criterio dell’indagine etimologica</hi>, pronunciato nel 1905 presso l’Accademia Scientifico-Letteraria di Milano (rist. in <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2049">Salvioni, <hi rend="unknown" rendition="#none">Scritti linguistici</hi>
+                     </ref>
+                  </bibl>, cit., IV, pp. 13-38: 26), a cui Schuchardt replicò con l’articolo <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.263">
+                        <hi rend="unknown" rendition="#none">Zur Methodik der Wortgeschichte</hi>, in ZRPh, XXXI, 1907, pp. 107-109</ref>
+                  </bibl>. Per quanto riguarda la polemica su derla e negossa, cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5916">Salvioni, <hi rend="unknown" rendition="#none">Illusori celtismi nell’alta Italia</hi>, in ZRPh, XXX, 1906, pp. 79-83</ref>
+                  </bibl> (rist. in Salvioni, <hi rend="unknown" rendition="#none">Scritti linguistici</hi>, cit., IV, pp. 143-147) e la risposta di <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.672">Schuchardt, <hi rend="unknown" rendition="#none">Zur Wortgeschichte. Derla. Negossa […]</hi>, in ZRPh, XXX, 1906, pp. 207-210</ref>
+                  </bibl>. Su questa disputa, alla cui base ci fu la diversa opinione dei due linguisti sul ricorso a ipotesi sostratistiche nelle spiegazioni etimologiche, cf. Luca Lorenzetti, <hi rend="unknown" rendition="#none">Salvioni sul sostrato fra Ascoli e Merlo</hi>, in Itinerari salvioniani. Per Carlo Salvioni nel centocinquantenario della nascita, a c. di M. Loporcaro, Tübingen-Basel, Francke, 2011, pp. 69-79: 77-78 e nota 11.</note>. Mit Ergriffenheit habe ich auch die Worte gelesen die Du und De Petra dem liebenswürdigen W. Helbig gewidmet haben, mit der Hoffnung auf „una pace che sancisca ogni giustizia“<note n="6" place="foot" type="editorial">Le citazioni sono tratte dal necrologio di <persName>Wolfgang Helbig</persName> (Dresda 1839-Roma 1915), socio dell’Accademia dei Lincei dal 1875, che D’Ovidio pronunciò nella seduta del 21 novembre 1915 (cf. RAL, serie V, XXIV, 1915, pp. 633-634; rist. in Opere, XIV, pp. 337-338). Nella stessa circostanza, D’Ovidio presentò, a nome dell’autore, anche la più ampia commemorazione redatta dall’archeologo <persName>Giulio De Petra</persName> (Casoli, Chieti, 1841-Napoli 1925): cf. RAL, pp. 634-638. Chiara l’autoidentificazione di Schuchardt con Helbig, che, come aveva affermato D’Ovidio, ebbe «il cuore diviso fra più patrie, per diversi rispetti a lui care». Nel 1862 Helbig era approdato, con una borsa di studio del governo prussiano, all’Istituto di corrispondenza archeologica di Roma. Rimasto poi in Italia, dette vita a una straordinaria serie di ricerche e di iniziative in vari settori dell’archeologia (romano, pompeiano, etrusco, villanoviano, ecc.).</note>– „una pace saldamente fondata sulla giustizia“ . Endlich bezeige ich Dir persönlich meine Teilnahme an deine Familienunglück das Dich beim Erdbeben von Avezzano betroffen hat. Das Nähere ist in den RC nicht angegeben; handelte es sich etwa um Deine Frau Tochter ?<note n="7" place="foot" type="editorial">In RAL, serie V, XXIV, 1915, p. 33, Schuchardt aveva letto che D’Ovidio scusava la sua assenza alla seduta del 17 gennaio 1915 per «una gravissima disgrazia famigliare causata dal recente e terribile disastro sismico di Avezzano». Nella sciagura aveva perso la vita il figlio di una sorella (cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7642">
+                        <hi rend="unknown" rendition="#none">D’Ov.-Rajna</hi>
+                     </ref>
+                  </bibl>, II, pp. 837-839). I timori di Schuchardt per la secondogenita di D’Ovidio si spiegano con il fatto che <persName>Elvira D’Ovidio</persName> era moglie di <persName>Carlo Lefebvre</persName>, conte di Balsorano, comune poco distante da Avezzano.</note>
+            </p>
+            <p>Diese blauen Hefte doppelter Gestalt haben nun aber auch Betrachtungen in mir angeregt oder wieder belebt die sich auf die Zukunft unserer Wissenschaft beziehen. Daß die Germania sich mehr in die Romania versenkt <pb facs="#IMG.4" n="4"/> hat als die Romania in die Germania, das steht fest und erklärt sich von selbst. Von einem Wettbewerb zwischen deutschen und romanischen Romanisten kann gar nicht gesprochen werden weil diese, dank den natürlichen Bedingungen, unter denen sie arbeiten, jenen hundertfach überlegen sind. Ich halte es für unrichtig wenn Freund <persName ref="[authorityLink]">E. Bovet</persName>
+               <note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Ernest Bovet</persName> (Lausanne 1870-1941), professore di letterature e di lingue francese e italiana presso l’<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4698">Università di Zurigo</ref>. Lavorò anche come giornalista e nel 1907 fondò la rivista bilingue <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3981">
+                     <hi rend="unknown" rendition="#none">Wissen und Leben</hi>
+                  </ref>, che tra il 1914 e il 1919 si pose l’obiettivo di far dialogare e di riconciliare le parti in conflitto. La <ref target="https://gams.uni-graz.at/o:hsa.letter.1189">maggior parte della sua corrispondenza</ref> con Schuchardt (edita da F.-R. Hausmann, 2016) ruota intorno alla collaborazione del linguista di Graz a questo periodico.</note> kürzlich behauptete, daß das Niveau des wissenschaftlichen Studiums (wobei er zunächst an seien eigenes Fach denkt) in den letzten dreißig Jahren sich in Deutschland gesenkt, in Frankreich und Italien gehoben habe. Der Wendepunkt liegt nicht dreißig sondern fünfzig Jahre zurück, er knüpft an die Namen von <persName ref="[authorityLink]">G. Paris</persName>
+               <note n="9" place="foot" type="editorial">Com’è noto, una delle più grandi figure, insieme a <persName ref="[authorityLink]">Paul Meyer</persName>, della filologia romanza in Francia nella seconda metà del XIX secolo. Sul carteggio <persName ref="[authorityLink]">
+Paris</persName>-Schuchardt, cf. la nota 6 alla <ref target="https://gams.uni-graz.at/o:hsa.letter.7615">lettera IV, CASNS, FDO, HS 02</ref>.</note> und <persName ref="[authorityLink]">Ascoli</persName>
+               <note n="10" place="foot" type="editorial">L’alta considerazione che Schuchardt nutrì per il padre della glottologia italiana è confermata dal giudizio espresso in <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.580">
+                        <hi rend="unknown" rendition="#none">AHR</hi>
+                     </ref>
+                  </bibl>, p. 11: «Den deutschen Romanisten sind die romanischen Romanisten gefolgt; unter diesen befindet sich derjenige der alle an Geisteskraft überragt, Ascoli» e dal saluto affettuoso rivolto all’amico defunto nella parte finale del libello (p. 14).</note> an. Jetzt stehen die Sachen so. Die Einzelforschung auf romanischem Gebiete, mag es sich um Sprache oder um Literatur handeln, wird stets am besten von Ein<pb facs="#IMG.5" n="5"/>heimischen ausgeführt werden; die Deutschen können nur beanspruchen, Vorläufer gewesen zu sein, Anregungen gegeben zu haben. Wir dürfen nie vergessen daß aus unsern Schülern unsere Meister geworden sind. Ich stoße auf eine Äußerung von Pais (1917) daß bei italienischen Dingen nur die italienischen Gelehrten „siano in grado di portare quella serenità e quella piena conoscenza di uomini e di cose che ai dotti stranieri qualche volta è mancata“<note n="11" place="foot" type="editorial">La citazione è tratta dalla nota <hi rend="unknown" rendition="#none">La buona fede di Jacopo Durandi rispetto all’epigrafia piemontese</hi>, presentata dal socio Ettore Pais nella seduta lincea del 21 gennaio 1917 (in RAL, serie V, XXVI, pp. 3-7: 7). </note>. Er hat sich sehr bescheiden ausgedrückt, nicht manchmal, sondern gewöhnlich hat es daran gefehlt und es mußte daran fehlen, besonders wenn es sich um Sprachliches handelte. Vergegenwärtigen wir uns doch was herauskommen würde wenn ein Italiener die Beschreibung einer deutschen Mundart unternähme; müssen wir denn in umgekehrten Falle glücklicher sein? Ich schäme mich noch, <pb facs="#IMG.6" n="6"/> wenn ich daran denke daß ich eine Darstellung der römischen Mundart plante kaum als ich ein wenig italienisch gelernt hatte<note n="12" place="foot" type="editorial">Anche se Schuchardt non pubblicò lavori specifici sul romanesco, i carteggi privati, come quello con D’Ancona, confermano i tanti materiali da lui raccolti e le profonde conoscenze acquisite durante il soggiorno romano rievocato in questa lettera. All’esempio del romanesco e ai processi diffusionali alla base della sua variazione, fece per altro riferimento nelle critiche ai neogrammatici e nell’elaborazione della teoria delle onde: cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1567">D. Baglioni, <hi rend="unknown" rendition="#none">In tutte queste ricerche m’interessa il più lo svariamento graduale de’ dialetti. La variazione linguistica nelle lettere di Hugo Schuchardt ad Alessandro D’Ancona (1868-1891)</hi>, in La Variazione nell’Italiano e nella sua Storia. Varietà e varianti linguistiche e testuali. Atti dell’XI Congresso SILFI (Napoli, 5-7 ottobre 2010)</ref>
+                  </bibl>, a c. di P. Bianchi et al., 2 voll., Firenze, Cesati, 2012, pp. 43–51 e Id., <hi rend="unknown" rendition="#none">Il romanesco di Hugo Schuchardt, in Vicende storiche della lingua di Roma</hi>, a c. di M. Loporcaro et al., Alessandria, Edizioni dell’Orso, pp. 195-212.</note>. Wir müssen uns darüber klar werden daß die Aufgaben eines deutschen Romanisten und die eines romanischen insbesondere italienischen Romanisten sich nie völlig decken können, nicht der Art, aber auch nicht dem Umfang nach. Wir müssen uns von allen Einzeluntersuchungen fernhalten, die einen langen Aufenthalt an Ort und Stelle erfordern, anderseits aber werden wir über die Grenzen der Romania hinausgehen und die Vergleichung, die wir innerhalb begonnen haben, jenseits fortsetzen, selbst in der Wortforschung, mehr noch in der Syntax, am weitesten in der Phonetik; es gibt keine eigene romanische Lautbeschreibung noch Lautgeschichte. Und was die Lite<pb facs="#IMG.7" n="7"/>raturwissenschaft anlangt, so ist ja gerade hier das Prinzip der Vergleichung am festesten eingebürgert.</p>
+            <p>Alles das ist vorderhand nur müssiges Gerede, angesichts der trost- und hoffnungslosen. Wirklichkeit. Der Betrieb aller Wissenschaft ist gefährdet, ich meine bei uns. Die romanische Philologie ist augenblicklich eine unnütze Wissenschaft; uns fehlen die Mittel zur Pflege solcher<note n="13" place="foot" type="editorial">
 Analoghe considerazioni compaiono in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.580">Schuchardt, <hi rend="unknown" rendition="#none">AHR</hi>
-              </ref>
-            </bibl>, pp. 11-12, dove l’autore aveva prospettato ai filologi tedeschi l’opportuno abbandono degli studi romanzi, allargando l’orizzonte d’indagine. In questa lettera a D’Ovidio, l’apprezzamento per la qualità delle pubblicazioni inviategli dal collega italiano appare solo un appiglio per ribadire un distacco, sentito come inevitabile – anche sul piano pratico – per l’ostilità con cui ormai sarebbero stati accolti in Italia e nei paesi romanzi gli studiosi tedeschi e per il forte svantaggio di una competenza linguistica non nativa. Come osservò Cesare Segre (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1615">
-                <hi rend="unknown" rendition="#none">Fra internazionalismo e nazionalismo: Schuchardt nella prima guerra mondiale, in Tradizione traduzione società. Saggi per Franco Fortini</hi>, a c. di Romano Luperini, Roma, Editori Riuniti, 1989, pp. 299-310: 308-309</ref>
-            </bibl>), il maestro di Graz era «troppo amareggiato per intravedere tempi migliori».</note>.</p>
-
-        <p>Zum Schluß komme ich auf mein „Patti chiari, amici cari“ zurück; ich setze nun zu Anfang dieses Wahlspruchs die Worte: „fatti veri“. Naturlich verstehe ich darunter nicht Dinge über die sich eben deutsches und italienisches Gefühl nicht zu einigen vermögen. Z.B. wenn wir den Märtyrer Battisti als solchen anerkennen und <pb
-            facs="#IMG.8"
-            n="8"/> gegen die Benennung von Straßen und Plätzen nach ihm nichts einzuwenden haben (nur gegen die etwaige Ansicht als ob er nach anderem Kriegsrecht abgeurteilt worden sei, als dem, welches Franzosen und Engländer befolgt haben), so finden wir die gleiche Ehrung für Oberdanck unberechtigt und unbegreiflich: auch wir bedauern ihn, stellen ihn aber in eine Linie mit Orsini, Bresci und so vielen andern, die ihr Leben für ihre Überzeugung hingegeben haben<note
-            n="14" place="foot" type="editorial">
-
-            <persName>Cesare Battisti</persName> era stato citato da D’Ovidio, nella sua ultima missiva, insieme ai martiri di Belfiore. Guglielmo Oberdan, nato Wilhelm Oberdank (Trieste 1858-1882), è considerato il primo martire dell’irredentismo italiano. Com’è noto, confessò di avere cercato di attentare alla vita dell’imperatore Francesco Giuseppe; per questo Schuchardt lo paragonava al regicida Gaetano Bresci (Coiano, Prato, 1869-Porto Santo Stefano 1901) e al terrorista Felice Orsini (Meldola 1819-Parigi 1858), che aveva causato una strage nel tentativo di assassinare Napoleone III.</note>. Eher könnte die Aufhellung sachlicher Unkenntnis das große Mißverständnis <hi
-            rend="unknown"
-            rendition="#none">
-Austriaci = Tedeschi</hi> zu beseitigen dienen. Hat nicht etwa schon eine Irredenta tedesca im Nordosten des alten Österreichs bestanden? Österreich lebte nur in der Dynastie; die aber war eine romanische so gut wie die Dynastie Savoyen, (nicht ärmer an <hi
-            rend="unknown" rendition="#none">gentil sangue latino</hi>) <pb facs="#IMG.9"
-            n="9"/> und immer wieder neu romanisierte: Lothringen, Sizilien, Toscana, Modena, Parma. Die Kaiserin Zita war gewiß keine Deutsche; sie hat einmal gesagt „je déteste les boches“. Franz Josef hat wiederum einmal gesagt (Napoleon III gegenüber): ich vergesse nicht daß ich ein deutscher Fürst bin. Aber sein Deutschtum hat er sonst nicht betont<note
-            n="15" place="foot"
-              type="editorial">Schuchardt richiamava il variegato profilo della dinastia asburgica. Tra l’altro, l’ultima imperatrice d’Austria-Ungheria, Zita di Borbone-Parma (1892-1989), era nata a Villa Pianore, in provincia di Lucca. È interessante qui richiamare la divergenza di opinioni tra Schuchardt e <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">
-Ascoli</persName> sul carattere tedesco della imperial-regia monarchia; in proposito, v. Guido Lucchini, <hi
-              rend="unknown" rendition="#none">Graziadio Ascoli. Per una biografia intellettuale</hi>, in Antonio Casella &amp; G. L., Graziadio e Moisè Ascoli. Scienza, cultura e politica nell’Italia liberale, Pavia, Università degli studi di Pavia, 2002, pp. 1-100: 92).</note>.</p>
-        <p>Die unbestreitbar sichern Tatsachen lassen sich in Ziffern ausdrücken. Du hast von den <hi rend="unknown"
-            rendition="#none">poche migliaia</hi> Deutschen Südtirols und von <hi rend="unknown"
-            rendition="#none">alcuni Tedeschi</hi> in „bagatellisierender“ Weise gesprochen, so daß ich annehme, die geringe Anzahl der Annektierten bilde ein Ingredienz zu Deinem Urteil über die Annexion<note
-            n="16" place="foot" type="editorial">Cf. la precedente lettera di D’Ovidio: <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.7702">XCI, HSA, B 8491</ref>.</note>. Es sind aber ungefähr eine <hi
-            rend="unknown"
-            rendition="#none">Viertel Million</hi>. Die Berichtigung habe ich schon gegeben; heute glaube ich die Quelle des Irrtums nachweisen zu können, der sich auch bei andere Italiener findet. Ja der englischen Übersetzung der deutschen Schrift: Die Einheit Tirols = <hi
-            rend="unknown" rendition="#none">The unity of Tyrol</hi>
-          <note n="17" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">The Unity of Tyrol. Memorandum of the Academic Senate of the University of Innsbruck</hi>, Innsbruck, Tyrolia, 1918, trad. ingl. dell’opuscolo Die Einheit Tirols. Denkschrift des akademischen Senatus der Universität Innsbruck, uscito in quell’anno presso lo stesso editore.</note> steht S. 5.f. richtig:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">215.000</hi> Deutsche (coherent German settlement)</p>
-        <p>aber durch einen Druckfehlen S. 8:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">21.600</hi>
-        </p>
-        <closer>
-          <salute>Bestes wünschend und hoffend, herzlich</salute>
-          <lb/>
-          <salute>Dein getreuer</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.580">Schuchardt, <hi rend="unknown" rendition="#none">AHR</hi>
+                     </ref>
+                  </bibl>, pp. 11-12, dove l’autore aveva prospettato ai filologi tedeschi l’opportuno abbandono degli studi romanzi, allargando l’orizzonte d’indagine. In questa lettera a D’Ovidio, l’apprezzamento per la qualità delle pubblicazioni inviategli dal collega italiano appare solo un appiglio per ribadire un distacco, sentito come inevitabile – anche sul piano pratico – per l’ostilità con cui ormai sarebbero stati accolti in Italia e nei paesi romanzi gli studiosi tedeschi e per il forte svantaggio di una competenza linguistica non nativa. Come osservò Cesare Segre (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1615">
+                        <hi rend="unknown" rendition="#none">Fra internazionalismo e nazionalismo: Schuchardt nella prima guerra mondiale, in Tradizione traduzione società. Saggi per Franco Fortini</hi>, a c. di Romano Luperini, Roma, Editori Riuniti, 1989, pp. 299-310: 308-309</ref>
+                  </bibl>), il maestro di Graz era «troppo amareggiato per intravedere tempi migliori».</note>.</p>
+            <p>Zum Schluß komme ich auf mein „Patti chiari, amici cari“ zurück; ich setze nun zu Anfang dieses Wahlspruchs die Worte: „fatti veri“. Naturlich verstehe ich darunter nicht Dinge über die sich eben deutsches und italienisches Gefühl nicht zu einigen vermögen. Z.B. wenn wir den Märtyrer Battisti als solchen anerkennen und <pb facs="#IMG.8" n="8"/> gegen die Benennung von Straßen und Plätzen nach ihm nichts einzuwenden haben (nur gegen die etwaige Ansicht als ob er nach anderem Kriegsrecht abgeurteilt worden sei, als dem, welches Franzosen und Engländer befolgt haben), so finden wir die gleiche Ehrung für Oberdanck unberechtigt und unbegreiflich: auch wir bedauern ihn, stellen ihn aber in eine Linie mit Orsini, Bresci und so vielen andern, die ihr Leben für ihre Überzeugung hingegeben haben<note n="14" place="foot" type="editorial">
+                  <persName>Cesare Battisti</persName> era stato citato da D’Ovidio, nella sua ultima missiva, insieme ai martiri di Belfiore. Guglielmo Oberdan, nato Wilhelm Oberdank (Trieste 1858-1882), è considerato il primo martire dell’irredentismo italiano. Com’è noto, confessò di avere cercato di attentare alla vita dell’imperatore Francesco Giuseppe; per questo Schuchardt lo paragonava al regicida Gaetano Bresci (Coiano, Prato, 1869-Porto Santo Stefano 1901) e al terrorista Felice Orsini (Meldola 1819-Parigi 1858), che aveva causato una strage nel tentativo di assassinare Napoleone III.</note>. Eher könnte die Aufhellung sachlicher Unkenntnis das große Mißverständnis <hi rend="unknown" rendition="#none">
+Austriaci = Tedeschi</hi> zu beseitigen dienen. Hat nicht etwa schon eine Irredenta tedesca im Nordosten des alten Österreichs bestanden? Österreich lebte nur in der Dynastie; die aber war eine romanische so gut wie die Dynastie Savoyen, (nicht ärmer an <hi rend="unknown" rendition="#none">gentil sangue latino</hi>) <pb facs="#IMG.9" n="9"/> und immer wieder neu romanisierte: Lothringen, Sizilien, Toscana, Modena, Parma. Die Kaiserin Zita war gewiß keine Deutsche; sie hat einmal gesagt „je déteste les boches“. Franz Josef hat wiederum einmal gesagt (Napoleon III gegenüber): ich vergesse nicht daß ich ein deutscher Fürst bin. Aber sein Deutschtum hat er sonst nicht betont<note n="15" place="foot" type="editorial">Schuchardt richiamava il variegato profilo della dinastia asburgica. Tra l’altro, l’ultima imperatrice d’Austria-Ungheria, Zita di Borbone-Parma (1892-1989), era nata a Villa Pianore, in provincia di Lucca. È interessante qui richiamare la divergenza di opinioni tra Schuchardt e <persName ref="[authorityLink]">
+Ascoli</persName> sul carattere tedesco della imperial-regia monarchia; in proposito, v. Guido Lucchini, <hi rend="unknown" rendition="#none">Graziadio Ascoli. Per una biografia intellettuale</hi>, in Antonio Casella &amp; G. L., Graziadio e Moisè Ascoli. Scienza, cultura e politica nell’Italia liberale, Pavia, Università degli studi di Pavia, 2002, pp. 1-100: 92).</note>.</p>
+            <p>Die unbestreitbar sichern Tatsachen lassen sich in Ziffern ausdrücken. Du hast von den <hi rend="unknown" rendition="#none">poche migliaia</hi> Deutschen Südtirols und von <hi rend="unknown" rendition="#none">alcuni Tedeschi</hi> in „bagatellisierender“ Weise gesprochen, so daß ich annehme, die geringe Anzahl der Annektierten bilde ein Ingredienz zu Deinem Urteil über die Annexion<note n="16" place="foot" type="editorial">Cf. la precedente lettera di D’Ovidio: <ref target="https://gams.uni-graz.at/o:hsa.letter.7702">XCI, HSA, B 8491</ref>.</note>. Es sind aber ungefähr eine <hi rend="unknown" rendition="#none">Viertel Million</hi>. Die Berichtigung habe ich schon gegeben; heute glaube ich die Quelle des Irrtums nachweisen zu können, der sich auch bei andere Italiener findet. Ja der englischen Übersetzung der deutschen Schrift: Die Einheit Tirols = <hi rend="unknown" rendition="#none">The unity of Tyrol</hi>
+               <note n="17" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">The Unity of Tyrol. Memorandum of the Academic Senate of the University of Innsbruck</hi>, Innsbruck, Tyrolia, 1918, trad. ingl. dell’opuscolo Die Einheit Tirols. Denkschrift des akademischen Senatus der Universität Innsbruck, uscito in quell’anno presso lo stesso editore.</note> steht S. 5.f. richtig:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">215.000</hi> Deutsche (coherent German settlement)</p>
+            <p>aber durch einen Druckfehlen S. 8:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">21.600</hi>
+            </p>
+            <closer>
+               <salute>Bestes wünschend und hoffend, herzlich</salute>
+               <lb/>
+               <salute>Dein getreuer</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">
 HSchuchardt</persName>
-          </signed>
-        </closer>
-        <pb facs="#IMG.10" n="10"/>
-      </div>
-    </body>
-  </text>
+               </signed>
+            </closer>
+            <pb facs="#IMG.10" n="10"/>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

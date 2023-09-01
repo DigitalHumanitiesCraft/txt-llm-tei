@@ -1,463 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Charles Godfrey Leland an Hugo Schuchardt (02-6369)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2019">
-            <forename>Charles Godfrey</forename>
-            <surname>Leland</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Kathrin</forename>
-            <surname>Brandt</surname>
-          </persName>
-        </editor>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Astrid</forename>
-            <surname>Gabel</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3852" type="PID">o:hsa.letter.3852</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-6369</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">6369</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="en"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2019">
-                <forename>Charles Godfrey</forename>
-                <surname>Leland</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.519" ref="http://sws.geonames.org/4560349">Philadelphia</origPlace>
-              <origDate ana="dcterms:created" when="1882-05">1882-05</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Kathrin</forename>
-              <surname>Brandt</surname>
-            </persName>
-          </author>
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Astrid</forename>
-              <surname>Gabel</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Charles Godfrey Leland und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2019"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3852">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2019" ref="https://viaf.org/viaf/24729304">
-            <forename>Charles Godfrey</forename>
-            <surname>Leland</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.519" key="#GID.1" ref="http://sws.geonames.org/4560349">Philadelphia</placeName>
-          <date when="1882-05">1882-05</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>United States</country>
-                <settlement>Philadelphia</settlement>
-                <name ref="http://geonames.org/4560349" type="fcode:PPLA2">Philadelphia</name>
-                <location>
-                  <geo>-75.16362,39.95238</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2019" type="context">
-                        Korrespondenz Charles Godfrey Leland - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.349" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französischbasierte Kreolsprache (Louisiana)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="en">Englisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3852" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3852" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3852" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3852" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3852" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3852" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3852" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3852" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3852" xml:lang="en">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>220 South Broad Street<lb/>Philadelphia Penn<hi rendition="#sup">a</hi>
-          <lb/>May 1882</dateline>
-        <opener>Dear Sir</opener>
-        <p>I have read with great pleasure your very kind letter of May 10<hi
-            rendition="#sup">
-th</hi>. You would hardly suppose that any man who had ever written a book, could have so dismissed it from his mind as I have my <hi
-            rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3852" xml:lang="en">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>220 South Broad Street<lb/>Philadelphia Penn<hi rendition="#sup">a</hi>
+               <lb/>May 1882</dateline>
+            <opener>Dear Sir</opener>
+            <p>I have read with great pleasure your very kind letter of May 10<hi rendition="#sup">
+th</hi>. You would hardly suppose that any man who had ever written a book, could have so dismissed it from his mind as I have my <hi rend="unknown" rendition="#none">
 Pidgin English Ballads</hi>
-          <note n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5345">Leland (1876)</ref>
-            </bibl>.</note>
-          <hi rend="unknown"
-            rendition="#none">.</hi> I do not think I have looked into it more than once for three years. It was received so badly and received so unkindly that I grew sick of it. It is a most incomprehensible thing that reviewers because they do not like a <hi
-            rend="unknown" rendition="#none">
-subject</hi> must needs abuse a book. It was because Pidgin was not <hi
-            rend="unknown"
-            rendition="#none">easy</hi> to read that it was disliked. I experienced a great deal of this with my Breitmann Ballads<note
-            n="2" place="foot" type="editorial">Leland ([1868] <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5345">
+               <note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5345">Leland (1876)</ref>
+                  </bibl>.</note>
+               <hi rend="unknown" rendition="#none">.</hi> I do not think I have looked into it more than once for three years. It was received so badly and received so unkindly that I grew sick of it. It is a most incomprehensible thing that reviewers because they do not like a <hi rend="unknown" rendition="#none">
+subject</hi> must needs abuse a book. It was because Pidgin was not <hi rend="unknown" rendition="#none">easy</hi> to read that it was disliked. I experienced a great deal of this with my Breitmann Ballads<note n="2" place="foot" type="editorial">Leland ([1868] <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5345">
 1876</ref>
-            </bibl>).</note>. A publisher offered me a “high” price if I would write him a volume of such Anglo German songs – without any German words!</p>
-        <p>As soon as I can find where Hoffman Atkinson<note n="3" place="foot" type="editorial">
+                  </bibl>).</note>. A publisher offered me a “high” price if I would write him a volume of such Anglo German songs – without any German words!</p>
+            <p>As soon as I can find where Hoffman Atkinson<note n="3" place="foot" type="editorial">
 Col. Atkinson (1839-1901) fought in the American Civil war as a commander of the First West Virginia Cavalry. After the war, he went to Japan, where he came into contact with the 
 Yokohama Pidgin (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5663">[s.n.]. 1901</ref>
-            </bibl>).</note> is <pb facs="#IMG.2"
-            n="2"/> I will write to him that he may send you his odd little brochure on the Yokohama dialect<note n="4"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5664">Atkinson (1879)</ref>
-            </bibl>.</note>. I wrote the article in the <hi rend="unknown" rendition="#none">New Quarterly Mag</hi>
-          <note n="5" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5666">Daniels (1948</ref>
-
-            </bibl>: 806) states that: “The review is anonymous, but as its author says he had published a work on pidgin English some years before, he was probably the prolific C. G. Leland, whose Pidgin-English Sing-Song had appeared in 1876”. This assumption is confirmed by the present letter. The review originally appeared in <hi
-              rend="unknown"
-              rendition="#none">The New Quarterly Magazine</hi>, July 1879 and was reprinted in August 1879 in <hi
-              rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5663">[s.n.]. 1901</ref>
+                  </bibl>).</note> is <pb facs="#IMG.2" n="2"/> I will write to him that he may send you his odd little brochure on the Yokohama dialect<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5664">Atkinson (1879)</ref>
+                  </bibl>.</note>. I wrote the article in the <hi rend="unknown" rendition="#none">New Quarterly Mag</hi>
+               <note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5666">Daniels (1948</ref>
+                  </bibl>: 806) states that: “The review is anonymous, but as its author says he had published a work on pidgin English some years before, he was probably the prolific C. G. Leland, whose Pidgin-English Sing-Song had appeared in 1876”. This assumption is confirmed by the present letter. The review originally appeared in <hi rend="unknown" rendition="#none">The New Quarterly Magazine</hi>, July 1879 and was reprinted in August 1879 in <hi rend="unknown" rendition="#none">
 The Living Age</hi> 142.1836. 496-501 (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5665">Leland 1879a</ref>
-            </bibl>).</note> to which you refer, though if you had not mentioned the name of the mag.<hi rendition="#sup">e</hi> I could not have recalled it. I have led such a varied and busy life of late years that such things pass away like vapour. </p>
-
-        <p>Are you aware that beneath the Louisiana Creole – French there lies hidden a much more esoteric - a deeper and <hi
-            rend="unknown" rendition="#none">darker</hi> dialect? This is the <hi rend="unknown"
-            rendition="#none">Gumbo</hi> patois<note n="6" place="foot"
-              type="editorial">The distinction between ‘Gumbo’ and <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.349">Louisiana Creole</ref> is not a common assumption. Today, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.349">Louisiana Creole</ref> is sometimes derogatorily referred to as ‘Gumbo’ (cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5668">Klingler 2003</ref>
-            </bibl>).</note>, consisting of Creole French, very much mingled with what is said to be <hi rend="unknown"
-            rendition="#none">Congo</hi> African but which is much more probably a mixture of West African tongues or words. This <hi
-            rend="unknown" rendition="#none">Gumbo </hi>is kept very secret and is peculiarly the language of the <hi
-            rend="unknown"
-            rendition="#none">Voudoo </hi>(or Vūdū) negroes. The Voudoo is a kind of conjuror, sorcerer or magician. So far as I have learned (and I have learned a great deal) their rites and practices correspond precisely <pb
-            facs="#IMG.3" n="3"/> to those of Africa, as these do to the <hi rend="unknown"
-            rendition="#none">Shamans</hi> of Central or Eastern Asia. The word <hi rend="unknown"
-            rendition="#none">Voudoo</hi> is derived from a Western Indian word <hi rend="unknown"
-            rendition="#none">Vaudoux</hi> (French orthography) signifying serpent. It is called by our more ignorant blacks here Hūdū. There is a very famous <hi
-            rend="unknown" rendition="#none">Voudoo</hi> black doctor – (a great rascal I am told) - who rides in his own carriage, and who lives not ten minutes walk from where I now reside. </p>
-        <p>My work on the Gypsies<note n="7" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3579">Leland (1882b)</ref>
-            </bibl>
-            <hi rend="unknown" rendition="#none">.</hi>
-
-          </note> which has just appeared has as far been very kindly received. Such of your Austrian Zigeuner as I have seen here - only 3 - seem to be very nice pleasant people. Yesterday afternoon I went with my niece Miss Elizabeth Robins<note
-            n="8" place="foot" type="editorial">
-            <persName>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5665">Leland 1879a</ref>
+                  </bibl>).</note> to which you refer, though if you had not mentioned the name of the mag.<hi rendition="#sup">e</hi> I could not have recalled it. I have led such a varied and busy life of late years that such things pass away like vapour. </p>
+            <p>Are you aware that beneath the Louisiana Creole – French there lies hidden a much more esoteric - a deeper and <hi rend="unknown" rendition="#none">darker</hi> dialect? This is the <hi rend="unknown" rendition="#none">Gumbo</hi> patois<note n="6" place="foot" type="editorial">The distinction between ‘Gumbo’ and <ref target="https://gams.uni-graz.at/o:hsa.languages#L.349">Louisiana Creole</ref> is not a common assumption. Today, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.349">Louisiana Creole</ref> is sometimes derogatorily referred to as ‘Gumbo’ (cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5668">Klingler 2003</ref>
+                  </bibl>).</note>, consisting of Creole French, very much mingled with what is said to be <hi rend="unknown" rendition="#none">Congo</hi> African but which is much more probably a mixture of West African tongues or words. This <hi rend="unknown" rendition="#none">Gumbo </hi>is kept very secret and is peculiarly the language of the <hi rend="unknown" rendition="#none">Voudoo </hi>(or Vūdū) negroes. The Voudoo is a kind of conjuror, sorcerer or magician. So far as I have learned (and I have learned a great deal) their rites and practices correspond precisely <pb facs="#IMG.3" n="3"/> to those of Africa, as these do to the <hi rend="unknown" rendition="#none">Shamans</hi> of Central or Eastern Asia. The word <hi rend="unknown" rendition="#none">Voudoo</hi> is derived from a Western Indian word <hi rend="unknown" rendition="#none">Vaudoux</hi> (French orthography) signifying serpent. It is called by our more ignorant blacks here Hūdū. There is a very famous <hi rend="unknown" rendition="#none">Voudoo</hi> black doctor – (a great rascal I am told) - who rides in his own carriage, and who lives not ten minutes walk from where I now reside. </p>
+            <p>My work on the Gypsies<note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3579">Leland (1882b)</ref>
+                  </bibl>
+                  <hi rend="unknown" rendition="#none">.</hi>
+               </note> which has just appeared has as far been very kindly received. Such of your Austrian Zigeuner as I have seen here - only 3 - seem to be very nice pleasant people. Yesterday afternoon I went with my niece Miss Elizabeth Robins<note n="8" place="foot" type="editorial">
+                  <persName>
 Elizabeth Robins Pennell</persName> (1855-1936), Leland’s niece, author of various essays, art criticisms, biographies, including her uncle’s biography, travel books, and a novel (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5669">Kruesi 1999</ref>
-
-            </bibl>). According to Kruesi (1999: 4), “Elizabeth found inspiration in the work of her uncle, the author Charles Godfrey Leland (1824-1903), who was a stimulating companion, introducing her to other writers, including his friends Walt Whitman (1819-1892) and George H. Boker (1823-1890). Leland took her with him on his visits to gypsy encampments in New Jersey and Pennsylvania for his book The Gypsies. He encouraged her to write and gave her introductions in the offices of Philadelphia's newspapers.”</note> (who speaks anglo-zigeunerisch very well) to visit the old poet Walt Whitman – after seeing him we took a walk in the country, and being thirsty, I went into a beerhouse, leaving my niece without. While there, in came a wild looking <hi
-            rend="unknown" rendition="#none">Strassenlaufer</hi> or <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5669">Kruesi 1999</ref>
+                  </bibl>). According to Kruesi (1999: 4), “Elizabeth found inspiration in the work of her uncle, the author Charles Godfrey Leland (1824-1903), who was a stimulating companion, introducing her to other writers, including his friends Walt Whitman (1819-1892) and George H. Boker (1823-1890). Leland took her with him on his visits to gypsy encampments in New Jersey and Pennsylvania for his book The Gypsies. He encouraged her to write and gave her introductions in the offices of Philadelphia's newspapers.”</note> (who speaks anglo-zigeunerisch very well) to visit the old poet Walt Whitman – after seeing him we took a walk in the country, and being thirsty, I went into a beerhouse, leaving my niece without. While there, in came a wild looking <hi rend="unknown" rendition="#none">Strassenlaufer</hi> or <hi rend="unknown" rendition="#none">
 Landstreicher</hi>
-          <pb facs="#IMG.4"
-            n="4"/> (Landloofer, Hollandisch) a dark, hawk-faced fellow, a wandering umbrella mender. He spoke German, but I saw in his face that he was Gypsy. But he would not admit it – he denied it – and when I said “Bist du nicht <hi
-            rend="unknown" rendition="#none">Romani</hi>?” he replied “Nein ich bin ein <hi rend="unknown"
-            rendition="#none">Protestant</hi>.” But though I was disappointed I said to the <hi rend="unknown"
-            rendition="#none">Wirthinn</hi> – “Giebt dem lieben Mann ein Glass Bier.” Whereupon with a droll look he said “Was ist <hi
-            rend="unknown" rendition="#none">chadscherdi</hi>
-          <note n="9" place="foot" type="editorial">Cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5670">Leland (1872)</ref>
-            </bibl>.</note>?” To which I replied “Du infamer lügender Schelm – <hi rend="unknown"
-            rendition="#none">chadscherdi</hi> ist Schnapps – was ist <hi rend="unknown"
-            rendition="#none">Pani</hi>?” He replied “<hi rend="unknown" rendition="#none">Wasser</hi> und <hi
-            rend="unknown"
-            rendition="#none">manno</hi> ist Brot.” He was really a Gypsy and we both burst out laughing heartily. The Wirthsleute thought we were talking French. There are two camps of old fashioned English gypsies near this city now. They live in tents but have a carpet on the ground and only drink out of <hi
-            rend="unknown"
-            rendition="#none">silver </hi>cups. One of them showed me a watch and chain, on Sunday with the jeweller’s bill. It had cost <hi
-            rend="unknown" rendition="#none">457</hi> dollars. I never saw <pb facs="#IMG.5"
-            n="5"/> so much gold in a watch and chain as there was in this – Gypsies are the same all the world over. Do you have the Atlantic Monthly in Graz? If so I wish that you would kindly look over the numbers during the past year, and examine a few articles by my niece Miss Robins. They are on <hi
-            rend="unknown" rendition="#none">Old Hindoo Humour</hi>
-          <note n="10" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5671">Robins (1882a)</ref>
-            </bibl>.</note> – <hi rend="unknown" rendition="#none">Mischief in the Middle Ages</hi>
-          <note n="11" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5672">Robins (1881)</ref>
-            </bibl>.</note> – <hi rend="unknown" rendition="#none">
+               <pb facs="#IMG.4" n="4"/> (Landloofer, Hollandisch) a dark, hawk-faced fellow, a wandering umbrella mender. He spoke German, but I saw in his face that he was Gypsy. But he would not admit it – he denied it – and when I said “Bist du nicht <hi rend="unknown" rendition="#none">Romani</hi>?” he replied “Nein ich bin ein <hi rend="unknown" rendition="#none">Protestant</hi>.” But though I was disappointed I said to the <hi rend="unknown" rendition="#none">Wirthinn</hi> – “Giebt dem lieben Mann ein Glass Bier.” Whereupon with a droll look he said “Was ist <hi rend="unknown" rendition="#none">chadscherdi</hi>
+               <note n="9" place="foot" type="editorial">Cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5670">Leland (1872)</ref>
+                  </bibl>.</note>?” To which I replied “Du infamer lügender Schelm – <hi rend="unknown" rendition="#none">chadscherdi</hi> ist Schnapps – was ist <hi rend="unknown" rendition="#none">Pani</hi>?” He replied “<hi rend="unknown" rendition="#none">Wasser</hi> und <hi rend="unknown" rendition="#none">manno</hi> ist Brot.” He was really a Gypsy and we both burst out laughing heartily. The Wirthsleute thought we were talking French. There are two camps of old fashioned English gypsies near this city now. They live in tents but have a carpet on the ground and only drink out of <hi rend="unknown" rendition="#none">silver </hi>cups. One of them showed me a watch and chain, on Sunday with the jeweller’s bill. It had cost <hi rend="unknown" rendition="#none">457</hi> dollars. I never saw <pb facs="#IMG.5" n="5"/> so much gold in a watch and chain as there was in this – Gypsies are the same all the world over. Do you have the Atlantic Monthly in Graz? If so I wish that you would kindly look over the numbers during the past year, and examine a few articles by my niece Miss Robins. They are on <hi rend="unknown" rendition="#none">Old Hindoo Humour</hi>
+               <note n="10" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5671">Robins (1882a)</ref>
+                  </bibl>.</note> – <hi rend="unknown" rendition="#none">Mischief in the Middle Ages</hi>
+               <note n="11" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5672">Robins (1881)</ref>
+                  </bibl>.</note> – <hi rend="unknown" rendition="#none">
 Loki</hi>
-          <note n="12" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5673">Robins (1882b)</ref>
-            </bibl>.</note> and <hi rend="unknown" rendition="#none">The Evolution of Magic</hi>
-          <note n="13" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5674">Robins (1882c)</ref>
-
-            </bibl>.</note>. They are separate chapters from a large work as yet unpublished. I do not think I ever read anything more vigorously masculine from a woman’s pen than the <hi
-            rend="unknown" rendition="#none">Loki </hi>and the <hi rend="unknown"
-            rendition="#none">Hindoo Humour</hi>. If you can not see them in Gratz I will send them to you. If you do not make a specialty of such reading – (though I should be ashamed if such a scholar did not) I wish that you would induce some friend who does, to read them. A few lines in any German publication as to these articles, would do the young lady much good. <pb
-            facs="#IMG.6" n="6"/> The work of which these articles are a part is to called <hi rend="unknown" rendition="#none">
+               <note n="12" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5673">Robins (1882b)</ref>
+                  </bibl>.</note> and <hi rend="unknown" rendition="#none">The Evolution of Magic</hi>
+               <note n="13" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5674">Robins (1882c)</ref>
+                  </bibl>.</note>. They are separate chapters from a large work as yet unpublished. I do not think I ever read anything more vigorously masculine from a woman’s pen than the <hi rend="unknown" rendition="#none">Loki </hi>and the <hi rend="unknown" rendition="#none">Hindoo Humour</hi>. If you can not see them in Gratz I will send them to you. If you do not make a specialty of such reading – (though I should be ashamed if such a scholar did not) I wish that you would induce some friend who does, to read them. A few lines in any German publication as to these articles, would do the young lady much good. <pb facs="#IMG.6" n="6"/> The work of which these articles are a part is to called <hi rend="unknown" rendition="#none">
 Mischief in Animals and Men</hi>
-          <note n="14" place="foot"
-            type="editorial">
-Apparently remained unpublished.</note>. It is very remarkable that I have never found in any literature, a book or even an article on<hi
-            rend="unknown"
-            rendition="#none"> Mischief</hi> as the word is generally understood in English. I think that <hi
-            rend="unknown" rendition="#none">Schalkheit</hi> translates it. It is the reckless <hi rend="unknown"
-            rendition="#none">Muthwilligkeit </hi>which is indulged in without heed as to others sufferings, yet which is not <hi
-            rend="unknown"
-            rendition="#none">deliberately</hi> evil. My niece treats it entirely from an Evolutionary physiological point of view. She is very desirous of receiving suggestions from some German who could refer her to German works which could aid her. Her book will be I think not only <hi
-            rend="unknown" rendition="#none">
+               <note n="14" place="foot" type="editorial">
+Apparently remained unpublished.</note>. It is very remarkable that I have never found in any literature, a book or even an article on<hi rend="unknown" rendition="#none"> Mischief</hi> as the word is generally understood in English. I think that <hi rend="unknown" rendition="#none">Schalkheit</hi> translates it. It is the reckless <hi rend="unknown" rendition="#none">Muthwilligkeit </hi>which is indulged in without heed as to others sufferings, yet which is not <hi rend="unknown" rendition="#none">deliberately</hi> evil. My niece treats it entirely from an Evolutionary physiological point of view. She is very desirous of receiving suggestions from some German who could refer her to German works which could aid her. Her book will be I think not only <hi rend="unknown" rendition="#none">
 solid</hi> but <hi rend="unknown" rendition="#none">extremely</hi> genial. </p>
-        <p>I have seen several times in the American newspapers a few lines stating that you are engaged on a work on dialects. </p>
-        <p>N. Tru<hi rendition="#sup">e</hi>bner<note n="15" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2887">Nicolaus Trübner</persName> (1817-1884), publisher in London. After his death, his publishing house was merged with 
+            <p>I have seen several times in the American newspapers a few lines stating that you are engaged on a work on dialects. </p>
+            <p>N. Tru<hi rendition="#sup">e</hi>bner<note n="15" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Nicolaus Trübner</persName> (1817-1884), publisher in London. After his death, his publishing house was merged with 
 Kegan and Trench. Leland mentions <persName>
 Paul Kegan</persName> in an earlier letter (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5675">Steiff 1894</ref>
-            </bibl>).</note> in London is as good as any American bookseller to order any <pb facs="#IMG.7"
-            n="7"/> thing from. When you write to him tell him that it will be a <hi rend="unknown" rendition="#none">great personal favour to me</hi> if he will aid you. I am a very intimate friend of his.</p>
-        <p>You should learn German Gypsy. It is <hi rend="unknown" rendition="#none">very</hi> easy and is a very beautiful soft language. Has anything been published of late on Zigeunerisches in Germany?</p>
-
-        <p>It is worth mentioning that all over the Western United States as well as in the Southern (US.) the ground nut (<hi
-            rend="unknown" rendition="#none">Arachia</hi>
-          <hi rend="unknown" rendition="#none">hypogaea</hi>) is called a <hi rend="unknown"
-            rendition="#none">gooba</hi> pea. In Africa it is always called simply a <hi rend="unknown"
-            rendition="#none">g</hi>ū<hi rend="unknown" rendition="#none">
-ba</hi> or <hi rend="unknown"
-            rendition="#none">gooba</hi>. The negroes and indeed the common children here in Philadelphia say <hi
-            rend="unknown" rendition="#none">Sadi</hi> (<hi rend="unknown"
-            rendition="#none">a</hi> as in hat – the sound does not exist in German) for I thank you. It comes from Africa but is I believe a corrupt Arabic form of <hi
-            rend="unknown" rendition="#none">Saïdi</hi>! (luck to you!)</p>
-        <p>I believe that I wrote all my Pidgin English ballads except Norval &amp; Excelsior. <pb facs="#IMG.8"
-            n="8"/> But I really have not a copy of the book by me nor do I own one! I recal<note n="16" place="foot" type="editorial">Sic.</note> it with as much pleasure as a boy does a whipping! </p>
-        <p>The <hi rend="unknown"
-            rendition="#none">Gumbo</hi> patois is said to be used extensively on the North Eastern coast of South America where Voodooism most prevails. I understand that it is a secret language. I will try to get you specimens of it. I suspect that there are several strange <hi
-            rend="unknown"
-            rendition="#none">
-lingoes</hi> in Louisiana – such as Franco negro Spanish and other mixtures. There must certainly be a Spanish Pidgin in Cuba. In fact so many thousand coolies many of whom speak <hi
-            rend="unknown" rendition="#none">different Chinese languages</hi> must be forced to form a <hi
-            rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5675">Steiff 1894</ref>
+                  </bibl>).</note> in London is as good as any American bookseller to order any <pb facs="#IMG.7" n="7"/> thing from. When you write to him tell him that it will be a <hi rend="unknown" rendition="#none">great personal favour to me</hi> if he will aid you. I am a very intimate friend of his.</p>
+            <p>You should learn German Gypsy. It is <hi rend="unknown" rendition="#none">very</hi> easy and is a very beautiful soft language. Has anything been published of late on Zigeunerisches in Germany?</p>
+            <p>It is worth mentioning that all over the Western United States as well as in the Southern (US.) the ground nut (<hi rend="unknown" rendition="#none">Arachia</hi>
+               <hi rend="unknown" rendition="#none">hypogaea</hi>) is called a <hi rend="unknown" rendition="#none">gooba</hi> pea. In Africa it is always called simply a <hi rend="unknown" rendition="#none">g</hi>ū<hi rend="unknown" rendition="#none">
+ba</hi> or <hi rend="unknown" rendition="#none">gooba</hi>. The negroes and indeed the common children here in Philadelphia say <hi rend="unknown" rendition="#none">Sadi</hi> (<hi rend="unknown" rendition="#none">a</hi> as in hat – the sound does not exist in German) for I thank you. It comes from Africa but is I believe a corrupt Arabic form of <hi rend="unknown" rendition="#none">Saïdi</hi>! (luck to you!)</p>
+            <p>I believe that I wrote all my Pidgin English ballads except Norval &amp; Excelsior. <pb facs="#IMG.8" n="8"/> But I really have not a copy of the book by me nor do I own one! I recal<note n="16" place="foot" type="editorial">Sic.</note> it with as much pleasure as a boy does a whipping! </p>
+            <p>The <hi rend="unknown" rendition="#none">Gumbo</hi> patois is said to be used extensively on the North Eastern coast of South America where Voodooism most prevails. I understand that it is a secret language. I will try to get you specimens of it. I suspect that there are several strange <hi rend="unknown" rendition="#none">
+lingoes</hi> in Louisiana – such as Franco negro Spanish and other mixtures. There must certainly be a Spanish Pidgin in Cuba. In fact so many thousand coolies many of whom speak <hi rend="unknown" rendition="#none">different Chinese languages</hi> must be forced to form a <hi rend="unknown" rendition="#none">
 pidgin</hi> in every country where they are assembled. I will inquire into this for you. </p>
-        <closer>
-          <salute>Yours very sincerely</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2019">Charles G. Leland</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>P.S. <hi rend="unknown"
-              rendition="#none">Gumbo</hi> is the name with as of a kind of soup made from okras (in Arabic <hi
-              rend="unknown" rendition="#none">
-bamieh</hi>) chicken, oysters &amp; crabs. It is also a negro <hi
-              rend="unknown" rendition="#none">Vor-nahm</hi>
-          </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            <closer>
+               <salute>Yours very sincerely</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Charles G. Leland</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>P.S. <hi rend="unknown" rendition="#none">Gumbo</hi> is the name with as of a kind of soup made from okras (in Arabic <hi rend="unknown" rendition="#none">
+bamieh</hi>) chicken, oysters &amp; crabs. It is also a negro <hi rend="unknown" rendition="#none">Vor-nahm</hi>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

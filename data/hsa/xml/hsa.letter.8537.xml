@@ -1,436 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Jakob Jud (57-HSJJ13)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8537" type="PID">o:hsa.letter.8537</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">57-HSJJ13</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Bern</settlement>
-            <institution>Universität Bern</institution>
-            <repository ref="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">AIS Archiv</repository>
-            <idno type="shelfmark">HSJJ13</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1919-04-05">1919-04-05</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Jakob Jud</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1858"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8537">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1919-04-05">1919-04-05</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1858" ref="https://viaf.org/viaf/88644299">
-            <forename>Jakob</forename>
-            <surname>Jud</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1858" type="context">
-                        Korrespondenz Hugo Schuchardt - Jakob Jud
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4783" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Atlas linguistique de la France</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4967" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Wiener Zeitschrift für die Kunde des Morgenlandes</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8537" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8537" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8537" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8537" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8537" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8537" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8537" xml:id="IMG.7">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8537" xml:id="IMG.8">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8537" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 5.4. ‘19</dateline>
-        <opener>Lieber Freund,</opener>
-
-        <p>Ihren lieben Brief vom 11. v. M., der zu seiner Reise, ich weiß nicht mehr ob zehn oder zwölf oder vierzehn Tage gebraucht hat, wollte ich sofort beantworten; aber wiederum ging es nicht so wie ich wünschte. Ich bin fortdauernd äußerst niedergeschlagen – wir sind ja alle in verzweifelter Lage und in verzweifelter Stimmung – und dazu bringt mir der Lenz die gewöhnliche und nie gewohnte Abspannung. Morgens sitze ich kaum ein Stündchen am Schreibtisch, dann muß ich mich niederlegen und am Abend sitze ich dann wieder zwei Stunden bei meinen Patiencen. Dazwischen Duseln, Träumen, etwas <pb
-            facs="#IMG.2"
-            n="2"/> baskische, etwas deutsche Lektüre. Die Morgen- und die Abendbeschäftigung sind gleichwertig; eine so wenig ernst wie die andere, nur dem Zweck dienend von der schrecklichen Gegenwart abzulenken. Die Wissenschaft ist mir nicht in ihrem Wesen verändert, nicht verschoben oder verschwommen, aber in dieser Umgebung unendlich verkleinert. Sie, die Forschung, trägt ihren Zweck in sich selbst; soweit sie Lehre ist, dient sie äußeren Zwecken: Wissen und Leben. Für mich ist das Studium der Sprachen, besonders der romanischen von je als Förderungsmittel des mir als Ideal vorschwebenden Völkerfriedens oder Völkerbundes erschienen. Es hat sich in diesem Kriege als ganz nutzlos erwiesen; ja wir Deutsche stehen schlechter da als früher. <hi
-            rend="unknown"
-            rendition="#none">
-Mein</hi> Kriegsziel war gewesen Sicherung des deutschen Sprachgebietes, Verhinderung des fortwährenden Abbröckelns, aber keine Erwerbung fremden Sprachgebietes. Und nun? Nun nagen alle Ratten der <pb
-            facs="#IMG.3" n="3"/> Entente – sie ist noch zum Glück ein Ratten<hi rend="unknown"
-            rendition="#none">könig</hi> – an allen Ecken des Deutschtums. Wozu also das Studium der „neueren“ Sprachen? (von den Literaturen rede ich hier nicht). Besser wäre es für die Östreicher des Ostens gewesen, Tschechisch und Slowenisch praktisch zu erlernen. Was Sie über unsere altfranzöselnden „Romanisten“ (sie meinen doch die Schüler?) sagen unterschreibe ich durchaus; aber die Hauptschuld daran tragen die Romanisten-Lehrer, selbst einer wie Tobler. Die alten Lektoren waren gar nicht so schlecht; es gab Deutsche die ohne eine Spur von Laut- oder überhaupt Sprachgeschichte zu wissen, z. B. das Französische vorzüglich beherrschten. Da bin ich ganz Bally,<note
-            n="1" place="foot" type="editorial">Charles Bally, <hi rend="unknown" rendition="#none">
-              <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8537" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 5.4. ‘19</dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Ihren lieben Brief vom 11. v. M., der zu seiner Reise, ich weiß nicht mehr ob zehn oder zwölf oder vierzehn Tage gebraucht hat, wollte ich sofort beantworten; aber wiederum ging es nicht so wie ich wünschte. Ich bin fortdauernd äußerst niedergeschlagen – wir sind ja alle in verzweifelter Lage und in verzweifelter Stimmung – und dazu bringt mir der Lenz die gewöhnliche und nie gewohnte Abspannung. Morgens sitze ich kaum ein Stündchen am Schreibtisch, dann muß ich mich niederlegen und am Abend sitze ich dann wieder zwei Stunden bei meinen Patiencen. Dazwischen Duseln, Träumen, etwas <pb facs="#IMG.2" n="2"/> baskische, etwas deutsche Lektüre. Die Morgen- und die Abendbeschäftigung sind gleichwertig; eine so wenig ernst wie die andere, nur dem Zweck dienend von der schrecklichen Gegenwart abzulenken. Die Wissenschaft ist mir nicht in ihrem Wesen verändert, nicht verschoben oder verschwommen, aber in dieser Umgebung unendlich verkleinert. Sie, die Forschung, trägt ihren Zweck in sich selbst; soweit sie Lehre ist, dient sie äußeren Zwecken: Wissen und Leben. Für mich ist das Studium der Sprachen, besonders der romanischen von je als Förderungsmittel des mir als Ideal vorschwebenden Völkerfriedens oder Völkerbundes erschienen. Es hat sich in diesem Kriege als ganz nutzlos erwiesen; ja wir Deutsche stehen schlechter da als früher. <hi rend="unknown" rendition="#none">
+Mein</hi> Kriegsziel war gewesen Sicherung des deutschen Sprachgebietes, Verhinderung des fortwährenden Abbröckelns, aber keine Erwerbung fremden Sprachgebietes. Und nun? Nun nagen alle Ratten der <pb facs="#IMG.3" n="3"/> Entente – sie ist noch zum Glück ein Ratten<hi rend="unknown" rendition="#none">könig</hi> – an allen Ecken des Deutschtums. Wozu also das Studium der „neueren“ Sprachen? (von den Literaturen rede ich hier nicht). Besser wäre es für die Östreicher des Ostens gewesen, Tschechisch und Slowenisch praktisch zu erlernen. Was Sie über unsere altfranzöselnden „Romanisten“ (sie meinen doch die Schüler?) sagen unterschreibe ich durchaus; aber die Hauptschuld daran tragen die Romanisten-Lehrer, selbst einer wie Tobler. Die alten Lektoren waren gar nicht so schlecht; es gab Deutsche die ohne eine Spur von Laut- oder überhaupt Sprachgeschichte zu wissen, z. B. das Französische vorzüglich beherrschten. Da bin ich ganz Bally,<note n="1" place="foot" type="editorial">Charles Bally, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 Le langage et la vie
 </bibl>
-
-            </hi>, Genf: Ed. Atar [u. a.], 1913.</note> ja Überbally; ich kann den Nutzen der Lautgeschichte nicht begreifen. Mein guter Cornu<note
-            n="2" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">Jules Cornu</persName> (1849-1919), Schweizer Romanist, unmittelbarer Nachfolger Schuchardts in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName>; vgl. HSA 01710-01842.</note> beschränkte sich bei den Prüfungen allzu sehr auf Lautgeschichte, was sogar den Beisitzern <pb
-            facs="#IMG.4"
-            n="4"/> auffällig war; er hatte als geborener Romane und Landmann so gute Gelegenheit zu Vielem (z. B. volkskundlichen Vorträgen), die er nicht benutzt zu haben scheint. [Übrigens habe ich lange nichts von ihm gehört; vor anderthalb Monaten hatte ich ihn zu seinem 70. beglückwünscht<note
-            n="3" place="foot"
-            type="editorial">Am 24.2.1919 hatte Cornu dieses Fest begangen; er starb bereits ein halbes Jahr später am 27.11.1919 in <placeName>
-Leoben</placeName>. Vgl. seine umfangreiche Korrespondenz mit Schuchardt, HSA 01710-01842.</note>]. Was nun aber das „Einfühlen“ anlangt, steht es bei den romanischen Germanisten besser? Und Gegenseitigkeit muß doch stattfinden wenn Austausch und Ausgleich stattfinden sollen? Voraussichtlich – und es hat ja schon begonnen – wird der Unterricht im Deutschen, der Sprache eines entmächtigten Volkes, im Ausland sehr herabgehen. Und wir sollten uns, trotz allem, im „Parlieren“ von neuem abmühen? Wir sollten uns ganz auf das Eindringen in die Literaturen verlegen. Wahrscheinlich gehe ich den heutigen Lehrern zu weit, wenn ich auch in bezug auf die Form gewisse Forderungen erhebe. L. Spitzer (der jetzt schon in Bonn Vorlesungen hält) veröffentlichte vor Kurzem in einer Wiener Zeitschrift einen Aufsatz: Die Demokratisierung der Universität.<note
-            n="4" place="foot" type="editorial">Spitzer, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4061">Die Demokratisierung der Universitäten</ref>
-            </bibl>“, <hi rend="unknown"
-            rendition="#none">Die Wage </hi>XXII.1, 1919, 80-86.</note> Ich schrieb ihm gut; aber zuerst: die Rationalisierung der U., nämlich größte Einschränkung der Vorleserei, ein- oder zweistündige (schwungvolle) Vorlesungen zur Einführung oder Übersicht, Demonstrationen, Übungen, keine mehrstündigen Vorlesungen mit Darbietung von Stoff – dazu sind ja die Bücher da. Spitzer bemächtigte sich dieses Gegenstandes sofort und verarbeitete ihn als geschickter Journalist. Was Spitzers F. u. F. anlangt,<note
-            n="5" place="foot" type="editorial">Spitzer, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4063">Fremdwörterhatz und Fremdvölkerhaß, eine Streitschrift gegen die Sprachreinigung</ref>
-              </bibl>
-            </hi>, Wien: Manz, 1918.</note> so sind <pb facs="#IMG.5"
-            n="5"/> wir nicht ganz einer Meinung; der Belesenheit, des Scharfsinnes, des Witzes entbehrt er nicht, aber er hat das Ziel verfehlt. Die Sprache ist etwas so Zartes und Bewegliches, daß sie von keiner Seite her rauh, radikal angepackt werden darf. Die Übertreibung ist auf beiden Seiten zu bekämpfen, nicht bloß die der Neuwörtler, auch die der Fremdwörtler. Die Schweizer sind in letzterer Hinsicht allerdings etwas harthäutig geworden, da sie in der Umgangssprache – aus begreiflichen Gründen – so viele französischen Wörter einmischen; aber selbst da würde uns z. B. <hi
-            rend="unknown"
-            rendition="#none">suspekt</hi> hochkomisch vorkommen (süspä gesprochen?) Ich suche mich in der Mitte zu halten, habe z. B. kürzlich in einer Tageszeitung <hi
-            rend="unknown"
-            rendition="#none">Anschrift</hi> abgelehnt, aber zugleich das freilich eingebürgerte, aber noch weniger zu rechtfertigende <hi
-            rend="unknown" rendition="#none">Adressat</hi> abempfohlen.<note n="6" place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.735">
+                  </hi>, Genf: Ed. Atar [u. a.], 1913.</note> ja Überbally; ich kann den Nutzen der Lautgeschichte nicht begreifen. Mein guter Cornu<note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Jules Cornu</persName> (1849-1919), Schweizer Romanist, unmittelbarer Nachfolger Schuchardts in <placeName ref="[authorityLink]">Graz</placeName>; vgl. HSA 01710-01842.</note> beschränkte sich bei den Prüfungen allzu sehr auf Lautgeschichte, was sogar den Beisitzern <pb facs="#IMG.4" n="4"/> auffällig war; er hatte als geborener Romane und Landmann so gute Gelegenheit zu Vielem (z. B. volkskundlichen Vorträgen), die er nicht benutzt zu haben scheint. [Übrigens habe ich lange nichts von ihm gehört; vor anderthalb Monaten hatte ich ihn zu seinem 70. beglückwünscht<note n="3" place="foot" type="editorial">Am 24.2.1919 hatte Cornu dieses Fest begangen; er starb bereits ein halbes Jahr später am 27.11.1919 in <placeName>
+Leoben</placeName>. Vgl. seine umfangreiche Korrespondenz mit Schuchardt, HSA 01710-01842.</note>]. Was nun aber das „Einfühlen“ anlangt, steht es bei den romanischen Germanisten besser? Und Gegenseitigkeit muß doch stattfinden wenn Austausch und Ausgleich stattfinden sollen? Voraussichtlich – und es hat ja schon begonnen – wird der Unterricht im Deutschen, der Sprache eines entmächtigten Volkes, im Ausland sehr herabgehen. Und wir sollten uns, trotz allem, im „Parlieren“ von neuem abmühen? Wir sollten uns ganz auf das Eindringen in die Literaturen verlegen. Wahrscheinlich gehe ich den heutigen Lehrern zu weit, wenn ich auch in bezug auf die Form gewisse Forderungen erhebe. L. Spitzer (der jetzt schon in Bonn Vorlesungen hält) veröffentlichte vor Kurzem in einer Wiener Zeitschrift einen Aufsatz: Die Demokratisierung der Universität.<note n="4" place="foot" type="editorial">Spitzer, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4061">Die Demokratisierung der Universitäten</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">Die Wage </hi>XXII.1, 1919, 80-86.</note> Ich schrieb ihm gut; aber zuerst: die Rationalisierung der U., nämlich größte Einschränkung der Vorleserei, ein- oder zweistündige (schwungvolle) Vorlesungen zur Einführung oder Übersicht, Demonstrationen, Übungen, keine mehrstündigen Vorlesungen mit Darbietung von Stoff – dazu sind ja die Bücher da. Spitzer bemächtigte sich dieses Gegenstandes sofort und verarbeitete ihn als geschickter Journalist. Was Spitzers F. u. F. anlangt,<note n="5" place="foot" type="editorial">Spitzer, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4063">Fremdwörterhatz und Fremdvölkerhaß, eine Streitschrift gegen die Sprachreinigung</ref>
+                     </bibl>
+                  </hi>, Wien: Manz, 1918.</note> so sind <pb facs="#IMG.5" n="5"/> wir nicht ganz einer Meinung; der Belesenheit, des Scharfsinnes, des Witzes entbehrt er nicht, aber er hat das Ziel verfehlt. Die Sprache ist etwas so Zartes und Bewegliches, daß sie von keiner Seite her rauh, radikal angepackt werden darf. Die Übertreibung ist auf beiden Seiten zu bekämpfen, nicht bloß die der Neuwörtler, auch die der Fremdwörtler. Die Schweizer sind in letzterer Hinsicht allerdings etwas harthäutig geworden, da sie in der Umgangssprache – aus begreiflichen Gründen – so viele französischen Wörter einmischen; aber selbst da würde uns z. B. <hi rend="unknown" rendition="#none">suspekt</hi> hochkomisch vorkommen (süspä gesprochen?) Ich suche mich in der Mitte zu halten, habe z. B. kürzlich in einer Tageszeitung <hi rend="unknown" rendition="#none">Anschrift</hi> abgelehnt, aber zugleich das freilich eingebürgerte, aber noch weniger zu rechtfertigende <hi rend="unknown" rendition="#none">Adressat</hi> abempfohlen.<note n="6" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.735">
 Anschrift</ref>
-            </bibl>”', <hi rend="unknown"
-            rendition="#none">Grazer Tagespost</hi>, 20. März 1919.</note> Die Fremdwörterfrage ist eine von den großen, im Grunde ebenfalls allgemeinen Fragen, mit denen ich mich deshalb zu beschäftigen liebe oder vielleicht besser, zu beschäftigen gezwungen bin, weil es dabei mehr aufs Denken ankommt als aufs Stoffe sammeln. An diesem bin ich hauptsächlich durch meine körperlichen Umstände verhindert, aber nun auch durch die allgemeinen äußeren. Insofern ist es ein Glück daß ich am Ende meiner Tage stehe; wäre ich zehn, ja fünfzehn Jahre jünger, befände ich mich in großer Verlegenheit. Auch dann könnte ich fünf Jahre versäumte ausländische Fachliteratur nicht „nachreiten“, aber nicht einmal, wie allerdings einer Riesenkraft wie der Ihrigen möglich ist, das bis dahin Vorhandene aufarbeiten, zu einem Sammelwerk irgend welcher Art. Mit Ihrem Hauptproblem habe ich mich, ohne daß ich je nur im Entferntesten an ein solches Unternehmen – das eines Etym. Wtbs. – gedacht hätte <pb
-            facs="#IMG.6"
-            n="6"/> wenigstens bis zu einem gewissen Punkte befaßt, wie Sie auch aus dem Vorwort in meinen RL Berb.<note
-            n="7" place="foot" type="editorial">Schuchardt, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.556">Die romanischen Lehnwörter im Berberischen</ref>
-              </bibl>
-            </hi>, Wien: Hölder, 1918.</note> ersehen können. Die Lösung ist in der Wortfolge <hi rend="unknown"
-            rendition="#none">
+                  </bibl>”', <hi rend="unknown" rendition="#none">Grazer Tagespost</hi>, 20. März 1919.</note> Die Fremdwörterfrage ist eine von den großen, im Grunde ebenfalls allgemeinen Fragen, mit denen ich mich deshalb zu beschäftigen liebe oder vielleicht besser, zu beschäftigen gezwungen bin, weil es dabei mehr aufs Denken ankommt als aufs Stoffe sammeln. An diesem bin ich hauptsächlich durch meine körperlichen Umstände verhindert, aber nun auch durch die allgemeinen äußeren. Insofern ist es ein Glück daß ich am Ende meiner Tage stehe; wäre ich zehn, ja fünfzehn Jahre jünger, befände ich mich in großer Verlegenheit. Auch dann könnte ich fünf Jahre versäumte ausländische Fachliteratur nicht „nachreiten“, aber nicht einmal, wie allerdings einer Riesenkraft wie der Ihrigen möglich ist, das bis dahin Vorhandene aufarbeiten, zu einem Sammelwerk irgend welcher Art. Mit Ihrem Hauptproblem habe ich mich, ohne daß ich je nur im Entferntesten an ein solches Unternehmen – das eines Etym. Wtbs. – gedacht hätte <pb facs="#IMG.6" n="6"/> wenigstens bis zu einem gewissen Punkte befaßt, wie Sie auch aus dem Vorwort in meinen RL Berb.<note n="7" place="foot" type="editorial">Schuchardt, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.556">Die romanischen Lehnwörter im Berberischen</ref>
+                     </bibl>
+                  </hi>, Wien: Hölder, 1918.</note> ersehen können. Die Lösung ist in der Wortfolge <hi rend="unknown" rendition="#none">
 Sachen und Wörter</hi> beschlossen; die Anordnung in <hi rend="unknown" rendition="#none">Monographien</hi> ergibt sich von selbst – Monographien sind ja schließlich auch die Artikel eines alphabetischen Wtbs.</p>
-
-        <p>Doch ich bin wieder in Gefahr mich weit zu verirren, und das bei zunehmender Ermüdung. Also eile ich zur Erledigung unserer <hi
-            rend="unknown"
-            rendition="#none">
-kleinen</hi> Sorgen. Ich habe nicht die Absicht gehabt, die romanischen Entsprechungen zu den berb. Wörtern ihrem ganzen Zusammenhang nach – und schließlich ist es ja immer ein endloser – vorzuführen, und Vieles lag außer meiner Macht (so vor allem die Benutzung des Atl. ling.).<note
-            n="8" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4783">Atlas linguistique</ref>
-            </hi>.</note> Salvionis Bemerkung RDR. 4, 211<note n="9" place="foot" type="editorial">Salvioni, <hi
-              rend="unknown" rendition="#none">
-              <bibl>
+            <p>Doch ich bin wieder in Gefahr mich weit zu verirren, und das bei zunehmender Ermüdung. Also eile ich zur Erledigung unserer <hi rend="unknown" rendition="#none">
+kleinen</hi> Sorgen. Ich habe nicht die Absicht gehabt, die romanischen Entsprechungen zu den berb. Wörtern ihrem ganzen Zusammenhang nach – und schließlich ist es ja immer ein endloser – vorzuführen, und Vieles lag außer meiner Macht (so vor allem die Benutzung des Atl. ling.).<note n="8" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4783">Atlas linguistique</ref>
+                  </hi>.</note> Salvionis Bemerkung RDR. 4, 211<note n="9" place="foot" type="editorial">Salvioni, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Revue de dialectologie romane
 </bibl>
-
-            </hi> IV, 1912, 211.</note> habe ich nicht absichtlich beiseite gelassen, würde aber, wenn sie mir gegenwärtig gewesen wäre, es getan haben oder hinzugesetzt haben: „Dass Salvioni <hi
-            rend="unknown" rendition="#none">
-vòmbacu</hi> morrone zu <hi rend="unknown"
-            rendition="#none">hombes</hi> baco da seta, stellt, ist noch unverzeihlicher als die Zusammenstellung bei Meyer-Lübke, da dieser die Bedeutung des ersteren Wortes nicht zu kennen scheint“. – Kat. <hi
-            rend="unknown" rendition="#none">yaya</hi> Kinderfrau habe ich in <pb facs="#IMG.7"
-            n="7"/> meiner Selbstanzeige für das Ltbl. (Korrektur im Jänner gelesen) nachgetragen.<note n="10"
-            place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.160">[Selbstanzeige:] H. Schuchardt, Die romanischen Lehnwörter im Berberischen</ref>
-            </bibl>“, <hi rend="unknown"
-              rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 40, 1919, 181-184, hier Sp. 184 oben (mit Hinweis auf <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Leo Spitzer</persName>).</note> Ebendaselbst <hi
-            rend="unknown" rendition="#none">sutämber</hi> (auch engad.) ~ <hi rend="unknown"
-            rendition="#none">nuämber</hi> erklärt; besser wäre gewesen *<hi rend="unknown"
-            rendition="#none">utämber</hi> – Warum wird <hi rend="unknown" rendition="#none">garouss</hi> &amp;lt; <hi
-            rend="unknown" rendition="#none">garote</hi> + <hi rend="unknown" rendition="#none">gousse</hi> wegen <hi
-            rend="unknown" rendition="#none">jarosse</hi> undenkbar: vgl. dⱿaroufo neben <hi rend="unknown"
-            rendition="#none">garoufo</hi>. – Alb. tšotšo – <hi rend="unknown"
-            rendition="#none">
-banuze</hi> [das ich übrigens bei Heldreich<note n="11" place="foot"
-              type="editorial">Theodor Heldreich, <hi rend="unknown" rendition="#none">
-              <bibl>
+                  </hi> IV, 1912, 211.</note> habe ich nicht absichtlich beiseite gelassen, würde aber, wenn sie mir gegenwärtig gewesen wäre, es getan haben oder hinzugesetzt haben: „Dass Salvioni <hi rend="unknown" rendition="#none">
+vòmbacu</hi> morrone zu <hi rend="unknown" rendition="#none">hombes</hi> baco da seta, stellt, ist noch unverzeihlicher als die Zusammenstellung bei Meyer-Lübke, da dieser die Bedeutung des ersteren Wortes nicht zu kennen scheint“. – Kat. <hi rend="unknown" rendition="#none">yaya</hi> Kinderfrau habe ich in <pb facs="#IMG.7" n="7"/> meiner Selbstanzeige für das Ltbl. (Korrektur im Jänner gelesen) nachgetragen.<note n="10" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.160">[Selbstanzeige:] H. Schuchardt, Die romanischen Lehnwörter im Berberischen</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 40, 1919, 181-184, hier Sp. 184 oben (mit Hinweis auf <persName ref="[authorityLink]">Leo Spitzer</persName>).</note> Ebendaselbst <hi rend="unknown" rendition="#none">sutämber</hi> (auch engad.) ~ <hi rend="unknown" rendition="#none">nuämber</hi> erklärt; besser wäre gewesen *<hi rend="unknown" rendition="#none">utämber</hi> – Warum wird <hi rend="unknown" rendition="#none">garouss</hi> &amp;lt; <hi rend="unknown" rendition="#none">garote</hi> + <hi rend="unknown" rendition="#none">gousse</hi> wegen <hi rend="unknown" rendition="#none">jarosse</hi> undenkbar: vgl. dⱿaroufo neben <hi rend="unknown" rendition="#none">garoufo</hi>. – Alb. tšotšo – <hi rend="unknown" rendition="#none">
+banuze</hi> [das ich übrigens bei Heldreich<note n="11" place="foot" type="editorial">Theodor Heldreich, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Nutzpflanzen Griechenlands. Mit besonderer Berücksichtigung der neugriechischen. u. pelasgischen Vulgarnamen
 </bibl>
-            </hi>, Athen: Wilberg, 1862.</note> nicht finde] heißt nach G. Meyer 449 auf türkisch <hi rend="unknown"
-            rendition="#none">k’etši bujnuzu</hi> und kann doch schwerlich davon getrennt werden. Zu <hi rend="unknown"
-            rendition="#none">silignastrum</hi> wäre noch anzuführen alb. l’ofate (M. 248) – <hi rend="unknown"
-            rendition="#none">perdigón</hi> war schon in der angegebenen Stelle WZKM.<note n="12" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4967">Wissenschaftliche Zeitschrift für die Kunde des Morgenlandes</ref>
-            </hi>.</note> Angeführt worden. – Gegen <hi rend="unknown" rendition="#none">būšil</hi> von <hi
-            rend="unknown"
-            rendition="#none">piccillo</hi> spricht verschiedenes, auch Innerberberisches. Wissen Sie, woher M.-L. sein neap. <hi
-            rend="unknown" rendition="#none">puss</hi> hat? – lim. <hi rend="unknown"
-            rendition="#none">
-madaissoun</hi>, poignet „interessant“? Ja, zu interessant! – Camur aus crura + cam(b)a geht mir nicht ein. – <hi
-            rend="unknown" rendition="#none">Usku</hi> von <hi rend="unknown" rendition="#none">seca</hi> wegen des <hi
-            rend="unknown"
-            rendition="#none">u</hi> nicht annehmbar, das sogar den Anlaut angeglichen hat hätte, denn die Sache ist ja „unsicher“. – <hi
-            rend="unknown" rendition="#none">t arme</hi> } <hi rend="unknown"
-            rendition="#none">parma</hi>? Nein; ein Abfall des ausl. p ist mir nicht vorgekommen; zudem sind die Schilde der Touareg nicht klein und rund, sondern groß und länglich [Skizze]. Anderes zu beherzigen oder nachzuprüfen.<note
-            n="13" place="foot" type="editorial">Bemerkungen zu Jud, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1268">[Rez. von:] Hugo Schuchardt, Die romanischen Lehnwoerter im Berberischen</ref>
-            </bibl>; [...]“, <hi rend="unknown" rendition="#none">Romania</hi> 45, 1918-19, 272-275.</note>
-        </p>
-        <p>Jetzt sehe ich Ihre fliegenden Blätter noch einmal durch und trage nach: <pb facs="#IMG.8"
-            n="8"/> „der Neuphilologe nicht liebender Forscher“ usw. [danke hierbei auch für die mich besonders erfreuende Anerkennung meiner Einfühlungsvelleitäten.] Ja, wie wird man aber jetzt Liebe erwarten dürfen? Übrigens geht man auf diesem Wege auch leicht zu weit. Mein armer blinder Freund Nyrop<note
-            n="14" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2319">
-Kristoffer Nyrop</persName> (1858-1931), dänischer Romanist; vgl. HSA 07954-08082.</note> verhimmelt Frankreich – auch das politische, und das kann ich nicht vertragen, bei jeder Gelegenheit. Auch hat er kürzlich, was ich ihm herzlich vergönne, das Kommandeurkreuz der Ehrenlegion erhalten. – Auf Arbeiten über rom. Mdd. [=Mundarten] von Deutschen reflektiere <hi
-            rend="unknown" rendition="#none">ich</hi> nicht; sie sollen <hi rend="unknown"
-            rendition="#none">ver</hi>arbeiten, anderes bleibt ihnen nicht übrig; außer in seiner Muttersprache wird man immer unsicher und unvollkommen sein [mit Ausnahme der Schweizer] – Sie sprechen von der seelischen Orientierung des jungen Deutschland; dabei kommt zum Vorschein, daß sie über die deutsche Kriegführung schlimmer denken als über die französische. Ich halte die französische <hi
-            rend="unknown"
-            rendition="#none">Friedens</hi>führung eben für viel härter und grausamer als die deutsche Kriegsführung, und wenn sie uns nicht ganz verhungern läßt, so geschieht das nicht um unserer schönen Augen willen sondern aus Furcht vor den schiechen der Bolschewiki. Sie sehen immer noch zu rosig. Der Bischof von Gloucester schrieb aus Deutschland an die Times: er habe dort noch nie einen Fall <hi
-            rend="unknown"
-            rendition="#none">äußerster</hi> Hungersnot beobachtet. Freilich wenn man die indischen Hungersnöte gesehen hat! Die geistigen Arbeiter finden jetzt schwer ihr Unter- und Auskommen; Mittelschullehrer sind stellenlos.<note
-            n="15" place="foot" type="editorial">In Ungarn hatte <persName>
+                  </hi>, Athen: Wilberg, 1862.</note> nicht finde] heißt nach G. Meyer 449 auf türkisch <hi rend="unknown" rendition="#none">k’etši bujnuzu</hi> und kann doch schwerlich davon getrennt werden. Zu <hi rend="unknown" rendition="#none">silignastrum</hi> wäre noch anzuführen alb. l’ofate (M. 248) – <hi rend="unknown" rendition="#none">perdigón</hi> war schon in der angegebenen Stelle WZKM.<note n="12" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4967">Wissenschaftliche Zeitschrift für die Kunde des Morgenlandes</ref>
+                  </hi>.</note> Angeführt worden. – Gegen <hi rend="unknown" rendition="#none">būšil</hi> von <hi rend="unknown" rendition="#none">piccillo</hi> spricht verschiedenes, auch Innerberberisches. Wissen Sie, woher M.-L. sein neap. <hi rend="unknown" rendition="#none">puss</hi> hat? – lim. <hi rend="unknown" rendition="#none">
+madaissoun</hi>, poignet „interessant“? Ja, zu interessant! – Camur aus crura + cam(b)a geht mir nicht ein. – <hi rend="unknown" rendition="#none">Usku</hi> von <hi rend="unknown" rendition="#none">seca</hi> wegen des <hi rend="unknown" rendition="#none">u</hi> nicht annehmbar, das sogar den Anlaut angeglichen hat hätte, denn die Sache ist ja „unsicher“. – <hi rend="unknown" rendition="#none">t arme</hi> } <hi rend="unknown" rendition="#none">parma</hi>? Nein; ein Abfall des ausl. p ist mir nicht vorgekommen; zudem sind die Schilde der Touareg nicht klein und rund, sondern groß und länglich [Skizze]. Anderes zu beherzigen oder nachzuprüfen.<note n="13" place="foot" type="editorial">Bemerkungen zu Jud, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1268">[Rez. von:] Hugo Schuchardt, Die romanischen Lehnwoerter im Berberischen</ref>
+                  </bibl>; [...]“, <hi rend="unknown" rendition="#none">Romania</hi> 45, 1918-19, 272-275.</note>
+            </p>
+            <p>Jetzt sehe ich Ihre fliegenden Blätter noch einmal durch und trage nach: <pb facs="#IMG.8" n="8"/> „der Neuphilologe nicht liebender Forscher“ usw. [danke hierbei auch für die mich besonders erfreuende Anerkennung meiner Einfühlungsvelleitäten.] Ja, wie wird man aber jetzt Liebe erwarten dürfen? Übrigens geht man auf diesem Wege auch leicht zu weit. Mein armer blinder Freund Nyrop<note n="14" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
+Kristoffer Nyrop</persName> (1858-1931), dänischer Romanist; vgl. HSA 07954-08082.</note> verhimmelt Frankreich – auch das politische, und das kann ich nicht vertragen, bei jeder Gelegenheit. Auch hat er kürzlich, was ich ihm herzlich vergönne, das Kommandeurkreuz der Ehrenlegion erhalten. – Auf Arbeiten über rom. Mdd. [=Mundarten] von Deutschen reflektiere <hi rend="unknown" rendition="#none">ich</hi> nicht; sie sollen <hi rend="unknown" rendition="#none">ver</hi>arbeiten, anderes bleibt ihnen nicht übrig; außer in seiner Muttersprache wird man immer unsicher und unvollkommen sein [mit Ausnahme der Schweizer] – Sie sprechen von der seelischen Orientierung des jungen Deutschland; dabei kommt zum Vorschein, daß sie über die deutsche Kriegführung schlimmer denken als über die französische. Ich halte die französische <hi rend="unknown" rendition="#none">Friedens</hi>führung eben für viel härter und grausamer als die deutsche Kriegsführung, und wenn sie uns nicht ganz verhungern läßt, so geschieht das nicht um unserer schönen Augen willen sondern aus Furcht vor den schiechen der Bolschewiki. Sie sehen immer noch zu rosig. Der Bischof von Gloucester schrieb aus Deutschland an die Times: er habe dort noch nie einen Fall <hi rend="unknown" rendition="#none">äußerster</hi> Hungersnot beobachtet. Freilich wenn man die indischen Hungersnöte gesehen hat! Die geistigen Arbeiter finden jetzt schwer ihr Unter- und Auskommen; Mittelschullehrer sind stellenlos.<note n="15" place="foot" type="editorial">In Ungarn hatte <persName>
 
 Béla Kuhn</persName> im März 1919 eine nur kurze Zeit bestehende Räterepublik ausgerufen.</note> In Budapest scheint die Universität von den Bolsch. gesäubert worden zu sein. Nur volkstümliche Vorträge gestattet, aber die Arbeit[er] haben erklärt, auch die verständen sie nicht. </p>
-
-        <p>Gilliérons Arbeit ist nicht eingelangt – von meiner berb. Abh. muß ich die mir verbliebenen Exemplare für die Berberologen zurückhalten, denen ich überdies verpflichtet bin: - Cap. E. Trombetti, Sohn von A. Trombetti,<note
-            n="16" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2882">
-Ettore Trombetti</persName> (1895-?), Jurist und Kriegsteilnehmer, Sohn von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2881">Alfredo Trombetti</persName> (1866-1929), Semitist.</note> besuchte mich vor zwei Tagen, fand das Haus schon abgeschlossen; ich hoffe ihn auf seinem Rückweg von Wien kennen zu lernen. – Gestern schickte ich <hi
-            rend="unknown" rendition="#none">
-Romano-baskisches </hi>ins Blaue d. h. an Niemeyer;<note n="17"
-            place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.343">Romano-baskisches ,Schaf‘, ,Lamm‘</ref>
-            </bibl>“, <hi rend="unknown"
-            rendition="#none">ZrP</hi> 40, 1920, 100-103.</note> darunter für Romanisten brauchbar: sp. <hi
-            rend="unknown" rendition="#none">rectil</hi> } *<hi rend="unknown"
-            rendition="#none">arietile</hi> und sp. <hi rend="unknown" rendition="#none">
-becerro</hi>, <hi
-            rend="unknown" rendition="#none">-a, bicerra</hi> } bicerra Gloss. – Bitte bald zu schreiben</p>
-        <closer>
-          <salute>Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HSchuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Gilliérons Arbeit ist nicht eingelangt – von meiner berb. Abh. muß ich die mir verbliebenen Exemplare für die Berberologen zurückhalten, denen ich überdies verpflichtet bin: - Cap. E. Trombetti, Sohn von A. Trombetti,<note n="16" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
+Ettore Trombetti</persName> (1895-?), Jurist und Kriegsteilnehmer, Sohn von <persName ref="[authorityLink]">Alfredo Trombetti</persName> (1866-1929), Semitist.</note> besuchte mich vor zwei Tagen, fand das Haus schon abgeschlossen; ich hoffe ihn auf seinem Rückweg von Wien kennen zu lernen. – Gestern schickte ich <hi rend="unknown" rendition="#none">
+Romano-baskisches </hi>ins Blaue d. h. an Niemeyer;<note n="17" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.343">Romano-baskisches ,Schaf‘, ,Lamm‘</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">ZrP</hi> 40, 1920, 100-103.</note> darunter für Romanisten brauchbar: sp. <hi rend="unknown" rendition="#none">rectil</hi> } *<hi rend="unknown" rendition="#none">arietile</hi> und sp. <hi rend="unknown" rendition="#none">
+becerro</hi>, <hi rend="unknown" rendition="#none">-a, bicerra</hi> } bicerra Gloss. – Bitte bald zu schreiben</p>
+            <closer>
+               <salute>Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HSchuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,337 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Reinhold Köhler (128-S.250-251)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/6779" type="PID">o:hsa.letter.6779</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">128-S.250-251</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Deutschland</country>
-            <region>Thüringen</region>
-            <settlement>Weimar</settlement>
-            <repository ref="https://www.klassik-stiftung.de/goethe-und-schiller-archiv/">Archivdatenbank des Goethe- und Schiller-Archivs</repository>
-            <idno type="shelfmark">S.250</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="3" unit="pages">3 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.46" ref="http://sws.geonames.org/2510911">Sevilla</origPlace>
-              <origDate ana="dcterms:created" when="1879-05-31">1879-05-31</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Reinhold Köhler</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1933"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.6779">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.46" key="#GID.1" ref="http://sws.geonames.org/2510911">Sevilla</placeName>
-          <date when="1879-05-31">1879-05-31</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1933" ref="https://viaf.org/viaf/49335637">
-            <forename>Reinhold</forename>
-            <surname>Köhler</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Spain</country>
-                <settlement>Seville</settlement>
-                <name ref="http://geonames.org/2510911" type="fcode:PPLA">Seville</name>
-                <location>
-                  <geo>-5.97317,37.38283</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1933" type="context">
-                        Korrespondenz Hugo Schuchardt - Reinhold Köhler
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.36" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Volksliteratur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3237" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Märchen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.989" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Volkslied</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5222" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Magazin für die Literatur des Auslandes</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.42" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Don Juan</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.860" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.838" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Griechisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.891" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Englisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6779" xml:id="IMG.1">
-        <desc>
-                  
-Die Verwendung dieses Exemplars im „Hugo Schuchardt Archiv” wurde von der <ref target="https://www.klassik-stiftung.de/goethe-und-schiller-archiv/">Archivdatenbank des Goethe- und Schiller-Archivs</ref> gestattet.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6779" xml:id="IMG.2">
-        <desc>
-                  
-Die Verwendung dieses Exemplars im „Hugo Schuchardt Archiv” wurde von der <ref target="https://www.klassik-stiftung.de/goethe-und-schiller-archiv/">Archivdatenbank des Goethe- und Schiller-Archivs</ref> gestattet.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6779" xml:id="IMG.3">
-        <desc>
-                  
-Die Verwendung dieses Exemplars im „Hugo Schuchardt Archiv” wurde von der <ref target="https://www.klassik-stiftung.de/goethe-und-schiller-archiv/">Archivdatenbank des Goethe- und Schiller-Archivs</ref> gestattet.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.6779" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline> Sevilla, 31 Mai 1879 </dateline>
-        <opener> Lieber Freund! </opener>
-        <p>[<hi rend="unknown" rendition="#none">S. 251-253</hi>]</p>
-        <p>Besten Dank für ihren Brief!<note n="1" place="foot" type="editorial">Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.6778">05715.</ref>
-          </note> Ich habe die <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.860">italienische</ref> und die <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.838">griechische</ref> Lesart des Räthsels <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2100">Don Antonio</persName> mitgeteilt und er wird dieselben wahrscheinlich demnächst in der Enciclopedia abdrucken.<note
-            n="2" place="foot" type="editorial">Vgl. <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.6779" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline> Sevilla, 31 Mai 1879 </dateline>
+            <opener> Lieber Freund! </opener>
+            <p>[<hi rend="unknown" rendition="#none">S. 251-253</hi>]</p>
+            <p>Besten Dank für ihren Brief!<note n="1" place="foot" type="editorial">Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.6778">05715.</ref>
+               </note> Ich habe die <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">italienische</ref> und die <ref target="https://gams.uni-graz.at/o:hsa.languages#L.838">griechische</ref> Lesart des Räthsels <persName ref="[authorityLink]">Don Antonio</persName> mitgeteilt und er wird dieselben wahrscheinlich demnächst in der Enciclopedia abdrucken.<note n="2" place="foot" type="editorial">Vgl. <bibl>
 
-Demófilo (Antonio Machado), <hi rend="unknown"
-              rendition="#none">Enigmas y adivinanzas en forma de diccionario</hi>, Halle / S.: Max Niemyer – Palermo: Luigi Pedone, Sevilla 1880, 308-309
-</bibl>: „<foreign
-                xml:lang="es">Este parrentesco, esta analogía é insensible tránsito de unos géneros literarios á otros en las infinitas manifestationes de la literatura popular, nos movieron á rogar a nuestro querido amigo D. <persName
-                ref="https://gams.uni-graz.at/o:hsa.persons#P.2535">Francisoco Rodriguez Marín</persName> a que sacase á luz y vistiese con los encantos de su pluma el cuento de <hi
-                rend="unknown"
-                rendition="#none">Las tres adivinanzas</hi>, que ponemos a continuación […] así como el señor Marín conocemos algunas variantes y que existe a no dudarlo en Grecia y en <placeName
-                ref="https://gams.uni-graz.at/o:hsa.places#PL.5969">Italia</placeName>, según lo comprueba la nota número 9, debida a una indicación que hizo el docto bibliotecario de <placeName
-                ref="https://gams.uni-graz.at/o:hsa.places#PL.441">
-Weimar</placeName>, Herrn <persName
-                ref="https://gams.uni-graz.at/o:hsa.persons#P.1933">Reinhold Kohler</persName> [sic] a su ilustre amigo el distinguido profesor de <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName>, Dr. Hugo Schuchardt, en carta no destinada a la publicidad, y de que este señor tuvo la bondad de darnos traslado</foreign>“. Besagte Anm. 9 steht auf S. 315; die <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.838">griech.</ref> umfasst drei, die <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.860">ital.</ref> vier Zeilen [einige fehlende Akzente wurden nachgetragen, FRH].</note> Er wird Ihnen vielleicht in der nächsten Zeit schreiben;<note
-            n="3" place="foot" type="editorial">Vgl. <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.441">
-Weimar</placeName>, GSA 109/503 (5 Briefe 1879-1883).</note> seine Pfote ist, wie Ihnen ein dunkles Vorgefühl schon gesagt hat, eine gräuliche, er wird aber für eine kalligraphische Umschrift sorgen. Wenn Sie nicht aus germanischer Zurückhaltung, sondern deshalb zuerst einen Brief von ihm abwarten wollen, weil Sie nicht wissen, was er eigentlich beabsichtigt, so haben Sie mich nicht recht verstanden. Ich bitte Sie, sich aus dem geregelten Mechanismus des deutschen Gelehrtenverkehrs in südliche Gepflogenheit hineinzudenken, wo das Persönliche dem Sachlichen vorausgeht und Alles mit einigen allgemeinen Redensarten eingeleitet wird. Diesen jungen Leuten fehlt es an einem Kompass; sie besitzen einen wahren Feuereifer, aber sie müssen auf den rechten Weg geleitet werden. Auf der einen Seite liegt die Gefahr nahe, dass sie, mit der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.36">Volkslitteratur</ref> poetische und philosophische Spielereien zu treiben anfangen, auf der andern Seite wird schliesslich doch ihr Interesse an der Sache erkalten <pb
-            facs="#IMG.2"
-            n="2"/> wenn sie sehen, dass sie wenig Anklang finden. Denn das werden Sie sich wohl vorstellen können, dass manche oder vielleicht die Meisten Veröffentlichung von <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3237">Märchen</ref>, Räthseln und anderen „Kindereien“ in einer Zeitschrift sehr wunderlich und unpassend finden. Wenn Sie es also über sich gewinnen könnten [und in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.441">Weimar</placeName> werden Sie ja doch irgend eine Freundin haben, die Ihnen einige Zeilen in’s <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">
-            <hi rend="unknown" rendition="#none">Französische</hi>
-          </ref> oder <ref target="https://gams.uni-graz.at/o:hsa.languages#L.891">
-            <hi rend="unknown" rendition="#none">Englische</hi>
-
-          </ref> übersetzt – denn ich weiß aus Erfahrung sehr gut, dass es eine grosse Quälerei ist, einen Brief in einer fremden Sprache abzufassen, selbst wenn man dieselbe vollkommen versteht], an Machado zu schreiben, Sie hätten von mir gehört, dass er und seine Freunde sich mit dem Sammeln von Märchen, Räthseln und <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.989">
+Demófilo (Antonio Machado), <hi rend="unknown" rendition="#none">Enigmas y adivinanzas en forma de diccionario</hi>, Halle / S.: Max Niemyer – Palermo: Luigi Pedone, Sevilla 1880, 308-309
+</bibl>: „<foreign xml:lang="es">Este parrentesco, esta analogía é insensible tránsito de unos géneros literarios á otros en las infinitas manifestationes de la literatura popular, nos movieron á rogar a nuestro querido amigo D. <persName ref="[authorityLink]">Francisoco Rodriguez Marín</persName> a que sacase á luz y vistiese con los encantos de su pluma el cuento de <hi rend="unknown" rendition="#none">Las tres adivinanzas</hi>, que ponemos a continuación […] así como el señor Marín conocemos algunas variantes y que existe a no dudarlo en Grecia y en <placeName ref="[authorityLink]">Italia</placeName>, según lo comprueba la nota número 9, debida a una indicación que hizo el docto bibliotecario de <placeName ref="[authorityLink]">
+Weimar</placeName>, Herrn <persName ref="[authorityLink]">Reinhold Kohler</persName> [sic] a su ilustre amigo el distinguido profesor de <placeName ref="[authorityLink]">Graz</placeName>, Dr. Hugo Schuchardt, en carta no destinada a la publicidad, y de que este señor tuvo la bondad de darnos traslado</foreign>“. Besagte Anm. 9 steht auf S. 315; die <ref target="https://gams.uni-graz.at/o:hsa.languages#L.838">griech.</ref> umfasst drei, die <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">ital.</ref> vier Zeilen [einige fehlende Akzente wurden nachgetragen, FRH].</note> Er wird Ihnen vielleicht in der nächsten Zeit schreiben;<note n="3" place="foot" type="editorial">Vgl. <placeName ref="[authorityLink]">
+Weimar</placeName>, GSA 109/503 (5 Briefe 1879-1883).</note> seine Pfote ist, wie Ihnen ein dunkles Vorgefühl schon gesagt hat, eine gräuliche, er wird aber für eine kalligraphische Umschrift sorgen. Wenn Sie nicht aus germanischer Zurückhaltung, sondern deshalb zuerst einen Brief von ihm abwarten wollen, weil Sie nicht wissen, was er eigentlich beabsichtigt, so haben Sie mich nicht recht verstanden. Ich bitte Sie, sich aus dem geregelten Mechanismus des deutschen Gelehrtenverkehrs in südliche Gepflogenheit hineinzudenken, wo das Persönliche dem Sachlichen vorausgeht und Alles mit einigen allgemeinen Redensarten eingeleitet wird. Diesen jungen Leuten fehlt es an einem Kompass; sie besitzen einen wahren Feuereifer, aber sie müssen auf den rechten Weg geleitet werden. Auf der einen Seite liegt die Gefahr nahe, dass sie, mit der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.36">Volkslitteratur</ref> poetische und philosophische Spielereien zu treiben anfangen, auf der andern Seite wird schliesslich doch ihr Interesse an der Sache erkalten <pb facs="#IMG.2" n="2"/> wenn sie sehen, dass sie wenig Anklang finden. Denn das werden Sie sich wohl vorstellen können, dass manche oder vielleicht die Meisten Veröffentlichung von <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3237">Märchen</ref>, Räthseln und anderen „Kindereien“ in einer Zeitschrift sehr wunderlich und unpassend finden. Wenn Sie es also über sich gewinnen könnten [und in <placeName ref="[authorityLink]">Weimar</placeName> werden Sie ja doch irgend eine Freundin haben, die Ihnen einige Zeilen in’s <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">
+                  <hi rend="unknown" rendition="#none">Französische</hi>
+               </ref> oder <ref target="https://gams.uni-graz.at/o:hsa.languages#L.891">
+                  <hi rend="unknown" rendition="#none">Englische</hi>
+               </ref> übersetzt – denn ich weiß aus Erfahrung sehr gut, dass es eine grosse Quälerei ist, einen Brief in einer fremden Sprache abzufassen, selbst wenn man dieselbe vollkommen versteht], an Machado zu schreiben, Sie hätten von mir gehört, dass er und seine Freunde sich mit dem Sammeln von Märchen, Räthseln und <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.989">
 Volksliedern</ref> abgeben, Sie nähmen an diesen Bestrebungen grossen Antheil und würden gern dazu beitragen, sie zu fördern, Sie hätten insbesondere das Märchen von den <foreign xml:lang="es">
-            <hi rend="unknown" rendition="#none">tres adivinanzas</hi>
-
-          </foreign> gelesen und es hätte Sie sehr interessirt – so würde das einen sehr günstigen Einfluss haben, einen weit grössern, als Sie ahnen. Der Eifer dieser strebsamen Jugend würde gesteigert und gefestigt werden und in den Augen der Andern würden sie an Autorität gewinnen; denn deutsche Wissenschaft erfreut sich hier eines ausserordentlichen Ansehens. – Da in der Enciclopedia natürlich alles wie Kraut und Rüben durcheinander geht, so wird es schwer halten, den Austausch mit einer deutschen Zeitschrift zu bewirken. Die Redakteure hatten auf gut Glück an verschiedene deutsche Zeitschriften ersten Ranges, die ihnen nur dem Namen nach bekannt <pb
-            facs="#IMG.3"
-            n="3"/> waren ihre Bitte um Austausch gerichtet, und, wie sich leicht erklärt, keine Antwort erhalten. Ich habe ihnen das „<ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.5222">Magazin für Litteratur des Auslands</ref>“ empfohlen. Ich werde sie veranlassen, alle diejenigen Nummern der Encicl. welche etwas von Vokslitteratur enthalten, Ihnen zu schicken; vielleicht haben Sie gelegentlich ihnen eine kleine Gegengabe zu senden. Es ist mir der Gedanke gekommen, ob man nicht überhaupt dann und wann einen Austausch spanischer und deutscher Bücher veranstalten könnte. Auf jeder Seite liegt so vieles überflüssig und werthlos herum, was auf der andern Seite höchst willkommen wäre. – Beiläufig, wissen Sie den Preis von <hi
-            rend="unknown" rendition="#none">Düringsfeld</hi>, Sprichwörterlexikon?<note n="4" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6089">Ida von Düringsfeld u. Otto von Reinsberg-Düringsfeld, <hi
-                  rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">tres adivinanzas</hi>
+               </foreign> gelesen und es hätte Sie sehr interessirt – so würde das einen sehr günstigen Einfluss haben, einen weit grössern, als Sie ahnen. Der Eifer dieser strebsamen Jugend würde gesteigert und gefestigt werden und in den Augen der Andern würden sie an Autorität gewinnen; denn deutsche Wissenschaft erfreut sich hier eines ausserordentlichen Ansehens. – Da in der Enciclopedia natürlich alles wie Kraut und Rüben durcheinander geht, so wird es schwer halten, den Austausch mit einer deutschen Zeitschrift zu bewirken. Die Redakteure hatten auf gut Glück an verschiedene deutsche Zeitschriften ersten Ranges, die ihnen nur dem Namen nach bekannt <pb facs="#IMG.3" n="3"/> waren ihre Bitte um Austausch gerichtet, und, wie sich leicht erklärt, keine Antwort erhalten. Ich habe ihnen das „<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5222">Magazin für Litteratur des Auslands</ref>“ empfohlen. Ich werde sie veranlassen, alle diejenigen Nummern der Encicl. welche etwas von Vokslitteratur enthalten, Ihnen zu schicken; vielleicht haben Sie gelegentlich ihnen eine kleine Gegengabe zu senden. Es ist mir der Gedanke gekommen, ob man nicht überhaupt dann und wann einen Austausch spanischer und deutscher Bücher veranstalten könnte. Auf jeder Seite liegt so vieles überflüssig und werthlos herum, was auf der andern Seite höchst willkommen wäre. – Beiläufig, wissen Sie den Preis von <hi rend="unknown" rendition="#none">Düringsfeld</hi>, Sprichwörterlexikon?<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6089">Ida von Düringsfeld u. Otto von Reinsberg-Düringsfeld, <hi rend="unknown" rendition="#none">
 Sprichwörter der germanischen und romanischen Sprachen</hi>, Leipzig: Hermann Fried, 1872-75, 2 Bde.</ref>
-            </bibl>
-          </note>
-        </p>
-        <p>– Wie nachlässig ich bin! Ich habe <hi rend="unknown"
-            rendition="#none">Schack</hi> Geschichte d. dram. Lit. Sp. bei mir und die Notiz über Tenorio in den Nachträgen war mir entgangen. Ganz selbständig war ich zur Überzeugung gekommen, dass das <hi
-            rend="unknown" rendition="#none">historische</hi> Vorbild <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.42">Don Juan’s</ref> kein anderer als der <foreign
-            xml:lang="es">reportero des rey justiciero</foreign> sein könnte. Wäre es Ihnen möglich, mir mitzutheilen, was <hi
-            rend="unknown" rendition="#none">
+                  </bibl>
+               </note>
+            </p>
+            <p>– Wie nachlässig ich bin! Ich habe <hi rend="unknown" rendition="#none">Schack</hi> Geschichte d. dram. Lit. Sp. bei mir und die Notiz über Tenorio in den Nachträgen war mir entgangen. Ganz selbständig war ich zur Überzeugung gekommen, dass das <hi rend="unknown" rendition="#none">historische</hi> Vorbild <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.42">Don Juan’s</ref> kein anderer als der <foreign xml:lang="es">reportero des rey justiciero</foreign> sein könnte. Wäre es Ihnen möglich, mir mitzutheilen, was <hi rend="unknown" rendition="#none">
 Ford</hi> in der 
-Quarterly Review darüber sagt? Dass es viele <hi
-            rend="unknown"
-            rendition="#none">Juan‘s</hi> in der Familie Tenorio gegeben habe, ist eine Äusserung, die mich einigermassen befremdet.<note
-            n="5" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">The Quarterly Review </hi>
+Quarterly Review darüber sagt? Dass es viele <hi rend="unknown" rendition="#none">Juan‘s</hi> in der Familie Tenorio gegeben habe, ist eine Äusserung, die mich einigermassen befremdet.<note n="5" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">The Quarterly Review </hi>
 59, July &amp; October 1837, 81-82.</note>
-        </p>
-        <closer>
-          <salute>Mit herzlichen Grüssen</salute>
-          <lb/>
-          <salute>Ihr ergebenster</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Plaza nueva 10</p>
-          <p>Wenn Sie spanische Handschrift lesen, vergessen Sie nicht, was F und Y bedeuten; man schreibt Fenorio, Yndia.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            </p>
+            <closer>
+               <salute>Mit herzlichen Grüssen</salute>
+               <lb/>
+               <salute>Ihr ergebenster</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Plaza nueva 10</p>
+               <p>Wenn Sie spanische Handschrift lesen, vergessen Sie nicht, was F und Y bedeuten; man schreibt Fenorio, Yndia.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,624 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Émile Trouette an Hugo Schuchardt (08-11852)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">
-            <forename>Émile</forename>
-            <surname>Trouette</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Martina</forename>
-            <surname>Pelz</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3626" type="PID">o:hsa.letter.3626</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">08-11852</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11852</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="fr"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">
-                <forename>Émile</forename>
-                <surname>Trouette</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="14" unit="pages">14 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" ref="http://sws.geonames.org/2988507">Paris</origPlace>
-              <origDate ana="dcterms:created" when="1882-11-15">1882-11-15</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Martina</forename>
-              <surname>Pelz</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Émile Trouette und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2884"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3626">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2884" ref="https://viaf.org/viaf/194120079">
-            <forename>Émile</forename>
-            <surname>Trouette</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" key="#GID.1" ref="http://sws.geonames.org/2988507">Paris</placeName>
-          <date when="1882-11-15">1882-11-15</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Paris</settlement>
-                <name ref="http://geonames.org/2988507" type="fcode:PPLC">Paris</name>
-                <location>
-                  <geo>2.3488,48.85341</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2884" type="context">
-                        Korrespondenz Émile Trouette - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="fr">Französisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.11">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.12">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.13">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3626" xml:id="IMG.14">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3626" xml:lang="fr">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Paris le 15 novembre 1882</dateline>
-        <opener>Monsieur,</opener>
-        <p>Voici la note du docteur Herland<note n="1" place="foot"
-              type="editorial">Über Herland konnten leider keine biographischen Daten gefunden werden. Bei der „Note“ handelt es sich um eine Briefbeilage, die im Schuchardt-Nachlass unter der Bibl. Nr. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.3625">11851</ref>/1 zu finden ist und im Anschluss an den vorliegenden Brief ediert wird (ab S. 3).</note> ; elle est prête depuis plusieurs jours ; je ne vous l’ai pas envoyée plus tôt parce que je comptais l’accompagner d’une réponse à votre avant dernière lettre. J’ai ici un de mes élèves, M. Gabriel Couturier<note
-            n="2" place="foot" type="editorial">
-            <persName>
-Couturier, Gabriel</persName> (1830-1898), Gouverneur von <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5963">Guadeloupe</placeName>.</note>, qui a passé douze ans à la Guadeloupe, comme directeur del’intérieur puis gouverneur. Je me suis rendu chez lui pour lui demander à qui je pouvais m’adresser pour avoir les renseignements que vous désirez ; je ne l’ai pas rencontré, et bien que son fils se soit chargé de ma commission, la réponse ne m’est pas encore arrivée. <pb
-            facs="#IMG.2" n="2"/> (Cette fois-ci ce n’est pas mon petit-fils qui me fait perdre la tête ; je ne puis m’en prendre qu’à moi real)</p>
-
-        <p>            Enfin, pour ne pas vous faire attendre trop longtemps, je vous expédie la note Herland, sauf à vous remettre à la porte, aussitôt que ce sera possible, la réponse de Couturier et celle de Frédéric Legras<note
-            n="3" place="foot" type="editorial">Siehe Fußnote 12 zu Lfd. Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.3609#_ftnref12">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.12" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.13" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.14" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3626" xml:lang="fr">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Paris le 15 novembre 1882</dateline>
+            <opener>Monsieur,</opener>
+            <p>Voici la note du docteur Herland<note n="1" place="foot" type="editorial">Über Herland konnten leider keine biographischen Daten gefunden werden. Bei der „Note“ handelt es sich um eine Briefbeilage, die im Schuchardt-Nachlass unter der Bibl. Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.3625">11851</ref>/1 zu finden ist und im Anschluss an den vorliegenden Brief ediert wird (ab S. 3).</note> ; elle est prête depuis plusieurs jours ; je ne vous l’ai pas envoyée plus tôt parce que je comptais l’accompagner d’une réponse à votre avant dernière lettre. J’ai ici un de mes élèves, M. Gabriel Couturier<note n="2" place="foot" type="editorial">
+                  <persName>
+Couturier, Gabriel</persName> (1830-1898), Gouverneur von <placeName ref="[authorityLink]">Guadeloupe</placeName>.</note>, qui a passé douze ans à la Guadeloupe, comme directeur del’intérieur puis gouverneur. Je me suis rendu chez lui pour lui demander à qui je pouvais m’adresser pour avoir les renseignements que vous désirez ; je ne l’ai pas rencontré, et bien que son fils se soit chargé de ma commission, la réponse ne m’est pas encore arrivée. <pb facs="#IMG.2" n="2"/> (Cette fois-ci ce n’est pas mon petit-fils qui me fait perdre la tête ; je ne puis m’en prendre qu’à moi real)</p>
+            <p>            Enfin, pour ne pas vous faire attendre trop longtemps, je vous expédie la note Herland, sauf à vous remettre à la porte, aussitôt que ce sera possible, la réponse de Couturier et celle de Frédéric Legras<note n="3" place="foot" type="editorial">Siehe Fußnote 12 zu Lfd. Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.3609#_ftnref12">
 01-11845</ref>.</note>, que j’ai ici également sous la main, mais auquel je me garderai bien de communiquer votre lettre. </p>
-        <p>            Elle ne contient rien dont il <hi rend="unknown" rendition="#none">
+            <p>            Elle ne contient rien dont il <hi rend="unknown" rendition="#none">
 doive</hi> se blesser ; mais les poètes sont capables de tout en fait d’irritabilité. </p>
-        <closer>
-          <salute>Croyez toujours, Monsieur, à mon dévouement.</salute>
-          <lb/>
-          <signed>                                                                                  <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2884">E L Trouette</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.3626" subtype="original" type="appendix" xml:lang="fr">
-        <p>
-          <pb facs="#IMG.3"
-            n="3"/> Cette note du docteur Herland a été publiée le 28 juillet 1869 par le Moniteur de l’île de la Réunion.<note
-            n="4" place="foot" type="editorial">
+            <closer>
+               <salute>Croyez toujours, Monsieur, à mon dévouement.</salute>
+               <lb/>
+               <signed>                                                                                  <persName ref="[authorityLink]">E L Trouette</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.3626"
+              subtype="original"
+              type="appendix"
+              xml:lang="fr">
+            <p>
+               <pb facs="#IMG.3" n="3"/> Cette note du docteur Herland a été publiée le 28 juillet 1869 par le Moniteur de l’île de la Réunion.<note n="4" place="foot" type="editorial">
 Zum Zeitpunkt der Erstellung der vorliegenden Edition wird die folgende „Note“ unter der Bibl. Nr 11851 aufbewahrt. Sie wurde aber aller Wahrscheinlichkeit nach Schuchardt mit dem hier edierten Brief mit der Bibl. Nr. 11852 zugestellt.</note>
-        </p>
-        <p>La population de l’île de la Réunion est de 172.418 habitants.</p>
-
-        <p>1° De 1849 à 1869, cette population s’est accrue de 65.852 âmes ; 2° le nombre des adultes au dessus de 14 ans s’est élevé de 47.253 à 90.908. 3° les Aryans d’Europe ou créoles blancs, de 31.118 qu’ils étaient en 1849, sont arrivés au chiffre de 41.871, ayant ainsi augmenté en nombre de 9.753 dans l’espace de 20 ans. Ce fait prouve que la race blanche est appropriée au pays, qu’elle y prospère ; nous différons en cela des Antilles, où la prédominance de la race africaine est inévitable. 4° Les métis d’Aryans d’Europe et d’Africains se sont également accrus : de 13.899, ils sont arrivés à 22.483, soit une différence en plus de 8.484, 5° Les africains affranchis ont, au contraire considérablement diminué en nombre : de 58.358 ils sont descendus à 36.920. Plusieurs causes ont présidé à cette dépopulation : le changement de position sociale, les épidémies successives, et surtout l’énorme disproportion qui existe entre le nombre des femmes et celui des hommes.      De là résulte que les pertes ont surtout porté sur les hommes faits, qui, de 28.121 sont descendus à 11.172, le nombre des enfants étant resté sensiblement le même. 6° Le rapport entre les hommes de plus de 21 ans, composant les deux groupes de l’ancienne population sédentaire, les anciens libres et les affranchis, a plus varié que celui des groupes entiers eux-mêmes. Ainsi, lors des élections de 1849, les hommes étaient groupés comme suit : Anciens libres, 10.382, nouveaux affranchis 29.872. Aujourd’hui les descendants de ces mêmes groupes, se trouvant dans des conditions politiques électorales identiques, seraient dans les proportions suivantes : anciens libres et leurs fils, 14.282, affranchis et leurs fils, 14.840, ce qui revient à dire que les deux groupes ayant de jadis dans le rapport de 1 à 3, sont aujourd’hui dans celui de 1 à 1. 7° Les divers groupes de la population sont aujourd’hui tellement équilibrés, qu’aucun soulèvement sérieux n’est possible, <pb
-            facs="#IMG.4" n="4"/> alors même que l’on supposerait les intérêts divisés et la mésintelligence remplaçant la solidarité qui relie les divers membres de la population coloniale. La pondération est complète de quelque manière que l’on veuille disposer les groupes. Sinon comparons les Aryans d’Europe et leurs métis aux Africains, nous trouvons d’un côté 63.254 Aryans, et de l’autre 59.659 Africains. L’équilibre devient plus sensible, si l’on prend la population par groupes secondaires. Nous aurons alors : 1° Aryans d’Europe, 40.871 ; 2° Aryans d’Asie 48.065 ; 3° métis descendants d’Aryans, 22.283 ; 4° noirs affranchis et leurs descendants, 36.921 ; 5° Africains engagés 22.688 ; 6° Mongols , 1.490. L’esprit le plus pessimiste ne saurait y trouver les éléments d’une guerre civile. </p>
-        <table>
-          <row>
-            <cell>Aryans d’Europe </cell>
-            <cell>Nés à la Réunion</cell>
-            <cell>Créoles blancs </cell>
-            <cell>30.318</cell>
-          </row>
-          <row>
-            <cell>31.118</cell>
-            <cell>- en Europe </cell>
-            <cell>Européens domiciliés</cell>
-            <cell>800</cell>
-          </row>
-        </table>
-        <table>
-          <row>
-            <cell>Métis croisés d’Aryans</cell>
-            <cell>Libres avant 1848</cell>
-            <cell>Métis libres </cell>
-            <cell>10.106 </cell>
-          </row>
-          <row>
-            <cell>13.899</cell>
-            <cell>Esclaves avant 1848</cell>
-            <cell>Métis affranchis</cell>
-            <cell>3.793</cell>
-          </row>
-        </table>
-        <table>
-          <row>
-            <cell>Africains anciens</cell>
-            <cell>Nés à la Réunion </cell>
-            <cell>Citoyens créoles</cell>
-            <cell> 58.385</cell>
-          </row>
-          <row>
-            <cell>58.385</cell>
-            <cell>Nés en Afrique </cell>
-            <cell>Citoyens africains </cell>
-            <cell/>
-          </row>
-          <row>
-            <cell/>
-            <cell>Travailleurs libres</cell>
-            <cell>Indiens</cell>
-            <cell>3.348 787</cell>
-          </row>
-          <row>
-            <cell/>
-            <cell> récemment introduites </cell>
-            <cell>Malgaches</cell>
-            <cell>56 ---------------- 106.593</cell>
-          </row>
-        </table>
-        <p>Etat de la population au 1er janvier 1869.</p>
-        <table>
-          <row>
-            <cell>Aryans d’Europe </cell>
-            <cell>Nés à la Réunion </cell>
-            <cell>Créoles blancs </cell>
-            <cell> 39.326 </cell>
-          </row>
-          <row>
-            <cell>40.871</cell>
-            <cell>-en Europe</cell>
-            <cell> Européens domiciliés </cell>
-            <cell> 1.545 </cell>
-          </row>
-        </table>
-        <table>
-          <row>
-            <cell> Aryans d’Asie </cell>
-            <cell>Nés à la Réunion</cell>
-            <cell>Créoles indiens</cell>
-            <cell>2.270</cell>
-          </row>
-          <row>
-            <cell>48.065</cell>
-            <cell>Nés dans l’Inde</cell>
-            <cell>Indiens créolisés</cell>
-            <cell>24.484</cell>
-          </row>
-          <row>
-            <cell/>
-            <cell>Nés dans l’Inde </cell>
-            <cell>Indiens étrangers </cell>
-            <cell>21.311</cell>
-          </row>
-        </table>
-        <table>
-          <row>
-            <cell>Métis croisés d’Aryans </cell>
-            <cell>Libres avant 1848 </cell>
-            <cell>Métis créoles </cell>
-            <cell>13.153</cell>
-          </row>
-          <row>
-            <cell>d’Europe et d’Africains</cell>
-            <cell> affranchis </cell>
-            <cell>Métis créoles </cell>
-            <cell>9.230</cell>
-          </row>
-        </table>
-        <table>
-          <row>
-            <cell>Africains affranchis et </cell>
-            <cell> Nés à la Réunion depuis 1848 </cell>
-            <cell>Créoles noirs</cell>
-            <cell>16.984</cell>
-          </row>
-          <row>
-            <cell>fils d’affranchis</cell>
-            <cell> Nés à la Réunion avant 1848 </cell>
-            <cell>Créoles noirs</cell>
-            <cell>12.881</cell>
-          </row>
-          <row>
-            <cell>35.921</cell>
-            <cell>Nés en Afrique</cell>
-            <cell>Anciens citoyens</cell>
-            <cell> 7.056</cell>
-          </row>
-        </table>
-        <table>
-          <row>
-            <cell> travailleurs africains et </cell>
-            <cell>Nés à la Réunion </cell>
-            <cell>Créoles noirs </cell>
-            <cell>769</cell>
-          </row>
-          <row>
-            <cell>et fils d’Africains</cell>
-            <cell>Nés en Afrique </cell>
-            <cell>Cafres anciens</cell>
-            <cell/>
-          </row>
-          <row>
-            <cell>22.688</cell>
-            <cell>Nés en Afrique</cell>
-            <cell>Cafres nouveaux</cell>
-            <cell>21.919</cell>
-          </row>
-        </table>
-        <table>
-          <row>
-            <cell>Race mongolique </cell>
-            <cell>Introduits depuis plus de 10 ans </cell>
-            <cell>Chinois créolisés </cell>
-            <cell> 392 </cell>
-          </row>
-          <row>
-            <cell/>
-            <cell>Introduits depuis moins de 10 ans </cell>
-            <cell>Annainite </cell>
-            <cell>1.098 ---------------- 172.418<pb facs="#IMG.5" n="5"/>
-            </cell>
-          </row>
-        </table>
-        <p>Etat de la population au 1<hi rendition="#sup">er</hi> janvier 1849.</p>
-
-        <p>On peut dire que la Réunion a eu deux colonisations distinctes. La première lente et progressive, s’étend de <hi
-            rend="unknown"
-            rendition="#none">l’arrivée des premiers hommes jusque vers 1820</hi>, comprenant ainsi un espace de plus de deux siècles. Elle fut constituée par deux éléments primitifs, <hi
-            rend="unknown" rendition="#none">
-le Français et le Malgache</hi>. La seconde fut caractérisée par l’introduction des Indiens, des Cafres et des Duhambanes, nécessité par le développement del’industrie sucrière. Déjà, avant 1820, quelques immigrations partielles de Cafres et d’Indiens avaient eu lieu. De 1820 à 1830, une vingtaine de mille Cafres et Malgaches furent introduits comme esclaves, de 1849 à 1867, 108.594 travailleurs asiatiques et africains vinrent renforcer nos ateliers et remplacer les anciens esclaves ou affranchis. </p>
-
-        <p>            I. Les premiers habitants de la Réunion furent, dit-on, quelques ouvriers français du Fort-Dauphin, accompagnés de femmes malgaches. À ce premier petit noyau vinrent bientôt s’ajouter des marins en relâche, des officiers d’administration, des employés de la compagnie des Indes avec ou sans leurs femmes. Depuis, les sources du recrutement européen sont restés à peu près les mêmes : officiers de terre et de mer, administrateurs, magistrats, médecins, commerçants, marins et soldats. Il en résulte une particularité remarquable ; c’est que presque tous ces premiers colons appartenaient, sauf de rares exceptions, à la bourgeoisie. Il n’en a pas été de même, paraît-il, dans les colonies de l’ouest, colonisées, dit-on, par des cadets de familles nobles. De là peut-être la morgue des colonies de l’ouest, et les difficultés de l’émancipation, et, au contraire, la fusion si facile des classes à la Réunion, l’admission, sans difficulté, aux affranchis avec opérations électorales. En aucun pays du monde, on ne voit, comme à la Réunion, les sommités sociales, gouvernants, magistrats, administrateurs, représentants du haut commerce et de la grande industrie, hommes appartenant-aux carrières libérales, vivre sur le pied de l’égalité la plus complète, de la familiarité, presque de la camaraderie avec les représentants estimables du reste des corporations ou professions regardées, en France et ailleurs, comme inférieures. Nous avons reçu de nos pères des instincts libéraux ; nous sommes relativement neufs et sans précédents politiques. Une seule hideur sociale pesait sur nous, l’esclavage, dont les traces vont s’effaçant. La population instruite, éclairée est complètement libérale. Existe-t-il, comme en France, un parti anti-libéral <pb
-            facs="#IMG.6" n="6"/> et rétrograde ? Oui, le parti du journal la Malle, mais qui ne représente que quelques individualités respectables. Notre côté faible, c’est l’indifférence, l’insouciance en matière politique ; c’est l’habitude de tout attendre du gouvernement, de trouver qu’il ne fait jamais assez, quand il fait toujours trop. Ce défaut tient au régime arbitraire et par trop despotique que la France nous a longtemps infligé, et aux préoccupations de nos affaires particulières. Nous ne tarderons pas à nous enquérir, il n’en faut pour preuve que la joie qui éclate à la nouvelle d’une liberté politique. </p>
-        <p>            La race qui concourt, avec les Aryans d’Europe, à la formation de la première colonisation, fut la branche africaine de Madagascar, les Malgaches, particulièrement les habitants de la côte. Est en Sud-Est de cette île, les Antanoches et les Betsimmitsaras. Ceux-ci en particulier, sont comme pour être de toutes les peuplades malgaches, la plus douce de mœurs, la plus accessible à la civilisation européenne, en même temps qu’elle est la plus intelligente et la plus industrieuse. Aimant la vie de famille et ennemie de toute violence, elle est restée soumise à la domination hova, malgré sa supériorité numérique. Celle est la souche mère de nos noirs créoles, et, sous ce rapport, nous différons encore des Antilles, dont l’élément africain est représenté par les Yolofs et les nègres de la côte de Guinée, peuplades dont la vigueur physique, le caractère énergique, les mœurs rudes et sauvages sont connus de tous. De leurs alliances avec les Caraïbes autochthones est résultée cette population redoutable que la France a vue de près à Saint-Dominique et aux Petits Antilles, et que les armées espagnoles rencontrent devant elles à Cuba. Peut-on s’étonner de la différence qui se rencontre devant l’urne électorale ? </p>
-
-        <p>            Ces descendants de Betsinmitsaras ont acquis une supériorité manifeste sur les autres descendants d’africains qui peuplent la colonie. Ils se sont tellement identifiés avec nos mœurs, nos usages, notre civilisation, qu’il faut les regarder comme de véritables Français. Ils se sont fait, par l’instruction une place importante dans la société coloniale ; ils sont supérieurs aux paysans de la France, et ne le cèdent qu’aux ouvriers des grandes villes. Leurs métis de 4<hi
-            rendition="#sup">
-e</hi> et de 5<hi
-            rendition="#sup">e </hi>croisement ne se distinguent plus des Aryans d’Europe. Jouissant des mêmes avantages de fortune et d’aisance, élevés aux mêmes écoles, ils ont la même importance sociale, et sont, pour tous ces rapports, sur le pied del’égalité avec les créoles blancs. <pb
-            facs="#IMG.7" n="7"/>
-        </p>
-        <p>            Les métis descendant d’affranchis, ou affranchis eux-mêmes, sont dans des conditions opposées. La gêne du pays, l’absence de prévoyance ne leur ont pas permis de se créer cet avoir qui donne l’aisance et l’élévation dans le milieu social. Ils sont restés généralement dans la classe des travailleurs salariés, comme la plupart des noirs créoles. C’est parmi eux que se recrutent nos meilleurs ouvriers, depuis le simple manœuvre jusqu’au mécanicien, è l’orfèvre, au typographe, petits-marchands, commis, hommes d’affaires, régisseurs. Comme ils ne le cèdent en rien aux métis fils de libres, et qu’ils ont les mêmes droits, la lice leur est ouverte ; le travail et l’épargne feront le reste.</p>
-        <p>            Il n’y a point ici de classe ou carte de mulâtres, comme aux Antilles et Maurice, carte qui là-bas vit en antagonisme ouvert avec les créoles blancs, comme avec les créoles noirs. Ici nul antagonisme, par conséquent, nulle haine ; similitude de caractères, de mœurs, d’habitudes, par conséquent rapprochement forcé. Les idées libérales, avancées, communes aux trois groupes, et l’infériorité numérique des deux seconds à l’égard du premier, ont concouru à éviter l’état de choses que l’on déplore dans les autres colonies.</p>
-        <p>            Les anciens préjugés de couleur disparaissent ; des alliances regardées jadis comme des énormités sont devenues si nombreuses qu’elles passent inaperçues et font prévoir une fusion complète. En résumé les divers groupes, créoles, blancs, européens, métis anciens libres, métis affranchis et fils d’affranchis, créoles noirs, affranchis ou fils d’affranchis, en un mot tous les hommes de la première colonisation forment un tout compacte et uni, la véritable population coloniale dela Réunion. Cette population, en y comprenant les 3.039 jeunes enfants indiens ou africains nés dans le pays, et en toute justice aussi créoles que les autres, s’élève à 96.158 âmes. </p>
-
-        <p>            Les 76.260 étrangers introduits comme travailleurs ou esclaves depuis 1820, complètent la population totale de 172.418 âmes, soit : hommes 30.992, dont <pb
-            facs="#IMG.8" n="8"/> 24.056 ont plus de 21 ans ; femmes adultes, 26.466 ; enfants 19.784 ; fillettes 18.916.</p>
-        <p>            II. La deuxième colonisation débuta vers 1820, jusqu’alors les propriétés rurales, couvertes de girofliers, de caféiers, de muscadiers, etc., n’exigeaient qu’un nombre restreint de bras ; 30.000 esclaves, parmi lesquels 10 à 11 mille hommes et 7 à 8 mille femmes valides, plus une dizaine de milliers de vieillards et d’enfants suffisaient à l’exploitation des produits intertropicaux qui faisaient de la Réunion une des plus riches colonies. À l’aide du revenu de ces produits et de quelques autres denrées d’un usage journalier, les 35.000 âmes qui formaient alors la population libre, menaient cette existence douce, patriarcale, hospitalière, quelque fois large et confortable qui faisait l’admiration des étrangers. On voulut mieux, on voulut essayer la grande industrie sucrière ; la hache fit tomber les girofliers et les caféiers.</p>
-        <p>            150.000 hommes furent introduits de 1824 à 1869. Trois races concoururent à les fournir : les Indiens pour 70.911 immigrants ; les Africains de la côte d’Afrique et de Madagascar pour 74.303 ; les Chinois et les Annamites pour 2.115. Cette immigration se fit en deux étapes séparées par un intervalle de dix ans. 1° l’immigration esclave de 1824 à 1838 ; 2° celles des travailleurs libres de 1848 à 1869. </p>
-        <p>            Première étape. Il est impossible de trouver le chiffre exact des esclaves qui furent introduits pendant cette période de 14 ans. Des calculs approximatifs permettent seuls d’admettre qu’il fut introduit plus de 20.000 esclaves de 1824 à 1826, et que plus de 20.000 autres arrivèrent de 1826 à 1836. Les lieux de provenance de ces esclaves furent la côte Est d’Afrique, la côte O et S.O de Madagascar, les îles de la Malaisie et une partie des côtes de l’Inde.</p>
-        <p>            Deuxième étape. De 1848 à 1868, 110.329 travailleurs libres ont été introduits à la Réunion, tous provenant de l’Inde pour 73.911, de la côte Est d’Afrique et Ouest de Madagascar pour 34.303 : de la Chine et de la Cochimchine pour 2.215.</p>
-        <p>            Africains. Des 40.000 esclaves de la première étape, <pb facs="#IMG.9" n="9"/> 28.000 à peu près existaient en 1848, lorsque la France les racheta, ainsi que les esclaves de la première colonisation au nombre de 32.000. Depuis cette époque, les 28.000 affranchis étrangers ont considérablement diminué en nombre, sous l’influence de l’âge, des maladies épidémiques, et peut-être aussi de la misère dans laquelle ils vivent sur les hauteurs, existence sauvage qu’ils ont préférée aux travaux des ateliers. Ces Africains ne sont aujourd’hui qu’au nombre de 7.000, dont 2.000 femmes, tous avancés en âge, les plus jeunes n’ayant pas moins de 50 ans.</p>
-        <p>            Quant aux 34.303 nouveaux Africains, Cafres, Malgaches et Sakalaves introduits de 1850 à 1860 comme travailleurs libres, 11.070 sont morts, et 1.511 presque tous Malgaches, repatriés. Les 22.688 autres, aussi que les enfants qui en sont nés, ont élu domicile dans la colonie. Ces 22.688 Africains sont répartis comme suit : 16.192 hommes, 4774 femmes et 1722 enfants au dessous de 14 ans.</p>
-        <p>            Indiens. Des 73.911 Indiens introduits de 1847 à 1867, 12.185 sont morts, 14.972 sont retournés dans l’Inde ou partis pour d’autres colonies, et 48.065, y compris les enfants nés dans la Colonie, sont encore dans le Pays.</p>
-        <p>            Sur ces 48.065 Indiens, 24.484 sont établis dans le Pays, sont devenus propriétaires, marchands, industriels. Sur les 21.311 autres, 8796 seulement ont moins de 5 ans de séjour ; ce sont de vrais étrangers, à leur premier engagement. Les 12.000 intermédiaires n’étant pas partis à l’expiration des 5 premières années, s’établiront probablement dans le Pays d’une manière définitive. Enfin les 2.270 enfants indiens nés à la Réunion sont de véritables créoles. On est donc en droit d’établir que les Indiens ont donné à la population sédentaire du Pays un surcroît de 30 à 35 mille âmes.</p>
-
-        <p>            Mongols. Sur les 2.115 Mongols, 828 sont Chinois, et 1287 Annamites. Des 828 Chinois introduits avant 1848, 400 existent encore ; les autres sont morts ou ont été repatriés. Des 1287 Annamites arrivés depuis 1864, 209 sont morts ou ont été repatriés. Plusieurs des 1.078 qui nous restent seront certainement rappelés par <pb
-            facs="#IMG.10" n="10"/> les autorités françaises de la Cochinchine. La race mongole est donc un élément avec lequel il y a peu à compter et qui ne fera pas souche dans la Colonie. </p>
-        <p>            En résumé, des 15.000 travailleurs, tant esclaves que libres introduits depuis 1824, 70 620 ont disparu. Les 79.380 qui nous restent, sont, à part 6 à 7 mille Indiens et Annamites, destinés à demeurer parmi nous.</p>
-        <p>            1° Depuis 1826, époque où la Colonie s’est faite sucrière, le Pays a eu un effectif de travailleurs étrangers variant entre 62.000 et 78.000, soit, en moyenne, 70.000. </p>
-        <p>            2° La perte annuelle des étrangers par mortalité ou repatriement, a été, en moyenne, de 1.794 hommes, de sorte que, pour entretenir nos ateliers avec l’effectif actuel de 72.324, il faut introduire 1.800 travailleurs étrangers par an.</p>
-
-        <p>            3° L’introduction de ces 1.800 travailleurs coûtera, en moyenne, 540.000 francs, si ce sont des Indiens, et <hi
-            rend="unknown" rendition="#none">un</hi> million, s’ils proviennent de la côte d’Afrique ou de Madagascar.</p>
-        <p>            4° L’introduction des 110.329 étrangers de la 2<hi rendition="#sup">e</hi> colonisation, non compris les 40.000 esclaves rachetés, a coûté au Pays plus de 50.000.000 de francs, soit une moyenne annuelle de 2.500.000 fr., pour l’espace compris entre 1848 et 1868.</p>
-        <p>            5° L’entretien annuel de ces 70.000 travailleurs en nourriture, logement et soins médicaux, revient à peu près à 7.000.000 de francs.</p>
-        <p>            6° Les gages de ces 70.000 travailleurs reviennent, en moyenne, à plus de 8.000.000 de francs, et arriveront bientôt, par les renouvellements d’engagements, à plus de 10.000.000 de francs.</p>
-        <p>            7° La dépense totale annuelle moyenne des 72.000 travailleurs, comprenant l’introduction, le repatriement, l’entretien, les gages et l’amortissement du premier capital, s’élève par conséquent à 18 millions et peut arriver à 20 millions de francs par an.</p>
-        <p>            8° Pendant les 20 dernières années, la production annuelle moyenne de sucre est restée au dessous de 50 millions de kilogrammes, donnant un revenu brut de 23 à 25 millions de francs.</p>
-
-        <p>            Il en résulte que la part de l’intelligence directrice, c’est-à-dire des 1.000 sucriers et planteurs, ainsi que celle du <pb
-            facs="#IMG.11" n="11"/> capital d’exploitation, qui serait de 173.037.905 fr. d’après les statistiques officielles, ne pourraient être que de 5 à 6 millions, ce qui fait à peu près 3 p % pour le capital et O fr. pour les industriels. La Colonie est donc dans une impasse.</p>
-        <p>            Deuxième race africaine. Africaine. Les Africains de la 2<hi rendition="#sup">
-e</hi> colonisation proviennent, nous l’avons dit, de deux sources distinctes : 1° la côte d’Afrique, qui a fourni les Cafres, les Mozambiques, les Inhambanes des deux étapes, ayant tous le type africain dans toute sa pureté ; 2° la côte Ouest de Madagascar, qui nous a fourni les Sakalaves, les Antakaras, africain probablement sémitisés par les Arabes. Tous, Cafres et Malgaches, sont des hommes forts, bien constitués, aptes aux travaux agricoles, qui exigent peu d’intelligence. Moins souples, moins intelligents, moins industrieux que les Betsimmitsaras, ils remplacent ces qualités par la force et l’énergie, de sorte que l’introduction de cet élément, qui s’amoindrira sans cesse et finira par s’absorber dans les autres, aura cependant son utile influence sur les générations futures, comme élément anthropologique.</p>
-        <p>            Tous ces hommes, arrivés parmi nous à l’état à peu près sauvage, se sont dégrossis et ont acquis aujourd’hui une légère teinte de civilisation. L’Africain est très-imitateur ; mais comme il n’imite que ce qu’il saisit-bien, et qu’il n’a pu saisir que ce qui frappe les yeux, il n’a pu prendre de notre civilisation que la partie superficielle. En sociabilité, il n’a pris que nos habitudes, et nos vêtements ; en religion, que le culte antérieur et les pratiques. Quant aux dogmes et à la morale, aux devoirs et aux services réciproques, n’ayant pu en saisir la portée et l’utilité, il n’a pu parvenir, jusqu’à présent, à se les assimiler.</p>
-
-        <p>            Il n’existe qu’une différence peu tranchée, sous le rapport du degré de civilisation, entre les Africains des deux étapes, les anciens esclaves et les travailleurs libres ; Ces derniers cependant se sont un peu plus civilisés en 8 ou 10 ans que nos anciens esclaves en 30 ou 40 ans. C’est que l’esclavage est moins fait pour civiliser que le régime du travail réglementé par contrat d’engagement. <pb
-            facs="#IMG.12" n="12"/>
-        </p>
-        <p>            La partie dominante du caractère des Africains, Cafres, Mozambiques Inhambanes et Vakalaves, est une gaité native habituelle, doublée d’une insouciance, d’une imprévoyance sans pareille. Il semble impossible aux hommes de ces divers groupes de conserver rien en propre valeur, propriété ou argent monnayé.</p>
-        <p>            Ils ont des besoins incessants pendant qu’ils ont entre les mains une partie du salaire qu’ils ont acquis ; mais dès qu’il n’en reste plus une parcelle, ils s’en consolent facilement et cessent même d’avoir des besoins. Si ce n’était le besoin matériel de la faim, ils resteraient volontiers inactifs, n’ayant aucun stimulant pour un nouveau déploiement d’activité.</p>
-        <p>            2° Race aryane. Aryans d’Asie. Les Indiens, provenant d’un rameau aryan de même souche que les branches qui ont peuplé l’Europe, ont conservé les formes de cette race remarquable et ses aptitudes intellectuelles. Leur infériorité actuelle à notre égard est le résultat nécessaire du gouvernement sacerdotal et du despotisme de castes auquel ils sont soumis dans l’Inde. De là, cette souplesse, cette faiblesse, cette servilité, souvent cette lassesse qui sont, avec l’hypocrisie, la ruse et le mensonge, souvent poussées fort loin chez eux. Ne sont-ce par là toujours les vices inhérents à tout être opprimé. Ils auront beaucoup de peine à se défaire ces vices primitifs.</p>
-        <p>            Les Indiens sont prévoyants, économes ; ils savent se faire une épargne. Ils ont des qualités qui doivent nous faire désirer de les voir s’implanter sur notre sol. Ces qualités sont : 1°une aptitude très-grande aux travaux agricoles qu’ils préfèrent souvent aux autres ; 2° La possibilité acquise et devenue organique de se livrer aux travaux des champs sous le soleil tropical ; 3°Une activité constamment surexcitée par l’intérêt, l’appât du gain, le désir de posséder ; 4° l’esprit d’association.</p>
-
-        <p>            Il arrivera peut-être un jour où le travail réglementé par le livret, qui nous semble aujourd’hui le seul possible, sera remplacé par le travail libre. On finira par comprendre que, au milieu d’une foule de vices, provenant des nombreuses entraves que le livret uniforme d’engagement met à l’activité et à l’initiative privées, se trouve surtout celui de rétribuer le travailleur inepte comme l’homme actif, fort et intelligent. Le jour où le travail deviendra libre, nous verrons les Indiens se grouper d’eux-mêmes, s’associer pour <pb
-            facs="#IMG.13" n="13"/> entreprendre les travaux agricoles les plus considérables. </p>
-        <p>            Race mongole. Ce groupe est si peu nombreux qu’il ne peut avoir aucune influence sur l’avenir de ce pays. Les 400 et quelques Chinois arrivés depuis nombre d’années, forment une petite population à part, adouée au commerce de détail, spécialement à celui des denrées alimentaires. Les Chinois sont actifs, intelligents, ont le génie de la spéculation, calculent avec une rapidité et une exactitude surprenante. </p>
-        <p>            Ils ont de l’ordre, aiment à épargner, à capitaliser et vivent de peu. Les uns les disent d’une grande probité commerciale, les autres prétendent que leurs bénéfices ne sortent pas toujours de sources très pures.</p>
-        <p>            Les Annanites, au nombre de 1.073 ne doivent guère nous occuper attendu que notre nouvelle colonie dela Cochimchine, étant sortie dela période de conquête, n’aura plus désormais à nous envoyer des condamnés politiques. </p>
-        <p>            Résumé : Il existe, à la Réunion, deux populations bien distinctes : la première composée d’enfants de la France, nés dans la Colonie ou dans la mère-patrie ; la seconde comprenant les étrangers devenus ses enfants adoptifs. </p>
-        <p>            La population réellement coloniale dela Réunion diffère complètement de celle des Antilles françaises, sous le quadruple rapport des origines, du caractère, des mœurs et des habitudes. </p>
-
-        <p>            Les divers groupes composant la première population créoles blancs, européens, métis anciens libres, métis affranchis et fils d’affranchis, en un mot tous les hommes qui proviennent de la première colonisation, forment un tout compacte et uni, qui restera longtemps la véritable population coloniale de la Réunion. Tous ont même civilisation européenne, mêmes mœurs, mêmes instincts aspirations<note
-            n="5" place="foot" type="editorial">
+            </p>
+            <p>La population de l’île de la Réunion est de 172.418 habitants.</p>
+            <p>1° De 1849 à 1869, cette population s’est accrue de 65.852 âmes ; 2° le nombre des adultes au dessus de 14 ans s’est élevé de 47.253 à 90.908. 3° les Aryans d’Europe ou créoles blancs, de 31.118 qu’ils étaient en 1849, sont arrivés au chiffre de 41.871, ayant ainsi augmenté en nombre de 9.753 dans l’espace de 20 ans. Ce fait prouve que la race blanche est appropriée au pays, qu’elle y prospère ; nous différons en cela des Antilles, où la prédominance de la race africaine est inévitable. 4° Les métis d’Aryans d’Europe et d’Africains se sont également accrus : de 13.899, ils sont arrivés à 22.483, soit une différence en plus de 8.484, 5° Les africains affranchis ont, au contraire considérablement diminué en nombre : de 58.358 ils sont descendus à 36.920. Plusieurs causes ont présidé à cette dépopulation : le changement de position sociale, les épidémies successives, et surtout l’énorme disproportion qui existe entre le nombre des femmes et celui des hommes.      De là résulte que les pertes ont surtout porté sur les hommes faits, qui, de 28.121 sont descendus à 11.172, le nombre des enfants étant resté sensiblement le même. 6° Le rapport entre les hommes de plus de 21 ans, composant les deux groupes de l’ancienne population sédentaire, les anciens libres et les affranchis, a plus varié que celui des groupes entiers eux-mêmes. Ainsi, lors des élections de 1849, les hommes étaient groupés comme suit : Anciens libres, 10.382, nouveaux affranchis 29.872. Aujourd’hui les descendants de ces mêmes groupes, se trouvant dans des conditions politiques électorales identiques, seraient dans les proportions suivantes : anciens libres et leurs fils, 14.282, affranchis et leurs fils, 14.840, ce qui revient à dire que les deux groupes ayant de jadis dans le rapport de 1 à 3, sont aujourd’hui dans celui de 1 à 1. 7° Les divers groupes de la population sont aujourd’hui tellement équilibrés, qu’aucun soulèvement sérieux n’est possible, <pb facs="#IMG.4" n="4"/> alors même que l’on supposerait les intérêts divisés et la mésintelligence remplaçant la solidarité qui relie les divers membres de la population coloniale. La pondération est complète de quelque manière que l’on veuille disposer les groupes. Sinon comparons les Aryans d’Europe et leurs métis aux Africains, nous trouvons d’un côté 63.254 Aryans, et de l’autre 59.659 Africains. L’équilibre devient plus sensible, si l’on prend la population par groupes secondaires. Nous aurons alors : 1° Aryans d’Europe, 40.871 ; 2° Aryans d’Asie 48.065 ; 3° métis descendants d’Aryans, 22.283 ; 4° noirs affranchis et leurs descendants, 36.921 ; 5° Africains engagés 22.688 ; 6° Mongols , 1.490. L’esprit le plus pessimiste ne saurait y trouver les éléments d’une guerre civile. </p>
             <table>
-              <row>
-                <cell> Aryans d’Europe</cell>
-                <cell>{</cell>
-                <cell>Nés à la Réunion</cell>
-                <cell>Créoles blancs</cell>
-                <cell>30.318</cell>
-              </row>
-              <row>
-                <cell>31.118</cell>
-                <cell/>
-                <cell>- en Europe</cell>
-                <cell>Européens domiciliés</cell>
-                <cell>800</cell>
-              </row>
+               <row>
+                  <cell>Aryans d’Europe </cell>
+                  <cell>Nés à la Réunion</cell>
+                  <cell>Créoles blancs </cell>
+                  <cell>30.318</cell>
+               </row>
+               <row>
+                  <cell>31.118</cell>
+                  <cell>- en Europe </cell>
+                  <cell>Européens domiciliés</cell>
+                  <cell>800</cell>
+               </row>
             </table>
-
-          </note> politiques ; tous ont le même amour  du pays créole, le même respect filial pour la mère patrie. Cette population est une des plus libérales, des plus instruites, des plus avancées, du monde entier ; elle a résolu pour un avenir prochain le problème del’instruction généralisée, et possède déjà aujourd’hui <pb
-            facs="#IMG.14" n="14"/> une population masculine adulte de 30.990 hommes sur lesquels 24.642 savent lire et écrire, et dont 4.940 ont une instruction littéraire et scientifique. Sur les 24.086 hommes âgés de plus de 21 ans, 15.550 ont une instruction primaire plus ou moins avancée, 4.600 l’instruction secondaire ou supérieure, 3.986 seulement sont illettrés.</p>
-        <p>                                                                                                          Herland</p>
-        <p>            Le recensement de décembre 1881 donne</p>
-        <p>Population française (Européens ou affranchis)                                                                   119.942</p>
-        <p>Indiens                                                                                                                                  30.634</p>
-        <p>Malgaches                                                                                                                   6.370</p>
-        <p>Cafres                                                                                                                         9.313</p>
-        <p>Chinois                                                                                                                                     518</p>
-        <p>Troupes, marins, prisons, hospices, etc                                                                                    2.716</p>
-        <p>                                                                                                                                 169.493</p>
-        <table>
-          <row>
-            <cell>Aryans d’Europe </cell>
-            <cell>{</cell>
-            <cell>Nés à la Réunion </cell>
-            <cell> Créoles blancs </cell>
-            <cell>30.318 </cell>
-          </row>
-        </table>
-      </div>
-    </body>
-  </text>
+            <table>
+               <row>
+                  <cell>Métis croisés d’Aryans</cell>
+                  <cell>Libres avant 1848</cell>
+                  <cell>Métis libres </cell>
+                  <cell>10.106 </cell>
+               </row>
+               <row>
+                  <cell>13.899</cell>
+                  <cell>Esclaves avant 1848</cell>
+                  <cell>Métis affranchis</cell>
+                  <cell>3.793</cell>
+               </row>
+            </table>
+            <table>
+               <row>
+                  <cell>Africains anciens</cell>
+                  <cell>Nés à la Réunion </cell>
+                  <cell>Citoyens créoles</cell>
+                  <cell> 58.385</cell>
+               </row>
+               <row>
+                  <cell>58.385</cell>
+                  <cell>Nés en Afrique </cell>
+                  <cell>Citoyens africains </cell>
+                  <cell/>
+               </row>
+               <row>
+                  <cell/>
+                  <cell>Travailleurs libres</cell>
+                  <cell>Indiens</cell>
+                  <cell>3.348 787</cell>
+               </row>
+               <row>
+                  <cell/>
+                  <cell> récemment introduites </cell>
+                  <cell>Malgaches</cell>
+                  <cell>56 ---------------- 106.593</cell>
+               </row>
+            </table>
+            <p>Etat de la population au 1er janvier 1869.</p>
+            <table>
+               <row>
+                  <cell>Aryans d’Europe </cell>
+                  <cell>Nés à la Réunion </cell>
+                  <cell>Créoles blancs </cell>
+                  <cell> 39.326 </cell>
+               </row>
+               <row>
+                  <cell>40.871</cell>
+                  <cell>-en Europe</cell>
+                  <cell> Européens domiciliés </cell>
+                  <cell> 1.545 </cell>
+               </row>
+            </table>
+            <table>
+               <row>
+                  <cell> Aryans d’Asie </cell>
+                  <cell>Nés à la Réunion</cell>
+                  <cell>Créoles indiens</cell>
+                  <cell>2.270</cell>
+               </row>
+               <row>
+                  <cell>48.065</cell>
+                  <cell>Nés dans l’Inde</cell>
+                  <cell>Indiens créolisés</cell>
+                  <cell>24.484</cell>
+               </row>
+               <row>
+                  <cell/>
+                  <cell>Nés dans l’Inde </cell>
+                  <cell>Indiens étrangers </cell>
+                  <cell>21.311</cell>
+               </row>
+            </table>
+            <table>
+               <row>
+                  <cell>Métis croisés d’Aryans </cell>
+                  <cell>Libres avant 1848 </cell>
+                  <cell>Métis créoles </cell>
+                  <cell>13.153</cell>
+               </row>
+               <row>
+                  <cell>d’Europe et d’Africains</cell>
+                  <cell> affranchis </cell>
+                  <cell>Métis créoles </cell>
+                  <cell>9.230</cell>
+               </row>
+            </table>
+            <table>
+               <row>
+                  <cell>Africains affranchis et </cell>
+                  <cell> Nés à la Réunion depuis 1848 </cell>
+                  <cell>Créoles noirs</cell>
+                  <cell>16.984</cell>
+               </row>
+               <row>
+                  <cell>fils d’affranchis</cell>
+                  <cell> Nés à la Réunion avant 1848 </cell>
+                  <cell>Créoles noirs</cell>
+                  <cell>12.881</cell>
+               </row>
+               <row>
+                  <cell>35.921</cell>
+                  <cell>Nés en Afrique</cell>
+                  <cell>Anciens citoyens</cell>
+                  <cell> 7.056</cell>
+               </row>
+            </table>
+            <table>
+               <row>
+                  <cell> travailleurs africains et </cell>
+                  <cell>Nés à la Réunion </cell>
+                  <cell>Créoles noirs </cell>
+                  <cell>769</cell>
+               </row>
+               <row>
+                  <cell>et fils d’Africains</cell>
+                  <cell>Nés en Afrique </cell>
+                  <cell>Cafres anciens</cell>
+                  <cell/>
+               </row>
+               <row>
+                  <cell>22.688</cell>
+                  <cell>Nés en Afrique</cell>
+                  <cell>Cafres nouveaux</cell>
+                  <cell>21.919</cell>
+               </row>
+            </table>
+            <table>
+               <row>
+                  <cell>Race mongolique </cell>
+                  <cell>Introduits depuis plus de 10 ans </cell>
+                  <cell>Chinois créolisés </cell>
+                  <cell> 392 </cell>
+               </row>
+               <row>
+                  <cell/>
+                  <cell>Introduits depuis moins de 10 ans </cell>
+                  <cell>Annainite </cell>
+                  <cell>1.098 ---------------- 172.418<pb facs="#IMG.5" n="5"/>
+                  </cell>
+               </row>
+            </table>
+            <p>Etat de la population au 1<hi rendition="#sup">er</hi> janvier 1849.</p>
+            <p>On peut dire que la Réunion a eu deux colonisations distinctes. La première lente et progressive, s’étend de <hi rend="unknown" rendition="#none">l’arrivée des premiers hommes jusque vers 1820</hi>, comprenant ainsi un espace de plus de deux siècles. Elle fut constituée par deux éléments primitifs, <hi rend="unknown" rendition="#none">
+le Français et le Malgache</hi>. La seconde fut caractérisée par l’introduction des Indiens, des Cafres et des Duhambanes, nécessité par le développement del’industrie sucrière. Déjà, avant 1820, quelques immigrations partielles de Cafres et d’Indiens avaient eu lieu. De 1820 à 1830, une vingtaine de mille Cafres et Malgaches furent introduits comme esclaves, de 1849 à 1867, 108.594 travailleurs asiatiques et africains vinrent renforcer nos ateliers et remplacer les anciens esclaves ou affranchis. </p>
+            <p>            I. Les premiers habitants de la Réunion furent, dit-on, quelques ouvriers français du Fort-Dauphin, accompagnés de femmes malgaches. À ce premier petit noyau vinrent bientôt s’ajouter des marins en relâche, des officiers d’administration, des employés de la compagnie des Indes avec ou sans leurs femmes. Depuis, les sources du recrutement européen sont restés à peu près les mêmes : officiers de terre et de mer, administrateurs, magistrats, médecins, commerçants, marins et soldats. Il en résulte une particularité remarquable ; c’est que presque tous ces premiers colons appartenaient, sauf de rares exceptions, à la bourgeoisie. Il n’en a pas été de même, paraît-il, dans les colonies de l’ouest, colonisées, dit-on, par des cadets de familles nobles. De là peut-être la morgue des colonies de l’ouest, et les difficultés de l’émancipation, et, au contraire, la fusion si facile des classes à la Réunion, l’admission, sans difficulté, aux affranchis avec opérations électorales. En aucun pays du monde, on ne voit, comme à la Réunion, les sommités sociales, gouvernants, magistrats, administrateurs, représentants du haut commerce et de la grande industrie, hommes appartenant-aux carrières libérales, vivre sur le pied de l’égalité la plus complète, de la familiarité, presque de la camaraderie avec les représentants estimables du reste des corporations ou professions regardées, en France et ailleurs, comme inférieures. Nous avons reçu de nos pères des instincts libéraux ; nous sommes relativement neufs et sans précédents politiques. Une seule hideur sociale pesait sur nous, l’esclavage, dont les traces vont s’effaçant. La population instruite, éclairée est complètement libérale. Existe-t-il, comme en France, un parti anti-libéral <pb facs="#IMG.6" n="6"/> et rétrograde ? Oui, le parti du journal la Malle, mais qui ne représente que quelques individualités respectables. Notre côté faible, c’est l’indifférence, l’insouciance en matière politique ; c’est l’habitude de tout attendre du gouvernement, de trouver qu’il ne fait jamais assez, quand il fait toujours trop. Ce défaut tient au régime arbitraire et par trop despotique que la France nous a longtemps infligé, et aux préoccupations de nos affaires particulières. Nous ne tarderons pas à nous enquérir, il n’en faut pour preuve que la joie qui éclate à la nouvelle d’une liberté politique. </p>
+            <p>            La race qui concourt, avec les Aryans d’Europe, à la formation de la première colonisation, fut la branche africaine de Madagascar, les Malgaches, particulièrement les habitants de la côte. Est en Sud-Est de cette île, les Antanoches et les Betsimmitsaras. Ceux-ci en particulier, sont comme pour être de toutes les peuplades malgaches, la plus douce de mœurs, la plus accessible à la civilisation européenne, en même temps qu’elle est la plus intelligente et la plus industrieuse. Aimant la vie de famille et ennemie de toute violence, elle est restée soumise à la domination hova, malgré sa supériorité numérique. Celle est la souche mère de nos noirs créoles, et, sous ce rapport, nous différons encore des Antilles, dont l’élément africain est représenté par les Yolofs et les nègres de la côte de Guinée, peuplades dont la vigueur physique, le caractère énergique, les mœurs rudes et sauvages sont connus de tous. De leurs alliances avec les Caraïbes autochthones est résultée cette population redoutable que la France a vue de près à Saint-Dominique et aux Petits Antilles, et que les armées espagnoles rencontrent devant elles à Cuba. Peut-on s’étonner de la différence qui se rencontre devant l’urne électorale ? </p>
+            <p>            Ces descendants de Betsinmitsaras ont acquis une supériorité manifeste sur les autres descendants d’africains qui peuplent la colonie. Ils se sont tellement identifiés avec nos mœurs, nos usages, notre civilisation, qu’il faut les regarder comme de véritables Français. Ils se sont fait, par l’instruction une place importante dans la société coloniale ; ils sont supérieurs aux paysans de la France, et ne le cèdent qu’aux ouvriers des grandes villes. Leurs métis de 4<hi rendition="#sup">
+e</hi> et de 5<hi rendition="#sup">e </hi>croisement ne se distinguent plus des Aryans d’Europe. Jouissant des mêmes avantages de fortune et d’aisance, élevés aux mêmes écoles, ils ont la même importance sociale, et sont, pour tous ces rapports, sur le pied del’égalité avec les créoles blancs. <pb facs="#IMG.7" n="7"/>
+            </p>
+            <p>            Les métis descendant d’affranchis, ou affranchis eux-mêmes, sont dans des conditions opposées. La gêne du pays, l’absence de prévoyance ne leur ont pas permis de se créer cet avoir qui donne l’aisance et l’élévation dans le milieu social. Ils sont restés généralement dans la classe des travailleurs salariés, comme la plupart des noirs créoles. C’est parmi eux que se recrutent nos meilleurs ouvriers, depuis le simple manœuvre jusqu’au mécanicien, è l’orfèvre, au typographe, petits-marchands, commis, hommes d’affaires, régisseurs. Comme ils ne le cèdent en rien aux métis fils de libres, et qu’ils ont les mêmes droits, la lice leur est ouverte ; le travail et l’épargne feront le reste.</p>
+            <p>            Il n’y a point ici de classe ou carte de mulâtres, comme aux Antilles et Maurice, carte qui là-bas vit en antagonisme ouvert avec les créoles blancs, comme avec les créoles noirs. Ici nul antagonisme, par conséquent, nulle haine ; similitude de caractères, de mœurs, d’habitudes, par conséquent rapprochement forcé. Les idées libérales, avancées, communes aux trois groupes, et l’infériorité numérique des deux seconds à l’égard du premier, ont concouru à éviter l’état de choses que l’on déplore dans les autres colonies.</p>
+            <p>            Les anciens préjugés de couleur disparaissent ; des alliances regardées jadis comme des énormités sont devenues si nombreuses qu’elles passent inaperçues et font prévoir une fusion complète. En résumé les divers groupes, créoles, blancs, européens, métis anciens libres, métis affranchis et fils d’affranchis, créoles noirs, affranchis ou fils d’affranchis, en un mot tous les hommes de la première colonisation forment un tout compacte et uni, la véritable population coloniale dela Réunion. Cette population, en y comprenant les 3.039 jeunes enfants indiens ou africains nés dans le pays, et en toute justice aussi créoles que les autres, s’élève à 96.158 âmes. </p>
+            <p>            Les 76.260 étrangers introduits comme travailleurs ou esclaves depuis 1820, complètent la population totale de 172.418 âmes, soit : hommes 30.992, dont <pb facs="#IMG.8" n="8"/> 24.056 ont plus de 21 ans ; femmes adultes, 26.466 ; enfants 19.784 ; fillettes 18.916.</p>
+            <p>            II. La deuxième colonisation débuta vers 1820, jusqu’alors les propriétés rurales, couvertes de girofliers, de caféiers, de muscadiers, etc., n’exigeaient qu’un nombre restreint de bras ; 30.000 esclaves, parmi lesquels 10 à 11 mille hommes et 7 à 8 mille femmes valides, plus une dizaine de milliers de vieillards et d’enfants suffisaient à l’exploitation des produits intertropicaux qui faisaient de la Réunion une des plus riches colonies. À l’aide du revenu de ces produits et de quelques autres denrées d’un usage journalier, les 35.000 âmes qui formaient alors la population libre, menaient cette existence douce, patriarcale, hospitalière, quelque fois large et confortable qui faisait l’admiration des étrangers. On voulut mieux, on voulut essayer la grande industrie sucrière ; la hache fit tomber les girofliers et les caféiers.</p>
+            <p>            150.000 hommes furent introduits de 1824 à 1869. Trois races concoururent à les fournir : les Indiens pour 70.911 immigrants ; les Africains de la côte d’Afrique et de Madagascar pour 74.303 ; les Chinois et les Annamites pour 2.115. Cette immigration se fit en deux étapes séparées par un intervalle de dix ans. 1° l’immigration esclave de 1824 à 1838 ; 2° celles des travailleurs libres de 1848 à 1869. </p>
+            <p>            Première étape. Il est impossible de trouver le chiffre exact des esclaves qui furent introduits pendant cette période de 14 ans. Des calculs approximatifs permettent seuls d’admettre qu’il fut introduit plus de 20.000 esclaves de 1824 à 1826, et que plus de 20.000 autres arrivèrent de 1826 à 1836. Les lieux de provenance de ces esclaves furent la côte Est d’Afrique, la côte O et S.O de Madagascar, les îles de la Malaisie et une partie des côtes de l’Inde.</p>
+            <p>            Deuxième étape. De 1848 à 1868, 110.329 travailleurs libres ont été introduits à la Réunion, tous provenant de l’Inde pour 73.911, de la côte Est d’Afrique et Ouest de Madagascar pour 34.303 : de la Chine et de la Cochimchine pour 2.215.</p>
+            <p>            Africains. Des 40.000 esclaves de la première étape, <pb facs="#IMG.9" n="9"/> 28.000 à peu près existaient en 1848, lorsque la France les racheta, ainsi que les esclaves de la première colonisation au nombre de 32.000. Depuis cette époque, les 28.000 affranchis étrangers ont considérablement diminué en nombre, sous l’influence de l’âge, des maladies épidémiques, et peut-être aussi de la misère dans laquelle ils vivent sur les hauteurs, existence sauvage qu’ils ont préférée aux travaux des ateliers. Ces Africains ne sont aujourd’hui qu’au nombre de 7.000, dont 2.000 femmes, tous avancés en âge, les plus jeunes n’ayant pas moins de 50 ans.</p>
+            <p>            Quant aux 34.303 nouveaux Africains, Cafres, Malgaches et Sakalaves introduits de 1850 à 1860 comme travailleurs libres, 11.070 sont morts, et 1.511 presque tous Malgaches, repatriés. Les 22.688 autres, aussi que les enfants qui en sont nés, ont élu domicile dans la colonie. Ces 22.688 Africains sont répartis comme suit : 16.192 hommes, 4774 femmes et 1722 enfants au dessous de 14 ans.</p>
+            <p>            Indiens. Des 73.911 Indiens introduits de 1847 à 1867, 12.185 sont morts, 14.972 sont retournés dans l’Inde ou partis pour d’autres colonies, et 48.065, y compris les enfants nés dans la Colonie, sont encore dans le Pays.</p>
+            <p>            Sur ces 48.065 Indiens, 24.484 sont établis dans le Pays, sont devenus propriétaires, marchands, industriels. Sur les 21.311 autres, 8796 seulement ont moins de 5 ans de séjour ; ce sont de vrais étrangers, à leur premier engagement. Les 12.000 intermédiaires n’étant pas partis à l’expiration des 5 premières années, s’établiront probablement dans le Pays d’une manière définitive. Enfin les 2.270 enfants indiens nés à la Réunion sont de véritables créoles. On est donc en droit d’établir que les Indiens ont donné à la population sédentaire du Pays un surcroît de 30 à 35 mille âmes.</p>
+            <p>            Mongols. Sur les 2.115 Mongols, 828 sont Chinois, et 1287 Annamites. Des 828 Chinois introduits avant 1848, 400 existent encore ; les autres sont morts ou ont été repatriés. Des 1287 Annamites arrivés depuis 1864, 209 sont morts ou ont été repatriés. Plusieurs des 1.078 qui nous restent seront certainement rappelés par <pb facs="#IMG.10" n="10"/> les autorités françaises de la Cochinchine. La race mongole est donc un élément avec lequel il y a peu à compter et qui ne fera pas souche dans la Colonie. </p>
+            <p>            En résumé, des 15.000 travailleurs, tant esclaves que libres introduits depuis 1824, 70 620 ont disparu. Les 79.380 qui nous restent, sont, à part 6 à 7 mille Indiens et Annamites, destinés à demeurer parmi nous.</p>
+            <p>            1° Depuis 1826, époque où la Colonie s’est faite sucrière, le Pays a eu un effectif de travailleurs étrangers variant entre 62.000 et 78.000, soit, en moyenne, 70.000. </p>
+            <p>            2° La perte annuelle des étrangers par mortalité ou repatriement, a été, en moyenne, de 1.794 hommes, de sorte que, pour entretenir nos ateliers avec l’effectif actuel de 72.324, il faut introduire 1.800 travailleurs étrangers par an.</p>
+            <p>            3° L’introduction de ces 1.800 travailleurs coûtera, en moyenne, 540.000 francs, si ce sont des Indiens, et <hi rend="unknown" rendition="#none">un</hi> million, s’ils proviennent de la côte d’Afrique ou de Madagascar.</p>
+            <p>            4° L’introduction des 110.329 étrangers de la 2<hi rendition="#sup">e</hi> colonisation, non compris les 40.000 esclaves rachetés, a coûté au Pays plus de 50.000.000 de francs, soit une moyenne annuelle de 2.500.000 fr., pour l’espace compris entre 1848 et 1868.</p>
+            <p>            5° L’entretien annuel de ces 70.000 travailleurs en nourriture, logement et soins médicaux, revient à peu près à 7.000.000 de francs.</p>
+            <p>            6° Les gages de ces 70.000 travailleurs reviennent, en moyenne, à plus de 8.000.000 de francs, et arriveront bientôt, par les renouvellements d’engagements, à plus de 10.000.000 de francs.</p>
+            <p>            7° La dépense totale annuelle moyenne des 72.000 travailleurs, comprenant l’introduction, le repatriement, l’entretien, les gages et l’amortissement du premier capital, s’élève par conséquent à 18 millions et peut arriver à 20 millions de francs par an.</p>
+            <p>            8° Pendant les 20 dernières années, la production annuelle moyenne de sucre est restée au dessous de 50 millions de kilogrammes, donnant un revenu brut de 23 à 25 millions de francs.</p>
+            <p>            Il en résulte que la part de l’intelligence directrice, c’est-à-dire des 1.000 sucriers et planteurs, ainsi que celle du <pb facs="#IMG.11" n="11"/> capital d’exploitation, qui serait de 173.037.905 fr. d’après les statistiques officielles, ne pourraient être que de 5 à 6 millions, ce qui fait à peu près 3 p % pour le capital et O fr. pour les industriels. La Colonie est donc dans une impasse.</p>
+            <p>            Deuxième race africaine. Africaine. Les Africains de la 2<hi rendition="#sup">
+e</hi> colonisation proviennent, nous l’avons dit, de deux sources distinctes : 1° la côte d’Afrique, qui a fourni les Cafres, les Mozambiques, les Inhambanes des deux étapes, ayant tous le type africain dans toute sa pureté ; 2° la côte Ouest de Madagascar, qui nous a fourni les Sakalaves, les Antakaras, africain probablement sémitisés par les Arabes. Tous, Cafres et Malgaches, sont des hommes forts, bien constitués, aptes aux travaux agricoles, qui exigent peu d’intelligence. Moins souples, moins intelligents, moins industrieux que les Betsimmitsaras, ils remplacent ces qualités par la force et l’énergie, de sorte que l’introduction de cet élément, qui s’amoindrira sans cesse et finira par s’absorber dans les autres, aura cependant son utile influence sur les générations futures, comme élément anthropologique.</p>
+            <p>            Tous ces hommes, arrivés parmi nous à l’état à peu près sauvage, se sont dégrossis et ont acquis aujourd’hui une légère teinte de civilisation. L’Africain est très-imitateur ; mais comme il n’imite que ce qu’il saisit-bien, et qu’il n’a pu saisir que ce qui frappe les yeux, il n’a pu prendre de notre civilisation que la partie superficielle. En sociabilité, il n’a pris que nos habitudes, et nos vêtements ; en religion, que le culte antérieur et les pratiques. Quant aux dogmes et à la morale, aux devoirs et aux services réciproques, n’ayant pu en saisir la portée et l’utilité, il n’a pu parvenir, jusqu’à présent, à se les assimiler.</p>
+            <p>            Il n’existe qu’une différence peu tranchée, sous le rapport du degré de civilisation, entre les Africains des deux étapes, les anciens esclaves et les travailleurs libres ; Ces derniers cependant se sont un peu plus civilisés en 8 ou 10 ans que nos anciens esclaves en 30 ou 40 ans. C’est que l’esclavage est moins fait pour civiliser que le régime du travail réglementé par contrat d’engagement. <pb facs="#IMG.12" n="12"/>
+            </p>
+            <p>            La partie dominante du caractère des Africains, Cafres, Mozambiques Inhambanes et Vakalaves, est une gaité native habituelle, doublée d’une insouciance, d’une imprévoyance sans pareille. Il semble impossible aux hommes de ces divers groupes de conserver rien en propre valeur, propriété ou argent monnayé.</p>
+            <p>            Ils ont des besoins incessants pendant qu’ils ont entre les mains une partie du salaire qu’ils ont acquis ; mais dès qu’il n’en reste plus une parcelle, ils s’en consolent facilement et cessent même d’avoir des besoins. Si ce n’était le besoin matériel de la faim, ils resteraient volontiers inactifs, n’ayant aucun stimulant pour un nouveau déploiement d’activité.</p>
+            <p>            2° Race aryane. Aryans d’Asie. Les Indiens, provenant d’un rameau aryan de même souche que les branches qui ont peuplé l’Europe, ont conservé les formes de cette race remarquable et ses aptitudes intellectuelles. Leur infériorité actuelle à notre égard est le résultat nécessaire du gouvernement sacerdotal et du despotisme de castes auquel ils sont soumis dans l’Inde. De là, cette souplesse, cette faiblesse, cette servilité, souvent cette lassesse qui sont, avec l’hypocrisie, la ruse et le mensonge, souvent poussées fort loin chez eux. Ne sont-ce par là toujours les vices inhérents à tout être opprimé. Ils auront beaucoup de peine à se défaire ces vices primitifs.</p>
+            <p>            Les Indiens sont prévoyants, économes ; ils savent se faire une épargne. Ils ont des qualités qui doivent nous faire désirer de les voir s’implanter sur notre sol. Ces qualités sont : 1°une aptitude très-grande aux travaux agricoles qu’ils préfèrent souvent aux autres ; 2° La possibilité acquise et devenue organique de se livrer aux travaux des champs sous le soleil tropical ; 3°Une activité constamment surexcitée par l’intérêt, l’appât du gain, le désir de posséder ; 4° l’esprit d’association.</p>
+            <p>            Il arrivera peut-être un jour où le travail réglementé par le livret, qui nous semble aujourd’hui le seul possible, sera remplacé par le travail libre. On finira par comprendre que, au milieu d’une foule de vices, provenant des nombreuses entraves que le livret uniforme d’engagement met à l’activité et à l’initiative privées, se trouve surtout celui de rétribuer le travailleur inepte comme l’homme actif, fort et intelligent. Le jour où le travail deviendra libre, nous verrons les Indiens se grouper d’eux-mêmes, s’associer pour <pb facs="#IMG.13" n="13"/> entreprendre les travaux agricoles les plus considérables. </p>
+            <p>            Race mongole. Ce groupe est si peu nombreux qu’il ne peut avoir aucune influence sur l’avenir de ce pays. Les 400 et quelques Chinois arrivés depuis nombre d’années, forment une petite population à part, adouée au commerce de détail, spécialement à celui des denrées alimentaires. Les Chinois sont actifs, intelligents, ont le génie de la spéculation, calculent avec une rapidité et une exactitude surprenante. </p>
+            <p>            Ils ont de l’ordre, aiment à épargner, à capitaliser et vivent de peu. Les uns les disent d’une grande probité commerciale, les autres prétendent que leurs bénéfices ne sortent pas toujours de sources très pures.</p>
+            <p>            Les Annanites, au nombre de 1.073 ne doivent guère nous occuper attendu que notre nouvelle colonie dela Cochimchine, étant sortie dela période de conquête, n’aura plus désormais à nous envoyer des condamnés politiques. </p>
+            <p>            Résumé : Il existe, à la Réunion, deux populations bien distinctes : la première composée d’enfants de la France, nés dans la Colonie ou dans la mère-patrie ; la seconde comprenant les étrangers devenus ses enfants adoptifs. </p>
+            <p>            La population réellement coloniale dela Réunion diffère complètement de celle des Antilles françaises, sous le quadruple rapport des origines, du caractère, des mœurs et des habitudes. </p>
+            <p>            Les divers groupes composant la première population créoles blancs, européens, métis anciens libres, métis affranchis et fils d’affranchis, en un mot tous les hommes qui proviennent de la première colonisation, forment un tout compacte et uni, qui restera longtemps la véritable population coloniale de la Réunion. Tous ont même civilisation européenne, mêmes mœurs, mêmes instincts aspirations<note n="5" place="foot" type="editorial">
+                  <table>
+                     <row>
+                        <cell> Aryans d’Europe</cell>
+                        <cell>{</cell>
+                        <cell>Nés à la Réunion</cell>
+                        <cell>Créoles blancs</cell>
+                        <cell>30.318</cell>
+                     </row>
+                     <row>
+                        <cell>31.118</cell>
+                        <cell/>
+                        <cell>- en Europe</cell>
+                        <cell>Européens domiciliés</cell>
+                        <cell>800</cell>
+                     </row>
+                  </table>
+               </note> politiques ; tous ont le même amour  du pays créole, le même respect filial pour la mère patrie. Cette population est une des plus libérales, des plus instruites, des plus avancées, du monde entier ; elle a résolu pour un avenir prochain le problème del’instruction généralisée, et possède déjà aujourd’hui <pb facs="#IMG.14" n="14"/> une population masculine adulte de 30.990 hommes sur lesquels 24.642 savent lire et écrire, et dont 4.940 ont une instruction littéraire et scientifique. Sur les 24.086 hommes âgés de plus de 21 ans, 15.550 ont une instruction primaire plus ou moins avancée, 4.600 l’instruction secondaire ou supérieure, 3.986 seulement sont illettrés.</p>
+            <p>                                                                                                          Herland</p>
+            <p>            Le recensement de décembre 1881 donne</p>
+            <p>Population française (Européens ou affranchis)                                                                   119.942</p>
+            <p>Indiens                                                                                                                                  30.634</p>
+            <p>Malgaches                                                                                                                   6.370</p>
+            <p>Cafres                                                                                                                         9.313</p>
+            <p>Chinois                                                                                                                                     518</p>
+            <p>Troupes, marins, prisons, hospices, etc                                                                                    2.716</p>
+            <p>                                                                                                                                 169.493</p>
+            <table>
+               <row>
+                  <cell>Aryans d’Europe </cell>
+                  <cell>{</cell>
+                  <cell>Nés à la Réunion </cell>
+                  <cell> Créoles blancs </cell>
+                  <cell>30.318 </cell>
+               </row>
+            </table>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

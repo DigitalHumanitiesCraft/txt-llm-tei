@@ -1,373 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Karl Friedrich Bartsch an Hugo Schuchardt (01-00551)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1090">
-            <forename>Karl Friedrich</forename>
-            <surname>Bartsch</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3364" type="PID">o:hsa.letter.3364</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-00551</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">00551</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1090">
-                <forename>Karl Friedrich</forename>
-                <surname>Bartsch</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.319" ref="http://sws.geonames.org/2907911">Heidelberg</origPlace>
-              <origDate ana="dcterms:created" when="1872-06-30">1872-06-30</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Karl Friedrich Bartsch und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1090"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3364">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1090" ref="https://viaf.org/viaf/12304600">
-            <forename>Karl Friedrich</forename>
-            <surname>Bartsch</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.319" key="#GID.1" ref="http://sws.geonames.org/2907911">Heidelberg</placeName>
-          <date when="1872-06-30">1872-06-30</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Heidelberg</settlement>
-                <name ref="http://geonames.org/2907911" type="fcode:PPLA3">Heidelberg</name>
-                <location>
-                  <geo>8.69079,49.40768</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1090" type="context">
-                        Korrespondenz Karl Friedrich Bartsch - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3515" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Institutionalisierung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.922" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Romanische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.141" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universitätsangelegenheiten</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4099" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Englische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4785" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Kiel</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4786" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Lehrerbildung/Lehramtsstudium</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3481" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Schaffung von Lehrstühlen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4449" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universitäre Lehre</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4787" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Breslau</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.264" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Berufungen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.140" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universitäten</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4172" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Straßburg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4432" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Germanische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.930" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Empfehlung (Personen)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.963" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Persönliche Treffen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4434" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Romanistik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.462" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsch-Französischer Krieg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4788" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Gießen</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3364" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3364" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3364" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3364" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3364" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Heidelberg 30. Juni 72</dateline>
-        <opener>Geehrter Herr Doctor,</opener>
-
-        <p> Wenn ich erst jetzt Ihren Brief beantworte, so geschieht es hauptsächlich weil ich immer dachte, es würde von Kiel aus eine bestimmtere Anfrage an mich gelangen.<note
-            n="1" place="foot" type="editorial">Möglicherweise ein Gutachten über <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Schuchardt</persName>?</note> In Kiel legt man das Hauptgewicht auf die Ausbildung zum Lehramte in den neueren Sprachen.<note
-            n="2" place="foot"
-              type="editorial">Am 8.1.1869 stellte der Kieler Latinist <persName>
-Otto Ribbeck</persName> in der Fakultätssitzung den Antrag, dass eine Professur für neuere Sprachen (<ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4434">Romanistik</ref> und <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4099">Anglistik</ref>) errichtet werde. Er wurde mit dem Entwurf eines entsprechenden Gesuchs beauftragt, der den Mitgliedern der Fakultät als Rundschreiben zur Zustimmung vorgelegt wurde. Die Sache zog sich jedoch hin, eine Verzögerung wurde durch den <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.462">Deutsch-französischen Krieg</ref> bewirkt. Doch im Staatshaushalt des Berliner Kultusministeriums für 1872/73 werden drei neue Ordinariate für die Kieler Philosophische Fakultät ausgewiesen, darunter eines für romanische Sprachen. Im WS 1973/74 begann <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4457">Albert Stimming</persName> (1846-1922), der im Juli 1873 in <placeName>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3364" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Heidelberg 30. Juni 72</dateline>
+            <opener>Geehrter Herr Doctor,</opener>
+            <p> Wenn ich erst jetzt Ihren Brief beantworte, so geschieht es hauptsächlich weil ich immer dachte, es würde von Kiel aus eine bestimmtere Anfrage an mich gelangen.<note n="1" place="foot" type="editorial">Möglicherweise ein Gutachten über <persName ref="[authorityLink]">Schuchardt</persName>?</note> In Kiel legt man das Hauptgewicht auf die Ausbildung zum Lehramte in den neueren Sprachen.<note n="2" place="foot" type="editorial">Am 8.1.1869 stellte der Kieler Latinist <persName>
+Otto Ribbeck</persName> in der Fakultätssitzung den Antrag, dass eine Professur für neuere Sprachen (<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4434">Romanistik</ref> und <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4099">Anglistik</ref>) errichtet werde. Er wurde mit dem Entwurf eines entsprechenden Gesuchs beauftragt, der den Mitgliedern der Fakultät als Rundschreiben zur Zustimmung vorgelegt wurde. Die Sache zog sich jedoch hin, eine Verzögerung wurde durch den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.462">Deutsch-französischen Krieg</ref> bewirkt. Doch im Staatshaushalt des Berliner Kultusministeriums für 1872/73 werden drei neue Ordinariate für die Kieler Philosophische Fakultät ausgewiesen, darunter eines für romanische Sprachen. Im WS 1973/74 begann <persName ref="[authorityLink]">Albert Stimming</persName> (1846-1922), der im Juli 1873 in <placeName>
 
 Kiel</placeName> habilitiert worden war, mit dem Unterricht und wurde am 1.10.1876 zum Extraordinarius ernannt, vgl. Karl Jordan / Erich Hofmann, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5660">
-                <hi rend="unknown" rendition="#none">Geschichte der Philosophischen Fakultät</hi>
-              </ref>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5660">
+                        <hi rend="unknown" rendition="#none">Geschichte der Philosophischen Fakultät</hi>
+                     </ref>
+                  </bibl>. Teil 2, Neumünster 1969 (Geschichte der Christian-Albrechts-Universität Kiel 1665-1965, Bd. 5, 2), 253-256.</note> Diese Rücksicht ist es auch, die die allerdings sonst seltsame Verbindung des Englischen mit den romanischen Sprachen erklärt.<note n="3" place="foot" type="editorial">Vgl. im einzelnen Hans Helmut Christmann, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4105">
+                        <hi rend="unknown" rendition="#none">Romanistik und Anglistik an der deutschen Universität im 19. Jahrhundert. Ihre Herausbildung als Fächer und ihr Verhältnis zu Germanistik und klassischer Philologie</hi>
+                     </ref>
+                  </bibl>, Mainz-Stuttgart 1985 (Akad. d. Wiss. u. d. Lit. Mainz, Abh. Geistes u. Sozialwiss. Kl., Jg. 1985, 1), 23-27. Wenn Christmann schreibt, die ersten Stelleninhaber hätten nur historische Grammatik, besonders Lautlehre, und Textkritik, vor allem Beschäftigung mit mittelalterlichen Literaturdenkmälern, gelehrt, dann relativiert der vorliegende wie der folgende Brief dieses Annahme!</note> Ich möchte nun von Ihnen hören ob Sie im Französischen und Englischen auch praktisch (mündlich u. schriftlich) einigermaßen geübt sind, da man hierauf wohl in Kiel sehen wird. Ich gestehe zu daß diese praktische Rücksicht eine leidige ist, aber bei kleineren Universitäten ist sie einmal nothwendig. Diese Rücksicht erklärt auch den von Ihnen berührten Fall einer raschen Beförderung z. Extraordinar. u. Ordinarius. Der Betreffende <pb facs="#IMG.2" n="2"/> hatte sich gemeldet und sich auf mich berufen, und ich habe ihn dann allerdings empfohlen, auch seitdem in Wien, wo man eine Prof. für Anglistik gründen wollte, und darauf hin ist er Ordinarius geworden, da er vorzog in K. zu bleiben.<note n="4" place="foot" type="editorial">Es handelt sich um <persName ref="[authorityLink]">Jacob Schipper</persName> (1842-1915), der 1867 in <placeName ref="[authorityLink]">
+Bonn</placeName> von <persName ref="[authorityLink]">Delius</persName> für neuere Sprachen promoviert und zum WS 1871/72 auf Vorschlag von <persName ref="[authorityLink]">Diez</persName>, <persName ref="[authorityLink]">Delius</persName> und <persName ref="[authorityLink]">Bartsch</persName> als ao. Prof. für neuere Sprachen nach <placeName>
 
-            </bibl>. Teil 2, Neumünster 1969 (Geschichte der Christian-Albrechts-Universität Kiel 1665-1965, Bd. 5, 2), 253-256.</note> Diese Rücksicht ist es auch, die die allerdings sonst seltsame Verbindung des Englischen mit den romanischen Sprachen erklärt.<note
-            n="3" place="foot" type="editorial">Vgl. im einzelnen Hans Helmut Christmann, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4105">
-                <hi rend="unknown" rendition="#none">Romanistik und Anglistik an der deutschen Universität im 19. Jahrhundert. Ihre Herausbildung als Fächer und ihr Verhältnis zu Germanistik und klassischer Philologie</hi>
-              </ref>
-
-            </bibl>, Mainz-Stuttgart 1985 (Akad. d. Wiss. u. d. Lit. Mainz, Abh. Geistes u. Sozialwiss. Kl., Jg. 1985, 1), 23-27. Wenn Christmann schreibt, die ersten Stelleninhaber hätten nur historische Grammatik, besonders Lautlehre, und Textkritik, vor allem Beschäftigung mit mittelalterlichen Literaturdenkmälern, gelehrt, dann relativiert der vorliegende wie der folgende Brief dieses Annahme!</note> Ich möchte nun von Ihnen hören ob Sie im Französischen und Englischen auch praktisch (mündlich u. schriftlich) einigermaßen geübt sind, da man hierauf wohl in Kiel sehen wird. Ich gestehe zu daß diese praktische Rücksicht eine leidige ist, aber bei kleineren Universitäten ist sie einmal nothwendig. Diese Rücksicht erklärt auch den von Ihnen berührten Fall einer raschen Beförderung z. Extraordinar. u. Ordinarius. Der Betreffende <pb
-            facs="#IMG.2"
-            n="2"/> hatte sich gemeldet und sich auf mich berufen, und ich habe ihn dann allerdings empfohlen, auch seitdem in Wien, wo man eine Prof. für Anglistik gründen wollte, und darauf hin ist er Ordinarius geworden, da er vorzog in K. zu bleiben.<note
-            n="4" place="foot" type="editorial">Es handelt sich um <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2636">Jacob Schipper</persName> (1842-1915), der 1867 in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.61">
-Bonn</placeName> von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.5115">Delius</persName> für neuere Sprachen promoviert und zum WS 1871/72 auf Vorschlag von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">Diez</persName>, <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.5115">Delius</persName> und <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1090">Bartsch</persName> als ao. Prof. für neuere Sprachen nach <placeName>
-
-Königsberg</placeName> berufen wurde. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2636">Schipper</persName> lehnte den Wiener Ruf zunächst zwar ab, wurde dafür im April 1872 mit einem Königsberger Ordinariat entschädigt, nahm jedoch den erneuerten Wiener Ruf im Jahr 1876 an.</note> Übrigens habe ich Ihnen erst kürzlich gedankt. Als man mich nach Breslau haben wollte und ich ablehnte, schlug ich <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2020">Lemcke</persName>
-          <note n="5" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2020">Ludwig Lemcke</persName> (1816-1884), seit dem 1.10.1867 o. Prof. der romanischen und englischen Philologie in Gießen; anders als <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1090">
+Königsberg</placeName> berufen wurde. <persName ref="[authorityLink]">Schipper</persName> lehnte den Wiener Ruf zunächst zwar ab, wurde dafür im April 1872 mit einem Königsberger Ordinariat entschädigt, nahm jedoch den erneuerten Wiener Ruf im Jahr 1876 an.</note> Übrigens habe ich Ihnen erst kürzlich gedankt. Als man mich nach Breslau haben wollte und ich ablehnte, schlug ich <persName ref="[authorityLink]">Lemcke</persName>
+               <note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Ludwig Lemcke</persName> (1816-1884), seit dem 1.10.1867 o. Prof. der romanischen und englischen Philologie in Gießen; anders als <persName ref="[authorityLink]">
 Bartsch</persName> schreibt, lehnte er 1873 den Ruf nach <placeName>
 
 Breslau</placeName> und 1874 einen nach <placeName>
-Marburg</placeName> ab, möglicherweise weil er zu diesem Zeitpunkt Rektor der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4788">Universität Gießen</ref> war.</note> vor (der dann auch den Ruf bekommen und angenommen hat); für den Fall daß er nicht käme, schlug ich jüngere Leute, darunter auch Sie, vor. In Gießen wird sich durch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2020">
-Lemckes</persName> Abgang wieder eine Aussicht eröffnen. Sie können, wenn Sie mit L. bekannt sind, an diesen offen schreiben. Von <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.499">Straßburg</placeName> weiß ich gar nichts, wie dort die Sachen stehen; die Fakultät wünscht dringend wegen der Prüfungscommission, daß die germanische u. romanische Professur möglichst bald besetzt <pb
-            facs="#IMG.3" n="3"/> werden. In diesem Semester scheint jedoch dazu keine Aussicht vorhanden zu sein.<note
-            n="6" place="foot" type="editorial">Der Romanist <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1164">Eduard Böhmer</persName> (1827-1906) wurde am 21.9.1872 ernannt, der Germanist <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2627">Wilhelm Scherer</persName> (1841-1886) am 27.9.1872, und der Anglist <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2845">Bernhard ten Brink</persName> (1841-1892) am 8.11.1872.</note>
-        </p>
-
-        <p> Daß sie auf allen Gebieten des Romanischen arbeiten, ist durchaus nicht wichtig; aber Sie müßten freilich auf allen soweit zu Hause sein, daß Sie darüber Vorlesungen zu halten im Stande sind. Also namentlich historische Grammatik der französischen und der englischen Sprachen, Lectüre und Literaturgeschichte der beiden Sprachen in alter und neuer Zeit – das sind die Hauptkollegia für einen Professor der „neueren“ Sprachen. Ich würde Ihnen rathen, in diese successive sich hinein zu arbeiten, damit bei einem Berufungsvorschlage Ihre Lehrthätigkeit für Sie Zeugniss ablege, da Ihre literarischen Arbeiten nach anderer Seite liegen. Auf diesem Gebiete namentlich der italienischen Sprache u. Mundarten, werden Sie noch sehr tüchtiges und werthvolles leisten können, und es liegt mir nichts ferner <pb
-            facs="#IMG.4" n="4"/> als Sie diesem Gebiete abwendig zu machen. </p>
-        <p> In Windisch<note n="7" place="foot"
-            type="editorial">Gemeinde im Kanton Aargau.</note> hätten wir freilich darüber beßer und eingehender sprechen können, aber die Zeit war überall so kurz. Leider komme ich dies Jahr auch nicht mehr über <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.177">Leipzig</placeName>, da eine Erkrankung meiner Frau mich nöthigen wird in die <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.6003">Schweiz</placeName> zu gehen. </p>
-        <closer>
-          <salute>Mit freundlichem Gruße</salute>
-          <lb/>
-          <salute>der Ihrige</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1090">K. Bartsch</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+Marburg</placeName> ab, möglicherweise weil er zu diesem Zeitpunkt Rektor der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4788">Universität Gießen</ref> war.</note> vor (der dann auch den Ruf bekommen und angenommen hat); für den Fall daß er nicht käme, schlug ich jüngere Leute, darunter auch Sie, vor. In Gießen wird sich durch <persName ref="[authorityLink]">
+Lemckes</persName> Abgang wieder eine Aussicht eröffnen. Sie können, wenn Sie mit L. bekannt sind, an diesen offen schreiben. Von <placeName ref="[authorityLink]">Straßburg</placeName> weiß ich gar nichts, wie dort die Sachen stehen; die Fakultät wünscht dringend wegen der Prüfungscommission, daß die germanische u. romanische Professur möglichst bald besetzt <pb facs="#IMG.3" n="3"/> werden. In diesem Semester scheint jedoch dazu keine Aussicht vorhanden zu sein.<note n="6" place="foot" type="editorial">Der Romanist <persName ref="[authorityLink]">Eduard Böhmer</persName> (1827-1906) wurde am 21.9.1872 ernannt, der Germanist <persName ref="[authorityLink]">Wilhelm Scherer</persName> (1841-1886) am 27.9.1872, und der Anglist <persName ref="[authorityLink]">Bernhard ten Brink</persName> (1841-1892) am 8.11.1872.</note>
+            </p>
+            <p> Daß sie auf allen Gebieten des Romanischen arbeiten, ist durchaus nicht wichtig; aber Sie müßten freilich auf allen soweit zu Hause sein, daß Sie darüber Vorlesungen zu halten im Stande sind. Also namentlich historische Grammatik der französischen und der englischen Sprachen, Lectüre und Literaturgeschichte der beiden Sprachen in alter und neuer Zeit – das sind die Hauptkollegia für einen Professor der „neueren“ Sprachen. Ich würde Ihnen rathen, in diese successive sich hinein zu arbeiten, damit bei einem Berufungsvorschlage Ihre Lehrthätigkeit für Sie Zeugniss ablege, da Ihre literarischen Arbeiten nach anderer Seite liegen. Auf diesem Gebiete namentlich der italienischen Sprache u. Mundarten, werden Sie noch sehr tüchtiges und werthvolles leisten können, und es liegt mir nichts ferner <pb facs="#IMG.4" n="4"/> als Sie diesem Gebiete abwendig zu machen. </p>
+            <p> In Windisch<note n="7" place="foot" type="editorial">Gemeinde im Kanton Aargau.</note> hätten wir freilich darüber beßer und eingehender sprechen können, aber die Zeit war überall so kurz. Leider komme ich dies Jahr auch nicht mehr über <placeName ref="[authorityLink]">Leipzig</placeName>, da eine Erkrankung meiner Frau mich nöthigen wird in die <placeName ref="[authorityLink]">Schweiz</placeName> zu gehen. </p>
+            <closer>
+               <salute>Mit freundlichem Gruße</salute>
+               <lb/>
+               <salute>der Ihrige</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">K. Bartsch</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

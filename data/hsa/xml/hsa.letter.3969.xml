@@ -1,389 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Eva Seifert an Hugo Schuchardt (01-10497)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2720">
-            <forename>Eva</forename>
-            <surname>Seifert</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3969" type="PID">o:hsa.letter.3969</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-10497</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">10497</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2720">
-                <forename>Eva</forename>
-                <surname>Seifert</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.38" ref="http://sws.geonames.org/2950159">Berlin</origPlace>
-              <origDate ana="dcterms:created" when="1921-12-03">1921-12-03</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Eva Seifert und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2720"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3969">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2720" ref="https://viaf.org/viaf/10370821">
-            <forename>Eva</forename>
-            <surname>Seifert</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.38" key="#GID.1" ref="http://sws.geonames.org/2950159">Berlin</placeName>
-          <date when="1921-12-03">1921-12-03</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Berlin</settlement>
-                <name ref="http://geonames.org/2950159" type="fcode:PPLC">Berlin</name>
-                <location>
-                  <geo>13.41053,52.52437</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2720" type="context">
-                        Korrespondenz Eva Seifert - Hugo Schuchardt
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3969" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Berlin<lb/>Cöpenickerstr. 71. 3.XII.21.</dateline>
+            <opener>Hochverehrter Herr Hofrat,</opener>
+            <p>Dass ich es Ihnen nun gleich sage, wie ich dazu komme, als völlig Unbekannte das Wort an Sie zu richten. Herr Professor <persName ref="[authorityLink]">Urtel</persName>
+               <note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Hermann Urtel (1873-1926)</persName> war Privatdozent der Romanistik und Gymnasiallehrer in Hamburg; seine Spezialgebiete waren Volkskunde, das Baskische und Lusitanistik; vgl. auch HSA, Nr. 12252-12313.</note>, der mich seinerzeit im Kriege bei seinen baskischen Studien hier als Morfs Doktorantin kennen lernte, hat mich darum gebeten. Er selbst hat grosse Sorgen um seine schwer erkrankte Gattin.<note n="2" place="foot" type="editorial">Urtels schwedische Frau <persName ref="[authorityLink]">Ruth Hildur (Hilda)</persName> geb. Wirén starb am 2.6.1922.</note>
+            </p>
+            <p>Er hat mich gebeten, Ihnen zu sagen, was mir Frau <persName ref="[authorityLink]">Morf</persName>
+               <note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Elise Frieda (Frida) Morf</persName> geb. Dennler (Denler) (1861-1935), Tochter des Apothekers und Likörfabrikanten August Friedrich Dennler (1833-1907) aus Interlaken, heiratete <persName ref="[authorityLink]">Morf</persName> im Jahr 1880. Morf hatte sie schon als Student kennengelernt, als er seinen Vater am Lehrerinnenseminar Winterthur vertrat.</note>, mit der ich dies Jahr mehreremale zusammen war, noch von ihm erzählt hat. Und wie gern komme ich diesem Auftrage nach! <pb facs="#IMG.2" n="2"/> Ich denke noch manchmal an die schöne Seminarübung, in der wir bei Morf Ihr „Ueber die Lautgesetze“<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.55">
+                        <hi rend="unknown" rendition="#none">Über die Lautgesetze. Gegen die Junggrammatiker</hi>
                      </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.463" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Erster Weltkrieg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4449" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universitäre Lehre</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4296" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Berlin (Friedrich-Wilhelms-Universität)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4497" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Privatbibliotheken</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.684" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Königlich-Preußische Akademie der Wissenschaften (Berlin)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3318" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Manuskriptnachlass</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3215" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsvorhaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.275" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Gesundheit</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4954" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Promotion</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3477" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Frauen in der Wissenschaft</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.55" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Langue bleue (Bolak)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3969" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3969" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3969" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3969" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3969" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3969" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3969" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3969" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3969" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Berlin<lb/>Cöpenickerstr. 71. 3.XII.21.</dateline>
-        <opener>Hochverehrter Herr Hofrat,</opener>
-
-        <p>Dass ich es Ihnen nun gleich sage, wie ich dazu komme, als völlig Unbekannte das Wort an Sie zu richten. Herr Professor <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2909">Urtel</persName>
-          <note n="1" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2909">Hermann Urtel (1873-1926)</persName> war Privatdozent der Romanistik und Gymnasiallehrer in Hamburg; seine Spezialgebiete waren Volkskunde, das Baskische und Lusitanistik; vgl. auch HSA, Nr. 12252-12313.</note>, der mich seinerzeit im Kriege bei seinen baskischen Studien hier als Morfs Doktorantin kennen lernte, hat mich darum gebeten. Er selbst hat grosse Sorgen um seine schwer erkrankte Gattin.<note
-            n="2" place="foot" type="editorial">Urtels schwedische Frau <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2908">Ruth Hildur (Hilda)</persName> geb. Wirén starb am 2.6.1922.</note>
-        </p>
-        <p>Er hat mich gebeten, Ihnen zu sagen, was mir Frau <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5143">Morf</persName>
-          <note n="3" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.5143">Elise Frieda (Frida) Morf</persName> geb. Dennler (Denler) (1861-1935), Tochter des Apothekers und Likörfabrikanten August Friedrich Dennler (1833-1907) aus Interlaken, heiratete <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2233">Morf</persName> im Jahr 1880. Morf hatte sie schon als Student kennengelernt, als er seinen Vater am Lehrerinnenseminar Winterthur vertrat.</note>, mit der ich dies Jahr mehreremale zusammen war, noch von ihm erzählt hat. Und wie gern komme ich diesem Auftrage nach! <pb
-            facs="#IMG.2"
-            n="2"/> Ich denke noch manchmal an die schöne Seminarübung, in der wir bei Morf Ihr „Ueber die Lautgesetze“<note
-            n="4" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.55">
-                <hi rend="unknown" rendition="#none">Über die Lautgesetze. Gegen die Junggrammatiker</hi>
-              </ref>
-            </bibl>, Berlin: Robert Oppenheim, 1885.</note> behandelten, als wir, um uns pflichtgemäss vorzubereiten, das einzige Exemplar der Bibliothek von Hand zu Hand gehen liessen. Es ist mir auch unvergesslich, wie uns Morf einmal bei einer Weihnachtseinladung aus einem Briefe von Ihnen vorgelesen hat, wie Sie um das Rondell Ihres Gartens herumradelten. Und wie oft sind Sie mir in Zeitschriften begegnet! Und wie viel habe ich daraus gelernt!</p>
-        <p>Seit Morf in die Schweiz gebracht worden war<note n="5" place="foot"
-              type="editorial">
-Über seine Krankheit informiert Richard Trachsler, „<persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2233">Heinrich Morf (1854-1921)</persName>. Le bâtisseur déchu“, in: Ursula Bähler / Richard Trachsler (Hrsg.), <hi
-              rend="unknown"
-            rendition="#none">Portraits de médiévistes suisses (1850-2000). Une profession au fil du temps</hi>, Genève: Droz, 2009 (Publications Romanes et Françaises, CCXLVI), 141-175, bes. 160. Demnach erkrankte Morf gegen Weihnachten 1917, wurde, als er sich weigerte, Nahrung aufzunehmen, am 31.5.1918 in der Privatklinik Berolinum untergebracht und von dort, nach kurzer Besserung, am 12.10.1918 in die Heilanstalt Eberswalde überwiesen. Die psychischen Probleme wurden durch eine Zuckerkrankung verschärft. Die Ärzte diagnostizierten eine Geistesstörung mit Depressions- und Hemmungszuständen, Neigung zum Querulieren und Hypochondrie und führten dies alles auf eine Arterienverkalkung zurück. Morf wurde für dienstunfähig erklärt, musste seinen Lehrstuhl aufgeben und kehrte in die Schweiz zurück, wo er am 23.1.1921 starb.</note>, verwalte ich seine Bibliothek, die jetzt in der Akademie<note
-            n="6" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2233">Morf</persName> war in der Klassensitzung vom 3.11.1910 und in der Gesamtsitzung vom 24.11. d.J. einstimmig zum ordentlichen Mitglied der Berliner Akademie der Wissenschaften gewählt worden.</note> eine vorläufige Herberge gefunden hat. Ich habe sie katalogisiert &amp; systematisch aufgestellt, so gerade &amp; in der Reihe, wie er es immer gewünscht hat. Ein jedes Buch ist durch meine Hände gegangen, ich sehe, in welchem Sinne er es benutzt hat, wie alles mit Umsicht gesammelt &amp; geordnet worden ist<note
-            n="7" place="foot"
-              type="editorial">Von dieser Bibliothek gibt es ein gedrucktes Verzeichnis, das insgesamt 7164 Einträge umfasst, die in 37 Kategorien unterteilt sind: <hi
-              rend="unknown" rendition="#none">Verzeichnis der Romanischen Bibliothek des † Geheimrat Professor Dr. Heinrich Morf, Direktor des Romanischen Seminar der Universität Berlin</hi>, Paul Graupe, Antiquariat Berlin W 35, Lütkzowstrasse 38, 1922. Es ist möglich, dass Eva Seifert diesen Katalog (mit) vorbereitet hat.</note>
-          <pb facs="#IMG.3"
-            n="3"/> wie unermüdlich er gearbeitet hat, für uns gearbeitet hat; ich bin dankbar dafür, und jede Stunde in dem kleinen Raum des Zwischenstocks der Akademie, wo um mich überall seine eigenen Büchergestelle stehen wird mir zu einer andachtsvollen Gedächtnisfeier. Ich könnte dabei manchmal gar vergessen, dass der verehrte und geliebte Lehrer nicht mehr ist. Das ist mir alles ans Herz gewachsen. Und dies Gefühl, das ich für ihn habe, die allzeit lebendige Erinnerung an die schöne Arbeitsgemeinschaft, die nie aufhören soll, hat mir auch den Mut eingegeben, die Aufgabe einen dritten Band <hi
-            rend="unknown" rendition="#none">Aus Dichtung &amp; Sprache der Romanen</hi> herauszugeben<note n="8"
-            place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">Aus Dichtung und Sprache der Romanen. Dritte Reihe. Vorträge und Skizzen von Heinrich Morf</hi>, hrsg. von Eva Seifert mit einem Bild von Professor Morf, Berlin: Vereinigung Wissenschaftlicher Verleger, 1922. Auf S. 377-421 findet sich ein Schrift.-Verz. Morfs.</note> auf mich zu nehmen. Das war eine schöne Arbeit. Der Band wird ausser schon Veröffentlichtem auch zwei Mss. bringen „Lessings Urteil über Voltaire“ &amp; „Das Hoffestspiel vom Tartuffe“ beides Akademievorträge, die im Konzept nur z.T. druckfertig waren, meist aber stenographisch vorlagen.<note
-            n="9" place="foot"
-            type="editorial">In Seiferts Vorwort (S. V-VIII, hier S. VII) heißt es: „Es sind Vorträge die sich im handschriftlichen Nachlaß, teils zur Hälfte, teils völlig in der alten Stolzeschen Stenographie aufgezeichnet fanden. Morf hat von ihr ausgiebigen Gebrauch gemacht: ,Die Kurzschrift sichert uns den unverkümmerten Genuß des lebendigen Wortes‘“.</note> Auch da ihm in seiner Arbeitsweise <pb
-            facs="#IMG.4" n="4"/> zu folgen &amp; ihn immer neu zu bewundern, dafür werde ich allzeit dankbar sein. Ich denke, in etwa acht Tagen wird die Subscription herumgeschickt werden können, hoffentlich gelingt alles so, wie es der Verleger mit Begeisterung &amp; Idealismus unternimmt.</p>
-        <p>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2232">Frau Morf</persName> hat mich dabei tatkräftig unterstützt. Ich hatte die Freude, sie im Oktober acht Tage hier in Berlin zu sehen, war auch in den Sommerferien mit ihr im Odenwald. Und jedesmal habe ich mir von ihm erzählen lassen. Die Erinnerung an die peinvolle Krankheit ist mir dann immer wieder neu &amp; schmerzlich geworden. In Wahrheit scheint seelisch eine wahre Besserung nicht eingetreten zu sein, körperlich hat ihn der Aufenthalt in der Schweiz jedoch recht voran gebracht. Er hat immerhin wieder mehr Anteil genommen &amp; in manchem Briefe seiner Frau habe ich doch so etwas wie ein Eingehen auf meine ihm mitgeteilten Pläne &amp; Arbeiten gefunden. Sie hat es allemal in seinem Auftrage getan, wenn Sie mir eine Antwort schrieb. Seit August ist er ja auch bei <pb
-            facs="#IMG.5" n="5"/> ihr auf dem Hornberg<note n="10" place="foot"
-            type="editorial">Der Hornberg liegt über Gstaad am Berner Voralpenweg.</note> gewesen, ganz ihrer Pflege hingegeben. Es muss wahrlich eine Erlösung für ihn gewesen sein. Die Tätigkeit in seiner Bibliothek brachte natürlich manches Hin &amp; Her schreiben mit sich &amp; so habe ich auch öfter über den Kranken Nachricht gehabt &amp; verfolgen können, wie allmählich sein Interesse wieder zugenommen hat. Ein leises Glücksempfinden scheint sich sogar bisweilen eingestellt zu haben etwa über einen Spaziergang in der Nähe des Hauses, über die Leistung einer kleinen Bergbesteigung und der Hornberg muss ihm in freundlicher Erinnerung vorgeschwebt haben, als er dann unten in Thun im Krankenhause war. Seine Frau hat auch Musse gefunden ihre Malerei wieder zu pflegen &amp; dieser Tätigkeit hat er mit vieler Anteilnahme beigewohnt, hat die Fortschritte verfolgt &amp; ein Urteil abgegeben. Aus ganz frühen Zeiten hat er Erlebnisse in seiner klaren <pb
-            facs="#IMG.6" n="6"/> Art erzählt; auch bewahre ich noch einen <hi rend="unknown" rendition="#none">
+                  </bibl>, Berlin: Robert Oppenheim, 1885.</note> behandelten, als wir, um uns pflichtgemäss vorzubereiten, das einzige Exemplar der Bibliothek von Hand zu Hand gehen liessen. Es ist mir auch unvergesslich, wie uns Morf einmal bei einer Weihnachtseinladung aus einem Briefe von Ihnen vorgelesen hat, wie Sie um das Rondell Ihres Gartens herumradelten. Und wie oft sind Sie mir in Zeitschriften begegnet! Und wie viel habe ich daraus gelernt!</p>
+            <p>Seit Morf in die Schweiz gebracht worden war<note n="5" place="foot" type="editorial">
+Über seine Krankheit informiert Richard Trachsler, „<persName ref="[authorityLink]">Heinrich Morf (1854-1921)</persName>. Le bâtisseur déchu“, in: Ursula Bähler / Richard Trachsler (Hrsg.), <hi rend="unknown" rendition="#none">Portraits de médiévistes suisses (1850-2000). Une profession au fil du temps</hi>, Genève: Droz, 2009 (Publications Romanes et Françaises, CCXLVI), 141-175, bes. 160. Demnach erkrankte Morf gegen Weihnachten 1917, wurde, als er sich weigerte, Nahrung aufzunehmen, am 31.5.1918 in der Privatklinik Berolinum untergebracht und von dort, nach kurzer Besserung, am 12.10.1918 in die Heilanstalt Eberswalde überwiesen. Die psychischen Probleme wurden durch eine Zuckerkrankung verschärft. Die Ärzte diagnostizierten eine Geistesstörung mit Depressions- und Hemmungszuständen, Neigung zum Querulieren und Hypochondrie und führten dies alles auf eine Arterienverkalkung zurück. Morf wurde für dienstunfähig erklärt, musste seinen Lehrstuhl aufgeben und kehrte in die Schweiz zurück, wo er am 23.1.1921 starb.</note>, verwalte ich seine Bibliothek, die jetzt in der Akademie<note n="6" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Morf</persName> war in der Klassensitzung vom 3.11.1910 und in der Gesamtsitzung vom 24.11. d.J. einstimmig zum ordentlichen Mitglied der Berliner Akademie der Wissenschaften gewählt worden.</note> eine vorläufige Herberge gefunden hat. Ich habe sie katalogisiert &amp; systematisch aufgestellt, so gerade &amp; in der Reihe, wie er es immer gewünscht hat. Ein jedes Buch ist durch meine Hände gegangen, ich sehe, in welchem Sinne er es benutzt hat, wie alles mit Umsicht gesammelt &amp; geordnet worden ist<note n="7" place="foot" type="editorial">Von dieser Bibliothek gibt es ein gedrucktes Verzeichnis, das insgesamt 7164 Einträge umfasst, die in 37 Kategorien unterteilt sind: <hi rend="unknown" rendition="#none">Verzeichnis der Romanischen Bibliothek des † Geheimrat Professor Dr. Heinrich Morf, Direktor des Romanischen Seminar der Universität Berlin</hi>, Paul Graupe, Antiquariat Berlin W 35, Lütkzowstrasse 38, 1922. Es ist möglich, dass Eva Seifert diesen Katalog (mit) vorbereitet hat.</note>
+               <pb facs="#IMG.3" n="3"/> wie unermüdlich er gearbeitet hat, für uns gearbeitet hat; ich bin dankbar dafür, und jede Stunde in dem kleinen Raum des Zwischenstocks der Akademie, wo um mich überall seine eigenen Büchergestelle stehen wird mir zu einer andachtsvollen Gedächtnisfeier. Ich könnte dabei manchmal gar vergessen, dass der verehrte und geliebte Lehrer nicht mehr ist. Das ist mir alles ans Herz gewachsen. Und dies Gefühl, das ich für ihn habe, die allzeit lebendige Erinnerung an die schöne Arbeitsgemeinschaft, die nie aufhören soll, hat mir auch den Mut eingegeben, die Aufgabe einen dritten Band <hi rend="unknown" rendition="#none">Aus Dichtung &amp; Sprache der Romanen</hi> herauszugeben<note n="8" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Aus Dichtung und Sprache der Romanen. Dritte Reihe. Vorträge und Skizzen von Heinrich Morf</hi>, hrsg. von Eva Seifert mit einem Bild von Professor Morf, Berlin: Vereinigung Wissenschaftlicher Verleger, 1922. Auf S. 377-421 findet sich ein Schrift.-Verz. Morfs.</note> auf mich zu nehmen. Das war eine schöne Arbeit. Der Band wird ausser schon Veröffentlichtem auch zwei Mss. bringen „Lessings Urteil über Voltaire“ &amp; „Das Hoffestspiel vom Tartuffe“ beides Akademievorträge, die im Konzept nur z.T. druckfertig waren, meist aber stenographisch vorlagen.<note n="9" place="foot" type="editorial">In Seiferts Vorwort (S. V-VIII, hier S. VII) heißt es: „Es sind Vorträge die sich im handschriftlichen Nachlaß, teils zur Hälfte, teils völlig in der alten Stolzeschen Stenographie aufgezeichnet fanden. Morf hat von ihr ausgiebigen Gebrauch gemacht: ,Die Kurzschrift sichert uns den unverkümmerten Genuß des lebendigen Wortes‘“.</note> Auch da ihm in seiner Arbeitsweise <pb facs="#IMG.4" n="4"/> zu folgen &amp; ihn immer neu zu bewundern, dafür werde ich allzeit dankbar sein. Ich denke, in etwa acht Tagen wird die Subscription herumgeschickt werden können, hoffentlich gelingt alles so, wie es der Verleger mit Begeisterung &amp; Idealismus unternimmt.</p>
+            <p>
+               <persName ref="[authorityLink]">Frau Morf</persName> hat mich dabei tatkräftig unterstützt. Ich hatte die Freude, sie im Oktober acht Tage hier in Berlin zu sehen, war auch in den Sommerferien mit ihr im Odenwald. Und jedesmal habe ich mir von ihm erzählen lassen. Die Erinnerung an die peinvolle Krankheit ist mir dann immer wieder neu &amp; schmerzlich geworden. In Wahrheit scheint seelisch eine wahre Besserung nicht eingetreten zu sein, körperlich hat ihn der Aufenthalt in der Schweiz jedoch recht voran gebracht. Er hat immerhin wieder mehr Anteil genommen &amp; in manchem Briefe seiner Frau habe ich doch so etwas wie ein Eingehen auf meine ihm mitgeteilten Pläne &amp; Arbeiten gefunden. Sie hat es allemal in seinem Auftrage getan, wenn Sie mir eine Antwort schrieb. Seit August ist er ja auch bei <pb facs="#IMG.5" n="5"/> ihr auf dem Hornberg<note n="10" place="foot" type="editorial">Der Hornberg liegt über Gstaad am Berner Voralpenweg.</note> gewesen, ganz ihrer Pflege hingegeben. Es muss wahrlich eine Erlösung für ihn gewesen sein. Die Tätigkeit in seiner Bibliothek brachte natürlich manches Hin &amp; Her schreiben mit sich &amp; so habe ich auch öfter über den Kranken Nachricht gehabt &amp; verfolgen können, wie allmählich sein Interesse wieder zugenommen hat. Ein leises Glücksempfinden scheint sich sogar bisweilen eingestellt zu haben etwa über einen Spaziergang in der Nähe des Hauses, über die Leistung einer kleinen Bergbesteigung und der Hornberg muss ihm in freundlicher Erinnerung vorgeschwebt haben, als er dann unten in Thun im Krankenhause war. Seine Frau hat auch Musse gefunden ihre Malerei wieder zu pflegen &amp; dieser Tätigkeit hat er mit vieler Anteilnahme beigewohnt, hat die Fortschritte verfolgt &amp; ein Urteil abgegeben. Aus ganz frühen Zeiten hat er Erlebnisse in seiner klaren <pb facs="#IMG.6" n="6"/> Art erzählt; auch bewahre ich noch einen <hi rend="unknown" rendition="#none">
 Archiv</hi>band auf, auf den er eigenhändg das Eintreffen in seiner Stenographie notiert hat, den er auch nicht ohne sich kritisch zu äussern, völlig durchgelesen hat.</p>
-
-        <p>Das alles sind Dinge denen ich gern gelauscht habe &amp; die mich auch um seiner liebevollen &amp; sorgenden Gattin willen erfreut haben. Aber solche Höhepunkte waren eher selten &amp; die düstere Stimmung hat ihn nicht verlassen, besonders zuletzt nicht als sich eine Bruchoperation notwendig machte, die er gut überstanden hat. Noch einmal hatte der widerstandsfähige Körper seine Kraft &amp; Elastizität bewährt, es war alles verheilt, der Kranke war auf, da trat am neunten Tag nach der Operation ein Kräfteverfall ein im Zusammenhang mit der Zuckerkrankheit (diabetisches Koma) <pb
-            facs="#IMG.7"
-            n="7"/> der nach wenigen Tagen zum Tode führte. Sanft soll er hingeschlummert sein am Morgen eines strahlenden Wintersonntags<note
-            n="11" place="foot" type="editorial">23. Januar 1921.</note> &amp; dieser ruhige Tod hat nach der entsetzlichen Krankheit doch etwas Versöhnliches. Die Frau &amp; die Kinder haben mir erzählt wie schön &amp; friedlich er ausgesehen habe.</p>
-        <p>Man musste es ihm wohl wünschen &amp; ahnte nicht, was man herbeigewünscht hatte.</p>
-
-        <p>Die langen Tage &amp; Wochen stehen wieder vor mir, als ich mir – kurz vor dem Doktorexamen – in Sorge um sein Ergehen all mählich klar machen musste, dass ich den bewährten Führer &amp; Berater, den geliebten Lehrer, den ich wie keinen sonst verehrt habe, für immer verloren hatte.<note
-            n="12" place="foot" type="editorial">Die Vorbemerkung 1 zur Dissertation lautet: „Die vorliegende Arbeit bietet nur ein Kapitel aus der Entwicklungsgeschichte der Proparoxytona, da die Behandlung aller Proparoxytona den Rahmen einer Dissertation überschreiten würde. Die Verf. behält sich vor, in absehbarer Zeit die volle Arbeit erscheinen zu lassen. - Das Thema zu dieser Arbeit wurde mir von Herrn Prof. Morf gestellt. Er hat mir allezeit seinen gütigen Rat zuteil werden lassen und durch sein reges Interesse die Arbeit nicht wenig gefördert. Ihm gebührt vor allen Dingen mein herzlichster Dank. - Die Dissertation hat in der Zeit seiner Abwesenheit eingereicht werden müssen und wurde von Herrn Prof. Lommatzsch vertreten“.</note> Ich habe ihn nicht wiedergesehen.</p>
-        <p>Obwohl in der Schule beschäftigt, gelten meine Herzensinteressen doch der Wissenschaft, der <pb facs="#IMG.8"
-            n="8"/> Romania, in deren Gebiet er mich eingeführt &amp; heimisch gemacht hat. So weit mir Zeit bleibt, versuche ich in seinem Sinne weiterzuarbeiten &amp; das hält mir ihn lebendig. Eine ihm gewidmete Arbeit liegt schon lange druckbereit hier, aber die Konjunktur ist zu ungünstig<note
-            n="13" place="foot"
-              type="editorial">Es handelt sich um die vollständige Veröffentlichung der Dissertation, die 1923 in Halle a. S. bei Niemeyer unter dem Titel <hi
-              rend="unknown" rendition="#none">Die Proparoxytona im Galloromanischen</hi> erschien. Sie trägt folgende Widmung: „Dem Andenken meines verehrten Lehrers Heinrich Morf in herzlicher Dankbarkeit“. Auf S. 2 der „Vorbemerkung“ folgt ein erneuter Dank.</note>.</p>
-        <p>Mit dem Ausdruck vollster Verehrung begrüsse ich Sie, hochverehrter Herr Hofrat, als seinen Freund</p>
-        <closer>
-          <salute>Mit dem Ausdruck vollster Verehrung begrüsse ich Sie, hochverehrter Herr Hofrat, als seinen Freund</salute>
-          <lb/>
-          <salute>Ihre ganz ergebene</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2720">Eva Seifert</persName>. </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Das alles sind Dinge denen ich gern gelauscht habe &amp; die mich auch um seiner liebevollen &amp; sorgenden Gattin willen erfreut haben. Aber solche Höhepunkte waren eher selten &amp; die düstere Stimmung hat ihn nicht verlassen, besonders zuletzt nicht als sich eine Bruchoperation notwendig machte, die er gut überstanden hat. Noch einmal hatte der widerstandsfähige Körper seine Kraft &amp; Elastizität bewährt, es war alles verheilt, der Kranke war auf, da trat am neunten Tag nach der Operation ein Kräfteverfall ein im Zusammenhang mit der Zuckerkrankheit (diabetisches Koma) <pb facs="#IMG.7" n="7"/> der nach wenigen Tagen zum Tode führte. Sanft soll er hingeschlummert sein am Morgen eines strahlenden Wintersonntags<note n="11" place="foot" type="editorial">23. Januar 1921.</note> &amp; dieser ruhige Tod hat nach der entsetzlichen Krankheit doch etwas Versöhnliches. Die Frau &amp; die Kinder haben mir erzählt wie schön &amp; friedlich er ausgesehen habe.</p>
+            <p>Man musste es ihm wohl wünschen &amp; ahnte nicht, was man herbeigewünscht hatte.</p>
+            <p>Die langen Tage &amp; Wochen stehen wieder vor mir, als ich mir – kurz vor dem Doktorexamen – in Sorge um sein Ergehen all mählich klar machen musste, dass ich den bewährten Führer &amp; Berater, den geliebten Lehrer, den ich wie keinen sonst verehrt habe, für immer verloren hatte.<note n="12" place="foot" type="editorial">Die Vorbemerkung 1 zur Dissertation lautet: „Die vorliegende Arbeit bietet nur ein Kapitel aus der Entwicklungsgeschichte der Proparoxytona, da die Behandlung aller Proparoxytona den Rahmen einer Dissertation überschreiten würde. Die Verf. behält sich vor, in absehbarer Zeit die volle Arbeit erscheinen zu lassen. - Das Thema zu dieser Arbeit wurde mir von Herrn Prof. Morf gestellt. Er hat mir allezeit seinen gütigen Rat zuteil werden lassen und durch sein reges Interesse die Arbeit nicht wenig gefördert. Ihm gebührt vor allen Dingen mein herzlichster Dank. - Die Dissertation hat in der Zeit seiner Abwesenheit eingereicht werden müssen und wurde von Herrn Prof. Lommatzsch vertreten“.</note> Ich habe ihn nicht wiedergesehen.</p>
+            <p>Obwohl in der Schule beschäftigt, gelten meine Herzensinteressen doch der Wissenschaft, der <pb facs="#IMG.8" n="8"/> Romania, in deren Gebiet er mich eingeführt &amp; heimisch gemacht hat. So weit mir Zeit bleibt, versuche ich in seinem Sinne weiterzuarbeiten &amp; das hält mir ihn lebendig. Eine ihm gewidmete Arbeit liegt schon lange druckbereit hier, aber die Konjunktur ist zu ungünstig<note n="13" place="foot" type="editorial">Es handelt sich um die vollständige Veröffentlichung der Dissertation, die 1923 in Halle a. S. bei Niemeyer unter dem Titel <hi rend="unknown" rendition="#none">Die Proparoxytona im Galloromanischen</hi> erschien. Sie trägt folgende Widmung: „Dem Andenken meines verehrten Lehrers Heinrich Morf in herzlicher Dankbarkeit“. Auf S. 2 der „Vorbemerkung“ folgt ein erneuter Dank.</note>.</p>
+            <p>Mit dem Ausdruck vollster Verehrung begrüsse ich Sie, hochverehrter Herr Hofrat, als seinen Freund</p>
+            <closer>
+               <salute>Mit dem Ausdruck vollster Verehrung begrüsse ich Sie, hochverehrter Herr Hofrat, als seinen Freund</salute>
+               <lb/>
+               <salute>Ihre ganz ergebene</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Eva Seifert</persName>. </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

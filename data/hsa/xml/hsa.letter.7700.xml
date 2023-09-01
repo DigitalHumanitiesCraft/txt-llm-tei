@@ -1,343 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Francesco D´Ovidio (89-HSFDO33)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Sandra</forename>
-            <surname>Covino</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7700" type="PID">o:hsa.letter.7700</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">89-HSFDO33</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Italien</country>
-            <settlement>Pisa</settlement>
-            <repository ref="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</repository>
-            <idno type="shelfmark">HSFDO33</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1920-06-06">1920-06-06</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Sandra</forename>
-              <surname>Covino</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Francesco D´Ovidio</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1353"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7700">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1920-06-06">1920-06-06</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1353" ref="https://viaf.org/viaf/29528295">
-            <forename>Francesco</forename>
-            <surname>D´Ovidio</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1353" type="context">
-                        Korrespondenz Hugo Schuchardt - Francesco D´Ovidio
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7700" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 6. 6. ’20</dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Verzeihe daß ich erst jetzt Deinen lieben Brief vom 2. April beantworte. Ich bin alt, <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.275">krank</ref>, matt, und über die Augen habe auch ich zu klagen; und besonders leide ich alljährlich nach Beginn der Gewitterperiode an dauerndem Kopfdruck.</p>
+            <p>Die Angelegenheit, wegen deren ich Dir zuletzt schrieb, war schon damals eine vollendete Tatsache, und es bleibt mir nur übrig zu erklären daß sie sich wider mein Wissen und Wollen vollzogen hat<note n="1" place="foot" type="editorial">Schuchardt si riferiva alla cancellazione, nell’annuario dell’Università di Graz, dei suoi titoli di socio di accademie scientifiche appartenenti a Stati nemici dell’Austria-Ungheria durante <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.463">la guerra</ref> da poco conclusa. Nella lettera precedente, D’Ovidio aveva nettamente smentito l’espulsione di Schuchardt o di altri soci stranieri dall’istituzione che presiedeva.</note>. Ich bin immer stolz gewesen auf die Ehrungen die mir von wissenschaftlichen Instituten Italiens erwiesen wurden. Das Personalverzeichnis der Wiener Universität ist von solchen Streichungen verschont geblieben.</p>
+            <p>Deine Akademierede habe ich mit freudigem und bewundernden Interesse gelesen<note n="2" place="foot" type="editorial">Cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7640">D’Ovidio, <hi rend="unknown" rendition="#none">Discorso</hi>
                      </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.275" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Gesundheit</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.463" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Erster Weltkrieg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.939" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kaiserliche Akademie der Wissenschaften (Wien)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.684" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Königlich-Preußische Akademie der Wissenschaften (Berlin)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.290" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Accademia dei Lincei (Rom)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7700" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7700" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7700" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7700" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7700" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="http://biblio.sns.it/">Biblioteca della Scuola Normale Superiore di Pisa</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7700" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 6. 6. ’20</dateline>
-        <opener>Lieber Freund,</opener>
-        <p>Verzeihe daß ich erst jetzt Deinen lieben Brief vom 2. April beantworte. Ich bin alt, <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.275">krank</ref>, matt, und über die Augen habe auch ich zu klagen; und besonders leide ich alljährlich nach Beginn der Gewitterperiode an dauerndem Kopfdruck.</p>
-
-        <p>Die Angelegenheit, wegen deren ich Dir zuletzt schrieb, war schon damals eine vollendete Tatsache, und es bleibt mir nur übrig zu erklären daß sie sich wider mein Wissen und Wollen vollzogen hat<note
-            n="1" place="foot"
-              type="editorial">Schuchardt si riferiva alla cancellazione, nell’annuario dell’Università di Graz, dei suoi titoli di socio di accademie scientifiche appartenenti a Stati nemici dell’Austria-Ungheria durante <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.463">la guerra</ref> da poco conclusa. Nella lettera precedente, D’Ovidio aveva nettamente smentito l’espulsione di Schuchardt o di altri soci stranieri dall’istituzione che presiedeva.</note>. Ich bin immer stolz gewesen auf die Ehrungen die mir von wissenschaftlichen Instituten Italiens erwiesen wurden. Das Personalverzeichnis der Wiener Universität ist von solchen Streichungen verschont geblieben.</p>
-        <p>Deine Akademierede habe ich mit freudigem und bewundernden Interesse gelesen<note n="2" place="foot" type="editorial">Cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7640">D’Ovidio, <hi rend="unknown" rendition="#none">Discorso</hi>
-              </ref>
-            </bibl> 1919.</note>. Das angekündigte <hi rend="unknown" rendition="#none">Annuario</hi>
-          <note n="3" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
+                  </bibl> 1919.</note>. Das angekündigte <hi rend="unknown" rendition="#none">Annuario</hi>
+               <note n="3" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
 L’Annuario della Reale Accademia dei Lincei</hi>, di cui D’Ovidio aveva preannunciato l’invio</note> ist mir nicht zugekommen*.</p>
-        <pb facs="#IMG.2" n="2"/>
-
-        <p>Mein Herz ist inbezug auf Italien stets treu geblieben. Aber Treue um Treue! Ich müßte die Verachtung der Italiener befürchten, wenn ich über die Wegnahme deutschen Gebietes nicht ebenso denken und fühlen würde wie sie selbst über dem Verlust italienischen Gebietes. Wir müssen auf unserem Selbstbestimmungsrecht beharren (die Gnade einer Autonomie genügt nicht), schon deshalb weil wir anderswo, besonders den Tschechen gegenüber, gar nicht darauf verzichten können<note
-            n="4" place="foot"
-            type="editorial">s</note>. Ich habe nie gewünscht daß Deutsche über Italiener herrschten; soll ich nun das Umgekehrte mit freundlichen Augen ansehen? Uns Deutschen hat man alles genommen oder wird es nehmen; an einem müssen wir bis zum Äußersten festhalten, an unserer Sprache und zwar in vollkommener Freiheit, nicht von einer andern irgendwie überschichtet<note
-            n="5" place="foot"
-              type="editorial">Emerge qui, più esplicitamente che nelle due precedenti lettere di Schuchardt, la polemica patriottica, stimolata dalla lettura del discorso linceo di D’Ovidio e dall’auspicio da lui espresso anche per lettera di un rapido ritorno alla tranquillità e al benessere dell’anteguerra. Schuchardt evidentemente rilevava uno stridente contrasto tra le parole e i fatti: in primis per quella che riteneva una grave menomazione inflitta dall’Italia al Volkstum tedesco, cioè la perdita del <hi
-              rend="unknown" rendition="#none">Südtirol.</hi> Anche nella corrispondenza di <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName> con il maestro di Graz (pubblicata da <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1599">B. Hurch: <hi rend="unknown" rendition="#none">Leo Spitzers Briefe an Hugo Schuchardt</hi>, Berlin-New York, de Gruyter, 2006</ref>
-            </bibl>) si trova conferma di quanto lo spostamento del confine al Brennero rappresentasse per Schuchardt una «ferita immedicabile, uno dei motivi principali del suo risentimento antitaliano» (cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1492">G. Lucchini, <hi rend="unknown" rendition="#none">Spitzer e Schuchardt: un dittico incompleto</hi>, in «Strumenti critici», XXIII/2, pp. 199-232: 211-213)</ref>
-            </bibl>; poi in Id., <hi rend="unknown"
-            rendition="#none">Tra linguistica e stilistica. Percorsi d’autore: Auerbach, Spitzer, Terracini</hi>, Padova, Esedra, 2019, pp. 237-278).</note>. Auch Barbusse erkennt als einzig berechtigte]n[ Grenze die zwischen den nationalen Sprachen an<note
-            n="6" place="foot"
-              type="editorial">Lo scrittore francese <persName>Henri Barbusse</persName> (Asnières-sur-Seine 1873-Mosca 1935) aveva raggiunto fama internazionale con il <hi
-              rend="unknown" rendition="#none">best-seller</hi> antimilitarista <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3985">
-                <hi rend="unknown" rendition="#none">Le feu</hi> (Paris, Flammarion, 1916)</ref>
-
-            </bibl>. Figura complessa ed eclettica di intellettuale marxista, negli anni successivi alla prima guerra mondiale si propose come mediatore tra la cultura francese e quella tedesca, nel tentativo di promuovere, attraverso l’impegno politico e artistico, il superamento dello storico antagonismo (cf. Anna Luigia Villani, <hi
-              rend="unknown"
-              rendition="#none">Henri Barbusse e la Germania, Firenze, Università degli studi di Firenze</hi>, 1990, pp. 7-50). Quanto ai confini tra lingue nazionali come unici legittimi confini politici, non si sono reperiti, negli scritti dell’intelletuale francese interrogabili nel sito <ref target="gallica.bnf.fr">gallica.bnf.fr</ref>, passi che giustifichino l’opinione attribuitagli da Schuchardt. Nell’opera di Barbusse è indubbia, piuttosto, la centralità dell’aspirazione al superamento dei confini nazionali e all’unione fraterna dell’intera umanità.</note>.</p>
-        <p>Germania mia; benchè ’l parlar sia indarno … <note n="7" place="foot"
-              type="editorial">La citazione richiama, modificandone il vocativo, l’incipit della famosa lirica di Petrarca <hi
-              rend="unknown" rendition="#none">Italia mia, benché il parlar sia indarno</hi> (<hi rend="unknown" rendition="#none">Canzoniere</hi>, 128, v. 1).</note>
-        </p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>Wie oft denke ich Deiner! Unserer Unterhaltungen in Deiner blauen Stube oder eines Gesprächs über <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1056">
-Ascoli</persName> auf einer Steinbank von Capodimonte oder einer Mahlzeit in Deiner Sommerfrische (war es in Portici?) usw.usw. Ferne, warme Erinnungen<note
-            n="8" place="foot" type="editorial">Questa conclusione della lettera rispecchia in modo emblematico l’ambivalenza emotiva dell’atteggiamento di Schuchardt sia verso D’Ovidio sia verso l’Italia: da una parte il forte disappunto suscitato dalle vicende politiche, dall’altra il riemergere dell’antico sentimento di amicizia e la rievocazione nostalgica di cari ricordi, lontani nel tempo.</note>!</p>
-        <closer>
-          <salute>Herzlichst grüßt Dich</salute>
-          <lb/>
-          <salute>Dein</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+            <pb facs="#IMG.2" n="2"/>
+            <p>Mein Herz ist inbezug auf Italien stets treu geblieben. Aber Treue um Treue! Ich müßte die Verachtung der Italiener befürchten, wenn ich über die Wegnahme deutschen Gebietes nicht ebenso denken und fühlen würde wie sie selbst über dem Verlust italienischen Gebietes. Wir müssen auf unserem Selbstbestimmungsrecht beharren (die Gnade einer Autonomie genügt nicht), schon deshalb weil wir anderswo, besonders den Tschechen gegenüber, gar nicht darauf verzichten können<note n="4" place="foot" type="editorial">s</note>. Ich habe nie gewünscht daß Deutsche über Italiener herrschten; soll ich nun das Umgekehrte mit freundlichen Augen ansehen? Uns Deutschen hat man alles genommen oder wird es nehmen; an einem müssen wir bis zum Äußersten festhalten, an unserer Sprache und zwar in vollkommener Freiheit, nicht von einer andern irgendwie überschichtet<note n="5" place="foot" type="editorial">Emerge qui, più esplicitamente che nelle due precedenti lettere di Schuchardt, la polemica patriottica, stimolata dalla lettura del discorso linceo di D’Ovidio e dall’auspicio da lui espresso anche per lettera di un rapido ritorno alla tranquillità e al benessere dell’anteguerra. Schuchardt evidentemente rilevava uno stridente contrasto tra le parole e i fatti: in primis per quella che riteneva una grave menomazione inflitta dall’Italia al Volkstum tedesco, cioè la perdita del <hi rend="unknown" rendition="#none">Südtirol.</hi> Anche nella corrispondenza di <persName ref="[authorityLink]">Spitzer</persName> con il maestro di Graz (pubblicata da <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1599">B. Hurch: <hi rend="unknown" rendition="#none">Leo Spitzers Briefe an Hugo Schuchardt</hi>, Berlin-New York, de Gruyter, 2006</ref>
+                  </bibl>) si trova conferma di quanto lo spostamento del confine al Brennero rappresentasse per Schuchardt una «ferita immedicabile, uno dei motivi principali del suo risentimento antitaliano» (cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1492">G. Lucchini, <hi rend="unknown" rendition="#none">Spitzer e Schuchardt: un dittico incompleto</hi>, in «Strumenti critici», XXIII/2, pp. 199-232: 211-213)</ref>
+                  </bibl>; poi in Id., <hi rend="unknown" rendition="#none">Tra linguistica e stilistica. Percorsi d’autore: Auerbach, Spitzer, Terracini</hi>, Padova, Esedra, 2019, pp. 237-278).</note>. Auch Barbusse erkennt als einzig berechtigte]n[ Grenze die zwischen den nationalen Sprachen an<note n="6" place="foot" type="editorial">Lo scrittore francese <persName>Henri Barbusse</persName> (Asnières-sur-Seine 1873-Mosca 1935) aveva raggiunto fama internazionale con il <hi rend="unknown" rendition="#none">best-seller</hi> antimilitarista <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3985">
+                        <hi rend="unknown" rendition="#none">Le feu</hi> (Paris, Flammarion, 1916)</ref>
+                  </bibl>. Figura complessa ed eclettica di intellettuale marxista, negli anni successivi alla prima guerra mondiale si propose come mediatore tra la cultura francese e quella tedesca, nel tentativo di promuovere, attraverso l’impegno politico e artistico, il superamento dello storico antagonismo (cf. Anna Luigia Villani, <hi rend="unknown" rendition="#none">Henri Barbusse e la Germania, Firenze, Università degli studi di Firenze</hi>, 1990, pp. 7-50). Quanto ai confini tra lingue nazionali come unici legittimi confini politici, non si sono reperiti, negli scritti dell’intelletuale francese interrogabili nel sito <ref target="gallica.bnf.fr">gallica.bnf.fr</ref>, passi che giustifichino l’opinione attribuitagli da Schuchardt. Nell’opera di Barbusse è indubbia, piuttosto, la centralità dell’aspirazione al superamento dei confini nazionali e all’unione fraterna dell’intera umanità.</note>.</p>
+            <p>Germania mia; benchè ’l parlar sia indarno … <note n="7" place="foot" type="editorial">La citazione richiama, modificandone il vocativo, l’incipit della famosa lirica di Petrarca <hi rend="unknown" rendition="#none">Italia mia, benché il parlar sia indarno</hi> (<hi rend="unknown" rendition="#none">Canzoniere</hi>, 128, v. 1).</note>
+            </p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>Wie oft denke ich Deiner! Unserer Unterhaltungen in Deiner blauen Stube oder eines Gesprächs über <persName ref="[authorityLink]">
+Ascoli</persName> auf einer Steinbank von Capodimonte oder einer Mahlzeit in Deiner Sommerfrische (war es in Portici?) usw.usw. Ferne, warme Erinnungen<note n="8" place="foot" type="editorial">Questa conclusione della lettera rispecchia in modo emblematico l’ambivalenza emotiva dell’atteggiamento di Schuchardt sia verso D’Ovidio sia verso l’Italia: da una parte il forte disappunto suscitato dalle vicende politiche, dall’altra il riemergere dell’antico sentimento di amicizia e la rievocazione nostalgica di cari ricordi, lontani nel tempo.</note>!</p>
+            <closer>
+               <salute>Herzlichst grüßt Dich</salute>
+               <lb/>
+               <salute>Dein</salute>
+               <signed>
+                  <persName ref="[authorityLink]">
 HSchuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Soeben erhalte ich den Anzeiger der <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.939">Wiener Akademie</ref> vom 19. März. Darin steht, daß die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.684">Preußische Akademie</ref> mitteilt,</p>
-          <p>„die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.290">Accademia dei Lincei</ref> in Rom habe beschlossen, die Bibliothek des Deutschen Archaeologischen Institutes in Rom als Ersatz für den von den Deutschen angerichteten Kriegsschaden für verfallen zu erklären.‟</p>
-          <p>Ich bin bestürzt, betrübt. Ist so etwas möglich<note n="9" place="foot"
-                type="editorial"> La notizia era vera. Effettivamente, la richiesta al governo, formulata da alcuni studiosi italiani, di incamerare il patrimonio bibliografico dell’Istituto Archeologico Germanico (e di altre due biblioteche tedesche con sede a Roma: la Hertziana e quella dell’Istituto Storico Prussiano) era stata appoggiata dall’<ref
-                target="https://gams.uni-graz.at/o:hsa.subjects#S.290">
-Accademia dei Lincei</ref>. Schuchardt informò <persName
-                ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName>, sollecitandolo a chiedere a <persName
-                ref="https://gams.uni-graz.at/o:hsa.persons#P.1339">Benedetto Croce</persName> di intervenire (cf. <ref target="https://gams.uni-graz.at/o:hsa.letter.2863">la cartolina 32</ref>). Il filosofo, nominato al vertice della Pubblica Istruzione alla metà del giugno 1920, stipulerà un accordo con la Germania in base al quale le suddette biblioteche non sarebbero state sequestrate, a fronte di un impegno tedesco a non spostarle da Roma. Per una più ampia ricostruzione della vicenda, v. <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7356">
+               </signed>
+            </closer>
+            <postscript>
+               <p>Soeben erhalte ich den Anzeiger der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.939">Wiener Akademie</ref> vom 19. März. Darin steht, daß die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.684">Preußische Akademie</ref> mitteilt,</p>
+               <p>„die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.290">Accademia dei Lincei</ref> in Rom habe beschlossen, die Bibliothek des Deutschen Archaeologischen Institutes in Rom als Ersatz für den von den Deutschen angerichteten Kriegsschaden für verfallen zu erklären.‟</p>
+               <p>Ich bin bestürzt, betrübt. Ist so etwas möglich<note n="9" place="foot" type="editorial"> La notizia era vera. Effettivamente, la richiesta al governo, formulata da alcuni studiosi italiani, di incamerare il patrimonio bibliografico dell’Istituto Archeologico Germanico (e di altre due biblioteche tedesche con sede a Roma: la Hertziana e quella dell’Istituto Storico Prussiano) era stata appoggiata dall’<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.290">
+Accademia dei Lincei</ref>. Schuchardt informò <persName ref="[authorityLink]">Vossler</persName>, sollecitandolo a chiedere a <persName ref="[authorityLink]">Benedetto Croce</persName> di intervenire (cf. <ref target="https://gams.uni-graz.at/o:hsa.letter.2863">la cartolina 32</ref>). Il filosofo, nominato al vertice della Pubblica Istruzione alla metà del giugno 1920, stipulerà un accordo con la Germania in base al quale le suddette biblioteche non sarebbero state sequestrate, a fronte di un impegno tedesco a non spostarle da Roma. Per una più ampia ricostruzione della vicenda, v. <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7356">
 Covino, <hi rend="unknown" rendition="#none">Linguistica e nazionalismo</hi>
-                </ref>
-              </bibl>, cit., pp. 150-151, con la bibliografia ivi indicata.</note>?</p>
-          <p>Zu gleicher Stunde habe ich erfahren daß Papiere die mir gehören und auf einer Londoner Bank erliegen (Kurswert gegen 750,000 Mark) keine Aussicht haben mir ausgefolgt zu werden; das hat mir neben jenem andern fast keinen Eindruck gemacht.</p>
-          <p>-----------------------</p>
-
-          <p>*Auch Deine Arbeit über Ritmo cass. ist mir nicht zugegangen; sie ist ja lange vor dem Krieg erschienen<note
-              n="10" place="foot" type="editorial">L’annotazione si trova in calce alla prima pagina di questa missiva. Il già cit. saggio di D’Ovidio sul <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7638">
-                  <hi rend="unknown" rendition="#none">Ritmo cassinese</hi>
-                </ref>
-              </bibl> risaliva al 1912.</note>.</p>
-          <p>-----------------------</p>
-          <pb facs="#IMG.4" n="4"/>
-          <pb facs="#IMG.5" n="5"/>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                        </ref>
+                     </bibl>, cit., pp. 150-151, con la bibliografia ivi indicata.</note>?</p>
+               <p>Zu gleicher Stunde habe ich erfahren daß Papiere die mir gehören und auf einer Londoner Bank erliegen (Kurswert gegen 750,000 Mark) keine Aussicht haben mir ausgefolgt zu werden; das hat mir neben jenem andern fast keinen Eindruck gemacht.</p>
+               <p>-----------------------</p>
+               <p>*Auch Deine Arbeit über Ritmo cass. ist mir nicht zugegangen; sie ist ja lange vor dem Krieg erschienen<note n="10" place="foot" type="editorial">L’annotazione si trova in calce alla prima pagina di questa missiva. Il già cit. saggio di D’Ovidio sul <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7638">
+                           <hi rend="unknown" rendition="#none">Ritmo cassinese</hi>
+                        </ref>
+                     </bibl> risaliva al 1912.</note>.</p>
+               <p>-----------------------</p>
+               <pb facs="#IMG.4" n="4"/>
+               <pb facs="#IMG.5" n="5"/>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

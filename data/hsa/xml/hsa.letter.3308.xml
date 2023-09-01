@@ -1,318 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Alexander Budinszky an Hugo Schuchardt (01-01442)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1230">
-            <forename>Alexander</forename>
-            <surname>Budinszky</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3308" type="PID">o:hsa.letter.3308</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-01442</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">01442</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1230">
-                <forename>Alexander</forename>
-                <surname>Budinszky</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="1" unit="pages">1 Seite</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.443" ref="http://sws.geonames.org/710719">Tschernowitz</origPlace>
-              <origDate ana="dcterms:created" when="1877-04-28">1877-04-28</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Alexander Budinszky und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1230"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3308">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1230" ref="https://viaf.org/viaf/64773698">
-            <forename>Alexander</forename>
-            <surname>Budinszky</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.443" key="#GID.1" ref="http://sws.geonames.org/710719">Tschernowitz</placeName>
-          <date when="1877-04-28">1877-04-28</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Ukraine</country>
-                <settlement>Chernivtsi</settlement>
-                <name ref="http://geonames.org/710719" type="fcode:PPLA">Chernivtsi</name>
-                <location>
-                  <geo>25.93241,48.29045</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1230" type="context">
-                        Korrespondenz Alexander Budinszky - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.321" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Diezstiftung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3911" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Czernowitz</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.967" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Networking</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3080" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dankschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.35" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Metrik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.684" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Königlich-Preußische Akademie der Wissenschaften (Berlin)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.462" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsch-Französischer Krieg</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3308" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3308" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Czernowitz, 28 April 77.</dateline>
-        <opener>Sehr geehrter Herr Collega,</opener>
-        <p>für Ihre gütige Zusendung des Aufrufes zur Betheiligung an einer <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.321">Diez-Stiftung</ref>
-          <note n="1" place="foot" type="editorial">Ein Jahr nach dem Tod des romanistischen <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName>er Altmeisters <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">Friedrich Christian Diez</persName> am 29.5.1876 kam der Plan auf, ihm zu Ehren „an seinen ruhmreichen Namen eine Stiftung zu knüpfen, die den Zweck habe, die Arbeit auf dem Gebiete der von ihm begründeten Wissenschaft von den romanischen Sprachen zu fördern, eine Stiftung, welche durch Ermuthigung zum Fortschritt auf den von dem Meister gebahnten Wege dazu beitrage, dass das von ihm Geleistete künftigen Geschlechtern im rechten Sinne erhalten bleibe, und welche zugleich die Erinnerung an sein unvergängliches Verdienst immer wieder erneuere“ („<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1960">Aufruf zur Begründung einer Diez-Stiftung</ref>
-
-            </bibl>“, datiert vom 1.2.1877, Text in ZrP 1, 1877, 161-164). Die früheste Idee zu einer übernationalen Diez-Ehrung war von der Rivista di filologia romanza ausgegangen; in <placeName>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3308" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Czernowitz, 28 April 77.</dateline>
+            <opener>Sehr geehrter Herr Collega,</opener>
+            <p>für Ihre gütige Zusendung des Aufrufes zur Betheiligung an einer <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.321">Diez-Stiftung</ref>
+               <note n="1" place="foot" type="editorial">Ein Jahr nach dem Tod des romanistischen <placeName ref="[authorityLink]">Bonn</placeName>er Altmeisters <persName ref="[authorityLink]">Friedrich Christian Diez</persName> am 29.5.1876 kam der Plan auf, ihm zu Ehren „an seinen ruhmreichen Namen eine Stiftung zu knüpfen, die den Zweck habe, die Arbeit auf dem Gebiete der von ihm begründeten Wissenschaft von den romanischen Sprachen zu fördern, eine Stiftung, welche durch Ermuthigung zum Fortschritt auf den von dem Meister gebahnten Wege dazu beitrage, dass das von ihm Geleistete künftigen Geschlechtern im rechten Sinne erhalten bleibe, und welche zugleich die Erinnerung an sein unvergängliches Verdienst immer wieder erneuere“ („<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1960">Aufruf zur Begründung einer Diez-Stiftung</ref>
+                  </bibl>“, datiert vom 1.2.1877, Text in ZrP 1, 1877, 161-164). Die früheste Idee zu einer übernationalen Diez-Ehrung war von der Rivista di filologia romanza ausgegangen; in <placeName>
 
 Preußen</placeName> hatte der zu diesem Zeitpunkt noch in <placeName>
-Breslau</placeName> lehrende <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1649">Gustav Gröber</persName> das Konzept im Hinblick auf eine Stiftung konkretisiert und seinem Berliner Kollegen <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2867">Adolf Tobler</persName> mitgeteilt. Dieser griff <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1649">Gröbers</persName> Vorschlag auf und verfasste den zitierten Aufruf. Allerdings hätte er die Stiftung gerne in <placeName>
-Deutschland</placeName> etabliert, z.B. bei der <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.684">Preußischen Akademie der Wissenschaften in Berlin</ref>. Dies missfiel jedoch dem ein Jahr zuvor nach <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.6">
-Graz</placeName> berufenen <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Schuchardt</persName>, der sie mit Rücksicht auf den <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.462">
-Deutsch-französischen Krieg</ref> gerne außerhalb des gerade einmal fünf Jahre bestehenden Deutschen Kaiserreichs, z.B. in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.86">Rom</placeName>, angesiedelt hätte. Im Hinblick darauf musste auch der folgende, sprachlich hölzern-gewundene Passus des <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2867">
+Breslau</placeName> lehrende <persName ref="[authorityLink]">Gustav Gröber</persName> das Konzept im Hinblick auf eine Stiftung konkretisiert und seinem Berliner Kollegen <persName ref="[authorityLink]">Adolf Tobler</persName> mitgeteilt. Dieser griff <persName ref="[authorityLink]">Gröbers</persName> Vorschlag auf und verfasste den zitierten Aufruf. Allerdings hätte er die Stiftung gerne in <placeName>
+Deutschland</placeName> etabliert, z.B. bei der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.684">Preußischen Akademie der Wissenschaften in Berlin</ref>. Dies missfiel jedoch dem ein Jahr zuvor nach <placeName ref="[authorityLink]">
+Graz</placeName> berufenen <persName ref="[authorityLink]">Schuchardt</persName>, der sie mit Rücksicht auf den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.462">
+Deutsch-französischen Krieg</ref> gerne außerhalb des gerade einmal fünf Jahre bestehenden Deutschen Kaiserreichs, z.B. in <placeName ref="[authorityLink]">Rom</placeName>, angesiedelt hätte. Im Hinblick darauf musste auch der folgende, sprachlich hölzern-gewundene Passus des <persName ref="[authorityLink]">
 Tobler</persName>schen Aufrufs außerhalb Deutschlands für Verstimmung sorgen: „Das Comité, welches gern noch manche in grösserer Entfernung von <placeName>
-Berlin</placeName> wohnende Verehrer des todten Meisters eingeladen haben würde, ihre Namen mit unter diesen Aufruf zu setzen, hat dies unterlassen, um nicht später zu thuende gemeinsame Schritte all zu sehr zu erschweren; es würde es aber sehr als eine sehr willkommene Unterstützung seiner Thätigkeit mit aufrichtigem Danke aufnehmen, wenn anderwärts, namentlich auch im Auslande, Gönner des Unternehmens in ihrer Umgebung den Plan der <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.321">Diez-Stiftung</ref> zur Kenntnis bringen, zur Betheiligung anregen, Beiträge sammeln und dieselben dem Comité übermitteln würde“ (162). Diese Hintergründe erklären Schuchardts Motive, einen eigenen Aufruf zur Gründung der <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.321">Diez-Stiftung</ref> (Wien, den 11.4.1877) zu lancieren. Er trägt die Unterschriften von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1380">Fortunato Demattio</persName> (<placeName>
-Innsbruck</placeName>), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1799">Attilio Hortis</persName> (<placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.335">
-Triest</placeName>), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2136">
+Berlin</placeName> wohnende Verehrer des todten Meisters eingeladen haben würde, ihre Namen mit unter diesen Aufruf zu setzen, hat dies unterlassen, um nicht später zu thuende gemeinsame Schritte all zu sehr zu erschweren; es würde es aber sehr als eine sehr willkommene Unterstützung seiner Thätigkeit mit aufrichtigem Danke aufnehmen, wenn anderwärts, namentlich auch im Auslande, Gönner des Unternehmens in ihrer Umgebung den Plan der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.321">Diez-Stiftung</ref> zur Kenntnis bringen, zur Betheiligung anregen, Beiträge sammeln und dieselben dem Comité übermitteln würde“ (162). Diese Hintergründe erklären Schuchardts Motive, einen eigenen Aufruf zur Gründung der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.321">Diez-Stiftung</ref> (Wien, den 11.4.1877) zu lancieren. Er trägt die Unterschriften von <persName ref="[authorityLink]">Fortunato Demattio</persName> (<placeName>
+Innsbruck</placeName>), <persName ref="[authorityLink]">Attilio Hortis</persName> (<placeName ref="[authorityLink]">
+Triest</placeName>), <persName ref="[authorityLink]">
 Ernst Martin</persName> (<placeName>
 
-Prag</placeName>), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2200">Franz X. Miklosich</persName> (<placeName>
-Wien</placeName>), <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2264">Adolf Mussafia</persName> (<placeName>
-Wien</placeName>) und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Schuchardt</persName> selber (vgl. den Text im Hugo Schuchardt Archiv, Schriften 092). Dieser Aufruf hebt, anders als der deutsche, auf die Internationalität der Stiftung ab, die keine Nation bevorzugen und Romanen und Germanen miteinander versöhnen wolle. [Zu Einzelheiten der Auseinandersetzung Schuchardt-Tobler vgl. die einlässliche Darstellung und Dokumentation von Jürgen Storost, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1580">
-                <hi rend="unknown" rendition="#none">Hugo Schuchardt und die Gründungsphase der Diezstiftung. Stimmen in Briefen</hi>
-              </ref>
-
-            </bibl>, Bonn 1992].</note> sage ich Ihnen meinen verbindlichsten Dank, allerdings mit dem Bedauern, daß ich selbst zur Unterzeichnung nicht aufgefordert wurde.<note
-            n="2" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Schuchardt</persName> sah dieses Versäumnis offenbar ein, denn er schrieb am 8.5.1877 an <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2264">Mussafia</persName>: „Aus Czernowitz schrieb mir der provenzalische Palaeograph [=<persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1230">Budinszky</persName>], dass er das Seinige thun werde (er hat auch den Aufruf abdrucken lassen), aber er bedauerte, dass er nicht mit zur Unterzeichnung (wohl zur nachträglichen wie <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2603">Sbiera</persName>) aufgefordert worden sei. Ich werde, wenn ich Zeit habe, ihm vielleicht begütigend antworten“ (zit. nach Storost, Anm. 1, 72-73). Möglicherweise „hatte <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Schuchardt</persName> keine Zeit, begütigend zu antworten“, was das Fehlen weiterer Briefe <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1230">Budinszkys</persName> erklären würde (vgl. unten Anm. 3). <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1230">Budinszky</persName> verbirgt im vorliegenden Brief seine Verstimmung hinter leichter Ironie!</note> Ich ließ den Aufruf durch die hiesige Deutsche Zeitung veröffentlichen und machte ihn an der Universität bekannt. Herr <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2603">
+Prag</placeName>), <persName ref="[authorityLink]">Franz X. Miklosich</persName> (<placeName>
+Wien</placeName>), <persName ref="[authorityLink]">Adolf Mussafia</persName> (<placeName>
+Wien</placeName>) und <persName ref="[authorityLink]">Schuchardt</persName> selber (vgl. den Text im Hugo Schuchardt Archiv, Schriften 092). Dieser Aufruf hebt, anders als der deutsche, auf die Internationalität der Stiftung ab, die keine Nation bevorzugen und Romanen und Germanen miteinander versöhnen wolle. [Zu Einzelheiten der Auseinandersetzung Schuchardt-Tobler vgl. die einlässliche Darstellung und Dokumentation von Jürgen Storost, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1580">
+                        <hi rend="unknown" rendition="#none">Hugo Schuchardt und die Gründungsphase der Diezstiftung. Stimmen in Briefen</hi>
+                     </ref>
+                  </bibl>, Bonn 1992].</note> sage ich Ihnen meinen verbindlichsten Dank, allerdings mit dem Bedauern, daß ich selbst zur Unterzeichnung nicht aufgefordert wurde.<note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Schuchardt</persName> sah dieses Versäumnis offenbar ein, denn er schrieb am 8.5.1877 an <persName ref="[authorityLink]">Mussafia</persName>: „Aus Czernowitz schrieb mir der provenzalische Palaeograph [=<persName ref="[authorityLink]">Budinszky</persName>], dass er das Seinige thun werde (er hat auch den Aufruf abdrucken lassen), aber er bedauerte, dass er nicht mit zur Unterzeichnung (wohl zur nachträglichen wie <persName ref="[authorityLink]">Sbiera</persName>) aufgefordert worden sei. Ich werde, wenn ich Zeit habe, ihm vielleicht begütigend antworten“ (zit. nach Storost, Anm. 1, 72-73). Möglicherweise „hatte <persName ref="[authorityLink]">Schuchardt</persName> keine Zeit, begütigend zu antworten“, was das Fehlen weiterer Briefe <persName ref="[authorityLink]">Budinszkys</persName> erklären würde (vgl. unten Anm. 3). <persName ref="[authorityLink]">Budinszky</persName> verbirgt im vorliegenden Brief seine Verstimmung hinter leichter Ironie!</note> Ich ließ den Aufruf durch die hiesige Deutsche Zeitung veröffentlichen und machte ihn an der Universität bekannt. Herr <persName ref="[authorityLink]">
 Sbiera</persName>
-          <note n="3" place="foot" type="editorial">Ion <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2603">Gheorghe Sbiera</persName> (1836-1916) war Kollege <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1230">
-Budinszkys</persName> und Inhalber der Czernowitzer Lehrkanzel für Rumänische Sprache und Literatur. <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-Schuchardt</persName> hatte am 23.4.1877 an den rumänischen Philologen und Historiker <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1720">Bogdan Petriceicu Hasdeu</persName> (1838-1907) geschrieben: „Wenn Sie unter dem beifolgenden Aufruf den Namen eines österreichischen Rumänen vermissen sollten, so diene Ihnen zur Erklärung, dass wir genöthigt waren, sehr eilig zu verfahren; allein ich habe an die Herren <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2603">Sbiera</persName> und <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1309">Cipariu</persName> sofort geschrieben und sie gebeten, einer zu veröffentlichenden rumänischen Uebersetzung des Aufrufs ihren Namen den unsrigen anzuschliessen“ (nach Storost, Anm. 1, 60). Während <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2603">
-Sbiera</persName> und <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1309">Timotei Cipariu</persName> (1805-1887), Rumänist am Theologischen Seminar in Blasendorf (Blaj), nachträglich zur Unterschrift aufgefordert wurden, scheint dies bei <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1230">Budnszky</persName> nicht der Fall gewesen zu sein.</note> hat es übrigens übernommen, die eingehenden Gulden in Empfang zu nehmen. Freilich werden dieselben, entsprechend den hiesigen Culturverhältnißen, nur ein geringes Schärflein bilden; doch dürften hoffentlich gesegnetere Länder zur Verwirklichung des schönen Gedankens eine desto reichlichere Ernte ergeben.</p>
-        <p>Genehmigen Sie, verehrter Herr Collega, den Ausdruck meiner besonderen Ergebenheit.</p>
-        <closer>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1230">Alexander Budinszky</persName>.</signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               <note n="3" place="foot" type="editorial">Ion <persName ref="[authorityLink]">Gheorghe Sbiera</persName> (1836-1916) war Kollege <persName ref="[authorityLink]">
+Budinszkys</persName> und Inhalber der Czernowitzer Lehrkanzel für Rumänische Sprache und Literatur. <persName ref="[authorityLink]">
+Schuchardt</persName> hatte am 23.4.1877 an den rumänischen Philologen und Historiker <persName ref="[authorityLink]">Bogdan Petriceicu Hasdeu</persName> (1838-1907) geschrieben: „Wenn Sie unter dem beifolgenden Aufruf den Namen eines österreichischen Rumänen vermissen sollten, so diene Ihnen zur Erklärung, dass wir genöthigt waren, sehr eilig zu verfahren; allein ich habe an die Herren <persName ref="[authorityLink]">Sbiera</persName> und <persName ref="[authorityLink]">Cipariu</persName> sofort geschrieben und sie gebeten, einer zu veröffentlichenden rumänischen Uebersetzung des Aufrufs ihren Namen den unsrigen anzuschliessen“ (nach Storost, Anm. 1, 60). Während <persName ref="[authorityLink]">
+Sbiera</persName> und <persName ref="[authorityLink]">Timotei Cipariu</persName> (1805-1887), Rumänist am Theologischen Seminar in Blasendorf (Blaj), nachträglich zur Unterschrift aufgefordert wurden, scheint dies bei <persName ref="[authorityLink]">Budnszky</persName> nicht der Fall gewesen zu sein.</note> hat es übrigens übernommen, die eingehenden Gulden in Empfang zu nehmen. Freilich werden dieselben, entsprechend den hiesigen Culturverhältnißen, nur ein geringes Schärflein bilden; doch dürften hoffentlich gesegnetere Länder zur Verwirklichung des schönen Gedankens eine desto reichlichere Ernte ergeben.</p>
+            <p>Genehmigen Sie, verehrter Herr Collega, den Ausdruck meiner besonderen Ergebenheit.</p>
+            <closer>
+               <signed>
+                  <persName ref="[authorityLink]">Alexander Budinszky</persName>.</signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

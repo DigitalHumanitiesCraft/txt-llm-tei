@@ -1,351 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Robert Oppenheim an Hugo Schuchardt (18-08407)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2331">
-            <forename>Robert</forename>
-            <surname>Oppenheim</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/6413" type="PID">o:hsa.letter.6413</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">18-08407</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">08407</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2331">
-                <forename>Robert</forename>
-                <surname>Oppenheim</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="3" unit="pages">3 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.38" ref="http://sws.geonames.org/2950159">Berlin</origPlace>
-              <origDate ana="dcterms:created" when="1886-06-24">1886-06-24</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2018">2018</date>
-          <title>Die Korrespondenz zwischen Robert Oppenheim und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2331"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.6413">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2331">
-            <forename>Robert</forename>
-            <surname>Oppenheim</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.38" key="#GID.1" ref="http://sws.geonames.org/2950159">Berlin</placeName>
-          <date when="1886-06-24">1886-06-24</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Berlin</settlement>
-                <name ref="http://geonames.org/2950159" type="fcode:PPLC">Berlin</name>
-                <location>
-                  <geo>13.41053,52.52437</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2331" type="context">
-                        Korrespondenz Robert Oppenheim - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4723" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Wiener Allgemeine Zeitung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4865" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">National-Zeitung (Berlin)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4172" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Strassburg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4296" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Berlin (Friedrich-Wilhelms-Universität)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4113" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsche Rundschau</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4027" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Neue Freie Presse</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6413" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6413" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.6413" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.6413" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-
-        <dateline>ROBERT OPPENHEIM<lb/>25. Matthäikirchstrasse 25.<lb/>Berlin, W., den 24 Juni 1886.<lb/>Herrn Prof. D<hi
-            rend="unknown" rendition="#none">
-            <hi rendition="#sup">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.6413" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>ROBERT OPPENHEIM<lb/>25. Matthäikirchstrasse 25.<lb/>Berlin, W., den 24 Juni 1886.<lb/>Herrn Prof. D<hi rend="unknown" rendition="#none">
+                  <hi rendition="#sup">
 r</hi>
-          </hi> H. Schuchardt: Graz.</dateline>
-        <opener>Sehr geehrter Herr,</opener>
-        <p>Meine Postkarte v[on] gestern in Ihren Händen schätzend, beeile ich mich Ihre w. Zuschrift v. 22<hi rendition="#sup">t</hi> zu beantworten –</p>
-
-        <p>Ihrer Verwunderung gegenüber, daß während ich von Hrn Prof Meyers Buch 54 Recensionsex versandt, ich von dem Ihren nicht gerne mehr als gegen 30 Ex verschenken möchte, könnte ich einfach darauf verweisen daß die Versendung einer so großen Zahl des M’schen Werkes sich eben als fruchtlos erwiesen hat.<note
-            n="1" place="foot" type="editorial">Zum Titel von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2185">Meyer</persName>s Buch s. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.6400">Brief 08394</ref>.</note> Aber das würde mich nicht abhalten auch von dem Ihren Freiexx so reichlich, wie Sie es nur wünschen könnten, zu versenden wenn ich nicht ohnehin für Ihr Buch schon so verhältniß viel größere Aufwendungen gemacht hätte, die ich durch entsprechende Preiserhöhung nicht einbringen kann. Das Papier zu Ihrem Werke kostet mich gegen ℳ 100,00 mehr als das zu dem <pb
-            facs="#IMG.2" n="2"/> M’schen verwandte, der <hi rend="unknown" rendition="#none">Antiqua</hi>-Satz kostet für den Bogen ℳ 2,80 mehr als der Fraktur-Satz von Prof M’s Werk. d.h. bei 28 Bogen ℳ 78,40 und diesem Mehr-Aufwande von etwa ℳ 180,00 entspricht die Preiserhöhung von 50 Pf für Ihr Buch gegenüber dem M’schen (angesichts des stärkeren Umfanges des Ihren) nicht, und doch glaubte ich für 28 Bgn in kl 8° nicht mehr als ℳ 7,50 fordern zu dürfen.</p>
-
-        <p>Ich würde all dies nicht erwähnt haben, wenn ich nicht aus Ihrem letzten werthen Schreiben die Empfindung heraus läse daß Sie mich für kleinlich knausernd halten; es ist das nicht gerade angenehm nachdem ich mich bemüht habe all Ihren Wünschen Rechnung zu tragen – Aber irgend wo müssen die Opfer doch ein Ende finden u. meinte ich geschähe es am besten an der Stelle wo einem dieselben am wenigsten gedankt werden d.h. von Seiten der Zeitungs-Redaktoren.<note
-            n="2" place="foot" type="editorial">Der Eintrag im HSA weist für <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.783">
-                <hi rend="unknown" rendition="#none">Romanisches und Keltisches</hi>
-              </ref>
-            </bibl> die stolze Zahl von immerhin 18 Rezensionen nach!</note>
-        </p>
-
-        <p>Ich schlage die Besprechungen von Seiten der Politischen Zeitungen auch keineswegs gering an, wie Sie meinen, nur wünsche ich, wenn ich einer Zeitung ein oder gar 2 Ex eines Werkes sende <pb
-            facs="#IMG.3" n="3"/> auch einiger Maßen sicher zu sein daß das Buch in die Hände eines zuständigen Beurtheilers gelangt, denn an der kurzen auch lobenden Anzeige im Bücherwinkel der Zeitung, wo sich oft genug dergl. zwischen e. längeren Beurtheilung eines Kochbuches u. der Anzeige des neuesten Fahrplanes eingeklemmt findet, liegt mir allerdings garnichts.</p>
-        <p>Ich bin daher auch sehr gerne bereit der W<hi rend="unknown" rendition="#none">
-            <hi rendition="#sup">r</hi>
-          </hi> Allg Zeitung wie auch der Deutschen Zeitung<note n="3" place="foot" type="editorial">Zu <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4723">
-              <hi rend="unknown" rendition="#none">Wiener Allgemeine Zeitung</hi>
-            </ref> und zu 
+               </hi> H. Schuchardt: Graz.</dateline>
+            <opener>Sehr geehrter Herr,</opener>
+            <p>Meine Postkarte v[on] gestern in Ihren Händen schätzend, beeile ich mich Ihre w. Zuschrift v. 22<hi rendition="#sup">t</hi> zu beantworten –</p>
+            <p>Ihrer Verwunderung gegenüber, daß während ich von Hrn Prof Meyers Buch 54 Recensionsex versandt, ich von dem Ihren nicht gerne mehr als gegen 30 Ex verschenken möchte, könnte ich einfach darauf verweisen daß die Versendung einer so großen Zahl des M’schen Werkes sich eben als fruchtlos erwiesen hat.<note n="1" place="foot" type="editorial">Zum Titel von <persName ref="[authorityLink]">Meyer</persName>s Buch s. <ref target="https://gams.uni-graz.at/o:hsa.letter.6400">Brief 08394</ref>.</note> Aber das würde mich nicht abhalten auch von dem Ihren Freiexx so reichlich, wie Sie es nur wünschen könnten, zu versenden wenn ich nicht ohnehin für Ihr Buch schon so verhältniß viel größere Aufwendungen gemacht hätte, die ich durch entsprechende Preiserhöhung nicht einbringen kann. Das Papier zu Ihrem Werke kostet mich gegen ℳ 100,00 mehr als das zu dem <pb facs="#IMG.2" n="2"/> M’schen verwandte, der <hi rend="unknown" rendition="#none">Antiqua</hi>-Satz kostet für den Bogen ℳ 2,80 mehr als der Fraktur-Satz von Prof M’s Werk. d.h. bei 28 Bogen ℳ 78,40 und diesem Mehr-Aufwande von etwa ℳ 180,00 entspricht die Preiserhöhung von 50 Pf für Ihr Buch gegenüber dem M’schen (angesichts des stärkeren Umfanges des Ihren) nicht, und doch glaubte ich für 28 Bgn in kl 8° nicht mehr als ℳ 7,50 fordern zu dürfen.</p>
+            <p>Ich würde all dies nicht erwähnt haben, wenn ich nicht aus Ihrem letzten werthen Schreiben die Empfindung heraus läse daß Sie mich für kleinlich knausernd halten; es ist das nicht gerade angenehm nachdem ich mich bemüht habe all Ihren Wünschen Rechnung zu tragen – Aber irgend wo müssen die Opfer doch ein Ende finden u. meinte ich geschähe es am besten an der Stelle wo einem dieselben am wenigsten gedankt werden d.h. von Seiten der Zeitungs-Redaktoren.<note n="2" place="foot" type="editorial">Der Eintrag im HSA weist für <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.783">
+                        <hi rend="unknown" rendition="#none">Romanisches und Keltisches</hi>
+                     </ref>
+                  </bibl> die stolze Zahl von immerhin 18 Rezensionen nach!</note>
+            </p>
+            <p>Ich schlage die Besprechungen von Seiten der Politischen Zeitungen auch keineswegs gering an, wie Sie meinen, nur wünsche ich, wenn ich einer Zeitung ein oder gar 2 Ex eines Werkes sende <pb facs="#IMG.3" n="3"/> auch einiger Maßen sicher zu sein daß das Buch in die Hände eines zuständigen Beurtheilers gelangt, denn an der kurzen auch lobenden Anzeige im Bücherwinkel der Zeitung, wo sich oft genug dergl. zwischen e. längeren Beurtheilung eines Kochbuches u. der Anzeige des neuesten Fahrplanes eingeklemmt findet, liegt mir allerdings garnichts.</p>
+            <p>Ich bin daher auch sehr gerne bereit der W<hi rend="unknown" rendition="#none">
+                  <hi rendition="#sup">r</hi>
+               </hi> Allg Zeitung wie auch der Deutschen Zeitung<note n="3" place="foot" type="editorial">Zu <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4723">
+                     <hi rend="unknown" rendition="#none">Wiener Allgemeine Zeitung</hi>
+                  </ref> und zu 
 
 
 <hi rend="unknown" rendition="#none">Deutsche Zeitung</hi>
- (Wien), s.u. u. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.6417">Brief 08410</ref>.</note> ein Ex des Werkes zu senden, wenn Sie mir gütigst angeben wollen an wen das Ex zu schicken, ebenso würde ich mich freuen das Werk in der „National Ztg“<note
-            n="4" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4865">
-              <hi rend="unknown" rendition="#none">National-Zeitung</hi> (Berlin)</ref>, s. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.6417">Brief 08410</ref>.</note> beurtheilt zu sehen, da ich aber weiß daß wenn ich dass. einfach der Redaktion sende, es im günstigsten Falle, an oben bezeichneter Stelle in ein paar Zeilen abgelobt wird, so erbitte ich auch für diese Ztg die Namhaftmachung eines fachmännischen Beurtheilers. – An Herrn Geh. Rath <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2627">
-            <hi rend="unknown" rendition="#none">Scherer</hi>
-          </persName>
-          <note n="5" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2627">Wilhelm Scherer</persName> (1841-1886), deutsch-österreichischer Germanist, Professor in <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4042">Straßburg</ref> und <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4296">Berlin</ref>, am 6.8.1886 an einem Schlaganfall verstorben. Er war Mithrsg. der 
+ (Wien), s.u. u. <ref target="https://gams.uni-graz.at/o:hsa.letter.6417">Brief 08410</ref>.</note> ein Ex des Werkes zu senden, wenn Sie mir gütigst angeben wollen an wen das Ex zu schicken, ebenso würde ich mich freuen das Werk in der „National Ztg“<note n="4" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4865">
+                     <hi rend="unknown" rendition="#none">National-Zeitung</hi> (Berlin)</ref>, s. <ref target="https://gams.uni-graz.at/o:hsa.letter.6417">Brief 08410</ref>.</note> beurtheilt zu sehen, da ich aber weiß daß wenn ich dass. einfach der Redaktion sende, es im günstigsten Falle, an oben bezeichneter Stelle in ein paar Zeilen abgelobt wird, so erbitte ich auch für diese Ztg die Namhaftmachung eines fachmännischen Beurtheilers. – An Herrn Geh. Rath <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Scherer</hi>
+               </persName>
+               <note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Wilhelm Scherer</persName> (1841-1886), deutsch-österreichischer Germanist, Professor in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4042">Straßburg</ref> und <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4296">Berlin</ref>, am 6.8.1886 an einem Schlaganfall verstorben. Er war Mithrsg. der 
 
 
-<hi
-              rend="unknown" rendition="#none">Zeitschrift für deutsches Alterthum</hi>
+<hi rend="unknown" rendition="#none">Zeitschrift für deutsches Alterthum</hi>
 . Zu <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4113">
-              <hi rend="unknown" rendition="#none">Deutsche Rundschau</hi>
-            </ref> s. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.6417">Brief 08410</ref>.</note> werde ich „in Ihrem Auftrage“ ein Ex senden und <pb
-            facs="#IMG.4" n="4"/> gerne für die Redaktion der <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4113">Deutschen Rundschau</ref> (am Rand eingefügt: Ich muß um Entschuldigung bitten, daß ich Ihren ersten diesbezügl Auftrag nicht richtig aufgefaßt hatte) ein zweites Ex zur Verfügung stellen, falls Herr <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2627">S.</persName> einen seiner Schüler zur Besprechung veranlassen will. So auch sende ich der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4027">N. Fr. Pr.</ref>
-          <note n="6" place="foot" type="editorial">
-            <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4027">
-              <hi rend="unknown" rendition="#none">Neue Freie Presse</hi>
+                     <hi rend="unknown" rendition="#none">Deutsche Rundschau</hi>
+                  </ref> s. <ref target="https://gams.uni-graz.at/o:hsa.letter.6417">Brief 08410</ref>.</note> werde ich „in Ihrem Auftrage“ ein Ex senden und <pb facs="#IMG.4" n="4"/> gerne für die Redaktion der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4113">Deutschen Rundschau</ref> (am Rand eingefügt: Ich muß um Entschuldigung bitten, daß ich Ihren ersten diesbezügl Auftrag nicht richtig aufgefaßt hatte) ein zweites Ex zur Verfügung stellen, falls Herr <persName ref="[authorityLink]">S.</persName> einen seiner Schüler zur Besprechung veranlassen will. So auch sende ich der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4027">N. Fr. Pr.</ref>
+               <note n="6" place="foot" type="editorial">
+                  <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4027">
+                     <hi rend="unknown" rendition="#none">Neue Freie Presse</hi>
+                  </ref>, von 1864-1939 überregionle österr. Tageszeitung.</note> in Wien ein zweites Ex, so bald etwa H. <persName ref="[authorityLink]">Speidel</persName>
+               <note n="7" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Ludwig Speidel</persName> (1830-1904), führender Musik-, Theater- und Literaturkritiker Wiens.</note> Ihnen diesbezgl Wunsch ausgesprochen – </p>
+            <p>Wochenschrift f. class. Phil<note n="8" place="foot" type="editorial">Die 
 
-            </ref>, von 1864-1939 überregionle österr. Tageszeitung.</note> in Wien ein zweites Ex, so bald etwa H. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2761">Speidel</persName>
-          <note n="7" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2761">Ludwig Speidel</persName> (1830-1904), führender Musik-, Theater- und Literaturkritiker Wiens.</note> Ihnen diesbezgl Wunsch ausgesprochen – </p>
-        <p>Wochenschrift f. class. Phil<note n="8" place="foot" type="editorial">Die 
-
-<hi rend="unknown"
-              rendition="#none">
+<hi rend="unknown" rendition="#none">
 Wochenschrift für classische Philologie</hi>
  ging aus der 
 
-<hi rend="unknown"
-            rendition="#none">
+<hi rend="unknown" rendition="#none">
 Philologischen Wochenschrift</hi>
  hervor und erschien von 1884 bis 1920 in <placeName>
-Berlin</placeName>.</note> hatte ein Ex Ihres Buches zur Besprechung erbeten u. ich wollte es senden, da ich der Meinung war daß mindestens die letzten beiden Aufsätze Ihres Bandes auch den klass. Philol. Interesse böten, streiche aber das Ex in Folge Ihres Einspruches. Ich hoffe daß Sie aus vorstehendem den Eindruck gewonnen haben, daß ich gerne bereit bin Ihren Wünschen in jeder Beziehung Rechnung zu tragen u. die bisher aufgezählte Zahl von Freiex gern zu überschreiten bereit bin, wenn Sie mir für W<hi
-            rendition="#sup">r</hi> Allg. Ztg,<note n="9" place="foot" type="editorial">Die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4723">
-              <hi rend="unknown" rendition="#none">Wiener Allgemeine Zeitung</hi>
-            </ref> erschien als Tageszeitung vom 1.3.1880 bis zum 11.2.1934.</note> Deutsche Ztg<note n="10"
-            place="foot" type="editorial">Die in Wien erscheinende 
+Berlin</placeName>.</note> hatte ein Ex Ihres Buches zur Besprechung erbeten u. ich wollte es senden, da ich der Meinung war daß mindestens die letzten beiden Aufsätze Ihres Bandes auch den klass. Philol. Interesse böten, streiche aber das Ex in Folge Ihres Einspruches. Ich hoffe daß Sie aus vorstehendem den Eindruck gewonnen haben, daß ich gerne bereit bin Ihren Wünschen in jeder Beziehung Rechnung zu tragen u. die bisher aufgezählte Zahl von Freiex gern zu überschreiten bereit bin, wenn Sie mir für W<hi rendition="#sup">r</hi> Allg. Ztg,<note n="9" place="foot" type="editorial">Die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4723">
+                     <hi rend="unknown" rendition="#none">Wiener Allgemeine Zeitung</hi>
+                  </ref> erschien als Tageszeitung vom 1.3.1880 bis zum 11.2.1934.</note> Deutsche Ztg<note n="10" place="foot" type="editorial">Die in Wien erscheinende 
 
 
-<hi rend="unknown"
-            rendition="#none">Deutsche Zeitung</hi>
- erschien von 1871 bis 1907 als Tageszeitung.</note> und Andere <hi
-            rend="unknown" rendition="#none">nach Ihrer Auswahl</hi> die Berichterstatter namhaft machen.</p>
-        <closer>
-          <salute>In vorzüglicher Hochachtung</salute>
-          <lb/>
-          <salute>ganz ergebenst</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2331">Robert Oppenheim</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+<hi rend="unknown" rendition="#none">Deutsche Zeitung</hi>
+ erschien von 1871 bis 1907 als Tageszeitung.</note> und Andere <hi rend="unknown" rendition="#none">nach Ihrer Auswahl</hi> die Berichterstatter namhaft machen.</p>
+            <closer>
+               <salute>In vorzüglicher Hochachtung</salute>
+               <lb/>
+               <salute>ganz ergebenst</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Robert Oppenheim</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,481 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Jakob Jud (82-HSJJ24)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8562" type="PID">o:hsa.letter.8562</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">82-HSJJ24</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Bern</settlement>
-            <institution>Universität Bern</institution>
-            <repository ref="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">AIS Archiv</repository>
-            <idno type="shelfmark">HSJJ24</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="12" unit="pages">12 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1920-12-17">1920-12-17</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Jakob Jud</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1858"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8562">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1920-12-17">1920-12-17</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1858" ref="https://viaf.org/viaf/88644299">
-            <forename>Jakob</forename>
-            <surname>Jud</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1858" type="context">
-                        Korrespondenz Hugo Schuchardt - Jakob Jud
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5074" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Völkerbund</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.7">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.8">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.9">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.10">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.11">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8562" xml:id="IMG.12">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8562" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 17.12. ‘20</dateline>
-        <opener>Lieber Freund,</opener>
-
-        <p>Man hat immer gesagt: „ich hatte lange nichts von Ihnen gesehen“ – „gehört“, in unsern Tagen darf man auch sagen: „ich hatte lange von Ihnen nichts geschmeckt“; nur nicht im Optativ. Vorgestern ist die nicht genug zu bedankende Liebesgabe eingetroffen, und hat sofort einen bestimmten Konflikt in meinem Innern ausgelöst. Ich hatte geglaubt mich an den Gerstenkaffee gewöhnt zu haben, und er wurde mir immer wiederwärtiger; da tauchte bei uns wieder einmal der Bohnenkaffee auf, stellte sich <pb
-            facs="#IMG.2"
-            n="2"/> mir aber wenn auch nicht in gleicher Weise, so in gleichem Grade gräulich vor wie der Gerstenkaffee. Um meine Zweifel zu beschwichtigen, zeigte man mir kleine verhutzelte Bohnen in grünen und im gerösteten Zustande; ich bin aber doch nicht sicher ob es nicht die kaffeeoiden Früchte von Gesträuchen sind die in den schattigen Gründen des Semmering wachsen. Enfin, bonne herbe vint …<note
-            n="1" place="foot" type="editorial">Abwandlung des bekannten „Enfin Malherbe vint“ (<persName>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.12" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8562" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 17.12. ‘20</dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Man hat immer gesagt: „ich hatte lange nichts von Ihnen gesehen“ – „gehört“, in unsern Tagen darf man auch sagen: „ich hatte lange von Ihnen nichts geschmeckt“; nur nicht im Optativ. Vorgestern ist die nicht genug zu bedankende Liebesgabe eingetroffen, und hat sofort einen bestimmten Konflikt in meinem Innern ausgelöst. Ich hatte geglaubt mich an den Gerstenkaffee gewöhnt zu haben, und er wurde mir immer wiederwärtiger; da tauchte bei uns wieder einmal der Bohnenkaffee auf, stellte sich <pb facs="#IMG.2" n="2"/> mir aber wenn auch nicht in gleicher Weise, so in gleichem Grade gräulich vor wie der Gerstenkaffee. Um meine Zweifel zu beschwichtigen, zeigte man mir kleine verhutzelte Bohnen in grünen und im gerösteten Zustande; ich bin aber doch nicht sicher ob es nicht die kaffeeoiden Früchte von Gesträuchen sind die in den schattigen Gründen des Semmering wachsen. Enfin, bonne herbe vint …<note n="1" place="foot" type="editorial">Abwandlung des bekannten „Enfin Malherbe vint“ (<persName>
 Boileau</persName>), hier witzig auf den übersandten Kaffee gemünzt. Vermutlich hatte Jud Kaffeebohnen geschickt, die vor Verwendung erst noch geröstet werden mußten. Der „Semmering“ könnte andeuten, daß Schuchardt vermutet, jemand habe das Paket beim Grenzübergang geöffnet und die Kaffeebohnen durch irgendwelche bohnenähnlichen Früchte ersetzt.</note> das Übrige erspare ich mir.</p>
-        <p>Nun lassen Sie aber auch von sich <hi rend="unknown"
-            rendition="#none">hören</hi>! Wie steht es mit Ihren Arbeiten „im Felde“?<note n="2" place="foot" type="editorial">
+            <p>Nun lassen Sie aber auch von sich <hi rend="unknown" rendition="#none">hören</hi>! Wie steht es mit Ihren Arbeiten „im Felde“?<note n="2" place="foot" type="editorial">
 „Feldarbeit“ i.S.v. Ermittlung sprachlicher Phänomene für den Sprachatlas.</note>
-        </p>
-
-        <p>Von mir ist nicht viel Gutes zu melden. In ein paar Monaten kaum einen Sonnenstrahl, und die Kläglichkeit der elektrischen Beleuchtung! Und dabei macht sich die Abnahme <pb
-            facs="#IMG.3"
-            n="3"/> meiner Sehkraft sehr bemerkbar. Ich muß immer an die humorvolle Schilderung des Erblindens bei Rosegger denken: … und auf einmal sieht man daß man nichts mehr sieht.<note
-            n="3" place="foot" type="editorial">Peter Rosegger, <hi rend="unknown" rendition="#none">
-              <bibl>
+            </p>
+            <p>Von mir ist nicht viel Gutes zu melden. In ein paar Monaten kaum einen Sonnenstrahl, und die Kläglichkeit der elektrischen Beleuchtung! Und dabei macht sich die Abnahme <pb facs="#IMG.3" n="3"/> meiner Sehkraft sehr bemerkbar. Ich muß immer an die humorvolle Schilderung des Erblindens bei Rosegger denken: … und auf einmal sieht man daß man nichts mehr sieht.<note n="3" place="foot" type="editorial">Peter Rosegger, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 Waldheimat. Erzählungen aus der Jugendzeit
 </bibl>
-
-            </hi> („Von meiner blinden Führerin“).</note> Von blinden Gelehrten erregt mir keiner ein größeres Mitleid als Friedrich Kluge, den ich übrigens nicht persönlich kenne.<note
-            n="4" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1922">Friedrich Kluge</persName> (1856-1926), deutscher Germanist in <placeName>
-Freiburg i. Br.</placeName>; vgl. HSA 05641-05647.</note> Er wurde am 1 Okt. 1919 (um jüngeren Kräften Platz zu machen – die Humanität äußert sich heutzutage oft recht wunderlich) in den unfreiwlligen Ruhestand versetzt, und damit zugleich, wie er mir schreibt, in eine schwere Notlage, da sein Ruhegehalt zu klein zum Leben ist, er tritt nun aus allen Vereinen, auch aus den wissenschaftlichen aus. Er hatte mir vor kurzem <pb
-            facs="#IMG.4" n="4"/> wegen seiner Etymologie <hi rend="unknown"
-            rendition="#none">garçon</hi> } waracio<note n="5" place="foot" type="editorial">Vgl. Brief <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5665">
-05636</ref>.</note> geschrieben, die von L. Spitzer im Ltbl. angegriffen worden war.<note
-            n="6" place="foot" type="editorial">Spitzer, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1237">Literaturblatt für german. u. roman. Philologie</ref>
-              </bibl>
-            </hi> 38, 1917, Sp. 302; vgl. dazu Kluge, „<bibl>
+                  </hi> („Von meiner blinden Führerin“).</note> Von blinden Gelehrten erregt mir keiner ein größeres Mitleid als Friedrich Kluge, den ich übrigens nicht persönlich kenne.<note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Friedrich Kluge</persName> (1856-1926), deutscher Germanist in <placeName>
+Freiburg i. Br.</placeName>; vgl. HSA 05641-05647.</note> Er wurde am 1 Okt. 1919 (um jüngeren Kräften Platz zu machen – die Humanität äußert sich heutzutage oft recht wunderlich) in den unfreiwlligen Ruhestand versetzt, und damit zugleich, wie er mir schreibt, in eine schwere Notlage, da sein Ruhegehalt zu klein zum Leben ist, er tritt nun aus allen Vereinen, auch aus den wissenschaftlichen aus. Er hatte mir vor kurzem <pb facs="#IMG.4" n="4"/> wegen seiner Etymologie <hi rend="unknown" rendition="#none">garçon</hi> } waracio<note n="5" place="foot" type="editorial">Vgl. Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.5665">
+05636</ref>.</note> geschrieben, die von L. Spitzer im Ltbl. angegriffen worden war.<note n="6" place="foot" type="editorial">Spitzer, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1237">Literaturblatt für german. u. roman. Philologie</ref>
+                     </bibl>
+                  </hi> 38, 1917, Sp. 302; vgl. dazu Kluge, „<bibl>
 
 Germanisches Reckentum
-</bibl>“, <hi rend="unknown"
-              rendition="#none">Modern Language Notes</hi> 37, H. 7, 1922, 385-390. Kluges Beitrag war in der <hi
-              rend="unknown"
-              rendition="#none">Frankfurter Zeitung</hi> vom 21.6.1916 veröffentlicht worden. Er schreibt S. 388: „Es ist vielleicht das einzige Mal gewesen, dass das <hi
-              rend="unknown" rendition="#none">Literaturblatt f. germ. u. roman. Philologie</hi> hrsg. von <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1121">Behaghel</persName> und <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2288">Neumann</persName> eine Rezension über ein Feuilleton gebracht hat, als Prof. <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Leo Spitzer</persName> darüber das Wort ergriff (1917, Sp. 302). Aber nachdem ich nunmehr in einem neuen Artikel der <hi
-              rend="unknown"
-              rendition="#none">Zeitschrift f. rom. Phil.</hi> 41,684 meine Etymologie fachlich begründet habe, warte ich noch immer vergebens darauf, dass das gleiche Fachblatt auch über meine wissenschaftliche Begründung der neuen Etymologie berichten würde. Und weil auch Meyer-Lübke <hi
-              rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4027">Rom. et. Wb.</ref>
-              </bibl>
-
-            </hi> meine Deutung nicht einmal der Erwähnung wert achtet, darf ich auf das wichtige Problem hier wohl zurückkommen, um zu verhindern, dass meine neue Etymologie weiter unbeachtet bleibt“. Kluge führt jetzt allerdings keinen Beleg aus Förstemann, <hi
-              rend="unknown" rendition="#none">
-              <bibl>
+</bibl>“, <hi rend="unknown" rendition="#none">Modern Language Notes</hi> 37, H. 7, 1922, 385-390. Kluges Beitrag war in der <hi rend="unknown" rendition="#none">Frankfurter Zeitung</hi> vom 21.6.1916 veröffentlicht worden. Er schreibt S. 388: „Es ist vielleicht das einzige Mal gewesen, dass das <hi rend="unknown" rendition="#none">Literaturblatt f. germ. u. roman. Philologie</hi> hrsg. von <persName ref="[authorityLink]">Behaghel</persName> und <persName ref="[authorityLink]">Neumann</persName> eine Rezension über ein Feuilleton gebracht hat, als Prof. <persName ref="[authorityLink]">Leo Spitzer</persName> darüber das Wort ergriff (1917, Sp. 302). Aber nachdem ich nunmehr in einem neuen Artikel der <hi rend="unknown" rendition="#none">Zeitschrift f. rom. Phil.</hi> 41,684 meine Etymologie fachlich begründet habe, warte ich noch immer vergebens darauf, dass das gleiche Fachblatt auch über meine wissenschaftliche Begründung der neuen Etymologie berichten würde. Und weil auch Meyer-Lübke <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4027">Rom. et. Wb.</ref>
+                     </bibl>
+                  </hi> meine Deutung nicht einmal der Erwähnung wert achtet, darf ich auf das wichtige Problem hier wohl zurückkommen, um zu verhindern, dass meine neue Etymologie weiter unbeachtet bleibt“. Kluge führt jetzt allerdings keinen Beleg aus Förstemann, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Altdeutsches Namenbuch
 </bibl>
-
-            </hi> (2 Bde. 1856/59) an [unsere Durchsicht der Register Förstemanns ergab keinen Eintrag!], sondern aus dem Verbrüderungsbuch von St. Gallen, das Prof. Piper 1884 in den <hi
-              rend="unknown"
-            rendition="#none">MGH</hi> herausgegeben habe.</note> Nun wünscht er meine Ansicht zu vernehmen; aber ich kenne die beiderseitigen Ausführungen nicht, vielleicht besitze ich sie, ich kann sie aber jetzt nicht suchen. Meine Leute beanstanden ohnehin schon mein Herumwandern aus dem Warmen ins Kalte; zu Anfang dieser Woche hatte ich einen unmotivierten Fieberanfall, von dem ich noch nicht ganz in meinen normalen Zustand zurückgekehrt bin. – Ein anderer Blinde, mein Freund Nyrop fühlt sich wie eine dänische Ärztin mir bei ihrem Besuch mitteilte, sehr glücklich; er hat, wenn ich nicht irre, fünf Sekretärinnen und seine Frau schrieb mir gelegentlich des Thorwaldsenfestes, er sei sehr „en <pb
-            facs="#IMG.5" n="5"/> vue“ [18 Dez]. Auch er arbeitet besonders gern in Etymologien (<hi rend="unknown"
-            rendition="#none">lazaret</hi>, <hi rend="unknown" rendition="#none">matelot</hi>. dän. <hi rend="unknown"
-            rendition="#none">
-passiar</hi>),<note n="7" place="foot" type="editorial">Kristoffer Nyrop, <hi
-              rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4775">Ordenes liv</ref>
-              </bibl>
-
-            </hi>, Kopenhagen: Gyldendal, Nordisk forlag, 1927, Kap. IV.</note> wobei er natürlich zum größten Teil mit fremdem Kalbe pflügen muß. So wird mir selbst der liebe Sport des Etymologisierens durch die Notwendigkeit des ewigen Herumsteigens und Nachschlagens verleidet. Neulich nahm ich nach langer Zeit wieder einmal eine Karte des <hi
-            rend="unknown"
-            rendition="#none">Atlas l.</hi> in die Hand (ehe man die herausgeklaubt hat die man sucht – welche Mühe!) und da stellte ich fest, daß ich mit der Lupe zwar das Einzelne erkennen, aber mir keinen Überblick verschaffen könnte. Ließen sich doch die phonetischen Minutien wie Blumenstaub hinwegblasen, schrumpften doch die großen Karten zu Kärtchen <pb
-            facs="#IMG.6" n="6"/> zusammen! Weniger wäre mehr. Oder sollte es wirklich – wie ich schon seit langem bezweifle – unser Ideal sein, aus jedem Dörfchen der weiten Romania eine genaue Darstellung der dortigen Phonetik zu erhalten? Ich fürchte, irgendwo in unserer wissenschaftlichen Anschauung steckt ein großer Grundfehler; aber ich gebe zu, es ist noch ein Problem. Vielleicht handelt es sich nur um ein Mißverhältnis zwischen Stoffbeschaffung und Stoffverarbeitung; vielleicht handelt es sich bei der letzteren gar nicht um Gewinnung allgemeiner wertvoller Ergebnisse, sondern auch wiederum nur um Einzelheiten. „Historizismus“ in infinitum?</p>
-
-        <p>Ich verliere den Überblick über das romanische Gebiet; über das baskische verbleibt er mir noch. Ich erhalte jetzt die Aushängebogen einer Arbeit Les Éléments de la phonétique <pb
-            facs="#IMG.7" n="7"/> basque“ von einem Franzosen,<note n="8" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1558">Henri Gavel</persName> (1880-1959), franz. Romanist und Baskologe, Verf. von <hi
-              rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4340">Éléments de phonétique basque</ref>
-              </bibl>
-
-            </hi>, Paris: Champion, 1920, 542 S. Zugl. Diss. Univ. Toulouse. Vgl. HSA 03614-03618.</note> der ins Baskische hineingeheiratet hat (wie Voßler ins Italienisch<note
-            n="9" place="foot" type="editorial">Der Romanist <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Karl Voßler</persName> (Vossler) heiratete am 25.2.1900 <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4309">Esterina</persName> (Esther) Gräfin Gnoli, Tochter des Direktors der Nationalbibliothek Vittorio Emanuele in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.86">
-Rom</placeName>.</note>). Bis jetzt gegen 300 Seiten; es sollen im Ganzen 560 werden. Manches Feine und Neue ist darin, aber im Großen und Ganzen auf ganz unfranzösische Weise zerdehnt, verdünnt (ohne Exposition). Ich denke, wenn ichs derleb, die Schrift zur Grundlage eine Betrachtung über die Verwandtschaft von Lauterscheinungen auf zwei benachbarten ganz verschiedenen Sprachgebieten zu machen.<note
-            n="10" place="foot" type="editorial">Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.93">Zur Kenntnis des Baskischen von Sara (Labourd)</ref>
-            </bibl>“, <hi rend="unknown" rendition="#none">Abhandl. d. Berl. Ak. d. W.</hi> 1922, 1-39. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1558">Gavel</persName> wird hier mehrfach erwähnt, S. 6, Anm. 2, 9, 13, 16, 32, 36, 37.</note> Für das Romanische kommt auch einiges nicht Unwichtige heraus. Millardet ist dabei wohl entbehrlich; ich habe ihn zufälligerweise nicht; er hat sich, worüber ich mich <pb
-            facs="#IMG.8"
-            n="8"/> einmal bei Schädel beschwerte, in einer Bibliographie des Gaskognischen um das Baskische auch nicht im Mindesten gekümmert.<note
-            n="11" place="foot" type="editorial">Georges Millardet, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6286">Le domaine gascon: compte rendu rétrospectif jusqu’en 1907</ref>
-            </bibl>“, <hi rend="unknown"
-              rendition="#none">Revue de Dialectologie Romane</hi> 1, 1909, 122-156. Was Schuchardt an diesem Referat kritisierte, wissen wir nicht, möglicherweise einen fehlenden Hinweis auf das Baskische und Publikationen aus seiner Feder. – Vgl. HSA Brief <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.3533">09992</ref> (PK <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2609">Bernhard Schädel</persName> an Schuchardt vom 10.3.1909).</note>
-        </p>
-
-        <p>Augenblicklich liegt mir, in betreff von Veröffentlichung etwas anderes sehr am Herzen. Als ich mit Linschmann die baskischen Bücher Leiçarragas abdruckte,<note
-            n="12" place="foot" type="editorial">J. Leiçarragas <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.448">Baskische Bücher von 1571; Testamentum novum; (Neues Testament, Kalender und Abc)</ref>
-              </bibl>
-
-            </hi>, im genauen Abdruck herausgegeben von Th. Linschmann und H. Schuchardt. Mit Unterstützung der Kais. Akademie der Wissenschaften, Strassburg: K. J. Trübner, 1900.</note> entwarf ich eine „Einführung ins Baskische“, auf Grund der Parabel vom verloren Sohn bei L., etwa zwei bis drei Druckbogen stark. Ich dachte: aufgeschoben ist nicht aufgehoben; ich würde dazu noch immer die Zeit finden. Das glaub‘ ich kaum mehr; ich will mich zwar bemühen, einen Verleger, vielleicht Trübners Nachfolger selbst zu dem an sich nicht bedeutenden Unternehmen zu überreden. Ich bilde mir nemlich [sic] ein daß ich im Stande bin besser <pb
-            facs="#IMG.9"
-            n="9"/> als ein anderer die Lösung dieser in praktischem Sinn schwierigen Aufgabe zu bewerkstelligen.<note
-            n="13" place="foot" type="editorial">Schuchardt, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.231">Primitiae linguae Vasconum</ref>
-              </bibl>
-            </hi>, Halle: Niemeyer, 1923; 2. Aufl.; eingel. und mit einer Bibliogr. vers. von Antonio Tovar, Tübingen: Niemeyer, 1968.</note>
-        </p>
-
-        <p>Neulich trat bei mir ein ehemaliger Zuhörer von mir ein, ein Mittelschulprofessor und Großvater, mit einem großen etwa 4 Kilo schweren Paket. „Was haben Sie da?“ – „Meine Arbeit.“ – ? – „Von der ich Ihnen vor einigen Jahren sprach. Nun, kurz und gut, es war eine grammatisch-stilistische Studie über sämtliche französische Übersetzungen (Bruchstücke inbegriffen) von Schillers Tell, an der er ein Dutzend Jahre gearbeitet hatte. Ich war rat- und fassungslos. Zum Glück war ihm klar daß jetzt an eine Veröffentlichung nicht gedacht werden könnte. Er ließ mir die Unzahl von Schreibheften da, damit ich ihm mein Urteil darüber sage. Welchen Trost <pb
-            facs="#IMG.10" n="10"/> soll ich ihm geben? Den daß die Hauptsache ist, ein Mensch müsse sich selbst genügen, müsse den Wert einer Arbeit, der er sich mit voller Seele hingibt, in sich selbst suchen? Oder haben wir überhaupt die Fähigkeit den objektiven Wert unserer eigenen Arbeit richtig zu bemessen?</p>
-
-        <p>Auch der Bücherprotz (im aktiven wie im passiven Sinn) L. Spitzer befindet sich jetzt in Verlegenheit. Er bringt seine Arbeiten nicht mehr unter; er kann sich nicht alles mehr anschaffen. Neulich hat er mir eine große Belustigung bereitet. Er hatte mich (in höflichem Ton) getadeld daß ich aus einer Privatkorrespondenz mit einem Italiener ein Bruchstück – ohne den Namen des Schreibers – im Drucke veröffentlicht hatte, worin die in den <pb
-            facs="#IMG.11"
-            n="11"/> dortigen Universitätskreisen herrschende Rechtfertigung der südtirolischen Annexion ausgesprochen war. Aus einem Privatbrief dürfe man nur auf ausdrücklichen des Schreibers veröffentlichen.<note
-            n="14" place="foot"
-            type="editorial">Brief nicht identifiziert.</note> Ziemlich zu gleicher Zeit schickte mir Spitzer seine beiden dicken Zwillinge<note
-            n="15" place="foot" type="editorial">Spitzer, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4023">Die Umschreibungen des Begriffes „Hunger" im Italienischen; stilistisch-onomasiologische Studie auf Grund von unveröffentlichtem Zensurmaterial,</ref>
-              </bibl>
-            </hi> Halle: Niemeyer, 1920 (Beihefte zur Zeitschrift für romanische Philologie; 68); Ders., <hi
-              rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4060">Italienische Kriegsgefangenenbriefe. Materialien zu einer Charakteristik der volkstümlichen italienischen Korrespondenz</ref>
-              </bibl>
-
-            </hi>, Bonn: Hanstein, 1921.</note> zu. Ich beglückwünschte ihn dazu; hauptsächlich bewunderte ich – so fügte ich hinzu – die Riesenarbeit die es ihm gekostet hätte, bei all den hunderten von Briefschreibern die Ermächtigung zum Abdruck einzuholen. Das verschlug ihm doch etwas den Atem. Aber er gibt sich nie besiegt; lieber tiefer hinein. So antwortete er mir: die Schreiber hätten ja gewußt daß ihre Briefe die Zensur passieren müßten.<note
-            n="16" place="foot"
-              type="editorial">Spitzer (22.11.1920) an Schuchardt: „Nun, die ausdrückliche Erlaubnis der Kgf. habe ich für die Veröffentlichung: die Tatsache, daß sie, trotzdem sie von einer Zensur wußten, dennoch schrieben, bedeutet ja etwas dergleichen. Außerdem ist das Brief<hi
-              rend="unknown"
-              rendition="#none">mosaik</hi>doch was anderes als ein Einzelsteinchen. Übrigens, ,Indiskretion‘ habe ich nie Ihnen vorgeworfen oder auch nur gedanklich mir solch einen Vorwurf erlaubt“ (ed. Hurch, 178, Brief <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.2102">272-11032</ref>).</note> Übrigens nehme ich an Spitzers Ge- <pb
-            facs="#IMG.12" n="12"/> schicken den lebhaftesten Anteil; in diesem Jahr hat er wirklich Schmerzliches erlebt. Seine akademischen Aussichten scheinen sich noch nicht zu bessern, und hierin liegt eine große Ungerechtigkeit.</p>
-
-        <p>Ich hatte Ihnen noch Manches schreiben wollen; aber ich bin federmüde – vielleicht ist es ein Glück. Es wären wohl nur Klagen geworden, denn unsere ganze Zukunft ist dunkel, und nicht am wenigsten die wissenschaftliche. Aus dem Genfer Affentheater<note
-            n="17" place="foot" type="editorial">Die zwischenstaatliche Organisation mit dem Namen „<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5074">Völkerbund</ref>“ und Sitz in <placeName>
+                  </hi> (2 Bde. 1856/59) an [unsere Durchsicht der Register Förstemanns ergab keinen Eintrag!], sondern aus dem Verbrüderungsbuch von St. Gallen, das Prof. Piper 1884 in den <hi rend="unknown" rendition="#none">MGH</hi> herausgegeben habe.</note> Nun wünscht er meine Ansicht zu vernehmen; aber ich kenne die beiderseitigen Ausführungen nicht, vielleicht besitze ich sie, ich kann sie aber jetzt nicht suchen. Meine Leute beanstanden ohnehin schon mein Herumwandern aus dem Warmen ins Kalte; zu Anfang dieser Woche hatte ich einen unmotivierten Fieberanfall, von dem ich noch nicht ganz in meinen normalen Zustand zurückgekehrt bin. – Ein anderer Blinde, mein Freund Nyrop fühlt sich wie eine dänische Ärztin mir bei ihrem Besuch mitteilte, sehr glücklich; er hat, wenn ich nicht irre, fünf Sekretärinnen und seine Frau schrieb mir gelegentlich des Thorwaldsenfestes, er sei sehr „en <pb facs="#IMG.5" n="5"/> vue“ [18 Dez]. Auch er arbeitet besonders gern in Etymologien (<hi rend="unknown" rendition="#none">lazaret</hi>, <hi rend="unknown" rendition="#none">matelot</hi>. dän. <hi rend="unknown" rendition="#none">
+passiar</hi>),<note n="7" place="foot" type="editorial">Kristoffer Nyrop, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4775">Ordenes liv</ref>
+                     </bibl>
+                  </hi>, Kopenhagen: Gyldendal, Nordisk forlag, 1927, Kap. IV.</note> wobei er natürlich zum größten Teil mit fremdem Kalbe pflügen muß. So wird mir selbst der liebe Sport des Etymologisierens durch die Notwendigkeit des ewigen Herumsteigens und Nachschlagens verleidet. Neulich nahm ich nach langer Zeit wieder einmal eine Karte des <hi rend="unknown" rendition="#none">Atlas l.</hi> in die Hand (ehe man die herausgeklaubt hat die man sucht – welche Mühe!) und da stellte ich fest, daß ich mit der Lupe zwar das Einzelne erkennen, aber mir keinen Überblick verschaffen könnte. Ließen sich doch die phonetischen Minutien wie Blumenstaub hinwegblasen, schrumpften doch die großen Karten zu Kärtchen <pb facs="#IMG.6" n="6"/> zusammen! Weniger wäre mehr. Oder sollte es wirklich – wie ich schon seit langem bezweifle – unser Ideal sein, aus jedem Dörfchen der weiten Romania eine genaue Darstellung der dortigen Phonetik zu erhalten? Ich fürchte, irgendwo in unserer wissenschaftlichen Anschauung steckt ein großer Grundfehler; aber ich gebe zu, es ist noch ein Problem. Vielleicht handelt es sich nur um ein Mißverhältnis zwischen Stoffbeschaffung und Stoffverarbeitung; vielleicht handelt es sich bei der letzteren gar nicht um Gewinnung allgemeiner wertvoller Ergebnisse, sondern auch wiederum nur um Einzelheiten. „Historizismus“ in infinitum?</p>
+            <p>Ich verliere den Überblick über das romanische Gebiet; über das baskische verbleibt er mir noch. Ich erhalte jetzt die Aushängebogen einer Arbeit Les Éléments de la phonétique <pb facs="#IMG.7" n="7"/> basque“ von einem Franzosen,<note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Henri Gavel</persName> (1880-1959), franz. Romanist und Baskologe, Verf. von <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4340">Éléments de phonétique basque</ref>
+                     </bibl>
+                  </hi>, Paris: Champion, 1920, 542 S. Zugl. Diss. Univ. Toulouse. Vgl. HSA 03614-03618.</note> der ins Baskische hineingeheiratet hat (wie Voßler ins Italienisch<note n="9" place="foot" type="editorial">Der Romanist <persName ref="[authorityLink]">Karl Voßler</persName> (Vossler) heiratete am 25.2.1900 <persName ref="[authorityLink]">Esterina</persName> (Esther) Gräfin Gnoli, Tochter des Direktors der Nationalbibliothek Vittorio Emanuele in <placeName ref="[authorityLink]">
+Rom</placeName>.</note>). Bis jetzt gegen 300 Seiten; es sollen im Ganzen 560 werden. Manches Feine und Neue ist darin, aber im Großen und Ganzen auf ganz unfranzösische Weise zerdehnt, verdünnt (ohne Exposition). Ich denke, wenn ichs derleb, die Schrift zur Grundlage eine Betrachtung über die Verwandtschaft von Lauterscheinungen auf zwei benachbarten ganz verschiedenen Sprachgebieten zu machen.<note n="10" place="foot" type="editorial">Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.93">Zur Kenntnis des Baskischen von Sara (Labourd)</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">Abhandl. d. Berl. Ak. d. W.</hi> 1922, 1-39. <persName ref="[authorityLink]">Gavel</persName> wird hier mehrfach erwähnt, S. 6, Anm. 2, 9, 13, 16, 32, 36, 37.</note> Für das Romanische kommt auch einiges nicht Unwichtige heraus. Millardet ist dabei wohl entbehrlich; ich habe ihn zufälligerweise nicht; er hat sich, worüber ich mich <pb facs="#IMG.8" n="8"/> einmal bei Schädel beschwerte, in einer Bibliographie des Gaskognischen um das Baskische auch nicht im Mindesten gekümmert.<note n="11" place="foot" type="editorial">Georges Millardet, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6286">Le domaine gascon: compte rendu rétrospectif jusqu’en 1907</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">Revue de Dialectologie Romane</hi> 1, 1909, 122-156. Was Schuchardt an diesem Referat kritisierte, wissen wir nicht, möglicherweise einen fehlenden Hinweis auf das Baskische und Publikationen aus seiner Feder. – Vgl. HSA Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.3533">09992</ref> (PK <persName ref="[authorityLink]">Bernhard Schädel</persName> an Schuchardt vom 10.3.1909).</note>
+            </p>
+            <p>Augenblicklich liegt mir, in betreff von Veröffentlichung etwas anderes sehr am Herzen. Als ich mit Linschmann die baskischen Bücher Leiçarragas abdruckte,<note n="12" place="foot" type="editorial">J. Leiçarragas <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.448">Baskische Bücher von 1571; Testamentum novum; (Neues Testament, Kalender und Abc)</ref>
+                     </bibl>
+                  </hi>, im genauen Abdruck herausgegeben von Th. Linschmann und H. Schuchardt. Mit Unterstützung der Kais. Akademie der Wissenschaften, Strassburg: K. J. Trübner, 1900.</note> entwarf ich eine „Einführung ins Baskische“, auf Grund der Parabel vom verloren Sohn bei L., etwa zwei bis drei Druckbogen stark. Ich dachte: aufgeschoben ist nicht aufgehoben; ich würde dazu noch immer die Zeit finden. Das glaub‘ ich kaum mehr; ich will mich zwar bemühen, einen Verleger, vielleicht Trübners Nachfolger selbst zu dem an sich nicht bedeutenden Unternehmen zu überreden. Ich bilde mir nemlich [sic] ein daß ich im Stande bin besser <pb facs="#IMG.9" n="9"/> als ein anderer die Lösung dieser in praktischem Sinn schwierigen Aufgabe zu bewerkstelligen.<note n="13" place="foot" type="editorial">Schuchardt, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.231">Primitiae linguae Vasconum</ref>
+                     </bibl>
+                  </hi>, Halle: Niemeyer, 1923; 2. Aufl.; eingel. und mit einer Bibliogr. vers. von Antonio Tovar, Tübingen: Niemeyer, 1968.</note>
+            </p>
+            <p>Neulich trat bei mir ein ehemaliger Zuhörer von mir ein, ein Mittelschulprofessor und Großvater, mit einem großen etwa 4 Kilo schweren Paket. „Was haben Sie da?“ – „Meine Arbeit.“ – ? – „Von der ich Ihnen vor einigen Jahren sprach. Nun, kurz und gut, es war eine grammatisch-stilistische Studie über sämtliche französische Übersetzungen (Bruchstücke inbegriffen) von Schillers Tell, an der er ein Dutzend Jahre gearbeitet hatte. Ich war rat- und fassungslos. Zum Glück war ihm klar daß jetzt an eine Veröffentlichung nicht gedacht werden könnte. Er ließ mir die Unzahl von Schreibheften da, damit ich ihm mein Urteil darüber sage. Welchen Trost <pb facs="#IMG.10" n="10"/> soll ich ihm geben? Den daß die Hauptsache ist, ein Mensch müsse sich selbst genügen, müsse den Wert einer Arbeit, der er sich mit voller Seele hingibt, in sich selbst suchen? Oder haben wir überhaupt die Fähigkeit den objektiven Wert unserer eigenen Arbeit richtig zu bemessen?</p>
+            <p>Auch der Bücherprotz (im aktiven wie im passiven Sinn) L. Spitzer befindet sich jetzt in Verlegenheit. Er bringt seine Arbeiten nicht mehr unter; er kann sich nicht alles mehr anschaffen. Neulich hat er mir eine große Belustigung bereitet. Er hatte mich (in höflichem Ton) getadeld daß ich aus einer Privatkorrespondenz mit einem Italiener ein Bruchstück – ohne den Namen des Schreibers – im Drucke veröffentlicht hatte, worin die in den <pb facs="#IMG.11" n="11"/> dortigen Universitätskreisen herrschende Rechtfertigung der südtirolischen Annexion ausgesprochen war. Aus einem Privatbrief dürfe man nur auf ausdrücklichen des Schreibers veröffentlichen.<note n="14" place="foot" type="editorial">Brief nicht identifiziert.</note> Ziemlich zu gleicher Zeit schickte mir Spitzer seine beiden dicken Zwillinge<note n="15" place="foot" type="editorial">Spitzer, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4023">Die Umschreibungen des Begriffes „Hunger" im Italienischen; stilistisch-onomasiologische Studie auf Grund von unveröffentlichtem Zensurmaterial,</ref>
+                     </bibl>
+                  </hi> Halle: Niemeyer, 1920 (Beihefte zur Zeitschrift für romanische Philologie; 68); Ders., <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4060">Italienische Kriegsgefangenenbriefe. Materialien zu einer Charakteristik der volkstümlichen italienischen Korrespondenz</ref>
+                     </bibl>
+                  </hi>, Bonn: Hanstein, 1921.</note> zu. Ich beglückwünschte ihn dazu; hauptsächlich bewunderte ich – so fügte ich hinzu – die Riesenarbeit die es ihm gekostet hätte, bei all den hunderten von Briefschreibern die Ermächtigung zum Abdruck einzuholen. Das verschlug ihm doch etwas den Atem. Aber er gibt sich nie besiegt; lieber tiefer hinein. So antwortete er mir: die Schreiber hätten ja gewußt daß ihre Briefe die Zensur passieren müßten.<note n="16" place="foot" type="editorial">Spitzer (22.11.1920) an Schuchardt: „Nun, die ausdrückliche Erlaubnis der Kgf. habe ich für die Veröffentlichung: die Tatsache, daß sie, trotzdem sie von einer Zensur wußten, dennoch schrieben, bedeutet ja etwas dergleichen. Außerdem ist das Brief<hi rend="unknown" rendition="#none">mosaik</hi>doch was anderes als ein Einzelsteinchen. Übrigens, ,Indiskretion‘ habe ich nie Ihnen vorgeworfen oder auch nur gedanklich mir solch einen Vorwurf erlaubt“ (ed. Hurch, 178, Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.2102">272-11032</ref>).</note> Übrigens nehme ich an Spitzers Ge- <pb facs="#IMG.12" n="12"/> schicken den lebhaftesten Anteil; in diesem Jahr hat er wirklich Schmerzliches erlebt. Seine akademischen Aussichten scheinen sich noch nicht zu bessern, und hierin liegt eine große Ungerechtigkeit.</p>
+            <p>Ich hatte Ihnen noch Manches schreiben wollen; aber ich bin federmüde – vielleicht ist es ein Glück. Es wären wohl nur Klagen geworden, denn unsere ganze Zukunft ist dunkel, und nicht am wenigsten die wissenschaftliche. Aus dem Genfer Affentheater<note n="17" place="foot" type="editorial">Die zwischenstaatliche Organisation mit dem Namen „<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5074">Völkerbund</ref>“ und Sitz in <placeName>
 Genf</placeName> nahm am 10. Januar 1920 ihre Arbeit auf.</note> – verzeihe mir Freund Bovet das Wort – wird das Heil der Welt nicht hervorgehen.</p>
-        <p>Empfehlen Sie mich Ihrer Frau Gemahlin bestens, grüßen Sie Ihre Kinder, die Romanisten, die Lehrer wie die Schüler usw.</p>
-        <closer>
-          <salute>Mit herzl. Gruß<lb/> Ihr <hi rend="unknown" rendition="#none">
+            <p>Empfehlen Sie mich Ihrer Frau Gemahlin bestens, grüßen Sie Ihre Kinder, die Romanisten, die Lehrer wie die Schüler usw.</p>
+            <closer>
+               <salute>Mit herzl. Gruß<lb/> Ihr <hi rend="unknown" rendition="#none">
 dankbarster</hi>
-          </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HSchuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-
-          <p>Inzwischen werden Sie wohl den aus Deutschösterreich in die Schweiz hinübergleitenden H. Steiner gesehen haben.<note
-              n="18" place="foot" type="editorial">Vgl. Steiners PK <ref target="https://gams.uni-graz.at/o:hsa.letter.4663">12244</ref> (24.12.1920) an Schuchardt: „Jud habe ich, da ich verkühlt war, nur telefonisch gesprochen und soll sagen, er würde Ihnen noch dieser Tage schreiben. Er war ,hörbar‘ erfreut, ein Lebenszeichen von Ihnen zu erhalten“.</note>
-          </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+               </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HSchuchardt</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Inzwischen werden Sie wohl den aus Deutschösterreich in die Schweiz hinübergleitenden H. Steiner gesehen haben.<note n="18" place="foot" type="editorial">Vgl. Steiners PK <ref target="https://gams.uni-graz.at/o:hsa.letter.4663">12244</ref> (24.12.1920) an Schuchardt: „Jud habe ich, da ich verkühlt war, nur telefonisch gesprochen und soll sagen, er würde Ihnen noch dieser Tage schreiben. Er war ,hörbar‘ erfreut, ein Lebenszeichen von Ihnen zu erhalten“.</note>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

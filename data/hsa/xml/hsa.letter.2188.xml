@@ -1,345 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (344-11105)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2188" type="PID">o:hsa.letter.2188</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">344-11105</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11105</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" ref="http://sws.geonames.org/2946447">Bonn</origPlace>
-              <origDate ana="dcterms:created" when="1922-06-10">1922-06-10</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2188">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" key="#GID.1" ref="http://sws.geonames.org/2946447">Bonn</placeName>
-          <date when="1922-06-10">1922-06-10</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Bonn</settlement>
-                <name ref="http://geonames.org/2946447" type="fcode:PPLA3">Bonn</name>
-                <location>
-                  <geo>7.09549,50.73438</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2188" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bonn, 10. VI.</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Dank für Ihren schönen Brief, der Sommersonnigkeit und herzliche Teilnahme für uns verrät. Sie haben ja recht mit dem Verfolgungswahn – aber ist er ein Wunder? Das ist ja eben die Folge der Rassenverfolgung. Das Kindlein ist ein guter Sorgenbrecher. Nachts schreit er so kräftig, daß man tagüber nur daran denkt, die eigenen Kräfte wieder hochzubringen. Auch wird das ganze Denken, die ganze Hausordnung durch ein so kleines Freßmäulchen umgestülpt. Schön ist es wirklich, die Mutter mit dem kleinen Wägelchen leise und beschaulich dahinwandeln zu sehen, die anderen Pamperlätschchen mit dem unseren, nunmehr 4wöchigen, vergleichend.</p>
+            <p>Der arme <persName ref="[authorityLink]">Urtel</persName>! Wie muß er erschöpft und zusammengebrochen sein! Ich hab ihn nach Pörtsch. eingeladen.</p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>Nun zu <persName ref="[authorityLink]">M-L</persName>: die selenitartige Borniertheit hatte <persName ref="[authorityLink]">Gilliéron</persName> in einer Schrift M-L zugeschrieben. – Mit Castro hab ich mich brieflich ausgesprochen: er ist tatsächich sehr selbstgerecht. Mir ist es s.z. bei <persName ref="[authorityLink]">Mario Roques</persName> aufgefallen, daß die romanischen Romanisten uns, die wir mit Materialnot, Sprachnot etc. kämpfen, nicht jene Gerechtigkeit widerfahren lassen, die den ungleichen Bedingungen unseres Forschens gegenüber am Platze wäre. Wenn z.B. ein M-L oder Sie einmal sich irren, so darf das nicht so streng beurteilt werden wie wenn ein Castro, über <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">Span</ref>. schreibend, oder ein Thomas, über <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">Frz</ref>. schreibend, sich irrt. Der Typus Castro-Roques sieht nur unsere […], nicht auch unsere Leistungen. Selbst nicht allzu produktiv, sagen sich solche Menschen nicht, daß die deutschen Gelehrten seit <persName ref="[authorityLink]">
+Diez</persName> doch allerhand geleistet haben. Wenn die romanischen Romanisten uns übertrumpfen, à la bonne heure. Vorläufig sehe ich nichts davon, Castro geht so weit, bei aller Anerkennung Gielliérons und Ihre Verdienste um die etym. Forschung geringer als unsere communis opinio dies tut zu bemessen – worin ich nun energisch widersprochen. <pb facs="#IMG.3" n="3"/>Sehr erfreulich ist für mich die Anregung, die mir das Lesen einer Korrektur von Walzels "Gehalt und Gestalt"<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3848"> Oskar Walzel, <hi rend="unknown" rendition="#none">Gehalt und Gestalt im Kunstwerk des Dichters</hi>
                      </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.779" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2188" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2188" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2188" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2188" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2188" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2188" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2188" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bonn, 10. VI.</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-        <p>Dank für Ihren schönen Brief, der Sommersonnigkeit und herzliche Teilnahme für uns verrät. Sie haben ja recht mit dem Verfolgungswahn – aber ist er ein Wunder? Das ist ja eben die Folge der Rassenverfolgung. Das Kindlein ist ein guter Sorgenbrecher. Nachts schreit er so kräftig, daß man tagüber nur daran denkt, die eigenen Kräfte wieder hochzubringen. Auch wird das ganze Denken, die ganze Hausordnung durch ein so kleines Freßmäulchen umgestülpt. Schön ist es wirklich, die Mutter mit dem kleinen Wägelchen leise und beschaulich dahinwandeln zu sehen, die anderen Pamperlätschchen mit dem unseren, nunmehr 4wöchigen, vergleichend.</p>
-        <p>Der arme <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2909">Urtel</persName>! Wie muß er erschöpft und zusammengebrochen sein! Ich hab ihn nach Pörtsch. eingeladen.</p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>Nun zu <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5334">M-L</persName>: die selenitartige Borniertheit hatte <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">Gilliéron</persName> in einer Schrift M-L zugeschrieben. – Mit Castro hab ich mich brieflich ausgesprochen: er ist tatsächich sehr selbstgerecht. Mir ist es s.z. bei <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2554">Mario Roques</persName> aufgefallen, daß die romanischen Romanisten uns, die wir mit Materialnot, Sprachnot etc. kämpfen, nicht jene Gerechtigkeit widerfahren lassen, die den ungleichen Bedingungen unseres Forschens gegenüber am Platze wäre. Wenn z.B. ein M-L oder Sie einmal sich irren, so darf das nicht so streng beurteilt werden wie wenn ein Castro, über <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.779">Span</ref>. schreibend, oder ein Thomas, über <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.226">Frz</ref>. schreibend, sich irrt. Der Typus Castro-Roques sieht nur unsere […], nicht auch unsere Leistungen. Selbst nicht allzu produktiv, sagen sich solche Menschen nicht, daß die deutschen Gelehrten seit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1394">
-Diez</persName> doch allerhand geleistet haben. Wenn die romanischen Romanisten uns übertrumpfen, à la bonne heure. Vorläufig sehe ich nichts davon, Castro geht so weit, bei aller Anerkennung Gielliérons und Ihre Verdienste um die etym. Forschung geringer als unsere communis opinio dies tut zu bemessen – worin ich nun energisch widersprochen. <pb
-            facs="#IMG.3"
-            n="3"/>Sehr erfreulich ist für mich die Anregung, die mir das Lesen einer Korrektur von Walzels "Gehalt und Gestalt"<note
-            n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3848"> Oskar Walzel, <hi rend="unknown" rendition="#none">Gehalt und Gestalt im Kunstwerk des Dichters</hi>
-              </ref>
-            </bibl> Berlin: Athenaion 1923.</note> bereitet. Hätte ich s.z. statt des leblosen und verzopften <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1116">Becker</persName> einen solchen Literarhistoriker als Lehrer gehabt! Allerdings ist er eitel wie alle lang Niedergehaltenen, eitel wie ich es in 10 Jahren wohl auch sein werde, vielleicht schon bin – aber es tut wohl, wenn ein Mann von Weltruf wie er sich bei mir Jüngerem und doch eigentlich fachlich Fernerstehendem Rat holen kommt. Ich bin wahrhaftig nicht mit Anerkennung verwöhnt – Sie nehmen mir auch noch den schwachen Trost, daß ein Ausländer mich mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2647">
-Erich Schmidt</persName> vergleicht – daher nehme ich sie gern entgegen, wo ich sie finde und denke mir, daß auch andere auf Anerkennung etwas geben: hätte z.B. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1858">Jud</persName> verschiedene Fachgenossen anerkannt, die er in Wirklichkeit heruntergerissen hat, er wäre nicht Extraord. in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.215">
+                  </bibl> Berlin: Athenaion 1923.</note> bereitet. Hätte ich s.z. statt des leblosen und verzopften <persName ref="[authorityLink]">Becker</persName> einen solchen Literarhistoriker als Lehrer gehabt! Allerdings ist er eitel wie alle lang Niedergehaltenen, eitel wie ich es in 10 Jahren wohl auch sein werde, vielleicht schon bin – aber es tut wohl, wenn ein Mann von Weltruf wie er sich bei mir Jüngerem und doch eigentlich fachlich Fernerstehendem Rat holen kommt. Ich bin wahrhaftig nicht mit Anerkennung verwöhnt – Sie nehmen mir auch noch den schwachen Trost, daß ein Ausländer mich mit <persName ref="[authorityLink]">
+Erich Schmidt</persName> vergleicht – daher nehme ich sie gern entgegen, wo ich sie finde und denke mir, daß auch andere auf Anerkennung etwas geben: hätte z.B. <persName ref="[authorityLink]">Jud</persName> verschiedene Fachgenossen anerkannt, die er in Wirklichkeit heruntergerissen hat, er wäre nicht Extraord. in <placeName ref="[authorityLink]">
 Zürich</placeName>...</p>
-        <p>Wenig erbaut bin ich von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2542">
-Rohlfs</persName> contra <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Lerch</persName>: erstens weil es ein Racheakt ist (Rohlfs hatte den 1. Preis nicht bekommen, Lerch wohl), zweitens weil gerade <pb
-            facs="#IMG.4" n="4"/>die "halbe Negation" Lerchs mir richtig beobachtet schien, drittens weil diese Art der "animierten" Polemik, wenn sie auch die Lerchs ist und gelegentlich die Spitzers war, für meine heutigen Nerven zu grobschlächtig wirkt. Das Begrobsen erachte ich nur als Defensivmaßnahme halbwegs gerechtfertigt.</p>
-        <p>Interessant auch folgendes: den Niedermann'schen Artikel über <hi rend="unknown"
-            rendition="#none">Dalh</hi> hatte ich <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1544">Gam</persName>. auch mitgeteilt (dieser die Karte auch bestätigt): nun steht dort: "Kollege <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2966">Walde</persName>". Es ist mir ja herzlich gleichgültig, aber: wenn Sp. etwas mitteilt, so ist es natürlich weniger mitgeteilt als durch den Ordinarius Walde...</p>
-        <p>Ja, ich bin sehr gallig!</p>
-        <p>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2776">Steiners</persName> Artikel enthält leider viele Druckfehler. </p>
-        <p>Wie wäre ein <hi rend="unknown" rendition="#none">crun(a)</hi> 'Nadelöhr' = <hi rend="unknown"
-            rendition="#none">clūnis</hi> (vgl. Ihr <hi rend="unknown" rendition="#none">culus acus</hi>), zu <hi
-            rend="unknown" rendition="#none">ur</hi> vgl. M-L Italfr. S. III? Nur als Aphorismus!</p>
-        <pb facs="#IMG.5" n="5"/>
-        <p>Der Ausdruck vom "nistenden Unglück" stammt von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName> selbst. Ich weiß nichts Näheres, als daß er mit seinem einen Sohn schlechte Erfahrungen gemacht hat. </p>
-        <p>Sehr aufgeregt hat mich der Mordversuch an Scheidemann – nicht als ob dieser Parteibürokrat mir besonders sympathisch wäre. Aber die Tatsache, daß im Deutschen Kulturreich noch immer alle Linksführer abgeschossen werden wie Vieh – während man von keinem Rechtsführer derlei hört –, zeigt doch auf eine verbohrte Rohheit und Unvergeistigtheit, die den wahrhaften Patrioten mit Scham erfüllt. Wenn Gewaltmenschen mit Gewalt beseitigt werden – pazienza (z.B. Rosa Luxemburg, von der der milde M-L mir sagte, er hätte sie am liebsten auch erschossen!) – aber die friedlichen Revolutionäre Scheidemann, Erzberger usw.?</p>
-        <p>Ihrer Zitier-Abneigung trage ich in meiner Ital. Umgangsspr. Rechnung, indem ich fast gar keine Sekundär-Literatur erwähne.</p>
-        <p>Die Wandlungen in Ihren sprachwissenschaftl. Anschauungen sind doch sehr gering; wenigstens nach meinem Eindruck.</p>
-        <p>Die Philologen, für die man schreibt, sind doch sehr wenig belehrbar. So höre ich anläßlich des <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1506">
+            <p>Wenig erbaut bin ich von <persName ref="[authorityLink]">
+Rohlfs</persName> contra <persName ref="[authorityLink]">Lerch</persName>: erstens weil es ein Racheakt ist (Rohlfs hatte den 1. Preis nicht bekommen, Lerch wohl), zweitens weil gerade <pb facs="#IMG.4" n="4"/>die "halbe Negation" Lerchs mir richtig beobachtet schien, drittens weil diese Art der "animierten" Polemik, wenn sie auch die Lerchs ist und gelegentlich die Spitzers war, für meine heutigen Nerven zu grobschlächtig wirkt. Das Begrobsen erachte ich nur als Defensivmaßnahme halbwegs gerechtfertigt.</p>
+            <p>Interessant auch folgendes: den Niedermann'schen Artikel über <hi rend="unknown" rendition="#none">Dalh</hi> hatte ich <persName ref="[authorityLink]">Gam</persName>. auch mitgeteilt (dieser die Karte auch bestätigt): nun steht dort: "Kollege <persName ref="[authorityLink]">Walde</persName>". Es ist mir ja herzlich gleichgültig, aber: wenn Sp. etwas mitteilt, so ist es natürlich weniger mitgeteilt als durch den Ordinarius Walde...</p>
+            <p>Ja, ich bin sehr gallig!</p>
+            <p>
+               <persName ref="[authorityLink]">Steiners</persName> Artikel enthält leider viele Druckfehler. </p>
+            <p>Wie wäre ein <hi rend="unknown" rendition="#none">crun(a)</hi> 'Nadelöhr' = <hi rend="unknown" rendition="#none">clūnis</hi> (vgl. Ihr <hi rend="unknown" rendition="#none">culus acus</hi>), zu <hi rend="unknown" rendition="#none">ur</hi> vgl. M-L Italfr. S. III? Nur als Aphorismus!</p>
+            <pb facs="#IMG.5" n="5"/>
+            <p>Der Ausdruck vom "nistenden Unglück" stammt von <persName ref="[authorityLink]">Vossler</persName> selbst. Ich weiß nichts Näheres, als daß er mit seinem einen Sohn schlechte Erfahrungen gemacht hat. </p>
+            <p>Sehr aufgeregt hat mich der Mordversuch an Scheidemann – nicht als ob dieser Parteibürokrat mir besonders sympathisch wäre. Aber die Tatsache, daß im Deutschen Kulturreich noch immer alle Linksführer abgeschossen werden wie Vieh – während man von keinem Rechtsführer derlei hört –, zeigt doch auf eine verbohrte Rohheit und Unvergeistigtheit, die den wahrhaften Patrioten mit Scham erfüllt. Wenn Gewaltmenschen mit Gewalt beseitigt werden – pazienza (z.B. Rosa Luxemburg, von der der milde M-L mir sagte, er hätte sie am liebsten auch erschossen!) – aber die friedlichen Revolutionäre Scheidemann, Erzberger usw.?</p>
+            <p>Ihrer Zitier-Abneigung trage ich in meiner Ital. Umgangsspr. Rechnung, indem ich fast gar keine Sekundär-Literatur erwähne.</p>
+            <p>Die Wandlungen in Ihren sprachwissenschaftl. Anschauungen sind doch sehr gering; wenigstens nach meinem Eindruck.</p>
+            <p>Die Philologen, für die man schreibt, sind doch sehr wenig belehrbar. So höre ich anläßlich des <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1506">
 Breviers</ref>
-          </bibl>, <pb facs="#IMG.6" n="6"/>es seien zu wenig Beispiele für die allg. Theorien vorhanden. Ich antworte drauf: ja natürlich, die habe ich weggelassen, das war ja eben die Absicht des Büchleins...</p>
-        <p>Walzel hat mich zu einem Aufsatz über "zeitliche Perspektive im lyrischen frz. Gedicht" begeistert. Ein führender Literaturwissenschaftler, der zur Überzeugg gelangt, daß nur durch Verbindung mit der Linguistik die künstlerische Erfassung der Dichtwerke möglich sei. In seinem methodologischen Werke "Gehalt und Gestalt" widmet er mir denn auch 1 1/2 Seiten. So fallen wenigstens Anregungen von mir in die Nachbarwissenschaften hinein.</p>
-
-        <p>Krüger ist jener Hamburger Priv. Doz., der über westspan. Mundarten ein perspektiveloses Buch geschrieben hat.<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3847"> Fritz Krüger, <hi rend="unknown" rendition="#none">Studien zur Lautgeschichte westspanischer Mundarten. Auf Grund von Untersuchungen an Ort und Stelle</hi>
-              </ref>
-            </bibl>. Hamburg: Gräfe &amp; Sillem 1914.</note>
-        </p>
-        <p>Am 6. Juli fährt <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2763">meine Frau</persName> nach Pörtschach. – An <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2175">Mesk</persName> denke ich sehr gern. Er war ein liebenswürdiger Lehrer. Als ich mich habilitiert hatte, sagte er mir ganz treuherzig: "Ich verstehe nicht, wieso Sie als Jude sich habilitieren konnten...". Ich traf ihn einmal in Capri und freute mich sehr. Nun aber Schluß !</p>
-        <closer>
-          <salute>Alles Herzliche</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </bibl>, <pb facs="#IMG.6" n="6"/>es seien zu wenig Beispiele für die allg. Theorien vorhanden. Ich antworte drauf: ja natürlich, die habe ich weggelassen, das war ja eben die Absicht des Büchleins...</p>
+            <p>Walzel hat mich zu einem Aufsatz über "zeitliche Perspektive im lyrischen frz. Gedicht" begeistert. Ein führender Literaturwissenschaftler, der zur Überzeugg gelangt, daß nur durch Verbindung mit der Linguistik die künstlerische Erfassung der Dichtwerke möglich sei. In seinem methodologischen Werke "Gehalt und Gestalt" widmet er mir denn auch 1 1/2 Seiten. So fallen wenigstens Anregungen von mir in die Nachbarwissenschaften hinein.</p>
+            <p>Krüger ist jener Hamburger Priv. Doz., der über westspan. Mundarten ein perspektiveloses Buch geschrieben hat.<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3847"> Fritz Krüger, <hi rend="unknown" rendition="#none">Studien zur Lautgeschichte westspanischer Mundarten. Auf Grund von Untersuchungen an Ort und Stelle</hi>
+                     </ref>
+                  </bibl>. Hamburg: Gräfe &amp; Sillem 1914.</note>
+            </p>
+            <p>Am 6. Juli fährt <persName ref="[authorityLink]">meine Frau</persName> nach Pörtschach. – An <persName ref="[authorityLink]">Mesk</persName> denke ich sehr gern. Er war ein liebenswürdiger Lehrer. Als ich mich habilitiert hatte, sagte er mir ganz treuherzig: "Ich verstehe nicht, wieso Sie als Jude sich habilitieren konnten...". Ich traf ihn einmal in Capri und freute mich sehr. Nun aber Schluß !</p>
+            <closer>
+               <salute>Alles Herzliche</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,361 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Michel Bréal an Hugo Schuchardt (01-01321)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1195">
-            <forename>Michel</forename>
-            <surname>Bréal</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/7001" type="PID">o:hsa.letter.7001</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-01321</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">01321</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="fr"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1195">
-                <forename>Michel</forename>
-                <surname>Bréal</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" ref="http://sws.geonames.org/2988507">Paris</origPlace>
-              <origDate ana="dcterms:created" when="1889-03-12">1889-03-12</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Michel Bréal und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1195"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.7001">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1195" ref="https://viaf.org/viaf/24598653">
-            <forename>Michel</forename>
-            <surname>Bréal</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.666" key="#GID.1" ref="http://sws.geonames.org/2988507">Paris</placeName>
-          <date when="1889-03-12">1889-03-12</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Paris</settlement>
-                <name ref="http://geonames.org/2988507" type="fcode:PPLC">Paris</name>
-                <location>
-                  <geo>2.3488,48.85341</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1195" type="context">
-                        Korrespondenz Michel Bréal - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.763" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rezension</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4980" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Revue des deux mondes</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3215" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsvorhaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.841" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachen in Europa</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4137" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bitte um Publikationsverleih</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.106" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">phonographisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.55" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Langue bleue (Bolak)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.184" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Nordostkaukasische Sprachen (nacho-dagestanische Sprachen)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.563" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Slowenisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="fr">Französisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7001" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7001" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7001" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7001" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.7001" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.7001" xml:lang="fr">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Paris 12 mars 1889</dateline>
-        <opener>Monsieur,</opener>
-
-        <p>Permettez à un collègue qui a seulement eu le plaisir de vous entrevoir une fois à Paris, mais qui a souvent manié vos ouvrages,<note
-            n="1" place="foot" type="editorial">Vgl. Bréal, „M. Bréal fait hommage, de la part de l’auteur, M. Hugo Schuchardt, d'une brochure intitulée : <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.55">Ueber die Lautgesetze gegen die Jung- Grammatiker</ref>
-            </bibl> [...]“, <hi rend="unknown"
-              rendition="#none">Comptes rendus des séances de l’Académie des Inscriptions et Belles-Lettres</hi> 30(1), 1886, 127-129: „On sait, dit M. Bréal, qu’en ces dernières années il s’est formé en linguistique une nouvelle école qui s’est donné à elle-même le nom de <hi
-              rend="unknown" rendition="#none">néo-grammairiens</hi>. Parmi les principes que cette école a revendiqués comme siens et qu’elle a inscrits en tête de son programme, se trouve celui-ci: « Les lois phonétiques agissent d’une forme aveugle. » En d’autres termes, les lois phoniques ne souffrent pas d’exceptions, ce sont des applications d’une force inconsciente, analogue aux forces de la physique. C’est contre ce principe, et en général contre les tendances de la nouvelle école grammaticale, qu’est dirigée la brochure de M. Schuchardt. – Les objections faites par M. Schuchardt sont des plus sérieuses“ (127-128).</note> de s’adresser à vous sans préambule.</p>
-        <p>Je viens de terminer la lecture de votre travail intitulé : <hi rend="unknown" rendition="#none">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.7001" xml:lang="fr">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Paris 12 mars 1889</dateline>
+            <opener>Monsieur,</opener>
+            <p>Permettez à un collègue qui a seulement eu le plaisir de vous entrevoir une fois à Paris, mais qui a souvent manié vos ouvrages,<note n="1" place="foot" type="editorial">Vgl. Bréal, „M. Bréal fait hommage, de la part de l’auteur, M. Hugo Schuchardt, d'une brochure intitulée : <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.55">Ueber die Lautgesetze gegen die Jung- Grammatiker</ref>
+                  </bibl> [...]“, <hi rend="unknown" rendition="#none">Comptes rendus des séances de l’Académie des Inscriptions et Belles-Lettres</hi> 30(1), 1886, 127-129: „On sait, dit M. Bréal, qu’en ces dernières années il s’est formé en linguistique une nouvelle école qui s’est donné à elle-même le nom de <hi rend="unknown" rendition="#none">néo-grammairiens</hi>. Parmi les principes que cette école a revendiqués comme siens et qu’elle a inscrits en tête de son programme, se trouve celui-ci: « Les lois phonétiques agissent d’une forme aveugle. » En d’autres termes, les lois phoniques ne souffrent pas d’exceptions, ce sont des applications d’une force inconsciente, analogue aux forces de la physique. C’est contre ce principe, et en général contre les tendances de la nouvelle école grammaticale, qu’est dirigée la brochure de M. Schuchardt. – Les objections faites par M. Schuchardt sont des plus sérieuses“ (127-128).</note> de s’adresser à vous sans préambule.</p>
+            <p>Je viens de terminer la lecture de votre travail intitulé : <hi rend="unknown" rendition="#none">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">
 Slawo-Deutsches u. Slawo-Italienisches</ref>
-            </bibl>
-          </hi>,<note n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">Schuchardt, Dem Herrn Franz von Miklosich zum 20. November 1883. Slawo-deutsches und Slawo-italienisches, Graz: Leuschner &amp; Lubensky, 1884.</ref>
-            </bibl>
-
-          </note> et j’ai trouvé les considérations finales d’un si haut intérêt et si conformes à ce que je pense moi-même, que l’idée m’est venue d’en entretenir <pb
-            facs="#IMG.2"
-            n="2"/> les lecteurs français. Je crois comme vous qu’on surfait l’importance de la langue, et que beaucoup de <hi
-            rend="unknown"
-            rendition="#none">non-senses</hi> ont été dits sur ce chapitre. L’essentiel, à ce qu’il me semble, c’est ce que pensent, sentent et veulent les hommes. Avec quels mots ils le veulent, le sentent et le pensent, cela ne vient qu’en seconde ligne. Ils seraient bien fous de se laisser persuader que le langage forme une frontière nécessaire. Dans un temps où l’on creuse des chemins de fer sous les Alpes, pourquoi des populations voisines et ayant besoin les unes des <pb
-            facs="#IMG.3" n="3"/> autres n’arriveraient-elles pas à se rejoindre à travers la différence des idiomes ?</p>
-        <p>Mon idée – encore un peu vague – serait d’écrire quelque chose sur ce grand et beau sujet dans la <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4980">Revue des deux Mondes</ref>.<note n="3" place="foot"
-              type="editorial">Bréal, „Le langage et les nationalités“, <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4980">
-              <hi rend="unknown" rendition="#none">Revue des Deux Mondes</hi>
-
-            </ref>, Décembre 1891, 615-639. Der Beitrag endet wie folgt: „Nous citerons pour finir les paroles d’un esprit vraiment moderne, d’un homme qui, vivant au centre d’un pays agité par la guerre des langues, est bien placé pour observer ce que cette lutte a tantôt de juste et tantôt de factice (note 1: M. Schuchardt est professeur à l’université de Gratz, en Autriche): « Aucune originalité nationale, dit M. Hugo Schuchardt, ne survit, au sens où elle le voudrait; mais aucune ne périt tout à fait, si elle a servi aux fins suprêmes de l’humanité. » Elle entre, en effet, dans ce mélange qui s’appelle la civilisation, et si elle est de haute qualité, elle prend le dessus. Souvent, dans cette lutte, le vainqueur doit se laisser absorber complètement pour assurer sa victoire“ (639).</note> Mais je suis loin de posséder comme vous la carte linguistique de l’Europe. J’aurais besoin de lire quelques travaux fondamentaux, particulièrement en ce qui concerne l’<placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5913">Autriche</placeName>.</p>
-        <p>J’ose donc vous prier, si cela ne doit pas vous coûter trop de temps, de vouloir bien me donner ce qu’on <pb
-            facs="#IMG.4" n="4"/> appelle en allemand <hi rend="unknown"
-            rendition="#none">die Literatur des Gegenstandes</hi>. Peut-être le plus simple serait-il de m’envoyer par colis postal quelques-unes des brochures que vous citez (v. <persName>Kremer</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1990">Lammer</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1512">Felix Franke</persName> …)<note n="4" place="foot" type="editorial">
-            <bibl>Alfred von Kremer, <hi rend="unknown" rendition="#none">Die Nationalitätsidee und der Staat</hi>, <hi
-                rend="unknown"
-                rendition="#none">
-eine culturgeschichtliche Studie über den Einfluß der nationalen Ideen, besonders auf Staaten mit gemischter Bevölkerung</hi>, Wien: Konegen, 1885</bibl>; <bibl>Guido E. Lammer, <hi
-                rend="unknown"
-                rendition="#none">Sind die Kulturvölker noch Nationen? : eine zeitgemäße Frage</hi>, Wien: Rosner, 1884</bibl>; <bibl>Felix Franke, <hi
-                rend="unknown" rendition="#none">Die praktische Spracherkennung auf Grund der Psychologie und der Physiologie der Sprache dargestellt</hi>, Heilbronn: Henninger, 1884</bibl>.</note> J’aurai soin de vous les retourner. Je vous prie toutefois de ne me rien envoyer en slave ni en gallois : j’ai mes raisons pour cela.</p>
-        <p>Je profite de cette occasion pour vous dire le plaisir que j’ai eu à lire vos <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.106">
-              <hi rend="unknown" rendition="#none">Keltische Briefe</hi>
-            </ref>
-          </bibl>.<note n="5" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.106">Schuchardt, „Keltische Briefe I-II“, <hi
-                  rend="unknown" rendition="#none">Beilage zur Allgemeinen Zeitung (Augsburg, München)</hi> Nr. 185, 1876, 250-252</ref>
-            </bibl>; <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.563">„Keltische Briefe III-V“, <hi
-                  rend="unknown" rendition="#none">Beilage zur Allgemeinen Zeitung (Augsburg, München)</hi>, 1878, 2305f, 2322-2324, 2433-2435, 2537-2539, 2554-2556, 2562f</ref>
-            </bibl>.</note> Quoique vous ayez pu croire sur le moment, <pb facs="#IMG.5" n="5"/> ce furent des vacances bien employées : la philologie moderne ne compte pas beaucoup d’œuvres de ce genre. </p>
-
-        <p>Encore un mot, s’il vous plaît. Je ne veux pas vous demander de renseignements biographiques sur vous-même, car je ne connais rien de plus ennuyeux à écrire. Mais vous n’êtes pas sans figurer dans un certain nombre de Conversations-Lexica.<note
-            n="6" place="foot" type="editorial">Kein Nachweis (zu diesem Zeitpunkt).</note> Veuillez seulement m’indiquer à quelle source je devrai puiser. </p>
-        <pb facs="#IMG.6" n="6"/>
-        <closer>
-          <salute>Recevez, Monsieur et cher Collègue, l’expression de mes sentiments d’estime et de sympathie</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1195">Michel Bréal</persName>
-          </signed>
-          <addName>15 rue Soufflot</addName>
-        </closer>
-        <postscript>
-
-          <p>Pour vous montrer que je ne suis pas tout-à-fait novice sur le terrain où je veux m’engager, je vous demande la permission de vous adresser une Conférence que j’ai faite il y a quelques années sur cette question : Comment on apprend les langues étrangères.<note
-              n="7" place="foot" type="editorial">
-              <bibl>Michel Bréal, <hi rend="unknown" rendition="#none">Comment on apprend les langues étrangères : conférence faite à l’Association Scientifique, 27.2.1886</hi>, Paris: Colin, 1886, 24 S</bibl>.</note>
-          </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                  </bibl>
+               </hi>,<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">Schuchardt, Dem Herrn Franz von Miklosich zum 20. November 1883. Slawo-deutsches und Slawo-italienisches, Graz: Leuschner &amp; Lubensky, 1884.</ref>
+                  </bibl>
+               </note> et j’ai trouvé les considérations finales d’un si haut intérêt et si conformes à ce que je pense moi-même, que l’idée m’est venue d’en entretenir <pb facs="#IMG.2" n="2"/> les lecteurs français. Je crois comme vous qu’on surfait l’importance de la langue, et que beaucoup de <hi rend="unknown" rendition="#none">non-senses</hi> ont été dits sur ce chapitre. L’essentiel, à ce qu’il me semble, c’est ce que pensent, sentent et veulent les hommes. Avec quels mots ils le veulent, le sentent et le pensent, cela ne vient qu’en seconde ligne. Ils seraient bien fous de se laisser persuader que le langage forme une frontière nécessaire. Dans un temps où l’on creuse des chemins de fer sous les Alpes, pourquoi des populations voisines et ayant besoin les unes des <pb facs="#IMG.3" n="3"/> autres n’arriveraient-elles pas à se rejoindre à travers la différence des idiomes ?</p>
+            <p>Mon idée – encore un peu vague – serait d’écrire quelque chose sur ce grand et beau sujet dans la <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4980">Revue des deux Mondes</ref>.<note n="3" place="foot" type="editorial">Bréal, „Le langage et les nationalités“, <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4980">
+                     <hi rend="unknown" rendition="#none">Revue des Deux Mondes</hi>
+                  </ref>, Décembre 1891, 615-639. Der Beitrag endet wie folgt: „Nous citerons pour finir les paroles d’un esprit vraiment moderne, d’un homme qui, vivant au centre d’un pays agité par la guerre des langues, est bien placé pour observer ce que cette lutte a tantôt de juste et tantôt de factice (note 1: M. Schuchardt est professeur à l’université de Gratz, en Autriche): « Aucune originalité nationale, dit M. Hugo Schuchardt, ne survit, au sens où elle le voudrait; mais aucune ne périt tout à fait, si elle a servi aux fins suprêmes de l’humanité. » Elle entre, en effet, dans ce mélange qui s’appelle la civilisation, et si elle est de haute qualité, elle prend le dessus. Souvent, dans cette lutte, le vainqueur doit se laisser absorber complètement pour assurer sa victoire“ (639).</note> Mais je suis loin de posséder comme vous la carte linguistique de l’Europe. J’aurais besoin de lire quelques travaux fondamentaux, particulièrement en ce qui concerne l’<placeName ref="[authorityLink]">Autriche</placeName>.</p>
+            <p>J’ose donc vous prier, si cela ne doit pas vous coûter trop de temps, de vouloir bien me donner ce qu’on <pb facs="#IMG.4" n="4"/> appelle en allemand <hi rend="unknown" rendition="#none">die Literatur des Gegenstandes</hi>. Peut-être le plus simple serait-il de m’envoyer par colis postal quelques-unes des brochures que vous citez (v. <persName>Kremer</persName>, <persName ref="[authorityLink]">Lammer</persName>, <persName ref="[authorityLink]">Felix Franke</persName> …)<note n="4" place="foot" type="editorial">
+                  <bibl>Alfred von Kremer, <hi rend="unknown" rendition="#none">Die Nationalitätsidee und der Staat</hi>, <hi rend="unknown" rendition="#none">
+eine culturgeschichtliche Studie über den Einfluß der nationalen Ideen, besonders auf Staaten mit gemischter Bevölkerung</hi>, Wien: Konegen, 1885</bibl>; <bibl>Guido E. Lammer, <hi rend="unknown" rendition="#none">Sind die Kulturvölker noch Nationen? : eine zeitgemäße Frage</hi>, Wien: Rosner, 1884</bibl>; <bibl>Felix Franke, <hi rend="unknown" rendition="#none">Die praktische Spracherkennung auf Grund der Psychologie und der Physiologie der Sprache dargestellt</hi>, Heilbronn: Henninger, 1884</bibl>.</note> J’aurai soin de vous les retourner. Je vous prie toutefois de ne me rien envoyer en slave ni en gallois : j’ai mes raisons pour cela.</p>
+            <p>Je profite de cette occasion pour vous dire le plaisir que j’ai eu à lire vos <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.106">
+                     <hi rend="unknown" rendition="#none">Keltische Briefe</hi>
+                  </ref>
+               </bibl>.<note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.106">Schuchardt, „Keltische Briefe I-II“, <hi rend="unknown" rendition="#none">Beilage zur Allgemeinen Zeitung (Augsburg, München)</hi> Nr. 185, 1876, 250-252</ref>
+                  </bibl>; <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.563">„Keltische Briefe III-V“, <hi rend="unknown" rendition="#none">Beilage zur Allgemeinen Zeitung (Augsburg, München)</hi>, 1878, 2305f, 2322-2324, 2433-2435, 2537-2539, 2554-2556, 2562f</ref>
+                  </bibl>.</note> Quoique vous ayez pu croire sur le moment, <pb facs="#IMG.5" n="5"/> ce furent des vacances bien employées : la philologie moderne ne compte pas beaucoup d’œuvres de ce genre. </p>
+            <p>Encore un mot, s’il vous plaît. Je ne veux pas vous demander de renseignements biographiques sur vous-même, car je ne connais rien de plus ennuyeux à écrire. Mais vous n’êtes pas sans figurer dans un certain nombre de Conversations-Lexica.<note n="6" place="foot" type="editorial">Kein Nachweis (zu diesem Zeitpunkt).</note> Veuillez seulement m’indiquer à quelle source je devrai puiser. </p>
+            <pb facs="#IMG.6" n="6"/>
+            <closer>
+               <salute>Recevez, Monsieur et cher Collègue, l’expression de mes sentiments d’estime et de sympathie</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Michel Bréal</persName>
+               </signed>
+               <addName>15 rue Soufflot</addName>
+            </closer>
+            <postscript>
+               <p>Pour vous montrer que je ne suis pas tout-à-fait novice sur le terrain où je veux m’engager, je vous demande la permission de vous adresser une Conférence que j’ai faite il y a quelques années sur cette question : Comment on apprend les langues étrangères.<note n="7" place="foot" type="editorial">
+                     <bibl>Michel Bréal, <hi rend="unknown" rendition="#none">Comment on apprend les langues étrangères : conférence faite à l’Association Scientifique, 27.2.1886</hi>, Paris: Colin, 1886, 24 S</bibl>.</note>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

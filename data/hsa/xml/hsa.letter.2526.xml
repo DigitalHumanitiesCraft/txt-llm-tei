@@ -1,570 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Simon Rutar an Hugo Schuchardt (02-09870)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2576">
-            <forename>Simon</forename>
-            <surname>Rutar</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Birgit</forename>
-            <surname>Dorn</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2526" type="PID">o:hsa.letter.2526</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-09870</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">09870</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2576">
-                <forename>Simon</forename>
-                <surname>Rutar</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="9" unit="pages">9 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.338" ref="http://sws.geonames.org/3190261">Split</origPlace>
-              <origDate ana="dcterms:created" when="1884-01-18">1884-01-18</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Birgit</forename>
-              <surname>Dorn</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Simon Rutar und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2576"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2526">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2576" ref="https://viaf.org/viaf/33727703">
-            <forename>Simon</forename>
-            <surname>Rutar</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.338" key="#GID.1" ref="http://sws.geonames.org/3190261">Split</placeName>
-          <date when="1884-01-18">1884-01-18</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Croatia</country>
-                <settlement>Split</settlement>
-                <name ref="http://geonames.org/3190261" type="fcode:PPLA">Split</name>
-                <location>
-                  <geo>16.43915,43.50891</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2576" type="context">
-                        Korrespondenz Simon Rutar - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.967" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Networking</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.648" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachen auf dem Balkan</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2526" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2526" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2526" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2526" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2526" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2526" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2526" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2526" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2526" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2526" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Hochgeehrter Herr Professor!</opener>
-        <p>Wie sehr mir auch Ihr liebenswürdiger Brief aus Volosca<note n="1" place="foot" type="editorial">Kroatisch Volosko (<bibl>
-              <ref
-            target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6344">Alberi, 1997</ref>: 1970</bibl>).</note> geschmeichelt hat, so muss ich doch mit Bedauern gestehen, dass ich als Nichtphilologe nicht im Stande bin, die an mich gestellten Fragen genügend zu beantworten. Was ich hie und da beobachten konnte und was mir im lan <pb
-            facs="#IMG.2" n="2"/> gen Umgange auffiel, das theile ich Ihnen bereitwilligst mit.</p>
-        <p>Im übrigen verweise ich Sie auf die Herren Professoren <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2282">
-            <hi rend="unknown" rendition="#none">Nemanić</hi>
-          </persName>
-          <note n="2" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2282">Davorin Nemanić</persName> (1850-1929) war Pädagoge und Sprachwissenschaftler. Er studierte Slawistik und Philologie in Wien und wurde als Lehrer in Gorizia und Pazin eingesetzt. Er veröffentlichte eine Reihe von Aufsätzen zum čakavischen Dialekt (vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6346">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2526" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Hochgeehrter Herr Professor!</opener>
+            <p>Wie sehr mir auch Ihr liebenswürdiger Brief aus Volosca<note n="1" place="foot" type="editorial">Kroatisch Volosko (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6344">Alberi, 1997</ref>: 1970</bibl>).</note> geschmeichelt hat, so muss ich doch mit Bedauern gestehen, dass ich als Nichtphilologe nicht im Stande bin, die an mich gestellten Fragen genügend zu beantworten. Was ich hie und da beobachten konnte und was mir im lan <pb facs="#IMG.2" n="2"/> gen Umgange auffiel, das theile ich Ihnen bereitwilligst mit.</p>
+            <p>Im übrigen verweise ich Sie auf die Herren Professoren <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Nemanić</hi>
+               </persName>
+               <note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Davorin Nemanić</persName> (1850-1929) war Pädagoge und Sprachwissenschaftler. Er studierte Slawistik und Philologie in Wien und wurde als Lehrer in Gorizia und Pazin eingesetzt. Er veröffentlichte eine Reihe von Aufsätzen zum čakavischen Dialekt (vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6346">
 Kolarič, 2013</ref>
-            </bibl>).</note> in Pisino u <hi rend="unknown" rendition="#none">Rešetar</hi> in Spalato.</p>
-        <closer>
-          <salute>Mit ausgezeichneter Hochachtung</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <lb/>
-          <salute>ergebenster</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2576">Rutar</persName>
-          </signed>
-          <dateline>Sp. 18.I.84<note n="3" place="foot" type="editorial">Der folgende Anhang findet sich unter den Briefen Rutars und ist nicht mit einer eigenen Bibliotheksnummer versehen.</note>
-          </dateline>
-        </closer>
-      </div>
-      <div corresp="#L.2526" subtype="original" type="appendix" xml:lang="de">
-        <pb facs="#IMG.3" n="3"/>
-
-        <p>Es ist gewiss, dass die italienische Kultur unter den Slovenen eine viel ältere ist, als die Deutsche. Denn abgesehen davon, dass die Slovenen bei ihrer Einwanderung in ihre gegenwärtigen Wohnsitze wahrscheinlich ein latinisiertes Volk vorfanden, gehörte ja seit 811 alles Land bis zur Drave hinauf zur Diöcese von Aquileja und bis zum Jahre 952 auch politisch zu Italien Dann lateinische Amtierung und der Handelsverkehr mit Venedig, Sinigaglia<note
-            n="4" place="foot"
-            type="editorial">Auch Senigallia, Stadt in der Provinz Ancona</note>, florenz. So haben die Slovenen von der italienischen Geistlichkeit und von italienischen (lateinisch schreibenden) Notaren sehr viele Ausdrücke entlehnen können. Es ist gewiss, dass sie früher <hi
-            rend="unknown" rendition="#none">libra</hi> (librica), <hi rend="unknown" rendition="#none">bokal</hi>, <hi
-            rend="unknown"
-            rendition="#none">sold</hi> als aber funt, firtelj, krajnar gekannt haben, dass sie früher <hi
-            rend="unknown" rendition="#none">racunati</hi> (rechnen) als <hi rend="unknown"
-            rendition="#none">
-rajtati </hi>kannten, früher in die <hi rend="unknown"
-            rendition="#none">botega, ostarija </hi>und <hi rend="unknown"
-            rendition="#none">taverna</hi> gingen, als aber in den <hi rend="unknown"
-            rendition="#none">loden</hi> und ins <hi rend="unknown"
-            rendition="#none">birtshaus</hi>. Auch Namen für Werkzeuge und Kleidungsstücke sind vielfach italienischen Ursprungs, zB. <hi
-            rend="unknown" rendition="#none">čavelj</hi> (clavis), <hi rend="unknown"
-            rendition="#none">
-bergeše</hi> (brgaše)= bracche, <hi rend="unknown"
-            rendition="#none">bisaga</hi> = bisaccia. Ebenso haben die Slovenen auch den sbirro (<hi rend="unknown"
-            rendition="#none">birić</hi>) von den Italienern entlehnt. Auch das in den slovenischen Volksliedern vorkommende „krajna je posta la turiska drajna“ halte ich für das italienische „draina“ = sotto sopra<note
-            n="5" place="foot" type="editorial">
+                  </bibl>).</note> in Pisino u <hi rend="unknown" rendition="#none">Rešetar</hi> in Spalato.</p>
+            <closer>
+               <salute>Mit ausgezeichneter Hochachtung</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <lb/>
+               <salute>ergebenster</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Rutar</persName>
+               </signed>
+               <dateline>Sp. 18.I.84<note n="3" place="foot" type="editorial">Der folgende Anhang findet sich unter den Briefen Rutars und ist nicht mit einer eigenen Bibliotheksnummer versehen.</note>
+               </dateline>
+            </closer>
+         </div>
+         <div corresp="#L.2526"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <pb facs="#IMG.3" n="3"/>
+            <p>Es ist gewiss, dass die italienische Kultur unter den Slovenen eine viel ältere ist, als die Deutsche. Denn abgesehen davon, dass die Slovenen bei ihrer Einwanderung in ihre gegenwärtigen Wohnsitze wahrscheinlich ein latinisiertes Volk vorfanden, gehörte ja seit 811 alles Land bis zur Drave hinauf zur Diöcese von Aquileja und bis zum Jahre 952 auch politisch zu Italien Dann lateinische Amtierung und der Handelsverkehr mit Venedig, Sinigaglia<note n="4" place="foot" type="editorial">Auch Senigallia, Stadt in der Provinz Ancona</note>, florenz. So haben die Slovenen von der italienischen Geistlichkeit und von italienischen (lateinisch schreibenden) Notaren sehr viele Ausdrücke entlehnen können. Es ist gewiss, dass sie früher <hi rend="unknown" rendition="#none">libra</hi> (librica), <hi rend="unknown" rendition="#none">bokal</hi>, <hi rend="unknown" rendition="#none">sold</hi> als aber funt, firtelj, krajnar gekannt haben, dass sie früher <hi rend="unknown" rendition="#none">racunati</hi> (rechnen) als <hi rend="unknown" rendition="#none">
+rajtati </hi>kannten, früher in die <hi rend="unknown" rendition="#none">botega, ostarija </hi>und <hi rend="unknown" rendition="#none">taverna</hi> gingen, als aber in den <hi rend="unknown" rendition="#none">loden</hi> und ins <hi rend="unknown" rendition="#none">birtshaus</hi>. Auch Namen für Werkzeuge und Kleidungsstücke sind vielfach italienischen Ursprungs, zB. <hi rend="unknown" rendition="#none">čavelj</hi> (clavis), <hi rend="unknown" rendition="#none">
+bergeše</hi> (brgaše)= bracche, <hi rend="unknown" rendition="#none">bisaga</hi> = bisaccia. Ebenso haben die Slovenen auch den sbirro (<hi rend="unknown" rendition="#none">birić</hi>) von den Italienern entlehnt. Auch das in den slovenischen Volksliedern vorkommende „krajna je posta la turiska drajna“ halte ich für das italienische „draina“ = sotto sopra<note n="5" place="foot" type="editorial">
 Die letzte Bemerkung wurde mit einem Fragezeichen versehen.</note>.</p>
-
-        <p>Die aus dem Italienischen ins Slovenische aufgenommenen Fremdwörter werden wohl am vollkommensten bei <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2200">
-            <hi rend="unknown" rendition="#none">Miklosich</hi>
-          </persName>
-          <note n="6" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2200">Franz von Miklosich</persName> (1831-1891), Slawist und Linguist. Nach dem Studium der Philologie und des Rechts an der Universität Graz und wurde 1849 Professor für slawische Literatur und Philologie an der Universität Wien (Vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3562">Slodnjak, 1974</ref>
-
-            </bibl>).</note> aufgezählt sein. Umgekehrt hat über slavische Ausdrücke im Romanischen (Venezianischen genau<note
-            n="7" place="foot"
-            type="editorial">„genau“ ist im Brief aller Wahrscheinlichkeit nach durchgestrichen.</note> ausführlich gehandelt <hi
-            rend="unknown" rendition="#none">Trstenjak</hi>
-          <note n="8" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2885">Davorin Trstenjak</persName> (1817-1890), Schriftsteller, Etymologe und Historiker (vgl. Slodnjak, 2013).</note> im Werkchen „Slovanšcina u venetiščini“<note
-            n="9" place="foot"
-              type="editorial">Nach Trstenjak hieß der Aufsatz „Slovanski elemneti v venetščini“ und wurde in einigen Ausgaben der <hi
-              rend="unknown" rendition="#none">
+            <p>Die aus dem Italienischen ins Slovenische aufgenommenen Fremdwörter werden wohl am vollkommensten bei <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Miklosich</hi>
+               </persName>
+               <note n="6" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Franz von Miklosich</persName> (1831-1891), Slawist und Linguist. Nach dem Studium der Philologie und des Rechts an der Universität Graz und wurde 1849 Professor für slawische Literatur und Philologie an der Universität Wien (Vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3562">Slodnjak, 1974</ref>
+                  </bibl>).</note> aufgezählt sein. Umgekehrt hat über slavische Ausdrücke im Romanischen (Venezianischen genau<note n="7" place="foot" type="editorial">„genau“ ist im Brief aller Wahrscheinlichkeit nach durchgestrichen.</note> ausführlich gehandelt <hi rend="unknown" rendition="#none">Trstenjak</hi>
+               <note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Davorin Trstenjak</persName> (1817-1890), Schriftsteller, Etymologe und Historiker (vgl. Slodnjak, 2013).</note> im Werkchen „Slovanšcina u venetiščini“<note n="9" place="foot" type="editorial">Nach Trstenjak hieß der Aufsatz „Slovanski elemneti v venetščini“ und wurde in einigen Ausgaben der <hi rend="unknown" rendition="#none">
 Vestnik. Znanstvena priloga Zori</hi> von 1874-1877 veröffentlicht (vgl. <bibl>
-              <ref
-            target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6347">Fekonja, 1887</ref>: 11, 30</bibl>).</note> und in einigen Jahrgängen des „Letopis“ der „Matica slovenska“<note
-            n="10" place="foot" type="editorial">Gemeint ist hier wohl die Zeitschrift 
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6347">Fekonja, 1887</ref>: 11, 30</bibl>).</note> und in einigen Jahrgängen des „Letopis“ der „Matica slovenska“<note n="10" place="foot" type="editorial">Gemeint ist hier wohl die Zeitschrift 
 
 <hi rend="unknown" rendition="#none">Letopis Matice Slovenske</hi>
 , die zumindest von 1867 bis 1912 herausgegeben wurde.</note> in Laibach.</p>
-        <p>Ueber die einzelnen slovenischen Dialekte wurde näher geschrieben nur über das Resianische<note n="11"
-            place="foot" type="editorial">Im friaulischen Resiatal von einer angesiedelten slowenischen Volksgruppe gesprochener slowenischer Dialekt(vgl. <bibl>
-              <ref
-            target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6348">
-Duličenko, 2006</ref>: 395</bibl>).</note> (Bergmann Archiv f. oest. Gesch. 2 III, 253 ff<note
-            n="12" place="foot" type="editorial">Verwiesen wird hier auf <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6349">Bergmann (1849)</ref>
-
-            </bibl> (vgl. Historische Kommission der kaiserlichen Akademie der Wissenschaften, 1912: V, 12).</note>) und in den Jahrbüchern für Lit. Bd. 121<note
-            n="13" place="foot"
-              type="editorial">Meist als Wiener Jahrbücher bezeichnete Vierteljahresschrift für Literatur die bis 1849 bestand. Band 121 wurde 1848 veröffentlicht. (<hi
-              rend="unknown" rendition="#none">Jahrbücher der Literatur </hi>02.07.2014).</note>; <hi rend="unknown"
-            rendition="#none">
+            <p>Ueber die einzelnen slovenischen Dialekte wurde näher geschrieben nur über das Resianische<note n="11" place="foot" type="editorial">Im friaulischen Resiatal von einer angesiedelten slowenischen Volksgruppe gesprochener slowenischer Dialekt(vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6348">
+Duličenko, 2006</ref>: 395</bibl>).</note> (Bergmann Archiv f. oest. Gesch. 2 III, 253 ff<note n="12" place="foot" type="editorial">Verwiesen wird hier auf <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6349">Bergmann (1849)</ref>
+                  </bibl> (vgl. Historische Kommission der kaiserlichen Akademie der Wissenschaften, 1912: V, 12).</note>) und in den Jahrbüchern für Lit. Bd. 121<note n="13" place="foot" type="editorial">Meist als Wiener Jahrbücher bezeichnete Vierteljahresschrift für Literatur die bis 1849 bestand. Band 121 wurde 1848 veröffentlicht. (<hi rend="unknown" rendition="#none">Jahrbücher der Literatur </hi>02.07.2014).</note>; <hi rend="unknown" rendition="#none">
 Sreznewsky</hi> im Časopis Česk. Museum 1841, III. pg. 341<note n="14" place="foot" type="editorial">Gemeint ist hier wohl <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6350">Sreznewsky (1841)</ref>
-            </bibl>.</note> was in den Wiener Sonntagsblättern 1844<note n="15" place="foot"
-              type="editorial"> Die Ausgaben von 1844 sind abrufbar <ref
-            target="https://bit.ly/3FiO59f">unter diesem Link</ref>.</note> reproduciert wurde; die Laibacher <hi
-            rend="unknown" rendition="#none">Novice</hi>
-          <pb facs="#IMG.4" n="4"/> 1856 N<hi rendition="#sup">ro</hi> 62-64 &amp; 1864, N<hi
-            rendition="#sup">
-ro</hi> 38; und neulich vom Landesschulinspector Klodić<note n="16" place="foot"
-            type="editorial">Anton Klodić von Sabladoski (1836-1914), Lehrer, Landesschulinspektor und Schriftsteller, unterrichtete zunächst an verschiedenen Gymnasien und war ab 1871 wechselnd Landesschulinspektor in Poreč, Graz und Triest (vgl. <persName>
-Klodič von Sabladoski, Anton</persName> (1836-1914) o.A. 1965).</note> in Triest und vom St. Petersburger Universitätsprofessor <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1097">
-            <hi rend="unknown" rendition="#none">Bouduin de Courtenay</hi>
-          </persName>)<note n="17" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1097">Jan Baudouin de Courtenay</persName> (1845-1929) war Slawist und Sprachwissenschaftler (vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6351">Maver, 1930</ref>
-            </bibl>) Von ihm sind einige Briefe (Bibl.-Nr. <ref target="https://gams.uni-graz.at/o:hsa.persons#P.1097">00578-00611</ref>) im Schuchardtnachlass erhalten. Diese wurden in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1591">Eismann &amp; Hurch (2008)</ref>
-
-            </bibl> veröffentlicht.</note>. – Ausserdem wurde nur noch über die Istrianer-Dialecte mehreres geschrieben, so (ausser Biedermann<note
-            n="18" place="foot" type="editorial">Gemeint ist hierbei wohl <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1143">Hermann Ignaz Biedermann</persName> (1831-1892), Rechtshistoriker, der ab 1871 an der Universität Graz beschäftigt war. (vgl. o.A. 1993, in OeBL). Von Biedermann gibt es zum Beispiel ein Werk über die Volkszählung (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2907">Bidermann, 1877</ref>
-            </bibl>), welches von Schuchardt genutzt wurde.</note> und Miklosich) in der Laibacher Wochenschrift <hi
-            rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6350">Sreznewsky (1841)</ref>
+                  </bibl>.</note> was in den Wiener Sonntagsblättern 1844<note n="15" place="foot" type="editorial"> Die Ausgaben von 1844 sind abrufbar <ref target="https://bit.ly/3FiO59f">unter diesem Link</ref>.</note> reproduciert wurde; die Laibacher <hi rend="unknown" rendition="#none">Novice</hi>
+               <pb facs="#IMG.4" n="4"/> 1856 N<hi rendition="#sup">ro</hi> 62-64 &amp; 1864, N<hi rendition="#sup">
+ro</hi> 38; und neulich vom Landesschulinspector Klodić<note n="16" place="foot" type="editorial">Anton Klodić von Sabladoski (1836-1914), Lehrer, Landesschulinspektor und Schriftsteller, unterrichtete zunächst an verschiedenen Gymnasien und war ab 1871 wechselnd Landesschulinspektor in Poreč, Graz und Triest (vgl. <persName>
+Klodič von Sabladoski, Anton</persName> (1836-1914) o.A. 1965).</note> in Triest und vom St. Petersburger Universitätsprofessor <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Bouduin de Courtenay</hi>
+               </persName>)<note n="17" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Jan Baudouin de Courtenay</persName> (1845-1929) war Slawist und Sprachwissenschaftler (vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6351">Maver, 1930</ref>
+                  </bibl>) Von ihm sind einige Briefe (Bibl.-Nr. <ref target="https://gams.uni-graz.at/o:hsa.persons#P.1097">00578-00611</ref>) im Schuchardtnachlass erhalten. Diese wurden in <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1591">Eismann &amp; Hurch (2008)</ref>
+                  </bibl> veröffentlicht.</note>. – Ausserdem wurde nur noch über die Istrianer-Dialecte mehreres geschrieben, so (ausser Biedermann<note n="18" place="foot" type="editorial">Gemeint ist hierbei wohl <persName ref="[authorityLink]">Hermann Ignaz Biedermann</persName> (1831-1892), Rechtshistoriker, der ab 1871 an der Universität Graz beschäftigt war. (vgl. o.A. 1993, in OeBL). Von Biedermann gibt es zum Beispiel ein Werk über die Volkszählung (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2907">Bidermann, 1877</ref>
+                  </bibl>), welches von Schuchardt genutzt wurde.</note> und Miklosich) in der Laibacher Wochenschrift <hi rend="unknown" rendition="#none">
 Novice</hi> 1856 pg. 288, 292, 308 und 1857 pg. 35, 84, 115, 119, 127, 140, 254.</p>
-        <p>Alle hier angeführten Werke werden Herr Professor am besten bei (oder durch) D<hi
-            rendition="#sup">r</hi> Krek<note n="19" place="foot" type="editorial">Gemeint ist hier wohl <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4754">Gregor Krek</persName> (1840-1905), Slawist und Schriftsteller der bei <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2200">Miklosich</persName> Slawistik hörte (vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6352">
+            <p>Alle hier angeführten Werke werden Herr Professor am besten bei (oder durch) D<hi rendition="#sup">r</hi> Krek<note n="19" place="foot" type="editorial">Gemeint ist hier wohl <persName ref="[authorityLink]">Gregor Krek</persName> (1840-1905), Slawist und Schriftsteller der bei <persName ref="[authorityLink]">Miklosich</persName> Slawistik hörte (vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6352">
 Wytrzens, 1968, 249</ref>
-            </bibl>)</note> finden.</p>
-        <p>Mit den istrianischen Dialecten beschäftiget sich jetzt speciell <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2282">
-            <hi rend="unknown" rendition="#none">Davorin Nemanić</hi>
-          </persName>, Professor am Staatsgymnasium zu Pisino, bitte sich daher um Näheres an diesen Herrn zu wenden.</p>
-
-        <p>Ueber die Dalmatiner Dialecte wurde – glaube ich – bisher noch nichts publiciert. Was die slavische Sprache aus der italienischen entliehen hat, das ist wohl sehr viel, besonders an Ausdrücken. Ich erlaube mir bei dieser Gelegenheit nur darauf aufmerksam zu machen, dass die hiesigen Slaven nicht mehr den Unterschied zwischen dem Dativ und Accusativ<note
-            n="20" place="foot"
-            type="editorial">Hierbei ist aller Wahrscheinlichkeit nach der Lokativ statt des Akkusativs gemeint: mit dem Lokativ wird der „Stillstand“ (also z.B. der Aufenthaltsort) beschrieben, während mit dem Akkusativ die „Bewegung“ (also das Hinbewegen zu einem Ort) bezeichnet wird.</note> kennen (Bei Bewegung oder Stillstand) und dass sie ganz wie die Italiener fragen <hi
-            rend="unknown" rendition="#none">gdje</hi> ideš<note n="21" place="foot"
-            type="editorial">Wörtl. ’wo du gehst’ anstatt ’wohin (kamo) du gehst’.</note>, anstatt <hi rend="unknown"
-            rendition="#none">kamo</hi> oder <hi rend="unknown" rendition="#none">kuda</hi>(dove vai tu?). <hi
-            rend="unknown" rendition="#none">Idjem na školu </hi>und <hi rend="unknown"
-              rendition="#none">jesam na školu<note n="22" place="foot" type="editorial">
-              <hi rend="unknown" rendition="#none">Idem na</hi>
-              <hi rend="unknown" rendition="#none">š</hi>
-              <hi rend="unknown" rendition="#none">
+                  </bibl>)</note> finden.</p>
+            <p>Mit den istrianischen Dialecten beschäftiget sich jetzt speciell <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Davorin Nemanić</hi>
+               </persName>, Professor am Staatsgymnasium zu Pisino, bitte sich daher um Näheres an diesen Herrn zu wenden.</p>
+            <p>Ueber die Dalmatiner Dialecte wurde – glaube ich – bisher noch nichts publiciert. Was die slavische Sprache aus der italienischen entliehen hat, das ist wohl sehr viel, besonders an Ausdrücken. Ich erlaube mir bei dieser Gelegenheit nur darauf aufmerksam zu machen, dass die hiesigen Slaven nicht mehr den Unterschied zwischen dem Dativ und Accusativ<note n="20" place="foot" type="editorial">Hierbei ist aller Wahrscheinlichkeit nach der Lokativ statt des Akkusativs gemeint: mit dem Lokativ wird der „Stillstand“ (also z.B. der Aufenthaltsort) beschrieben, während mit dem Akkusativ die „Bewegung“ (also das Hinbewegen zu einem Ort) bezeichnet wird.</note> kennen (Bei Bewegung oder Stillstand) und dass sie ganz wie die Italiener fragen <hi rend="unknown" rendition="#none">gdje</hi> ideš<note n="21" place="foot" type="editorial">Wörtl. ’wo du gehst’ anstatt ’wohin (kamo) du gehst’.</note>, anstatt <hi rend="unknown" rendition="#none">kamo</hi> oder <hi rend="unknown" rendition="#none">kuda</hi>(dove vai tu?). <hi rend="unknown" rendition="#none">Idjem na školu </hi>und <hi rend="unknown" rendition="#none">jesam na školu<note n="22" place="foot" type="editorial">
+                     <hi rend="unknown" rendition="#none">Idem na</hi>
+                     <hi rend="unknown" rendition="#none">š</hi>
+                     <hi rend="unknown" rendition="#none">
 kolu</hi> = ’ich gehe in die Schule’, <hi rend="unknown" rendition="#none">
 ja sam u </hi>
-              <hi rend="unknown" rendition="#none">š</hi>
-              <hi rend="unknown" rendition="#none">koli</hi> = ’ich bin in der Schule’.</note>
-          </hi>, das ist ihnen alles eins. Hier in Spalato sagen die Croaten „<hi rend="unknown"
-            rendition="#none">za </hi>da ga vidi“= per vederlo und ebenso nemoj ućinit s <hi rend="unknown"
-            rendition="#none">manje</hi> = non far di manco, non mancare) auch der Gebrauch des <hi rend="unknown"
-            rendition="#none">od</hi> statt des italienischen Genitiv (zB. <hi rend="unknown"
-            rendition="#none">krov od kuće</hi> statt „kućim krov“ il tetto della casa. Die Endung der Zeitwörter auf <hi
-            rend="unknown"
-            rendition="#none">icren</hi> ist hier wie unter den venezianischen Slovenen dem Italienischen angepasst und lautet entweder <hi
-            rend="unknown" rendition="#none">ati</hi> oder<hi rend="unknown"
-            rendition="#none"> jati</hi>: telegrafati, študijati. Ja, die Ragusäer haben sogar die Endungen des italienischen Participio praesentis und des Superlativo angenommen. Sie sagen daher ganz ungeniert: „<hi
-            rend="unknown" rendition="#none">ljepisimo</hi>“ (am schönsten, statt „najljepše“) und „<hi rend="unknown"
-            rendition="#none">šetando</hi>“ (spazierend, statt šetajuć se“), Daneben sagen sie aber frei<pb
-            facs="#IMG.5" n="5"/>lich auch <hi rend="unknown"
-            rendition="#none">figurajte si</hi> (bilden sie sich ein) und <hi rend="unknown" rendition="#none">kako iste se divertiskali</hi>? (wie haben sie sich unterhalten?).</p>
-
-        <p>Den Spalatiner slavischen Dialects werden Herr Professor am besten studieren können aus den beigefügten Flugschriften (die ich mir nach der Benutzung freundlichst zurückzusenden bitte). Ueber den Ragusäer Dialect wird Ihnen aber noch Näheres mittheilen mein Collega am Gymnasium, ein junger sehr strebsamer Philologe, nämlich Professor <hi
-            rend="unknown" rendition="#none">Rešetar</hi>.</p>
-
-        <p>Aber auch das Spalatiner Italienisch hat viel aus dem Slavischen genommen. Ausser einzelnen Ausdrücken, die fast dieselben sind wie in Triest, so z.B. <hi
-            rend="unknown" rendition="#none">brodarica</hi> (barcagno), <hi rend="unknown"
-            rendition="#none">mliekarica </hi>(lataja) <hi rend="unknown"
-            rendition="#none">
-kučice</hi> (eine Art kleiner Muscheln), <hi rend="unknown"
-            rendition="#none">
-duša mia </hi>(anima mea) in ital. Rede etc. Kennen die hiesigen italienisch sprechenden unteren Volksschichten auch das vocalisierte<hi
-            rend="unknown" rendition="#none">r</hi>, zB. „<hi rend="unknown"
-            rendition="#none">pr</hi> di quà“ (statt per), „da <hi rend="unknown"
-            rendition="#none">pr</hi> tutto“, etc. Statt insegnare sagen sie allgemein <hi rend="unknown"
-            rendition="#none">imparare</hi>, weil im Croatischen beides nur „ućiti“ heisst. Das Reflexivum wird auch dorten angewendet, wo es in der Schriftsprache nicht vorkommt, wenn es im correspondierenden slavischen Ausdruck üblich ist: la <hi
-            rend="unknown" rendition="#none">se</hi> ride („smija <hi rend="unknown"
-            rendition="#none">se</hi>“). Auch wird dieses Reflexivum gleich dem slavischen in allen Personen gebraucht, zB: <hi
-            rend="unknown" rendition="#none">io se giogo (</hi>io mi giuco), io <hi rend="unknown"
-            rendition="#none">se</hi> rallegro, tu <hi rend="unknown" rendition="#none">se</hi> rallegri etc.*<hi rendition="#sup">)</hi>
-        </p>
-        <p>Die andern an mich gerichteten Fragen, über die Verwandlung des <hi rend="unknown"
-            rendition="#none">e</hi> in <hi rend="unknown" rendition="#none">a</hi>; des <hi rend="unknown"
-            rendition="#none">i</hi> in <hi rend="unknown" rendition="#none">a </hi>(zB. <hi rend="unknown"
-            rendition="#none">me ne antoresira</hi>), des <hi rend="unknown" rendition="#none">s</hi> in <hi
-            rend="unknown" rendition="#none">
-š</hi>, <hi rend="unknown" rendition="#none">g</hi> in <hi rend="unknown"
-            rendition="#none">j </hi>u.s.w. kann ich leider nicht beantworten, da mir das „warum“ nicht bekannt ist. <hi
-            rend="unknown" rendition="#none">O </hi>und <hi rend="unknown"
-            rendition="#none">a</hi> wechseln in den slavischen Sprachen sehr oft miteinander. Im Tolmeinischen und Oberkrainischen so wie Russischen und in einigen dalmatinischen Dialecten ist das ganz und gar üblich: zB. <hi
-            rend="unknown" rendition="#none">ače</hi> statt: <hi rend="unknown"
-            rendition="#none">oče</hi> und umgekehrt vad<hi rend="unknown" rendition="#none">
-ó</hi> statt vod<hi
-            rend="unknown" rendition="#none">a</hi> (Nominativ); M<hi rend="unknown"
-            rendition="#none">a</hi>skva stat Moskva u.s.w. Insbesondere wenn der Slave ein <pb facs="#IMG.6"
-            n="6"/> wenn der Slave ein fremdes Wort entlehnt, so verwandelt er gerne das ursprüngliche <hi
-            rend="unknown" rendition="#none">a</hi> in <hi rend="unknown" rendition="#none">o</hi> zB: S<hi
-            rend="unknown" rendition="#none">o</hi>lni aus S<hi rend="unknown" rendition="#none">al</hi>ona, <hi
-            rend="unknown" rendition="#none">o</hi>tar aus <hi rend="unknown" rendition="#none">a</hi>ltare, Br<hi
-            rend="unknown" rendition="#none">o</hi>ć aus Brazza **<hi
-            rendition="#sup">)</hi> u.s.w. Umgekehrt haben wir neulich auf einer Inschrift in den Ruinen von Salona gelefunden [sic]: „Honorio et Theod<hi
-            rend="unknown" rendition="#none">a</hi>sio.“ Die Verwandlung von Vocalen dürfte also in allen slavischen Dialecten begründet sein. </p>
-        <p>Statt des <hi rend="unknown" rendition="#none">g</hi> wird <hi rend="unknown"
-            rendition="#none">j</hi> in Dalmatien nur auf den Inseln und höchstens noch in Zara gesprochen (in Spalato aber und in den anderen Festlandsstädten nicht). <hi
-            rend="unknown" rendition="#none">J</hi>ogo (statt ‚giouco‘), <hi rend="unknown" rendition="#none">J</hi>i<hi
-            rend="unknown"
-            rendition="#none">j</hi>i (statt „Gigi“) kann man also sehr leicht zu hören bekommen. Von einem einstigen Professor unseres Gymnasiums, der aus Zara gebürtig war, erzählt man sich, dass er nie gioia aussprechen konnte, sondern immer nur entweder<hi
-            rend="unknown" rendition="#none"> joja</hi> oder gar aber <hi rend="unknown"
-            rendition="#none">giogia</hi>. Hiebei kann ich nur an die preussische „jut jebratene jans“ erinnern und nur nebenbei bemerke ich noch, dass der verstorbene Staatsmann Giskra von Haus wahrscheinlich Jiskra (der Funke) geheissen haben wird. ***<hi rendition="#sup">)</hi>
-        </p>
-        <p>Auch über die Verwandlungen der <hi rend="unknown" rendition="#none">c, s, z </hi>in <hi rend="unknown"
-            rendition="#none">č, š, ž </hi>vermag ich keinen Aufschluss geben. Das deutsche <hi rend="unknown"
-            rendition="#none">s</hi> im Angange wird im Slovenischen richtig in <hi rend="unknown"
-            rendition="#none">ž</hi> verwandelt zB. žaga (die Säge). Die Deutschruther sagen aber noch immer <hi
-            rend="unknown" rendition="#none">roza </hi>(und nicht <hi rend="unknown"
-            rendition="#none">roža</hi> = Rose), sie verwechseln jedoch immer die Zischlaute mit den weicheren č, š, ž. Sie sagen also <hi
-            rend="unknown" rendition="#none">zidan facol </hi>(statt židan = seiden) und <hi rend="unknown"
-            rendition="#none">židan most </hi>(statt: zidan = gemauert). Ebenso kenne ich Tolmeinischen einen etwas schwachsinnigen Mann, der sirkva statt cirkva (die Kirche) und „cirkov kruh“ statt sirkov kruh (Maisbrod) spricht. <hi rendition="#sup">+)</hi>
-        </p>
-        <p>Das <hi rend="unknown" rendition="#none">la</hi>
-          <hi rend="unknown" rendition="#none">
-le</hi> und <hi rend="unknown"
-            rendition="#none">že</hi> (è) wird von den italienisch radebrechenden sehr oft nur als Aushilfe gebraucht weil sie die Pronomina und Zeitwörter sehr oft nicht handhaben können ****<hi
-            rendition="#sup">)</hi>. Ebenso haben die slovenisch <pb facs="#IMG.7"
-            n="7"/> radebrechenden Friauler in Görz und Umgebung fortwährend dass <hi rend="unknown"
-            rendition="#none">on</hi> (er) und <hi rend="unknown" rendition="#none">mu</hi> (ihm) im Munde, zB. „Mu je rekla Mocor takò, che ga ima en par sto repa, ma che ga musa za on“, statt Rekel je Mohor takò, da ima jedno par sto rep, ali da jih muca (potrebuje) za se (= Hermagoras hat so gesagt, dass er einige Paar hundert Rüben habe, aber dass er sie für sich benöthige). Ueberhaupt verfahren die Friauler mit dem Slovenischen gerade so, wie die Triester Mägde mit dem Italienischen. </p>
-        <p>Weiters haben die Slovenen einiger Gegenden (zB im Tolmeinischen) da <hi rend="unknown"
-            rendition="#none">v</hi> als <hi rend="unknown"
-            rendition="#none">
-b</hi> auszusprechen, oder verwechseln auch manchmal beide miteinander. Dass die Griechen in dieser Beziehung keinen Unterschied machten, ist bekannt. Auch die Dalmatiner Croaten sagen <hi
-            rend="unknown" rendition="#none">varvari</hi> statt „barbari“. Diese Verwechslung geschieht auch in Sicilianer-Dialekte: viviri (bibere), botu (votum), andar a balle (statt: valle) u.s.w. Wenn nun ein solches Individuum eine fremde Sprache lernt, so überträgt es natürlich auf die letztere auch die Eigenthümlichkeiten seines Dialectes.</p>
-
-        <p>Das Fragment aus der Sprache der Fučki sollte besser mit slavischer Ortographie geschrieben werden: „Dun spaśežieri su hodili skupa pu njihovin putu. jedan od njih je zagleda jenu sikiru i je kriča (nicht kriza): oh glej, ća (nicht <hi
-            rend="unknown"
-            rendition="#none">za</hi>) san naśa, ne san naša, bi’s ima reć, je responda drugi etc.“ Hier ist kein anderer Italienismus zu entdecken, ausser: śpaśežieri, reśponder und <hi
-            rend="unknown" rendition="#none">ud</hi> (statt od) njih, der italienische Genitiv mit <hi rend="unknown"
-            rendition="#none">di</hi>. Ebenso würde auch ein Croate in Spalato reden. Auch hier ist das <hi
-            rend="unknown" rendition="#none">san</hi> statt <hi rend="unknown"
-            rendition="#none">sam </hi>(jesam ich bin) allgemein üblich. <hi rendition="#sup">
+                     <hi rend="unknown" rendition="#none">š</hi>
+                     <hi rend="unknown" rendition="#none">koli</hi> = ’ich bin in der Schule’.</note>
+               </hi>, das ist ihnen alles eins. Hier in Spalato sagen die Croaten „<hi rend="unknown" rendition="#none">za </hi>da ga vidi“= per vederlo und ebenso nemoj ućinit s <hi rend="unknown" rendition="#none">manje</hi> = non far di manco, non mancare) auch der Gebrauch des <hi rend="unknown" rendition="#none">od</hi> statt des italienischen Genitiv (zB. <hi rend="unknown" rendition="#none">krov od kuće</hi> statt „kućim krov“ il tetto della casa. Die Endung der Zeitwörter auf <hi rend="unknown" rendition="#none">icren</hi> ist hier wie unter den venezianischen Slovenen dem Italienischen angepasst und lautet entweder <hi rend="unknown" rendition="#none">ati</hi> oder<hi rend="unknown" rendition="#none"> jati</hi>: telegrafati, študijati. Ja, die Ragusäer haben sogar die Endungen des italienischen Participio praesentis und des Superlativo angenommen. Sie sagen daher ganz ungeniert: „<hi rend="unknown" rendition="#none">ljepisimo</hi>“ (am schönsten, statt „najljepše“) und „<hi rend="unknown" rendition="#none">šetando</hi>“ (spazierend, statt šetajuć se“), Daneben sagen sie aber frei<pb facs="#IMG.5" n="5"/>lich auch <hi rend="unknown" rendition="#none">figurajte si</hi> (bilden sie sich ein) und <hi rend="unknown" rendition="#none">kako iste se divertiskali</hi>? (wie haben sie sich unterhalten?).</p>
+            <p>Den Spalatiner slavischen Dialects werden Herr Professor am besten studieren können aus den beigefügten Flugschriften (die ich mir nach der Benutzung freundlichst zurückzusenden bitte). Ueber den Ragusäer Dialect wird Ihnen aber noch Näheres mittheilen mein Collega am Gymnasium, ein junger sehr strebsamer Philologe, nämlich Professor <hi rend="unknown" rendition="#none">Rešetar</hi>.</p>
+            <p>Aber auch das Spalatiner Italienisch hat viel aus dem Slavischen genommen. Ausser einzelnen Ausdrücken, die fast dieselben sind wie in Triest, so z.B. <hi rend="unknown" rendition="#none">brodarica</hi> (barcagno), <hi rend="unknown" rendition="#none">mliekarica </hi>(lataja) <hi rend="unknown" rendition="#none">
+kučice</hi> (eine Art kleiner Muscheln), <hi rend="unknown" rendition="#none">
+duša mia </hi>(anima mea) in ital. Rede etc. Kennen die hiesigen italienisch sprechenden unteren Volksschichten auch das vocalisierte<hi rend="unknown" rendition="#none">r</hi>, zB. „<hi rend="unknown" rendition="#none">pr</hi> di quà“ (statt per), „da <hi rend="unknown" rendition="#none">pr</hi> tutto“, etc. Statt insegnare sagen sie allgemein <hi rend="unknown" rendition="#none">imparare</hi>, weil im Croatischen beides nur „ućiti“ heisst. Das Reflexivum wird auch dorten angewendet, wo es in der Schriftsprache nicht vorkommt, wenn es im correspondierenden slavischen Ausdruck üblich ist: la <hi rend="unknown" rendition="#none">se</hi> ride („smija <hi rend="unknown" rendition="#none">se</hi>“). Auch wird dieses Reflexivum gleich dem slavischen in allen Personen gebraucht, zB: <hi rend="unknown" rendition="#none">io se giogo (</hi>io mi giuco), io <hi rend="unknown" rendition="#none">se</hi> rallegro, tu <hi rend="unknown" rendition="#none">se</hi> rallegri etc.*<hi rendition="#sup">)</hi>
+            </p>
+            <p>Die andern an mich gerichteten Fragen, über die Verwandlung des <hi rend="unknown" rendition="#none">e</hi> in <hi rend="unknown" rendition="#none">a</hi>; des <hi rend="unknown" rendition="#none">i</hi> in <hi rend="unknown" rendition="#none">a </hi>(zB. <hi rend="unknown" rendition="#none">me ne antoresira</hi>), des <hi rend="unknown" rendition="#none">s</hi> in <hi rend="unknown" rendition="#none">
+š</hi>, <hi rend="unknown" rendition="#none">g</hi> in <hi rend="unknown" rendition="#none">j </hi>u.s.w. kann ich leider nicht beantworten, da mir das „warum“ nicht bekannt ist. <hi rend="unknown" rendition="#none">O </hi>und <hi rend="unknown" rendition="#none">a</hi> wechseln in den slavischen Sprachen sehr oft miteinander. Im Tolmeinischen und Oberkrainischen so wie Russischen und in einigen dalmatinischen Dialecten ist das ganz und gar üblich: zB. <hi rend="unknown" rendition="#none">ače</hi> statt: <hi rend="unknown" rendition="#none">oče</hi> und umgekehrt vad<hi rend="unknown" rendition="#none">
+ó</hi> statt vod<hi rend="unknown" rendition="#none">a</hi> (Nominativ); M<hi rend="unknown" rendition="#none">a</hi>skva stat Moskva u.s.w. Insbesondere wenn der Slave ein <pb facs="#IMG.6" n="6"/> wenn der Slave ein fremdes Wort entlehnt, so verwandelt er gerne das ursprüngliche <hi rend="unknown" rendition="#none">a</hi> in <hi rend="unknown" rendition="#none">o</hi> zB: S<hi rend="unknown" rendition="#none">o</hi>lni aus S<hi rend="unknown" rendition="#none">al</hi>ona, <hi rend="unknown" rendition="#none">o</hi>tar aus <hi rend="unknown" rendition="#none">a</hi>ltare, Br<hi rend="unknown" rendition="#none">o</hi>ć aus Brazza **<hi rendition="#sup">)</hi> u.s.w. Umgekehrt haben wir neulich auf einer Inschrift in den Ruinen von Salona gelefunden [sic]: „Honorio et Theod<hi rend="unknown" rendition="#none">a</hi>sio.“ Die Verwandlung von Vocalen dürfte also in allen slavischen Dialecten begründet sein. </p>
+            <p>Statt des <hi rend="unknown" rendition="#none">g</hi> wird <hi rend="unknown" rendition="#none">j</hi> in Dalmatien nur auf den Inseln und höchstens noch in Zara gesprochen (in Spalato aber und in den anderen Festlandsstädten nicht). <hi rend="unknown" rendition="#none">J</hi>ogo (statt ‚giouco‘), <hi rend="unknown" rendition="#none">J</hi>i<hi rend="unknown" rendition="#none">j</hi>i (statt „Gigi“) kann man also sehr leicht zu hören bekommen. Von einem einstigen Professor unseres Gymnasiums, der aus Zara gebürtig war, erzählt man sich, dass er nie gioia aussprechen konnte, sondern immer nur entweder<hi rend="unknown" rendition="#none"> joja</hi> oder gar aber <hi rend="unknown" rendition="#none">giogia</hi>. Hiebei kann ich nur an die preussische „jut jebratene jans“ erinnern und nur nebenbei bemerke ich noch, dass der verstorbene Staatsmann Giskra von Haus wahrscheinlich Jiskra (der Funke) geheissen haben wird. ***<hi rendition="#sup">)</hi>
+            </p>
+            <p>Auch über die Verwandlungen der <hi rend="unknown" rendition="#none">c, s, z </hi>in <hi rend="unknown" rendition="#none">č, š, ž </hi>vermag ich keinen Aufschluss geben. Das deutsche <hi rend="unknown" rendition="#none">s</hi> im Angange wird im Slovenischen richtig in <hi rend="unknown" rendition="#none">ž</hi> verwandelt zB. žaga (die Säge). Die Deutschruther sagen aber noch immer <hi rend="unknown" rendition="#none">roza </hi>(und nicht <hi rend="unknown" rendition="#none">roža</hi> = Rose), sie verwechseln jedoch immer die Zischlaute mit den weicheren č, š, ž. Sie sagen also <hi rend="unknown" rendition="#none">zidan facol </hi>(statt židan = seiden) und <hi rend="unknown" rendition="#none">židan most </hi>(statt: zidan = gemauert). Ebenso kenne ich Tolmeinischen einen etwas schwachsinnigen Mann, der sirkva statt cirkva (die Kirche) und „cirkov kruh“ statt sirkov kruh (Maisbrod) spricht. <hi rendition="#sup">+)</hi>
+            </p>
+            <p>Das <hi rend="unknown" rendition="#none">la</hi>
+               <hi rend="unknown" rendition="#none">
+le</hi> und <hi rend="unknown" rendition="#none">že</hi> (è) wird von den italienisch radebrechenden sehr oft nur als Aushilfe gebraucht weil sie die Pronomina und Zeitwörter sehr oft nicht handhaben können ****<hi rendition="#sup">)</hi>. Ebenso haben die slovenisch <pb facs="#IMG.7" n="7"/> radebrechenden Friauler in Görz und Umgebung fortwährend dass <hi rend="unknown" rendition="#none">on</hi> (er) und <hi rend="unknown" rendition="#none">mu</hi> (ihm) im Munde, zB. „Mu je rekla Mocor takò, che ga ima en par sto repa, ma che ga musa za on“, statt Rekel je Mohor takò, da ima jedno par sto rep, ali da jih muca (potrebuje) za se (= Hermagoras hat so gesagt, dass er einige Paar hundert Rüben habe, aber dass er sie für sich benöthige). Ueberhaupt verfahren die Friauler mit dem Slovenischen gerade so, wie die Triester Mägde mit dem Italienischen. </p>
+            <p>Weiters haben die Slovenen einiger Gegenden (zB im Tolmeinischen) da <hi rend="unknown" rendition="#none">v</hi> als <hi rend="unknown" rendition="#none">
+b</hi> auszusprechen, oder verwechseln auch manchmal beide miteinander. Dass die Griechen in dieser Beziehung keinen Unterschied machten, ist bekannt. Auch die Dalmatiner Croaten sagen <hi rend="unknown" rendition="#none">varvari</hi> statt „barbari“. Diese Verwechslung geschieht auch in Sicilianer-Dialekte: viviri (bibere), botu (votum), andar a balle (statt: valle) u.s.w. Wenn nun ein solches Individuum eine fremde Sprache lernt, so überträgt es natürlich auf die letztere auch die Eigenthümlichkeiten seines Dialectes.</p>
+            <p>Das Fragment aus der Sprache der Fučki sollte besser mit slavischer Ortographie geschrieben werden: „Dun spaśežieri su hodili skupa pu njihovin putu. jedan od njih je zagleda jenu sikiru i je kriča (nicht kriza): oh glej, ća (nicht <hi rend="unknown" rendition="#none">za</hi>) san naśa, ne san naša, bi’s ima reć, je responda drugi etc.“ Hier ist kein anderer Italienismus zu entdecken, ausser: śpaśežieri, reśponder und <hi rend="unknown" rendition="#none">ud</hi> (statt od) njih, der italienische Genitiv mit <hi rend="unknown" rendition="#none">di</hi>. Ebenso würde auch ein Croate in Spalato reden. Auch hier ist das <hi rend="unknown" rendition="#none">san</hi> statt <hi rend="unknown" rendition="#none">sam </hi>(jesam ich bin) allgemein üblich. <hi rendition="#sup">
 ++)</hi>
-        </p>
-        <p>Das: ja san ga jil in der Sprache der Fučki würde nach meiner Ansicht darauf hindeuten dass sie <pb
-            facs="#IMG.8"
-            n="8"/> slavisierte Romanen sind, da dies dem slavischen Sprachgeiste gänzlich fremd ist. Zu demselben Schlusse führt mich auch der Umstand, dass sie keinen Unterschied in den Geschlechtern machen. So sagen die Görzer Friauler, wenn sie slovenisch sprechen immer <hi
-            rend="unknown" rendition="#none">sam bila</hi>
-          <note n="23" place="foot"
-              type="editorial">Die Endung des Partizip Perfekt wird in der Standardsprache dem Geschlecht des Subjekts anpepasst: <hi
-              rend="unknown" rendition="#none">on je</hi>
-            <hi rend="unknown" rendition="#none">
-bio</hi>/ <hi rend="unknown" rendition="#none">ona je bila</hi>/ <hi
-              rend="unknown"
-            rendition="#none">ono je bilo</hi>.</note>, gleichgiltig ob Mann oder Weib. Etwas ähnliches ist mir im Slavischen sonst nicht bekannt, denn dass die jungen Mädchen in Drežnica bei Karfreit<note
-            n="24" place="foot" type="editorial">
-Kobarid, Slowenien.</note> im Neutrum von sich sprechen (sam bil<hi
-            rend="unknown" rendition="#none">o</hi>, statt sam bil<hi rend="unknown" rendition="#none">a</hi>), ist doch von selbst leicht erklärlich.</p>
-        <p>Ich bin also geneigt alle Verdrehungen und Verunstaltungen einer fremden Sprache nur auf den Umstand zurückzuführen, dass bei der Sprachmischung und Enationalisierung gleichsam als Strafe eine Sprachverwirrung eintrete.</p>
-
-        <p>*) Das gemeine Volk von Spalato spricht aber - wenn es in die Gelegenheit kommt – ein horrendes Italienisch. Statt „evviva“ sagen sie <hi
-            rend="unknown" rendition="#none">
-aviva</hi>, statt „fuoco“ <hi rend="unknown"
-            rendition="#none">w=vogo</hi>, statt „veramente“ <hi rend="unknown"
-            rendition="#none">veramiente</hi> (das Slavische ie = ѣ ), statt „bordello“ <hi rend="unknown"
-            rendition="#none">burdél</hi>, statt „così“ <hi rend="unknown" rendition="#none">cušì </hi>(daher das <hi
-            rend="unknown" rendition="#none">caši</hi> des H. Sorli<note n="25" place="foot"
-            type="editorial">
-Die Identität des Herrn konnte nicht festgestellt werden.</note>, weil der Tolmeiner an Stelle des fremden <hi
-            rend="unknown" rendition="#none">o a</hi>, der Croate aber <hi rend="unknown"
-            rendition="#none">u</hi> setzt); statt „Troccoli“ <hi rend="unknown"
-            rendition="#none">Trócheli</hi> u.s.w. <pb facs="#IMG.9" n="9"/>
-        </p>
-        <p>**) Auf dieser Insel wird auch <hi rend="unknown" rendition="#none">zdrovlje</hi> statt „zdravlje“ (Gesundheit) ausgesprochen.</p>
-        <p>***) Das <hi rend="unknown"
-            rendition="#none">g</hi> verwandelt sich in der Slavischen Sprache sehr oft in <hi rend="unknown"
-            rendition="#none">j</hi>: aus „breg“ slov. Bergabhang entsteht im Collectivum <hi rend="unknown"
-            rendition="#none">
-breje</hi>, <hi rend="unknown"
-            rendition="#none">ćigov</hi> slov.= wessen, kroatisch aber <hi rend="unknown" rendition="#none">ćij</hi>
-        </p>
-        <p>****) Dieses la, le<note n="26" place="foot" type="editorial">Die Formen <hi rend="unknown"
-              rendition="#none">ghe</hi> und <hi rend="unknown"
-              rendition="#none">ga</hi> wurden augenscheinlich vom Verfasser gestrichen<hi rend="unknown" rendition="#none">.</hi>
-          </note> muss eine Art Genitivus partitivus sein und ist jedenfalls ein Slavismus, zB: „ala san se ti<hi
-            rend="unknown" rendition="#none"> ga</hi> najea!“ (wiesehr habe ich mich davon sattgegessen!) – Kommt es aber in Negativsätzen vor, so ist es daraufhin zurückzuführen, dass die Slaven in solchen Sätzen das Object in den Genitiv setzen: „non ghe že“ = non c’è.</p>
-        <p>
-          <hi rendition="#sup">+) </hi>In einigen Gegenden Istriens sprechen die Slaven <hi rend="unknown"
-            rendition="#none">c</hi>mokva statt <hi rend="unknown"
-            rendition="#none">smokva</hi>, die Feige und überall <hi rend="unknown" rendition="#none">cmok</hi> = Ohrfeige.</p>
-        <p>
-          <hi rendition="#sup">++) </hi>Das <hi rend="unknown" rendition="#none">n</hi> statt<hi rend="unknown" rendition="#none"> m </hi>ist eine Nasalierung. Auf Brazza spricht man „s nogón“ statt „s nogom“ mit dem Fusse.</p>
-      </div>
-    </body>
-  </text>
+            </p>
+            <p>Das: ja san ga jil in der Sprache der Fučki würde nach meiner Ansicht darauf hindeuten dass sie <pb facs="#IMG.8" n="8"/> slavisierte Romanen sind, da dies dem slavischen Sprachgeiste gänzlich fremd ist. Zu demselben Schlusse führt mich auch der Umstand, dass sie keinen Unterschied in den Geschlechtern machen. So sagen die Görzer Friauler, wenn sie slovenisch sprechen immer <hi rend="unknown" rendition="#none">sam bila</hi>
+               <note n="23" place="foot" type="editorial">Die Endung des Partizip Perfekt wird in der Standardsprache dem Geschlecht des Subjekts anpepasst: <hi rend="unknown" rendition="#none">on je</hi>
+                  <hi rend="unknown" rendition="#none">
+bio</hi>/ <hi rend="unknown" rendition="#none">ona je bila</hi>/ <hi rend="unknown" rendition="#none">ono je bilo</hi>.</note>, gleichgiltig ob Mann oder Weib. Etwas ähnliches ist mir im Slavischen sonst nicht bekannt, denn dass die jungen Mädchen in Drežnica bei Karfreit<note n="24" place="foot" type="editorial">
+Kobarid, Slowenien.</note> im Neutrum von sich sprechen (sam bil<hi rend="unknown" rendition="#none">o</hi>, statt sam bil<hi rend="unknown" rendition="#none">a</hi>), ist doch von selbst leicht erklärlich.</p>
+            <p>Ich bin also geneigt alle Verdrehungen und Verunstaltungen einer fremden Sprache nur auf den Umstand zurückzuführen, dass bei der Sprachmischung und Enationalisierung gleichsam als Strafe eine Sprachverwirrung eintrete.</p>
+            <p>*) Das gemeine Volk von Spalato spricht aber - wenn es in die Gelegenheit kommt – ein horrendes Italienisch. Statt „evviva“ sagen sie <hi rend="unknown" rendition="#none">
+aviva</hi>, statt „fuoco“ <hi rend="unknown" rendition="#none">w=vogo</hi>, statt „veramente“ <hi rend="unknown" rendition="#none">veramiente</hi> (das Slavische ie = ѣ ), statt „bordello“ <hi rend="unknown" rendition="#none">burdél</hi>, statt „così“ <hi rend="unknown" rendition="#none">cušì </hi>(daher das <hi rend="unknown" rendition="#none">caši</hi> des H. Sorli<note n="25" place="foot" type="editorial">
+Die Identität des Herrn konnte nicht festgestellt werden.</note>, weil der Tolmeiner an Stelle des fremden <hi rend="unknown" rendition="#none">o a</hi>, der Croate aber <hi rend="unknown" rendition="#none">u</hi> setzt); statt „Troccoli“ <hi rend="unknown" rendition="#none">Trócheli</hi> u.s.w. <pb facs="#IMG.9" n="9"/>
+            </p>
+            <p>**) Auf dieser Insel wird auch <hi rend="unknown" rendition="#none">zdrovlje</hi> statt „zdravlje“ (Gesundheit) ausgesprochen.</p>
+            <p>***) Das <hi rend="unknown" rendition="#none">g</hi> verwandelt sich in der Slavischen Sprache sehr oft in <hi rend="unknown" rendition="#none">j</hi>: aus „breg“ slov. Bergabhang entsteht im Collectivum <hi rend="unknown" rendition="#none">
+breje</hi>, <hi rend="unknown" rendition="#none">ćigov</hi> slov.= wessen, kroatisch aber <hi rend="unknown" rendition="#none">ćij</hi>
+            </p>
+            <p>****) Dieses la, le<note n="26" place="foot" type="editorial">Die Formen <hi rend="unknown" rendition="#none">ghe</hi> und <hi rend="unknown" rendition="#none">ga</hi> wurden augenscheinlich vom Verfasser gestrichen<hi rend="unknown" rendition="#none">.</hi>
+               </note> muss eine Art Genitivus partitivus sein und ist jedenfalls ein Slavismus, zB: „ala san se ti<hi rend="unknown" rendition="#none"> ga</hi> najea!“ (wiesehr habe ich mich davon sattgegessen!) – Kommt es aber in Negativsätzen vor, so ist es daraufhin zurückzuführen, dass die Slaven in solchen Sätzen das Object in den Genitiv setzen: „non ghe že“ = non c’è.</p>
+            <p>
+               <hi rendition="#sup">+) </hi>In einigen Gegenden Istriens sprechen die Slaven <hi rend="unknown" rendition="#none">c</hi>mokva statt <hi rend="unknown" rendition="#none">smokva</hi>, die Feige und überall <hi rend="unknown" rendition="#none">cmok</hi> = Ohrfeige.</p>
+            <p>
+               <hi rendition="#sup">++) </hi>Das <hi rend="unknown" rendition="#none">n</hi> statt<hi rend="unknown" rendition="#none"> m </hi>ist eine Nasalierung. Auf Brazza spricht man „s nogón“ statt „s nogom“ mit dem Fusse.</p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

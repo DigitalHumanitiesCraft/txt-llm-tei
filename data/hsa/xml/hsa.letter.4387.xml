@@ -1,428 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Richard Riegler an Hugo Schuchardt (53-09640)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">
-            <forename>Richard</forename>
-            <surname>Riegler</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4387" type="PID">o:hsa.letter.4387</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">53-09640</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">09640</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">
-                <forename>Richard</forename>
-                <surname>Riegler</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="10" unit="pages">10 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.447" ref="http://sws.geonames.org/2774326">Klagenfurt</origPlace>
-              <origDate ana="dcterms:created" when="1924-02-05">1924-02-05</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Richard Riegler und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2520"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4387">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2520" ref="https://viaf.org/viaf/6207147907512579210004">
-            <forename>Richard</forename>
-            <surname>Riegler</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.447" key="#GID.1" ref="http://sws.geonames.org/2774326">Klagenfurt</placeName>
-          <date when="1924-02-05">1924-02-05</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Klagenfurt</settlement>
-                <name ref="http://geonames.org/2774326" type="fcode:PPLA">Klagenfurt</name>
-                <location>
-                  <geo>14.30528,46.62472</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2520" type="context">
-                        Korrespondenz Richard Riegler - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.763" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rezension</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4497" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Privatbibliotheken</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3215" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsvorhaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.496" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kreisel</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.485" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sachwortforschung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3123" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sonderabdruck</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.531" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturhinweise / bibliographische Angaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4949" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Archivum Romanicum</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4485" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Reflexion über das Publizieren</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3972" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Grazer Tagespost</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4387" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4387" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4387" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4387" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4387" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4387" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4387" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4387" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4387" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4387" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4387" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Klagenfurt, 5.2.1924</dateline>
-        <opener>Verehrtester Herr Hofrat,</opener>
-        <p>Da mir Theo mitteilt, daß Sie das 1922 erschienene Buch von <hi rend="unknown" rendition="#none">
-            <hi rend="unknown"
-            rendition="#none">Guichot y Sierra</hi> Noticia histórica del Folklore</hi> nicht besitzen, bin ich so frei, Herrn Hofrat auf beiligenden Blättern die Zitate herauszuschreiben, die sich auf Ihre Person beziehen.<note
-            n="1" place="foot" type="editorial">Alle Zitate werden in der Originalschreibweise, die gelegentlich kleine Ungenauigkeiten und Umstellungen enthält, wiedergegeben. Die Aufzählung der Namensnennung Schuchardts ist übrigens nicht ganz vollständig.</note> Ich habe mich herzlich gefreut, meinen verehrten Lehrer so oft als Folkloristen rühmend zitiert zu finden. Diese Zeilen werden Sie gewiß an schöne Zeiten erinnern. Ich werde wahrscheinlich das Buch irgendwo besprechen, leider schreitet die Lektüre des Werkes wegen des kleinen Druckes – ich muß auch schon meine Augen schonen – nur langsam fort.</p>
-
-        <p>Ihre Frage bezüglich der ital. Kreiselnamen kann ich leider nicht beantworten. Darf ich Herrn Hofrat aber auf meine „Ital. Vogelnamen“ II, S.A. S. 6, Anm. 1 verweisen?<note
-            n="2" place="foot" type="editorial">„<bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4387" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Klagenfurt, 5.2.1924</dateline>
+            <opener>Verehrtester Herr Hofrat,</opener>
+            <p>Da mir Theo mitteilt, daß Sie das 1922 erschienene Buch von <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Guichot y Sierra</hi> Noticia histórica del Folklore</hi> nicht besitzen, bin ich so frei, Herrn Hofrat auf beiligenden Blättern die Zitate herauszuschreiben, die sich auf Ihre Person beziehen.<note n="1" place="foot" type="editorial">Alle Zitate werden in der Originalschreibweise, die gelegentlich kleine Ungenauigkeiten und Umstellungen enthält, wiedergegeben. Die Aufzählung der Namensnennung Schuchardts ist übrigens nicht ganz vollständig.</note> Ich habe mich herzlich gefreut, meinen verehrten Lehrer so oft als Folkloristen rühmend zitiert zu finden. Diese Zeilen werden Sie gewiß an schöne Zeiten erinnern. Ich werde wahrscheinlich das Buch irgendwo besprechen, leider schreitet die Lektüre des Werkes wegen des kleinen Druckes – ich muß auch schon meine Augen schonen – nur langsam fort.</p>
+            <p>Ihre Frage bezüglich der ital. Kreiselnamen kann ich leider nicht beantworten. Darf ich Herrn Hofrat aber auf meine „Ital. Vogelnamen“ II, S.A. S. 6, Anm. 1 verweisen?<note n="2" place="foot" type="editorial">„<bibl>
 
 
 Italienische Vogelnamen
-</bibl>“, <hi rend="unknown"
-            rendition="#none">AR </hi>7, 1923, 1-26.</note> Ich erlaubte mir seinerzeit, Ihnen ein Separatum zu <pb
-            facs="#IMG.2" n="2"/> schicken. <hi rend="unknown"
-            rendition="#none">Bertoni</hi> schreibt mir schon ein zweites Mal, ich möge <foreign xml:lang="it">
-            <hi rend="unknown" rendition="#none">,continuare la mia collaborazione su materia che ora interessa assai‘</hi>
-          </foreign>. Meine Artikel hätten <foreign xml:lang="it">
-            <hi rend="unknown" rendition="#none">„ottima accoglienza“</hi>
-
-          </foreign> gefunden. Nun ist aber so ziemlich erschöpft was ich über ital. Vogelnamen zu sagen weiß. Zwingt man sich zu einer Arbeit, kommt nicht viel dabei heraus. Ich gehöre nicht zu den Leuten, die ununterbrochen wissenschaftliche Einfälle haben wie Freund <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <hi rend="unknown" rendition="#none">Spitzer</hi>
-          </persName> oder <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1134">
-            <hi rend="unknown" rendition="#none">Bertoni</hi>
-          </persName> selbst. Und dann zermürbt einen schließlich der Kampf mit den Schwierigkeiten der Quellenbeschaffung.</p>
-
-        <p>Meine beiden Söhne haben Sie, verehrter Herr Hofrat, bei ihrem letzten Besuch hoffentlich nicht gestört. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3710">
-Theo</persName> schrieb mir, daß sie bereits einen jungen Mann bei Ihnen vorfanden und daß später Professor Zauner gekommen sei. Halten Ihre Nerven wohl diese Fülle von Besuchen aus? Ich bin neugierig, ob sich <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3710">Theo</persName> bewähren wird. Er will jetzt eine germanistische Seminararbeit machen, über E. Th. A. Hoffmanns „Goldenen Topf“. An literarhistorischer Begabung fehlt es ihm wohl nicht, hat er aber den nötigen wissenschaftlichen <pb
-            facs="#IMG.3"
-            n="3"/> Ernst und die erforderliche Ausdauer? Ich habe es nicht gern, daß er zu viel für die „Tagespost“ schreibt. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName> ist auch dagegen. In <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">
-Bonn</placeName> hätte er ihn wohl davor bewahrt. Doch hoffe ich, ist <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3710">Theo</persName> einmal eine Arbeit gelungen und ist er im wissenschaftlichen Fahrwasser, so wird die Sache dann wie von selbst gehen.</p>
-        <p>Freund <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName> ist recht einsilbig geworden. Ich dachte zuerst, es ginge ihm finanziell schlecht, doch höre ich jetzt zu meinem Troste, daß er in seiner Villa <hi
-            rend="unknown" rendition="#none">Leonstein</hi> elektrisches Licht einführt, was natürlich ein Heidengeld kostet.</p>
-        <closer>
-          <salute>Mit dem Wunsche, diese Zeilen mögen Herrn Hofrat bei bestem Wohlsein treffen, verbleibe ich</salute>
-          <lb/>
-          <salute>Mit ehrfurchtsvollem Gruß</salute>
-          <lb/>
-          <salute>Ihr ergebenster</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">R. Riegler</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.4387" subtype="original" type="appendix" xml:lang="es">
-        <p>
-          <pb facs="#IMG.4" n="A1"/>
-          <hi rend="unknown" rendition="#none">Alejandro Guichot y Sierra, Noticia histórica del Folklore. Origines en todos los paises hasta 1890. Desarrollo en España hasta 1921. Sevilla, Hijos de Guillermo Alvarez impresores.Gonzáles Cuadrádo 24, 1922, 256 </hi>S.</p>
-        <p>S. 89 <hi rend="unknown"
-            rendition="#none">Citáronse como recolectores y estudiosos de tradiciones populares .… a Pedro K. Rosegger, literato de obras originales (estirias); y el </hi>(warum nicht <hi
-            rend="unknown" rendition="#none">
+</bibl>“, <hi rend="unknown" rendition="#none">AR </hi>7, 1923, 1-26.</note> Ich erlaubte mir seinerzeit, Ihnen ein Separatum zu <pb facs="#IMG.2" n="2"/> schicken. <hi rend="unknown" rendition="#none">Bertoni</hi> schreibt mir schon ein zweites Mal, ich möge <foreign xml:lang="it">
+                  <hi rend="unknown" rendition="#none">,continuare la mia collaborazione su materia che ora interessa assai‘</hi>
+               </foreign>. Meine Artikel hätten <foreign xml:lang="it">
+                  <hi rend="unknown" rendition="#none">„ottima accoglienza“</hi>
+               </foreign> gefunden. Nun ist aber so ziemlich erschöpft was ich über ital. Vogelnamen zu sagen weiß. Zwingt man sich zu einer Arbeit, kommt nicht viel dabei heraus. Ich gehöre nicht zu den Leuten, die ununterbrochen wissenschaftliche Einfälle haben wie Freund <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Spitzer</hi>
+               </persName> oder <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Bertoni</hi>
+               </persName> selbst. Und dann zermürbt einen schließlich der Kampf mit den Schwierigkeiten der Quellenbeschaffung.</p>
+            <p>Meine beiden Söhne haben Sie, verehrter Herr Hofrat, bei ihrem letzten Besuch hoffentlich nicht gestört. <persName ref="[authorityLink]">
+Theo</persName> schrieb mir, daß sie bereits einen jungen Mann bei Ihnen vorfanden und daß später Professor Zauner gekommen sei. Halten Ihre Nerven wohl diese Fülle von Besuchen aus? Ich bin neugierig, ob sich <persName ref="[authorityLink]">Theo</persName> bewähren wird. Er will jetzt eine germanistische Seminararbeit machen, über E. Th. A. Hoffmanns „Goldenen Topf“. An literarhistorischer Begabung fehlt es ihm wohl nicht, hat er aber den nötigen wissenschaftlichen <pb facs="#IMG.3" n="3"/> Ernst und die erforderliche Ausdauer? Ich habe es nicht gern, daß er zu viel für die „Tagespost“ schreibt. <persName ref="[authorityLink]">Spitzer</persName> ist auch dagegen. In <placeName ref="[authorityLink]">
+Bonn</placeName> hätte er ihn wohl davor bewahrt. Doch hoffe ich, ist <persName ref="[authorityLink]">Theo</persName> einmal eine Arbeit gelungen und ist er im wissenschaftlichen Fahrwasser, so wird die Sache dann wie von selbst gehen.</p>
+            <p>Freund <persName ref="[authorityLink]">Spitzer</persName> ist recht einsilbig geworden. Ich dachte zuerst, es ginge ihm finanziell schlecht, doch höre ich jetzt zu meinem Troste, daß er in seiner Villa <hi rend="unknown" rendition="#none">Leonstein</hi> elektrisches Licht einführt, was natürlich ein Heidengeld kostet.</p>
+            <closer>
+               <salute>Mit dem Wunsche, diese Zeilen mögen Herrn Hofrat bei bestem Wohlsein treffen, verbleibe ich</salute>
+               <lb/>
+               <salute>Mit ehrfurchtsvollem Gruß</salute>
+               <lb/>
+               <salute>Ihr ergebenster</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">R. Riegler</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.4387"
+              subtype="original"
+              type="appendix"
+              xml:lang="es">
+            <p>
+               <pb facs="#IMG.4" n="A1"/>
+               <hi rend="unknown" rendition="#none">Alejandro Guichot y Sierra, Noticia histórica del Folklore. Origines en todos los paises hasta 1890. Desarrollo en España hasta 1921. Sevilla, Hijos de Guillermo Alvarez impresores.Gonzáles Cuadrádo 24, 1922, 256 </hi>S.</p>
+            <p>S. 89 <hi rend="unknown" rendition="#none">Citáronse como recolectores y estudiosos de tradiciones populares .… a Pedro K. Rosegger, literato de obras originales (estirias); y el </hi>(warum nicht <hi rend="unknown" rendition="#none">
 „al“?</hi>) <hi rend="unknown" rendition="#none">docto catedrático de la Universidad de Graz, Hugo Schuchardt (generales y filológicas).</hi>
-        </p>
-        <p>S. 89. --- <hi rend="unknown" rendition="#none">Austria presentó  algunas obras [folklóricas] muy interesantes, como hemos visto; y contó con algunos eruditos entendidos en estas materias, siendo precisamente un reputado profesor austríaco, el doctor Schuchardt, quien relacionó a los Españoles </hi>
-          <pb facs="#IMG.5" n="A2"/>
-          <hi rend="unknown" rendition="#none">con los principales folkloristas europeos, cuando en 1879 vino a Sevilla, según diremos en el capitulo VI de la Segunda Parte. –</hi>
-        </p>
-        <p>S. 100 (Im Kapitel <hi rend="unknown" rendition="#none">„Gitanos“</hi>) <hi rend="unknown"
-              rendition="#none">Ha dicho el doctor Schuchardt: La expresión <hi rend="unknown"
-              rendition="#none">zingaros</hi>, aunque su primitiva forma <hi rend="unknown"
-              rendition="#none">athisganos</hi> pertenece a una secta, se refiere a su antigua mansión en Armenia.<hi rendition="#sup">+</hi>
-          </hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <hi rendition="#sup">+</hi>
-          </hi>
-          <hi rend="unknown" rendition="#none">En su monografía Los cantos flamencos, publicada en Graz (Austria), en 1881: comenzada a traducir en páginas 35 a 40 de El Folklore Andaluz, Sevilla 1882.</hi>
-        </p>
-        <p>S. 101 <hi rend="unknown" rendition="#none">„Puede acontecer, dada la índole y genialidad siempre festiva y picaresca de la raza andaluza, que se dé este nombre [Flamencos] a los gitanos por el color de su tez, moreno-bronzeado </hi>
-          <pb facs="#IMG.6" n="A3"/>
-          <hi rend="unknown" rendition="#none">que es precisamente el opuesto al blanco y rubio de los naturales de Flandes“.</hi>
-        </p>
-        <p>
-          <hi rend="unknown"
-              rendition="#none">(Página VI de Colección de Cantes flamencos, por Demófilo [Antonio Machado] Sevilla, 1881.) Se hace cargo de esta opinión el doctor Schuchardt (en la monografía anteriormente citada, y comenzada a traducir); recuerda «como efectivamente es muy usal entre los Andaluces esa jocosa inversión; por ejemplo: <hi
-              rend="unknown" rendition="#none">hace mucho frio</hi> por <hi rend="unknown" rendition="#none">hace mucho calor</hi>
-          </hi>(folgt ein längeres Zitat).</p>
-        <p>S. 153 <hi rend="unknown" rendition="#none">Acerca de Fernán Caballero dice el profesor español el señor Cejador: „Ella fué la primera que introdujo el folklore o demosofía en España“ (Página 95 del tomo VIII de Hist. de la leng. y liter. Castellana; Madrid, 1918.) </hi>
-          <pb facs="#IMG.7" n="A4"/>
-          <hi rend="unknown" rendition="#none">Pero, el profesor austriaco doctor Schuchardt, había dicho muchos años antes, al hablar de la recolección de cuentos, canciones, enigmas, refranes y costumbres andaluces, que hizo Fernán Caballero, que ésta escritora « se proponía  esclusivamente fines estéticas y morales ». (en su estudio Los cantes flamencos, traducción en página 35 de la Revista „El folklore Andaluz“; Sevilla, 1882).</hi>
-        </p>
-        <p>S. 154 <hi rend="unknown" rendition="#none">Cancionero popular, dos tomos (Madrid, 1865), acerca del cual dice el profesor austiaco Schuchardt: „Lafuente Alcántara en su importantísimo Cancionero popular, cuyas dos terceras partes se refieren a Andalucía y Aragón, reconoce ya el valor científico de las canciones popu- </hi>
-          <pb facs="#IMG.8" n="A5"/>
-          <hi rend="unknown" rendition="#none">lares“. (en su estudio Los cantes flamencos traducción en página 35 de la revista „El folklore Andaluz“; Sevilla, 1882).</hi>
-        </p>
-        <p>S. 163 <hi rend="unknown" rendition="#none">A mayor abundamiento, en 1879, el sabio profesor de la Universidad de Gratz (Austria), doctor Hugo Schuchardt, llegó a Sevilla, hizo estudios de Fonética popular andaluza, conoció el núcleo de investigadores de la Enciclopedía, trató con aprecio a Machado, dióle pauta para continuar los estudios, y lo puso en relación con los notables cultivadores de la Demótica y la Demosofía en Europa: con Köhler, Paris, Pitré, Braga y otres.</hi>
-        </p>
-        <p>S. 171 <hi rend="unknown"
-            rendition="#none">Los Sevillanos sostuvieron correspondencia particular y cambio de revistas  y de libros con los principales extranjeras; </hi>I9 /6I <hi
-            rend="unknown" rendition="#none">y estos enviaron a los sevillanos sus publicaciones y cartas laudatorias y escribieron indicaciones auxiliares y artículos de colaboración, haciendolos en el idioma castellano los señores Consiglieri, Leite, Prato y Schuchardt. Colaboraron en las revistas extranjeras, por el orden siguiente, Machado y Alvarez, Guichot y Sierra ….. En esas revistas elogiaban la labor española ….. Schuchardt en Austria. …..</hi>
-        </p>
-        <p>S. 171 <hi rend="unknown" rendition="#none">Los sabíos folkloristas, antropólogos, arqueólogos, mitógrafos, etnógrafos, tradicionistas y críticos extranjeros que fueron nombrados socios honorarios de los centros españoles, fueron: ….. ….. de Austria,Schuchardt; ….. </hi>
-        </p>
-        <p>
-          <pb facs="#IMG.9" n="A6"/> S. 175 <hi rend="unknown"
-              rendition="#none">A principios del año 1883, hizo Machado el estudio intitulado <hi rend="unknown" rendition="#none">Titin y las primeras oraciones</hi> sobre el lenguaje de los niños, dedicado al eminente filólogo austriaco, el doctor Hugo Schuchardt; este original y precioso estudio, aplaudido unánimamente, fué traducido al alemán por Schuchardt.</hi>
-        </p>
-      </div>
-    </body>
-  </text>
+            </p>
+            <p>S. 89. --- <hi rend="unknown" rendition="#none">Austria presentó  algunas obras [folklóricas] muy interesantes, como hemos visto; y contó con algunos eruditos entendidos en estas materias, siendo precisamente un reputado profesor austríaco, el doctor Schuchardt, quien relacionó a los Españoles </hi>
+               <pb facs="#IMG.5" n="A2"/>
+               <hi rend="unknown" rendition="#none">con los principales folkloristas europeos, cuando en 1879 vino a Sevilla, según diremos en el capitulo VI de la Segunda Parte. –</hi>
+            </p>
+            <p>S. 100 (Im Kapitel <hi rend="unknown" rendition="#none">„Gitanos“</hi>) <hi rend="unknown" rendition="#none">Ha dicho el doctor Schuchardt: La expresión <hi rend="unknown" rendition="#none">zingaros</hi>, aunque su primitiva forma <hi rend="unknown" rendition="#none">athisganos</hi> pertenece a una secta, se refiere a su antigua mansión en Armenia.<hi rendition="#sup">+</hi>
+               </hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <hi rendition="#sup">+</hi>
+               </hi>
+               <hi rend="unknown" rendition="#none">En su monografía Los cantos flamencos, publicada en Graz (Austria), en 1881: comenzada a traducir en páginas 35 a 40 de El Folklore Andaluz, Sevilla 1882.</hi>
+            </p>
+            <p>S. 101 <hi rend="unknown" rendition="#none">„Puede acontecer, dada la índole y genialidad siempre festiva y picaresca de la raza andaluza, que se dé este nombre [Flamencos] a los gitanos por el color de su tez, moreno-bronzeado </hi>
+               <pb facs="#IMG.6" n="A3"/>
+               <hi rend="unknown" rendition="#none">que es precisamente el opuesto al blanco y rubio de los naturales de Flandes“.</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">(Página VI de Colección de Cantes flamencos, por Demófilo [Antonio Machado] Sevilla, 1881.) Se hace cargo de esta opinión el doctor Schuchardt (en la monografía anteriormente citada, y comenzada a traducir); recuerda «como efectivamente es muy usal entre los Andaluces esa jocosa inversión; por ejemplo: <hi rend="unknown" rendition="#none">hace mucho frio</hi> por <hi rend="unknown" rendition="#none">hace mucho calor</hi>
+               </hi>(folgt ein längeres Zitat).</p>
+            <p>S. 153 <hi rend="unknown" rendition="#none">Acerca de Fernán Caballero dice el profesor español el señor Cejador: „Ella fué la primera que introdujo el folklore o demosofía en España“ (Página 95 del tomo VIII de Hist. de la leng. y liter. Castellana; Madrid, 1918.) </hi>
+               <pb facs="#IMG.7" n="A4"/>
+               <hi rend="unknown" rendition="#none">Pero, el profesor austriaco doctor Schuchardt, había dicho muchos años antes, al hablar de la recolección de cuentos, canciones, enigmas, refranes y costumbres andaluces, que hizo Fernán Caballero, que ésta escritora « se proponía  esclusivamente fines estéticas y morales ». (en su estudio Los cantes flamencos, traducción en página 35 de la Revista „El folklore Andaluz“; Sevilla, 1882).</hi>
+            </p>
+            <p>S. 154 <hi rend="unknown" rendition="#none">Cancionero popular, dos tomos (Madrid, 1865), acerca del cual dice el profesor austiaco Schuchardt: „Lafuente Alcántara en su importantísimo Cancionero popular, cuyas dos terceras partes se refieren a Andalucía y Aragón, reconoce ya el valor científico de las canciones popu- </hi>
+               <pb facs="#IMG.8" n="A5"/>
+               <hi rend="unknown" rendition="#none">lares“. (en su estudio Los cantes flamencos traducción en página 35 de la revista „El folklore Andaluz“; Sevilla, 1882).</hi>
+            </p>
+            <p>S. 163 <hi rend="unknown" rendition="#none">A mayor abundamiento, en 1879, el sabio profesor de la Universidad de Gratz (Austria), doctor Hugo Schuchardt, llegó a Sevilla, hizo estudios de Fonética popular andaluza, conoció el núcleo de investigadores de la Enciclopedía, trató con aprecio a Machado, dióle pauta para continuar los estudios, y lo puso en relación con los notables cultivadores de la Demótica y la Demosofía en Europa: con Köhler, Paris, Pitré, Braga y otres.</hi>
+            </p>
+            <p>S. 171 <hi rend="unknown" rendition="#none">Los Sevillanos sostuvieron correspondencia particular y cambio de revistas  y de libros con los principales extranjeras; </hi>I9 /6I <hi rend="unknown" rendition="#none">y estos enviaron a los sevillanos sus publicaciones y cartas laudatorias y escribieron indicaciones auxiliares y artículos de colaboración, haciendolos en el idioma castellano los señores Consiglieri, Leite, Prato y Schuchardt. Colaboraron en las revistas extranjeras, por el orden siguiente, Machado y Alvarez, Guichot y Sierra ….. En esas revistas elogiaban la labor española ….. Schuchardt en Austria. …..</hi>
+            </p>
+            <p>S. 171 <hi rend="unknown" rendition="#none">Los sabíos folkloristas, antropólogos, arqueólogos, mitógrafos, etnógrafos, tradicionistas y críticos extranjeros que fueron nombrados socios honorarios de los centros españoles, fueron: ….. ….. de Austria,Schuchardt; ….. </hi>
+            </p>
+            <p>
+               <pb facs="#IMG.9" n="A6"/> S. 175 <hi rend="unknown" rendition="#none">A principios del año 1883, hizo Machado el estudio intitulado <hi rend="unknown" rendition="#none">Titin y las primeras oraciones</hi> sobre el lenguaje de los niños, dedicado al eminente filólogo austriaco, el doctor Hugo Schuchardt; este original y precioso estudio, aplaudido unánimamente, fué traducido al alemán por Schuchardt.</hi>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

@@ -1,408 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Wilhelm Meyer-Lübke an Hugo Schuchardt (09-07232)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-            <forename>Wilhelm</forename>
-            <surname>Meyer-Lübke</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Magdalena</forename>
-            <surname>Rattey</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/9300" type="PID">o:hsa.letter.9300</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">09-07232</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">07232</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-                <forename>Wilhelm</forename>
-                <surname>Meyer-Lübke</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Karte (Postkarte)</objectType>
-                </support>
-                <extent>
-                  <measure quantity="2" unit="pages">2 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" ref="http://sws.geonames.org/2761368">Wien</origPlace>
-              <origDate ana="dcterms:created" when="1898-03-18">1898-03-18</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Magdalena</forename>
-              <surname>Rattey</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Wilhelm Meyer-Lübke und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2180"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.9300">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2180" ref="https://viaf.org/viaf/2546176">
-            <forename>Wilhelm</forename>
-            <surname>Meyer-Lübke</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" key="#GID.1" ref="http://sws.geonames.org/2761368">Wien</placeName>
-          <date when="1898-03-18">1898-03-18</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <name ref="http://geonames.org/2761368" type="fcode:STM">Wien-Fluss</name>
-                <location>
-                  <geo>16.38409,48.2088</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2180" type="context">
-                        Korrespondenz Wilhelm Meyer-Lübke - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3085" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschrift für romanische Philologie</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.886" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Latein</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.779" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.227" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Altfranzösisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9300" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9300" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.9300" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <pb facs="#IMG.2" n="2"/>
-        <opener>Hochgeehrter Herr Kollege!</opener>
-        <p> Für Ihre reiche abhandl. über <hi rend="unknown" rendition="#none">sapidus</hi>
-          <note n="1" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.437">Schuchardt, Hugo. 1897. Romanische Etymologieen. <hi
-                  rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.9300" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <pb facs="#IMG.2" n="2"/>
+            <opener>Hochgeehrter Herr Kollege!</opener>
+            <p> Für Ihre reiche abhandl. über <hi rend="unknown" rendition="#none">sapidus</hi>
+               <note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.437">Schuchardt, Hugo. 1897. Romanische Etymologieen. <hi rend="unknown" rendition="#none">
 Sitzungsberichte der philosophisch-historischen Classe der Kaiserlichen Akademie der Wissenschaften in Wien</hi> 138: 1–82.</ref>
-
-            </bibl> [Archiv-/Breviernummer: 317]. (= Schuchardt 1897b in der Bibliographie).</note> besten dank. Sie gründlich zu lesen fehlt mir leider jetzt die zeit, wo ich dicht vor den vorlesungen und noch dichter vor dem abschluss der syntax stehe. <note
-            n="2" place="foot" type="editorial">Der dritte Band seiner <bibl>
-              <hi rend="unknown" rendition="#none">
+                  </bibl> [Archiv-/Breviernummer: 317]. (= Schuchardt 1897b in der Bibliographie).</note> besten dank. Sie gründlich zu lesen fehlt mir leider jetzt die zeit, wo ich dicht vor den vorlesungen und noch dichter vor dem abschluss der syntax stehe. <note n="2" place="foot" type="editorial">Der dritte Band seiner <bibl>
+                     <hi rend="unknown" rendition="#none">
 Grammatik der romanischen Sprachen</hi>, betitelt <hi rend="unknown" rendition="#none">
 Romanische Syntax</hi>
-            </bibl>, erschien 1899. Vgl. FN zu Nr. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.9303">12-07235</ref> in der vorliegenden Korrespondenz.</note>– Was Sie über das verhältniss der rom. lautlehre<note
-            n="3" place="foot"
-              type="editorial">ML meint jene Stelle, die in Schuchardt (1897b: 33f.) zu lesen ist: „Daher gewinnt die Darstellung durch eine solche Verdichtung wie sie Meyer-Lübkes Rom. Lautlehre gegenüber seiner Abhandlung in Ztschr. VIII aufweist, keineswegs an Klarheit, es sei denn auf Kosten der Richtigkeit.“ <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-Schuchardt</persName> bespricht Fälle von Synkopierungen aus <hi
-              rend="unknown" rendition="#none">-idus</hi> zu *<hi rend="unknown" rendition="#none">-ius</hi> und <hi
-              rend="unknown" rendition="#none">-idus</hi> zu <hi rend="unknown" rendition="#none">-dus</hi> und widerspricht dabei MLs angeführten Beispielen in dessen <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4165">
-                <hi rend="unknown" rendition="#none">Romanische[r] Lautlehre</hi> (1890a)</ref>
-            </bibl>.</note> zu dem aufsatz in <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3085">Zs</ref> VIII<note n="4" place="foot" type="editorial">
-
-            <bibl>
+                  </bibl>, erschien 1899. Vgl. FN zu Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.9303">12-07235</ref> in der vorliegenden Korrespondenz.</note>– Was Sie über das verhältniss der rom. lautlehre<note n="3" place="foot" type="editorial">ML meint jene Stelle, die in Schuchardt (1897b: 33f.) zu lesen ist: „Daher gewinnt die Darstellung durch eine solche Verdichtung wie sie Meyer-Lübkes Rom. Lautlehre gegenüber seiner Abhandlung in Ztschr. VIII aufweist, keineswegs an Klarheit, es sei denn auf Kosten der Richtigkeit.“ <persName ref="[authorityLink]">
+Schuchardt</persName> bespricht Fälle von Synkopierungen aus <hi rend="unknown" rendition="#none">-idus</hi> zu *<hi rend="unknown" rendition="#none">-ius</hi> und <hi rend="unknown" rendition="#none">-idus</hi> zu <hi rend="unknown" rendition="#none">-dus</hi> und widerspricht dabei MLs angeführten Beispielen in dessen <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4165">
+                        <hi rend="unknown" rendition="#none">Romanische[r] Lautlehre</hi> (1890a)</ref>
+                  </bibl>.</note> zu dem aufsatz in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3085">Zs</ref> VIII<note n="4" place="foot" type="editorial">
+                  <bibl>
 
 
-Meyer-Lübke, Wilhelm. 1884. Beiträge zur romanischen Laut- und Formenlehre. I. Die Behandlung tonloser Paenultima. <hi
-                rend="unknown" rendition="#none">ZrP</hi> 8: 205-242.
+Meyer-Lübke, Wilhelm. 1884. Beiträge zur romanischen Laut- und Formenlehre. I. Die Behandlung tonloser Paenultima. <hi rend="unknown" rendition="#none">ZrP</hi> 8: 205-242.
 </bibl>
-          </note> sagen (gilt auch von R Gr II<note n="5" place="foot"
-              type="editorial">Meyer-Lübke (1894). Vgl. FN zu <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.9295">
-04-07227</ref> in der vorliegenden Korrespondenz.</note> zu Zs IX<note
-            n="6" place="foot" type="editorial">
-
-            <bibl>
+               </note> sagen (gilt auch von R Gr II<note n="5" place="foot" type="editorial">Meyer-Lübke (1894). Vgl. FN zu <ref target="https://gams.uni-graz.at/o:hsa.letter.9295">
+04-07227</ref> in der vorliegenden Korrespondenz.</note> zu Zs IX<note n="6" place="foot" type="editorial">
+                  <bibl>
 
 
-Meyer-Lübke, Wilhelm. 1885. Beiträge zur romanischen Laut- und Formenlehre. II. Zum schwachen Perfektum. <hi
-                rend="unknown" rendition="#none">ZrP</hi> 9: 223-267.
+Meyer-Lübke, Wilhelm. 1885. Beiträge zur romanischen Laut- und Formenlehre. II. Zum schwachen Perfektum. <hi rend="unknown" rendition="#none">ZrP</hi> 9: 223-267.
 </bibl> Die Erwähnung findet sich in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.437">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.437">
 Schuchardt (1897b: 33f.)</ref>
-            </bibl>.</note> u. R Gr III <note n="7" place="foot"
-              type="editorial">Möglicherweise sollte dies nicht wie „III“, sondern wie „I,II“ zu lesen sein (vgl. Schuchardt 1897b: 14). Außerdem war der dritte Band der <hi
-              rend="unknown"
-            rendition="#none">Grammatik der romanischen Sprachen</hi> 1898 noch nicht erschienen.</note>zu Zs XIX<note
-            n="8" place="foot" type="editorial">
-            <bibl>
+                  </bibl>.</note> u. R Gr III <note n="7" place="foot" type="editorial">Möglicherweise sollte dies nicht wie „III“, sondern wie „I,II“ zu lesen sein (vgl. Schuchardt 1897b: 14). Außerdem war der dritte Band der <hi rend="unknown" rendition="#none">Grammatik der romanischen Sprachen</hi> 1898 noch nicht erschienen.</note>zu Zs XIX<note n="8" place="foot" type="editorial">
+                  <bibl>
 
 Meyer-Lübke. Wilhelm. 1895. Zur Syntax des Substantivismus. <hi rend="unknown" rendition="#none">
 ZrP</hi> 19: 305-325, 477-512.
 </bibl>
-          </note> u. XXI<note n="9" place="foot" type="editorial">
-            <bibl>
+               </note> u. XXI<note n="9" place="foot" type="editorial">
+                  <bibl>
 
 
-Meyer-Lübke, Wilhelm. 1897. Romania No. 99, Juillet 1896, T. XXV. <hi rend="unknown"
-              rendition="#none">ZrP</hi> 21: 308-309, 310.
-</bibl> Erwähnung in Schuchardt (1897b: 16), beginnend auf S. 14 zu <hi
-              rend="unknown"
-            rendition="#none">sabius</hi>.</note> ) ist nur zu berechtigt u ich selber habe es an mehr als einer stelle wol am deutlichsten empfunden. Aber so geduldige verleger wie Trübner<note
-            n="10" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2886">Karl Ignaz Trübner</persName> (1846-1907), Verleger in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.499">Straßburg</placeName> und Gründer der 
-Verlagsbuchhandlung Karl. I. Trübner. Briefe Karl I. Trübners liegen im Schuchardt-Nachlass vor (<ref
-            target="https://gams.uni-graz.at/context:hsa.letters.2886">
-11868-11883</ref>).</note> mit delbr. Syntax<note
-            n="11" place="foot" type="editorial">
-            <bibl>
+Meyer-Lübke, Wilhelm. 1897. Romania No. 99, Juillet 1896, T. XXV. <hi rend="unknown" rendition="#none">ZrP</hi> 21: 308-309, 310.
+</bibl> Erwähnung in Schuchardt (1897b: 16), beginnend auf S. 14 zu <hi rend="unknown" rendition="#none">sabius</hi>.</note> ) ist nur zu berechtigt u ich selber habe es an mehr als einer stelle wol am deutlichsten empfunden. Aber so geduldige verleger wie Trübner<note n="10" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Karl Ignaz Trübner</persName> (1846-1907), Verleger in <placeName ref="[authorityLink]">Straßburg</placeName> und Gründer der 
+Verlagsbuchhandlung Karl. I. Trübner. Briefe Karl I. Trübners liegen im Schuchardt-Nachlass vor (<ref target="https://gams.uni-graz.at/context:hsa.letters.2886">
+11868-11883</ref>).</note> mit delbr. Syntax<note n="11" place="foot" type="editorial">
+                  <bibl>
 
 Delbrück, Berthold. 1893-1900. <hi rend="unknown" rendition="#none">Vergleichende Syntax der indogermanischen Sprachen</hi>. 3 Bände. Trübner: Straßburg.
 </bibl>
-          </note> sind selten und eine zusammenfassung doch schliesslich in mancher interesse. – Ob <hi rend="unknown"
-            rendition="#none">
-sapiens</hi> &#x1f860; <hi rend="unknown" rendition="#none">saives</hi>
-          <note n="12" place="foot" type="editorial">Vgl. Schuchardt (1897b: 3f.): Ihm zufolge ist <hi rend="unknown"
-              rendition="#none">sapiens</hi> „in lautlicher Beziehung“ als Etymon für <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">
+               </note> sind selten und eine zusammenfassung doch schliesslich in mancher interesse. – Ob <hi rend="unknown" rendition="#none">
+sapiens</hi> 🡠 <hi rend="unknown" rendition="#none">saives</hi>
+               <note n="12" place="foot" type="editorial">Vgl. Schuchardt (1897b: 3f.): Ihm zufolge ist <hi rend="unknown" rendition="#none">sapiens</hi> „in lautlicher Beziehung“ als Etymon für <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">
 frz.</ref>
-            <foreign xml:lang="fr">
-              <hi rend="unknown" rendition="#none">sage</hi>
-            </foreign> etc. „unannehmbar“. Der Nominativ <hi rend="unknown" rendition="#none">
-sapiens</hi> hätte <hi
-              rend="unknown" rendition="#none">saives, sages</hi> ergeben.</note>wirklich angeht? Ob nicht im <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.886">lat</ref> *<foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">sapens</hi>
-          </foreign> daraus geworden wäre, vgl <hi rend="unknown" rendition="#none">quetus</hi>, inschr<note n="13"
-            place="foot" type="editorial">Abkürzung für <hi rend="unknown" rendition="#none">inschriftlich</hi>.</note>
-          <hi rend="unknown" rendition="#none">alenus</hi> (trotz <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">span.</ref>
-          <foreign xml:lang="es">ajeno</foreign>) u. a.<note n="14" place="foot" type="editorial">Vgl. dazu <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7687">Meyer-Lübke (1901b: 113f.)</ref>
-
-            </bibl> zu „II. Kombinatorischer Lautwandel. a. Betonte Vokale“ (§ 101).</note> Auch hier giebt rom. gr. II § 183<note
-            n="15" place="foot" type="editorial">Vgl. in <bibl>
+                  <foreign xml:lang="fr">
+                     <hi rend="unknown" rendition="#none">sage</hi>
+                  </foreign> etc. „unannehmbar“. Der Nominativ <hi rend="unknown" rendition="#none">
+sapiens</hi> hätte <hi rend="unknown" rendition="#none">saives, sages</hi> ergeben.</note>wirklich angeht? Ob nicht im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.886">lat</ref> *<foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">sapens</hi>
+               </foreign> daraus geworden wäre, vgl <hi rend="unknown" rendition="#none">quetus</hi>, inschr<note n="13" place="foot" type="editorial">Abkürzung für <hi rend="unknown" rendition="#none">inschriftlich</hi>.</note>
+               <hi rend="unknown" rendition="#none">alenus</hi> (trotz <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">span.</ref>
+               <foreign xml:lang="es">ajeno</foreign>) u. a.<note n="14" place="foot" type="editorial">Vgl. dazu <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7687">Meyer-Lübke (1901b: 113f.)</ref>
+                  </bibl> zu „II. Kombinatorischer Lautwandel. a. Betonte Vokale“ (§ 101).</note> Auch hier giebt rom. gr. II § 183<note n="15" place="foot" type="editorial">Vgl. in <bibl>
 
 Meyer-Lübke (1895b)
 </bibl> §183 zu <ref target="https://gams.uni-graz.at/o:hsa.languages#L.227">altfrz.</ref>
-            <hi rend="unknown" rendition="#none">
-              <foreign xml:lang="fro">savant</foreign> &#x1f860; v.lat. <foreign
-                xml:lang="la">sapendo</foreign> &#x1f860; <foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">
+                     <foreign xml:lang="fro">savant</foreign> 🡠 v.lat. <foreign xml:lang="la">sapendo</foreign> 🡠 <foreign xml:lang="la">
 sapiendo</foreign>
-
-            </hi>.</note> nur ein paar andeutungen, die nach allen seiten hin ergänzt und erweitert mindestens so viel seiten in anspruch nehmen würden wie sie jetzt zeilen füllen. - Crem.<note
-            n="16" place="foot" type="editorial">
+                  </hi>.</note> nur ein paar andeutungen, die nach allen seiten hin ergänzt und erweitert mindestens so viel seiten in anspruch nehmen würden wie sie jetzt zeilen füllen. - Crem.<note n="16" place="foot" type="editorial">
 
 Cremonesisch.</note>
-          <hi rend="unknown" rendition="#none">leñed</hi> habe ich (mir war kein crem. wb. zur hand)<note n="17"
-            place="foot" type="editorial">Schuchardt (1897b: 47) bemerkt zu Meyer-Lübkes <hi rend="unknown"
-            rendition="#none">leñed</hi> (in der mir vorl. frz. Version (1895b) ist das 515, § 426) er habe dieses Wort in „cremonaschen Wörterbüchern“ nicht gefunden.</note> aus Mussafias Beitrag<note
-            n="18" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2081">Mussafia, Adolfo. 1873. Beitrag zur Kunde der norditalienischen Mundarten im 15. Jahrhundert. <hi
-                  rend="unknown" rendition="#none">Denkschriften der phil.-hist. Classe der kaiserlichen Akademie der Wissenschaften</hi> 22. Dort S. 74</ref>
-            </bibl>, s.v. <hi rend="unknown" rendition="#none">légneda</hi>: vom Fleisch ‚zech’ [...].</note> s. v. <hi
-            rend="unknown"
-            rendition="#none">
-légneda</hi> entnommen, unzutreffend oder wenigstens missverständlich aber ist nur meine übersetzung.<note
-            n="19" place="foot" type="editorial">In Meyer-Lübke (1895b: 515, § 426) steht in Klammer neben <hi
-              rend="unknown" rendition="#none">
-leñed</hi> „de bois“ (vgl. <hi rend="unknown"
-            rendition="#none">REW</hi> Eintrag 5034).</note> – <hi rend="unknown" rendition="#none">moisir</hi>
-          <note n="20" place="foot" type="editorial">Vgl. Schuchardt (1897b: 58).</note> habe ich I § 547<note n="21"
-            place="foot" type="editorial">Vgl. Meyer-Lübke (1890a).</note> æhnlich erklärt, den inf <hi rend="unknown"
-            rendition="#none">-ire II</hi> § 121<note n="22" place="foot"
-            type="editorial">Vgl. <bibl>
+               <hi rend="unknown" rendition="#none">leñed</hi> habe ich (mir war kein crem. wb. zur hand)<note n="17" place="foot" type="editorial">Schuchardt (1897b: 47) bemerkt zu Meyer-Lübkes <hi rend="unknown" rendition="#none">leñed</hi> (in der mir vorl. frz. Version (1895b) ist das 515, § 426) er habe dieses Wort in „cremonaschen Wörterbüchern“ nicht gefunden.</note> aus Mussafias Beitrag<note n="18" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2081">Mussafia, Adolfo. 1873. Beitrag zur Kunde der norditalienischen Mundarten im 15. Jahrhundert. <hi rend="unknown" rendition="#none">Denkschriften der phil.-hist. Classe der kaiserlichen Akademie der Wissenschaften</hi> 22. Dort S. 74</ref>
+                  </bibl>, s.v. <hi rend="unknown" rendition="#none">légneda</hi>: vom Fleisch ‚zech’ [...].</note> s. v. <hi rend="unknown" rendition="#none">
+légneda</hi> entnommen, unzutreffend oder wenigstens missverständlich aber ist nur meine übersetzung.<note n="19" place="foot" type="editorial">In Meyer-Lübke (1895b: 515, § 426) steht in Klammer neben <hi rend="unknown" rendition="#none">
+leñed</hi> „de bois“ (vgl. <hi rend="unknown" rendition="#none">REW</hi> Eintrag 5034).</note> – <hi rend="unknown" rendition="#none">moisir</hi>
+               <note n="20" place="foot" type="editorial">Vgl. Schuchardt (1897b: 58).</note> habe ich I § 547<note n="21" place="foot" type="editorial">Vgl. Meyer-Lübke (1890a).</note> æhnlich erklärt, den inf <hi rend="unknown" rendition="#none">-ire II</hi> § 121<note n="22" place="foot" type="editorial">Vgl. <bibl>
 
 
 Meyer-Lübke (1894).
-</bibl> Vgl. FN zu 04-07227 in der vorliegenden Korrespondenz.</note> durch <hi
-            rend="unknown" rendition="#none">
--ēre</hi> ersetzt. <hi rend="unknown" rendition="#none">mo</hi>nco<note
-            n="23" place="foot" type="editorial">Vgl. Schuchardt (1897b: 81).</note> habe ich II § 90<note n="24"
-            place="foot"
-            type="editorial">Vgl. Meyer-Lübke (1894). Vgl. FN zu 04-07227 in der vorliegenden Korrespondenz.</note> ganz anders aufgefasst nach dem vorgange v<persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2194"> C Michaelis</persName> .<note n="25" place="foot" type="editorial">Vielleicht <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2087">
+</bibl> Vgl. FN zu 04-07227 in der vorliegenden Korrespondenz.</note> durch <hi rend="unknown" rendition="#none">
+-ēre</hi> ersetzt. <hi rend="unknown" rendition="#none">mo</hi>nco<note n="23" place="foot" type="editorial">Vgl. Schuchardt (1897b: 81).</note> habe ich II § 90<note n="24" place="foot" type="editorial">Vgl. Meyer-Lübke (1894). Vgl. FN zu 04-07227 in der vorliegenden Korrespondenz.</note> ganz anders aufgefasst nach dem vorgange v<persName ref="[authorityLink]"> C Michaelis</persName> .<note n="25" place="foot" type="editorial">Vielleicht <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.2087">
 Michaëlis’ <hi rend="unknown" rendition="#none">Fragmentos Etymologicos</hi> (1895)</ref>
-
-            </bibl>? Carolina Michaëlis de Vasconcelos (1851-1925), Romanistin und ordentliche Professorin für Germanische und Romanische Philologie in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.65">
+                  </bibl>? Carolina Michaëlis de Vasconcelos (1851-1925), Romanistin und ordentliche Professorin für Germanische und Romanische Philologie in <placeName ref="[authorityLink]">
 Porto</placeName>. ML dürfte in gutem Verhältnis zu ihr gestanden sein. Er besuchte sie (wenn nicht schon davor) kurz vor ihrem Tod 1925 in Porto; seiner Verehrung ihrer Person verleiht er in (<bibl>
 
 
 Meyer-Lübke 1927a
 </bibl>) Ausdruck. Michaëlis und Schuchardt standen in Briefkontakt zueinander (vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1550">Hurch 2009c</ref>
-
-            </bibl> für die Briefe von Michaëlis 07313-07351 an Schuchardt und seine Briefe an sie). Zu Michaëlis vgl. auch die Anm. zur Karte (<ref target="https://gams.uni-graz.at/o:hsa.letter.9352">56-07277</ref>) in der vorliegenden Korrespondenz.</note> – </p>
-        <closer>
-          <salute>Mit kollegialem grusse</salute>
-          <lb/>
-          <salute> Ihr ergebenster</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">W. Meyer-Lübke</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1550">Hurch 2009c</ref>
+                  </bibl> für die Briefe von Michaëlis 07313-07351 an Schuchardt und seine Briefe an sie). Zu Michaëlis vgl. auch die Anm. zur Karte (<ref target="https://gams.uni-graz.at/o:hsa.letter.9352">56-07277</ref>) in der vorliegenden Korrespondenz.</note> – </p>
+            <closer>
+               <salute>Mit kollegialem grusse</salute>
+               <lb/>
+               <salute> Ihr ergebenster</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">W. Meyer-Lübke</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

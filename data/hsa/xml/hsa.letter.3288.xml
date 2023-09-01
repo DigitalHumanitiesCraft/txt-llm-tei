@@ -1,396 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Alessandro D´Ancona an Hugo Schuchardt (11-00076)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">
-            <forename>Alessandro</forename>
-            <surname>D´Ancona</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Daniele</forename>
-            <surname>Baglioni</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3288" type="PID">o:hsa.letter.3288</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">11-00076</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">00076</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">
-                <forename>Alessandro</forename>
-                <surname>D´Ancona</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.429" ref="http://sws.geonames.org/3170647">Pisa</origPlace>
-              <origDate ana="dcterms:created" when="1871-11-25">1871-11-25</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Daniele</forename>
-              <surname>Baglioni</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Alessandro D´Ancona und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1352"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3288">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1352" ref="https://viaf.org/viaf/49316306">
-            <forename>Alessandro</forename>
-            <surname>D´Ancona</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.429" key="#GID.1" ref="http://sws.geonames.org/3170647">Pisa</placeName>
-          <date when="1871-11-25">1871-11-25</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Italy</country>
-                <settlement>Pisa</settlement>
-                <name ref="http://geonames.org/3170647" type="fcode:PPLA2">Pisa</name>
-                <location>
-                  <geo>10.4036,43.70853</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1352" type="context">
-                        Korrespondenz Alessandro D´Ancona - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.275" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Gesundheit</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.310" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Empfehlungen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4094" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kuraufenthalt</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.531" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturhinweise / bibliographische Angaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4812" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dialektliteratur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4229" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Editionsphilologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4814" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Archivio storico italiano</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.736" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Verlage</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4816" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Faksimile</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3215" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsvorhaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3934" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Wien</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.364" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienische Dialekte</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3288" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3288" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3288" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3288" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3288" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline> Pisa, 25 Nov. 71</dateline>
-        <opener> C. a.</opener>
-        <p>Gratissima come sempre mi giunge la <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.3299">vostra datata da Ilmenau</ref>. Duolmi assai rilevare che non vi sentiate bene, ma il riposo dagli studj e la buon’aria e le acque fresche e il bel soggiorno nella foresta di Turingia, vi avranno rimesso certo in buona condizione. Mi allegro assai sentendo che avreste intenzione di venire a passar l’inverno in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5969">Italia</placeName>. Non potrei però indicarvi un posticino che vi possa convenire, perché voi vi scordate di dirmi quale sia la vostra malattia, e senza questa indicazione indispensabile, neppure un medico saprebbe suggerirvi qualche cosa di utile. Dato il caso che il vostro sia mal di nervi credo che il meglio sarebbe trasferirvi in una città popolosa e amena, e la scelta potrebbe cadere tra <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.99">
-Venezia</placeName>, <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.114">
-Firenze</placeName>, <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.103">
-Napoli</placeName> e <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.172">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3288" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline> Pisa, 25 Nov. 71</dateline>
+            <opener> C. a.</opener>
+            <p>Gratissima come sempre mi giunge la <ref target="https://gams.uni-graz.at/o:hsa.letter.3299">vostra datata da Ilmenau</ref>. Duolmi assai rilevare che non vi sentiate bene, ma il riposo dagli studj e la buon’aria e le acque fresche e il bel soggiorno nella foresta di Turingia, vi avranno rimesso certo in buona condizione. Mi allegro assai sentendo che avreste intenzione di venire a passar l’inverno in <placeName ref="[authorityLink]">Italia</placeName>. Non potrei però indicarvi un posticino che vi possa convenire, perché voi vi scordate di dirmi quale sia la vostra malattia, e senza questa indicazione indispensabile, neppure un medico saprebbe suggerirvi qualche cosa di utile. Dato il caso che il vostro sia mal di nervi credo che il meglio sarebbe trasferirvi in una città popolosa e amena, e la scelta potrebbe cadere tra <placeName ref="[authorityLink]">
+Venezia</placeName>, <placeName ref="[authorityLink]">
+Firenze</placeName>, <placeName ref="[authorityLink]">
+Napoli</placeName> e <placeName ref="[authorityLink]">
 Palermo</placeName>. Badate però che a Venezia come a <placeName>
 
-Pisa</placeName> dominano i venti di <pb
-            facs="#IMG.2"
-            n="2"/> scirocco che così sono punto piacevoli a chi soffre di nervi, ed io ne so qualchecosa. <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.86">
+Pisa</placeName> dominano i venti di <pb facs="#IMG.2" n="2"/> scirocco che così sono punto piacevoli a chi soffre di nervi, ed io ne so qualchecosa. <placeName ref="[authorityLink]">
 Roma</placeName> è diventata un pandemonio, e non saprei suggerirvela: vi è troppo frastuono adesso, e troppo movimento politico in vario senso. Il meglio credo sarebbe o Firenze o Napoli; ma per dare un parere ben fondato, ripeto che bisognerebbe sapere ciò di che avreste bisogno.</p>
-        <p>Non molto è stato pubblicato di testi antichi di dialetti italiani. Conoscerete certo le Cronache siciliane del <persName>
+            <p>Non molto è stato pubblicato di testi antichi di dialetti italiani. Conoscerete certo le Cronache siciliane del <persName>
 De Giovanni</persName>
-          <note n="1" place="foot" type="editorial">
-            <bibl>
+               <note n="1" place="foot" type="editorial">
+                  <bibl>
 
 
-Vincenzo De Giovanni, <hi rend="unknown"
-            rendition="#none">Cronache siciliane dei secoli 13. 14. 15.</hi>, Bologna, presso Gaetano Romagnoli, 1865
-</bibl> [Collezione di opere inedite o rare pubblicate dalla Commissione per i testi di lingua 10].</note> e i trattati di mascalcia stampati a <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.395">
-Bologna</placeName> nei volumi della Commissione dei testi di lingua<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6515">
-                <hi rend="unknown" rendition="#none">Trattati di mascalcia attribuiti ad Ippocrate, tradotti dall’arabo in latino da maestro Moisè da Palermo, volgarizzati nel secolo 13.</hi>, messi in luce da Pietro Delprato, corredati di due posteriori compilazioni in latino e in toscano e di note filologiche per cura di Luigi Barbieri, Bologna, presso G. Romagnoli, 1865</ref>
+Vincenzo De Giovanni, <hi rend="unknown" rendition="#none">Cronache siciliane dei secoli 13. 14. 15.</hi>, Bologna, presso Gaetano Romagnoli, 1865
+</bibl> [Collezione di opere inedite o rare pubblicate dalla Commissione per i testi di lingua 10].</note> e i trattati di mascalcia stampati a <placeName ref="[authorityLink]">
+Bologna</placeName> nei volumi della Commissione dei testi di lingua<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6515">
+                        <hi rend="unknown" rendition="#none">Trattati di mascalcia attribuiti ad Ippocrate, tradotti dall’arabo in latino da maestro Moisè da Palermo, volgarizzati nel secolo 13.</hi>, messi in luce da Pietro Delprato, corredati di due posteriori compilazioni in latino e in toscano e di note filologiche per cura di Luigi Barbieri, Bologna, presso G. Romagnoli, 1865</ref>
+                  </bibl> [Collezione di opere inedite o rare pubblicate dalla Commissione per i testi di lingua 12].</note>. Le pubblicazioni del Mussafia<note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Adolfo Mussafia</persName> (1834-1905), filologo, professore di Letteratura italiana e Filologia romanza all’<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3934">Università di Vienna</ref>, ebbe fra i suoi interessi principali gli antichi volgari veneti (cf. <ref target="http://www.treccani.it/enciclopedia/adolfo-mussafia_(Dizionario_Biografico)/">
+                     <hi rend="unknown" rendition="#none">DBI</hi>
+                  </ref>). Fu tra i corrispondenti di Schuchardt, del quale aveva grande stima, e con <persName ref="[authorityLink]">Eduard Boehmer</persName> caldeggiò la chiamata di <persName ref="[authorityLink]">
+Schuchardt</persName> a <placeName ref="[authorityLink]">Graz</placeName> nel 1876.</note> pei dialetti veneti vi saranno certo note. Quanto alle poesie, è una disperazione. I più degli amanuensi erano toscani, e se non toscani cercavano tutti d’accostarsi a una forma <pb facs="#IMG.3" n="3"/> ortografica comune. Le poesie siciliane per es. indubitabilmente erano in dialetto dell’isola, e intanto le abbiamo quasi tutte in una forma toscaneggiata, salvo due sole<note n="4" place="foot" type="editorial">La canzone <hi rend="unknown" rendition="#none">Pir meu cori alligrari</hi> di <persName>
+Stefano Protonotaro</persName> e il frammento del componimento di Re Enzo <hi rend="unknown" rendition="#none">Alegru cori</hi>, conservatisi in siciliano grazie alla trascrizione fattane nel Cinquecento dal modenese <persName>
 
-            </bibl> [Collezione di opere inedite o rare pubblicate dalla Commissione per i testi di lingua 12].</note>. Le pubblicazioni del Mussafia<note
-            n="3" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2264">Adolfo Mussafia</persName> (1834-1905), filologo, professore di Letteratura italiana e Filologia romanza all’<ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.3934">Università di Vienna</ref>, ebbe fra i suoi interessi principali gli antichi volgari veneti (cf. <ref target="http://www.treccani.it/enciclopedia/adolfo-mussafia_(Dizionario_Biografico)/">
-              <hi rend="unknown" rendition="#none">DBI</hi>
-            </ref>). Fu tra i corrispondenti di Schuchardt, del quale aveva grande stima, e con <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1164">Eduard Boehmer</persName> caldeggiò la chiamata di <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-Schuchardt</persName> a <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> nel 1876.</note> pei dialetti veneti vi saranno certo note. Quanto alle poesie, è una disperazione. I più degli amanuensi erano toscani, e se non toscani cercavano tutti d’accostarsi a una forma <pb
-            facs="#IMG.3"
-            n="3"/> ortografica comune. Le poesie siciliane per es. indubitabilmente erano in dialetto dell’isola, e intanto le abbiamo quasi tutte in una forma toscaneggiata, salvo due sole<note
-            n="4" place="foot" type="editorial">La canzone <hi rend="unknown"
-              rendition="#none">Pir meu cori alligrari</hi> di <persName>
-Stefano Protonotaro</persName> e il frammento del componimento di Re Enzo <hi
-              rend="unknown"
-            rendition="#none">Alegru cori</hi>, conservatisi in siciliano grazie alla trascrizione fattane nel Cinquecento dal modenese <persName>
+Giovanni Maria Barbieri</persName>.</note> Un mio <persName ref="[authorityLink]">amico</persName>
+               <note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5429">Francesco Corazzini, <hi rend="unknown" rendition="#none">Francesco Corazzini con un saggio di restaurazione degli antichi poeti siciliani, per le nozze D’Ancona-Nissim il 20 agosto 1871</hi>, Siena, Tip. G. Bargellini, 1871.</ref>
+                  </bibl>
+               </note>ha tentato ritornarle alla loro prima forma probabile, come vedrete dall’opuscolo che vi mando. Di antico genovese abbiamo alcune poesie nell’Archivio storico, appendice<note n="6" place="foot" type="editorial">
+                  <bibl>
 
-Giovanni Maria Barbieri</persName>.</note> Un mio <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4813">amico</persName>
-          <note n="5" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5429">Francesco Corazzini, <hi
-                  rend="unknown" rendition="#none">Francesco Corazzini con un saggio di restaurazione degli antichi poeti siciliani, per le nozze D’Ancona-Nissim il 20 agosto 1871</hi>, Siena, Tip. G. Bargellini, 1871.</ref>
-            </bibl>
+Francesco Bonaini, <hi rend="unknown" rendition="#none">Rime istoriche di un anonimo genovese vissuto nei secoli 13. e 14. tratte da un codice dell’avv. Matteo Molfino di Genova</hi>, «Archivio Storico Italiano» IV (1847), Appendice 18
+</bibl>.</note>, ma chi giurerebbe che sieno in antico ligure puro e schietto? Per Milanese non vi sarà sconosciuto il fra Bonvesin del Bekker<note n="7" place="foot" type="editorial">Le edizioni dei poemetti di <persName>
 
-          </note>ha tentato ritornarle alla loro prima forma probabile, come vedrete dall’opuscolo che vi mando. Di antico genovese abbiamo alcune poesie nell’Archivio storico, appendice<note
-            n="6" place="foot" type="editorial">
-            <bibl>
-
-Francesco Bonaini, <hi rend="unknown"
-            rendition="#none">Rime istoriche di un anonimo genovese vissuto nei secoli 13. e 14. tratte da un codice dell’avv. Matteo Molfino di Genova</hi>, «Archivio Storico Italiano» IV (1847), Appendice 18
-</bibl>.</note>, ma chi giurerebbe che sieno in antico ligure puro e schietto? Per Milanese non vi sarà sconosciuto il fra Bonvesin del Bekker<note
-            n="7" place="foot"
-              type="editorial">Le edizioni dei poemetti di <persName>
-
-Bonvesin de la Riva</persName> a cura di <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4815">August Immanuel Bekker</persName> uscirono a più riprese nei 
+Bonvesin de la Riva</persName> a cura di <persName ref="[authorityLink]">August Immanuel Bekker</persName> uscirono a più riprese nei 
 
 
-<hi
-              rend="unknown" rendition="#none">Berichte über die zur Bekanntmachung geigneten Verhandlungen der Königl. </hi>
-            <hi rend="unknown"
-            rendition="#none">Preuss. Akademie der Wissenschaften zu Berlin</hi> tra il 1850 e il 1851.</note>. Parecchie antiche scritture toscane – ad es. le Lettere Sanesi, pubbl. dal Romagnoli a Bologna <note
-            n="8" place="foot" type="editorial">
-            <bibl>
-              <hi rend="unknown" rendition="#none">Lettere volgari del secolo 13. scritte da senesi</hi>, pubblicate e annotate con documenti e annotazioni da Cesare Paoli e da Enea Piccolomini, Bologna, G. Romagnoli, 1871
+<hi rend="unknown" rendition="#none">Berichte über die zur Bekanntmachung geigneten Verhandlungen der Königl. </hi>
+                  <hi rend="unknown" rendition="#none">Preuss. Akademie der Wissenschaften zu Berlin</hi> tra il 1850 e il 1851.</note>. Parecchie antiche scritture toscane – ad es. le Lettere Sanesi, pubbl. dal Romagnoli a Bologna <note n="8" place="foot" type="editorial">
+                  <bibl>
+                     <hi rend="unknown" rendition="#none">Lettere volgari del secolo 13. scritte da senesi</hi>, pubblicate e annotate con documenti e annotazioni da Cesare Paoli e da Enea Piccolomini, Bologna, G. Romagnoli, 1871
 </bibl> [Scelta di curiosità letterarie inedite o rare dal secolo 13. al 19. in appendice alla Collezione di opere inedite o rare 16].</note>– sono state messe fuori in questi anni con esatta riproduzione degli originali, ma quasi dappertutto ritroverete quella incostanza nelle forme ortografiche, della quale vi lagnate giustamente, e non siete il solo.</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p> Il <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4800">Nannucci</persName>
-          <note n="9" place="foot" type="editorial">Cf. n. 6 alla <ref target="https://gams.uni-graz.at/o:hsa.letter.3299">lettera 10_HS_ADA_06</ref>.</note>è benemerito raccoglitore illustratore di antichi testi, ma può certamente, anzi ha qualche volta errato nelle sue dichiarazioni di passi difficili. Nei passi che mi notate non direi che abbia assolutamente torto, né che voi abbiate assolutamente ragione, perché sono ammissibili le due dichiarazioni. Nella seconda inclinerei però dalla parte d(e)l Nannucci, perché mi pare che il costrutto, colla vostra, n’uscirebbe un poco sforzato.</p>
-        <p>Sul <persName>
+            <pb facs="#IMG.4" n="4"/>
+            <p> Il <persName ref="[authorityLink]">Nannucci</persName>
+               <note n="9" place="foot" type="editorial">Cf. n. 6 alla <ref target="https://gams.uni-graz.at/o:hsa.letter.3299">lettera 10_HS_ADA_06</ref>.</note>è benemerito raccoglitore illustratore di antichi testi, ma può certamente, anzi ha qualche volta errato nelle sue dichiarazioni di passi difficili. Nei passi che mi notate non direi che abbia assolutamente torto, né che voi abbiate assolutamente ragione, perché sono ammissibili le due dichiarazioni. Nella seconda inclinerei però dalla parte d(e)l Nannucci, perché mi pare che il costrutto, colla vostra, n’uscirebbe un poco sforzato.</p>
+            <p>Sul <persName>
 Guinicelli</persName>
-          <note n="10" place="foot"
-            type="editorial">Cf. n. 11 alla lettera 10_HS_ADA_06.</note> non è stato ch’io sappia scritto nulla di molto importante in questi ultimi tempi, salvo un artic. d(e)l Prof. <persName>
-Grion</persName> nel Propugnatore d(e)l 1870<note
-            n="11" place="foot" type="editorial">
-            <bibl>
+               <note n="10" place="foot" type="editorial">Cf. n. 11 alla lettera 10_HS_ADA_06.</note> non è stato ch’io sappia scritto nulla di molto importante in questi ultimi tempi, salvo un artic. d(e)l Prof. <persName>
+Grion</persName> nel Propugnatore d(e)l 1870<note n="11" place="foot" type="editorial">
+                  <bibl>
 
 Giusto Grion, Guido Guinicelli e Dino Compagni, «Il Propugnatore», 2/5-6 (1870), pp. 274-322.
 </bibl>
-          </note>, nel quale sono alcune cose buone, ed altre che non mi sembrano tali.</p>
-        <p>Non capisco bene l’equivoco nel quale siete caduto circa l’esser io ancora celibe o no; intanto gradisco i vostri cordiali augurj e ve li ritorno per quando!..</p>
-        <closer>
-          <salute>Addio</salute>
-          <lb/>
-          <salute>vostro</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1352">A. D’Ancona</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </note>, nel quale sono alcune cose buone, ed altre che non mi sembrano tali.</p>
+            <p>Non capisco bene l’equivoco nel quale siete caduto circa l’esser io ancora celibe o no; intanto gradisco i vostri cordiali augurj e ve li ritorno per quando!..</p>
+            <closer>
+               <salute>Addio</salute>
+               <lb/>
+               <salute>vostro</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">A. D’Ancona</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

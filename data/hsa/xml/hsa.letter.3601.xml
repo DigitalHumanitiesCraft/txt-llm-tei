@@ -1,404 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Gerhard Moldenhauer an Hugo Schuchardt (01-07431)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2213">
-            <forename>Gerhard</forename>
-            <surname>Moldenhauer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3601" type="PID">o:hsa.letter.3601</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-07431</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">07431</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2213">
-                <forename>Gerhard</forename>
-                <surname>Moldenhauer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.138" ref="http://sws.geonames.org/2267057">Lissabon</origPlace>
-              <origDate ana="dcterms:created" when="1924">1924</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Gerhard Moldenhauer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2213"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3601">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2213" ref="https://viaf.org/viaf/199894008">
-            <forename>Gerhard</forename>
-            <surname>Moldenhauer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.138" key="#GID.1" ref="http://sws.geonames.org/2267057">Lissabon</placeName>
-          <date when="1924">1924</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Portugal</country>
-                <settlement>Lisbon</settlement>
-                <name ref="http://geonames.org/2267057" type="fcode:PPLC">Lisbon</name>
-                <location>
-                  <geo>-9.13333,38.71667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2213" type="context">
-                        Korrespondenz Gerhard Moldenhauer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3090" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsche morgenländische Gesellschaft</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.835" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Festschrift</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.267" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Habilitation</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3311" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Handschriften</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.277" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Halle</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4940" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsche Schule Madrid</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.762" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bittschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4941" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Arbeitsstelle für deutsch-spanische Wissenschaftsbeziehungen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3137" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rundschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4944" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Madrid</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.227" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Altfranzösisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3601" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3601" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3601" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3601" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3601" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3601" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>[Lissabon, April – Mai 1924]<note n="1" place="foot" type="editorial">Michaela Wolf, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1600">Hugo Schuchardt Nachlaß</ref>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3601" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>[Lissabon, April – Mai 1924]<note n="1" place="foot" type="editorial">Michaela Wolf, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1600">Hugo Schuchardt Nachlaß</ref>
+                  </bibl>, Graz 1993, 278, datiert den Brief auf den 1.4.1924, vermutlich weil der folgende Rundbrief dieses Datum trägt. Der Zeitrahmen muss aber etwas weiter gefasst werden, denn der Brief ist offenbar in <placeName>
+Lissabon</placeName> geschrieben (auf dem oberen Briefrand ist mit Bleistift korrekt notiert „nach 1.4.23). Wann sich <persName ref="[authorityLink]">
+Moldenhauer</persName> genau in <placeName ref="[authorityLink]">Portugal</placeName> aufhielt, konnte nicht festgestellt werden.</note>
+            </dateline>
+            <opener>Sehr verehrter Herr Geheimrat!</opener>
+            <p>Kürzlich hörte ich gelegentlich eines Besuches bei <persName ref="[authorityLink]">S<hi rend="unknown" rendition="#none">
+                     <hi rendition="#sup">or</hi>
+                  </hi> David Lopes</persName>
+               <note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">David Lopes</persName> (1867-1942), portugiesischer Orientalist, Romanist und Historiker in <placeName>
+Lissabon</placeName> hatte 1909 mit Schuchardt korrespondiert (HSA, <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2068">
+Brief Nr. 06625</ref>). </note>, daß er vor einiger Zeit 2 Bücher wiedergefunden habe<note n="3" place="foot" type="editorial">In Frage kommen z.B.: <bibl>
+                     <hi rend="unknown" rendition="#none">Textos em Aljamía portuguesa</hi>
+                  </bibl>, Lissabon 1897, bzw. <bibl>
+                     <hi rend="unknown" rendition="#none">Historia dos portugueses no Malabar</hi>
+                  </bibl>, Lissabon 1898.</note>, die er seines Glaubens vor 13 Jahren an Geh. Rt. <persName ref="[authorityLink]">Baist</persName> und die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3090">Deutsche Morgenländische Gesellschaft</ref>
+               <note n="4" place="foot" type="editorial">Zu <persName ref="[authorityLink]">Baist</persName> vgl. HSA Nr. <ref target="https://gams.uni-graz.at/o:hsa.persons#P.1072">00454-00466</ref>. - Die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3090">DMLG</ref> wurde bereits 1845 gegründet und besteht noch heute.</note> geschickt hätte. Ich bat ihn, mir diese einmal für Deutschland bestimmten Bücher zu überlassen, damit ich sie den interessierten Stellen zukommen ließe. Nach Beseitigung einiger Fehler schickt er <pb facs="#IMG.2" n="2"/> mir sie jetzt zu, und ich sehe, daß ein Exemplar für Sie bestimmt ist. Ich erlaube mir also, es Ihnen zu übersenden, da Herr <persName ref="[authorityLink]">Lopes</persName> wohl nicht mehr wagt, damit nach 13 Jahren noch zu kommen.</p>
+            <p>Ich darf wohl annehmen, daß Sie die Einladung für die <persName ref="[authorityLink]">A. Bonilla y San Martín</persName>festschrift erhalten haben. – <persName ref="[authorityLink]">Sr. D. Antonio Paz y Mélia</persName>
+               <note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Antonio Paz y Mélia</persName> (1842-1927) arbeitete als Bibliothekar für die 
 
-            </bibl>, Graz 1993, 278, datiert den Brief auf den 1.4.1924, vermutlich weil der folgende Rundbrief dieses Datum trägt. Der Zeitrahmen muss aber etwas weiter gefasst werden, denn der Brief ist offenbar in <placeName>
-Lissabon</placeName> geschrieben (auf dem oberen Briefrand ist mit Bleistift korrekt notiert „nach 1.4.23). Wann sich <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2213">
-Moldenhauer</persName> genau in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5895">Portugal</placeName> aufhielt, konnte nicht festgestellt werden.</note>
-        </dateline>
-        <opener>Sehr verehrter Herr Geheimrat!</opener>
-        <p>Kürzlich hörte ich gelegentlich eines Besuches bei <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2068">S<hi rend="unknown" rendition="#none">
-              <hi rendition="#sup">or</hi>
-            </hi> David Lopes</persName>
-          <note n="2" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2068">David Lopes</persName> (1867-1942), portugiesischer Orientalist, Romanist und Historiker in <placeName>
-Lissabon</placeName> hatte 1909 mit Schuchardt korrespondiert (HSA, <ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.2068">
-Brief Nr. 06625</ref>). </note>, daß er vor einiger Zeit 2 Bücher wiedergefunden habe<note
-            n="3" place="foot" type="editorial">In Frage kommen z.B.: <bibl>
-              <hi rend="unknown" rendition="#none">Textos em Aljamía portuguesa</hi>
-            </bibl>, Lissabon 1897, bzw. <bibl>
-              <hi rend="unknown" rendition="#none">Historia dos portugueses no Malabar</hi>
-            </bibl>, Lissabon 1898.</note>, die er seines Glaubens vor 13 Jahren an Geh. Rt. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1072">Baist</persName> und die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3090">Deutsche Morgenländische Gesellschaft</ref>
-          <note n="4" place="foot" type="editorial">Zu <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1072">Baist</persName> vgl. HSA Nr. <ref
-              target="https://gams.uni-graz.at/o:hsa.persons#P.1072">00454-00466</ref>. - Die <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3090">DMLG</ref> wurde bereits 1845 gegründet und besteht noch heute.</note> geschickt hätte. Ich bat ihn, mir diese einmal für Deutschland bestimmten Bücher zu überlassen, damit ich sie den interessierten Stellen zukommen ließe. Nach Beseitigung einiger Fehler schickt er <pb
-            facs="#IMG.2"
-            n="2"/> mir sie jetzt zu, und ich sehe, daß ein Exemplar für Sie bestimmt ist. Ich erlaube mir also, es Ihnen zu übersenden, da Herr <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2068">Lopes</persName> wohl nicht mehr wagt, damit nach 13 Jahren noch zu kommen.</p>
-        <p>Ich darf wohl annehmen, daß Sie die Einladung für die <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1174">A. Bonilla y San Martín</persName>festschrift erhalten haben. – <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4939">Sr. D. Antonio Paz y Mélia</persName>
-          <note n="5" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4939">Antonio Paz y Mélia</persName> (1842-1927) arbeitete als Bibliothekar für die 
-
-Biblioteca Nacional de Madrid. Schuchardt hätte ihn vermutlich bei seinem Spanienbesuch im Jahr 1879 kontaktiert.</note> entsinnt sich Ihrer gleichfalls noch gern und genau, obwohl er Ihnen seiner Zeit wenig zu Diensten sein konnte. – Wenn ich ein paar Worte über <pb
-            facs="#IMG.3"
-            n="3"/> mich einflechten darf, möchte ich bemerken, daß ich mich übers Jahr für Romanische Philologie als Schüler von Geh. Rt. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2954">Voretzsch</persName> zu habilitieren gedenke, mit besonderer Betonung des Spanischen.<note
-            n="6" place="foot" type="editorial">Moldenhauers Habilitation erfolgte 1926 mit der 1929 erschienenen Arbeit <bibl>
-              <hi rend="unknown" rendition="#none">Die Legende von Barlaam u. Josephat auf der Iberischen Halbinsel.</hi>
-            </bibl>
-          </note> In Lissabon sehe ich mir gegenwärtig die Handschriftenbestände an. In <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.77">Halle</placeName> arbeitete ich auch mit dem erblindeten Geheimrat <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2782">Stengel</persName>.<note n="7" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2782">Edmund Stengel</persName> (1845-1935), zunächst in <placeName>
+Biblioteca Nacional de Madrid. Schuchardt hätte ihn vermutlich bei seinem Spanienbesuch im Jahr 1879 kontaktiert.</note> entsinnt sich Ihrer gleichfalls noch gern und genau, obwohl er Ihnen seiner Zeit wenig zu Diensten sein konnte. – Wenn ich ein paar Worte über <pb facs="#IMG.3" n="3"/> mich einflechten darf, möchte ich bemerken, daß ich mich übers Jahr für Romanische Philologie als Schüler von Geh. Rt. <persName ref="[authorityLink]">Voretzsch</persName> zu habilitieren gedenke, mit besonderer Betonung des Spanischen.<note n="6" place="foot" type="editorial">Moldenhauers Habilitation erfolgte 1926 mit der 1929 erschienenen Arbeit <bibl>
+                     <hi rend="unknown" rendition="#none">Die Legende von Barlaam u. Josephat auf der Iberischen Halbinsel.</hi>
+                  </bibl>
+               </note> In Lissabon sehe ich mir gegenwärtig die Handschriftenbestände an. In <placeName ref="[authorityLink]">Halle</placeName> arbeitete ich auch mit dem erblindeten Geheimrat <persName ref="[authorityLink]">Stengel</persName>.<note n="7" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Edmund Stengel</persName> (1845-1935), zunächst in <placeName>
 
 Marburg</placeName>, ab 1896 in <placeName>
 
-Greifswald</placeName>, war 1913 emeritiert worden und zog 1919 nach <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.77">Halle a. S.</placeName>, von wo er 1924 wieder nach <placeName>
+Greifswald</placeName>, war 1913 emeritiert worden und zog 1919 nach <placeName ref="[authorityLink]">Halle a. S.</placeName>, von wo er 1924 wieder nach <placeName>
 
 Marburg</placeName> zurückkehrte; vgl. Moldenhauer, „<bibl>
 
 Edmund Stengel in memoriam
-</bibl>“, <hi
-              rend="unknown"
-              rendition="#none">NSpr</hi> 44, 1936, 564-568. Trotz seiner Erblindung habe der Emeritus <ref
-              target="https://gams.uni-graz.at/o:hsa.persons#P.2782">Stengel</ref> unentgeltlich Hallenser Studenten in das Studium des <ref target="https://gams.uni-graz.at/o:hsa.languages#L.227">Altfranzösischen</ref> eingeführt.</note>
-        </p>
-
-        <p>Vielleicht gestatten Sie mir zugleich eine bescheidene Anfrage. Im September übernehme ich die Schaffung einer Arbeitsstelle für deutsch-spanische Wissenschaftsbeziehungen, die im Colegio Alemán von Madrid eingerichtet wird.<note
-            n="8" place="foot" type="editorial">Zu Einzelheiten vgl. Jesús de la Hera Martínez, <bibl>
-              <hi rend="unknown" rendition="#none">La política cultural de Alemania en España en el período de entreguerras</hi>
-            </bibl>, Madrid 2002 (Biblioteca de Historia, 50), 480, hier bes. 46-47. Die Arbeitsstelle war zunächst in der Deutschen Oberrealschule in der Calle Fortuny 15 untergebracht, ab September 1927 erhielt sie ein eigenes Gebäude in repräsentativer Lage in der Calle Zurbano 32 „und war zu Beginn vor allem eine Anlaufstelle für spanische Studenten oder Wissenschaftler, die Kontakt nach Deutschland suchten oder einen Aufenthalt in Deutschland vorbereiteten“, zit. nach Sandra Rebok (Hg.), <bibl>
-              <hi rend="unknown" rendition="#none">Traspasar fronteras. Un siglo de intercambio científico entre España y Alemania – Über Grenzen hinaus. Ein Jahrhundert deutsch-spanische Wissenschaftsbeziehungen</hi>
-            </bibl>, Madrid (Consejo Superior de Investigaciones Científicas - DAAD), 2010, 116-119.</note>
-          <pb facs="#IMG.4" n="4"/> In der Bibliothek möchte ich soviel als nur irgend möglich alles vereinen, was von Deutschen in wissenschaftlicher Art über die iberische Halbinsel geschrieben worden ist. Könnten Sie mir vielleicht zu diesem Zweck Ihre diesbezüglichen Veröffentlichungen überlassen? Versandkosten würde ich gern aus eigener Tasche bezahlen.</p>
-        <closer>
-          <salute>In tiefer Hochachtung</salute>
-          <lb/>
-          <salute>ergebenst</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2213">Gerhard Moldenhauer</persName>.</signed>
-        </closer>
-      </div>
-      <div corresp="#L.3601" subtype="original" type="letter" xml:lang="es">
-        <pb facs="#IMG.5" n="1"/>
-        <dateline>COMISIÓN<lb/>DEL<lb/>HOMENAJE<lb/>A<lb/>D. ADOLFO BONILLA Y SAN MARTÍN<lb/>----------------------- Sr. Dr. D. Hugo Schuchardt<lb/>CONDE DE ROMANONES, 7 Y 9, PRAL.<lb/>MADRID<lb/>----------</dateline>
-        <p>Muy distinguido señor nuestro: El día 27 de septiembre del próximo año cumple el Dr. D. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1174">Adolfo Bonilla y San Martín</persName>, profesor de la <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4944">Universidad de Madrid</ref> y Decano de su Facultad de Filosofía y Letras, la edad de cincuenta años. Los que seguimos, en sus variados aspectos, la labor del profesor Bonilla, sabemos hasta que punto han sido laboriosos y fecundos estos años de su vida, habiendose hecho acreedor al respeto y a la admiración de los especialistas en diversas ramas del saber. Por esto juzgamos oportuno aprovechar esa circunstancia para ofrecer al profesor Bonilla un homenaje qué, a la vez que ocasión para brindlarle las primicias de algunos trabajos de investigación, sea para él el único premio a que en su vida de abnegación y esfuerzo ha querido aspirar: una contribución al progreso científico de las disciplinas a que dedicó su actividad admirable y la seguridad de que su trabajo sa sido agradecido y estimado en su alto valor por los que al estudio nos dedicamos.</p>
-        <p>Contando con la parobación de V. a nuestra idea, le rogamos nos haga el honor de colaborar en la serie de monografías que nos proponemos publicar con arreglo a las condiciones que abajo se expresan.</p>
-        <p>Con este motivo nos complacemos en ofrecer a V. el testimonio de nuestra consideración más distinguida.</p>
-        <closer>
-          <signed>LA COMISIÓN</signed>
-          <dateline>Madrid, 1° de abril de 1924.</dateline>
-        </closer>
-        <postscript>
-          <p>La extensión máxima de los trabajos será de 20 páginas de a 2.500 letras cada una.</p>
-          <p>Los originales para la imprenta deberán quedar entregados a la <hi rend="unknown" rendition="#none">Comisión de Homenaje</hi> antes del día 31 de diciembre de 1924.</p>
-          <p>El autor de ada estudio recibirá 50 ejemplares, tirados aparte, de su trabajo, una vez que haya sido publicada la totalidad.</p>
-          <p>La correspondencia se dirigirá a don <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4942">Pedro Sáinz y Rodríguez</persName>.<note n="9"
-              place="foot" type="editorial">
-              <persName
-                ref="https://gams.uni-graz.at/o:hsa.persons#P.4942">Pedro Sáinz y Rodríguez</persName> (1897-1986), spanischer Literaturwissenschaftler und Schüler <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1174">
-Bonillas</persName>.</note> Comisión del Homenaje a don <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1174">Adolfo Bonilla y San Martín</persName>, calle del Conde de Romanes, 7 y 9, pral. Madrid., von den deutschen Mitarbeitern an <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2213">G. Moldenhauer</persName>, Madrid 4, Almirante 18 dupl. erbeten.<note
-              n="10" place="foot" type="editorial">
-Der Zusatz in deutscher Sprache stammt von der Hand <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2213">
+</bibl>“, <hi rend="unknown" rendition="#none">NSpr</hi> 44, 1936, 564-568. Trotz seiner Erblindung habe der Emeritus <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2782">Stengel</ref> unentgeltlich Hallenser Studenten in das Studium des <ref target="https://gams.uni-graz.at/o:hsa.languages#L.227">Altfranzösischen</ref> eingeführt.</note>
+            </p>
+            <p>Vielleicht gestatten Sie mir zugleich eine bescheidene Anfrage. Im September übernehme ich die Schaffung einer Arbeitsstelle für deutsch-spanische Wissenschaftsbeziehungen, die im Colegio Alemán von Madrid eingerichtet wird.<note n="8" place="foot" type="editorial">Zu Einzelheiten vgl. Jesús de la Hera Martínez, <bibl>
+                     <hi rend="unknown" rendition="#none">La política cultural de Alemania en España en el período de entreguerras</hi>
+                  </bibl>, Madrid 2002 (Biblioteca de Historia, 50), 480, hier bes. 46-47. Die Arbeitsstelle war zunächst in der Deutschen Oberrealschule in der Calle Fortuny 15 untergebracht, ab September 1927 erhielt sie ein eigenes Gebäude in repräsentativer Lage in der Calle Zurbano 32 „und war zu Beginn vor allem eine Anlaufstelle für spanische Studenten oder Wissenschaftler, die Kontakt nach Deutschland suchten oder einen Aufenthalt in Deutschland vorbereiteten“, zit. nach Sandra Rebok (Hg.), <bibl>
+                     <hi rend="unknown" rendition="#none">Traspasar fronteras. Un siglo de intercambio científico entre España y Alemania – Über Grenzen hinaus. Ein Jahrhundert deutsch-spanische Wissenschaftsbeziehungen</hi>
+                  </bibl>, Madrid (Consejo Superior de Investigaciones Científicas - DAAD), 2010, 116-119.</note>
+               <pb facs="#IMG.4" n="4"/> In der Bibliothek möchte ich soviel als nur irgend möglich alles vereinen, was von Deutschen in wissenschaftlicher Art über die iberische Halbinsel geschrieben worden ist. Könnten Sie mir vielleicht zu diesem Zweck Ihre diesbezüglichen Veröffentlichungen überlassen? Versandkosten würde ich gern aus eigener Tasche bezahlen.</p>
+            <closer>
+               <salute>In tiefer Hochachtung</salute>
+               <lb/>
+               <salute>ergebenst</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Gerhard Moldenhauer</persName>.</signed>
+            </closer>
+         </div>
+         <div corresp="#L.3601"
+              subtype="original"
+              type="letter"
+              xml:lang="es">
+            <pb facs="#IMG.5" n="1"/>
+            <dateline>COMISIÓN<lb/>DEL<lb/>HOMENAJE<lb/>A<lb/>D. ADOLFO BONILLA Y SAN MARTÍN<lb/>----------------------- Sr. Dr. D. Hugo Schuchardt<lb/>CONDE DE ROMANONES, 7 Y 9, PRAL.<lb/>MADRID<lb/>----------</dateline>
+            <p>Muy distinguido señor nuestro: El día 27 de septiembre del próximo año cumple el Dr. D. <persName ref="[authorityLink]">Adolfo Bonilla y San Martín</persName>, profesor de la <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4944">Universidad de Madrid</ref> y Decano de su Facultad de Filosofía y Letras, la edad de cincuenta años. Los que seguimos, en sus variados aspectos, la labor del profesor Bonilla, sabemos hasta que punto han sido laboriosos y fecundos estos años de su vida, habiendose hecho acreedor al respeto y a la admiración de los especialistas en diversas ramas del saber. Por esto juzgamos oportuno aprovechar esa circunstancia para ofrecer al profesor Bonilla un homenaje qué, a la vez que ocasión para brindlarle las primicias de algunos trabajos de investigación, sea para él el único premio a que en su vida de abnegación y esfuerzo ha querido aspirar: una contribución al progreso científico de las disciplinas a que dedicó su actividad admirable y la seguridad de que su trabajo sa sido agradecido y estimado en su alto valor por los que al estudio nos dedicamos.</p>
+            <p>Contando con la parobación de V. a nuestra idea, le rogamos nos haga el honor de colaborar en la serie de monografías que nos proponemos publicar con arreglo a las condiciones que abajo se expresan.</p>
+            <p>Con este motivo nos complacemos en ofrecer a V. el testimonio de nuestra consideración más distinguida.</p>
+            <closer>
+               <signed>LA COMISIÓN</signed>
+               <dateline>Madrid, 1° de abril de 1924.</dateline>
+            </closer>
+            <postscript>
+               <p>La extensión máxima de los trabajos será de 20 páginas de a 2.500 letras cada una.</p>
+               <p>Los originales para la imprenta deberán quedar entregados a la <hi rend="unknown" rendition="#none">Comisión de Homenaje</hi> antes del día 31 de diciembre de 1924.</p>
+               <p>El autor de ada estudio recibirá 50 ejemplares, tirados aparte, de su trabajo, una vez que haya sido publicada la totalidad.</p>
+               <p>La correspondencia se dirigirá a don <persName ref="[authorityLink]">Pedro Sáinz y Rodríguez</persName>.<note n="9" place="foot" type="editorial">
+                     <persName ref="[authorityLink]">Pedro Sáinz y Rodríguez</persName> (1897-1986), spanischer Literaturwissenschaftler und Schüler <persName ref="[authorityLink]">
+Bonillas</persName>.</note> Comisión del Homenaje a don <persName ref="[authorityLink]">Adolfo Bonilla y San Martín</persName>, calle del Conde de Romanes, 7 y 9, pral. Madrid., von den deutschen Mitarbeitern an <persName ref="[authorityLink]">G. Moldenhauer</persName>, Madrid 4, Almirante 18 dupl. erbeten.<note n="10" place="foot" type="editorial">
+Der Zusatz in deutscher Sprache stammt von der Hand <persName ref="[authorityLink]">
 Moldenhauers</persName>.</note>
-          </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

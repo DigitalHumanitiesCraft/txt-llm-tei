@@ -1,1239 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Pietro Spadaro an Hugo Schuchardt (02-10732)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2759">
-            <forename>Pietro</forename>
-            <surname>Spadaro</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Verena</forename>
-            <surname>Schwägerl-Melchior</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2916" type="PID">o:hsa.letter.2916</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-10732</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">10732</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2759">
-                <forename>Pietro</forename>
-                <surname>Spadaro</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="33" unit="pages">33 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.391" ref="http://sws.geonames.org/10375780">San Nicolò l'Arena</origPlace>
-              <origDate ana="dcterms:created" when="1901-05-08">1901-05-08</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Verena</forename>
-              <surname>Schwägerl-Melchior</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Pietro Spadaro und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2759"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2916">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2759">
-            <forename>Pietro</forename>
-            <surname>Spadaro</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.391" key="#GID.1" ref="http://sws.geonames.org/10375780">San Nicolò l'Arena</placeName>
-          <date when="1901-05-08">1901-05-08</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <name ref="http://geonames.org/10375780" type="fcode:MSTY">Monastery of San Nicolò l'Arena</name>
-                <location>
-                  <geo>15.07977,37.50371</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2759" type="context">
-                        Korrespondenz Pietro Spadaro - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.210" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Fischereigeräte</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.212" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Netze</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.2" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Haken</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.969" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Materielle Sammlung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.931" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Materialsendung (ethnographisch)</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.372" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sizilianische Dialekte</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.11">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.12">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.13">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.14">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.15">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.16">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.17">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.18">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.19">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.20">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.21">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.22">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.23">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.24">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.25">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.26">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.27">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.28">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.29">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.30">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.31">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.32">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2916" xml:id="IMG.33">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2916" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>SNicolo 8 Maggio 1901<note n="1" place="foot" type="editorial">La lettera inventariata col numero 10732 e la data 23 maggio 1901 (<bibl>
-              <ref
-              target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1600">Wolf 1993</ref>: 359</bibl>) è stata scritta durante un lasso di tempo di più giorni. Per la presente edizione si è scelto di datarla 8 maggio 1901, giorno in cui <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2759">Spadaro</persName> cominciò a scrivere il glossario.</note>
-        </dateline>
-        <opener>Egregio Professore</opener>
-        <p>Il mio stato di salute non mi ha in questi giorni permesso di potere stare al tavolino, ma piuttosto al letto, e quindi domando venia se risponderò quasi strettamente alla pregiata sua del 6 corr.te</p>
-        <p>L’ordine del lavoro a parer mio dovrebbe cominciare col conoscere</p>
-        <p>Rete di Posta, – di posta ed alla deriva, – alla sola deriva, – a strascico violento in mare, a strascico da terra – e quindi</p>
-        <p>Tonnara</p>
-        <p>Tonnarella <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Reti</ref> Fisse</p>
-        <p>Sinaiuli o Impardata</p>
-        <p>Alalungara</p>
-        <p>Rudolo </p>
-        <p>Palamidara</p>
-        <p>Schitta <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Reti</ref> fisse ed alla deriva</p>
-        <p>Alacciara</p>
-        <p>Agugliara</p>
-        <p>Menaidozza</p>
-        <p>Tratta o Minaida chiara</p>
-        <p>ϑ spessa</p>
-        <p>Bardessono <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Reti</ref> a deriva</p>
-        <p>Ravastina </p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>Paranze</p>
-        <p>Tartagna lunga</p>
-        <p>ϑ corta <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Reti</ref> a strascico violento tirate da barche</p>
-        <p>Gargamo </p>
-        <p>Gargamello</p>
-        <p>Tartannone <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Rete</ref> a strascico violento tirata da barche e da terra</p>
-        <p>Sciabicone <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Rete</ref> a strascico volento [sic] tirata solo da terra</p>
-        <p>E dopo tale classifica eccomi partitamente a risponderle.</p>
-        <p>Le strisce o <hi rend="unknown" rendition="#none">fasce</hi> per piombo e sommo servono a tenere il <hi
-            rend="unknown" rendition="#none">breme</hi> o <hi rend="unknown"
-            rendition="#none">armato</hi> non in contatto di una rete fatta di filo molto fine, e quindi la fascia è fatta con filo che abbi tre volte la grossezza di quella. Il breme è un cavo di canape del diametro di M 0,008 al quale vanno attaccati i sugheri da un lato ed i <hi
-            rend="unknown" rendition="#none">piombi</hi> dall’altro.<note n="2" place="foot" type="editorial">Annotazione sul margine, d’altra mano (forse di Schuchardt): “8 mm!”.</note>
-        </p>
-
-        <p>I piombi sono dei dischi dell’omonimo metallo della grandezza di un 5 lire di argento e ripiegati sul breme: ve ne sono dei forati, ma questi servono per guarnire il piombo dello <hi
-            rend="unknown" rendition="#none">sparviere</hi> da noi detto <hi rend="unknown" rendition="#none">rizzaglio.</hi> Di detti piombi se ne formano anche in quadrato e del diametro uguale al 5 lire di argento che ripiegato sul breme forma un piccolo tubo.</p>
-
-        <p>Le maglie delle reti si praticano sulla misura del palmo (Siciliano) il quale è uguale a M. 0,25# e quindi, quando mi esprimo con cennare al numero di maglie, Ella dovrà capire nel senso che esse si estendono per una larghezza uguale a Palmo uno <note
-            n="3" place="foot" type="editorial">In margine, scritto con matita blu, si trova un punto esclamativo.</note>
-        </p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>Sicchè le fasce che sono dell’altezza di Maglie 5, formanti 11 gruppi per ogni palmo uniscono il breme alla maglia fatta.</p>
-        <p>Il <hi rend="unknown" rendition="#none">fascione</hi> (che Lei non potè comprendere pronunziato dal <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4375">
-Damiano</persName> si usa nella ravastina, la quale si mette in armamento con la <hi
-            rend="unknown" rendition="#none">fascia</hi> da 5 sopra e <hi rend="unknown" rendition="#none">fascione</hi> da 100 al piombo.</p>
-        <p>Sui lati, e dove è armata con la rete o <hi rend="unknown"
-            rendition="#none">
-rizza</hi> a maglie spesse si usa ugualmente la maglia da 5 sino a che và ad unirsi alla <hi
-            rend="unknown" rendition="#none">stazza </hi>o anello che serve per tirare l’intero ordegno.</p>
-        <p>La ravastina al centro si arma con maglie di 11- gruppi 18 per palmo e la intera altezza è = 23 x 20.</p>
-        <p>Lo scopo poi della fascia superiore è quello di proteggere la rete di centro costruita con filo leggiero, quello della fascia inferiore e del fascione è di lasciare che attraverso una maglia larga passi più facilmente l’arena e farci più liberamente scorrere sul fondo l’ordegno, come del pari, ove s’incontri un’ostacolo in fondo questi spezzi più facilmente il pezzo ad maglia chiara conservando la spessa. E per oggi chiudo la presente, nella speranza che domani se in condizioni migliori di salute possa cominciare a scrivere qualche cosa e con meno abrasioni e correzioni di oggi.</p>
-        <closer>
-          <salute>Suo Devotis</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2759">PSpadaro</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.2916" subtype="original" type="letter" xml:lang="it">
-        <pb facs="#IMG.4" n="4"/>
-        <opener>
-          <note n="4" place="foot" type="editorial">Nonostante sembri cominciare una nuova lettera, i fogli sono conservati come facenti parte della precedente, motivo per il quale si continua la numerazione delle pagine.</note>Egregio Professore</opener>
-        <p>In seguito alla mia di ier l’altro, <note n="5" place="foot" type="editorial">La data da presumere per questa parte dello scritto è dunque il 10 maggio 1901.</note> oggi benché a letto ma in migliori condizioni di salute Le scrivo la presente.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tonnara</hi>. Il complesso di alquante reti disposte a quadrato con delle separazioni, e con una rete che corre sino a terra, ed in taluna, altra, che và in fuori chiamasi Tonnara.</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Coda</hi> Una lunga rete sostenuta al pelo dell’acqua da un grosso cavo detto <hi
-            rend="unknown" rendition="#none">sommo</hi> ed in fondo da un altro detto <hi rend="unknown"
-            rendition="#none">fondo</hi> che serve di paratea al passaggio dei pesci per condurli all’isola della tonnara è la <hi
-            rend="unknown" rendition="#none">coda</hi>. La coda è legata con il <hi rend="unknown" rendition="#none">cudacchiu</hi> a terra</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Codacchio</hi>. Il <hi rend="unknown" rendition="#none">codaccio</hi> talune volte è di canapa come il sommo altre volte è una catena legata al sommo da un lato ed a terra dall’altro.</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Rosasi</hi> I piombi per far tenere la rete ferma in fondo e perpendicolarmente al sommo chiamansi <hi
-            rend="unknown" rendition="#none">rosasi</hi> essi sono dei cubi o dei parallelepipedi di pietra i quali vengono legati al cavo di fondo in diversi</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Muscelli</hi> a mezzo di taluni capicelli di erba detti <hi
-            rend="unknown" rendition="#none">musceddi</hi>. La parola <hi rend="unknown"
-            rendition="#none">ammusciddari</hi> è sinonimo di legare a mezzo di <hi rend="unknown" rendition="#none">muscelli</hi>, il muscello è lungo M 3-</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Posta</hi> Talune fette di sugheri legati da muscelli, e recentemente in talune tonnare con muscelli di colze o manilla o canape e che servono di gavitello a mantenere sospesa la rete si chiama <hi
-            rend="unknown" rendition="#none">imposta</hi>
-        </p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Cazzuni</hi> Se però invece di esser legati sono dei piccoli pezzi di sughero chiusi in sacchi di rete ed oblunghi allora si chiamano <hi
-            rend="unknown" rendition="#none">cazzuna</hi>.</p>
-        <pb facs="#IMG.5" n="5"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Breme</hi> è sinonimo di moscello (bremi)</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Armato</hi> Oltre i capi di sommo e di fondo dei quali quello di sommo è del diametro 0,07- e quel di fondo 0,05, un altro piccolo capo vien legato direttamente alla rete a mezzo</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Mafarda</hi> di taluni pezzetti di filo fine di canape detto <hi
-            rend="unknown"
-            rendition="#none">mafarda</hi>; detto capicello che può farsi di libano di co[…] di manilla o di canape si appella <hi
-            rend="unknown" rendition="#none">armato </hi>è del diametro di 0,013</p>
-        <p>La rete che serve per la coda fatta di cordicella di <hi rend="unknown" rendition="#none">disa</hi>, erba che producesi nelle nostre campagne ed in talune tonnare fatte anche di Co[…], ha una maglia che tra nodo e nodo misura 0,75</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Testata</hi> Detta rete in testa ed in fondo ha una fascia detta <hi
-            rend="unknown" rendition="#none">attistatura</hi> che varia dalle tre alle cinque canne di altezza</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Canna</hi> La Canna è la misura siciliana della quale si servono in tonnara per le misure.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Passo</hi> essa corrisponde al <hi rend="unknown" rendition="#none">passo</hi> o meglio alla estenzione misurata dall’estremità del medio delle due mani di un uomo a braccia distese, ma più propriamente uguale all’altezza di M 1,82:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Pezza</hi>
-          <hi rend="unknown" rendition="#none">Pezza</hi> si chiama una striscia di rete della larghezza di Maglie 18 e la cui lunghezza corrisponde ad una volta e mezzo l’altezza del fondo nel quale dovrà essere calata. Le pezze variano di grandezza di maglia a secondo il posto nel quale dovranno progettarsi dette 18 maglie si legano sopra un armato di CH 2.112 </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Midollaro</hi> Le pezze si uniscono a mezzo di un</p>
-        <pb facs="#IMG.6" n="6"/>
-        <p>cavo di disa detto <hi rend="unknown" rendition="#none">muriddáru</hi> e con mafarda </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Schia</hi> In fondo al midolláro si legano diversi capicelli con rosasi formanti un grappolo di pietre che dicesi Schia</p>
-        <p>NB in talune tonnare usansi delle catene di ferro</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Patorno</hi>. Attorno al cavo di sommo si gira un capicello o <hi
-            rend="unknown" rendition="#none">comando</hi> del diametro 0,004 per preservarlo dallo strofinio dei sugheri od altri accidenti quale capo dicesi patornu e quindi impaturnari significa avvolgere girare detto cavo intorno alla gomena come spatornare significa svolgerlo. Per tenere fermo la coda tanto nel senso protendente in fuori, quanto nel senso laterale a diversi punti</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Reste</hi> della stessa si legano due <hi rend="unknown" rendition="#none">resti</hi> o capi della lunghezza circa tre volte e mezzo il fondo, i quali all’altro estremo han legata un’ancora che li tiene fer</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Croce</hi> mi al suolo il punto di congiunzione si dice<hi rend="unknown"
-            rendition="#none"> croce </hi>come <hi rend="unknown" rendition="#none">crociare </hi>si dice il prepare in mare la tonnara</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Crociare</hi> pria [sic] che venghi buttato giù la rete</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Crociato</hi> crociato dicesi tutto lo intero apparato quando è mancante delle reti</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Scuola</hi> La distanza tra una croce e l’altra nella coda dicesi <hi
-            rend="unknown" rendition="#none">scola</hi> la quale è sempre di circa canne 18 ma varia a secondo le correnti delle quali suole soffrire ogni tonnara</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Intitola</hi>. Un cavo che partendosi da terra ne descrive lo intiero apparato ed al quale si legano a croce i resti mantenuti dalle ancore e che si toglie man mano che và calandosi la tonnara e le reti di essa chiamasi <hi
-            rend="unknown" rendition="#none">intitulata</hi> esso ne forma l’archetipo</p>
-        <p>NB nel Comp. Maritt di Messina usano da principio calare col sommo in vece di Intitola</p>
-        <pb facs="#IMG.7" n="7"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Calata</hi>. ed al momento della <hi rend="unknown" rendition="#none">calatina</hi> ovvero di quando le reti vengon buttate giù, al detto cavo le reti van congiunte legandovi lo armato, il quale allora si fa di più grandi dimensioni</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Spigo-maestro</hi> Il punto di congiungimento tra la coda e l’<hi
-            rend="unknown" rendition="#none">isola</hi> della tonnara chiamasi spicu-mastru mentre poi</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Isola</hi> il complesso delle diverse camere si dice <hi rend="unknown" rendition="#none">isola</hi> La coda va congiunta all’isola in senso quasi normale</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Palma</hi> Al punto di congiungimento dell’isola con la coda si innalza un palo di legno tenuto perpendicolare a mezzo di venti e sostenuto da una massa di sugheri. In testa allo stesso va legato un grosso ramo di olivo o carrubba: - esso serve tanto come segno per allontanarsi i velieri vapori, o barche di pesca, quanto come correntometro per le forti correnti che bene e spesso mettono in fondo e per parecchi metri il sommo della tonnara tal palo con relativo ramo di olivo si chiama <hi
-            rend="unknown" rendition="#none">Palma</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Spigo-bastardo</hi> A 20 Canne circa e dal lato di sottovento della tonnara un'altra rete in senso di formare angolo ottuso con il lato della tonnara e restante detta rete in forma obliqua a quella dello spigo maestro chiamasi spicu-bastardu.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Lati</hi> Le reti che chiudono la intera tonnara tanto dal lato di sopravvento quanto da quello di sottovento chiamansi lati e quindi lato di sopravvento l’uno lato di sottovento l’altro</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Testa</hi> Quelle che la chiudono dal lato di levante e ponente si chiamano <hi
-            rend="unknown" rendition="#none">teste</hi> una testa di levante l’altra testa di ponente</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Bocca</hi> Lo spazio vuoto tra i due spighi dicesi <hi rend="unknown" rendition="#none">bocca Ucca</hi>
-          <hi rendition="#sup">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.12" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.13" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.14" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.15" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.16" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.17" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.18" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.19" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.20" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.21" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.22" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.23" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.24" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.25" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.26" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.27" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.28" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.29" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.30" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.31" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.32" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.33" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2916" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>SNicolo 8 Maggio 1901<note n="1" place="foot" type="editorial">La lettera inventariata col numero 10732 e la data 23 maggio 1901 (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1600">Wolf 1993</ref>: 359</bibl>) è stata scritta durante un lasso di tempo di più giorni. Per la presente edizione si è scelto di datarla 8 maggio 1901, giorno in cui <persName ref="[authorityLink]">Spadaro</persName> cominciò a scrivere il glossario.</note>
+            </dateline>
+            <opener>Egregio Professore</opener>
+            <p>Il mio stato di salute non mi ha in questi giorni permesso di potere stare al tavolino, ma piuttosto al letto, e quindi domando venia se risponderò quasi strettamente alla pregiata sua del 6 corr.te</p>
+            <p>L’ordine del lavoro a parer mio dovrebbe cominciare col conoscere</p>
+            <p>Rete di Posta, – di posta ed alla deriva, – alla sola deriva, – a strascico violento in mare, a strascico da terra – e quindi</p>
+            <p>Tonnara</p>
+            <p>Tonnarella <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Reti</ref> Fisse</p>
+            <p>Sinaiuli o Impardata</p>
+            <p>Alalungara</p>
+            <p>Rudolo </p>
+            <p>Palamidara</p>
+            <p>Schitta <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Reti</ref> fisse ed alla deriva</p>
+            <p>Alacciara</p>
+            <p>Agugliara</p>
+            <p>Menaidozza</p>
+            <p>Tratta o Minaida chiara</p>
+            <p>ϑ spessa</p>
+            <p>Bardessono <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Reti</ref> a deriva</p>
+            <p>Ravastina </p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>Paranze</p>
+            <p>Tartagna lunga</p>
+            <p>ϑ corta <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Reti</ref> a strascico violento tirate da barche</p>
+            <p>Gargamo </p>
+            <p>Gargamello</p>
+            <p>Tartannone <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Rete</ref> a strascico violento tirata da barche e da terra</p>
+            <p>Sciabicone <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.212">Rete</ref> a strascico volento [sic] tirata solo da terra</p>
+            <p>E dopo tale classifica eccomi partitamente a risponderle.</p>
+            <p>Le strisce o <hi rend="unknown" rendition="#none">fasce</hi> per piombo e sommo servono a tenere il <hi rend="unknown" rendition="#none">breme</hi> o <hi rend="unknown" rendition="#none">armato</hi> non in contatto di una rete fatta di filo molto fine, e quindi la fascia è fatta con filo che abbi tre volte la grossezza di quella. Il breme è un cavo di canape del diametro di M 0,008 al quale vanno attaccati i sugheri da un lato ed i <hi rend="unknown" rendition="#none">piombi</hi> dall’altro.<note n="2" place="foot" type="editorial">Annotazione sul margine, d’altra mano (forse di Schuchardt): “8 mm!”.</note>
+            </p>
+            <p>I piombi sono dei dischi dell’omonimo metallo della grandezza di un 5 lire di argento e ripiegati sul breme: ve ne sono dei forati, ma questi servono per guarnire il piombo dello <hi rend="unknown" rendition="#none">sparviere</hi> da noi detto <hi rend="unknown" rendition="#none">rizzaglio.</hi> Di detti piombi se ne formano anche in quadrato e del diametro uguale al 5 lire di argento che ripiegato sul breme forma un piccolo tubo.</p>
+            <p>Le maglie delle reti si praticano sulla misura del palmo (Siciliano) il quale è uguale a M. 0,25# e quindi, quando mi esprimo con cennare al numero di maglie, Ella dovrà capire nel senso che esse si estendono per una larghezza uguale a Palmo uno <note n="3" place="foot" type="editorial">In margine, scritto con matita blu, si trova un punto esclamativo.</note>
+            </p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>Sicchè le fasce che sono dell’altezza di Maglie 5, formanti 11 gruppi per ogni palmo uniscono il breme alla maglia fatta.</p>
+            <p>Il <hi rend="unknown" rendition="#none">fascione</hi> (che Lei non potè comprendere pronunziato dal <persName ref="[authorityLink]">
+Damiano</persName> si usa nella ravastina, la quale si mette in armamento con la <hi rend="unknown" rendition="#none">fascia</hi> da 5 sopra e <hi rend="unknown" rendition="#none">fascione</hi> da 100 al piombo.</p>
+            <p>Sui lati, e dove è armata con la rete o <hi rend="unknown" rendition="#none">
+rizza</hi> a maglie spesse si usa ugualmente la maglia da 5 sino a che và ad unirsi alla <hi rend="unknown" rendition="#none">stazza </hi>o anello che serve per tirare l’intero ordegno.</p>
+            <p>La ravastina al centro si arma con maglie di 11- gruppi 18 per palmo e la intera altezza è = 23 x 20.</p>
+            <p>Lo scopo poi della fascia superiore è quello di proteggere la rete di centro costruita con filo leggiero, quello della fascia inferiore e del fascione è di lasciare che attraverso una maglia larga passi più facilmente l’arena e farci più liberamente scorrere sul fondo l’ordegno, come del pari, ove s’incontri un’ostacolo in fondo questi spezzi più facilmente il pezzo ad maglia chiara conservando la spessa. E per oggi chiudo la presente, nella speranza che domani se in condizioni migliori di salute possa cominciare a scrivere qualche cosa e con meno abrasioni e correzioni di oggi.</p>
+            <closer>
+               <salute>Suo Devotis</salute>
+               <signed>
+                  <persName ref="[authorityLink]">PSpadaro</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.2916"
+              subtype="original"
+              type="letter"
+              xml:lang="it">
+            <pb facs="#IMG.4" n="4"/>
+            <opener>
+               <note n="4" place="foot" type="editorial">Nonostante sembri cominciare una nuova lettera, i fogli sono conservati come facenti parte della precedente, motivo per il quale si continua la numerazione delle pagine.</note>Egregio Professore</opener>
+            <p>In seguito alla mia di ier l’altro, <note n="5" place="foot" type="editorial">La data da presumere per questa parte dello scritto è dunque il 10 maggio 1901.</note> oggi benché a letto ma in migliori condizioni di salute Le scrivo la presente.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tonnara</hi>. Il complesso di alquante reti disposte a quadrato con delle separazioni, e con una rete che corre sino a terra, ed in taluna, altra, che và in fuori chiamasi Tonnara.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Coda</hi> Una lunga rete sostenuta al pelo dell’acqua da un grosso cavo detto <hi rend="unknown" rendition="#none">sommo</hi> ed in fondo da un altro detto <hi rend="unknown" rendition="#none">fondo</hi> che serve di paratea al passaggio dei pesci per condurli all’isola della tonnara è la <hi rend="unknown" rendition="#none">coda</hi>. La coda è legata con il <hi rend="unknown" rendition="#none">cudacchiu</hi> a terra</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Codacchio</hi>. Il <hi rend="unknown" rendition="#none">codaccio</hi> talune volte è di canapa come il sommo altre volte è una catena legata al sommo da un lato ed a terra dall’altro.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Rosasi</hi> I piombi per far tenere la rete ferma in fondo e perpendicolarmente al sommo chiamansi <hi rend="unknown" rendition="#none">rosasi</hi> essi sono dei cubi o dei parallelepipedi di pietra i quali vengono legati al cavo di fondo in diversi</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Muscelli</hi> a mezzo di taluni capicelli di erba detti <hi rend="unknown" rendition="#none">musceddi</hi>. La parola <hi rend="unknown" rendition="#none">ammusciddari</hi> è sinonimo di legare a mezzo di <hi rend="unknown" rendition="#none">muscelli</hi>, il muscello è lungo M 3-</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Posta</hi> Talune fette di sugheri legati da muscelli, e recentemente in talune tonnare con muscelli di colze o manilla o canape e che servono di gavitello a mantenere sospesa la rete si chiama <hi rend="unknown" rendition="#none">imposta</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Cazzuni</hi> Se però invece di esser legati sono dei piccoli pezzi di sughero chiusi in sacchi di rete ed oblunghi allora si chiamano <hi rend="unknown" rendition="#none">cazzuna</hi>.</p>
+            <pb facs="#IMG.5" n="5"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Breme</hi> è sinonimo di moscello (bremi)</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Armato</hi> Oltre i capi di sommo e di fondo dei quali quello di sommo è del diametro 0,07- e quel di fondo 0,05, un altro piccolo capo vien legato direttamente alla rete a mezzo</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Mafarda</hi> di taluni pezzetti di filo fine di canape detto <hi rend="unknown" rendition="#none">mafarda</hi>; detto capicello che può farsi di libano di co[…] di manilla o di canape si appella <hi rend="unknown" rendition="#none">armato </hi>è del diametro di 0,013</p>
+            <p>La rete che serve per la coda fatta di cordicella di <hi rend="unknown" rendition="#none">disa</hi>, erba che producesi nelle nostre campagne ed in talune tonnare fatte anche di Co[…], ha una maglia che tra nodo e nodo misura 0,75</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Testata</hi> Detta rete in testa ed in fondo ha una fascia detta <hi rend="unknown" rendition="#none">attistatura</hi> che varia dalle tre alle cinque canne di altezza</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Canna</hi> La Canna è la misura siciliana della quale si servono in tonnara per le misure.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Passo</hi> essa corrisponde al <hi rend="unknown" rendition="#none">passo</hi> o meglio alla estenzione misurata dall’estremità del medio delle due mani di un uomo a braccia distese, ma più propriamente uguale all’altezza di M 1,82:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Pezza</hi>
+               <hi rend="unknown" rendition="#none">Pezza</hi> si chiama una striscia di rete della larghezza di Maglie 18 e la cui lunghezza corrisponde ad una volta e mezzo l’altezza del fondo nel quale dovrà essere calata. Le pezze variano di grandezza di maglia a secondo il posto nel quale dovranno progettarsi dette 18 maglie si legano sopra un armato di CH 2.112 </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Midollaro</hi> Le pezze si uniscono a mezzo di un</p>
+            <pb facs="#IMG.6" n="6"/>
+            <p>cavo di disa detto <hi rend="unknown" rendition="#none">muriddáru</hi> e con mafarda </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Schia</hi> In fondo al midolláro si legano diversi capicelli con rosasi formanti un grappolo di pietre che dicesi Schia</p>
+            <p>NB in talune tonnare usansi delle catene di ferro</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Patorno</hi>. Attorno al cavo di sommo si gira un capicello o <hi rend="unknown" rendition="#none">comando</hi> del diametro 0,004 per preservarlo dallo strofinio dei sugheri od altri accidenti quale capo dicesi patornu e quindi impaturnari significa avvolgere girare detto cavo intorno alla gomena come spatornare significa svolgerlo. Per tenere fermo la coda tanto nel senso protendente in fuori, quanto nel senso laterale a diversi punti</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Reste</hi> della stessa si legano due <hi rend="unknown" rendition="#none">resti</hi> o capi della lunghezza circa tre volte e mezzo il fondo, i quali all’altro estremo han legata un’ancora che li tiene fer</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Croce</hi> mi al suolo il punto di congiunzione si dice<hi rend="unknown" rendition="#none"> croce </hi>come <hi rend="unknown" rendition="#none">crociare </hi>si dice il prepare in mare la tonnara</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Crociare</hi> pria [sic] che venghi buttato giù la rete</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Crociato</hi> crociato dicesi tutto lo intero apparato quando è mancante delle reti</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Scuola</hi> La distanza tra una croce e l’altra nella coda dicesi <hi rend="unknown" rendition="#none">scola</hi> la quale è sempre di circa canne 18 ma varia a secondo le correnti delle quali suole soffrire ogni tonnara</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Intitola</hi>. Un cavo che partendosi da terra ne descrive lo intiero apparato ed al quale si legano a croce i resti mantenuti dalle ancore e che si toglie man mano che và calandosi la tonnara e le reti di essa chiamasi <hi rend="unknown" rendition="#none">intitulata</hi> esso ne forma l’archetipo</p>
+            <p>NB nel Comp. Maritt di Messina usano da principio calare col sommo in vece di Intitola</p>
+            <pb facs="#IMG.7" n="7"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Calata</hi>. ed al momento della <hi rend="unknown" rendition="#none">calatina</hi> ovvero di quando le reti vengon buttate giù, al detto cavo le reti van congiunte legandovi lo armato, il quale allora si fa di più grandi dimensioni</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Spigo-maestro</hi> Il punto di congiungimento tra la coda e l’<hi rend="unknown" rendition="#none">isola</hi> della tonnara chiamasi spicu-mastru mentre poi</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Isola</hi> il complesso delle diverse camere si dice <hi rend="unknown" rendition="#none">isola</hi> La coda va congiunta all’isola in senso quasi normale</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Palma</hi> Al punto di congiungimento dell’isola con la coda si innalza un palo di legno tenuto perpendicolare a mezzo di venti e sostenuto da una massa di sugheri. In testa allo stesso va legato un grosso ramo di olivo o carrubba: - esso serve tanto come segno per allontanarsi i velieri vapori, o barche di pesca, quanto come correntometro per le forti correnti che bene e spesso mettono in fondo e per parecchi metri il sommo della tonnara tal palo con relativo ramo di olivo si chiama <hi rend="unknown" rendition="#none">Palma</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Spigo-bastardo</hi> A 20 Canne circa e dal lato di sottovento della tonnara un'altra rete in senso di formare angolo ottuso con il lato della tonnara e restante detta rete in forma obliqua a quella dello spigo maestro chiamasi spicu-bastardu.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Lati</hi> Le reti che chiudono la intera tonnara tanto dal lato di sopravvento quanto da quello di sottovento chiamansi lati e quindi lato di sopravvento l’uno lato di sottovento l’altro</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Testa</hi> Quelle che la chiudono dal lato di levante e ponente si chiamano <hi rend="unknown" rendition="#none">teste</hi> una testa di levante l’altra testa di ponente</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Bocca</hi> Lo spazio vuoto tra i due spighi dicesi <hi rend="unknown" rendition="#none">bocca Ucca</hi>
+               <hi rendition="#sup">
 #</hi>
-          <note n="6" place="foot" type="editorial">In calce alla pagina: “<hi rendition="#sup">#</hi>
-            <hi rend="unknown" rendition="#none">Ucca</hi>”.</note>. Ed ora un pò stronco passo a salutarla</p>
-        <closer>
-          <salute>Dev</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2759">P Spadaro</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.2916" subtype="original" type="letter" xml:lang="it">
-        <pb facs="#IMG.8" n="8"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Isola</hi> L’<hi rend="unknown"
-            rendition="#none">isola</hi> della tonnara è il complesso di sei scompartimenti dette <hi rend="unknown" rendition="#none">camere</hi>, le quali portano i nomi di –</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Camera Grande</hi> – Picciolo di levante – Bordonaro – Bastardo – Picciolo di Ponente e Quattro pizzuddi quest’ultimo manca in talune tonnare.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Musartio</hi> Il <hi rend="unknown"
-            rendition="#none">musarziu</hi> e [sic] un grosso cavo che forma la divisione tra una camera e l’altra gli serve inoltre a legare e tenere frenato i due capi o <hi
-            rend="unknown" rendition="#none">resti</hi> gettati sopravvento e sottovento ai due lati della tonnara perché questa, o per ragion di corrente o di mareggiate non si restringa. La loro lunghezza e nome varia a secondo il punto al quale son destinati, anzi prendono nome della camera che siegue</p>
-        <p>Il musarziu oltre la lunghezza uguale alla larghezza della camera alla quale viene destinato, porta maggior lunghezza atta a poter formare il nodo.</p>
-        <p>Al musartio van legate le porte che dividono i diversi scomparti di questo ordegno di pesca: allo stesso si legano le barche di guardia che stanno alle vedette della entrata dei pesci.</p>
-        <p>Allo stesso infine và legata la testa di levante.</p>
-        <p>Il Musarzio che fà continuazione con la coda chiamasi del Sinno</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Sinno</hi> Per <hi rend="unknown" rendition="#none">Sinnu</hi> s’intende un áncora, e la più grossa, in talune tonnare è di oltre una tonnellata</p>
-        <pb facs="#IMG.9" n="9"/>
-        <p>ad essa è affidato il centro della tonnara e la resistenza della intiera coda, un resto resistibilissimo lo lega molto cazzato al musarzio.</p>
-        <p>Dallo spigo maestro ed in continuazione per oltre 24 canne continua una rete in direzione della coda, l’intiera lunghezza di esso, oltre la lunghezza per formare i gruppi, è di CH 30 a 32</p>
-        <p>In talune tonnare si è anche usato di mettere una porta dal punto ove finisce lo spigo sino al lato sopravvento ma non si ritiene necessaria ne pescat[…].</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Grande</hi> La camera a levante a partire dallo spigo maestro chiamasi Grande essa varia tra le CH 54 alle 60 di lato, compresovi la lunghezza della bocca dal lato di sottovento che da canne 30 si restringe a CH 24 da ponente verso levante<note
-            n="7" place="foot" type="editorial">L’ultimo passo è stato inserito in calce alla pagina.</note>
-        </p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Specchio</hi> Di fronte all’entrata o bocca la quale da CH 24 a mezzo dello spigo-bastardo si restringe a 18; tutta la rezza (ed allo estremo della quale) presso levante và legato il <hi
-            rend="unknown" rendition="#none">musartiolo</hi> che tiene lo spigo bastardo chiamasi <hi rend="unknown" rendition="#none">specchiu</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Picciolo di levante</hi> Andando presso il lato di levante s’incontra un altro e solo scompartimento chiamato picciolo di levante il quale ha la superficie di un quadrato con il lato di CH 24 ed è diviso dal grande a mezzo di una porta</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Porta</hi> – Una rete che è uguale ai due lati della tonnara nel posto ove vien piazzata si chiama Porta. La porta abbandona <pb
-            facs="#IMG.10" n="10"/> ta a se stessa và in fondo ma tirata sù, a mezzo di diverse leve dal fondo si porta al sommo, e sbarra il passaggio ai pesci. Essa è legata ai due lati </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Gironi</hi> della tonnara a mezzo di <hi rend="unknown" rendition="#none">Jiruna</hi>
-        </p>
-        <p>Il Girone è una rete di fil di canape, di sparto, o di cordella di disa, a seconda la porta a cui deve servire.</p>
-
-        <p>Esso ha la forma di un ventaglio, o può paragonarsi per la sua costruzione alla quarta parte dello sparviere o <hi
-            rend="unknown" rendition="#none">rezzaglio</hi> i cui lati rettilinei son legati uno al lato della tonnara e l’altro al lato della porta il terzo lato del triangolo mistilineo viene a raccogliersi sui lati della tonnara e chiudono ermeticamente ogni possibile passaggio ai pesci da uno scomparto all’altro, eccone la forma [disegno]</p>
-        <p>Nota bene il girone nel lato x cade quasi perpendicolarmente al lato della tonnara </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Bordonaro</hi> Dal grande girando verso ponente oltrepassando lo spigo mastro si entra nel bordonaro il quale è </p>
-        <p>una camera che misura una lunghezza al centro di CH 35 aventi i lati uno di CH 30 e l’altro di CH 27 </p>
-        <pb facs="#IMG.11" n="11"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Porta del</hi>
-          <hi rend="unknown" rendition="#none">Bastardo</hi> Chiude il lato di ponente la cosi detta <hi rend="unknown" rendition="#none">Porta del Bastardo</hi> da non confondersi con la porta Bastarda di cui parleremo in seguito</p>
-        <p>Il bastardo misura CH 28 di lunghezza CH 28 a levante e CH 24 a ponente</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Porta Chiara</hi> È la porta sottostante al Musarzio del Picciolo è detta chiara perché fatta con una maglia più larga delle altre e serve a dar libero passaggio ai tonni che dal bastardo vogliono passare nel picciolo</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Picciolo</hi> La camera che siegue questa porta è detta Picciolo – (da non confonderlo con il picciolo di levante di cui sopra) esso serve a chiudervi i tonni Dopo essere gia stati chiusi nel bastardo di modo che appena si leva il bastardo (porta) và a mollarsi la porta chiara e passati i tonni nel picciolo levato la stessa và a mollarsi di nuovo il bastardo in aspettativa di altri pesci.</p>
-        <p>Il picciolo misura un quadrato di CH 24 o meglio tre lati da 24 ed uno da 22 – cioè che l’altra porta più a ponente è sopra un musartio di CH 22</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Porta Bastarda</hi>. La porta che segue per essere di una maglia di grandezza media tra la maglia ordinaria di tonnara e la porta chiara dicesi Porta Bastarda, che non è lo stesso del Bastardo.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Quattro Pizzuddi</hi>, <hi rend="unknown"
-            rendition="#none">o Quattro spigoli, o Bastardolo</hi> e <pb facs="#IMG.12" n="12"/> è una camera non usata in tutte le tonnare la cui</p>
-        <p>lunghezza misura CH otto mentre è larga a levante 22 a ponente CH 14 la funzione di detta camera è quella di separare possibilmente il contatto dei tonni del picciolo da quelli della leva.</p>
-        <p>La testa di ponente è guarnita anch’essa di una porta di canape la quale è detta porta sottana per il di cui funzionamento parleremo in seguito</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Leva – Culica – Coltre – Camera della Morte – Corpo</hi>
-        </p>
-        <p>Sono i nomi che si danno ad un pezzo interamente separato dalla tonnara ma dal quale dipende il funzionamento della stessa.</p>
-        <p>La leva è un pezzo aggiunto ma che bisogna ben distinguerlo dal Corpo, hanno entrambi la medesima funzione ma una diversa costruzione.</p>
-        <p>Il corpo fù primieramente ideato ed applicato anzi la leva culica o coltre non è che la modificazione del primo, vi ha forse qualche tonnara che in atto lo mantiene, ma a seconda un discorso tenuto in ferrovia fra uno dei proprietarii di detta tonnara ed lo scrivente quegli pareva (or son 3 anni o più) deciso ad abbandonarla.</p>
-        <p>Camera della morte è nome che si applica si all’uno che all’altro apparato</p>
-
-        <p>La leva è il complesso di diverse reti, di diverse dimensioni. Nella sua costruzione prende forme di una immensa culla della lunghezza di CH 60 e quindi misura tale lunghezza più due volte e qualche cosa <pb
-            facs="#IMG.13" n="13"/> dippiù dell’altezza delle acque nelle quali vien projettata l’isola della tonnara</p>
-        <p>La leva và congiunta alla parte superiore della porta sottana<note n="8" place="foot"
-            type="editorial">Cancellato: “e quando si vogliono lasciar passare i pesci dalla camera del piccolo nella leva”.</note> e rimane in fondo quasi sempre, meno il tempo per levare i pesci, e nel contempo và unita un’altra porta che serve a tener chiusa e continuamente la tonnara, questa ultima e la cosi detta <hi
-            rend="unknown" rendition="#none">porta u</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Porta di Canape</hi>
-          <hi rend="unknown" rendition="#none">cannavu</hi> perche fatta di filo di canape.</p>
-        <p>La <hi rend="unknown"
-            rendition="#none">porta ù cannavu</hi> si abbassa per lasciar passare il pesce dal picciolo e 4 pizzuddi nella leva ed appena passativi si eleva rimanendovi gli stessi <note
-            n="9" place="foot" type="editorial">Non è possibile stabilire chi abbia evidenziato la costruzione.</note> chiusi – Per quanto mal designato ecco la forma della leva [disegno]</p>
-        <p>Eppoiché sono tuttavia in letto mi sento un pò stanco e potendo continuerò domani</p>
-        <closer>
-          <salute>Un saluto per Lei e Pitrè<note n="10" place="foot" type="editorial">
-              <persName
-                ref="https://gams.uni-graz.at/o:hsa.persons#P.2417">Giuseppe Pitrè</persName> (1841-1916), scrittore e antropologo siciliano, fondò nel 1880 con Salvatore Salomone Marino e diresse fino al 1906 l’<hi
-                rend="unknown" rendition="#none">Archivio per lo studio delle tradizioni popolari</hi>. Il suo carteggio con Hugo Schuchardt (N° d’archivio delle lettere di Schuchardt a Pitrè 08864-08871) è ancora inedito.</note>
-          </salute>
-          <lb/>
-          <salute>Dev.</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2759">P. Spadaro</persName>
-            <note n="11" place="foot" type="editorial">Scritto al bordo destro della pagina, in verticale.</note>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.2916" subtype="original" type="letter" xml:lang="it">
-        <pb facs="#IMG.14" n="14"/>
-        <p>La <hi rend="unknown" rendition="#none">leva</hi> come si è già detto è una immensa culla le reti che la compongono sono di diverse maglie e prendon nome dalla grandezza di esse.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Utimo</hi> dicesi una maglia la cui misura di nodo a nodo e uguale a 110, di esso pezze 4 della misura di CH 76</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Gradotti </hi>è la misura della maglia 0, che segue immediatamente all’utimo e 3 pezze misurano 70 CH</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Spesselli </hi>e la terza maglia che misura da nodo a nodo 110 e della lunghezza pressocché uguale alla precedente cioè CH 70</p>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Pezza di caduta</hi>
-          </hi> la cui maglia misura pezze due CH 36</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Scapolare</hi> a maglie fattiforma pezze 6 con una misura uguale a CH 3.112</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Fascina</hi> Dicesi una fascia di rete che serve ad unire lo scapolare, o cento maglie, o coltre, o spesso, alli rotoni e </p>
-        <p>la maglia è uguale a quella della pezza di caduta</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Rotoni</hi> sono dei sacchi grossi di rete ripieni di sugheri, e servono al doppio uso cioè, da un canto per tener </p>
-        <p>galleggiante la testa di ponente della leva e da un altro per potere li stessi esser tirati e messe dentro</p>
-        <p>una grande barcaccia che facci da sostegno oltre la linea d’acqua allo stesso scapolare al momento </p>
-        <p>della pesca</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Colonnito</hi> dicesi un cavo di piccola dimenzione [sic] il quale messo in mezzo ad una camera prende il nome di</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">mezzo</hi> seguito dal nome della camera come mezzo-picciolo, mezzo bastardo mezzo grande etc. così quello della leva non ostante che <pb
-            facs="#IMG.15" n="15"/> In detta parte ve ne sieno tre pure prendono tutte e tre il nome di mezza leva.</p>
-        <p>La funzione del colonnito è uguale a quella dei Musarti con che però i primi servono a sostegno della</p>
-        <p>tonnara e questi ultimi unicamente per tenerla <hi rend="unknown" rendition="#none">
+               <note n="6" place="foot" type="editorial">In calce alla pagina: “<hi rendition="#sup">#</hi>
+                  <hi rend="unknown" rendition="#none">Ucca</hi>”.</note>. Ed ora un pò stronco passo a salutarla</p>
+            <closer>
+               <salute>Dev</salute>
+               <signed>
+                  <persName ref="[authorityLink]">P Spadaro</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.2916"
+              subtype="original"
+              type="letter"
+              xml:lang="it">
+            <pb facs="#IMG.8" n="8"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Isola</hi> L’<hi rend="unknown" rendition="#none">isola</hi> della tonnara è il complesso di sei scompartimenti dette <hi rend="unknown" rendition="#none">camere</hi>, le quali portano i nomi di –</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Camera Grande</hi> – Picciolo di levante – Bordonaro – Bastardo – Picciolo di Ponente e Quattro pizzuddi quest’ultimo manca in talune tonnare.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Musartio</hi> Il <hi rend="unknown" rendition="#none">musarziu</hi> e [sic] un grosso cavo che forma la divisione tra una camera e l’altra gli serve inoltre a legare e tenere frenato i due capi o <hi rend="unknown" rendition="#none">resti</hi> gettati sopravvento e sottovento ai due lati della tonnara perché questa, o per ragion di corrente o di mareggiate non si restringa. La loro lunghezza e nome varia a secondo il punto al quale son destinati, anzi prendono nome della camera che siegue</p>
+            <p>Il musarziu oltre la lunghezza uguale alla larghezza della camera alla quale viene destinato, porta maggior lunghezza atta a poter formare il nodo.</p>
+            <p>Al musartio van legate le porte che dividono i diversi scomparti di questo ordegno di pesca: allo stesso si legano le barche di guardia che stanno alle vedette della entrata dei pesci.</p>
+            <p>Allo stesso infine và legata la testa di levante.</p>
+            <p>Il Musarzio che fà continuazione con la coda chiamasi del Sinno</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Sinno</hi> Per <hi rend="unknown" rendition="#none">Sinnu</hi> s’intende un áncora, e la più grossa, in talune tonnare è di oltre una tonnellata</p>
+            <pb facs="#IMG.9" n="9"/>
+            <p>ad essa è affidato il centro della tonnara e la resistenza della intiera coda, un resto resistibilissimo lo lega molto cazzato al musarzio.</p>
+            <p>Dallo spigo maestro ed in continuazione per oltre 24 canne continua una rete in direzione della coda, l’intiera lunghezza di esso, oltre la lunghezza per formare i gruppi, è di CH 30 a 32</p>
+            <p>In talune tonnare si è anche usato di mettere una porta dal punto ove finisce lo spigo sino al lato sopravvento ma non si ritiene necessaria ne pescat[…].</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Grande</hi> La camera a levante a partire dallo spigo maestro chiamasi Grande essa varia tra le CH 54 alle 60 di lato, compresovi la lunghezza della bocca dal lato di sottovento che da canne 30 si restringe a CH 24 da ponente verso levante<note n="7" place="foot" type="editorial">L’ultimo passo è stato inserito in calce alla pagina.</note>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Specchio</hi> Di fronte all’entrata o bocca la quale da CH 24 a mezzo dello spigo-bastardo si restringe a 18; tutta la rezza (ed allo estremo della quale) presso levante và legato il <hi rend="unknown" rendition="#none">musartiolo</hi> che tiene lo spigo bastardo chiamasi <hi rend="unknown" rendition="#none">specchiu</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Picciolo di levante</hi> Andando presso il lato di levante s’incontra un altro e solo scompartimento chiamato picciolo di levante il quale ha la superficie di un quadrato con il lato di CH 24 ed è diviso dal grande a mezzo di una porta</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Porta</hi> – Una rete che è uguale ai due lati della tonnara nel posto ove vien piazzata si chiama Porta. La porta abbandona <pb facs="#IMG.10" n="10"/> ta a se stessa và in fondo ma tirata sù, a mezzo di diverse leve dal fondo si porta al sommo, e sbarra il passaggio ai pesci. Essa è legata ai due lati </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Gironi</hi> della tonnara a mezzo di <hi rend="unknown" rendition="#none">Jiruna</hi>
+            </p>
+            <p>Il Girone è una rete di fil di canape, di sparto, o di cordella di disa, a seconda la porta a cui deve servire.</p>
+            <p>Esso ha la forma di un ventaglio, o può paragonarsi per la sua costruzione alla quarta parte dello sparviere o <hi rend="unknown" rendition="#none">rezzaglio</hi> i cui lati rettilinei son legati uno al lato della tonnara e l’altro al lato della porta il terzo lato del triangolo mistilineo viene a raccogliersi sui lati della tonnara e chiudono ermeticamente ogni possibile passaggio ai pesci da uno scomparto all’altro, eccone la forma [disegno]</p>
+            <p>Nota bene il girone nel lato x cade quasi perpendicolarmente al lato della tonnara </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Bordonaro</hi> Dal grande girando verso ponente oltrepassando lo spigo mastro si entra nel bordonaro il quale è </p>
+            <p>una camera che misura una lunghezza al centro di CH 35 aventi i lati uno di CH 30 e l’altro di CH 27 </p>
+            <pb facs="#IMG.11" n="11"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Porta del</hi>
+               <hi rend="unknown" rendition="#none">Bastardo</hi> Chiude il lato di ponente la cosi detta <hi rend="unknown" rendition="#none">Porta del Bastardo</hi> da non confondersi con la porta Bastarda di cui parleremo in seguito</p>
+            <p>Il bastardo misura CH 28 di lunghezza CH 28 a levante e CH 24 a ponente</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Porta Chiara</hi> È la porta sottostante al Musarzio del Picciolo è detta chiara perché fatta con una maglia più larga delle altre e serve a dar libero passaggio ai tonni che dal bastardo vogliono passare nel picciolo</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Picciolo</hi> La camera che siegue questa porta è detta Picciolo – (da non confonderlo con il picciolo di levante di cui sopra) esso serve a chiudervi i tonni Dopo essere gia stati chiusi nel bastardo di modo che appena si leva il bastardo (porta) và a mollarsi la porta chiara e passati i tonni nel picciolo levato la stessa và a mollarsi di nuovo il bastardo in aspettativa di altri pesci.</p>
+            <p>Il picciolo misura un quadrato di CH 24 o meglio tre lati da 24 ed uno da 22 – cioè che l’altra porta più a ponente è sopra un musartio di CH 22</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Porta Bastarda</hi>. La porta che segue per essere di una maglia di grandezza media tra la maglia ordinaria di tonnara e la porta chiara dicesi Porta Bastarda, che non è lo stesso del Bastardo.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Quattro Pizzuddi</hi>, <hi rend="unknown" rendition="#none">o Quattro spigoli, o Bastardolo</hi> e <pb facs="#IMG.12" n="12"/> è una camera non usata in tutte le tonnare la cui</p>
+            <p>lunghezza misura CH otto mentre è larga a levante 22 a ponente CH 14 la funzione di detta camera è quella di separare possibilmente il contatto dei tonni del picciolo da quelli della leva.</p>
+            <p>La testa di ponente è guarnita anch’essa di una porta di canape la quale è detta porta sottana per il di cui funzionamento parleremo in seguito</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Leva – Culica – Coltre – Camera della Morte – Corpo</hi>
+            </p>
+            <p>Sono i nomi che si danno ad un pezzo interamente separato dalla tonnara ma dal quale dipende il funzionamento della stessa.</p>
+            <p>La leva è un pezzo aggiunto ma che bisogna ben distinguerlo dal Corpo, hanno entrambi la medesima funzione ma una diversa costruzione.</p>
+            <p>Il corpo fù primieramente ideato ed applicato anzi la leva culica o coltre non è che la modificazione del primo, vi ha forse qualche tonnara che in atto lo mantiene, ma a seconda un discorso tenuto in ferrovia fra uno dei proprietarii di detta tonnara ed lo scrivente quegli pareva (or son 3 anni o più) deciso ad abbandonarla.</p>
+            <p>Camera della morte è nome che si applica si all’uno che all’altro apparato</p>
+            <p>La leva è il complesso di diverse reti, di diverse dimensioni. Nella sua costruzione prende forme di una immensa culla della lunghezza di CH 60 e quindi misura tale lunghezza più due volte e qualche cosa <pb facs="#IMG.13" n="13"/> dippiù dell’altezza delle acque nelle quali vien projettata l’isola della tonnara</p>
+            <p>La leva và congiunta alla parte superiore della porta sottana<note n="8" place="foot" type="editorial">Cancellato: “e quando si vogliono lasciar passare i pesci dalla camera del piccolo nella leva”.</note> e rimane in fondo quasi sempre, meno il tempo per levare i pesci, e nel contempo và unita un’altra porta che serve a tener chiusa e continuamente la tonnara, questa ultima e la cosi detta <hi rend="unknown" rendition="#none">porta u</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Porta di Canape</hi>
+               <hi rend="unknown" rendition="#none">cannavu</hi> perche fatta di filo di canape.</p>
+            <p>La <hi rend="unknown" rendition="#none">porta ù cannavu</hi> si abbassa per lasciar passare il pesce dal picciolo e 4 pizzuddi nella leva ed appena passativi si eleva rimanendovi gli stessi <note n="9" place="foot" type="editorial">Non è possibile stabilire chi abbia evidenziato la costruzione.</note> chiusi – Per quanto mal designato ecco la forma della leva [disegno]</p>
+            <p>Eppoiché sono tuttavia in letto mi sento un pò stanco e potendo continuerò domani</p>
+            <closer>
+               <salute>Un saluto per Lei e Pitrè<note n="10" place="foot" type="editorial">
+                     <persName ref="[authorityLink]">Giuseppe Pitrè</persName> (1841-1916), scrittore e antropologo siciliano, fondò nel 1880 con Salvatore Salomone Marino e diresse fino al 1906 l’<hi rend="unknown" rendition="#none">Archivio per lo studio delle tradizioni popolari</hi>. Il suo carteggio con Hugo Schuchardt (N° d’archivio delle lettere di Schuchardt a Pitrè 08864-08871) è ancora inedito.</note>
+               </salute>
+               <lb/>
+               <salute>Dev.</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">P. Spadaro</persName>
+                  <note n="11" place="foot" type="editorial">Scritto al bordo destro della pagina, in verticale.</note>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.2916"
+              subtype="original"
+              type="letter"
+              xml:lang="it">
+            <pb facs="#IMG.14" n="14"/>
+            <p>La <hi rend="unknown" rendition="#none">leva</hi> come si è già detto è una immensa culla le reti che la compongono sono di diverse maglie e prendon nome dalla grandezza di esse.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Utimo</hi> dicesi una maglia la cui misura di nodo a nodo e uguale a 110, di esso pezze 4 della misura di CH 76</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Gradotti </hi>è la misura della maglia 0, che segue immediatamente all’utimo e 3 pezze misurano 70 CH</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Spesselli </hi>e la terza maglia che misura da nodo a nodo 110 e della lunghezza pressocché uguale alla precedente cioè CH 70</p>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Pezza di caduta</hi>
+               </hi> la cui maglia misura pezze due CH 36</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Scapolare</hi> a maglie fattiforma pezze 6 con una misura uguale a CH 3.112</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Fascina</hi> Dicesi una fascia di rete che serve ad unire lo scapolare, o cento maglie, o coltre, o spesso, alli rotoni e </p>
+            <p>la maglia è uguale a quella della pezza di caduta</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Rotoni</hi> sono dei sacchi grossi di rete ripieni di sugheri, e servono al doppio uso cioè, da un canto per tener </p>
+            <p>galleggiante la testa di ponente della leva e da un altro per potere li stessi esser tirati e messe dentro</p>
+            <p>una grande barcaccia che facci da sostegno oltre la linea d’acqua allo stesso scapolare al momento </p>
+            <p>della pesca</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Colonnito</hi> dicesi un cavo di piccola dimenzione [sic] il quale messo in mezzo ad una camera prende il nome di</p>
+            <p>
+               <hi rend="unknown" rendition="#none">mezzo</hi> seguito dal nome della camera come mezzo-picciolo, mezzo bastardo mezzo grande etc. così quello della leva non ostante che <pb facs="#IMG.15" n="15"/> In detta parte ve ne sieno tre pure prendono tutte e tre il nome di mezza leva.</p>
+            <p>La funzione del colonnito è uguale a quella dei Musarti con che però i primi servono a sostegno della</p>
+            <p>tonnara e questi ultimi unicamente per tenerla <hi rend="unknown" rendition="#none">
 aperta</hi> cioè che i lati non si avvicinino</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Tradimenti o trattenimenti</hi> sono dei cavi con un cappio ad occhio che servono a tenere la <hi
-            rend="unknown" rendition="#none">
+            <p>
+               <hi rend="unknown" rendition="#none">Tradimenti o trattenimenti</hi> sono dei cavi con un cappio ad occhio che servono a tenere la <hi rend="unknown" rendition="#none">
 ritenuta</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Ritenuta </hi>La ritenuta è un cavo che unisce le due grandi barche che servono a levare esse son due poste a prua </p>
-        <p>ed a poppa di dette barche.</p>
-        <p>Barche</p>
-        <p>Ad ausilio delle reti e come parte principale per far la pesca sono le barche – i quali si nominano </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Ciuffa – Scieri, Vascello di entrata, Chiaccherone, </hi>e la piu grande delle barche</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Palischermo – Palascarmo </hi>è la seconda barca che si mette di fronte alla prima al momento della levata</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Sciabiche o palascarmotti</hi> sono due barcacce che si mettono ai fianchi del Palascarmo</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Muscare</hi> sono le barche minori o barche leggiere</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Caicco </hi>è una picciola barca che serve per il passaggio da un punto ad altro delle persone o per tutti i servizi fuori guardia o pesca</p>
-        <p>La ciuffa misura pressocché CH 9 dall Campione di prua alla perpendicolare della rata <pb facs="#IMG.16" n="16"/> di pappa il</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Campione</hi>, od ocidduzzu è cio che di prua s’innalza a questa forma [disegno]</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Sannali</hi> sono due alberi che guarniti con pulegge e mazza servono per alzare i tonni e metterli fuori banda.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Stirato</hi> È una tavola fra l’orlo ed il di dietro della persona che pesca per guardarlo dai colpi di coda od urto dei movimenti convulsivi del pesce</p>
-        <p>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Ritenuta </hi>La ritenuta è un cavo che unisce le due grandi barche che servono a levare esse son due poste a prua </p>
+            <p>ed a poppa di dette barche.</p>
+            <p>Barche</p>
+            <p>Ad ausilio delle reti e come parte principale per far la pesca sono le barche – i quali si nominano </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Ciuffa – Scieri, Vascello di entrata, Chiaccherone, </hi>e la piu grande delle barche</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Palischermo – Palascarmo </hi>è la seconda barca che si mette di fronte alla prima al momento della levata</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Sciabiche o palascarmotti</hi> sono due barcacce che si mettono ai fianchi del Palascarmo</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Muscare</hi> sono le barche minori o barche leggiere</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Caicco </hi>è una picciola barca che serve per il passaggio da un punto ad altro delle persone o per tutti i servizi fuori guardia o pesca</p>
+            <p>La ciuffa misura pressocché CH 9 dall Campione di prua alla perpendicolare della rata <pb facs="#IMG.16" n="16"/> di pappa il</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Campione</hi>, od ocidduzzu è cio che di prua s’innalza a questa forma [disegno]</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Sannali</hi> sono due alberi che guarniti con pulegge e mazza servono per alzare i tonni e metterli fuori banda.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Stirato</hi> È una tavola fra l’orlo ed il di dietro della persona che pesca per guardarlo dai colpi di coda od urto dei movimenti convulsivi del pesce</p>
+            <p>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">
 Cani</hi>
-          </hi> Sono certi pezzi di legno con delle pulegge poste sull’orlo della Ciuffa per tirar sù la porta della leva e quando la stessa è a riva vengon tolte solamente per lasciar libero l’uomo che con le mani tira le reti a cominciare dalla porta e poi dall’Utimo</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Cagnozzi</hi> Sono come i cani ma più piccoli e servono per tirar le leve delle porte eccone la forma [disegno] servono nelle muocare</p>
-        <p>La disposizione delle barche nella levata è come segue [disegno]</p>
-        <p>In fine servono ad afferrare i pesci i </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Crocchi-corti</hi> sono lame di ferro uncinati attaccate ad un manico tornito ed atto ad afferrarsi in mezzo torniture [disegno]</p>
-        <note n="12" place="foot"
-            type="editorial">Accanto si trova scritto con matita blu, probabilmente per mano di Schuchardt: “Muster“. Nella <ref
-            target="http://volkskundemuseum.at/onlinesammlungen/schuchardt">collezione di Schuchardt</ref> conservata nell'Österreichisches Museum für Volkskunde si trova un "Crocco-corto" (<ref target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63513">
+               </hi> Sono certi pezzi di legno con delle pulegge poste sull’orlo della Ciuffa per tirar sù la porta della leva e quando la stessa è a riva vengon tolte solamente per lasciar libero l’uomo che con le mani tira le reti a cominciare dalla porta e poi dall’Utimo</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Cagnozzi</hi> Sono come i cani ma più piccoli e servono per tirar le leve delle porte eccone la forma [disegno] servono nelle muocare</p>
+            <p>La disposizione delle barche nella levata è come segue [disegno]</p>
+            <p>In fine servono ad afferrare i pesci i </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Crocchi-corti</hi> sono lame di ferro uncinati attaccate ad un manico tornito ed atto ad afferrarsi in mezzo torniture [disegno]</p>
+            <note n="12" place="foot" type="editorial">Accanto si trova scritto con matita blu, probabilmente per mano di Schuchardt: “Muster“. Nella <ref target="http://volkskundemuseum.at/onlinesammlungen/schuchardt">collezione di Schuchardt</ref> conservata nell'Österreichisches Museum für Volkskunde si trova un "Crocco-corto" (<ref target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63513">
 ÖMV/63.513</ref>), forse l'oggetto qui menzionato.</note>
-        <pb facs="#IMG.17" n="17"/>
-        <p>il manico non misura più di M 0.60</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Crocco lungo</hi> Croccu longo È un uncino a lama cilindrica e terminato a punta attaccato ad un asta lunga M<note
-            n="13" place="foot"
-              type="editorial">Nella collezione di Schuchardt si conserva un crocco lungo che probabilmente gli fu procurato da Spadaro (<ref target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63512">
+            <pb facs="#IMG.17" n="17"/>
+            <p>il manico non misura più di M 0.60</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Crocco lungo</hi> Croccu longo È un uncino a lama cilindrica e terminato a punta attaccato ad un asta lunga M<note n="13" place="foot" type="editorial">Nella collezione di Schuchardt si conserva un crocco lungo che probabilmente gli fu procurato da Spadaro (<ref target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63512">
 ÖMV/63.512</ref>).</note>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Croccone</hi> è lo stesso del crocco-lungo attaccato ad un asta d M. 3 di lunghezza</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Crocchetto</hi> è un uncino piccolo della […] diametro di Mill 1. Va attaccato ad un manico corto serve per tirare lo scapolare</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Crocco a besi</hi> È un uncino con occhio al quale va attaccato un capo e servono per tenere ferma ad un punto la leva <note
-            n="14" place="foot"
-              type="editorial">A matita: “Muster”. Nella collezione di Schuchardt si conserva un crocco a besi che potrebbe essere il campione in questione (<ref target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63515">
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Croccone</hi> è lo stesso del crocco-lungo attaccato ad un asta d M. 3 di lunghezza</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Crocchetto</hi> è un uncino piccolo della […] diametro di Mill 1. Va attaccato ad un manico corto serve per tirare lo scapolare</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Crocco a besi</hi> È un uncino con occhio al quale va attaccato un capo e servono per tenere ferma ad un punto la leva <note n="14" place="foot" type="editorial">A matita: “Muster”. Nella collezione di Schuchardt si conserva un crocco a besi che potrebbe essere il campione in questione (<ref target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63515">
 ÖMV/63.515</ref>).</note>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Sgaragghiare</hi> Mettere i due lati della leva sulle barche di fianco.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Mazzacana</hi> Una pietra bucata nella quale si mette un capo e serve di áncora in punti ove non vi è corrente</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Sgassa</hi> È un cappio di grossa fune colla quale si cinge per la gola o per la coda il pesce spada e si mette fuori dell’acqua</p>
-        <p>Piccolo cappio di cavo per mettersi intorno alla coda del tonno per poterlo elevare</p>
-        <p>Alli quattro angoli della tonnara oltre le linee delle reti escono in fuori due braccia di cavo di somma detti</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Braccia </hi>o brazza che finiscono con un occhio per ciascuno detto</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Gassa</hi> Le gasse sono di soprav. e sottov di levante e di soprav: o sottov: di ponente</p>
-        <p>Alle gasse si legano tre o quattro cavi con grosse</p>
-        <pb facs="#IMG.18" n="18"/>
-        <p>áncore dette <hi rend="unknown" rendition="#none">ancore di gassa</hi>
-        </p>
-        <p>Agli angoli poi trasversalmente si gettano altre ancore dette <hi rend="unknown"
-            rendition="#none">Mascarane</hi> [disegno]<note n="15" place="foot" type="editorial">
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Sgaragghiare</hi> Mettere i due lati della leva sulle barche di fianco.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Mazzacana</hi> Una pietra bucata nella quale si mette un capo e serve di áncora in punti ove non vi è corrente</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Sgassa</hi> È un cappio di grossa fune colla quale si cinge per la gola o per la coda il pesce spada e si mette fuori dell’acqua</p>
+            <p>Piccolo cappio di cavo per mettersi intorno alla coda del tonno per poterlo elevare</p>
+            <p>Alli quattro angoli della tonnara oltre le linee delle reti escono in fuori due braccia di cavo di somma detti</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Braccia </hi>o brazza che finiscono con un occhio per ciascuno detto</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Gassa</hi> Le gasse sono di soprav. e sottov di levante e di soprav: o sottov: di ponente</p>
+            <p>Alle gasse si legano tre o quattro cavi con grosse</p>
+            <pb facs="#IMG.18" n="18"/>
+            <p>áncore dette <hi rend="unknown" rendition="#none">ancore di gassa</hi>
+            </p>
+            <p>Agli angoli poi trasversalmente si gettano altre ancore dette <hi rend="unknown" rendition="#none">Mascarane</hi> [disegno]<note n="15" place="foot" type="editorial">
 In margine, a matita “Mascheranu”.</note>
-        </p>
-      </div>
-      <div corresp="#L.2916" subtype="original" type="letter" xml:lang="it">
-        <pb facs="#IMG.19" n="19"/>
-        <dateline>Hôtel Trinacria 18-5-901</dateline>
-        <opener>Egregio Prof</opener>
-        <p>Non avendola trovata in albergo le accludo il presente scritto sperando domani o lunedì spedirLe lettera da S. Nicolo al completo di quanto Ella mi ha domandato </p>
-        <closer>
-          <salute>Saluta distintamente</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2759">P. Spadaro</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.2916" subtype="original" type="letter" xml:lang="it">
-        <p>
-          <pb facs="#IMG.20" n="20"/> [19]</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Corpo</hi> Le funzioni in atto esercitati con la leva sino alla fine del secolo XVIII ed anco nei’ primi del XIX si esiguivano col <hi
-            rend="unknown" rendition="#none">corpo</hi> – Il corpo era od è tuttavia per qualcuna tonnara una camera aggiunta della lunghezza di CH 40 la quale vien tirata sù con argani posti sulle 4 barche che formano la</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Incastellatura</hi> ‘ncasteddatura cioè il quadrato a castello per riunirvi e levare i tonni. Il corpo tiene in basso le reti spesse, e il cosi detto scapolare vien sollevato dal fondo a raggiungere il sommo</p>
-        <p>Ritengo null’altro aver da dire in ordine alla tonnara, salvo qualche dimenticanza che potrò seguito correggere, cioè rileggendo quanto ho scritto ed a mente serena</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tonnarella</hi>
-        </p>
-        <p>Una tonnara ridotta e per numero di camere e per grandezza di leva è la cosi detta </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tonnarella – Tunnaredda </hi>– manca in essa il picciolo di Levante il bastardo i 4 pizzuddi o bastardole e non vi si mette mai codardo.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Codardo </hi>ll codardo è una rete la quale suol mettersi alla estremità della testa di levante attaccato al braccio di sottovento e formando in testa un quadrato con un lato mancante di rete, e rivolto alla coda la sua funzione e quella di far ritornare alla coda i pesci che prendono il largo dalla parte della testa di levante</p>
-        <p>
-          <pb facs="#IMG.21" n="21"/> [20]</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Campile</hi> Campile è precisamente il <hi rend="unknown"
-            rendition="#none">bichero</hi> dei porthogesi, il detto quadrato che forma testata dicesi anchi <hi
-            rend="unknown" rendition="#none">rivotu</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Passaggio di S. Andrea</hi> Sanedda di S. Andrea è lo spazio che passa tra la testa di levante ed il codardo eccone lo schizzo [disegno]</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Malfaraggio</hi>, <hi rend="unknown" rendition="#none">Marifaraticu</hi> e tutto quanto di fabbricato è in una tonnara compresa la spiaggia</p>
-        <p>Con la tonnara e tonnarella pescansi tutti i pesci della famiglia degli sgombri ed indipendentemente Cefali Sardelle Alicci ed anche dei calamai.</p>
-        <p>Ed ora che ritengo aver esaurito tutto quanto riguarda tonnara e tonnarella passo all’altra rete di posta detta</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tramaglio</hi>
-          <note n="16" place="foot"
-              type="editorial">Nel taccuino 17.1.3.9, a pagina 3(7) Schuchardt aveva annotato le presenti informazioni. Nella collezione di attrezzi da pesca del linguista è presente una parte di un tramaglio (<ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63557">
+            </p>
+         </div>
+         <div corresp="#L.2916"
+              subtype="original"
+              type="letter"
+              xml:lang="it">
+            <pb facs="#IMG.19" n="19"/>
+            <dateline>Hôtel Trinacria 18-5-901</dateline>
+            <opener>Egregio Prof</opener>
+            <p>Non avendola trovata in albergo le accludo il presente scritto sperando domani o lunedì spedirLe lettera da S. Nicolo al completo di quanto Ella mi ha domandato </p>
+            <closer>
+               <salute>Saluta distintamente</salute>
+               <signed>
+                  <persName ref="[authorityLink]">P. Spadaro</persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.2916"
+              subtype="original"
+              type="letter"
+              xml:lang="it">
+            <p>
+               <pb facs="#IMG.20" n="20"/> [19]</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Corpo</hi> Le funzioni in atto esercitati con la leva sino alla fine del secolo XVIII ed anco nei’ primi del XIX si esiguivano col <hi rend="unknown" rendition="#none">corpo</hi> – Il corpo era od è tuttavia per qualcuna tonnara una camera aggiunta della lunghezza di CH 40 la quale vien tirata sù con argani posti sulle 4 barche che formano la</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Incastellatura</hi> ‘ncasteddatura cioè il quadrato a castello per riunirvi e levare i tonni. Il corpo tiene in basso le reti spesse, e il cosi detto scapolare vien sollevato dal fondo a raggiungere il sommo</p>
+            <p>Ritengo null’altro aver da dire in ordine alla tonnara, salvo qualche dimenticanza che potrò seguito correggere, cioè rileggendo quanto ho scritto ed a mente serena</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tonnarella</hi>
+            </p>
+            <p>Una tonnara ridotta e per numero di camere e per grandezza di leva è la cosi detta </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tonnarella – Tunnaredda </hi>– manca in essa il picciolo di Levante il bastardo i 4 pizzuddi o bastardole e non vi si mette mai codardo.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Codardo </hi>ll codardo è una rete la quale suol mettersi alla estremità della testa di levante attaccato al braccio di sottovento e formando in testa un quadrato con un lato mancante di rete, e rivolto alla coda la sua funzione e quella di far ritornare alla coda i pesci che prendono il largo dalla parte della testa di levante</p>
+            <p>
+               <pb facs="#IMG.21" n="21"/> [20]</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Campile</hi> Campile è precisamente il <hi rend="unknown" rendition="#none">bichero</hi> dei porthogesi, il detto quadrato che forma testata dicesi anchi <hi rend="unknown" rendition="#none">rivotu</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Passaggio di S. Andrea</hi> Sanedda di S. Andrea è lo spazio che passa tra la testa di levante ed il codardo eccone lo schizzo [disegno]</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Malfaraggio</hi>, <hi rend="unknown" rendition="#none">Marifaraticu</hi> e tutto quanto di fabbricato è in una tonnara compresa la spiaggia</p>
+            <p>Con la tonnara e tonnarella pescansi tutti i pesci della famiglia degli sgombri ed indipendentemente Cefali Sardelle Alicci ed anche dei calamai.</p>
+            <p>Ed ora che ritengo aver esaurito tutto quanto riguarda tonnara e tonnarella passo all’altra rete di posta detta</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tramaglio</hi>
+               <note n="16" place="foot" type="editorial">Nel taccuino 17.1.3.9, a pagina 3(7) Schuchardt aveva annotato le presenti informazioni. Nella collezione di attrezzi da pesca del linguista è presente una parte di un tramaglio (<ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63557">
 ÖMV/63.557</ref>), probabilmente inviatagli da Pietro Spadaro (cf. Werkmanuskripte 17.1.3.5, 41).</note> – Sinaiuli - Impardata o /rete a tramaglio/</p>
-        <p>è una rete di filo di canapa da 16 la cui altezza misura al centro Metro 1.80 e l’estremità dei lati M 1.7</p>
-        <p>Lo spesso di detto ordegno ha una maglia che misura tra nodo e nodo Mill 35 e la lunghezza si fa di Canne 21 a 30 cioè Metri 42,65 a M.60 di armato</p>
-        <p>Lo armato e fatto di corraino del diametro di Mill 5</p>
-        <p>Si arma a ponte cioè: nella misura sullo armato uguale a Maglie 4 cioè Cent […]</p>
-        <p>
-          <pb facs="#IMG.22" n="22"/> [21]</p>
-        <p>vi corrisponde il ponte fatto con filo da <hi rend="unknown"
-            rendition="#none">
-10</hi> della lunghezza di Cent 21 e nel quale stanno legate 6 maglie. [disegno] Ugualmente di filo da 10 sono fatte le <hi
-            rend="unknown" rendition="#none">
+            <p>è una rete di filo di canapa da 16 la cui altezza misura al centro Metro 1.80 e l’estremità dei lati M 1.7</p>
+            <p>Lo spesso di detto ordegno ha una maglia che misura tra nodo e nodo Mill 35 e la lunghezza si fa di Canne 21 a 30 cioè Metri 42,65 a M.60 di armato</p>
+            <p>Lo armato e fatto di corraino del diametro di Mill 5</p>
+            <p>Si arma a ponte cioè: nella misura sullo armato uguale a Maglie 4 cioè Cent […]</p>
+            <p>
+               <pb facs="#IMG.22" n="22"/> [21]</p>
+            <p>vi corrisponde il ponte fatto con filo da <hi rend="unknown" rendition="#none">
+10</hi> della lunghezza di Cent 21 e nel quale stanno legate 6 maglie. [disegno] Ugualmente di filo da 10 sono fatte le <hi rend="unknown" rendition="#none">
 impardature</hi> o parita (pareti) poste al di fuori dell’un lato ed altro della rete spessa</p>
-        <p>Le maglie misurano Cent 30 e si calano <hi rend="unknown" rendition="#none">au ‘ngradu</hi> mentre lo spesso và calato allo sgaru ‘ngraru significa diritto per gruppo, sgraro in senso trasversale</p>
-        <p>Lo armato superiore è fornito di sugheri <hi rend="unknown" rendition="#none">
+            <p>Le maglie misurano Cent 30 e si calano <hi rend="unknown" rendition="#none">au ‘ngradu</hi> mentre lo spesso và calato allo sgaru ‘ngraru significa diritto per gruppo, sgraro in senso trasversale</p>
+            <p>Lo armato superiore è fornito di sugheri <hi rend="unknown" rendition="#none">
 suvareddi</hi> bucati in centro</p>
-        <p>Il piombo fatto con rettangoli di piombo i di cui lati misurano uno Cent 4 e l’altro 3 si avvolgono e legano allo armato inferiore</p>
-
-        <p>Alle due testate si unisce una fascia con maglie che misurano Cent 6 ½ di filo da 12 e che l’ultima riga è fatta a <hi
-            rend="unknown" rendition="#none">dubbulinu</hi> (doppio filo)</p>
-        <p>A tre punti diversi si legano dei piccoli capicelli detti <hi rend="unknown" rendition="#none">naturaleddi</hi>
-        </p>
-        <p>Con la Sinajula o Impardata si pescano Triglie, Scrofami, Sparagghiunu Ciucciastri Turdi Sappani Pittimi, Sarghe Orate Ambrine ed altri pesci</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Radolo</hi>
-          <note n="17" place="foot" type="editorial"> Nel taccuino 17.1.3.9, a pagina 7 (15) Schuchardt annota queste informazioni.</note> Un’altra rete da posta è il Raddulu – Lo spesso e di Maglia di Cent. 6 ½ Si arma a ponte cioè in un armato uguale a Maglia 2 cent 13 vi si […] in ponte maglie 3- Questa rete và senza tramaglio è alta M3 e lunga Metri 42 si uniscono spesso dai 10 alli 20 pezze </p>
-        <p>
-          <pb facs="#IMG.23" n="23"/> [22]</p>
-        <p>pescansi Sopi Sauri Scurmi (sgombre) spigari</p>
-        <p>L’armato presocche uguale alle senajoli</p>
-        <p>Terminate le reti da posta passiamo a quelle che servono e da posta, e che vanno alla deriva</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Alalungara</hi>
-          <note n="18" place="foot"
-            type="editorial">L’informazione riportata qua è ripresa da Schuchardt nel taccuino “Werkmanuskripte 17.1.3.9 a pagina 8 (17).</note>Rete per pescare alelunghe, ma che puo pescare <note
-            n="19" place="foot" type="editorial">Non è dato sapere chi abbia evidenziato il lapsus sintattico.</note> pesca ugualmente Pesce spada e tonno</p>
-        <p>L’alalungara e formata di diversi <hi rend="unknown" rendition="#none">toni</hi> o pezzi di rezza comunemente si compone di 20 pezza</p>
-
-        <p>Ciascuna pezza è lunga Canne 20 Metri 41,60 ai due punti estremi vi si legano dei naturaleddi che li congiungono per formarne una della intera estensione la prima ed ultima pezza o tono li naturaleddi si legano al breme il quale in quel luogo sporge dalla parte superiore per legarsi all’<hi
-            rend="unknown" rendition="#none">Orsa </hi>o <hi rend="unknown" rendition="#none">samo</hi>
-          <note n="20" place="foot" type="editorial">In margine, scritto verticalmente, probabilmente da Schuchardt: “sagam[…]?”.</note> – Il breme ha un diametro pressocche uguale a Cent 1 di diametro, non usansi fasce ne al sommo ne al piombo</p>
-        <p>Il piombo formato di disci del metallo omonimo vengono aggirati intorno al breme di piombo si dicon <hi
-            rend="unknown" rendition="#none">vajane</hi> attaccata la rete alla barca corre alla derica ma puossi usare come rete di posta il pesce dando in quella rete per passar oltre viene ad impigliarvesi rimanendovi affogato</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Palamidara</hi> Per la pesca del palamido si usa la cosi detta Palamidara, però l’antica palamidara, o quella rete che con tal nome si chiama tuttavia in Messina e Catania è la stessa della alalungara, però col finire del secolo XVII avendosi voluto far distinzione di pesca nel solo comparti<pb
-            facs="#IMG.24" n="24"/> [23]<note n="21" place="foot"
-            type="editorial">Seguito del glossario a pagina |23| [22].</note> mento di <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.172">Palermo</placeName> la rete Palamidara si cominciò a chiamare ‘Alalungara’ ed una maglia bastarda tra l’Alacciaria e la Alalungara appellaron Palamidara, ma leggendo le antiche scritture, per Palamidara devesi intendere l’attuale Alalungara</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Palamidara</hi>
-          <note n="22" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 9 (19).</note> Palamitara rete da posta e a deriva Pezze 9 CH 21 Maglie Cent 10. altezza CH 10 armasi all’istesso modo dell’Alalungara</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Schitta</hi>
-          <note n="23" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 12 (25).</note> – con breme al sommo ed al fondo non ha fasce</p>
-        <p>Pezze 16 CH21 Maglie Cent 8 altezza CH 10 si uniscono come le alelungare</p>
-
-        <p>NB: tanto le Alalungare che le Palamidare e Raidolo non che le Schitte ad ogni tre o più quattro pezze si uniscono a cucitura, ed allora le tre o quattro pezze riunite pigliano il nome di <hi
-            rend="unknown" rendition="#none">tono di rete</hi> La Schitta è rete a sola deriva</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Alacciara</hi>
-          <note n="24" place="foot"
-            type="editorial"> Cf. Werkmanuskripte 17.1.3.9, 10 (21).</note> È una rete che serve per prendere scurmi bisi <hi
-            rend="unknown" rendition="#none">palamiti piccoli</hi>, sgombri, vopi, sauri, aluzzi</p>
-
-        <p>La Maglia è di Cent. 4 ½ Altezza CH 10 o Metri 20,80 lunghezza di metta CH 9 si uniscono 8 pezzi per ogni tono, e si forma di toni 2 ½ o pezze 20. L’alacciare e rete a deriva.<note
-            n="25" place="foot" type="editorial">Nota in margine, probabilmente di mano di Schuchardt: “hat <hi
-              rend="unknown" rendition="#none">
+            <p>Il piombo fatto con rettangoli di piombo i di cui lati misurano uno Cent 4 e l’altro 3 si avvolgono e legano allo armato inferiore</p>
+            <p>Alle due testate si unisce una fascia con maglie che misurano Cent 6 ½ di filo da 12 e che l’ultima riga è fatta a <hi rend="unknown" rendition="#none">dubbulinu</hi> (doppio filo)</p>
+            <p>A tre punti diversi si legano dei piccoli capicelli detti <hi rend="unknown" rendition="#none">naturaleddi</hi>
+            </p>
+            <p>Con la Sinajula o Impardata si pescano Triglie, Scrofami, Sparagghiunu Ciucciastri Turdi Sappani Pittimi, Sarghe Orate Ambrine ed altri pesci</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Radolo</hi>
+               <note n="17" place="foot" type="editorial"> Nel taccuino 17.1.3.9, a pagina 7 (15) Schuchardt annota queste informazioni.</note> Un’altra rete da posta è il Raddulu – Lo spesso e di Maglia di Cent. 6 ½ Si arma a ponte cioè in un armato uguale a Maglia 2 cent 13 vi si […] in ponte maglie 3- Questa rete và senza tramaglio è alta M3 e lunga Metri 42 si uniscono spesso dai 10 alli 20 pezze </p>
+            <p>
+               <pb facs="#IMG.23" n="23"/> [22]</p>
+            <p>pescansi Sopi Sauri Scurmi (sgombre) spigari</p>
+            <p>L’armato presocche uguale alle senajoli</p>
+            <p>Terminate le reti da posta passiamo a quelle che servono e da posta, e che vanno alla deriva</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Alalungara</hi>
+               <note n="18" place="foot" type="editorial">L’informazione riportata qua è ripresa da Schuchardt nel taccuino “Werkmanuskripte 17.1.3.9 a pagina 8 (17).</note>Rete per pescare alelunghe, ma che puo pescare <note n="19" place="foot" type="editorial">Non è dato sapere chi abbia evidenziato il lapsus sintattico.</note> pesca ugualmente Pesce spada e tonno</p>
+            <p>L’alalungara e formata di diversi <hi rend="unknown" rendition="#none">toni</hi> o pezzi di rezza comunemente si compone di 20 pezza</p>
+            <p>Ciascuna pezza è lunga Canne 20 Metri 41,60 ai due punti estremi vi si legano dei naturaleddi che li congiungono per formarne una della intera estensione la prima ed ultima pezza o tono li naturaleddi si legano al breme il quale in quel luogo sporge dalla parte superiore per legarsi all’<hi rend="unknown" rendition="#none">Orsa </hi>o <hi rend="unknown" rendition="#none">samo</hi>
+               <note n="20" place="foot" type="editorial">In margine, scritto verticalmente, probabilmente da Schuchardt: “sagam[…]?”.</note> – Il breme ha un diametro pressocche uguale a Cent 1 di diametro, non usansi fasce ne al sommo ne al piombo</p>
+            <p>Il piombo formato di disci del metallo omonimo vengono aggirati intorno al breme di piombo si dicon <hi rend="unknown" rendition="#none">vajane</hi> attaccata la rete alla barca corre alla derica ma puossi usare come rete di posta il pesce dando in quella rete per passar oltre viene ad impigliarvesi rimanendovi affogato</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Palamidara</hi> Per la pesca del palamido si usa la cosi detta Palamidara, però l’antica palamidara, o quella rete che con tal nome si chiama tuttavia in Messina e Catania è la stessa della alalungara, però col finire del secolo XVII avendosi voluto far distinzione di pesca nel solo comparti<pb facs="#IMG.24" n="24"/> [23]<note n="21" place="foot" type="editorial">Seguito del glossario a pagina |23| [22].</note> mento di <placeName ref="[authorityLink]">Palermo</placeName> la rete Palamidara si cominciò a chiamare ‘Alalungara’ ed una maglia bastarda tra l’Alacciaria e la Alalungara appellaron Palamidara, ma leggendo le antiche scritture, per Palamidara devesi intendere l’attuale Alalungara</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Palamidara</hi>
+               <note n="22" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 9 (19).</note> Palamitara rete da posta e a deriva Pezze 9 CH 21 Maglie Cent 10. altezza CH 10 armasi all’istesso modo dell’Alalungara</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Schitta</hi>
+               <note n="23" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 12 (25).</note> – con breme al sommo ed al fondo non ha fasce</p>
+            <p>Pezze 16 CH21 Maglie Cent 8 altezza CH 10 si uniscono come le alelungare</p>
+            <p>NB: tanto le Alalungare che le Palamidare e Raidolo non che le Schitte ad ogni tre o più quattro pezze si uniscono a cucitura, ed allora le tre o quattro pezze riunite pigliano il nome di <hi rend="unknown" rendition="#none">tono di rete</hi> La Schitta è rete a sola deriva</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Alacciara</hi>
+               <note n="24" place="foot" type="editorial"> Cf. Werkmanuskripte 17.1.3.9, 10 (21).</note> È una rete che serve per prendere scurmi bisi <hi rend="unknown" rendition="#none">palamiti piccoli</hi>, sgombri, vopi, sauri, aluzzi</p>
+            <p>La Maglia è di Cent. 4 ½ Altezza CH 10 o Metri 20,80 lunghezza di metta CH 9 si uniscono 8 pezzi per ogni tono, e si forma di toni 2 ½ o pezze 20. L’alacciare e rete a deriva.<note n="25" place="foot" type="editorial">Nota in margine, probabilmente di mano di Schuchardt: “hat <hi rend="unknown" rendition="#none">
 fascie</hi>?”.</note>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Augugliara</hi>
-          <note n="26" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 11 (23).</note> Maglie di C.<hi
-            rend="unknown"
-            rendition="#none">ri</hi> 3 altezza CH 5 Pezza di CH 9 si uniscono 9 pezze formanti un tono. Pescansi Aguglie e sarde <hi
-            rend="unknown" rendition="#none">– è di sola posta</hi>
-          <note n="27" place="foot"
-              type="editorial">
-Nota in calce della pagina, probabilmente di mano di Schuchardt: “die <hi rend="unknown"
-              rendition="#none">toni</hi> werden anders verbunden als die <hi rend="unknown" rendition="#none">pezze</hi>? Mit den bremi?”.</note>
-        </p>
-        <pb facs="#IMG.25" n="25"/>
-        <closer>
-          <salute>Un saluto e mi creda</salute>
-          <lb/>
-          <salute>Dev.</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2759">P. Spadaro</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>PS Se potrà prestarmi i libri dei quali mi parla nell’ultima sua lettera le resterei obbligato ma più di ogni altro i lavori del Re di Portogallo o chi per esso</p>
-          <p>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2759">PS</persName>
-          </p>
-        </postscript>
-      </div>
-      <div corresp="#L.2916" subtype="original" type="letter" xml:lang="it">
-        <dateline>23-V-01</dateline>
-        <opener>Egregio Professore</opener>
-        <p>Lei ha perfettamente ragione La prossima apertura del congresso non mi permette distrarmi dal lavoro che ancora non ho completato però potra essere sicuro sicurissimo che non lascio lavoro a metà –</p>
-        <p>Potendo, al più presto lo contenterò –</p>
-        <p>Le unisco campione maglia Alelungara<note n="28" place="foot" type="editorial">Cf. <ref
-            target="http://volkskundemuseum.at/onlinesammlungen/oemv63551">
-ÖMV/63.551</ref>.</note> croccu,<note n="29"
-            place="foot" type="editorial">
-            <ref
-            target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63512">
-ÖMV/63.512</ref>.</note> crocchetto,<note
-            n="30" place="foot" type="editorial">
-Cf. <ref
-            target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63513">
-ÖMV/63.513</ref>.</note> besi<note
-            n="31" place="foot" type="editorial">Cf. <ref
-            target="http://volkskundemuseum.at/onlinesammlungen/oemv63515">
-ÖMV/63.515</ref>.</note> e lama di crocco <note
-            n="32" place="foot" type="editorial"> Cf. <ref target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63516">
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Augugliara</hi>
+               <note n="26" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 11 (23).</note> Maglie di C.<hi rend="unknown" rendition="#none">ri</hi> 3 altezza CH 5 Pezza di CH 9 si uniscono 9 pezze formanti un tono. Pescansi Aguglie e sarde <hi rend="unknown" rendition="#none">– è di sola posta</hi>
+               <note n="27" place="foot" type="editorial">
+Nota in calce della pagina, probabilmente di mano di Schuchardt: “die <hi rend="unknown" rendition="#none">toni</hi> werden anders verbunden als die <hi rend="unknown" rendition="#none">pezze</hi>? Mit den bremi?”.</note>
+            </p>
+            <pb facs="#IMG.25" n="25"/>
+            <closer>
+               <salute>Un saluto e mi creda</salute>
+               <lb/>
+               <salute>Dev.</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">P. Spadaro</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>PS Se potrà prestarmi i libri dei quali mi parla nell’ultima sua lettera le resterei obbligato ma più di ogni altro i lavori del Re di Portogallo o chi per esso</p>
+               <p>
+                  <persName ref="[authorityLink]">PS</persName>
+               </p>
+            </postscript>
+         </div>
+         <div corresp="#L.2916"
+              subtype="original"
+              type="letter"
+              xml:lang="it">
+            <dateline>23-V-01</dateline>
+            <opener>Egregio Professore</opener>
+            <p>Lei ha perfettamente ragione La prossima apertura del congresso non mi permette distrarmi dal lavoro che ancora non ho completato però potra essere sicuro sicurissimo che non lascio lavoro a metà –</p>
+            <p>Potendo, al più presto lo contenterò –</p>
+            <p>Le unisco campione maglia Alelungara<note n="28" place="foot" type="editorial">Cf. <ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63551">
+ÖMV/63.551</ref>.</note> croccu,<note n="29" place="foot" type="editorial">
+                  <ref target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63512">
+ÖMV/63.512</ref>.</note> crocchetto,<note n="30" place="foot" type="editorial">
+Cf. <ref target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63513">
+ÖMV/63.513</ref>.</note> besi<note n="31" place="foot" type="editorial">Cf. <ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63515">
+ÖMV/63.515</ref>.</note> e lama di crocco <note n="32" place="foot" type="editorial"> Cf. <ref target="http://www.volkskundemuseum.at/onlinesammlungen/oemv63516">
 ÖMV/63.516</ref>.</note> –</p>
-        <p>Oggi sono in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.172">
+            <p>Oggi sono in <placeName ref="[authorityLink]">
 Palermo</placeName> ma so dove potermisi trovare, essendo il tempo destinato alla […] differenti commissioni.</p>
-        <p>
-          <pb facs="#IMG.26" n="26"/> [24]</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Sinajula</hi>
-          <note n="33" place="foot"
-              type="editorial">Nota in testa alla pagina, probabilmente di mano di Schuchardt: “v. sopra”. Il rimando si riferisce probabilmente a pagina, s.v. <hi
-              rend="unknown" rendition="#none">tramaglio</hi>.</note> è una rete di filo di canapa la di cui maglia tra nodo e nodo misura Mill 35.</p>
-        <p>La lunghezza varia tra le CH 21 a 30 di armato è armato a <hi rend="unknown" rendition="#none">ponte</hi> cioè che in ogni lunghezza uguale a maglie 4 pari a Centimetri 14 corrispondono maglie 6, queste ultime si armano sul ponte cioè un filo che ai due estremi dei Cent 14 corrisponde con un arco che misura Cent 21. Esso è fatto di filo da 10 mentre la rezza corrisponde al filo di 16. [disegno]</p>
-        <p>Detta rete calasi allo <hi rend="unknown"
-            rendition="#none">sgraro</hi> cioè non perpendicolarmente alla linea di costruzione che dicesi alla <hi
-            rend="unknown"
-            rendition="#none">ingraru</hi> ma trasversalmente mentre al di fuori dell’una e l’altro lato di essa vi si calano la <hi
-            rend="unknown" rendition="#none">parete</hi> e <hi rend="unknown" rendition="#none">parita</hi>
-          <note n="34" place="foot" type="editorial">Inserito in margine <hi rend="unknown" rendition="#none">
+            <p>
+               <pb facs="#IMG.26" n="26"/> [24]</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Sinajula</hi>
+               <note n="33" place="foot" type="editorial">Nota in testa alla pagina, probabilmente di mano di Schuchardt: “v. sopra”. Il rimando si riferisce probabilmente a pagina, s.v. <hi rend="unknown" rendition="#none">tramaglio</hi>.</note> è una rete di filo di canapa la di cui maglia tra nodo e nodo misura Mill 35.</p>
+            <p>La lunghezza varia tra le CH 21 a 30 di armato è armato a <hi rend="unknown" rendition="#none">ponte</hi> cioè che in ogni lunghezza uguale a maglie 4 pari a Centimetri 14 corrispondono maglie 6, queste ultime si armano sul ponte cioè un filo che ai due estremi dei Cent 14 corrisponde con un arco che misura Cent 21. Esso è fatto di filo da 10 mentre la rezza corrisponde al filo di 16. [disegno]</p>
+            <p>Detta rete calasi allo <hi rend="unknown" rendition="#none">sgraro</hi> cioè non perpendicolarmente alla linea di costruzione che dicesi alla <hi rend="unknown" rendition="#none">ingraru</hi> ma trasversalmente mentre al di fuori dell’una e l’altro lato di essa vi si calano la <hi rend="unknown" rendition="#none">parete</hi> e <hi rend="unknown" rendition="#none">parita</hi>
+               <note n="34" place="foot" type="editorial">Inserito in margine <hi rend="unknown" rendition="#none">
 parita</hi>.</note> che son le reti che fanno il tramaglio,</p>
-        <p>Il tramaglio e rete di filo da 10 le cui maglie misurano Cent 30 e calasi all’ingraru</p>
-        <p>Nell’armato superiore si mettono dei <hi rend="unknown" rendition="#none">
+            <p>Il tramaglio e rete di filo da 10 le cui maglie misurano Cent 30 e calasi all’ingraru</p>
+            <p>Nell’armato superiore si mettono dei <hi rend="unknown" rendition="#none">
 suvareddi</hi> sugherini bucati esso e un capo del diametro di Mill 5.</p>
-        <p>Il piombo con pezzi di metallo omonimo formato a rettangoli di Cent 4 x3 che si gira e batte intorno al cavo di piombo il quale è della stessa misura di quello di sommo.</p>
-
-        <p>Alle due testate si unisce una fascia con maglie misuranti Cent 6 ½ fatte di filo da 12. Testata sopra la fascia a <hi
-            rend="unknown" rendition="#none">dubbolino</hi> o meglio a doppio filo in una maglia.</p>
-        <p>
-          <pb facs="#IMG.27" n="27"/> [25]</p>
-        <p>naturaleddi vi si uniscono non piu di tre </p>
-        <p>Altezza M 1.80</p>
-        <p>[…] “ 1 70</p>
-        <p>Pescansi <hi rend="unknown" rendition="#none">Triglie scrofani </hi>sparaggliuna – ciuciastri tordi lappane pettini sarghi orate ombrine </p>
-        <p>Trovo che già era stato in precedenza descritto ma poicchè ho tornato a scriverla la lascio in carta. </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Menaidozza</hi> e del genere dell’alacciara e formata da 20 pezze da CH 9 altezza CH 10 maglia 1 ½ si divide in tre toni, ha fasce sopra o sotto con filo da 30 e tutto il rimanente si arma come la tratta chiara</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tratta chiara.</hi>
-          <note n="35" place="foot"
-              type="editorial"> Werkmanuskripte 17.1.3.9, 37. Nella collezione di reti di Schuchardt sono presenti sia una tratta (<ref
-              target="http://volkskundemuseum.at/onlinesammlungen/oemv63556">
-ÖMV/63.556</ref>) sia il modello di una tratta (<ref
-              target="http://volkskundemuseum.at/onlinesammlungen/oemv63562">
-ÖMV/63.562</ref>). Quest’ultimo fu fatto da <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4375">Damiano Spadaro</persName> (cf. Werkmanuskripte 17.1.3.5, 41).</note> La tratta chiara è rete che va solamente alla deriva le cui maglie sono di Cent 3 ½ - si compone di 24 pezze da CH 9 per ciascuna e si divide in tre toni – L’altezza di ciascuna pezza è di CH 12 cade al grado</p>
-        <p>Si arma con fasce sopra e sotto ciascuna fascia e di Cent 20 di Maglie 5</p>
-        <p>Filo da 25 e per le fasce filo da 20</p>
-        <p>Testate con breme ordinario al quale si legano i <hi rend="unknown"
-            rendition="#none">
+            <p>Il piombo con pezzi di metallo omonimo formato a rettangoli di Cent 4 x3 che si gira e batte intorno al cavo di piombo il quale è della stessa misura di quello di sommo.</p>
+            <p>Alle due testate si unisce una fascia con maglie misuranti Cent 6 ½ fatte di filo da 12. Testata sopra la fascia a <hi rend="unknown" rendition="#none">dubbolino</hi> o meglio a doppio filo in una maglia.</p>
+            <p>
+               <pb facs="#IMG.27" n="27"/> [25]</p>
+            <p>naturaleddi vi si uniscono non piu di tre </p>
+            <p>Altezza M 1.80</p>
+            <p>[…] “ 1 70</p>
+            <p>Pescansi <hi rend="unknown" rendition="#none">Triglie scrofani </hi>sparaggliuna – ciuciastri tordi lappane pettini sarghi orate ombrine </p>
+            <p>Trovo che già era stato in precedenza descritto ma poicchè ho tornato a scriverla la lascio in carta. </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Menaidozza</hi> e del genere dell’alacciara e formata da 20 pezze da CH 9 altezza CH 10 maglia 1 ½ si divide in tre toni, ha fasce sopra o sotto con filo da 30 e tutto il rimanente si arma come la tratta chiara</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tratta chiara.</hi>
+               <note n="35" place="foot" type="editorial"> Werkmanuskripte 17.1.3.9, 37. Nella collezione di reti di Schuchardt sono presenti sia una tratta (<ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63556">
+ÖMV/63.556</ref>) sia il modello di una tratta (<ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63562">
+ÖMV/63.562</ref>). Quest’ultimo fu fatto da <persName ref="[authorityLink]">Damiano Spadaro</persName> (cf. Werkmanuskripte 17.1.3.5, 41).</note> La tratta chiara è rete che va solamente alla deriva le cui maglie sono di Cent 3 ½ - si compone di 24 pezze da CH 9 per ciascuna e si divide in tre toni – L’altezza di ciascuna pezza è di CH 12 cade al grado</p>
+            <p>Si arma con fasce sopra e sotto ciascuna fascia e di Cent 20 di Maglie 5</p>
+            <p>Filo da 25 e per le fasce filo da 20</p>
+            <p>Testate con breme ordinario al quale si legano i <hi rend="unknown" rendition="#none">
 naturali</hi> cioe capicelli più grossi dei <hi rend="unknown" rendition="#none">
 naturaleddi</hi>
-        </p>
-        <p>Pesca sarde grosse ed alacce –</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tratta spessa</hi> Maglie Cent 2 ½ si compone di 24 pezze da CH 9, altezza CH 10 si unisce in tre toni cade al grado</p>
-        <p>Si arma con fasce sopra e sotto come quello della tratta chiara, così parimente le </p>
-        <p>
-          <pb facs="#IMG.28" n="28"/> [26]</p>
-        <p>testate ed altro si armano come quelle della tratta chiara</p>
-        <p>Minaida e lo stesso di Tratta.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Bardesono</hi>
-          <note n="36" place="foot"
-              type="editorial">Cf. Werkmanuskripte 17.1.3.9, 6 dove Schuchardt scrive in riferimento al suo esemplare della rete (<ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63574">
+            </p>
+            <p>Pesca sarde grosse ed alacce –</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tratta spessa</hi> Maglie Cent 2 ½ si compone di 24 pezze da CH 9, altezza CH 10 si unisce in tre toni cade al grado</p>
+            <p>Si arma con fasce sopra e sotto come quello della tratta chiara, così parimente le </p>
+            <p>
+               <pb facs="#IMG.28" n="28"/> [26]</p>
+            <p>testate ed altro si armano come quelle della tratta chiara</p>
+            <p>Minaida e lo stesso di Tratta.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Bardesono</hi>
+               <note n="36" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 6 dove Schuchardt scrive in riferimento al suo esemplare della rete (<ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63574">
 ÖMV/63.574</ref>): “Maschenweite bei meinem Ex 15 MM. Die 6 Maschen stimmen nicht bei meinem Ex. Die […] Maschen sind an meinem Ex. Durch doppeltes Garn eingefasst“.</note> Rete a strascico non violento, e che corre alla deriva per forza di corrente</p>
-        <p>Lunghezza dell’apparato CH 140 in due toni</p>
-        <p>Altezza “ 12</p>
-        <p>Maglie da Cent. 3</p>
-        <p>Tramaglio “ 30 si avverta che dal pelo d’acqua a CH 10 resta senza tramaglio dalli CH 10 alle CH 12 si unisce il tramaglio [disegno] alle testate oltre i sugheri vanno i sami per tenerli</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Ravastina</hi>
-          <note n="37" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 13 (27).</note> Rete che corre alla deriva con naca in mezzo e due braccia, le maglie della naca sono di Cent 2 e la naca è lunga CH 9 alta CH 9 armato superiormente CH sotto CH 1 – Le maglie dei lati cominciano vicino alla naca da Cent 3 per finire a Cent 20 sono lunghe CH 100.</p>
-        <p>Fascioni solo nella parte inferiore di filo da 12 maglie da gruppi 9 palmo di Cent 25 ½</p>
-        <p>Sopra fascia della maglia di tratta<note n="38" place="foot" type="editorial">Nota in calce alla pagina, probabilmente di mano di Schuchardt: “Bleie unten?“.</note>
-        </p>
-        <p>
-          <pb facs="#IMG.29" n="29"/> [27]</p>
-        <p>testate ed altro si armano all’uso della tratta chiara</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Paranza</hi> Prende nome dall’unione di due barche che tirano ugualmente le sfarzine alle quali sono esse legate,</p>
-
-        <p>Le paranze sono a maglie ed armamento diverso, cioè con barche grandi e con coverta che mantengono reti e sacco poderosissimi, ve ne sono tirate con barche senza coverta, e queste ultime io descrivo essendo quelle che sono in uso nel compartimento marittimo di <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.172">
+            <p>Lunghezza dell’apparato CH 140 in due toni</p>
+            <p>Altezza “ 12</p>
+            <p>Maglie da Cent. 3</p>
+            <p>Tramaglio “ 30 si avverta che dal pelo d’acqua a CH 10 resta senza tramaglio dalli CH 10 alle CH 12 si unisce il tramaglio [disegno] alle testate oltre i sugheri vanno i sami per tenerli</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Ravastina</hi>
+               <note n="37" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 13 (27).</note> Rete che corre alla deriva con naca in mezzo e due braccia, le maglie della naca sono di Cent 2 e la naca è lunga CH 9 alta CH 9 armato superiormente CH sotto CH 1 – Le maglie dei lati cominciano vicino alla naca da Cent 3 per finire a Cent 20 sono lunghe CH 100.</p>
+            <p>Fascioni solo nella parte inferiore di filo da 12 maglie da gruppi 9 palmo di Cent 25 ½</p>
+            <p>Sopra fascia della maglia di tratta<note n="38" place="foot" type="editorial">Nota in calce alla pagina, probabilmente di mano di Schuchardt: “Bleie unten?“.</note>
+            </p>
+            <p>
+               <pb facs="#IMG.29" n="29"/> [27]</p>
+            <p>testate ed altro si armano all’uso della tratta chiara</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Paranza</hi> Prende nome dall’unione di due barche che tirano ugualmente le sfarzine alle quali sono esse legate,</p>
+            <p>Le paranze sono a maglie ed armamento diverso, cioè con barche grandi e con coverta che mantengono reti e sacco poderosissimi, ve ne sono tirate con barche senza coverta, e queste ultime io descrivo essendo quelle che sono in uso nel compartimento marittimo di <placeName ref="[authorityLink]">
 Palermo</placeName> (non descrivo i particolari delle grandi paranze essendo stati diggià raccolti dal professore)</p>
-        <p>Sacco lungo Metri 30 Maglie di C.<hi rendition="#sup">ri</hi> 3 a 6 </p>
-        <p>I lati sono formati a tocchi</p>
-        <p>1° tocco CH 15 circa cioè il sacco</p>
-        <p>2 “ “ 04 maglia di Cent 7 detto cazzarideddu</p>
-        <p>3 “ “ 04 detto nnappiteddo sfarzine CH 700 a 1000</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Paranzella </hi>armate come le paranze in minore dimensioni. Son delle reti a strascico violento</p>
-        <p>La […] o parte che rade il suolo e che per pescare le sogliole gli rombi ed altri pesci simili può caricarsi di enormi pesi che […]lgono tutto quanto incontrano e mettono nel sacco.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tartogna lunga </hi>Sacco e due tocchi di rezza formano la tartagna-lunga, il sacco è lungo Metri 6 che comincia con maglie di cent 3 ed il cul di sacco e spesso intero cioè di tessuto fitto da non lasciare occhio.</p>
-        <p>2° Tocco lung CH 2 3° CH 6’ 4° CH 10</p>
-        <p>
-          <pb facs="#IMG.30" n="30"/> [28]</p>
-        <p>Il secondo tocco e fatto con maglia di Cent 4 cazzariteddu</p>
-        <p>Il terzu “ 6 cazzorita</p>
-        <p>Il quartu “ 20 ‘nnappited</p>
-        <p>tirato in una barca pesca merluzzi seppie calamai neonata di pesci</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tartagna-corta</hi> Sacco lungo CH 4 Maglie da Cent 2 ½ e finisce con cent 4 ½ - Braccia tocchi 2 cioè cazzariteddi Maglie 2 ½ lungo CH 3 – nnappiteddu lungo CH 5 con maglie da Cent 9 -</p>
-        <p>Triglie, piccoli mastini, e quasi tutti i pesci […]</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Gangamo</hi>
-          <note n="39" place="foot"
-              type="editorial">Cf. Werkmanuskripte 17.1.3.9, 45. Schuchardt ricevé un modello del gangamo da <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4375">Damiano Spadaro</persName> (<ref
-            target="http://volkskundemuseum.at/onlinesammlungen/oemv63566">
-ÖMV/63.566</ref>).</note> Rete a strascico composta di un arco sce[…] di legno detto <hi
-            rend="unknown" rendition="#none">Falanga</hi> ed un cerchio di ferro detto cerchio o <hi rend="unknown"
-            rendition="#none">circu</hi> il peso della falanga e di circa […] 10 ed il legno è <hi rend="unknown" rendition="#none">silice</hi> i sacco lungo Metri 8 gira Metri 4 detto sacco a maglie descrescenti da Cent 3 a Cent 1 è tirato da capetti-lunghi dai 200 a 600 metri cioè zapetti da CH 15 uniti poi a secondo i fondi nei quali si pesca [disegno]</p>
-        <p>Minoli e pesci di suolo</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Gangamello</hi>
-          <note n="40" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 47.</note> Cerchi Tutto in ferro, a due archi congiunti ad angolo retto. Sacco con maglie da Cent 2 ad 1</p>
-        <p>Lunghezza del sacco CH 3</p>
-        <p>Diametro dei due cerchi M 1 ½ [disegno]<note n="41" place="foot" type="editorial">In calce alla pagina nota, probabilmente di Schuchardt: “ganganu nicht auch Name für die Eisen[…]?”.</note>
-        </p>
-        <p>
-          <pb facs="#IMG.31" n="31"/> [29]</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tartannone</hi>
-          <note n="42" place="foot"
-              type="editorial">Nella collezione di reti di Schuchardt è conservato il modello di un <hi rend="unknown"
-              rendition="#none">tartarone</hi> (<ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63568">
+            <p>Sacco lungo Metri 30 Maglie di C.<hi rendition="#sup">ri</hi> 3 a 6 </p>
+            <p>I lati sono formati a tocchi</p>
+            <p>1° tocco CH 15 circa cioè il sacco</p>
+            <p>2 “ “ 04 maglia di Cent 7 detto cazzarideddu</p>
+            <p>3 “ “ 04 detto nnappiteddo sfarzine CH 700 a 1000</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Paranzella </hi>armate come le paranze in minore dimensioni. Son delle reti a strascico violento</p>
+            <p>La […] o parte che rade il suolo e che per pescare le sogliole gli rombi ed altri pesci simili può caricarsi di enormi pesi che […]lgono tutto quanto incontrano e mettono nel sacco.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tartogna lunga </hi>Sacco e due tocchi di rezza formano la tartagna-lunga, il sacco è lungo Metri 6 che comincia con maglie di cent 3 ed il cul di sacco e spesso intero cioè di tessuto fitto da non lasciare occhio.</p>
+            <p>2° Tocco lung CH 2 3° CH 6’ 4° CH 10</p>
+            <p>
+               <pb facs="#IMG.30" n="30"/> [28]</p>
+            <p>Il secondo tocco e fatto con maglia di Cent 4 cazzariteddu</p>
+            <p>Il terzu “ 6 cazzorita</p>
+            <p>Il quartu “ 20 ‘nnappited</p>
+            <p>tirato in una barca pesca merluzzi seppie calamai neonata di pesci</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tartagna-corta</hi> Sacco lungo CH 4 Maglie da Cent 2 ½ e finisce con cent 4 ½ - Braccia tocchi 2 cioè cazzariteddi Maglie 2 ½ lungo CH 3 – nnappiteddu lungo CH 5 con maglie da Cent 9 -</p>
+            <p>Triglie, piccoli mastini, e quasi tutti i pesci […]</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Gangamo</hi>
+               <note n="39" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 45. Schuchardt ricevé un modello del gangamo da <persName ref="[authorityLink]">Damiano Spadaro</persName> (<ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63566">
+ÖMV/63.566</ref>).</note> Rete a strascico composta di un arco sce[…] di legno detto <hi rend="unknown" rendition="#none">Falanga</hi> ed un cerchio di ferro detto cerchio o <hi rend="unknown" rendition="#none">circu</hi> il peso della falanga e di circa […] 10 ed il legno è <hi rend="unknown" rendition="#none">silice</hi> i sacco lungo Metri 8 gira Metri 4 detto sacco a maglie descrescenti da Cent 3 a Cent 1 è tirato da capetti-lunghi dai 200 a 600 metri cioè zapetti da CH 15 uniti poi a secondo i fondi nei quali si pesca [disegno]</p>
+            <p>Minoli e pesci di suolo</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Gangamello</hi>
+               <note n="40" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 47.</note> Cerchi Tutto in ferro, a due archi congiunti ad angolo retto. Sacco con maglie da Cent 2 ad 1</p>
+            <p>Lunghezza del sacco CH 3</p>
+            <p>Diametro dei due cerchi M 1 ½ [disegno]<note n="41" place="foot" type="editorial">In calce alla pagina nota, probabilmente di Schuchardt: “ganganu nicht auch Name für die Eisen[…]?”.</note>
+            </p>
+            <p>
+               <pb facs="#IMG.31" n="31"/> [29]</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tartannone</hi>
+               <note n="42" place="foot" type="editorial">Nella collezione di reti di Schuchardt è conservato il modello di un <hi rend="unknown" rendition="#none">tartarone</hi> (<ref target="http://volkskundemuseum.at/onlinesammlungen/oemv63568">
 ÖMV/63.568</ref>).</note>
-        </p>
-        <p>Si tira tanto da terra che da mare formato da 4 tocchi compreso sacco</p>
-        <p>Sacco da CH 7 con maglie fittissime da Cent 3 a Cent 1</p>
-        <p>2° Tono da Cent 4 lungo CH 4</p>
-        <p>3° “ “ 10 “ 10</p>
-        <p>4° “ “ 20 “ 10</p>
-        <p>Pesca a qualunque pesce ed in ispecie ai neonati di essi</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Sciabicone</hi>
-          <note n="43" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 31.</note> o Sciabacuni si tira soltanto da terra ha 4 tocchi di rete a maglie descrescenti</p>
-        <p>Sacco M 20 comincia con maglia di Cent 5 ad un metro circa di distanza si arma con maglie di cent 4 e dopo altro metro di Cent 3 e quindi da cent 2</p>
-        <p>Le braccia che cominciano dal </p>
-        <p>2° tocco maglia cent 6 lungo CH 10</p>
-        <p>3° 8 20</p>
-        <p>4° 10 20</p>
-        <p>5° 20 30</p>
-        <p>Si riuniscono nella gassa e quindi si legano alle sfarzine o capetti</p>
-        <p>Si pescavano in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.172">
+            </p>
+            <p>Si tira tanto da terra che da mare formato da 4 tocchi compreso sacco</p>
+            <p>Sacco da CH 7 con maglie fittissime da Cent 3 a Cent 1</p>
+            <p>2° Tono da Cent 4 lungo CH 4</p>
+            <p>3° “ “ 10 “ 10</p>
+            <p>4° “ “ 20 “ 10</p>
+            <p>Pesca a qualunque pesce ed in ispecie ai neonati di essi</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Sciabicone</hi>
+               <note n="43" place="foot" type="editorial">Cf. Werkmanuskripte 17.1.3.9, 31.</note> o Sciabacuni si tira soltanto da terra ha 4 tocchi di rete a maglie descrescenti</p>
+            <p>Sacco M 20 comincia con maglia di Cent 5 ad un metro circa di distanza si arma con maglie di cent 4 e dopo altro metro di Cent 3 e quindi da cent 2</p>
+            <p>Le braccia che cominciano dal </p>
+            <p>2° tocco maglia cent 6 lungo CH 10</p>
+            <p>3° 8 20</p>
+            <p>4° 10 20</p>
+            <p>5° 20 30</p>
+            <p>Si riuniscono nella gassa e quindi si legano alle sfarzine o capetti</p>
+            <p>Si pescavano in <placeName ref="[authorityLink]">
 Palermo</placeName>
-        </p>
-        <p>Dentici</p>
-        <p>Aliccioli</p>
-        <p>Sarpe</p>
-        <p>Sarghi</p>
-        <p>Occhiati</p>
-        <p>
-          <pb facs="#IMG.32" n="32"/> [30]</p>
-        <p>Dissi si pescavano in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.172">
+            </p>
+            <p>Dentici</p>
+            <p>Aliccioli</p>
+            <p>Sarpe</p>
+            <p>Sarghi</p>
+            <p>Occhiati</p>
+            <p>
+               <pb facs="#IMG.32" n="32"/> [30]</p>
+            <p>Dissi si pescavano in <placeName ref="[authorityLink]">
 Palermo</placeName>, perché dal 1839 in qua non si è più calato</p>
-
-        <p>Detto ordegno è stato sempre proibito, però mio nonno, il Sig. Pietro Spadaro il quale rivestiva la carica di economo della pesca della Real Casa, ottenne da SM <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5664">Ferdinando IV di Borbone</persName> e poi <hi
-            rend="unknown"
-            rendition="#none">primo</hi> che potesse far fare due cale al giorno nel golfo di S. Erasmo a <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.172">Palermo</placeName>; dovendo però a tal pesca impiegare <hi
-            rend="unknown" rendition="#none">tutti i vecchi</hi>
-          <hi rend="unknown" rendition="#none">pescatori inabili a poter prendere il mare ed una buona parte</hi>del pescato andava a loro favore.</p>
-        <p>Così per moltissimi anni lo sciabacone si esercitava giornalmente (tempo permettendo) e circa 80 vecchi pescatori correvano a tirar da terra quella rete.</p>
-        <p>Dopo la morte di mio nonno, non avendo lasciato lo stesso altri figli che mio padre il quale era al comando di un veliero, a nessuno si volle dare la reggia concessione, che ostava con la legge proibitiva, e sin d’allora presso noi non si è più calato il detto ordegno</p>
-        <p>Ed ora egregio professore domando venia del modo come ho scritto la presente, dichiarandole che ove vorrà ch’io torni sull’argomento, lo farò con piacere, purché mi lasci qualche mese di tempo libero, ed in tal caso spero che Lei resterà contento, e del pari io stesso potendo se non altro leggere quanto getto sulla carta, cosa che non ho potuto fare per il passato, e Lei ne conose</p>
-        <pb facs="#IMG.33" n="33"/>
-        <p>le ragioni, aggiungo che per pochi giorni ancora ho un lavoro che mi occuperà molto tempo della giornata</p>
-        <p>Se trova dei pentimenti o dubbi sui miei scritti me ne scriva ed io cercherò di contentarlo per quanto è possibile</p>
-        <closer>
-          <salute>Accetti i m[…] più cordiali saluti</salute>
-          <lb/>
-          <salute>Devotis</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2759">PSpadaro</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Nb: nella partita Tonnara manca</p>
-          <p>
-            <hi rend="unknown" rendition="#none">Cabana</hi> La Cabana è una tenda fatta</p>
-          <p>in modo che un’arco ne tien sospesa la parte</p>
-          <p>superiore ed ai due lati scendono due liste</p>
-          <p>si mette tal tenda nelle barche di guardia</p>
-          <p>e forma quasi una capanna con la bocca</p>
-          <p>sopra un lato della barca</p>
-          <p>Far cabana significa fare guardia</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            <p>Detto ordegno è stato sempre proibito, però mio nonno, il Sig. Pietro Spadaro il quale rivestiva la carica di economo della pesca della Real Casa, ottenne da SM <persName ref="[authorityLink]">Ferdinando IV di Borbone</persName> e poi <hi rend="unknown" rendition="#none">primo</hi> che potesse far fare due cale al giorno nel golfo di S. Erasmo a <placeName ref="[authorityLink]">Palermo</placeName>; dovendo però a tal pesca impiegare <hi rend="unknown" rendition="#none">tutti i vecchi</hi>
+               <hi rend="unknown" rendition="#none">pescatori inabili a poter prendere il mare ed una buona parte</hi>del pescato andava a loro favore.</p>
+            <p>Così per moltissimi anni lo sciabacone si esercitava giornalmente (tempo permettendo) e circa 80 vecchi pescatori correvano a tirar da terra quella rete.</p>
+            <p>Dopo la morte di mio nonno, non avendo lasciato lo stesso altri figli che mio padre il quale era al comando di un veliero, a nessuno si volle dare la reggia concessione, che ostava con la legge proibitiva, e sin d’allora presso noi non si è più calato il detto ordegno</p>
+            <p>Ed ora egregio professore domando venia del modo come ho scritto la presente, dichiarandole che ove vorrà ch’io torni sull’argomento, lo farò con piacere, purché mi lasci qualche mese di tempo libero, ed in tal caso spero che Lei resterà contento, e del pari io stesso potendo se non altro leggere quanto getto sulla carta, cosa che non ho potuto fare per il passato, e Lei ne conose</p>
+            <pb facs="#IMG.33" n="33"/>
+            <p>le ragioni, aggiungo che per pochi giorni ancora ho un lavoro che mi occuperà molto tempo della giornata</p>
+            <p>Se trova dei pentimenti o dubbi sui miei scritti me ne scriva ed io cercherò di contentarlo per quanto è possibile</p>
+            <closer>
+               <salute>Accetti i m[…] più cordiali saluti</salute>
+               <lb/>
+               <salute>Devotis</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">PSpadaro</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Nb: nella partita Tonnara manca</p>
+               <p>
+                  <hi rend="unknown" rendition="#none">Cabana</hi> La Cabana è una tenda fatta</p>
+               <p>in modo che un’arco ne tien sospesa la parte</p>
+               <p>superiore ed ai due lati scendono due liste</p>
+               <p>si mette tal tenda nelle barche di guardia</p>
+               <p>e forma quasi una capanna con la bocca</p>
+               <p>sopra un lato della barca</p>
+               <p>Far cabana significa fare guardia</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

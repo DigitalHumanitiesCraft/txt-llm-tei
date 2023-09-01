@@ -1,299 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Georges Lacombe (179-108)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Katrin</forename>
-            <surname>Purgay</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5344" type="PID">o:hsa.letter.5344</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">179-108</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</repository>
-            <idno type="shelfmark">108</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1911-12-17">1911-12-17</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Katrin</forename>
-              <surname>Purgay</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Georges Lacombe</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1977"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5344">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1911-12-17">1911-12-17</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1977" ref="https://viaf.org/viaf/34446283">
-            <forename>Georges</forename>
-            <surname>Lacombe</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1977" type="context">
-                        Korrespondenz Hugo Schuchardt - Georges Lacombe
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5344" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5344" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5344" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5344" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5344" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 17.12.’11</dateline>
-        <opener>Sehr geehrter Herr und Freund</opener>
-        <p>Huná, eskaintzen drauzut neure „erraintzak“-ako gutuna. – Sie ist leider dreimal so lang geworden als sie mir vorschwebte. Es ist merkwürdig: wenn man auch den kleinsten Stein in den baskischen Teich wirft, er zieht weite Kreise.</p>
-
-        <p>Heute möchte ich Ihnen von einem Plan sprechen den ich schon seit langer Zeit hege, von dem Sie aber nicht glauben dürfen daß er nun sehr aktuell geworden sei. Ich möchte nur auf alle Fälle damit ins Reine kommen. Als Gegenstand für <hi
-            rend="unknown" rendition="#none">Bask. Stud. II </hi>hatte ich ausersehen einige Gespräche die <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1456">Augustin Etcheverry</persName> für mich niedergeschrieben hatte, genau nach der Aussprache von <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.1">Sare</placeName>, das eine mit Akzenten die ich, so wie <hi
-            rend="unknown"
-            rendition="#none">ich</hi> die Betonung hörte, hinzufügte. Große Einleitung, zahlreiche Anmerkungen. Es war diese Arbeit schon vor vielen Jahren fertig, wenigstens in allem Wesentlichen. Wenn ich sie aber <pb
-            facs="#IMG.2" n="2"/>
-          <hi rend="unknown" rendition="#none">jetzt</hi> in den Denkschriften der Wiener Akademie (wie <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.88">B. St. I</ref>
-
-          </bibl>) veröffentlichen wollte, so müßte ich eine starke Umarbeitung vornehmen, zu der ich nicht Lust noch Kraft habe. So erwäge ich denn die Möglichkeit, ob diese Gespräche mit dem Beiwerk <hi
-            rend="unknown"
-            rendition="#none">
-in größter Kürzung</hi> in die RB aufgenommen werden könnten. Damit Sie sich gelegentlich deshalb bei <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2906">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5344" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 17.12.’11</dateline>
+            <opener>Sehr geehrter Herr und Freund</opener>
+            <p>Huná, eskaintzen drauzut neure „erraintzak“-ako gutuna. – Sie ist leider dreimal so lang geworden als sie mir vorschwebte. Es ist merkwürdig: wenn man auch den kleinsten Stein in den baskischen Teich wirft, er zieht weite Kreise.</p>
+            <p>Heute möchte ich Ihnen von einem Plan sprechen den ich schon seit langer Zeit hege, von dem Sie aber nicht glauben dürfen daß er nun sehr aktuell geworden sei. Ich möchte nur auf alle Fälle damit ins Reine kommen. Als Gegenstand für <hi rend="unknown" rendition="#none">Bask. Stud. II </hi>hatte ich ausersehen einige Gespräche die <persName ref="[authorityLink]">Augustin Etcheverry</persName> für mich niedergeschrieben hatte, genau nach der Aussprache von <placeName ref="[authorityLink]">Sare</placeName>, das eine mit Akzenten die ich, so wie <hi rend="unknown" rendition="#none">ich</hi> die Betonung hörte, hinzufügte. Große Einleitung, zahlreiche Anmerkungen. Es war diese Arbeit schon vor vielen Jahren fertig, wenigstens in allem Wesentlichen. Wenn ich sie aber <pb facs="#IMG.2" n="2"/>
+               <hi rend="unknown" rendition="#none">jetzt</hi> in den Denkschriften der Wiener Akademie (wie <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.88">B. St. I</ref>
+               </bibl>) veröffentlichen wollte, so müßte ich eine starke Umarbeitung vornehmen, zu der ich nicht Lust noch Kraft habe. So erwäge ich denn die Möglichkeit, ob diese Gespräche mit dem Beiwerk <hi rend="unknown" rendition="#none">
+in größter Kürzung</hi> in die RB aufgenommen werden könnten. Damit Sie sich gelegentlich deshalb bei <persName ref="[authorityLink]">
 de Urquijo</persName> erkundigen können, gebe ich Ihnen hier eine Skizze des Ganzen.</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Einleitung</hi>: Persönliches und Sachliches. Kurzer, mehr andeutender Bericht über meinen Besuch im <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5906">Baskenland</placeName> 1887. Meine Beziehungen zu <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1456">A. Etcheverry</persName>. Meine Studien. Erwägung der dialektischen Klassifikation und Abgrenzung des Pr. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1171">
-Bonaparte</persName>. Purismus usw. usw. <hi
-            rend="unknown" rendition="#none">
+            <p>
+               <hi rend="unknown" rendition="#none">Einleitung</hi>: Persönliches und Sachliches. Kurzer, mehr andeutender Bericht über meinen Besuch im <placeName ref="[authorityLink]">Baskenland</placeName> 1887. Meine Beziehungen zu <persName ref="[authorityLink]">A. Etcheverry</persName>. Meine Studien. Erwägung der dialektischen Klassifikation und Abgrenzung des Pr. <persName ref="[authorityLink]">
+Bonaparte</persName>. Purismus usw. usw. <hi rend="unknown" rendition="#none">
 Betonung</hi>, d.h. meine Versuche sie festzustellen.</p>
-        <p>Alles das eigentlich nur als Erinnerungen.  </p>
-        <p>
-          <pb facs="#IMG.3" n="3"/> Was die <hi rend="unknown" rendition="#none">Gespräche</hi> selbst anlangt, so wäre Folgendes auszumachen:</p>
-        <p>Ich hatte eine <hi rend="unknown"
-            rendition="#none">deutsche</hi> Übersetzung ins Auge gefasst. Vielleicht ist davon ganz abzusehen (oder für <hi
-            rend="unknown" rendition="#none">ein</hi> Gespräch auszuführen?), soll dann der Text in <hi rend="unknown"
-            rendition="#none">litterarischem</hi> Baskisch wie ihn E. selbst niedergeschrieben hatte, zur Seite gesetzt werden?*<hi rendition="#sup">)</hi> Oder wäre so zu verfahren wie in dem „Leben der hundert Heiligen“, wo am Fuß der Seiten die mundartlich verschiedenen Wortformen verzeichnet sind?</p>
-        <p>In den <hi rend="unknown"
-            rendition="#none">Anmerkungen</hi> endlich sollen die sprachlich und sachlich bemerkenswerten Dinge erörtert werden. Da stellt sich nun die Schwierigkeit ein: an welche Art von Lesern soll ich denken, an baskische oder an deutsche? Der Sprache, in der ich schreibe, zufolge natürlich an deutsche; aber würde es sich nicht doch etwas <pb
-            facs="#IMG.4" n="4"/> komisch ausnehmen wenn ich gerade in der Revue Dinge erklärte die allen Basken geläufig wären, z.B. solche die sich aufs Ballspiel beziehen? Ja ich selbst liefe Gefahr durch nicht zutreffende Erklärungen mich lächerlich zu machen.</p>
-        <p>Also ich bitte um Urquijos und Ihre Gutmeinung im Allgemeinen (einer Ablehnung <hi rend="unknown"
-            rendition="#none">a limine</hi>, auch ohne Begründung, würde ich durchaus nicht übelnehmen) und Ihrer Beiden Rat im Besondern. – Aber, wie gesagt, bei mir ist <hi
-            rend="unknown" rendition="#none">entre coupe et lèvres</hi> ein unendlich größerer Abstand als bei allen andern Menschen.</p>
-        <p>Ich habe in diesen Tagen die Äußerungen von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2860">Llewelyn Thomas</persName> über meine <hi rend="unknown" rendition="#none">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.88">Bask. Stud.I</ref>
-            </bibl>
-
-          </hi> (Academy 1894, June 23) wieder gefunden, und sie haben mir eine lebhafte Genugtuung bereitet. U.A. sagt er: „Your reviewer… complained that the professor took too much knowledge for granted in his reader and that he <hi
-            rend="unknown" rendition="#none">did not explain</hi>. I have never seen a treatise on the Basque Verb in which more explanation is given…[“] Das ist der einzige Anspruch welchen ich für alle meine wissenschaftlichen Arbeiten erhebe; ich behaupte nichts ohne es gründlich geprüft zu haben. Ob ich Recht habe oder nicht, das ist eine andre Frage. Ich würde den Dogmatismus anderer nicht bekämpfen dürfen, wenn ich selbst in ihm befangen wäre.</p>
-        <closer>
-          <salute>Mit herzlichen Grüßen und Wünschen</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Sch.</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>*) ist auch <hi rend="unknown" rendition="#none">Raum</hi>frage.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            <p>Alles das eigentlich nur als Erinnerungen.  </p>
+            <p>
+               <pb facs="#IMG.3" n="3"/> Was die <hi rend="unknown" rendition="#none">Gespräche</hi> selbst anlangt, so wäre Folgendes auszumachen:</p>
+            <p>Ich hatte eine <hi rend="unknown" rendition="#none">deutsche</hi> Übersetzung ins Auge gefasst. Vielleicht ist davon ganz abzusehen (oder für <hi rend="unknown" rendition="#none">ein</hi> Gespräch auszuführen?), soll dann der Text in <hi rend="unknown" rendition="#none">litterarischem</hi> Baskisch wie ihn E. selbst niedergeschrieben hatte, zur Seite gesetzt werden?*<hi rendition="#sup">)</hi> Oder wäre so zu verfahren wie in dem „Leben der hundert Heiligen“, wo am Fuß der Seiten die mundartlich verschiedenen Wortformen verzeichnet sind?</p>
+            <p>In den <hi rend="unknown" rendition="#none">Anmerkungen</hi> endlich sollen die sprachlich und sachlich bemerkenswerten Dinge erörtert werden. Da stellt sich nun die Schwierigkeit ein: an welche Art von Lesern soll ich denken, an baskische oder an deutsche? Der Sprache, in der ich schreibe, zufolge natürlich an deutsche; aber würde es sich nicht doch etwas <pb facs="#IMG.4" n="4"/> komisch ausnehmen wenn ich gerade in der Revue Dinge erklärte die allen Basken geläufig wären, z.B. solche die sich aufs Ballspiel beziehen? Ja ich selbst liefe Gefahr durch nicht zutreffende Erklärungen mich lächerlich zu machen.</p>
+            <p>Also ich bitte um Urquijos und Ihre Gutmeinung im Allgemeinen (einer Ablehnung <hi rend="unknown" rendition="#none">a limine</hi>, auch ohne Begründung, würde ich durchaus nicht übelnehmen) und Ihrer Beiden Rat im Besondern. – Aber, wie gesagt, bei mir ist <hi rend="unknown" rendition="#none">entre coupe et lèvres</hi> ein unendlich größerer Abstand als bei allen andern Menschen.</p>
+            <p>Ich habe in diesen Tagen die Äußerungen von <persName ref="[authorityLink]">Llewelyn Thomas</persName> über meine <hi rend="unknown" rendition="#none">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.88">Bask. Stud.I</ref>
+                  </bibl>
+               </hi> (Academy 1894, June 23) wieder gefunden, und sie haben mir eine lebhafte Genugtuung bereitet. U.A. sagt er: „Your reviewer… complained that the professor took too much knowledge for granted in his reader and that he <hi rend="unknown" rendition="#none">did not explain</hi>. I have never seen a treatise on the Basque Verb in which more explanation is given…[“] Das ist der einzige Anspruch welchen ich für alle meine wissenschaftlichen Arbeiten erhebe; ich behaupte nichts ohne es gründlich geprüft zu haben. Ob ich Recht habe oder nicht, das ist eine andre Frage. Ich würde den Dogmatismus anderer nicht bekämpfen dürfen, wenn ich selbst in ihm befangen wäre.</p>
+            <closer>
+               <salute>Mit herzlichen Grüßen und Wünschen</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Sch.</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>*) ist auch <hi rend="unknown" rendition="#none">Raum</hi>frage.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

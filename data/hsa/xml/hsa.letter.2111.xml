@@ -1,343 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (280-11040)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2111" type="PID">o:hsa.letter.2111</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">280-11040</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11040</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" ref="http://sws.geonames.org/2946447">Bonn</origPlace>
-              <origDate ana="dcterms:created" when="1921-02-03">1921-02-03</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2111">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" key="#GID.1" ref="http://sws.geonames.org/2946447">Bonn</placeName>
-          <date when="1921-02-03">1921-02-03</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Bonn</settlement>
-                <name ref="http://geonames.org/2946447" type="fcode:PPLA3">Bonn</name>
-                <location>
-                  <geo>7.09549,50.73438</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.27" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französischsprachige Literatur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4179" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Göttingen</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.779" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.780" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanische Dialekte</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.65" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanische Dialekte (Asturien)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2111" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2111" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2111" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2111" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2111" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bonn, 3. 2. 1921</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-
-        <p>Lassen Sie mich Ihnen herzlich danken für den lieben Brief, den Sie geschrieben haben, und besonders für die Ansprache, die ein schönes Revanche-Geburtstagsgeschenk ist und die ich mir zu erwidern erlaube. Sie wollten diese Inkonsequenz "rechtfertigen" – nun, ich glaube, Sie wissen jetzt (und nicht etwa im Zusammenhang mit dem Brevier<note
-            n="1" place="foot" type="editorial"> Spitzer erwähnt hier zum ersten Mal das von ihm zu Schuchardts 80. Geburtstag herausgegebene <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1506">
-                <hi rend="unknown" rendition="#none">Schuchardt-Brevier. Ein Vademecum der allg. Sprachwissenschaft</hi>
-
-              </ref>. Halle: Niemeyer 1922</bibl>. Unter den "Schweizern" ist jene Gruppe von Schweizer Kollegen gemeint, die die Erstauflage des <hi
-              rend="unknown"
-            rendition="#none">Breviers</hi> finanziell ermöglicht haben; eine Liste findet sich in der ersten, dann aber nicht mehr in der zweiten Auflage.</note>), daß ich nicht nur "Schüler" anderer "Schule", sondern im Gegenteil Ihnen herzlich ergeben bin. Sie wissen wohl auch, daß ich mich immer mehr diametral zu <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2111" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bonn, 3. 2. 1921</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Lassen Sie mich Ihnen herzlich danken für den lieben Brief, den Sie geschrieben haben, und besonders für die Ansprache, die ein schönes Revanche-Geburtstagsgeschenk ist und die ich mir zu erwidern erlaube. Sie wollten diese Inkonsequenz "rechtfertigen" – nun, ich glaube, Sie wissen jetzt (und nicht etwa im Zusammenhang mit dem Brevier<note n="1" place="foot" type="editorial"> Spitzer erwähnt hier zum ersten Mal das von ihm zu Schuchardts 80. Geburtstag herausgegebene <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1506">
+                        <hi rend="unknown" rendition="#none">Schuchardt-Brevier. Ein Vademecum der allg. Sprachwissenschaft</hi>
+                     </ref>. Halle: Niemeyer 1922</bibl>. Unter den "Schweizern" ist jene Gruppe von Schweizer Kollegen gemeint, die die Erstauflage des <hi rend="unknown" rendition="#none">Breviers</hi> finanziell ermöglicht haben; eine Liste findet sich in der ersten, dann aber nicht mehr in der zweiten Auflage.</note>), daß ich nicht nur "Schüler" anderer "Schule", sondern im Gegenteil Ihnen herzlich ergeben bin. Sie wissen wohl auch, daß ich mich immer mehr diametral zu <persName ref="[authorityLink]">
 Meyer-Lübke</persName> entwickle, aber daß ich natürlich nie vergessen werde, was ich ihm verdanke. Mit ihm verbindet mich gewissermaßen Blutsverwandtschaft, mit Ihnen Wahlverwandtschaft. Es läßt sich da nicht streiten, was stärker sei – ist auch gleichgiltig. Daß solche Gegensätze und Wandlungen nicht ohne Härten und Kämpfe in mir abgehen, werden Sie sehr gut begreifen. Wir kämpfen ja alle den Kampf zwischen Individualität und Tradition aus.</p>
-        <p>Daß die Idee des Breviers Ihnen gefällt, freut mich von Herzen und ich habe es den Schweizern sofort <pb
-            facs="#IMG.2" n="2"/>mitgeteilt. Die Finanzierung ist absolut sicher, auch dank dem Entgegenkommen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2299">Niemeyers</persName>, des einzig großzügigen Verlegers, den ich kenne. Die Unterschrift löse ich einfach aus einem Ihrer Schreiben los und lasse sie faksimilieren – das wird Ihnen keine Scherereien mehr bereiten. Schwieriger ist die Abgrenzung des "Kriegerischen": eines meiner Kapitel muß sich zweifellos betiteln: "Sprache und Nationalität". Da müssen Aussprüche allgemeiner Art über dies Thema herein. Sind Sie dagegen? Wenn ich mir ein Urteil erlauben darf, so würde ich in die Bibliogr. alles aufnehmen, im Brevier dagegen nur Algebraisches, ohne Ansehung des Speziellen. Ihre Auffassung der Kriegsprobleme ist schließlich mit Ihrem ganzen Menschen verknüpft. Es wäre z.B. sonderbar, wenn ich im Brevier eine Druckschrift anführe, die in der Bibliogr. fehlt. Sehr dankbar wäre ich für baldige Übersendung Ihrer Zusätze (das Churwälsche<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.278">H.S., <hi rend="unknown" rendition="#none">Über einige Fälle bedingten Lautwandels im Churwälschen</hi>
-
-              </ref>. Gotha 1870.</bibl> Schuchardts Habilitationsschrift.</note> fehlt z.B.), ev. bin ich bereit, Ihre Aufschreibungen, falls solche existieren, durch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2763">meine Frau</persName> mit Maschinenschrift kopieren zu lassen. Für ev. Überlassung von Quellen herzlichen Dank: vorläufig arbeite ich die bei mir und in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> erhältlichen Schriften durch. Wie frisch und modern ist doch noch der prinzipielle Teil des Vok. d. Vlglat.!<note
-            n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.730">H.S., <hi rend="unknown" rendition="#none">Der Vokalismus des Vulgärlateins</hi>. I</ref>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.145">
+            <p>Daß die Idee des Breviers Ihnen gefällt, freut mich von Herzen und ich habe es den Schweizern sofort <pb facs="#IMG.2" n="2"/>mitgeteilt. Die Finanzierung ist absolut sicher, auch dank dem Entgegenkommen <persName ref="[authorityLink]">Niemeyers</persName>, des einzig großzügigen Verlegers, den ich kenne. Die Unterschrift löse ich einfach aus einem Ihrer Schreiben los und lasse sie faksimilieren – das wird Ihnen keine Scherereien mehr bereiten. Schwieriger ist die Abgrenzung des "Kriegerischen": eines meiner Kapitel muß sich zweifellos betiteln: "Sprache und Nationalität". Da müssen Aussprüche allgemeiner Art über dies Thema herein. Sind Sie dagegen? Wenn ich mir ein Urteil erlauben darf, so würde ich in die Bibliogr. alles aufnehmen, im Brevier dagegen nur Algebraisches, ohne Ansehung des Speziellen. Ihre Auffassung der Kriegsprobleme ist schließlich mit Ihrem ganzen Menschen verknüpft. Es wäre z.B. sonderbar, wenn ich im Brevier eine Druckschrift anführe, die in der Bibliogr. fehlt. Sehr dankbar wäre ich für baldige Übersendung Ihrer Zusätze (das Churwälsche<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.278">H.S., <hi rend="unknown" rendition="#none">Über einige Fälle bedingten Lautwandels im Churwälschen</hi>
+                     </ref>. Gotha 1870.</bibl> Schuchardts Habilitationsschrift.</note> fehlt z.B.), ev. bin ich bereit, Ihre Aufschreibungen, falls solche existieren, durch <persName ref="[authorityLink]">meine Frau</persName> mit Maschinenschrift kopieren zu lassen. Für ev. Überlassung von Quellen herzlichen Dank: vorläufig arbeite ich die bei mir und in <placeName ref="[authorityLink]">Bonn</placeName> erhältlichen Schriften durch. Wie frisch und modern ist doch noch der prinzipielle Teil des Vok. d. Vlglat.!<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.730">H.S., <hi rend="unknown" rendition="#none">Der Vokalismus des Vulgärlateins</hi>. I</ref>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.145">
 -</ref>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.362">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.362">
 III</ref>. Leipzig: Teubner 1866-1868</bibl>, seine Dissertation.</note>
-        </p>
-
-        <p>Ihr Erlebnis mit dem Platinring ist sehr traurig. Etwas Ähnliches erlebten wir auch vor kurzem: die herrlichen Goldgebisse <pb
-            facs="#IMG.3" n="3"/>meines verstorbenen Vaters wollten wir – die Not der Zeit macht pietätlos – verkaufen. Wir suchten sie, suchten sie – sie sind gestohlen, mitten aus der Wohnung heraus.</p>
-
-        <p>In diesen Tagen liest man mit Herzklopfen die Zeitung, die nichts bringt, was nicht unerfreulich, gemein und niederdrückend wäre. Armes deutsches Volk! Der Siegerübermut hat keine Grenzen. Und doch gibt es so aufrechte Männer wie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1189">Bovet</persName>, die das verteidigen können. Neulich schrieb mir Jeanroy einen Brief ungefähr des Tenors: wenn ich die alleinige Kriegsschuld Deutschlands anerkenne, können wir wieder gut Freund sein. Wie sollte ich diese Bedingung erfüllen, wo es meine Überzeugung, daß die Schuld bei allen liegt? Für Romanisten meines Alters ist die Aussicht, nie wieder mit Frankreich ins Gleiche zu kommen, ein schwerer Schlag – eben weil mein Denken so französisch ist. Neulich las ich einige Aphorismen Hofmillers über die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.27">frz. Literatur</ref> in den Südd. Monatsheften – alle seine Einwände treffen meine Art zu schreiben u. zu denken – also logischer Schluß: ich bin wie jene.</p>
-        <p>Darf ich fragen, welche Zeitschriften Sie gegenwärtig abonnieren, damit ich Ihnen die entsprechenden Separata sende?</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>Halten Sie noch die Etymologie <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">bask</ref>. <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">inkurrio</hi>
-          </foreign> 'Groll', <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">sp</ref>. <foreign xml:lang="es">
-            <hi rend="unknown" rendition="#none">engurria</hi>
-          </foreign> 'Traurigkeit' = <hi rend="unknown" rendition="#none">rancor</hi>, <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.780">asp</ref>. <foreign xml:lang="es">
-            <hi rend="unknown" rendition="#none">engurria</hi>
-          </foreign> 'Falte' = <hi rend="unknown"
-            rendition="#none">puga</hi> fest? Ich vermute nämlich, daß wir von <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.780">salam</ref>. <foreign xml:lang="es">
-            <hi rend="unknown" rendition="#none">engarillar</hi>
-          </foreign> 'entumirse', <ref target="https://gams.uni-graz.at/o:hsa.languages#L.65">astur</ref>. <foreign xml:lang="es">
-            <hi rend="unknown" rendition="#none">ergurriar</hi>, -<hi rend="unknown" rendition="#none">uiar</hi>
-          </foreign> (s. Rato) = carilinus für beide auszugehen haben: 'trocknen, faltig, rissig, alt werden, unwirsch sein' etc. Was sagen Sie dazu?</p>
-        <p>Haben Sie das Falterröllchen und die Flatterlerche erhalten? Auf Ihre Aufsätze freue ich mich.</p>
-        <p>Von der Besetzung des <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4179">
-Göttinger</ref> Lehrstuhls hört man nichts. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1767">Hilka</persName> scheint nicht in Betracht zu kommen, also sind meine Greifswalder Aussichten gering. Es ist halt ein Jammer.</p>
-        <p>Nach <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.5913">Österreich</placeName> kommen wir erst im August: die Reise dahin ist jetzt unerschwinglich für die Semesterferien, auch würden wir ohne Bedienung sein u. meine Frau müßte alles Häusliche allein besorgen. In uns ist etwas Unzufriedenes: ich hätte nie gedacht, daß der ausbleibende Kindersegen solche innere Umwälzungen zur Folge haben könnte: wir haben das Gefühl, ein böses neidisches Geschick verfolge uns. Überall in der Professorenwelt um uns kommen Kinder zur Welt – von den unweiblichsten Frauen geboren. Und meine, so weibliche, mußte solche Enttäuschungen erleben!</p>
-        <closer>
-          <salute>Seien Sie herzlichst und ergebenst begrüßt von Ihrem alten Freunde</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            </p>
+            <p>Ihr Erlebnis mit dem Platinring ist sehr traurig. Etwas Ähnliches erlebten wir auch vor kurzem: die herrlichen Goldgebisse <pb facs="#IMG.3" n="3"/>meines verstorbenen Vaters wollten wir – die Not der Zeit macht pietätlos – verkaufen. Wir suchten sie, suchten sie – sie sind gestohlen, mitten aus der Wohnung heraus.</p>
+            <p>In diesen Tagen liest man mit Herzklopfen die Zeitung, die nichts bringt, was nicht unerfreulich, gemein und niederdrückend wäre. Armes deutsches Volk! Der Siegerübermut hat keine Grenzen. Und doch gibt es so aufrechte Männer wie <persName ref="[authorityLink]">Bovet</persName>, die das verteidigen können. Neulich schrieb mir Jeanroy einen Brief ungefähr des Tenors: wenn ich die alleinige Kriegsschuld Deutschlands anerkenne, können wir wieder gut Freund sein. Wie sollte ich diese Bedingung erfüllen, wo es meine Überzeugung, daß die Schuld bei allen liegt? Für Romanisten meines Alters ist die Aussicht, nie wieder mit Frankreich ins Gleiche zu kommen, ein schwerer Schlag – eben weil mein Denken so französisch ist. Neulich las ich einige Aphorismen Hofmillers über die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.27">frz. Literatur</ref> in den Südd. Monatsheften – alle seine Einwände treffen meine Art zu schreiben u. zu denken – also logischer Schluß: ich bin wie jene.</p>
+            <p>Darf ich fragen, welche Zeitschriften Sie gegenwärtig abonnieren, damit ich Ihnen die entsprechenden Separata sende?</p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>Halten Sie noch die Etymologie <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">bask</ref>. <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">inkurrio</hi>
+               </foreign> 'Groll', <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">sp</ref>. <foreign xml:lang="es">
+                  <hi rend="unknown" rendition="#none">engurria</hi>
+               </foreign> 'Traurigkeit' = <hi rend="unknown" rendition="#none">rancor</hi>, <ref target="https://gams.uni-graz.at/o:hsa.languages#L.780">asp</ref>. <foreign xml:lang="es">
+                  <hi rend="unknown" rendition="#none">engurria</hi>
+               </foreign> 'Falte' = <hi rend="unknown" rendition="#none">puga</hi> fest? Ich vermute nämlich, daß wir von <ref target="https://gams.uni-graz.at/o:hsa.languages#L.780">salam</ref>. <foreign xml:lang="es">
+                  <hi rend="unknown" rendition="#none">engarillar</hi>
+               </foreign> 'entumirse', <ref target="https://gams.uni-graz.at/o:hsa.languages#L.65">astur</ref>. <foreign xml:lang="es">
+                  <hi rend="unknown" rendition="#none">ergurriar</hi>, -<hi rend="unknown" rendition="#none">uiar</hi>
+               </foreign> (s. Rato) = carilinus für beide auszugehen haben: 'trocknen, faltig, rissig, alt werden, unwirsch sein' etc. Was sagen Sie dazu?</p>
+            <p>Haben Sie das Falterröllchen und die Flatterlerche erhalten? Auf Ihre Aufsätze freue ich mich.</p>
+            <p>Von der Besetzung des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4179">
+Göttinger</ref> Lehrstuhls hört man nichts. <persName ref="[authorityLink]">Hilka</persName> scheint nicht in Betracht zu kommen, also sind meine Greifswalder Aussichten gering. Es ist halt ein Jammer.</p>
+            <p>Nach <placeName ref="[authorityLink]">Österreich</placeName> kommen wir erst im August: die Reise dahin ist jetzt unerschwinglich für die Semesterferien, auch würden wir ohne Bedienung sein u. meine Frau müßte alles Häusliche allein besorgen. In uns ist etwas Unzufriedenes: ich hätte nie gedacht, daß der ausbleibende Kindersegen solche innere Umwälzungen zur Folge haben könnte: wir haben das Gefühl, ein böses neidisches Geschick verfolge uns. Überall in der Professorenwelt um uns kommen Kinder zur Welt – von den unweiblichsten Frauen geboren. Und meine, so weibliche, mußte solche Enttäuschungen erleben!</p>
+            <closer>
+               <salute>Seien Sie herzlichst und ergebenst begrüßt von Ihrem alten Freunde</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

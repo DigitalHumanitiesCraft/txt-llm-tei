@@ -1,457 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Gustav Gröber an Hugo Schuchardt (045-04043)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1649">
-            <forename>Gustav</forename>
-            <surname>Gröber</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5886" type="PID">o:hsa.letter.5886</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">045-04043</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">04043</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1649">
-                <forename>Gustav</forename>
-                <surname>Gröber</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.778" ref="http://sws.geonames.org/2983344">Ruprechtsau</origPlace>
-              <origDate ana="dcterms:created" when="1884-01-19">1884-01-19</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Gustav Gröber und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1649"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5886">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1649" ref="https://viaf.org/viaf/107534006">
-            <forename>Gustav</forename>
-            <surname>Gröber</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.778" key="#GID.1" ref="http://sws.geonames.org/2983344">Ruprechtsau</placeName>
-          <date when="1884-01-19">1884-01-19</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>La Robertsau</settlement>
-                <name ref="http://geonames.org/2983344" type="fcode:PPLX">La Robertsau</name>
-                <location>
-                  <geo>7.78606,48.60663</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1649" type="context">
-                        Korrespondenz Gustav Gröber - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.328" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Lautwandel</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3800" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Lautsystem</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.840" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachkontakt (allgemein)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3287" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Materialsendung (Bücher)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5495" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Archiv für lateinische Lexikographie und Grammatik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.925" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dissimilation (Lautwandel)</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.866" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Vulgärlatein</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.886" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Latein</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.894" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Germanische Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.881" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Iberisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.126" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Arabisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.863" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Romanische Sprachen</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5886" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5886" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5886" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5886" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5886" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Ruprechtsau-Straßburg <hi rendition="#sup">i</hi>/E. 19.1.84.</dateline>
-        <opener>Lieber College.</opener>
-        <p>Ich habe bis jetzt unterlassen Ihnen für Ihr liebenswürdiges Eingehn auf meinen Aufsatz im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5495">Wölfflinschen Archiv</ref>
-          <note n="1" place="foot" type="editorial">Vgl. Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.5860">044-04042</ref>.</note> zu danken, – aus purem Zeitmangel, wenn der Familie gewidmete Weihnachtsferien, wo bei mir die Feder zu ruhen pflegt, als solcher und als eine Abhaltung von Pflichterfüllungen entschuldbaren Characters betrachtet werden dürfen.</p>
-        <p>Ich durfte jedoch ein paar Zeilen der Erwiderung auf Ihr Schreiben auch verschieben, weil ich Ihnen fast überall zuzustimmen habe, und die simple Bejahung Ihrer Bemerkungen Aussicht hatte, bei einem andern Anlasse ausgesprochen zu werden, der sich allerdings zufällig bis heute nicht dargeboten hat.</p>
-        <p>Der Aufsatz über Sprach- und Wortquellen,<note n="2" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5816">Gröber, „Sprachquellen und Wortquellen des lateinischen Wörterbuchs“, <hi
-                  rend="unknown" rendition="#none">Arch. f. lat. Lex.</hi> 1884, I, 35-67.</ref>
-            </bibl>
-
-          </note> war ein, in Kürze zu erledigender Auftrag. Daher fehlt ihm das, was Sie die Beleuchtung nennen. Er ist im Ganzen lichtlos, weil er das Bedürfniß die Frage zu beantworten viel zu wenig betont, nicht an einer bestimmten Stelle der Einsicht classischer Philologie entschieden einsetzt, nicht entschieden genug bestimmte Auffassungen zur Geltung bringt. So mag es bei der Betrachtung des <hi
-            rend="unknown"
-            rendition="#none">Schrift</hi>lateins speciell der Fall gewesen sein, das Sie noch mehr als ich, als Kunsterzeugniss fassen: von Ihrem Standpunkte würde, wie mir scheint, eine präcisere Antwort auf die Frage nach dem Aufhören des Schriftlateins sich haben geben lassen. Die Anordnung der Sprachen S. 42 (<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.894">germ.</ref>
-          <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.2022">kelt.</ref>
-          <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.881">iber.</ref>
-          <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.126">arab.</ref>) ist natürlich ein schlechter Parallelismus; ich beabsichtigte, wie Sie verlangen, die chronologische Aufführung: arabisch sollte vor germanisch stehn: die Verdrehung ist bei der Correctur erst herausgekommen. – Was den chronologischen Einfluss der Barbarensprachen auf <pb
-            facs="#IMG.2" n="2"/> das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.866">Vulgärlatein</ref> angeht, so denke ich mich darüber bei andrer Gelegenheit einmal zu äußern. Der Ausdruck Lautsubstitution will nur eine Andeutung sein, in welcher Richtung ein <hi
-            rend="unknown" rendition="#none">phonolog.</hi> Einfluß von Seiten der Barbarensprachen auf das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.886">
-Latein</ref> ausgeübt wurde, oder genauer, in welcher Richtung er <hi
-            rend="unknown"
-            rendition="#none">beweisbar</hi> erscheint. Ich scheide, wie ich glaube, strenger, als üblich ist, zwischen mechanischen Lautveränderungen, und nicht-mechanischen, d.h. nach meiner Auffassung, auf Laut<hi
-            rend="unknown"
-            rendition="#none">unterschiebung</hi> beruhendem Lautwechsel, der Laute an Stelle von Grundlauten setzt, zu denen von diesen aus keine Brücke führt, die nicht <hi
-            rend="unknown"
-            rendition="#none">wirkliche</hi> (dem Articulationsmechanismus nach) Lautverwandte des Grundlautes sind, die nicht auf dessen möglicher (lautmechanischer) Entwicklungsbahn liegen u.s.w. So scheint mir eine mechanische Entwicklung von n zu r unbeweisbar, obwohl angeblich nichts leichter ist, als die Vertauschung der Dauerlaute unter einander (z. B. <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">diac<hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5886" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Ruprechtsau-Straßburg <hi rendition="#sup">i</hi>/E. 19.1.84.</dateline>
+            <opener>Lieber College.</opener>
+            <p>Ich habe bis jetzt unterlassen Ihnen für Ihr liebenswürdiges Eingehn auf meinen Aufsatz im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5495">Wölfflinschen Archiv</ref>
+               <note n="1" place="foot" type="editorial">Vgl. Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.5860">044-04042</ref>.</note> zu danken, – aus purem Zeitmangel, wenn der Familie gewidmete Weihnachtsferien, wo bei mir die Feder zu ruhen pflegt, als solcher und als eine Abhaltung von Pflichterfüllungen entschuldbaren Characters betrachtet werden dürfen.</p>
+            <p>Ich durfte jedoch ein paar Zeilen der Erwiderung auf Ihr Schreiben auch verschieben, weil ich Ihnen fast überall zuzustimmen habe, und die simple Bejahung Ihrer Bemerkungen Aussicht hatte, bei einem andern Anlasse ausgesprochen zu werden, der sich allerdings zufällig bis heute nicht dargeboten hat.</p>
+            <p>Der Aufsatz über Sprach- und Wortquellen,<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5816">Gröber, „Sprachquellen und Wortquellen des lateinischen Wörterbuchs“, <hi rend="unknown" rendition="#none">Arch. f. lat. Lex.</hi> 1884, I, 35-67.</ref>
+                  </bibl>
+               </note> war ein, in Kürze zu erledigender Auftrag. Daher fehlt ihm das, was Sie die Beleuchtung nennen. Er ist im Ganzen lichtlos, weil er das Bedürfniß die Frage zu beantworten viel zu wenig betont, nicht an einer bestimmten Stelle der Einsicht classischer Philologie entschieden einsetzt, nicht entschieden genug bestimmte Auffassungen zur Geltung bringt. So mag es bei der Betrachtung des <hi rend="unknown" rendition="#none">Schrift</hi>lateins speciell der Fall gewesen sein, das Sie noch mehr als ich, als Kunsterzeugniss fassen: von Ihrem Standpunkte würde, wie mir scheint, eine präcisere Antwort auf die Frage nach dem Aufhören des Schriftlateins sich haben geben lassen. Die Anordnung der Sprachen S. 42 (<ref target="https://gams.uni-graz.at/o:hsa.subjects#S.894">germ.</ref>
+               <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.2022">kelt.</ref>
+               <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.881">iber.</ref>
+               <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.126">arab.</ref>) ist natürlich ein schlechter Parallelismus; ich beabsichtigte, wie Sie verlangen, die chronologische Aufführung: arabisch sollte vor germanisch stehn: die Verdrehung ist bei der Correctur erst herausgekommen. – Was den chronologischen Einfluss der Barbarensprachen auf <pb facs="#IMG.2" n="2"/> das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.866">Vulgärlatein</ref> angeht, so denke ich mich darüber bei andrer Gelegenheit einmal zu äußern. Der Ausdruck Lautsubstitution will nur eine Andeutung sein, in welcher Richtung ein <hi rend="unknown" rendition="#none">phonolog.</hi> Einfluß von Seiten der Barbarensprachen auf das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.886">
+Latein</ref> ausgeübt wurde, oder genauer, in welcher Richtung er <hi rend="unknown" rendition="#none">beweisbar</hi> erscheint. Ich scheide, wie ich glaube, strenger, als üblich ist, zwischen mechanischen Lautveränderungen, und nicht-mechanischen, d.h. nach meiner Auffassung, auf Laut<hi rend="unknown" rendition="#none">unterschiebung</hi> beruhendem Lautwechsel, der Laute an Stelle von Grundlauten setzt, zu denen von diesen aus keine Brücke führt, die nicht <hi rend="unknown" rendition="#none">wirkliche</hi> (dem Articulationsmechanismus nach) Lautverwandte des Grundlautes sind, die nicht auf dessen möglicher (lautmechanischer) Entwicklungsbahn liegen u.s.w. So scheint mir eine mechanische Entwicklung von n zu r unbeweisbar, obwohl angeblich nichts leichter ist, als die Vertauschung der Dauerlaute unter einander (z. B. <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">diac<hi rend="unknown" rendition="#none">
 r</hi>e</hi>
-          </foreign> – <foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">diaco<hi rend="unknown" rendition="#none">
+               </foreign> – <foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">diaco<hi rend="unknown" rendition="#none">
 n</hi>us</hi>
-          </foreign> u. dgl.); und in <hi rend="unknown"
-            rendition="#none">
-gewissen Sprachen</hi> ist selbst der Uebergang gleichartig articulirter Laute nicht einmal immer nothwendig ein mechanischer Vorgang (z. B. <hi
-            rend="unknown" rendition="#none">l</hi> zu <hi rend="unknown" rendition="#none">r</hi>: fz. <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">epistl</hi>e</foreign> zu <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">epît<hi rend="unknown" rendition="#none">r</hi>e</hi>
-
-          </foreign>). Mechanische Lautveränderung hat immer den Character der Allgemeinheit; – aber nicht alle durchgreifenden Lautänderungen sind <hi
-            rend="unknown"
-            rendition="#none">
-mechanisch</hi> erfolgt; nicht-mechanische (Lautsubstitution) tritt z. Th. sporadisch auf – z. Th. durchgreifend. In beiden Fällen steht (abgesehn von <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.925">Dissimilation</ref> u. dgl.) ein, den zu recipirenden fremden Wörtern, ungeübtes, in seinen Idiomatismus gebanntes Sprechorgan und Ohr gegenüber, das den fremden Lauten nur unvollkommen gerecht zu werden vermag und die <hi
-            rend="unknown"
-            rendition="#none">relativ</hi> ähnlichsten (in der gegebenen recipirenden Sprache) Laute den nachzubildenden Lauten unterschiebt; im erstern Falle handelt es sich gewöhnlich um Fremdwörter, im letztren um Lautdefekte einer, ein fremdes Idiom zu bewältigen suchenden Sprache. Diesen letztren Fall nenne ich <hi
-            rend="unknown"
-            rendition="#none">speciell</hi> „Lautsubstitution durch Idiomatismus“. Ein nahe liegendes Beispiel dafür ist die Unterschiebung des tön. <hi
-            rend="unknown" rendition="#none">s</hi> bei fzös. anl. <hi rend="unknown"
-            rendition="#none">s</hi>, wie man sie bei Norddeutschen wahrnimmt; ein andres, die Articulation der Media fremder Sprachen im Munde der Mitteldeutschen u.s.w. Der Lautwechsel in diesem Falle fußt auf einem Defekt des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3800">Lautsystems</ref> der recipirenden Sprache (die Sache ist Ihnen ja, nicht erst seit den <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.529">kreolischen Studien</ref>
-
-          </bibl> geläufig). – Solche Defekte des Lautsystems und dadurch bewirkte (allg.) idiomatische Lautsubstitution, glaube ich nun viel häufiger auf romanischem Sprachgebiet zu- <pb
-            facs="#IMG.3" n="3"/> erkennen, als Andere (Ascolis <hi rend="unknown"
-            rendition="#none">Lett. glott</hi>.<note n="3" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5847">„Lettere glottologiche di G. I. Ascoli. Prima lettera“, <hi
-                  rend="unknown" rendition="#none">Rivista di filologia e d'istruzione classica</hi> 10,1, Turin, 1882</ref>
-            </bibl> (<ref
-            target="https://archive.org/stream/rivistadifilolo04unkngoog#page/n15/mode/2up">
-https://archive.org/stream/rivistadifilolo04unkngoog#page/n15/mode/2up</ref>).</note> kenne ich übrigens bis jetzt erst aus Anzeigen); ja ich glaube sogar, daß sie aufs Innigste zusammenhängt mit der mundartlichen Spaltung auf rom. Gebiete, daß ein verhältnißmäßig gleichartiges (wesentlich nur <hi
-            rend="unknown" rendition="#none">
-chronologisch</hi> verschiedenes) Vulgärlatein <hi rend="unknown"
-            rendition="#none">durch den Idiomatismus</hi> der Veneter, Gallier Norditaliener, Ligurer etc. zur verschiedenartigen Entwicklung gebracht ist und so die venetische, galloital. Ligurische Mundart etc. zustande gekommen ist, die mehr oder weniger streng sich halten <hi
-            rend="unknown"
-            rendition="#none">innerhalb der Grenzen</hi>, die jene das Latein annehmenden fremden Völker einschlossen. (Ich möchte bez. dieses Punktes auf <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2304">
-Nissens</persName> Landeskunde Italiens<note n="4"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5848">
+               </foreign> u. dgl.); und in <hi rend="unknown" rendition="#none">
+gewissen Sprachen</hi> ist selbst der Uebergang gleichartig articulirter Laute nicht einmal immer nothwendig ein mechanischer Vorgang (z. B. <hi rend="unknown" rendition="#none">l</hi> zu <hi rend="unknown" rendition="#none">r</hi>: fz. <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">epistl</hi>e</foreign> zu <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">epît<hi rend="unknown" rendition="#none">r</hi>e</hi>
+               </foreign>). Mechanische Lautveränderung hat immer den Character der Allgemeinheit; – aber nicht alle durchgreifenden Lautänderungen sind <hi rend="unknown" rendition="#none">
+mechanisch</hi> erfolgt; nicht-mechanische (Lautsubstitution) tritt z. Th. sporadisch auf – z. Th. durchgreifend. In beiden Fällen steht (abgesehn von <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.925">Dissimilation</ref> u. dgl.) ein, den zu recipirenden fremden Wörtern, ungeübtes, in seinen Idiomatismus gebanntes Sprechorgan und Ohr gegenüber, das den fremden Lauten nur unvollkommen gerecht zu werden vermag und die <hi rend="unknown" rendition="#none">relativ</hi> ähnlichsten (in der gegebenen recipirenden Sprache) Laute den nachzubildenden Lauten unterschiebt; im erstern Falle handelt es sich gewöhnlich um Fremdwörter, im letztren um Lautdefekte einer, ein fremdes Idiom zu bewältigen suchenden Sprache. Diesen letztren Fall nenne ich <hi rend="unknown" rendition="#none">speciell</hi> „Lautsubstitution durch Idiomatismus“. Ein nahe liegendes Beispiel dafür ist die Unterschiebung des tön. <hi rend="unknown" rendition="#none">s</hi> bei fzös. anl. <hi rend="unknown" rendition="#none">s</hi>, wie man sie bei Norddeutschen wahrnimmt; ein andres, die Articulation der Media fremder Sprachen im Munde der Mitteldeutschen u.s.w. Der Lautwechsel in diesem Falle fußt auf einem Defekt des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3800">Lautsystems</ref> der recipirenden Sprache (die Sache ist Ihnen ja, nicht erst seit den <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.529">kreolischen Studien</ref>
+               </bibl> geläufig). – Solche Defekte des Lautsystems und dadurch bewirkte (allg.) idiomatische Lautsubstitution, glaube ich nun viel häufiger auf romanischem Sprachgebiet zu- <pb facs="#IMG.3" n="3"/> erkennen, als Andere (Ascolis <hi rend="unknown" rendition="#none">Lett. glott</hi>.<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5847">„Lettere glottologiche di G. I. Ascoli. Prima lettera“, <hi rend="unknown" rendition="#none">Rivista di filologia e d'istruzione classica</hi> 10,1, Turin, 1882</ref>
+                  </bibl> (<ref target="https://archive.org/stream/rivistadifilolo04unkngoog#page/n15/mode/2up">
+https://archive.org/stream/rivistadifilolo04unkngoog#page/n15/mode/2up</ref>).</note> kenne ich übrigens bis jetzt erst aus Anzeigen); ja ich glaube sogar, daß sie aufs Innigste zusammenhängt mit der mundartlichen Spaltung auf rom. Gebiete, daß ein verhältnißmäßig gleichartiges (wesentlich nur <hi rend="unknown" rendition="#none">
+chronologisch</hi> verschiedenes) Vulgärlatein <hi rend="unknown" rendition="#none">durch den Idiomatismus</hi> der Veneter, Gallier Norditaliener, Ligurer etc. zur verschiedenartigen Entwicklung gebracht ist und so die venetische, galloital. Ligurische Mundart etc. zustande gekommen ist, die mehr oder weniger streng sich halten <hi rend="unknown" rendition="#none">innerhalb der Grenzen</hi>, die jene das Latein annehmenden fremden Völker einschlossen. (Ich möchte bez. dieses Punktes auf <persName ref="[authorityLink]">
+Nissens</persName> Landeskunde Italiens<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5848">
 Heinrich Nissen, <hi rend="unknown" rendition="#none">Italische Landeskunde</hi>, Bd. 1: Land und Leute, Berlin 1883.</ref>
-            </bibl>
-
-          </note> hinweisen, die im letzten Abschnitt diesen Gegenstand berührt, und meinen privatim ihm gemachten Angaben hierüber von der histor. Seite aus Stützen zu gewinnen sucht.* [* am unteren Rand der Seite: Ich bemerke eben in Ihrem Briefe den Satz: „die starke Differenzierung des Lateins gerade in Italien selbst scheint mir mit der bunten ethnographischen dieses Landes in römischer Zeit zusammenzuhängen“. Also lautliche Differenzierung generell der lautlichen Verschiedenheit der Völker in Italien.] Aller Lautwechsel (durchgreifender Art) ist mir des Idiomatismus verdächtig, der sich nicht in eine mechanische Eintwicklungsreihe eintragen läßt, besonders dann, wenn er bestimmt localisirt ist [ist] in den <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.863">romanischen Sprachen</ref> öfters <hi rend="unknown" rendition="#none">mechanischer</hi>
-          <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.328">Lautwandel</ref>; aber natürlich <hi
-            rend="unknown"
-            rendition="#none">nur dann</hi>, wenn mir die recipirende Sprache und ihr Lautsystem bekannt ist und gleichartige Lautverhältnisse darin entgegen treten. Oder auch, wo die Lautlehre <hi
-            rend="unknown"
-            rendition="#none">Sprünge</hi> in der Lautentwicklung statuiren muß, fand idiomatische Einwirkung statt u.s.w. Einzelne Fälle, die mir gegenwärtig sind, hier vorführen und begründen, würde Ihnen Bekanntes sagen heißen; nur dies hier, zur Deutung des von mir gebrauchten Ausdruckes, zu sagen, wollte ich nicht unterlassen. – Den <hi
-            rend="unknown"
-            rendition="#none">idiomatischen</hi> Einfluß, den die Barbarensprachen auf die rom. Sprachen ausübten, halte ich nun nicht für ein Element, das die <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.863">rom. Sprachen</ref> als <hi rend="unknown"
-            rendition="#none">Misch</hi>sprachen aufzufassen gestattet; denn die lautliche Seite ist nur ein secundäres Moment in der Sprache, da der Laut auch in der Berührung mit fremden Idiomen <hi
-            rend="unknown" rendition="#none">
-nicht</hi> ausgesetzten Sprachen, <hi rend="unknown"
-            rendition="#none">kein Constantes</hi> ist. Constant geblieben aber sind in den <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.863">rom. Sprachen</ref> die Flexionsmittel, die Mittel der Wortbildung, der sprachliche Habitus. Daß analytische Casus- u. Passiv<hi
-            rend="unknown"
-            rendition="#none">bildung</hi> an Stelle der lat. flexivischen Decl. u. Passivformen im Rom. getreten ist, mag, wie Sie andeuten, <pb
-            facs="#IMG.4" n="4"/> mit der Vielheit der Idiome, die mit dem <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.886">Lat.</ref> in Berührung traten, zusammenhängen; diese Frage aber hat die <hi
-            rend="unknown" rendition="#none">
+                  </bibl>
+               </note> hinweisen, die im letzten Abschnitt diesen Gegenstand berührt, und meinen privatim ihm gemachten Angaben hierüber von der histor. Seite aus Stützen zu gewinnen sucht.* [* am unteren Rand der Seite: Ich bemerke eben in Ihrem Briefe den Satz: „die starke Differenzierung des Lateins gerade in Italien selbst scheint mir mit der bunten ethnographischen dieses Landes in römischer Zeit zusammenzuhängen“. Also lautliche Differenzierung generell der lautlichen Verschiedenheit der Völker in Italien.] Aller Lautwechsel (durchgreifender Art) ist mir des Idiomatismus verdächtig, der sich nicht in eine mechanische Eintwicklungsreihe eintragen läßt, besonders dann, wenn er bestimmt localisirt ist [ist] in den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.863">romanischen Sprachen</ref> öfters <hi rend="unknown" rendition="#none">mechanischer</hi>
+               <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.328">Lautwandel</ref>; aber natürlich <hi rend="unknown" rendition="#none">nur dann</hi>, wenn mir die recipirende Sprache und ihr Lautsystem bekannt ist und gleichartige Lautverhältnisse darin entgegen treten. Oder auch, wo die Lautlehre <hi rend="unknown" rendition="#none">Sprünge</hi> in der Lautentwicklung statuiren muß, fand idiomatische Einwirkung statt u.s.w. Einzelne Fälle, die mir gegenwärtig sind, hier vorführen und begründen, würde Ihnen Bekanntes sagen heißen; nur dies hier, zur Deutung des von mir gebrauchten Ausdruckes, zu sagen, wollte ich nicht unterlassen. – Den <hi rend="unknown" rendition="#none">idiomatischen</hi> Einfluß, den die Barbarensprachen auf die rom. Sprachen ausübten, halte ich nun nicht für ein Element, das die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.863">rom. Sprachen</ref> als <hi rend="unknown" rendition="#none">Misch</hi>sprachen aufzufassen gestattet; denn die lautliche Seite ist nur ein secundäres Moment in der Sprache, da der Laut auch in der Berührung mit fremden Idiomen <hi rend="unknown" rendition="#none">
+nicht</hi> ausgesetzten Sprachen, <hi rend="unknown" rendition="#none">kein Constantes</hi> ist. Constant geblieben aber sind in den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.863">rom. Sprachen</ref> die Flexionsmittel, die Mittel der Wortbildung, der sprachliche Habitus. Daß analytische Casus- u. Passiv<hi rend="unknown" rendition="#none">bildung</hi> an Stelle der lat. flexivischen Decl. u. Passivformen im Rom. getreten ist, mag, wie Sie andeuten, <pb facs="#IMG.4" n="4"/> mit der Vielheit der Idiome, die mit dem <ref target="https://gams.uni-graz.at/o:hsa.languages#L.886">Lat.</ref> in Berührung traten, zusammenhängen; diese Frage aber hat die <hi rend="unknown" rendition="#none">
 lat</hi>
-          <hi rend="unknown"
-            rendition="#none">. </hi>Grammatik zu entscheiden, denn die Analyse tritt uns nicht nur in der röm. Volkssprache, sondern auch im Schriftlatein entgegen; sie vollzog sich daher schon auf <hi
-            rend="unknown" rendition="#none">italischem</hi> Boden in <hi rend="unknown"
-            rendition="#none">
-römischer</hi> Zeit und kann nicht von den Barbarensprachen in den <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.863">rom. Sprachen</ref> nicht veranlaßt worden sein; ein <hi
-            rend="unknown"
-            rendition="#none">morphologischer</hi> Idiomatismus ist mir darum etwas zweifelhaft in den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.863">rom. Sprachen</ref>; jedenfalls scheint er mir weniger beweisbar, als der lautliche, und das lateinische selbst schon genügt die so auffaßbaren Erscheinungen der rom. Sprachen zu deuten. – Aber ich breche hier ab; das Dargelegte ist nicht vollständig, nicht zusammenhängend, nicht stringent und soll nur als eine gesprächsartige Mittheilung gelten.</p>
-        <p>Mit <foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">
+               <hi rend="unknown" rendition="#none">. </hi>Grammatik zu entscheiden, denn die Analyse tritt uns nicht nur in der röm. Volkssprache, sondern auch im Schriftlatein entgegen; sie vollzog sich daher schon auf <hi rend="unknown" rendition="#none">italischem</hi> Boden in <hi rend="unknown" rendition="#none">
+römischer</hi> Zeit und kann nicht von den Barbarensprachen in den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.863">rom. Sprachen</ref> nicht veranlaßt worden sein; ein <hi rend="unknown" rendition="#none">morphologischer</hi> Idiomatismus ist mir darum etwas zweifelhaft in den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.863">rom. Sprachen</ref>; jedenfalls scheint er mir weniger beweisbar, als der lautliche, und das lateinische selbst schon genügt die so auffaßbaren Erscheinungen der rom. Sprachen zu deuten. – Aber ich breche hier ab; das Dargelegte ist nicht vollständig, nicht zusammenhängend, nicht stringent und soll nur als eine gesprächsartige Mittheilung gelten.</p>
+            <p>Mit <foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">
 caricta</hi>
-
-          </foreign>, S. 60, wollte ich nur darauf hinweisen, daß Virgilius Kenntniß der volksmäßigen Aussprache des Wortes (<foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">car</hi>
-            <hi rend="unknown" rendition="#none">
+               </foreign>, S. 60, wollte ich nur darauf hinweisen, daß Virgilius Kenntniß der volksmäßigen Aussprache des Wortes (<foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">car</hi>
+                  <hi rend="unknown" rendition="#none">
 ęcta</hi>
-          </foreign>) verräth;<note n="5" place="foot" type="editorial">Vgl. <bibl>Gröber, „<ref
-            target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5816">
-Sprachquellen</ref>“, 60</bibl>: „die Anführung von circulus (it. circolo, frz. cercle etc.), das das alte circus verdrängt habe; oder die als jünger wie (Vergilisches) carecta bezeichnete Form caricta, deren Fortleben im Italien. carẹtta […] ihre Zugehörigkeit zur Volkssprache beweist“.</note> ich legte ihm die Auffassung unter, <hi
-            rend="unknown" rendition="#none">ca<hi rend="unknown"
-            rendition="#none">rec</hi>ta</hi> bei Virgil sei mit <hi rend="unknown"
-            rendition="#none">ẹ</hi> gesprochen worden. Das ist vielleicht auch richtig; denn ich kann mir nicht denken, daß <hi
-            rend="unknown" rendition="#none">i</hi> in <foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">caricta</hi>
-          </foreign> je <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">i</hi>
-          </hi> gesprochen worden sei und Virgilius einen andern Gegensatz als den zwischen <hi rend="unknown"
-            rendition="#none">ę</hi> und <hi rend="unknown"
-            rendition="#none">
+               </foreign>) verräth;<note n="5" place="foot" type="editorial">Vgl. <bibl>Gröber, „<ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5816">
+Sprachquellen</ref>“, 60</bibl>: „die Anführung von circulus (it. circolo, frz. cercle etc.), das das alte circus verdrängt habe; oder die als jünger wie (Vergilisches) carecta bezeichnete Form caricta, deren Fortleben im Italien. carẹtta […] ihre Zugehörigkeit zur Volkssprache beweist“.</note> ich legte ihm die Auffassung unter, <hi rend="unknown" rendition="#none">ca<hi rend="unknown" rendition="#none">rec</hi>ta</hi> bei Virgil sei mit <hi rend="unknown" rendition="#none">ẹ</hi> gesprochen worden. Das ist vielleicht auch richtig; denn ich kann mir nicht denken, daß <hi rend="unknown" rendition="#none">i</hi> in <foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">caricta</hi>
+               </foreign> je <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">i</hi>
+               </hi> gesprochen worden sei und Virgilius einen andern Gegensatz als den zwischen <hi rend="unknown" rendition="#none">ę</hi> und <hi rend="unknown" rendition="#none">
 ẹ</hi> hier habe andeuten wollen. Aber ich habe mich jedenfalls mißverständlich ausgedrückt und den Schein erweckt, als unterschiede ich nicht zwischen <foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">tẹ̄ctum</hi>
-          </foreign> und <foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">tẹ̄ctum</hi>
+               </foreign> und <foreign xml:lang="la">
+                  <hi rend="unknown" rendition="#none">
 lĕ̮ctum</hi>
-          </foreign>.</p>
-
-        <p>Nehmen Sie diese, in Eile und unter Unruhe in meinem Hause geschriebenen Zeilen als ein Zeichen meines Dankes für Ihr freundliches Eingehen auf meinen Aufsatz mit Nachsicht auf. Der Artikel über „Vulgärlat. Substrate aus rom. Wörtern“<note
-            n="6" place="foot" type="editorial">Gröber, <hi rend="unknown" rendition="#none">
+               </foreign>.</p>
+            <p>Nehmen Sie diese, in Eile und unter Unruhe in meinem Hause geschriebenen Zeilen als ein Zeichen meines Dankes für Ihr freundliches Eingehen auf meinen Aufsatz mit Nachsicht auf. Der Artikel über „Vulgärlat. Substrate aus rom. Wörtern“<note n="6" place="foot" type="editorial">Gröber, <hi rend="unknown" rendition="#none">
 Archiv für lateinische Lexikographie </hi>
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5849">2, 1885, 276-288</ref>
-            </bibl>, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5850">3, 1886, 188f., 264f., 507-531.</ref>
-            </bibl>
-          </note> wird im 2. Hefte des Archives erscheinen; möge er sich Ihrer Billigung ebenfalls zu erfreuen haben.</p>
-
-        <p>Ein Paket Dissertationen sandte ich Ihnen vor c. 14 Tagen; meist Bruchstücke von Dissertationen, die vollständig bei „KuK fzös. Studien“<note
-            n="7" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5181">Körting / Koschwitz (Hrsg.), <hi
-                  rend="unknown" rendition="#none">Französische Studien.</hi>
-              </ref>
-            </bibl>
-          </note> erschienen sind. In der Dissertation von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5771">Franz</persName>
-          <note n="8" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5840">Wilhelm Franz, <hi rend="unknown" rendition="#none">Die lateinisch-romanischen Elemente im Althochdeutschen</hi>, Strassburg 1874 (Phil. Diss.).</ref>
-            </bibl>
-          </note> hätte öfter auf den „Vokalismus des Vlglateins“<note n="9" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.730">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5849">2, 1885, 276-288</ref>
+                  </bibl>, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5850">3, 1886, 188f., 264f., 507-531.</ref>
+                  </bibl>
+               </note> wird im 2. Hefte des Archives erscheinen; möge er sich Ihrer Billigung ebenfalls zu erfreuen haben.</p>
+            <p>Ein Paket Dissertationen sandte ich Ihnen vor c. 14 Tagen; meist Bruchstücke von Dissertationen, die vollständig bei „KuK fzös. Studien“<note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5181">Körting / Koschwitz (Hrsg.), <hi rend="unknown" rendition="#none">Französische Studien.</hi>
+                     </ref>
+                  </bibl>
+               </note> erschienen sind. In der Dissertation von <persName ref="[authorityLink]">Franz</persName>
+               <note n="8" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5840">Wilhelm Franz, <hi rend="unknown" rendition="#none">Die lateinisch-romanischen Elemente im Althochdeutschen</hi>, Strassburg 1874 (Phil. Diss.).</ref>
+                  </bibl>
+               </note> hätte öfter auf den „Vokalismus des Vlglateins“<note n="9" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.730">
 Schuchardt, 3 Bde., Leipzig 1866-1868.</ref>
-            </bibl>
-          </note> verwiesen werden sollen; ich bin erst später, nach Prüfung der Arbeit, auf die betr. Stellen aufmerksam geworden.</p>
-        <closer>
-          <salute>Mit herzlichen Grüßen</salute>
-          <lb/>
-          <salute>Ihr ergebenster</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1649">
+                  </bibl>
+               </note> verwiesen werden sollen; ich bin erst später, nach Prüfung der Arbeit, auf die betr. Stellen aufmerksam geworden.</p>
+            <closer>
+               <salute>Mit herzlichen Grüßen</salute>
+               <lb/>
+               <salute>Ihr ergebenster</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">
 GGröber</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

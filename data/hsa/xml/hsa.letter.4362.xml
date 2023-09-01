@@ -1,345 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Richard Riegler an Hugo Schuchardt (27-09614)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">
-            <forename>Richard</forename>
-            <surname>Riegler</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4362" type="PID">o:hsa.letter.4362</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">27-09614</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">09614</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">
-                <forename>Richard</forename>
-                <surname>Riegler</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.447" ref="http://sws.geonames.org/2774326">Klagenfurt</origPlace>
-              <origDate ana="dcterms:created" when="1919-09-15">1919-09-15</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Richard Riegler und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2520"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4362">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2520" ref="https://viaf.org/viaf/6207147907512579210004">
-            <forename>Richard</forename>
-            <surname>Riegler</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.447" key="#GID.1" ref="http://sws.geonames.org/2774326">Klagenfurt</placeName>
-          <date when="1919-09-15">1919-09-15</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Klagenfurt</settlement>
-                <name ref="http://geonames.org/2774326" type="fcode:PPLA">Klagenfurt</name>
-                <location>
-                  <geo>14.30528,46.62472</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2520" type="context">
-                        Korrespondenz Richard Riegler - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3080" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dankschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5239" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Allgemeiner Deutscher Sprachverein</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.963" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Persönliche Treffen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3210" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Verleih von Publikationen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.762" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bittschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.692" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bibliotheken und Bibliothekswesen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.461" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Politik- und Zeitgeschichte</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.463" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Erster Weltkrieg</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4362" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4362" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4362" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4362" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4362" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Klagenfurt, 15.9.19.</dateline>
-        <opener>Hochgeehrter Herr Hofrat!</opener>
-        <p>Haben Sie Dank für die freundliche Sendung!<note n="1" place="foot" type="editorial">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4362" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Klagenfurt, 15.9.19.</dateline>
+            <opener>Hochgeehrter Herr Hofrat!</opener>
+            <p>Haben Sie Dank für die freundliche Sendung!<note n="1" place="foot" type="editorial">
 „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.343">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.343">
 Romano-baskisches ,Schaf‘, ,Lamm‘</ref>
-            </bibl>", <hi rend="unknown"
-            rendition="#none">ZrP </hi>40, 1919, 100-103.</note> Schon vor einer Woche hatte ich übrigens die letzte Seite Ihrer Studie zu Gesicht bekommen, da nämlich <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <hi rend="unknown" rendition="#none">D<hi rendition="#sup">r </hi>Spitzer</hi>
-          </persName> mir seine Abhandlung über „<hi rend="unknown" rendition="#none">marmouset, marmot</hi>“<note n="2"
-            place="foot" type="editorial">„<bibl>
+                  </bibl>", <hi rend="unknown" rendition="#none">ZrP </hi>40, 1919, 100-103.</note> Schon vor einer Woche hatte ich übrigens die letzte Seite Ihrer Studie zu Gesicht bekommen, da nämlich <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">D<hi rendition="#sup">r </hi>Spitzer</hi>
+               </persName> mir seine Abhandlung über „<hi rend="unknown" rendition="#none">marmouset, marmot</hi>“<note n="2" place="foot" type="editorial">„<bibl>
 
 
 Franz. <hi rend="unknown" rendition="#none">marmouset, marmot“</hi>
-            </bibl>, <hi rend="unknown"
-            rendition="#none">ZrP </hi>40, 1919, 103-107.</note> zugeschickt hat. Der Schluß seines Artikels und der Anfang des Ihrigen stehen auf derselben Seite. Mein Blick fiel auf Ihren Namen und so glaubte ich im ersten Augenblick, die Sendung <pb
-            facs="#IMG.2"
-            n="2"/> käme vom Herrn Hofrat und war offengestanden etwas enttäuscht, als ich sah, daß dies nicht der Fall sei, so sehr mich auch die Aufmerksamkeit D<hi
-            rend="unknown" rendition="#none">
-            <hi rendition="#sup">r</hi>
-          </hi> Spitzers freute. </p>
-        <p>Nun bin ich beruhigt, da ich sehe, daß mich Herr Hofrat doch nicht vergessen haben.</p>
-        <p>Die treffliche Prägung „Zooromanist<note n="3" place="foot"
-            type="editorial">
-Vermutlich hat Schuchardt im Begleitbrief zu seinem Sonderdruck Riegler scherzhaft einen „Zooromanisten“ genannt, weil er sich fast ausschließlich mit Tiernamen befasste, aber Riegler vermerkt durchaus die darin steckende Ironie. Nicht ganz klar ist, was er mit V----kerl meint: einen leichtsinnigen Menschen oder etwas Vulgäres?</note> – hoffentlich nicht nach Analogie wie V ---- kerl“ – wird gewiß das Entzücken des deutschen Sprachvereins hervorrufen. Das Wort ist wirklich zu schön für einen abgehausten Menageriebesitzer, dessen Tiere in den Kriegsjahren dem Hungertode nahe waren. Im <pb
-            facs="#IMG.3" n="3"/> Ernst gesprochen, ich fühle mich wirklich sehr rückständig und als ich <hi
-            rend="unknown" rendition="#none">D<hi
-            rendition="#sup">r</hi> Spitzer</hi> letzten Montag in seinem Zauberschloß am Wörthersee – von ihm bescheiden „Villa“ genannt – besuchte, hatte ich mehrmals Gelegenheit, mich meiner Zurückgebliebenheit in <hi
-            rend="unknown"
-            rendition="#none">rebus romanisticis</hi> zu schämen. Wieviel ist mir in dem weltverlorenen Klagenfurt – <hi
-            rend="unknown" rendition="#none">poblacho de mala muerte</hi> nennt es <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <hi rend="unknown" rendition="#none">Dr Spitzer</hi>
-          </persName> – während des Krieges nicht entgangen! Dieser <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <hi rend="unknown" rendition="#none">D<hi rendition="#sup">r</hi> Spitzer</hi>
-          </persName> ist übrigens ein reizender Mensch, von großer Liebenswürdigkeit. Es waren Stunden der Anregung <pb
-            facs="#IMG.4" n="4"/> und Ermunterung, für die ich ihm stets dankbar sein werde. – </p>
-        <p>Mit meinem Ansuchen um Versetzung nach <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> bin ich durchgefallen. Zu Allerheiligen hoffe ich Herrn Hofrat besuchen zu können. Zuletzt eine Bitte. Wären Herr Hofrat so gütig, mir die Schafstudie von <hi
-            rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Wartburg</hi>
-          </hi>
-          <note n="4" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2977">
+                  </bibl>, <hi rend="unknown" rendition="#none">ZrP </hi>40, 1919, 103-107.</note> zugeschickt hat. Der Schluß seines Artikels und der Anfang des Ihrigen stehen auf derselben Seite. Mein Blick fiel auf Ihren Namen und so glaubte ich im ersten Augenblick, die Sendung <pb facs="#IMG.2" n="2"/> käme vom Herrn Hofrat und war offengestanden etwas enttäuscht, als ich sah, daß dies nicht der Fall sei, so sehr mich auch die Aufmerksamkeit D<hi rend="unknown" rendition="#none">
+                  <hi rendition="#sup">r</hi>
+               </hi> Spitzers freute. </p>
+            <p>Nun bin ich beruhigt, da ich sehe, daß mich Herr Hofrat doch nicht vergessen haben.</p>
+            <p>Die treffliche Prägung „Zooromanist<note n="3" place="foot" type="editorial">
+Vermutlich hat Schuchardt im Begleitbrief zu seinem Sonderdruck Riegler scherzhaft einen „Zooromanisten“ genannt, weil er sich fast ausschließlich mit Tiernamen befasste, aber Riegler vermerkt durchaus die darin steckende Ironie. Nicht ganz klar ist, was er mit V----kerl meint: einen leichtsinnigen Menschen oder etwas Vulgäres?</note> – hoffentlich nicht nach Analogie wie V ---- kerl“ – wird gewiß das Entzücken des deutschen Sprachvereins hervorrufen. Das Wort ist wirklich zu schön für einen abgehausten Menageriebesitzer, dessen Tiere in den Kriegsjahren dem Hungertode nahe waren. Im <pb facs="#IMG.3" n="3"/> Ernst gesprochen, ich fühle mich wirklich sehr rückständig und als ich <hi rend="unknown" rendition="#none">D<hi rendition="#sup">r</hi> Spitzer</hi> letzten Montag in seinem Zauberschloß am Wörthersee – von ihm bescheiden „Villa“ genannt – besuchte, hatte ich mehrmals Gelegenheit, mich meiner Zurückgebliebenheit in <hi rend="unknown" rendition="#none">rebus romanisticis</hi> zu schämen. Wieviel ist mir in dem weltverlorenen Klagenfurt – <hi rend="unknown" rendition="#none">poblacho de mala muerte</hi> nennt es <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">Dr Spitzer</hi>
+               </persName> – während des Krieges nicht entgangen! Dieser <persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none">D<hi rendition="#sup">r</hi> Spitzer</hi>
+               </persName> ist übrigens ein reizender Mensch, von großer Liebenswürdigkeit. Es waren Stunden der Anregung <pb facs="#IMG.4" n="4"/> und Ermunterung, für die ich ihm stets dankbar sein werde. – </p>
+            <p>Mit meinem Ansuchen um Versetzung nach <placeName ref="[authorityLink]">Graz</placeName> bin ich durchgefallen. Zu Allerheiligen hoffe ich Herrn Hofrat besuchen zu können. Zuletzt eine Bitte. Wären Herr Hofrat so gütig, mir die Schafstudie von <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Wartburg</hi>
+               </hi>
+               <note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">
 Walther von Wartburg</persName>, <bibl>
-              <hi rend="unknown" rendition="#none">Zur Benennung des Schafes in den romanischen Sprachen: ein Beitrag zur Frage der provinziellen Differenzierung des spätern Lateins</hi>
-
-            </bibl>, Berlin 1918 (Abhandlungen der Königlich Preußischen Akademie der Wissenschaften, Philosophisch-Historische Klasse 1918,10).</note> für einige Zeit zu leihen und vielleicht außerdem noch das Buch von <hi
-            rend="unknown" rendition="#none">Ivan</hi>
-          <hi rend="unknown" rendition="#none">
-            <hi rend="unknown" rendition="#none">Pa</hi>
-            <hi rend="unknown" rendition="#none">uli</hi>
-          </hi>, „Enfant, etc.“ dans les langues romanes<note n="5" place="foot" type="editorial">Ivan Pauli, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3926">
-                <hi rend="unknown" rendition="#none">„Enfant", „Garçon", „Fille" dans les langues romanes: étudiés particulièrement dans les dialectes gallo-romans et italiens; essai de lexicologie comparée</hi>
-              </ref>
-            </bibl>, Diss. Lund 1919.</note>. Die Bibliotheken, die ja jetzt auch sehr rückständig sind, werden diese Bücher wohl noch nicht angeschafft haben.</p>
-        <closer>
-          <salute>Mit den besten Wünschen für Ihr Wohlergehen</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <lb/>
-          <salute>dankschuldiger</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">
-              <hi rend="unknown" rendition="#none">Riegler</hi>
-            </persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                     <hi rend="unknown" rendition="#none">Zur Benennung des Schafes in den romanischen Sprachen: ein Beitrag zur Frage der provinziellen Differenzierung des spätern Lateins</hi>
+                  </bibl>, Berlin 1918 (Abhandlungen der Königlich Preußischen Akademie der Wissenschaften, Philosophisch-Historische Klasse 1918,10).</note> für einige Zeit zu leihen und vielleicht außerdem noch das Buch von <hi rend="unknown" rendition="#none">Ivan</hi>
+               <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">Pa</hi>
+                  <hi rend="unknown" rendition="#none">uli</hi>
+               </hi>, „Enfant, etc.“ dans les langues romanes<note n="5" place="foot" type="editorial">Ivan Pauli, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3926">
+                        <hi rend="unknown" rendition="#none">„Enfant", „Garçon", „Fille" dans les langues romanes: étudiés particulièrement dans les dialectes gallo-romans et italiens; essai de lexicologie comparée</hi>
+                     </ref>
+                  </bibl>, Diss. Lund 1919.</note>. Die Bibliotheken, die ja jetzt auch sehr rückständig sind, werden diese Bücher wohl noch nicht angeschafft haben.</p>
+            <closer>
+               <salute>Mit den besten Wünschen für Ihr Wohlergehen</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <lb/>
+               <salute>dankschuldiger</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">
+                     <hi rend="unknown" rendition="#none">Riegler</hi>
+                  </persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

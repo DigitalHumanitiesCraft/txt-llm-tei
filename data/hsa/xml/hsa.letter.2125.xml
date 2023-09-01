@@ -1,344 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (294-11054)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2125" type="PID">o:hsa.letter.2125</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">294-11054</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11054</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="3" unit="pages">3 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" ref="http://sws.geonames.org/2946447">Bonn</origPlace>
-              <origDate ana="dcterms:created" when="1921-06-28">1921-06-28</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2125">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" key="#GID.1" ref="http://sws.geonames.org/2946447">Bonn</placeName>
-          <date when="1921-06-28">1921-06-28</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Bonn</settlement>
-                <name ref="http://geonames.org/2946447" type="fcode:PPLA3">Bonn</name>
-                <location>
-                  <geo>7.09549,50.73438</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.317" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Hugo-Schuchardt-Brevier</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3971" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Magyar Nyelvör</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.864" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Katalanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.779" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.860" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2125" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2125" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2125" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2125" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bonn, 28. VI. </dateline>
-        <opener>Lieber verehrter Freund,</opener>
-        <p>Dank für Ihren lieben Brief über die "akademischen Nöte". Ich hatte eigentlich Anderes erwartet unter diesem Titel, geistige Nöte der Kollegen, nicht psychophysis auf Ihrer Seite. Ich stimme Ihnen vollständig bei, daß der Umweg über den Lehrer zum Forscher, zu dem uns die Regierungen zwingen, ein falscher ist, wie ich in meinem Umsturz-Artikel in der Wage andeutete. Man baue die Akademien zu Forscherheimen aus und erspare den Gelehrten das Krähen vor Auditorien. Ich allerdings bin ein begeisterter Sprecher, spreche besser, je mehr Leute da sind und habe die Angstzustände im Anfang – ich war totenbleich vor der ersten Vorlesung vor den Hörern, nicht vor der Probevorlesung – schnell überwunden. Heute ist mir die Stundenglocke jedesmal eine lästige Störenfriedin. Ob auch den Hörern möcht ich allerdings bezweifeln.</p>
-        <p>Bei Ihrer Neurasthenie ist mir nur Ihre Akribie, die Sorgfalt Ihres Korrigierens, die Korrektheit Ihrer Zit. und Ihrer Formen unverständlich. Ich bin ja nun auch sehr nervös (vielleicht nicht neurasthenisch) und mein ganzes Wesen steht unter dem Zeichen der Hast. Daß Ihre Parerga ein Ergon (oeuvre) darstellen, ist mir gelegentlich des Breviers so recht klar geworden. Der innere Zusammenhang des Kleinsten mit allem Übrigen ist unleugbar. Aber die boshaften Nebenmenschen haben Ihnen das ebensowenig geglaubt wie – ich muß immer mich als kleinen Etalon zitieren – mir.</p>
-        <p>Devitalization – weil es ein englisches Zitat ist. Sie schreiben in der nächsten Zeile malheuren – warum nicht malörö?</p>
-        <p>Ich hörte s.z. daß Sie einen Antrag <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2087">Luicks</persName> betr. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1459">Ettmayer</persName>'s Kandidatur zur Akad. sich nicht zu eigen gemacht hätten – und finde das vollkommen in Ordnung. Wissenschaftlich hat <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1459">
-Ettm</persName>. nur Konfuses (außer den Anfangssachen) geschrieben, menschlich hat er sich gegen seinen Lehrer (= Sie) skandalös be-<pb
-            facs="#IMG.2" n="2"/>nommen, als Lehrer ist er langweilig und unvorbereitet. Also wozu Ehrungen?</p>
-        <p>Für mich ist – wie in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">
-Wien</placeName> für <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2516">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2125" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bonn, 28. VI. </dateline>
+            <opener>Lieber verehrter Freund,</opener>
+            <p>Dank für Ihren lieben Brief über die "akademischen Nöte". Ich hatte eigentlich Anderes erwartet unter diesem Titel, geistige Nöte der Kollegen, nicht psychophysis auf Ihrer Seite. Ich stimme Ihnen vollständig bei, daß der Umweg über den Lehrer zum Forscher, zu dem uns die Regierungen zwingen, ein falscher ist, wie ich in meinem Umsturz-Artikel in der Wage andeutete. Man baue die Akademien zu Forscherheimen aus und erspare den Gelehrten das Krähen vor Auditorien. Ich allerdings bin ein begeisterter Sprecher, spreche besser, je mehr Leute da sind und habe die Angstzustände im Anfang – ich war totenbleich vor der ersten Vorlesung vor den Hörern, nicht vor der Probevorlesung – schnell überwunden. Heute ist mir die Stundenglocke jedesmal eine lästige Störenfriedin. Ob auch den Hörern möcht ich allerdings bezweifeln.</p>
+            <p>Bei Ihrer Neurasthenie ist mir nur Ihre Akribie, die Sorgfalt Ihres Korrigierens, die Korrektheit Ihrer Zit. und Ihrer Formen unverständlich. Ich bin ja nun auch sehr nervös (vielleicht nicht neurasthenisch) und mein ganzes Wesen steht unter dem Zeichen der Hast. Daß Ihre Parerga ein Ergon (oeuvre) darstellen, ist mir gelegentlich des Breviers so recht klar geworden. Der innere Zusammenhang des Kleinsten mit allem Übrigen ist unleugbar. Aber die boshaften Nebenmenschen haben Ihnen das ebensowenig geglaubt wie – ich muß immer mich als kleinen Etalon zitieren – mir.</p>
+            <p>Devitalization – weil es ein englisches Zitat ist. Sie schreiben in der nächsten Zeile malheuren – warum nicht malörö?</p>
+            <p>Ich hörte s.z. daß Sie einen Antrag <persName ref="[authorityLink]">Luicks</persName> betr. <persName ref="[authorityLink]">Ettmayer</persName>'s Kandidatur zur Akad. sich nicht zu eigen gemacht hätten – und finde das vollkommen in Ordnung. Wissenschaftlich hat <persName ref="[authorityLink]">
+Ettm</persName>. nur Konfuses (außer den Anfangssachen) geschrieben, menschlich hat er sich gegen seinen Lehrer (= Sie) skandalös be-<pb facs="#IMG.2" n="2"/>nommen, als Lehrer ist er langweilig und unvorbereitet. Also wozu Ehrungen?</p>
+            <p>Für mich ist – wie in <placeName ref="[authorityLink]">
+Wien</placeName> für <persName ref="[authorityLink]">
 El. Richter</persName> – trotz Barbusse und Fremdwörtern der Titel des Extraordinarius von der Fakultät beantragt. Das ist nicht, was ich anstrebe. Funktion, nicht Ehrung! Wirkungsmöglichkeit, nicht Mumifizierung durch Titel. </p>
-        <p>Also Thema <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1767">
-Hilka</persName> (ich bin stets gegen Sie wie gegen andere aufrichtig): Hilka hat mir 3mal geschrieben, ich würde sein Nachfolger, ich solle <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName> mobilisieren, da auch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1565">Gelzer</persName> und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5388">Jordan</persName> Anstrengungen machen würden (von Lommatzsch und Wagner war keine Rede, bei letzterem gewiß mit Unrecht). Der Greifswalder Germanist hat aber an den hiesigen berichtet, daß Hilkas Votum "für die Liste entscheidend war". Gleichzeitig schrieb Hilka an M-L und mich, in der Fakultät hätten sich Widerstände erhoben, aber M-L möge ans Ministerium schreiben, sodaß wir annehmen mußten, ich stünde doch auf der Liste. In Wirklichkeit soll die Berufungsliste in Gr. eine "Farce" gewesen sein, wie ich von anderer Seite weiß, da Lommatzsch von vornherein ausersehen war. Wozu also in mir Hoffnungen erwecken von denen er wissen mußte, daß sie auf mich als Enttäuschten eine zernichtende Wirkung üben mußten? Offenbar weil damals seine eigene Sache mit <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.20">Göttingen</placeName> schwebte, in der M-L sehr zu seinen Gunsten eingegriffen hat.</p>
-        <p>Gewiß, ich habe die M-L-Festschrift mit ihm zusammen gemacht – gern hätte ich auch eine Schuchardt-Festschrift inszeniert, wenn nicht Ihr Veto in den entscheidenden Tagen eingetroffen wäre. Auch eine Ihnen genehmere Form wird nun nicht zustande kommen, nachdem das Zusammenarbeiten Hilka–Spitzer so unsanft gestört wurde.</p>
-        <p>Ich habe H. wohlgemerkt nichts geschrieben als einzig meine sämtlichen Aufsätze (außer den laufenden) zurückgezogen.</p>
-        <p>Merkwürdig: dieselbe Rhythmusbeobachtung wie Sie haben auch wir in einem nachbarlichen Hahnenhof gemacht, wir haben aber nicht weitergeforscht.</p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>Dank für die etym. Miszellen.<note n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.940">H.S., "Röm. <hi rend="unknown"
-                  rendition="#none">bafa</hi> = ital. <hi rend="unknown"
-                  rendition="#none">afa</hi> 'Schwüle' [etc.]", in: <hi rend="unknown" rendition="#none">Zeitschrift für romanische Philologie</hi> 41(1921)</ref>: 347-351.</bibl>
-          </note> Zu <hi rend="unknown" rendition="#none">bafa</hi> vgl. <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.864">Kat</ref>. <foreign xml:lang="ca">
-            <hi rend="unknown" rendition="#none">bavor</hi>
-          </foreign>, <hi rend="unknown" rendition="#none">babor,</hi>
-          <hi rend="unknown" rendition="#none">
-vaho</hi> Diccionari Aquiló (= <hi rend="unknown"
-            rendition="#none">baf-</hi> + <hi rend="unknown" rendition="#none">vapor</hi>) und sp. <hi rend="unknown" rendition="#none">vaho</hi>.</p>
-        <p>Zu den Schorf-Wörtern vgl. noch <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.779">sp</ref>. <foreign xml:lang="es">
-            <hi rend="unknown" rendition="#none">zurapa</hi>
-          </foreign>, über das Sie, ich glaube, im <hi rend="unknown"
-            rendition="#none">Museum</hi> gehandelt haben.<note n="2" place="foot"
-              type="editorial"> In der Zeitschrift 
+            <p>Also Thema <persName ref="[authorityLink]">
+Hilka</persName> (ich bin stets gegen Sie wie gegen andere aufrichtig): Hilka hat mir 3mal geschrieben, ich würde sein Nachfolger, ich solle <persName ref="[authorityLink]">M-L</persName> mobilisieren, da auch <persName ref="[authorityLink]">Gelzer</persName> und <persName ref="[authorityLink]">Jordan</persName> Anstrengungen machen würden (von Lommatzsch und Wagner war keine Rede, bei letzterem gewiß mit Unrecht). Der Greifswalder Germanist hat aber an den hiesigen berichtet, daß Hilkas Votum "für die Liste entscheidend war". Gleichzeitig schrieb Hilka an M-L und mich, in der Fakultät hätten sich Widerstände erhoben, aber M-L möge ans Ministerium schreiben, sodaß wir annehmen mußten, ich stünde doch auf der Liste. In Wirklichkeit soll die Berufungsliste in Gr. eine "Farce" gewesen sein, wie ich von anderer Seite weiß, da Lommatzsch von vornherein ausersehen war. Wozu also in mir Hoffnungen erwecken von denen er wissen mußte, daß sie auf mich als Enttäuschten eine zernichtende Wirkung üben mußten? Offenbar weil damals seine eigene Sache mit <placeName ref="[authorityLink]">Göttingen</placeName> schwebte, in der M-L sehr zu seinen Gunsten eingegriffen hat.</p>
+            <p>Gewiß, ich habe die M-L-Festschrift mit ihm zusammen gemacht – gern hätte ich auch eine Schuchardt-Festschrift inszeniert, wenn nicht Ihr Veto in den entscheidenden Tagen eingetroffen wäre. Auch eine Ihnen genehmere Form wird nun nicht zustande kommen, nachdem das Zusammenarbeiten Hilka–Spitzer so unsanft gestört wurde.</p>
+            <p>Ich habe H. wohlgemerkt nichts geschrieben als einzig meine sämtlichen Aufsätze (außer den laufenden) zurückgezogen.</p>
+            <p>Merkwürdig: dieselbe Rhythmusbeobachtung wie Sie haben auch wir in einem nachbarlichen Hahnenhof gemacht, wir haben aber nicht weitergeforscht.</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>Dank für die etym. Miszellen.<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.940">H.S., "Röm. <hi rend="unknown" rendition="#none">bafa</hi> = ital. <hi rend="unknown" rendition="#none">afa</hi> 'Schwüle' [etc.]", in: <hi rend="unknown" rendition="#none">Zeitschrift für romanische Philologie</hi> 41(1921)</ref>: 347-351.</bibl>
+               </note> Zu <hi rend="unknown" rendition="#none">bafa</hi> vgl. <ref target="https://gams.uni-graz.at/o:hsa.languages#L.864">Kat</ref>. <foreign xml:lang="ca">
+                  <hi rend="unknown" rendition="#none">bavor</hi>
+               </foreign>, <hi rend="unknown" rendition="#none">babor,</hi>
+               <hi rend="unknown" rendition="#none">
+vaho</hi> Diccionari Aquiló (= <hi rend="unknown" rendition="#none">baf-</hi> + <hi rend="unknown" rendition="#none">vapor</hi>) und sp. <hi rend="unknown" rendition="#none">vaho</hi>.</p>
+            <p>Zu den Schorf-Wörtern vgl. noch <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">sp</ref>. <foreign xml:lang="es">
+                  <hi rend="unknown" rendition="#none">zurapa</hi>
+               </foreign>, über das Sie, ich glaube, im <hi rend="unknown" rendition="#none">Museum</hi> gehandelt haben.<note n="2" place="foot" type="editorial"> In der Zeitschrift 
 
 <hi rend="unknown" rendition="#none">
 Museum</hi>
  veröffentlich Schuchardt keinen entsprechungen Artikel.</note>
-        </p>
-        <p>Zu <hi rend="unknown" rendition="#none">polaina</hi>:<note n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.905">Span. ¡polaina!</ref>
-            </bibl> ist Teil der og. Miszellen.</note> vgl. zur Endung <hi rend="unknown"
-            rendition="#none">san simplayna</hi> in meiner "Wortbildungslehre"<note n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4018">L.S., <hi rend="unknown"
-                  rendition="#none">Die Wortbildung als stilistisches Mittel, exemplifiziert an Rabelais</hi>. (29. Beiheft der <hi
-                  rend="unknown" rendition="#none">Zeitschrift für romanische Philologie.</hi>)</ref> Halle a.S.: Niemeyer 1910. </bibl>
-          </note>: <hi rend="unknown" rendition="#none">po-la</hi>.... (ohne Aussprechen des Fluchs) wie <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.864">kat</ref>. <foreign xml:lang="ca">
-            <hi rend="unknown" rendition="#none">patern</hi>
-          </foreign> [oster], <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">it</ref>. <foreign xml:lang="it">
-            <hi rend="unknown" rendition="#none">coevia</hi>
-          </foreign> = 'co|glione etc.'</p>
-        <p>Zu <hi rend="unknown" rendition="#none">farfar</hi> vgl. Spitzer Archiv über <hi rend="unknown" rendition="#none">papilio</hi>, dem die Stelle im Berber. offenbar nicht mehr bewußt war.</p>
-        <p>Nach <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> kommen, Sie zu besuchen, möchte ich schon gern. Aber man spricht in solchen flüchtigen Stunden so Zufälliges, während man schriftlich sich eigentlich besser ausspricht. Vor allem möchte ich allerdings, daß Sie <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2763">meine Frau</persName> kennen lernen. Nun möchte ich sehr gern im August oder Sept. meine Frau nach Gr. fahren lassen, um einen guten Frauenarzt zu besuchen – die hiesigen haben wir abgeklappert – gibt es einen solchen und könnten Sie einen in Kollegen­kreisen bekannten auch-Menschen mir empfehlen? Dann würde ich meine Frau Ihnen auf ein Viertelstündchen schicken.</p>
-        <p>Das <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.317">Brevier</ref> ist 26 Bogen stark, nur 18 dürfen es sein. So muß ich denn zu meinem Leidwesen Schuchardts Lebensbildnis beschneiden – ein scheußlicher Beruf!</p>
-
-        <p>Zur Entschädigung für die Bestrafung Ihrer philosemitischen Neigungen sende ich Ihnen die Januarnummer von <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">Magyar Nyelv</ref>, die ich doppelt habe. Ich verfolge nämlich auch die christliche Magyarologie, die im Blick für das Systematische der jüdischen gelegentlich über ist. Hier in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> wird ein Witzwort zitiert, das ein alter Physiker beim Antrittsbesuch der katholischen Philosophie geprägt haben soll: "Ich muß immer lachen, wenn ich einen Philosophen sehe, aber erst recht, wenn einen katholischen Philosophen". Das ists – die Menschen zerstücken das naturhaft Verbundene: Deutschland, die Wissenschaft, den Menschen...</p>
-        <closer>
-          <salute>Ergebenste und beste Grüße von Ihrem getreuen</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            </p>
+            <p>Zu <hi rend="unknown" rendition="#none">polaina</hi>:<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.905">Span. ¡polaina!</ref>
+                  </bibl> ist Teil der og. Miszellen.</note> vgl. zur Endung <hi rend="unknown" rendition="#none">san simplayna</hi> in meiner "Wortbildungslehre"<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4018">L.S., <hi rend="unknown" rendition="#none">Die Wortbildung als stilistisches Mittel, exemplifiziert an Rabelais</hi>. (29. Beiheft der <hi rend="unknown" rendition="#none">Zeitschrift für romanische Philologie.</hi>)</ref> Halle a.S.: Niemeyer 1910. </bibl>
+               </note>: <hi rend="unknown" rendition="#none">po-la</hi>.... (ohne Aussprechen des Fluchs) wie <ref target="https://gams.uni-graz.at/o:hsa.languages#L.864">kat</ref>. <foreign xml:lang="ca">
+                  <hi rend="unknown" rendition="#none">patern</hi>
+               </foreign> [oster], <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">it</ref>. <foreign xml:lang="it">
+                  <hi rend="unknown" rendition="#none">coevia</hi>
+               </foreign> = 'co|glione etc.'</p>
+            <p>Zu <hi rend="unknown" rendition="#none">farfar</hi> vgl. Spitzer Archiv über <hi rend="unknown" rendition="#none">papilio</hi>, dem die Stelle im Berber. offenbar nicht mehr bewußt war.</p>
+            <p>Nach <placeName ref="[authorityLink]">Graz</placeName> kommen, Sie zu besuchen, möchte ich schon gern. Aber man spricht in solchen flüchtigen Stunden so Zufälliges, während man schriftlich sich eigentlich besser ausspricht. Vor allem möchte ich allerdings, daß Sie <persName ref="[authorityLink]">meine Frau</persName> kennen lernen. Nun möchte ich sehr gern im August oder Sept. meine Frau nach Gr. fahren lassen, um einen guten Frauenarzt zu besuchen – die hiesigen haben wir abgeklappert – gibt es einen solchen und könnten Sie einen in Kollegen­kreisen bekannten auch-Menschen mir empfehlen? Dann würde ich meine Frau Ihnen auf ein Viertelstündchen schicken.</p>
+            <p>Das <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.317">Brevier</ref> ist 26 Bogen stark, nur 18 dürfen es sein. So muß ich denn zu meinem Leidwesen Schuchardts Lebensbildnis beschneiden – ein scheußlicher Beruf!</p>
+            <p>Zur Entschädigung für die Bestrafung Ihrer philosemitischen Neigungen sende ich Ihnen die Januarnummer von <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">Magyar Nyelv</ref>, die ich doppelt habe. Ich verfolge nämlich auch die christliche Magyarologie, die im Blick für das Systematische der jüdischen gelegentlich über ist. Hier in <placeName ref="[authorityLink]">Bonn</placeName> wird ein Witzwort zitiert, das ein alter Physiker beim Antrittsbesuch der katholischen Philosophie geprägt haben soll: "Ich muß immer lachen, wenn ich einen Philosophen sehe, aber erst recht, wenn einen katholischen Philosophen". Das ists – die Menschen zerstücken das naturhaft Verbundene: Deutschland, die Wissenschaft, den Menschen...</p>
+            <closer>
+               <salute>Ergebenste und beste Grüße von Ihrem getreuen</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

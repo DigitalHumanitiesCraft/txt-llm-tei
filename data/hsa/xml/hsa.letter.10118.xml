@@ -1,602 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Julien Vinson (39-HSJV16)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10118" type="PID">o:hsa.letter.10118</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">39-HSJV16</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka eta Artxiboa</repository>
-            <idno type="shelfmark">HSJV16</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.738" ref="http://sws.geonames.org/2953504">Baden-Baden</origPlace>
-              <origDate ana="dcterms:created" when="1898-08-24">1898-08-24</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Julien Vinson</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2939"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10118">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.738" key="#GID.1" ref="http://sws.geonames.org/2953504">Baden-Baden</placeName>
-          <date when="1898-08-24">1898-08-24</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2939" ref="https://viaf.org/viaf/102331524">
-            <forename>Julien</forename>
-            <surname>Vinson</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Baden-Baden</settlement>
-                <name ref="http://geonames.org/2953504" type="fcode:PPL">Baden-Baden</name>
-                <location>
-                  <geo>8.23975,48.7606</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2939" type="context">
-                        Korrespondenz Hugo Schuchardt - Julien Vinson
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3144" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturblatt für germanische und romanische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4873" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kritischer Jahresbericht über die Fortschritte der romanischen Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4374" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universitätsbibliothek Graz</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.779" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.742" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Georgisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10118" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10118" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10118" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10118" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10118" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10118" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10118" xml:id="IMG.7">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10118" xml:id="IMG.8">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10118" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Baden-Baden <lb/>Villa Adolfa 24<lb/> Aug. 98. <note n="1" place="foot" type="editorial">Zusatz von Vinson’s Hand: “rép.”</note>
-        </dateline>
-        <opener>Verehrter Kollege! </opener>
-        <p> Sie haben ganz Recht mit meiner Anzeige des <hi rend="unknown" rendition="#none">
-Suppl.</hi> in dem <hi
-            rend="unknown" rendition="#none">Ltbl.</hi> nicht ganz zufrieden zu sein<note n="2" place="foot" type="editorial">Es geht um <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.794">Schuchardts (1898)</ref>
-            </bibl> Besprechung des Supplementbandes von <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8167">Vinson’s (1898)</ref>
-            </bibl> Bibliographie im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3144">
-              <hi rend="unknown" rendition="#none"> Literaturblatt für germanische und romanische Philologie</hi>
-            </ref>.</note>; ich hatte Anlass der Arbeit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1471">Farinelli</persName>s zu gedenken, wollte ihr keinen besondern Artikel widmen und habe einen etwas ungeschickten Uebergang zu ihr gemacht. Ich hoffe sehr dass Sie uns mit einem Ueberblick über die baskische Philologie beschenken werden; wenn ich nicht irre, haben Sie ja <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2953">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10118" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Baden-Baden <lb/>Villa Adolfa 24<lb/> Aug. 98. <note n="1" place="foot" type="editorial">Zusatz von Vinson’s Hand: “rép.”</note>
+            </dateline>
+            <opener>Verehrter Kollege! </opener>
+            <p> Sie haben ganz Recht mit meiner Anzeige des <hi rend="unknown" rendition="#none">
+Suppl.</hi> in dem <hi rend="unknown" rendition="#none">Ltbl.</hi> nicht ganz zufrieden zu sein<note n="2" place="foot" type="editorial">Es geht um <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.794">Schuchardts (1898)</ref>
+                  </bibl> Besprechung des Supplementbandes von <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8167">Vinson’s (1898)</ref>
+                  </bibl> Bibliographie im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3144">
+                     <hi rend="unknown" rendition="#none"> Literaturblatt für germanische und romanische Philologie</hi>
+                  </ref>.</note>; ich hatte Anlass der Arbeit <persName ref="[authorityLink]">Farinelli</persName>s zu gedenken, wollte ihr keinen besondern Artikel widmen und habe einen etwas ungeschickten Uebergang zu ihr gemacht. Ich hoffe sehr dass Sie uns mit einem Ueberblick über die baskische Philologie beschenken werden; wenn ich nicht irre, haben Sie ja <persName ref="[authorityLink]">
 Vollmöller</persName> für den <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4873">
-            <hi rend="unknown" rendition="#none">Jahresbericht der rom. Ph.</hi>
-          </ref> eine Zusage gemacht,<note n="3" place="foot" type="editorial">Vollmöller gab ab 1890 das Periodikum <hi
-              rend="unknown" rendition="#none">Kritischer Jahresbericht über die Fortschritte der romanischen Philologie</hi> heraus, eine Sammlung wichtiger Entwicklungen in dem schnell wachsenden Fach. </note> und so werden Sie wenigstens über die neuesten Arbeiten Gelegenheit haben sich im Zusammenhang zu äussern. </p>
-        <p>Anbei schicke ich Ihnen eine kleine Liste von Anmerkungen zu ihrer <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4434">
-              <hi rend="unknown" rendition="#none">Bibl.</hi>
-            </ref>
-          </bibl> und <hi rend="unknown"
-            rendition="#none">Suppl.</hi>; vielleicht habe ich Manches davon schon früher erwähnt, anderseits habe ich eine Menge von gar zu Unwesentlichem (wie die Akzente im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">Spanischen</ref>) übergangen. Die Fragezeichen bitte ich Sie mir gelegentlich zu beantworten. </p>
-        <p>Ich habe eine Reihe von Büchern und Artikeln nicht bei Ihnen gefunden, aber allerdings auch nicht jedes an allen den Orten wo es genannt sein könnte, aufgesucht; wie ich in meiner ersten Anzeige schon hervorgehoben habe, ist auch die chronologische Reihenfolge nicht immer ganz strenge eingehalten worden, oder es kommen Irrthümer vor (ist z.B. <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4418">Soroa’s Alkate-berriya</ref>
-          </bibl>, bei Ihnen 653-70 von 1888 und nicht von 1885?).<note n="4" place="foot"
-            type="editorial">Wohl 1885, so auch das Exemplar in Schuchardts Besitz.</note> Um von den religiösen Schriften neuesten Datums abzusehen die bei Ihnen nicht alle verzeichnet zu sein scheinen, so vermisse ich z.B. <hi
-            rend="unknown" rendition="#none">Azkue</hi>, Proyecto de Ortografía 1896<note n="5" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4246">R. M. de Azkue (1896)</ref>
-            </bibl>.</note> und <hi rend="unknown" rendition="#none">
-Azkue</hi>, Parnasoko bidea 1896<note n="6"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8178">E. M. D. de Azkue (1896); recte: <hi
-                  rend="unknown" rendition="#none">Parnasorako bidea</hi>
-              </ref>
-            </bibl>. </note>. Von älteren Veröffentlichungen: <pb facs="#IMG.2" n="2"/>
-          <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8209">
-              <hi rend="unknown" rendition="#none">Louis Lande</hi>, Basques et Navarrais 1878</ref>
-          </bibl>. <hi rend="unknown" rendition="#none">The Peninsular Magazine</hi> June 1840 p. 165-171: The Basque Literature and Language. Haben Sie grundsätzlich alles aufs Iberische Bezügliche berücksichtigt? <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8181">
-              <hi rend="unknown" rendition="#none">J. Costa</hi>, Estudios ibéricos 1891-1894</ref>
-          </bibl> sehe ich nicht. </p>
-
-        <p>Die Titelfacsimiles erfüllen zwar ihren Zweck durchaus; aber wäre die Photolithographie nicht dem Motterozschen Verfahren<note
-            n="7" place="foot"
-            type="editorial">Chemographisches Verfahren zur Reproduktion von Abbildungen, benannt nach dem frz. Drucker und Verleger Motteroz, der dazu auch ein Werk verfasst hat.</note> vorzuziehen gewesen? Die Buchstaben sind doch öfters etwas unrein herausgekommen, wie ich beim N.T. von 1571 konstatire. Und warum haben Sie denn ein Exemplar gewählt, welches liniirt ist? der, welcher das Original nie gesehen hat, könnte auf den Gedanken kommen dass die Linien nicht von der Feder herrühren, sondern gedruckt sind. Durch eine dieser Linien sind die beiden Punkte von <hi
-            rend="unknown" rendition="#none">çaquizquiote</hi> ganz verdeckt. </p>
-        <p>Für mich ist alle Bibliophilie nur Mittel zur wissenschaftlichen Forschung. Durch ein Uebermass jener kann diese leicht beeinträchtigt werden. Ich habe Ihnen schon gesagt dass der Vorstand der Wiener Hofbibliothek sich nur ungern entschloss, mir den <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8142">
+                  <hi rend="unknown" rendition="#none">Jahresbericht der rom. Ph.</hi>
+               </ref> eine Zusage gemacht,<note n="3" place="foot" type="editorial">Vollmöller gab ab 1890 das Periodikum <hi rend="unknown" rendition="#none">Kritischer Jahresbericht über die Fortschritte der romanischen Philologie</hi> heraus, eine Sammlung wichtiger Entwicklungen in dem schnell wachsenden Fach. </note> und so werden Sie wenigstens über die neuesten Arbeiten Gelegenheit haben sich im Zusammenhang zu äussern. </p>
+            <p>Anbei schicke ich Ihnen eine kleine Liste von Anmerkungen zu ihrer <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4434">
+                     <hi rend="unknown" rendition="#none">Bibl.</hi>
+                  </ref>
+               </bibl> und <hi rend="unknown" rendition="#none">Suppl.</hi>; vielleicht habe ich Manches davon schon früher erwähnt, anderseits habe ich eine Menge von gar zu Unwesentlichem (wie die Akzente im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">Spanischen</ref>) übergangen. Die Fragezeichen bitte ich Sie mir gelegentlich zu beantworten. </p>
+            <p>Ich habe eine Reihe von Büchern und Artikeln nicht bei Ihnen gefunden, aber allerdings auch nicht jedes an allen den Orten wo es genannt sein könnte, aufgesucht; wie ich in meiner ersten Anzeige schon hervorgehoben habe, ist auch die chronologische Reihenfolge nicht immer ganz strenge eingehalten worden, oder es kommen Irrthümer vor (ist z.B. <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4418">Soroa’s Alkate-berriya</ref>
+               </bibl>, bei Ihnen 653-70 von 1888 und nicht von 1885?).<note n="4" place="foot" type="editorial">Wohl 1885, so auch das Exemplar in Schuchardts Besitz.</note> Um von den religiösen Schriften neuesten Datums abzusehen die bei Ihnen nicht alle verzeichnet zu sein scheinen, so vermisse ich z.B. <hi rend="unknown" rendition="#none">Azkue</hi>, Proyecto de Ortografía 1896<note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4246">R. M. de Azkue (1896)</ref>
+                  </bibl>.</note> und <hi rend="unknown" rendition="#none">
+Azkue</hi>, Parnasoko bidea 1896<note n="6" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8178">E. M. D. de Azkue (1896); recte: <hi rend="unknown" rendition="#none">Parnasorako bidea</hi>
+                     </ref>
+                  </bibl>. </note>. Von älteren Veröffentlichungen: <pb facs="#IMG.2" n="2"/>
+               <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8209">
+                     <hi rend="unknown" rendition="#none">Louis Lande</hi>, Basques et Navarrais 1878</ref>
+               </bibl>. <hi rend="unknown" rendition="#none">The Peninsular Magazine</hi> June 1840 p. 165-171: The Basque Literature and Language. Haben Sie grundsätzlich alles aufs Iberische Bezügliche berücksichtigt? <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8181">
+                     <hi rend="unknown" rendition="#none">J. Costa</hi>, Estudios ibéricos 1891-1894</ref>
+               </bibl> sehe ich nicht. </p>
+            <p>Die Titelfacsimiles erfüllen zwar ihren Zweck durchaus; aber wäre die Photolithographie nicht dem Motterozschen Verfahren<note n="7" place="foot" type="editorial">Chemographisches Verfahren zur Reproduktion von Abbildungen, benannt nach dem frz. Drucker und Verleger Motteroz, der dazu auch ein Werk verfasst hat.</note> vorzuziehen gewesen? Die Buchstaben sind doch öfters etwas unrein herausgekommen, wie ich beim N.T. von 1571 konstatire. Und warum haben Sie denn ein Exemplar gewählt, welches liniirt ist? der, welcher das Original nie gesehen hat, könnte auf den Gedanken kommen dass die Linien nicht von der Feder herrühren, sondern gedruckt sind. Durch eine dieser Linien sind die beiden Punkte von <hi rend="unknown" rendition="#none">çaquizquiote</hi> ganz verdeckt. </p>
+            <p>Für mich ist alle Bibliophilie nur Mittel zur wissenschaftlichen Forschung. Durch ein Uebermass jener kann diese leicht beeinträchtigt werden. Ich habe Ihnen schon gesagt dass der Vorstand der Wiener Hofbibliothek sich nur ungern entschloss, mir den <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8142">
 Voltoire</ref>
-          </bibl> von 1642 nach <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> auf die <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4374">
+               </bibl> von 1642 nach <placeName ref="[authorityLink]">Graz</placeName> auf die <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4374">
 Universitätsbibliothek</ref> zu schicken, ihn mit 1000 fl.! bewerthend. Einige Zeit früher hatte er mir ebendahin die werthvollsten georgischen Hdss., und dazu sehr umfangreiche (jetzt sind sie in meine[m] Besitz; und weder <placeName>
-London</placeName>, noch <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.666">Paris</placeName>, noch <placeName>Petersburg</placeName> haben etwas Ähnliches aufzuweisen)<note
-            n="8" place="foot"
-              type="editorial">In der Tat war Schuchardt im Besitz von welchen der ältesten Handschriften zum <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.742">Georgischen</ref> überhaupt, die älteste davon aus dem 7. Jahrhundert. Wahrscheinlich wurden sie im Katharinenkloster entwendet, denn dort wurden sie noch von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2890">Tsagareli</persName> (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.745">
+London</placeName>, noch <placeName ref="[authorityLink]">Paris</placeName>, noch <placeName>Petersburg</placeName> haben etwas Ähnliches aufzuweisen)<note n="8" place="foot" type="editorial">In der Tat war Schuchardt im Besitz von welchen der ältesten Handschriften zum <ref target="https://gams.uni-graz.at/o:hsa.languages#L.742">Georgischen</ref> überhaupt, die älteste davon aus dem 7. Jahrhundert. Wahrscheinlich wurden sie im Katharinenkloster entwendet, denn dort wurden sie noch von <persName ref="[authorityLink]">Tsagareli</persName> (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.745">
 Schuchardt 1895b</ref>
-            </bibl>) beschrieben. Schuchardt hat sie zu Lebzeiten der Grazer Universitätsbibliothek geschenkt. Diese wurden mehrmals bearbeitet, siehe z.B. Imnaischwili (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4041">1977</ref>
-            </bibl>, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8146">
+                  </bibl>) beschrieben. Schuchardt hat sie zu Lebzeiten der Grazer Universitätsbibliothek geschenkt. Diese wurden mehrmals bearbeitet, siehe z.B. Imnaischwili (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4041">1977</ref>
+                  </bibl>, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8146">
 2004</ref>
-
-            </bibl>). Zu ihrem Weg nach Graz vgl. den Briefwechsel Schuchardts mit dem Wiener Bibliotheksdirektor <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3060">Heinrich Zeissberg</persName> HSA 13036-13039 und die zugehörigen Gegenbriefe, auf den hier angespielt wird. </note> geschickt – diese schätzte er nur auf einige hundert Gulden. Es ist mir wirklich ganz unverständlich wie neuere Bücher bloss weil sie nur in einem oder in wenigen Exemplaren vorhanden sind, im Vergleich zu Hdss., die ebenfalls Unica sind, einen so ausserordentlichen Werth haben. Alles in Allem gerechnet, würde der <pb
-            facs="#IMG.3" n="3"/> Wiener Voltoire doch mit 50 fl. hinreichend bezahlt sein. </p>
-
-        <p>Wie verdriesslich mir die Angabe bezüglich des Leipziger Exemplars vom N.T. von 1571: S. 523: „très frais, très propre“ ist, habe ich ebenfalls schon erwähnt. Dergleichen Angaben sollten mit der grössten Sorgfalt, nach genauester Prüfung gemacht werden. S. 814, wo es heisst dass das Buch „a été relié deux fois“ wäre der Sachverhalt zu berichtigen gewesen. Das Buch ist vielfach gebraucht worden, hat Schmutz-, Tinten-, Kleisterflecken aller Grösse und Intensität; aber als es neu gebunden wurde, bekam es für die oberflächliche Betrachtung einen leidlich saubern Anschein, etwa wie die gebrauchten Servietten in den Wirthschaften zweiten Ranges, welche nur gepresst anstatt gewaschen werden. Als das Exemplar in <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2047">Linschmann</persName>s Hände gelangte, klebten die Blätter grossentheils zusammen. Die Bibliothekare halten sich aber an die Angaben der Bibliographieen, und lassen sich selten von der Unrichtigkeit derselben überzeugen. </p>
-        <p>Haben Sie Nachsicht mit diesen Querelen; sie entspringen der Möglichkeit dass meine Interessen gefährdet werden. </p>
-        <pb facs="#IMG.4" n="4"/>
-
-        <p>Wegen unseres Druckes werde ich Sie wohl noch um Rath zu bitten haben. Ich denke, wir müssen zwei Bände geben; das N.T. allein wird schon sehr stark werden, da unser Papier viel dicker ist als das Original. Über den Titel sind wir noch nicht im Reinen: Ich hatte daran gedacht, da die Seite klein ist und mancherlei darauf zu kommen hat; zu oberst zu setzen: <hi
-            rend="unknown" rendition="#none">Leiçarragas Baskische Texte</hi> (1571). Dann: <hi rend="unknown"
-            rendition="#none">Mit Unterst. der kais. Ak. d. W. neu herausgegeben von Th. L. u. H. Sch</hi>. Weiter: <hi
-            rend="unknown" rendition="#none">Band II. Neues Testament Band I. Einleitungen, Katechismus, Kalender</hi>. Schliesslich annus et locus. </p>
-        <closer>
-          <salute>Mit verbindlichstem Grusse </salute>
-          <lb/>
-          <salute>Ihr ergebenster </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HSchuchardt </persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.10118" subtype="original" type="appendix" xml:lang="de">
-        <pb facs="#IMG.5" n="5"/>
-        <p>S. 7,2. Nicht 67<hi rendition="#sup">mm</hi> 78<hi rendition="#sup">mm</hi>! </p>
-        <p>7 Lies: <hi rend="unknown" rendition="#none">bnedicatua</hi>
-        </p>
-        <p> S. 15<hi rendition="#sup">u</hi> „<foreign
-            xml:lang="fr">Il est plein de marques, de signes</foreign>“ u.s.w. Ist darunter Nichts was für den Baskologen interessant wäre. <note
-            n="9" place="foot" type="editorial">Am linken Rand Fragezeichen mit Bleistift, ev. von Vinson.</note>
-        </p>
-        <p>S. 30<hi rendition="#sup">u</hi> Der Titel des obereng. N.T. enthält ein oder zwei Fehler: <hi rend="unknown"
-            rendition="#none">prais om</hi>. Ich besitze selbst ein Exemplar davon. <note n="10" place="foot" type="editorial">Der Bezug hier ist zu einem rätoromanischen Neuen Testament.</note>
-        </p>
-        <p>S. 37,6. „<foreign
-            xml:lang="fr">Les caractères sont en effet les mêmes que ceux du livre basque de 1571</foreign>.“ Das kann ich nicht finden (ich habe das N.T. von La Rochelle 1577 bei mir) – wenigstens nicht soweit es sich um den Haupttext handelt; die <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.226">franz.</ref> Typen sind bedeutend kleiner als die <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">baskischen</ref>. Die Kursivschrift des Vorworts von 1577 stimmt auch nicht ganz zu der welche in den Marginalien und anderswo von 1571 verwendet worden ist; dort z.B. z, hier, z, z, Z.<note
-            n="11" place="foot"
-            type="editorial">Es geht hier wohl um unterschiedliche Schriftarten. </note> Im franz. J. <hi rend="unknown"
-            rendition="#none">Jean</hi>, im bask. <hi rend="unknown" rendition="#none">Jaunean</hi> u.s.w. neben <hi
-            rend="unknown"
-            rendition="#none">Iaunean</hi> (kursiv). Ein ganz gleiches J finde ich in meinem Katechismus von 1731. Ob man schon im 16. Jhrh. i consonans von i vocalis unterscheiden wollte? Oder ob Liç. auch <hi
-            rend="unknown" rendition="#none">
-Jsrael</hi> wie <hi rend="unknown" rendition="#none">Jauna</hi>, <hi
-            rend="unknown" rendition="#none">Jesus</hi>, <hi rend="unknown" rendition="#none">
-Joseph</hi> (105<hi
-            rendition="#sup">r</hi>) geschrieben haben würde? <note n="12" place="foot" type="editorial">Am linken Rand Fragezeichen mit Bleistift, ev. von Vinson.</note>
-        </p>
-        <p>S. 41 <hi rend="unknown"
-            rendition="#none">3 g.</hi> scheint mir nicht hierherzugehören. Das N.T. von 1828 weicht doch gar zu stark von dem von 1571 ab; es ist als eine eigene Uebersetzung zu betrachten. [S. 41]<hi
-            rendition="#sup">u</hi>. <hi rend="unknown" rendition="#none">
-            <foreign xml:lang="grc">πασχ</foreign>
-          </hi>; lies <foreign xml:lang="grc">
-            <hi rend="unknown" rendition="#none">πασα</hi>
-          </foreign> [<foreign xml:lang="es">
+                  </bibl>). Zu ihrem Weg nach Graz vgl. den Briefwechsel Schuchardts mit dem Wiener Bibliotheksdirektor <persName ref="[authorityLink]">Heinrich Zeissberg</persName> HSA 13036-13039 und die zugehörigen Gegenbriefe, auf den hier angespielt wird. </note> geschickt – diese schätzte er nur auf einige hundert Gulden. Es ist mir wirklich ganz unverständlich wie neuere Bücher bloss weil sie nur in einem oder in wenigen Exemplaren vorhanden sind, im Vergleich zu Hdss., die ebenfalls Unica sind, einen so ausserordentlichen Werth haben. Alles in Allem gerechnet, würde der <pb facs="#IMG.3" n="3"/> Wiener Voltoire doch mit 50 fl. hinreichend bezahlt sein. </p>
+            <p>Wie verdriesslich mir die Angabe bezüglich des Leipziger Exemplars vom N.T. von 1571: S. 523: „très frais, très propre“ ist, habe ich ebenfalls schon erwähnt. Dergleichen Angaben sollten mit der grössten Sorgfalt, nach genauester Prüfung gemacht werden. S. 814, wo es heisst dass das Buch „a été relié deux fois“ wäre der Sachverhalt zu berichtigen gewesen. Das Buch ist vielfach gebraucht worden, hat Schmutz-, Tinten-, Kleisterflecken aller Grösse und Intensität; aber als es neu gebunden wurde, bekam es für die oberflächliche Betrachtung einen leidlich saubern Anschein, etwa wie die gebrauchten Servietten in den Wirthschaften zweiten Ranges, welche nur gepresst anstatt gewaschen werden. Als das Exemplar in <persName ref="[authorityLink]">Linschmann</persName>s Hände gelangte, klebten die Blätter grossentheils zusammen. Die Bibliothekare halten sich aber an die Angaben der Bibliographieen, und lassen sich selten von der Unrichtigkeit derselben überzeugen. </p>
+            <p>Haben Sie Nachsicht mit diesen Querelen; sie entspringen der Möglichkeit dass meine Interessen gefährdet werden. </p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>Wegen unseres Druckes werde ich Sie wohl noch um Rath zu bitten haben. Ich denke, wir müssen zwei Bände geben; das N.T. allein wird schon sehr stark werden, da unser Papier viel dicker ist als das Original. Über den Titel sind wir noch nicht im Reinen: Ich hatte daran gedacht, da die Seite klein ist und mancherlei darauf zu kommen hat; zu oberst zu setzen: <hi rend="unknown" rendition="#none">Leiçarragas Baskische Texte</hi> (1571). Dann: <hi rend="unknown" rendition="#none">Mit Unterst. der kais. Ak. d. W. neu herausgegeben von Th. L. u. H. Sch</hi>. Weiter: <hi rend="unknown" rendition="#none">Band II. Neues Testament Band I. Einleitungen, Katechismus, Kalender</hi>. Schliesslich annus et locus. </p>
+            <closer>
+               <salute>Mit verbindlichstem Grusse </salute>
+               <lb/>
+               <salute>Ihr ergebenster </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HSchuchardt </persName>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.10118"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <pb facs="#IMG.5" n="5"/>
+            <p>S. 7,2. Nicht 67<hi rendition="#sup">mm</hi> 78<hi rendition="#sup">mm</hi>! </p>
+            <p>7 Lies: <hi rend="unknown" rendition="#none">bnedicatua</hi>
+            </p>
+            <p> S. 15<hi rendition="#sup">u</hi> „<foreign xml:lang="fr">Il est plein de marques, de signes</foreign>“ u.s.w. Ist darunter Nichts was für den Baskologen interessant wäre. <note n="9" place="foot" type="editorial">Am linken Rand Fragezeichen mit Bleistift, ev. von Vinson.</note>
+            </p>
+            <p>S. 30<hi rendition="#sup">u</hi> Der Titel des obereng. N.T. enthält ein oder zwei Fehler: <hi rend="unknown" rendition="#none">prais om</hi>. Ich besitze selbst ein Exemplar davon. <note n="10" place="foot" type="editorial">Der Bezug hier ist zu einem rätoromanischen Neuen Testament.</note>
+            </p>
+            <p>S. 37,6. „<foreign xml:lang="fr">Les caractères sont en effet les mêmes que ceux du livre basque de 1571</foreign>.“ Das kann ich nicht finden (ich habe das N.T. von La Rochelle 1577 bei mir) – wenigstens nicht soweit es sich um den Haupttext handelt; die <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">franz.</ref> Typen sind bedeutend kleiner als die <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">baskischen</ref>. Die Kursivschrift des Vorworts von 1577 stimmt auch nicht ganz zu der welche in den Marginalien und anderswo von 1571 verwendet worden ist; dort z.B. z, hier, z, z, Z.<note n="11" place="foot" type="editorial">Es geht hier wohl um unterschiedliche Schriftarten. </note> Im franz. J. <hi rend="unknown" rendition="#none">Jean</hi>, im bask. <hi rend="unknown" rendition="#none">Jaunean</hi> u.s.w. neben <hi rend="unknown" rendition="#none">Iaunean</hi> (kursiv). Ein ganz gleiches J finde ich in meinem Katechismus von 1731. Ob man schon im 16. Jhrh. i consonans von i vocalis unterscheiden wollte? Oder ob Liç. auch <hi rend="unknown" rendition="#none">
+Jsrael</hi> wie <hi rend="unknown" rendition="#none">Jauna</hi>, <hi rend="unknown" rendition="#none">Jesus</hi>, <hi rend="unknown" rendition="#none">
+Joseph</hi> (105<hi rendition="#sup">r</hi>) geschrieben haben würde? <note n="12" place="foot" type="editorial">Am linken Rand Fragezeichen mit Bleistift, ev. von Vinson.</note>
+            </p>
+            <p>S. 41 <hi rend="unknown" rendition="#none">3 g.</hi> scheint mir nicht hierherzugehören. Das N.T. von 1828 weicht doch gar zu stark von dem von 1571 ab; es ist als eine eigene Uebersetzung zu betrachten. [S. 41]<hi rendition="#sup">u</hi>. <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="grc">πασχ</foreign>
+               </hi>; lies <foreign xml:lang="grc">
+                  <hi rend="unknown" rendition="#none">πασα</hi>
+               </foreign> [<foreign xml:lang="es">
 en las dos, la primera α con</foreign> ͂ ]. </p>
-
-        <p>S. 42ff. Ich glaube nicht dass wenn Majuskelschrift in Minuskelschr. umgesetzt wird, das V als v zu erscheinen hat, vielmehr als u: also <hi
-            rend="unknown" rendition="#none">ADVERTIMENDVA</hi> (<hi rend="unknown"
-            rendition="#none">
+            <p>S. 42ff. Ich glaube nicht dass wenn Majuskelschrift in Minuskelschr. umgesetzt wird, das V als v zu erscheinen hat, vielmehr als u: also <hi rend="unknown" rendition="#none">ADVERTIMENDVA</hi> (<hi rend="unknown" rendition="#none">
 aduertimendua</hi> wenn nämlich der betreffende Text das <hi rend="unknown" rendition="#none">u</hi> in der Minuskelschr. so verwendet. </p>
-        <p>S. 45,12 <hi rend="unknown" rendition="#none">exercititioa</hi>; so? </p>
-        <p>S. 47<hi
-            rendition="#sup">u.</hi> Was ist mit den Büchern von Zabalburu geworden? Und dabei fällt mir ein, wie steht es mit der Bibliothek des Prinzen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1171">L.-L. Bonaparte</persName>? Hat sich der 3te Theil von dessen Verbe basque nicht vorgefunden? <note
-            n="13" place="foot" type="editorial">Am linken Rand wiederum ein Fragezeichen mit Bleistift, ev. von Vinson. </note>
-        </p>
-
-        <p>S. 53ff. Für mein Studium der Sprache Liçarragues ist es ein grosser Mangel dass ich die franz.-bask. Texte, die zwischen ihm und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5667">Axular</persName> liegen, nicht einsehen kann; bietet nicht z.B. die Sprache Materres noch manches Alter<pb
-            facs="#IMG.6" n="6"/>thümliche dar? </p>
-        <p>S. 53,6 v.u. <hi rend="unknown" rendition="#none">Euſcal-Herrian</hi>; nicht <hi rend="unknown" rendition="#none">Euʃcal-H.</hi>? </p>
-        <p>S. 56f. S. 59½Ich habe das Wiener Exemplar von 1642 an diesen beiden Stellen verglichen; es sind sehr viel Varianten vorhanden, aber Alle von gar keiner Bedeutung für die Wissenschaft, wie denn diese Voltoires in Schreib- oder Druckfehlern das Unglaubliche leisten. </p>
-        <p>S. 59. „p. 41-121 vocabulairo“; auf S. 122 steht noch ein Wort des vocabularie: <hi rend="unknown"
-            rendition="#none">vieux</hi> – <hi rend="unknown" rendition="#none">
+            <p>S. 45,12 <hi rend="unknown" rendition="#none">exercititioa</hi>; so? </p>
+            <p>S. 47<hi rendition="#sup">u.</hi> Was ist mit den Büchern von Zabalburu geworden? Und dabei fällt mir ein, wie steht es mit der Bibliothek des Prinzen <persName ref="[authorityLink]">L.-L. Bonaparte</persName>? Hat sich der 3te Theil von dessen Verbe basque nicht vorgefunden? <note n="13" place="foot" type="editorial">Am linken Rand wiederum ein Fragezeichen mit Bleistift, ev. von Vinson. </note>
+            </p>
+            <p>S. 53ff. Für mein Studium der Sprache Liçarragues ist es ein grosser Mangel dass ich die franz.-bask. Texte, die zwischen ihm und <persName ref="[authorityLink]">Axular</persName> liegen, nicht einsehen kann; bietet nicht z.B. die Sprache Materres noch manches Alter<pb facs="#IMG.6" n="6"/>thümliche dar? </p>
+            <p>S. 53,6 v.u. <hi rend="unknown" rendition="#none">Euſcal-Herrian</hi>; nicht <hi rend="unknown" rendition="#none">Euʃcal-H.</hi>? </p>
+            <p>S. 56f. S. 59½Ich habe das Wiener Exemplar von 1642 an diesen beiden Stellen verglichen; es sind sehr viel Varianten vorhanden, aber Alle von gar keiner Bedeutung für die Wissenschaft, wie denn diese Voltoires in Schreib- oder Druckfehlern das Unglaubliche leisten. </p>
+            <p>S. 59. „p. 41-121 vocabulairo“; auf S. 122 steht noch ein Wort des vocabularie: <hi rend="unknown" rendition="#none">vieux</hi> – <hi rend="unknown" rendition="#none">
 saharra</hi>. </p>
-        <p>S. 65,2 v.u. „vous ait“; lies : „vous donne“. </p>
-        <p>S. 66<hi rendition="#sup">m</hi>
-          <hi rend="unknown" rendition="#none">Dent.</hi>; so, nicht <hi rend="unknown" rendition="#none">Deut.</hi>? </p>
-        <p>S. 77<hi rendition="#sup">o</hi>
-          <hi rend="unknown" rendition="#none">Turʃce</hi>; so, nicht <hi rend="unknown" rendition="#none">Turſco</hi>? </p>
-        <p>S. 80<hi rendition="#sup">u</hi> Lies <hi rend="unknown" rendition="#none">Navarrae Regum</hi> – <hi
-            rend="unknown" rendition="#none">inʃignium</hi>
-        </p>
-        <p>S. 81<hi rendition="#sup">o</hi>
-          <hi rend="unknown" rendition="#none">Archytipographum</hi>; so? </p>
-        <p>S. 83.<hi rendition="#sup">o</hi> Das von mir benutzte, einer öffentlichen Bibliothek gehörige Exemplar hat </p>
-        <p>f. 37-38 nicht kartonnirt (<hi rend="unknown" rendition="#none">Basconicá</hi>, was ich aber verifiziren müsste) </p>
-        <p>f. 113-114 kartonnirt </p>
-        <p>f. 303-304 nicht kart. </p>
-        <p>f. 407-408 kart. (<hi rend="unknown" rendition="#none">syncerissimè</hi>) </p>
-        <p>S. 108. Was soll das <hi rend="unknown" rendition="#none">c</hi> in <hi rend="unknown" rendition="#none">27.c</hi>? </p>
-        <p>S. 125 Wie kommen die <hi rend="unknown" rendition="#none">Obſèques de Philippe V</hi> hierher? </p>
-        <p>S. 165 Lies </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Chourio Donibaneco</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Erretorac,</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Capi | pitulu</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Baccoitcharen</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">akhabançan,</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Jaun</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Plaçan</hi>
-        </p>
-        <p>S. 190.67. Lies: <hi rend="unknown" rendition="#none">Luárca</hi>. - <hi rend="unknown" rendition="#none">Arzobispo</hi>
-        </p>
-        <p>S. 191.69<hi rendition="#sup">a</hi>. Lies <hi rend="unknown" rendition="#none">
+            <p>S. 65,2 v.u. „vous ait“; lies : „vous donne“. </p>
+            <p>S. 66<hi rendition="#sup">m</hi>
+               <hi rend="unknown" rendition="#none">Dent.</hi>; so, nicht <hi rend="unknown" rendition="#none">Deut.</hi>? </p>
+            <p>S. 77<hi rendition="#sup">o</hi>
+               <hi rend="unknown" rendition="#none">Turʃce</hi>; so, nicht <hi rend="unknown" rendition="#none">Turſco</hi>? </p>
+            <p>S. 80<hi rendition="#sup">u</hi> Lies <hi rend="unknown" rendition="#none">Navarrae Regum</hi> – <hi rend="unknown" rendition="#none">inʃignium</hi>
+            </p>
+            <p>S. 81<hi rendition="#sup">o</hi>
+               <hi rend="unknown" rendition="#none">Archytipographum</hi>; so? </p>
+            <p>S. 83.<hi rendition="#sup">o</hi> Das von mir benutzte, einer öffentlichen Bibliothek gehörige Exemplar hat </p>
+            <p>f. 37-38 nicht kartonnirt (<hi rend="unknown" rendition="#none">Basconicá</hi>, was ich aber verifiziren müsste) </p>
+            <p>f. 113-114 kartonnirt </p>
+            <p>f. 303-304 nicht kart. </p>
+            <p>f. 407-408 kart. (<hi rend="unknown" rendition="#none">syncerissimè</hi>) </p>
+            <p>S. 108. Was soll das <hi rend="unknown" rendition="#none">c</hi> in <hi rend="unknown" rendition="#none">27.c</hi>? </p>
+            <p>S. 125 Wie kommen die <hi rend="unknown" rendition="#none">Obſèques de Philippe V</hi> hierher? </p>
+            <p>S. 165 Lies </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Chourio Donibaneco</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Erretorac,</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Capi | pitulu</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Baccoitcharen</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">akhabançan,</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Jaun</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Plaçan</hi>
+            </p>
+            <p>S. 190.67. Lies: <hi rend="unknown" rendition="#none">Luárca</hi>. - <hi rend="unknown" rendition="#none">Arzobispo</hi>
+            </p>
+            <p>S. 191.69<hi rendition="#sup">a</hi>. Lies <hi rend="unknown" rendition="#none">
 Cristiñau</hi>
-        </p>
-        <p>S. 207 89<hi rendition="#sup">b</hi> Lies: <hi rend="unknown" rendition="#none">
-exerçiçio</hi>, <hi
-            rend="unknown" rendition="#none">kongregaçioneko</hi>
-        </p>
-        <p>S. 207.90<hi rendition="#sup">a</hi>
-          <hi rend="unknown" rendition="#none">Jeʃuſen</hi>; so? </p>
-        <p>S. 275 192. — <hi rend="unknown" rendition="#none">185</hi> Seiten. </p>
-        <pb facs="#IMG.7" n="7"/>
-        <p>S. 277 195. <hi rend="unknown" rendition="#none">laburra</hi>; lies: <hi rend="unknown" rendition="#none">liburua</hi>. </p>
-        <p>S. 281 198 Lies: <hi rend="unknown" rendition="#none">por F.A. y B.</hi>
-        </p>
-        <p>S. 294 235 Lies: <hi rend="unknown" rendition="#none">guztíetaraco</hi>
-        </p>
-        <p>S. 305 268. Es wäre interessant zu wissen, wie sehr die Uebersetzung Haraneders durch die beiden lab. Geistlichen bearbeitet worden ist; könnten Sie nicht irgend ein Kapitel aus dem Original veröffentlichen? </p>
-        <p>S. 306 269. Lies <hi rend="unknown" rendition="#none">Zaldivia- aco</hi>. </p>
-        <p>S. 309. 281. Lies: <hi rend="unknown" rendition="#none">19 p. prél.</hi>
-        </p>
-        <p>S. 311 290 Lies: <hi rend="unknown" rendition="#none">392 p.</hi>
-        </p>
-        <p>S. 312 296. Das Angebundene von 1886 zu berücksichtigen! </p>
-        <p>S. 318 319<hi rendition="#sup">c</hi>. Auf dem Titel des <hi rend="unknown" rendition="#none">gebundenen</hi> Buchs steht 1877. </p>
-        <p>321. Lies: <hi rend="unknown" rendition="#none">5 tabl.</hi>
-        </p>
-        <p>S. 319. 325 Lies: <hi rend="unknown" rendition="#none">Baztan</hi> – <hi rend="unknown" rendition="#none">Echenique</hi>
-        </p>
-        <p>S. 326 346.b Lies. <hi rend="unknown" rendition="#none">Ebanyelio</hi>
-        </p>
-        <p> S. 331. 368 Lies: <hi rend="unknown" rendition="#none">12 p.</hi>
-        </p>
-        <p> S. 341 378 Lies <hi rend="unknown" rendition="#none">Franzizco</hi>
-        </p>
-        <p>S. 347 402 Lies <hi rend="unknown" rendition="#none">Franck</hi>
-        </p>
-        <p>S. 358 455 Lies <hi rend="unknown" rendition="#none">aphezpicuec</hi> – <hi rend="unknown"
-            rendition="#none">1875</hi> – <hi rend="unknown" rendition="#none">
+            </p>
+            <p>S. 207 89<hi rendition="#sup">b</hi> Lies: <hi rend="unknown" rendition="#none">
+exerçiçio</hi>, <hi rend="unknown" rendition="#none">kongregaçioneko</hi>
+            </p>
+            <p>S. 207.90<hi rendition="#sup">a</hi>
+               <hi rend="unknown" rendition="#none">Jeʃuſen</hi>; so? </p>
+            <p>S. 275 192. — <hi rend="unknown" rendition="#none">185</hi> Seiten. </p>
+            <pb facs="#IMG.7" n="7"/>
+            <p>S. 277 195. <hi rend="unknown" rendition="#none">laburra</hi>; lies: <hi rend="unknown" rendition="#none">liburua</hi>. </p>
+            <p>S. 281 198 Lies: <hi rend="unknown" rendition="#none">por F.A. y B.</hi>
+            </p>
+            <p>S. 294 235 Lies: <hi rend="unknown" rendition="#none">guztíetaraco</hi>
+            </p>
+            <p>S. 305 268. Es wäre interessant zu wissen, wie sehr die Uebersetzung Haraneders durch die beiden lab. Geistlichen bearbeitet worden ist; könnten Sie nicht irgend ein Kapitel aus dem Original veröffentlichen? </p>
+            <p>S. 306 269. Lies <hi rend="unknown" rendition="#none">Zaldivia- aco</hi>. </p>
+            <p>S. 309. 281. Lies: <hi rend="unknown" rendition="#none">19 p. prél.</hi>
+            </p>
+            <p>S. 311 290 Lies: <hi rend="unknown" rendition="#none">392 p.</hi>
+            </p>
+            <p>S. 312 296. Das Angebundene von 1886 zu berücksichtigen! </p>
+            <p>S. 318 319<hi rendition="#sup">c</hi>. Auf dem Titel des <hi rend="unknown" rendition="#none">gebundenen</hi> Buchs steht 1877. </p>
+            <p>321. Lies: <hi rend="unknown" rendition="#none">5 tabl.</hi>
+            </p>
+            <p>S. 319. 325 Lies: <hi rend="unknown" rendition="#none">Baztan</hi> – <hi rend="unknown" rendition="#none">Echenique</hi>
+            </p>
+            <p>S. 326 346.b Lies. <hi rend="unknown" rendition="#none">Ebanyelio</hi>
+            </p>
+            <p> S. 331. 368 Lies: <hi rend="unknown" rendition="#none">12 p.</hi>
+            </p>
+            <p> S. 341 378 Lies <hi rend="unknown" rendition="#none">Franzizco</hi>
+            </p>
+            <p>S. 347 402 Lies <hi rend="unknown" rendition="#none">Franck</hi>
+            </p>
+            <p>S. 358 455 Lies <hi rend="unknown" rendition="#none">aphezpicuec</hi> – <hi rend="unknown" rendition="#none">1875</hi> – <hi rend="unknown" rendition="#none">
 296 p.</hi>
-        </p>
-        <p>S. 369 496 Lies <hi rend="unknown" rendition="#none">basque-espagnole</hi>
-        </p>
-        <p>S. 377<hi rendition="#sup">u</hi> Lies <hi rend="unknown" rendition="#none">530</hi>. <hi rend="unknown"
-            rendition="#none">531</hi> statt <hi rend="unknown" rendition="#none">529</hi>. <hi rend="unknown" rendition="#none">530</hi>
-        </p>
-        <p>S. 383. 560 Lies: <hi rend="unknown" rendition="#none">J. Subirana</hi>
-        </p>
-        <p>S. 389. 589. Lies statt <hi rend="unknown" rendition="#none">(V) IV, 87 p</hi>: <hi rend="unknown" rendition="#none">46 p</hi>. (Progamm von Ratibor) </p>
-        <p>S. 401 630 Lies ̒<hi rend="unknown" rendition="#none">As Fr.</hi>
-        </p>
-        <p>S. 531<hi rendition="#sup">o</hi> Statt <hi rend="unknown"
-            rendition="#none">anda</hi> muss der Text anders lauten, ich weiss augenblicklich nicht wie. – <hi
-            rend="unknown" rendition="#none">buſcar</hi>. – <hi rend="unknown" rendition="#none">ençindu</hi> – <hi
-            rend="unknown" rendition="#none">çe</hi>
-        </p>
-        <p>S. 531<hi rendition="#sup">m</hi>
-          <hi rend="unknown" rendition="#none">navarraiss</hi>
-        </p>
-        <p> S. 550. Warum hat Herr <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5454">
-Stempf</persName> seine Ausgabe der Sprichw. von Oihenart nicht vollenden können? <note
-            n="14" place="foot" type="editorial">Am rechten Rand ein Fragezeichen, vermutlich von Vinsons Hand.</note>
-        </p>
-        <p> S. 553. ff. In den beiden Gedichten sind eine Menge von <hi rend="unknown"
-            rendition="#none">f</hi> statt <hi rend="unknown" rendition="#none">ʃ</hi>: <hi rend="unknown"
-            rendition="#none">feculacotz</hi>, <hi rend="unknown" rendition="#none">humiltafunera</hi> u.s.w. </p>
-
-        <p>S. 571. Warum verschweigen Sie so oft den Namen des gegenwärtigen Besitzers? Dass der Katechismus einst <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5475">
-Mahn</persName> (und vorher wohl <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3539">Humboldt</persName>) gehörte, habe ich glaub’ ich nur als Vermuthung ausgesprochen. </p>
-        <pb facs="#IMG.8" n="8"/>
-        <p>S. 599<hi rendition="#sup">#</hi> Lies: <hi rend="unknown" rendition="#none">
+            </p>
+            <p>S. 369 496 Lies <hi rend="unknown" rendition="#none">basque-espagnole</hi>
+            </p>
+            <p>S. 377<hi rendition="#sup">u</hi> Lies <hi rend="unknown" rendition="#none">530</hi>. <hi rend="unknown" rendition="#none">531</hi> statt <hi rend="unknown" rendition="#none">529</hi>. <hi rend="unknown" rendition="#none">530</hi>
+            </p>
+            <p>S. 383. 560 Lies: <hi rend="unknown" rendition="#none">J. Subirana</hi>
+            </p>
+            <p>S. 389. 589. Lies statt <hi rend="unknown" rendition="#none">(V) IV, 87 p</hi>: <hi rend="unknown" rendition="#none">46 p</hi>. (Progamm von Ratibor) </p>
+            <p>S. 401 630 Lies ̒<hi rend="unknown" rendition="#none">As Fr.</hi>
+            </p>
+            <p>S. 531<hi rendition="#sup">o</hi> Statt <hi rend="unknown" rendition="#none">anda</hi> muss der Text anders lauten, ich weiss augenblicklich nicht wie. – <hi rend="unknown" rendition="#none">buſcar</hi>. – <hi rend="unknown" rendition="#none">ençindu</hi> – <hi rend="unknown" rendition="#none">çe</hi>
+            </p>
+            <p>S. 531<hi rendition="#sup">m</hi>
+               <hi rend="unknown" rendition="#none">navarraiss</hi>
+            </p>
+            <p> S. 550. Warum hat Herr <persName ref="[authorityLink]">
+Stempf</persName> seine Ausgabe der Sprichw. von Oihenart nicht vollenden können? <note n="14" place="foot" type="editorial">Am rechten Rand ein Fragezeichen, vermutlich von Vinsons Hand.</note>
+            </p>
+            <p> S. 553. ff. In den beiden Gedichten sind eine Menge von <hi rend="unknown" rendition="#none">f</hi> statt <hi rend="unknown" rendition="#none">ʃ</hi>: <hi rend="unknown" rendition="#none">feculacotz</hi>, <hi rend="unknown" rendition="#none">humiltafunera</hi> u.s.w. </p>
+            <p>S. 571. Warum verschweigen Sie so oft den Namen des gegenwärtigen Besitzers? Dass der Katechismus einst <persName ref="[authorityLink]">
+Mahn</persName> (und vorher wohl <persName ref="[authorityLink]">Humboldt</persName>) gehörte, habe ich glaub’ ich nur als Vermuthung ausgesprochen. </p>
+            <pb facs="#IMG.8" n="8"/>
+            <p>S. 599<hi rendition="#sup">#</hi> Lies: <hi rend="unknown" rendition="#none">
 Lafontenenetaric</hi>
-        </p>
-        <p>S. 602<hi rendition="#sup">m</hi> Lies: <hi rend="unknown" rendition="#none">Jaïncozco hautan</hi>
-        </p>
-        <p>S. 609. 358<hi rendition="#sup">bis</hi> Lies. <hi rend="unknown" rendition="#none">
+            </p>
+            <p>S. 602<hi rendition="#sup">m</hi> Lies: <hi rend="unknown" rendition="#none">Jaïncozco hautan</hi>
+            </p>
+            <p>S. 609. 358<hi rendition="#sup">bis</hi> Lies. <hi rend="unknown" rendition="#none">
 Sebastian</hi>
-        </p>
-        <p>S. 608 Lies: <hi rend="unknown" rendition="#none">339</hi> statt <hi rend="unknown" rendition="#none">239</hi>
-        </p>
-        <p>S. 612<hi rendition="#sup">u</hi>
-          <hi rend="unknown" rendition="#none">Le nom rançais</hi>
-        </p>
-        <p>S. 629<hi rendition="#sup">#</hi> Lies: <hi rend="unknown" rendition="#none">der Kaiserlichen</hi>
-        </p>
-        <p> S. 640 – 653-10<hi rendition="#sup">o</hi>. Lies. <hi rend="unknown" rendition="#none">
+            </p>
+            <p>S. 608 Lies: <hi rend="unknown" rendition="#none">339</hi> statt <hi rend="unknown" rendition="#none">239</hi>
+            </p>
+            <p>S. 612<hi rendition="#sup">u</hi>
+               <hi rend="unknown" rendition="#none">Le nom rançais</hi>
+            </p>
+            <p>S. 629<hi rendition="#sup">#</hi> Lies: <hi rend="unknown" rendition="#none">der Kaiserlichen</hi>
+            </p>
+            <p> S. 640 – 653-10<hi rendition="#sup">o</hi>. Lies. <hi rend="unknown" rendition="#none">
 laphurdiko</hi>
-        </p>
-        <p> S 641 – 663<hi rendition="#sup">bis</hi> Lies: Tolosa </p>
-        <p>S. 651 – 702 Lies: <hi rend="unknown" rendition="#none">biurturiko</hi>
-        </p>
-        <p> S. 654 – 714 Lies: <hi rend="unknown" rendition="#none">isqabidea</hi> – <hi rend="unknown"
-            rendition="#none">batza</hi>. – <hi rend="unknown" rendition="#none">8</hi> (statt VIII) </p>
-        <p>S. 657, Z. 11. Lies <hi rend="unknown" rendition="#none">Larrieu</hi>
-        </p>
-        <p> S. 659, Z. 4. Lies: <hi rend="unknown" rendition="#none">107-128</hi>
-        </p>
-        <p> – 741 Lies: <hi rend="unknown" rendition="#none">animan</hi>
-        </p>
-        <p> S. 660 – 745 Lies: <hi rend="unknown" rendition="#none">Topolovšek</hi>
-        </p>
-        <p> 746.a. Lies: <hi rend="unknown" rendition="#none">Ó berzas y</hi>
-        </p>
-        <p>747 Lies: <hi rend="unknown" rendition="#none">des B.</hi> – <hi rend="unknown"
-            rendition="#none">Gabelentz</hi> – <hi rend="unknown" rendition="#none">
-Schulenburg</hi> (<hi
-            rend="unknown" rendition="#none">286 II</hi>). </p>
-        <p>S. 663. – 759. Lies <hi rend="unknown" rendition="#none">(II) p.</hi>
-        </p>
-        <p>S. 666 – 771 Lies <hi rend="unknown" rendition="#none">15 p.</hi>
-        </p>
-        <p>S. 669 – 776. Lies <hi rend="unknown" rendition="#none">Goiri-taŕ</hi> – <hi rend="unknown" rendition="#none">bizkaino</hi>
-        </p>
-      </div>
-    </body>
-  </text>
+            </p>
+            <p> S 641 – 663<hi rendition="#sup">bis</hi> Lies: Tolosa </p>
+            <p>S. 651 – 702 Lies: <hi rend="unknown" rendition="#none">biurturiko</hi>
+            </p>
+            <p> S. 654 – 714 Lies: <hi rend="unknown" rendition="#none">isqabidea</hi> – <hi rend="unknown" rendition="#none">batza</hi>. – <hi rend="unknown" rendition="#none">8</hi> (statt VIII) </p>
+            <p>S. 657, Z. 11. Lies <hi rend="unknown" rendition="#none">Larrieu</hi>
+            </p>
+            <p> S. 659, Z. 4. Lies: <hi rend="unknown" rendition="#none">107-128</hi>
+            </p>
+            <p> – 741 Lies: <hi rend="unknown" rendition="#none">animan</hi>
+            </p>
+            <p> S. 660 – 745 Lies: <hi rend="unknown" rendition="#none">Topolovšek</hi>
+            </p>
+            <p> 746.a. Lies: <hi rend="unknown" rendition="#none">Ó berzas y</hi>
+            </p>
+            <p>747 Lies: <hi rend="unknown" rendition="#none">des B.</hi> – <hi rend="unknown" rendition="#none">Gabelentz</hi> – <hi rend="unknown" rendition="#none">
+Schulenburg</hi> (<hi rend="unknown" rendition="#none">286 II</hi>). </p>
+            <p>S. 663. – 759. Lies <hi rend="unknown" rendition="#none">(II) p.</hi>
+            </p>
+            <p>S. 666 – 771 Lies <hi rend="unknown" rendition="#none">15 p.</hi>
+            </p>
+            <p>S. 669 – 776. Lies <hi rend="unknown" rendition="#none">Goiri-taŕ</hi> – <hi rend="unknown" rendition="#none">bizkaino</hi>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

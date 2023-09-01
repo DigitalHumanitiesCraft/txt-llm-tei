@@ -1,382 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Wilhelm Meyer-Lübke an Hugo Schuchardt (05-07228)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-            <forename>Wilhelm</forename>
-            <surname>Meyer-Lübke</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Magdalena</forename>
-            <surname>Rattey</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/9296" type="PID">o:hsa.letter.9296</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">05-07228</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">07228</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-                <forename>Wilhelm</forename>
-                <surname>Meyer-Lübke</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" ref="http://sws.geonames.org/2761368">Wien</origPlace>
-              <origDate ana="dcterms:created" when="1891-02-21">1891-02-21</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Magdalena</forename>
-              <surname>Rattey</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Wilhelm Meyer-Lübke und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2180"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.9296">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2180" ref="https://viaf.org/viaf/2546176">
-            <forename>Wilhelm</forename>
-            <surname>Meyer-Lübke</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" key="#GID.1" ref="http://sws.geonames.org/2761368">Wien</placeName>
-          <date when="1891-02-21">1891-02-21</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <name ref="http://geonames.org/2761368" type="fcode:STM">Wien-Fluss</name>
-                <location>
-                  <geo>16.38409,48.2088</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2180" type="context">
-                        Korrespondenz Wilhelm Meyer-Lübke - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3391" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kaiserliche Akademie der Wissenschaften in Wien</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3222" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sitzungsberichte der philosophisch-historischen Classe der Kaiserlichen Akademie der Wissenschaften. Wien</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3144" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturblatt für germanische und romanische Philologie</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.860" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.302" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Provenzalisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.3212" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rätoromanische Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.779" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.844" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.227" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Altfranzösisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9296" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9296" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9296" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9296" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.9296" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Wien IV. Belvederegasse 8 21 II 91</dateline>
-        <opener> Hochgeehrter Herr College!</opener>
-        <p> Zuvörderst meinen herzlichsten glückwunsch zu Ihrer ernennung zum o. mitgl. der Akad.<note n="1"
-            place="foot" type="editorial">1891 wurde <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Schuchardt</persName> wirkliches Mitglied der <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.3391">kaiserlichen Akademie der Wissenschaften in Wien</ref>. Im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3222">Sitzungsprotokoll der philosophisch-historischen Klasse</ref> vom 7. Oktober 1891 finden die neugewählten Mitglieder Erwähnung (vgl. <bibl>
-              <hi rend="unknown"
-            rendition="#none">Anzeiger d. kaiserl. Akad. d. Wiss. Philos.-hist. Classe</hi> 1891, S. 71
-</bibl>). </note> Ich hatte mich immer gewundert und es als ein unrecht empfunden, dass die gelehrte körperschaft Sie noch nicht ganz in ihre mitte aufgenommen hatte und freue mich nun doppelt, dass es endlich geschehen ist. Wird das Sie nun nicht veranlassen, öfter nach <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName> zu kommen als es bisher geschehen, und wenn ja, dürfte ich dabei vielleicht einmal Ihre persönliche bekanntschaft machen? Was um so eher möglich wäre, als meine wohnung nur wenige minuten vom südbahnhof entfernt ist – </p>
-
-        <p>Was mich heute noch veranlasst Ihnen zu schreiben, ist wieder eine prinzipien frage. – So viel ich sehe, nimmt man allgemein an, im urfranzösischen sei -atóre an stelle von <hi
-            rend="unknown" rendition="#none">-ītóre</hi>
-          <pb facs="#IMG.2" n="2"/>
-          <hi rend="unknown"
-            rendition="#none">-ĭtóre</hi> getreten und beruft sich dabei auf das überwiegen der a-verba, bezw. der typen <hi
-            rend="unknown" rendition="#none">
--atore</hi>. Aber ist dieser typus im <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.226">frz.</ref> stärker als im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">ital.</ref>
-          <ref target="https://gams.uni-graz.at/o:hsa.languages#L.302">prov.</ref>
-          <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3212">rät.</ref>
-          <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">span.</ref>
-          <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.844">portg.</ref>, wo ein derartiger übergriff nicht statt hat? Wer sagt, dass im frz. <hi
-            rend="unknown"
-            rendition="#none">-atóre</hi> überall eingetreten sei, muss, mein ich, auch sagen, weshalb in den andern sprachen <hi
-            rend="unknown" rendition="#none">-ĭtóre</hi>
-          <hi rend="unknown"
-            rendition="#none">-ītóre</hi> blieben, sonst hat er eben nur etwas behauptet, nichts bewiesen. – Ich erkläre nun ganz anders. In folge des Darmestet. gesetzes<note
-            n="2" place="foot" type="editorial">Im Abschnitt <hi rend="unknown"
-              rendition="#none">Histoire des voyelles. I. Atones finales</hi> (vgl. <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.9296" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Wien IV. Belvederegasse 8 21 II 91</dateline>
+            <opener> Hochgeehrter Herr College!</opener>
+            <p> Zuvörderst meinen herzlichsten glückwunsch zu Ihrer ernennung zum o. mitgl. der Akad.<note n="1" place="foot" type="editorial">1891 wurde <persName ref="[authorityLink]">Schuchardt</persName> wirkliches Mitglied der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3391">kaiserlichen Akademie der Wissenschaften in Wien</ref>. Im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3222">Sitzungsprotokoll der philosophisch-historischen Klasse</ref> vom 7. Oktober 1891 finden die neugewählten Mitglieder Erwähnung (vgl. <bibl>
+                     <hi rend="unknown" rendition="#none">Anzeiger d. kaiserl. Akad. d. Wiss. Philos.-hist. Classe</hi> 1891, S. 71
+</bibl>). </note> Ich hatte mich immer gewundert und es als ein unrecht empfunden, dass die gelehrte körperschaft Sie noch nicht ganz in ihre mitte aufgenommen hatte und freue mich nun doppelt, dass es endlich geschehen ist. Wird das Sie nun nicht veranlassen, öfter nach <placeName ref="[authorityLink]">Wien</placeName> zu kommen als es bisher geschehen, und wenn ja, dürfte ich dabei vielleicht einmal Ihre persönliche bekanntschaft machen? Was um so eher möglich wäre, als meine wohnung nur wenige minuten vom südbahnhof entfernt ist – </p>
+            <p>Was mich heute noch veranlasst Ihnen zu schreiben, ist wieder eine prinzipien frage. – So viel ich sehe, nimmt man allgemein an, im urfranzösischen sei -atóre an stelle von <hi rend="unknown" rendition="#none">-ītóre</hi>
+               <pb facs="#IMG.2" n="2"/>
+               <hi rend="unknown" rendition="#none">-ĭtóre</hi> getreten und beruft sich dabei auf das überwiegen der a-verba, bezw. der typen <hi rend="unknown" rendition="#none">
+-atore</hi>. Aber ist dieser typus im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">frz.</ref> stärker als im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.860">ital.</ref>
+               <ref target="https://gams.uni-graz.at/o:hsa.languages#L.302">prov.</ref>
+               <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3212">rät.</ref>
+               <ref target="https://gams.uni-graz.at/o:hsa.languages#L.779">span.</ref>
+               <ref target="https://gams.uni-graz.at/o:hsa.languages#L.844">portg.</ref>, wo ein derartiger übergriff nicht statt hat? Wer sagt, dass im frz. <hi rend="unknown" rendition="#none">-atóre</hi> überall eingetreten sei, muss, mein ich, auch sagen, weshalb in den andern sprachen <hi rend="unknown" rendition="#none">-ĭtóre</hi>
+               <hi rend="unknown" rendition="#none">-ītóre</hi> blieben, sonst hat er eben nur etwas behauptet, nichts bewiesen. – Ich erkläre nun ganz anders. In folge des Darmestet. gesetzes<note n="2" place="foot" type="editorial">Im Abschnitt <hi rend="unknown" rendition="#none">Histoire des voyelles. I. Atones finales</hi> (vgl. <bibl>
 
 Darmesteter 1891: 83
-</bibl>) findet sich unter § 47 „Chute des atones finales, sauf A“ folgendes Gesetz: „<foreign
-            xml:lang="fr">Toutes les finales atones tombèrent, sauf l'A, qui se maintint sous forme d'E féminin. Si le mot se terminait par un groupe de consonnes de prononciation trop difficile, l'E féminin s'ajouta comme voyelle d'appui.</foreign>“ (Ebd.).</note> gerieten im nordfranz. u prov. der stamm des verbums und der consonant des suff <hi
-            rend="unknown"
-            rendition="#none">-tore</hi> in eine derartige berührung, dass in den meisten fällen entweder der verbalstamm oder das t des suffixes eine veränderung erlitten, die den einen der beiden wortbestandteile bis zur unkenntlichkeit zerstörte. Aus <hi
-            rend="unknown" rendition="#none">venditore</hi> entsteht <hi rend="unknown"
-            rendition="#none">
-venteur</hi> neben <hi rend="unknown" rendition="#none">vend-ons</hi>, aus <hi
-            rend="unknown" rendition="#none">dormitóre</hi> : <hi rend="unknown"
-            rendition="#none">dorteur</hi> neben <hi rend="unknown"
-            rendition="#none">
-dorm-ons</hi>. Nur standen daneben die zahlreichen wörter von a-verben wie <hi
-            rend="unknown" rendition="#none">amadór</hi>, in denen <hi rend="unknown"
-            rendition="#none">ama-</hi> einerseits, -dor andrerseits schön auseinander gehalten wurden. Dies hatte zur folge, dass <hi
-            rend="unknown" rendition="#none">
-venditóre</hi> und <hi rend="unknown"
-            rendition="#none">dormītore</hi> gar nicht synkopirten, sondern ihr <hi rend="unknown"
-            rendition="#none">ĭ̄</hi> auf einen schwa-vokal reduzirten, der die beiden elemente, stamm u. suffix, auseinanderhielt. <hi
-            rend="unknown" rendition="#none">vendedór</hi>, <hi rend="unknown"
-            rendition="#none">dormedór</hi>. Im franz. nun, wo <pb facs="#IMG.3" n="3"/>
-          <hi rend="unknown" rendition="#none">amadór</hi> zu <hi rend="unknown"
-            rendition="#none">amȩdór</hi> wird, fielen die 3 typen im cas. obl. zusammen, daher auch nom. *<hi
-            rend="unknown" rendition="#none">dormire</hi> durch <hi rend="unknown"
-            rendition="#none">dormere</hi> ersetzt wurde. Im prov., wo <hi rend="unknown"
-            rendition="#none">-ador</hi> von <hi rend="unknown"
-            rendition="#none">-edor</hi> geschieden blieb, hielt sich <hi rend="unknown"
-            rendition="#none">īre</hi>, wie aber zu <hi rend="unknown" rendition="#none">
-aire</hi> der obl. <hi
-            rend="unknown" rendition="#none">ador</hi> lautete, so zu <hi rend="unknown" rendition="#none">ire</hi>
-          <hi rend="unknown" rendition="#none">-idór</hi>, und umgekehrt zu obl. -edor nom -eire. Damit ist die oben angedeutete schwierigkeit gelöst, und zugleich die verschiedenheit zwischen frz. und prov. im nom. erklärt. –</p>
-        <p> Sie werden mir <hi rend="unknown"
-            rendition="#none">dortoir</hi> entgegen halten. Allein bei solchen fragen, wo die psychologischen elemente die hauptrolle spielen, muss jedes suffix, oder noch lieber jedes wort für sich erwogen werden, ausserdem finden wir auch <hi
-            rend="unknown" rendition="#none">dorme-oir</hi> in <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.227">afr.</ref> Zunächst fragt es sich, ob der grundgedanke richtig ist, und darüber möchte ich gerne Ihre ansicht vernehmen. Zur stütze will ich anführen: die wörter auf <hi
-            rend="unknown" rendition="#none">ĭtáte</hi> synkopiren alle mit ausnahme derjenigen, wo dem suffix ein <hi
-            rend="unknown" rendition="#none">t</hi> vorangeht: <hi rend="unknown" rendition="#none">bonté</hi> : <hi
-            rend="unknown" rendition="#none">sainteté</hi>, also das physiol. gesetz, wonach <hi rend="unknown"
-            rendition="#none">matutinus</hi> zu <hi rend="unknown" rendition="#none">mattinus</hi> wird, wird aufgehoben durch ein psychol., das suffix u stamm auseinanderhælt. – </p>
-        <p>Neumann<note n="3" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2288">Friedrich (Fritz) Neumann</persName> (1854-1934) war zu dieser Zeit o. Professor für Romanische Philologie in <placeName>
+</bibl>) findet sich unter § 47 „Chute des atones finales, sauf A“ folgendes Gesetz: „<foreign xml:lang="fr">Toutes les finales atones tombèrent, sauf l'A, qui se maintint sous forme d'E féminin. Si le mot se terminait par un groupe de consonnes de prononciation trop difficile, l'E féminin s'ajouta comme voyelle d'appui.</foreign>“ (Ebd.).</note> gerieten im nordfranz. u prov. der stamm des verbums und der consonant des suff <hi rend="unknown" rendition="#none">-tore</hi> in eine derartige berührung, dass in den meisten fällen entweder der verbalstamm oder das t des suffixes eine veränderung erlitten, die den einen der beiden wortbestandteile bis zur unkenntlichkeit zerstörte. Aus <hi rend="unknown" rendition="#none">venditore</hi> entsteht <hi rend="unknown" rendition="#none">
+venteur</hi> neben <hi rend="unknown" rendition="#none">vend-ons</hi>, aus <hi rend="unknown" rendition="#none">dormitóre</hi> : <hi rend="unknown" rendition="#none">dorteur</hi> neben <hi rend="unknown" rendition="#none">
+dorm-ons</hi>. Nur standen daneben die zahlreichen wörter von a-verben wie <hi rend="unknown" rendition="#none">amadór</hi>, in denen <hi rend="unknown" rendition="#none">ama-</hi> einerseits, -dor andrerseits schön auseinander gehalten wurden. Dies hatte zur folge, dass <hi rend="unknown" rendition="#none">
+venditóre</hi> und <hi rend="unknown" rendition="#none">dormītore</hi> gar nicht synkopirten, sondern ihr <hi rend="unknown" rendition="#none">ĭ̄</hi> auf einen schwa-vokal reduzirten, der die beiden elemente, stamm u. suffix, auseinanderhielt. <hi rend="unknown" rendition="#none">vendedór</hi>, <hi rend="unknown" rendition="#none">dormedór</hi>. Im franz. nun, wo <pb facs="#IMG.3" n="3"/>
+               <hi rend="unknown" rendition="#none">amadór</hi> zu <hi rend="unknown" rendition="#none">amȩdór</hi> wird, fielen die 3 typen im cas. obl. zusammen, daher auch nom. *<hi rend="unknown" rendition="#none">dormire</hi> durch <hi rend="unknown" rendition="#none">dormere</hi> ersetzt wurde. Im prov., wo <hi rend="unknown" rendition="#none">-ador</hi> von <hi rend="unknown" rendition="#none">-edor</hi> geschieden blieb, hielt sich <hi rend="unknown" rendition="#none">īre</hi>, wie aber zu <hi rend="unknown" rendition="#none">
+aire</hi> der obl. <hi rend="unknown" rendition="#none">ador</hi> lautete, so zu <hi rend="unknown" rendition="#none">ire</hi>
+               <hi rend="unknown" rendition="#none">-idór</hi>, und umgekehrt zu obl. -edor nom -eire. Damit ist die oben angedeutete schwierigkeit gelöst, und zugleich die verschiedenheit zwischen frz. und prov. im nom. erklärt. –</p>
+            <p> Sie werden mir <hi rend="unknown" rendition="#none">dortoir</hi> entgegen halten. Allein bei solchen fragen, wo die psychologischen elemente die hauptrolle spielen, muss jedes suffix, oder noch lieber jedes wort für sich erwogen werden, ausserdem finden wir auch <hi rend="unknown" rendition="#none">dorme-oir</hi> in <ref target="https://gams.uni-graz.at/o:hsa.languages#L.227">afr.</ref> Zunächst fragt es sich, ob der grundgedanke richtig ist, und darüber möchte ich gerne Ihre ansicht vernehmen. Zur stütze will ich anführen: die wörter auf <hi rend="unknown" rendition="#none">ĭtáte</hi> synkopiren alle mit ausnahme derjenigen, wo dem suffix ein <hi rend="unknown" rendition="#none">t</hi> vorangeht: <hi rend="unknown" rendition="#none">bonté</hi> : <hi rend="unknown" rendition="#none">sainteté</hi>, also das physiol. gesetz, wonach <hi rend="unknown" rendition="#none">matutinus</hi> zu <hi rend="unknown" rendition="#none">mattinus</hi> wird, wird aufgehoben durch ein psychol., das suffix u stamm auseinanderhælt. – </p>
+            <p>Neumann<note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Friedrich (Fritz) Neumann</persName> (1854-1934) war zu dieser Zeit o. Professor für Romanische Philologie in <placeName>
 Heidelberg</placeName>. Er war Mitherausgeber des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3144">
-              <hi rend="unknown" rendition="#none">Ltbl. f. germ. u. rom. Philol.</hi>
-            </ref> (von 1880 bis 1929). Seine Briefe an Schuchardt (<ref
-            target="https://gams.uni-graz.at/context:hsa.letters.2288">07759-07816</ref>) sind veröffentlicht in <bibl>
+                     <hi rend="unknown" rendition="#none">Ltbl. f. germ. u. rom. Philol.</hi>
+                  </ref> (von 1880 bis 1929). Seine Briefe an Schuchardt (<ref target="https://gams.uni-graz.at/context:hsa.letters.2288">07759-07816</ref>) sind veröffentlicht in <bibl>
 
 Hausmannn (2016b)
-</bibl>.</note> , dem ich die sache vorlegte, schreibt, das sei unmöglich, weil es gegen alle unsere prinzipien verstosse! Es frägt sich, <pb
-            facs="#IMG.4"
-            n="4"/>ob wir die prinzipien nach den tatsachen oder die tatsachen nach den prinzipien zu richten haben. Ich hatte ihm den grundsatz nämlich geradezu formulirt: „wenn durch vokalausfall flexionsendungen oder suffixe mit dem stamm eine so enge verbindung eingehen würden, dass eine zerstörung eines der wesentlichen wortbestandteile entstünde, so tritt nicht volle synkope ein, sondern es hælt sich ein hemmendes vokalelement.“ Das ist wol etwas zu viel u. zu allgemein, und nicht für die junggrammatische schablone passend, aber im grunde vielleicht nicht ganz unrichtig – Wenn übrigens <hi
-            rend="unknown" rendition="#none">factore</hi> usw im rom. durch <hi rend="unknown"
-            rendition="#none">facitore</hi> usw ersetzt werden, was für einen anderen grund hat das, als stamm u. suffix auseinanderzuhalten? Natürlich kann man, um in den augen der junggramm. gnade zu finden, sagen: nach „analogie“ von <hi
-            rend="unknown" rendition="#none">amadire</hi> : <hi rend="unknown" rendition="#none">amor</hi> wird <hi
-            rend="unknown" rendition="#none">dortore</hi> zu <hi rend="unknown"
-            rendition="#none">dormir</hi> neugebildet als <hi rend="unknown"
-            rendition="#none">dormidore</hi>, aber wo bleibt frz. <hi rend="unknown"
-            rendition="#none">dormedor</hi> und <hi rend="unknown" rendition="#none">vendere</hi> : <hi rend="unknown"
-            rendition="#none">vendedor</hi>?! – Ich war mit meiner ansicht fertig, für diese und manche andere erscheinung der wortbildungslehre, als mir Ihre bemerkung über <hi
-            rend="unknown" rendition="#none">
-st</hi> aus <hi rend="unknown" rendition="#none">t+t</hi> Zs. IV<note
-            n="4" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.591">Schuchardt, Hugo. 1880. [Rez. von:] Ernst Windisch, Kurzgefasste Irische Grammatik mit Lesestücken. <hi
-                  rend="unknown" rendition="#none">ZrP</hi> 4: 124–155</ref>
-            </bibl>. [Archiv-/Breviernummer: 121]. Hier S. 146 lautet es: „Einen sehr sichern und lehrreichen Beleg für Spirans + Tenuis = Tenuis + Tenuis liefert uns die vielen Sprachen gemeinsame Entstehung von st aus wurzelhaftem t + Suffix-t [...].“</note> 146, die mir seinerzeit beim erscheinen des artikels nicht völlig klar war, wieder einfiel, und dies veranlasste mich, Ihnen die sache mit der bitte um Ihr urteil vorzulegen. </p>
-        <closer>
-          <salute>Mit grösster hochachtung</salute>
-          <lb/>
-          <salute>Ihr ganz ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">W. Meyer-Lübke</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+</bibl>.</note> , dem ich die sache vorlegte, schreibt, das sei unmöglich, weil es gegen alle unsere prinzipien verstosse! Es frägt sich, <pb facs="#IMG.4" n="4"/>ob wir die prinzipien nach den tatsachen oder die tatsachen nach den prinzipien zu richten haben. Ich hatte ihm den grundsatz nämlich geradezu formulirt: „wenn durch vokalausfall flexionsendungen oder suffixe mit dem stamm eine so enge verbindung eingehen würden, dass eine zerstörung eines der wesentlichen wortbestandteile entstünde, so tritt nicht volle synkope ein, sondern es hælt sich ein hemmendes vokalelement.“ Das ist wol etwas zu viel u. zu allgemein, und nicht für die junggrammatische schablone passend, aber im grunde vielleicht nicht ganz unrichtig – Wenn übrigens <hi rend="unknown" rendition="#none">factore</hi> usw im rom. durch <hi rend="unknown" rendition="#none">facitore</hi> usw ersetzt werden, was für einen anderen grund hat das, als stamm u. suffix auseinanderzuhalten? Natürlich kann man, um in den augen der junggramm. gnade zu finden, sagen: nach „analogie“ von <hi rend="unknown" rendition="#none">amadire</hi> : <hi rend="unknown" rendition="#none">amor</hi> wird <hi rend="unknown" rendition="#none">dortore</hi> zu <hi rend="unknown" rendition="#none">dormir</hi> neugebildet als <hi rend="unknown" rendition="#none">dormidore</hi>, aber wo bleibt frz. <hi rend="unknown" rendition="#none">dormedor</hi> und <hi rend="unknown" rendition="#none">vendere</hi> : <hi rend="unknown" rendition="#none">vendedor</hi>?! – Ich war mit meiner ansicht fertig, für diese und manche andere erscheinung der wortbildungslehre, als mir Ihre bemerkung über <hi rend="unknown" rendition="#none">
+st</hi> aus <hi rend="unknown" rendition="#none">t+t</hi> Zs. IV<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.591">Schuchardt, Hugo. 1880. [Rez. von:] Ernst Windisch, Kurzgefasste Irische Grammatik mit Lesestücken. <hi rend="unknown" rendition="#none">ZrP</hi> 4: 124–155</ref>
+                  </bibl>. [Archiv-/Breviernummer: 121]. Hier S. 146 lautet es: „Einen sehr sichern und lehrreichen Beleg für Spirans + Tenuis = Tenuis + Tenuis liefert uns die vielen Sprachen gemeinsame Entstehung von st aus wurzelhaftem t + Suffix-t [...].“</note> 146, die mir seinerzeit beim erscheinen des artikels nicht völlig klar war, wieder einfiel, und dies veranlasste mich, Ihnen die sache mit der bitte um Ihr urteil vorzulegen. </p>
+            <closer>
+               <salute>Mit grösster hochachtung</salute>
+               <lb/>
+               <salute>Ihr ganz ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">W. Meyer-Lübke</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

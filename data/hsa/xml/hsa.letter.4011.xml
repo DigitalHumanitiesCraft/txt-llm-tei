@@ -1,311 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Georges Lacombe (113-069)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Katrin</forename>
-            <surname>Purgay</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4011" type="PID">o:hsa.letter.4011</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">113-069</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</repository>
-            <idno type="shelfmark">069</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1910-12-30">1910-12-30</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Katrin</forename>
-              <surname>Purgay</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Georges Lacombe</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1977"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4011">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1910-12-30">1910-12-30</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1977" ref="https://viaf.org/viaf/34446283">
-            <forename>Georges</forename>
-            <surname>Lacombe</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1977" type="context">
-                        Korrespondenz Hugo Schuchardt - Georges Lacombe
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4011" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4011" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4011" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4011" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4011" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4011" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.euskaltzaindia.eus">Fondo Lacombe (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4011" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 30. 12. ’10</dateline>
-        <opener>Sehr geehrter Herr und Freund,</opener>
-
-        <p>Gestern habe ich auf einer Karte die etymologischen Fragen die Sie mir stellten, so gut beantwortet als es mir im Augenblick möglich war. Heute kommt mir nun etwas Neues und sehr Anregendes von Ihrer Seite zu. Je ne prends pas la <hi
-            rend="unknown" rendition="#none">mouche</hi>, mais je chercherai à saisir le <hi rend="unknown"
-            rendition="#none">muss</hi> dans ses origines. Aber das bedarf der Zeit; vor allem möchte ich eine genaue Beschreibung des baskischen muss haben – die können Sie mir wohl verschaffen? Über das franz. Mouche finde ich vielleicht hier etwas. Ich bitte Sie <hi
-            rend="unknown" rendition="#none">vorderhand</hi> mich aus dem Spiele zu lassen, bemerke aber <hi
-            rend="unknown" rendition="#none">für</hi>
-          <pb facs="#IMG.2" n="2"/>
-          <hi rend="unknown" rendition="#none">Sie privatim</hi> Folgendes.</p>
-        <p>Es ist höchst unwahrscheinlich daß <hi rend="unknown" rendition="#none">muss</hi> und <hi rend="unknown"
-            rendition="#none">mouche</hi> zufällig zusammengetroffen sind. Die Orthographie läßt die Wörter verschieden erscheinen; aber wie hätte denn <hi
-            rend="unknown" rendition="#none">mouche</hi> im Bask. anders wiedergegeben werden können, als mit <hi
-            rend="unknown" rendition="#none">mus(s)</hi>? Für mich besteht kein Zweifel an der Identität der beiden Wörter (die der Gezurrikez als „vague analogie“ bezeichnet).</p>
-
-        <p>Hiermit wäre eine gründliche Verschiedenheit beider Spiele wohl vereinbar. Dafür gibt es genug Beispiele. Unser deutsches <hi
-            rend="unknown" rendition="#none">Skat</hi> und der <hi rend="unknown"
-            rendition="#none">Écarté</hi> sind gewiß einander sehr unähnlich und doch liegt beiden Namen <hi
-            rend="unknown" rendition="#none">scarfare, écarter</hi> zugrunde. Und um beim Baskischen zu bleiben, ist <pb
-            facs="#IMG.3" n="3"/> nicht auch das <hi rend="unknown" rendition="#none">mus</hi> welches, nach <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1062">
-Azkue</persName> „bredouille“ (deutlich <hi
-            rend="unknown" rendition="#none">
-Matsch </hi>vom ital. <hi rend="unknown"
-            rendition="#none">marcio</hi>) bedeutet dasselbe wie das andere <hi rend="unknown"
-            rendition="#none">mus</hi> ? – In Spanien ist auch außerhalb der bask. Provinzen <hi rend="unknown" rendition="#none">el juego de mus</hi> bekannt; ich will versuchen Auskunft darüber zu erhalten.</p>
-        <p>Wenn <hi rend="unknown" rendition="#none">mus</hi> nicht gleich <hi rend="unknown"
-            rendition="#none">mouche</hi> ist, was ist es denn? Niemand wird es für altbaskisch halten; die Kartenspiele sind ja zudem etwas Neues. Also aus dem Ausland ist es jedenfalls gekommen. Will man etwa an das span. <hi
-            rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4011" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 30. 12. ’10</dateline>
+            <opener>Sehr geehrter Herr und Freund,</opener>
+            <p>Gestern habe ich auf einer Karte die etymologischen Fragen die Sie mir stellten, so gut beantwortet als es mir im Augenblick möglich war. Heute kommt mir nun etwas Neues und sehr Anregendes von Ihrer Seite zu. Je ne prends pas la <hi rend="unknown" rendition="#none">mouche</hi>, mais je chercherai à saisir le <hi rend="unknown" rendition="#none">muss</hi> dans ses origines. Aber das bedarf der Zeit; vor allem möchte ich eine genaue Beschreibung des baskischen muss haben – die können Sie mir wohl verschaffen? Über das franz. Mouche finde ich vielleicht hier etwas. Ich bitte Sie <hi rend="unknown" rendition="#none">vorderhand</hi> mich aus dem Spiele zu lassen, bemerke aber <hi rend="unknown" rendition="#none">für</hi>
+               <pb facs="#IMG.2" n="2"/>
+               <hi rend="unknown" rendition="#none">Sie privatim</hi> Folgendes.</p>
+            <p>Es ist höchst unwahrscheinlich daß <hi rend="unknown" rendition="#none">muss</hi> und <hi rend="unknown" rendition="#none">mouche</hi> zufällig zusammengetroffen sind. Die Orthographie läßt die Wörter verschieden erscheinen; aber wie hätte denn <hi rend="unknown" rendition="#none">mouche</hi> im Bask. anders wiedergegeben werden können, als mit <hi rend="unknown" rendition="#none">mus(s)</hi>? Für mich besteht kein Zweifel an der Identität der beiden Wörter (die der Gezurrikez als „vague analogie“ bezeichnet).</p>
+            <p>Hiermit wäre eine gründliche Verschiedenheit beider Spiele wohl vereinbar. Dafür gibt es genug Beispiele. Unser deutsches <hi rend="unknown" rendition="#none">Skat</hi> und der <hi rend="unknown" rendition="#none">Écarté</hi> sind gewiß einander sehr unähnlich und doch liegt beiden Namen <hi rend="unknown" rendition="#none">scarfare, écarter</hi> zugrunde. Und um beim Baskischen zu bleiben, ist <pb facs="#IMG.3" n="3"/> nicht auch das <hi rend="unknown" rendition="#none">mus</hi> welches, nach <persName ref="[authorityLink]">
+Azkue</persName> „bredouille“ (deutlich <hi rend="unknown" rendition="#none">
+Matsch </hi>vom ital. <hi rend="unknown" rendition="#none">marcio</hi>) bedeutet dasselbe wie das andere <hi rend="unknown" rendition="#none">mus</hi> ? – In Spanien ist auch außerhalb der bask. Provinzen <hi rend="unknown" rendition="#none">el juego de mus</hi> bekannt; ich will versuchen Auskunft darüber zu erhalten.</p>
+            <p>Wenn <hi rend="unknown" rendition="#none">mus</hi> nicht gleich <hi rend="unknown" rendition="#none">mouche</hi> ist, was ist es denn? Niemand wird es für altbaskisch halten; die Kartenspiele sind ja zudem etwas Neues. Also aus dem Ausland ist es jedenfalls gekommen. Will man etwa an das span. <hi rend="unknown" rendition="#none">
 mus! mus!</hi>, womit die Katzen (auch die Hunde) gerufen werden, denken?</p>
-        <p>Nicht die bloße Ähnlichkeit der Namen hat mich (ohne Beihilfe von anderer Seite) auf <pb facs="#IMG.4"
-            n="4"/> den Gedanken gebracht daß es sich um dasselbe Spiel handle, sondern irgend welches sachliche Détail. Ich glaube es waren die <hi
-            rend="unknown"
-            rendition="#none">kheinuak</hi>, etwas was gewiß charakteristisch genug ist um die Verwandtschaft zweier Spiele vermuten zu lassen. Aber ich bin meiner Sache keineswegs sicher – es ist ja fast ein Vierteljahrhundert her daß ich <hi
-            rend="unknown" rendition="#none">muss</hi> spielte.</p>
-
-        <p>Die Entstehung fremder Wörter ist bei allen möglichen Spielen eher die Regel wie die Ausnahme. In meiner Jugend glaubte man – im Herzen von Deutschland – nicht Billard spielen zu können ohne dabei <hi
-            rend="unknown"
-            rendition="#none">französisch</hi> zu zählen (vingt à treize usw.); jetzt gelten beim Lawn Tennis fast noch all<pb
-            facs="#IMG.5" n="5"/>gemein die <hi rend="unknown"
-            rendition="#none">englischen</hi> Ausdrücke, und nicht auch die <hi rend="unknown"
-            rendition="#none">spanischen</hi> beim baskischen Ballspiel? Da dieses als etwas spezifisch Baskisches angesehen wird, übersah <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1466">van Eys</persName> daß <hi rend="unknown"
-            rendition="#none">kinze</hi>, point, au jeu de paume spanisch ist. Übrigens ist dieses 15 als Punkt beim Ballspiel (auch in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5969">Italien</placeName>, <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6083">England</placeName> usw.) sehr interessant; es muß auf die Römer zurückgehen. Einer unserer hervorragendsten Ethnographen befragte mich gestern brieflich wegen des baskischen Ballspiels. Ich habe doch recht gehabt ihm zu sagen daß die schaufelförmige Verlängerung des schlagenden Armes <pb
-            facs="#IMG.6" n="6"/> eine Erfindung neurer Zeit ist? Ich habe darüber Notizen gemacht, habe aber augenblicklich keine Muße an sie zu suchen. Auch diese Zeilen schreibe ich in großer Eile; ich hätte mich wegen des mir erteilten Epitheton ornans so schämen sollen daß ich überhaupt nicht geschrieben hätte.</p>
-        <closer>
-          <salute>Mit herzlichem Gruß</salute>
-          <lb/>
-          <salute>Ihr ergebener</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Nicht die bloße Ähnlichkeit der Namen hat mich (ohne Beihilfe von anderer Seite) auf <pb facs="#IMG.4" n="4"/> den Gedanken gebracht daß es sich um dasselbe Spiel handle, sondern irgend welches sachliche Détail. Ich glaube es waren die <hi rend="unknown" rendition="#none">kheinuak</hi>, etwas was gewiß charakteristisch genug ist um die Verwandtschaft zweier Spiele vermuten zu lassen. Aber ich bin meiner Sache keineswegs sicher – es ist ja fast ein Vierteljahrhundert her daß ich <hi rend="unknown" rendition="#none">muss</hi> spielte.</p>
+            <p>Die Entstehung fremder Wörter ist bei allen möglichen Spielen eher die Regel wie die Ausnahme. In meiner Jugend glaubte man – im Herzen von Deutschland – nicht Billard spielen zu können ohne dabei <hi rend="unknown" rendition="#none">französisch</hi> zu zählen (vingt à treize usw.); jetzt gelten beim Lawn Tennis fast noch all<pb facs="#IMG.5" n="5"/>gemein die <hi rend="unknown" rendition="#none">englischen</hi> Ausdrücke, und nicht auch die <hi rend="unknown" rendition="#none">spanischen</hi> beim baskischen Ballspiel? Da dieses als etwas spezifisch Baskisches angesehen wird, übersah <persName ref="[authorityLink]">van Eys</persName> daß <hi rend="unknown" rendition="#none">kinze</hi>, point, au jeu de paume spanisch ist. Übrigens ist dieses 15 als Punkt beim Ballspiel (auch in <placeName ref="[authorityLink]">Italien</placeName>, <placeName ref="[authorityLink]">England</placeName> usw.) sehr interessant; es muß auf die Römer zurückgehen. Einer unserer hervorragendsten Ethnographen befragte mich gestern brieflich wegen des baskischen Ballspiels. Ich habe doch recht gehabt ihm zu sagen daß die schaufelförmige Verlängerung des schlagenden Armes <pb facs="#IMG.6" n="6"/> eine Erfindung neurer Zeit ist? Ich habe darüber Notizen gemacht, habe aber augenblicklich keine Muße an sie zu suchen. Auch diese Zeilen schreibe ich in großer Eile; ich hätte mich wegen des mir erteilten Epitheton ornans so schämen sollen daß ich überhaupt nicht geschrieben hätte.</p>
+            <closer>
+               <salute>Mit herzlichem Gruß</salute>
+               <lb/>
+               <salute>Ihr ergebener</salute>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

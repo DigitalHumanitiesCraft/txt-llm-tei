@@ -1,347 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (408-11163)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2264" type="PID">o:hsa.letter.2264</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">408-11163</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11163</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" ref="http://sws.geonames.org/2946447">Bonn</origPlace>
-              <origDate ana="dcterms:created" when="1925-01-13">1925-01-13</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2264">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" key="#GID.1" ref="http://sws.geonames.org/2946447">Bonn</placeName>
-          <date when="1925-01-13">1925-01-13</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Bonn</settlement>
-                <name ref="http://geonames.org/2946447" type="fcode:PPLA3">Bonn</name>
-                <location>
-                  <geo>7.09549,50.73438</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2264" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2264" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2264" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2264" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2264" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2264" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2264" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2264" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2264" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bonn, 13. I. 1925.</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-
-        <p>Endlich, nach 3 Monaten, ein Lebenszeichen! Ich wußte nicht, wie ich mir Ihr Schweigen deuten sollte. Ich habe <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3710">Theodor Riegler</persName> zu Ihnen dirigiert, der aber versagte, dann beruhigte mich <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1631">Gragger</persName> – aber doch nur über Ihr physisches Wohl. Ihre Schilderung der Leidensgeschichte tut mir sehr weh – wie gerne wünschte ich Ihnen, daß Sie, der Sie geistig die Altersbeschwerden so siegreich überwinden, dies auch körperlich könnten. Ich habe aber die sichere Zuversicht, daß Sie, eben durch die Kraft Ihres Gesundungswillens, auch der augenblicklichen Leiden Herr werden. Der Humor, mit dem Sie sie aufnehmen oder abreagieren, scheint mir dafür zu sprechen. Selbstverständlich übernehme ich alle Arbeit, die ich Ihnen abnehmen kann, Korrekturen usw., mit <pb
-            facs="#IMG.2" n="2"/>herzlicher Freude. Verfügen Sie stets über mich!</p>
-
-        <p>Daß unser Leben endlich auf eine andere Basis gekommen ist, wissen Sie. Das ministerielle Weihnachtstelegramm, der "Fetzen Papier", hat alle Wolken zerrissen. Wir sind befreit von dem Alpdruck, vor allem mein Empi. Ich werde mit Klagen meine Mitmenschen verschonen. Jetzt erscheint es mir und auch den Zeitgenossen auf einmal selbstverständlich, daß ich Ordinarius geworden bin. Interessant zu sehen, wie schon mit der neuen "Macht" "gerechnet" wird, wie sich Menschen um meine Huld bewerben, die mich sonst vielleicht bemitleideten. Was die Umstimmung in Berlin hervorgerufen hat – 14 Tage vorher verlautete noch, meine Ernennung sei ausgeschlossen –, ist unklar: Gerechtigkeitsliebe, Angst vor politischen Verwicklungen und Verstimmung von Gelehrten (es hatte ja fast alles, was in Deutschland Namen hat, sich eingesetzt), die Erwägung, daß es gut sei, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">Meyer-Lübke</persName> und mich <pb facs="#IMG.3" n="3"/>zu trennen? Über die Dessous und Dehors letzterer Familie ist nämlich das Ministerium glänzend unterrichtet. Der Ministerialrat Richter sagte mir, M.-L. habe sich "korrekt" benommen – das ist doch eigentlich wenig. Im Ministerium wurde ich ein wenig neupreußisch-diktatorisch-militaristisch empfangen, etwa mit der Vae victis-Geberde, und erreichen konnte ich wenig mehr als was mir zukam. Man warf natürlich die Schwierigkeit der Berufung ("Zangengeburt", sagte Richter) in die Wagschale, um mich finanziell zu drücken.</p>
-
-        <p>Marburg ist ganz entzückend. Eine Lebkuchenstadt. Gottlob gibt es keine Neukantianer mehr, dafür eine demokratische protest.-theologische Fakultät. Ich besuchte nur Wrede und Deutschbein, meine Gönner, die mich auch über das Verhalten der Studenten vollkommen beruhigten. Ich werde etwa 50 Hörer haben, also mehr als in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName>. <pb facs="#IMG.4" n="4"/>Wenn mir ein Wohnungstausch glückt, den ich im Auge habe, so werden wir eine herrliche, fast mit Pörtschach vergleichbare Wohnung, hoch oben am Berg, mit Fernsicht bis nach Gießen bekommen. Das wird sich in den nächsten Tagen entscheiden. Der Umzug findet wohl im April statt.</p>
-        <p>So muß ich denn mein neubezogenes Haus hier räumen, in dem wir uns so gemütlich eingerichtet haben. Aber ich verkaufe es nicht – vielleicht komme ich zurück...</p>
-        <p>In Berlin habe ich lange mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2697">Wilhelm Schulze</persName> gesprochen, der nun wirklich eine imponierende Erscheinung ist. Diese Religion der Sachlichkeit! Allerdings überrascht seine Abneigung gegen alles Theoretisieren, die er selbst als Mangel bezeichnet. Wir sprachen auch viel von Ihnen, den er sehr verehrt. Allerdings verargt er Ihnen die Vermischung von Wissenschaft und Weltanschauung in Ihren Aufsätzen über die intern. Weltsprache. Ich antwortete, daß gerade diese Harmonie von W. und W. uns Jüngeren an Ihnen zusage, und prüfte ihn sozusagen daraufhin, ob er denn die beiden W ganz trennen könne. Es stellte sich heraus, <pb
-            facs="#IMG.5"
-            n="5"/>daß er, der sich selbst als Nationalisten und Chauvinisten bezeichnet, ohne weiteres Universitätsvorlesungen über die Kriegsursachen jetzt (wo die feindlichen Archive noch nicht geöffnet sind!) aus politisch-weltanschaulichen Gründen billigt. Im Ganzen hat aber Schulze doch etwas Vornehmes, Unpäpstliches, Aristokratisches, Selbstverständlich-Würdevolles – und er ist dem Geheimnis der Sprache doch näher als der <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1215">Brugmann</persName>-Concern.</p>
-        <p>Mit dem französischen Gegenpapst <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2156">Meillet</persName>, der ja stets bescheiden tut, habe ich eine unliebsame Erfahrung gemacht. Urteilen Sie selbst! Mein rumänischer Freund <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5293">J. Jordan</persName> sandte auf mein Betreiben zu einer in der "Romania" von der Soc.d.Lingu. angekündigten Preisausschreibung ein Buch ein, das den Anforderungen vollkommen genügte. Er erhielt aber den Preis nicht, sondern <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2460">Puşcariu</persName> für seine ja im übrigen tüchtige Zeitschrift "Dacoromania" – gewiß ein Novum, da die Herausgabe einer Zeitschr. doch im allgemeinen nicht prämiert wird.</p>
-        <pb facs="#IMG.6" n="6"/>
-        <p>Als Jordan bei der Preisverteilungskommission reklamierte, hieß es, sein Buch sei nicht zum richtigen Datum gekommen, was J. durch Rezepiss als unwahr erweisen konnte. Nun hieß es, das Datum sei in der "Romania" durch einen Irrtum eines Sekretärs um einen Monat zu spät angesetzt worden (!!!). Ich legte nun Meillet nahe, diesen sog. Irrtum wenigstens in einer gedruckten Darlegung des Sachverhalts gutzumachen. Darauf Antwort Meillet: "En quoi une déclaration publique pourrait-elle être utile à M.J.? On arrangera une autre fois ces choses." Ich habe darauf nichts mehr geantwortet. Eine schandbare Versailler Diplomatie: Der wirkliche Grund ist die Deutschfreundlichkeit der Jassier Schule, während Puşcariu als Völkerbundsekr. natürlich in verschiedenen Farben schillern muß.</p>
-        <p>Den boshaften Angriff M-L's im <hi rend="unknown"
-            rendition="#none">Butlletí</hi> werden Sie gelesen haben. Natürlich wird es mir nicht schwer werden, ihn zu parieren, wie ich dies in <pb
-            facs="#IMG.7" n="7"/>meinem Ihnen eben zugesandten Archivum idealisticum-Aufsatz getan zu haben hoffe. Bitte um Ihre Meinung.</p>
-        <p>Kluckholm hat mir für die deutsche "Vierteljahrschrift" das Referat über Sprachphilosophie und allg. Sprachw. übergeben.</p>
-        <p>Was hat denn <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2909">
-Urtel</persName> mit Maupassant zu tun?<note n="1"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3872">H. Urtel, <hi rend="unknown" rendition="#none">Guy de Maupassant: Studien zu seiner künstlerischen Persönlichkeit</hi>
-              </ref>. München: Hueber 1926.</bibl>
-
-          </note> Will er etwa ein solcher werden oder dessen Abenteuer erleben? Ich bin, das muß ich ehrlich sagen, etwas eifersüchtig auf Ihre Beziehungen zu ihm. Die Gleichstellung mit einem nach Urteil aller, die ihn kennen, so subalternen Menschen hat mich von dem Augenblick an nicht gefreut, als ich ihn in Pörtschach kennen lernte. Ein sympathischer Oberlehrer – mehr gewiß nicht – und ein etwas eingebildeter obendrein, der bei weitem nicht so klug ist wie er glaubt und glauben machen will. So urteilten auch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4370">Frings</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2037">E. Lewy</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1348">Curtius</persName>, <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5266">H. Hahn</persName> und ein Schuchardt sollte anders denken?</p>
-        <pb facs="#IMG.8" n="8"/>
-        <p>Arbeiten Sie mit an der <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2858">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2264" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bonn, 13. I. 1925.</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Endlich, nach 3 Monaten, ein Lebenszeichen! Ich wußte nicht, wie ich mir Ihr Schweigen deuten sollte. Ich habe <persName ref="[authorityLink]">Theodor Riegler</persName> zu Ihnen dirigiert, der aber versagte, dann beruhigte mich <persName ref="[authorityLink]">Gragger</persName> – aber doch nur über Ihr physisches Wohl. Ihre Schilderung der Leidensgeschichte tut mir sehr weh – wie gerne wünschte ich Ihnen, daß Sie, der Sie geistig die Altersbeschwerden so siegreich überwinden, dies auch körperlich könnten. Ich habe aber die sichere Zuversicht, daß Sie, eben durch die Kraft Ihres Gesundungswillens, auch der augenblicklichen Leiden Herr werden. Der Humor, mit dem Sie sie aufnehmen oder abreagieren, scheint mir dafür zu sprechen. Selbstverständlich übernehme ich alle Arbeit, die ich Ihnen abnehmen kann, Korrekturen usw., mit <pb facs="#IMG.2" n="2"/>herzlicher Freude. Verfügen Sie stets über mich!</p>
+            <p>Daß unser Leben endlich auf eine andere Basis gekommen ist, wissen Sie. Das ministerielle Weihnachtstelegramm, der "Fetzen Papier", hat alle Wolken zerrissen. Wir sind befreit von dem Alpdruck, vor allem mein Empi. Ich werde mit Klagen meine Mitmenschen verschonen. Jetzt erscheint es mir und auch den Zeitgenossen auf einmal selbstverständlich, daß ich Ordinarius geworden bin. Interessant zu sehen, wie schon mit der neuen "Macht" "gerechnet" wird, wie sich Menschen um meine Huld bewerben, die mich sonst vielleicht bemitleideten. Was die Umstimmung in Berlin hervorgerufen hat – 14 Tage vorher verlautete noch, meine Ernennung sei ausgeschlossen –, ist unklar: Gerechtigkeitsliebe, Angst vor politischen Verwicklungen und Verstimmung von Gelehrten (es hatte ja fast alles, was in Deutschland Namen hat, sich eingesetzt), die Erwägung, daß es gut sei, <persName ref="[authorityLink]">Meyer-Lübke</persName> und mich <pb facs="#IMG.3" n="3"/>zu trennen? Über die Dessous und Dehors letzterer Familie ist nämlich das Ministerium glänzend unterrichtet. Der Ministerialrat Richter sagte mir, M.-L. habe sich "korrekt" benommen – das ist doch eigentlich wenig. Im Ministerium wurde ich ein wenig neupreußisch-diktatorisch-militaristisch empfangen, etwa mit der Vae victis-Geberde, und erreichen konnte ich wenig mehr als was mir zukam. Man warf natürlich die Schwierigkeit der Berufung ("Zangengeburt", sagte Richter) in die Wagschale, um mich finanziell zu drücken.</p>
+            <p>Marburg ist ganz entzückend. Eine Lebkuchenstadt. Gottlob gibt es keine Neukantianer mehr, dafür eine demokratische protest.-theologische Fakultät. Ich besuchte nur Wrede und Deutschbein, meine Gönner, die mich auch über das Verhalten der Studenten vollkommen beruhigten. Ich werde etwa 50 Hörer haben, also mehr als in <placeName ref="[authorityLink]">Bonn</placeName>. <pb facs="#IMG.4" n="4"/>Wenn mir ein Wohnungstausch glückt, den ich im Auge habe, so werden wir eine herrliche, fast mit Pörtschach vergleichbare Wohnung, hoch oben am Berg, mit Fernsicht bis nach Gießen bekommen. Das wird sich in den nächsten Tagen entscheiden. Der Umzug findet wohl im April statt.</p>
+            <p>So muß ich denn mein neubezogenes Haus hier räumen, in dem wir uns so gemütlich eingerichtet haben. Aber ich verkaufe es nicht – vielleicht komme ich zurück...</p>
+            <p>In Berlin habe ich lange mit <persName ref="[authorityLink]">Wilhelm Schulze</persName> gesprochen, der nun wirklich eine imponierende Erscheinung ist. Diese Religion der Sachlichkeit! Allerdings überrascht seine Abneigung gegen alles Theoretisieren, die er selbst als Mangel bezeichnet. Wir sprachen auch viel von Ihnen, den er sehr verehrt. Allerdings verargt er Ihnen die Vermischung von Wissenschaft und Weltanschauung in Ihren Aufsätzen über die intern. Weltsprache. Ich antwortete, daß gerade diese Harmonie von W. und W. uns Jüngeren an Ihnen zusage, und prüfte ihn sozusagen daraufhin, ob er denn die beiden W ganz trennen könne. Es stellte sich heraus, <pb facs="#IMG.5" n="5"/>daß er, der sich selbst als Nationalisten und Chauvinisten bezeichnet, ohne weiteres Universitätsvorlesungen über die Kriegsursachen jetzt (wo die feindlichen Archive noch nicht geöffnet sind!) aus politisch-weltanschaulichen Gründen billigt. Im Ganzen hat aber Schulze doch etwas Vornehmes, Unpäpstliches, Aristokratisches, Selbstverständlich-Würdevolles – und er ist dem Geheimnis der Sprache doch näher als der <persName ref="[authorityLink]">Brugmann</persName>-Concern.</p>
+            <p>Mit dem französischen Gegenpapst <persName ref="[authorityLink]">Meillet</persName>, der ja stets bescheiden tut, habe ich eine unliebsame Erfahrung gemacht. Urteilen Sie selbst! Mein rumänischer Freund <persName ref="[authorityLink]">J. Jordan</persName> sandte auf mein Betreiben zu einer in der "Romania" von der Soc.d.Lingu. angekündigten Preisausschreibung ein Buch ein, das den Anforderungen vollkommen genügte. Er erhielt aber den Preis nicht, sondern <persName ref="[authorityLink]">Puşcariu</persName> für seine ja im übrigen tüchtige Zeitschrift "Dacoromania" – gewiß ein Novum, da die Herausgabe einer Zeitschr. doch im allgemeinen nicht prämiert wird.</p>
+            <pb facs="#IMG.6" n="6"/>
+            <p>Als Jordan bei der Preisverteilungskommission reklamierte, hieß es, sein Buch sei nicht zum richtigen Datum gekommen, was J. durch Rezepiss als unwahr erweisen konnte. Nun hieß es, das Datum sei in der "Romania" durch einen Irrtum eines Sekretärs um einen Monat zu spät angesetzt worden (!!!). Ich legte nun Meillet nahe, diesen sog. Irrtum wenigstens in einer gedruckten Darlegung des Sachverhalts gutzumachen. Darauf Antwort Meillet: "En quoi une déclaration publique pourrait-elle être utile à M.J.? On arrangera une autre fois ces choses." Ich habe darauf nichts mehr geantwortet. Eine schandbare Versailler Diplomatie: Der wirkliche Grund ist die Deutschfreundlichkeit der Jassier Schule, während Puşcariu als Völkerbundsekr. natürlich in verschiedenen Farben schillern muß.</p>
+            <p>Den boshaften Angriff M-L's im <hi rend="unknown" rendition="#none">Butlletí</hi> werden Sie gelesen haben. Natürlich wird es mir nicht schwer werden, ihn zu parieren, wie ich dies in <pb facs="#IMG.7" n="7"/>meinem Ihnen eben zugesandten Archivum idealisticum-Aufsatz getan zu haben hoffe. Bitte um Ihre Meinung.</p>
+            <p>Kluckholm hat mir für die deutsche "Vierteljahrschrift" das Referat über Sprachphilosophie und allg. Sprachw. übergeben.</p>
+            <p>Was hat denn <persName ref="[authorityLink]">
+Urtel</persName> mit Maupassant zu tun?<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3872">H. Urtel, <hi rend="unknown" rendition="#none">Guy de Maupassant: Studien zu seiner künstlerischen Persönlichkeit</hi>
+                     </ref>. München: Hueber 1926.</bibl>
+               </note> Will er etwa ein solcher werden oder dessen Abenteuer erleben? Ich bin, das muß ich ehrlich sagen, etwas eifersüchtig auf Ihre Beziehungen zu ihm. Die Gleichstellung mit einem nach Urteil aller, die ihn kennen, so subalternen Menschen hat mich von dem Augenblick an nicht gefreut, als ich ihn in Pörtschach kennen lernte. Ein sympathischer Oberlehrer – mehr gewiß nicht – und ein etwas eingebildeter obendrein, der bei weitem nicht so klug ist wie er glaubt und glauben machen will. So urteilten auch <persName ref="[authorityLink]">Vossler</persName>, <persName ref="[authorityLink]">Frings</persName>, <persName ref="[authorityLink]">E. Lewy</persName>, <persName ref="[authorityLink]">Curtius</persName>, <persName ref="[authorityLink]">H. Hahn</persName> und ein Schuchardt sollte anders denken?</p>
+            <pb facs="#IMG.8" n="8"/>
+            <p>Arbeiten Sie mit an der <persName ref="[authorityLink]">
 Thomas</persName>-Festschrift?<note n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3775">
-                <hi rend="unknown" rendition="#none">Mélanges de philologie et d'histoire</hi>
-              </ref>. (Festschrift für A. Thomas.) Paris: Champion 1927</bibl>; Schuchardt schreibt keinen Beitrag für diese Festschrift. Insgesamt widmete Schuchardt Kollegen, die er ehren wollte, lieber eigenständige Schriften als sich an klassischen Festschriften zu beteiligen.</note> Es müßte so eine Art Degenkreuzen im Nebel sein. Denn wo halten Sie und wo ist Thomas? Er versinkt in Kleinkram. "Il tourne au maniaque", schrieb mir neulich jemand von ihm.</p>
-        <p>Von der <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2166">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3775">
+                        <hi rend="unknown" rendition="#none">Mélanges de philologie et d'histoire</hi>
+                     </ref>. (Festschrift für A. Thomas.) Paris: Champion 1927</bibl>; Schuchardt schreibt keinen Beitrag für diese Festschrift. Insgesamt widmete Schuchardt Kollegen, die er ehren wollte, lieber eigenständige Schriften als sich an klassischen Festschriften zu beteiligen.</note> Es müßte so eine Art Degenkreuzen im Nebel sein. Denn wo halten Sie und wo ist Thomas? Er versinkt in Kleinkram. "Il tourne au maniaque", schrieb mir neulich jemand von ihm.</p>
+            <p>Von der <persName ref="[authorityLink]">
 Menéndez-Pidal</persName>-Festschrift weiß ich nur, daß mein Eingesendet aus einer einst kuhwarmen eine abgestandene Milch wird.</p>
-        <p>Wie steht es mit der Sache <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2701">
+            <p>Wie steht es mit der Sache <persName ref="[authorityLink]">
 Schürr</persName>? Ich glaube, es ist wieder etwas Bewegung in der Sache. Der Arme hat die Privatdozentenkrankheit bis zur Siedehitze entwickelt. Ich muß mir nun meine bisherigen Erlebnisse zur Lehre sein lassen und nicht so bald die mageren Jahre vergessen, wie ich es so oft bei Ordinariuli beobachtet habe.</p>
-        <closer>
-          <salute>Herzlichst und innigst Ihr alter treuergebener Freund</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Leo Spitzer</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <closer>
+               <salute>Herzlichst und innigst Ihr alter treuergebener Freund</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Leo Spitzer</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

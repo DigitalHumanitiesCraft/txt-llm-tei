@@ -1,401 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (416-11171)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2272" type="PID">o:hsa.letter.2272</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">416-11171</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11171</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.287" ref="http://sws.geonames.org/2873759">Marburg</origPlace>
-              <origDate ana="dcterms:created" when="1925-06-16">1925-06-16</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2272">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.287" key="#GID.1" ref="http://sws.geonames.org/2873759">Marburg</placeName>
-          <date when="1925-06-16">1925-06-16</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Marburg</settlement>
-                <name ref="http://geonames.org/2873759" type="fcode:PPLA3">Marburg</name>
-                <location>
-                  <geo>8.77069,50.80904</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.27" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französischsprachige Literatur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.25" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanischsprachige Literatur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3317" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Prag</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4881" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Freiburg (Schweiz)</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.803" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Ungarisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.854" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rumänisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.227" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Altfranzösisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2272" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2272" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2272" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2272" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2272" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2272" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2272" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2272" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2272" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Marburg, Schwanallee 39, 16. VI. 1925</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-
-        <p>Ihr Pfingstbrief ist noch immer unbeantwortet. Zürnen Sie nicht, sondern schließen Sie daraus bitte, daß ich zufrieden bin. Wohl gemerkt, ich schreibe nicht etwa weniger, weil ich mich an mir selbst sonnte und für meine liebsten Freunde nichts mehr übrig hätte, sondern weil ich keine Zeit zu der Besinnlichkeit finde, die einem Brief vorangehen muß. Und das ist der glücklichste Zustand: weg von der Problematik des eigenen Ich, procul negotiis, die einem der eigene Geist bereitet, Erlöstsein von dem ewigen Zweifel durch die drängenden Pflichten des All- und Nächsttages! Ich habe ja in den langen Jahren der Privatdozentenschaft so sehr mich nach – Beschäftigung gesehnt, d.h. nach einem Eingespanntsein in einen festen Rahmen. Daher ich mich beim Militär relativ glücklich fühlte. Die rein gelehrtenhafte Lebensferne, die Sie uns so mutig seit vielen Jahren vorkämpfen, konnte ich unruhiger Geist nicht ertragen! <pb
-            facs="#IMG.2"
-            n="2"/>Die 8 Vorlesungsstunden der Woche belegen meine ganze freie Zeit, vor allem halte ich darauf, ein literarisch wohlgepflegtes Literaturkolleg zu halten. Das erfordert aber vielstündige Vorbereitungen, wenn man nicht nur Angelesenes, sondern vielleicht auch einmal Erleseneres geben will. Ich habe hier den Schatten zweier großer Literaturfexe vor mir, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2984">Wechssler</persName> und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1348">Curtius</persName> (der letztere turmhoch über dem ersteren), und muß mit ihnen kämpfen, aus innerem Drang heraus. Meine sprachkünstlerischen Bestrebungen kommen in Übungen mir gut zu Nutz: nächstes Jahr will ich mit dem Kunsthistoriker Hamann zusammen ein Kolleg stilistischer Art über <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.27">frz. Klassik</ref> lesen. Ferner soll das hier gänzlich vernachlässigte <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.25">Spanisch</ref> ausgebaut werden.</p>
-
-        <p>Das Zusammenleben mit den Studenten vollzieht sich reibungslos und sehr angenehm. Keine Störung durch Weltanschauliches schiebt sich ein, Lern- und Gebewille bindet uns. Auch die Kollegen der geisteswissenschaftlichen Abteilung sind anregungsreich, manche frischer und lebendiger als die Bonner Entsprechungen, wie denn überhaupt ein jugendlicher Zug durch die ganze Universität geht. <pb
-            facs="#IMG.3" n="3"/>Politisch geschieht einem als Einzelperson nichts, man wird sachlich und kollegial behandelt. Die die ganze Stadt durchpulsende Militärspiel- und Fecht- und Sauffreudigkeit ist mir nicht sympathisch (die Geheimbünde, die sich öffentlich als Herren gerieren und an Sonntagen zu Tausenden unter Hakenkreuzfahnen aufziehen!), aber das liegt alles so fern und so "unterhalb", daß man daran gar nicht mehr denkt.</p>
-
-        <p>Und die Natur! Sie ist wirklich zauberhaft. Dieser Märchen-Schloßberg mit all den blinkenden Schieferdächern und Spielzeughäusern im Sonnenglanz – ein gottbegnadeter Erdenfleck. Wohnung habe ich natürlich noch keine und, daß da böser Wille mitspielt, ist mir so ziemlich klar. Ich habe daher nach Pfingsten Frau und Kind für 10 Tage hieher in die Pension genommen; sie haben sich beide gut akklimatisiert, die Blondköpfe. Mein Bub ist ja auch wirklich ein so sonniger, heiterer, neckischer, schelmischer und gutmütiger Kerl, daß ihm jeder gewogen sein muß. Und nicht weniger Anklang findet, wie mir scheint, die nur-mutterhafte Mutter. <pb
-            facs="#IMG.4" n="4"/>In <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> hatte ich den Eindruck, als ob ich nicht mehr "zu Hause" wäre – so sehr ist man in der eigenen Tätigkeit als einer Heimat verwurzelt. Nun habe ich zwar hier noch kein Heim, aber doch etwas wie eine Heimat. Meine zwei Familienmitglieder sind nun nach Österreich abgedampft und ich habe sie wehmütig ziehen lassen. Jetzt heißt es hoffen und warten auf die Wiedervereinigung im August.</p>
-        <p>Das Sommerprogramm scheint ja sehr nett werden zu wollen: bis jetzt haben sich angesagt <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">
-Vosslers</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4370">
-Frings</persName>; und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4368">
-Körner</persName> sowie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5267">Mavers</persName> werden wohl nachfolgen. Dem armen Körner hat sowohl <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3317">Prag</ref> (Ihr Freund <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2594">Sauer</persName>!) sowie <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4881">Freiburg</ref> die Habilitation verwehrt. Die Welt wird immer dümmer. </p>
-        <p>Verschiedene hiesige Kollegenfiguren werden Sie interessieren: </p>
-        <p>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1833">Jacobsohn</persName> – für meinen Geschmack etwas zu positivistisch und zu esoterisch. Auch zu sehr Aufklärungs- und Parteimensch. Aber gescheit und kenntnisreich. </p>
-        <p>Deutschbein – ein gutmütiger und polternder Materialist, etwas grobklotzig in Fühlen und Denken, aber naturburschenhaft frisch.</p>
-        <pb facs="#IMG.5" n="5"/>
-        <p>Wrede – vornehme Gesinnung, fast religiöse Ehrlichkeit, Güte und Rechtlichkeit, etwas polterndes Altburschentum.</p>
-        <p>Hamann – der Ur-Bohemien, ruhelos und spielend, grundgute Augen, genial bis in die Fingerspitzen.</p>
-        <p>Jacobsthal (Archäologe) – der ästhetische Epikuräer und Arbeitsenthusiast, der sich vom Lärm in seine Klause zurückzieht, voll Gedanken und Einfällen.</p>
-        <p>Friedländer (Kl. Phil.) – eine "Georgine" (St. Georg-Kreis), aristokratisch und gelehrtenhaft, modern ohne modisch zu sein.</p>
-        <p>Dies alles vorläufige – voreilige Charakteristiken, die bestimmt sind, von anderem abgelöst zu werden. Der geistreichste Mensch ist hier allerdings eine Priv.-Dozentin der Germanistik, Berthold, die noch wenig publiziert hat – der Gipfel der Geschmacklosigkeit, was ihre Weiblichkeit angeht, aber voll kernigen Humors, über ihre Wissenschaft (mittelalterliche dtsch. Philologie u. Dialektkunde) hinausblickend, fast in ihrer Geistesrichtung ein Spitzer femininus, wenn sie nicht deutschnational bis in die Fingerspitzen wäre. Wie sollte sie auch von Spitzer verschieden sein, da sie unter ihren Ahnen 1 Ungarn und 1 Franzosen zählt?</p>
-        <pb facs="#IMG.6" n="6"/>
-        <p>Zu Ihren Nachrichten und Äußerungen übergehend, verstehe ich nicht, was <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.803">magy</ref>. <foreign xml:lang="hu">
-            <hi rend="unknown" rendition="#none">poroszka</hi>
-          </foreign> 'Klepper' 'trabend schnell' mit <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.854">rum</ref>. <foreign xml:lang="ro">
-            <hi rend="unknown" rendition="#none">im bniestru</hi>
-          </foreign> gemeinsam haben soll. Daß <hi rend="unknown" rendition="#none">ambulare</hi> einmal so (<hi
-            rend="unknown" rendition="#none">umblá</hi>) einmal so (<hi rend="unknown"
-            rendition="#none">in/bniestru</hi>, mit Abtrennung) behandelt worden sein soll, wie <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2460">Puşcariu</persName> will, kann ich mir nicht denken.</p>
-
-        <p>Forscherpsychologie – bravo! Mein Beifall ist Ihnen im voraus sicher. Weg von der Entwicklung unserer Wissenschaft. Mein Aufsatz über Etym. hat im Ausland ja Früchte getragen (in der Cultura <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2065">
-De Lollis</persName>' bei <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1075">Balassa</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1134">Bertoni</persName> u. Puşcariu wollen ihn besprechen), nun will ich an eine Anthologie "Meister der Romanistik" herangehen, die bei Hueber erscheinen soll.<note
-            n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3995">L.S. (Hrsg.), <hi rend="unknown" rendition="#none">Meisterwerke der romanischen Sprachwissenschaft</hi>. 2 Bde. München: Hueber 1929-30</ref>
-            </bibl>; die Veröffentlichung zieht sich also beträchtlich in die Länge; darin u.a. zwei Klassiker aus Schuchardts Feder: <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7">"Lat. <hi rend="unknown" rendition="#none">galla</hi>"</ref>
-            </bibl> und <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.726">"Franz <hi rend="unknown"
-                  rendition="#none">mauvais </hi>} lat. <hi rend="unknown" rendition="#none">malifatius</hi>"</ref>
-            </bibl>, aus <hi rend="unknown"
-            rendition="#none">Zeitschrift für Romanische Philologie </hi>29 (1905): 323-332 bzw. 30 (1906): 320-328.</note> Darf ich Sie bei dieser Gelegenheit fragen, wie Sie auf Ihren <hi
-            rend="unknown" rendition="#none">
-galla-</hi> und Ihren <hi rend="unknown"
-            rendition="#none">malifatius</hi> &gt; <hi rend="unknown" rendition="#none">mauvais</hi>-Artikel, die ich aufnehmen möchte, gekommen sind? Ich meine, welche Erwägungen oder Impulse zum Finden dieser Etym. geführt haben? Denn gerade dies hinter dem Gefundenen […] Erlebnis ist mir wichtig und muß auch den Lesern deutlich gemacht werden.</p>
-        <pb facs="#IMG.7" n="7"/>
-        <p>Es scheint ja wohl ein Verzicht auf eigene Produktion, wenn ich anderer Leistungen zu Chrestomathien verarbeite – aber wer weiß, ob ich in den nächsten Jahren noch wissenschaftlich werde arbeiten können, fern meinen Büchern u. meiner Familie und von Vorlesungen aufgefressen?</p>
-        <p>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vosslers</persName> Aufsatz über Borchardt, mit dem er innig befreundet ist, besitze ich nicht. Sie wissen, daß V. menschliche Sympathien sehr stark in die Beurteilung des Wissenschaftlichen und Künstlerischen hinüberträgt. Wer wäre hierin frei von Schuld und Fehler? Verlangen Sie doch den Aufsatz von ihm direkt. Jetzt eben kommt Vosslers Buch "Geist u. Kultur in der Sprache"<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3772">Karl Vossler, <hi rend="unknown" rendition="#none">Geist und Kultur in der Sprache</hi>
-              </ref>. Heidelberg: Winter 1925.</bibl>
-          </note> an. Von deutscher Literatur versteht er übrigens nicht viel: er lehnt z.B. Hebbel ab und liebt Hofmannsthal (der übrigens die Lebensangst schön gestaltet hat).</p>
-        <p>Über <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3710">Theo Riegler</persName> habe ich mir insofern ein Urteil gebildet, als ich ihn für einen schwachen und egoistischen Charakter halte. Sein Sich-Ausleben ist mir nicht unsympathisch, aber sunt certi denique fines. Als Sie im Winter so schwer erkrankt waren, hatten sich böse Gerüchte nach Bonn verbreitet. Ich schrieb Theo, er möge sofort zu Ihnen gehen u. mir berichten. Herr Theo hat angeblich erst 3 Wochen später meine Karte durch einen Zufall erhalten – beruhigte sich aber damit, daß ich jedenfalls von anderswo schon Nachrichten haben würde, und fuhr in die Ferien nach Hause, ohne Sie aufgesucht zu haben. Da ist mir denn doch <pb
-            facs="#IMG.8" n="8"/>die Geduld gerissen und ich habe ihm auf seine durch den <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">Vater</persName> provozierten Entschuldigungen gar nicht mehr geantwortet.</p>
-
-        <p>Ihr Gesundheitsbulletin verbunden mit der Betrachtung Ihrer Schriftzüge freut mich sehr. Ich glaube, Sie werden noch nicht nur geistig sondern auch physisch überleben – und das ist gut so. Ich kann mir vorstellen, daß Sie an alles das denken, was Sie nicht mehr leisten können – aber die geistige Frische ist doch in Ihrem Alter das Schönste. Ich bewundere Sie ja auch ein wenig bei meinem "ältesten" Hörer, dem alten Stengel, der, blind und auf einen blinden Schüler gestützt, keine meiner sprachwiss. Vorlesungen versäumt, ja mir sogar in meiner Dogmatik Recht gibt – neulich erzählte mir der alte Herr allerdings, er lese mit einem blinden Studenten den <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.227">altfrz</ref>. Alexius, habe aber plötzlich entdeckt, daß er aus dem Alexius in den Roland gekommen sei. Ich glaube, Ihnen würde derlei nicht passieren. Auf <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2782">Stengel</persName> mich beziehend, mache ich hier öfters den Witz: "Von meinen Marburger Schülern kann man sagen: der Blinde ist unter den Einäugigen König".</p>
-        <p>Und mit diesem mauvais mot empfehle ich mich und bitte um ein abermaliges "da ut dem".</p>
-        <closer>
-          <salute>Alles Liebe von Ihrem altergebenen</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Leo Spitzer</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2272" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Marburg, Schwanallee 39, 16. VI. 1925</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Ihr Pfingstbrief ist noch immer unbeantwortet. Zürnen Sie nicht, sondern schließen Sie daraus bitte, daß ich zufrieden bin. Wohl gemerkt, ich schreibe nicht etwa weniger, weil ich mich an mir selbst sonnte und für meine liebsten Freunde nichts mehr übrig hätte, sondern weil ich keine Zeit zu der Besinnlichkeit finde, die einem Brief vorangehen muß. Und das ist der glücklichste Zustand: weg von der Problematik des eigenen Ich, procul negotiis, die einem der eigene Geist bereitet, Erlöstsein von dem ewigen Zweifel durch die drängenden Pflichten des All- und Nächsttages! Ich habe ja in den langen Jahren der Privatdozentenschaft so sehr mich nach – Beschäftigung gesehnt, d.h. nach einem Eingespanntsein in einen festen Rahmen. Daher ich mich beim Militär relativ glücklich fühlte. Die rein gelehrtenhafte Lebensferne, die Sie uns so mutig seit vielen Jahren vorkämpfen, konnte ich unruhiger Geist nicht ertragen! <pb facs="#IMG.2" n="2"/>Die 8 Vorlesungsstunden der Woche belegen meine ganze freie Zeit, vor allem halte ich darauf, ein literarisch wohlgepflegtes Literaturkolleg zu halten. Das erfordert aber vielstündige Vorbereitungen, wenn man nicht nur Angelesenes, sondern vielleicht auch einmal Erleseneres geben will. Ich habe hier den Schatten zweier großer Literaturfexe vor mir, <persName ref="[authorityLink]">Wechssler</persName> und <persName ref="[authorityLink]">Curtius</persName> (der letztere turmhoch über dem ersteren), und muß mit ihnen kämpfen, aus innerem Drang heraus. Meine sprachkünstlerischen Bestrebungen kommen in Übungen mir gut zu Nutz: nächstes Jahr will ich mit dem Kunsthistoriker Hamann zusammen ein Kolleg stilistischer Art über <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.27">frz. Klassik</ref> lesen. Ferner soll das hier gänzlich vernachlässigte <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.25">Spanisch</ref> ausgebaut werden.</p>
+            <p>Das Zusammenleben mit den Studenten vollzieht sich reibungslos und sehr angenehm. Keine Störung durch Weltanschauliches schiebt sich ein, Lern- und Gebewille bindet uns. Auch die Kollegen der geisteswissenschaftlichen Abteilung sind anregungsreich, manche frischer und lebendiger als die Bonner Entsprechungen, wie denn überhaupt ein jugendlicher Zug durch die ganze Universität geht. <pb facs="#IMG.3" n="3"/>Politisch geschieht einem als Einzelperson nichts, man wird sachlich und kollegial behandelt. Die die ganze Stadt durchpulsende Militärspiel- und Fecht- und Sauffreudigkeit ist mir nicht sympathisch (die Geheimbünde, die sich öffentlich als Herren gerieren und an Sonntagen zu Tausenden unter Hakenkreuzfahnen aufziehen!), aber das liegt alles so fern und so "unterhalb", daß man daran gar nicht mehr denkt.</p>
+            <p>Und die Natur! Sie ist wirklich zauberhaft. Dieser Märchen-Schloßberg mit all den blinkenden Schieferdächern und Spielzeughäusern im Sonnenglanz – ein gottbegnadeter Erdenfleck. Wohnung habe ich natürlich noch keine und, daß da böser Wille mitspielt, ist mir so ziemlich klar. Ich habe daher nach Pfingsten Frau und Kind für 10 Tage hieher in die Pension genommen; sie haben sich beide gut akklimatisiert, die Blondköpfe. Mein Bub ist ja auch wirklich ein so sonniger, heiterer, neckischer, schelmischer und gutmütiger Kerl, daß ihm jeder gewogen sein muß. Und nicht weniger Anklang findet, wie mir scheint, die nur-mutterhafte Mutter. <pb facs="#IMG.4" n="4"/>In <placeName ref="[authorityLink]">Bonn</placeName> hatte ich den Eindruck, als ob ich nicht mehr "zu Hause" wäre – so sehr ist man in der eigenen Tätigkeit als einer Heimat verwurzelt. Nun habe ich zwar hier noch kein Heim, aber doch etwas wie eine Heimat. Meine zwei Familienmitglieder sind nun nach Österreich abgedampft und ich habe sie wehmütig ziehen lassen. Jetzt heißt es hoffen und warten auf die Wiedervereinigung im August.</p>
+            <p>Das Sommerprogramm scheint ja sehr nett werden zu wollen: bis jetzt haben sich angesagt <persName ref="[authorityLink]">
+Vosslers</persName>, <persName ref="[authorityLink]">
+Frings</persName>; und <persName ref="[authorityLink]">
+Körner</persName> sowie <persName ref="[authorityLink]">Mavers</persName> werden wohl nachfolgen. Dem armen Körner hat sowohl <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3317">Prag</ref> (Ihr Freund <persName ref="[authorityLink]">Sauer</persName>!) sowie <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4881">Freiburg</ref> die Habilitation verwehrt. Die Welt wird immer dümmer. </p>
+            <p>Verschiedene hiesige Kollegenfiguren werden Sie interessieren: </p>
+            <p>
+               <persName ref="[authorityLink]">Jacobsohn</persName> – für meinen Geschmack etwas zu positivistisch und zu esoterisch. Auch zu sehr Aufklärungs- und Parteimensch. Aber gescheit und kenntnisreich. </p>
+            <p>Deutschbein – ein gutmütiger und polternder Materialist, etwas grobklotzig in Fühlen und Denken, aber naturburschenhaft frisch.</p>
+            <pb facs="#IMG.5" n="5"/>
+            <p>Wrede – vornehme Gesinnung, fast religiöse Ehrlichkeit, Güte und Rechtlichkeit, etwas polterndes Altburschentum.</p>
+            <p>Hamann – der Ur-Bohemien, ruhelos und spielend, grundgute Augen, genial bis in die Fingerspitzen.</p>
+            <p>Jacobsthal (Archäologe) – der ästhetische Epikuräer und Arbeitsenthusiast, der sich vom Lärm in seine Klause zurückzieht, voll Gedanken und Einfällen.</p>
+            <p>Friedländer (Kl. Phil.) – eine "Georgine" (St. Georg-Kreis), aristokratisch und gelehrtenhaft, modern ohne modisch zu sein.</p>
+            <p>Dies alles vorläufige – voreilige Charakteristiken, die bestimmt sind, von anderem abgelöst zu werden. Der geistreichste Mensch ist hier allerdings eine Priv.-Dozentin der Germanistik, Berthold, die noch wenig publiziert hat – der Gipfel der Geschmacklosigkeit, was ihre Weiblichkeit angeht, aber voll kernigen Humors, über ihre Wissenschaft (mittelalterliche dtsch. Philologie u. Dialektkunde) hinausblickend, fast in ihrer Geistesrichtung ein Spitzer femininus, wenn sie nicht deutschnational bis in die Fingerspitzen wäre. Wie sollte sie auch von Spitzer verschieden sein, da sie unter ihren Ahnen 1 Ungarn und 1 Franzosen zählt?</p>
+            <pb facs="#IMG.6" n="6"/>
+            <p>Zu Ihren Nachrichten und Äußerungen übergehend, verstehe ich nicht, was <ref target="https://gams.uni-graz.at/o:hsa.languages#L.803">magy</ref>. <foreign xml:lang="hu">
+                  <hi rend="unknown" rendition="#none">poroszka</hi>
+               </foreign> 'Klepper' 'trabend schnell' mit <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">rum</ref>. <foreign xml:lang="ro">
+                  <hi rend="unknown" rendition="#none">im bniestru</hi>
+               </foreign> gemeinsam haben soll. Daß <hi rend="unknown" rendition="#none">ambulare</hi> einmal so (<hi rend="unknown" rendition="#none">umblá</hi>) einmal so (<hi rend="unknown" rendition="#none">in/bniestru</hi>, mit Abtrennung) behandelt worden sein soll, wie <persName ref="[authorityLink]">Puşcariu</persName> will, kann ich mir nicht denken.</p>
+            <p>Forscherpsychologie – bravo! Mein Beifall ist Ihnen im voraus sicher. Weg von der Entwicklung unserer Wissenschaft. Mein Aufsatz über Etym. hat im Ausland ja Früchte getragen (in der Cultura <persName ref="[authorityLink]">
+De Lollis</persName>' bei <persName ref="[authorityLink]">Balassa</persName>, <persName ref="[authorityLink]">Bertoni</persName> u. Puşcariu wollen ihn besprechen), nun will ich an eine Anthologie "Meister der Romanistik" herangehen, die bei Hueber erscheinen soll.<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3995">L.S. (Hrsg.), <hi rend="unknown" rendition="#none">Meisterwerke der romanischen Sprachwissenschaft</hi>. 2 Bde. München: Hueber 1929-30</ref>
+                  </bibl>; die Veröffentlichung zieht sich also beträchtlich in die Länge; darin u.a. zwei Klassiker aus Schuchardts Feder: <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.7">"Lat. <hi rend="unknown" rendition="#none">galla</hi>"</ref>
+                  </bibl> und <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.726">"Franz <hi rend="unknown" rendition="#none">mauvais </hi>} lat. <hi rend="unknown" rendition="#none">malifatius</hi>"</ref>
+                  </bibl>, aus <hi rend="unknown" rendition="#none">Zeitschrift für Romanische Philologie </hi>29 (1905): 323-332 bzw. 30 (1906): 320-328.</note> Darf ich Sie bei dieser Gelegenheit fragen, wie Sie auf Ihren <hi rend="unknown" rendition="#none">
+galla-</hi> und Ihren <hi rend="unknown" rendition="#none">malifatius</hi> &gt; <hi rend="unknown" rendition="#none">mauvais</hi>-Artikel, die ich aufnehmen möchte, gekommen sind? Ich meine, welche Erwägungen oder Impulse zum Finden dieser Etym. geführt haben? Denn gerade dies hinter dem Gefundenen […] Erlebnis ist mir wichtig und muß auch den Lesern deutlich gemacht werden.</p>
+            <pb facs="#IMG.7" n="7"/>
+            <p>Es scheint ja wohl ein Verzicht auf eigene Produktion, wenn ich anderer Leistungen zu Chrestomathien verarbeite – aber wer weiß, ob ich in den nächsten Jahren noch wissenschaftlich werde arbeiten können, fern meinen Büchern u. meiner Familie und von Vorlesungen aufgefressen?</p>
+            <p>
+               <persName ref="[authorityLink]">Vosslers</persName> Aufsatz über Borchardt, mit dem er innig befreundet ist, besitze ich nicht. Sie wissen, daß V. menschliche Sympathien sehr stark in die Beurteilung des Wissenschaftlichen und Künstlerischen hinüberträgt. Wer wäre hierin frei von Schuld und Fehler? Verlangen Sie doch den Aufsatz von ihm direkt. Jetzt eben kommt Vosslers Buch "Geist u. Kultur in der Sprache"<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3772">Karl Vossler, <hi rend="unknown" rendition="#none">Geist und Kultur in der Sprache</hi>
+                     </ref>. Heidelberg: Winter 1925.</bibl>
+               </note> an. Von deutscher Literatur versteht er übrigens nicht viel: er lehnt z.B. Hebbel ab und liebt Hofmannsthal (der übrigens die Lebensangst schön gestaltet hat).</p>
+            <p>Über <persName ref="[authorityLink]">Theo Riegler</persName> habe ich mir insofern ein Urteil gebildet, als ich ihn für einen schwachen und egoistischen Charakter halte. Sein Sich-Ausleben ist mir nicht unsympathisch, aber sunt certi denique fines. Als Sie im Winter so schwer erkrankt waren, hatten sich böse Gerüchte nach Bonn verbreitet. Ich schrieb Theo, er möge sofort zu Ihnen gehen u. mir berichten. Herr Theo hat angeblich erst 3 Wochen später meine Karte durch einen Zufall erhalten – beruhigte sich aber damit, daß ich jedenfalls von anderswo schon Nachrichten haben würde, und fuhr in die Ferien nach Hause, ohne Sie aufgesucht zu haben. Da ist mir denn doch <pb facs="#IMG.8" n="8"/>die Geduld gerissen und ich habe ihm auf seine durch den <persName ref="[authorityLink]">Vater</persName> provozierten Entschuldigungen gar nicht mehr geantwortet.</p>
+            <p>Ihr Gesundheitsbulletin verbunden mit der Betrachtung Ihrer Schriftzüge freut mich sehr. Ich glaube, Sie werden noch nicht nur geistig sondern auch physisch überleben – und das ist gut so. Ich kann mir vorstellen, daß Sie an alles das denken, was Sie nicht mehr leisten können – aber die geistige Frische ist doch in Ihrem Alter das Schönste. Ich bewundere Sie ja auch ein wenig bei meinem "ältesten" Hörer, dem alten Stengel, der, blind und auf einen blinden Schüler gestützt, keine meiner sprachwiss. Vorlesungen versäumt, ja mir sogar in meiner Dogmatik Recht gibt – neulich erzählte mir der alte Herr allerdings, er lese mit einem blinden Studenten den <ref target="https://gams.uni-graz.at/o:hsa.languages#L.227">altfrz</ref>. Alexius, habe aber plötzlich entdeckt, daß er aus dem Alexius in den Roland gekommen sei. Ich glaube, Ihnen würde derlei nicht passieren. Auf <persName ref="[authorityLink]">Stengel</persName> mich beziehend, mache ich hier öfters den Witz: "Von meinen Marburger Schülern kann man sagen: der Blinde ist unter den Einäugigen König".</p>
+            <p>Und mit diesem mauvais mot empfehle ich mich und bitte um ein abermaliges "da ut dem".</p>
+            <closer>
+               <salute>Alles Liebe von Ihrem altergebenen</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Leo Spitzer</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

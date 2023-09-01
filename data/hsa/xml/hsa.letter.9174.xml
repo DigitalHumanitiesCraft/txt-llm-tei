@@ -1,619 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Theodor von Busse an Hugo Schuchardt (03-01477)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1240">
-            <forename>Theodor von</forename>
-            <surname>Busse</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/9174" type="PID">o:hsa.letter.9174</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">03-01477</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">01477</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1240">
-                <forename>Theodor von</forename>
-                <surname>Busse</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6250" ref="http://sws.geonames.org/2013348">Vladivostok</origPlace>
-              <origDate ana="dcterms:created" when="1884-03-17">1884-03-17</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2022">2022</date>
-          <title>Die Korrespondenz zwischen Theodor von Busse und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1240"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.9174">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1240">
-            <forename>Theodor von</forename>
-            <surname>Busse</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6250" key="#GID.1" ref="http://sws.geonames.org/2013348">Vladivostok</placeName>
-          <date when="1884-03-17">1884-03-17</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Russia</country>
-                <settlement>Vladivostok</settlement>
-                <name ref="http://geonames.org/2013348" type="fcode:PPLA">Vladivostok</name>
-                <location>
-                  <geo>131.87353,43.10562</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1240" type="context">
-                        Korrespondenz Theodor von Busse - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.934" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Chinese Pidgin Russian</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.646" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Pidgins (Russisch)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.915" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Chinesisch (Mandarin)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.639" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Russisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.667" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9174" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9174" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9174" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9174" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9174" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9174" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9174" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.9174" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.9174" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>17/29 März 1884. Wladiwostock.</dateline>
-        <opener>Hochgeehrter Herr Professor!</opener>
-
-        <p> Verzeihen Sie mir gütigst, das ich so lange mein Versprechen Ihnen gegenüber nicht gehalten habe. Ich kann Sie versichern, das der Grund des Schweigens nicht Vergessenheit sondern Mangel an Zeit, der mich hinderte die nöthigen Materialien für das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.934">russisch-chinesische Jargon</ref> zu notieren, die Schuld trägt. Ich will jetzt das Wenige, was ich Ihnen mittheilen kann aufsetzen, nicht weil ich es für hinreichendes Material halte, sondern blos um Ihnen, hochgeehrter Herr, meinen guten Willen zu bezeugen.</p>
-        <p>Ich kenne blos das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.646">
-Pidgin</ref>, welches in der Nähe von <placeName>Wladiwostock</placeName> und längs der Grenze bis zum Hanka-See<note
-            n="1" place="foot"
-              type="editorial">Der Chankasee ist einer der größten Seen in Asien. Er liegt im Grenzgebiet zwischen der heutigen Volksrepublik <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5946">China</placeName> und dem östlichen Sibirien.</note> gesprochen wird. In anderen Punckten des Amurlandes ist die Mundart anders, weil dort Worte von Golden<note
-            n="2" place="foot" type="editorial">Golden/Goldi, Fischhaut-Tataren oder Nanaier.</note> und anderen Tungusenstämmen vorkommmen, ich kann aber nichts darüber mittheilen, weil ich dort, in dieser Zeit, nicht gewesen und keine persönlichen Beziehungen dort habe.</p>
-
-        <p> Die Russen und, nach der Aussage sachkundiger Leute, auch die Chinesen haben ihre Grammatik auf eine Weise zu vereinfachen gesucht; ausserdem die Worte so verstümpelt, um vom fremden Volke verstanden zu werden, das die Gestaltung der Sprachen ganz ihre eigentliche Formen verloren haben. Die <pb
-            facs="#IMG.2"
-            n="2"/> Russen haben ganz die Declinationen und conjugationen aufgegeben; wie weit diese Formen bei den Chinesen zu Hause entwickelt sind, weis ich nicht und bitte Sie in entsprechenden Werken nachzuschlagen. Der besprochene Mangel ist durch Nichts, weder in Worten noch Form, ersetzt. Die Beziehungen der Begriffe unter einander werden blos aus dem allgemeinen Sinn des Gesprächs und noch mehr durch die Gestikulation erklärt. Daraus ersieht man wie arm das Jargon ist, und wie viel Zeit und Mühe man braucht, um irgend ein Begriff der einigermassen dem Ciclus der alltäglichen Verhältnisse überwachsen ist, zum bewusten Verständniss des andern, genügend zu erklären. Zur allgemeinen Charakteristick des Jargons muss ich noch zufügen, das die Russen sich mehr der <ref target="https://gams.uni-graz.at/o:hsa.languages#L.915">chinesischen Sprache</ref> anbequemt haben, als es umgekehrt der Fall gewesen ist und schlieslich, das Leute die das Pidgin, welches in den von den Ausländern besuchten Häfen Chinas gesprochen wird, kennen, eine grosse Aehnligkeit in der Construction, zwischen diesem und jenem finden. </p>
-        <p>Alle <hi rend="unknown"
-            rendition="#none">Verba</hi> werden blos im Imperativ in zweiter Person gebraucht, die nähere Bezeichnung der Person wird durch die Bewegung des Zeigefingers bestimmt, indem man auf sich selbst, seinen Oponenten, oder zur Seite, in die Ferne, zeigt. Die Zeiten werden durch Handbewegung gegen den Boden <pb
-            facs="#IMG.3"
-            n="3"/> (pres.), vor (futur) und hinter (perf.) sich angegeben. Das Futurum wird meistens durch das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.639">russische</ref> Wort „budu“* werde (* Ich schreibe alle russischen Wörter in ihter transcription) bezeichnet</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Bsp.</hi> Moja hodi budu } meine geh werde / „Ich werde kommen“</p>
-        <p> Das merkwürdigste aber ist die Anwendung des Infinitivs des Verbums sein, russisch „<hi rend="unknown"
-            rendition="#none">jesth</hi>“ (** Das <hi rend="unknown"
-            rendition="#none">t</hi> wird ganz weich ausgesprochen, woher in russischen Lettern das Wort <hi
-            rend="unknown" rendition="#none">есть</hi> geschrieben wird) chinesisch „<hi rend="unknown"
-            rendition="#none">ju</hi>“,<note n="3" place="foot" type="editorial">Das entsprechende Zeichen ist 有.</note> was im Jargon bald dieses bald jenes beinahe nach jedem anderen Verbum gestellt und ausgesprochen wird. Diese Redeweise ist keiner der beiden Ursprachen eigen; wenn in der russischen das „sein“ oft vorausgesetzt, obgleich nicht geschrieben oder ausgesprochen wird, so geht der chinesischen auch diese Bedeutung des Verbums ganz ab. Somit ist der Ursprung des Gebrauches und die vorwiegende Wichtigkeit des verbums „sein“ in dem Jargon eine sehr interessante und dunckle Frage, die zu lösen ich nicht übernehmen kann.</p>
-        <p> Das Pronomen erscheint blos im Singular und mit der weiblichen Nominativ-Endung, wobei es immer die Angehörigkeit ausdrückd. Es giebt überhaupt ihrer nur zwei: „meine“ „Deine“ ausgesprochen „mojá“ „twojá“ (beide russisch). Das Ausschliesen, ausser der weiblichen Geschlechtsendung, aller übrigen der russischen Pronomina, wird durch die Schwierigkeit der Aussprache für den Chinesen bedingt.</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Bsp.</hi>
-          <table>
-            <row>
-              <cell>Mojá</cell>
-              <cell>twojá</cell>
-              <cell>hodí</cell>
-              <cell>jésth</cell>
-              <cell>}„Ich bin bei dir gewesen“ oder </cell>
-            </row>
-            <row>
-              <cell>meine</cell>
-              <cell>deine</cell>
-              <cell>geh</cell>
-              <cell>sein</cell>
-              <cell>„Ich gehe zu dir“ oder „ich werde zu dir kommen“.</cell>
-            </row>
-          </table>
-        </p>
-        <p> Die Substantiva und die Eigenschaftsnahmen kommen blos im Nominativ singularis vor, und da diese in der russischen Sprache oft mit einem harten Consonanten, welcher dem Chinesen unmöglich ist auszusprechen endigen, so wird als Endung ein zufällliger gesetzt, was zu der Meinung führen könnte das das Wort decliniert ist, dieses ist aber keineswegs der Fall, da, meistens, der zugesetzte Vocal den Declinations Formeln nicht entspricht. Der Plural wird einfach durch den Zusatz einer Zahl, oder dem russ. Worte „mnogo“ (viel) gebildet.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Bsp.</hi>
-          <table>
-            <row>
-              <cell>Moja</cell>
-              <cell>mnógo</cell>
-              <cell>sómza</cell>
-              <cell>kapitána</cell>
-              <cell>hodí</cell>
-              <cell>jésth</cell>
-            </row>
-            <row>
-              <cell>meine</cell>
-              <cell>viel</cell>
-              <cell>Sonne</cell>
-              <cell>capitain</cell>
-              <cell>geh</cell>
-              <cell>sein</cell>
-            </row>
-          </table> „Ich komme nach vielen Tagen zum capitain“ oder dasselbe in der Vergangenheit.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Bsp.</hi>
-          <table>
-            <row>
-              <cell>Twojá</cell>
-              <cell>trí</cell>
-              <cell>sonza</cell>
-              <cell>kupí</cell>
-              <cell>jesth</cell>
-            </row>
-            <row>
-              <cell>Deine</cell>
-              <cell>3</cell>
-              <cell>Sonne</cell>
-              <cell>kauf</cell>
-              <cell>sein</cell>
-            </row>
-          </table> „Du kaufst in 3 Tagen“, oder „Du hast vor 3 Tagen gekauft</p>
-        <p>
-          <hi rend="unknown" rendition="#none"> NB</hi> Zu den 2 Beispielen ist zu erklären, das immer statt Tag das Wort Sonne gestellt wird und unter „capitain“ jede administrations Person gemeint ist.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Bsp.</hi>
-          <table>
-            <row>
-              <cell>kosáka (richtig kosák) = kosake</cell>
-              <cell>} In allen 3 Worten end</cell>
-            </row>
-            <row>
-              <cell>kapitána ( “ kapitán) = capitain</cell>
-              <cell> spricht die Endung</cell>
-            </row>
-            <row>
-              <cell>kupèzda (“ kupétz) = kaufmann</cell>
-              <cell> dem Genitiv.</cell>
-            </row>
-          </table>
-        </p>
-
-        <p> Die Potenzen der Eigenschaftsnahmen werden nicht durch ihnen speciell zukommenden Form, sondern durch Zusatz von Worten ausgedrückt. Comperativ bekommt man durch das Einfügen des Wortes „mnogo, mnogo“ (viel, viel), <note
-            n="4" place="foot" type="editorial">Im Original ist das „m“ überstrichen.</note>oder durch <pb facs="#IMG.5"
-            n="5"/>Wiederholung des Eigenschaftwortes, oder auch durch den Ausruf „ó, ó“. Der Superlativ wird durch den Zusatz von „<hi
-            rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.9174" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>17/29 März 1884. Wladiwostock.</dateline>
+            <opener>Hochgeehrter Herr Professor!</opener>
+            <p> Verzeihen Sie mir gütigst, das ich so lange mein Versprechen Ihnen gegenüber nicht gehalten habe. Ich kann Sie versichern, das der Grund des Schweigens nicht Vergessenheit sondern Mangel an Zeit, der mich hinderte die nöthigen Materialien für das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.934">russisch-chinesische Jargon</ref> zu notieren, die Schuld trägt. Ich will jetzt das Wenige, was ich Ihnen mittheilen kann aufsetzen, nicht weil ich es für hinreichendes Material halte, sondern blos um Ihnen, hochgeehrter Herr, meinen guten Willen zu bezeugen.</p>
+            <p>Ich kenne blos das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.646">
+Pidgin</ref>, welches in der Nähe von <placeName>Wladiwostock</placeName> und längs der Grenze bis zum Hanka-See<note n="1" place="foot" type="editorial">Der Chankasee ist einer der größten Seen in Asien. Er liegt im Grenzgebiet zwischen der heutigen Volksrepublik <placeName ref="[authorityLink]">China</placeName> und dem östlichen Sibirien.</note> gesprochen wird. In anderen Punckten des Amurlandes ist die Mundart anders, weil dort Worte von Golden<note n="2" place="foot" type="editorial">Golden/Goldi, Fischhaut-Tataren oder Nanaier.</note> und anderen Tungusenstämmen vorkommmen, ich kann aber nichts darüber mittheilen, weil ich dort, in dieser Zeit, nicht gewesen und keine persönlichen Beziehungen dort habe.</p>
+            <p> Die Russen und, nach der Aussage sachkundiger Leute, auch die Chinesen haben ihre Grammatik auf eine Weise zu vereinfachen gesucht; ausserdem die Worte so verstümpelt, um vom fremden Volke verstanden zu werden, das die Gestaltung der Sprachen ganz ihre eigentliche Formen verloren haben. Die <pb facs="#IMG.2" n="2"/> Russen haben ganz die Declinationen und conjugationen aufgegeben; wie weit diese Formen bei den Chinesen zu Hause entwickelt sind, weis ich nicht und bitte Sie in entsprechenden Werken nachzuschlagen. Der besprochene Mangel ist durch Nichts, weder in Worten noch Form, ersetzt. Die Beziehungen der Begriffe unter einander werden blos aus dem allgemeinen Sinn des Gesprächs und noch mehr durch die Gestikulation erklärt. Daraus ersieht man wie arm das Jargon ist, und wie viel Zeit und Mühe man braucht, um irgend ein Begriff der einigermassen dem Ciclus der alltäglichen Verhältnisse überwachsen ist, zum bewusten Verständniss des andern, genügend zu erklären. Zur allgemeinen Charakteristick des Jargons muss ich noch zufügen, das die Russen sich mehr der <ref target="https://gams.uni-graz.at/o:hsa.languages#L.915">chinesischen Sprache</ref> anbequemt haben, als es umgekehrt der Fall gewesen ist und schlieslich, das Leute die das Pidgin, welches in den von den Ausländern besuchten Häfen Chinas gesprochen wird, kennen, eine grosse Aehnligkeit in der Construction, zwischen diesem und jenem finden. </p>
+            <p>Alle <hi rend="unknown" rendition="#none">Verba</hi> werden blos im Imperativ in zweiter Person gebraucht, die nähere Bezeichnung der Person wird durch die Bewegung des Zeigefingers bestimmt, indem man auf sich selbst, seinen Oponenten, oder zur Seite, in die Ferne, zeigt. Die Zeiten werden durch Handbewegung gegen den Boden <pb facs="#IMG.3" n="3"/> (pres.), vor (futur) und hinter (perf.) sich angegeben. Das Futurum wird meistens durch das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.639">russische</ref> Wort „budu“* werde (* Ich schreibe alle russischen Wörter in ihter transcription) bezeichnet</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Bsp.</hi> Moja hodi budu } meine geh werde / „Ich werde kommen“</p>
+            <p> Das merkwürdigste aber ist die Anwendung des Infinitivs des Verbums sein, russisch „<hi rend="unknown" rendition="#none">jesth</hi>“ (** Das <hi rend="unknown" rendition="#none">t</hi> wird ganz weich ausgesprochen, woher in russischen Lettern das Wort <hi rend="unknown" rendition="#none">есть</hi> geschrieben wird) chinesisch „<hi rend="unknown" rendition="#none">ju</hi>“,<note n="3" place="foot" type="editorial">Das entsprechende Zeichen ist 有.</note> was im Jargon bald dieses bald jenes beinahe nach jedem anderen Verbum gestellt und ausgesprochen wird. Diese Redeweise ist keiner der beiden Ursprachen eigen; wenn in der russischen das „sein“ oft vorausgesetzt, obgleich nicht geschrieben oder ausgesprochen wird, so geht der chinesischen auch diese Bedeutung des Verbums ganz ab. Somit ist der Ursprung des Gebrauches und die vorwiegende Wichtigkeit des verbums „sein“ in dem Jargon eine sehr interessante und dunckle Frage, die zu lösen ich nicht übernehmen kann.</p>
+            <p> Das Pronomen erscheint blos im Singular und mit der weiblichen Nominativ-Endung, wobei es immer die Angehörigkeit ausdrückd. Es giebt überhaupt ihrer nur zwei: „meine“ „Deine“ ausgesprochen „mojá“ „twojá“ (beide russisch). Das Ausschliesen, ausser der weiblichen Geschlechtsendung, aller übrigen der russischen Pronomina, wird durch die Schwierigkeit der Aussprache für den Chinesen bedingt.</p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Bsp.</hi>
+               <table>
+                  <row>
+                     <cell>Mojá</cell>
+                     <cell>twojá</cell>
+                     <cell>hodí</cell>
+                     <cell>jésth</cell>
+                     <cell>}„Ich bin bei dir gewesen“ oder </cell>
+                  </row>
+                  <row>
+                     <cell>meine</cell>
+                     <cell>deine</cell>
+                     <cell>geh</cell>
+                     <cell>sein</cell>
+                     <cell>„Ich gehe zu dir“ oder „ich werde zu dir kommen“.</cell>
+                  </row>
+               </table>
+            </p>
+            <p> Die Substantiva und die Eigenschaftsnahmen kommen blos im Nominativ singularis vor, und da diese in der russischen Sprache oft mit einem harten Consonanten, welcher dem Chinesen unmöglich ist auszusprechen endigen, so wird als Endung ein zufällliger gesetzt, was zu der Meinung führen könnte das das Wort decliniert ist, dieses ist aber keineswegs der Fall, da, meistens, der zugesetzte Vocal den Declinations Formeln nicht entspricht. Der Plural wird einfach durch den Zusatz einer Zahl, oder dem russ. Worte „mnogo“ (viel) gebildet.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Bsp.</hi>
+               <table>
+                  <row>
+                     <cell>Moja</cell>
+                     <cell>mnógo</cell>
+                     <cell>sómza</cell>
+                     <cell>kapitána</cell>
+                     <cell>hodí</cell>
+                     <cell>jésth</cell>
+                  </row>
+                  <row>
+                     <cell>meine</cell>
+                     <cell>viel</cell>
+                     <cell>Sonne</cell>
+                     <cell>capitain</cell>
+                     <cell>geh</cell>
+                     <cell>sein</cell>
+                  </row>
+               </table> „Ich komme nach vielen Tagen zum capitain“ oder dasselbe in der Vergangenheit.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Bsp.</hi>
+               <table>
+                  <row>
+                     <cell>Twojá</cell>
+                     <cell>trí</cell>
+                     <cell>sonza</cell>
+                     <cell>kupí</cell>
+                     <cell>jesth</cell>
+                  </row>
+                  <row>
+                     <cell>Deine</cell>
+                     <cell>3</cell>
+                     <cell>Sonne</cell>
+                     <cell>kauf</cell>
+                     <cell>sein</cell>
+                  </row>
+               </table> „Du kaufst in 3 Tagen“, oder „Du hast vor 3 Tagen gekauft</p>
+            <p>
+               <hi rend="unknown" rendition="#none"> NB</hi> Zu den 2 Beispielen ist zu erklären, das immer statt Tag das Wort Sonne gestellt wird und unter „capitain“ jede administrations Person gemeint ist.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Bsp.</hi>
+               <table>
+                  <row>
+                     <cell>kosáka (richtig kosák) = kosake</cell>
+                     <cell>} In allen 3 Worten end</cell>
+                  </row>
+                  <row>
+                     <cell>kapitána ( “ kapitán) = capitain</cell>
+                     <cell> spricht die Endung</cell>
+                  </row>
+                  <row>
+                     <cell>kupèzda (“ kupétz) = kaufmann</cell>
+                     <cell> dem Genitiv.</cell>
+                  </row>
+               </table>
+            </p>
+            <p> Die Potenzen der Eigenschaftsnahmen werden nicht durch ihnen speciell zukommenden Form, sondern durch Zusatz von Worten ausgedrückt. Comperativ bekommt man durch das Einfügen des Wortes „mnogo, mnogo“ (viel, viel), <note n="4" place="foot" type="editorial">Im Original ist das „m“ überstrichen.</note>oder durch <pb facs="#IMG.5" n="5"/>Wiederholung des Eigenschaftwortes, oder auch durch den Ausruf „ó, ó“. Der Superlativ wird durch den Zusatz von „<hi rend="unknown" rendition="#none">
 schiboko</hi>“ (richtig russisch schibko)* [* Wörtlich würde es „rasch“ heisen, hier aber hat das Wort die Bedeutung „sehr viel“, ein Sinn der in der russ. Volkssprache geläufig ist].</p>
-        <p>
-          <hi rend="unknown" rendition="#none"> Bsp.</hi> kapitána 2) kapitána bolschó bolschó, 3) kapitana schiboko bolschó. – Deutsch: Vorgesetzter 2) höherer Vorgesetzter, 3) höchster Vorgesetzter (z. B. general).</p>
-        <p>
-          <hi rend="unknown" rendition="#none"> Bsp.</hi>
-          <table>
-            <row>
-              <cell>mojá</cell>
-              <cell>kupí</cell>
-              <cell>changáu (chines.) </cell>
-            </row>
-            <row>
-              <cell>meine</cell>
-              <cell>Kauf</cell>
-              <cell>gut</cell>
-            </row>
-          </table>
-          <table>
-            <row>
-              <cell>2)</cell>
-              <cell> mojá</cell>
-              <cell>kupí</cell>
-              <cell>málo</cell>
-              <cell>málo</cell>
-            </row>
-            <row>
-              <cell/>
-              <cell>meine</cell>
-              <cell>Kauf</cell>
-              <cell>wenig</cell>
-              <cell>wenig</cell>
-            </row>
-          </table>
-          <table>
-            <row>
-              <cell>schangáu</cell>
-              <cell>3)</cell>
-              <cell>mojá</cell>
-              <cell>kupí</cell>
-              <cell>schíboco</cell>
-              <cell>schangáu</cell>
-            </row>
-            <row>
-              <cell>gut</cell>
-              <cell/>
-              <cell>meine</cell>
-              <cell> kauf</cell>
-              <cell>sehr viel</cell>
-              <cell>gut</cell>
-            </row>
-          </table>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Deutsch</hi>: ich habe gut gekauft, ich habe besser gekauft, ich habe am besten gekauft</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Bsp.</hi>
-          <table>
-            <row>
-              <cell>húdo</cell>
-              <cell>rabótai,</cell>
-              <cell>2)</cell>
-              <cell>ó, ó,</cell>
-              <cell>hudo</cell>
-              <cell>rabotai</cell>
-              <cell>3)</cell>
-              <cell>schiboko</cell>
-              <cell>hudo</cell>
-              <cell>rabotai</cell>
-            </row>
-            <row>
-              <cell>schlecht</cell>
-              <cell>arbeite,</cell>
-              <cell/>
-              <cell>ó, ó,</cell>
-              <cell>schlecht</cell>
-              <cell>arbeite</cell>
-              <cell/>
-              <cell>sehr viel</cell>
-              <cell>schlecht</cell>
-              <cell>arbeite</cell>
-            </row>
-          </table>
-          <hi rend="unknown" rendition="#none">Deutsch</hi> schlecht gearbeitet, etc.</p>
-        <p> Prepositionen sind ganz aus der Grammatik des Jargons gestrichen, von den übrigen Redetheilen sind die Interjectionen die wichtigsten, da sie allein den Mangel an Ausdrücken für Freude, Schmerz, Zweifel etc. ausfüllen.</p>
-
-        <p> Die russischen Worte erleiden noch eine Verstümmelung im Munde der Chinesen, die zwei nebeneinander stehende Consonaten nicht aussprechen können, und in solchen Fällen dieselben durch ein zufälligen Vocal trennen. Ausserdem haben die Chinesen kein <hi
-            rend="unknown" rendition="#none">r</hi> Laut, welcher durch <hi rend="unknown" rendition="#none">l</hi> ersetzt wird.</p>
-        <p> Bsp. bumágkaxx (russ.) = bumágika (Jargon) = Papier (xx Das g wird wie das französische j ausgesprochen).</p>
-        <pb facs="#IMG.6" n="6"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Bsp.</hi>
-          <table>
-            <row>
-              <cell>schíbko (rus)</cell>
-              <cell>=</cell>
-              <cell> schíboko (jarg.)</cell>
-              <cell>=</cell>
-              <cell>sehr viel</cell>
-            </row>
-            <row>
-              <cell>reka (rus)</cell>
-              <cell>=</cell>
-              <cell>leka (jarg.)</cell>
-              <cell>=</cell>
-              <cell>Fluss</cell>
-            </row>
-          </table>
-        </p>
-
-        <p> Ich behandele hier blos die russische Hälfte des Jargons, weil bei völliger Unkenntnis, ich Nichts über die chinesische sagen kann. Ich hoffe das dieser Mangel in Fülle, durch eine chinesische Grammatik in <ref target="https://gams.uni-graz.at/o:hsa.languages#L.667">deutscher Sprache</ref>, ersetzt werden kann.</p>
-        <p> Zum Schluss führe ich einige Pfrasen aus dem Jargon an:</p>
-        <p>
-          <table>
-            <row>
-              <cell>1)</cell>
-              <cell>Ponimái</cell>
-              <cell>néta</cell>
-              <cell>capitán,</cell>
-              <cell>twojá</cell>
-              <cell>gowozi</cell>
-              <cell>mojßa</cell>
-            </row>
-            <row>
-              <cell/>
-              <cell>Versteh</cell>
-              <cell>nicht</cell>
-              <cell> capitain,</cell>
-              <cell>deine</cell>
-              <cell>sprich</cell>
-              <cell>meine</cell>
-            </row>
-          </table> „Ich versteh nicht capitain, du erkläre mir“</p>
-        <p>
-          <table>
-            <row>
-              <cell> 2)</cell>
-              <cell>Schímo (chin.)</cell>
-              <cell>tzégo (rus.)?</cell>
-            </row>
-            <row>
-              <cell/>
-              <cell>diese</cell>
-              <cell>was</cell>
-            </row>
-          </table> „Was heist das?“</p>
-        <p>
-          <table>
-            <row>
-              <cell>3)</cell>
-              <cell>Kupí</cell>
-              <cell>madáma,</cell>
-              <cell>prodowai</cell>
-              <cell>mojá</cell>
-              <cell>schangáu</cell>
-            </row>
-            <row>
-              <cell/>
-              <cell>kauf</cell>
-              <cell>madame,</cell>
-              <cell>verkauf</cell>
-              <cell>meine</cell>
-              <cell>gut</cell>
-            </row>
-          </table> „Kaufen Sie madame, ich habe gute Waare“</p>
-        <p>
-          <table>
-            <row>
-              <cell>4)</cell>
-              <cell>Zyba* <lb/>(* Das russ. Wort Ryba)</cell>
-              <cell>schán</cell>
-              <cell>schangáu,</cell>
-              <cell>húdo</cell>
-              <cell>néta</cell>
-              <cell>mojá</cell>
-            </row>
-            <row>
-              <cell/>
-              <cell>Fisch</cell>
-              <cell>sehr</cell>
-              <cell>gut,</cell>
-              <cell>schlecht</cell>
-              <cell>nicht</cell>
-              <cell>meine</cell>
-            </row>
-          </table> „Der Fisch ist sehr gut, ich habe keine schlechte Waare“</p>
-        <pb facs="#IMG.7" n="7"/>
-        <p> Beispiele der <hi rend="unknown" rendition="#none">chinesischen</hi> Werke im Jargon</p>
-        <p> schangáu = gut (wörtlich gut gut) <note n="5" place="foot" type="editorial">Am Randmit Bleistift, offenbar von Schuchardts Hand: „h’ān gut“.</note>
-        </p>
-        <p> schán – schangáu = sehr gut</p>
-        <p> pú- schangáu = nicht gut, schlecht</p>
-        <p> dodòie (wenig gebraucht) = viel. – Eigentlich bedeutet jede Silbe <hi rend="unknown"
-            rendition="#none">do</hi> viel, die letzte Silbe <hi rend="unknown" rendition="#none">die</hi> ist blos eine Endung</p>
-        <p> Ínsa = Geld, (eigendlich „silber“)</p>
-        <p> fánsa = Haus der originällen chines. Bauart</p>
-        <p> jú = sein, haben, (genauer das letzte)</p>
-        <p> rai jú = nicht haben</p>
-        <p> mánsa = Chinese (<hi rend="unknown" rendition="#none">speziel für</hi> solche die auf russischen Boden wohnen)</p>
-
-        <p> Ich sehe ein, das der Inhalt des Briefes sehr mangelhaft sowohl an Inhalt, als besonders an Beispielen und anderem Material ist und doch mus ich mich erdreisten dieses Schreiben abzuschicken, denn bald fängt die Schiffahrt an, die Uebersiedler kommen und dann werde ich in Amtsgeschäften so viel zu thun haben, das ich nicht vor dem Winder an den Schreibtisch komme. Auf den Streifzügen durch das Land, werde ich meistens unter Russen sein und wenig Gelegenheit haben, Material bei den Chinesen zu sammeln, um das jetzt geschriebene zu ergänzen. <pb
-            facs="#IMG.8"
-            n="8"/> Das Jahr welches ich hier jetzt verlebt habe, hat mich gelehrt, das ich so viel wie Nichts auf dem mir fremden Gebiete der Sprachkunde thun kann wenn ich nicht die von mir selbst gewünschte Arbeiten aufgeben will, dacher habe ich mich um ein Stellvertreter, in dem Sammeln von Material für Sie, hochverehrter Herr Professor, umgesehen und bin von Herrn Woldemar Ruhberg <note
-            n="6" place="foot"
-            type="editorial">Im HSA finden sich keine Briefe von ihm oder an ihn.- Mit dem vorliegenden Brief endet auch Busses Kontakt mit Schuchardt.</note>bevollmächtigt Ihnen mitzutheilen das er schon jetzt anfangen wird Notiezen anzuhäufen, um den Anforderungen die Sie gütigst, wenn Sie meiner Recomendation Achtung schenken, in einem directen Brief an ihn, stellen werden. Die wenigen Brocken die ich sammeln kann, werde ich Ruhberg zustellen. Seine Adresse: Via Japan, Siberia Wladiwostok, Herrn W. Ruhberg<note
-            n="7" place="foot"
-            type="editorial">Keine näheren Angaben, doch gibt es mehrere Träger dieses Namens, die zu dieser Zeit in <placeName>Rußland</placeName> lebten.</note> contor Lindholm.<note
-            n="8" place="foot" type="editorial">
-            <persName>Otto Wilhelm Lindholm</persName> (1832-1914), in <placeName>
+            <p>
+               <hi rend="unknown" rendition="#none"> Bsp.</hi> kapitána 2) kapitána bolschó bolschó, 3) kapitana schiboko bolschó. – Deutsch: Vorgesetzter 2) höherer Vorgesetzter, 3) höchster Vorgesetzter (z. B. general).</p>
+            <p>
+               <hi rend="unknown" rendition="#none"> Bsp.</hi>
+               <table>
+                  <row>
+                     <cell>mojá</cell>
+                     <cell>kupí</cell>
+                     <cell>changáu (chines.) </cell>
+                  </row>
+                  <row>
+                     <cell>meine</cell>
+                     <cell>Kauf</cell>
+                     <cell>gut</cell>
+                  </row>
+               </table>
+               <table>
+                  <row>
+                     <cell>2)</cell>
+                     <cell> mojá</cell>
+                     <cell>kupí</cell>
+                     <cell>málo</cell>
+                     <cell>málo</cell>
+                  </row>
+                  <row>
+                     <cell/>
+                     <cell>meine</cell>
+                     <cell>Kauf</cell>
+                     <cell>wenig</cell>
+                     <cell>wenig</cell>
+                  </row>
+               </table>
+               <table>
+                  <row>
+                     <cell>schangáu</cell>
+                     <cell>3)</cell>
+                     <cell>mojá</cell>
+                     <cell>kupí</cell>
+                     <cell>schíboco</cell>
+                     <cell>schangáu</cell>
+                  </row>
+                  <row>
+                     <cell>gut</cell>
+                     <cell/>
+                     <cell>meine</cell>
+                     <cell> kauf</cell>
+                     <cell>sehr viel</cell>
+                     <cell>gut</cell>
+                  </row>
+               </table>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Deutsch</hi>: ich habe gut gekauft, ich habe besser gekauft, ich habe am besten gekauft</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Bsp.</hi>
+               <table>
+                  <row>
+                     <cell>húdo</cell>
+                     <cell>rabótai,</cell>
+                     <cell>2)</cell>
+                     <cell>ó, ó,</cell>
+                     <cell>hudo</cell>
+                     <cell>rabotai</cell>
+                     <cell>3)</cell>
+                     <cell>schiboko</cell>
+                     <cell>hudo</cell>
+                     <cell>rabotai</cell>
+                  </row>
+                  <row>
+                     <cell>schlecht</cell>
+                     <cell>arbeite,</cell>
+                     <cell/>
+                     <cell>ó, ó,</cell>
+                     <cell>schlecht</cell>
+                     <cell>arbeite</cell>
+                     <cell/>
+                     <cell>sehr viel</cell>
+                     <cell>schlecht</cell>
+                     <cell>arbeite</cell>
+                  </row>
+               </table>
+               <hi rend="unknown" rendition="#none">Deutsch</hi> schlecht gearbeitet, etc.</p>
+            <p> Prepositionen sind ganz aus der Grammatik des Jargons gestrichen, von den übrigen Redetheilen sind die Interjectionen die wichtigsten, da sie allein den Mangel an Ausdrücken für Freude, Schmerz, Zweifel etc. ausfüllen.</p>
+            <p> Die russischen Worte erleiden noch eine Verstümmelung im Munde der Chinesen, die zwei nebeneinander stehende Consonaten nicht aussprechen können, und in solchen Fällen dieselben durch ein zufälligen Vocal trennen. Ausserdem haben die Chinesen kein <hi rend="unknown" rendition="#none">r</hi> Laut, welcher durch <hi rend="unknown" rendition="#none">l</hi> ersetzt wird.</p>
+            <p> Bsp. bumágkaxx (russ.) = bumágika (Jargon) = Papier (xx Das g wird wie das französische j ausgesprochen).</p>
+            <pb facs="#IMG.6" n="6"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Bsp.</hi>
+               <table>
+                  <row>
+                     <cell>schíbko (rus)</cell>
+                     <cell>=</cell>
+                     <cell> schíboko (jarg.)</cell>
+                     <cell>=</cell>
+                     <cell>sehr viel</cell>
+                  </row>
+                  <row>
+                     <cell>reka (rus)</cell>
+                     <cell>=</cell>
+                     <cell>leka (jarg.)</cell>
+                     <cell>=</cell>
+                     <cell>Fluss</cell>
+                  </row>
+               </table>
+            </p>
+            <p> Ich behandele hier blos die russische Hälfte des Jargons, weil bei völliger Unkenntnis, ich Nichts über die chinesische sagen kann. Ich hoffe das dieser Mangel in Fülle, durch eine chinesische Grammatik in <ref target="https://gams.uni-graz.at/o:hsa.languages#L.667">deutscher Sprache</ref>, ersetzt werden kann.</p>
+            <p> Zum Schluss führe ich einige Pfrasen aus dem Jargon an:</p>
+            <p>
+               <table>
+                  <row>
+                     <cell>1)</cell>
+                     <cell>Ponimái</cell>
+                     <cell>néta</cell>
+                     <cell>capitán,</cell>
+                     <cell>twojá</cell>
+                     <cell>gowozi</cell>
+                     <cell>mojßa</cell>
+                  </row>
+                  <row>
+                     <cell/>
+                     <cell>Versteh</cell>
+                     <cell>nicht</cell>
+                     <cell> capitain,</cell>
+                     <cell>deine</cell>
+                     <cell>sprich</cell>
+                     <cell>meine</cell>
+                  </row>
+               </table> „Ich versteh nicht capitain, du erkläre mir“</p>
+            <p>
+               <table>
+                  <row>
+                     <cell> 2)</cell>
+                     <cell>Schímo (chin.)</cell>
+                     <cell>tzégo (rus.)?</cell>
+                  </row>
+                  <row>
+                     <cell/>
+                     <cell>diese</cell>
+                     <cell>was</cell>
+                  </row>
+               </table> „Was heist das?“</p>
+            <p>
+               <table>
+                  <row>
+                     <cell>3)</cell>
+                     <cell>Kupí</cell>
+                     <cell>madáma,</cell>
+                     <cell>prodowai</cell>
+                     <cell>mojá</cell>
+                     <cell>schangáu</cell>
+                  </row>
+                  <row>
+                     <cell/>
+                     <cell>kauf</cell>
+                     <cell>madame,</cell>
+                     <cell>verkauf</cell>
+                     <cell>meine</cell>
+                     <cell>gut</cell>
+                  </row>
+               </table> „Kaufen Sie madame, ich habe gute Waare“</p>
+            <p>
+               <table>
+                  <row>
+                     <cell>4)</cell>
+                     <cell>Zyba* <lb/>(* Das russ. Wort Ryba)</cell>
+                     <cell>schán</cell>
+                     <cell>schangáu,</cell>
+                     <cell>húdo</cell>
+                     <cell>néta</cell>
+                     <cell>mojá</cell>
+                  </row>
+                  <row>
+                     <cell/>
+                     <cell>Fisch</cell>
+                     <cell>sehr</cell>
+                     <cell>gut,</cell>
+                     <cell>schlecht</cell>
+                     <cell>nicht</cell>
+                     <cell>meine</cell>
+                  </row>
+               </table> „Der Fisch ist sehr gut, ich habe keine schlechte Waare“</p>
+            <pb facs="#IMG.7" n="7"/>
+            <p> Beispiele der <hi rend="unknown" rendition="#none">chinesischen</hi> Werke im Jargon</p>
+            <p> schangáu = gut (wörtlich gut gut) <note n="5" place="foot" type="editorial">Am Randmit Bleistift, offenbar von Schuchardts Hand: „h’ān gut“.</note>
+            </p>
+            <p> schán – schangáu = sehr gut</p>
+            <p> pú- schangáu = nicht gut, schlecht</p>
+            <p> dodòie (wenig gebraucht) = viel. – Eigentlich bedeutet jede Silbe <hi rend="unknown" rendition="#none">do</hi> viel, die letzte Silbe <hi rend="unknown" rendition="#none">die</hi> ist blos eine Endung</p>
+            <p> Ínsa = Geld, (eigendlich „silber“)</p>
+            <p> fánsa = Haus der originällen chines. Bauart</p>
+            <p> jú = sein, haben, (genauer das letzte)</p>
+            <p> rai jú = nicht haben</p>
+            <p> mánsa = Chinese (<hi rend="unknown" rendition="#none">speziel für</hi> solche die auf russischen Boden wohnen)</p>
+            <p> Ich sehe ein, das der Inhalt des Briefes sehr mangelhaft sowohl an Inhalt, als besonders an Beispielen und anderem Material ist und doch mus ich mich erdreisten dieses Schreiben abzuschicken, denn bald fängt die Schiffahrt an, die Uebersiedler kommen und dann werde ich in Amtsgeschäften so viel zu thun haben, das ich nicht vor dem Winder an den Schreibtisch komme. Auf den Streifzügen durch das Land, werde ich meistens unter Russen sein und wenig Gelegenheit haben, Material bei den Chinesen zu sammeln, um das jetzt geschriebene zu ergänzen. <pb facs="#IMG.8" n="8"/> Das Jahr welches ich hier jetzt verlebt habe, hat mich gelehrt, das ich so viel wie Nichts auf dem mir fremden Gebiete der Sprachkunde thun kann wenn ich nicht die von mir selbst gewünschte Arbeiten aufgeben will, dacher habe ich mich um ein Stellvertreter, in dem Sammeln von Material für Sie, hochverehrter Herr Professor, umgesehen und bin von Herrn Woldemar Ruhberg <note n="6" place="foot" type="editorial">Im HSA finden sich keine Briefe von ihm oder an ihn.- Mit dem vorliegenden Brief endet auch Busses Kontakt mit Schuchardt.</note>bevollmächtigt Ihnen mitzutheilen das er schon jetzt anfangen wird Notiezen anzuhäufen, um den Anforderungen die Sie gütigst, wenn Sie meiner Recomendation Achtung schenken, in einem directen Brief an ihn, stellen werden. Die wenigen Brocken die ich sammeln kann, werde ich Ruhberg zustellen. Seine Adresse: Via Japan, Siberia Wladiwostok, Herrn W. Ruhberg<note n="7" place="foot" type="editorial">Keine näheren Angaben, doch gibt es mehrere Träger dieses Namens, die zu dieser Zeit in <placeName>Rußland</placeName> lebten.</note> contor Lindholm.<note n="8" place="foot" type="editorial">
+                  <persName>Otto Wilhelm Lindholm</persName> (1832-1914), in <placeName>
 Finnland</placeName> geborener Deutschrusse (Walfänger und Kaufmann).</note>
-        </p>
-        <closer>
-          <salute> In Hofnung auf Nachsicht zu dem unreifen Material, verbleibe ich hochachtungsvoll</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1240">Th. v. Busse</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            </p>
+            <closer>
+               <salute> In Hofnung auf Nachsicht zu dem unreifen Material, verbleibe ich hochachtungsvoll</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Th. v. Busse</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

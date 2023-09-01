@@ -1,348 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Zsigmond Simonyi (48-HSZS01)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10963" type="PID">o:hsa.letter.10963</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">48-HSZS01</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Ungarn</country>
-            <settlement>Budapest</settlement>
-            <repository ref="https://mta.hu/english/">Abteilung für Handschriften und Alte Bücher, Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften</repository>
-            <idno type="shelfmark">HSZS01</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1912-03-10">1912-03-10</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2020">2020</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Zsigmond Simonyi</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2738"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10963">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1912-03-10">1912-03-10</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2738" ref="https://viaf.org/viaf/51710141">
-            <forename>Zsigmond</forename>
-            <surname>Simonyi</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2738" type="context">
-                        Korrespondenz Hugo Schuchardt - Zsigmond Simonyi
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10963" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 10.3.12.</dateline>
+            <opener> Lieber Freund und Kollege</opener>
+            <p> Kaiblinger hatte mir vor einigen Tagen sein Buch zugeschickt<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4744">Fülöp Kaiblinger, <hi rend="unknown" rendition="#none">Alkotó nyelvtudomány; programm és részletek, Budapest: Franklin-Társulat, 1912 [=Schöpferische Sprachwissenschaft, Programm und Einzelheiten]</hi>
                      </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.297" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Magyar Tudományos Akadémia (Budapest)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3971" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Magyar Nyelvör</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.667" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Deutsch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.803" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Ungarisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10963" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://mta.hu/english/">Ungarischen Akademie der Wissenschaften</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10963" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://mta.hu/english/">Ungarischen Akademie der Wissenschaften</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10963" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://mta.hu/english/">Ungarischen Akademie der Wissenschaften</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10963" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://mta.hu/english/">Ungarischen Akademie der Wissenschaften</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10963" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://mta.hu/english/">Ungarischen Akademie der Wissenschaften</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10963" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://mta.hu/english/">Ungarischen Akademie der Wissenschaften</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10963" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 10.3.12.</dateline>
-        <opener> Lieber Freund und Kollege</opener>
-        <p> Kaiblinger hatte mir vor einigen Tagen sein Buch zugeschickt<note n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4744">Fülöp Kaiblinger, <hi rend="unknown" rendition="#none">Alkotó nyelvtudomány; programm és részletek, Budapest: Franklin-Társulat, 1912 [=Schöpferische Sprachwissenschaft, Programm und Einzelheiten]</hi>
-              </ref>
-
-            </bibl>. – <persName>
-Kaiblinger</persName> (1878-1955), ungar. Sprachwissenschaftler; im HSA gibt es keine Korr. mit ihm.</note> und ich hatte es mir, da es mich ja sehr interessiert, für später zurückgelegt. Ich kann ja – besonders nun in meinem Alter – die Veröffentlichungen nicht in der Reihenfolge berücksichtigen wie sie mir in die Hände kommen, sie müssen auf mich warten bis meine nach eigenem Geschmack unternommenen Spaziergänge mich an ihnen <pb
-            facs="#IMG.2"
-            n="2"/> vorbeiführen. Ich habe in dem Buche K.s nur ein paar Minuten geblättert und ihm dann brieflich gedankt, indem ich zwei Bemerkungen einflocht. Wie eine zu S. 113. Es ist nicht wahr, <foreign
-            xml:lang="hu">hogy a német nyelv mindenfelé hért, veszit</foreign>;<note n="2" place="foot"
-              type="editorial">„dass sich die <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.667">deutsche Sprache</ref> überall verbreitet hat“.</note> das gilt gerade vom <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.226">Französischen</ref> (ein Franzose hatte es behauptet). Vielleicht hält mich K. deshalb für einen Chauvinisten – er würde sehr Unrecht haben. Die zweite Bemerkung war ganz allgemeiner Art. Sie bezog sich eigentlich auf das ganze Buch oder doch besser Programm. Er scheint mir – der flüchtige Einblick gestattet mir nicht dies mit<pb
-            facs="#IMG.3"
-            n="3"/> Bestimmtheit auszusprechen – die ganze weltsprachliche Bewegung außer Acht gelassen zu haben. Ich selbst habe ja schon vor einem Vierteljahrhundert gerade die Verbindung von Wissenschaft und Praxis betont („eine Weltsprache ist auch --- ein wissenschaftliches Desiderat“ usw.)<note
-            n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.675">
-                <hi rend="unknown" rendition="#none">„Weltsprache und Weltsprachen”. An Gustav Meyer von Hugo Schuchardt</hi>, Straßburg: Trübner, 1894.</ref>
-            </bibl>
-          </note> Darüber mag ich nun selbst mich jetzt nicht weiter äußern; <hi rend="unknown"
-            rendition="#none">vorderhand</hi> ist mir jedes Zurückgreifen in meine wissenschaftliche Produktion durch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">Meringer</persName>s Größenwahnausbrüche verleidet.<note
-            n="4" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.289">Schuchardt, <hi rend="unknown" rendition="#none">Gegen R. Meringer</hi>, Graz: Eigenverlag. - Druckerei Leykam, 1911.</ref>
-            </bibl>
-
-          </note> Es ist ja ganz natürlich daß man sich in gewissen Fällen um die Priorität streitet; aber nun soll Einer wenn er nicht auf Schritt <pb
-            facs="#IMG.4" n="4"/> und Tritt behauptet: das ist von mir, damit zugeben daß dem Andern die Priorität zukomme! </p>
-        <p>Heute erhalte ich nun von Ihnen das Buch K.s. Das <foreign xml:lang="hu">
-            <hi rend="unknown" rendition="#none">bíralót</hi>
-          </foreign>
-          <note n="5" place="foot" type="editorial">„Kritik“.</note> (warum nicht <foreign xml:lang="hu">
-            <hi rend="unknown" rendition="#none">birálátas</hi>
-          </foreign>?) <foreign xml:lang="hu">
-            <hi rend="unknown" rendition="#none">tisztelt példany</hi>
-          </foreign> (warum <foreign xml:lang="hu">tisztelt</foreign>?)<note n="6" place="foot"
-            type="editorial">„Freiexemplar“.</note> flößte mir erst einen großen Schreck ein; aber da ich K.s Handschrift darin wiederfinde und außerdem Ihre Bleistiftstriche sehe, nehme ich an daß das <hi
-            rend="unknown" rendition="#none">
+                  </bibl>. – <persName>
+Kaiblinger</persName> (1878-1955), ungar. Sprachwissenschaftler; im HSA gibt es keine Korr. mit ihm.</note> und ich hatte es mir, da es mich ja sehr interessiert, für später zurückgelegt. Ich kann ja – besonders nun in meinem Alter – die Veröffentlichungen nicht in der Reihenfolge berücksichtigen wie sie mir in die Hände kommen, sie müssen auf mich warten bis meine nach eigenem Geschmack unternommenen Spaziergänge mich an ihnen <pb facs="#IMG.2" n="2"/> vorbeiführen. Ich habe in dem Buche K.s nur ein paar Minuten geblättert und ihm dann brieflich gedankt, indem ich zwei Bemerkungen einflocht. Wie eine zu S. 113. Es ist nicht wahr, <foreign xml:lang="hu">hogy a német nyelv mindenfelé hért, veszit</foreign>;<note n="2" place="foot" type="editorial">„dass sich die <ref target="https://gams.uni-graz.at/o:hsa.languages#L.667">deutsche Sprache</ref> überall verbreitet hat“.</note> das gilt gerade vom <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">Französischen</ref> (ein Franzose hatte es behauptet). Vielleicht hält mich K. deshalb für einen Chauvinisten – er würde sehr Unrecht haben. Die zweite Bemerkung war ganz allgemeiner Art. Sie bezog sich eigentlich auf das ganze Buch oder doch besser Programm. Er scheint mir – der flüchtige Einblick gestattet mir nicht dies mit<pb facs="#IMG.3" n="3"/> Bestimmtheit auszusprechen – die ganze weltsprachliche Bewegung außer Acht gelassen zu haben. Ich selbst habe ja schon vor einem Vierteljahrhundert gerade die Verbindung von Wissenschaft und Praxis betont („eine Weltsprache ist auch --- ein wissenschaftliches Desiderat“ usw.)<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.675">
+                        <hi rend="unknown" rendition="#none">„Weltsprache und Weltsprachen”. An Gustav Meyer von Hugo Schuchardt</hi>, Straßburg: Trübner, 1894.</ref>
+                  </bibl>
+               </note> Darüber mag ich nun selbst mich jetzt nicht weiter äußern; <hi rend="unknown" rendition="#none">vorderhand</hi> ist mir jedes Zurückgreifen in meine wissenschaftliche Produktion durch <persName ref="[authorityLink]">Meringer</persName>s Größenwahnausbrüche verleidet.<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.289">Schuchardt, <hi rend="unknown" rendition="#none">Gegen R. Meringer</hi>, Graz: Eigenverlag. - Druckerei Leykam, 1911.</ref>
+                  </bibl>
+               </note> Es ist ja ganz natürlich daß man sich in gewissen Fällen um die Priorität streitet; aber nun soll Einer wenn er nicht auf Schritt <pb facs="#IMG.4" n="4"/> und Tritt behauptet: das ist von mir, damit zugeben daß dem Andern die Priorität zukomme! </p>
+            <p>Heute erhalte ich nun von Ihnen das Buch K.s. Das <foreign xml:lang="hu">
+                  <hi rend="unknown" rendition="#none">bíralót</hi>
+               </foreign>
+               <note n="5" place="foot" type="editorial">„Kritik“.</note> (warum nicht <foreign xml:lang="hu">
+                  <hi rend="unknown" rendition="#none">birálátas</hi>
+               </foreign>?) <foreign xml:lang="hu">
+                  <hi rend="unknown" rendition="#none">tisztelt példany</hi>
+               </foreign> (warum <foreign xml:lang="hu">tisztelt</foreign>?)<note n="6" place="foot" type="editorial">„Freiexemplar“.</note> flößte mir erst einen großen Schreck ein; aber da ich K.s Handschrift darin wiederfinde und außerdem Ihre Bleistiftstriche sehe, nehme ich an daß das <hi rend="unknown" rendition="#none">
 bíralót</hi> schon erledigt ist. Soll ich Ihnen das Exemplar zurückschicken oder an welche andere Adresse?* </p>
-        <p>Unsere Jubiläen sind nun glücklich überstanden. Für einen Menschen ist die </p>
-        <p>(*Etwa an den Orientalisten <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2811">Hans Stumme</persName>
-          <note n="7" place="foot" type="editorial">Hans Stumme (1864-1936), Orientalist in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.177">
-Leipzig</placeName>; gl. <ref
-            target="https://gams.uni-graz.at/context:hsa.letters.2811?locale=de">HSA 11356-11394</ref>.</note> in Leipzig, der fleißig <ref target="https://gams.uni-graz.at/o:hsa.languages#L.803">Madj.</ref> treibt und mir in dieser Sprache schon Postkarten geschickt hat?)</p>
-        <pb facs="#IMG.5" n="5"/>
-
-        <p>Sache doch weniger günstig als für eine Zeitschrift. Denn mit ihm geht es keinesfalls mehr aufwärts, bestenfalls nur <hi
-            rend="unknown"
-            rendition="#none">langsam</hi> abwärts. Beim Nyv. aber darf man doch auf Besserung der äußern Verhältnisse hoffen. Ich bin über die ganze Angelegenheit unterrichtet – habe absichtlich den Einzelheiten nicht nachgefragt, schon deshalb nicht weil ich durch so viele freundschaftliche Beziehungen in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5936">
-Ungarn</placeName> gebunden bin und mich den innern Kämpfen gegenüber der strengsten Zurück- <pb
-            facs="#IMG.6"
-            n="6"/> haltung befleißigen muß. So habe ich es immer gehalten. Nichtsdestoweniger habe ich den Eindruck als ob mir Szily K.<note
-            n="8" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4731">Kalmán Szily</persName> (1838-1924), ungar. Sprachwissenschaftler; ungar. Physiker, erster Generalsekretär der <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.297">Ungarischen Akademie der Wissenschaften;</ref> vgl. <ref target="https://gams.uni-graz.at/context:hsa.letters.4731?locale=de">HSA 11497-11523</ref>.</note> neuerdings nicht sehr gewogen sei. </p>
-
-        <p>Wenn ich nun auch die Gründe weshalb Ihnen die Unterstützung der Akademie Seiner Zeit entzogen wurde, nicht kenne, auch nicht aus dem damaligen Programm des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">
-            <hi rend="unknown" rendition="#none">M. Nyelv</hi>
-          </ref> herauszuschälen und keinesfalls zu würdigen vermag, so habe ich doch die Tatsache selbst, an die ich durch den Druck immer von Neuem erinnert werde, lebhaft beklagt und wünsche Ihnen wie schon gesagt von Herzen daß auf irgend eine Weise diese Verhältnisse sich zu Ihren Gunsten ändern möchten. </p>
-        <closer>
-          <salute>Mit besten Empfehlungen an die Ihrigen</salute>
-          <lb/>
-          <salute>Ihr ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109"> HSchuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Unsere Jubiläen sind nun glücklich überstanden. Für einen Menschen ist die </p>
+            <p>(*Etwa an den Orientalisten <persName ref="[authorityLink]">Hans Stumme</persName>
+               <note n="7" place="foot" type="editorial">Hans Stumme (1864-1936), Orientalist in <placeName ref="[authorityLink]">
+Leipzig</placeName>; gl. <ref target="https://gams.uni-graz.at/context:hsa.letters.2811?locale=de">HSA 11356-11394</ref>.</note> in Leipzig, der fleißig <ref target="https://gams.uni-graz.at/o:hsa.languages#L.803">Madj.</ref> treibt und mir in dieser Sprache schon Postkarten geschickt hat?)</p>
+            <pb facs="#IMG.5" n="5"/>
+            <p>Sache doch weniger günstig als für eine Zeitschrift. Denn mit ihm geht es keinesfalls mehr aufwärts, bestenfalls nur <hi rend="unknown" rendition="#none">langsam</hi> abwärts. Beim Nyv. aber darf man doch auf Besserung der äußern Verhältnisse hoffen. Ich bin über die ganze Angelegenheit unterrichtet – habe absichtlich den Einzelheiten nicht nachgefragt, schon deshalb nicht weil ich durch so viele freundschaftliche Beziehungen in <placeName ref="[authorityLink]">
+Ungarn</placeName> gebunden bin und mich den innern Kämpfen gegenüber der strengsten Zurück- <pb facs="#IMG.6" n="6"/> haltung befleißigen muß. So habe ich es immer gehalten. Nichtsdestoweniger habe ich den Eindruck als ob mir Szily K.<note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Kalmán Szily</persName> (1838-1924), ungar. Sprachwissenschaftler; ungar. Physiker, erster Generalsekretär der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.297">Ungarischen Akademie der Wissenschaften;</ref> vgl. <ref target="https://gams.uni-graz.at/context:hsa.letters.4731?locale=de">HSA 11497-11523</ref>.</note> neuerdings nicht sehr gewogen sei. </p>
+            <p>Wenn ich nun auch die Gründe weshalb Ihnen die Unterstützung der Akademie Seiner Zeit entzogen wurde, nicht kenne, auch nicht aus dem damaligen Programm des <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3971">
+                  <hi rend="unknown" rendition="#none">M. Nyelv</hi>
+               </ref> herauszuschälen und keinesfalls zu würdigen vermag, so habe ich doch die Tatsache selbst, an die ich durch den Druck immer von Neuem erinnert werde, lebhaft beklagt und wünsche Ihnen wie schon gesagt von Herzen daß auf irgend eine Weise diese Verhältnisse sich zu Ihren Gunsten ändern möchten. </p>
+            <closer>
+               <salute>Mit besten Empfehlungen an die Ihrigen</salute>
+               <lb/>
+               <salute>Ihr ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]"> HSchuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

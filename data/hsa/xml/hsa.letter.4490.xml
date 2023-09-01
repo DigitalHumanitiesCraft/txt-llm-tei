@@ -1,371 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Bogdan Petriceicu Hasdeu (33-1177)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bruno</forename>
-            <surname>Mazzoni</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4490" type="PID">o:hsa.letter.4490</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">33-1177</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <repository>Unbekannt</repository>
-            <idno type="shelfmark">1177</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1878-04-07">1878-04-07</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bruno</forename>
-              <surname>Mazzoni</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Bogdan Petriceicu Hasdeu</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1720"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4490">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1878-04-07">1878-04-07</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1720" ref="https://viaf.org/viaf/65406496">
-            <forename>Bogdan Petriceicu</forename>
-            <surname>Hasdeu</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1720" type="context">
-                        Korrespondenz Hugo Schuchardt - Bogdan Petriceicu Hasdeu
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.893" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Albanisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.854" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rumänisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4490" xml:lang="de">
-        <pb n="1"/>
-        <dateline> Graz 7. April 1878 </dateline>
-        <opener> Verehrter Freund! </opener>
-        <p>Ihr Brief von gestern<note n="1" place="foot" type="editorial">Si riferisce evidentemente alla lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4488">XXXI</ref>.</note> hat mich in eine solche dauernde Aufregung versetzt, ich bedauere so sehr, Jemanden verstimmt zu haben (ohne dass ich mir’s träumen liess), gegen den ich vom herzlichsten Wohlwollen erfüllt bin, dass ich Ihnen heute nochmals geschrieben haben würde, auch wenn nicht ein zweiter Brief von Ihnen eingetroffen wäre. Neues kann ich Ihnen natürlich nicht sagen; ich beschränke mich darauf das Alte in einer etwas andern Form zu wiederholen.</p>
-
-        <p>Ich habe die Einleitung zu Werken Anderer nicht als Stilgattung studirt; da ich Autodidakt bin, so lasse ich mich überhaupt nicht gern durch Autoritäten leiten. Ich pflege mich an die <hi
-            rend="unknown" rendition="#none">Sachen</hi>, statt an die <hi rend="unknown" rendition="#none">Personen </hi>zu halten.</p>
-        <p>
-          <hi rend="unknown"
-            rendition="#none">Eine Einleitung von wenigen Seiten</hi>, mit allgemeinen Redensarten angefüllt, zu der es nicht einmal nöthig gewesen wäre, das Buch näher anzusehen, — eine solche war, nach gemeinsamer Uebereinkunft, ausgeschlossen; die Einleitung sollte eine <hi
-            rend="unknown"
-            rendition="#none">
-ausführlichere</hi> werden. Ich hätte darin über irgend Etwas sprechen können, was mit dem Buche selbst nur in entferntem Zusammenhang stand — Beispiele dafür werden Sie wohl in der Litteratur der Einleitungen finden. Indessen schien es mir geboten, <hi
-            rend="unknown"
-            rendition="#none">vor Allem</hi> (neben Bemerkungen über die rumänischen Studien im Allgemeinen) <hi
-            rend="unknown"
-            rendition="#none">Ihr Buch selbst</hi> zu besprechen. War das nicht auch Ihre Idee? Sie haben ja doch selbst den Titel gewählt: "Über Hasdeu’s Texte u. Glossen"<note
-            n="2" place="foot" type="editorial">V. lettera <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4482">XXV</ref>, poscritto.</note>; und Sie wollten ja mit dem Index auf das Vollenden meiner Einleitung warten<note
-            n="3" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4479">XXII</ref> e n. 9.</note>; es musste doch also hier Sachliches vorkommen und zwar Anderes und anders Aufgefasstes, als bei Ihnen, sonst hätten Sie mich ja nicht im Index zu citiren brauchen.</p>
-
-        <p>Sie behaupten nun, diese Besprechung bestehe in einer herben, unerbittlichen Kritik, und ich selbst hätte nie eine schlimmere geschrieben<note
-            n="4" place="foot" type="editorial">V. lettera <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref>.</note>. Ich habe eine ziemliche Anzahl sehr tadelnder Kritiken in die Welt gesandt, die übrigens nie durch einen persönlichen Anlass diktirt wurden, in denen ich meiner Ueberzeugung nach immer gerecht und bei Weitem nicht so scharf war, als Sie z.B. gegen Picot<note
-            n="5" place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4474">XVII</ref>, n. 11.</note>, de Cihac<note n="6"
-            place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4474">XVII</ref>, n. 12.</note> u.A. Um diese aber handelt es sich hier nicht! Meine Kritik Ihres Buches ist eine <hi
-            rend="unknown"
-            rendition="#none">vollkommen anerkennende</hi> und ich bitte Sie, dieselbe nur mit denjenigen über Miklosich’s Albanische Forschungen<note
-            n="7" place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4482">XXV</ref>, n. 11.</note>, Rhys’ (der ein alter und sehr guter Freund von mir ist) Lectures on Welsh philology (seine ganze Oghamtheorie habe ich für unerweisbar erklärt)<note
-            n="8" place="foot" type="editorial">Una recensione al vol. di <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5864">J. Rhys, <hi rend="unknown" rendition="#none">Lectures on Welsh philology</hi>
-              </ref>, London 1877 [1879<hi
-                rendition="#sup">2</hi>]</bibl>, era stata pubblicata dallo Schuchardt su <bibl>« LCBl » XXVIII (<ref
-            target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.487">1877</ref>), pp. 1250-5</bibl>. La discussione sulle origini dell’alfabeto ogamico è tuttora aperta.</note> Darmesteter[s] Mots composés<note
-            n="9" place="foot" type="editorial">Il <bibl>
-              <hi rend="unknown"
-                rendition="#none">Traité de la formation des mots composés dans la langue française comparés aux autres langues romanes et au latin</hi> di A. Darmesteter, Paris 1875,
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4490" xml:lang="de">
+            <pb n="1"/>
+            <dateline> Graz 7. April 1878 </dateline>
+            <opener> Verehrter Freund! </opener>
+            <p>Ihr Brief von gestern<note n="1" place="foot" type="editorial">Si riferisce evidentemente alla lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4488">XXXI</ref>.</note> hat mich in eine solche dauernde Aufregung versetzt, ich bedauere so sehr, Jemanden verstimmt zu haben (ohne dass ich mir’s träumen liess), gegen den ich vom herzlichsten Wohlwollen erfüllt bin, dass ich Ihnen heute nochmals geschrieben haben würde, auch wenn nicht ein zweiter Brief von Ihnen eingetroffen wäre. Neues kann ich Ihnen natürlich nicht sagen; ich beschränke mich darauf das Alte in einer etwas andern Form zu wiederholen.</p>
+            <p>Ich habe die Einleitung zu Werken Anderer nicht als Stilgattung studirt; da ich Autodidakt bin, so lasse ich mich überhaupt nicht gern durch Autoritäten leiten. Ich pflege mich an die <hi rend="unknown" rendition="#none">Sachen</hi>, statt an die <hi rend="unknown" rendition="#none">Personen </hi>zu halten.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Eine Einleitung von wenigen Seiten</hi>, mit allgemeinen Redensarten angefüllt, zu der es nicht einmal nöthig gewesen wäre, das Buch näher anzusehen, — eine solche war, nach gemeinsamer Uebereinkunft, ausgeschlossen; die Einleitung sollte eine <hi rend="unknown" rendition="#none">
+ausführlichere</hi> werden. Ich hätte darin über irgend Etwas sprechen können, was mit dem Buche selbst nur in entferntem Zusammenhang stand — Beispiele dafür werden Sie wohl in der Litteratur der Einleitungen finden. Indessen schien es mir geboten, <hi rend="unknown" rendition="#none">vor Allem</hi> (neben Bemerkungen über die rumänischen Studien im Allgemeinen) <hi rend="unknown" rendition="#none">Ihr Buch selbst</hi> zu besprechen. War das nicht auch Ihre Idee? Sie haben ja doch selbst den Titel gewählt: "Über Hasdeu’s Texte u. Glossen"<note n="2" place="foot" type="editorial">V. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4482">XXV</ref>, poscritto.</note>; und Sie wollten ja mit dem Index auf das Vollenden meiner Einleitung warten<note n="3" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4479">XXII</ref> e n. 9.</note>; es musste doch also hier Sachliches vorkommen und zwar Anderes und anders Aufgefasstes, als bei Ihnen, sonst hätten Sie mich ja nicht im Index zu citiren brauchen.</p>
+            <p>Sie behaupten nun, diese Besprechung bestehe in einer herben, unerbittlichen Kritik, und ich selbst hätte nie eine schlimmere geschrieben<note n="4" place="foot" type="editorial">V. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref>.</note>. Ich habe eine ziemliche Anzahl sehr tadelnder Kritiken in die Welt gesandt, die übrigens nie durch einen persönlichen Anlass diktirt wurden, in denen ich meiner Ueberzeugung nach immer gerecht und bei Weitem nicht so scharf war, als Sie z.B. gegen Picot<note n="5" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4474">XVII</ref>, n. 11.</note>, de Cihac<note n="6" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4474">XVII</ref>, n. 12.</note> u.A. Um diese aber handelt es sich hier nicht! Meine Kritik Ihres Buches ist eine <hi rend="unknown" rendition="#none">vollkommen anerkennende</hi> und ich bitte Sie, dieselbe nur mit denjenigen über Miklosich’s Albanische Forschungen<note n="7" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4482">XXV</ref>, n. 11.</note>, Rhys’ (der ein alter und sehr guter Freund von mir ist) Lectures on Welsh philology (seine ganze Oghamtheorie habe ich für unerweisbar erklärt)<note n="8" place="foot" type="editorial">Una recensione al vol. di <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5864">J. Rhys, <hi rend="unknown" rendition="#none">Lectures on Welsh philology</hi>
+                     </ref>, London 1877 [1879<hi rendition="#sup">2</hi>]</bibl>, era stata pubblicata dallo Schuchardt su <bibl>« LCBl » XXVIII (<ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.487">1877</ref>), pp. 1250-5</bibl>. La discussione sulle origini dell’alfabeto ogamico è tuttora aperta.</note> Darmesteter[s] Mots composés<note n="9" place="foot" type="editorial">Il <bibl>
+                     <hi rend="unknown" rendition="#none">Traité de la formation des mots composés dans la langue française comparés aux autres langues romanes et au latin</hi> di A. Darmesteter, Paris 1875,
 </bibl> era stato discusso dallo Schuchardt in una rassegna pubblicata su <bibl>« LCBl » XXVIII (<ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.23">1877</ref>), pp. 183-6.</bibl>
-          </note> u.s.w. zu vergleichen. Dieselben sind alle <hi rend="unknown"
-            rendition="#none">anerkennend</hi> und keiner der Verfasser hat es mir übel genommen, dass ich eine ziemlich grosse Menge von Ausstellungen gemacht habe. Es kommt doch auf das <hi
-            rend="unknown"
-            rendition="#none">Gesammturtheil</hi> an, ist dieses günstig, so wird es dadurch nicht aufgehoben, dass man über ein Dutzend Seiten mit dem Verfasser nicht derselben Meinung ist. Es liegt nun aber in der Natur der Sache, dass das Lob, auch das schmeichelhafteste und rückhaltloseste immer nur einen kurzen Raum einnehmen kann, indem ja der Hinweis auf das Buch selbst genügt. Die Ausstellungen aber, welche sich auch nur auf einzelne Punkte beziehen, beanspruchen, da sie oft lange Motivirungen erfordern, einen weit grössern Raum. Wenn ich sage, "<hi
-            rend="unknown" rendition="#none">noĭan</hi> von <ref target="https://gams.uni-graz.at/o:hsa.languages#L.893">alb.</ref>
-          <foreign xml:lang="sq">
-            <hi rend="unknown" rendition="#none">uĭana</hi>
-          </foreign> hat meinen vollen Beifall"<note n="10" place="foot" type="editorial">Cf. <hi rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
-            </hi>, p. xix, a proposito di <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">
+               </note> u.s.w. zu vergleichen. Dieselben sind alle <hi rend="unknown" rendition="#none">anerkennend</hi> und keiner der Verfasser hat es mir übel genommen, dass ich eine ziemlich grosse Menge von Ausstellungen gemacht habe. Es kommt doch auf das <hi rend="unknown" rendition="#none">Gesammturtheil</hi> an, ist dieses günstig, so wird es dadurch nicht aufgehoben, dass man über ein Dutzend Seiten mit dem Verfasser nicht derselben Meinung ist. Es liegt nun aber in der Natur der Sache, dass das Lob, auch das schmeichelhafteste und rückhaltloseste immer nur einen kurzen Raum einnehmen kann, indem ja der Hinweis auf das Buch selbst genügt. Die Ausstellungen aber, welche sich auch nur auf einzelne Punkte beziehen, beanspruchen, da sie oft lange Motivirungen erfordern, einen weit grössern Raum. Wenn ich sage, "<hi rend="unknown" rendition="#none">noĭan</hi> von <ref target="https://gams.uni-graz.at/o:hsa.languages#L.893">alb.</ref>
+               <foreign xml:lang="sq">
+                  <hi rend="unknown" rendition="#none">uĭana</hi>
+               </foreign> hat meinen vollen Beifall"<note n="10" place="foot" type="editorial">Cf. <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
+                  </hi>, p. xix, a proposito di <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">
 rum.</ref>
-            <foreign xml:lang="ro">
-              <hi rend="unknown" rendition="#none">noián</hi>
-            </foreign> "oceano", che il Hasdeu aveva derivato dal sinonimo <ref target="https://gams.uni-graz.at/o:hsa.languages#L.893">alb.</ref>
-            <foreign xml:lang="sq">
-              <hi rend="unknown" rendition="#none">ujan(ë)</hi>
-            </foreign> ← <ref target="https://gams.uni-graz.at/o:hsa.languages#L.893">alb.</ref>
-            <foreign xml:lang="sq">
-              <hi rend="unknown" rendition="#none">uj</hi>
-            </foreign> "acqua" (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">
-                <hi rend="unknown" rendition="#none">CdB I</hi>, p. 295, 130</ref>
-            </bibl>); ma l’<ref target="https://gams.uni-graz.at/o:hsa.languages#L.893">alb.</ref>
-            <foreign xml:lang="ro">
-              <hi rend="unknown" rendition="#none">ujan(ë)</hi>
-            </foreign> è costruzione dotta di G. de Rada (cf. <bibl>
+                  <foreign xml:lang="ro">
+                     <hi rend="unknown" rendition="#none">noián</hi>
+                  </foreign> "oceano", che il Hasdeu aveva derivato dal sinonimo <ref target="https://gams.uni-graz.at/o:hsa.languages#L.893">alb.</ref>
+                  <foreign xml:lang="sq">
+                     <hi rend="unknown" rendition="#none">ujan(ë)</hi>
+                  </foreign> ← <ref target="https://gams.uni-graz.at/o:hsa.languages#L.893">alb.</ref>
+                  <foreign xml:lang="sq">
+                     <hi rend="unknown" rendition="#none">uj</hi>
+                  </foreign> "acqua" (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">
+                        <hi rend="unknown" rendition="#none">CdB I</hi>, p. 295, 130</ref>
+                  </bibl>); ma l’<ref target="https://gams.uni-graz.at/o:hsa.languages#L.893">alb.</ref>
+                  <foreign xml:lang="ro">
+                     <hi rend="unknown" rendition="#none">ujan(ë)</hi>
+                  </foreign> è costruzione dotta di G. de Rada (cf. <bibl>
 
 
 Brâncuş, <hi rend="unknown" rendition="#none">
 VA</hi>, p. 105
 </bibl>).<lb/>Anche se molti studiosi hanno poi confermato l’interpretazione del linguista romeno, la lessicografia piú recente concorda nel non fornire un etimo (cf. <bibl>
-              <hi rend="unknown" rendition="#none">DER</hi> 5711
+                     <hi rend="unknown" rendition="#none">DER</hi> 5711
 </bibl>, <bibl>
-              <hi rend="unknown" rendition="#none">DA</hi>
-            </bibl>, <bibl>
-              <hi rend="unknown"
-            rendition="#none">
+                     <hi rend="unknown" rendition="#none">DA</hi>
+                  </bibl>, <bibl>
+                     <hi rend="unknown" rendition="#none">
 DEX</hi>, s.v.
-</bibl>).</note>, so braucht es eine Zeile dazu. Will ich aber auseinandersetzen, wesshalb ich <hi
-            rend="unknown" rendition="#none">
-barḑâ</hi> = <hi rend="unknown"
-            rendition="#none">bard</hi> nicht annehmen kann, so braucht es vierzig oder fünfzig oder sechzig Zeilen<note
-            n="11" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">
+</bibl>).</note>, so braucht es eine Zeile dazu. Will ich aber auseinandersetzen, wesshalb ich <hi rend="unknown" rendition="#none">
+barḑâ</hi> = <hi rend="unknown" rendition="#none">bard</hi> nicht annehmen kann, so braucht es vierzig oder fünfzig oder sechzig Zeilen<note n="11" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">
 XXX</ref>, n. 12.</note>. Fasst man also bloss das räumliche Verhältniss in’s Auge, so wird immer das Lob sehr hinter den Ausstellungen zurückstehen.</p>
-        <p>Nun frage ich Sie, ist mein <hi rend="unknown"
-            rendition="#none">Gesammturtheil</hi> ein ungünstiges oder ein <hi rend="unknown" rendition="#none">günstiges</hi>?</p>
-        <p>Und habe ich dieses günstige Gesammturtheil nicht so ausführlich dargelegt, wie es nur irgend möglich war?</p>
-        <p>Habe ich es nicht, auch wo ich auf’s Einzelne eingegangen bin, durch verschiedene Beispiele gestützt?</p>
-        <p>Was die <hi rend="unknown" rendition="#none">Ausstellungen</hi> anlangt, so dürfen Sie sich doch nicht über die Zahl derselben beklagen. Die Zahl derjenigen Etymologieen an denen ich Nichts ausgestellt habe und die ich also — das Lob ist ja der Grundton! — acceptire, ist doch eine unvergleichlich grössere.</p>
-        <p>Findet sich ferner in diesen Ausstellungen irgendwelche Spur eines <hi rend="unknown"
-            rendition="#none">herben Tadels</hi>? In Bezug auf einige Punkte habe ich mich allerdings <hi rend="unknown"
-            rendition="#none">entschieden</hi> ausgesprochen und Sie selbst geben ja zu, dass ich in Bezug auf einige Punkte "vollkommen Recht habe". In andern Fällen habe ich mich nur <hi
-            rend="unknown" rendition="#none">zweifelnd</hi> und <hi rend="unknown"
-            rendition="#none">
-vermuthend</hi> geäussert, ja sogar Ihrer Erklärung den Vorzug vor einer andern nur möglichen gegeben. Wenn Sie mir freilich Schuld geben dass ich <hi
-            rend="unknown" rendition="#none">funicel</hi> = <hi rend="unknown"
-            rendition="#none">furuncellus </hi>nur erwähnt habe, "<hi rend="unknown"
-            rendition="#none">pour affaiblir l’évidence de funicel = fungicellus</hi>"<note n="12" place="foot"
-              type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref> e n. 9.</note>, wenn Sie mir also eine böswillige Tendenz zuschreiben, so lässt sich kaum Etwas darauf erwidern. Es verhält sich gerade umgekehrt. <hi
-            rend="unknown" rendition="#none">Ihnen</hi> wohl, aber nicht <hi rend="unknown"
-            rendition="#none">
-mir</hi> war funicel = fung. <hi rend="unknown"
-            rendition="#none">ganz evident</hi>, mir war es <hi rend="unknown"
-            rendition="#none">nur wahrscheinlich</hi>, weil mir für n = ng ein anderes Beispiel fehlt<note n="13"
-            place="foot" type="editorial">V. lettera di risposta del Hasdeu (<ref
-              target="https://gams.uni-graz.at/o:hsa.letter.4492">XXXV</ref>) e replica dello Schuchardt (<ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4493">
-XXXVI</ref>).</note>; und desshalb wollte ich, wie man sagt, ein Hinterpförtchen offen lassen. Sie fragen "Oare nu cum-va d’intr’un celtic <hi
-            rend="unknown" rendition="#none">barza</hi> se va fi născut actualul spaniol <hi rend="unknown"
-            rendition="#none">garza</hi>, barḑă, pătruns apoĭ şi’n Italia?"<note n="14" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">
-                <hi rend="unknown" rendition="#none">CdB I</hi>, p. 269, 14, n. 7.</ref>
-            </bibl>
-
-          </note> Nun eine Frage will doch eine Antwort und an wem war das wohl eher eine solche zu geben, als an mir, Ihrem Prologus<note
-            n="15" place="foot" type="editorial">Cf. <hi rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
-            </hi>, p. xxiii; ma vedi anche lettere <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref> (e n. 27) e <ref target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref>, punto 12.</note>? Doch auch diese Antwort scheint Ihnen nicht zu behagen. Und so könnte ich noch zahlreiche Fälle anführen, über die ich Ihre Empfindlichkeit durchaus nicht begreifen würde.</p>
-        <p>Wie dachten Sie sich denn die Sache eigentlich? Sollte ich denn Alles, was nicht in einer <hi rend="unknown"
-            rendition="#none">vollkommenen Billigung</hi> bestand weglassen? Sollte in der Einleitung jene <hi
-            rend="unknown"
-            rendition="#none">
-Meinungsverschiedenheit</hi> zwischen Ihnen und mir, auf die Sie doch aus meinen Anzeigen vorbereitet sein mussten, gar nicht zur Sprache kommen? Fast vermuthe ich das; denn anders würde ich Ihre Unzufriedenheit schon mit der ersten Hälfte nicht verstehen, Sie finden hier Nichts wie Kritik. Und doch enthalten S. II-IX allgemeine Bemerkungen IX-XII eine Erörterung über die Zeichen für ă, in welche einige Zweifel über Erklärungen von Ihnen eingeflochten sind, sodann XII-XIV noch einige abweichende Meinungen, XIV-XVI wieder ganz von den Ihrigen unabhängige Bemerkungen<note
-            n="16" place="foot" type="editorial">Sono riferimenti esatti già alla paginazione del testo a stampa dell’introduzione.</note>.</p>
-        <p>Hätte ich <hi rend="unknown"
-            rendition="#none">nur loben</hi> wollen, so hätte ich doch damit keine Einleitung füllen können. Und <hi
-            rend="unknown"
-            rendition="#none">
-durfte</hi> ich es? Ich denke, wenn ich — was doch der Sinn einer solchen Einleitung ist — das Buch einem weiteren Kreise vorlege, so muss ich meine Meinung mit völligster Offenheit aussprechen. Ich muss doch vor Allem auf diejenigen Punkte hinweisen, die <hi
-            rend="unknown"
-            rendition="#none">mir eine wiederholte Prüfung</hi> zu verdienen scheinen. Darin besteht ja der Nutzen der Einleitung, dass sie den Aus- und Weiterbau, sowie den stellenweise Umbau des vom Verfasser errichteten Gebäudes vorbereitet. Auch <hi
-            rend="unknown" rendition="#none">mir</hi> selbst war ich es schuldig, dasjenige nicht mit vollkommenem Stillschweigen zu übergehen, worüber ich anderer Ansicht bin als Sie; man hätte mich ja für verschiedene Ihrer Etymologieen mitverantwortlich machen können, die ich nicht annehmbar finde. Und endlich, wenn man einmal mit ziemlicher Mühe eine solche umfangreiche Veröffentlichung durchgemacht hat, sollte man sich auf einige anerkennende Phrasen beschränken, die schliesslich Einer schreiben könnte, der das Buch nur durchblättert hat. Man sollte alles das Eigene, was man gefunden hat oder gefunden zu haben glaubt und was in dieser oder jener Hinsicht fruchtbar sein kann, unterdrücken? Es ist nicht so schwer, Jemanden aufzutreiben, der Einem eine schmeichelhafte Vorrede schreibt; aber die Hauptsache ist, wird er auch bei andern Gelegenheiten dasselbe Urtheil fällen? Was mich betrifft, so rede ich Einem in’s Gesicht nicht anders als hinter dem Rücken.</p>
-
-        <p>Wenn Sie nun mit meinen Ausstellungen — was ich ja völlig begreife — auch nur zum Theil einverstanden sind, so sollten Sie die Sache doch nicht so darstellen, als ob irgend welche <hi
-            rend="unknown"
-            rendition="#none">Böswilligkeit</hi> von meiner Seite mitunterliefe. Es handelt sich doch nur darum, dass mehr Meinungsverschiedenheiten zwischen uns bestehen, als Sie anfangs glaubten; dafür kann ich aber ebensowohl Sie, als Sie mich zur Rechenschaft ziehen. Ich kann mich nicht zwingen, wissenschaftliche Objekte in einem andern Lichte zu sehen, als in dem, in welchem sie mir eine, wie ich meine, sorgsame Prüfung zeigte. Ich <hi
-            rend="unknown"
-            rendition="#none">suche</hi> nicht nach Fehlern, wie Sie mir Schuld geben; ich finde sie. Und was das "nodum in scirpo" anlangt<note
-            n="17" place="foot" type="editorial">V. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref>.</note>, so liegt es in der Natur der linguistischen Untersuchungen, dass auch die kleinsten Dinge in’s Gewicht fallen; Sie selbst üben das "nodum in scirpo" und ich bin weit entfernt, Sie desswegen zu tadeln.</p>
-        <p>Auf die Gefahr hin, Sie zu verletzen, wiederhole ich Ihnen, dass Sie zu <hi rend="unknown"
-            rendition="#none">leidenschaftlich</hi> und <hi rend="unknown"
-            rendition="#none">nicht vollkommen gerecht</hi> sind. Ich würde das jetzt, wo es sich um mich handelt, nicht sagen, wenn ich das Ihnen nicht schon gesagt hätte, wo es sich um Andere handelte. Dieser Mangel an Kaltblütigkeit ist fast das Einzige, was Ihrer glänzenden wissenschaftlichen Begabung fehlt; ich halte es für eine <hi
-            rend="unknown"
-            rendition="#none">Pflicht der Freundschaft</hi>, Sie darauf aufmerksam zu machen. Was soll denn aus der wissenschaftlichen Forschung werden, wenn wir Alle das <hi
-            rend="unknown" rendition="#none">Persönliche</hi> in <hi rend="unknown" rendition="#none">dem</hi> Grade betonen?</p>
-        <p>Ich bitte Sie, Ihre Freunde, denen Sie mein Manuskript mittheilten, auch diesen Brief zu meiner Rechtfertigung mitzutheilen.</p>
-
-        <p>Was zu thun ist, habe ich Ihnen gestern schon gesagt: Antikritik nach meiner Einleitung oder in den Addenda et Corrigenda<note
-            n="18" place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref>, n. 34.</note> — oder Zurücksendung des Manuskriptes <hi
-            rend="unknown" rendition="#none">ohne Beziehung</hi> darauf in den Addenda u. Corrigenda. Im letzteren Falle würde ich an Ihrer Stelle in der Vorrede sagen:</p>
-        <p>"Die Einleitung konnte nicht gedruckt werden, indem sie über eine (grosse) Menge <hi rend="unknown" rendition="#none">einzelner Punkte</hi> eine Kritik fällte, die mir grossentheils ungerechtfertigt erschien.</p>
-        <p>Glauben Sie mir, es ist immer das Beste die ungeschminkte <hi rend="unknown"
-            rendition="#none">Wahrheit</hi> zu sagen. Oder wollen Sie sagen, ich sei zu faul gewesen (oder Ähnliches), um die Einleitung zu schicken? Das wünschte <hi
-            rend="unknown" rendition="#none">ich</hi> nicht.</p>
-
-        <p>Das offene Aussprechen der Wahrheit verhindert auch am Ehesten das Umsichgreifen einer Missstimmung, welches ich im <hi
-            rend="unknown" rendition="#none">höchsten Grade</hi> bedauern würde. Was ich, nach dem Geschehenen und im Einklang mit meinen Grundsätzen, thun kann, Sie zu befriedigen, werde ich thun; zu jeder Änderung im Einzelnen, die mir wirklich motivirt erscheint, bin ich gern bereit.</p>
-        <closer>
-          <salute>Mit freundschaftlichstem Grusse</salute>
-          <lb/>
-          <salute>Ihr ergebenster </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Hugo Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Nun frage ich Sie, ist mein <hi rend="unknown" rendition="#none">Gesammturtheil</hi> ein ungünstiges oder ein <hi rend="unknown" rendition="#none">günstiges</hi>?</p>
+            <p>Und habe ich dieses günstige Gesammturtheil nicht so ausführlich dargelegt, wie es nur irgend möglich war?</p>
+            <p>Habe ich es nicht, auch wo ich auf’s Einzelne eingegangen bin, durch verschiedene Beispiele gestützt?</p>
+            <p>Was die <hi rend="unknown" rendition="#none">Ausstellungen</hi> anlangt, so dürfen Sie sich doch nicht über die Zahl derselben beklagen. Die Zahl derjenigen Etymologieen an denen ich Nichts ausgestellt habe und die ich also — das Lob ist ja der Grundton! — acceptire, ist doch eine unvergleichlich grössere.</p>
+            <p>Findet sich ferner in diesen Ausstellungen irgendwelche Spur eines <hi rend="unknown" rendition="#none">herben Tadels</hi>? In Bezug auf einige Punkte habe ich mich allerdings <hi rend="unknown" rendition="#none">entschieden</hi> ausgesprochen und Sie selbst geben ja zu, dass ich in Bezug auf einige Punkte "vollkommen Recht habe". In andern Fällen habe ich mich nur <hi rend="unknown" rendition="#none">zweifelnd</hi> und <hi rend="unknown" rendition="#none">
+vermuthend</hi> geäussert, ja sogar Ihrer Erklärung den Vorzug vor einer andern nur möglichen gegeben. Wenn Sie mir freilich Schuld geben dass ich <hi rend="unknown" rendition="#none">funicel</hi> = <hi rend="unknown" rendition="#none">furuncellus </hi>nur erwähnt habe, "<hi rend="unknown" rendition="#none">pour affaiblir l’évidence de funicel = fungicellus</hi>"<note n="12" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref> e n. 9.</note>, wenn Sie mir also eine böswillige Tendenz zuschreiben, so lässt sich kaum Etwas darauf erwidern. Es verhält sich gerade umgekehrt. <hi rend="unknown" rendition="#none">Ihnen</hi> wohl, aber nicht <hi rend="unknown" rendition="#none">
+mir</hi> war funicel = fung. <hi rend="unknown" rendition="#none">ganz evident</hi>, mir war es <hi rend="unknown" rendition="#none">nur wahrscheinlich</hi>, weil mir für n = ng ein anderes Beispiel fehlt<note n="13" place="foot" type="editorial">V. lettera di risposta del Hasdeu (<ref target="https://gams.uni-graz.at/o:hsa.letter.4492">XXXV</ref>) e replica dello Schuchardt (<ref target="https://gams.uni-graz.at/o:hsa.letter.4493">
+XXXVI</ref>).</note>; und desshalb wollte ich, wie man sagt, ein Hinterpförtchen offen lassen. Sie fragen "Oare nu cum-va d’intr’un celtic <hi rend="unknown" rendition="#none">barza</hi> se va fi născut actualul spaniol <hi rend="unknown" rendition="#none">garza</hi>, barḑă, pătruns apoĭ şi’n Italia?"<note n="14" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">
+                        <hi rend="unknown" rendition="#none">CdB I</hi>, p. 269, 14, n. 7.</ref>
+                  </bibl>
+               </note> Nun eine Frage will doch eine Antwort und an wem war das wohl eher eine solche zu geben, als an mir, Ihrem Prologus<note n="15" place="foot" type="editorial">Cf. <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
+                  </hi>, p. xxiii; ma vedi anche lettere <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref> (e n. 27) e <ref target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref>, punto 12.</note>? Doch auch diese Antwort scheint Ihnen nicht zu behagen. Und so könnte ich noch zahlreiche Fälle anführen, über die ich Ihre Empfindlichkeit durchaus nicht begreifen würde.</p>
+            <p>Wie dachten Sie sich denn die Sache eigentlich? Sollte ich denn Alles, was nicht in einer <hi rend="unknown" rendition="#none">vollkommenen Billigung</hi> bestand weglassen? Sollte in der Einleitung jene <hi rend="unknown" rendition="#none">
+Meinungsverschiedenheit</hi> zwischen Ihnen und mir, auf die Sie doch aus meinen Anzeigen vorbereitet sein mussten, gar nicht zur Sprache kommen? Fast vermuthe ich das; denn anders würde ich Ihre Unzufriedenheit schon mit der ersten Hälfte nicht verstehen, Sie finden hier Nichts wie Kritik. Und doch enthalten S. II-IX allgemeine Bemerkungen IX-XII eine Erörterung über die Zeichen für ă, in welche einige Zweifel über Erklärungen von Ihnen eingeflochten sind, sodann XII-XIV noch einige abweichende Meinungen, XIV-XVI wieder ganz von den Ihrigen unabhängige Bemerkungen<note n="16" place="foot" type="editorial">Sono riferimenti esatti già alla paginazione del testo a stampa dell’introduzione.</note>.</p>
+            <p>Hätte ich <hi rend="unknown" rendition="#none">nur loben</hi> wollen, so hätte ich doch damit keine Einleitung füllen können. Und <hi rend="unknown" rendition="#none">
+durfte</hi> ich es? Ich denke, wenn ich — was doch der Sinn einer solchen Einleitung ist — das Buch einem weiteren Kreise vorlege, so muss ich meine Meinung mit völligster Offenheit aussprechen. Ich muss doch vor Allem auf diejenigen Punkte hinweisen, die <hi rend="unknown" rendition="#none">mir eine wiederholte Prüfung</hi> zu verdienen scheinen. Darin besteht ja der Nutzen der Einleitung, dass sie den Aus- und Weiterbau, sowie den stellenweise Umbau des vom Verfasser errichteten Gebäudes vorbereitet. Auch <hi rend="unknown" rendition="#none">mir</hi> selbst war ich es schuldig, dasjenige nicht mit vollkommenem Stillschweigen zu übergehen, worüber ich anderer Ansicht bin als Sie; man hätte mich ja für verschiedene Ihrer Etymologieen mitverantwortlich machen können, die ich nicht annehmbar finde. Und endlich, wenn man einmal mit ziemlicher Mühe eine solche umfangreiche Veröffentlichung durchgemacht hat, sollte man sich auf einige anerkennende Phrasen beschränken, die schliesslich Einer schreiben könnte, der das Buch nur durchblättert hat. Man sollte alles das Eigene, was man gefunden hat oder gefunden zu haben glaubt und was in dieser oder jener Hinsicht fruchtbar sein kann, unterdrücken? Es ist nicht so schwer, Jemanden aufzutreiben, der Einem eine schmeichelhafte Vorrede schreibt; aber die Hauptsache ist, wird er auch bei andern Gelegenheiten dasselbe Urtheil fällen? Was mich betrifft, so rede ich Einem in’s Gesicht nicht anders als hinter dem Rücken.</p>
+            <p>Wenn Sie nun mit meinen Ausstellungen — was ich ja völlig begreife — auch nur zum Theil einverstanden sind, so sollten Sie die Sache doch nicht so darstellen, als ob irgend welche <hi rend="unknown" rendition="#none">Böswilligkeit</hi> von meiner Seite mitunterliefe. Es handelt sich doch nur darum, dass mehr Meinungsverschiedenheiten zwischen uns bestehen, als Sie anfangs glaubten; dafür kann ich aber ebensowohl Sie, als Sie mich zur Rechenschaft ziehen. Ich kann mich nicht zwingen, wissenschaftliche Objekte in einem andern Lichte zu sehen, als in dem, in welchem sie mir eine, wie ich meine, sorgsame Prüfung zeigte. Ich <hi rend="unknown" rendition="#none">suche</hi> nicht nach Fehlern, wie Sie mir Schuld geben; ich finde sie. Und was das "nodum in scirpo" anlangt<note n="17" place="foot" type="editorial">V. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref>.</note>, so liegt es in der Natur der linguistischen Untersuchungen, dass auch die kleinsten Dinge in’s Gewicht fallen; Sie selbst üben das "nodum in scirpo" und ich bin weit entfernt, Sie desswegen zu tadeln.</p>
+            <p>Auf die Gefahr hin, Sie zu verletzen, wiederhole ich Ihnen, dass Sie zu <hi rend="unknown" rendition="#none">leidenschaftlich</hi> und <hi rend="unknown" rendition="#none">nicht vollkommen gerecht</hi> sind. Ich würde das jetzt, wo es sich um mich handelt, nicht sagen, wenn ich das Ihnen nicht schon gesagt hätte, wo es sich um Andere handelte. Dieser Mangel an Kaltblütigkeit ist fast das Einzige, was Ihrer glänzenden wissenschaftlichen Begabung fehlt; ich halte es für eine <hi rend="unknown" rendition="#none">Pflicht der Freundschaft</hi>, Sie darauf aufmerksam zu machen. Was soll denn aus der wissenschaftlichen Forschung werden, wenn wir Alle das <hi rend="unknown" rendition="#none">Persönliche</hi> in <hi rend="unknown" rendition="#none">dem</hi> Grade betonen?</p>
+            <p>Ich bitte Sie, Ihre Freunde, denen Sie mein Manuskript mittheilten, auch diesen Brief zu meiner Rechtfertigung mitzutheilen.</p>
+            <p>Was zu thun ist, habe ich Ihnen gestern schon gesagt: Antikritik nach meiner Einleitung oder in den Addenda et Corrigenda<note n="18" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4489">XXXII</ref>, n. 34.</note> — oder Zurücksendung des Manuskriptes <hi rend="unknown" rendition="#none">ohne Beziehung</hi> darauf in den Addenda u. Corrigenda. Im letzteren Falle würde ich an Ihrer Stelle in der Vorrede sagen:</p>
+            <p>"Die Einleitung konnte nicht gedruckt werden, indem sie über eine (grosse) Menge <hi rend="unknown" rendition="#none">einzelner Punkte</hi> eine Kritik fällte, die mir grossentheils ungerechtfertigt erschien.</p>
+            <p>Glauben Sie mir, es ist immer das Beste die ungeschminkte <hi rend="unknown" rendition="#none">Wahrheit</hi> zu sagen. Oder wollen Sie sagen, ich sei zu faul gewesen (oder Ähnliches), um die Einleitung zu schicken? Das wünschte <hi rend="unknown" rendition="#none">ich</hi> nicht.</p>
+            <p>Das offene Aussprechen der Wahrheit verhindert auch am Ehesten das Umsichgreifen einer Missstimmung, welches ich im <hi rend="unknown" rendition="#none">höchsten Grade</hi> bedauern würde. Was ich, nach dem Geschehenen und im Einklang mit meinen Grundsätzen, thun kann, Sie zu befriedigen, werde ich thun; zu jeder Änderung im Einzelnen, die mir wirklich motivirt erscheint, bin ich gern bereit.</p>
+            <closer>
+               <salute>Mit freundschaftlichstem Grusse</salute>
+               <lb/>
+               <salute>Ihr ergebenster </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Hugo Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

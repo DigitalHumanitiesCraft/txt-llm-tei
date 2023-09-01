@@ -1,298 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (327-11088)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2158" type="PID">o:hsa.letter.2158</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">327-11088</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11088</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace>Unbekannt</origPlace>
-              <origDate ana="dcterms:created" when="1922-01">1922-01</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2158">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName>Unbekannt</placeName>
-          <date when="1922-01">1922-01</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item/>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.317" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Hugo-Schuchardt-Brevier</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2158" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2158" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2158" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2158" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2158" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2158" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Verehrter lieber Freund,</opener>
-        <p>Ich antworte auf den Ihnen wesentlichen Punkt, nämlich die Besprechung <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Lerchs</persName>. Ich finde diesen Menschen in allem, was er tut, namenlos geschmacklos – so auch die Sendung der Besprechung vor der Drucklegung. Mag er auch gedacht haben, Ihnen damit eine Freude zu bereiten, so ist das doch ein ganz ungewöhnlicher Vorgang. Auch inhaltlich bin ich natürlich nicht mit allem einverstanden. Für ihn ist tatsächlich, wie Sie andeuten, alles erledigt, wenn man <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2158" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Ich antworte auf den Ihnen wesentlichen Punkt, nämlich die Besprechung <persName ref="[authorityLink]">Lerchs</persName>. Ich finde diesen Menschen in allem, was er tut, namenlos geschmacklos – so auch die Sendung der Besprechung vor der Drucklegung. Mag er auch gedacht haben, Ihnen damit eine Freude zu bereiten, so ist das doch ein ganz ungewöhnlicher Vorgang. Auch inhaltlich bin ich natürlich nicht mit allem einverstanden. Für ihn ist tatsächlich, wie Sie andeuten, alles erledigt, wenn man <persName ref="[authorityLink]">
 Vossler</persName> anerkennt. Er unterwirft alle Forscher einer Musterung, bei der die Tauglichkeit nach der Vossler-Unterwürfigkeit bemessen wird. Dagegen müßte man sich einmal aufs schärfste zur Wehr setzen. Da nämlich die Vossler-Clique fast alle literarische Kritik Deutschlands in ihre Hand gebracht hat, so bestimmen sie sozusagen allein den Wert aller Neuerscheinungen. Es ist geradezu tragisch, daß ein Mann, der so viel zur Erneuerung und Verlebendigung der Sprachwissenschaft beigetragen hat wie Vossler, sich mit einem so unwürdigen Klimbim und Reklametroß umgibt, ja sogar im Hintergrund als unsichtbarer Regisseur des ganzen fungiert. Ich schrieb</p>
-        <p>[Zeile im Original entfernt]</p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>oder dgl.</p>
-
-        <p>Ich glaube, wenn Sie niemand ganz befriedigen werden, so wird dieser Ουτις – Spitzer sein. Denn ich stehe ja ganz auf Ihrem Standpunkt der Bekämpfung jeder Uniformität und Uniform, also der Schulen. Ich habe die <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName>-"Schule" verlassen, auch gelegentlich angegriffen (so <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1544">Gamillscheg</persName> und Herzog, die "reinsten" Schüler), ich habe keine Lust, mich der Vosslerschen restlos zu unterwerfen. Und was die Frage Mitteilung-Kunst betrifft, so habe ich schon in meinem <bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4023">
+            <p>[Zeile im Original entfernt]</p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>oder dgl.</p>
+            <p>Ich glaube, wenn Sie niemand ganz befriedigen werden, so wird dieser Ουτις – Spitzer sein. Denn ich stehe ja ganz auf Ihrem Standpunkt der Bekämpfung jeder Uniformität und Uniform, also der Schulen. Ich habe die <persName ref="[authorityLink]">M-L</persName>-"Schule" verlassen, auch gelegentlich angegriffen (so <persName ref="[authorityLink]">Gamillscheg</persName> und Herzog, die "reinsten" Schüler), ich habe keine Lust, mich der Vosslerschen restlos zu unterwerfen. Und was die Frage Mitteilung-Kunst betrifft, so habe ich schon in meinem <bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4023">
 "Hunger"</ref>
-
-          </bibl> Ihren Satz "aus Not geboren, gipfelt die Sprache in der Kunst" begeistert unterschrieben und zwar so deutlich, daß dieser Satz geradezu als Sucus meines Buches von zwei Rezensenten (Salverda de Grave im <hi
-            rend="unknown" rendition="#none">Neophilologus</hi> und I. Iordan im <hi rend="unknown"
-            rendition="#none">Arhiva</hi>) hervorgehoben wurde. Aber dieses Schul-lose trägt einem wenig Freunde ein: man wird von allen Seiten verhauen. Die Menschen lieben eben Massenwirkungen, die Negerfreude am Zahlreich-Beeinandersein. Die Kraft zum Alleinsein in geistiger Beziehung <pb
-            facs="#IMG.3" n="3"/>bringen die wenigsten auf.</p>
-        <p>Auch sonst hat Lerch manches falsch beurteilt: ich hätte <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2233">Morf</persName> erwähnen sollen! Wenn <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1858">Jud</persName>, der jenen Abschnitt in der Einleitung über die Schweizer abfaßte, seinen eigenen Lehrer ausließ, so wird er wohl Gründe gehabt haben. Ein Morf unter den Schweizer Gratulanten hätte, nachdem er das berühmte Manifest unterzeichnet hatte, großes Befremden erregt. Schließlich hätte dann auch M-L erwähnt werden müssen. – Ein Personennamenregister! Ja natürlich, damit man sieht, ob Vossler genügend gewürdigt ist. Ich fand gerade, daß die Persönlichkeit der Gelehrten, über die Sie im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.317">Brevier</ref> zu Worte gelangen, ganz nebensächlich ist. Diese Gelehrten sind gleichsam die "Vertrauten" der frz. Komödie, die Ihnen Gelegenheit geben, Ihre Ansicht zu äußern.</p>
-        <p>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1487">Finck</persName> bezeichnet auch dessen Schüler <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2037">E. Lewy</persName>, der ihn doch genau kennt, als Vorläufer Voßlers, ebenso <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3539">Humboldt</persName>.</p>
-        <p>Bezüglich Juds bin ich vor allem auf die Nachrichten <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2701">Schürr</persName>'s angewiesen, der <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2977">Wartburg</persName> als den einzig gerecht <pb
-            facs="#IMG.4"
-            n="4"/>denkenden Deutschschweizer anführte. Wie finden Sie es weiter, daß Jud einmal (im Herbst oder Frühjahr) einen ganzen Nachmittag in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.61">
+               </bibl> Ihren Satz "aus Not geboren, gipfelt die Sprache in der Kunst" begeistert unterschrieben und zwar so deutlich, daß dieser Satz geradezu als Sucus meines Buches von zwei Rezensenten (Salverda de Grave im <hi rend="unknown" rendition="#none">Neophilologus</hi> und I. Iordan im <hi rend="unknown" rendition="#none">Arhiva</hi>) hervorgehoben wurde. Aber dieses Schul-lose trägt einem wenig Freunde ein: man wird von allen Seiten verhauen. Die Menschen lieben eben Massenwirkungen, die Negerfreude am Zahlreich-Beeinandersein. Die Kraft zum Alleinsein in geistiger Beziehung <pb facs="#IMG.3" n="3"/>bringen die wenigsten auf.</p>
+            <p>Auch sonst hat Lerch manches falsch beurteilt: ich hätte <persName ref="[authorityLink]">Morf</persName> erwähnen sollen! Wenn <persName ref="[authorityLink]">Jud</persName>, der jenen Abschnitt in der Einleitung über die Schweizer abfaßte, seinen eigenen Lehrer ausließ, so wird er wohl Gründe gehabt haben. Ein Morf unter den Schweizer Gratulanten hätte, nachdem er das berühmte Manifest unterzeichnet hatte, großes Befremden erregt. Schließlich hätte dann auch M-L erwähnt werden müssen. – Ein Personennamenregister! Ja natürlich, damit man sieht, ob Vossler genügend gewürdigt ist. Ich fand gerade, daß die Persönlichkeit der Gelehrten, über die Sie im <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.317">Brevier</ref> zu Worte gelangen, ganz nebensächlich ist. Diese Gelehrten sind gleichsam die "Vertrauten" der frz. Komödie, die Ihnen Gelegenheit geben, Ihre Ansicht zu äußern.</p>
+            <p>
+               <persName ref="[authorityLink]">Finck</persName> bezeichnet auch dessen Schüler <persName ref="[authorityLink]">E. Lewy</persName>, der ihn doch genau kennt, als Vorläufer Voßlers, ebenso <persName ref="[authorityLink]">Humboldt</persName>.</p>
+            <p>Bezüglich Juds bin ich vor allem auf die Nachrichten <persName ref="[authorityLink]">Schürr</persName>'s angewiesen, der <persName ref="[authorityLink]">Wartburg</persName> als den einzig gerecht <pb facs="#IMG.4" n="4"/>denkenden Deutschschweizer anführte. Wie finden Sie es weiter, daß Jud einmal (im Herbst oder Frühjahr) einen ganzen Nachmittag in <placeName ref="[authorityLink]">
 Bonn</placeName> weilte, ohne den Versuch zu machen einen seiner Fachkollegen zu besuchen (ich war abwesend, aber er konnte das nicht wissen)? Endlich habe ich bei den Verhandlungen über das Brevier lange dafür gekämpft, daß der letzte Satz meiner Einleitung in die Worte ausklingt: "soweit der Name Schuch. das Beste deutschen Wesens kündet". Das mußte gestrichen werden. Zweifellos hat sich die Stimmung gegen Deutschld. in Neutralien in der Nachkriegszeit nicht so gebessert, wie es einem unglücklichen Volk gegenüber am Platze wäre. Es ist ähnlich wie bei den Ost-Juden: man ärgert sich über ihre Läuse, vergißt aber den Ghettozwang. So ärgert man sich über deutsches Schiebertum, ohne zu bedenken, daß dies eine Sumpfpflanze ist, die aus dem Sumpf der Not emporsprießt.</p>
-        <p>In <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> ist die bedrohlich werdende Lage durch die Umsicht des frz. Kommandanten beseitigt worden, sonst hätte es leicht ein Blutbad geben können. Allerdings ist die Stellung des Rektors sehr gefährdet. Sie hängt eigentlich davon ab, <pb
-            facs="#IMG.5" n="5"/>ob irgend ein besoffener Student provokativ auftritt oder ob die Patrioten auf den Weingenuß verzichten. Im Ganzen steht aber das Professorenkollegium auf dem Standpunkt, möglichst Ruhe zu halten und zu verbreiten. Man ist hier einmal in der Lage, die großen Nationalisten sich in der Nähe anzuschauen!</p>
-        <p>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">Gilliéron</persName>, dessen Frau uns zu Weihnachten herrliche Pariser Chocolade sandte, hat jetzt, wie es scheint, viele Schläge einzustecken. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1557">Gauchat</persName> und Millardet setzen ihm ordentlich zu. Es ist auch tatsächlich viel Übertreibung in seinen Sachen, genau wie bei Vossler. </p>
-        <p>Daß diese Propheten alle Opfer ihrer eigenen Ansichten werden!</p>
-        <p>[Rest im Original entfernt]</p>
-      </div>
-    </body>
-  </text>
+            <p>In <placeName ref="[authorityLink]">Bonn</placeName> ist die bedrohlich werdende Lage durch die Umsicht des frz. Kommandanten beseitigt worden, sonst hätte es leicht ein Blutbad geben können. Allerdings ist die Stellung des Rektors sehr gefährdet. Sie hängt eigentlich davon ab, <pb facs="#IMG.5" n="5"/>ob irgend ein besoffener Student provokativ auftritt oder ob die Patrioten auf den Weingenuß verzichten. Im Ganzen steht aber das Professorenkollegium auf dem Standpunkt, möglichst Ruhe zu halten und zu verbreiten. Man ist hier einmal in der Lage, die großen Nationalisten sich in der Nähe anzuschauen!</p>
+            <p>
+               <persName ref="[authorityLink]">Gilliéron</persName>, dessen Frau uns zu Weihnachten herrliche Pariser Chocolade sandte, hat jetzt, wie es scheint, viele Schläge einzustecken. <persName ref="[authorityLink]">Gauchat</persName> und Millardet setzen ihm ordentlich zu. Es ist auch tatsächlich viel Übertreibung in seinen Sachen, genau wie bei Vossler. </p>
+            <p>Daß diese Propheten alle Opfer ihrer eigenen Ansichten werden!</p>
+            <p>[Rest im Original entfernt]</p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

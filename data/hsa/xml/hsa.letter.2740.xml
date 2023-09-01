@@ -1,370 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Wilhelm Gurlitt (15-s-n)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Lilly</forename>
-            <surname>Olet</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2740" type="PID">o:hsa.letter.2740</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">15-s-n</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz</repository>
-            <idno type="shelfmark">s</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="10" unit="pages">10 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1891-10-22">1891-10-22</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Lilly</forename>
-              <surname>Olet</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Wilhelm Gurlitt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1671"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2740">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1891-10-22">1891-10-22</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1671" ref="https://viaf.org/viaf/59848470">
-            <forename>Wilhelm</forename>
-            <surname>Gurlitt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1671" type="context">
-                        Korrespondenz Hugo Schuchardt - Wilhelm Gurlitt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4205" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Nationalismus</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4206" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sozialismus</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4207" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Nationalität</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.848" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachpolitik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3215" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsvorhaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4340" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Diglossie/Polyglossie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.882" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Ethnologie, Anthropologie, Volkskunde</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2740" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz, Nachlass Wilhelm Gurlitt</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2740" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz, Nachlass Wilhelm Gurlitt</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2740" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz, Nachlass Wilhelm Gurlitt</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2740" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz, Nachlass Wilhelm Gurlitt</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2740" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz, Nachlass Wilhelm Gurlitt</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2740" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz, Nachlass Wilhelm Gurlitt</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2740" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz, Nachlass Wilhelm Gurlitt</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2740" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz, Nachlass Wilhelm Gurlitt</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2740" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz, Nachlass Wilhelm Gurlitt</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2740" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://archiv.uni-graz.at/de/bestaende/sammlungen/nachlaesse/gurlitt-wilhelm/">Universitätsarchiv Graz, Nachlass Wilhelm Gurlitt</ref>, <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2740" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 22 Okt ´91</dateline>
-        <opener>Lieber Gurlitt!</opener>
-
-        <p>Ich bin dir dankbar dafür dass du mir Gelegenheit zum schriftlichen Aussprechen gibst. Wenn ich mir vorgenommen hatte gerade mit dir über diese Frage mich zu unterhalten, so ist die Ursache davon die dass ich bei Dir erwarten durfte nicht wie bei andern schätzenswerten Freunden, mit ein paar Schlagworten und Citaten abgespeist zu werden, ich weiss dass Du dich in die Dinge vertiefst und Dir eine eigene Meinung über sie erwirbst. Solltest Du das für eine Schmeichelei halten, so will ich sie gleich durch eine Grobheit wett machen: ich komme zu der Überzeugung dass <pb
-            facs="#IMG.2" n="2"/> es für mich fast unmöglich ist mit Dir <hi rend="unknown" rendition="#none">mündlich</hi> über irgend Etwas in fruchtbringender Weise zu diskutiren. Nicht etwa weil wir „Beide zu lebhaft sind“- in diesen Tagen bin ich es wenigstens, durch den Scirocco niedergedrückt gar nicht -,sondern weil Du mir in Redesicherheit und Redegeläufigkeit weit über bist und weil Du nicht die Geduld hast, die etwas schwerfällige und langsame Geburt meiner Gedanken abzuwarten.</p>
-        <p>Du würdest sonst sofort erkannt haben dass es sich um eine <hi rend="unknown"
-            rendition="#none">theoretische</hi>, nicht um eine <pb facs="#IMG.3" n="3"/>
-          <hi rend="unknown"
-            rendition="#none">praktische</hi> Erörterung handelt, obwohl man ja aus jenen, wie aus allen, praktische Schlussfolgerungen ziehen kann. Sie liegt auch durchaus nicht seitwärts von der Richtung die meine Studien genommen haben, sondern ganz eigentlich innerhalb derselben; ich will nämlich zunächst untersuchen, wie die Sprache das Wesen einer Nationalität bestimmt und ob die Verschiedenheit der Nationalitäten im Verhältnis zur Verschiedenheit der Sprachen steht.<note
-            n="1" place="foot"
-              type="editorial">Auf diese Thematik geht Hugo Schuchardt z.B. in der Rezension von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1487">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2740" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 22 Okt ´91</dateline>
+            <opener>Lieber Gurlitt!</opener>
+            <p>Ich bin dir dankbar dafür dass du mir Gelegenheit zum schriftlichen Aussprechen gibst. Wenn ich mir vorgenommen hatte gerade mit dir über diese Frage mich zu unterhalten, so ist die Ursache davon die dass ich bei Dir erwarten durfte nicht wie bei andern schätzenswerten Freunden, mit ein paar Schlagworten und Citaten abgespeist zu werden, ich weiss dass Du dich in die Dinge vertiefst und Dir eine eigene Meinung über sie erwirbst. Solltest Du das für eine Schmeichelei halten, so will ich sie gleich durch eine Grobheit wett machen: ich komme zu der Überzeugung dass <pb facs="#IMG.2" n="2"/> es für mich fast unmöglich ist mit Dir <hi rend="unknown" rendition="#none">mündlich</hi> über irgend Etwas in fruchtbringender Weise zu diskutiren. Nicht etwa weil wir „Beide zu lebhaft sind“- in diesen Tagen bin ich es wenigstens, durch den Scirocco niedergedrückt gar nicht -,sondern weil Du mir in Redesicherheit und Redegeläufigkeit weit über bist und weil Du nicht die Geduld hast, die etwas schwerfällige und langsame Geburt meiner Gedanken abzuwarten.</p>
+            <p>Du würdest sonst sofort erkannt haben dass es sich um eine <hi rend="unknown" rendition="#none">theoretische</hi>, nicht um eine <pb facs="#IMG.3" n="3"/>
+               <hi rend="unknown" rendition="#none">praktische</hi> Erörterung handelt, obwohl man ja aus jenen, wie aus allen, praktische Schlussfolgerungen ziehen kann. Sie liegt auch durchaus nicht seitwärts von der Richtung die meine Studien genommen haben, sondern ganz eigentlich innerhalb derselben; ich will nämlich zunächst untersuchen, wie die Sprache das Wesen einer Nationalität bestimmt und ob die Verschiedenheit der Nationalitäten im Verhältnis zur Verschiedenheit der Sprachen steht.<note n="1" place="foot" type="editorial">Auf diese Thematik geht Hugo Schuchardt z.B. in der Rezension von <persName ref="[authorityLink]">
 Franz Nikolaus Finck</persName>s „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3964">Der deutsche Sprachbau als Ausdruck deutscher Weltanschauung</ref>
-            </bibl>“ ein (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.52">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3964">Der deutsche Sprachbau als Ausdruck deutscher Weltanschauung</ref>
+                  </bibl>“ ein (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.52">
 Schuchardt 1902</ref>
-            </bibl>).</note>
-        </p>
-        <p>Doch ich will zuvorderst auf Deine Aufstellungen welche von dem rein <hi rend="unknown"
-            rendition="#none">praktischen</hi> Gesichtspunkt aus <pb facs="#IMG.4" n="4"/> gemacht sind, eingehen.</p>
-        <p>1. Mit dem was Du über den Egoismus im Allg. sagst bin ich durchaus einverstanden. Die reinste Liebe lässt sich als höchster Egoismus fassen.</p>
-        <p>2. Im Nationalismus wird der Egoismus zum Nostrismus; aber da Du beim Egoismus unterscheidest, ob es sich um Gröberes oder Feineres handelt, so muss ich Dir zu bedenken geben dass die Gemeinschaft welche mich mit irgend einem z. B. französischen Gelehrten oder Künstler verbindet, doch auf viel Feinerem beruht als die welche mich mit einem deutschen Schuster oder Bauer verbindet.</p>
-        <p>3. Die opportunistische Wertschätzung des Nationalismus gegenüber dem Sozia- <pb facs="#IMG.5"
-            n="5"/> lismus erkenne ich an. Dass unsere nationalen Differenzen durch die sozialen dereinst gänzlich zurückgedrängt zu werden die Aussicht haben, habe ich selbst in meinem <hi
-            rend="unknown" rendition="#none">
+                  </bibl>).</note>
+            </p>
+            <p>Doch ich will zuvorderst auf Deine Aufstellungen welche von dem rein <hi rend="unknown" rendition="#none">praktischen</hi> Gesichtspunkt aus <pb facs="#IMG.4" n="4"/> gemacht sind, eingehen.</p>
+            <p>1. Mit dem was Du über den Egoismus im Allg. sagst bin ich durchaus einverstanden. Die reinste Liebe lässt sich als höchster Egoismus fassen.</p>
+            <p>2. Im Nationalismus wird der Egoismus zum Nostrismus; aber da Du beim Egoismus unterscheidest, ob es sich um Gröberes oder Feineres handelt, so muss ich Dir zu bedenken geben dass die Gemeinschaft welche mich mit irgend einem z. B. französischen Gelehrten oder Künstler verbindet, doch auf viel Feinerem beruht als die welche mich mit einem deutschen Schuster oder Bauer verbindet.</p>
+            <p>3. Die opportunistische Wertschätzung des Nationalismus gegenüber dem Sozia- <pb facs="#IMG.5" n="5"/> lismus erkenne ich an. Dass unsere nationalen Differenzen durch die sozialen dereinst gänzlich zurückgedrängt zu werden die Aussicht haben, habe ich selbst in meinem <hi rend="unknown" rendition="#none">
 slawo-deutschen</hi>
-          <note n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">Schuchardt (1884)</ref>
-
-            </bibl>. Möglicherweise bezieht er sich auf Seite 134: „Und überdies, warum sollten wir hier und in allen ähnlichen Fällen unsere Blicke auf eine so weit vor uns liegende Zeit richten, in der, wenn nicht die Anzeichen trügen, alle nationalen Sorgen vor gewaltigeren den Platz geräumt haben werden?“</note> ausgesprochen. Wird sich das ändern lassen? Ist das überhaupt etwas vor dem wir uns zu segnen und zu bekreuzigen hätten? Lieber Freund, nicht bloss <hi
-            rend="unknown" rendition="#none">ich</hi>, wie ich gestern gesagt habe, auch <hi rend="unknown"
-            rendition="#none">Du</hi> wärest, in niederer Sphäre aufgewachsen Sozialist geworden; doch will ich davon ganz absehen, nämlich von den Sozialisten wie sie heutzutage sind – ich behaupte kurzweg dass die gesellschaftliche Frage eine weit wichtigere und berechtigtere ist, als die nationale und dass sie ganz naturgemäss diese in den Hintergrund <pb
-            facs="#IMG.6" n="6"/> drängen wird.</p>
-        <p>4. Ganz anderer Meinung als Du bin ich bezüglich der unmittelbaren Ergebnisse des Nationalismus. Du meinst, wäre derselbe überall gleich entwickelt, so wäre das die beste Garantie für den Frieden; ich glaube dass derselbe überall zu sehr entwickelt ist, dass er sich immer, wie bei einer Auktion, in Hinblick auf die fremden Verhältnisse steigert und steigert, und dass es jenen übertriebenen Militarismus zur Folge hat, der wiederum dem Sozialismus oder vielmehr dessen Ausschreitungen zudem Vorschub leisten. </p>
-        <pb facs="#IMG.7" n="7"/>
-        <p>4 [a] Das Verhalten der Deutschen schauen wir mit ganz verschiedenen Augen – oder durch ganz verschiedene Brillen an. Ich kann mir nicht denken dass irgendwo, auch in Frankreich nicht, ein strammerer Nationalismus, den ich vielfach Chauvinismus nennen möchte, herrscht, als ich ihn z.B. in Berlin und in Gotha haben kennen lernen.</p>
-
-        <p>4 b Was insbesondere unsere österreichische Verhältnisse anlangt, so bin ich nicht für den Centralismus, wohl aber für die Abschwächung der allzuvielen und allzustarken Nationalgefühle. Die Prager Tschechen haben, wie es scheint, Deine Idee schon verwirklicht: dass man nur bei seinen  Connationalen einkaufe. In einem gewissen Umfange mag das angehen; aber welche Verwicklungen und Unzuträglich- <pb
-            facs="#IMG.8" n="8"/> -keiten würden aus der Durchführung dieses Grundsatzes entstehen!</p>
-        <p>Nun lass mich zu meinem <hi rend="unknown"
-            rendition="#none">Theoretischen</hi> kommen. Die Hauptfrage, welche viele schon beschäftigt hat, aber von Niemandem in befriedigender Weise beantwortet ist, eben deshalb weil sie sich nicht so beantworten lässt, ist die: <hi
-            rend="unknown"
-            rendition="#none">was ist Nationalität?</hi> Wir stimmen beide dazu überein, dass die Gemeinsamkeit der Sprache hierzu nicht ausreicht. Aber ebenso wenig die des Blutes. Von allen Kennzeichen ist die Sprache relativ noch das eindeutigste. Darüber kann ich mich jetzt nicht <pb
-            facs="#IMG.9"
-            n="9"/> in dem Umfang, mit der Gründlichkeit äussern, wie es nöthig wäre; darüber soll ja eben meine Schrift handeln.<note
-            n="3" place="foot"
-            type="editorial">
-Es konnte nicht ermittelt werden, ob eine solche Schrift tatsächlich existiert.</note> Also kurz: ein Beispiel. Die Bewohner der Nordseeküste Deutschlands (und den benachbarten Inseln) sind von den Inneröstreichern, dem Blute nach, den Sitten nach, der Sprache nach (soweit die Volkssprache in Anschlag kommt) weit verschiedener als von den Holländern, ja zum Theil von den Skandinaviern: Auch die staatliche Zusammengehörigkeit fehlt ebenso nach der einen wie nach der anderen Seite. Also worauf beruht es dass die Einen wie die Andern als Deutsche gelten? auf den Gebrauch der gleichen Schriftsprache, der doch aber nur für die allerdings schwer wiegende Mindestzahl gilt.- Also darüber möchte ich dich hören worauf die Nationalität beruht. Also zunächst nicht den Politiker, noch weniger den Patrioten, sondern den <hi
-            rend="unknown" rendition="#none">Anthropologen</hi>. </p>
-        <pb facs="#IMG.10" n="10"/>
-        <p>Wenn wir uns darüber verständigt haben, dann will ich das Weitere aufs Tapet bringen.</p>
-        <p>Inzwischen halte mich nicht für einen schlechteren Deutschen als Du selbst bist. Allerdings muss ich Dir gestehen dass „guter Deutscher“ für mich durchaus nicht ohne Weiteres ein lobendes Beiwort ist; ich habe zu viele gesehen die darauf Anspruch machen dürfen und bei denen diese Eigenschaft auf dem oberflächlichen Denken und dem rohesten Fühlen ruhte.</p>
-        <closer>
-          <salute>Mit bestem Grusse,</salute>
-          <lb/>
-          <salute>Dein</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HS.</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               <note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.184">Schuchardt (1884)</ref>
+                  </bibl>. Möglicherweise bezieht er sich auf Seite 134: „Und überdies, warum sollten wir hier und in allen ähnlichen Fällen unsere Blicke auf eine so weit vor uns liegende Zeit richten, in der, wenn nicht die Anzeichen trügen, alle nationalen Sorgen vor gewaltigeren den Platz geräumt haben werden?“</note> ausgesprochen. Wird sich das ändern lassen? Ist das überhaupt etwas vor dem wir uns zu segnen und zu bekreuzigen hätten? Lieber Freund, nicht bloss <hi rend="unknown" rendition="#none">ich</hi>, wie ich gestern gesagt habe, auch <hi rend="unknown" rendition="#none">Du</hi> wärest, in niederer Sphäre aufgewachsen Sozialist geworden; doch will ich davon ganz absehen, nämlich von den Sozialisten wie sie heutzutage sind – ich behaupte kurzweg dass die gesellschaftliche Frage eine weit wichtigere und berechtigtere ist, als die nationale und dass sie ganz naturgemäss diese in den Hintergrund <pb facs="#IMG.6" n="6"/> drängen wird.</p>
+            <p>4. Ganz anderer Meinung als Du bin ich bezüglich der unmittelbaren Ergebnisse des Nationalismus. Du meinst, wäre derselbe überall gleich entwickelt, so wäre das die beste Garantie für den Frieden; ich glaube dass derselbe überall zu sehr entwickelt ist, dass er sich immer, wie bei einer Auktion, in Hinblick auf die fremden Verhältnisse steigert und steigert, und dass es jenen übertriebenen Militarismus zur Folge hat, der wiederum dem Sozialismus oder vielmehr dessen Ausschreitungen zudem Vorschub leisten. </p>
+            <pb facs="#IMG.7" n="7"/>
+            <p>4 [a] Das Verhalten der Deutschen schauen wir mit ganz verschiedenen Augen – oder durch ganz verschiedene Brillen an. Ich kann mir nicht denken dass irgendwo, auch in Frankreich nicht, ein strammerer Nationalismus, den ich vielfach Chauvinismus nennen möchte, herrscht, als ich ihn z.B. in Berlin und in Gotha haben kennen lernen.</p>
+            <p>4 b Was insbesondere unsere österreichische Verhältnisse anlangt, so bin ich nicht für den Centralismus, wohl aber für die Abschwächung der allzuvielen und allzustarken Nationalgefühle. Die Prager Tschechen haben, wie es scheint, Deine Idee schon verwirklicht: dass man nur bei seinen  Connationalen einkaufe. In einem gewissen Umfange mag das angehen; aber welche Verwicklungen und Unzuträglich- <pb facs="#IMG.8" n="8"/> -keiten würden aus der Durchführung dieses Grundsatzes entstehen!</p>
+            <p>Nun lass mich zu meinem <hi rend="unknown" rendition="#none">Theoretischen</hi> kommen. Die Hauptfrage, welche viele schon beschäftigt hat, aber von Niemandem in befriedigender Weise beantwortet ist, eben deshalb weil sie sich nicht so beantworten lässt, ist die: <hi rend="unknown" rendition="#none">was ist Nationalität?</hi> Wir stimmen beide dazu überein, dass die Gemeinsamkeit der Sprache hierzu nicht ausreicht. Aber ebenso wenig die des Blutes. Von allen Kennzeichen ist die Sprache relativ noch das eindeutigste. Darüber kann ich mich jetzt nicht <pb facs="#IMG.9" n="9"/> in dem Umfang, mit der Gründlichkeit äussern, wie es nöthig wäre; darüber soll ja eben meine Schrift handeln.<note n="3" place="foot" type="editorial">
+Es konnte nicht ermittelt werden, ob eine solche Schrift tatsächlich existiert.</note> Also kurz: ein Beispiel. Die Bewohner der Nordseeküste Deutschlands (und den benachbarten Inseln) sind von den Inneröstreichern, dem Blute nach, den Sitten nach, der Sprache nach (soweit die Volkssprache in Anschlag kommt) weit verschiedener als von den Holländern, ja zum Theil von den Skandinaviern: Auch die staatliche Zusammengehörigkeit fehlt ebenso nach der einen wie nach der anderen Seite. Also worauf beruht es dass die Einen wie die Andern als Deutsche gelten? auf den Gebrauch der gleichen Schriftsprache, der doch aber nur für die allerdings schwer wiegende Mindestzahl gilt.- Also darüber möchte ich dich hören worauf die Nationalität beruht. Also zunächst nicht den Politiker, noch weniger den Patrioten, sondern den <hi rend="unknown" rendition="#none">Anthropologen</hi>. </p>
+            <pb facs="#IMG.10" n="10"/>
+            <p>Wenn wir uns darüber verständigt haben, dann will ich das Weitere aufs Tapet bringen.</p>
+            <p>Inzwischen halte mich nicht für einen schlechteren Deutschen als Du selbst bist. Allerdings muss ich Dir gestehen dass „guter Deutscher“ für mich durchaus nicht ohne Weiteres ein lobendes Beiwort ist; ich habe zu viele gesehen die darauf Anspruch machen dürfen und bei denen diese Eigenschaft auf dem oberflächlichen Denken und dem rohesten Fühlen ruhte.</p>
+            <closer>
+               <salute>Mit bestem Grusse,</salute>
+               <lb/>
+               <salute>Dein</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HS.</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

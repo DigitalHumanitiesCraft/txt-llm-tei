@@ -1,328 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Josef von Karabacek (45-0564-13,7)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8468" type="PID">o:hsa.letter.8468</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">45-0564-13,7</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <settlement>Wien</settlement>
-            <repository ref="https://www.onb.ac.at/">Österreichische Nationalbibliothek</repository>
-            <idno type="shelfmark">0564</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="5" unit="pages">5 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1918-03-22">1918-03-22</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Josef von Karabacek</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1878"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8468">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1918-03-22">1918-03-22</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1878" ref="https://viaf.org/viaf/2700409">
-            <forename>Josef von</forename>
-            <surname>Karabacek</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1878" type="context">
-                        Korrespondenz Hugo Schuchardt - Josef von Karabacek
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8468" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref
-            target="https://www.onb.ac.at/">Österreichischen Nationalbibliothek</ref>. Siehe: [Portal]/Österreichische Nationalbibliothek, "<ref target="http://data.onb.ac.at/rec/AC14409962"> Schuchardt, Hugo, 1842-1927 [VerfasserIn] ; Karabacek, Joseph von, 1845-1918 [AdressatIn]</ref>"
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8468" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref
-            target="https://www.onb.ac.at/">Österreichischen Nationalbibliothek</ref>. Siehe: [Portal]/Österreichische Nationalbibliothek, "<ref target="http://data.onb.ac.at/rec/AC14409962"> Schuchardt, Hugo, 1842-1927 [VerfasserIn] ; Karabacek, Joseph von, 1845-1918 [AdressatIn]</ref>"
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8468" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref
-            target="https://www.onb.ac.at/">Österreichischen Nationalbibliothek</ref>. Siehe: [Portal]/Österreichische Nationalbibliothek, "<ref target="http://data.onb.ac.at/rec/AC14409962"> Schuchardt, Hugo, 1842-1927 [VerfasserIn] ; Karabacek, Joseph von, 1845-1918 [AdressatIn]</ref>"
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8468" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref
-            target="https://www.onb.ac.at/">Österreichischen Nationalbibliothek</ref>. Siehe: [Portal]/Österreichische Nationalbibliothek, "<ref target="http://data.onb.ac.at/rec/AC14409962"> Schuchardt, Hugo, 1842-1927 [VerfasserIn] ; Karabacek, Joseph von, 1845-1918 [AdressatIn]</ref>"
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8468" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref
-            target="https://www.onb.ac.at/">Österreichischen Nationalbibliothek</ref>. Siehe: [Portal]/Österreichische Nationalbibliothek, "<ref target="http://data.onb.ac.at/rec/AC14409962"> Schuchardt, Hugo, 1842-1927 [VerfasserIn] ; Karabacek, Joseph von, 1845-1918 [AdressatIn]</ref>"
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8468" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 22.3. ‘18</dateline>
-        <opener>Hochverehrter Herr Kollege!</opener>
-        <p>Sehr gerne erfülle ich Ihren Wunsch, soweit es mir möglichst. Denn dieses Italienisch ist in so nachlässiger Weise geschrieben daß es eine gewisse Unsicherheit beim Leser hervorruft.</p>
-        <p>
-          <foreign xml:lang="ar">
-            <hi rend="unknown" rendition="#none">la gona</hi>
-            <hi rend="unknown" rendition="#none">de</hi>
-            <hi rend="unknown" rendition="#none">soura</hi>
-          </foreign>. Die Übersetzung ist richtig;<note n="1" place="foot"
-                type="editorial">Der Schuchardt zugesandte Text deckt sich zum Teil mit der bekannten Beschreibung des byzantinischen Kaisers Johannes VIII. Palaeologos, wie sie der Maler Pisanello liefert: „lochapelo de linperadore sie biancho dessoura / erouerrsi rosso el profilo da torno nero la zupa verde / de dalmascin e lagona de soura de chermezin de la / facia palida la barpa negra chapelj e cilgkj el simile / ochj grizy e tra in verde e chine le spale picholo di / p[er]sona“. Aber die Abweichungen sind auffällig und verweisen auf eine weitere nicht identifzierte Quelle. Für weitere Angaben benötigte man den gesamten Text. Deutlich ist in jedem Fall der Bezug zu <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8468" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 22.3. ‘18</dateline>
+            <opener>Hochverehrter Herr Kollege!</opener>
+            <p>Sehr gerne erfülle ich Ihren Wunsch, soweit es mir möglichst. Denn dieses Italienisch ist in so nachlässiger Weise geschrieben daß es eine gewisse Unsicherheit beim Leser hervorruft.</p>
+            <p>
+               <foreign xml:lang="ar">
+                  <hi rend="unknown" rendition="#none">la gona</hi>
+                  <hi rend="unknown" rendition="#none">de</hi>
+                  <hi rend="unknown" rendition="#none">soura</hi>
+               </foreign>. Die Übersetzung ist richtig;<note n="1" place="foot" type="editorial">Der Schuchardt zugesandte Text deckt sich zum Teil mit der bekannten Beschreibung des byzantinischen Kaisers Johannes VIII. Palaeologos, wie sie der Maler Pisanello liefert: „lochapelo de linperadore sie biancho dessoura / erouerrsi rosso el profilo da torno nero la zupa verde / de dalmascin e lagona de soura de chermezin de la / facia palida la barpa negra chapelj e cilgkj el simile / ochj grizy e tra in verde e chine le spale picholo di / p[er]sona“. Aber die Abweichungen sind auffällig und verweisen auf eine weitere nicht identifzierte Quelle. Für weitere Angaben benötigte man den gesamten Text. Deutlich ist in jedem Fall der Bezug zu <bibl>
 
 
-Karabacek, <hi
-                rend="unknown" rendition="#none">
+Karabacek, <hi rend="unknown" rendition="#none">
 Abendländische Künstler zu Konstaninopel im XV. und XVI. Jahrhundert. I. Italienische Künstler am Hofe Muhammeds II. des Eroberers 1451-1481</hi>, Wien 1918 (Denkschriften, 62. Band, 1. Abhandlung; Kaiserliche Akademie der Wissenschaften in Wien, Phil.-Hist. Klasse), S. 37f., bes. 38-39.
 </bibl>
-          </note> aber nur insofern es sich um <hi rend="unknown"
-            rendition="#none">zona</hi> handelt (wie man von der Leibbinde von Geistlichen, Soldaten usw. sagt oder sagte). Sollte nicht wirklich ein Z dastehen? <pb
-            facs="#IMG.2" n="2"/>
-          <hi rend="unknown" rendition="#none">
-            <foreign xml:lang="it">Lochi gazi e tra ja verde</foreign>
-          </hi>, helle und zwar ins Grüne gehende (grünliche Augen). <hi rend="unknown"
-            rendition="#none">Bizaca</hi>; ich denke es ist grau-lich, wie <hi rend="unknown"
-            rendition="#none">bizo</hi> grau ist, aber die Endung ist mir fremdartig; ich würde erwarten <hi
-            rend="unknown" rendition="#none">
-            <foreign xml:lang="it">bigiccio</foreign>
-          </hi> (im heut. Ital.). Ist etwa <hi rend="unknown" rendition="#none">
-            <foreign xml:lang="it">bigiaccio</foreign>
-          </hi>, das ich aber nicht belegen kann gemeint? In älteren Schriften wird nämlich das <hi rend="unknown"
-            rendition="#none">i</hi> nach <hi rend="unknown" rendition="#none">
-c</hi>, <hi rend="unknown"
-            rendition="#none">g</hi> oft unterdrückt. Z. 11 scheint mir S. 406 nicht ganz zutreffend übersetzt zu sein: <hi
-            rend="unknown" rendition="#none">der</hi>
-          <hi rend="unknown" rendition="#none">himmelblaue</hi>
-          <hi rend="unknown" rendition="#none">Hut</hi>
-          <hi rend="unknown" rendition="#none">mit</hi>
-          <hi rend="unknown" rendition="#none">verschiedenen</hi>
-          <hi rend="unknown" rendition="#none">Fellen gefüttert</hi>. <hi rend="unknown" rendition="#none">
-            <foreign xml:lang="it">turchino</foreign>
-          </hi> ist „dunkelblau“ und <hi rend="unknown"
-            rendition="#none">varo</hi> ist der Pelz des grauen Eichhörnchens, das Grauwerk; am Bauch ist er weiß. Vielleicht: „mit weißem Fehwerk“ wiederzugeben.<note
-            n="2" place="foot"
-              type="editorial">Auf S. 4 von Bleistift folgender Vermerk (vermutlich von der Hand Karabaceks): „<hi
-              rend="unknown"
-              rendition="#none">Feh</hi> im Pelzhandel der Name des gemeinen Eichhörnchens oder seines Fells, im besonderen des im hohen Norden (Sibirien) wohnenden grauen Eichhörnchens, dessen Pelzwerk von den Franzosen <foreign
-              xml:lang="fr">
+               </note> aber nur insofern es sich um <hi rend="unknown" rendition="#none">zona</hi> handelt (wie man von der Leibbinde von Geistlichen, Soldaten usw. sagt oder sagte). Sollte nicht wirklich ein Z dastehen? <pb facs="#IMG.2" n="2"/>
+               <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="it">Lochi gazi e tra ja verde</foreign>
+               </hi>, helle und zwar ins Grüne gehende (grünliche Augen). <hi rend="unknown" rendition="#none">Bizaca</hi>; ich denke es ist grau-lich, wie <hi rend="unknown" rendition="#none">bizo</hi> grau ist, aber die Endung ist mir fremdartig; ich würde erwarten <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="it">bigiccio</foreign>
+               </hi> (im heut. Ital.). Ist etwa <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="it">bigiaccio</foreign>
+               </hi>, das ich aber nicht belegen kann gemeint? In älteren Schriften wird nämlich das <hi rend="unknown" rendition="#none">i</hi> nach <hi rend="unknown" rendition="#none">
+c</hi>, <hi rend="unknown" rendition="#none">g</hi> oft unterdrückt. Z. 11 scheint mir S. 406 nicht ganz zutreffend übersetzt zu sein: <hi rend="unknown" rendition="#none">der</hi>
+               <hi rend="unknown" rendition="#none">himmelblaue</hi>
+               <hi rend="unknown" rendition="#none">Hut</hi>
+               <hi rend="unknown" rendition="#none">mit</hi>
+               <hi rend="unknown" rendition="#none">verschiedenen</hi>
+               <hi rend="unknown" rendition="#none">Fellen gefüttert</hi>. <hi rend="unknown" rendition="#none">
+                  <foreign xml:lang="it">turchino</foreign>
+               </hi> ist „dunkelblau“ und <hi rend="unknown" rendition="#none">varo</hi> ist der Pelz des grauen Eichhörnchens, das Grauwerk; am Bauch ist er weiß. Vielleicht: „mit weißem Fehwerk“ wiederzugeben.<note n="2" place="foot" type="editorial">Auf S. 4 von Bleistift folgender Vermerk (vermutlich von der Hand Karabaceks): „<hi rend="unknown" rendition="#none">Feh</hi> im Pelzhandel der Name des gemeinen Eichhörnchens oder seines Fells, im besonderen des im hohen Norden (Sibirien) wohnenden grauen Eichhörnchens, dessen Pelzwerk von den Franzosen <foreign xml:lang="fr">
 petit-gris</foreign>, bei uns auch <hi rend="unknown" rendition="#none">
 Grauwerk</hi> genannt wird“.</note>
-        </p>
-        <p>
-          <pb facs="#IMG.3"
-            n="3"/> Ich würde die Gelegenheit benutzen von einer an sich unwichtigen, für mich aber im höchsten Grade wichtigen Angelegenheit zu schreiben, wenn ich nicht schon Kollegen <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1098">Bauer</persName>
-          <note n="3" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1098">Adolf Bauer (1855-1919)</persName>, österr. Althistoriker in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName>.</note> der hoffentlich hinlänglich gesund ist um die Sitzungen zu besuchen, gebeten hätte, vorläufig eine kurze Auskunft bei Ihnen einzuholen.</p>
-        <closer>
-          <salute>Mit herzlichen Grüßen<lb/>
-          </salute>
-          <signed>Ihr ganz ergebener<lb/>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+            </p>
+            <p>
+               <pb facs="#IMG.3" n="3"/> Ich würde die Gelegenheit benutzen von einer an sich unwichtigen, für mich aber im höchsten Grade wichtigen Angelegenheit zu schreiben, wenn ich nicht schon Kollegen <persName ref="[authorityLink]">Bauer</persName>
+               <note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Adolf Bauer (1855-1919)</persName>, österr. Althistoriker in <placeName ref="[authorityLink]">Graz</placeName>.</note> der hoffentlich hinlänglich gesund ist um die Sitzungen zu besuchen, gebeten hätte, vorläufig eine kurze Auskunft bei Ihnen einzuholen.</p>
+            <closer>
+               <salute>Mit herzlichen Grüßen<lb/>
+               </salute>
+               <signed>Ihr ganz ergebener<lb/>
+                  <persName ref="[authorityLink]">
 HSchuchardt.</persName>
-          </signed>
-        </closer>
-      </div>
-      <div corresp="#L.8468" subtype="original" type="appendix" xml:lang="de">
-        <pb facs="#IMG.4" n="4"/>
-        <p>[Vordruck auf rotem Papier] <hi rend="unknown" rendition="#none">Nr._____</hi> Aufgeber: <hi rend="unknown"
-              rendition="#none">ord.<note n="4" place="foot"
-              type="editorial">Das Kursivierte von Hand Schuchardts.</note> Mitglied Hofrat D<hi rendition="#sup">r</hi>. HSchuchardt</hi> Ort und Datum: 22. März 1916, Graz, Joh. Fuxg. 30</p>
-        <p>An die</p>
-        <p>Kanzlei der kaiserlichen Akademie der Wissenschaften <hi rend="unknown"
-              rendition="#none">zu Handen des Sekretärs Hofrates D<hi rendition="#sup">r</hi>. von Karabacek</hi>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">Portofreie Dienstsache</hi>
-        </p>
-        <p> Auf Grund des Gesetzes vom 2. Oktober 1865. – R.G.Bl. Nr. 108, Artikel II, 1. u. 3., Art. V. Wien I., Universitätsplatz 2.</p>
-        <pb facs="#IMG.5" n="5"/>
-      </div>
-    </body>
-  </text>
+               </signed>
+            </closer>
+         </div>
+         <div corresp="#L.8468"
+              subtype="original"
+              type="appendix"
+              xml:lang="de">
+            <pb facs="#IMG.4" n="4"/>
+            <p>[Vordruck auf rotem Papier] <hi rend="unknown" rendition="#none">Nr._____</hi> Aufgeber: <hi rend="unknown" rendition="#none">ord.<note n="4" place="foot" type="editorial">Das Kursivierte von Hand Schuchardts.</note> Mitglied Hofrat D<hi rendition="#sup">r</hi>. HSchuchardt</hi> Ort und Datum: 22. März 1916, Graz, Joh. Fuxg. 30</p>
+            <p>An die</p>
+            <p>Kanzlei der kaiserlichen Akademie der Wissenschaften <hi rend="unknown" rendition="#none">zu Handen des Sekretärs Hofrates D<hi rendition="#sup">r</hi>. von Karabacek</hi>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">Portofreie Dienstsache</hi>
+            </p>
+            <p> Auf Grund des Gesetzes vom 2. Oktober 1865. – R.G.Bl. Nr. 108, Artikel II, 1. u. 3., Art. V. Wien I., Universitätsplatz 2.</p>
+            <pb facs="#IMG.5" n="5"/>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

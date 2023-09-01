@@ -1,441 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Carolina Michaëlis de Vasconcelos (28-s.n.)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/287" type="PID">o:hsa.letter.287</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">28-s.n.</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Portugal</country>
-            <region>Coimbra</region>
-            <settlement>Coimbra</settlement>
-            <institution>Universität Coimbra</institution>
-            <repository ref="https://www.uc.pt/">Universität Coimbra; Lehrstuhl für Germanistik</repository>
-            <idno type="shelfmark">s.n.</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1892-01-11">1892-01-11</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2013">2013</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Carolina Michaëlis de Vasconcelos</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2194"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.287">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1892-01-11">1892-01-11</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2194" ref="https://viaf.org/viaf/49239336">
-            <forename>Carolina</forename>
-            <surname>Michaëlis de Vasconcelos</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2194" type="context">
-                        Korrespondenz Hugo Schuchardt - Carolina Michaëlis de Vasconcelos
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.763" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rezension</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.989" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Volkslied</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.104" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachprobe</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3408" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bitte um bibliographische Angaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.35" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Metrik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3415" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Morphosyntax</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.980" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Flexion / Wortformenbildung</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.172" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesischbasierte Kreolsprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.844" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.176" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesischbasierte Kreolsprachen (São Tomé)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.287" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des Archivs der <ref target="https://www.uc.pt/">Universität Coimbra</ref>, Portugal (Lehrstuhl für Germanistik).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.287" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des Archivs der <ref target="https://www.uc.pt/">Universität Coimbra</ref>, Portugal (Lehrstuhl für Germanistik).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.287" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des Archivs der <ref target="https://www.uc.pt/">Universität Coimbra</ref>, Portugal (Lehrstuhl für Germanistik).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.287" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des Archivs der <ref target="https://www.uc.pt/">Universität Coimbra</ref>, Portugal (Lehrstuhl für Germanistik).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.287" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 11 Jänner 92</dateline>
-        <opener>Hochverehrte Frau,</opener>
-        <p>Ihre liebenswürdigen Zeilen, für die ich Ihnen vielmals danke, treffen mich beim "port. Infinitiv";<note
-            n="1" place="foot" type="editorial"> CMdV hatte 1891 eine Arbeit zum portugiesischen Infinitiv veröffentlicht (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1858">CMdV 1891</ref>
-            </bibl>), die HS im darauffolgenden Jahr im <hi rend="unknown" rendition="#none">Literaturblatt</hi> (<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.396">HS 1892</ref>
-            </bibl>; Brevier/Archiv Nr. 260) kritsch bespricht und erweitert. Caroline scheint von der Rezension nicht recht begeistert gewesen zu sein; s.u. spätere Briefe.</note> ich habe diesen Gegenstand wieder aufgenommen, weiss aber wirklich nicht ob ich auch nur einen kurzen Bericht fertig bekomme – ich bin jetzt immer so duselig, mag das nun die Folge meiner ewigen Neurasthenie, oder einer schleichenden Influenza sein.</p>
-        <p>Ich will Ihnen nun – behufs gelegentlicher Berücksichtigung – die Punkte darlegen über welche mir Auskunft erwünscht wäre.</p>
-        <p>
-          <pb facs="#IMG.2" n="2"/>
-          <hi rend="unknown" rendition="#none">I</hi>. <hi rend="unknown"
-            rendition="#none">
-Weihnachtslieder</hi>. <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2017">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.287" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 11 Jänner 92</dateline>
+            <opener>Hochverehrte Frau,</opener>
+            <p>Ihre liebenswürdigen Zeilen, für die ich Ihnen vielmals danke, treffen mich beim "port. Infinitiv";<note n="1" place="foot" type="editorial"> CMdV hatte 1891 eine Arbeit zum portugiesischen Infinitiv veröffentlicht (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1858">CMdV 1891</ref>
+                  </bibl>), die HS im darauffolgenden Jahr im <hi rend="unknown" rendition="#none">Literaturblatt</hi> (<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.396">HS 1892</ref>
+                  </bibl>; Brevier/Archiv Nr. 260) kritsch bespricht und erweitert. Caroline scheint von der Rezension nicht recht begeistert gewesen zu sein; s.u. spätere Briefe.</note> ich habe diesen Gegenstand wieder aufgenommen, weiss aber wirklich nicht ob ich auch nur einen kurzen Bericht fertig bekomme – ich bin jetzt immer so duselig, mag das nun die Folge meiner ewigen Neurasthenie, oder einer schleichenden Influenza sein.</p>
+            <p>Ich will Ihnen nun – behufs gelegentlicher Berücksichtigung – die Punkte darlegen über welche mir Auskunft erwünscht wäre.</p>
+            <p>
+               <pb facs="#IMG.2" n="2"/>
+               <hi rend="unknown" rendition="#none">I</hi>. <hi rend="unknown" rendition="#none">
+Weihnachtslieder</hi>. <persName ref="[authorityLink]">
 J. de Leite V.</persName> hat mir nun doch vor kurzem geantwortet, weiss mir aber darüber so gut wie Nichts zu melden. Ich schreibe Ihnen die Anfänge der kreolisirten Lieder ab, und zwar in der Schreibung in der sie mir geschickt worden sind - aus Bequemlichkeit, obwohl auch mir nicht Alles klar ist:</p>
-        <p>1</p>
-        <p>
-          <foreign xml:lang="cpp">Nacen Estrella dawa de manja selver</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Recordam Pastore vamus at Belem</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Vamus tudus juntum vamus Abelem</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Wejita Maria Deus Filiu oqutem...</foreign>
-        </p>
-        <p>2</p>
-        <p>
-          <foreign xml:lang="cpp">Recordemos todos vamus Abelem</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Parawer Menino de nosa nasses</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Fermozo Menino que mais paraser</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Melindroza corpu Nalapa padiser...</foreign>
-        </p>
-        <p>3</p>
-        <p>
-          <foreign xml:lang="cpp">Menino fermozo como padiser</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Que esta nise lapa freu etirme</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Fuzio meu Menino diseboij eque bem</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Trapay nos pukoso de santo Joseph...</foreign>
-        </p>
-        <p>4</p>
-        <p>
-          <foreign xml:lang="cpp">Aij som des tambor, Ayle</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Saijam todo atizero meu bem, meu beta</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Com wij ola Ecompandero Jesus in Jesus</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Do mea bom Jesus lavore Aijle ...</foreign>
-        </p>
-        <p>5</p>
-        <p>Tanz: Es treten auf nacheinander</p>
-        <p>Pintor, Pidagu (Fidalgo) Dottor, Pilotei, Soldadu</p>
-        <p>Oririus, Piscador, Djugador, Grandi Duku, Grandi</p>
-        <pb facs="#IMG.3" n="3"/>
-        <p> Prispi, Maskador (Mercador). Sie richten an die Princessin ihre Werbungen, die schliesslich einen von ihnen zum Manu wählt z.B.</p>
-        <p>
-          <foreign xml:lang="cpp">Pintor:</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Een Sinora sau pintor</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Keng major naun pode asa</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Sike migur kije kaja</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Aboa wentura ngaunande parta</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Maskador</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Eeu sinjora so Maskador</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Testogo muli djodja, perawo djodja</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Siku migur kije kaja</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Dinjeru paradjend a ngaunande parta.</foreign>
-        </p>
-        <p>6. Lied in 16 Strophen, welches auf die Körpertheile des Heilands sich bezieht</p>
-        <p>
-          <foreign xml:lang="cpp">1. Senjor de Monte Clavario…</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">2. Vosso devinjo cabessa…</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">3. Vosso devinjo cabello…</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">4. Vosso devinjo olhar…</foreign>
-        </p>
-        <p> u.s.w.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">II. Romanzen.</hi> Ich habe unter den Malaien die vom <hi rend="unknown"
-            rendition="#none">Grafen Alarcos</hi> entdeckt; von dieser sind mir an port. Fassungen bekannt: <hi
-            rend="unknown" rendition="#none">Braga</hi> Rom ger. S. 68. 71 Cant. açor. S. 259. <hi rend="unknown"
-            rendition="#none">
-Roméro</hi> Cant. braz. I, 11. II, 162. <hi rend="unknown"
-            rendition="#none">
-Azevedo</hi> Rom. da Madeira S. 127.135., und die galiz. Romania VI, 68. Kennen Sie andere? Die Sammlung von <hi
-            rend="unknown"
-            rendition="#none">Estacio da Veiga</hi> Rom do Algarve, welche Sie anführen, ist mir nicht zur Hand; wann und wo ist sie denn erschienen? – Haben Sie irgend eine Ahnung wohin die Romanzenbruchstücke die ich in der auch Ihnen gesandten Abhandlung über das Tugusche<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.176"> HS (1890) Kreolische Studien IX: Ueber das Malaioportugiesische von Batavia und Tugu</ref>
-            </bibl>, eine der zentralen und über 250 Seiten lange Arbeiten von HS zum Kreolischen; Brevier/Archiv Nr. 232.</note> S. 24 veröffentlicht habe, gehören?</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>
-          <hi rend="unknown" rendition="#none">III. Lyrisches.</hi> Die kreolischen Vierzeiler sind meistens nicht in 8, sondern in 6-silbern, so:</p>
-        <p>
-          <foreign xml:lang="cpp">En more na matu</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Vosse na sidade</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Per este musinha</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="cpp">Ningen teng piedade</foreign>
-        </p>
-
-        <p>Ich habe zwar in der spanischen und portugiesischen Volksdichtung genug Beispiele solcher Sechssilber gefunden aber doch nicht so viele dass sie mir erklärten wie im ganzen portugiesischen Asien diese Versart die volksthümliche geworden ist. Wissen Sie Rath?<note
-            n="3" place="foot" type="editorial"> Zusatz CMdV mit Bleistift: "Sie waren gerade im 16s Mode."</note>
-        </p>
-
-        <p>Gelegentlich Ihrer allgemeinen Bemerkungen über port. Syntax fällt mir ein: ist die Verschmelzung des Artikels eines vom Infinitiv abhängigen Substantivs mit der diesen Infitiv regierenden Präposition wie sie in den mittelalterlichen Sprachen so gewöhnlich ist schon für das heutige Portugiesische wo sie auch vorkommt (por falta do governo adoptar uma medida energica), irgendwo bemerkt worden?<note
-            n="4" place="foot" type="editorial"> An dieser Passage erkennt man, daß der Zugang Schuchardts zu einem Problem wie dem des portugiesischen Infinitivs ein genuin linguistischer war. Solche Erklärungen waren Caroline, die sich zumeist mit historischer Ableitung begnügt, eher fremd. Diese Diskrepanz zeigt sich auch in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.396">
-Schuchardts Rezension von ihrem <hi
-                  rend="unknown" rendition="#none">
+            <p>1</p>
+            <p>
+               <foreign xml:lang="cpp">Nacen Estrella dawa de manja selver</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Recordam Pastore vamus at Belem</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Vamus tudus juntum vamus Abelem</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Wejita Maria Deus Filiu oqutem...</foreign>
+            </p>
+            <p>2</p>
+            <p>
+               <foreign xml:lang="cpp">Recordemos todos vamus Abelem</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Parawer Menino de nosa nasses</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Fermozo Menino que mais paraser</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Melindroza corpu Nalapa padiser...</foreign>
+            </p>
+            <p>3</p>
+            <p>
+               <foreign xml:lang="cpp">Menino fermozo como padiser</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Que esta nise lapa freu etirme</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Fuzio meu Menino diseboij eque bem</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Trapay nos pukoso de santo Joseph...</foreign>
+            </p>
+            <p>4</p>
+            <p>
+               <foreign xml:lang="cpp">Aij som des tambor, Ayle</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Saijam todo atizero meu bem, meu beta</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Com wij ola Ecompandero Jesus in Jesus</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Do mea bom Jesus lavore Aijle ...</foreign>
+            </p>
+            <p>5</p>
+            <p>Tanz: Es treten auf nacheinander</p>
+            <p>Pintor, Pidagu (Fidalgo) Dottor, Pilotei, Soldadu</p>
+            <p>Oririus, Piscador, Djugador, Grandi Duku, Grandi</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p> Prispi, Maskador (Mercador). Sie richten an die Princessin ihre Werbungen, die schliesslich einen von ihnen zum Manu wählt z.B.</p>
+            <p>
+               <foreign xml:lang="cpp">Pintor:</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Een Sinora sau pintor</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Keng major naun pode asa</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Sike migur kije kaja</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Aboa wentura ngaunande parta</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Maskador</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Eeu sinjora so Maskador</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Testogo muli djodja, perawo djodja</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Siku migur kije kaja</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Dinjeru paradjend a ngaunande parta.</foreign>
+            </p>
+            <p>6. Lied in 16 Strophen, welches auf die Körpertheile des Heilands sich bezieht</p>
+            <p>
+               <foreign xml:lang="cpp">1. Senjor de Monte Clavario…</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">2. Vosso devinjo cabessa…</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">3. Vosso devinjo cabello…</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">4. Vosso devinjo olhar…</foreign>
+            </p>
+            <p> u.s.w.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">II. Romanzen.</hi> Ich habe unter den Malaien die vom <hi rend="unknown" rendition="#none">Grafen Alarcos</hi> entdeckt; von dieser sind mir an port. Fassungen bekannt: <hi rend="unknown" rendition="#none">Braga</hi> Rom ger. S. 68. 71 Cant. açor. S. 259. <hi rend="unknown" rendition="#none">
+Roméro</hi> Cant. braz. I, 11. II, 162. <hi rend="unknown" rendition="#none">
+Azevedo</hi> Rom. da Madeira S. 127.135., und die galiz. Romania VI, 68. Kennen Sie andere? Die Sammlung von <hi rend="unknown" rendition="#none">Estacio da Veiga</hi> Rom do Algarve, welche Sie anführen, ist mir nicht zur Hand; wann und wo ist sie denn erschienen? – Haben Sie irgend eine Ahnung wohin die Romanzenbruchstücke die ich in der auch Ihnen gesandten Abhandlung über das Tugusche<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.176"> HS (1890) Kreolische Studien IX: Ueber das Malaioportugiesische von Batavia und Tugu</ref>
+                  </bibl>, eine der zentralen und über 250 Seiten lange Arbeiten von HS zum Kreolischen; Brevier/Archiv Nr. 232.</note> S. 24 veröffentlicht habe, gehören?</p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>
+               <hi rend="unknown" rendition="#none">III. Lyrisches.</hi> Die kreolischen Vierzeiler sind meistens nicht in 8, sondern in 6-silbern, so:</p>
+            <p>
+               <foreign xml:lang="cpp">En more na matu</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Vosse na sidade</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Per este musinha</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="cpp">Ningen teng piedade</foreign>
+            </p>
+            <p>Ich habe zwar in der spanischen und portugiesischen Volksdichtung genug Beispiele solcher Sechssilber gefunden aber doch nicht so viele dass sie mir erklärten wie im ganzen portugiesischen Asien diese Versart die volksthümliche geworden ist. Wissen Sie Rath?<note n="3" place="foot" type="editorial"> Zusatz CMdV mit Bleistift: "Sie waren gerade im 16s Mode."</note>
+            </p>
+            <p>Gelegentlich Ihrer allgemeinen Bemerkungen über port. Syntax fällt mir ein: ist die Verschmelzung des Artikels eines vom Infinitiv abhängigen Substantivs mit der diesen Infitiv regierenden Präposition wie sie in den mittelalterlichen Sprachen so gewöhnlich ist schon für das heutige Portugiesische wo sie auch vorkommt (por falta do governo adoptar uma medida energica), irgendwo bemerkt worden?<note n="4" place="foot" type="editorial"> An dieser Passage erkennt man, daß der Zugang Schuchardts zu einem Problem wie dem des portugiesischen Infinitivs ein genuin linguistischer war. Solche Erklärungen waren Caroline, die sich zumeist mit historischer Ableitung begnügt, eher fremd. Diese Diskrepanz zeigt sich auch in <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.396">
+Schuchardts Rezension von ihrem <hi rend="unknown" rendition="#none">
 portugiesischen Infinitiv</hi>
-              </ref>
-            </bibl>.</note> – Verzeihen Sie, ich hätte Ihnen gern, wenn nicht mehr, doch besser geschrieben; aber ich fühle heute eine solche Schwere im Kopf dass ich kaum so viel zu Stande bekomme.</p>
-        <closer>
-          <salute>Mit hochachtungsvollstem Grusse</salute>
-          <lb/>
-          <salute>Ihr ganz ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HSchuchardt.</persName>
-          </signed>
-          <dateline>Graz, Elisabethstr.6.</dateline>
-        </closer>
-      </div>
-    </body>
-  </text>
+                     </ref>
+                  </bibl>.</note> – Verzeihen Sie, ich hätte Ihnen gern, wenn nicht mehr, doch besser geschrieben; aber ich fühle heute eine solche Schwere im Kopf dass ich kaum so viel zu Stande bekomme.</p>
+            <closer>
+               <salute>Mit hochachtungsvollstem Grusse</salute>
+               <lb/>
+               <salute>Ihr ganz ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HSchuchardt.</persName>
+               </signed>
+               <dateline>Graz, Elisabethstr.6.</dateline>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

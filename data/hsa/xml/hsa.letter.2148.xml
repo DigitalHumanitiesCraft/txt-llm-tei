@@ -1,383 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (317-11078)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2148" type="PID">o:hsa.letter.2148</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">317-11078</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11078</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" ref="http://sws.geonames.org/2946447">Bonn</origPlace>
-              <origDate ana="dcterms:created" when="1921-11-22">1921-11-22</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2148">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" key="#GID.1" ref="http://sws.geonames.org/2946447">Bonn</placeName>
-          <date when="1921-11-22">1921-11-22</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Bonn</settlement>
-                <name ref="http://geonames.org/2946447" type="fcode:PPLA3">Bonn</name>
-                <location>
-                  <geo>7.09549,50.73438</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3126" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Würzburg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4090" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Marburg</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.778" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Japanisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2148" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2148" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2148" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2148" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2148" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bonn, 22. XI.</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-        <p>Vor allem herzlichen Dank für Ihre Abhandlung,<note n="1" place="foot" type="editorial"> Der Seitenzahl nach kommt nur "Possessivisch und Passivisch" in Frage (in: <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.337">
-                <hi rend="unknown"
-            rendition="#none">Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin</hi> 1921</ref>, 651-661</bibl>).</note> die mir sehr zu paß kommt, weil ich mich grade mit dem stilistischen Eindruck des Impersonale beschäftige. Nur zu Einzelheiten Einiges. S. 653 Anm. 3: Die Literatur über den französischen Nominal-Stil kennen Sie wohl (Hachtmann,<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3864">Otto Hachtmann, <hi rend="unknown" rendition="#none">Die Vorherrschaft substantivischer Konstructionen im modernen französischen Prosastil</hi>
-              </ref>. Berlin: Ebering 1912.</bibl>
-          </note> meine Rezension die Dissertation von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">
-Lerch</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1681">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2148" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bonn, 22. XI.</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Vor allem herzlichen Dank für Ihre Abhandlung,<note n="1" place="foot" type="editorial"> Der Seitenzahl nach kommt nur "Possessivisch und Passivisch" in Frage (in: <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.337">
+                        <hi rend="unknown" rendition="#none">Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin</hi> 1921</ref>, 651-661</bibl>).</note> die mir sehr zu paß kommt, weil ich mich grade mit dem stilistischen Eindruck des Impersonale beschäftige. Nur zu Einzelheiten Einiges. S. 653 Anm. 3: Die Literatur über den französischen Nominal-Stil kennen Sie wohl (Hachtmann,<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3864">Otto Hachtmann, <hi rend="unknown" rendition="#none">Die Vorherrschaft substantivischer Konstructionen im modernen französischen Prosastil</hi>
+                     </ref>. Berlin: Ebering 1912.</bibl>
+               </note> meine Rezension die Dissertation von <persName ref="[authorityLink]">
+Lerch</persName>, <persName ref="[authorityLink]">
 Haas</persName>, Frz. Synt.<note n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3863">Josef Haas, <hi rend="unknown" rendition="#none">Französische Syntax</hi>
-              </ref>, Halle a.S.: Niemeyer 1916.</bibl>
-
-          </note> usw.) – S. 654 Anm. 2: ich kenne die Anekdote zum Schluß aus Balzacs Contes drolatiques anders: das Kind wird gefragt, wer von den beiden Nachtgestalten auf dem Bild Adam und wer Eva sei... S. 660 Anm. 1: wenn das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.778">jap</ref>. <foreign xml:lang="ja">
-            <hi rend="unknown" rendition="#none">wa</hi>
-          </foreign> richtig = 'what for' analysiert wäre, so entspräche so ziemlich der volksfrz. Typus <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">pour un sale type c'est un sale type</hi>
-          </foreign>. Die Schlußbemerkung S. 662 hat mich sehr ergriffen. S. 658 Anm. ob nicht <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">la coquine de Toinette</hi>, <hi rend="unknown" rendition="#none">le fripon de valet</hi>
-          </foreign> etc. so zu erklären sind wie <hi rend="unknown" rendition="#none">un bout d'homme</hi>, <hi
-            rend="unknown" rendition="#none">un pezzo di donna</hi>, <hi rend="unknown"
-            rendition="#none">ein Trum Frauenzimmer</hi> (also Partitiv nach Maßbezeichnung) &gt;
-<hi rend="unknown"
-            rendition="#none">ein Riese von einem Frauenzimmer</hi> &gt;
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3863">Josef Haas, <hi rend="unknown" rendition="#none">Französische Syntax</hi>
+                     </ref>, Halle a.S.: Niemeyer 1916.</bibl>
+               </note> usw.) – S. 654 Anm. 2: ich kenne die Anekdote zum Schluß aus Balzacs Contes drolatiques anders: das Kind wird gefragt, wer von den beiden Nachtgestalten auf dem Bild Adam und wer Eva sei... S. 660 Anm. 1: wenn das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.778">jap</ref>. <foreign xml:lang="ja">
+                  <hi rend="unknown" rendition="#none">wa</hi>
+               </foreign> richtig = 'what for' analysiert wäre, so entspräche so ziemlich der volksfrz. Typus <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">pour un sale type c'est un sale type</hi>
+               </foreign>. Die Schlußbemerkung S. 662 hat mich sehr ergriffen. S. 658 Anm. ob nicht <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">la coquine de Toinette</hi>, <hi rend="unknown" rendition="#none">le fripon de valet</hi>
+               </foreign> etc. so zu erklären sind wie <hi rend="unknown" rendition="#none">un bout d'homme</hi>, <hi rend="unknown" rendition="#none">un pezzo di donna</hi>, <hi rend="unknown" rendition="#none">ein Trum Frauenzimmer</hi> (also Partitiv nach Maßbezeichnung) &gt;
+<hi rend="unknown" rendition="#none">ein Riese von einem Frauenzimmer</hi> &gt;
 <hi rend="unknown" rendition="#none">ein Schuft von einem Menschen</hi> usw. ?</p>
-        <p>Nun zu Ihrem Ratschlag bezüglich <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName>. Hätte ich ihn früher erhalten! Ich hatte bei <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Lerch</persName> bloß angefragt, ob etwas geschehe, darauf die Einladung erhalten (u.zw. mit der Mitteilung, daß Vossler selbst damit einverstanden sei!!) – und zugesagt<note
-            n="4" place="foot"
-              type="editorial"> Es geht um den von <persName>
+            <p>Nun zu Ihrem Ratschlag bezüglich <persName ref="[authorityLink]">Vossler</persName>. Hätte ich ihn früher erhalten! Ich hatte bei <persName ref="[authorityLink]">Lerch</persName> bloß angefragt, ob etwas geschehe, darauf die Einladung erhalten (u.zw. mit der Mitteilung, daß Vossler selbst damit einverstanden sei!!) – und zugesagt<note n="4" place="foot" type="editorial"> Es geht um den von <persName>
 
-Victor Klemperer</persName> und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Eugen Lerch</persName> herausgegebenen Band <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3741">
-                <hi rend="unknown" rendition="#none">Idealistische Neuphilologie. Festschrift für Karl Vossler zum 6. September 1922.</hi>
-              </ref> Heidelberg 1922.</bibl>
-          </note>. Das sieht also wenig stolz aus. Ich muß also mein inneres Verhältnis zu <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName> darlegen.</p>
-        <p>Ich leugne nicht, daß ich <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">
-Vossler</persName> sehr liebe, als Gelehrten, wie als Menschen – daß ich aber über seine wirklichen Gefühle zu mir mir nicht klar bin. Ich habe ihn stets als einen großen Erneuerer unserer Wissenschaft, als eine Art Gegengewicht gegen den rationalistischen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">
-Gilliéron</persName> und den positivistischen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName>, betrachtet und das auch öffentlich ausgedrückt, allerdings seine Gewaltsamkeiten bei der Beurteilung der Einzelerscheinungen <pb
-            facs="#IMG.2" n="2"/>kritisch zurückgewiesen. Herzog hat mir ja sogar in seiner Lbl.-Kritik das Schwärmen für V.'s Gedankengänge vorgeworfen.</p>
-
-        <p>V. selbst hat sich im persönlichen und brieflichen Verkehr gegen mich immer reizend benommen. Seine Briefe an mich strotzen von Lobsprüchen und sind geradezu Kabinettstücke liebeswürdigen Epistularstils. Wenn ich damit aber die Äußerungen seiner Schüler verglich, so schien es mir, als ob sie – wie auch gegen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1348">Curtius</persName>, M-L usw. – wie auf ein geheimes mot d'ordre vorgingen und das grob sagten, was er vielleicht fein und vornehm gedacht haben mag. Weiters frappiert mich in seinen eigenen Publikationen, daß er niemand kennt und gelten läßt außer seinen eigenen Schülern: wenn Sie die Anmerkungen zu seiner 2. Aufl. des "Spiegels"<note
-            n="5" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3862">Karl Vossler, <hi rend="unknown" rendition="#none">Frankreichs Kultur im Spiegel seiner Sprachentwicklung</hi>
-              </ref>
-            </bibl> erschien 1913; in der zweiten Auflage veränderte sich der Titel zu <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3658">
-                <hi rend="unknown" rendition="#none">Frankreichs Kultur und Sprache. Geschichte der französischen Schriftsprache von den Anfängen bis zur Gegenwart</hi>
-              </ref>
-            </bibl>.</note> durchgehen, so finden Sie nur <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2029">Lerch</persName>. Erscheint ein neues Buch einer seiner Schüler – wer rezensiert es, natürlich zustimmend und allen späteren Rezensenten den Wind aus den Segeln nehmend? Vossler, auch dann wenn er selbst wie beim Altfrz. Lesebuch Lerchs<note
-            n="6" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3889">Einführung in das Altfranzösische. Texte mit Übers. und Erläuterungen</ref>. Leipzig 1921.</bibl>
-          </note> von der Ungüte der Leistung tief überzeugt ist.</p>
-
-        <p>Daß er mich damals anläßlich der Berliner Berufung im Stich ließ, wissen Sie. Ich hatte darauf sicher gerechnet, da doch ein Versprechen mir bindend schien, und wurde darob von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M-L</persName> verlacht, der mir sagte: "Sie geben etwas auf schöne Worte." Ja, wenn meine eigenen Worte stets aufrichtig sind und wenn ich keinen anderen Trost habe als Worte – wie soll ich sie nicht ernst nehmen?</p>
-        <p>Das alles ist aber natürlich nicht imstande, meine Verehrung für den genialen Forscher zu unterbinden. Und da ich gerade etwas als Gabe für ihn sehr Passendes auf Lager habe, sollte ich schweigen?</p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>Gegenüber der Trostlosigkeit des M-Lschen Wissenschaftsbetriebes ist mir seine "idealistische Neuphilologie" sehr willkommen. Es ist nur logisch in meiner Entwicklung begründet, daß ich von dem Positivismus meiner Juvenitia hinstrebe zu weiteren Rundsichten, wie Sie oder in anderer Weise Vossler und Gilliéron sie lieben.</p>
-        <p>Ob ich aber Aussicht habe, Vossler mir wirklich gut zu stimmen? Neulich in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.42">München</placeName> war er entzückend. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1471">
-Farinelli</persName>, der mir schrieb, er empfinde angesichts meines Schicksals (das er auch von dem hiesigen Lektor, seinem Schüler, aus gut kennt) "una stretta al cuore", hat mir Vosslers Brief auf eine Interpellation seinerseits eingesandt, der sehr freundlich gehalten war. Nun ist <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4365">Küchler</persName> nach <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName> berufen, der mir mitteilt, es sei noch nicht bestimmt, ob er annehme, aber er habe große Lust. Dann würde wohl Lerch nach <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3126">Würzb</ref>. kommen u. das Extraordinariat könnte mir, dem Älteren, zufallen. Lerch schreibt auch – seine neuliche Rezension im Lbl. scheint ein Einlenken zu bedeuten – in geheimnisvollen Andeutungen, Vossler habe für mich eine ganz bestimmte Kombination im Auge. Auch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1348">Curtius</persName>, der mich kürzlich besuchte, versprach, im Fall er berufen werde, mich in <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4090">Marburg</ref> vorzuschlagen. Sie sehen, Freunde habe ich wohl, aber "es kommt nischt bei raus". Ich bin sehr gerührt, daß Sie mir helfen wollen. Wenn Sie einmal (aber nur wenn die Würzburger Geschichte erledigt ist) bei Vossler einwirken wollten, so täten Sie mir einen großen Dienst. Ich nehme an, daß Sie selbst davon überzeugt sind, daß das Maß meines Leidens voll ist. Ich könnte Ihnen über meine Schicksale noch manches erzählen und Sie würden staunen, was alles ein Mensch aushalten kann. Wenn ich Ihnen sage, daß ich Grund zur <pb
-            facs="#IMG.4" n="4"/>Annahme habe, daß die Rez. im Lit.Zentrbl., die Sie seinerzeit als die Tat eines "anonymen Neidhammels" bezeichneten, von M-L stammt, so werden Sie zu dem Bilde, das ich neulich gezeichnet, noch ein pikantes Detail hinzuhaben.</p>
-        <p>Ich weiß nur von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1632">
-Grammont</persName>, daß er durch die Aufnahme seiner Dissimilation<note
-            n="7" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3441">Maurice Grammont, <hi rend="unknown" rendition="#none">La Dissimilation consonantique dans les langues indo-européennes et dans les langues romanes</hi>
-              </ref>. Dijon: Darantière 1895.</bibl>
-          </note> in Deutschland gegen uns verbittert ist. Der Ton, in dem er schreibt, ist geradezu empörend. Daß er tot ist, wußte ich nicht.</p>
-        <p>
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1189">Bovet</persName> ist Sekretär der Schweiz. Völkerbundgesellschaft oder so was Ähnliches geworden und hat die Lehrstelle niedergelegt.</p>
-
-        <p>Ich bin mit der "Dienstbezeichnung außerordentlicher Professor" versehen worden – eine "Ehrung", die vor allem meiner in Pörtschach liegenden <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2763">Frau</persName> Freude macht. Sie liegt nachmittags dick eingepackt auf dem Balkon und schaut melancholisch den Wildenten auf dem See zu. "Nie wieder dürfen wir uns trennen", steht in unzähligen Varianten in den Briefen. Gelegentlich bezeichnet sie sich als "Eisprinzessin". Ich meinerseits singe oft unter Tränen das schöne lettländische oder livländische Wiegenlied, das Kothe so meisterhaft vortrug:</p>
-        <p>Sonne und Regen Müssen ja sein</p>
-        <p>Sollen zum Segen Saaten gedeihn.</p>
-        <p>Dir aber scheinen Der Sonnen zwei:</p>
-        <p>Mußt drum nicht weinen Eiapopei.</p>
-        <p>Das sage ich mir auch vor, wenn mich die dumpfe Verzweiflung packt.</p>
-        <p>Doch ich schließe, ich kann nicht mehr weiter.</p>
-        <closer>
-          <salute>Vielen Dank für alle Anteilnahme an meinem bedeutungslosen Schicksal und innige Grüße vom ebenfalls wissenschaftsfeindlichen</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Dank für den Hinweis auf L'avenir.</p>
-          <p>Könnte ich leihweise ein Sep. Ihrer Jespersen-Rez. in Anthropos IX<note n="8" place="foot" type="editorial">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.43">In: <hi rend="unknown" rendition="#none">Anthropos</hi> 9 (1914): 340-343</ref>
-              </bibl>.</note> erbitten? – Original in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> verliehen.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+Victor Klemperer</persName> und <persName ref="[authorityLink]">Eugen Lerch</persName> herausgegebenen Band <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3741">
+                        <hi rend="unknown" rendition="#none">Idealistische Neuphilologie. Festschrift für Karl Vossler zum 6. September 1922.</hi>
+                     </ref> Heidelberg 1922.</bibl>
+               </note>. Das sieht also wenig stolz aus. Ich muß also mein inneres Verhältnis zu <persName ref="[authorityLink]">Vossler</persName> darlegen.</p>
+            <p>Ich leugne nicht, daß ich <persName ref="[authorityLink]">
+Vossler</persName> sehr liebe, als Gelehrten, wie als Menschen – daß ich aber über seine wirklichen Gefühle zu mir mir nicht klar bin. Ich habe ihn stets als einen großen Erneuerer unserer Wissenschaft, als eine Art Gegengewicht gegen den rationalistischen <persName ref="[authorityLink]">
+Gilliéron</persName> und den positivistischen <persName ref="[authorityLink]">M-L</persName>, betrachtet und das auch öffentlich ausgedrückt, allerdings seine Gewaltsamkeiten bei der Beurteilung der Einzelerscheinungen <pb facs="#IMG.2" n="2"/>kritisch zurückgewiesen. Herzog hat mir ja sogar in seiner Lbl.-Kritik das Schwärmen für V.'s Gedankengänge vorgeworfen.</p>
+            <p>V. selbst hat sich im persönlichen und brieflichen Verkehr gegen mich immer reizend benommen. Seine Briefe an mich strotzen von Lobsprüchen und sind geradezu Kabinettstücke liebeswürdigen Epistularstils. Wenn ich damit aber die Äußerungen seiner Schüler verglich, so schien es mir, als ob sie – wie auch gegen <persName ref="[authorityLink]">Curtius</persName>, M-L usw. – wie auf ein geheimes mot d'ordre vorgingen und das grob sagten, was er vielleicht fein und vornehm gedacht haben mag. Weiters frappiert mich in seinen eigenen Publikationen, daß er niemand kennt und gelten läßt außer seinen eigenen Schülern: wenn Sie die Anmerkungen zu seiner 2. Aufl. des "Spiegels"<note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3862">Karl Vossler, <hi rend="unknown" rendition="#none">Frankreichs Kultur im Spiegel seiner Sprachentwicklung</hi>
+                     </ref>
+                  </bibl> erschien 1913; in der zweiten Auflage veränderte sich der Titel zu <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3658">
+                        <hi rend="unknown" rendition="#none">Frankreichs Kultur und Sprache. Geschichte der französischen Schriftsprache von den Anfängen bis zur Gegenwart</hi>
+                     </ref>
+                  </bibl>.</note> durchgehen, so finden Sie nur <persName ref="[authorityLink]">Lerch</persName>. Erscheint ein neues Buch einer seiner Schüler – wer rezensiert es, natürlich zustimmend und allen späteren Rezensenten den Wind aus den Segeln nehmend? Vossler, auch dann wenn er selbst wie beim Altfrz. Lesebuch Lerchs<note n="6" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3889">Einführung in das Altfranzösische. Texte mit Übers. und Erläuterungen</ref>. Leipzig 1921.</bibl>
+               </note> von der Ungüte der Leistung tief überzeugt ist.</p>
+            <p>Daß er mich damals anläßlich der Berliner Berufung im Stich ließ, wissen Sie. Ich hatte darauf sicher gerechnet, da doch ein Versprechen mir bindend schien, und wurde darob von <persName ref="[authorityLink]">M-L</persName> verlacht, der mir sagte: "Sie geben etwas auf schöne Worte." Ja, wenn meine eigenen Worte stets aufrichtig sind und wenn ich keinen anderen Trost habe als Worte – wie soll ich sie nicht ernst nehmen?</p>
+            <p>Das alles ist aber natürlich nicht imstande, meine Verehrung für den genialen Forscher zu unterbinden. Und da ich gerade etwas als Gabe für ihn sehr Passendes auf Lager habe, sollte ich schweigen?</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>Gegenüber der Trostlosigkeit des M-Lschen Wissenschaftsbetriebes ist mir seine "idealistische Neuphilologie" sehr willkommen. Es ist nur logisch in meiner Entwicklung begründet, daß ich von dem Positivismus meiner Juvenitia hinstrebe zu weiteren Rundsichten, wie Sie oder in anderer Weise Vossler und Gilliéron sie lieben.</p>
+            <p>Ob ich aber Aussicht habe, Vossler mir wirklich gut zu stimmen? Neulich in <placeName ref="[authorityLink]">München</placeName> war er entzückend. <persName ref="[authorityLink]">
+Farinelli</persName>, der mir schrieb, er empfinde angesichts meines Schicksals (das er auch von dem hiesigen Lektor, seinem Schüler, aus gut kennt) "una stretta al cuore", hat mir Vosslers Brief auf eine Interpellation seinerseits eingesandt, der sehr freundlich gehalten war. Nun ist <persName ref="[authorityLink]">Küchler</persName> nach <placeName ref="[authorityLink]">Wien</placeName> berufen, der mir mitteilt, es sei noch nicht bestimmt, ob er annehme, aber er habe große Lust. Dann würde wohl Lerch nach <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3126">Würzb</ref>. kommen u. das Extraordinariat könnte mir, dem Älteren, zufallen. Lerch schreibt auch – seine neuliche Rezension im Lbl. scheint ein Einlenken zu bedeuten – in geheimnisvollen Andeutungen, Vossler habe für mich eine ganz bestimmte Kombination im Auge. Auch <persName ref="[authorityLink]">Curtius</persName>, der mich kürzlich besuchte, versprach, im Fall er berufen werde, mich in <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4090">Marburg</ref> vorzuschlagen. Sie sehen, Freunde habe ich wohl, aber "es kommt nischt bei raus". Ich bin sehr gerührt, daß Sie mir helfen wollen. Wenn Sie einmal (aber nur wenn die Würzburger Geschichte erledigt ist) bei Vossler einwirken wollten, so täten Sie mir einen großen Dienst. Ich nehme an, daß Sie selbst davon überzeugt sind, daß das Maß meines Leidens voll ist. Ich könnte Ihnen über meine Schicksale noch manches erzählen und Sie würden staunen, was alles ein Mensch aushalten kann. Wenn ich Ihnen sage, daß ich Grund zur <pb facs="#IMG.4" n="4"/>Annahme habe, daß die Rez. im Lit.Zentrbl., die Sie seinerzeit als die Tat eines "anonymen Neidhammels" bezeichneten, von M-L stammt, so werden Sie zu dem Bilde, das ich neulich gezeichnet, noch ein pikantes Detail hinzuhaben.</p>
+            <p>Ich weiß nur von <persName ref="[authorityLink]">
+Grammont</persName>, daß er durch die Aufnahme seiner Dissimilation<note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3441">Maurice Grammont, <hi rend="unknown" rendition="#none">La Dissimilation consonantique dans les langues indo-européennes et dans les langues romanes</hi>
+                     </ref>. Dijon: Darantière 1895.</bibl>
+               </note> in Deutschland gegen uns verbittert ist. Der Ton, in dem er schreibt, ist geradezu empörend. Daß er tot ist, wußte ich nicht.</p>
+            <p>
+               <persName ref="[authorityLink]">Bovet</persName> ist Sekretär der Schweiz. Völkerbundgesellschaft oder so was Ähnliches geworden und hat die Lehrstelle niedergelegt.</p>
+            <p>Ich bin mit der "Dienstbezeichnung außerordentlicher Professor" versehen worden – eine "Ehrung", die vor allem meiner in Pörtschach liegenden <persName ref="[authorityLink]">Frau</persName> Freude macht. Sie liegt nachmittags dick eingepackt auf dem Balkon und schaut melancholisch den Wildenten auf dem See zu. "Nie wieder dürfen wir uns trennen", steht in unzähligen Varianten in den Briefen. Gelegentlich bezeichnet sie sich als "Eisprinzessin". Ich meinerseits singe oft unter Tränen das schöne lettländische oder livländische Wiegenlied, das Kothe so meisterhaft vortrug:</p>
+            <p>Sonne und Regen Müssen ja sein</p>
+            <p>Sollen zum Segen Saaten gedeihn.</p>
+            <p>Dir aber scheinen Der Sonnen zwei:</p>
+            <p>Mußt drum nicht weinen Eiapopei.</p>
+            <p>Das sage ich mir auch vor, wenn mich die dumpfe Verzweiflung packt.</p>
+            <p>Doch ich schließe, ich kann nicht mehr weiter.</p>
+            <closer>
+               <salute>Vielen Dank für alle Anteilnahme an meinem bedeutungslosen Schicksal und innige Grüße vom ebenfalls wissenschaftsfeindlichen</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Dank für den Hinweis auf L'avenir.</p>
+               <p>Könnte ich leihweise ein Sep. Ihrer Jespersen-Rez. in Anthropos IX<note n="8" place="foot" type="editorial">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.43">In: <hi rend="unknown" rendition="#none">Anthropos</hi> 9 (1914): 340-343</ref>
+                     </bibl>.</note> erbitten? – Original in <placeName ref="[authorityLink]">Bonn</placeName> verliehen.</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

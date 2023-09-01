@@ -1,326 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Edward Spencer Dodgson (035-13)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/3097" type="PID">o:hsa.letter.3097</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">035-13</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Spain</country>
-            <region>Bizkaia</region>
-            <settlement>Bilbao</settlement>
-            <institution>Euskaltzaindia - The Royal Academy of the Basque Language</institution>
-            <repository ref="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka eta Artxiboa</repository>
-            <idno type="shelfmark">13</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1892-05-25">1892-05-25</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Edward Spencer Dodgson</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1402"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.3097">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1892-05-25">1892-05-25</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1402" ref="https://viaf.org/viaf/27433725">
-            <forename>Edward Spencer</forename>
-            <surname>Dodgson</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1402" type="context">
-                        Korrespondenz Hugo Schuchardt - Edward Spencer Dodgson
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.837" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Baskisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3097" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3097" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3097" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.3097" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung der <ref target="https://www.euskaltzaindia.eus/azkue-biblioteka-eta-artxiboa/bibliotekaren-berri">Azkue Biblioteka (Euskaltzaindia)</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.3097" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz, 25 Mai 92.</dateline>
-        <opener>Mein lieber Herr Dodgson!</opener>
-
-        <p>Was ich Ihnen in meinem letzten Briefe schrieb, entspringt nur einer wirklichen Sympathie für Sie. Obwohl ich auch glaube dass Beschränkung in allen Dingen gut thut, auch im Lernen, so will ich darauf doch weiter keinen Nachdruck legen. Ich verstehe jenen unersättlichen Durst sich immer neue Sprachen anzueignen, den <hi
-            rend="unknown"
-            rendition="#none">Mezzofantismus</hi>, wenn ich so sagen darf. In Deutschland existirt ein D<hi rendition="#sup">r</hi>
-          <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2597">Sauerwein</persName> der es in dieser Beziehung weiter gebracht hat als irgend ein Lebender; ich denke mich gelegentlich einmal mit ihm in Korrespondenz zu setzen, es interessirt mich vom psychologischen Standpunkt aus, die Art und den Umfang der Sprachenerwerbung zu betrachten. Ich selbst habe stets grosse Neigung gehabt – wenn auch geringes Talent – fremde Sprachen <hi
-            rend="unknown"
-            rendition="#none">praktisch</hi> zu betreiben; jetzt beschränke ich mich aber mehr und mehr auf den theoretischen Betrieb. Ich sehe nämlich dass die ungemeine Gedächtnissbelastung, welche damit verbunden ist, meinen Nerven schädlicher ist, als irgend ein Thee oder äusseres Mittel ihnen nützlich zu sein vermöchte. Sie ist für <hi
-            rend="unknown"
-            rendition="#none">Jeden</hi> mehr oder minder schädlich, wie ja von den Ärzten der Umstand dass unter den Schauspielern so viele <pb
-            facs="#IMG.2"
-            n="2"/> Fälle von Geisteskrankheit sich finden, vor Allem der bei ihnen nothwendigen übermässigen Anstrengung des Gedächtnisses zugeschrieben wird. Ich könnte ja allerdings Ihrem Abbé <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5734">Harispe</persName> in labourdischem Baskisch schreiben; aber welcher denkbare Nutzen für ihn oder für mich wäre damit verbunden? <foreign xml:lang="en">“Making show of“</foreign> – weiter Nichts! Wenn ich ihm schreiben werde, werde ich ihm also französisch schreiben.</p>
-
-        <p>Ich habe Ihnen gesagt dass ich den Polyglottismus durchaus würdige; muss aber nun hinzusetzen dass er meistens – dies war auch bei <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4448">Mezzofanti</persName> der Fall – von wirklich wissenschaftlichem Interesse <hi
-            rend="unknown"
-            rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.3097" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz, 25 Mai 92.</dateline>
+            <opener>Mein lieber Herr Dodgson!</opener>
+            <p>Was ich Ihnen in meinem letzten Briefe schrieb, entspringt nur einer wirklichen Sympathie für Sie. Obwohl ich auch glaube dass Beschränkung in allen Dingen gut thut, auch im Lernen, so will ich darauf doch weiter keinen Nachdruck legen. Ich verstehe jenen unersättlichen Durst sich immer neue Sprachen anzueignen, den <hi rend="unknown" rendition="#none">Mezzofantismus</hi>, wenn ich so sagen darf. In Deutschland existirt ein D<hi rendition="#sup">r</hi>
+               <persName ref="[authorityLink]">Sauerwein</persName> der es in dieser Beziehung weiter gebracht hat als irgend ein Lebender; ich denke mich gelegentlich einmal mit ihm in Korrespondenz zu setzen, es interessirt mich vom psychologischen Standpunkt aus, die Art und den Umfang der Sprachenerwerbung zu betrachten. Ich selbst habe stets grosse Neigung gehabt – wenn auch geringes Talent – fremde Sprachen <hi rend="unknown" rendition="#none">praktisch</hi> zu betreiben; jetzt beschränke ich mich aber mehr und mehr auf den theoretischen Betrieb. Ich sehe nämlich dass die ungemeine Gedächtnissbelastung, welche damit verbunden ist, meinen Nerven schädlicher ist, als irgend ein Thee oder äusseres Mittel ihnen nützlich zu sein vermöchte. Sie ist für <hi rend="unknown" rendition="#none">Jeden</hi> mehr oder minder schädlich, wie ja von den Ärzten der Umstand dass unter den Schauspielern so viele <pb facs="#IMG.2" n="2"/> Fälle von Geisteskrankheit sich finden, vor Allem der bei ihnen nothwendigen übermässigen Anstrengung des Gedächtnisses zugeschrieben wird. Ich könnte ja allerdings Ihrem Abbé <persName ref="[authorityLink]">Harispe</persName> in labourdischem Baskisch schreiben; aber welcher denkbare Nutzen für ihn oder für mich wäre damit verbunden? <foreign xml:lang="en">“Making show of“</foreign> – weiter Nichts! Wenn ich ihm schreiben werde, werde ich ihm also französisch schreiben.</p>
+            <p>Ich habe Ihnen gesagt dass ich den Polyglottismus durchaus würdige; muss aber nun hinzusetzen dass er meistens – dies war auch bei <persName ref="[authorityLink]">Mezzofanti</persName> der Fall – von wirklich wissenschaftlichem Interesse <hi rend="unknown" rendition="#none">
 nicht</hi> begleitet zu sein pflegt. Nun, Sie hegen ein solches; warum lenken Sie denn Ihren erstaunlichen Lerntrieb so vorwiegend auf den rohen Sprachstoff, warum, wenn Sie sich für die Zusammenhänge der Sprachen, für die Verwandtschaft der Völker interessiren, studiren Sie die Sprachen nicht in methodisch-geschichtlicher Weise? Sie denken z.B. an eine mögliche Gleichheit zwischen lat. <foreign xml:lang="la">
-            <hi rend="unknown" rendition="#none">vallis</hi>
-          </foreign> und deutschem <hi rend="unknown"
-            rendition="#none">fallen</hi>; warum verfolgen Sie nicht die Geschichte der Laute <pb facs="#IMG.3"
-            n="3"/> und Bedeutungen durch die andern Sprachen hindurch? Mir geht es wie Ihnen, auch ich fürchte “narrowmindedness“, und desshalb habe ich mich in den letzten Jahren zum Theil recht eingehend mit Anatomie und Physiologie beschäftigt, aber immer in einem gewissen Bezug auf die allgemeine Sprachwissenschaft. Ich meine dass wenn Einer auch alle Sprachen des Erdballs erlernte, er dabei immer recht einseitig sein könnte; die wahre, die fruchtbare Vielseitigkeit beruht nicht auf der Menge des bewältigten <hi
-            rend="unknown" rendition="#none">Rohstoffs</hi>, sondern auf der Mannichfaltigkeit der angeeigneten <hi
-            rend="unknown" rendition="#none">Methoden</hi>.</p>
-        <p>Was das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">Baskische</ref> anlangt, so wiederhole ich Ihnen dass wir uns auf einen gewissen festen Boden stellen müssen und das kann nur geschehen, indem wir dies Verbum analysiren. Damit ist erst der Anfang gemacht worden – die <hi
-            rend="unknown" rendition="#none">grössten Schwierigkeiten</hi> sind noch zu lösen. Ich bin bei meinen Untersuchungen sehr dadurch behindert dass mir über die sog. unregelmässigen Verba keine vollständigen und zuverlässigen Paradigmen vorliegen. Das “<bibl>
-            <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4294">Verbe Basque</ref>
-          </bibl>“ des <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1171">Prinzen Bonaparte</persName>
-          <pb facs="#IMG.4"
-            n="4"/> enthält nur “haben“ und “sein“; das Übrige würde im dritten Theile gekommen sein, der nicht erschienen ist. Ich habe mich nach London gewendet um zu erfahren, was mit der Bibliothek und den Handschriften des Prinzen geworden ist, aber man hat mir darüber Nichts sagen können. Demnächst – ich reise heute auf einige Tage nach <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName> zu den Akademiewahlen – werde ich mich vielleicht an Abbé <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5734">Harispe</persName> mit einiger [sic] auf seine Mundart (an welchem Ort im Labourd ist er geboren und aufgewachsen?) bezüglichen Fragen wenden. Doch ich will Ihnen gleich ein Specimen meiner Neugier geben; vielleicht bereiten Sie ihn vor. Es existiren im <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.837">Baskischen</ref> eine Reihe von Zeitwörtern mit der Bed. “fliessen“, “schmatzen“ u.s.w., deren <hi
-            rend="unknown" rendition="#none">Konjugation</hi> und <hi rend="unknown" rendition="#none">Konstruktion</hi> in den verschiedenen Mundarten ich genau kennen möchte. Sie finden sich bei <bibl>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.5747">Lardizabal</persName> S. 51 f.</bibl> für das Guipuzc. und App. <bibl>S. 21 f.</bibl> für das Biskaische.</p>
-        <p>
-          <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">
+                  <hi rend="unknown" rendition="#none">vallis</hi>
+               </foreign> und deutschem <hi rend="unknown" rendition="#none">fallen</hi>; warum verfolgen Sie nicht die Geschichte der Laute <pb facs="#IMG.3" n="3"/> und Bedeutungen durch die andern Sprachen hindurch? Mir geht es wie Ihnen, auch ich fürchte “narrowmindedness“, und desshalb habe ich mich in den letzten Jahren zum Theil recht eingehend mit Anatomie und Physiologie beschäftigt, aber immer in einem gewissen Bezug auf die allgemeine Sprachwissenschaft. Ich meine dass wenn Einer auch alle Sprachen des Erdballs erlernte, er dabei immer recht einseitig sein könnte; die wahre, die fruchtbare Vielseitigkeit beruht nicht auf der Menge des bewältigten <hi rend="unknown" rendition="#none">Rohstoffs</hi>, sondern auf der Mannichfaltigkeit der angeeigneten <hi rend="unknown" rendition="#none">Methoden</hi>.</p>
+            <p>Was das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">Baskische</ref> anlangt, so wiederhole ich Ihnen dass wir uns auf einen gewissen festen Boden stellen müssen und das kann nur geschehen, indem wir dies Verbum analysiren. Damit ist erst der Anfang gemacht worden – die <hi rend="unknown" rendition="#none">grössten Schwierigkeiten</hi> sind noch zu lösen. Ich bin bei meinen Untersuchungen sehr dadurch behindert dass mir über die sog. unregelmässigen Verba keine vollständigen und zuverlässigen Paradigmen vorliegen. Das “<bibl>
+                  <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4294">Verbe Basque</ref>
+               </bibl>“ des <persName ref="[authorityLink]">Prinzen Bonaparte</persName>
+               <pb facs="#IMG.4" n="4"/> enthält nur “haben“ und “sein“; das Übrige würde im dritten Theile gekommen sein, der nicht erschienen ist. Ich habe mich nach London gewendet um zu erfahren, was mit der Bibliothek und den Handschriften des Prinzen geworden ist, aber man hat mir darüber Nichts sagen können. Demnächst – ich reise heute auf einige Tage nach <placeName ref="[authorityLink]">Wien</placeName> zu den Akademiewahlen – werde ich mich vielleicht an Abbé <persName ref="[authorityLink]">Harispe</persName> mit einiger [sic] auf seine Mundart (an welchem Ort im Labourd ist er geboren und aufgewachsen?) bezüglichen Fragen wenden. Doch ich will Ihnen gleich ein Specimen meiner Neugier geben; vielleicht bereiten Sie ihn vor. Es existiren im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.837">Baskischen</ref> eine Reihe von Zeitwörtern mit der Bed. “fliessen“, “schmatzen“ u.s.w., deren <hi rend="unknown" rendition="#none">Konjugation</hi> und <hi rend="unknown" rendition="#none">Konstruktion</hi> in den verschiedenen Mundarten ich genau kennen möchte. Sie finden sich bei <bibl>
+                  <persName ref="[authorityLink]">Lardizabal</persName> S. 51 f.</bibl> für das Guipuzc. und App. <bibl>S. 21 f.</bibl> für das Biskaische.</p>
+            <p>
+               <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">
 darausquit</hi>
-          </foreign>, <foreign xml:lang="es">hablo mucho</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">daratsat</hi>
-          </foreign>, <foreign xml:lang="es">hablo con furia</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">darauntsat,</hi>
-            <hi rend="unknown" rendition="#none">diñotzāt</hi>
-          </foreign>
-          <foreign xml:lang="es">me está manando</foreign>
-        </p>
-        <p>
-          <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">dariot, dariozquit, -zcat</hi>
-          </foreign>
-          <foreign xml:lang="es">me mano en palabras</foreign>
-          <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">darit</hi>
-          </foreign>, <foreign xml:lang="es">se me está cayendo</foreign>
-        </p>
-
-        <p>Il s’agit de bien connaître la construction de ces verbes qui sont tandis impersonels tandis personels, mais avec le régime indirect (comme par exemple en biscayen: <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">
+               </foreign>, <foreign xml:lang="es">hablo mucho</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">daratsat</hi>
+               </foreign>, <foreign xml:lang="es">hablo con furia</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">darauntsat,</hi>
+                  <hi rend="unknown" rendition="#none">diñotzāt</hi>
+               </foreign>
+               <foreign xml:lang="es">me está manando</foreign>
+            </p>
+            <p>
+               <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">dariot, dariozquit, -zcat</hi>
+               </foreign>
+               <foreign xml:lang="es">me mano en palabras</foreign>
+               <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">darit</hi>
+               </foreign>, <foreign xml:lang="es">se me está cayendo</foreign>
+            </p>
+            <p>Il s’agit de bien connaître la construction de ces verbes qui sont tandis impersonels tandis personels, mais avec le régime indirect (comme par exemple en biscayen: <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">
 darraitzut</hi>
-          </foreign>, <foreign
-            xml:lang="fr">je vous suis propr. je vous le suis</foreign>, ich folge es Euch = guip. <foreign xml:lang="eu">
-            <hi rend="unknown" rendition="#none">narraiquizu</hi>
-          </foreign>).</p>
-        <closer>
-          <salute>Bestes wünschend und bestens grüssend</salute>
-          <lb/>
-          <salute>Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </foreign>, <foreign xml:lang="fr">je vous suis propr. je vous le suis</foreign>, ich folge es Euch = guip. <foreign xml:lang="eu">
+                  <hi rend="unknown" rendition="#none">narraiquizu</hi>
+               </foreign>).</p>
+            <closer>
+               <salute>Bestes wünschend und bestens grüssend</salute>
+               <lb/>
+               <salute>Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

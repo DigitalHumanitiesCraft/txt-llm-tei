@@ -1,394 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Jakob Jud (104-HSJJ34)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8584" type="PID">o:hsa.letter.8584</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">104-HSJJ34</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Bern</settlement>
-            <institution>Universität Bern</institution>
-            <repository ref="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">AIS Archiv</repository>
-            <idno type="shelfmark">HSJJ34</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1922-05-08">1922-05-08</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Jakob Jud</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1858"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8584">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1922-05-08">1922-05-08</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1858" ref="https://viaf.org/viaf/88644299">
-            <forename>Jakob</forename>
-            <surname>Jud</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1858" type="context">
-                        Korrespondenz Hugo Schuchardt - Jakob Jud
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8584" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8584" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8584" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8584" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8584" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8584" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8584" xml:id="IMG.7">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8584" xml:id="IMG.8">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8584" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 8 Mai ’22.</dateline>
-        <opener>Lieber Freund</opener>
-
-        <p>Hubschmied teilt mir mit daß die beiden Basken in Zürich angelangt sind und das treibt mich an, trotz meiner außerordentlichen Abspannung (Maienwonne), Ihnen zu schreiben, Unmaßgebliches, vielleicht sogar Überflüssiges – die Leute sind ja schon in den besten Händen. Eigentlich weiß ich nur von dem einen, Odon de Apraiz;<note
-            n="1" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1044">Odón de Apraiz Buesa</persName> (1896-1984), Baskologe; vgl. HSA <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.1864">00139</ref>.</note> möglicherweise ist der andere ein Verwandter Angel de Apraiz,<note
-            n="2" place="foot" type="editorial">
-
-            <persName>
-Ángel de Apraiz y Buesa</persName> (1885-1956), span. Literaturwissenschaftler, Baskologe.</note> den ich dem Namen nach aus der RBasque kenne. Es besteht für sie das Bedürfnis und ist <pb
-            facs="#IMG.2"
-            n="2"/> ihr eigener Wunsch sich die Kenntnis des Deutschen, vor allem zu wissenschaftlichen Zwecken, anzueignen; gute Vorbilder haben sie unter ihren Landsleuten in <hi
-            rend="unknown" rendition="#none">de Azkue</hi>
-          <note n="3" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1062">Resurrección Maria Azkue y Aberasturi</persName> (1864-1951), span. Baskologe; vgl. HSA 00375-00393.</note> und <hi
-            rend="unknown" rendition="#none">de Urquijo</hi>,<note n="4" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2906">Julio de Urquijo Ybarra</persName> (1871-1950), span. Baskologe; vgl. HSA 12007-12232; 12234-12250.</note> und unter den Spaniern und Katalanen in A. Castro,<note
-            n="5" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1280">Américo Castro Quesada</persName> (1885-1972), span. Literaturhistoriker; vgl. HSA 01569-01577.</note> A. Griera,<note
-            n="6" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1641">Antonio Griera y Gaja / Antoni Griera i Gaja</persName> (1887-1974), span. Romanist; vgl. HSA 03971-03985.</note> P. Bosch.<note
-            n="7" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1182">Pedro Bosch-Gimpera</persName> (Pere Bosch i Gimpera; 1891-1974), span. Archäologe u. Prähistoriker; vgl. HSA 01243-01255.</note> Eine gewisse Hemmung liegt in der Menge der Fremden mit denen sie in Zürich zusammentreffen und der allzu vielen Gelegenheiten französisch zu reden und zu hören. In meinen Augen ist die Herstellung des baskischen Sprachatlas das Hauptziel das die dortigen Linguisten sich stellen müssen und bei dem beschränkten Umfang des Gebietes und bei den wie ich denke verfügbaren Mitteln wird es nicht allzu schwer zu erreichen sein. <pb
-            facs="#IMG.3" n="3"/> Doch sind gewisse innere Schwierigkeiten zu überwinden wie ich aus einigen flüchtigen Vorbesprechungen mit meinen baskischen Freunden (vor dem Kriege) sah. Man muß sich vor einem einfachen Abklatsch des Atl. ling. hüten; die Lemmata müssen wesentlich nach anderen Gesichtspunkten gewählt werden (zum Teil sachlichen, zum Teil formalen – die Verbalformen!).</p>
-
-        <p>Nun möchte ich Ihnen einen Vorschlag machen den ich geradzu als einen „gloriosen“ bezeichnen würde wenn er nicht einen Haken hätte. Sie und Ihre Genossen könnten zusammen mit den beiden Basken die Frage der Lösung zuführen die im Vordergrunde der baskischen Sprachforschung steht und auch für die allgemeine Sprachwissenschaft von größter Wichtigkeit ist, die der <hi
-            rend="unknown" rendition="#none">Betonung</hi>, wenigstens soweit das Baskische in Be- <pb facs="#IMG.4"
-            n="4"/> tracht kommt (diesem Gebiet gehört jedenfalls die eine, vermutlich auch die andere an). Wie die Sachen im <hi
-            rend="unknown"
-            rendition="#none">Allgemeinen</hi> stehen, können Sie aus meiner Abhandlung entnehmen; schlagen Sie sich aber nur alles aus dem Kopf was ich im einzelnen über das Labourdische und alle nichtbizk. Mdd. gesagt habe; jedenfalls die Akzente mit denen meine Texte geschmückt sind. Den Haken habe ich in folgenden Worten von O. de Apraiz gefunden: „Mis conocimientos de <hi
-            rend="unknown"
-            rendition="#none">
-euskera</hi> los he adquirido sin profesor oral, practicándolos durante dos meses en el pueblo <hi
-            rend="unknown" rendition="#none">euskaldun</hi> de Aramayona (Alaba) hace nueve<note n="8" place="foot" type="editorial">Brieftext „nuevos“!</note> años, teniendo yo entonces diez y seis“. Und später? Also einer dessen Muttersprache das Baskische nicht ist. Nun, ich denke aus einer gründlichen Besprechung und Behorchung, mit phonographischer Unterstützung wird immer etwas Brauchbares herauskommen, zum Mindesten ob das Biskaische Stark- und Hochton nebeneinander kennt oder etwa nur den letzteren.</p>
-        <p>Sie können auch, abgesehen davon, sich immerhin etwas in das Baskische <pb facs="#IMG.5"
-            n="5"/> einführen lassen, aber ums Himmels willen, nicht, wie Hubschmied für möglich hält, auf Grund meiner Texte. Das Labourdische ist doch, besonders in der Form die ihm Etcheverry<note
-            n="9" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1456">Auguste Etcheverry</persName> (1843-1890), span. Literat; vgl. HSA 02781-02786.</note> gegeben hat, zuweit vom Bisk. entfernt. Ich habe darüber nachgedacht welches handliche Buch Ihnen für einen solchen Zweck zu empfehlen wäre. Eine Grammatik derart wüßte ich nicht, vielleicht das <hi
-            rend="unknown"
-            rendition="#none">Manual de conversación en euskera-bizkaino</hi> Bilbao 1898 (mit einem ganz kurzen grammatischen Anhang).<note
-            n="10" place="foot" type="editorial">Resurección Maria de Azkue, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4387">Manual de conversación en euskera bizkaino</ref>
-              </bibl>
-
-            </hi>, Bilbao: Imprenta de Euskalzale, 1897.</note> Allerdings habe ich zwei Exemplare davon, aber beide so hinfällig, daß sie die Tendenz haben sich miteinander zu vereinigen. Azkue schickte sie mir mit Widmung, ebenso die kurz vorher erschienen 120 lecciones des Bask.,<note
-            n="11" place="foot" type="editorial">Resurrección Maria de Azkue, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4334">El Euskara o el Baskuenze en 120 lecciones</ref>
-              </bibl>
-
-            </hi>, Bilbao: Imp. La Propaganda, 1897.</note> die ich aber gerade weil sie praktisch sein sollen, als unpraktisch betrachte. Beide haben Azkue direkt oder indirekt zum Verfasser. Die Fremden werden wohl zu dem Zweck Ihrer Belehrung irgend ein bizkaisches Buch bei sich haben oder leicht beschaffen können. Da ich Ihnen durchaus eine Dublette aus meiner baskischen Bücherei schenken wollte, so habe ich zum <hi
-            rend="unknown"
-            rendition="#none">
-Lukas</hi>evangelium von 1870 gegriffen; es ist allerdings im gipuzkoaschen B.,<note
-            n="12" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8584" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 8 Mai ’22.</dateline>
+            <opener>Lieber Freund</opener>
+            <p>Hubschmied teilt mir mit daß die beiden Basken in Zürich angelangt sind und das treibt mich an, trotz meiner außerordentlichen Abspannung (Maienwonne), Ihnen zu schreiben, Unmaßgebliches, vielleicht sogar Überflüssiges – die Leute sind ja schon in den besten Händen. Eigentlich weiß ich nur von dem einen, Odon de Apraiz;<note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Odón de Apraiz Buesa</persName> (1896-1984), Baskologe; vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.letter.1864">00139</ref>.</note> möglicherweise ist der andere ein Verwandter Angel de Apraiz,<note n="2" place="foot" type="editorial">
+                  <persName>
+Ángel de Apraiz y Buesa</persName> (1885-1956), span. Literaturwissenschaftler, Baskologe.</note> den ich dem Namen nach aus der RBasque kenne. Es besteht für sie das Bedürfnis und ist <pb facs="#IMG.2" n="2"/> ihr eigener Wunsch sich die Kenntnis des Deutschen, vor allem zu wissenschaftlichen Zwecken, anzueignen; gute Vorbilder haben sie unter ihren Landsleuten in <hi rend="unknown" rendition="#none">de Azkue</hi>
+               <note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Resurrección Maria Azkue y Aberasturi</persName> (1864-1951), span. Baskologe; vgl. HSA 00375-00393.</note> und <hi rend="unknown" rendition="#none">de Urquijo</hi>,<note n="4" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Julio de Urquijo Ybarra</persName> (1871-1950), span. Baskologe; vgl. HSA 12007-12232; 12234-12250.</note> und unter den Spaniern und Katalanen in A. Castro,<note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Américo Castro Quesada</persName> (1885-1972), span. Literaturhistoriker; vgl. HSA 01569-01577.</note> A. Griera,<note n="6" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Antonio Griera y Gaja / Antoni Griera i Gaja</persName> (1887-1974), span. Romanist; vgl. HSA 03971-03985.</note> P. Bosch.<note n="7" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Pedro Bosch-Gimpera</persName> (Pere Bosch i Gimpera; 1891-1974), span. Archäologe u. Prähistoriker; vgl. HSA 01243-01255.</note> Eine gewisse Hemmung liegt in der Menge der Fremden mit denen sie in Zürich zusammentreffen und der allzu vielen Gelegenheiten französisch zu reden und zu hören. In meinen Augen ist die Herstellung des baskischen Sprachatlas das Hauptziel das die dortigen Linguisten sich stellen müssen und bei dem beschränkten Umfang des Gebietes und bei den wie ich denke verfügbaren Mitteln wird es nicht allzu schwer zu erreichen sein. <pb facs="#IMG.3" n="3"/> Doch sind gewisse innere Schwierigkeiten zu überwinden wie ich aus einigen flüchtigen Vorbesprechungen mit meinen baskischen Freunden (vor dem Kriege) sah. Man muß sich vor einem einfachen Abklatsch des Atl. ling. hüten; die Lemmata müssen wesentlich nach anderen Gesichtspunkten gewählt werden (zum Teil sachlichen, zum Teil formalen – die Verbalformen!).</p>
+            <p>Nun möchte ich Ihnen einen Vorschlag machen den ich geradzu als einen „gloriosen“ bezeichnen würde wenn er nicht einen Haken hätte. Sie und Ihre Genossen könnten zusammen mit den beiden Basken die Frage der Lösung zuführen die im Vordergrunde der baskischen Sprachforschung steht und auch für die allgemeine Sprachwissenschaft von größter Wichtigkeit ist, die der <hi rend="unknown" rendition="#none">Betonung</hi>, wenigstens soweit das Baskische in Be- <pb facs="#IMG.4" n="4"/> tracht kommt (diesem Gebiet gehört jedenfalls die eine, vermutlich auch die andere an). Wie die Sachen im <hi rend="unknown" rendition="#none">Allgemeinen</hi> stehen, können Sie aus meiner Abhandlung entnehmen; schlagen Sie sich aber nur alles aus dem Kopf was ich im einzelnen über das Labourdische und alle nichtbizk. Mdd. gesagt habe; jedenfalls die Akzente mit denen meine Texte geschmückt sind. Den Haken habe ich in folgenden Worten von O. de Apraiz gefunden: „Mis conocimientos de <hi rend="unknown" rendition="#none">
+euskera</hi> los he adquirido sin profesor oral, practicándolos durante dos meses en el pueblo <hi rend="unknown" rendition="#none">euskaldun</hi> de Aramayona (Alaba) hace nueve<note n="8" place="foot" type="editorial">Brieftext „nuevos“!</note> años, teniendo yo entonces diez y seis“. Und später? Also einer dessen Muttersprache das Baskische nicht ist. Nun, ich denke aus einer gründlichen Besprechung und Behorchung, mit phonographischer Unterstützung wird immer etwas Brauchbares herauskommen, zum Mindesten ob das Biskaische Stark- und Hochton nebeneinander kennt oder etwa nur den letzteren.</p>
+            <p>Sie können auch, abgesehen davon, sich immerhin etwas in das Baskische <pb facs="#IMG.5" n="5"/> einführen lassen, aber ums Himmels willen, nicht, wie Hubschmied für möglich hält, auf Grund meiner Texte. Das Labourdische ist doch, besonders in der Form die ihm Etcheverry<note n="9" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Auguste Etcheverry</persName> (1843-1890), span. Literat; vgl. HSA 02781-02786.</note> gegeben hat, zuweit vom Bisk. entfernt. Ich habe darüber nachgedacht welches handliche Buch Ihnen für einen solchen Zweck zu empfehlen wäre. Eine Grammatik derart wüßte ich nicht, vielleicht das <hi rend="unknown" rendition="#none">Manual de conversación en euskera-bizkaino</hi> Bilbao 1898 (mit einem ganz kurzen grammatischen Anhang).<note n="10" place="foot" type="editorial">Resurección Maria de Azkue, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4387">Manual de conversación en euskera bizkaino</ref>
+                     </bibl>
+                  </hi>, Bilbao: Imprenta de Euskalzale, 1897.</note> Allerdings habe ich zwei Exemplare davon, aber beide so hinfällig, daß sie die Tendenz haben sich miteinander zu vereinigen. Azkue schickte sie mir mit Widmung, ebenso die kurz vorher erschienen 120 lecciones des Bask.,<note n="11" place="foot" type="editorial">Resurrección Maria de Azkue, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4334">El Euskara o el Baskuenze en 120 lecciones</ref>
+                     </bibl>
+                  </hi>, Bilbao: Imp. La Propaganda, 1897.</note> die ich aber gerade weil sie praktisch sein sollen, als unpraktisch betrachte. Beide haben Azkue direkt oder indirekt zum Verfasser. Die Fremden werden wohl zu dem Zweck Ihrer Belehrung irgend ein bizkaisches Buch bei sich haben oder leicht beschaffen können. Da ich Ihnen durchaus eine Dublette aus meiner baskischen Bücherei schenken wollte, so habe ich zum <hi rend="unknown" rendition="#none">
+Lukas</hi>evangelium von 1870 gegriffen; es ist allerdings im gipuzkoaschen B.,<note n="12" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Jesu Cristoren Evanjelioa Lucasen araura. Luke’s Gospel translated into the Guipuzcoan dialect of Basque
 </bibl>
-
-            </hi> by F. de Brunet at San Sebastian, for J. E. Dalton, who supplied the MS. to the B.F.B.S., and also provided the plates for printing. Published by the British and Foreign Bible Society, London [s. n.], 1870.</note> hat aber den Vorzug von <pb
-            facs="#IMG.6"
-            n="6"/> zwei Romanisten besessen worden zu sein, von mir und meinem Vorgänger in Halle, E. Boehmer,<note
-            n="13" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1164">Eduard Boehmer</persName> (1827-1906); vgl. HSA 01187-01189.</note> deren Hände aber für das Aussehen des Umschlags nicht verantwortlich zu machen sind. Ein <hi
-            rend="unknown"
-            rendition="#none">baskisches</hi> Lukasev. würde eine sehr fruchtreiche Ergänzung bilden. G. Lacombe<note
-            n="14" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1977">Georges Lacombe</persName>, HSA 06068-06070.</note> schreibt mir gerade daß er in den Osterferien mit dem Keltisten <hi
-            rend="unknown" rendition="#none">E. Ernault</hi>
-          <note n="15" place="foot" type="editorial">
-            <persName>
+                  </hi> by F. de Brunet at San Sebastian, for J. E. Dalton, who supplied the MS. to the B.F.B.S., and also provided the plates for printing. Published by the British and Foreign Bible Society, London [s. n.], 1870.</note> hat aber den Vorzug von <pb facs="#IMG.6" n="6"/> zwei Romanisten besessen worden zu sein, von mir und meinem Vorgänger in Halle, E. Boehmer,<note n="13" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Eduard Boehmer</persName> (1827-1906); vgl. HSA 01187-01189.</note> deren Hände aber für das Aussehen des Umschlags nicht verantwortlich zu machen sind. Ein <hi rend="unknown" rendition="#none">baskisches</hi> Lukasev. würde eine sehr fruchtreiche Ergänzung bilden. G. Lacombe<note n="14" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Georges Lacombe</persName>, HSA 06068-06070.</note> schreibt mir gerade daß er in den Osterferien mit dem Keltisten <hi rend="unknown" rendition="#none">E. Ernault</hi>
+               <note n="15" place="foot" type="editorial">
+                  <persName>
 Émile Jean Marie Ernault</persName> (1852-1938), franz. Keltist.</note> Baskisch getrieben habe und zwar haben sie den Anfang der Parabel vom verl. Sohn (Lukas) gelesen; zehn Stunden haben sie zur Erklärung des ersten Verses im Texte von Leizarraga und 5 anderen Übersetzungen gebraucht. </p>
-        <p>Noch durch einen Hinweis möchte ich Sie für das Baskische begeistern. Wenn Sie den <hi rend="unknown"
-            rendition="#none">vorromanischen</hi> Elementen Ihre Aufmerksamkeit widmen, so dürfen Sie auch die <hi
-            rend="unknown"
-            rendition="#none">
-vorarischen</hi> nicht verachten. Ich selbst bin zwar echt skeptisch gegen die Bemühungen der Alarodisten<note
-            n="16" place="foot" type="editorial">Vor allem von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2335">Karl Oštir</persName> (1888-1973) vertretene These einer nordostkaukasischen Sprachengruppe, die jedoch höchst umstritten ist.</note> und Japhetitisten das Baskische heranzuziehen, aber ich <pb
-            facs="#IMG.7" n="7"/> möchte doch gegebenen Falles bremsen. Nur weiß ich nicht wohin dann mit meinen Bemerkungen; in der Z. rom. Ph. hat man die Aussicht, anderthalb Jahre zu warten. Warum nur Niemand den doch gewiß gesunden und Ihnen schon vor langer Zeit vorgetragenen Gedanken verwirklicht, eine Zeitschrift herauszugeben mit Beiträgen aus der roman. Philologie von höchstens zwei Druckseiten, neueste Ergebnisse, Pläne, Anregungen u.s.w.? Vorbilder finden sich in andern Ländern und andern Wissenschaftsgebieten.</p>
-
-        <p>Ihren in Sorgfalt und Scharfsinn bewundernswerten etymologischen Untersuchungen habe ich mich immer noch nicht so widmen können wie ich möchte. Der Hauptgrund ist, mein Mangel an neuer Literatur, der mir eine Nachprüfung geradezu unmöglich macht. Vor Ihrem Massenaufgebot<note
-            n="17" place="foot"
-            type="editorial">gem. sind Juds Arbeiten „<bibl>
+            <p>Noch durch einen Hinweis möchte ich Sie für das Baskische begeistern. Wenn Sie den <hi rend="unknown" rendition="#none">vorromanischen</hi> Elementen Ihre Aufmerksamkeit widmen, so dürfen Sie auch die <hi rend="unknown" rendition="#none">
+vorarischen</hi> nicht verachten. Ich selbst bin zwar echt skeptisch gegen die Bemühungen der Alarodisten<note n="16" place="foot" type="editorial">Vor allem von <persName ref="[authorityLink]">Karl Oštir</persName> (1888-1973) vertretene These einer nordostkaukasischen Sprachengruppe, die jedoch höchst umstritten ist.</note> und Japhetitisten das Baskische heranzuziehen, aber ich <pb facs="#IMG.7" n="7"/> möchte doch gegebenen Falles bremsen. Nur weiß ich nicht wohin dann mit meinen Bemerkungen; in der Z. rom. Ph. hat man die Aussicht, anderthalb Jahre zu warten. Warum nur Niemand den doch gewiß gesunden und Ihnen schon vor langer Zeit vorgetragenen Gedanken verwirklicht, eine Zeitschrift herauszugeben mit Beiträgen aus der roman. Philologie von höchstens zwei Druckseiten, neueste Ergebnisse, Pläne, Anregungen u.s.w.? Vorbilder finden sich in andern Ländern und andern Wissenschaftsgebieten.</p>
+            <p>Ihren in Sorgfalt und Scharfsinn bewundernswerten etymologischen Untersuchungen habe ich mich immer noch nicht so widmen können wie ich möchte. Der Hauptgrund ist, mein Mangel an neuer Literatur, der mir eine Nachprüfung geradezu unmöglich macht. Vor Ihrem Massenaufgebot<note n="17" place="foot" type="editorial">gem. sind Juds Arbeiten „<bibl>
 
 Mots d’origine gauloise
-</bibl>“.</note> streiche ich die Flagge, so wenn mir wie bei <hi
-            rend="unknown" rendition="#none">tresa</hi> von Anfang an begriffliche Bedenken waren [übrigens ist S. 497 (Sep. 17) unten zu lesen Toncetami, Toncetamus, Lusitania].</p>
-        <p>
-          <pb facs="#IMG.8" n="8"/> Zu Ihrem Savart-aufsatz<note n="18" place="foot"
-              type="editorial">Jud, „<bibl>
+</bibl>“.</note> streiche ich die Flagge, so wenn mir wie bei <hi rend="unknown" rendition="#none">tresa</hi> von Anfang an begriffliche Bedenken waren [übrigens ist S. 497 (Sep. 17) unten zu lesen Toncetami, Toncetamus, Lusitania].</p>
+            <p>
+               <pb facs="#IMG.8" n="8"/> Zu Ihrem Savart-aufsatz<note n="18" place="foot" type="editorial">Jud, „<bibl>
 
 Trois mots: franç. somart, savart; esp. senara
-</bibl>“, <hi rend="unknown"
-            rendition="#none">Archivum romanicum</hi> 5, 1921, 29-52.</note> konnte [könnte ?] ich (brieflich) nur einen winzigen Beitrag liefern: <hi
-            rend="unknown" rendition="#none">havrec</hi> bre = guéret und den vermisse ich S. 21; aber ich weine keine Träne darum.</p>
-        <p>Sie scheinen, nach dem was ich früher hörte – zwischen Schule und Universität geschwankt zu haben; ich beglückwünsche Sie daß Sie die erstere aufgegeben haben. Das Opfer, das der Lehrer gebracht hat, wird dem Forscher zu gute kommen.</p>
-        <closer>
-          <salute>Mit Kopf- und Händedruck<lb/> Ihr </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H Schuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Grüße an Gauchat und Hubschmied, Mitteilung des Obigen an Letzteren.<note n="19" place="foot" type="editorial">Dies ist leider der letzte erhaltene Brief Schuchardts an Jakob Jud.</note>
-          </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+</bibl>“, <hi rend="unknown" rendition="#none">Archivum romanicum</hi> 5, 1921, 29-52.</note> konnte [könnte ?] ich (brieflich) nur einen winzigen Beitrag liefern: <hi rend="unknown" rendition="#none">havrec</hi> bre = guéret und den vermisse ich S. 21; aber ich weine keine Träne darum.</p>
+            <p>Sie scheinen, nach dem was ich früher hörte – zwischen Schule und Universität geschwankt zu haben; ich beglückwünsche Sie daß Sie die erstere aufgegeben haben. Das Opfer, das der Lehrer gebracht hat, wird dem Forscher zu gute kommen.</p>
+            <closer>
+               <salute>Mit Kopf- und Händedruck<lb/> Ihr </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">H Schuchardt</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Grüße an Gauchat und Hubschmied, Mitteilung des Obigen an Letzteren.<note n="19" place="foot" type="editorial">Dies ist leider der letzte erhaltene Brief Schuchardts an Jakob Jud.</note>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

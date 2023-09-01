@@ -1,335 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Lajos Katona an Hugo Schuchardt (300-05427)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1888">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10487" type="PID">o:hsa.letter.10487</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">300-05427</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">05427</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1888">
-                <forename>Lajos</forename>
-                <surname>Katona</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.431" ref="http://sws.geonames.org/3054643">Budapest</origPlace>
-              <origDate ana="dcterms:created" when="1900-12-14">1900-12-14</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2023">2023</date>
-          <title>Die Korrespondenz zwischen Lajos Katona und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1888"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10487">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1888" ref="https://viaf.org/viaf/53140754">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.431" key="#GID.1" ref="http://sws.geonames.org/3054643">Budapest</placeName>
-          <date when="1900-12-14">1900-12-14</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Hungary</country>
-                <settlement>Budapest</settlement>
-                <name ref="http://geonames.org/3054643" type="fcode:PPLC">Budapest</name>
-                <location>
-                  <geo>19.04045,47.49835</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1888" type="context">
-                        Korrespondenz Lajos Katona - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5030" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Accademia della Crusca</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10487" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10487" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10487" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10487" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10487" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10487" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10487" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Sehr geehrter Herr Professor!</opener>
-        <p>Da Ihnen so viel an dem <hi rend="unknown" rendition="#none">volt</hi>
-          <note n="1" place="foot"
-            type="editorial">„ehemalig“.</note> liegt, so muss ich Sie schon mit obiger Titulatur beehren. Sie Glücklicher! Dass sie sogar zur Durchsicht des Magy. Akad. Alman. Zeit finden! Ihre Rügen will ich gelegentlich in höchst schlauer Weise als gradum ad Parnassum verwerten. Vielleicht gelingt es mir durch diese gemeinnützigen (!) Correcturen ein hinlängliches Verdienst um die A. zu erwerben, auf dessen Grund man mich eines schönen (ach! Wie schönen!!) Tages vom b. t. zum (ich zittere vor Wonne den Buchstaben niederzuschreiben) l. t.<note
-            n="2" place="foot" type="editorial">„levelezö tag“ (korrespondierendes Mitglied).</note>
-          <pb facs="#IMG.2" n="2"/> befördern wollten, oder wenigstens zu wollen vorgeben wird.</p>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10487" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Sehr geehrter Herr Professor!</opener>
+            <p>Da Ihnen so viel an dem <hi rend="unknown" rendition="#none">volt</hi>
+               <note n="1" place="foot" type="editorial">„ehemalig“.</note> liegt, so muss ich Sie schon mit obiger Titulatur beehren. Sie Glücklicher! Dass sie sogar zur Durchsicht des Magy. Akad. Alman. Zeit finden! Ihre Rügen will ich gelegentlich in höchst schlauer Weise als gradum ad Parnassum verwerten. Vielleicht gelingt es mir durch diese gemeinnützigen (!) Correcturen ein hinlängliches Verdienst um die A. zu erwerben, auf dessen Grund man mich eines schönen (ach! Wie schönen!!) Tages vom b. t. zum (ich zittere vor Wonne den Buchstaben niederzuschreiben) l. t.<note n="2" place="foot" type="editorial">„levelezö tag“ (korrespondierendes Mitglied).</note>
+               <pb facs="#IMG.2" n="2"/> befördern wollten, oder wenigstens zu wollen vorgeben wird.</p>
+            <p>Aber reden wir von etwas Ernsterem. Ich bin Ihnen noch auf eine Frage Ihres ehevorletzten Schreibens die Anwort schuldig. Die Angelegenheit Farinelli (ich danke Ihnen bestens für die Adresse) steht gegenwärtig so, dass die Facultät den Antrag Beckers auf Berufung F.‘s mit großer Majorität angenommen, Beöthy<note n="3" place="foot" type="editorial">
+                  <persName>
+Ákos Beöthy</persName> (1838-1904), ungarischer Jurist und Politiker.</note> aber dagegen und für Radó<note n="4" place="foot" type="editorial">
+                  <persName>
 
-        <p>Aber reden wir von etwas Ernsterem. Ich bin Ihnen noch auf eine Frage Ihres ehevorletzten Schreibens die Anwort schuldig. Die Angelegenheit Farinelli (ich danke Ihnen bestens für die Adresse) steht gegenwärtig so, dass die Facultät den Antrag Beckers auf Berufung F.‘s mit großer Majorität angenommen, Beöthy<note
-            n="3" place="foot" type="editorial">
-
-            <persName>
-Ákos Beöthy</persName> (1838-1904), ungarischer Jurist und Politiker.</note> aber dagegen und für Radó<note
-            n="4" place="foot" type="editorial">
-
-            <persName>
-
-Antal Radó</persName> (1862-1944), ungar. Journalist, Parlamentsstenograph und Übersetzer (z. B. Dante).</note> ein Separatvotum angemeldet hat. Die Entscheidung steht, leider, beim Ministerium und so ist es (leider?) nicht ausgeschlossen, dass ein zweiter oder Gott weiss wievielter Fall Ciocan aus der schwarzen Urne der Schicksalsgöttin herausspringen wird.<note
-            n="5" place="foot" type="editorial">
-            <persName>
+Antal Radó</persName> (1862-1944), ungar. Journalist, Parlamentsstenograph und Übersetzer (z. B. Dante).</note> ein Separatvotum angemeldet hat. Die Entscheidung steht, leider, beim Ministerium und so ist es (leider?) nicht ausgeschlossen, dass ein zweiter oder Gott weiss wievielter Fall Ciocan aus der schwarzen Urne der Schicksalsgöttin herausspringen wird.<note n="5" place="foot" type="editorial">
+                  <persName>
 Ion Ciocan </persName>(1850-1915), von 1898 bis 1909 Doz. für Rumänisch an der Budapester Universität</note>
-          <pb facs="#IMG.3" n="3"/> Mir wäre das sehr unangenehm, da es meine ohnehin nicht allzu grosse Freude an meiner akademischen, mit schweren Opfern begonnenen Wirksamkeit (?) gänzlich verderben und mich in meiner Überzeugung von der Unheilbarkeit unserer Zustände noch mehr befestigen würde. Wie wenig aber eine so tiefe und von Tag zu Tag tiefer sich einwurzelnde Überzeugung geeignet ist die Arbeitslust wach zu halten und die Kraft zu stählen, das brauche ich Ihnen nicht des Näheren zu erklären. Am liebsten möchte man gleich auswandern, wenn man nur wüsste wohin? Anderswo scheint der Himmel auch nicht bedeutend heller zu sein.</p>
-        <p>
-          <pb facs="#IMG.4"
-            n="4"/> Ich habe vor einigen Tagen Herrn Szily endlich Mittheilung über Ihren verfehlten Besuch in Radegund gemacht<note
-            n="6" place="foot" type="editorial">Vgl. Ms <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.10478">
-5067/382</ref> (18.9.1900).</note> und er hat es sehr bedauert, dass er sich desselben nicht mehr erfreuen durfte. Den I. B. der E. u. St. G. M’s werde ich Ihnen, sobald ich nur mit meinem Aufsatz über ihn fertig bin, dankend retourniren.<note
-            n="7" place="foot" type="editorial">Vgl. Brief Ms <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.10485">5067/386</ref> (3.12.1900).</note> Max Koch meldet schon wieder einen Wechsel im Verlage seiner Zeitschrift an,<note
-            n="8" place="foot" type="editorial">Vgl. Ms <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.10485">5067/386</ref> (29.9.1888).</note> die vom nächsten Jahr als „Studien zur …“<note
-            n="9" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">
+               <pb facs="#IMG.3" n="3"/> Mir wäre das sehr unangenehm, da es meine ohnehin nicht allzu grosse Freude an meiner akademischen, mit schweren Opfern begonnenen Wirksamkeit (?) gänzlich verderben und mich in meiner Überzeugung von der Unheilbarkeit unserer Zustände noch mehr befestigen würde. Wie wenig aber eine so tiefe und von Tag zu Tag tiefer sich einwurzelnde Überzeugung geeignet ist die Arbeitslust wach zu halten und die Kraft zu stählen, das brauche ich Ihnen nicht des Näheren zu erklären. Am liebsten möchte man gleich auswandern, wenn man nur wüsste wohin? Anderswo scheint der Himmel auch nicht bedeutend heller zu sein.</p>
+            <p>
+               <pb facs="#IMG.4" n="4"/> Ich habe vor einigen Tagen Herrn Szily endlich Mittheilung über Ihren verfehlten Besuch in Radegund gemacht<note n="6" place="foot" type="editorial">Vgl. Ms <ref target="https://gams.uni-graz.at/o:hsa.letter.10478">
+5067/382</ref> (18.9.1900).</note> und er hat es sehr bedauert, dass er sich desselben nicht mehr erfreuen durfte. Den I. B. der E. u. St. G. M’s werde ich Ihnen, sobald ich nur mit meinem Aufsatz über ihn fertig bin, dankend retourniren.<note n="7" place="foot" type="editorial">Vgl. Brief Ms <ref target="https://gams.uni-graz.at/o:hsa.letter.10485">5067/386</ref> (3.12.1900).</note> Max Koch meldet schon wieder einen Wechsel im Verlage seiner Zeitschrift an,<note n="8" place="foot" type="editorial">Vgl. Ms <ref target="https://gams.uni-graz.at/o:hsa.letter.10485">5067/386</ref> (29.9.1888).</note> die vom nächsten Jahr als „Studien zur …“<note n="9" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
 
 Studien zur vergleichenden Literaturgeschichte
 </hi>, ab 1901 im Verlag von <persName>
 
 Alexander Duncker</persName> in <placeName>
 
-Berlin</placeName>.</note> weitergeführt werden soll. Wissen Sie etwas über einen gewissen Tommaso Gargallo, der im J. 1823 zu Firenze eine angeblich aus dem XIV. Jahrt. Stammende Novelle u. d. T. <hi
-            rend="unknown"
-            rendition="#none">
-Il Palatino d’Ungheria</hi> herausgegeben und dem Marchese Gio. Giacomo Trivulzio gewidmet hat?<note
-            n="10" place="foot" type="editorial">Tommaso marchese Gargallo, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8227">Il palatino d’Ungheria, novella d’antico codice ora per la prima volta pubblicata</ref>
-              </bibl>
-
-            </hi>, Firenze: Piatti 1823. - Gargallo (1760-1842) war zeitweise Kriegsminister von Kg. Ferdinand IV. von <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.5890">Sizilien</placeName>, Mitglied der <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.5030">
-Accademia della Crusca</ref>, Dichter und Übersetzer. Es handelt sich bei dieser Novelle um eine <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.446">
-Boccaccio</persName>-Nachahmung, auf die einige Zeitgenossen hereinfielen.</note> Die Nov. ist die tragische <pb
-            facs="#IMG.5" n="5"/> Geschichte des Bank Banus, der in derselben als <hi rend="unknown" rendition="#none">Badanno</hi> auftritt. Mir scheint dieselbe auf den ersten flüchtigen Blick eine plumpe Fälschung zu sein, da sie als eine dem Decameron angehörende, sich in die Reihe der Erzählungen des IX. Tages an 4. Stelle einfügende Novelle giebt, aber ganz dem Vortrage Bonfini’s (Dec. II.7) folgt. Die Einleitung des Herausgebers mit ihrer mystischen Angabe über die Herkunft der angeblichen Handschrift scheint diese Annahme nur zu unterstützen. </p>
-        <p>Wenn Sie in Ihrem nobili otio auch für dgl. wie der M. T. A. Alm.<note n="11" place="foot" type="editorial">
-            <hi rend="unknown"
-            rendition="#none">
+Berlin</placeName>.</note> weitergeführt werden soll. Wissen Sie etwas über einen gewissen Tommaso Gargallo, der im J. 1823 zu Firenze eine angeblich aus dem XIV. Jahrt. Stammende Novelle u. d. T. <hi rend="unknown" rendition="#none">
+Il Palatino d’Ungheria</hi> herausgegeben und dem Marchese Gio. Giacomo Trivulzio gewidmet hat?<note n="10" place="foot" type="editorial">Tommaso marchese Gargallo, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.8227">Il palatino d’Ungheria, novella d’antico codice ora per la prima volta pubblicata</ref>
+                     </bibl>
+                  </hi>, Firenze: Piatti 1823. - Gargallo (1760-1842) war zeitweise Kriegsminister von Kg. Ferdinand IV. von <placeName ref="[authorityLink]">Sizilien</placeName>, Mitglied der <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5030">
+Accademia della Crusca</ref>, Dichter und Übersetzer. Es handelt sich bei dieser Novelle um eine <persName ref="[authorityLink]">
+Boccaccio</persName>-Nachahmung, auf die einige Zeitgenossen hereinfielen.</note> Die Nov. ist die tragische <pb facs="#IMG.5" n="5"/> Geschichte des Bank Banus, der in derselben als <hi rend="unknown" rendition="#none">Badanno</hi> auftritt. Mir scheint dieselbe auf den ersten flüchtigen Blick eine plumpe Fälschung zu sein, da sie als eine dem Decameron angehörende, sich in die Reihe der Erzählungen des IX. Tages an 4. Stelle einfügende Novelle giebt, aber ganz dem Vortrage Bonfini’s (Dec. II.7) folgt. Die Einleitung des Herausgebers mit ihrer mystischen Angabe über die Herkunft der angeblichen Handschrift scheint diese Annahme nur zu unterstützen. </p>
+            <p>Wenn Sie in Ihrem nobili otio auch für dgl. wie der M. T. A. Alm.<note n="11" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
 
 Almanach a Magyar Tudományos Akadémia
-</hi>.</note> Zeit finden, so ist es vielleicht nicht allzu gewagt anzunehmen, dass auch die obige Kleinigkeit Sie einigermaßen interessiren dürfte, und so würden <pb
-            facs="#IMG.6" n="6"/> Sie es mir kaum verargen, wenn ich trotz Ihrer Verwahrung die letzte Entladung beantwortend, zugleich so frei war, noch so manches an die Antwort zu fügen.</p>
-        <closer>
-          <salute>Mit herzlichen Grüßen von uns allen Ihr treu ergebener</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1888">LKatona</persName>
-          </signed>
-          <dateline>Bpest, den 14.XII.1900.</dateline>
-        </closer>
-      </div>
-    </body>
-  </text>
+</hi>.</note> Zeit finden, so ist es vielleicht nicht allzu gewagt anzunehmen, dass auch die obige Kleinigkeit Sie einigermaßen interessiren dürfte, und so würden <pb facs="#IMG.6" n="6"/> Sie es mir kaum verargen, wenn ich trotz Ihrer Verwahrung die letzte Entladung beantwortend, zugleich so frei war, noch so manches an die Antwort zu fügen.</p>
+            <closer>
+               <salute>Mit herzlichen Grüßen von uns allen Ihr treu ergebener</salute>
+               <signed>
+                  <persName ref="[authorityLink]">LKatona</persName>
+               </signed>
+               <dateline>Bpest, den 14.XII.1900.</dateline>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

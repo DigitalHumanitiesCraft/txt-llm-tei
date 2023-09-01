@@ -1,348 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Lajos Katona (52-05067_230)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10238" type="PID">o:hsa.letter.10238</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">52-05067_230</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Ungarn</country>
-            <settlement>Budapest</settlement>
-            <repository ref="https://mta.hu/english/">Abteilung für Handschriften und Alte Bücher, Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften</repository>
-            <idno type="shelfmark">05067_230</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.227" ref="http://sws.geonames.org/2972315">Toulouse</origPlace>
-              <origDate ana="dcterms:created" when="1887-05-13">1887-05-13</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2023">2023</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Lajos Katona</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1888"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10238">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.227" key="#GID.1" ref="http://sws.geonames.org/2972315">Toulouse</placeName>
-          <date when="1887-05-13">1887-05-13</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1888" ref="https://viaf.org/viaf/53140754">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>Toulouse</settlement>
-                <name ref="http://geonames.org/2972315" type="fcode:PPLA">Toulouse</name>
-                <location>
-                  <geo>1.44367,43.60426</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1888" type="context">
-                        Korrespondenz Hugo Schuchardt - Lajos Katona
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10238" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10238" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10238" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10238" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10238" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Toulouse 13 Mai 1887.</dateline>
-        <opener>Lieber Herr Doktor!</opener>
-
-        <p>Die Separatabzüge der franz. Uebersetzung meiner Kelt. Br. I (– ich habe mir erlaubt, wegen der Korrektur von II an Sie zu verweisen –), um die ich Prof. Meyer vor etwa 11 Tagen bat, habe ich immer noch nicht erhalten,<note
-            n="1" place="foot" type="editorial">J. Firmery, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.820">Lettres celtiques</ref>
-            </bibl>“, <hi rend="unknown"
-            rendition="#none">Annales de Bretagne</hi> 2, 1887, 299-345; 602-647.</note> wohl aber das gewünschte Heft der Ztsch. f. v. Lit.<note
-            n="2" place="foot" type="editorial">Es geht um Marcus Landaus <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1180">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10238" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Toulouse 13 Mai 1887.</dateline>
+            <opener>Lieber Herr Doktor!</opener>
+            <p>Die Separatabzüge der franz. Uebersetzung meiner Kelt. Br. I (– ich habe mir erlaubt, wegen der Korrektur von II an Sie zu verweisen –), um die ich Prof. Meyer vor etwa 11 Tagen bat, habe ich immer noch nicht erhalten,<note n="1" place="foot" type="editorial">J. Firmery, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.820">Lettres celtiques</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">Annales de Bretagne</hi> 2, 1887, 299-345; 602-647.</note> wohl aber das gewünschte Heft der Ztsch. f. v. Lit.<note n="2" place="foot" type="editorial">Es geht um Marcus Landaus <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1180">
 Rez</ref>
-            </bibl>. von <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.783">
-                <hi rend="unknown" rendition="#none">Schuchardts Romanisches und Keltisches</hi>
-              </ref>
-            </bibl> in: <hi rend="unknown"
-            rendition="#none">
-Zeitschrift für Vergleichende Litteraturgeschichte</hi> N.F. 1, 1887-1888, 348-351.</note> Ich bin höchstlichst enttäuscht; ich glaube objektive Angriffe gegen mich zu finden und statt deren begegne ich der durchaus oberflächlichen und unoriginellen Behandlung einer wichtigen Prinzipienfrage (der des Wiederabdrucks), die recht unverdienter Weise – die schmeichelhafte Begründung ist keine aufrichtige – an meine Persönlichkeit anknüpft. Eine kleine Christenverfolgung zur Abschreckung! Es thut mir unendlich leid, dass <hi
-            rend="unknown" rendition="#none">ich</hi> selbst das Verfahren L.'s<note n="3" place="foot"
-              type="editorial">„<persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1994">Landaus</persName>“.</note> nicht beleuchten kann; es ist so leicht, in scharfer und bündiger Weise die ganze Hohlheit seiner Betrachtungsweise darzuthun.</p>
-
-        <p>Werthloses sollte überhaupt das Tageslicht nicht erblicken, weder zum ersten noch zum zweiten Male. Leider sind nun vom Anfang aller Zeiten die Autoren nicht in der Lage gewesen über den Werth ihrer eigenen Produktionen zu urtheilen. „Die Hilfe eines aufrichtigen Freundes“, „die Hilfe eines strengen Richters“ welche Herr Landau empfiehlt, haben vielleicht noch mehr Bedeutung für jenen als für diesen Fall (da der Autor doch auch aus der Aufnahme des einmal Gedruckten gewisse Schlüsse machen kann); aber wo und wie sie finden? Der Rath ist mehr als naiv. Diejenigen welche sich öffentlich oder privatim über meine Aufsätze ausgesprochen <pb
-            facs="#IMG.2"
-            n="2"/> haben, haben eine so verschiedene Werthscala derselben aufgestellt dass ich offen gestanden, dadurch etwas verwirrt worden bin. Und nun Herr Landau! „Virgil im Mittelalter“<note
-            n="4" place="foot"
-            type="editorial">Schuchardt geht jetzt auf einzelne seiner Aufsätze ein: </note> soll bleibenden Werth haben (es ist im Grunde nur ein Auszug aus Comparetti’s Buch und hätte am <hi
-            rend="unknown" rendition="#none">Ersten</hi> wegbleiben sollen),<note n="5" place="foot"
-              type="editorial">Comparetti, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.462">Virgil im Mittelalter</ref>
-              </bibl>
-            </hi>. Übers. von Hans Dütschke, Leipzig: Teubner, 1875; dazu Schuchardt, 39-48.</note> „Ariost“<note n="6"
-            place="foot" type="editorial">„<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.178">
+                  </bibl>. von <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.783">
+                        <hi rend="unknown" rendition="#none">Schuchardts Romanisches und Keltisches</hi>
+                     </ref>
+                  </bibl> in: <hi rend="unknown" rendition="#none">
+Zeitschrift für Vergleichende Litteraturgeschichte</hi> N.F. 1, 1887-1888, 348-351.</note> Ich bin höchstlichst enttäuscht; ich glaube objektive Angriffe gegen mich zu finden und statt deren begegne ich der durchaus oberflächlichen und unoriginellen Behandlung einer wichtigen Prinzipienfrage (der des Wiederabdrucks), die recht unverdienter Weise – die schmeichelhafte Begründung ist keine aufrichtige – an meine Persönlichkeit anknüpft. Eine kleine Christenverfolgung zur Abschreckung! Es thut mir unendlich leid, dass <hi rend="unknown" rendition="#none">ich</hi> selbst das Verfahren L.'s<note n="3" place="foot" type="editorial">„<persName ref="[authorityLink]">Landaus</persName>“.</note> nicht beleuchten kann; es ist so leicht, in scharfer und bündiger Weise die ganze Hohlheit seiner Betrachtungsweise darzuthun.</p>
+            <p>Werthloses sollte überhaupt das Tageslicht nicht erblicken, weder zum ersten noch zum zweiten Male. Leider sind nun vom Anfang aller Zeiten die Autoren nicht in der Lage gewesen über den Werth ihrer eigenen Produktionen zu urtheilen. „Die Hilfe eines aufrichtigen Freundes“, „die Hilfe eines strengen Richters“ welche Herr Landau empfiehlt, haben vielleicht noch mehr Bedeutung für jenen als für diesen Fall (da der Autor doch auch aus der Aufnahme des einmal Gedruckten gewisse Schlüsse machen kann); aber wo und wie sie finden? Der Rath ist mehr als naiv. Diejenigen welche sich öffentlich oder privatim über meine Aufsätze ausgesprochen <pb facs="#IMG.2" n="2"/> haben, haben eine so verschiedene Werthscala derselben aufgestellt dass ich offen gestanden, dadurch etwas verwirrt worden bin. Und nun Herr Landau! „Virgil im Mittelalter“<note n="4" place="foot" type="editorial">Schuchardt geht jetzt auf einzelne seiner Aufsätze ein: </note> soll bleibenden Werth haben (es ist im Grunde nur ein Auszug aus Comparetti’s Buch und hätte am <hi rend="unknown" rendition="#none">Ersten</hi> wegbleiben sollen),<note n="5" place="foot" type="editorial">Comparetti, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.462">Virgil im Mittelalter</ref>
+                     </bibl>
+                  </hi>. Übers. von Hans Dütschke, Leipzig: Teubner, 1875; dazu Schuchardt, 39-48.</note> „Ariost“<note n="6" place="foot" type="editorial">„<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.178">
 Ariost</ref>
-
-            </bibl>“, S. 74-83.</note> hingegen überflüssiger Weise wiederabgedruckt worden sein (ich habe hier zwischen den verschiedenen sehr differirenden Ansichten über A. eine Vermittlung anzubahnen versucht; <hi
-            rend="unknown" rendition="#none">L. Geiger</hi>
-          <note n="7" place="foot" type="editorial">Ludwig Geiger, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1346">Neue Schriften zur Litteraturgeschichte der italienischen Renaissance. I</ref>
-            </bibl>“, <hi rend="unknown"
-            rendition="#none">Zeitschrift für Vergleichende Litteraturgeschichte und Renaissance-Litteratur</hi> 1 (Neue Folge) 1887-88, 114-127.</note> machte mir darauf den Antrag einer auf <hi
-            rend="unknown" rendition="#none">Ariost</hi> bezüglichen Publikation – <hi rend="unknown" rendition="#none">Sauer</hi>
-          <note n="8" place="foot" type="editorial">Sauer, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1180">Rez. von: Schuchardt, Hugo: Romanisches und Keltisches. [...]</ref>
-
-            </bibl>“, Zeitschrift für Vergleichende Litteraturgeschichte 1(3&amp;amp;4), 1887, 348-351.</note> hält diesen Artikel für den besten). Für „Französisch und Englisch“<note
-            n="9" place="foot" type="editorial">S. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1642">
+                  </bibl>“, S. 74-83.</note> hingegen überflüssiger Weise wiederabgedruckt worden sein (ich habe hier zwischen den verschiedenen sehr differirenden Ansichten über A. eine Vermittlung anzubahnen versucht; <hi rend="unknown" rendition="#none">L. Geiger</hi>
+               <note n="7" place="foot" type="editorial">Ludwig Geiger, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1346">Neue Schriften zur Litteraturgeschichte der italienischen Renaissance. I</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">Zeitschrift für Vergleichende Litteraturgeschichte und Renaissance-Litteratur</hi> 1 (Neue Folge) 1887-88, 114-127.</note> machte mir darauf den Antrag einer auf <hi rend="unknown" rendition="#none">Ariost</hi> bezüglichen Publikation – <hi rend="unknown" rendition="#none">Sauer</hi>
+               <note n="8" place="foot" type="editorial">Sauer, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1180">Rez. von: Schuchardt, Hugo: Romanisches und Keltisches. [...]</ref>
+                  </bibl>“, Zeitschrift für Vergleichende Litteraturgeschichte 1(3&amp;amp;4), 1887, 348-351.</note> hält diesen Artikel für den besten). Für „Französisch und Englisch“<note n="9" place="foot" type="editorial">S. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1642">
 301-316</ref>
-            </bibl>.</note> ist mir Landau dankbar; eine „Diezstiftung“<note n="10" place="foot" type="editorial">S. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.603">
+                  </bibl>.</note> ist mir Landau dankbar; eine „Diezstiftung“<note n="10" place="foot" type="editorial">S. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.603">
 292-300</ref>
-
-            </bibl>.</note> ist mit dem einen Male abgethan. Aber in beiden Aufsätzen sind ja die leitenden Gedanken zum grossen Theil dieselben; und gerade weil der zweite „seinen“ Zweck <hi
-            rend="unknown" rendition="#none">nicht</hi> erfüllt hat, glaubte ich ihn, gleichsam als historisches Dokument, wiederholen zu dürfen.</p>
-
-        <p>Ferner spricht Landau von dem „wissenschaftlichen“ Werthe. In meiner Widmung habe ich ausdrücklich gesagt dass ich beim Wiederabdruck nicht trockene Belehrung im Auge gehabt habe. Ich denke es kommt doch auch die formelle Beschaffenheit eines Aufsatzes in Betracht, obwohl der Autor selbst das nur sehr zart andeuten darf wenn er nicht in den Ruf höchster Anmasslichkeit gerathen will. – Aber bleiben wir beim Wissenschaftlichen! Ist denn wissenschaftlich nur das rein Materielle (Jahresdaten von Litteraturwerken, Quellenbenutzung u.s.w.), das mit mechanischen Methoden gewonnen wird, und nicht <pb
-            facs="#IMG.3"
-            n="3"/> auch die zusammenfassende und doch eindringende Betrachtung eines Schriftstellers oder eines Werkes? Ich habe mich lange und gründlich mit Boccaccio beschäftigt – so dass mir die vielen Flüchtigkeiten L’s in seinen Schriften über Boccaccio durchaus nicht entgangen sind – die paar Seiten darüber enthalten, trotz des frivolen Eingangs – L. glaubt wirklich mir sei es auf die Belehrung derjenigen angekommen welche di Operette Suppés<note
-            n="11" place="foot" type="editorial">
-
-            <bibl>
+                  </bibl>.</note> ist mit dem einen Male abgethan. Aber in beiden Aufsätzen sind ja die leitenden Gedanken zum grossen Theil dieselben; und gerade weil der zweite „seinen“ Zweck <hi rend="unknown" rendition="#none">nicht</hi> erfüllt hat, glaubte ich ihn, gleichsam als historisches Dokument, wiederholen zu dürfen.</p>
+            <p>Ferner spricht Landau von dem „wissenschaftlichen“ Werthe. In meiner Widmung habe ich ausdrücklich gesagt dass ich beim Wiederabdruck nicht trockene Belehrung im Auge gehabt habe. Ich denke es kommt doch auch die formelle Beschaffenheit eines Aufsatzes in Betracht, obwohl der Autor selbst das nur sehr zart andeuten darf wenn er nicht in den Ruf höchster Anmasslichkeit gerathen will. – Aber bleiben wir beim Wissenschaftlichen! Ist denn wissenschaftlich nur das rein Materielle (Jahresdaten von Litteraturwerken, Quellenbenutzung u.s.w.), das mit mechanischen Methoden gewonnen wird, und nicht <pb facs="#IMG.3" n="3"/> auch die zusammenfassende und doch eindringende Betrachtung eines Schriftstellers oder eines Werkes? Ich habe mich lange und gründlich mit Boccaccio beschäftigt – so dass mir die vielen Flüchtigkeiten L’s in seinen Schriften über Boccaccio durchaus nicht entgangen sind – die paar Seiten darüber enthalten, trotz des frivolen Eingangs – L. glaubt wirklich mir sei es auf die Belehrung derjenigen angekommen welche di Operette Suppés<note n="11" place="foot" type="editorial">
+                  <bibl>
 
 Boccaccio, oder Der Prinz von Palermo
-</bibl>, komische Oper in drei Akten von Franz von Suppé. Libretto von Camillo Walzel alias Friedrich Zell und Richard Genée. - Das Werk wurde am 1. Februar 1879 am Carltheater in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName> uraufgeführt und erzielte einen nachhaltigen Erfolg.</note> hier wollten! – das Resultat dieser ernsten Studien. Ich wünschte gern zu wissen was bei dieser ganz allgemeinen Skizze von dem in der Folgezeit Erschienenen von mir zum Nachtheil der Sache vernachlässigt worden sei; ich wüsste nicht dass das Gesammtbild B.‘s – auf ein solches kam es mir nur an – sich seither wesentlich verändert hätte.</p>
-        <p>Ganz ungerecht scheint mir L. zu sein, wenn er sagt, die K. Br.<note n="12" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.106">Keltischen Briefe</ref>
-              </bibl>
-
-            </hi>, op. cit. 317f., hier 386-426.</note> machten auf keine wissenschaftliche Bedeutung Anspruch. Ich ziehe natürlich nur den letzten in Betracht, aber ich meine doch dass ich über die Geistesrichtung und über die litterarische Thätigkeit der Kymren mich in ausführlicher und selbständiger Weise ausgesprochen habe (weshalb mich auch z. B. <hi
-            rend="unknown" rendition="#none">
+</bibl>, komische Oper in drei Akten von Franz von Suppé. Libretto von Camillo Walzel alias Friedrich Zell und Richard Genée. - Das Werk wurde am 1. Februar 1879 am Carltheater in <placeName ref="[authorityLink]">Wien</placeName> uraufgeführt und erzielte einen nachhaltigen Erfolg.</note> hier wollten! – das Resultat dieser ernsten Studien. Ich wünschte gern zu wissen was bei dieser ganz allgemeinen Skizze von dem in der Folgezeit Erschienenen von mir zum Nachtheil der Sache vernachlässigt worden sei; ich wüsste nicht dass das Gesammtbild B.‘s – auf ein solches kam es mir nur an – sich seither wesentlich verändert hätte.</p>
+            <p>Ganz ungerecht scheint mir L. zu sein, wenn er sagt, die K. Br.<note n="12" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.106">Keltischen Briefe</ref>
+                     </bibl>
+                  </hi>, op. cit. 317f., hier 386-426.</note> machten auf keine wissenschaftliche Bedeutung Anspruch. Ich ziehe natürlich nur den letzten in Betracht, aber ich meine doch dass ich über die Geistesrichtung und über die litterarische Thätigkeit der Kymren mich in ausführlicher und selbständiger Weise ausgesprochen habe (weshalb mich auch z. B. <hi rend="unknown" rendition="#none">
 Windisch</hi> in Ersch und Gruber citirt hat).<note n="13" place="foot" type="editorial">Ernst Windisch, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5860">Keltische Sprache</ref>
-            </bibl>“, in: <hi rend="unknown"
-            rendition="#none">Ersch und Gruber’s Encyclopädie der Wissenschaften und Künste</hi>; sect. II, vol. 35, S. 132f.</note> Seit zehn Jahren hat mir <hi
-            rend="unknown"
-            rendition="#none">
-Gaidoz</hi> wiederholt zugeredet, die K. Br. besonders drucken zu lassen,<note n="14"
-            place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1541">Henri Gaidoz</persName> an Schuchardt (HSA Briefe <ref
-              target="https://gams.uni-graz.at/o:hsa.letter.4335/sdef:TEI/get">
-003-03213</ref>, <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5053/sdef:TEI/get">
-006-03216</ref> u. ö.</note> um sie in der <hi
-            rend="unknown"
-            rendition="#none">Revue celtique</hi> besprechen zu können; er ist an dem ganzen Unheil schuld, <pb
-            facs="#IMG.4" n="4"/> damals, vor etwa 8 Jahren, kam mir zuerst der Gedanke der „<hi rend="unknown"
-            rendition="#none">Gesammelten</hi> Aufsätze“ – nur übereilt habe ich mich nicht; nonum prematur in annum.<note
-            n="15" place="foot" type="editorial">Horaz, <hi rend="unknown"
-            rendition="#none">Ars poetica</hi>, v. 388: „Bis ins neunte Jahr soll ein Schriftwerk zurückgehalten werden“. </note> – Beiläufig gesagt, Landau hat Prof. Meyers Ess. u. St.<note
-            n="16" place="foot" type="editorial">Gustav Meyer, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4838">Essays und Studien zur Sprachgeschichte und Volkskunde</ref>
-              </bibl>
-            </hi>, Straßburg: Trübner, 1885.</note> angezeigt, wenn ich mich nicht irre;<note n="17" place="foot" type="editorial">Kein Nachweis.</note> hat er da nicht eine allgemeine Bemerkung einschlägiger Art gemacht?</p>
-        <p>Wenn ich etwas übler Laune bin, so muss ich mich expectoriren, und ich bitte nur um Entschuldigung dass ich Sie zum Schlachtopfer gemacht habe. Nun lacht der sonnige Himmel wieder über mir, und ich kann mich ganz dem Genusse des reizenden Toulouse hingeben. – Die Nachrichten von meiner Mutter sind nämlich fortwährend gute, obwohl es noch geraume Zeit dauern wird bis sie ganz wiederhergestellt ist. Nur wegen eines Rückfalls der durch eine kleine Unvorsichtigkeit hervorgerufen werden kann, zittere ich immer noch.</p>
-
-        <p>Prof. Meyer hat mir gestern geschrieben; wie ihm Paris zugesagt hat, kann ich aber daraus nicht ersehen. A. Thomas<note
-            n="18" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2858">Antoine Thomas</persName> (185719135), franz. Romanist; vgl. HSA 11658-11668.</note> sagte mir, er sei am 16. April mit Meyer zu Gaston Paris eingeladen gewesen; Meyer damals aber schon abgereist.</p>
-        <p>Empfehlen Sie mich Ihrer lieben Mama bestens und schreiben Sie mir einmal nach <hi rend="unknown" rendition="#none">Bayonne</hi> poste restante.</p>
-        <closer>
-          <salute>Bestens grüssend<lb/> Ihr ergebenster</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Hugo Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5860">Keltische Sprache</ref>
+                  </bibl>“, in: <hi rend="unknown" rendition="#none">Ersch und Gruber’s Encyclopädie der Wissenschaften und Künste</hi>; sect. II, vol. 35, S. 132f.</note> Seit zehn Jahren hat mir <hi rend="unknown" rendition="#none">
+Gaidoz</hi> wiederholt zugeredet, die K. Br. besonders drucken zu lassen,<note n="14" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Henri Gaidoz</persName> an Schuchardt (HSA Briefe <ref target="https://gams.uni-graz.at/o:hsa.letter.4335/sdef:TEI/get">
+003-03213</ref>, <ref target="https://gams.uni-graz.at/o:hsa.letter.5053/sdef:TEI/get">
+006-03216</ref> u. ö.</note> um sie in der <hi rend="unknown" rendition="#none">Revue celtique</hi> besprechen zu können; er ist an dem ganzen Unheil schuld, <pb facs="#IMG.4" n="4"/> damals, vor etwa 8 Jahren, kam mir zuerst der Gedanke der „<hi rend="unknown" rendition="#none">Gesammelten</hi> Aufsätze“ – nur übereilt habe ich mich nicht; nonum prematur in annum.<note n="15" place="foot" type="editorial">Horaz, <hi rend="unknown" rendition="#none">Ars poetica</hi>, v. 388: „Bis ins neunte Jahr soll ein Schriftwerk zurückgehalten werden“. </note> – Beiläufig gesagt, Landau hat Prof. Meyers Ess. u. St.<note n="16" place="foot" type="editorial">Gustav Meyer, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4838">Essays und Studien zur Sprachgeschichte und Volkskunde</ref>
+                     </bibl>
+                  </hi>, Straßburg: Trübner, 1885.</note> angezeigt, wenn ich mich nicht irre;<note n="17" place="foot" type="editorial">Kein Nachweis.</note> hat er da nicht eine allgemeine Bemerkung einschlägiger Art gemacht?</p>
+            <p>Wenn ich etwas übler Laune bin, so muss ich mich expectoriren, und ich bitte nur um Entschuldigung dass ich Sie zum Schlachtopfer gemacht habe. Nun lacht der sonnige Himmel wieder über mir, und ich kann mich ganz dem Genusse des reizenden Toulouse hingeben. – Die Nachrichten von meiner Mutter sind nämlich fortwährend gute, obwohl es noch geraume Zeit dauern wird bis sie ganz wiederhergestellt ist. Nur wegen eines Rückfalls der durch eine kleine Unvorsichtigkeit hervorgerufen werden kann, zittere ich immer noch.</p>
+            <p>Prof. Meyer hat mir gestern geschrieben; wie ihm Paris zugesagt hat, kann ich aber daraus nicht ersehen. A. Thomas<note n="18" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Antoine Thomas</persName> (185719135), franz. Romanist; vgl. HSA 11658-11668.</note> sagte mir, er sei am 16. April mit Meyer zu Gaston Paris eingeladen gewesen; Meyer damals aber schon abgereist.</p>
+            <p>Empfehlen Sie mich Ihrer lieben Mama bestens und schreiben Sie mir einmal nach <hi rend="unknown" rendition="#none">Bayonne</hi> poste restante.</p>
+            <closer>
+               <salute>Bestens grüssend<lb/> Ihr ergebenster</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Hugo Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

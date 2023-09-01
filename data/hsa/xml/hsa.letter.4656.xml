@@ -1,321 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Paul Heyse (04-HS_PH_01)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4656" type="PID">o:hsa.letter.4656</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">04-HS_PH_01</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Deutschland</country>
-            <region>Bayern</region>
-            <settlement>München</settlement>
-            <repository ref="https://www.bsb-muenchen.de/sammlungen/handschriften/personen/nachlaesse/">BSB München (Heyse-Archiv VI [Schuchardt, Hugo])</repository>
-            <idno type="shelfmark">HS_PH_01</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.413" ref="http://sws.geonames.org/2929817">Eppstein</origPlace>
-              <origDate ana="dcterms:created" when="1887-09-19">1887-09-19</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Paul Heyse</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1764"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4656">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.413" key="#GID.1" ref="http://sws.geonames.org/2929817">Eppstein</placeName>
-          <date when="1887-09-19">1887-09-19</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1764" ref="https://viaf.org/viaf/50765">
-            <forename>Paul</forename>
-            <surname>Heyse</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Eppstein</settlement>
-                <name ref="http://geonames.org/2929817" type="fcode:PPL">Eppstein</name>
-                <location>
-                  <geo>8.39231,50.14277</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1764" type="context">
-                        Korrespondenz Hugo Schuchardt - Paul Heyse
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4656" xml:lang="de">
-        <pb n="1"/>
-        <dateline>
-          <hi rend="unknown" rendition="#none">Eppstein </hi>bei <hi rend="unknown" rendition="#none">Wiesbaden</hi>
-          <lb/> 19. Sept. 1887.</dateline>
-        <opener>Verehrtester Herr,</opener>
-
-        <p>Nachdem ich mein Vierteljahr im Baskischen abgedient habe, erfreue ich mich nun hier, auf deutschem Boden, mit meiner Mama einer lieblichen Spätvilleggiatur.<note
-            n="1" place="foot" type="editorial">Vgl. Schuchardt an Malvine Schuchardt (Sare, 23.8.1887), Lfd.Nr. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4624">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4656" xml:lang="de">
+            <pb n="1"/>
+            <dateline>
+               <hi rend="unknown" rendition="#none">Eppstein </hi>bei <hi rend="unknown" rendition="#none">Wiesbaden</hi>
+               <lb/> 19. Sept. 1887.</dateline>
+            <opener>Verehrtester Herr,</opener>
+            <p>Nachdem ich mein Vierteljahr im Baskischen abgedient habe, erfreue ich mich nun hier, auf deutschem Boden, mit meiner Mama einer lieblichen Spätvilleggiatur.<note n="1" place="foot" type="editorial">Vgl. Schuchardt an Malvine Schuchardt (Sare, 23.8.1887), Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.4624">
 23-10341</ref>.</note> Auf dem Rückweg nach Graz, habe ich eigentlich die Absicht, in München ein paar Stunden zu rasten, Ihnen persönlich <pb n="2"/> meine Verehrung zu bezeigen. Werde ich Sie wohl dann – es wird Anfang Oktober sein – dort treffen?</p>
-
-        <p>Ich bedauere nachträglich noch von Herzen die ernste Beunruhigung, die Sie auf Ihrer Rückreise von Italien erfahren haben. Auch ich habe mich in grosser Sorge befunden; meine Mama war im April todtkrank und ich wusste lange Zeit nichts davon, da man mir alle Briefe und Depeschen nach <placeName>Tarascon</placeName> gesandt hatte. Dort hatte ich nämlich, dem Tartarin Daudet’s zu liebe<note
-            n="2" place="foot"
-            type="editorial">Tartarin de Tarascon ist der Titelheld dreier Romane von Alphone Daudet.</note>,<pb
-            n="3"/> einige Tage verweilen wollen, liess es aber dann bei einem flüchtigen Besuch bewenden. Ich war im Begriff von Nimes abzureisen; ich war eben der Gefahr entgangen, mich selber mit einem alten verrosteten Revolver zu erschiessen den ich in einer Schublade meines Zimmers fand und den ich spielend losdrückte – ich nahm es als gute Vorbedeutung, auf der Post fand ich aber dann die traurigen Nachrichten vor, zugleich freilich eine etwas günstigere und das Verbot meiner Mutter zurückzukehren. – –<note
-            n="3" place="foot" type="editorial">Vgl. Schuchardt (Graz, 4.10.1887) an <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2264">Adolf Mussafia</persName>, HSA, Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.2384">
+            <p>Ich bedauere nachträglich noch von Herzen die ernste Beunruhigung, die Sie auf Ihrer Rückreise von Italien erfahren haben. Auch ich habe mich in grosser Sorge befunden; meine Mama war im April todtkrank und ich wusste lange Zeit nichts davon, da man mir alle Briefe und Depeschen nach <placeName>Tarascon</placeName> gesandt hatte. Dort hatte ich nämlich, dem Tartarin Daudet’s zu liebe<note n="2" place="foot" type="editorial">Tartarin de Tarascon ist der Titelheld dreier Romane von Alphone Daudet.</note>,<pb n="3"/> einige Tage verweilen wollen, liess es aber dann bei einem flüchtigen Besuch bewenden. Ich war im Begriff von Nimes abzureisen; ich war eben der Gefahr entgangen, mich selber mit einem alten verrosteten Revolver zu erschiessen den ich in einer Schublade meines Zimmers fand und den ich spielend losdrückte – ich nahm es als gute Vorbedeutung, auf der Post fand ich aber dann die traurigen Nachrichten vor, zugleich freilich eine etwas günstigere und das Verbot meiner Mutter zurückzukehren. – –<note n="3" place="foot" type="editorial">Vgl. Schuchardt (Graz, 4.10.1887) an <persName ref="[authorityLink]">Adolf Mussafia</persName>, HSA, Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.2384">
 54-SM17</ref> (mit weiteren Einzelheiten).</note>
-        </p>
-        <p>Wie glücklich bin ich nun, obwohl meine Nerven, nach denen Sie sich liebenswürdigst er-<pb n="4"/> kundigen, das Leben oft sehr schwer machen!</p>
-        <p>Sie haben Recht sich über meine Mezzo-phantasterei<note n="4" place="foot"
-              type="editorial">Vgl. die Postkarte Heyses vom 23.7.1887, Lfd.Nr. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4642">03-04719</ref>.</note> zu amüsiren und damit Sie das noch gründlicher thun können, schicke ich Ihnen unter Kreuzband ein freches poetisches Attentat von mir auf die Sprache der Troubadours, d.h. der modernen.<note
-            n="5" place="foot" type="editorial">Dem Brief liegt das fünf Seiten umfassende Exemplar der Zeitschrift <hi
-              rend="unknown"
-              rendition="#none">
+            </p>
+            <p>Wie glücklich bin ich nun, obwohl meine Nerven, nach denen Sie sich liebenswürdigst er-<pb n="4"/> kundigen, das Leben oft sehr schwer machen!</p>
+            <p>Sie haben Recht sich über meine Mezzo-phantasterei<note n="4" place="foot" type="editorial">Vgl. die Postkarte Heyses vom 23.7.1887, Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.4642">03-04719</ref>.</note> zu amüsiren und damit Sie das noch gründlicher thun können, schicke ich Ihnen unter Kreuzband ein freches poetisches Attentat von mir auf die Sprache der Troubadours, d.h. der modernen.<note n="5" place="foot" type="editorial">Dem Brief liegt das fünf Seiten umfassende Exemplar der Zeitschrift <hi rend="unknown" rendition="#none">
 ZOU!</hi> Jg. 2, Nr. 26, 1.6.1887, bei, in der auf S. 4 über Schuchardts Besuch berichtet und sein neuprovenzalisches Gedicht abgedruckt wird. Im Folgenden werden nur die Schuchardt betreffenden Passagen mitgeteilt; vgl. aber auch Anm. 1 zu Lfd. Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.4641">
 02-04718</ref>.</note>
-        </p>
-
-        <p>Ob ich etwas über meine baskischen Erlebnisse und Erfahrungen schreiben werde? Ich möchte wohl, aber ich glaube kaum. Meine Feder ist immer schwerer in Bewegung zu setzen, und ich bin ein schrecklicher <hi
-            rend="unknown" rendition="#none">
+            </p>
+            <p>Ob ich etwas über meine baskischen Erlebnisse und Erfahrungen schreiben werde? Ich möchte wohl, aber ich glaube kaum. Meine Feder ist immer schwerer in Bewegung zu setzen, und ich bin ein schrecklicher <hi rend="unknown" rendition="#none">
 cacadubi</hi>
-          <note n="6" place="foot" type="editorial">Vgl. <bibl>
+               <note n="6" place="foot" type="editorial">Vgl. <bibl>
 
-Michele Ponza da Cavour, <hi rend="unknown"
-            rendition="#none">Vocabolario piemontese-italiano</hi>
-, Turin 1830</bibl>, 220: „Cacapensieri, cacasodo“ (dt. etwa „Umstandskrämer“).</note>. Reisebeschreibungen geraten eigentlich nur anziehend wenn sie auf ganz oberflächlicher Beobachtung beruhen.<note
-            n="7" place="foot"
-              type="editorial">Erhalten sind jedoch die 25 Briefe Schuchardts an seine Mutter Malwine aus dem Jahr 1887, in denen er über seinen Aufenthalt im Baskenland berichtet (HSA, Lfd. Nr. <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2688">
+Michele Ponza da Cavour, <hi rend="unknown" rendition="#none">Vocabolario piemontese-italiano</hi>
+, Turin 1830</bibl>, 220: „Cacapensieri, cacasodo“ (dt. etwa „Umstandskrämer“).</note>. Reisebeschreibungen geraten eigentlich nur anziehend wenn sie auf ganz oberflächlicher Beobachtung beruhen.<note n="7" place="foot" type="editorial">Erhalten sind jedoch die 25 Briefe Schuchardts an seine Mutter Malwine aus dem Jahr 1887, in denen er über seinen Aufenthalt im Baskenland berichtet (HSA, Lfd. Nr. <ref target="https://gams.uni-graz.at/o:hsa.persons#P.2688">
 10320-10344</ref>).</note>
-        </p>
-        <closer>
-          <salute>Mit der Bitte mich Ihrer Frau Gemahlin bestens zu empfehlen</salute>
-          <lb/>
-          <salute>Ihr ganz ergebener</salute>
-          <lb/>
-          <signed>Hugo Schuchardt</signed>
-        </closer>
-      </div>
-      <div corresp="#L.4656" subtype="original" type="appendix" xml:lang="fr">
-        <p>ZOU!<lb/> JOURNAU DÓU MIEJOUR PAREISSÉNT LOU 1<hi rendition="#sup">é</hi> LOU 15.</p>
-        <p>UN AMI</p>
-
-        <p>Es emé plasé e‘ m’un grand interès qu’avèn segui quàsi pas à pas M. lou dóutour Hugo Schuchardt dins soun viage à travès noste Miejour. Es un baume de vèire de taus ome se coungousta à nòsti causo, quand tant d’arlèri eici se trufon bestiassamen, quand tant d’arlèri amount nous voudrien coumproumetre noun meus bestiassamen. Avèn deja di eiço e ié tournaren pas. Avèn di tambèn lou passage dóu savènt Austrian à Marsiho, à Maiano, a St-Roumié, i Baus, etc. Veici que, darrieramen s’es arresta á Mount-pelié ounte la souceta di <hi
-            rend="unknown" rendition="#none">Lengo roumano</hi> a tengu en soun ounour, souto la presidènci d M. Itier, une grando sesiho que reünissié peréu tóuti li felibre mount-pelieren.</p>
-        <p>Dins un discours francés di mai flame, l’eminènt lenguiste a gramacia si counfraire di <hi rend="unknown"
-            rendition="#none">Lengo roumano</hi> de l‘acuei simpati que ié fasien. Pièi, s’alengant en bono e puro lengo d’o, lou noble estrangié, que dins quàuqui jour a aprés noste parla, a douna ‘n salut calourènt i felibre e à la lengo <hi
-            rend="unknown" rendition="#none">esbrihaudanto </hi>dóu Miejour. L’auditori meraviha l‘ a respoundu pèr uno trounadisso d’aplaudimen.</p>
-        <p>M. lou dóutour Schuchardt quitavo Mount-pelié lou 9 de mai e lou felibre Arnavielo<note n="8" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1051">Albert Arnavielle (Arnavielo; 1844-1927)</persName>, neuprovenzalischer Dichter und Journalist, Majoral du Félibrige; vgl. seine Korrespondenz mit Schuchardt (Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.persons#P.1051">00168-00169</ref>).</note> i‘ a di, à la garo, aquésti vers:</p>
-        <p>Liuen de toun Muhr(l) e de toun Aup nourico,</p>
-        <p>Illustrissime, à travès l’univers</p>
-        <p>T’en vas bouscant lous dialèites divers,</p>
-        <p>Que de secrèts per tu n’an plus lèu brico.</p>
-        <p>Mès t’a sembla mai que bello entre tant,</p>
-        <p>En l’ausiguent, la lengo de Prouvènço:</p>
-        <p>Coumo un segound parla de ta jouvènço,</p>
-        <p>Elo a passa sus ta bouco en cantant.</p>
-        <p>Sara tambè ta segoundo patrìo</p>
-        <p>Nostre païs, d’abord que sèn d’acord</p>
-        <p>E nosto lengo es la lengo dau cor,</p>
-        <p>Quand te parlan, o felibre d’Austrio!</p>
-        <p>De Toulouso, lou felibre d’Austrio mandavo aquesto responso:</p>
-        <p>AU FELIBRE ARNAVIELO</p>
-        <p>Lies èrso fièro au soufle dóu mistrau,</p>
-        <p>Contro lou pèd dis Aupiho aubourado,</p>
-        <p>An escampa si pu siàvis oundado</p>
-        <p>Enjusqu’au bout dis Aup óurientau.</p>
-        <p>Mounte es moun Graz. – Ardènt desir m’a pres</p>
-        <p>De saboura lis auro de Prouvènço.</p>
-        <p>O, m’an rendu l’avardio jouvènço,</p>
-        <p>E m’a sembla qu’èro eicito moun brès.</p>
-        <p>Quete esprit sant calè sus iéu alor</p>
-        <p>Que bretounère is ami moun arengo?</p>
-        <p>Belèu lo bouco óublido vosto lengo;</p>
-        <p>Rèsto, pamens, gravado au founs dóu cor.</p>
-        <p>Dr. H. Schuchardt</p>
-        <p>Mandan tóuti nòsti felicitacioun emè nòsti gramaci à-n-aquéu nouvèl ami e ié cirdan: bon viage e au revèire!</p>
-        <p>Louis ASTRUC<note n="9" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">ZOU!</hi> Jg. 2, Nr. 26, 1.6.1887, 4. Das HSA, Werk Nr. 198, weist in <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.536">
-                <hi rend="unknown" rendition="#none">Les Tablettes d'Alais</hi>
-              </ref>, 21. Mai 1887</bibl>, den beschreibenden Text in Neufranzösisch und die beiden Gedichte in Neuprovenzalisch (mit leichten Varianten) nach.</note>
-        </p>
-        <p>T’en vas bouscant lous dialèites divers,</p>
-        <p>Que de secrèts per tu n’an plus lèu brico.</p>
-        <p>Mès t’a sembla mai que bello entre tant,</p>
-        <p>En l’ausiguent, la lengo de Prouvènço:</p>
-        <p>Coumo un segound parla de ta jouvènço,</p>
-        <p>Elo a passa sus ta bouco en cantant.</p>
-        <p>Sara tambè ta segoundo patrìo</p>
-        <p>Nostre païs, d’abord que sèn d’acord</p>
-        <p>E nosto lengo es la lengo dau cor,</p>
-        <p>Quand te parlan, o felibre d’Austrio!</p>
-        <p>De Toulouso, lou felibre d’Austrio mandavo aquesto responso:</p>
-        <p>AU FELIBRE ARNAVIELO</p>
-        <p>Lies èrso fièro au soufle dóu mistrau,</p>
-        <p>Contro lou pèd dis Aupiho aubourado,</p>
-        <p>An escampa si pu siàvis oundado</p>
-        <p>Enjusqu’au bout dis Aup óurientau.</p>
-        <p>Mounte es moun Graz. – Ardènt desir m’a pres</p>
-        <p>De saboura lis auro de Prouvènço.</p>
-        <p>O, m’an rendu l’avardio jouvènço,</p>
-        <p>E m’a sembla qu’èro eicito moun brès.</p>
-        <p>Quete esprit sant calè sus iéu alor</p>
-        <p>Que bretounère is ami moun arengo?</p>
-        <p>Belèu lo bouco óublido vosto lengo;</p>
-        <p>Rèsto, pamens, gravado au founs dóu cor.</p>
-        <p>Dr. H. Schuchardt</p>
-        <p>Mandan tóuti nòsti felicitacioun emè nòsti gramaci à-n-aquéu nouvèl ami e ié cirdan: bon viage e au revèire!</p>
-        <p> Louis ASTRUC<note n="10" place="foot" type="editorial">
-            <hi rend="unknown"
-              rendition="#none">ZOU!</hi> Jg. 2, Nr. 26, 1.6.1887, 4. Das HSA, Werk Nr. 198, weist in <hi rend="unknown" rendition="#none">Les Tablettes d'Alais</hi>, 21. Mai 1887, den beschreibenden Text in Neufranzösisch und die beiden Gedichte in Neuprovenzalisch (mit leichten Varianten) nach.</note>
-        </p>
-      </div>
-    </body>
-  </text>
+            </p>
+            <closer>
+               <salute>Mit der Bitte mich Ihrer Frau Gemahlin bestens zu empfehlen</salute>
+               <lb/>
+               <salute>Ihr ganz ergebener</salute>
+               <lb/>
+               <signed>Hugo Schuchardt</signed>
+            </closer>
+         </div>
+         <div corresp="#L.4656"
+              subtype="original"
+              type="appendix"
+              xml:lang="fr">
+            <p>ZOU!<lb/> JOURNAU DÓU MIEJOUR PAREISSÉNT LOU 1<hi rendition="#sup">é</hi> LOU 15.</p>
+            <p>UN AMI</p>
+            <p>Es emé plasé e‘ m’un grand interès qu’avèn segui quàsi pas à pas M. lou dóutour Hugo Schuchardt dins soun viage à travès noste Miejour. Es un baume de vèire de taus ome se coungousta à nòsti causo, quand tant d’arlèri eici se trufon bestiassamen, quand tant d’arlèri amount nous voudrien coumproumetre noun meus bestiassamen. Avèn deja di eiço e ié tournaren pas. Avèn di tambèn lou passage dóu savènt Austrian à Marsiho, à Maiano, a St-Roumié, i Baus, etc. Veici que, darrieramen s’es arresta á Mount-pelié ounte la souceta di <hi rend="unknown" rendition="#none">Lengo roumano</hi> a tengu en soun ounour, souto la presidènci d M. Itier, une grando sesiho que reünissié peréu tóuti li felibre mount-pelieren.</p>
+            <p>Dins un discours francés di mai flame, l’eminènt lenguiste a gramacia si counfraire di <hi rend="unknown" rendition="#none">Lengo roumano</hi> de l‘acuei simpati que ié fasien. Pièi, s’alengant en bono e puro lengo d’o, lou noble estrangié, que dins quàuqui jour a aprés noste parla, a douna ‘n salut calourènt i felibre e à la lengo <hi rend="unknown" rendition="#none">esbrihaudanto </hi>dóu Miejour. L’auditori meraviha l‘ a respoundu pèr uno trounadisso d’aplaudimen.</p>
+            <p>M. lou dóutour Schuchardt quitavo Mount-pelié lou 9 de mai e lou felibre Arnavielo<note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Albert Arnavielle (Arnavielo; 1844-1927)</persName>, neuprovenzalischer Dichter und Journalist, Majoral du Félibrige; vgl. seine Korrespondenz mit Schuchardt (Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.persons#P.1051">00168-00169</ref>).</note> i‘ a di, à la garo, aquésti vers:</p>
+            <p>Liuen de toun Muhr(l) e de toun Aup nourico,</p>
+            <p>Illustrissime, à travès l’univers</p>
+            <p>T’en vas bouscant lous dialèites divers,</p>
+            <p>Que de secrèts per tu n’an plus lèu brico.</p>
+            <p>Mès t’a sembla mai que bello entre tant,</p>
+            <p>En l’ausiguent, la lengo de Prouvènço:</p>
+            <p>Coumo un segound parla de ta jouvènço,</p>
+            <p>Elo a passa sus ta bouco en cantant.</p>
+            <p>Sara tambè ta segoundo patrìo</p>
+            <p>Nostre païs, d’abord que sèn d’acord</p>
+            <p>E nosto lengo es la lengo dau cor,</p>
+            <p>Quand te parlan, o felibre d’Austrio!</p>
+            <p>De Toulouso, lou felibre d’Austrio mandavo aquesto responso:</p>
+            <p>AU FELIBRE ARNAVIELO</p>
+            <p>Lies èrso fièro au soufle dóu mistrau,</p>
+            <p>Contro lou pèd dis Aupiho aubourado,</p>
+            <p>An escampa si pu siàvis oundado</p>
+            <p>Enjusqu’au bout dis Aup óurientau.</p>
+            <p>Mounte es moun Graz. – Ardènt desir m’a pres</p>
+            <p>De saboura lis auro de Prouvènço.</p>
+            <p>O, m’an rendu l’avardio jouvènço,</p>
+            <p>E m’a sembla qu’èro eicito moun brès.</p>
+            <p>Quete esprit sant calè sus iéu alor</p>
+            <p>Que bretounère is ami moun arengo?</p>
+            <p>Belèu lo bouco óublido vosto lengo;</p>
+            <p>Rèsto, pamens, gravado au founs dóu cor.</p>
+            <p>Dr. H. Schuchardt</p>
+            <p>Mandan tóuti nòsti felicitacioun emè nòsti gramaci à-n-aquéu nouvèl ami e ié cirdan: bon viage e au revèire!</p>
+            <p>Louis ASTRUC<note n="9" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">ZOU!</hi> Jg. 2, Nr. 26, 1.6.1887, 4. Das HSA, Werk Nr. 198, weist in <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.536">
+                        <hi rend="unknown" rendition="#none">Les Tablettes d'Alais</hi>
+                     </ref>, 21. Mai 1887</bibl>, den beschreibenden Text in Neufranzösisch und die beiden Gedichte in Neuprovenzalisch (mit leichten Varianten) nach.</note>
+            </p>
+            <p>T’en vas bouscant lous dialèites divers,</p>
+            <p>Que de secrèts per tu n’an plus lèu brico.</p>
+            <p>Mès t’a sembla mai que bello entre tant,</p>
+            <p>En l’ausiguent, la lengo de Prouvènço:</p>
+            <p>Coumo un segound parla de ta jouvènço,</p>
+            <p>Elo a passa sus ta bouco en cantant.</p>
+            <p>Sara tambè ta segoundo patrìo</p>
+            <p>Nostre païs, d’abord que sèn d’acord</p>
+            <p>E nosto lengo es la lengo dau cor,</p>
+            <p>Quand te parlan, o felibre d’Austrio!</p>
+            <p>De Toulouso, lou felibre d’Austrio mandavo aquesto responso:</p>
+            <p>AU FELIBRE ARNAVIELO</p>
+            <p>Lies èrso fièro au soufle dóu mistrau,</p>
+            <p>Contro lou pèd dis Aupiho aubourado,</p>
+            <p>An escampa si pu siàvis oundado</p>
+            <p>Enjusqu’au bout dis Aup óurientau.</p>
+            <p>Mounte es moun Graz. – Ardènt desir m’a pres</p>
+            <p>De saboura lis auro de Prouvènço.</p>
+            <p>O, m’an rendu l’avardio jouvènço,</p>
+            <p>E m’a sembla qu’èro eicito moun brès.</p>
+            <p>Quete esprit sant calè sus iéu alor</p>
+            <p>Que bretounère is ami moun arengo?</p>
+            <p>Belèu lo bouco óublido vosto lengo;</p>
+            <p>Rèsto, pamens, gravado au founs dóu cor.</p>
+            <p>Dr. H. Schuchardt</p>
+            <p>Mandan tóuti nòsti felicitacioun emè nòsti gramaci à-n-aquéu nouvèl ami e ié cirdan: bon viage e au revèire!</p>
+            <p> Louis ASTRUC<note n="10" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">ZOU!</hi> Jg. 2, Nr. 26, 1.6.1887, 4. Das HSA, Werk Nr. 198, weist in <hi rend="unknown" rendition="#none">Les Tablettes d'Alais</hi>, 21. Mai 1887, den beschreibenden Text in Neufranzösisch und die beiden Gedichte in Neuprovenzalisch (mit leichten Varianten) nach.</note>
+            </p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

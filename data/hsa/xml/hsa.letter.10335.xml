@@ -1,281 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Lajos Katona (147-05067_292)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/10335" type="PID">o:hsa.letter.10335</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">147-05067_292</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Ungarn</country>
-            <settlement>Budapest</settlement>
-            <repository ref="https://mta.hu/english/">Abteilung für Handschriften und Alte Bücher, Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften</repository>
-            <idno type="shelfmark">05067_292</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" ref="http://sws.geonames.org/2918752">Gotha</origPlace>
-              <origDate ana="dcterms:created" when="1890-03-25">1890-03-25</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2023">2023</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Lajos Katona</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1888"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.10335">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.81" key="#GID.1" ref="http://sws.geonames.org/2918752">Gotha</placeName>
-          <date when="1890-03-25">1890-03-25</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1888" ref="https://viaf.org/viaf/53140754">
-            <forename>Lajos</forename>
-            <surname>Katona</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Gotha</settlement>
-                <name ref="http://geonames.org/2918752" type="fcode:PPLA3">Gotha</name>
-                <location>
-                  <geo>10.70193,50.94823</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1888" type="context">
-                        Korrespondenz Hugo Schuchardt - Lajos Katona
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10335" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10335" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10335" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.10335" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung von: <ref target="https://mta.hu/english/">Bibliothek und Informationszentrum der Ungarischen Akademie der Wissenschaften, Abteilung für Handschriften und Alte Bücher</ref>.
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.10335" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>25.3.90.<lb/> Gotha, Gr. Siebleberstr. 33 </dateline>
-        <opener>Lieber Freund,</opener>
-        <p>Unter <hi rend="unknown"
-            rendition="#none">Substrat</hi> verstand ich irgend Etwas was dem Verleger eine genügende Vorstellung von dem Buch zu geben geeignet wäre, das er annehmen soll. Also zunächst einen Prospectus oder eine Inhaltsangabe, jedenfalls mit möglichst genauer Bestimmung des Umfangs. Dann allerdings vielleicht auch eine Probe des Ganzen, aber nur nicht die Uebersetzung der Einleitung, die, wenigstens meines Erachtens (und soviel ich sehe, denken Sie nicht anders) etwas umgearbeitet werden müsste. Ich wiederhole Ihnen dass soweit ich den Geschmack der Deutschen, Engländer, Franzosen kenne, möglichste Knappheit, selbst Trockenheit (vielleicht Eintheilung in Paragraphen) am zweckdienlichtesten [sic] sein würde; Dogmatismus wenigstens in der Form scheint mir auch empfehlenswerth, so dass also z. B. ein „man weiss noch nicht“ oder „man weiss noch nicht <pb
-            facs="#IMG.2"
-            n="2"/> sicher“ die Stelle von allen möglichen feinsinnigen und tiefeindringenden Problemerörterungen einzunehmen hätte. Simonyi’s Buch über die Ungarische Sprache<note
-            n="1" place="foot" type="editorial">Zsigmond Simonyi, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5020">Die ungarische Sprache: Geschichte und Charakteristik</ref>
-              </bibl>
-            </hi>, Strassburg: Trübner ; 1907, ungar. <hi rend="unknown"
-            rendition="#none">A magyar nyelv</hi>, Budapest 1889, 2 Bde. (A magyar tudományos akademia kőnyvkiadó-vállalata).</note> hat mir auch in seiner Anordnung sehr gefallen; die Zusammenstellung der Litteratur am Schlusse der einzelnen Kapitel ist sehr zu empfehlen. Es thut mir, beiläufig gesagt, sehr leid, dass ich noch nicht dazu gekommen bin das Buch anzuzeigen; ich hoffe, ich finde noch Zeit und Stimmung dazu.<note
-            n="2" place="foot" type="editorial">Nachweisbar ist allein Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.296">[Rez. von:] Simonyi, Zsigmond. Tüzetes magyar nyelvtan történelmi alapon. Ausführliche magyarische Grammatik auf geschichtlicher Grundlage. Unter Mitwirkung von J. Balassa. 1. Bd. Magyarische Lautlehre und Formenlehre</ref>
-            </bibl>“, <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.10335" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>25.3.90.<lb/> Gotha, Gr. Siebleberstr. 33 </dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Unter <hi rend="unknown" rendition="#none">Substrat</hi> verstand ich irgend Etwas was dem Verleger eine genügende Vorstellung von dem Buch zu geben geeignet wäre, das er annehmen soll. Also zunächst einen Prospectus oder eine Inhaltsangabe, jedenfalls mit möglichst genauer Bestimmung des Umfangs. Dann allerdings vielleicht auch eine Probe des Ganzen, aber nur nicht die Uebersetzung der Einleitung, die, wenigstens meines Erachtens (und soviel ich sehe, denken Sie nicht anders) etwas umgearbeitet werden müsste. Ich wiederhole Ihnen dass soweit ich den Geschmack der Deutschen, Engländer, Franzosen kenne, möglichste Knappheit, selbst Trockenheit (vielleicht Eintheilung in Paragraphen) am zweckdienlichtesten [sic] sein würde; Dogmatismus wenigstens in der Form scheint mir auch empfehlenswerth, so dass also z. B. ein „man weiss noch nicht“ oder „man weiss noch nicht <pb facs="#IMG.2" n="2"/> sicher“ die Stelle von allen möglichen feinsinnigen und tiefeindringenden Problemerörterungen einzunehmen hätte. Simonyi’s Buch über die Ungarische Sprache<note n="1" place="foot" type="editorial">Zsigmond Simonyi, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5020">Die ungarische Sprache: Geschichte und Charakteristik</ref>
+                     </bibl>
+                  </hi>, Strassburg: Trübner ; 1907, ungar. <hi rend="unknown" rendition="#none">A magyar nyelv</hi>, Budapest 1889, 2 Bde. (A magyar tudományos akademia kőnyvkiadó-vállalata).</note> hat mir auch in seiner Anordnung sehr gefallen; die Zusammenstellung der Litteratur am Schlusse der einzelnen Kapitel ist sehr zu empfehlen. Es thut mir, beiläufig gesagt, sehr leid, dass ich noch nicht dazu gekommen bin das Buch anzuzeigen; ich hoffe, ich finde noch Zeit und Stimmung dazu.<note n="2" place="foot" type="editorial">Nachweisbar ist allein Schuchardt, „<bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.296">[Rez. von:] Simonyi, Zsigmond. Tüzetes magyar nyelvtan történelmi alapon. Ausführliche magyarische Grammatik auf geschichtlicher Grundlage. Unter Mitwirkung von J. Balassa. 1. Bd. Magyarische Lautlehre und Formenlehre</ref>
+                  </bibl>“, <hi rend="unknown" rendition="#none">
 Literarisches Zentralblatt für Deutschland</hi> 46, 1895, 1840-1842.</note>
-        </p>
-
-        <p>Die Zahl Ihrer Mitbewerber ist doch unmöglich eine sehr grosse; ihre Qualität auch keine niederdrückende – warum also schreiben Sie so verzagt? Schaden thut der Versuch Ihnen doch nicht. Und ist denn <hi
-            rend="unknown" rendition="#none">die</hi> Persönlichkeit – es handelt <pb facs="#IMG.3"
-            n="3"/> sich wohl hier wie in den meisten derartigen Fällen um <hi rend="unknown" rendition="#none">eine</hi> bestimmte Persönlichkeit – welche den Ausschlag zu geben hat, Ihnen durchaus ungünstig gesinnt?</p>
-
-        <p>Was Sie über Ihre Influenza-Erkrankung sagen, lässt mich im Unklaren darüber ob es sich auf die schon früher erwähnte bezieht oder auf eine neue.<note
-            n="3" place="foot" type="editorial">Vgl. Ms <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.10333">5067/252</ref> (Graz, 13.1.1889).</note> Die unmittelbaren Folgen dieser Krankheit können allerdings sehr schwere sein, aber, soviel ich gehört habe, bleibt doch eine für die Lebenszeit dauernde ausgeschlossen. Meine Mama leidet an einer leichten Form der Influenza, und befindet sich leidlich – sie verlässt täglich auf einige Stunden <pb
-            facs="#IMG.4" n="4"/> das Bett; aber in ihrem Alter ist Nichts ohne Bedenken – „ein zitterndes Glück“.<note
-            n="4" place="foot"
-              type="editorial">Das Zitat wird dem libanesisch-US-amerikanischer Dichter <persName>
-Khalil Gibran</persName> (1883-1931) zugeschrieben, es muss jedoch noch eine andere Quelle geben! Man könnte an <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3494">Sully Prudhomme</persName> (1839-1907) denken, der in der Sammlung <hi
-              rend="unknown" rendition="#none">Les Vaines tendresses</hi> (1875) von „le bonheur tremblant qu’on ne sent pas deux fois“ spricht.</note>
-        </p>
-        <closer>
-          <salute>Mit den besten Wünschen für das Leibliche und Geistige Ihr ganz ergebener</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
+            </p>
+            <p>Die Zahl Ihrer Mitbewerber ist doch unmöglich eine sehr grosse; ihre Qualität auch keine niederdrückende – warum also schreiben Sie so verzagt? Schaden thut der Versuch Ihnen doch nicht. Und ist denn <hi rend="unknown" rendition="#none">die</hi> Persönlichkeit – es handelt <pb facs="#IMG.3" n="3"/> sich wohl hier wie in den meisten derartigen Fällen um <hi rend="unknown" rendition="#none">eine</hi> bestimmte Persönlichkeit – welche den Ausschlag zu geben hat, Ihnen durchaus ungünstig gesinnt?</p>
+            <p>Was Sie über Ihre Influenza-Erkrankung sagen, lässt mich im Unklaren darüber ob es sich auf die schon früher erwähnte bezieht oder auf eine neue.<note n="3" place="foot" type="editorial">Vgl. Ms <ref target="https://gams.uni-graz.at/o:hsa.letter.10333">5067/252</ref> (Graz, 13.1.1889).</note> Die unmittelbaren Folgen dieser Krankheit können allerdings sehr schwere sein, aber, soviel ich gehört habe, bleibt doch eine für die Lebenszeit dauernde ausgeschlossen. Meine Mama leidet an einer leichten Form der Influenza, und befindet sich leidlich – sie verlässt täglich auf einige Stunden <pb facs="#IMG.4" n="4"/> das Bett; aber in ihrem Alter ist Nichts ohne Bedenken – „ein zitterndes Glück“.<note n="4" place="foot" type="editorial">Das Zitat wird dem libanesisch-US-amerikanischer Dichter <persName>
+Khalil Gibran</persName> (1883-1931) zugeschrieben, es muss jedoch noch eine andere Quelle geben! Man könnte an <persName ref="[authorityLink]">Sully Prudhomme</persName> (1839-1907) denken, der in der Sammlung <hi rend="unknown" rendition="#none">Les Vaines tendresses</hi> (1875) von „le bonheur tremblant qu’on ne sent pas deux fois“ spricht.</note>
+            </p>
+            <closer>
+               <salute>Mit den besten Wünschen für das Leibliche und Geistige Ihr ganz ergebener</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">
 HSchuchardt</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Morgen werde ich hier Ihren berühmten Landsmann Sonnenthal<note n="5" place="foot" type="editorial">
-              <persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Morgen werde ich hier Ihren berühmten Landsmann Sonnenthal<note n="5" place="foot" type="editorial">
+                     <persName>
 Adolf Sonnenthal</persName> (1834-1900), bekannter österr.-ungar. Schauspieler.</note> zum ersten Male auf der Bühne sehen.</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

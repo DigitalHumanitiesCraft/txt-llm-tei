@@ -1,413 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Vitaliano Brunelli an Hugo Schuchardt (01-01419)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1217">
-            <forename>Vitaliano</forename>
-            <surname>Brunelli</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Birgit</forename>
-            <surname>Dorn</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2477" type="PID">o:hsa.letter.2477</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">01-01419</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">01419</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="it"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1217">
-                <forename>Vitaliano</forename>
-                <surname>Brunelli</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="13" unit="pages">13 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.329" ref="http://sws.geonames.org/3186952">Zadar</origPlace>
-              <origDate ana="dcterms:created" when="1883-12-27">1883-12-27</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Birgit</forename>
-              <surname>Dorn</surname>
-            </persName>
-          </author>
-          <date when="2015">2015</date>
-          <title>Die Korrespondenz zwischen Vitaliano Brunelli und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1217"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2477">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1217" ref="https://viaf.org/viaf/88799019">
-            <forename>Vitaliano</forename>
-            <surname>Brunelli</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.329" key="#GID.1" ref="http://sws.geonames.org/3186952">Zadar</placeName>
-          <date when="1883-12-27">1883-12-27</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Croatia</country>
-                <settlement>Zadar</settlement>
-                <name ref="http://geonames.org/3186952" type="fcode:PPLA">Zadar</name>
-                <location>
-                  <geo>15.22514,44.11578</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1217" type="context">
-                        Korrespondenz Vitaliano Brunelli - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4014" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">La Palestra</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4012" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rad Jugoslavenske akademije znanosti i umjetnosti</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.648" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachen auf dem Balkan</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4016" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Il Dalmata</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4017" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dubrovnik-cviet narodnog književstva</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3512" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachkontaktphänomene</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.993" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Entlehnung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3415" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Morphosyntax</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3801" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">phonolog. Prozesse / Lautentsprechungen / Korrelationen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.104" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachprobe</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4020" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Gleichnis vom verlorenen Sohn</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4436" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Slawische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3152" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Vergleichende Sprachwissenschaft</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.364" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienische Dialekte</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.860" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Italienisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.638" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Slawische Sprachen</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="it">Italienisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.11">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.12">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2477" xml:id="IMG.13">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2477" xml:lang="it">
-        <pb facs="#IMG.1" n="1"/>
-        <opener>Chiarissimo signor professore,</opener>
-
-        <p>Ricevuta la sua gentilissima del 18 m.c., mi sono dato subito la premura d’occuparmi delle questioni, di cui ella intende trattare. L’argomento non mi è nuovo, giacché da parecchi anni vado raccogliendo materiali intorno alla lingua italiana, che si parla in Dalmazia. Risalendo però i miei studi allo sviluppo storico dei dialetti italiani di questa provincia, ho preso le mosse dalla venuta degli slavi; e penso di scendere fino ai giorni nostri, prendendo per base i documenti storici latini ed italiani e la letteratura slava di questo paese. In questo senso ho già publicato qualche cosa nella “Palestra„<note
-            n="1" place="foot"
-              type="editorial">Brunelli war einer der Gründer der historisch-litterarischen Zeitschrift <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4014">
-              <hi rend="unknown" rendition="#none">La Palestra</hi>
-
-            </ref> (Cella, 1972). Diese erschien von 1878-82 (vgl. Tacconi, 1992: 499) Brunelli veröffentlichte darin einige historische (<bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.12" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.13" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2477" xml:lang="it">
+            <pb facs="#IMG.1" n="1"/>
+            <opener>Chiarissimo signor professore,</opener>
+            <p>Ricevuta la sua gentilissima del 18 m.c., mi sono dato subito la premura d’occuparmi delle questioni, di cui ella intende trattare. L’argomento non mi è nuovo, giacché da parecchi anni vado raccogliendo materiali intorno alla lingua italiana, che si parla in Dalmazia. Risalendo però i miei studi allo sviluppo storico dei dialetti italiani di questa provincia, ho preso le mosse dalla venuta degli slavi; e penso di scendere fino ai giorni nostri, prendendo per base i documenti storici latini ed italiani e la letteratura slava di questo paese. In questo senso ho già publicato qualche cosa nella “Palestra„<note n="1" place="foot" type="editorial">Brunelli war einer der Gründer der historisch-litterarischen Zeitschrift <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4014">
+                     <hi rend="unknown" rendition="#none">La Palestra</hi>
+                  </ref> (Cella, 1972). Diese erschien von 1878-82 (vgl. Tacconi, 1992: 499) Brunelli veröffentlichte darin einige historische (<bibl>
 
 Brunelli, 1879
 </bibl>) sowie philologische (<bibl>
 
 
 Brunelli, 1881
-</bibl>) Studien. </note> nel “Dalmata„<note
-            n="2" place="foot"
-              type="editorial">1886 gegründete und 1916 eingestellte dalmatische Zeitung, in Nachfolge der <hi
-              rend="unknown" rendition="#none">Voce Dalmata </hi>(1860-1863), war diese die Zeitschrift des <hi
-              rend="unknown"
-            rendition="#none">partito autonomo</hi> (vgl. Tacconi, 1992: 499). In dieser wurden von Brunelli zum Beispiel verschiedene politische Schriften publiziert (Brunelli, 1879, 1884) (vgl. Tacconi, 1992: 456).</note> giornali di Zara; ed in questo senso ha pure scritto qualche cosa il Dr. Rački<note
-            n="3" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4009">Franjo Rački</persName> (1828-1894), kroatischer Geistlicher und Historiker  (vgl. Ravlić, S. (Hg.). 2007, s.v.)</note> nel <hi
-            rend="unknown" rendition="#none">Rad</hi>
-          <note n="4" place="foot" type="editorial">Gemeint ist hier die Zeitschrift <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4012">
-              <hi rend="unknown" rendition="#none">Rad Jugoslavenske akademije znanosti i umjetnosti</hi>
-
-            </ref>. Veröffentlichung der Jugoslawischen bzw. ab 1991 der Kroatischen Akademie der Wissenschaften und Künste. (The Croatian Academy of Sciences and Arts in Photographs, 16.03.2011) Abrufbar unter <ref
-            target="http://dizbi.hazu.hr/?sitetext=107">
+</bibl>) Studien. </note> nel “Dalmata„<note n="2" place="foot" type="editorial">1886 gegründete und 1916 eingestellte dalmatische Zeitung, in Nachfolge der <hi rend="unknown" rendition="#none">Voce Dalmata </hi>(1860-1863), war diese die Zeitschrift des <hi rend="unknown" rendition="#none">partito autonomo</hi> (vgl. Tacconi, 1992: 499). In dieser wurden von Brunelli zum Beispiel verschiedene politische Schriften publiziert (Brunelli, 1879, 1884) (vgl. Tacconi, 1992: 456).</note> giornali di Zara; ed in questo senso ha pure scritto qualche cosa il Dr. Rački<note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Franjo Rački</persName> (1828-1894), kroatischer Geistlicher und Historiker  (vgl. Ravlić, S. (Hg.). 2007, s.v.)</note> nel <hi rend="unknown" rendition="#none">Rad</hi>
+               <note n="4" place="foot" type="editorial">Gemeint ist hier die Zeitschrift <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4012">
+                     <hi rend="unknown" rendition="#none">Rad Jugoslavenske akademije znanosti i umjetnosti</hi>
+                  </ref>. Veröffentlichung der Jugoslawischen bzw. ab 1991 der Kroatischen Akademie der Wissenschaften und Künste. (The Croatian Academy of Sciences and Arts in Photographs, 16.03.2011) Abrufbar unter <ref target="http://dizbi.hazu.hr/?sitetext=107">
 http://dizbi.hazu.hr/?sitetext=107</ref>. Gemeint ist hier wohl <bibl>
 
 Rački (1881)
-</bibl>.</note> di Zagabria. Se Lei ab<pb
-            facs="#IMG.2"
-            n="2"/>braccia pure nelle sue indagini il periodo delle origini, mi terrò fortunato di mandarle le poche cose, da me stampate, ed indicarle quel nr. del <hi
-            rend="unknown" rendition="#none">Rad, </hi>in cui si contiene l’articolo del Rački. </p>
-
-        <p>Se però le sue ricerche si limitano allo stato attuale della lingua, mi prendo la licenza di prevenirla che su tale argomento poco o nulla c’è di stampato. Intorno all’italiano, che si parla a Ragusa, ha scritto recentemente il prof. Zore<note
-            n="5" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.4013">Luka Zore</persName> (1846-1906), kroatischer Philologe. Er studierte <ref
-              target="https://gams.uni-graz.at/o:hsa.subjects#S.4436">Slawistik</ref> in <placeName>
+</bibl>.</note> di Zagabria. Se Lei ab<pb facs="#IMG.2" n="2"/>braccia pure nelle sue indagini il periodo delle origini, mi terrò fortunato di mandarle le poche cose, da me stampate, ed indicarle quel nr. del <hi rend="unknown" rendition="#none">Rad, </hi>in cui si contiene l’articolo del Rački. </p>
+            <p>Se però le sue ricerche si limitano allo stato attuale della lingua, mi prendo la licenza di prevenirla che su tale argomento poco o nulla c’è di stampato. Intorno all’italiano, che si parla a Ragusa, ha scritto recentemente il prof. Zore<note n="5" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Luka Zore</persName> (1846-1906), kroatischer Philologe. Er studierte <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4436">Slawistik</ref> in <placeName>
 Wien</placeName> und war Professor am Gymnasium von <placeName>
 Kotor</placeName> (vgl. Ravlić, S. (Hg.). 2009, s.v.). Eine Aufzählung seiner Veröffentlichungen in der Rad findet sich unter <ref target="katalog.hazu.hr/WebCGI.exe?Tip=traziJ&amp;srchfield=7&amp;searchdata=700%3A014280%20or%20701%3A014280%20or%20702%3A014280%20or%20600%3A014280&amp;Exact=NotE&amp;SelBase=1&amp;NaslovSF=Zore,%20Luka">
 http://katalog.hazu.hr/WebCGI.exe?Tip=traziJ&amp;srchfield=7&amp;searchdata=700%3A014280 or 701%3A014280 or 702%3A014280 or 600%3A014280&amp;Exact=NotE&amp;SelBase=1&amp;NaslovSF=Zore, Luka</ref>
-          </note> nel <hi rend="unknown" rendition="#none">Rad</hi> sopracitato<note n="6" place="foot"
-              type="editorial">Zu <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6021">
+               </note> nel <hi rend="unknown" rendition="#none">Rad</hi> sopracitato<note n="6" place="foot" type="editorial">Zu <placeName ref="[authorityLink]">
 Dubrovnik</placeName> finden sich zeitlich passend Zore (<bibl>
 
 
@@ -416,128 +92,79 @@ Dubrovnik</placeName> finden sich zeitlich passend Zore (<bibl>
 
 
 1884
-</bibl>). </note>, i volumi del quale potrò indicarle al bisogno. Di una specie di letteratura mista, italiana e slava ad un tempo, che ricorda gli antichi carti provenzali formati di versi latini e provenzali, ha trattato lo stesso prof. Zore nel <hi
-            rend="unknown" rendition="#none">Rad</hi>, e ne furono stampati molti saggi nel <hi rend="unknown" rendition="#none">
+</bibl>). </note>, i volumi del quale potrò indicarle al bisogno. Di una specie di letteratura mista, italiana e slava ad un tempo, che ricorda gli antichi carti provenzali formati di versi latini e provenzali, ha trattato lo stesso prof. Zore nel <hi rend="unknown" rendition="#none">Rad</hi>, e ne furono stampati molti saggi nel <hi rend="unknown" rendition="#none">
 Dubrovnik</hi>
-          <note n="7" place="foot" type="editorial">Gemeint scheint hier die nur drei Mal erschienene Zeitschrift <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4017">
-              <hi rend="unknown" rendition="#none">Dubrovnik-cviet narodnog književstva</hi>
-
-            </ref> (1849-1852) zu sein, in der antike Texte veröffentlicht wurden (Baklja, 04.08.2002).</note>, periodico che una volta usciva a Ragusa. Altre fonti paesane, pubblicate per le stampe, non sono a mia <pb
-            facs="#IMG.3" n="3"/> conoscenza.</p>
-        <p>Prima però di comunicarle, quanto ho finora raccolto su tale proposito, debbo sinceramente manifestarle che, come italiano, sono poco benevolo alle esagerazioni politico-religiose degli slavi in generale e dei croati in particolare, e che quindi in qualche mio giudizio potrei peccare di parzialità. Ad ogni modo le dichiaro apertamente la mia opinione su tutta questa questione linguistica.</p>
-
-        <p>Gli slavismi tra quelli, che parlano italiano in Dalmazia, sono di poco rilievo. E la ragione sta nella circostanza che, essendo sempre stata la popolazione italiana più colta della slava, ne venne per legge naturale che i meno colti subissero l’influenza dei più inciviliti e non viceversa. Per cui fino dai primi tempi abbiamo qui nello slavo, tanto parlato che scritto, un’infinità di italianismi; pochissimi slavismi all’incontro nel dialetto italiano. La letteratura slavo-dalmata <pb
-            facs="#IMG.4"
-            n="4"/> è stata sempre una copia della letteratura italiana fino al movimento nazionale, iniziato in questi ultimi anni. Laonde abbiamo nel quattrocento un periodo di poesia popolare religiosa colle inevitabili quartine monorime in allessandrini; abbiamo poi una lirica amorosa, che imita i petrarchisti italiani del cinquecento; abbiamo un’epica, che si tiene sulla falsariga dell’<persName ref="https://gams.uni-graz.at/o:hsa.persons#P.445">Ariosto</persName>
-          <note n="8" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.445">Ludovico Ariosto</persName> (1474-1533), italienischer, in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.6037">Reggio Emilia</placeName> geborener Poet (vgl. Torraca, 1929).</note> e del Tasso<note
-            n="9" place="foot" type="editorial">
-
-            <persName>
+               <note n="7" place="foot" type="editorial">Gemeint scheint hier die nur drei Mal erschienene Zeitschrift <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4017">
+                     <hi rend="unknown" rendition="#none">Dubrovnik-cviet narodnog književstva</hi>
+                  </ref> (1849-1852) zu sein, in der antike Texte veröffentlicht wurden (Baklja, 04.08.2002).</note>, periodico che una volta usciva a Ragusa. Altre fonti paesane, pubblicate per le stampe, non sono a mia <pb facs="#IMG.3" n="3"/> conoscenza.</p>
+            <p>Prima però di comunicarle, quanto ho finora raccolto su tale proposito, debbo sinceramente manifestarle che, come italiano, sono poco benevolo alle esagerazioni politico-religiose degli slavi in generale e dei croati in particolare, e che quindi in qualche mio giudizio potrei peccare di parzialità. Ad ogni modo le dichiaro apertamente la mia opinione su tutta questa questione linguistica.</p>
+            <p>Gli slavismi tra quelli, che parlano italiano in Dalmazia, sono di poco rilievo. E la ragione sta nella circostanza che, essendo sempre stata la popolazione italiana più colta della slava, ne venne per legge naturale che i meno colti subissero l’influenza dei più inciviliti e non viceversa. Per cui fino dai primi tempi abbiamo qui nello slavo, tanto parlato che scritto, un’infinità di italianismi; pochissimi slavismi all’incontro nel dialetto italiano. La letteratura slavo-dalmata <pb facs="#IMG.4" n="4"/> è stata sempre una copia della letteratura italiana fino al movimento nazionale, iniziato in questi ultimi anni. Laonde abbiamo nel quattrocento un periodo di poesia popolare religiosa colle inevitabili quartine monorime in allessandrini; abbiamo poi una lirica amorosa, che imita i petrarchisti italiani del cinquecento; abbiamo un’epica, che si tiene sulla falsariga dell’<persName ref="[authorityLink]">Ariosto</persName>
+               <note n="8" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Ludovico Ariosto</persName> (1474-1533), italienischer, in <placeName ref="[authorityLink]">Reggio Emilia</placeName> geborener Poet (vgl. Torraca, 1929).</note> e del Tasso<note n="9" place="foot" type="editorial">
+                  <persName>
 Torquato Tasso</persName> (1544-1595), italienischer Poet des <placeName>
 
-Cinquecento</placeName> (vgl. Afribo, 2011).</note>; abbiamo una drammatica, che prende i suoi soggetti dagli episodi dell’Orlando Furioso<note
-            n="10" place="foot" type="editorial">Ritterepos verfasst als Lebenswerk von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.445">
+Cinquecento</placeName> (vgl. Afribo, 2011).</note>; abbiamo una drammatica, che prende i suoi soggetti dagli episodi dell’Orlando Furioso<note n="10" place="foot" type="editorial">Ritterepos verfasst als Lebenswerk von <persName ref="[authorityLink]">
 Ludovico Ariosto</persName>, wurde 1532 in seiner definitiven Version in Ferrara veröffentlicht (vgl. Grandi, 1989: 505).</note>, e che mette in scena personaggi che parlano vari dialetti, come le comedie italiane improvisate – e così via.</p>
-
-        <p>Circa poi agli spropositi, che possono fare gli slavi, parlando e scrivendo italiano, credo si possano stabilire pochissime leggi generali, ma essere la cosa del tutto soggettiva e dipendente dall’indole e dal criterio dell’individuo di nazionalità slava, che si sforza di parlare e scrivere italiano. Anche i <pb
-            facs="#IMG.5" n="5"/> nostri giornali, come quelli umoristici di Trieste, stampano talvolta dei dialoghi in cattivo italiano; ma queste pubblicazioni, anziché corrispondere alla realtà, sono parto della fantasia dell’articolista.</p>
-
-        <p>La maggior parte delle parole slave, adoperate nel dialetto italiano, appartengono all’agricoltura ed alla vita rustica, esercitata fino dal medio evo dalla popolazione slava della campagna. Nello slavo all’incontro passarono tutti i nomi italiani, spettanti alle arti ed ai mestieri, alle suppellettili di casa, agli utensili ecc. ecc. Bene inteso che tanto le voci della prima specie quanto quelle della seconda, passando da un campo linguistico all’altro, subirono delle modificazioni fonetiche, secondo l’indole del linguaggio, di cui entravano a far parte. Da notarsi che qui io parlo del dialetto italiano e slavo parlate dal popolo; giacché nella lingua letteraria, se pure c’è qualche asprezza dal lato della sintassi, gli slavismi <pb
-            facs="#IMG.6" n="6"/> e gli italianismi si evitano affatto nella scelta del vocabolo. Una raccolta sistematica di tali parole io l’ho fatta sinora per la lettera A; per le altre lettere del vocabolario posseggo appena degli appunti, non ancora completamente ordinati. Se di questo mio lavoro lessicale vorrà avere un saggio, prego di farmene avvertito, ché mi terrò onorato di sottoporlo alla di lei critica intelligente.</p>
-
-        <p>Rispetto poi alla sintassi, le confesso che non mi ci sono occupato di proposito. Ad ogni modo nella mia qualità di professore di lingua italiana in questo ginnasio, nel correggere i temi degli scolari di nazionalità slava, m’imbatto più di frequente nei seguenti errori. Nel periodo ipotetico si scambia assai facilmente l’impef. cong. col condizionale – coi verbi riflessivi si usa per tutte le persone, ma specialmente per la I pl. il pron. <hi
-            rend="unknown"
-            rendition="#none">se</hi> – l’articolo determinato è adoperato a sproposito – nella dipendenza vicendevole dei tempi <pb
-            facs="#IMG.7"
-            n="7"/> (consecutio temporum), manca il concetto del trapass. impf. e perf., in luogo dei quali comparisce il perf. def. – grande difficoltà dell’uso del cong. nelle proposizioni relative – l’impf. indicativo adoperato spesso in luogo del perf. def. – il pronome <hi
-            rend="unknown" rendition="#none">suo </hi>usato in luogo di <hi rend="unknown" rendition="#none">loro</hi>. Altri errori pel momento non mi ricorrono alla memoria; ma se lei mi darà del tempo, potrò notarne degli altri ed illustrarli con passi, presi dagli stessi temi dei miei scolari. </p>
-
-        <p>Circa alle questioni particolari, propostemi nella sua graditissima, e precisamente circa alla pronuncia della <hi
-            rend="unknown" rendition="#none">z</hi> e della <hi rend="unknown"
-            rendition="#none">s</hi>, osservo quanto segue. A Zara in molte parole <hi rend="unknown"
-            rendition="#none">z</hi> è eguale a <hi rend="unknown" rendition="#none">ž</hi>, cioè a <hi rend="unknown"
-            rendition="#none">z</hi> dolce; non credo però che ciò sia sempre avvenuto per influenza dello slavo, essendovi la stessa pronuncia anche nel dialetto veneto. In città si pronuncia <hi
-            rend="unknown" rendition="#none">Zara</hi> e <hi rend="unknown" rendition="#none">
+            <p>Circa poi agli spropositi, che possono fare gli slavi, parlando e scrivendo italiano, credo si possano stabilire pochissime leggi generali, ma essere la cosa del tutto soggettiva e dipendente dall’indole e dal criterio dell’individuo di nazionalità slava, che si sforza di parlare e scrivere italiano. Anche i <pb facs="#IMG.5" n="5"/> nostri giornali, come quelli umoristici di Trieste, stampano talvolta dei dialoghi in cattivo italiano; ma queste pubblicazioni, anziché corrispondere alla realtà, sono parto della fantasia dell’articolista.</p>
+            <p>La maggior parte delle parole slave, adoperate nel dialetto italiano, appartengono all’agricoltura ed alla vita rustica, esercitata fino dal medio evo dalla popolazione slava della campagna. Nello slavo all’incontro passarono tutti i nomi italiani, spettanti alle arti ed ai mestieri, alle suppellettili di casa, agli utensili ecc. ecc. Bene inteso che tanto le voci della prima specie quanto quelle della seconda, passando da un campo linguistico all’altro, subirono delle modificazioni fonetiche, secondo l’indole del linguaggio, di cui entravano a far parte. Da notarsi che qui io parlo del dialetto italiano e slavo parlate dal popolo; giacché nella lingua letteraria, se pure c’è qualche asprezza dal lato della sintassi, gli slavismi <pb facs="#IMG.6" n="6"/> e gli italianismi si evitano affatto nella scelta del vocabolo. Una raccolta sistematica di tali parole io l’ho fatta sinora per la lettera A; per le altre lettere del vocabolario posseggo appena degli appunti, non ancora completamente ordinati. Se di questo mio lavoro lessicale vorrà avere un saggio, prego di farmene avvertito, ché mi terrò onorato di sottoporlo alla di lei critica intelligente.</p>
+            <p>Rispetto poi alla sintassi, le confesso che non mi ci sono occupato di proposito. Ad ogni modo nella mia qualità di professore di lingua italiana in questo ginnasio, nel correggere i temi degli scolari di nazionalità slava, m’imbatto più di frequente nei seguenti errori. Nel periodo ipotetico si scambia assai facilmente l’impef. cong. col condizionale – coi verbi riflessivi si usa per tutte le persone, ma specialmente per la I pl. il pron. <hi rend="unknown" rendition="#none">se</hi> – l’articolo determinato è adoperato a sproposito – nella dipendenza vicendevole dei tempi <pb facs="#IMG.7" n="7"/> (consecutio temporum), manca il concetto del trapass. impf. e perf., in luogo dei quali comparisce il perf. def. – grande difficoltà dell’uso del cong. nelle proposizioni relative – l’impf. indicativo adoperato spesso in luogo del perf. def. – il pronome <hi rend="unknown" rendition="#none">suo </hi>usato in luogo di <hi rend="unknown" rendition="#none">loro</hi>. Altri errori pel momento non mi ricorrono alla memoria; ma se lei mi darà del tempo, potrò notarne degli altri ed illustrarli con passi, presi dagli stessi temi dei miei scolari. </p>
+            <p>Circa alle questioni particolari, propostemi nella sua graditissima, e precisamente circa alla pronuncia della <hi rend="unknown" rendition="#none">z</hi> e della <hi rend="unknown" rendition="#none">s</hi>, osservo quanto segue. A Zara in molte parole <hi rend="unknown" rendition="#none">z</hi> è eguale a <hi rend="unknown" rendition="#none">ž</hi>, cioè a <hi rend="unknown" rendition="#none">z</hi> dolce; non credo però che ciò sia sempre avvenuto per influenza dello slavo, essendovi la stessa pronuncia anche nel dialetto veneto. In città si pronuncia <hi rend="unknown" rendition="#none">Zara</hi> e <hi rend="unknown" rendition="#none">
 Ž</hi>
-          <hi rend="unknown" rendition="#none">ara</hi> – <hi rend="unknown" rendition="#none">sorzo</hi> e <hi
-            rend="unknown" rendition="#none">soržo</hi>, ma non šoržo. Certo che i contadini, parlando italia<pb
-            facs="#IMG.8" n="8"/>no dicono p.e<hi rend="unknown" rendition="#none">. bona šera, šiora Cate</hi>! <hi
-            rend="unknown" rendition="#none">Ozbórmine</hi> è una parola, che qui non l’ho mai intesa. <hi
-            rend="unknown" rendition="#none">Šiba</hi> non si sente, bensì tra la plebe in tuono burlesco la frase: <hi
-            rend="unknown" rendition="#none">el g’ha ciapà le sibize (ma no: šibize)</hi> = <hi rend="unknown"
-            rendition="#none">ha avuto delle bastonate</hi>. <hi rend="unknown"
-            rendition="#none">G</hi> seguita da vocale, quando si trova in principio di parola, si muta spesso in j; ma s’ode anche la pronuncia colla <hi
-            rend="unknown" rendition="#none">g</hi> e colla <hi rend="unknown"
-            rendition="#none">z</hi> p.e. : giustižia = zustižia = justižia. La forma <hi rend="unknown"
-            rendition="#none">piaja</hi> da noi non esiste, bensi <hi rend="unknown"
-            rendition="#none">spiaza</hi> (= spiaggia). Da notarsi però che questo g mutato in j è proprio degli isolani e viene deriso dagli abitanti delle città littorane. Ricordo un mio vecchio professore, nativo di Pago che parlava così: <hi
-            rend="unknown"
-            rendition="#none">voi, Paolo, lejete alla pajina 24 dell’Antologjia</hi>! Ad ogni modo questo j, specialmente iniziale, è abbastanza diffuso; ed in ciò il nostro dialetto differisce essenzialmente dal veneto. Noi diciamo: jazzo = giazzo (ghiaccio) – jera = gera (era) – jozza = giozza (goccia) – ma ležiero = leggiero- <pb
-            facs="#IMG.9" n="9"/> lezè = leggete, perché la g si trova in mezzo di parola. </p>
+               <hi rend="unknown" rendition="#none">ara</hi> – <hi rend="unknown" rendition="#none">sorzo</hi> e <hi rend="unknown" rendition="#none">soržo</hi>, ma non šoržo. Certo che i contadini, parlando italia<pb facs="#IMG.8" n="8"/>no dicono p.e<hi rend="unknown" rendition="#none">. bona šera, šiora Cate</hi>! <hi rend="unknown" rendition="#none">Ozbórmine</hi> è una parola, che qui non l’ho mai intesa. <hi rend="unknown" rendition="#none">Šiba</hi> non si sente, bensì tra la plebe in tuono burlesco la frase: <hi rend="unknown" rendition="#none">el g’ha ciapà le sibize (ma no: šibize)</hi> = <hi rend="unknown" rendition="#none">ha avuto delle bastonate</hi>. <hi rend="unknown" rendition="#none">G</hi> seguita da vocale, quando si trova in principio di parola, si muta spesso in j; ma s’ode anche la pronuncia colla <hi rend="unknown" rendition="#none">g</hi> e colla <hi rend="unknown" rendition="#none">z</hi> p.e. : giustižia = zustižia = justižia. La forma <hi rend="unknown" rendition="#none">piaja</hi> da noi non esiste, bensi <hi rend="unknown" rendition="#none">spiaza</hi> (= spiaggia). Da notarsi però che questo g mutato in j è proprio degli isolani e viene deriso dagli abitanti delle città littorane. Ricordo un mio vecchio professore, nativo di Pago che parlava così: <hi rend="unknown" rendition="#none">voi, Paolo, lejete alla pajina 24 dell’Antologjia</hi>! Ad ogni modo questo j, specialmente iniziale, è abbastanza diffuso; ed in ciò il nostro dialetto differisce essenzialmente dal veneto. Noi diciamo: jazzo = giazzo (ghiaccio) – jera = gera (era) – jozza = giozza (goccia) – ma ležiero = leggiero- <pb facs="#IMG.9" n="9"/> lezè = leggete, perché la g si trova in mezzo di parola. </p>
+            <p>Chiudo per oggi questa mia, dichiarandomi pronto a servirla colle mie deboli forze in tutte quelle quistioni, ch’ella vorrà propormi. Se poi avessi peccato un po’ di saccenteria, voglia essermi indulgente e farmi fare la penitenza, imponendomi in una prossima sua qualche quesito speciale che io, per quanto starà in me, cercherò di sciogliere con ogni premura. A darle un saggio del dialetto italiano di Zara, le mando intanto <hi rend="unknown" rendition="#none">la parabola del figliuol prodigo</hi>
+               <note n="11" place="foot" type="editorial">Der betreffende Anhang ist allerdings im Archiv in Brief 1420 enthalten.</note>, che (come ha fatto il Biondelli<note n="12" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Bernardino Biondelli</persName> (1804-1886), italienischer Linguist, beschäftigte sich mit den Sprachen der Ureinwohner Amerikas (
 
-        <p>Chiudo per oggi questa mia, dichiarandomi pronto a servirla colle mie deboli forze in tutte quelle quistioni, ch’ella vorrà propormi. Se poi avessi peccato un po’ di saccenteria, voglia essermi indulgente e farmi fare la penitenza, imponendomi in una prossima sua qualche quesito speciale che io, per quanto starà in me, cercherò di sciogliere con ogni premura. A darle un saggio del dialetto italiano di Zara, le mando intanto <hi
-            rend="unknown" rendition="#none">la parabola del figliuol prodigo</hi>
-          <note n="11" place="foot"
-            type="editorial">Der betreffende Anhang ist allerdings im Archiv in Brief 1420 enthalten.</note>, che (come ha fatto il Biondelli<note
-            n="12" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3089">Bernardino Biondelli</persName> (1804-1886), italienischer Linguist, beschäftigte sich mit den Sprachen der Ureinwohner Amerikas (
-
-Aztekisch), <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3152">Vergleichender Sprachwissenschaft</ref> sowie verschiedenen italienischen Dialekten (vgl. De Mauro, 1968).</note> per i dialetti gallo-italici<note
-            n="13" place="foot" type="editorial">Gemeint ist hier wohl <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1990">Biondelli (1853)</ref>
-            </bibl> abrufbar unter <ref target="http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10587940_00005.html">
+Aztekisch), <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3152">Vergleichender Sprachwissenschaft</ref> sowie verschiedenen italienischen Dialekten (vgl. De Mauro, 1968).</note> per i dialetti gallo-italici<note n="13" place="foot" type="editorial">Gemeint ist hier wohl <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1990">Biondelli (1853)</ref>
+                  </bibl> abrufbar unter <ref target="http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10587940_00005.html">
 http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10587940_00005.html</ref>.</note>) ho voltato nel vernacolo zaratino. </p>
-        <closer>
-          <salute>Con stima perfetta e considerazione</salute>
-          <lb/>
-          <salute>suo devot</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1217">Vit. Brunelli</persName>
-          </signed>
-        </closer>
-        <dateline>Zara, 27 dec. 1889. </dateline>
-      </div>
-      <div corresp="#L.2477" subtype="original" type="appendix" xml:lang="it">
-        <pb facs="#IMG.10" n="10"/>
-        <p>
-          <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4020">La parabola del figliuol prodigo</ref>
-        </p>
-        <p>(dial. italiano di Zara)</p>
-        <p>11. Ghe iera un omo, che g’aveva do fioi.</p>
-        <p>12. E el più picolo ghe dise un giorno a Su pare: papà, dame la parte che me toca. E el pare g’ha spartío la sua roba.</p>
-        <p>13. E dopo qualche <hi rend="unknown" rendition="#none">jorno</hi> el fio più picolo co la sua roba el xe andà in t’un logo lontan, e fraiando el se g’ha fatto fora tuto.</p>
-        <p>14. E co’l se g’aveva magnà tuto, xe capitada in quel paese una gran carestia; e lu no’l g’aveva cossa magnar.</p>
-        <p>15. E el xe andà da un omo de quel paese, che lo g’ha mandà a pascolar i porchi.</p>
-
-        <p>16. E el g’avaria avudo piazér d’impegnirse la panza co le giande, che magnava i porchi; ma nissun ghe ne dava.<pb
-            facs="#IMG.11" n="11"/>
-        </p>
-        <p>17. E alora el g’ha pensà su e el g’ha dito tra lu e lu: quanti lavoranti de mio pare i magna pan a ufo, e mi qua crepo de fame.</p>
-        <p>18. Tolarò su e andarò da mio pare e ghe dirò: papà, la g’ho fata grossa contra Dio e contra de vu:</p>
-        <p>19. No merito più che me ciamè vostro fio; trateme come uno dei vostri lavoranti;</p>
-        <p>20. E cussi e se g’ha lavà e el xe andà da so pare; e su pare lo g’ha visto da lontan e el g’ha fato pecà; el ghe xe vegnù incontra a corendo, el g’ha butà i brazzi al collo e el lo g’ha basà.</p>
-        <p>21. Ma el fio ghe dise: papà, la g’ho fata grossa contra Dio e contra de vu, e no merito più che me ciamè vostro fio.</p>
-        <p>22. Ma el pare dise ai sui servi: porté qua la più bela roba e vestilo, metéghe una vera in deo e le scarpe in t’ei pii; </p>
-        <pb facs="#IMG.12" n="12"/>
-        <p>23. Portè qua el vedelo più grasso, e mazzelo, e magnemo e stemo alegri;</p>
-        <p>24. Perché sto mio fio iera morto, e el xe ressussità; el se g’aveva perso, e el se g’ha trovà. E i se g’ha messo a far cucagna.</p>
-        <p>25. Ma el fio più grando iera in campagna; e co’l tornava, vizín a casa el g’ha sentù la musica e el balo.</p>
-        <p>26. E el g’ha domandà a un servo: cossa xe ste novità?</p>
-        <p>27. E lu g’ha dito: Xe venù tu fradelo, e tu pare g’ha fato mazzar el vedelo più grasso, perché el xe tornà san.</p>
-        <p>28. Ma lue el xe andà in tute le furie e no’l g’ha volesto andar a casa; e el padre xe vegnúo fora e el lo pregava che l’andasse drento.</p>
-        <p>29. Ma lu ghe g’ha risposto e el g’ha dito: Mi ve servo da tanti ani, e g’ho fato sempre <pb facs="#IMG.13" n="13"/> quelo che g’avè volesto vu; e mai no m’avè dà un cavreto, per magnarmelo coi mii amizi;</p>
-        <p>30. E co xe tornà sto vostro fio, che’l se g’ha magnà tuto el suo co le slandre, vu g’avè fato mazzar el videlo più grasso.</p>
-        <p>31. E lu g’ha risposto: fio mio, ti ti xe sta sempre co mi; e quel che xe mio, xe anca tuo;</p>
-        <p>32. Ma no se podeva far de manco de far un disnar e star alegri per sto tuo fradelo, che’l iera morto, e adesso el xe ressussità, che’l se iera perso, e adesso el se g’ha trovà. </p>
-      </div>
-    </body>
-  </text>
+            <closer>
+               <salute>Con stima perfetta e considerazione</salute>
+               <lb/>
+               <salute>suo devot</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Vit. Brunelli</persName>
+               </signed>
+            </closer>
+            <dateline>Zara, 27 dec. 1889. </dateline>
+         </div>
+         <div corresp="#L.2477"
+              subtype="original"
+              type="appendix"
+              xml:lang="it">
+            <pb facs="#IMG.10" n="10"/>
+            <p>
+               <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4020">La parabola del figliuol prodigo</ref>
+            </p>
+            <p>(dial. italiano di Zara)</p>
+            <p>11. Ghe iera un omo, che g’aveva do fioi.</p>
+            <p>12. E el più picolo ghe dise un giorno a Su pare: papà, dame la parte che me toca. E el pare g’ha spartío la sua roba.</p>
+            <p>13. E dopo qualche <hi rend="unknown" rendition="#none">jorno</hi> el fio più picolo co la sua roba el xe andà in t’un logo lontan, e fraiando el se g’ha fatto fora tuto.</p>
+            <p>14. E co’l se g’aveva magnà tuto, xe capitada in quel paese una gran carestia; e lu no’l g’aveva cossa magnar.</p>
+            <p>15. E el xe andà da un omo de quel paese, che lo g’ha mandà a pascolar i porchi.</p>
+            <p>16. E el g’avaria avudo piazér d’impegnirse la panza co le giande, che magnava i porchi; ma nissun ghe ne dava.<pb facs="#IMG.11" n="11"/>
+            </p>
+            <p>17. E alora el g’ha pensà su e el g’ha dito tra lu e lu: quanti lavoranti de mio pare i magna pan a ufo, e mi qua crepo de fame.</p>
+            <p>18. Tolarò su e andarò da mio pare e ghe dirò: papà, la g’ho fata grossa contra Dio e contra de vu:</p>
+            <p>19. No merito più che me ciamè vostro fio; trateme come uno dei vostri lavoranti;</p>
+            <p>20. E cussi e se g’ha lavà e el xe andà da so pare; e su pare lo g’ha visto da lontan e el g’ha fato pecà; el ghe xe vegnù incontra a corendo, el g’ha butà i brazzi al collo e el lo g’ha basà.</p>
+            <p>21. Ma el fio ghe dise: papà, la g’ho fata grossa contra Dio e contra de vu, e no merito più che me ciamè vostro fio.</p>
+            <p>22. Ma el pare dise ai sui servi: porté qua la più bela roba e vestilo, metéghe una vera in deo e le scarpe in t’ei pii; </p>
+            <pb facs="#IMG.12" n="12"/>
+            <p>23. Portè qua el vedelo più grasso, e mazzelo, e magnemo e stemo alegri;</p>
+            <p>24. Perché sto mio fio iera morto, e el xe ressussità; el se g’aveva perso, e el se g’ha trovà. E i se g’ha messo a far cucagna.</p>
+            <p>25. Ma el fio più grando iera in campagna; e co’l tornava, vizín a casa el g’ha sentù la musica e el balo.</p>
+            <p>26. E el g’ha domandà a un servo: cossa xe ste novità?</p>
+            <p>27. E lu g’ha dito: Xe venù tu fradelo, e tu pare g’ha fato mazzar el vedelo più grasso, perché el xe tornà san.</p>
+            <p>28. Ma lue el xe andà in tute le furie e no’l g’ha volesto andar a casa; e el padre xe vegnúo fora e el lo pregava che l’andasse drento.</p>
+            <p>29. Ma lu ghe g’ha risposto e el g’ha dito: Mi ve servo da tanti ani, e g’ho fato sempre <pb facs="#IMG.13" n="13"/> quelo che g’avè volesto vu; e mai no m’avè dà un cavreto, per magnarmelo coi mii amizi;</p>
+            <p>30. E co xe tornà sto vostro fio, che’l se g’ha magnà tuto el suo co le slandre, vu g’avè fato mazzar el videlo più grasso.</p>
+            <p>31. E lu g’ha risposto: fio mio, ti ti xe sta sempre co mi; e quel che xe mio, xe anca tuo;</p>
+            <p>32. Ma no se podeva far de manco de far un disnar e star alegri per sto tuo fradelo, che’l iera morto, e adesso el xe ressussità, che’l se iera perso, e adesso el se g’ha trovà. </p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

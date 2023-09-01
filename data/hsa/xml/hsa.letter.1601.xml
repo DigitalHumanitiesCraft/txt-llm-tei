@@ -1,309 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (31-10793)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/1601" type="PID">o:hsa.letter.1601</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">31-10793</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">10793</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="2" unit="pages">2 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" ref="http://sws.geonames.org/2761368">Wien</origPlace>
-              <origDate ana="dcterms:created" when="1916-09-07">1916-09-07</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.1601">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.97" key="#GID.1" ref="http://sws.geonames.org/2761368">Wien</placeName>
-          <date when="1916-09-07">1916-09-07</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <name ref="http://geonames.org/2761368" type="fcode:STM">Wien-Fluss</name>
-                <location>
-                  <geo>16.38409,48.2088</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.948" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsversand</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3974" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Zeitschrift für den deutschen Unterricht</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3976" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturempfehlung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3977" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Streffleur's Militär­blatt. Wochenausgabe mit den amtlichen Verordnungsblättern für die gesamte Wehrmacht Österreich-Ungarns</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3086" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Publikationsanfrage</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1601" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1601" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.1601" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Wien, 7. September, I. Spiegelg. 10</dateline>
-        <opener>Verehrter Herr Hofrat,</opener>
-
-        <p>Ihr Brief wurde mir vom Semmering mit der üblichen Bummelgeschwindigkeit von 3 Tagen zugestellt. Ihre Einwände gegen Marbe<note
-            n="1" place="foot" type="editorial">
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3973">Karl Marbe</persName> ist (zus. mit <persName>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.1601" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Wien, 7. September, I. Spiegelg. 10</dateline>
+            <opener>Verehrter Herr Hofrat,</opener>
+            <p>Ihr Brief wurde mir vom Semmering mit der üblichen Bummelgeschwindigkeit von 3 Tagen zugestellt. Ihre Einwände gegen Marbe<note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Karl Marbe</persName> ist (zus. mit <persName>
 Albert Thumb</persName>) Autor von <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4021">
-                <hi rend="unknown" rendition="#none">Experimentelle Untersuchungen über die psychologischen Grundlagen der sprachlichen Analogiebildung</hi>. Leipzig 1901</ref>
-            </bibl>. Schuchardt rezensierte diesen Text im <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.484">
-                <hi rend="unknown" rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 23 (1902): 393-400.</ref>
-            </bibl>
-          </note> berühren sich, wie ich glaube, mit den meinen: erinnern Sie sich an den Satz meines Briefes, in dem ich die Vernachlässigung der Unterschiedenheiten tadele. Die "Metaphysik" ist vielleicht von Marbe nicht gemeint: die Gleichf[örmigkeit] d[er] W[elt] soll kein Erklärungsprinzip, sondern selbst erst durch seine Kompilation bewiesen werden. Übrigens ist m.E. auch Ihr "elementarverwandt" etwas metaphysisch: es besagt doch 'Verwandtschaft wie die von Elementen, Urstoffen, die sich nicht mehr zerteilen lassen', nimmt also die weitere Unzerteilbarkeit von vornherein als gegeben an, einen dichten Nebel, den wir nicht durchdringen können.</p>
-        <p>Meine "Beziehungslehre" stellt sich in Gegensatz zu "Wortfügung", "Satzlehre", "Syntax" etc. – wo stets Wörter wie Bahnzüge verschoben werden, während es sich um die Geleise, die Weichen handelt, die begrifflichwortlich verlaufen.</p>
-
-        <p>Mit gleicher Post geht die Tobler-Besprechung an Sie ab. Darf ich Sie auf eine von O. Weise in Z. f. d. dt. Unterr. zitierte Abhandlg. von Joh. <hi
-            rend="unknown"
-            rendition="#none">Mink</hi>, Vorschläge für eine zukünftige Benennung der Fleischstücke vom Rind im Fleischergewerbe des deutschen Reichs Leipzig 1916, 66 S.<note
-            n="2" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4020"> Johannes Mink, <hi rend="unknown" rendition="#none">Vorschläge für eine zukünftige Benennung der Fleischstücke vom Rinde im Fleischergewerbe des Deutschen Reiches</hi>. Leipzig: Fleischerschule 1912.</ref>
-            </bibl>
-          </note> aufmerksam machen?</p>
-        <p>Vielleicht findet sich etwas zu der <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4021">
+                        <hi rend="unknown" rendition="#none">Experimentelle Untersuchungen über die psychologischen Grundlagen der sprachlichen Analogiebildung</hi>. Leipzig 1901</ref>
+                  </bibl>. Schuchardt rezensierte diesen Text im <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.484">
+                        <hi rend="unknown" rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 23 (1902): 393-400.</ref>
+                  </bibl>
+               </note> berühren sich, wie ich glaube, mit den meinen: erinnern Sie sich an den Satz meines Briefes, in dem ich die Vernachlässigung der Unterschiedenheiten tadele. Die "Metaphysik" ist vielleicht von Marbe nicht gemeint: die Gleichf[örmigkeit] d[er] W[elt] soll kein Erklärungsprinzip, sondern selbst erst durch seine Kompilation bewiesen werden. Übrigens ist m.E. auch Ihr "elementarverwandt" etwas metaphysisch: es besagt doch 'Verwandtschaft wie die von Elementen, Urstoffen, die sich nicht mehr zerteilen lassen', nimmt also die weitere Unzerteilbarkeit von vornherein als gegeben an, einen dichten Nebel, den wir nicht durchdringen können.</p>
+            <p>Meine "Beziehungslehre" stellt sich in Gegensatz zu "Wortfügung", "Satzlehre", "Syntax" etc. – wo stets Wörter wie Bahnzüge verschoben werden, während es sich um die Geleise, die Weichen handelt, die begrifflichwortlich verlaufen.</p>
+            <p>Mit gleicher Post geht die Tobler-Besprechung an Sie ab. Darf ich Sie auf eine von O. Weise in Z. f. d. dt. Unterr. zitierte Abhandlg. von Joh. <hi rend="unknown" rendition="#none">Mink</hi>, Vorschläge für eine zukünftige Benennung der Fleischstücke vom Rind im Fleischergewerbe des deutschen Reichs Leipzig 1916, 66 S.<note n="2" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4020"> Johannes Mink, <hi rend="unknown" rendition="#none">Vorschläge für eine zukünftige Benennung der Fleischstücke vom Rinde im Fleischergewerbe des Deutschen Reiches</hi>. Leipzig: Fleischerschule 1912.</ref>
+                  </bibl>
+               </note> aufmerksam machen?</p>
+            <p>Vielleicht findet sich etwas zu der <hi rend="unknown" rendition="#none">
 Milz</hi>
-          <note n="3" place="foot" type="editorial"> Schuchardt arbeitete wohl bereits an seiner Abhandlung <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.49">"Zu den romanischen Benennungen der Milz", in: <hi
-                  rend="unknown" rendition="#none">
+               <note n="3" place="foot" type="editorial"> Schuchardt arbeitete wohl bereits an seiner Abhandlung <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.49">"Zu den romanischen Benennungen der Milz", in: <hi rend="unknown" rendition="#none">
 Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften</hi> 8 (1917), 156-170</ref>
-            </bibl>; <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1237">Spitzer besprach diesen Text für das <hi
-                  rend="unknown" rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 9/10 (1917), 322-330.</ref>
-            </bibl>
-          </note> etc. Gehöriges?</p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>Streffleurs Militärblatt<note n="4" place="foot"
-              type="editorial"> Diese Zeitschrift, als Publikationsort für einen Sprachwissenschaftler eher überraschend, sei ihrer Ausnahmestellung halber zur Gänze angeführt: <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3977">
-              <hi rend="unknown" rendition="#none">Streffleur's Militärblatt. Wochenausgabe mit den amtlichen Verordnungsblättern für die gesamte Wehrmacht Österreich-Ungarns</hi>
-            </ref>. Wien: Seidel u. Sohn. Sie erschien von 1914 bis 1918.</note> liegt doch im jedem Kaffeehaus zur Benützung für avancementhungrige und -neidische Leutnanteln!</p>
-        <p>Nun eine Bitte: meine etwa 50 Maschinenschreibseiten starke (mit schlecht­geschriebenen Randglossen und Einschüben versehene) Abhandlung über Chamberlain und über die Sprachbewertung (Titel abänderbar) kann ich nir­gends unterbringen (vgl. beiliegende Absage Neumanns). Möchten Herr Hofrat sie nicht zu irgend einer Akademie oder zu einem Verleger hinaufprotegieren? Im Selbstverlag wird sie mir zu teuer kommen, außerdem ist die Verbreitungsmöglichkeit schwierig. Es ist doch traurig, daß man darum betteln muß, den Menschen Aufklärung zu spenden.</p>
-        <p>Driesch's Besprechung hat mir schon seit einigen Tagen Kollege <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1877">Kammerer</persName> versprochen.</p>
-        <closer>
-          <salute>Ergebenste Grüße!</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Bitte gelegentliches Nichtschreiben darauf zu schieben, daß ich 7 Tage schweren Dienst leiste!</p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                  </bibl>; <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1237">Spitzer besprach diesen Text für das <hi rend="unknown" rendition="#none">Literaturblatt für germanische und romanische Philologie</hi> 9/10 (1917), 322-330.</ref>
+                  </bibl>
+               </note> etc. Gehöriges?</p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>Streffleurs Militärblatt<note n="4" place="foot" type="editorial"> Diese Zeitschrift, als Publikationsort für einen Sprachwissenschaftler eher überraschend, sei ihrer Ausnahmestellung halber zur Gänze angeführt: <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3977">
+                     <hi rend="unknown" rendition="#none">Streffleur's Militärblatt. Wochenausgabe mit den amtlichen Verordnungsblättern für die gesamte Wehrmacht Österreich-Ungarns</hi>
+                  </ref>. Wien: Seidel u. Sohn. Sie erschien von 1914 bis 1918.</note> liegt doch im jedem Kaffeehaus zur Benützung für avancementhungrige und -neidische Leutnanteln!</p>
+            <p>Nun eine Bitte: meine etwa 50 Maschinenschreibseiten starke (mit schlecht­geschriebenen Randglossen und Einschüben versehene) Abhandlung über Chamberlain und über die Sprachbewertung (Titel abänderbar) kann ich nir­gends unterbringen (vgl. beiliegende Absage Neumanns). Möchten Herr Hofrat sie nicht zu irgend einer Akademie oder zu einem Verleger hinaufprotegieren? Im Selbstverlag wird sie mir zu teuer kommen, außerdem ist die Verbreitungsmöglichkeit schwierig. Es ist doch traurig, daß man darum betteln muß, den Menschen Aufklärung zu spenden.</p>
+            <p>Driesch's Besprechung hat mir schon seit einigen Tagen Kollege <persName ref="[authorityLink]">Kammerer</persName> versprochen.</p>
+            <closer>
+               <salute>Ergebenste Grüße!</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Bitte gelegentliches Nichtschreiben darauf zu schieben, daß ich 7 Tage schweren Dienst leiste!</p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

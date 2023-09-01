@@ -1,782 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Gustav Gröber an Hugo Schuchardt (059-04057)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1649">
-            <forename>Gustav</forename>
-            <surname>Gröber</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5900" type="PID">o:hsa.letter.5900</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">059-04057</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">04057</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1649">
-                <forename>Gustav</forename>
-                <surname>Gröber</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="12" unit="pages">12 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.778" ref="http://sws.geonames.org/2983344">Ruprechtsau</origPlace>
-              <origDate ana="dcterms:created" when="1886-03-27">1886-03-27</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Gustav Gröber und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1649"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5900">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1649" ref="https://viaf.org/viaf/107534006">
-            <forename>Gustav</forename>
-            <surname>Gröber</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.778" key="#GID.1" ref="http://sws.geonames.org/2983344">Ruprechtsau</placeName>
-          <date when="1886-03-27">1886-03-27</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>France</country>
-                <settlement>La Robertsau</settlement>
-                <name ref="http://geonames.org/2983344" type="fcode:PPLX">La Robertsau</name>
-                <location>
-                  <geo>7.78606,48.60663</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1649" type="context">
-                        Korrespondenz Gustav Gröber - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3190" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Grundriss der romanischen Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.430" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Junggrammatiker</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.993" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Entlehnung</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.477" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Etymologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.328" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Lautwandel</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.923" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Analogie (Sprachwandel)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3811" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">artikulatorische Phonetik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.507" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachen auf São Tomé und Principe</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.924" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Assimilation (Lautwandel)</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.167" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesisch (Philippinen)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.377" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Etruskisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.3168" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Toskanische Dialekte</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.10">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.11">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.5900" xml:id="IMG.12">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5900" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Ruprechtsau-Straßburg <hi rendition="#sup">i</hi>/E 27.3.86<lb/>[S. 1]<note n="1" place="foot" type="editorial">Gröber nummeriert diesmal die Vorderseiten eines Doppelbogens. Unsere ǀxxǀ-Zählung deckt sich damit nicht.</note>
-        </dateline>
-        <opener>Lieber Freund.</opener>
-
-        <p>Die kürzeste Art mich weiter mit Ihnen zu verständigen ist es wohl, wenn ich Punkt für Punkt Ihre Bemerkungen im beiliegenden Briefe (den ich Sie aber fr. bitte mir wieder zuzustellen)<note
-            n="2" place="foot" type="editorial">Gröber antwortet offenbar auf Schuchardts (nicht erhaltene) Bemerkungen zu einigen Bögen des 1. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.10" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.11" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.12" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5900" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Ruprechtsau-Straßburg <hi rendition="#sup">i</hi>/E 27.3.86<lb/>[S. 1]<note n="1" place="foot" type="editorial">Gröber nummeriert diesmal die Vorderseiten eines Doppelbogens. Unsere ǀxxǀ-Zählung deckt sich damit nicht.</note>
+            </dateline>
+            <opener>Lieber Freund.</opener>
+            <p>Die kürzeste Art mich weiter mit Ihnen zu verständigen ist es wohl, wenn ich Punkt für Punkt Ihre Bemerkungen im beiliegenden Briefe (den ich Sie aber fr. bitte mir wieder zuzustellen)<note n="2" place="foot" type="editorial">Gröber antwortet offenbar auf Schuchardts (nicht erhaltene) Bemerkungen zu einigen Bögen des 1. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
 Grundriss</ref>
-
-            </bibl>-Bandes, z.B. zu seinem Kapitel „Behandlung der „Quellen. A. Sprachwissenschaftliche Forschung. III. Genetische Sprachforschung“, 231f. die dieser vermutlich als Druckfahne erhielt. Die Anmerkungen Schuchardts auf der Rückseite, sind „Antworten“ auf Gröbers Brief, von denen einige am Rand von Gröber mit Bleistiftanmerkungen versehen wurden und wieder an Schuchardt zurückgingen; vgl. Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.5902">061-04059</ref>.</note> mit meiner Antwort versehe. Ich habe den Eindruck, daß wir in wichtigeren Dingen nicht auseinandergehen. Für eine Besprechung der Punkte, die uns zu trennen scheinen, in der Oeffentlichkeit läßt mir die Arbeit am „Grundriß“ (ich habe noch zwei größere Abschnitte auszuführen) schwerlich die Zeit; die private Discussion läßt sich überdies, wie ich glaube, mit größerer Aussicht auf Erreichung des gewünschten Zieles führen.</p>
-
-        <p>ad 1.] Die Sonderstellung, die ich den Wörtern mit accommodativem Lautwandel einräume, scheint sich mir nicht blos aus praktischen Rücksichten zu empfehlen, sondern weil mir dieser Lautwandel, der vom <hi
-            rend="unknown" rendition="#none">
+                  </bibl>-Bandes, z.B. zu seinem Kapitel „Behandlung der „Quellen. A. Sprachwissenschaftliche Forschung. III. Genetische Sprachforschung“, 231f. die dieser vermutlich als Druckfahne erhielt. Die Anmerkungen Schuchardts auf der Rückseite, sind „Antworten“ auf Gröbers Brief, von denen einige am Rand von Gröber mit Bleistiftanmerkungen versehen wurden und wieder an Schuchardt zurückgingen; vgl. Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.5902">061-04059</ref>.</note> mit meiner Antwort versehe. Ich habe den Eindruck, daß wir in wichtigeren Dingen nicht auseinandergehen. Für eine Besprechung der Punkte, die uns zu trennen scheinen, in der Oeffentlichkeit läßt mir die Arbeit am „Grundriß“ (ich habe noch zwei größere Abschnitte auszuführen) schwerlich die Zeit; die private Discussion läßt sich überdies, wie ich glaube, mit größerer Aussicht auf Erreichung des gewünschten Zieles führen.</p>
+            <p>ad 1.] Die Sonderstellung, die ich den Wörtern mit accommodativem Lautwandel einräume, scheint sich mir nicht blos aus praktischen Rücksichten zu empfehlen, sondern weil mir dieser Lautwandel, der vom <hi rend="unknown" rendition="#none">
 Sprachgefühl</hi> (S. S. 236)<note n="3" place="foot" type="editorial">Diese Seitenzahl stimmt nicht genau mit der der endgültigen überein; vom „(accomodativen) Lautwandel“ ist auf S. 243f. die Rede, vom „Sprachgefühl“ S. 235f. Es ist also möglich, daß die Nummerierung im endgültigen Druck noch geändert wurde! </note> bestimmt wird, eine besondre Art des Lautwandels dünkte.</p>
-        <p>2.] daß hnap als hanap aufgefaßt worden sei,<note n="4" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
-                <hi rend="unknown" rendition="#none">Grundriss</hi> I, 1888</ref>
-
-            </bibl>, Teil III, 385 („Romanische Sprachwissenschaft. Vorromanische Sprachen. Beziehungen zum Germanischen“; hier: Friedrich Kluge).</note> gebe ich als möglich zu im Hinblick auf krine franz. renc.<note
-            n="5" place="foot" type="editorial">Der Index zum <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
-                <hi rend="unknown" rendition="#none">Grundriss I</hi>
-              </ref>
-            </bibl> weist bei weitem nicht alle Einzelbegriffe, Etyma usw. nach!</note>
-        </p>
-        <p>3.] <hi rend="unknown" rendition="#none">timíde</hi> fasse auch ich als ein gelehrtes Wort, dessen <hi
-            rend="unknown" rendition="#none">Accentuirung</hi> das franz. <hi rend="unknown"
-            rendition="#none">Sprachgefühl</hi> vorschrieb; (hanap <hi rend="unknown"
-            rendition="#none">Fremdwort</hi>, wie <hi rend="unknown" rendition="#none">biftek</hi> = <hi rend="unknown"
-            rendition="#none">beefsteak</hi>; <hi rend="unknown"
-            rendition="#none">timide Lehnwort</hi>; ich beabsichtigte Beispiele <hi rend="unknown" rendition="#none">verschiedener</hi> Art anzuführen, an denen die gleiche Umbildungsweise sich beobachten ließ).</p>
-        <p>4.] daß der Italiener nicht einfach <hi rend="unknown"
-            rendition="#none">
+            <p>2.] daß hnap als hanap aufgefaßt worden sei,<note n="4" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
+                        <hi rend="unknown" rendition="#none">Grundriss</hi> I, 1888</ref>
+                  </bibl>, Teil III, 385 („Romanische Sprachwissenschaft. Vorromanische Sprachen. Beziehungen zum Germanischen“; hier: Friedrich Kluge).</note> gebe ich als möglich zu im Hinblick auf krine franz. renc.<note n="5" place="foot" type="editorial">Der Index zum <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
+                        <hi rend="unknown" rendition="#none">Grundriss I</hi>
+                     </ref>
+                  </bibl> weist bei weitem nicht alle Einzelbegriffe, Etyma usw. nach!</note>
+            </p>
+            <p>3.] <hi rend="unknown" rendition="#none">timíde</hi> fasse auch ich als ein gelehrtes Wort, dessen <hi rend="unknown" rendition="#none">Accentuirung</hi> das franz. <hi rend="unknown" rendition="#none">Sprachgefühl</hi> vorschrieb; (hanap <hi rend="unknown" rendition="#none">Fremdwort</hi>, wie <hi rend="unknown" rendition="#none">biftek</hi> = <hi rend="unknown" rendition="#none">beefsteak</hi>; <hi rend="unknown" rendition="#none">timide Lehnwort</hi>; ich beabsichtigte Beispiele <hi rend="unknown" rendition="#none">verschiedener</hi> Art anzuführen, an denen die gleiche Umbildungsweise sich beobachten ließ).</p>
+            <p>4.] daß der Italiener nicht einfach <hi rend="unknown" rendition="#none">
 Stuttgard</hi> nachsprach, lag am <hi rend="unknown" rendition="#none">
 Auslaut</hi>
-          <hi rend="unknown" rendition="#none">seiner</hi> Sprache, an der Gewöhnung, <hi rend="unknown"
-            rendition="#none">d</hi> nur im Inlaut zu sprechen. Daß er es <hi rend="unknown"
-            rendition="#none">durch</hi> Anfügung von <hi rend="unknown"
-            rendition="#none">ia</hi> sich accommodirte zeigt uns ein <hi rend="unknown"
-            rendition="#none">Mittel</hi> an, welches er anwandte um das <hi rend="unknown"
-            rendition="#none">fremde</hi> Wort zu <hi rend="unknown"
-            rendition="#none">
-italienisiren</hi>. Er verfuhr anders bei <hi rend="unknown"
-            rendition="#none">S. Gottard-o</hi>; aber er hob den Auslaut <hi rend="unknown"
-            rendition="#none">
-rd</hi> aus demselben Grunde auf; er ließ auch Bresláu nicht zu, weil das <hi
-            rend="unknown" rendition="#none">Sprachgefühl</hi> solchen Wortausgang befremdlich fand.</p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>5.] Das <hi rend="unknown"
-            rendition="#none">Gemeinsame</hi> der unter B betrachteten Fälle scheint mir (wie unter A der <hi
-            rend="unknown"
-            rendition="#none">
-unbewußte</hi>, so hier) die in Folge des Reflectirens auf die Sprachen durchgeführte <hi
-            rend="unknown" rendition="#none">bewußte</hi> oder wenn Sie wollen <hi rend="unknown" rendition="#none">halbbewußte</hi> Lautänderung zu sein.</p>
-        <p>6.] daß bei span. <hi rend="unknown" rendition="#none">gruñir</hi>
-          <note n="6" place="foot" type="editorial">Die Tilde über n ist möglicherweise gestrichen.</note>
-          <hi rend="unknown"
-            rendition="#none">ñ</hi> im Spiele sein kann, entging mir nicht. Ich berühre den Punkt bei <hi
-            rend="unknown" rendition="#none">juncus</hi>
-          <note n="7" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5817">„Vulgärlateinische Substrate<hi
-                  rend="unknown" rendition="#none">“</hi>, <hi rend="unknown" rendition="#none">Grundriss I, </hi>1888</ref>
-
-            </bibl>, 273.</note> in den „lat. Substraten“. Für grūnnire mich zu entscheiden bestimmte mich der Umstand, daß <hi
-            rend="unknown" rendition="#none">grūs</hi> (roman. <hi rend="unknown" rendition="#none">gru</hi>) mit <hi
-            rend="unknown"
-            rendition="#none">grunnire</hi> stammgleich angesetzt wird. Ich gebe zu, daß ein sicheres Beispiel für den Fall erwünscht wäre.<note
-            n="8" place="foot" type="editorial">Diese und andere im Folgenden genannten Beispiele konnten im <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
-                <hi rend="unknown" rendition="#none">Grundriss</hi>
-              </ref>
-            </bibl> nicht verifiziert werden.</note>
-        </p>
-        <p>7.] Laut<hi rend="unknown" rendition="#none">entstellung</hi> ist gewiß ein Ausdruck, der einem treffenderen zu weichen hat; ich hatte mich aber erschöpft in Benennungen für die Lautveränderungen und fand z. Z. nichts besseres.</p>
-        <p>8.] Was Sie zu <hi rend="unknown" rendition="#none">l - n</hi> = <hi rend="unknown" rendition="#none">n - n</hi> bemerken werde ich genauer überlegen; ich habe zwar das Material, das die rom. Sprachen bieten, ziemlich zur Hand, aber von fremdem zu wenig um mich schlüssig machen zu können.</p>
-
-        <p>9.] Wenigstens bei den Koseformen werden Sie, wie bei den Deminutiven von Eigennamen, zugeben, daß der Redende „Empfindung“ zum Ausdruck bringen will, der Name also Stimmungen unterthan gemacht wird.<note
-            n="9" place="foot" type="editorial">Vgl. dazu das Kap. „Worbildungslehre, Catalanisch“, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
-                <hi rend="unknown" rendition="#none">Grundriss I</hi>, 1888</ref>
-
-            </bibl>, 686.</note> Ich gebe dagegen zu, daß an der bezeichneten Stelle auch von der Abänderung in Folge von <hi
-            rend="unknown"
-            rendition="#none">Ueberhäufigkeit</hi> hätte gesprochen werden sollen, – ich halte das Kapitel überhaupt nicht für vollständig in der Aufzählung der Arten des reflectierten Wandels –; denn die Rede begnügt sich, wo nur immer möglich, mit Andeutungen, wenn der Hörende sicher ergänzen kann. Bei Wörtern<note
-            n="10" place="foot" type="editorial">Blau unterstrichen, vermutlich von Schuchardt.</note> wie <hi
-            rend="unknown" rendition="#none">
-sire</hi> u. <hi rend="unknown"
-            rendition="#none">monseigneur</hi>  aber glaube ich, weil sie ursprünglich Ausdruck des höchsten Respekts sind, eher an eine Entstellung durch das Bedürfnis die ersterbende Demuth auszudrücken, als an eine [sic] Verschlucken von Lauten in Folge von Verbrauchtheit der Anrede. Das bekannte „gnä Frau“ deutet nicht sowohl an, daß man sich einer verbrauchten Anrede bediene, sondern man ersetzt den steifen feierlichen Vollausdruck durch den „vertraulichern“ Abgekürzten; bei „gnädiger Frau“ und „gnä Frau“, waltet eine ganz verschiedene Stimmung ob; ebenso <pb
-            facs="#IMG.3" n="3"/> [S. 2] bei „guten Morgen“ und g’Morgen, welches Letztre Niemand gebrauchen wird, wo er sich respectvoll zeigen will, sondern nur unter seines Gleichen. Ich gebe übrigens auch zu, daß dergleichen Wortkürzungen auf einen kleinen Wortkern sich beschränken und daß die ihm angehörigen Worte zum täglichen Brodt des sprachlichen Verkehrs zählen. </p>
-        <p>10.] Ihr Ausdruck „lautliche Analogie“ wird mir nun erst völlig klar; <hi rend="unknown"
-            rendition="#none">píeta</hi> zu <hi rend="unknown" rendition="#none">piéta</hi>
-          <hi rend="unknown" rendition="#none">arietem</hi> zu <hi rend="unknown"
-            rendition="#none">ariéte</hi>, nachdem <hi rend="unknown"
-            rendition="#none">
+               <hi rend="unknown" rendition="#none">seiner</hi> Sprache, an der Gewöhnung, <hi rend="unknown" rendition="#none">d</hi> nur im Inlaut zu sprechen. Daß er es <hi rend="unknown" rendition="#none">durch</hi> Anfügung von <hi rend="unknown" rendition="#none">ia</hi> sich accommodirte zeigt uns ein <hi rend="unknown" rendition="#none">Mittel</hi> an, welches er anwandte um das <hi rend="unknown" rendition="#none">fremde</hi> Wort zu <hi rend="unknown" rendition="#none">
+italienisiren</hi>. Er verfuhr anders bei <hi rend="unknown" rendition="#none">S. Gottard-o</hi>; aber er hob den Auslaut <hi rend="unknown" rendition="#none">
+rd</hi> aus demselben Grunde auf; er ließ auch Bresláu nicht zu, weil das <hi rend="unknown" rendition="#none">Sprachgefühl</hi> solchen Wortausgang befremdlich fand.</p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>5.] Das <hi rend="unknown" rendition="#none">Gemeinsame</hi> der unter B betrachteten Fälle scheint mir (wie unter A der <hi rend="unknown" rendition="#none">
+unbewußte</hi>, so hier) die in Folge des Reflectirens auf die Sprachen durchgeführte <hi rend="unknown" rendition="#none">bewußte</hi> oder wenn Sie wollen <hi rend="unknown" rendition="#none">halbbewußte</hi> Lautänderung zu sein.</p>
+            <p>6.] daß bei span. <hi rend="unknown" rendition="#none">gruñir</hi>
+               <note n="6" place="foot" type="editorial">Die Tilde über n ist möglicherweise gestrichen.</note>
+               <hi rend="unknown" rendition="#none">ñ</hi> im Spiele sein kann, entging mir nicht. Ich berühre den Punkt bei <hi rend="unknown" rendition="#none">juncus</hi>
+               <note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5817">„Vulgärlateinische Substrate<hi rend="unknown" rendition="#none">“</hi>, <hi rend="unknown" rendition="#none">Grundriss I, </hi>1888</ref>
+                  </bibl>, 273.</note> in den „lat. Substraten“. Für grūnnire mich zu entscheiden bestimmte mich der Umstand, daß <hi rend="unknown" rendition="#none">grūs</hi> (roman. <hi rend="unknown" rendition="#none">gru</hi>) mit <hi rend="unknown" rendition="#none">grunnire</hi> stammgleich angesetzt wird. Ich gebe zu, daß ein sicheres Beispiel für den Fall erwünscht wäre.<note n="8" place="foot" type="editorial">Diese und andere im Folgenden genannten Beispiele konnten im <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
+                        <hi rend="unknown" rendition="#none">Grundriss</hi>
+                     </ref>
+                  </bibl> nicht verifiziert werden.</note>
+            </p>
+            <p>7.] Laut<hi rend="unknown" rendition="#none">entstellung</hi> ist gewiß ein Ausdruck, der einem treffenderen zu weichen hat; ich hatte mich aber erschöpft in Benennungen für die Lautveränderungen und fand z. Z. nichts besseres.</p>
+            <p>8.] Was Sie zu <hi rend="unknown" rendition="#none">l - n</hi> = <hi rend="unknown" rendition="#none">n - n</hi> bemerken werde ich genauer überlegen; ich habe zwar das Material, das die rom. Sprachen bieten, ziemlich zur Hand, aber von fremdem zu wenig um mich schlüssig machen zu können.</p>
+            <p>9.] Wenigstens bei den Koseformen werden Sie, wie bei den Deminutiven von Eigennamen, zugeben, daß der Redende „Empfindung“ zum Ausdruck bringen will, der Name also Stimmungen unterthan gemacht wird.<note n="9" place="foot" type="editorial">Vgl. dazu das Kap. „Worbildungslehre, Catalanisch“, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
+                        <hi rend="unknown" rendition="#none">Grundriss I</hi>, 1888</ref>
+                  </bibl>, 686.</note> Ich gebe dagegen zu, daß an der bezeichneten Stelle auch von der Abänderung in Folge von <hi rend="unknown" rendition="#none">Ueberhäufigkeit</hi> hätte gesprochen werden sollen, – ich halte das Kapitel überhaupt nicht für vollständig in der Aufzählung der Arten des reflectierten Wandels –; denn die Rede begnügt sich, wo nur immer möglich, mit Andeutungen, wenn der Hörende sicher ergänzen kann. Bei Wörtern<note n="10" place="foot" type="editorial">Blau unterstrichen, vermutlich von Schuchardt.</note> wie <hi rend="unknown" rendition="#none">
+sire</hi> u. <hi rend="unknown" rendition="#none">monseigneur</hi>  aber glaube ich, weil sie ursprünglich Ausdruck des höchsten Respekts sind, eher an eine Entstellung durch das Bedürfnis die ersterbende Demuth auszudrücken, als an eine [sic] Verschlucken von Lauten in Folge von Verbrauchtheit der Anrede. Das bekannte „gnä Frau“ deutet nicht sowohl an, daß man sich einer verbrauchten Anrede bediene, sondern man ersetzt den steifen feierlichen Vollausdruck durch den „vertraulichern“ Abgekürzten; bei „gnädiger Frau“ und „gnä Frau“, waltet eine ganz verschiedene Stimmung ob; ebenso <pb facs="#IMG.3" n="3"/> [S. 2] bei „guten Morgen“ und g’Morgen, welches Letztre Niemand gebrauchen wird, wo er sich respectvoll zeigen will, sondern nur unter seines Gleichen. Ich gebe übrigens auch zu, daß dergleichen Wortkürzungen auf einen kleinen Wortkern sich beschränken und daß die ihm angehörigen Worte zum täglichen Brodt des sprachlichen Verkehrs zählen. </p>
+            <p>10.] Ihr Ausdruck „lautliche Analogie“ wird mir nun erst völlig klar; <hi rend="unknown" rendition="#none">píeta</hi> zu <hi rend="unknown" rendition="#none">piéta</hi>
+               <hi rend="unknown" rendition="#none">arietem</hi> zu <hi rend="unknown" rendition="#none">ariéte</hi>, nachdem <hi rend="unknown" rendition="#none">
 liéta</hi> = laeta u. vgl. bestand, oder sonstiges <hi rend="unknown" rendition="#none">ié</hi> in der Sprache vorhanden war.</p>
-        <p>11.] ist gewis zu erwägen. Und warum dann nicht von <hi rend="unknown" rendition="#none">addere</hi> zu <hi
-            rend="unknown" rendition="#none">ad-dare</hi> und <hi rend="unknown" rendition="#none">andare</hi> übergehen.</p>
-        <p>12.] die Anlehnung von <hi rend="unknown" rendition="#none">*cobito</hi> an <hi rend="unknown"
-            rendition="#none">*combere</hi> wegen rät. <hi rend="unknown"
-            rendition="#none">cúmbel</hi> habe ich wohl bedacht; <hi rend="unknown"
-            rendition="#none">cumbere</hi> scheint mir aber begrifflich nicht näher zu <hi rend="unknown"
-            rendition="#none">cubitus</hi> zu stehen, als <hi rend="unknown"
-            rendition="#none">comito </hi>u.s.w. lautlich zu <hi rend="unknown"
-            rendition="#none">
-gobito</hi>, obgleich die Wurzeln von <hi rend="unknown"
-            rendition="#none">
-cumbere</hi> u. <hi rend="unknown"
-            rendition="#none">cubitus</hi> zusammenfallen. Ueberdies hätte man dann doch zu erklären wie im Ital. *cu<hi
-            rend="unknown" rendition="#none">mbitus</hi> : <hi rend="unknown" rendition="#none">cobito</hi> wurde.</p>
-
-        <p>13.] Ich meinte eine Erklärung über den accessorischen Wandel damit gegeben zu haben, daß ich sagte, daß dabei zur Lautarticulation ein von der <hi
-            rend="unknown" rendition="#none">vis maxima</hi> geübter Druck <hi rend="unknown"
-            rendition="#none">
-hinzuträte</hi>, der Diphthongbildung, Lautlängung u. a. zur Wirkung haben kann. Das Eintreten der <hi
-            rend="unknown" rendition="#none">vis</hi>
-          <hi rend="unknown" rendition="#none">maxima</hi> aber ist durch solche Allgemeine Stimmungen bei einem Volke bedingt, die ein nachdrücklicheres Sprechen zu bewirken vermögen (S. 234f.). Mit accessorisch ist also die Ursache, nicht ein Resultat bezeichnet.</p>
-        <p>14.] Ueber <hi rend="unknown" rendition="#none">a</hi> zu <hi rend="unknown"
-            rendition="#none">e</hi> habe ich absichtlich geschwiegen. Doch erkläre ich im Kolleg <hi rend="unknown"
-            rendition="#none">e</hi> aus <hi rend="unknown"
-            rendition="#none">a</hi> als auf accessorischem Wandel beruhend. Ich nehme dabei das <hi rend="unknown"
-            rendition="#none">maent</hi> = <hi rend="unknown" rendition="#none">manet</hi> im Eulaliagedicht, <hi
-            rend="unknown" rendition="#none">
-peer</hi> (und <hi rend="unknown"
-            rendition="#none">beem</hi>) in der Jonasfamilie<note n="11" place="foot"
-              type="editorial">Eulalialied bzw. <hi rend="unknown"
-              rendition="#none">Cantilène de sainte Eulalie</hi>; Jonas-Fragment bzw. <hi rend="unknown" rendition="#none">L’homélie sur Jonas</hi>.</note> zu Hilfe, und setze folgende Entwicklung an:</p>
-        <p>
-          <hi rend="unknown" rendition="#none">éi</hi>
-          <note n="12" place="foot" type="editorial">Unter dem ersten „e“ ein Betonungszeichen.</note> Ostfranzösisch</p>
-        <p>
-          <hi rend="unknown" rendition="#none">á</hi> (mit <hi rend="unknown"
-            rendition="#none">
+            <p>11.] ist gewis zu erwägen. Und warum dann nicht von <hi rend="unknown" rendition="#none">addere</hi> zu <hi rend="unknown" rendition="#none">ad-dare</hi> und <hi rend="unknown" rendition="#none">andare</hi> übergehen.</p>
+            <p>12.] die Anlehnung von <hi rend="unknown" rendition="#none">*cobito</hi> an <hi rend="unknown" rendition="#none">*combere</hi> wegen rät. <hi rend="unknown" rendition="#none">cúmbel</hi> habe ich wohl bedacht; <hi rend="unknown" rendition="#none">cumbere</hi> scheint mir aber begrifflich nicht näher zu <hi rend="unknown" rendition="#none">cubitus</hi> zu stehen, als <hi rend="unknown" rendition="#none">comito </hi>u.s.w. lautlich zu <hi rend="unknown" rendition="#none">
+gobito</hi>, obgleich die Wurzeln von <hi rend="unknown" rendition="#none">
+cumbere</hi> u. <hi rend="unknown" rendition="#none">cubitus</hi> zusammenfallen. Ueberdies hätte man dann doch zu erklären wie im Ital. *cu<hi rend="unknown" rendition="#none">mbitus</hi> : <hi rend="unknown" rendition="#none">cobito</hi> wurde.</p>
+            <p>13.] Ich meinte eine Erklärung über den accessorischen Wandel damit gegeben zu haben, daß ich sagte, daß dabei zur Lautarticulation ein von der <hi rend="unknown" rendition="#none">vis maxima</hi> geübter Druck <hi rend="unknown" rendition="#none">
+hinzuträte</hi>, der Diphthongbildung, Lautlängung u. a. zur Wirkung haben kann. Das Eintreten der <hi rend="unknown" rendition="#none">vis</hi>
+               <hi rend="unknown" rendition="#none">maxima</hi> aber ist durch solche Allgemeine Stimmungen bei einem Volke bedingt, die ein nachdrücklicheres Sprechen zu bewirken vermögen (S. 234f.). Mit accessorisch ist also die Ursache, nicht ein Resultat bezeichnet.</p>
+            <p>14.] Ueber <hi rend="unknown" rendition="#none">a</hi> zu <hi rend="unknown" rendition="#none">e</hi> habe ich absichtlich geschwiegen. Doch erkläre ich im Kolleg <hi rend="unknown" rendition="#none">e</hi> aus <hi rend="unknown" rendition="#none">a</hi> als auf accessorischem Wandel beruhend. Ich nehme dabei das <hi rend="unknown" rendition="#none">maent</hi> = <hi rend="unknown" rendition="#none">manet</hi> im Eulaliagedicht, <hi rend="unknown" rendition="#none">
+peer</hi> (und <hi rend="unknown" rendition="#none">beem</hi>) in der Jonasfamilie<note n="11" place="foot" type="editorial">Eulalialied bzw. <hi rend="unknown" rendition="#none">Cantilène de sainte Eulalie</hi>; Jonas-Fragment bzw. <hi rend="unknown" rendition="#none">L’homélie sur Jonas</hi>.</note> zu Hilfe, und setze folgende Entwicklung an:</p>
+            <p>
+               <hi rend="unknown" rendition="#none">éi</hi>
+               <note n="12" place="foot" type="editorial">Unter dem ersten „e“ ein Betonungszeichen.</note> Ostfranzösisch</p>
+            <p>
+               <hi rend="unknown" rendition="#none">á</hi> (mit <hi rend="unknown" rendition="#none">
 vis maxima</hi> Betonung) - <hi rend="unknown" rendition="#none">á e ----ée</hi>
-          <note n="13" place="foot" type="editorial">Unter dem ersten „e“ ein Betonungszeichen.</note>
-        </p>
-        <p>
-          <hi rend="unknown" rendition="#none">ée</hi>
-          <note n="14" place="foot" type="editorial">Unter den „e“ verschiedene Betonungszeichen.</note> Centralfranzös ------- ē (erst 16. Jahrh[undert]).</p>
-        <p>(dazu <hi rend="unknown" rendition="#none">ĕ</hi>
-          <note n="15" place="foot"
-            type="editorial">Unter dem „e“ ein Betonungszeichen.</note> zu ..........................................* <hi
-            rend="unknown" rendition="#none">
+               <note n="13" place="foot" type="editorial">Unter dem ersten „e“ ein Betonungszeichen.</note>
+            </p>
+            <p>
+               <hi rend="unknown" rendition="#none">ée</hi>
+               <note n="14" place="foot" type="editorial">Unter den „e“ verschiedene Betonungszeichen.</note> Centralfranzös ------- ē (erst 16. Jahrh[undert]).</p>
+            <p>(dazu <hi rend="unknown" rendition="#none">ĕ</hi>
+               <note n="15" place="foot" type="editorial">Unter dem „e“ ein Betonungszeichen.</note> zu ..........................................* <hi rend="unknown" rendition="#none">
 eé</hi>
-          <note n="16" place="foot"
-            type="editorial">Unter den „e“ verschiedene Betonungszeichen.</note> ..........................................<hi
-            rend="unknown" rendition="#none">ié</hi>
-          <note n="17" place="foot" type="editorial">
+               <note n="16" place="foot" type="editorial">Unter den „e“ verschiedene Betonungszeichen.</note> ..........................................<hi rend="unknown" rendition="#none">ié</hi>
+               <note n="17" place="foot" type="editorial">
 Darunter ein Betonungszeichen.</note>.)</p>
-        <p>
-          <hi rend="unknown" rendition="#none">ai</hi>, in <hi rend="unknown"
-            rendition="#none">
-máint</hi>, entstehend  aus <hi rend="unknown"
-            rendition="#none">ae</hi> (máent) und ist nur <hi rend="unknown" rendition="#none">graphisch</hi> von <hi
-            rend="unknown" rendition="#none">ae</hi> vor Nasal geschieden.</p>
-        <p>15]. Ich unterschied Wechsel der <hi rend="unknown" rendition="#none">
-Articulation</hi> und Wechsel der <hi
-            rend="unknown" rendition="#none">
+            <p>
+               <hi rend="unknown" rendition="#none">ai</hi>, in <hi rend="unknown" rendition="#none">
+máint</hi>, entstehend  aus <hi rend="unknown" rendition="#none">ae</hi> (máent) und ist nur <hi rend="unknown" rendition="#none">graphisch</hi> von <hi rend="unknown" rendition="#none">ae</hi> vor Nasal geschieden.</p>
+            <p>15]. Ich unterschied Wechsel der <hi rend="unknown" rendition="#none">
+Articulation</hi> und Wechsel der <hi rend="unknown" rendition="#none">
 Articulationsfolgen</hi>; ich hoffe nicht misverstanden zu werden.</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>16.] Sie fassen „Assimilation“ offenbar in einem vieles weiteren und vielleicht richtigeren Sinne. Wie definiren Sie aber?</p>
-        <p>17.] Es wäre in der That besser gewesen, wenn ich von einem bei der Articulation des l vorhandenem „Dentalverschluß“ geredet hätte. </p>
-        <p>18.] <hi rend="unknown"
-            rendition="#none">χavallo hroce</hi> wollen nicht diakritisch geschrieben, sondern Repräsentanten der beiden Schreibungen sein.<note
-            n="18" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
-                <hi rend="unknown" rendition="#none">Grundriss I</hi>, 1888</ref>
-            </bibl>, 247.</note> Ueber die Gorgia<note n="19" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
-                <hi rend="unknown" rendition="#none">Ebd.</hi>
-              </ref>
-            </bibl>, ein spez. Ausdruck der florentinischen Mundart für <hi rend="unknown"
-            rendition="#none">
-χavallo</hi>.</note> findet sich das Nöthige in der Ital. Grammatik, die <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1353">d’Ovidio</persName> uns im „Grundriß“ gibt.</p>
-        <p>19.] Diese Stelle habe ich, glaube ich, in Ihrem Sinne bei der 2<hi rendition="#sup">
+            <pb facs="#IMG.4" n="4"/>
+            <p>16.] Sie fassen „Assimilation“ offenbar in einem vieles weiteren und vielleicht richtigeren Sinne. Wie definiren Sie aber?</p>
+            <p>17.] Es wäre in der That besser gewesen, wenn ich von einem bei der Articulation des l vorhandenem „Dentalverschluß“ geredet hätte. </p>
+            <p>18.] <hi rend="unknown" rendition="#none">χavallo hroce</hi> wollen nicht diakritisch geschrieben, sondern Repräsentanten der beiden Schreibungen sein.<note n="18" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
+                        <hi rend="unknown" rendition="#none">Grundriss I</hi>, 1888</ref>
+                  </bibl>, 247.</note> Ueber die Gorgia<note n="19" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5810">
+                        <hi rend="unknown" rendition="#none">Ebd.</hi>
+                     </ref>
+                  </bibl>, ein spez. Ausdruck der florentinischen Mundart für <hi rend="unknown" rendition="#none">
+χavallo</hi>.</note> findet sich das Nöthige in der Ital. Grammatik, die <persName ref="[authorityLink]">d’Ovidio</persName> uns im „Grundriß“ gibt.</p>
+            <p>19.] Diese Stelle habe ich, glaube ich, in Ihrem Sinne bei der 2<hi rendition="#sup">
 ten</hi> Korrectur berichtigt.</p>
-        <p>20.] Articulatorisch sehe ich keinen Weg von <hi rend="unknown" rendition="#none">
-l</hi> zu <hi
-            rend="unknown" rendition="#none">i</hi>, von <hi rend="unknown" rendition="#none">d</hi> zu <hi
-            rend="unknown" rendition="#none">r</hi>. Uebrigens bringen die Abschnitte über die <hi rend="unknown"
-            rendition="#none">
-Autochthonensprachen in den römischen</hi> Provinzen hierauf bezügliches. Ich erkläre mir diese Lautveränderungen durch <hi
-            rend="unknown" rendition="#none">
-idiomatische Lautsubstitution</hi>; <hi rend="unknown"
-            rendition="#none">l</hi> zu <hi rend="unknown"
-            rendition="#none">i</hi> behandelt Deecke in seinem Capitel als Etruskisch.<note n="20" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5859">Wilhelm Deecke, „Die italischen Sprachen“, <hi
-                  rend="unknown" rendition="#none">Grundriss I</hi>, 1888, 335f.</ref>
-            </bibl>
-          </note>
-        </p>
-        <p>21.] <note n="21" place="foot"
-            type="editorial">Am Rande mit Bleistift von Gröbers Hand: „Ein r ohne Rollen ist wohl eher unklassisch und dieses verhält sich zu r, wie ch zu Zäpfchen-r“ (Enge der Beatmung)“. Es folgt weiter unten: „Ebenso vollständig wie minima“. Dann: „Jeder Einwohner von Straßburg spricht meinen deutlich vorgesagten Namen Gröber Gruber aus. Passiert mir tagtäglich von den verschiedensten Personen“.</note> Ich halte diesen meinen Satz für den wichtigsten des ganzen Abschnitts. Die Erfahrung steht ihm zur Seite und sie drängt zu der Ueberlegung, daß jede Zeit ihre eigne Lautscala hat, innerhalb der sich die mechanischen Lautveränderungen vollziehen. Zur Lautscala gehören aber auch die sog. <hi
-            rend="unknown"
-            rendition="#none">Uebergangslaute</hi>, die unter gegebenen Umständen sich verdeutlichen, vernehmbares werden können, zB. <hi
-            rend="unknown" rendition="#none">ö </hi>aus <hi rend="unknown" rendition="#none">o<hi
-            rendition="#sup">
-ü</hi>. č. ǧ</hi> sind Endpunkte einer längeren Lautreise, in der <hi rend="unknown"
-            rendition="#none">kj tj</hi> figuriren, Lautverbindungen, die bei <hi rend="unknown"
-            rendition="#none">-kia, -tja</hi> etc. schon vorkamen. Das neue (<hi rend="unknown"
-            rendition="#none">sch</hi>-Element) in č ǧ ist ein Laut, der bei defectem Zahnwerk<note n="22" place="foot"
-            type="editorial">Älteres Wort für „die Gesamtheit der Zähne, das Gebiss“.</note> [?] leicht an Stelle von s articuliert wird, der wohl keiner Sprache fehlt, wenn er auch oft nur <hi
-            rend="unknown" rendition="#none">interjectional</hi> und lautmalend in ihr Verwendung findet.</p>
-        <p>22.] Von der Gorgia<note n="23" place="foot"
-            type="editorial">Dt. Spirantisierung, im allg. des „c“ im Toskanischen.</note> spricht Deecke glaube ich, auch;<note
-            n="24" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5859">
-                <hi rend="unknown" rendition="#none">Ebd.</hi>
-              </ref>
-            </bibl>, 348.</note>
-          <hi rend="unknown" rendition="#none">χ</hi> zwischen Vocalen aus <hi rend="unknown"
-            rendition="#none">c</hi> ist ein belegbarer Lautübergang und parallel <hi rend="unknown"
-            rendition="#none">g</hi> zu <hi rend="unknown"
-            rendition="#none">j</hi>. Bei der örtlichen Beschränkung (wovon ich an jener Stelle nicht zu handeln habe) ist etruskische Nachwirkung durchaus zuzugeben. Aus gleichem Grunde habe ich schon <hi
-            rend="unknown" rendition="#none">f</hi> zu <hi rend="unknown" rendition="#none">h</hi> für idiomatisch gehalten.</p>
-        <p>[5] S. 3)</p>
-        <p>23]. Für articulatorisch unmöglich halte ich den Wandel von <hi rend="unknown"
-            rendition="#none">l n</hi> zu <hi rend="unknown"
-            rendition="#none">r</hi>, weil articulatorische Verschiedenheit unter den Lauten besteht und <hi
-            rend="unknown" rendition="#none">Uebergänge</hi> zwischen <hi rend="unknown"
-            rendition="#none">l – r, n – r</hi> fehlen (Ich weis sehr wohl, daß <hi rend="unknown"
-            rendition="#none">
-l</hi> zu <hi rend="unknown"
-            rendition="#none">r</hi> ein verbreiteter Lautwechsel ist; aber die mechanische Natur dieses Wechsels ist mir nicht bewiesen; Er gilt mir also als accommodativ oder idiomatisch. <hi
-            rend="unknown" rendition="#none">T’l</hi> zu <hi rend="unknown"
-            rendition="#none">t’r</hi> kommt nur bei gelehrten Wörtern vor, wie <hi rend="unknown"
-            rendition="#none">c’n</hi> zu <hi rend="unknown" rendition="#none">cr</hi> (<hi rend="unknown"
-            rendition="#none">
-diacre</hi> = <hi rend="unknown" rendition="#none">diaconus</hi> u.s.w.); <hi
-            rend="unknown" rendition="#none">tĭtulus</hi> wäre regulär <hi rend="unknown"
-            rendition="#none">*teil</hi>. Assimilatorisches Eingreifen des <hi rend="unknown"
-            rendition="#none">t</hi> wird dadurch zweifelhaft, daß das Französ. inlautend einst nur (<hi rend="unknown"
-            rendition="#none">p, v, b</hi>) + <hi rend="unknown" rendition="#none">l,r</hi>, und <hi rend="unknown"
-            rendition="#none">c,g + r, t d +r</hi>, und Nasale wie <hi rend="unknown" rendition="#none">l</hi> hinter<hi
-            rend="unknown" rendition="#none"> Muta</hi> zu r werden läßt.<note n="25" place="foot"
-              type="editorial">Am Rand mit Bleistift von Gröbers Hand: „Die Articulation bei <hi rend="unknown"
-              rendition="#none">l = r</hi> ist so verschieden, wie etwa die von <hi rend="unknown"
-              rendition="#none">m</hi> u. <hi rend="unknown"
-              rendition="#none">n. m</hi> und n werden das eine zum andern nur durch <hi rend="unknown"
-              rendition="#none">Assimilation</hi>“. Und noch tiefer unten am Rand: „vgl. <hi rend="unknown" rendition="#none">titulus : titre u. diaconus : diacre</hi>“.</note>
-        </p>
-        <p>24]. Nach dem beiliegenden Passus (auf S. 249)<note n="26" place="foot"
-            type="editorial">Diese Angabe deckt sich mit der Druckversion von 1888.</note> kann ich nicht finden, daß ich im andern Sinne von „Ausnahmen“ von, auf den mechanischen Wandel bezüglichen Regeln sprach, als Sie. Ich mußte doch wohl an einer Stelle den vielbesprochenen Ausdruck anziehen und konnte es doch nur da, wo der Junggrammatiker diesen Begriff anzuwenden pflegt. Ich habe des Ausdrucks an keiner anderen Stelle gedacht, und beim accommodativen wie reflectierten Lautwandel nur von einem <hi
-            rend="unknown"
-            rendition="#none">motivierten Geschehen</hi> gesprochen, die Fälle dieses Wandels aber nicht als „Ausnahmen“ zu Lautregeln taxiert. Erkläre ich also S. 249, daß <hi
-            rend="unknown"
-            rendition="#none">sog.</hi> Ausnahmen von sog. Lautgesetzen [ich gebrauche dafür absichtlich den psychologischen Parallelausdruck <hi
-            rend="unknown" rendition="#none">„Regel“</hi>] als <hi rend="unknown"
-            rendition="#none">andern</hi> Gesetzen (Regeln) unterthan, so nehme doch auch ich <hi rend="unknown" rendition="#none">nur</hi> ein gesetzmäßiges [regelmäßiges, sich unter gleichen Bedingungen wiederholendes] Geschehen im Sprachwandel wahr.</p>
-        <p>25]. Daß sipen [?]<note n="27" place="foot" type="editorial">Die Buchstabenfolge „sjen“ oder „spen“ ergibt keinen Sinn; aber das Wort „sipen, sippen siepen“ meint soviel wie „tröpfeln“.</note> gar eine so beschränkte Anwendungssphäre hat, wußte ich nicht; ich hielt es für gleichartig dem mitteldeutschen familiären pi-en für pissen. - Vielleicht benutzen Sie die freigelassenen Seiten des langen Briefes zu Ihren Entgegnungen. Ich werde fortfahren, Irrthum u. Meinung freizubekennen [sic] und für Berichtigung und Belehrung Ihnen herzlich dankbar zu sein.</p>
-        <closer>
-          <salute>Mit den besten Grüßen</salute>
-          <lb/>
-          <salute>Ihr ergebenster </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1649">
-              <hi rend="unknown" rendition="#none">GGröber</hi>
-            </persName>. </signed>
-        </closer>
-        <postscript>
-          <p>(Henrys Besprechung<note n="28" place="foot" type="editorial">Vgl. Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.5898">057-04055</ref>.</note> scheint mir zu wenig auf den Hauptpunkt eingegangen zu sein).</p>
-          <p>[Auf der Rückseite von Gröbers Brief findet sich die folgende Antwort Schuchardts]</p>
-        </postscript>
-      </div>
-      <div corresp="#L.5900" subtype="original" type="letter" xml:lang="de">
-        <pb facs="#IMG.5" n="1"/>
-        <dateline>[Graz, Ende März / Anfang April 1886]<lb/>zu. 1.<note n="29" place="foot" type="editorial">Blau unterstrichen.</note>
-        </dateline>
-        <opener>Lieber Freund,</opener>
-
-        <p>Obwohl ich seit geraumer Zeit wieder sehr elend bin und besonders in den letzten Tagen an einem unerträglichen Kopfdruck leide, so will ich doch versuchen – eben so gut wie es geht – Ihren Brief zu beantworten. Ich bemerke zunächst daß ich eine wesentliche Differenz unserer Anschauungen doch nur in dem „ausnahmslos“ erblickte! Wenn man auch mit <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3036">
+            <p>20.] Articulatorisch sehe ich keinen Weg von <hi rend="unknown" rendition="#none">
+l</hi> zu <hi rend="unknown" rendition="#none">i</hi>, von <hi rend="unknown" rendition="#none">d</hi> zu <hi rend="unknown" rendition="#none">r</hi>. Uebrigens bringen die Abschnitte über die <hi rend="unknown" rendition="#none">
+Autochthonensprachen in den römischen</hi> Provinzen hierauf bezügliches. Ich erkläre mir diese Lautveränderungen durch <hi rend="unknown" rendition="#none">
+idiomatische Lautsubstitution</hi>; <hi rend="unknown" rendition="#none">l</hi> zu <hi rend="unknown" rendition="#none">i</hi> behandelt Deecke in seinem Capitel als Etruskisch.<note n="20" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5859">Wilhelm Deecke, „Die italischen Sprachen“, <hi rend="unknown" rendition="#none">Grundriss I</hi>, 1888, 335f.</ref>
+                  </bibl>
+               </note>
+            </p>
+            <p>21.] <note n="21" place="foot" type="editorial">Am Rande mit Bleistift von Gröbers Hand: „Ein r ohne Rollen ist wohl eher unklassisch und dieses verhält sich zu r, wie ch zu Zäpfchen-r“ (Enge der Beatmung)“. Es folgt weiter unten: „Ebenso vollständig wie minima“. Dann: „Jeder Einwohner von Straßburg spricht meinen deutlich vorgesagten Namen Gröber Gruber aus. Passiert mir tagtäglich von den verschiedensten Personen“.</note> Ich halte diesen meinen Satz für den wichtigsten des ganzen Abschnitts. Die Erfahrung steht ihm zur Seite und sie drängt zu der Ueberlegung, daß jede Zeit ihre eigne Lautscala hat, innerhalb der sich die mechanischen Lautveränderungen vollziehen. Zur Lautscala gehören aber auch die sog. <hi rend="unknown" rendition="#none">Uebergangslaute</hi>, die unter gegebenen Umständen sich verdeutlichen, vernehmbares werden können, zB. <hi rend="unknown" rendition="#none">ö </hi>aus <hi rend="unknown" rendition="#none">o<hi rendition="#sup">
+ü</hi>. č. ǧ</hi> sind Endpunkte einer längeren Lautreise, in der <hi rend="unknown" rendition="#none">kj tj</hi> figuriren, Lautverbindungen, die bei <hi rend="unknown" rendition="#none">-kia, -tja</hi> etc. schon vorkamen. Das neue (<hi rend="unknown" rendition="#none">sch</hi>-Element) in č ǧ ist ein Laut, der bei defectem Zahnwerk<note n="22" place="foot" type="editorial">Älteres Wort für „die Gesamtheit der Zähne, das Gebiss“.</note> [?] leicht an Stelle von s articuliert wird, der wohl keiner Sprache fehlt, wenn er auch oft nur <hi rend="unknown" rendition="#none">interjectional</hi> und lautmalend in ihr Verwendung findet.</p>
+            <p>22.] Von der Gorgia<note n="23" place="foot" type="editorial">Dt. Spirantisierung, im allg. des „c“ im Toskanischen.</note> spricht Deecke glaube ich, auch;<note n="24" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5859">
+                        <hi rend="unknown" rendition="#none">Ebd.</hi>
+                     </ref>
+                  </bibl>, 348.</note>
+               <hi rend="unknown" rendition="#none">χ</hi> zwischen Vocalen aus <hi rend="unknown" rendition="#none">c</hi> ist ein belegbarer Lautübergang und parallel <hi rend="unknown" rendition="#none">g</hi> zu <hi rend="unknown" rendition="#none">j</hi>. Bei der örtlichen Beschränkung (wovon ich an jener Stelle nicht zu handeln habe) ist etruskische Nachwirkung durchaus zuzugeben. Aus gleichem Grunde habe ich schon <hi rend="unknown" rendition="#none">f</hi> zu <hi rend="unknown" rendition="#none">h</hi> für idiomatisch gehalten.</p>
+            <p>[5] S. 3)</p>
+            <p>23]. Für articulatorisch unmöglich halte ich den Wandel von <hi rend="unknown" rendition="#none">l n</hi> zu <hi rend="unknown" rendition="#none">r</hi>, weil articulatorische Verschiedenheit unter den Lauten besteht und <hi rend="unknown" rendition="#none">Uebergänge</hi> zwischen <hi rend="unknown" rendition="#none">l – r, n – r</hi> fehlen (Ich weis sehr wohl, daß <hi rend="unknown" rendition="#none">
+l</hi> zu <hi rend="unknown" rendition="#none">r</hi> ein verbreiteter Lautwechsel ist; aber die mechanische Natur dieses Wechsels ist mir nicht bewiesen; Er gilt mir also als accommodativ oder idiomatisch. <hi rend="unknown" rendition="#none">T’l</hi> zu <hi rend="unknown" rendition="#none">t’r</hi> kommt nur bei gelehrten Wörtern vor, wie <hi rend="unknown" rendition="#none">c’n</hi> zu <hi rend="unknown" rendition="#none">cr</hi> (<hi rend="unknown" rendition="#none">
+diacre</hi> = <hi rend="unknown" rendition="#none">diaconus</hi> u.s.w.); <hi rend="unknown" rendition="#none">tĭtulus</hi> wäre regulär <hi rend="unknown" rendition="#none">*teil</hi>. Assimilatorisches Eingreifen des <hi rend="unknown" rendition="#none">t</hi> wird dadurch zweifelhaft, daß das Französ. inlautend einst nur (<hi rend="unknown" rendition="#none">p, v, b</hi>) + <hi rend="unknown" rendition="#none">l,r</hi>, und <hi rend="unknown" rendition="#none">c,g + r, t d +r</hi>, und Nasale wie <hi rend="unknown" rendition="#none">l</hi> hinter<hi rend="unknown" rendition="#none"> Muta</hi> zu r werden läßt.<note n="25" place="foot" type="editorial">Am Rand mit Bleistift von Gröbers Hand: „Die Articulation bei <hi rend="unknown" rendition="#none">l = r</hi> ist so verschieden, wie etwa die von <hi rend="unknown" rendition="#none">m</hi> u. <hi rend="unknown" rendition="#none">n. m</hi> und n werden das eine zum andern nur durch <hi rend="unknown" rendition="#none">Assimilation</hi>“. Und noch tiefer unten am Rand: „vgl. <hi rend="unknown" rendition="#none">titulus : titre u. diaconus : diacre</hi>“.</note>
+            </p>
+            <p>24]. Nach dem beiliegenden Passus (auf S. 249)<note n="26" place="foot" type="editorial">Diese Angabe deckt sich mit der Druckversion von 1888.</note> kann ich nicht finden, daß ich im andern Sinne von „Ausnahmen“ von, auf den mechanischen Wandel bezüglichen Regeln sprach, als Sie. Ich mußte doch wohl an einer Stelle den vielbesprochenen Ausdruck anziehen und konnte es doch nur da, wo der Junggrammatiker diesen Begriff anzuwenden pflegt. Ich habe des Ausdrucks an keiner anderen Stelle gedacht, und beim accommodativen wie reflectierten Lautwandel nur von einem <hi rend="unknown" rendition="#none">motivierten Geschehen</hi> gesprochen, die Fälle dieses Wandels aber nicht als „Ausnahmen“ zu Lautregeln taxiert. Erkläre ich also S. 249, daß <hi rend="unknown" rendition="#none">sog.</hi> Ausnahmen von sog. Lautgesetzen [ich gebrauche dafür absichtlich den psychologischen Parallelausdruck <hi rend="unknown" rendition="#none">„Regel“</hi>] als <hi rend="unknown" rendition="#none">andern</hi> Gesetzen (Regeln) unterthan, so nehme doch auch ich <hi rend="unknown" rendition="#none">nur</hi> ein gesetzmäßiges [regelmäßiges, sich unter gleichen Bedingungen wiederholendes] Geschehen im Sprachwandel wahr.</p>
+            <p>25]. Daß sipen [?]<note n="27" place="foot" type="editorial">Die Buchstabenfolge „sjen“ oder „spen“ ergibt keinen Sinn; aber das Wort „sipen, sippen siepen“ meint soviel wie „tröpfeln“.</note> gar eine so beschränkte Anwendungssphäre hat, wußte ich nicht; ich hielt es für gleichartig dem mitteldeutschen familiären pi-en für pissen. - Vielleicht benutzen Sie die freigelassenen Seiten des langen Briefes zu Ihren Entgegnungen. Ich werde fortfahren, Irrthum u. Meinung freizubekennen [sic] und für Berichtigung und Belehrung Ihnen herzlich dankbar zu sein.</p>
+            <closer>
+               <salute>Mit den besten Grüßen</salute>
+               <lb/>
+               <salute>Ihr ergebenster </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">
+                     <hi rend="unknown" rendition="#none">GGröber</hi>
+                  </persName>. </signed>
+            </closer>
+            <postscript>
+               <p>(Henrys Besprechung<note n="28" place="foot" type="editorial">Vgl. Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.5898">057-04055</ref>.</note> scheint mir zu wenig auf den Hauptpunkt eingegangen zu sein).</p>
+               <p>[Auf der Rückseite von Gröbers Brief findet sich die folgende Antwort Schuchardts]</p>
+            </postscript>
+         </div>
+         <div corresp="#L.5900"
+              subtype="original"
+              type="letter"
+              xml:lang="de">
+            <pb facs="#IMG.5" n="1"/>
+            <dateline>[Graz, Ende März / Anfang April 1886]<lb/>zu. 1.<note n="29" place="foot" type="editorial">Blau unterstrichen.</note>
+            </dateline>
+            <opener>Lieber Freund,</opener>
+            <p>Obwohl ich seit geraumer Zeit wieder sehr elend bin und besonders in den letzten Tagen an einem unerträglichen Kopfdruck leide, so will ich doch versuchen – eben so gut wie es geht – Ihren Brief zu beantworten. Ich bemerke zunächst daß ich eine wesentliche Differenz unserer Anschauungen doch nur in dem „ausnahmslos“ erblickte! Wenn man auch mit <persName ref="[authorityLink]">
 Wundt</persName>
-          <note n="30" place="foot" type="editorial">Vgl. <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3520">Wilhelm Wundt, „Über den Begriff des Gesetzes, mit Rücksicht auf die Frage der Ausnahmslosigkeit der Lautgesetze“, <hi
-                  rend="unknown" rendition="#none">
+               <note n="30" place="foot" type="editorial">Vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3520">Wilhelm Wundt, „Über den Begriff des Gesetzes, mit Rücksicht auf die Frage der Ausnahmslosigkeit der Lautgesetze“, <hi rend="unknown" rendition="#none">
 Philosophische Studien</hi> 3, 1886, 195-215.</ref>
-            </bibl>
-
-          </note> die Möglichkeit verschiedener Interpretationen dieses Wortes zugibt (auch aus dem Briefwechsel mit <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3036">
+                  </bibl>
+               </note> die Möglichkeit verschiedener Interpretationen dieses Wortes zugibt (auch aus dem Briefwechsel mit <persName ref="[authorityLink]">
 W.</persName>
-          <note n="31" place="foot" type="editorial">HSA, Lfd.Nr. <ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.3036">12896-12900</ref>.</note> verstehe ich daß er im Ganzen auf meiner Seite steht, aber doch – indem er ja schließlich in linguistischen Fragen nicht kompetent ist den Leipzigern, unter denen er lebt, nicht schroff entgegentreten möchte) oder <hi
-            rend="unknown" rendition="#none">gerade</hi> wenn man es thut, so vermeidet man es Opfer von Ausnahmen und Ausnahmslosigkeit zu werden.</p>
-
-        <p>zu 1). Hier scheint mir keine eigentliche Meinungsverschiedenheit vorzuliegen. Ich möchte nur verallgemeinernd Alles zusammenfaßen, was aus der Wiedergabe des <hi
-            rend="unknown" rendition="#none">Fremd</hi>artigen hervorgeht. <note n="32" place="foot" type="editorial">Daneben blauer Haken.</note>
-        </p>
-        <p>zu 2). Ich meinte daß der Romane <hi rend="unknown"
-            rendition="#none">hn</hi> hört –, aber unfähig es wiederzugeben durch <hi rend="unknown"
-            rendition="#none">han</hi> ersetzt, ähnlich wie S. 248 der Celte <hi rend="unknown"
-            rendition="#none">ū</hi> durch <hi rend="unknown" rendition="#none">ü.</hi>
-          <note n="33" place="foot" type="editorial">Daneben blauer Haken.</note>
-        </p>
-        <p>zu 3) <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">
+               <note n="31" place="foot" type="editorial">HSA, Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.persons#P.3036">12896-12900</ref>.</note> verstehe ich daß er im Ganzen auf meiner Seite steht, aber doch – indem er ja schließlich in linguistischen Fragen nicht kompetent ist den Leipzigern, unter denen er lebt, nicht schroff entgegentreten möchte) oder <hi rend="unknown" rendition="#none">gerade</hi> wenn man es thut, so vermeidet man es Opfer von Ausnahmen und Ausnahmslosigkeit zu werden.</p>
+            <p>zu 1). Hier scheint mir keine eigentliche Meinungsverschiedenheit vorzuliegen. Ich möchte nur verallgemeinernd Alles zusammenfaßen, was aus der Wiedergabe des <hi rend="unknown" rendition="#none">Fremd</hi>artigen hervorgeht. <note n="32" place="foot" type="editorial">Daneben blauer Haken.</note>
+            </p>
+            <p>zu 2). Ich meinte daß der Romane <hi rend="unknown" rendition="#none">hn</hi> hört –, aber unfähig es wiederzugeben durch <hi rend="unknown" rendition="#none">han</hi> ersetzt, ähnlich wie S. 248 der Celte <hi rend="unknown" rendition="#none">ū</hi> durch <hi rend="unknown" rendition="#none">ü.</hi>
+               <note n="33" place="foot" type="editorial">Daneben blauer Haken.</note>
+            </p>
+            <p>zu 3) <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">
 timide</hi>
-          </foreign> ist für mich nicht allein ein <foreign xml:lang="fr">
-            <hi rend="unknown" rendition="#none">mot savant</hi>
-          </foreign>, sondern eine f<hi rend="unknown" rendition="#none">ormation savante</hi> und zwar eine <hi
-            rend="unknown" rendition="#none">ganz bewußte</hi>.<note n="34" place="foot" type="editorial">Am rechten Rand ein blaues Fragezeichen.</note>
-        </p>
-
-        <p>zu 4) Auch hier weichen wir kaum von einander ab; ich meine nur daß hier nicht blos das Lautliche, sd. auch das Morphologische in Betracht kommt.<note
-            n="35" place="foot" type="editorial">Am rechten Rand blauer Haken.</note>
-        </p>
-        <pb facs="#IMG.6" n="2"/>
-
-        <p>zu 5) Einverstanden. Hier kommt alles auf die Illustrationen an. Wir weichen in Bezug auf die Erklärung einzelner Erschein[un]g[en] voneinander ab.<note
-            n="36" place="foot" type="editorial">Daneben blauer Haken.</note>
-        </p>
-
-        <p>zu 6.) Hier weiter keine Einwendung. Und was die lat. Quantitätsbezeichnung anlangt, werden Sie aus meiner letzten Correspondenzkarte ersehen, daß ich sie lieber durch eine Qualitätsbezeichnung ersetzt sähe.<note
-            n="37" place="foot" type="editorial">
+               </foreign> ist für mich nicht allein ein <foreign xml:lang="fr">
+                  <hi rend="unknown" rendition="#none">mot savant</hi>
+               </foreign>, sondern eine f<hi rend="unknown" rendition="#none">ormation savante</hi> und zwar eine <hi rend="unknown" rendition="#none">ganz bewußte</hi>.<note n="34" place="foot" type="editorial">Am rechten Rand ein blaues Fragezeichen.</note>
+            </p>
+            <p>zu 4) Auch hier weichen wir kaum von einander ab; ich meine nur daß hier nicht blos das Lautliche, sd. auch das Morphologische in Betracht kommt.<note n="35" place="foot" type="editorial">Am rechten Rand blauer Haken.</note>
+            </p>
+            <pb facs="#IMG.6" n="2"/>
+            <p>zu 5) Einverstanden. Hier kommt alles auf die Illustrationen an. Wir weichen in Bezug auf die Erklärung einzelner Erschein[un]g[en] voneinander ab.<note n="36" place="foot" type="editorial">Daneben blauer Haken.</note>
+            </p>
+            <p>zu 6.) Hier weiter keine Einwendung. Und was die lat. Quantitätsbezeichnung anlangt, werden Sie aus meiner letzten Correspondenzkarte ersehen, daß ich sie lieber durch eine Qualitätsbezeichnung ersetzt sähe.<note n="37" place="foot" type="editorial">
 Daneben blauer Haken.</note>
-        </p>
-
-        <p>zu 7). Die Terminologie bei der ganzen Sache ist eine schwierige weil sie sehr oft schon erklären würde, wo die Sache selbst noch nicht völlig klar ist.<note
-            n="38" place="foot" type="editorial">Daneben blauer Haken.</note>
-        </p>
-
-        <p>zu 9). In Bezug auf diesen Punkt werden wir uns denke ich leicht verständigen. Ich denke auch daß die Sache erst gründlich untersucht resp. zu allererst viel Material gesammelt werden muß, ehe man sich ganz entschieden äußern kann. Es handelt sich, wie <hi
-            rend="unknown" rendition="#none">Victor Henry</hi>
-          <note n="39" place="foot" type="editorial">Vgl. Lfd.Nr. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.5898">057-04055</ref>.</note> meint und wie ich auch zugeb, um das <hi
-            rend="unknown" rendition="#none">
-Formelhafte</hi>.<note n="40" place="foot"
-            type="editorial">Am Rand blau angestrichen.</note> Aber wie vielen Platz nimmt nicht dieses in der Sprache ein! Bei ein wenig gutem Willen finden wir Formeln überall. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1744">Henry</persName> führt die Verkürzung von Boulevard Saint-Michel an; wie da kann es sich aber um jene Art des Gefühls, die Sie meinen, doch schwerlich<note
-            n="41" place="foot" type="editorial">Am Rand blau angestrichen.</note> handeln.<note n="42" place="foot"
-              type="editorial">
-Dazu in Bleistift folgender Kommentar Gröbers: „Hierzu zahlreiche Entstellungen bei Ortsnamen, vgl. Schiltigheim : Schil’ge in der hiesigen Sprache der Bewohner von Sch. u. der Nachbarorte. Das Gefühl, das hier zum Ausdruck kommt, ist eben die Anerkennung auf Seiten des Redenden, daß es sich um eine zu umständliche Art der Bezeichnung einer leicht erreichbaren Sache handelt [?], wie des dem Unterredner geläufigen Orts wünscht [?], wenn der Name vollständig ausgesprochen wird. Die Rauhheit des gemeinen Mannes, seine Rücksichtslosigkeit den über seine nächsten Interessen hinausliegenden Dingen gegenüber, läßt ihn sich in der Sprache rücksichtslos die <hi
-              rend="unknown" rendition="#none">geläufigen</hi> Dinge geringachten [?]. Also: zum Ausdruck kommt gewissermaßen (auch bei Bvrd-Michel) das Gefühl der Geringschätzung des Ausdrucks für den Gegenstand; daß der Ausdruck gering geschätzt wird hat freilich seinen Grund in der Häufigkeit seines Gebrauchs und der Ersetzbarkeit [?] im Zusammnhang oft wiederkehrender Rede“ [der Text ist nur schwer zu entziffern, auch hat man den Eindruck, daß Gröber den Satzbau nicht mehr abschließend überprüft hat].</note>
-        </p>
-        <pb facs="#IMG.7" n="3"/>
-        <p>zu 11) In <hi rend="unknown" rendition="#none">lautlicher</hi> Beziehung habe ich gegen <hi rend="unknown" rendition="#none">andare = ad-dare</hi> Nichts einzuwenden.</p>
-
-        <p>zu 13) Soviel ich sehe sehe, würde es sich hier um Verstärkung des Hochtons handeln. Halten Sie meine Auseinandersetzung über diese Punkte, wie ich sie in der Recension von Windisch’s Irischer Grammatik<note
-            n="43" place="foot" type="editorial">Anzeige von E. Windisch, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.591">
-                <hi rend="unknown" rendition="#none">Irische Grammatik</hi>, ZrP 4, 1881, 124-155.</ref>
-            </bibl>
-          </note> gegeben, im Wesentlichen für zutreffend? – Aber <hi rend="unknown" rendition="#none">ie</hi>, <hi
-            rend="unknown" rendition="#none">
-uo</hi> = <hi rend="unknown" rendition="#none">ę</hi>, <hi rend="unknown"
-            rendition="#none">ǫ </hi>scheint mir immer noch Erweitrung [?] aus ie, uo = e.... <hi rend="unknown"
-            rendition="#none">i</hi>, <hi rend="unknown" rendition="#none">
-u</hi>, o .... i, u. <hi rend="unknown"
-            rendition="#none">Accessorisch</hi> lassen sich <hi rend="unknown" rendition="#none">ie</hi>, <hi
-            rend="unknown" rendition="#none">uo</hi> nur aus <hi rend="unknown" rendition="#none">ę</hi>, <hi
-            rend="unknown" rendition="#none">ǫ</hi> erklären. </p>
-        <p>Zu 14) In Bezug auf <hi rend="unknown" rendition="#none">a</hi>, <hi rend="unknown"
-            rendition="#none">ai</hi>, <hi rend="unknown"
-            rendition="#none">
-ę</hi> theile ich Ihre Ansicht: aber ein <hi rend="unknown"
-            rendition="#none">
-ęẹ</hi> macht ein <hi rend="unknown"
-            rendition="#none">ẹę </hi> noch keineswegs wahrscheinlich.<note n="44" place="foot"
-            type="editorial">„e“ Sonderzeichen.</note> Wir haben eine Menge von Idiomen welche <hi rend="unknown"
-            rendition="#none">ei</hi>, <hi rend="unknown" rendition="#none">
-on</hi> für <hi rend="unknown"
-            rendition="#none">ẹ</hi>, ọ aufweisen, ohne deswegen deren Umkehrungen zu kennen.<note n="45" place="foot" type="editorial">Am Rand in blau: „vgl. á...à; in ....ni us.w. [das Darüberstehende unleserlich].</note>
-        </p>
-        <p>zu 15) Ja <hi rend="unknown"
-            rendition="#none">das</hi> habe ich verstanden; aber warum gilt die physiologische Verwandtschaft nur für die Laute, nicht für die Lautfolgen? <note
-            n="46" place="foot" type="editorial">Am Rand in blau: „?“.</note>
-        </p>
-        <pb facs="#IMG.8" n="4"/>
-        <p>zu 20) <hi rend="unknown" rendition="#none">L</hi> wird in gewisser Stellung zum sog „dünnen“ <hi
-            rend="unknown" rendition="#none">l</hi> zum jotazirten <hi rend="unknown"
-            rendition="#none">l</hi> (hier lassen sich verschiedene Abstufungen annehmen), es entwickelt sich dazu ein lj, was aber nur das <hi
-            rend="unknown" rendition="#none">l</hi> blieb. <hi rend="unknown"
-            rendition="#none">R</hi> ist nur eine Variante von <hi rend="unknown"
-            rendition="#none">d</hi>; in manchen Idiomen liegen <hi rend="unknown" rendition="#none">r</hi> und <hi
-            rend="unknown"
-            rendition="#none">d</hi> so nahe daß man sie kaum unterscheiden kann. Es handelt sich ja nicht um vibrirtes <hi
-            rend="unknown"
-            rendition="#none">r</hi>, sondern um „weiches“ wie im Spanischen, im piemontesischen Drall u.s.w. Bitte sehen Sie Romania III, 26f. an.<note
-            n="47" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.507">Schuchardt, „Phonétique comparée – De quelques modifications de la consonne initiale dans les dialectes de la Sardaigne, du Centre et du Sud d’Italie“, <hi
-                  rend="unknown" rendition="#none">Romania</hi> 3, 187., 1-30.</ref>
-            </bibl>
-          </note> (Deecke‘s etrusk. <hi rend="unknown" rendition="#none">
+            </p>
+            <p>zu 7). Die Terminologie bei der ganzen Sache ist eine schwierige weil sie sehr oft schon erklären würde, wo die Sache selbst noch nicht völlig klar ist.<note n="38" place="foot" type="editorial">Daneben blauer Haken.</note>
+            </p>
+            <p>zu 9). In Bezug auf diesen Punkt werden wir uns denke ich leicht verständigen. Ich denke auch daß die Sache erst gründlich untersucht resp. zu allererst viel Material gesammelt werden muß, ehe man sich ganz entschieden äußern kann. Es handelt sich, wie <hi rend="unknown" rendition="#none">Victor Henry</hi>
+               <note n="39" place="foot" type="editorial">Vgl. Lfd.Nr. <ref target="https://gams.uni-graz.at/o:hsa.letter.5898">057-04055</ref>.</note> meint und wie ich auch zugeb, um das <hi rend="unknown" rendition="#none">
+Formelhafte</hi>.<note n="40" place="foot" type="editorial">Am Rand blau angestrichen.</note> Aber wie vielen Platz nimmt nicht dieses in der Sprache ein! Bei ein wenig gutem Willen finden wir Formeln überall. <persName ref="[authorityLink]">Henry</persName> führt die Verkürzung von Boulevard Saint-Michel an; wie da kann es sich aber um jene Art des Gefühls, die Sie meinen, doch schwerlich<note n="41" place="foot" type="editorial">Am Rand blau angestrichen.</note> handeln.<note n="42" place="foot" type="editorial">
+Dazu in Bleistift folgender Kommentar Gröbers: „Hierzu zahlreiche Entstellungen bei Ortsnamen, vgl. Schiltigheim : Schil’ge in der hiesigen Sprache der Bewohner von Sch. u. der Nachbarorte. Das Gefühl, das hier zum Ausdruck kommt, ist eben die Anerkennung auf Seiten des Redenden, daß es sich um eine zu umständliche Art der Bezeichnung einer leicht erreichbaren Sache handelt [?], wie des dem Unterredner geläufigen Orts wünscht [?], wenn der Name vollständig ausgesprochen wird. Die Rauhheit des gemeinen Mannes, seine Rücksichtslosigkeit den über seine nächsten Interessen hinausliegenden Dingen gegenüber, läßt ihn sich in der Sprache rücksichtslos die <hi rend="unknown" rendition="#none">geläufigen</hi> Dinge geringachten [?]. Also: zum Ausdruck kommt gewissermaßen (auch bei Bvrd-Michel) das Gefühl der Geringschätzung des Ausdrucks für den Gegenstand; daß der Ausdruck gering geschätzt wird hat freilich seinen Grund in der Häufigkeit seines Gebrauchs und der Ersetzbarkeit [?] im Zusammnhang oft wiederkehrender Rede“ [der Text ist nur schwer zu entziffern, auch hat man den Eindruck, daß Gröber den Satzbau nicht mehr abschließend überprüft hat].</note>
+            </p>
+            <pb facs="#IMG.7" n="3"/>
+            <p>zu 11) In <hi rend="unknown" rendition="#none">lautlicher</hi> Beziehung habe ich gegen <hi rend="unknown" rendition="#none">andare = ad-dare</hi> Nichts einzuwenden.</p>
+            <p>zu 13) Soviel ich sehe sehe, würde es sich hier um Verstärkung des Hochtons handeln. Halten Sie meine Auseinandersetzung über diese Punkte, wie ich sie in der Recension von Windisch’s Irischer Grammatik<note n="43" place="foot" type="editorial">Anzeige von E. Windisch, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.591">
+                        <hi rend="unknown" rendition="#none">Irische Grammatik</hi>, ZrP 4, 1881, 124-155.</ref>
+                  </bibl>
+               </note> gegeben, im Wesentlichen für zutreffend? – Aber <hi rend="unknown" rendition="#none">ie</hi>, <hi rend="unknown" rendition="#none">
+uo</hi> = <hi rend="unknown" rendition="#none">ę</hi>, <hi rend="unknown" rendition="#none">ǫ </hi>scheint mir immer noch Erweitrung [?] aus ie, uo = e.... <hi rend="unknown" rendition="#none">i</hi>, <hi rend="unknown" rendition="#none">
+u</hi>, o .... i, u. <hi rend="unknown" rendition="#none">Accessorisch</hi> lassen sich <hi rend="unknown" rendition="#none">ie</hi>, <hi rend="unknown" rendition="#none">uo</hi> nur aus <hi rend="unknown" rendition="#none">ę</hi>, <hi rend="unknown" rendition="#none">ǫ</hi> erklären. </p>
+            <p>Zu 14) In Bezug auf <hi rend="unknown" rendition="#none">a</hi>, <hi rend="unknown" rendition="#none">ai</hi>, <hi rend="unknown" rendition="#none">
+ę</hi> theile ich Ihre Ansicht: aber ein <hi rend="unknown" rendition="#none">
+ęẹ</hi> macht ein <hi rend="unknown" rendition="#none">ẹę </hi> noch keineswegs wahrscheinlich.<note n="44" place="foot" type="editorial">„e“ Sonderzeichen.</note> Wir haben eine Menge von Idiomen welche <hi rend="unknown" rendition="#none">ei</hi>, <hi rend="unknown" rendition="#none">
+on</hi> für <hi rend="unknown" rendition="#none">ẹ</hi>, ọ aufweisen, ohne deswegen deren Umkehrungen zu kennen.<note n="45" place="foot" type="editorial">Am Rand in blau: „vgl. á...à; in ....ni us.w. [das Darüberstehende unleserlich].</note>
+            </p>
+            <p>zu 15) Ja <hi rend="unknown" rendition="#none">das</hi> habe ich verstanden; aber warum gilt die physiologische Verwandtschaft nur für die Laute, nicht für die Lautfolgen? <note n="46" place="foot" type="editorial">Am Rand in blau: „?“.</note>
+            </p>
+            <pb facs="#IMG.8" n="4"/>
+            <p>zu 20) <hi rend="unknown" rendition="#none">L</hi> wird in gewisser Stellung zum sog „dünnen“ <hi rend="unknown" rendition="#none">l</hi> zum jotazirten <hi rend="unknown" rendition="#none">l</hi> (hier lassen sich verschiedene Abstufungen annehmen), es entwickelt sich dazu ein lj, was aber nur das <hi rend="unknown" rendition="#none">l</hi> blieb. <hi rend="unknown" rendition="#none">R</hi> ist nur eine Variante von <hi rend="unknown" rendition="#none">d</hi>; in manchen Idiomen liegen <hi rend="unknown" rendition="#none">r</hi> und <hi rend="unknown" rendition="#none">d</hi> so nahe daß man sie kaum unterscheiden kann. Es handelt sich ja nicht um vibrirtes <hi rend="unknown" rendition="#none">r</hi>, sondern um „weiches“ wie im Spanischen, im piemontesischen Drall u.s.w. Bitte sehen Sie Romania III, 26f. an.<note n="47" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.507">Schuchardt, „Phonétique comparée – De quelques modifications de la consonne initiale dans les dialectes de la Sardaigne, du Centre et du Sud d’Italie“, <hi rend="unknown" rendition="#none">Romania</hi> 3, 187., 1-30.</ref>
+                  </bibl>
+               </note> (Deecke‘s etrusk. <hi rend="unknown" rendition="#none">
 i</hi> = <hi rend="unknown" rendition="#none">l</hi> ist mir schon früher bedenklich erschienen.</p>
-        <p>zu 21) Darüber wage ich mich auch – indirekt ­– nicht auszusprechen. Sie verstehn [?] <hi rend="unknown"
-            rendition="#none">Anlaologisch</hi> [sic] kommt mir die Sache vor. Daß die Celten nicht <hi rend="unknown" rendition="#none">ū</hi> sprechen konnten, das aber ist der Punkt, der sich nicht mehr erweisen läßt.</p>
-        <p>zu 22) Die <hi rend="unknown" rendition="#none">Gorgia</hi> hat man, glaub‘ ich, schon im vorigen Jahrh. auf das Etruskische bezogen; ich habe mich Slawo-d. S. 12ff. ausführlich darüber geäußert.</p>
-        <pb facs="#IMG.9" n="5"/>
-        <p>zu 23) Ich bitte mir zu erklären, inwiefern der Übergang zwischen <hi rend="unknown"
-            rendition="#none">l</hi>, <hi rend="unknown" rendition="#none">
-n</hi> und <hi rend="unknown"
-            rendition="#none">r</hi> „artikulatorisch“ unmöglich sein soll. Ich gestehe daß mich das befremdet. Im Chinesischen, dem man gewöhnlich Schuld gibt, daß es <hi
-            rend="unknown" rendition="#none">r</hi> durch <hi rend="unknown"
-            rendition="#none">l</hi> ersetzt, besteht vielmehr ein Mittellaut, der weder das Eine noch das Andre oder beides zugleich ist. – Aber wie dem auch sei nun [?], warum die Fälle nicht als Assimilation fassen? <hi
-            rend="unknown" rendition="#none">Nd = md</hi> ist ja ganz ähnlich; zwischen <hi rend="unknown"
-            rendition="#none">n</hi> und <hi rend="unknown" rendition="#none">m</hi> findet ja artikulatorischer Übergang auch nicht statt.</p>
-        <p>[zu 24) Ich hätte [mich] an Ihrer Stelle des Ausdrucks „Ausnahmslosigkeit“ mit Beziehung auf die Junggrammatiker bedient und ihnen gesagt, wie derselbe verstanden werden kann oder muß oder mißverstanden werden kann.</p>
-        <p>Sagen Sie mir gelegentlich Ihre Ansicht über meine Antwort an V. Henry,<note n="48" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.167">Schuchardt, „Sur les lois phonétiques. Réponse à M. V. Henry“, <hi
-                  rend="unknown" rendition="#none">Revue critique d’histoire et de littérature</hi> 20, 1886, 294-300.</ref>
-            </bibl>
-          </note> die ich denke im Lauf der nächsten 14 Tage erscheinen wird; man drängte mich, die Correctur spätestens bis zum 1. April zurückzusenden.</p>
-        <pb facs="#IMG.10" n="6"/>
-
-        <p>Entschuldigen Sie – aus den angeführten sanitären Gründen – mein Geschmiere; ich lese es nicht einmal wieder durch, Sie werden die <hi
-            rend="unknown" rendition="#none">
+            <p>zu 21) Darüber wage ich mich auch – indirekt ­– nicht auszusprechen. Sie verstehn [?] <hi rend="unknown" rendition="#none">Anlaologisch</hi> [sic] kommt mir die Sache vor. Daß die Celten nicht <hi rend="unknown" rendition="#none">ū</hi> sprechen konnten, das aber ist der Punkt, der sich nicht mehr erweisen läßt.</p>
+            <p>zu 22) Die <hi rend="unknown" rendition="#none">Gorgia</hi> hat man, glaub‘ ich, schon im vorigen Jahrh. auf das Etruskische bezogen; ich habe mich Slawo-d. S. 12ff. ausführlich darüber geäußert.</p>
+            <pb facs="#IMG.9" n="5"/>
+            <p>zu 23) Ich bitte mir zu erklären, inwiefern der Übergang zwischen <hi rend="unknown" rendition="#none">l</hi>, <hi rend="unknown" rendition="#none">
+n</hi> und <hi rend="unknown" rendition="#none">r</hi> „artikulatorisch“ unmöglich sein soll. Ich gestehe daß mich das befremdet. Im Chinesischen, dem man gewöhnlich Schuld gibt, daß es <hi rend="unknown" rendition="#none">r</hi> durch <hi rend="unknown" rendition="#none">l</hi> ersetzt, besteht vielmehr ein Mittellaut, der weder das Eine noch das Andre oder beides zugleich ist. – Aber wie dem auch sei nun [?], warum die Fälle nicht als Assimilation fassen? <hi rend="unknown" rendition="#none">Nd = md</hi> ist ja ganz ähnlich; zwischen <hi rend="unknown" rendition="#none">n</hi> und <hi rend="unknown" rendition="#none">m</hi> findet ja artikulatorischer Übergang auch nicht statt.</p>
+            <p>[zu 24) Ich hätte [mich] an Ihrer Stelle des Ausdrucks „Ausnahmslosigkeit“ mit Beziehung auf die Junggrammatiker bedient und ihnen gesagt, wie derselbe verstanden werden kann oder muß oder mißverstanden werden kann.</p>
+            <p>Sagen Sie mir gelegentlich Ihre Ansicht über meine Antwort an V. Henry,<note n="48" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.167">Schuchardt, „Sur les lois phonétiques. Réponse à M. V. Henry“, <hi rend="unknown" rendition="#none">Revue critique d’histoire et de littérature</hi> 20, 1886, 294-300.</ref>
+                  </bibl>
+               </note> die ich denke im Lauf der nächsten 14 Tage erscheinen wird; man drängte mich, die Correctur spätestens bis zum 1. April zurückzusenden.</p>
+            <pb facs="#IMG.10" n="6"/>
+            <p>Entschuldigen Sie – aus den angeführten sanitären Gründen – mein Geschmiere; ich lese es nicht einmal wieder durch, Sie werden die <hi rend="unknown" rendition="#none">
 lapsus calami</hi> unschwer verbessern. Meine Absicht ist in meiner eigenen Monographie die Ursachen und Arten des Lautwandels zu behandeln und dabei auf ganz verschiedenartige Sprachen Rücksicht zu nehmen, insbesondere auf einige mit denen ich mich näher beschäftigt habe, auf slowenische, magyarische, malaiische Dialekte. Vielleicht bleibt das, wie so vieles in meinem</p>
-        <pb facs="#IMG.11" n="7"/>
-
-        <p>Leben, nur guter Vorsatz, dank meinen Nerven; trotzdem spreche ich davon, weil ich überzeugt bin, daß wenn auch <hi
-            rend="unknown"
-            rendition="#none">ich</hi> nicht zu dieser Arbeit komme, jedenfalls man früher oder später behufs <hi
-            rend="unknown" rendition="#none">Erklärung</hi> der Lautwandlungen die Comparation <hi rend="unknown"
-            rendition="#none">un</hi>verwandter Sprachen für durchaus nothwendig halten wird. Alles wiederholt sich, und <hi
-            rend="unknown" rendition="#none">wie</hi> es sich wiederholt, das ist das Instinktive</p>
-        <closer>
-          <salute>Mit besten Grüßen</salute>
-          <lb/>
-          <salute>Ihr ergebenster </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HS</persName>.</signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <pb facs="#IMG.11" n="7"/>
+            <p>Leben, nur guter Vorsatz, dank meinen Nerven; trotzdem spreche ich davon, weil ich überzeugt bin, daß wenn auch <hi rend="unknown" rendition="#none">ich</hi> nicht zu dieser Arbeit komme, jedenfalls man früher oder später behufs <hi rend="unknown" rendition="#none">Erklärung</hi> der Lautwandlungen die Comparation <hi rend="unknown" rendition="#none">un</hi>verwandter Sprachen für durchaus nothwendig halten wird. Alles wiederholt sich, und <hi rend="unknown" rendition="#none">wie</hi> es sich wiederholt, das ist das Instinktive</p>
+            <closer>
+               <salute>Mit besten Grüßen</salute>
+               <lb/>
+               <salute>Ihr ergebenster </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HS</persName>.</signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

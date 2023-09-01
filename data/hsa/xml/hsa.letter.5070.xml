@@ -1,229 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Karl Luick (32-s.n.)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/5070" type="PID">o:hsa.letter.5070</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">32-s.n.</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <settlement>Wien</settlement>
-            <repository ref="https://www.onb.ac.at/">Österreichische Nationalbibliothek</repository>
-            <idno type="shelfmark">s.n.</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace>Unbekannt</origPlace>
-              <origDate ana="dcterms:created" when="1912-04-19">1912-04-19</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2017">2017</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Karl Luick</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2087"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.5070">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName>Unbekannt</placeName>
-          <date when="1912-04-19">1912-04-19</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2087" ref="https://viaf.org/viaf/8184821">
-            <forename>Karl</forename>
-            <surname>Luick</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item/>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2087" type="context">
-                        Korrespondenz Hugo Schuchardt - Karl Luick
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.5070" xml:lang="de">
+            <pb n="1"/>
+            <dateline>19.4.‘12</dateline>
+            <opener>Lieber Freund</opener>
+            <p>Da ich auf meine Frage <hi rend="unknown" rendition="#none">ja</hi>? <hi rend="unknown" rendition="#none">nein</hi>? oder <hi rend="unknown" rendition="#none">jede Antwort abgelehnt</hi>? keine Antwort erhalten habe, so beantworte ich sie selbst und zwar im letzten Sinne: Ich habe von dem <hi rend="unknown" rendition="#none">tertium non datur</hi> abgesehen; aber ein <hi rend="unknown" rendition="#none">quartum non datur</hi> ist jedenfalls richtig.</p>
+            <p>Ich danke Dir vielmals für Deine Bereitwilligkeit meinen postillon d’amour zu machen und bitte Dich mir zu verzeihen, daß ich Dich überhaupt in dieser Sache behelligt habe. Entschuldige auch daß ich Dich „gemahnt“ habe, die alten Freunde <pb n="2"/> nicht zu vergessen; wäre es auch mehr als eine halbgedankenlose Schlußformel, wäre es eine wirkliche Mahnung, so doch eine ganz allgemeine, nicht durch Dich selbst veranlaßte. Der Lebende, und insbesondere der Gegenwärtige hat Recht; Jedem geht es so daß die Argumente seines Unterredners ihm mehr einleuchten als die Gegenargumente eines Andern die ihm nicht einmal bekannt werden. </p>
+            <p>Ich danke Dir daß Du, wie Du schreibst, oft genug den Standpunkt Deiner Grazer Freunde gegen M.-L.s<note n="1" place="foot" type="editorial">Der Plural meint das Ehepaar <persName ref="[authorityLink]">
+Wilhelm</persName> und <persName ref="[authorityLink]">Minna</persName> (Hermine) Meyer-Lübke; die Schreibung „M-L.‘s“ bezeichnet den Genetiv singular.</note> verteidigt hast. Und ich wollte, Du tätest es auch in diesen Angelegenheiten. Du kennst wenigstens meine Lebensbedingungen. Ich habe unter den Fakultätsgeschichten außerordentlich gelitten, und habe mich doch immer ausschließlich um die Dinge gekümmert um die ich mich kümmern mußte. Als ich einmal, nicht mich in fremde Dinge einmischte (1876/77), aber gelegentlich der <pb n="3"/> Wiederbesetzung von <persName ref="[authorityLink]">J. Schmidt</persName>s<note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Johannes Schmidt</persName> (1843-1901), von 1873-76 Grazer Ordinarius für <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3152">Vergleichende Sprachwissenschaft</ref>.</note> Lehrkanzel, eine direkte schriftliche Mitteilung an den Dekan richtete (in welcher ich darauf hinwies daß einer der Vorgeschlagenen verhindert wäre anzunehmen) – da war der Teufel los! Kurz, als ich in den Ruhestand trat, da wollte ich (vom Kampfe um die Wissenschaft abgesehen) auch wirklich Ruhe haben, mich nicht, was Berufungen und dergleichen anlangt, einmischen und exponieren. Ich befinde mich oft im Widerspruch mit den Umlebenden, welche sagen: Na, man versuchts halt. Mir gefällt besser der Wahlspruch auf dem Degen der alten Spanier: Ziehe ihn nicht ohne Grund, stecke ihn nicht ohne Ehre ein.<note n="3" place="foot" type="editorial">Dieses Motto ist noch bekannter in seiner französischen Version: „Ne me tire pas sans raison“ bzw. „Ne me remette pas sans raison“. Die span. Version lautet „No me tires sin razón, no me envaines sin honor“.</note> Durch die körperliche und geistige Erschöpfung an der ich besonders die Sommermonate hindurch leide, bin ich zur größten Passivität in Allem, wobei andere Personen in Betracht kommen, geradezu gezwungen. So hat es mich denn allerdings sehr aufgebracht als ich feststellte, man habe mir aus meiner Nichteinmischung<note n="4" place="foot" type="editorial">Am unteren Rand von anderer Hand: „Nörgelei von <persName ref="[authorityLink]">Meringer</persName>“.</note>
+               <pb n="4"/> einen Vorwurf gemacht: ich habe das als eine Verunglimpfung meines Charakters betrachtet und deshalb mich in so dringlicher Weise an Dich gewendet. Die „Weiterungen“ die aus einem mit fester Hand angepackten Unternehmen, entstehen könnten, haben mich nie geschreckt; haben aber die Andern die in diesem Fall möglichen oder gar wahrscheinlichen Weiterungen erfaßt und gewürdigt? Ich weiß nicht mit welchem Rechte <persName ref="[authorityLink]">
+M.-L.</persName> in dieser Sache gegen mich verstimmt sein kann; wir sind ja hierbei in keine, auch nicht mittelbare Beziehung miteinander getreten. Weiß Gott was ihm Meringer vorfabuliert haben mag. Weit eher könnte ich wegen des letzteren gegen <persName ref="[authorityLink]">M.-L.</persName>
+               <hi rend="unknown" rendition="#none">s</hi> verstimmt sein. Zunächst hat er vor dem Abbruch<note n="5" place="foot" type="editorial">Der Bruch zwischen Schuchardt und <persName ref="[authorityLink]">Meringer</persName> erfolgte 1911; vgl. Schuchardt, <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.289">
+                        <hi rend="unknown" rendition="#none">Gegen R. Meringer</hi>
                      </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3152" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Vergleichende Sprachwissenschaft</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.5070" xml:lang="de">
-        <pb n="1"/>
-        <dateline>19.4.‘12</dateline>
-        <opener>Lieber Freund</opener>
-        <p>Da ich auf meine Frage <hi rend="unknown" rendition="#none">ja</hi>? <hi rend="unknown"
-            rendition="#none">nein</hi>? oder <hi rend="unknown"
-            rendition="#none">jede Antwort abgelehnt</hi>? keine Antwort erhalten habe, so beantworte ich sie selbst und zwar im letzten Sinne: Ich habe von dem <hi
-            rend="unknown" rendition="#none">tertium non datur</hi> abgesehen; aber ein <hi rend="unknown" rendition="#none">quartum non datur</hi> ist jedenfalls richtig.</p>
-
-        <p>Ich danke Dir vielmals für Deine Bereitwilligkeit meinen postillon d’amour zu machen und bitte Dich mir zu verzeihen, daß ich Dich überhaupt in dieser Sache behelligt habe. Entschuldige auch daß ich Dich „gemahnt“ habe, die alten Freunde <pb n="2"/> nicht zu vergessen; wäre es auch mehr als eine halbgedankenlose Schlußformel, wäre es eine wirkliche Mahnung, so doch eine ganz allgemeine, nicht durch Dich selbst veranlaßte. Der Lebende, und insbesondere der Gegenwärtige hat Recht; Jedem geht es so daß die Argumente seines Unterredners ihm mehr einleuchten als die Gegenargumente eines Andern die ihm nicht einmal bekannt werden. </p>
-        <p>Ich danke Dir daß Du, wie Du schreibst, oft genug den Standpunkt Deiner Grazer Freunde gegen M.-L.s<note
-            n="1" place="foot" type="editorial">Der Plural meint das Ehepaar <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-Wilhelm</persName> und <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5334">Minna</persName> (Hermine) Meyer-Lübke; die Schreibung „M-L.‘s“ bezeichnet den Genetiv singular.</note> verteidigt hast. Und ich wollte, Du tätest es auch in diesen Angelegenheiten. Du kennst wenigstens meine Lebensbedingungen. Ich habe unter den Fakultätsgeschichten außerordentlich gelitten, und habe mich doch immer ausschließlich um die Dinge gekümmert um die ich mich kümmern mußte. Als ich einmal, nicht mich in fremde Dinge einmischte (1876/77), aber gelegentlich der <pb
-            n="3"/> Wiederbesetzung von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2651">J. Schmidt</persName>s<note n="2" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2651">Johannes Schmidt</persName> (1843-1901), von 1873-76 Grazer Ordinarius für <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.3152">Vergleichende Sprachwissenschaft</ref>.</note> Lehrkanzel, eine direkte schriftliche Mitteilung an den Dekan richtete (in welcher ich darauf hinwies daß einer der Vorgeschlagenen verhindert wäre anzunehmen) – da war der Teufel los! Kurz, als ich in den Ruhestand trat, da wollte ich (vom Kampfe um die Wissenschaft abgesehen) auch wirklich Ruhe haben, mich nicht, was Berufungen und dergleichen anlangt, einmischen und exponieren. Ich befinde mich oft im Widerspruch mit den Umlebenden, welche sagen: Na, man versuchts halt. Mir gefällt besser der Wahlspruch auf dem Degen der alten Spanier: Ziehe ihn nicht ohne Grund, stecke ihn nicht ohne Ehre ein.<note
-            n="3" place="foot"
-            type="editorial">Dieses Motto ist noch bekannter in seiner französischen Version: „Ne me tire pas sans raison“ bzw. „Ne me remette pas sans raison“. Die span. Version lautet „No me tires sin razón, no me envaines sin honor“.</note> Durch die körperliche und geistige Erschöpfung an der ich besonders die Sommermonate hindurch leide, bin ich zur größten Passivität in Allem, wobei andere Personen in Betracht kommen, geradezu gezwungen. So hat es mich denn allerdings sehr aufgebracht als ich feststellte, man habe mir aus meiner Nichteinmischung<note
-            n="4" place="foot" type="editorial">Am unteren Rand von anderer Hand: „Nörgelei von <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">Meringer</persName>“.</note>
-          <pb
-            n="4"/> einen Vorwurf gemacht: ich habe das als eine Verunglimpfung meines Charakters betrachtet und deshalb mich in so dringlicher Weise an Dich gewendet. Die „Weiterungen“ die aus einem mit fester Hand angepackten Unternehmen, entstehen könnten, haben mich nie geschreckt; haben aber die Andern die in diesem Fall möglichen oder gar wahrscheinlichen Weiterungen erfaßt und gewürdigt? Ich weiß nicht mit welchem Rechte <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-M.-L.</persName> in dieser Sache gegen mich verstimmt sein kann; wir sind ja hierbei in keine, auch nicht mittelbare Beziehung miteinander getreten. Weiß Gott was ihm Meringer vorfabuliert haben mag. Weit eher könnte ich wegen des letzteren gegen <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">M.-L.</persName>
-          <hi rend="unknown" rendition="#none">s</hi> verstimmt sein. Zunächst hat er vor dem Abbruch<note n="5"
-            place="foot" type="editorial">Der Bruch zwischen Schuchardt und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">Meringer</persName> erfolgte 1911; vgl. Schuchardt, <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.289">
-                <hi rend="unknown" rendition="#none">Gegen R. Meringer</hi>
-              </ref>
-            </bibl>, Graz 1911.</note> einer Darstellung <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">Meringer</persName>s in meiner Sache, mehr Glauben beigemessen, als der meinigen. Ferner hat er, dem doch <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">Mer.</persName> zu so vielem Danke verpflichtet ist, ihn gewiß bestimmten können, ich sage nicht seinen Brief zu widerrufen, aber doch <pb
-            n="5"/> einen Modus vivendi anzubahnen durch den für uns Alle lächerliche und unangenehme Situationen erspart worden wären. Er hat es nicht gewollt oder doch nicht nachdrücklich genug gewollt. Ich wartete ein volles Vierteljahr und dann druckte ich mein Flugblatt. Frau <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5334">W. Meyer-Lübke</persName>, die doch eine gescheite Frau ist, hat mich deshalb getadelt, indem sie die Gepflogenheit Privatbriefe nicht zu veröffentlichen mechanisch als eine unter keiner Bedingung zu verabsäumende Pflicht betrachtete. Ich frage: was hätte ich tun sollen? – Nichts. – Also: stille Verachtung? – Um Gottes Willen nein! Kurz ich sollte Alles über mich ergehen lassen, falsche Beurteilung, Mißverständnisse usw., nur damit ihrem Günstling nichts geschähe. Er, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-M.-L.</persName> hat die Nichteinmischung weiter getrieben als ich es unter gleichen Verhältnissen je getan hätte. Mir gegenüber hat er eigentlich nicht Farbe bekannt, ist nicht aus sich herausgegangen, seine Frau, gleichsam seinem Minister des Äußeren, hat er die Erörterung des Falles <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2169">M.</persName> mit mir überlassen. Das </p>
-        <p>[Vorlage endet hier, korr.]</p>
-      </div>
-    </body>
-  </text>
+                  </bibl>, Graz 1911.</note> einer Darstellung <persName ref="[authorityLink]">Meringer</persName>s in meiner Sache, mehr Glauben beigemessen, als der meinigen. Ferner hat er, dem doch <persName ref="[authorityLink]">Mer.</persName> zu so vielem Danke verpflichtet ist, ihn gewiß bestimmten können, ich sage nicht seinen Brief zu widerrufen, aber doch <pb n="5"/> einen Modus vivendi anzubahnen durch den für uns Alle lächerliche und unangenehme Situationen erspart worden wären. Er hat es nicht gewollt oder doch nicht nachdrücklich genug gewollt. Ich wartete ein volles Vierteljahr und dann druckte ich mein Flugblatt. Frau <persName ref="[authorityLink]">W. Meyer-Lübke</persName>, die doch eine gescheite Frau ist, hat mich deshalb getadelt, indem sie die Gepflogenheit Privatbriefe nicht zu veröffentlichen mechanisch als eine unter keiner Bedingung zu verabsäumende Pflicht betrachtete. Ich frage: was hätte ich tun sollen? – Nichts. – Also: stille Verachtung? – Um Gottes Willen nein! Kurz ich sollte Alles über mich ergehen lassen, falsche Beurteilung, Mißverständnisse usw., nur damit ihrem Günstling nichts geschähe. Er, <persName ref="[authorityLink]">
+M.-L.</persName> hat die Nichteinmischung weiter getrieben als ich es unter gleichen Verhältnissen je getan hätte. Mir gegenüber hat er eigentlich nicht Farbe bekannt, ist nicht aus sich herausgegangen, seine Frau, gleichsam seinem Minister des Äußeren, hat er die Erörterung des Falles <persName ref="[authorityLink]">M.</persName> mit mir überlassen. Das </p>
+            <p>[Vorlage endet hier, korr.]</p>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

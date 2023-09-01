@@ -1,347 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (237-10996)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2067" type="PID">o:hsa.letter.2067</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">237-10996</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">10996</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.59" ref="http://sws.geonames.org/2768497">Pörtschach</origPlace>
-              <origDate ana="dcterms:created" when="1920-04-20">1920-04-20</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2067">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.59" key="#GID.1" ref="http://sws.geonames.org/2768497">Pörtschach</placeName>
-          <date when="1920-04-20">1920-04-20</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Pörtschach am Wörthersee</settlement>
-                <name ref="http://geonames.org/2768497" type="fcode:PPL">Pörtschach am Wörthersee</name>
-                <location>
-                  <geo>14.14639,46.63639</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2067" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2067" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2067" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2067" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2067" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2067" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2067" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Pörtschach, 20. IV. 1920</dateline>
-        <opener>Verehrter Herr Hofrat,</opener>
-
-        <p>Ihre Sendung hat mich sehr erfreut. Sie wissen, daß ich von den Fähigkeiten meiner Fachgenossen arroganterweise im allgemeinen nicht allzu hoch denke, und daher ist mir gegenüber dem allgemeinen Stillschweigen, das meinem und ähnlichen Versuchen, das uns Nahe zu erforschen, bereitet wird, Ihre eingehende Beschäftigung mit Morgenstern doppelt wertvoll.<note
-            n="1" place="foot" type="editorial"> In der Folge referiert Spitzer auf <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.220">
-Schuchardts "Chr. Morgensterns groteske Gedichte und ihre Würdigung durch L. Spitzer", in: <hi
-                  rend="unknown" rendition="#none">Euphorion</hi> 22 (1920)</ref>: 639-653.</bibl>
-          </note>
-        </p>
-        <p>Ich gehe nun der Reihe nach die Punkte durch, zu denen ich etwas sagen möchte.</p>
-
-        <p>Sie vergleichen Villers (warum einmal de Villers, sonst Villers?), von dem Sie ausdrücklich sagen, daß Einfluß auf M. nicht sicher nachzuweisen ist – und wollen diesen wegrücken von Mauthner, dessen Einfluß (nicht nur aus den "Stufen", wie Sie sagen; ich war vor Erscheinen dieses Buches zu der Erkenntnis gekommen!) sicher festgestellt ist. Gewiß ist es richtig, daß die Einreihung M.'s unter andern <pb
-            facs="#IMG.2"
-            n="2"/>Humoristen nahe gelegen hätte (ich habe selbst Lichtenberg zitiert, es käme auch Jean Paul und der Franzose Cyrano de Bergerac in Betracht) – aber muß man nicht zuerst die sicheren Quellen, dann die möglichen Einflüsse (Petöfi, de Villers, das Schwedische, das <hi
-            rend="unknown" rendition="#none">Korf</hi> 'Wurst' hat) in Betracht ziehen?</p>
-        <p>S.644 'Das "Knie" bleibt ohne Erklärung' – hier wäre es am Platz, gerichtliche Eindrücke anzunehmen: Der Kopf das Knie!</p>
-        <p>Anm. "Rektoratsessen" – für mich ein ebenso gräßliches Wort wie Begriff (ich bedauere Sie noch nachträglich wegen der Teilnahme!).</p>
-
-        <p>S.646 Vieles ist doch auch bei Ihrer Wertung M.'s, Ihrem subjektiven Empfinden fürs Komische, das sich nicht mit dem meinen deckt, entsprungen: die <hi
-            rend="unknown" rendition="#none">Schild-krö-kröte</hi> hat Sie kalt gelassen, mich begeistert! Gewiß "laus der Gute" ist das Vorbild, aber nun trefflich zur Charakteristik verwendet – darum handelt es sich! Ebenso S.647 "Fisches Nachtgesang" -u- ist 1) Nachahmung der skandierenden Metriker 2) das Schnappen des Fisches (u)+ Mundzumachen (-)- das ist doch wohl "elementarbekannt". Ihre unstrophische Transskription benimmt sehr viel der komischen Wirkung.</p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>S.647 Anm. "Um die Spitznamen hat sich Spitzer nicht bemüht" – Stabreimdichtung Wortspiel oder inhaltliche Verknüpfung?</p>
-        <p>S.648 Warum soll der <hi rend="unknown"
-            rendition="#none">Unterschied</hi> Mauthners nicht auf Morgensterns<note n="2" place="foot"
-              type="editorial"> Es handelt sich hier nicht um Titel, sondern um Wortneubildungen, die Spitzer etymologisch interessant erscheinen; Mauthners Ausdruck lautet "Untersch<hi
-              rend="unknown" rendition="#none">ei</hi>d". So zitiert ihn Schuchardt in seiner Besprechung, der in dem Wort weniger eine gewagte Umbildung als vielmehr eine Ableitung aus dem schon existenten holländischen Ausdruck "onderscheid" sieht.</note>
-          <hi rend="unknown"
-            rendition="#none">Vergeß</hi> gewirkt haben, wo 1) Morgenst. Mauthner kennt, 2) der Einfluß von holl. <hi
-            rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2067" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Pörtschach, 20. IV. 1920</dateline>
+            <opener>Verehrter Herr Hofrat,</opener>
+            <p>Ihre Sendung hat mich sehr erfreut. Sie wissen, daß ich von den Fähigkeiten meiner Fachgenossen arroganterweise im allgemeinen nicht allzu hoch denke, und daher ist mir gegenüber dem allgemeinen Stillschweigen, das meinem und ähnlichen Versuchen, das uns Nahe zu erforschen, bereitet wird, Ihre eingehende Beschäftigung mit Morgenstern doppelt wertvoll.<note n="1" place="foot" type="editorial"> In der Folge referiert Spitzer auf <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.220">
+Schuchardts "Chr. Morgensterns groteske Gedichte und ihre Würdigung durch L. Spitzer", in: <hi rend="unknown" rendition="#none">Euphorion</hi> 22 (1920)</ref>: 639-653.</bibl>
+               </note>
+            </p>
+            <p>Ich gehe nun der Reihe nach die Punkte durch, zu denen ich etwas sagen möchte.</p>
+            <p>Sie vergleichen Villers (warum einmal de Villers, sonst Villers?), von dem Sie ausdrücklich sagen, daß Einfluß auf M. nicht sicher nachzuweisen ist – und wollen diesen wegrücken von Mauthner, dessen Einfluß (nicht nur aus den "Stufen", wie Sie sagen; ich war vor Erscheinen dieses Buches zu der Erkenntnis gekommen!) sicher festgestellt ist. Gewiß ist es richtig, daß die Einreihung M.'s unter andern <pb facs="#IMG.2" n="2"/>Humoristen nahe gelegen hätte (ich habe selbst Lichtenberg zitiert, es käme auch Jean Paul und der Franzose Cyrano de Bergerac in Betracht) – aber muß man nicht zuerst die sicheren Quellen, dann die möglichen Einflüsse (Petöfi, de Villers, das Schwedische, das <hi rend="unknown" rendition="#none">Korf</hi> 'Wurst' hat) in Betracht ziehen?</p>
+            <p>S.644 'Das "Knie" bleibt ohne Erklärung' – hier wäre es am Platz, gerichtliche Eindrücke anzunehmen: Der Kopf das Knie!</p>
+            <p>Anm. "Rektoratsessen" – für mich ein ebenso gräßliches Wort wie Begriff (ich bedauere Sie noch nachträglich wegen der Teilnahme!).</p>
+            <p>S.646 Vieles ist doch auch bei Ihrer Wertung M.'s, Ihrem subjektiven Empfinden fürs Komische, das sich nicht mit dem meinen deckt, entsprungen: die <hi rend="unknown" rendition="#none">Schild-krö-kröte</hi> hat Sie kalt gelassen, mich begeistert! Gewiß "laus der Gute" ist das Vorbild, aber nun trefflich zur Charakteristik verwendet – darum handelt es sich! Ebenso S.647 "Fisches Nachtgesang" -u- ist 1) Nachahmung der skandierenden Metriker 2) das Schnappen des Fisches (u)+ Mundzumachen (-)- das ist doch wohl "elementarbekannt". Ihre unstrophische Transskription benimmt sehr viel der komischen Wirkung.</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>S.647 Anm. "Um die Spitznamen hat sich Spitzer nicht bemüht" – Stabreimdichtung Wortspiel oder inhaltliche Verknüpfung?</p>
+            <p>S.648 Warum soll der <hi rend="unknown" rendition="#none">Unterschied</hi> Mauthners nicht auf Morgensterns<note n="2" place="foot" type="editorial"> Es handelt sich hier nicht um Titel, sondern um Wortneubildungen, die Spitzer etymologisch interessant erscheinen; Mauthners Ausdruck lautet "Untersch<hi rend="unknown" rendition="#none">ei</hi>d". So zitiert ihn Schuchardt in seiner Besprechung, der in dem Wort weniger eine gewagte Umbildung als vielmehr eine Ableitung aus dem schon existenten holländischen Ausdruck "onderscheid" sieht.</note>
+               <hi rend="unknown" rendition="#none">Vergeß</hi> gewirkt haben, wo 1) Morgenst. Mauthner kennt, 2) der Einfluß von holl. <hi rend="unknown" rendition="#none">
 onderscheid</hi> erst glaubhaft gemacht werden müßte?</p>
-        <p>S.649 Das <hi rend="unknown"
-            rendition="#none">hab acht</hi> ist Ihnen unverständlich: zur Verbreitung der Geisterstimmung dringend notwendig, außerdem Anklang an <hi
-            rend="unknown" rendition="#none">halb acht</hi>
-        </p>
-        <p>S.650 "Spitzer (56) bemerkt dazu: 'jeder Name ist eine Beurteilung', und an diesen Vers ..." Spitzer skandiert nun seinen Nachtgesang: /È/È/È/È/È/.</p>
-        <p>S.650 "Übrigens fallen die Westküsten aus der Rolle..." Jawohl, aber das ist eben Spiel, jäher Übergang aus der Sprachphilosophie in das Kind-Mann-Sein.</p>
-
-        <p>S.652 "geheime Latenzen" = geheime Verborgenheiten, 'geheim' hebt eine Folge der 'Verborgenheiten' hervor. <hi
-            rend="unknown" rendition="#none">Alter Greis</hi> ist auch nicht so schlecht wie man meist sagt. </p>
-        <p>S.652 Warum läßt sich keine Absicht bei M. erkennen? Wo die Berührung mit Mauthner so klar ist! Auch seine Frau hat mir dies bestätigt und sich gegen die Tändelauffassung gewendet.</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>S.653 Gewiß auf "Sprach/kobold" liegt der Akzent.</p>
-        <p>S.653: der Einwand gegen Ende der Seite ist vollkommen berechtigt. Ich habe ihn mir selbst auch vorgelegt und daher den urspr. Titel der Abhandlung "Die groteske Sprachkunst Chr.M.s" durch Einfügung von 'Gestaltungs-' verändert. Es ist aber auch sehr schwer, Expressionismus und Sprachspielerei zu scheiden.</p>
-        <p>Ich werde nun Ihre Schlußfolgerungen zum persönlichen Gebrauch übersetzen: da kommt ungefähr Folgendes heraus: "M. hat teils wertlose teils klangvolle Sprachneuerungen geschaffen. Erstere hat Spitzer nicht von den letzteren gesondert. Jene hätte er mit anderen humoristischen Neubildungen vergleichen sollen, diese mit den anderen Werken M.'s. Beides hat er nicht getan, also, lieber Leser, Du bist gewarnt. Über Sp.'s Vorschläge zu 'Motiv und Wort'-Forschung äußere ich mich nicht, weil – ich mich mit Sperber beschäftigen müßte. Nun weißt Dus lieber Leser!" Habe ich mit dieser "boshaften" Interpretation recht?</p>
-        <p>Jeder Rezensent ist dem Rezensierten überlegen (ich weiß es aus eigener Erfahrung), weil jener eben nicht</p>
-        <p>[Seite fehlt]</p>
-        <pb facs="#IMG.5" n="5"/>
-        <p>und tausche auch gern mit Materialien – vielleicht weil ich doch mit der Händlernation zu tun habe, der Ihre Deutschvölkler Fehde geschworen haben. Das "Was sagen Sie zu...?" meine ich stets so, daß man oft Abschnitzel hat, die man nicht in eigene Publikationen aufgenommen hat, Zufallsbrocken, die einem selbst wertlos, dem anderen vielleicht hochwichtig sein können.</p>
-        <p>Es gibt Menschen, die im Schreiben gröber und solche, die liebenswürdiger sind als im Reden: Urtel schreibt selten, aber wenn, so etwas süßlich. Ich habe gerade gestern von ihm eine Karte, in der er das gewohnte Lied von der Überbe­schäftigung anstimmt. Unterschätzen Sie nicht ein wenig 24 Schulstunden + Vor­bereitung von Univ.-Vorlesungen?</p>
-        <p>Das Urteil Bovets habe ich, soweit es die Sprachwissenschaft betrifft, schon Ihnen gegenüber, ich glaube im Herbst, gefällt: 1920 - 30 = 1890. Damals blühten alle die Männer, die Sie erwähnen. Aber nun 1920? Wo sind Toblers, Hornings, Gröbers, Morfs, Levys – daß natürlich Menschen wie Sie, Appel, Meyer-Lübke aus der besseren</p>
-        <p>[Seite fehlt]</p>
-        <pb facs="#IMG.6" n="6"/>
-        <p>Dank für die Aufklärungen. Die Etymologie <hi rend="unknown"
-            rendition="#none">
-gurrumina</hi> 'Gurrweh' kannte ich natürlich – aber was ist das 'Gurrweh'? – Was steht nun an der erwähnten Stelle über <hi
-            rend="unknown" rendition="#none">
-garduña</hi>: ist nicht doch die Etym. <hi rend="unknown"
-            rendition="#none">
-gar­rido</hi> 'hübsch' ('Schöntick', urspr. das Wiesel) richtig angesichts gal. <hi
-            rend="unknown" rendition="#none">garriduña</hi>? – Haben Sie bei Salillas<note n="3" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3914">Rafael Salillas, <hi rend="unknown" rendition="#none">El delincuente español: el lenguaje (estudio filológico, psicológico y sociológico). Con dos vocabularios jergales</hi>.</ref> Madrid: Librería de Victoriano Subrez 1896.</bibl>
-          </note> irgend etwas über <hi rend="unknown"
-            rendition="#none">
+            <p>S.649 Das <hi rend="unknown" rendition="#none">hab acht</hi> ist Ihnen unverständlich: zur Verbreitung der Geisterstimmung dringend notwendig, außerdem Anklang an <hi rend="unknown" rendition="#none">halb acht</hi>
+            </p>
+            <p>S.650 "Spitzer (56) bemerkt dazu: 'jeder Name ist eine Beurteilung', und an diesen Vers ..." Spitzer skandiert nun seinen Nachtgesang: /È/È/È/È/È/.</p>
+            <p>S.650 "Übrigens fallen die Westküsten aus der Rolle..." Jawohl, aber das ist eben Spiel, jäher Übergang aus der Sprachphilosophie in das Kind-Mann-Sein.</p>
+            <p>S.652 "geheime Latenzen" = geheime Verborgenheiten, 'geheim' hebt eine Folge der 'Verborgenheiten' hervor. <hi rend="unknown" rendition="#none">Alter Greis</hi> ist auch nicht so schlecht wie man meist sagt. </p>
+            <p>S.652 Warum läßt sich keine Absicht bei M. erkennen? Wo die Berührung mit Mauthner so klar ist! Auch seine Frau hat mir dies bestätigt und sich gegen die Tändelauffassung gewendet.</p>
+            <pb facs="#IMG.4" n="4"/>
+            <p>S.653 Gewiß auf "Sprach/kobold" liegt der Akzent.</p>
+            <p>S.653: der Einwand gegen Ende der Seite ist vollkommen berechtigt. Ich habe ihn mir selbst auch vorgelegt und daher den urspr. Titel der Abhandlung "Die groteske Sprachkunst Chr.M.s" durch Einfügung von 'Gestaltungs-' verändert. Es ist aber auch sehr schwer, Expressionismus und Sprachspielerei zu scheiden.</p>
+            <p>Ich werde nun Ihre Schlußfolgerungen zum persönlichen Gebrauch übersetzen: da kommt ungefähr Folgendes heraus: "M. hat teils wertlose teils klangvolle Sprachneuerungen geschaffen. Erstere hat Spitzer nicht von den letzteren gesondert. Jene hätte er mit anderen humoristischen Neubildungen vergleichen sollen, diese mit den anderen Werken M.'s. Beides hat er nicht getan, also, lieber Leser, Du bist gewarnt. Über Sp.'s Vorschläge zu 'Motiv und Wort'-Forschung äußere ich mich nicht, weil – ich mich mit Sperber beschäftigen müßte. Nun weißt Dus lieber Leser!" Habe ich mit dieser "boshaften" Interpretation recht?</p>
+            <p>Jeder Rezensent ist dem Rezensierten überlegen (ich weiß es aus eigener Erfahrung), weil jener eben nicht</p>
+            <p>[Seite fehlt]</p>
+            <pb facs="#IMG.5" n="5"/>
+            <p>und tausche auch gern mit Materialien – vielleicht weil ich doch mit der Händlernation zu tun habe, der Ihre Deutschvölkler Fehde geschworen haben. Das "Was sagen Sie zu...?" meine ich stets so, daß man oft Abschnitzel hat, die man nicht in eigene Publikationen aufgenommen hat, Zufallsbrocken, die einem selbst wertlos, dem anderen vielleicht hochwichtig sein können.</p>
+            <p>Es gibt Menschen, die im Schreiben gröber und solche, die liebenswürdiger sind als im Reden: Urtel schreibt selten, aber wenn, so etwas süßlich. Ich habe gerade gestern von ihm eine Karte, in der er das gewohnte Lied von der Überbe­schäftigung anstimmt. Unterschätzen Sie nicht ein wenig 24 Schulstunden + Vor­bereitung von Univ.-Vorlesungen?</p>
+            <p>Das Urteil Bovets habe ich, soweit es die Sprachwissenschaft betrifft, schon Ihnen gegenüber, ich glaube im Herbst, gefällt: 1920 - 30 = 1890. Damals blühten alle die Männer, die Sie erwähnen. Aber nun 1920? Wo sind Toblers, Hornings, Gröbers, Morfs, Levys – daß natürlich Menschen wie Sie, Appel, Meyer-Lübke aus der besseren</p>
+            <p>[Seite fehlt]</p>
+            <pb facs="#IMG.6" n="6"/>
+            <p>Dank für die Aufklärungen. Die Etymologie <hi rend="unknown" rendition="#none">
+gurrumina</hi> 'Gurrweh' kannte ich natürlich – aber was ist das 'Gurrweh'? – Was steht nun an der erwähnten Stelle über <hi rend="unknown" rendition="#none">
+garduña</hi>: ist nicht doch die Etym. <hi rend="unknown" rendition="#none">
+gar­rido</hi> 'hübsch' ('Schöntick', urspr. das Wiesel) richtig angesichts gal. <hi rend="unknown" rendition="#none">garriduña</hi>? – Haben Sie bei Salillas<note n="3" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3914">Rafael Salillas, <hi rend="unknown" rendition="#none">El delincuente español: el lenguaje (estudio filológico, psicológico y sociológico). Con dos vocabularios jergales</hi>.</ref> Madrid: Librería de Victoriano Subrez 1896.</bibl>
+               </note> irgend etwas über <hi rend="unknown" rendition="#none">
 mandria</hi> gesehen, das Sie zu Ihrer Vermutung brachte? Ihr <hi rend="unknown" rendition="#none">mandilon</hi> würde meine Vermutung bestätigen. – Sehr neugierig auf Ihr grammatisches Dreieck, das zum Zweieck wird. – Über das Wesentliche meines Bekenntnisbriefes äußern Sie sich nicht. Haben meine Anklagen gegen das Deutschtum als Unterdrücker anderer Nationen Sie nicht ein wenig überzeugt?</p>
-        <p>Es freut mich, daß Sie so entschieden dem Rassenfanatismus eine Absage erteilen. Wie wäre es nun mit einem Essay in den Berl.Sitzgber. "Rasse und Sprache" – ein Thema, das niemand wie Sie bearbeiten kann? Vorarbeiten liegen vor.</p>
-        <p>Die Hundstage brennen auch mir die Nerven durch. Aber ich sonne mich doch auch an meinem unwissenschaftlichen Glück.</p>
-        <closer>
-          <salute>Herzlichste Grüße</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Es freut mich, daß Sie so entschieden dem Rassenfanatismus eine Absage erteilen. Wie wäre es nun mit einem Essay in den Berl.Sitzgber. "Rasse und Sprache" – ein Thema, das niemand wie Sie bearbeiten kann? Vorarbeiten liegen vor.</p>
+            <p>Die Hundstage brennen auch mir die Nerven durch. Aber ich sonne mich doch auch an meinem unwissenschaftlichen Glück.</p>
+            <closer>
+               <salute>Herzlichste Grüße</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

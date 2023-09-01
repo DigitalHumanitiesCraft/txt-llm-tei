@@ -1,338 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Karl Meinhof an Hugo Schuchardt (03-06962)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2158">
-            <forename>Karl</forename>
-            <surname>Meinhof</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8787" type="PID">o:hsa.letter.8787</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">03-06962</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">06962</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2158">
-                <forename>Karl</forename>
-                <surname>Meinhof</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.265" ref="http://sws.geonames.org/2911298">Hamburg</origPlace>
-              <origDate ana="dcterms:created" when="1910-04-19">1910-04-19</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Karl Meinhof und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2158"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8787">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2158" ref="https://viaf.org/viaf/76337965">
-            <forename>Karl</forename>
-            <surname>Meinhof</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.265" key="#GID.1" ref="http://sws.geonames.org/2911298">Hamburg</placeName>
-          <date when="1910-04-19">1910-04-19</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Hamburg</settlement>
-                <name ref="http://geonames.org/2911298" type="fcode:PPLA">Hamburg</name>
-                <location>
-                  <geo>9.99302,53.55073</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2158" type="context">
-                        Korrespondenz Karl Meinhof - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.127" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Hebräisch</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.576" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bantu-Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.124" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Semitische Sprachen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.3963" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Hausa</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8787" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8787" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8787" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8787" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8787" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>
-          <placeName>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8787" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>
+               <placeName>
 Hamburg</placeName>, Sierichstr. 127<lb/> den 19. April 1910.<lb/>
-        </dateline>
-        <opener>Verehrtester Herr Geheimrat!</opener>
-        <p>Den Abschnitt über Ndorobbo<note n="1" place="foot" type="editorial">
-            <bibl>
+            </dateline>
+            <opener>Verehrtester Herr Geheimrat!</opener>
+            <p>Den Abschnitt über Ndorobbo<note n="1" place="foot" type="editorial">
+                  <bibl>
 
 Meinhof, <hi rend="unknown" rendition="#none">Mitteilungen des Seminars für Orientalische Sprachen zu Berlin</hi>
+                  </bibl> (MSOSB) 1907, III (Dritte Abt. Afrikanische Studien), 116. – Dorobo, Ndorobo, Wadorobo, Toboro ist ein abfälliger Sammelbegriff für mehrere unabhängige Jäger-Sammler-Gruppen in Kenia und Tansania.</note> habe ich noch und sende ihn als Drucksache. Von allen diesen Studien hatte ich aber keine Abzüge. Sie gehen vom Bd. VII bis XI (nicht zehn), so weit sie gedruckt sind. Von <persName ref="[authorityLink]">Hommel</persName>,<note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Fritz Hommel</persName> (1854-1936), Semitist.</note> meinem guten Freunde und von Deeg,<note n="3" place="foot" type="editorial">J. Deeg, bayer. Realschullehrer, lebte dann mehrere Jahre unter den Masai, vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.250">Schuchardt, „Zu den Verben mit i- im Masai“</ref>
+                  </bibl>, <hi rend="unknown" rendition="#none">
+Wiener Zeitschrift für die Kunde des Morgenlandes</hi> 24,1910, 287-293, hier S. 288.</note> meinem anderen Kinde, erwarte ich nichts fürs Murai. Sie vergleichen Murai und <ref target="https://gams.uni-graz.at/o:hsa.languages#L.127">
+Hebräisch</ref>!<note n="4" place="foot" type="editorial">Angeblich eine afrikanische Sprache, vgl. <bibl>
 
-            </bibl> (MSOSB) 1907, III (Dritte Abt. Afrikanische Studien), 116. – Dorobo, Ndorobo, Wadorobo, Toboro ist ein abfälliger Sammelbegriff für mehrere unabhängige Jäger-Sammler-Gruppen in Kenia und Tansania.</note> habe ich noch und sende ihn als Drucksache. Von allen diesen Studien hatte ich aber keine Abzüge. Sie gehen vom Bd. VII bis XI (nicht zehn), so weit sie gedruckt sind. Von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1793">Hommel</persName>,<note n="2" place="foot" type="editorial">
-            <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1793">Fritz Hommel</persName> (1854-1936), Semitist.</note> meinem guten Freunde und von Deeg,<note
-            n="3" place="foot" type="editorial">J. Deeg, bayer. Realschullehrer, lebte dann mehrere Jahre unter den Masai, vgl. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.250">Schuchardt, „Zu den Verben mit i- im Masai“</ref>
-            </bibl>, <hi rend="unknown"
-            rendition="#none">
-Wiener Zeitschrift für die Kunde des Morgenlandes</hi> 24,1910, 287-293, hier S. 288.</note> meinem anderen Kinde, erwarte ich nichts fürs Murai. Sie vergleichen Murai und <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.127">
-Hebräisch</ref>!<note n="4" place="foot"
-                type="editorial">Angeblich eine afrikanische Sprache, vgl. <bibl>
-
-Wilhelm Friedrich Hufnagel, <hi
-                rend="unknown" rendition="#none">Geschichtliche Nachweisungen, ein Ende-Urtheil über eine Thatsache zu fällen, die in der Geschichte des Menschen und seines Glaubens aller Zweifel noch nicht entbunden ist</hi>
-            </bibl>, Frankfurt 1822, 96.</note> Wie <pb facs="#IMG.2" n="2"/> die Anfänger im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.576">Bantu</ref> vor 70 Jahren. Und das nun 1910!</p>
-
-        <p>Wenn Sie die Sachen wirklich interessieren, widerrate ich dringend diese Pfade. Dann studieren Sie bitte meinen Grundriß, der jetzt in 2. Aufl. bei D. Reimer in <placeName>
-Berlin</placeName> erscheint,<note
-            n="5" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6528">Meinhof, <hi rend="unknown" rendition="#none">Grundriß einer Lautlehre der Bantusprachen; nebst Anleitung zur Aufnahme von Bantusprachen; Anhang: Verzeichnis von Bantuwortstämmen</hi>
-              </ref>
-
-            </bibl>, Berlin: Reimer, 1910.</note> dann die Ful-Grammatik von Westermann, 1909 bei D. Reimer. Meine Anzeige erscheint in der Zeitschr. für Assyriologie im August.<note
-            n="6" place="foot"
-            type="editorial">Kein Nachweis.</note> Dann mein Heft „Die Sprachen des dunklen Weltteils“. Stuttgart. 1909. Greiner u. Pfeiffer<note
-            n="7" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4567">Meinhof, <hi rend="unknown" rendition="#none">Die Sprachen des dunklen Weltteils. Nachrichten über den Stand der linguistischen Forschungen in Afrika</hi>
-              </ref>
-            </bibl>, Stuttgart: Greiner, 1909.</note> „Die moderne Sprachforschung in Afrika“,<note n="8" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4568">Meinhof, <hi rend="unknown" rendition="#none">Die moderne Sprachforschung in Afrika; hamburgische Vorträge</hi>
-              </ref>
-
-            </bibl>, Berlin: Buchhandlung der Berliner Ev. Missionsgesellschaft, 1910.</note> erscheint demnächst in Berlin. Missionsbuchhandlung, Georgen- <pb
-            facs="#IMG.3" n="3"/> kirchpl. 70. In diesem Jahr hoffe ich mein Buch zu beenden „Die Hamiten“.<note n="9"
-            place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3422">Carl Meinhof / Felix von Luschan, <hi
-                  rend="unknown" rendition="#none">Die Sprachen der Hamiten</hi>; Hamitische Typen</ref>
-            </bibl>, Hamburg: Friedrichsen, 1912. – Vgl. <bibl>
+Wilhelm Friedrich Hufnagel, <hi rend="unknown" rendition="#none">Geschichtliche Nachweisungen, ein Ende-Urtheil über eine Thatsache zu fällen, die in der Geschichte des Menschen und seines Glaubens aller Zweifel noch nicht entbunden ist</hi>
+                  </bibl>, Frankfurt 1822, 96.</note> Wie <pb facs="#IMG.2" n="2"/> die Anfänger im <ref target="https://gams.uni-graz.at/o:hsa.languages#L.576">Bantu</ref> vor 70 Jahren. Und das nun 1910!</p>
+            <p>Wenn Sie die Sachen wirklich interessieren, widerrate ich dringend diese Pfade. Dann studieren Sie bitte meinen Grundriß, der jetzt in 2. Aufl. bei D. Reimer in <placeName>
+Berlin</placeName> erscheint,<note n="5" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6528">Meinhof, <hi rend="unknown" rendition="#none">Grundriß einer Lautlehre der Bantusprachen; nebst Anleitung zur Aufnahme von Bantusprachen; Anhang: Verzeichnis von Bantuwortstämmen</hi>
+                     </ref>
+                  </bibl>, Berlin: Reimer, 1910.</note> dann die Ful-Grammatik von Westermann, 1909 bei D. Reimer. Meine Anzeige erscheint in der Zeitschr. für Assyriologie im August.<note n="6" place="foot" type="editorial">Kein Nachweis.</note> Dann mein Heft „Die Sprachen des dunklen Weltteils“. Stuttgart. 1909. Greiner u. Pfeiffer<note n="7" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4567">Meinhof, <hi rend="unknown" rendition="#none">Die Sprachen des dunklen Weltteils. Nachrichten über den Stand der linguistischen Forschungen in Afrika</hi>
+                     </ref>
+                  </bibl>, Stuttgart: Greiner, 1909.</note> „Die moderne Sprachforschung in Afrika“,<note n="8" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.4568">Meinhof, <hi rend="unknown" rendition="#none">Die moderne Sprachforschung in Afrika; hamburgische Vorträge</hi>
+                     </ref>
+                  </bibl>, Berlin: Buchhandlung der Berliner Ev. Missionsgesellschaft, 1910.</note> erscheint demnächst in Berlin. Missionsbuchhandlung, Georgen- <pb facs="#IMG.3" n="3"/> kirchpl. 70. In diesem Jahr hoffe ich mein Buch zu beenden „Die Hamiten“.<note n="9" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3422">Carl Meinhof / Felix von Luschan, <hi rend="unknown" rendition="#none">Die Sprachen der Hamiten</hi>; Hamitische Typen</ref>
+                  </bibl>, Hamburg: Friedrichsen, 1912. – Vgl. <bibl>
 
 Peter Rohrbacher, <hi rend="unknown" rendition="#none">Die Geschichte des Hamiten-Mythos</hi>
-
-            </bibl>, Wien 2002 (Beiträge zur Afrikanistik, 71), 107-118, 142-143 u. ö. (Meinhof); 118-119 (Schuchardt).</note> Das grammatische Geschlecht ist sicher nicht aus abessynischen Sprachen herübergenommen, sondern seine Entstehung in den Hamitensprachen hoffe ich nachgewiesen zu haben. Die „<ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.124">Semitensprachen</ref>“ sind nur entfernte Zweige von dem vorderasiatischen Ast der „Hamitensprachen“. Mit der Forschung von Reinisch<note
-            n="10" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3419">Leo Reinisch, <hi rend="unknown" rendition="#none">Der einheitliche Ursprung der Sprachen der alten Welt nachgewisen durch Vergleichung der afrikanisch</hi>
-              </ref>
-
-            </bibl>. 1. Band, Wien: Braumüller, 1873. – Vgl. HSA B09191-09341; 09341A-09355.</note> kann ich mich in den großen nicht befreunden, so hoch ich seine sorgsame Einzelforschung stelle. Mit den bisherigen Methoden fangen wir hier nichts an. Nur, wenn wir phonetisch sorgsam unterscheiden, finden wir <pb
-            facs="#IMG.4" n="4"/> unsern Weg. Für sehr wichtig halte ich das Somali und das Berberische. Auch das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3963">
+                  </bibl>, Wien 2002 (Beiträge zur Afrikanistik, 71), 107-118, 142-143 u. ö. (Meinhof); 118-119 (Schuchardt).</note> Das grammatische Geschlecht ist sicher nicht aus abessynischen Sprachen herübergenommen, sondern seine Entstehung in den Hamitensprachen hoffe ich nachgewiesen zu haben. Die „<ref target="https://gams.uni-graz.at/o:hsa.languages#L.124">Semitensprachen</ref>“ sind nur entfernte Zweige von dem vorderasiatischen Ast der „Hamitensprachen“. Mit der Forschung von Reinisch<note n="10" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3419">Leo Reinisch, <hi rend="unknown" rendition="#none">Der einheitliche Ursprung der Sprachen der alten Welt nachgewisen durch Vergleichung der afrikanisch</hi>
+                     </ref>
+                  </bibl>. 1. Band, Wien: Braumüller, 1873. – Vgl. HSA B09191-09341; 09341A-09355.</note> kann ich mich in den großen nicht befreunden, so hoch ich seine sorgsame Einzelforschung stelle. Mit den bisherigen Methoden fangen wir hier nichts an. Nur, wenn wir phonetisch sorgsam unterscheiden, finden wir <pb facs="#IMG.4" n="4"/> unsern Weg. Für sehr wichtig halte ich das Somali und das Berberische. Auch das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3963">
 Hausa</ref> hat sehr interessante Züge. Ich könnte über diese Sprache ein Kolleg halten, aber brieflich kann ich das nicht erledigen, bitte verzeihen Sie mir [ein Wort überklebt] wenn ich mich auf diese Andeutungen beschränke. Bitte lassen Sie mich wissen, welche Studien Sie noch wünschen, wenn ich sie habe, werde ich sie gern senden.</p>
-        <p>Indem ich meiner Freude Ausdruck gebe, daß Sie sich für die Hamiten interessieren<note n="11" place="foot" type="editorial">Vgl. <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.620">Schuchardt, „[Rez. von:] Meinhof, Carl: Die Sprachen der Hamiten, nebst einer Beigabe: Hamitische Typen von Felix von Luschan“, <hi
-                  rend="unknown" rendition="#none">Wiener Zeitschrift für die Kunde des Morgenlandes</hi>
-              </ref>
-            </bibl> 26, 1912, 407-413. Diese Besprechung ist zwar freundlich im Ton, aber letztlich ein „Verriss“, da Schuchardt Meinhof in wesentlichen Punkten widerspricht, z. B. S. 412-413: „Für mich liegt die größte [i. e. Beweiskraft] im Wortschatz. Hier steht MEINHOF im strengsten Gegensatz zu mir“, und wenig später (S. 413): „Bei MEINHOF nimmt das vergleichende Wörterverzeichnis einen sehr bescheidenen Raum, eine dunkle Ecke ein. Darunter ist nicht allzu viel Neues und manches nicht Überzeugende, ja nicht Stichhaltige“ usw. Möglich, dass diese Rez. Anlass für das „Einschlafen“ der Korrespondenz seitens Meinhofs war.</note> bleibe ich</p>
-        <closer>
-          <salute>In aufrichtiger Verehrung<lb/> Euer Hochwohlgeboren<lb/>
-          </salute>
-          <signed>ganz ergebenster<lb/>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2158">
+            <p>Indem ich meiner Freude Ausdruck gebe, daß Sie sich für die Hamiten interessieren<note n="11" place="foot" type="editorial">Vgl. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.620">Schuchardt, „[Rez. von:] Meinhof, Carl: Die Sprachen der Hamiten, nebst einer Beigabe: Hamitische Typen von Felix von Luschan“, <hi rend="unknown" rendition="#none">Wiener Zeitschrift für die Kunde des Morgenlandes</hi>
+                     </ref>
+                  </bibl> 26, 1912, 407-413. Diese Besprechung ist zwar freundlich im Ton, aber letztlich ein „Verriss“, da Schuchardt Meinhof in wesentlichen Punkten widerspricht, z. B. S. 412-413: „Für mich liegt die größte [i. e. Beweiskraft] im Wortschatz. Hier steht MEINHOF im strengsten Gegensatz zu mir“, und wenig später (S. 413): „Bei MEINHOF nimmt das vergleichende Wörterverzeichnis einen sehr bescheidenen Raum, eine dunkle Ecke ein. Darunter ist nicht allzu viel Neues und manches nicht Überzeugende, ja nicht Stichhaltige“ usw. Möglich, dass diese Rez. Anlass für das „Einschlafen“ der Korrespondenz seitens Meinhofs war.</note> bleibe ich</p>
+            <closer>
+               <salute>In aufrichtiger Verehrung<lb/> Euer Hochwohlgeboren<lb/>
+               </salute>
+               <signed>ganz ergebenster<lb/>
+                  <persName ref="[authorityLink]">
 Meinhof.</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

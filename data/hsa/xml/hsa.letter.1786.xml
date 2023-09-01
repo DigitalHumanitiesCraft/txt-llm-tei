@@ -1,679 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Johan Hendrik Caspar Kern an Hugo Schuchardt (02-05508)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1899">
-            <forename>Johan Hendrik Caspar</forename>
-            <surname>Kern</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Silvio Moreira de</forename>
-            <surname>Sousa</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/1786" type="PID">o:hsa.letter.1786</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">02-05508</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">05508</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.1899">
-                <forename>Johan Hendrik Caspar</forename>
-                <surname>Kern</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="9" unit="pages">9 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.94" ref="http://sws.geonames.org/2751773">Leiden</origPlace>
-              <origDate ana="dcterms:created" when="1886-10-23">1886-10-23</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Silvio Moreira de</forename>
-              <surname>Sousa</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Johan Hendrik Caspar Kern und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1899"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.1786">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1899" ref="https://viaf.org/viaf/49297728">
-            <forename>Johan Hendrik Caspar</forename>
-            <surname>Kern</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.94" key="#GID.1" ref="http://sws.geonames.org/2751773">Leiden</placeName>
-          <date when="1886-10-23">1886-10-23</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Netherlands</country>
-                <settlement>Leiden</settlement>
-                <name ref="http://geonames.org/2751773" type="fcode:PPL">Leiden</name>
-                <location>
-                  <geo>4.49306,52.15833</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1899" type="context">
-                        Korrespondenz Johan Hendrik Caspar Kern - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.709" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachverwandtschaft</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3234" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachvergleich</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.220" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Phonetik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.531" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturhinweise / bibliographische Angaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.754" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Sprachen auf dem malaiischen Archipel</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.3233" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Tetum</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1786" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1786" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1786" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1786" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1786" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1786" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1786" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1786" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.1786" xml:id="IMG.9">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.1786" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Leiden 23 October 1886.</dateline>
-        <opener>Verehrter Herr Kollege,</opener>
-        <p>So weit die mir vorliegenden Data es gestatten einen Schluss zu ziehen, möchte ich glauben, dass das <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.3233">
-Tetum</ref> wesentlich dieselbe Sprache sei wie die bei Heymering<note
-            n="1" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3235">Geerlof Heijmering “Heimering”</persName> (1792-1867) war ein niederländischer Prediger der 
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.9" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.1786" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Leiden 23 October 1886.</dateline>
+            <opener>Verehrter Herr Kollege,</opener>
+            <p>So weit die mir vorliegenden Data es gestatten einen Schluss zu ziehen, möchte ich glauben, dass das <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3233">
+Tetum</ref> wesentlich dieselbe Sprache sei wie die bei Heymering<note n="1" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Geerlof Heijmering “Heimering”</persName> (1792-1867) war ein niederländischer Prediger der 
 
-<hi
-              rend="unknown" rendition="#none">
+<hi rend="unknown" rendition="#none">
 Nederlands Zendelinggenootschap</hi>
- auf <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5871">Timor</placeName>.</note> (s. meine Briefkarte)<note
-            n="2" place="foot"
-            type="editorial">Es liegen keine Informationen vor.</note> vorkommende Belosprache. Wenn Sie die Liste <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3235">Heymering</persName>s mit allen Ihren Texten vergleichen, werden Sie darüber noch besser urtheilen können. Auch habe ich ein Lied in Belutext, das <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.3385">Riedel</persName> mir zuschickte, verglichen. Da in jenem Liede ganz andre Wörter vorkommen und einzelnes sowohl mit Ihrem Tetumtexte als mit andern naheverwandten Dialekten, wie Letti, Moa, Rotti und Alor zusammentrifft, kann ich eigentlich gar nicht ermitteln ob Riedels Beludialekt ohne Weiteres mit dem <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3233">
+ auf <placeName ref="[authorityLink]">Timor</placeName>.</note> (s. meine Briefkarte)<note n="2" place="foot" type="editorial">Es liegen keine Informationen vor.</note> vorkommende Belosprache. Wenn Sie die Liste <persName ref="[authorityLink]">Heymering</persName>s mit allen Ihren Texten vergleichen, werden Sie darüber noch besser urtheilen können. Auch habe ich ein Lied in Belutext, das <persName ref="[authorityLink]">Riedel</persName> mir zuschickte, verglichen. Da in jenem Liede ganz andre Wörter vorkommen und einzelnes sowohl mit Ihrem Tetumtexte als mit andern naheverwandten Dialekten, wie Letti, Moa, Rotti und Alor zusammentrifft, kann ich eigentlich gar nicht ermitteln ob Riedels Beludialekt ohne Weiteres mit dem <ref target="https://gams.uni-graz.at/o:hsa.languages#L.3233">
 Tetum</ref> zu identificiren sei. Wenn Sie wollen, bin ich bereit Ihnen eine Abschrift des Liedes mit Niederl. Uebersetzung zu senden.</p>
-        <p>Jetzt theile ich Ihnen mit zu welchen Bemerkungen das Bruchstück des Tetumtextes mir Anlass gegeben hat, soweit ich die entsprechenden Ausdrücke ausfindig machen konnte.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Ha</hi>ʿ<hi rend="unknown" rendition="#none">
-u</hi>. Belo <hi
-            rend="unknown" rendition="#none">h a’u</hi>, Moa, Letti, Timor (d.h. Südtimor), Rotti <hi rend="unknown"
-            rendition="#none">a’u</hi>, Kissar <hi rend="unknown"
-            rendition="#none">i- a’u</hi>; etc. MP. [Malaiisch-Polynesisch] <hi rend="unknown" rendition="#none">aku</hi>. </p>
-        <pb facs="#IMG.2" n="2"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Hahoris</hi>. Gehört zu demselben Stamme wie <hi rend="unknown"
-            rendition="#none">moris</hi>. Letzteres ist Kissar <hi rend="unknown" rendition="#none">mori</hi>, Alor <hi
-            rend="unknown" rendition="#none">mor`ik</hi>, Letti, Moa (<hi rend="unknown" rendition="#none">
-ně</hi>)-<hi
-            rend="unknown" rendition="#none">mori</hi>, Sawu <hi rend="unknown"
-            rendition="#none">muri</hi>, Dawa-lôr (<hi rend="unknown" rendition="#none">li</hi>-)<hi rend="unknown"
-            rendition="#none">môr</hi>, Sumba <hi rend="unknown" rendition="#none">luri</hi> und <hi rend="unknown"
-            rendition="#none">mirip</hi>; Altjav. (sogen. Kawi) <hi rend="unknown"
-            rendition="#none">mahurip</hi>, alle eig. Adj.; subs. Ajav. <hi rend="unknown"
-            rendition="#none">hurip</hi>, und mit Umstellung der Vokale: Mal. <hi rend="unknown"
-            rendition="#none">hidup</hi> (mit lingualem <hi rend="unknown" rendition="#none">d</hi>). Das Letti <hi
-            rend="unknown" rendition="#none">mori</hi> (nicht <hi rend="unknown"
-            rendition="#none">rěmori</hi>) kann „lebengebend“ bedeuten, wird aber ausschliesslich von Gott und einer fruchtbaren Frau gesagt; sonst, z. B. von einem Vater, heisst <hi
-            rend="unknown" rendition="#none">gignere</hi>: <hi rend="unknown"
-            rendition="#none">aori</hi>; Timor dagegen <hi rend="unknown"
-            rendition="#none">nahuni</hi>, gebähren (das S.Timor unterscheidet sich durch grosse Vorliebe für das <hi
-            rend="unknown" rendition="#none">n</hi>, welches ein älteres <hi rend="unknown"
-            rendition="#none">r</hi>, <hi rend="unknown" rendition="#none">
-ḍ</hi>, und <hi rend="unknown"
-            rendition="#none">l</hi> ersetzt). <hi rend="unknown" rendition="#none">Ha</hi>-, Letti <hi rend="unknown"
-            rendition="#none">a</hi>-, muss entstanden sei [sic] aus <hi rend="unknown"
-            rendition="#none">pa</hi>-, dem Causative bildenden Suffix. Dass <hi rend="unknown"
-            rendition="#none">p</hi> in den bez. Sprachen, wie in einzelnen Dialekten der Molukken, und Cerams <hi
-            rend="unknown" rendition="#none">h</hi> wird, und weiter ganz verschwindet, erhellt aus Rotti <hi
-            rend="unknown" rendition="#none">
-ha’i</hi>, Sawu, Timor <hi rend="unknown"
-            rendition="#none">a’i</hi>, Feuer, = Mal. <hi rend="unknown" rendition="#none">api</hi>, Altj., Tag. <hi
-            rend="unknown" rendition="#none">apuy</hi>, etc. Das schliessende <hi rend="unknown"
-            rendition="#none">s</hi> dürfte aus <hi rend="unknown" rendition="#none">t</hi>, letzteres aus <hi
-            rend="unknown" rendition="#none">p</hi> oder <hi rend="unknown" rendition="#none">k</hi> entstanden sein; die Schlusstenues in den MP. Sprachen treten leicht in ein anderes Organ über.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Hela</hi>. Vielleicht hängt dies zusammen mit Letti <hi rend="unknown"
-            rendition="#none">êle</hi>, Schwester. <hi rend="unknown"
-            rendition="#none">Feto-ra</hi> enthält jedenfalls Belo, Tim., Rotti <hi rend="unknown"
-            rendition="#none">fèto</hi>, weiblich; <hi rend="unknown"
-            rendition="#none">ra</hi> vielleicht Artikel, es sei denn sing., oder <hi rend="unknown" rendition="#none">hon.</hi>
-          <hi rend="unknown" rendition="#none">
+            <p>Jetzt theile ich Ihnen mit zu welchen Bemerkungen das Bruchstück des Tetumtextes mir Anlass gegeben hat, soweit ich die entsprechenden Ausdrücke ausfindig machen konnte.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Ha</hi>ʿ<hi rend="unknown" rendition="#none">
+u</hi>. Belo <hi rend="unknown" rendition="#none">h a’u</hi>, Moa, Letti, Timor (d.h. Südtimor), Rotti <hi rend="unknown" rendition="#none">a’u</hi>, Kissar <hi rend="unknown" rendition="#none">i- a’u</hi>; etc. MP. [Malaiisch-Polynesisch] <hi rend="unknown" rendition="#none">aku</hi>. </p>
+            <pb facs="#IMG.2" n="2"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Hahoris</hi>. Gehört zu demselben Stamme wie <hi rend="unknown" rendition="#none">moris</hi>. Letzteres ist Kissar <hi rend="unknown" rendition="#none">mori</hi>, Alor <hi rend="unknown" rendition="#none">mor`ik</hi>, Letti, Moa (<hi rend="unknown" rendition="#none">
+ně</hi>)-<hi rend="unknown" rendition="#none">mori</hi>, Sawu <hi rend="unknown" rendition="#none">muri</hi>, Dawa-lôr (<hi rend="unknown" rendition="#none">li</hi>-)<hi rend="unknown" rendition="#none">môr</hi>, Sumba <hi rend="unknown" rendition="#none">luri</hi> und <hi rend="unknown" rendition="#none">mirip</hi>; Altjav. (sogen. Kawi) <hi rend="unknown" rendition="#none">mahurip</hi>, alle eig. Adj.; subs. Ajav. <hi rend="unknown" rendition="#none">hurip</hi>, und mit Umstellung der Vokale: Mal. <hi rend="unknown" rendition="#none">hidup</hi> (mit lingualem <hi rend="unknown" rendition="#none">d</hi>). Das Letti <hi rend="unknown" rendition="#none">mori</hi> (nicht <hi rend="unknown" rendition="#none">rěmori</hi>) kann „lebengebend“ bedeuten, wird aber ausschliesslich von Gott und einer fruchtbaren Frau gesagt; sonst, z. B. von einem Vater, heisst <hi rend="unknown" rendition="#none">gignere</hi>: <hi rend="unknown" rendition="#none">aori</hi>; Timor dagegen <hi rend="unknown" rendition="#none">nahuni</hi>, gebähren (das S.Timor unterscheidet sich durch grosse Vorliebe für das <hi rend="unknown" rendition="#none">n</hi>, welches ein älteres <hi rend="unknown" rendition="#none">r</hi>, <hi rend="unknown" rendition="#none">
+ḍ</hi>, und <hi rend="unknown" rendition="#none">l</hi> ersetzt). <hi rend="unknown" rendition="#none">Ha</hi>-, Letti <hi rend="unknown" rendition="#none">a</hi>-, muss entstanden sei [sic] aus <hi rend="unknown" rendition="#none">pa</hi>-, dem Causative bildenden Suffix. Dass <hi rend="unknown" rendition="#none">p</hi> in den bez. Sprachen, wie in einzelnen Dialekten der Molukken, und Cerams <hi rend="unknown" rendition="#none">h</hi> wird, und weiter ganz verschwindet, erhellt aus Rotti <hi rend="unknown" rendition="#none">
+ha’i</hi>, Sawu, Timor <hi rend="unknown" rendition="#none">a’i</hi>, Feuer, = Mal. <hi rend="unknown" rendition="#none">api</hi>, Altj., Tag. <hi rend="unknown" rendition="#none">apuy</hi>, etc. Das schliessende <hi rend="unknown" rendition="#none">s</hi> dürfte aus <hi rend="unknown" rendition="#none">t</hi>, letzteres aus <hi rend="unknown" rendition="#none">p</hi> oder <hi rend="unknown" rendition="#none">k</hi> entstanden sein; die Schlusstenues in den MP. Sprachen treten leicht in ein anderes Organ über.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Hela</hi>. Vielleicht hängt dies zusammen mit Letti <hi rend="unknown" rendition="#none">êle</hi>, Schwester. <hi rend="unknown" rendition="#none">Feto-ra</hi> enthält jedenfalls Belo, Tim., Rotti <hi rend="unknown" rendition="#none">fèto</hi>, weiblich; <hi rend="unknown" rendition="#none">ra</hi> vielleicht Artikel, es sei denn sing., oder <hi rend="unknown" rendition="#none">hon.</hi>
+               <hi rend="unknown" rendition="#none">
 causâ</hi> plur.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Nafatim</hi>; hängt wohl zusammen mit Tim. <hi rend="unknown" rendition="#none">fěnati</hi>, bleiben warten.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Nia</hi>. Eig. Gen. von <hi rend="unknown"
-            rendition="#none">ia</hi>, und ferner Bezeichnung des casus obliquus überhaupt der 3 ps. sg. In manchen MP. Sprachen wird der Cas. Obl. der Pronomina verwendet als emphatischer Nominativ; vgl. Franz. <hi
-            rend="unknown" rendition="#none">moi</hi>, <hi rend="unknown" rendition="#none">toi</hi>, <hi rend="unknown"
-            rendition="#none">lui</hi>; das Engl. <hi rend="unknown"
-            rendition="#none">it is me</hi>, u. dgl. Im Tetum gehört <hi rend="unknown" rendition="#none">nia</hi> endlich herabgeschwächt zu einem einfachen Nominativ.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Ukum</hi>. Mal. <hi rend="unknown"
-            rendition="#none">hukum</hi>, Gericht, Herrschaft; aus dem Arabischen. Als Belo erwähnt bei Heymering <hi
-            rend="unknown" rendition="#none">ukun</hi>.</p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Ema</hi>. Belo <hi rend="unknown"
-            rendition="#none">ema</hi>, Borowahing <hi rend="unknown" rendition="#none">ama</hi>, Barnusa <hi
-            rend="unknown" rendition="#none">namal</hi>. Ganz anders Rotti <hi rend="unknown"
-            rendition="#none">hataoli</hi>, Timor <hi rend="unknown"
-            rendition="#none">atori</hi>, und Letti und Kissar <hi rend="unknown" rendition="#none">ri</hi>, Moa <hi
-            rend="unknown" rendition="#none">ari</hi>.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Ida</hi>. Letti <hi rend="unknown" rendition="#none">ida</hi>, Belo <hi
-            rend="unknown" rendition="#none">ida</hi>. Das Tim. hat <hi rend="unknown"
-            rendition="#none">měsě</hi>, Rotti <hi rend="unknown" rendition="#none">ěsa</hi>, d. h. MP <hi
-            rend="unknown" rendition="#none">ěsa</hi>, <hi rend="unknown" rendition="#none">ăsa</hi>.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Mate</hi>, allgemein MP., <hi rend="unknown"
-            rendition="#none">m</hi>. <hi rend="unknown" rendition="#none">m</hi>. Hier nur einige Formen: Moa <hi
-            rend="unknown" rendition="#none">matî</hi>, Letti <hi rend="unknown"
-            rendition="#none">(ěn)mati</hi>, Kissar <hi rend="unknown" rendition="#none">maki</hi>, Alor <hi
-            rend="unknown" rendition="#none">mati</hi>, Timor, Rotti <hi rend="unknown"
-            rendition="#none">mate</hi>, Sawu <hi rend="unknown" rendition="#none">made</hi>.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Hacoi</hi>. Enthält wohl das Causativsuffix <hi rend="unknown"
-            rendition="#none">ha</hi>-, MP. <hi rend="unknown"
-            rendition="#none">pa</hi>-. Der Ausdruck für „begraber“ in ungefähr allen MP. Sprachen ist sonst <hi
-            rend="unknown" rendition="#none">taněm</hi>, <hi rend="unknown" rendition="#none">m</hi>. <hi rend="unknown" rendition="#none">
+            <p>
+               <hi rend="unknown" rendition="#none">Nafatim</hi>; hängt wohl zusammen mit Tim. <hi rend="unknown" rendition="#none">fěnati</hi>, bleiben warten.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Nia</hi>. Eig. Gen. von <hi rend="unknown" rendition="#none">ia</hi>, und ferner Bezeichnung des casus obliquus überhaupt der 3 ps. sg. In manchen MP. Sprachen wird der Cas. Obl. der Pronomina verwendet als emphatischer Nominativ; vgl. Franz. <hi rend="unknown" rendition="#none">moi</hi>, <hi rend="unknown" rendition="#none">toi</hi>, <hi rend="unknown" rendition="#none">lui</hi>; das Engl. <hi rend="unknown" rendition="#none">it is me</hi>, u. dgl. Im Tetum gehört <hi rend="unknown" rendition="#none">nia</hi> endlich herabgeschwächt zu einem einfachen Nominativ.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Ukum</hi>. Mal. <hi rend="unknown" rendition="#none">hukum</hi>, Gericht, Herrschaft; aus dem Arabischen. Als Belo erwähnt bei Heymering <hi rend="unknown" rendition="#none">ukun</hi>.</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Ema</hi>. Belo <hi rend="unknown" rendition="#none">ema</hi>, Borowahing <hi rend="unknown" rendition="#none">ama</hi>, Barnusa <hi rend="unknown" rendition="#none">namal</hi>. Ganz anders Rotti <hi rend="unknown" rendition="#none">hataoli</hi>, Timor <hi rend="unknown" rendition="#none">atori</hi>, und Letti und Kissar <hi rend="unknown" rendition="#none">ri</hi>, Moa <hi rend="unknown" rendition="#none">ari</hi>.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Ida</hi>. Letti <hi rend="unknown" rendition="#none">ida</hi>, Belo <hi rend="unknown" rendition="#none">ida</hi>. Das Tim. hat <hi rend="unknown" rendition="#none">měsě</hi>, Rotti <hi rend="unknown" rendition="#none">ěsa</hi>, d. h. MP <hi rend="unknown" rendition="#none">ěsa</hi>, <hi rend="unknown" rendition="#none">ăsa</hi>.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Mate</hi>, allgemein MP., <hi rend="unknown" rendition="#none">m</hi>. <hi rend="unknown" rendition="#none">m</hi>. Hier nur einige Formen: Moa <hi rend="unknown" rendition="#none">matî</hi>, Letti <hi rend="unknown" rendition="#none">(ěn)mati</hi>, Kissar <hi rend="unknown" rendition="#none">maki</hi>, Alor <hi rend="unknown" rendition="#none">mati</hi>, Timor, Rotti <hi rend="unknown" rendition="#none">mate</hi>, Sawu <hi rend="unknown" rendition="#none">made</hi>.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Hacoi</hi>. Enthält wohl das Causativsuffix <hi rend="unknown" rendition="#none">ha</hi>-, MP. <hi rend="unknown" rendition="#none">pa</hi>-. Der Ausdruck für „begraber“ in ungefähr allen MP. Sprachen ist sonst <hi rend="unknown" rendition="#none">taněm</hi>, <hi rend="unknown" rendition="#none">m</hi>. <hi rend="unknown" rendition="#none">
 m</hi>.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tum</hi>. Ist wohl Port. Schreibweise um <hi rend="unknown"
-            rendition="#none">tûm͏֘</hi> (Franz. <hi rend="unknown" rendition="#none">n</hi> in <hi rend="unknown"
-            rendition="#none">bon</hi>) oder <hi rend="unknown" rendition="#none">tûṅ</hi> auszudrücken. Aus. <hi
-            rend="unknown" rendition="#none">tu-un</hi>, Balinesisch <hi rend="unknown"
-            rendition="#none">
-tuhun</hi>. Der lautgesetzliche Aequivalent im Altjav. wäre <hi rend="unknown"
-            rendition="#none">*tûn</hi>, aus <hi rend="unknown" rendition="#none">tu-un</hi>, dies aus <hi
-            rend="unknown" rendition="#none">tuṟun</hi>; mit <hi rend="unknown"
-            rendition="#none">ṟ</hi> bezeichne ich das gutturale <hi rend="unknown"
-            rendition="#none">r</hi>, Arab. Ghain. Da Verwechslung zwischen den dreierlei <hi rend="unknown"
-            rendition="#none">r</hi>, dentalem, lingualem (<hi rend="unknown" rendition="#none">ṛ</hi> oder <hi
-            rend="unknown" rendition="#none">
-ḍ</hi>, ausgesprochen wie Sanskrit <hi rend="unknown"
-            rendition="#none">ḍ</hi>) und gutturalem (<hi rend="unknown"
-            rendition="#none">ṟ</hi>) in den MP. Sprachen sehr häufig ist, und wahrscheinlich schon vorhanden war in der vorhistorischen Sprache - ich sage nicht Ursprache, denn ich bilde mir nicht ein jene reconstruiren zu können-, so darf uns kein Wunder nehmen, dass im Alt- und Neujav. statt <hi
-            rend="unknown" rendition="#none">tûn</hi> vorkommt <hi rend="unknown"
-            rendition="#none">turun</hi> (auch Malaiisch) und <hi rend="unknown"
-            rendition="#none">těḍun</hi>. Dagegen stimmt zu der Balin. und Tetumvarietät des Stammes Toumbulu <hi
-            rend="unknown" rendition="#none">tuhun</hi>, Tagalog und Bisaya <hi rend="unknown"
-            rendition="#none">
-tugun</hi>. Eine einfachere Form des Stammes tritt uns entgegen in Jav. <hi
-            rend="unknown" rendition="#none">uḍun</hi>; hierbei, oder bei einem <hi rend="unknown"
-            rendition="#none">urun</hi> schliessen sich an: Sawu <hi rend="unknown"
-            rendition="#none">puru</hi>, Letti <hi rend="unknown" rendition="#none">(ně)-kěrun</hi>, Moa <hi
-            rend="unknown" rendition="#none">
-(rě)-kěrnu</hi>, Sumba <hi rend="unknown" rendition="#none">puru</hi>, <hi
-            rend="unknown" rendition="#none">pakamburu</hi>, Kissar <hi rend="unknown"
-            rendition="#none">ko-pur</hi>, Ambon <hi rend="unknown" rendition="#none">kuru</hi>. Dagegen Rotti <hi
-            rend="unknown" rendition="#none">kona</hi> (aus <hi rend="unknown"
-            rendition="#none">ta-ûn-an</hi>), und Buru <hi rend="unknown"
-            rendition="#none">ma-toho</hi>, wiederum aus <hi rend="unknown"
-            rendition="#none">
+            <p>
+               <hi rend="unknown" rendition="#none">Tum</hi>. Ist wohl Port. Schreibweise um <hi rend="unknown" rendition="#none">tûm͏֘</hi> (Franz. <hi rend="unknown" rendition="#none">n</hi> in <hi rend="unknown" rendition="#none">bon</hi>) oder <hi rend="unknown" rendition="#none">tûṅ</hi> auszudrücken. Aus. <hi rend="unknown" rendition="#none">tu-un</hi>, Balinesisch <hi rend="unknown" rendition="#none">
+tuhun</hi>. Der lautgesetzliche Aequivalent im Altjav. wäre <hi rend="unknown" rendition="#none">*tûn</hi>, aus <hi rend="unknown" rendition="#none">tu-un</hi>, dies aus <hi rend="unknown" rendition="#none">tuṟun</hi>; mit <hi rend="unknown" rendition="#none">ṟ</hi> bezeichne ich das gutturale <hi rend="unknown" rendition="#none">r</hi>, Arab. Ghain. Da Verwechslung zwischen den dreierlei <hi rend="unknown" rendition="#none">r</hi>, dentalem, lingualem (<hi rend="unknown" rendition="#none">ṛ</hi> oder <hi rend="unknown" rendition="#none">
+ḍ</hi>, ausgesprochen wie Sanskrit <hi rend="unknown" rendition="#none">ḍ</hi>) und gutturalem (<hi rend="unknown" rendition="#none">ṟ</hi>) in den MP. Sprachen sehr häufig ist, und wahrscheinlich schon vorhanden war in der vorhistorischen Sprache - ich sage nicht Ursprache, denn ich bilde mir nicht ein jene reconstruiren zu können-, so darf uns kein Wunder nehmen, dass im Alt- und Neujav. statt <hi rend="unknown" rendition="#none">tûn</hi> vorkommt <hi rend="unknown" rendition="#none">turun</hi> (auch Malaiisch) und <hi rend="unknown" rendition="#none">těḍun</hi>. Dagegen stimmt zu der Balin. und Tetumvarietät des Stammes Toumbulu <hi rend="unknown" rendition="#none">tuhun</hi>, Tagalog und Bisaya <hi rend="unknown" rendition="#none">
+tugun</hi>. Eine einfachere Form des Stammes tritt uns entgegen in Jav. <hi rend="unknown" rendition="#none">uḍun</hi>; hierbei, oder bei einem <hi rend="unknown" rendition="#none">urun</hi> schliessen sich an: Sawu <hi rend="unknown" rendition="#none">puru</hi>, Letti <hi rend="unknown" rendition="#none">(ně)-kěrun</hi>, Moa <hi rend="unknown" rendition="#none">
+(rě)-kěrnu</hi>, Sumba <hi rend="unknown" rendition="#none">puru</hi>, <hi rend="unknown" rendition="#none">pakamburu</hi>, Kissar <hi rend="unknown" rendition="#none">ko-pur</hi>, Ambon <hi rend="unknown" rendition="#none">kuru</hi>. Dagegen Rotti <hi rend="unknown" rendition="#none">kona</hi> (aus <hi rend="unknown" rendition="#none">ta-ûn-an</hi>), und Buru <hi rend="unknown" rendition="#none">ma-toho</hi>, wiederum aus <hi rend="unknown" rendition="#none">
 tuṟun</hi> mit gutturalem <hi rend="unknown" rendition="#none">r</hi>.</p>
-        <pb facs="#IMG.4" n="4"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Lin</hi>. Kissar <hi rend="unknown"
-            rendition="#none">lewen</hi> (d.h. <hi rend="unknown"
-            rendition="#none">liw-ěn</hi>), Borowahing (auf Alor) <hi rend="unknown"
-            rendition="#none">kě-loi</hi>, (mit Umstellung: <hi rend="unknown" rendition="#none">loi</hi> = <hi
-            rend="unknown" rendition="#none">lui</hi>), Rotti <hi rend="unknown"
-            rendition="#none">sě-li</hi>. Sangir <hi rend="unknown" rendition="#none">liu</hi>. Die überaus reiche Sippschaft dieses Wortes lasse ich hier unerwähnt.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Lorum</hi>. Belo <hi rend="unknown" rendition="#none">loro</hi>, Sawu <hi
-            rend="unknown" rendition="#none">lŏdo</hi>, Sumba <hi rend="unknown"
-            rendition="#none">lŏdu</hi>, Kissar, Letti <hi rend="unknown" rendition="#none">lelere</hi>, Timor <hi
-            rend="unknown" rendition="#none">nèno</hi> (aus <hi rend="unknown" rendition="#none">lělo</hi>, <hi
-            rend="unknown" rendition="#none">lěḍo</hi>). In der Bed. „Sonne” Aboa <hi rend="unknown"
-            rendition="#none">lėr</hi>, Letti <hi rend="unknown" rendition="#none">lerě</hi>, Dawalôr <hi rend="unknown"
-            rendition="#none">leol</hi> (Umst. aus <hi rend="unknown" rendition="#none">lelo</hi>), Rotti <hi
-            rend="unknown" rendition="#none">ledo</hi>. Alles aus MP. <hi rend="unknown"
-            rendition="#none">aṇḍau</hi>), Sonne, Tag. wovon Dayak <hi rend="unknown"
-            rendition="#none">andau</hi>, Tagal. <hi rend="unknown" rendition="#none">aḍau</hi>, Biv. <hi rend="unknown"
-            rendition="#none">adlau</hi> (für <hi rend="unknown" rendition="#none">aldau</hi>). Sangir <hi
-            rend="unknown" rendition="#none">ěllo</hi>, Toumbulu <hi rend="unknown"
-            rendition="#none">ěndo</hi>, Makassar <hi rend="unknown" rendition="#none">allo</hi>, Rugi <hi
-            rend="unknown" rendition="#none">ěsso</hi>, (Jav. <hi rend="unknown" rendition="#none">andon</hi>, d. h. <hi
-            rend="unknown" rendition="#none">ando</hi> + suffix <hi rend="unknown"
-            rendition="#none">an</hi>: täglich), Samoa <hi rend="unknown" rendition="#none">
-aso</hi> und <hi
-            rend="unknown" rendition="#none">ao</hi>, Bikol, Hoko, Pamparga <hi rend="unknown"
-            rendition="#none">aldau</hi>, Haneg <hi rend="unknown" rendition="#none">aggau</hi>, Malagassi <hi
-            rend="unknown" rendition="#none">
-andro</hi>, u. s. w. - Das <hi rend="unknown"
-            rendition="#none">m</hi> kann kaum ein wirkliches <hi rend="unknown"
-            rendition="#none">m</hi> sein, denn jenes würde nicht vor <hi rend="unknown"
-            rendition="#none">t</hi> standhalten; es ist wohl Portug. Bezeichnung des Nasallautes, und wahrscheinlich der Artikel, Timor <hi
-            rend="unknown" rendition="#none">‘n</hi>.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tôlo</hi>. Belo <hi rend="unknown"
-            rendition="#none">tollu</hi>, Kupangdial. <hi rend="unknown" rendition="#none">
-tilu</hi>, Timor <hi
-            rend="unknown" rendition="#none">tèno</hi>, Rotti <hi rend="unknown"
-            rendition="#none">tělo</hi>, u. s. w. MP. <hi rend="unknown" rendition="#none">tělú</hi>. Trotzdem dass <hi
-            rend="unknown"
-            rendition="#none">
-ě</hi> möglichst kurz ist, hat es in einigen Sprachen den Ton zu sich gezogen, sodass <hi
-            rend="unknown" rendition="#none">ll</hi> verdoppelt klingt; so im Sangir <hi rend="unknown"
-            rendition="#none">tě’llu</hi>, Bug. <hi rend="unknown"
-            rendition="#none">tě’llu</hi>. Dasselbe scheint auch der Fall zu sein im Tetum; darauf weist sowohl der Circumflex als Heymerings <hi
-            rend="unknown" rendition="#none">tollu</hi> hin.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Falim</hi>. Letti, Sumba <hi rend="unknown"
-            rendition="#none">wali</hi>, Timor <hi rend="unknown" rendition="#none">fani</hi>, Sawu <hi rend="unknown"
-            rendition="#none">ware</hi>, Jav. <hi rend="unknown" rendition="#none">wali</hi>, Malaiisch <hi
-            rend="unknown" rendition="#none">
-(kăm)bali</hi>, Sangir <hi rend="unknown"
-            rendition="#none">wali</hi>, u.s.w. Eine Varietät davon ist Jav., Mal. <hi rend="unknown" rendition="#none">balik</hi>, u.s.w.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Saʽe</hi>. Altj. <hi rend="unknown"
-            rendition="#none">sake</hi>, ausgehen von, und <hi rend="unknown"
-            rendition="#none">
-saka</hi>, ausgehen, aufgehen; Tag., Bidaya <hi rend="unknown"
-            rendition="#none">
-sakai</hi>, Sangir <hi rend="unknown"
-            rendition="#none">sake</hi>, sich einschiffen, wegfahren, und <hi rend="unknown" rendition="#none">saka</hi>, aufgehen, u.s.w.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Lalehan</hi>. Belo <hi rend="unknown"
-            rendition="#none">lalehan</hi>, Rotti <hi rend="unknown" rendition="#none">
-lalai</hi>, Barnusa <hi
-            rend="unknown" rendition="#none">ka-len</hi>, Ceram <hi rend="unknown"
-            rendition="#none">lalia</hi>. Ein anderes Wort ist Moa <hi rend="unknown"
-            rendition="#none">liante</hi>, Letti <hi rend="unknown"
-            rendition="#none">lianti</hi>, welches lautgesetzlich für <hi rend="unknown"
-            rendition="#none">i-langit</hi>, (am) Himmel, steht. Wiederum anders Timor <hi rend="unknown" rendition="#none">nèno</hi>, und andere nächstliegende Sprachen, welche dasselbe Wort für Himmel gebrauchen, das auch Sonne, und Tag andeutet.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Tur</hi>. Kissar <hi rend="unknown"
-            rendition="#none">nai-koro</hi> (mit Uebertritt des <hi rend="unknown"
-            rendition="#none">t</hi>, wie hier häufig, in ein andres Organ); Ceram <hi rend="unknown"
-            rendition="#none">tuwe</hi>. Anders ist Timor <hi rend="unknown" rendition="#none">toko</hi>, Rotti <hi
-            rend="unknown" rendition="#none">
+            <pb facs="#IMG.4" n="4"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Lin</hi>. Kissar <hi rend="unknown" rendition="#none">lewen</hi> (d.h. <hi rend="unknown" rendition="#none">liw-ěn</hi>), Borowahing (auf Alor) <hi rend="unknown" rendition="#none">kě-loi</hi>, (mit Umstellung: <hi rend="unknown" rendition="#none">loi</hi> = <hi rend="unknown" rendition="#none">lui</hi>), Rotti <hi rend="unknown" rendition="#none">sě-li</hi>. Sangir <hi rend="unknown" rendition="#none">liu</hi>. Die überaus reiche Sippschaft dieses Wortes lasse ich hier unerwähnt.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Lorum</hi>. Belo <hi rend="unknown" rendition="#none">loro</hi>, Sawu <hi rend="unknown" rendition="#none">lŏdo</hi>, Sumba <hi rend="unknown" rendition="#none">lŏdu</hi>, Kissar, Letti <hi rend="unknown" rendition="#none">lelere</hi>, Timor <hi rend="unknown" rendition="#none">nèno</hi> (aus <hi rend="unknown" rendition="#none">lělo</hi>, <hi rend="unknown" rendition="#none">lěḍo</hi>). In der Bed. „Sonne” Aboa <hi rend="unknown" rendition="#none">lėr</hi>, Letti <hi rend="unknown" rendition="#none">lerě</hi>, Dawalôr <hi rend="unknown" rendition="#none">leol</hi> (Umst. aus <hi rend="unknown" rendition="#none">lelo</hi>), Rotti <hi rend="unknown" rendition="#none">ledo</hi>. Alles aus MP. <hi rend="unknown" rendition="#none">aṇḍau</hi>), Sonne, Tag. wovon Dayak <hi rend="unknown" rendition="#none">andau</hi>, Tagal. <hi rend="unknown" rendition="#none">aḍau</hi>, Biv. <hi rend="unknown" rendition="#none">adlau</hi> (für <hi rend="unknown" rendition="#none">aldau</hi>). Sangir <hi rend="unknown" rendition="#none">ěllo</hi>, Toumbulu <hi rend="unknown" rendition="#none">ěndo</hi>, Makassar <hi rend="unknown" rendition="#none">allo</hi>, Rugi <hi rend="unknown" rendition="#none">ěsso</hi>, (Jav. <hi rend="unknown" rendition="#none">andon</hi>, d. h. <hi rend="unknown" rendition="#none">ando</hi> + suffix <hi rend="unknown" rendition="#none">an</hi>: täglich), Samoa <hi rend="unknown" rendition="#none">
+aso</hi> und <hi rend="unknown" rendition="#none">ao</hi>, Bikol, Hoko, Pamparga <hi rend="unknown" rendition="#none">aldau</hi>, Haneg <hi rend="unknown" rendition="#none">aggau</hi>, Malagassi <hi rend="unknown" rendition="#none">
+andro</hi>, u. s. w. - Das <hi rend="unknown" rendition="#none">m</hi> kann kaum ein wirkliches <hi rend="unknown" rendition="#none">m</hi> sein, denn jenes würde nicht vor <hi rend="unknown" rendition="#none">t</hi> standhalten; es ist wohl Portug. Bezeichnung des Nasallautes, und wahrscheinlich der Artikel, Timor <hi rend="unknown" rendition="#none">‘n</hi>.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tôlo</hi>. Belo <hi rend="unknown" rendition="#none">tollu</hi>, Kupangdial. <hi rend="unknown" rendition="#none">
+tilu</hi>, Timor <hi rend="unknown" rendition="#none">tèno</hi>, Rotti <hi rend="unknown" rendition="#none">tělo</hi>, u. s. w. MP. <hi rend="unknown" rendition="#none">tělú</hi>. Trotzdem dass <hi rend="unknown" rendition="#none">
+ě</hi> möglichst kurz ist, hat es in einigen Sprachen den Ton zu sich gezogen, sodass <hi rend="unknown" rendition="#none">ll</hi> verdoppelt klingt; so im Sangir <hi rend="unknown" rendition="#none">tě’llu</hi>, Bug. <hi rend="unknown" rendition="#none">tě’llu</hi>. Dasselbe scheint auch der Fall zu sein im Tetum; darauf weist sowohl der Circumflex als Heymerings <hi rend="unknown" rendition="#none">tollu</hi> hin.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Falim</hi>. Letti, Sumba <hi rend="unknown" rendition="#none">wali</hi>, Timor <hi rend="unknown" rendition="#none">fani</hi>, Sawu <hi rend="unknown" rendition="#none">ware</hi>, Jav. <hi rend="unknown" rendition="#none">wali</hi>, Malaiisch <hi rend="unknown" rendition="#none">
+(kăm)bali</hi>, Sangir <hi rend="unknown" rendition="#none">wali</hi>, u.s.w. Eine Varietät davon ist Jav., Mal. <hi rend="unknown" rendition="#none">balik</hi>, u.s.w.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Saʽe</hi>. Altj. <hi rend="unknown" rendition="#none">sake</hi>, ausgehen von, und <hi rend="unknown" rendition="#none">
+saka</hi>, ausgehen, aufgehen; Tag., Bidaya <hi rend="unknown" rendition="#none">
+sakai</hi>, Sangir <hi rend="unknown" rendition="#none">sake</hi>, sich einschiffen, wegfahren, und <hi rend="unknown" rendition="#none">saka</hi>, aufgehen, u.s.w.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Lalehan</hi>. Belo <hi rend="unknown" rendition="#none">lalehan</hi>, Rotti <hi rend="unknown" rendition="#none">
+lalai</hi>, Barnusa <hi rend="unknown" rendition="#none">ka-len</hi>, Ceram <hi rend="unknown" rendition="#none">lalia</hi>. Ein anderes Wort ist Moa <hi rend="unknown" rendition="#none">liante</hi>, Letti <hi rend="unknown" rendition="#none">lianti</hi>, welches lautgesetzlich für <hi rend="unknown" rendition="#none">i-langit</hi>, (am) Himmel, steht. Wiederum anders Timor <hi rend="unknown" rendition="#none">nèno</hi>, und andere nächstliegende Sprachen, welche dasselbe Wort für Himmel gebrauchen, das auch Sonne, und Tag andeutet.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Tur</hi>. Kissar <hi rend="unknown" rendition="#none">nai-koro</hi> (mit Uebertritt des <hi rend="unknown" rendition="#none">t</hi>, wie hier häufig, in ein andres Organ); Ceram <hi rend="unknown" rendition="#none">tuwe</hi>. Anders ist Timor <hi rend="unknown" rendition="#none">toko</hi>, Rotti <hi rend="unknown" rendition="#none">
 mangasuk</hi>, verwandt mit Mal. <hi rend="unknown" rendition="#none">dokok</hi>, u.s.w.</p>
-        <pb facs="#IMG.5" n="5"/>
-        <p>
-          <hi rend="unknown" rendition="#none">Cuana</hi>. Sumba <hi rend="unknown"
-            rendition="#none">kawana</hi>, Belo <hi rend="unknown" rendition="#none">kunan</hi>, Rotti <hi
-            rend="unknown" rendition="#none">konan</hi>, Sawu <hi rend="unknown"
-            rendition="#none">kěgana</hi>, Solor <hi rend="unknown"
-            rendition="#none">wana</hi>. Verwandt mit Altjav. <hi rend="unknown"
-            rendition="#none">kânan</hi>, Mal., Neujav. <hi rend="unknown"
-            rendition="#none">kanan</hi>. Grundform etwa <hi rend="unknown" rendition="#none">kěṟanan</hi>; jedenfalls ist die Mal. Form nicht lautgesetzlich und vielleicht aus dem Jav. geborgt.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Sei</hi>. Heymering giebt für das Belo eine ganz andere Futurpartikel, doch sind synonyme Partikel gar nicht selten.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Mai</hi>, Moa, Letti <hi rend="unknown"
-            rendition="#none">(nă)-mai</hi>, Kissar <hi rend="unknown" rendition="#none">
-mai</hi>, Rotti, Sawu <hi
-            rend="unknown" rendition="#none">maî</hi>, Timor <hi rend="unknown" rendition="#none">(ně)-ma</hi>; m.m. allgemein MP.</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Rai</hi>. Belo, Sawu <hi rend="unknown"
-            rendition="#none">rai</hi>, Letti <hi rend="unknown" rendition="#none">rae</hi>, Rotti <hi rend="unknown"
-            rendition="#none">daie</hi> und <hi rend="unknown"
-            rendition="#none">daie ina</hi> (letzteres „Mutter-Erde”); Buru <hi rend="unknown"
-            rendition="#none">rai sin</hi> (Mutter Erde); Sula <hi rend="unknown" rendition="#none">hai</hi>; Timor <hi
-            rend="unknown" rendition="#none">nai’n</hi> (d.h. <hi rend="unknown" rendition="#none">die</hi> Erde).</p>
-        <p>
-          <hi rend="unknown" rendition="#none">Icus</hi>. Sumba <hi rend="unknown" rendition="#none">k’iku</hi>, Moa <hi
-            rend="unknown" rendition="#none">ikor-ni</hi>, Letti <hi rend="unknown"
-            rendition="#none">ikor-nu</hi>, Kissar <hi rend="unknown" rendition="#none">ior</hi>, Alor <hi
-            rend="unknown" rendition="#none">iku</hi>, Timor <hi rend="unknown" rendition="#none">iko’n</hi>, Rotti <hi
-            rend="unknown" rendition="#none">ikok</hi>, <hi rend="unknown"
-            rendition="#none">ikò</hi>; u.s.w. Grundform <hi rend="unknown"
-            rendition="#none">ikuṟ</hi> mit gutturalem <hi rend="unknown"
-            rendition="#none">ṟ</hi>; nebst Varietät mit lingualem <hi rend="unknown" rendition="#none">r</hi> oder <hi
-            rend="unknown" rendition="#none">
-ḍ</hi>; Aus ersterem entspringt Malaiisch <hi rend="unknown"
-            rendition="#none">
-ikur</hi> (nach schlechter Aussprache <hi rend="unknown"
-            rendition="#none">
-ikor</hi>), Altjav. <hi rend="unknown" rendition="#none">ikû</hi>, Bisaya, Tagal. <hi
-            rend="unknown" rendition="#none">ikug</hi>. Aus letzterem stammt Malaiisch <hi rend="unknown"
-            rendition="#none">ikut</hi>, in modificirter Bedeutung, wie gewöhnlich bei Varietäten der Fall ist; weiter Tagal., Bisaya <hi
-            rend="unknown" rendition="#none">likuḍ</hi> (die Spanier schreiben oft <hi rend="unknown"
-            rendition="#none">likur</hi>), Toumbulu <hi rend="unknown"
-            rendition="#none">
-likur</hi>. Auch das Dayak besitzt beide Varietäten: <hi rend="unknown"
-            rendition="#none">likut</hi> (aus <hi rend="unknown" rendition="#none">likud</hi>, <hi rend="unknown"
-            rendition="#none">likuḍ</hi>) und <hi rend="unknown" rendition="#none">rikor</hi>. Ob das Tetum <hi
-            rend="unknown" rendition="#none">
-ikus</hi> auf <hi rend="unknown" rendition="#none">ikud</hi>, Mal. <hi
-            rend="unknown" rendition="#none">ikut</hi>, oder auf <hi rend="unknown" rendition="#none">ikuṟ</hi> zurückzuführen sei, lässt sich ohne Studium der Lautverhältnisse nicht bestimmen. Wahrscheinlicher scheint mir vorläufig die erste Alternative.</p>
-        <p>Und hiermit hoffe ich Ihnen einen Beweis meines Wohlwollens gegeben zu haben. Nehmen Sie diese Zeilen als solches auf und glauben Sie mich</p>
-        <closer>
-          <salute>Hochachtungsvoll ergebenst,</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1899">H. Kern.</persName>
-          </signed>
-        </closer>
-        <pb facs="#IMG.6" n="6"/>
-        <postscript>
-          <p>Verzen in Belusch dialect</p>
-          <p>
-            <hi rend="unknown" rendition="#none">Lakumerin</hi> (treurlied bij sterfgevallen en bewaking der lijken door vrouwen aangeheven).</p>
-          <p>Kuda kaku laledik tama Naemuti</p>
-          <p>Toe-sinola leut rohan tama Naemuti.</p>
-          <p>Faransisuk mai nodi kedan daun ida</p>
-          <p>Bua humur ida, tuli daun ida.</p>
-          <p>„Het paard dat zijn touw heeft losgebroken is gegaan naar Naemuti, volgt de voetsporen, de stappen gaande naar Naemuti.”</p>
-          <p>„Faransisuk is gekomen medebrengende een naald, een handvol pinangnoten in waarde gelijkstaande aan een naald.”</p>
-          <p>Bemerkung: Verklaring dat men den doode niet volgen kan en dat een der bloedverwanten een onbeduidend geschenk voor den doode heeft medegebracht.</p>
-          <p>________</p>
-          <p>
-            <hi rend="unknown" rendition="#none">Tebe-funu</hi> (oorlogslied waarin de vijand beschimpt wordt)</p>
-          <p>Lari aka-dirun neon kaikona</p>
-          <p>Neon lalolalokan neon kaikona.</p>
-          <p>Kulan uma mane sai mai</p>
-          <p>Sai mai lesu dato sai mai.</p>
-          <p>„De gelijken in aantal op de bladen der Borassus flabelliformis. Dit doet goed aan’t hart dat overstalpt is van allerlei gedachten.“</p>
-          <p>„De zakdoeken (fig. voor <hi rend="unknown"
-              rendition="#none">maagden</hi>) van de familie der vrouw komen daar aan, zij komen als zakdoeken (fig. voor <hi
-              rend="unknown" rendition="#none">gevolg</hi>) <pb facs="#IMG.7" n="7"/> van den vorst.“</p>
-          <p>______</p>
-          <p>Bemerkung: Mededeeling dat het goed is voor afleidingvele vijanden te zien, en dat de maagden den koppenssnellers ter eere naar buiten komen.</p>
-          <p>______</p>
-          <p>Loir (lied door jonge lieden in den maneschijn gezongen)</p>
-          <p>Kiak ami nu u daar fatu soë lerek,</p>
-          <p>Nu u fatu soë lerek fati soë soruk.</p>
-          <p>Manu ida kokorek nalu koi tadu,</p>
-          <p>Koi tadu sadia ina no aman.</p>
-          <p>„Ach, wij zijn gelijk aan weggeworpen steenen, steenen die men apneemt om nogmaals verder te werpen.“</p>
-          <p>„De haan kraait, en dit doet mijn hart zeer; bedroefd ben ik, denkende aan moeder en vader.“</p>
-          <p>______</p>
-          <p>In der HS. Riedels<note n="3" place="foot" type="editorial">
-              <bibl>
-                <ref
-                    target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5506">Riedel, J. G. F. 1889. ‚Bijdrage tot de kennis der dialecten op het eiland Timor‘. In <hi
-                    rend="unknown" rendition="#none">Bijdragen tot de Taal-, Land en Volkenkunde van Nederlandsch-Indië</hi> 38, 1: 1-9.</ref>
-              </bibl>
-            </note> findet sich über die Dialekte Timors (namentlich des Niederl. Theils) folgende kurze Mittheilung:</p>
-
-          <p>„Voorzooverre ik door vergelijking heb kunnen vaststellen, worden er op het eiland Timor drie hoofddialecten, met name Timol, Belu en Helo gebezigd, welke echter door de oudsten die mij inlichtingen verstrekten weder in tal van onderdialecten verdeeld worden. Van deze laatste - vooreerst van die van Taibeno, Sonabai-ana, Oë-matan en Belu - geef ik hier eene proeve, bestaande uit veertig volzinnen in het Taibenosch, een verdicht verhaal <pb
-              facs="#IMG.8"
-              n="8"/> in het Sonabaisch, eene korte beschrijving van den aanleg eens djagorguelos en van de verrichtingen bij tooverij in ‘t Oë-matansch, zoomede eenige strophen van Belusche liederen“<note
-              n="4" place="foot" type="editorial">„Voor zoover ik dit door vergelijking heb kunnen vaststellen, worden er op het eiland Timor drie hoofddialecten, met name Timol, Belu en Helo in de landschappen Dawan, Tetuun en Marae gebezigd, welke echter door de oudsten, die mij inlichtingen verstrekten, alweder in tal van onderdialecten verdeeld zijn. Van deze laatste, vooeerst meer in het bijzonder van die van Tapenu, of Taibeno, Sonabai-ana, Oëmatan of Amakono en Djenilo, geef ik hier eene proeve, bestaande uit veertig volzinnen in het Taibenosch, een verdicht verhaal in het Sonabaisch, eene korte beschrijving van den aanleg eener djagongveld en van de verrichtingen bij tooverij wegens ziekte, in het Oëmatansch, zoomede eenige strophen van Djenilosche liederen, met name Samahare, die bij alle feesten en bij den padioogst gezongen worden.“ (<bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5506">Riedel 1889</ref>
-              </bibl>: 1)</note> u.s.w.</p>
-          <p>______</p>
-
-          <p>In Bezug auf Belu kann ich mittheilen, dass es der Name eines Stammes ist, der einestheils im Niederl., anderntheils im Portug. Gebiete wohnt. Im „Aardrijkskundig en Statistisch Woordenboek van Nederlandsch Indië“<note
-              n="5" place="foot" type="editorial">
-              <bibl>
-                <ref
-                    target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5507">Alphen, H. van / Veth, P. J. (ed.). 1861-1869. <hi
-                    rend="unknown" rendition="#none">
+            <pb facs="#IMG.5" n="5"/>
+            <p>
+               <hi rend="unknown" rendition="#none">Cuana</hi>. Sumba <hi rend="unknown" rendition="#none">kawana</hi>, Belo <hi rend="unknown" rendition="#none">kunan</hi>, Rotti <hi rend="unknown" rendition="#none">konan</hi>, Sawu <hi rend="unknown" rendition="#none">kěgana</hi>, Solor <hi rend="unknown" rendition="#none">wana</hi>. Verwandt mit Altjav. <hi rend="unknown" rendition="#none">kânan</hi>, Mal., Neujav. <hi rend="unknown" rendition="#none">kanan</hi>. Grundform etwa <hi rend="unknown" rendition="#none">kěṟanan</hi>; jedenfalls ist die Mal. Form nicht lautgesetzlich und vielleicht aus dem Jav. geborgt.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Sei</hi>. Heymering giebt für das Belo eine ganz andere Futurpartikel, doch sind synonyme Partikel gar nicht selten.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Mai</hi>, Moa, Letti <hi rend="unknown" rendition="#none">(nă)-mai</hi>, Kissar <hi rend="unknown" rendition="#none">
+mai</hi>, Rotti, Sawu <hi rend="unknown" rendition="#none">maî</hi>, Timor <hi rend="unknown" rendition="#none">(ně)-ma</hi>; m.m. allgemein MP.</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Rai</hi>. Belo, Sawu <hi rend="unknown" rendition="#none">rai</hi>, Letti <hi rend="unknown" rendition="#none">rae</hi>, Rotti <hi rend="unknown" rendition="#none">daie</hi> und <hi rend="unknown" rendition="#none">daie ina</hi> (letzteres „Mutter-Erde”); Buru <hi rend="unknown" rendition="#none">rai sin</hi> (Mutter Erde); Sula <hi rend="unknown" rendition="#none">hai</hi>; Timor <hi rend="unknown" rendition="#none">nai’n</hi> (d.h. <hi rend="unknown" rendition="#none">die</hi> Erde).</p>
+            <p>
+               <hi rend="unknown" rendition="#none">Icus</hi>. Sumba <hi rend="unknown" rendition="#none">k’iku</hi>, Moa <hi rend="unknown" rendition="#none">ikor-ni</hi>, Letti <hi rend="unknown" rendition="#none">ikor-nu</hi>, Kissar <hi rend="unknown" rendition="#none">ior</hi>, Alor <hi rend="unknown" rendition="#none">iku</hi>, Timor <hi rend="unknown" rendition="#none">iko’n</hi>, Rotti <hi rend="unknown" rendition="#none">ikok</hi>, <hi rend="unknown" rendition="#none">ikò</hi>; u.s.w. Grundform <hi rend="unknown" rendition="#none">ikuṟ</hi> mit gutturalem <hi rend="unknown" rendition="#none">ṟ</hi>; nebst Varietät mit lingualem <hi rend="unknown" rendition="#none">r</hi> oder <hi rend="unknown" rendition="#none">
+ḍ</hi>; Aus ersterem entspringt Malaiisch <hi rend="unknown" rendition="#none">
+ikur</hi> (nach schlechter Aussprache <hi rend="unknown" rendition="#none">
+ikor</hi>), Altjav. <hi rend="unknown" rendition="#none">ikû</hi>, Bisaya, Tagal. <hi rend="unknown" rendition="#none">ikug</hi>. Aus letzterem stammt Malaiisch <hi rend="unknown" rendition="#none">ikut</hi>, in modificirter Bedeutung, wie gewöhnlich bei Varietäten der Fall ist; weiter Tagal., Bisaya <hi rend="unknown" rendition="#none">likuḍ</hi> (die Spanier schreiben oft <hi rend="unknown" rendition="#none">likur</hi>), Toumbulu <hi rend="unknown" rendition="#none">
+likur</hi>. Auch das Dayak besitzt beide Varietäten: <hi rend="unknown" rendition="#none">likut</hi> (aus <hi rend="unknown" rendition="#none">likud</hi>, <hi rend="unknown" rendition="#none">likuḍ</hi>) und <hi rend="unknown" rendition="#none">rikor</hi>. Ob das Tetum <hi rend="unknown" rendition="#none">
+ikus</hi> auf <hi rend="unknown" rendition="#none">ikud</hi>, Mal. <hi rend="unknown" rendition="#none">ikut</hi>, oder auf <hi rend="unknown" rendition="#none">ikuṟ</hi> zurückzuführen sei, lässt sich ohne Studium der Lautverhältnisse nicht bestimmen. Wahrscheinlicher scheint mir vorläufig die erste Alternative.</p>
+            <p>Und hiermit hoffe ich Ihnen einen Beweis meines Wohlwollens gegeben zu haben. Nehmen Sie diese Zeilen als solches auf und glauben Sie mich</p>
+            <closer>
+               <salute>Hochachtungsvoll ergebenst,</salute>
+               <signed>
+                  <persName ref="[authorityLink]">H. Kern.</persName>
+               </signed>
+            </closer>
+            <pb facs="#IMG.6" n="6"/>
+            <postscript>
+               <p>Verzen in Belusch dialect</p>
+               <p>
+                  <hi rend="unknown" rendition="#none">Lakumerin</hi> (treurlied bij sterfgevallen en bewaking der lijken door vrouwen aangeheven).</p>
+               <p>Kuda kaku laledik tama Naemuti</p>
+               <p>Toe-sinola leut rohan tama Naemuti.</p>
+               <p>Faransisuk mai nodi kedan daun ida</p>
+               <p>Bua humur ida, tuli daun ida.</p>
+               <p>„Het paard dat zijn touw heeft losgebroken is gegaan naar Naemuti, volgt de voetsporen, de stappen gaande naar Naemuti.”</p>
+               <p>„Faransisuk is gekomen medebrengende een naald, een handvol pinangnoten in waarde gelijkstaande aan een naald.”</p>
+               <p>Bemerkung: Verklaring dat men den doode niet volgen kan en dat een der bloedverwanten een onbeduidend geschenk voor den doode heeft medegebracht.</p>
+               <p>________</p>
+               <p>
+                  <hi rend="unknown" rendition="#none">Tebe-funu</hi> (oorlogslied waarin de vijand beschimpt wordt)</p>
+               <p>Lari aka-dirun neon kaikona</p>
+               <p>Neon lalolalokan neon kaikona.</p>
+               <p>Kulan uma mane sai mai</p>
+               <p>Sai mai lesu dato sai mai.</p>
+               <p>„De gelijken in aantal op de bladen der Borassus flabelliformis. Dit doet goed aan’t hart dat overstalpt is van allerlei gedachten.“</p>
+               <p>„De zakdoeken (fig. voor <hi rend="unknown" rendition="#none">maagden</hi>) van de familie der vrouw komen daar aan, zij komen als zakdoeken (fig. voor <hi rend="unknown" rendition="#none">gevolg</hi>) <pb facs="#IMG.7" n="7"/> van den vorst.“</p>
+               <p>______</p>
+               <p>Bemerkung: Mededeeling dat het goed is voor afleidingvele vijanden te zien, en dat de maagden den koppenssnellers ter eere naar buiten komen.</p>
+               <p>______</p>
+               <p>Loir (lied door jonge lieden in den maneschijn gezongen)</p>
+               <p>Kiak ami nu u daar fatu soë lerek,</p>
+               <p>Nu u fatu soë lerek fati soë soruk.</p>
+               <p>Manu ida kokorek nalu koi tadu,</p>
+               <p>Koi tadu sadia ina no aman.</p>
+               <p>„Ach, wij zijn gelijk aan weggeworpen steenen, steenen die men apneemt om nogmaals verder te werpen.“</p>
+               <p>„De haan kraait, en dit doet mijn hart zeer; bedroefd ben ik, denkende aan moeder en vader.“</p>
+               <p>______</p>
+               <p>In der HS. Riedels<note n="3" place="foot" type="editorial">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5506">Riedel, J. G. F. 1889. ‚Bijdrage tot de kennis der dialecten op het eiland Timor‘. In <hi rend="unknown" rendition="#none">Bijdragen tot de Taal-, Land en Volkenkunde van Nederlandsch-Indië</hi> 38, 1: 1-9.</ref>
+                     </bibl>
+                  </note> findet sich über die Dialekte Timors (namentlich des Niederl. Theils) folgende kurze Mittheilung:</p>
+               <p>„Voorzooverre ik door vergelijking heb kunnen vaststellen, worden er op het eiland Timor drie hoofddialecten, met name Timol, Belu en Helo gebezigd, welke echter door de oudsten die mij inlichtingen verstrekten weder in tal van onderdialecten verdeeld worden. Van deze laatste - vooreerst van die van Taibeno, Sonabai-ana, Oë-matan en Belu - geef ik hier eene proeve, bestaande uit veertig volzinnen in het Taibenosch, een verdicht verhaal <pb facs="#IMG.8" n="8"/> in het Sonabaisch, eene korte beschrijving van den aanleg eens djagorguelos en van de verrichtingen bij tooverij in ‘t Oë-matansch, zoomede eenige strophen van Belusche liederen“<note n="4" place="foot" type="editorial">„Voor zoover ik dit door vergelijking heb kunnen vaststellen, worden er op het eiland Timor drie hoofddialecten, met name Timol, Belu en Helo in de landschappen Dawan, Tetuun en Marae gebezigd, welke echter door de oudsten, die mij inlichtingen verstrekten, alweder in tal van onderdialecten verdeeld zijn. Van deze laatste, vooeerst meer in het bijzonder van die van Tapenu, of Taibeno, Sonabai-ana, Oëmatan of Amakono en Djenilo, geef ik hier eene proeve, bestaande uit veertig volzinnen in het Taibenosch, een verdicht verhaal in het Sonabaisch, eene korte beschrijving van den aanleg eener djagongveld en van de verrichtingen bij tooverij wegens ziekte, in het Oëmatansch, zoomede eenige strophen van Djenilosche liederen, met name Samahare, die bij alle feesten en bij den padioogst gezongen worden.“ (<bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5506">Riedel 1889</ref>
+                     </bibl>: 1)</note> u.s.w.</p>
+               <p>______</p>
+               <p>In Bezug auf Belu kann ich mittheilen, dass es der Name eines Stammes ist, der einestheils im Niederl., anderntheils im Portug. Gebiete wohnt. Im „Aardrijkskundig en Statistisch Woordenboek van Nederlandsch Indië“<note n="5" place="foot" type="editorial">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5507">Alphen, H. van / Veth, P. J. (ed.). 1861-1869. <hi rend="unknown" rendition="#none">
 Aardrijkskundig en statistisch woordenboek van Nederlandsch Indie, bewerkt naar de jongste en beste berigten</hi>. 3 vol. Amsterdam: P. N. van Kampen.</ref>
-              </bibl>
-            </note> kommt (III, 976) der folgende Passus vor:</p>
-
-          <p>„Zij (d. h. die unter Waiwiko-Waihali gehörigen Landschaften) vormen de afdeeling Midden-Timor, die ook wel Belo of Belu genoemd wordt. Echte zijn de Beloneezen (<hi
-              rend="unknown"
-              rendition="#none">Ema Welu</hi>) niet tot het gebied van Waiwiko-Waihali beperkt. Tot hen behooren ook de bewoners der 46 staatjes, die, nog buiten de enclave van Oi-koevi, tot het Portugeesch gebied behooren en grootendeels eenigermat de suprematie erkennen van den <hi
-              rend="unknown" rendition="#none">Liorai</hi> of Keizer van Loeka.“<note n="6" place="foot"
-                type="editorial">„Zij vormen de afdeeling Midden-Timor, die ook wel Belo of Beloe genoemd wordt. Echter zijn de Belonezen (<hi
-                rend="unknown"
-                rendition="#none">Ema Weloe</hi>) niet tot het gebied van Waiwiko-Waihali beperkt. Tot hen behooren ook de bewoners der 46 staatjes, die, nog buiten de enclave van Oikoesi, tot het Portugeesch gebied behooren en grootendeels eenigermate de suprematie erkennen van den <hi
-                rend="unknown" rendition="#none">
+                     </bibl>
+                  </note> kommt (III, 976) der folgende Passus vor:</p>
+               <p>„Zij (d. h. die unter Waiwiko-Waihali gehörigen Landschaften) vormen de afdeeling Midden-Timor, die ook wel Belo of Belu genoemd wordt. Echte zijn de Beloneezen (<hi rend="unknown" rendition="#none">Ema Welu</hi>) niet tot het gebied van Waiwiko-Waihali beperkt. Tot hen behooren ook de bewoners der 46 staatjes, die, nog buiten de enclave van Oi-koevi, tot het Portugeesch gebied behooren en grootendeels eenigermat de suprematie erkennen van den <hi rend="unknown" rendition="#none">Liorai</hi> of Keizer van Loeka.“<note n="6" place="foot" type="editorial">„Zij vormen de afdeeling Midden-Timor, die ook wel Belo of Beloe genoemd wordt. Echter zijn de Belonezen (<hi rend="unknown" rendition="#none">Ema Weloe</hi>) niet tot het gebied van Waiwiko-Waihali beperkt. Tot hen behooren ook de bewoners der 46 staatjes, die, nog buiten de enclave van Oikoesi, tot het Portugeesch gebied behooren en grootendeels eenigermate de suprematie erkennen van den <hi rend="unknown" rendition="#none">
 Liorai</hi> of Keizer van Loeka, welke aan de Zuidkust liggende Staat slechts door Soeai van Waiwiko-Waihali is gescheiden.“ (<bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5507">Alphen &amp; Veth 1869</ref>
-              </bibl>: 976)</note>
-          </p>
-
-          <p>„Het verschil tusschen Timoreenzen en Beloneezen schijnt meer in kleeding en wapencusting, gebruiken en tongval, dan in kleur of lichaamsbouw te bestaan.”<note
-              n="7" place="foot" type="editorial">(<bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5507">Alphen &amp; Veth 1869</ref>
-              </bibl>: 977).</note>
-          </p>
-          <p>In Stielers Handatlas<note n="8" place="foot" type="editorial">
-              <bibl>Stieler, A. 1817-1945 [<ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5508">6. Edition: 1875-1881</ref>; <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5509">7. Edition: 1882-1889</ref>]. <hi
-                  rend="unknown" rendition="#none">Hand-Atlas über alle Theile der Erde und über das Weltgebäude</hi>. Gotha: Justus Perthes.</bibl>
-            </note> fällt <hi rend="unknown" rendition="#none">Belo</hi> ganz ausser dem holländ. Gebiet, in der Mitte des Portug. Theils der Insel; das ist nicht ganz genau.</p>
-          <pb facs="#IMG.9" n="9"/>
-
-          <p>Die Bücher, die sie brauchen, werden Sie ohne Mühe aus der hiesigen Bibliothek bekommen können. Der Aufsatz Heymerings über die Letti-sprache<note
-              n="9" place="foot" type="editorial">Wahrscheinlich wird über folgendes Buch gesprochen: <bibl>
-                <ref
-                    target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5510">
-Heijmering, G. 1847. 'Bijdragen tot de geschiedenis van Timor'. In <hi
-                    rend="unknown" rendition="#none">Tijdschrift van Nederlandsch-Indië</hi> IX, 3: 1–62; 121-232, 243-244.</ref>
-              </bibl>
-            </note> ist in jeder Beziehung interessant, wiewohl er manche grammatische Erscheinungen nicht richtig erklärt hat.</p>
-          <closer>
-            <salute>Hochachtungsvoll ergebenst</salute>
-            <signed>
-              <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1899">H. Kern.</persName>
-            </signed>
-          </closer>
-        </postscript>
-      </div>
-    </body>
-  </text>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5507">Alphen &amp; Veth 1869</ref>
+                     </bibl>: 976)</note>
+               </p>
+               <p>„Het verschil tusschen Timoreenzen en Beloneezen schijnt meer in kleeding en wapencusting, gebruiken en tongval, dan in kleur of lichaamsbouw te bestaan.”<note n="7" place="foot" type="editorial">(<bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5507">Alphen &amp; Veth 1869</ref>
+                     </bibl>: 977).</note>
+               </p>
+               <p>In Stielers Handatlas<note n="8" place="foot" type="editorial">
+                     <bibl>Stieler, A. 1817-1945 [<ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5508">6. Edition: 1875-1881</ref>; <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5509">7. Edition: 1882-1889</ref>]. <hi rend="unknown" rendition="#none">Hand-Atlas über alle Theile der Erde und über das Weltgebäude</hi>. Gotha: Justus Perthes.</bibl>
+                  </note> fällt <hi rend="unknown" rendition="#none">Belo</hi> ganz ausser dem holländ. Gebiet, in der Mitte des Portug. Theils der Insel; das ist nicht ganz genau.</p>
+               <pb facs="#IMG.9" n="9"/>
+               <p>Die Bücher, die sie brauchen, werden Sie ohne Mühe aus der hiesigen Bibliothek bekommen können. Der Aufsatz Heymerings über die Letti-sprache<note n="9" place="foot" type="editorial">Wahrscheinlich wird über folgendes Buch gesprochen: <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5510">
+Heijmering, G. 1847. 'Bijdragen tot de geschiedenis van Timor'. In <hi rend="unknown" rendition="#none">Tijdschrift van Nederlandsch-Indië</hi> IX, 3: 1–62; 121-232, 243-244.</ref>
+                     </bibl>
+                  </note> ist in jeder Beziehung interessant, wiewohl er manche grammatische Erscheinungen nicht richtig erklärt hat.</p>
+               <closer>
+                  <salute>Hochachtungsvoll ergebenst</salute>
+                  <signed>
+                     <persName ref="[authorityLink]">H. Kern.</persName>
+                  </signed>
+               </closer>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

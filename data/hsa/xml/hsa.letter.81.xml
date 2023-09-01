@@ -1,315 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Antonio Machado y Álvarez an Hugo Schuchardt (18-06766)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2100">
-            <forename>Antonio</forename>
-            <surname>Machado y Álvarez</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Gerhard</forename>
-            <surname>Steingress</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/81" type="PID">o:hsa.letter.81</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">18-06766</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">06766</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="es"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2100">
-                <forename>Antonio</forename>
-                <surname>Machado y Álvarez</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.5" ref="http://sws.geonames.org/3117735">Madrid</origPlace>
-              <origDate ana="dcterms:created" when="1885-03-31">1885-03-31</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Gerhard</forename>
-              <surname>Steingress</surname>
-            </persName>
-          </author>
-          <date when="1996">1996</date>
-          <title>Cartas a Schuchardt. La correspondencia inédita de los folkloristas y otros
-               intelectuales españoles con el romanista y linguista Hugo Schuchardt</title>
-          <pubPlace>Sevilla</pubPlace>
-          <publisher>Fundación Machado</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Gerhard</forename>
-              <surname>Steingress</surname>
-            </persName>
-          </author>
-          <date when="2009">2009</date>
-          <title>Die Korrespondenz zwischen Antonio Machado y Álvarez und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2100"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.81">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2100" ref="https://viaf.org/viaf/74664153">
-            <forename>Antonio</forename>
-            <surname>Machado y Álvarez</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.5" key="#GID.1" ref="http://sws.geonames.org/3117735">Madrid</placeName>
-          <date when="1885-03-31">1885-03-31</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Spain</country>
-                <settlement>Madrid</settlement>
-                <name ref="http://geonames.org/3117735" type="fcode:PPLC">Madrid</name>
-                <location>
-                  <geo>-3.70256,40.4165</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2100" type="context">
-                        Korrespondenz Antonio Machado y Álvarez - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="es">Spanisch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.81" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.81" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.81" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.81" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.81" xml:lang="es">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline> T/C. Almirante 3. 1.º izqd.ª - Para todo lo que se te ocurra de F[olk]-L[ore], dirígete a mi alter ego Alejandro Guichot y Sierra.- Sevilla, Calle del Teodosio, n.º 61<lb/> Madrid, 31 Marzo de 1885</dateline>
-        <opener>Mi querido amigo:</opener>
-
-        <p>Tarde contesto a tu afectuosa y para mí instructiva y agradabilísima carta, fechada 20 de Mayo del pasado. ¡Buen resuelto para buzo tiene el amigo Machado y Alvarez dirás para tu capote! !Como ha de ser! <hi
-            rend="unknown" rendition="#none">Cosí va il mondo...</hi>
-        </p>
-
-        <p>Comprendo perfectamente lo que dices, con altísimo y profundo sentido científico, de que todos los fenómenos del mundo formen una no interrumpida cadena, que, sólo para que quepa en nuestra reducida mollera, dividimos en trozos. Lo comprendo, como también que los límites que ponemos a las cosas son abstractos y convencionales, como lo son aun los mismos que establecemos entre el espíritu y el cuerpo, el sujeto y el objeto, etc. <hi
-            rend="unknown" rendition="#none">spiritus tanguam</hi> (res situt) <hi rend="unknown"
-            rendition="#none">natura sum facit saltum</hi>. Los idiomas y dialectos tampoco podían sustraerse a las leyes de la continuidad interior de la realidad y de la evolución; pe<pb
-            facs="#IMG.2"
-            n="2"/>ro entendiendo esto creo, sin embargo, que hay una división dialectológica posible de la peninsula ibérica y la base, por el momento sólo aproximada, de dicha división era la que pretendía. Por ejemplo que me hubieras dicho: puede dividirse en tres regiones <hi
-            rend="unknown" rendition="#none">castellana</hi> (de tal punto a tal punto), <hi rend="unknown"
-            rendition="#none">gallega</hi> (de tal punto a tal otro) y <hi rend="unknown"
-            rendition="#none">catalana</hi> (de tal a cual parte): o bien en E[spaña] (...): <hi rend="unknown"
-            rendition="#none">asturiana, gallega, catalana, murciana, valenciana y aragonesa</hi> etc. Mi fin no era otro que decir que, <hi
-            rend="unknown"
-            rendition="#none">dialecto lógicamente</hi>, segun tu autoridad, había hecho bien en dividir el <hi
-            rend="unknown"
-            rendition="#none">F[olk]-L[ore] Español</hi> en varias regiones; todavez que las Islas Canarias, Baleares, Cuba, Puerto Rico y Filipinas tienen, aun sin necesidad de atender a un dialecto, razones en su abono p[ara] constituir regiones folklóricas. Esto era todo: el <hi
-            rend="unknown" rendition="#none">Mapa</hi> no era realmente tal <hi rend="unknown"
-            rendition="#none">Mapa</hi>, sino una manera esquemática, un modo de <hi rend="unknown" rendition="#none">meter por los ojos</hi> a los ignorantes, la división en regiones. ¿Me he explicado?</p>
-        <p>El 2.º apellido del Sr. Fernandez, director del periódico El Buscapié de Puerto Rico, es <hi rend="unknown"
-            rendition="#none">Juncos</hi>; a él te puedes dirigir en nuestro nombre en la seguridad que te servirá. En Cuba puedes consultar a D. Teófilo Martín Escobar, catedrático de Meta<pb
-            facs="#IMG.3"
-            n="3"/>física en aquella Universidad y antiguo condiscípulo mío. En Guatemala a D. Salvador Falla, abogado distinguido y Presidente de la Sociedad <hi
-            rend="unknown" rendition="#none">El Porvenir</hi>, de que me hicieron socio honorario.</p>
-        <p>Mucho me alegraré que te ocupes pronto en <hi rend="unknown"
-            rendition="#none">
-Lenguaje infantil:</hi> yo nada sé de esto como de nada, pero hubiera seguido este estudio con gusto, si hubiese tenido medios para ello. Yo soy (perdona la inmodestia) una pobre maceta de <hi
-            rend="unknown"
-            rendition="#none">
-pensamientos</hi> (los nobles sentimientos que mi virtuosa madre ha sembrado en mi corazón) que se marchitan todos por falta de <hi
-            rend="unknown"
-            rendition="#none">
-cultivo</hi> (educación científica adecuada) y abono (los medios pecuniarios indispensables para toda obra). Así han muerto las ideas de la aplicación de la fotografia a los juegos, el estudio del lenguaje infantil, las excursiones y museos folklóricos, los mapas demotopográficos o tipográfico-tradicionales, la menor de cuyas ideas necesita para su realización dos generaciones y bastaría para justificar la existencia de un hombre; pero ni el <hi
-            rend="unknown" rendition="#none">
-País</hi>, ni los <hi rend="unknown"
-            rendition="#none">Políticos</hi>, ni los <hi rend="unknown"
-            rendition="#none">Sabios</hi>, nadie, nadie me ha hecho caso, mejor dicho, ha hecho caso a la idea. El pobre <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1663">Alejandro Guichot</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2547">Luis Romero y Espinosa</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1751">
-Sergio Hernández</persName> y alguno que otro hombre oscuro también, por <pb
-            facs="#IMG.4"
-            n="4"/>generoso y bueno, me han ayudado hasta aquí. Con su auxilio y su buena amistad, la tuya y la de Pitré, valiosísimo para mí, me considero plenamente recompensado, y sigo mi camino viendo en mi cerebro lo grande de la concepción ideal y lo pequeño de la obra realizada. No creas, sin embargo, que desmayo: ahora, ya que el <hi
-            rend="unknown" rendition="#none">país</hi> me ha contestado, acudiré al <hi rend="unknown"
-            rendition="#none">gobierno</hi> (un gobierno inmoral y estúpido) que tampoco hará nada y después acudiré a Inglaterra y a los Estados Unidos, naciones más serias que <hi
-            rend="unknown" rendition="#none">Francia</hi> y <hi rend="unknown"
-            rendition="#none">más ricas que Italia y Alemania</hi> en busca de los medios necesarios para el desarrollo de mi pensamiento. Inglaterra y los Estados Unidos, si <hi
-            rend="unknown" rendition="#none">les conviene</hi>, auxiliarán algo, y yo pasaré <hi rend="unknown"
-            rendition="#none">por poco patriota</hi>: si no ven ventaja mercantil, nada harán, pero entretanto prolongo mi sueño que es contribuir a que, reconociéndose el valor del <hi
-            rend="unknown" rendition="#none">pueblo</hi>, cuánto de la humanidad, nos conozcamos, concozcamos la tierra que pisamos y nos amemos todos como hombres y hermanos, como miembros misteriosos de esta realidad infinita en que nada se crea, ni se aniquila y todo se transforma como los dialectos y fenómenos físicos. Soñando, soñando se me irá la vida; pero no la buena amistad que te profesa tu amigo </p>
-        <closer>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2100">Antonio Machado y Alvarez</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.81" xml:lang="es">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline> T/C. Almirante 3. 1.º izqd.ª - Para todo lo que se te ocurra de F[olk]-L[ore], dirígete a mi alter ego Alejandro Guichot y Sierra.- Sevilla, Calle del Teodosio, n.º 61<lb/> Madrid, 31 Marzo de 1885</dateline>
+            <opener>Mi querido amigo:</opener>
+            <p>Tarde contesto a tu afectuosa y para mí instructiva y agradabilísima carta, fechada 20 de Mayo del pasado. ¡Buen resuelto para buzo tiene el amigo Machado y Alvarez dirás para tu capote! !Como ha de ser! <hi rend="unknown" rendition="#none">Cosí va il mondo...</hi>
+            </p>
+            <p>Comprendo perfectamente lo que dices, con altísimo y profundo sentido científico, de que todos los fenómenos del mundo formen una no interrumpida cadena, que, sólo para que quepa en nuestra reducida mollera, dividimos en trozos. Lo comprendo, como también que los límites que ponemos a las cosas son abstractos y convencionales, como lo son aun los mismos que establecemos entre el espíritu y el cuerpo, el sujeto y el objeto, etc. <hi rend="unknown" rendition="#none">spiritus tanguam</hi> (res situt) <hi rend="unknown" rendition="#none">natura sum facit saltum</hi>. Los idiomas y dialectos tampoco podían sustraerse a las leyes de la continuidad interior de la realidad y de la evolución; pe<pb facs="#IMG.2" n="2"/>ro entendiendo esto creo, sin embargo, que hay una división dialectológica posible de la peninsula ibérica y la base, por el momento sólo aproximada, de dicha división era la que pretendía. Por ejemplo que me hubieras dicho: puede dividirse en tres regiones <hi rend="unknown" rendition="#none">castellana</hi> (de tal punto a tal punto), <hi rend="unknown" rendition="#none">gallega</hi> (de tal punto a tal otro) y <hi rend="unknown" rendition="#none">catalana</hi> (de tal a cual parte): o bien en E[spaña] (...): <hi rend="unknown" rendition="#none">asturiana, gallega, catalana, murciana, valenciana y aragonesa</hi> etc. Mi fin no era otro que decir que, <hi rend="unknown" rendition="#none">dialecto lógicamente</hi>, segun tu autoridad, había hecho bien en dividir el <hi rend="unknown" rendition="#none">F[olk]-L[ore] Español</hi> en varias regiones; todavez que las Islas Canarias, Baleares, Cuba, Puerto Rico y Filipinas tienen, aun sin necesidad de atender a un dialecto, razones en su abono p[ara] constituir regiones folklóricas. Esto era todo: el <hi rend="unknown" rendition="#none">Mapa</hi> no era realmente tal <hi rend="unknown" rendition="#none">Mapa</hi>, sino una manera esquemática, un modo de <hi rend="unknown" rendition="#none">meter por los ojos</hi> a los ignorantes, la división en regiones. ¿Me he explicado?</p>
+            <p>El 2.º apellido del Sr. Fernandez, director del periódico El Buscapié de Puerto Rico, es <hi rend="unknown" rendition="#none">Juncos</hi>; a él te puedes dirigir en nuestro nombre en la seguridad que te servirá. En Cuba puedes consultar a D. Teófilo Martín Escobar, catedrático de Meta<pb facs="#IMG.3" n="3"/>física en aquella Universidad y antiguo condiscípulo mío. En Guatemala a D. Salvador Falla, abogado distinguido y Presidente de la Sociedad <hi rend="unknown" rendition="#none">El Porvenir</hi>, de que me hicieron socio honorario.</p>
+            <p>Mucho me alegraré que te ocupes pronto en <hi rend="unknown" rendition="#none">
+Lenguaje infantil:</hi> yo nada sé de esto como de nada, pero hubiera seguido este estudio con gusto, si hubiese tenido medios para ello. Yo soy (perdona la inmodestia) una pobre maceta de <hi rend="unknown" rendition="#none">
+pensamientos</hi> (los nobles sentimientos que mi virtuosa madre ha sembrado en mi corazón) que se marchitan todos por falta de <hi rend="unknown" rendition="#none">
+cultivo</hi> (educación científica adecuada) y abono (los medios pecuniarios indispensables para toda obra). Así han muerto las ideas de la aplicación de la fotografia a los juegos, el estudio del lenguaje infantil, las excursiones y museos folklóricos, los mapas demotopográficos o tipográfico-tradicionales, la menor de cuyas ideas necesita para su realización dos generaciones y bastaría para justificar la existencia de un hombre; pero ni el <hi rend="unknown" rendition="#none">
+País</hi>, ni los <hi rend="unknown" rendition="#none">Políticos</hi>, ni los <hi rend="unknown" rendition="#none">Sabios</hi>, nadie, nadie me ha hecho caso, mejor dicho, ha hecho caso a la idea. El pobre <persName ref="[authorityLink]">Alejandro Guichot</persName>, <persName ref="[authorityLink]">Luis Romero y Espinosa</persName>, <persName ref="[authorityLink]">
+Sergio Hernández</persName> y alguno que otro hombre oscuro también, por <pb facs="#IMG.4" n="4"/>generoso y bueno, me han ayudado hasta aquí. Con su auxilio y su buena amistad, la tuya y la de Pitré, valiosísimo para mí, me considero plenamente recompensado, y sigo mi camino viendo en mi cerebro lo grande de la concepción ideal y lo pequeño de la obra realizada. No creas, sin embargo, que desmayo: ahora, ya que el <hi rend="unknown" rendition="#none">país</hi> me ha contestado, acudiré al <hi rend="unknown" rendition="#none">gobierno</hi> (un gobierno inmoral y estúpido) que tampoco hará nada y después acudiré a Inglaterra y a los Estados Unidos, naciones más serias que <hi rend="unknown" rendition="#none">Francia</hi> y <hi rend="unknown" rendition="#none">más ricas que Italia y Alemania</hi> en busca de los medios necesarios para el desarrollo de mi pensamiento. Inglaterra y los Estados Unidos, si <hi rend="unknown" rendition="#none">les conviene</hi>, auxiliarán algo, y yo pasaré <hi rend="unknown" rendition="#none">por poco patriota</hi>: si no ven ventaja mercantil, nada harán, pero entretanto prolongo mi sueño que es contribuir a que, reconociéndose el valor del <hi rend="unknown" rendition="#none">pueblo</hi>, cuánto de la humanidad, nos conozcamos, concozcamos la tierra que pisamos y nos amemos todos como hombres y hermanos, como miembros misteriosos de esta realidad infinita en que nada se crea, ni se aniquila y todo se transforma como los dialectos y fenómenos físicos. Soñando, soñando se me irá la vida; pero no la buena amistad que te profesa tu amigo </p>
+            <closer>
+               <signed>
+                  <persName ref="[authorityLink]">Antonio Machado y Alvarez</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

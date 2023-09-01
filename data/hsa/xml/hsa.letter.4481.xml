@@ -1,306 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Bogdan Petriceicu Hasdeu (24-1175)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bruno</forename>
-            <surname>Mazzoni</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4481" type="PID">o:hsa.letter.4481</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">24-1175</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <repository>Unbekannt</repository>
-            <idno type="shelfmark">1175</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1878-02-25">1878-02-25</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bruno</forename>
-              <surname>Mazzoni</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Bogdan Petriceicu Hasdeu</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1720"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4481">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1878-02-25">1878-02-25</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1720" ref="https://viaf.org/viaf/65406496">
-            <forename>Bogdan Petriceicu</forename>
-            <surname>Hasdeu</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1720" type="context">
-                        Korrespondenz Hugo Schuchardt - Bogdan Petriceicu Hasdeu
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.886" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Latein</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.854" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Rumänisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4481" xml:lang="de">
-        <pb n="1"/>
-        <dateline> Graz 25 Februar 1878 </dateline>
-        <opener> Verehrter Freund! </opener>
-        <p>Zunächst meinen besten Dank für die übersandten <hi rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4481" xml:lang="de">
+            <pb n="1"/>
+            <dateline> Graz 25 Februar 1878 </dateline>
+            <opener> Verehrter Freund! </opener>
+            <p>Zunächst meinen besten Dank für die übersandten <hi rend="unknown" rendition="#none">
 Origini Craiovei</hi>
-          <note n="1" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4479">XXII</ref>, n. 2.</note>; wie Sie zu Allem Zeit finden!</p>
-        <p>Was die Einleitung anlangt, so haben Sie vollständig Recht, dass ich durch meine <hi rend="unknown"
-            rendition="#none">kritischen</hi> Neigungen mich allzusehr habe beherrschen lassen. Es liegt Einem das so im Blute! Aber, da sich Alles doch nur auf sekundäre Punkte bezieht und sich fast überall nur als Vermuthung gibt (nur in Bezug auf <hi
-            rend="unknown" rendition="#none">ah</hi>, <hi rend="unknown" rendition="#none">eh</hi>, <hi rend="unknown"
-            rendition="#none">ih</hi> würde ich etwas hartnäckig sein<note n="2" place="foot" type="editorial">Riproduciamo qui, dall’introduzione a stampa a <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">
-                <hi rend="unknown" rendition="#none">CdB I</hi>
-              </ref>
+               <note n="1" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4479">XXII</ref>, n. 2.</note>; wie Sie zu Allem Zeit finden!</p>
+            <p>Was die Einleitung anlangt, so haben Sie vollständig Recht, dass ich durch meine <hi rend="unknown" rendition="#none">kritischen</hi> Neigungen mich allzusehr habe beherrschen lassen. Es liegt Einem das so im Blute! Aber, da sich Alles doch nur auf sekundäre Punkte bezieht und sich fast überall nur als Vermuthung gibt (nur in Bezug auf <hi rend="unknown" rendition="#none">ah</hi>, <hi rend="unknown" rendition="#none">eh</hi>, <hi rend="unknown" rendition="#none">ih</hi> würde ich etwas hartnäckig sein<note n="2" place="foot" type="editorial">Riproduciamo qui, dall’introduzione a stampa a <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">
+                        <hi rend="unknown" rendition="#none">CdB I</hi>
+                     </ref>
+                  </bibl>, il brano in cui lo Schuchardt riprende e discute le argomentazioni con cui il Hasdeu aveva spiegato la presenza di una -<hi rend="unknown" rendition="#none">h</hi> finale parassita nella grafia di alcuni testi 
 
-            </bibl>, il brano in cui lo Schuchardt riprende e discute le argomentazioni con cui il Hasdeu aveva spiegato la presenza di una -<hi
-              rend="unknown"
-              rendition="#none">h</hi> finale parassita nella grafia di alcuni testi 
-
-romeni antichi: « Die Schreibungen, welche Hasdeu aus einer <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.886">
-lateinischen</ref> Handschrift des 9. Jahrh. anführt, stimmen äusserlich allerdings mit jenen <ref
-              target="https://gams.uni-graz.at/o:hsa.languages#L.854">
-rumänischen</ref> ganz überein; aber ist hier durch das h eine rein sprachliche und nicht vielmehr eine gesangliche Verlängerung des Vokals angedeutet? » (<hi
-              rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
-              </bibl>
-
-            </hi>, p. xiv).</note>), so werden Sie sich dadurch nicht verstimmen lassen. Ich hatte mir vorgenommen, die <hi
-            rend="unknown" rendition="#none">allgemeine</hi> Würdigung Ihrer Leistung auf den Schluss zu versparen<note
-            n="3" place="foot" type="editorial">Cf. <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
-              </bibl>
-            </hi>, p. xlii.</note> und wünschte dringend, dass Sie mir <hi rend="unknown"
-            rendition="#none">ausführlich</hi> und <hi rend="unknown"
-            rendition="#none">rückhaltslos</hi> die Punkte bezeichneten, auf die es Ihnen vor Allem ankommt<note n="4"
-            place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4482">lettera di risposta</ref> del Hasdeu, immediatamente seguente.</note>. Meine Aufgabe ist insofern nicht ganz leicht, als ich mich nicht zum Richter über das, was überhaupt auf dem Gebiete der rumänischen Philologie neuerdings geleistet worden ist, aufwerfen darf; ich habe gerade bei der Ausarbeitung dieses Vorworts mich recht überzeugt, wie wenig ich vom <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.854">Rumänischen</ref> verstehe und wie schwer es überhaupt ist, ausserhalb <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5944">Rumäniens</placeName> über manche Dinge in’s Reine zu kommen. Mit dem zweiten Theil<note
-            n="5" place="foot" type="editorial">Si riferisce al manoscritto con una seconda parte dell’introduzione a <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">
-                <hi rend="unknown" rendition="#none">CdB I</hi>
-              </ref>
-            </bibl>.</note>
-          <note n="6" place="foot" type="editorial">
-            <hi rend="unknown" rendition="#none">Urtheil der Welt</hi> in <hi rend="unknown"
-              rendition="#none">CdB S</hi>, p. viii. Il tìtolo completo di questa prima opera (1698) di Dimitrie Cantemir (1673-1723), correntemente indicata come <hi
-              rend="unknown" rendition="#none">Divanul lumii</hi>, è <hi rend="unknown" rendition="#none">Divanul sau Gîlceava înţeleptului cu lumea sau Giudeţul sufletului cu trupul.</hi>
-
-          </note> werden Sie hoffentlich besser zufrieden sein. Ihr Wörterbuch gefällt mir ausserordentlich und betrachte ich es als den für die Romanisten werthvollsten Theil<note
-            n="7" place="foot" type="editorial">Si riferisce al <hi rend="unknown" rendition="#none">Glossar II. Specimen de <bibl>
+romeni antichi: « Die Schreibungen, welche Hasdeu aus einer <ref target="https://gams.uni-graz.at/o:hsa.languages#L.886">
+lateinischen</ref> Handschrift des 9. Jahrh. anführt, stimmen äusserlich allerdings mit jenen <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">
+rumänischen</ref> ganz überein; aber ist hier durch das h eine rein sprachliche und nicht vielmehr eine gesangliche Verlängerung des Vokals angedeutet? » (<hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
+                     </bibl>
+                  </hi>, p. xiv).</note>), so werden Sie sich dadurch nicht verstimmen lassen. Ich hatte mir vorgenommen, die <hi rend="unknown" rendition="#none">allgemeine</hi> Würdigung Ihrer Leistung auf den Schluss zu versparen<note n="3" place="foot" type="editorial">Cf. <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
+                     </bibl>
+                  </hi>, p. xlii.</note> und wünschte dringend, dass Sie mir <hi rend="unknown" rendition="#none">ausführlich</hi> und <hi rend="unknown" rendition="#none">rückhaltslos</hi> die Punkte bezeichneten, auf die es Ihnen vor Allem ankommt<note n="4" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4482">lettera di risposta</ref> del Hasdeu, immediatamente seguente.</note>. Meine Aufgabe ist insofern nicht ganz leicht, als ich mich nicht zum Richter über das, was überhaupt auf dem Gebiete der rumänischen Philologie neuerdings geleistet worden ist, aufwerfen darf; ich habe gerade bei der Ausarbeitung dieses Vorworts mich recht überzeugt, wie wenig ich vom <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">Rumänischen</ref> verstehe und wie schwer es überhaupt ist, ausserhalb <placeName ref="[authorityLink]">Rumäniens</placeName> über manche Dinge in’s Reine zu kommen. Mit dem zweiten Theil<note n="5" place="foot" type="editorial">Si riferisce al manoscritto con una seconda parte dell’introduzione a <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">
+                        <hi rend="unknown" rendition="#none">CdB I</hi>
+                     </ref>
+                  </bibl>.</note>
+               <note n="6" place="foot" type="editorial">
+                  <hi rend="unknown" rendition="#none">Urtheil der Welt</hi> in <hi rend="unknown" rendition="#none">CdB S</hi>, p. viii. Il tìtolo completo di questa prima opera (1698) di Dimitrie Cantemir (1673-1723), correntemente indicata come <hi rend="unknown" rendition="#none">Divanul lumii</hi>, è <hi rend="unknown" rendition="#none">Divanul sau Gîlceava înţeleptului cu lumea sau Giudeţul sufletului cu trupul.</hi>
+               </note> werden Sie hoffentlich besser zufrieden sein. Ihr Wörterbuch gefällt mir ausserordentlich und betrachte ich es als den für die Romanisten werthvollsten Theil<note n="7" place="foot" type="editorial">Si riferisce al <hi rend="unknown" rendition="#none">Glossar II. Specimen de <bibl>
 
 « Dicţionar etimologic al limbeĭ române »
 </bibl>
-            </hi>, già cit. (e un giudizio sostanzialmente analogo è in <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
-              </bibl>
-            </hi>, pp. xviii-xix). Ma si veda una replica del Hasdeu nella lettera del 5 aprile 1878 (<ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref>).</note>. Das istrorum. Dicţionar von Majorescu<note
-            n="8" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4479">XXII</ref>, n. 11.</note> brauche ich nicht so unbedingt; ich würde Sie nur bitten, Einiges für mich darin nachzusehen.</p>
-        <p>Ihr Erbieten mir eine Anzahl Sonderabzüge zur Verfügung zu stellen, nehme ich mit dem grössten Danke an. Es kommt mir pretentiös vor, einen eigenen Titel dazu drucken zu lassen. Wie könnte der lauten? "Einleitung zu B.P. Hasdeu’s" ... "von H. Schuchardt". Oder etwas Ähnliches. Ich überlasse Ihnen das ganz; der Umschlag zu dem ganzen Buche würde meines Erachtens auch für den Sonderabzug genügen.</p>
-        <p>— Eine Ueberschrift für die Einleitung ist überflüssig.</p>
-        <p>— Darf ich <hi rend="unknown"
-            rendition="#none">noch um eine Korrektur</hi> bitten? Druckfehler sind mir sehr unangenehm. Bitte sehen Sie sich doch die <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.854">rumänischen</ref> Wörter an, ob sie alle richtig gedruckt sind. In Bezug auf Manches war ich zweifelhaft. Ist es besser <hi
-            rend="unknown" rendition="#none">iá</hi> oder <hi rend="unknown"
-            rendition="#none">iea</hi> zu schreiben, <foreign xml:lang="ro">
-            <hi rend="unknown" rendition="#none">Dositeiu</hi>
-          </foreign> oder <foreign xml:lang="ro">
-            <hi rend="unknown" rendition="#none">Dosoteiu</hi>
-          </foreign>
-          <note n="9" place="foot"
-              type="editorial">Piú che di <persName>
+                  </hi>, già cit. (e un giudizio sostanzialmente analogo è in <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
+                     </bibl>
+                  </hi>, pp. xviii-xix). Ma si veda una replica del Hasdeu nella lettera del 5 aprile 1878 (<ref target="https://gams.uni-graz.at/o:hsa.letter.4487">XXX</ref>).</note>. Das istrorum. Dicţionar von Majorescu<note n="8" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4479">XXII</ref>, n. 11.</note> brauche ich nicht so unbedingt; ich würde Sie nur bitten, Einiges für mich darin nachzusehen.</p>
+            <p>Ihr Erbieten mir eine Anzahl Sonderabzüge zur Verfügung zu stellen, nehme ich mit dem grössten Danke an. Es kommt mir pretentiös vor, einen eigenen Titel dazu drucken zu lassen. Wie könnte der lauten? "Einleitung zu B.P. Hasdeu’s" ... "von H. Schuchardt". Oder etwas Ähnliches. Ich überlasse Ihnen das ganz; der Umschlag zu dem ganzen Buche würde meines Erachtens auch für den Sonderabzug genügen.</p>
+            <p>— Eine Ueberschrift für die Einleitung ist überflüssig.</p>
+            <p>— Darf ich <hi rend="unknown" rendition="#none">noch um eine Korrektur</hi> bitten? Druckfehler sind mir sehr unangenehm. Bitte sehen Sie sich doch die <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">rumänischen</ref> Wörter an, ob sie alle richtig gedruckt sind. In Bezug auf Manches war ich zweifelhaft. Ist es besser <hi rend="unknown" rendition="#none">iá</hi> oder <hi rend="unknown" rendition="#none">iea</hi> zu schreiben, <foreign xml:lang="ro">
+                  <hi rend="unknown" rendition="#none">Dositeiu</hi>
+               </foreign> oder <foreign xml:lang="ro">
+                  <hi rend="unknown" rendition="#none">Dosoteiu</hi>
+               </foreign>
+               <note n="9" place="foot" type="editorial">Piú che di <persName>
 
 Dosithei</persName> (1641-1707), patriarca di <placeName>
 Gerusalemme</placeName>, lo Schuchardt parla qui probabilmente di <persName>
 
 Dosoftei</persName> (1624 ca. - 1693), metropolita della <placeName>
-Moldavia</placeName> (<hi
-              rend="unknown" rendition="#none">Dosofteiu </hi>in <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
-              </bibl>
-
-            </hi>, p. viii), traduttore e letterato, figura di enorme importanza per le edizioni a stampa di libri religiosi in <ref
-            target="https://gams.uni-graz.at/o:hsa.languages#L.854">romeno</ref>.</note>? Heisst es <foreign xml:lang="ro">
-            <hi rend="unknown" rendition="#none">
+Moldavia</placeName> (<hi rend="unknown" rendition="#none">Dosofteiu </hi>in <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">CdB S</ref>
+                     </bibl>
+                  </hi>, p. viii), traduttore e letterato, figura di enorme importanza per le edizioni a stampa di libri religiosi in <ref target="https://gams.uni-graz.at/o:hsa.languages#L.854">romeno</ref>.</note>? Heisst es <foreign xml:lang="ro">
+                  <hi rend="unknown" rendition="#none">
 ćasloveţă</hi>
-          </foreign> oder <foreign xml:lang="ro">
-            <hi rend="unknown" rendition="#none">ćasloveţŭ</hi>
-          </foreign>
-          <note n="10" place="foot" type="editorial">Cf. <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">
-                <hi rend="unknown" rendition="#none">CdB S</hi>
-              </ref>
-            </bibl>, p. xv, e ivi, <hi rend="unknown" rendition="#none">Errata</hi>, p. cxi.</note>?</p>
-        <p>— Bitte, geben Sie mir alle Ihre Wünsche für den Rest der Einleitung kund; ich werde allen Rechnung tragen. In dem Gedruckten habe ich allerdings fast gar Nichts geändert und gestrichen, obwohl ich Ihre Bemerkungen in Berücksichtigung gezogen habe. Aber es hätte das auch mehr Zeit erfordert, als mir augenblicklich zur Verfügung stand. Ich habe die Korrektur in grösster Eile vollendet und kritzele rasch diese paar Zeilen dazu, damit ich den Brief noch heute Abend absenden kann, Verzeihen Sie daher, was Stil, Schrift, Inhalt zu wünschen übrig lassen.</p>
-        <closer>
-          <salute>Ihr ganz ergebener</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">H. Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+               </foreign> oder <foreign xml:lang="ro">
+                  <hi rend="unknown" rendition="#none">ćasloveţŭ</hi>
+               </foreign>
+               <note n="10" place="foot" type="editorial">Cf. <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">
+                        <hi rend="unknown" rendition="#none">CdB S</hi>
+                     </ref>
+                  </bibl>, p. xv, e ivi, <hi rend="unknown" rendition="#none">Errata</hi>, p. cxi.</note>?</p>
+            <p>— Bitte, geben Sie mir alle Ihre Wünsche für den Rest der Einleitung kund; ich werde allen Rechnung tragen. In dem Gedruckten habe ich allerdings fast gar Nichts geändert und gestrichen, obwohl ich Ihre Bemerkungen in Berücksichtigung gezogen habe. Aber es hätte das auch mehr Zeit erfordert, als mir augenblicklich zur Verfügung stand. Ich habe die Korrektur in grösster Eile vollendet und kritzele rasch diese paar Zeilen dazu, damit ich den Brief noch heute Abend absenden kann, Verzeihen Sie daher, was Stil, Schrift, Inhalt zu wünschen übrig lassen.</p>
+            <closer>
+               <salute>Ihr ganz ergebener</salute>
+               <signed>
+                  <persName ref="[authorityLink]">H. Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

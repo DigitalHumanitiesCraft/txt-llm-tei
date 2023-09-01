@@ -1,257 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Bogdan Petriceicu Hasdeu (60-1192)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bruno</forename>
-            <surname>Mazzoni</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4583" type="PID">o:hsa.letter.4583</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">60-1192</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <repository>Unbekannt</repository>
-            <idno type="shelfmark">1192</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1879-11-05">1879-11-05</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bruno</forename>
-              <surname>Mazzoni</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Bogdan Petriceicu Hasdeu</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1720"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4583">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1879-11-05">1879-11-05</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1720" ref="https://viaf.org/viaf/65406496">
-            <forename>Bogdan Petriceicu</forename>
-            <surname>Hasdeu</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1720" type="context">
-                        Korrespondenz Hugo Schuchardt - Bogdan Petriceicu Hasdeu
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4589" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Archiv für slavische Philologie</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4138" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Romanische Studien</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4583" xml:lang="de">
-        <pb n="1"/>
-        <dateline> Graz 5 Nov. 79. </dateline>
-        <opener> Lieber Freund! </opener>
-
-        <p>Als ich vor einiger Zeit — nach einer 8 monatlichen Abwesenheit — hierher zurückkehrte, fand ich eine Reihe rumänischer Schriften vor, von denen ich Einiges wohl Ihnen verdanke. Cihac hatte mir auch sein Wörterbuch II. geschickt<note
-            n="1" place="foot" type="editorial">
-            <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3366">A. de Cihac, <hi rend="unknown"
-                  rendition="#none">Dictionnaire d’êtymologie daco-romane</hi>. II. <hi rend="unknown" rendition="#none">Éléments slaves, magyars, turcs, grecs-moderne et albanais</hi>, Francfort s/M. 1879, xxiv-816 p.</ref>
-            </bibl>
-          </note>, zu dessen Recension ich von Jagič aufgefordert wurde<note n="2" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1835">V. Jagić</persName> dirigeva la rivista berlinese <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4589">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4583" xml:lang="de">
+            <pb n="1"/>
+            <dateline> Graz 5 Nov. 79. </dateline>
+            <opener> Lieber Freund! </opener>
+            <p>Als ich vor einiger Zeit — nach einer 8 monatlichen Abwesenheit — hierher zurückkehrte, fand ich eine Reihe rumänischer Schriften vor, von denen ich Einiges wohl Ihnen verdanke. Cihac hatte mir auch sein Wörterbuch II. geschickt<note n="1" place="foot" type="editorial">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3366">A. de Cihac, <hi rend="unknown" rendition="#none">Dictionnaire d’êtymologie daco-romane</hi>. II. <hi rend="unknown" rendition="#none">Éléments slaves, magyars, turcs, grecs-moderne et albanais</hi>, Francfort s/M. 1879, xxiv-816 p.</ref>
+                  </bibl>
+               </note>, zu dessen Recension ich von Jagič aufgefordert wurde<note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">V. Jagić</persName> dirigeva la rivista berlinese <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4589">
 « Archiv für slavische Philologie »</ref>, da lui fondata nel 1876. Non ci risulta che lo Schuchardt abbia recensito il tomo II del dizionario del Cihac (una <bibl>
 
 sua presentazione del t. I
-</bibl> era apparsa su « LCBl » XXI [1870], pp. 1336-7).</note>. Ich kann mich aber hierauf so wenig einlassen, wie auf eine Berichtigung verschiedener Bemerkungen über Ihre Texte, welche Cihac in den Rom. Stud. veröffentlicht hat<note
-            n="3" place="foot" type="editorial">Nelle <ref
-                target="https://gams.uni-graz.at/o:hsa.subjects#S.4138">« Romanische Studien »</ref> del Böhmer era da poco uscito l’articolo di <bibl>
+</bibl> era apparsa su « LCBl » XXI [1870], pp. 1336-7).</note>. Ich kann mich aber hierauf so wenig einlassen, wie auf eine Berichtigung verschiedener Bemerkungen über Ihre Texte, welche Cihac in den Rom. Stud. veröffentlicht hat<note n="3" place="foot" type="editorial">Nelle <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4138">« Romanische Studien »</ref> del Böhmer era da poco uscito l’articolo di <bibl>
 
-A. de Cihac, <hi
-                rend="unknown" rendition="#none">Sur les études roumaines de Mr. Hajděu</hi>, cit.
-</bibl> (v. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4576">
-LIV</ref>, n. 3).</note>. Durch das Nichterscheinen meiner Einleitung zu den Texten<note
-            n="4" place="foot" type="editorial">V. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4571">XLIX</ref>, n. 9.</note> sind mir vollständig, was das Rumänische anlangt, die Hände gebunden. Auch kann ich nun nicht (abgesehen davon dass ich keine Zeit dazu finden würde) an die Umarbeitung meines Machwerks denken, welche Sie mir vorschlugen<note
-            n="5" place="foot" type="editorial">V. lettera <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4572">L</ref>.</note>; die Chronologie würde dadurch ganz verwirrt werden und Manches, was ich schon vor zwei Jahren gesagt habe, würde jetzt den Anschein haben, durch Cihac’s Publikationen auf eine oder die andere Weise veranlasst zu sein. Ich hätte es besonders Ihrem Interesse entsprechend gefunden, wenn schon im I.Bde das Meinige abgedruckt worden wäre<note
-            n="6" place="foot"
-              type="editorial">Lo Schuchardt si era espresso esplicitamente su questo già l’anno prima (v. lettera <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.4571">XLIX</ref>).</note>; Cihac hätte dann doch wohl Das und Jenes unterdrückt, und wäre nicht so leichtfertig mit den Lautgesetzen umgesprungen<note
-            n="7" place="foot" type="editorial">V. <hi rend="unknown"
-            rendition="#none">supra</hi>, n. 3.</note>. Nun werden Sie im II.Bde gegen mich und gegen Cihac kämpfen. Ich bitte theilen Sie mir mit, wann dieser II. Band das Licht erblicken wird<note
-            n="8" place="foot" type="editorial">Il <bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">tomo II di <hi rend="unknown" rendition="#none">CdB</hi>
-              </ref>
-            </bibl> uscirà tra la fine del 1879 e l’inizio del 1880, ma non conterrà, come si è detto, le <hi
-              rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">
+A. de Cihac, <hi rend="unknown" rendition="#none">Sur les études roumaines de Mr. Hajděu</hi>, cit.
+</bibl> (v. <ref target="https://gams.uni-graz.at/o:hsa.letter.4576">
+LIV</ref>, n. 3).</note>. Durch das Nichterscheinen meiner Einleitung zu den Texten<note n="4" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4571">XLIX</ref>, n. 9.</note> sind mir vollständig, was das Rumänische anlangt, die Hände gebunden. Auch kann ich nun nicht (abgesehen davon dass ich keine Zeit dazu finden würde) an die Umarbeitung meines Machwerks denken, welche Sie mir vorschlugen<note n="5" place="foot" type="editorial">V. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4572">L</ref>.</note>; die Chronologie würde dadurch ganz verwirrt werden und Manches, was ich schon vor zwei Jahren gesagt habe, würde jetzt den Anschein haben, durch Cihac’s Publikationen auf eine oder die andere Weise veranlasst zu sein. Ich hätte es besonders Ihrem Interesse entsprechend gefunden, wenn schon im I.Bde das Meinige abgedruckt worden wäre<note n="6" place="foot" type="editorial">Lo Schuchardt si era espresso esplicitamente su questo già l’anno prima (v. lettera <ref target="https://gams.uni-graz.at/o:hsa.letter.4571">XLIX</ref>).</note>; Cihac hätte dann doch wohl Das und Jenes unterdrückt, und wäre nicht so leichtfertig mit den Lautgesetzen umgesprungen<note n="7" place="foot" type="editorial">V. <hi rend="unknown" rendition="#none">supra</hi>, n. 3.</note>. Nun werden Sie im II.Bde gegen mich und gegen Cihac kämpfen. Ich bitte theilen Sie mir mit, wann dieser II. Band das Licht erblicken wird<note n="8" place="foot" type="editorial">Il <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3585">tomo II di <hi rend="unknown" rendition="#none">CdB</hi>
+                     </ref>
+                  </bibl> uscirà tra la fine del 1879 e l’inizio del 1880, ma non conterrà, come si è detto, le <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.336">
 Observaţiuni</ref>
-            </hi> dello Schuchardt. Queste saranno pubblicate solo nel 1880 in <bibl>
-              <hi rend="unknown" rendition="#none">CdB S</hi>
-            </bibl>, dove il Hasdeu, sotto <hi rend="unknown" rendition="#none">Addenda et corrigenda</hi>, risponderà a molte correzioni dello Schuchardt (pp. lxxiii-lxxviii) e del Cihac (pp. lxxxiv-xcvi).</note>.</p>
-
-        <p>Ihren Aufsatz über den rumän. Artikel im Archivio glottologico it. habe ich mit vielem Vergnügen schon in Sevilla gelesen, wohin mir Ascoli die Nummer zugesandt hatte<note
-            n="9" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4581">LVIII</ref>, n. 7.</note>.</p>
-        <closer>
-          <salute>Mit herzlichsten Grüssen</salute>
-          <lb/>
-          <salute>Ihr ergebenster </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">Hugo Schuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+                  </hi> dello Schuchardt. Queste saranno pubblicate solo nel 1880 in <bibl>
+                     <hi rend="unknown" rendition="#none">CdB S</hi>
+                  </bibl>, dove il Hasdeu, sotto <hi rend="unknown" rendition="#none">Addenda et corrigenda</hi>, risponderà a molte correzioni dello Schuchardt (pp. lxxiii-lxxviii) e del Cihac (pp. lxxxiv-xcvi).</note>.</p>
+            <p>Ihren Aufsatz über den rumän. Artikel im Archivio glottologico it. habe ich mit vielem Vergnügen schon in Sevilla gelesen, wohin mir Ascoli die Nummer zugesandt hatte<note n="9" place="foot" type="editorial">V. <ref target="https://gams.uni-graz.at/o:hsa.letter.4581">LVIII</ref>, n. 7.</note>.</p>
+            <closer>
+               <salute>Mit herzlichsten Grüssen</salute>
+               <lb/>
+               <salute>Ihr ergebenster </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Hugo Schuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

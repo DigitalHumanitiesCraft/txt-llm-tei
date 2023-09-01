@@ -1,411 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Richard Riegler an Hugo Schuchardt (18-09605)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">
-            <forename>Richard</forename>
-            <surname>Riegler</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/4353" type="PID">o:hsa.letter.4353</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">18-09605</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">09605</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">
-                <forename>Richard</forename>
-                <surname>Riegler</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="8" unit="pages">8 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.447" ref="http://sws.geonames.org/2774326">Klagenfurt</origPlace>
-              <origDate ana="dcterms:created" when="1916-01-14">1916-01-14</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2016">2016</date>
-          <title>Die Korrespondenz zwischen Richard Riegler und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/2520"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.4353">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.2520" ref="https://viaf.org/viaf/6207147907512579210004">
-            <forename>Richard</forename>
-            <surname>Riegler</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.447" key="#GID.1" ref="http://sws.geonames.org/2774326">Klagenfurt</placeName>
-          <date when="1916-01-14">1916-01-14</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Klagenfurt</settlement>
-                <name ref="http://geonames.org/2774326" type="fcode:PPLA">Klagenfurt</name>
-                <location>
-                  <geo>14.30528,46.62472</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.2520" type="context">
-                        Korrespondenz Richard Riegler - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3080" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dankschreiben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3210" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Verleih von Publikationen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5251" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Schweizer Volkskunde. Korrespondenzblatt der Schweizerischen Gesellschaft für Volkskunde</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.259" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Biographisches</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5242" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kriegsdienst</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.463" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Erster Weltkrieg</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.461" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Politik- und Zeitgeschichte</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.986" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Fernleihe</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.991" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Kaiserliche und Königliche Hof-Bibliothek (Wien)</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4449" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universitäre Lehre</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.693" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Graz</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.717" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Bonn</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.531" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturhinweise / bibliographische Angaben</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5252" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Internationale Monatsschrift für Wissenschaft, Kunst und Technik</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.25" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Spanischsprachige Literatur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.29" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Portugiesischsprachige Literatur</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.692" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Bibliotheken und Bibliothekswesen</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3106" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Literaturbeschaffung</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4353" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4353" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4353" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4353" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4353" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4353" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4353" xml:id="IMG.7">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.4353" xml:id="IMG.8">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.4353" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Klagenfurt, 14.1.16.</dateline>
-        <opener>
-          <hi rend="unknown" rendition="#none">Hochgeehrter Herr Hofrat!</hi>
-        </opener>
-
-        <p>Mit bestem Dank bestätige ich die Rückstellung der Schweizer Zeitschrift. Es war aber durchaus nicht Eile nötig. Ihre freundliche Erkundigung nach meinem Befinden freut mich ungemein. Gesundheitlich befinde ich mich ziemlich wohl, sonst hätte ich gerade auch nicht zu klagen, nur bin ich mit Korrekturen lästiger Art – deutsche Aufsätze! – überhäuft. Komme ich ins <pb
-            facs="#IMG.2"
-            n="2"/> Murren, so brauche ich nur an meine Ferialbeschäftigung zu denken – und meine gute Laune ist wieder hergestellt. Das war wohl die schlimmste Periode meines Lebens, vielleicht auch eine gute Schule für späterhin, nur böse, daß man mit 41 Jahren eine solche Schule durchmachen muß. Ich wurde viel hin- und her geworfen. Graz, Friesach, dann wieder Graz, Burgau und schließlich Hartberg, das waren meine Garnisonen. In Hartberg ging es mir leidlich, unter dem milden Regiment eines Reserveoffiziers. Sonst mußte ich mir viel gefallen lassen. Meine Hauptsorge war immer, die Erlaubnis zum Auswärtsschlafen <pb
-            facs="#IMG.3"
-            n="3"/> zu bekommen. Meistens gelang es mir; immerhin mußte ich eine Woche in der Reserve schlafen. Dabei hatte ich noch das unverhoffte Glück, zum Nachbar einen Bauer vom Semmering zu haben, einen naiven Burschen, der sich <hi
-            rend="unknown"
-            rendition="#none">in puncto Folklore</hi> bereitwilligst ausfragen ließ. So erzählte er mir auch von Wiesel und Eichhörnchen zwei ganz wunderbare Geschichten, die ich noch nirgends gebucht gefunden. Leider war ich damals zu apathisch – um sie mir zu notieren, jetzt bedaure ich es. – Meine Enthebung verdanke ich eigentlich nur einem Zufall – der Erkankung eines Kollegen, denn durch das Eingehen von Parallelklassen <pb
-            facs="#IMG.4"
-            n="4"/> ist ein Philologe überzählig, d.h. in diesem Falle überflüssig. Da ich während meiner ganzen Landsturmperiode geistig gehungert habe, fühlte ich in mir eine große Arbeitslust, die aber sehr gedämpft wurde durch den leidigen Umstand, daß die Hofbibliothek, aus der ich die meisten Bücher entlehnte, solche während des Krieges nicht versendet. Unlängst ist mir ein Buch in die Hände gefallen, auf das ich Herrn Hofrat aufmerksam machen möchte, wenn Sie es nicht schon kennen. Es sind dies die „Jugenderinnerungen und Bekenntnisse“ von <hi
-            rend="unknown" rendition="#none">Heyse</hi>.<note n="1" place="foot"
-            type="editorial">Berlin: W. Hertz, 1900, 383 S.</note> So frisch und flott ist dieses Buch geschrieben, daß es mir besser gefällt <pb
-            facs="#IMG.5" n="5"/> als alle seine Novellen.Un[d] dann war ja <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1764">Heyse</persName> seines Zeichens Romanist, deswegen interessierte ich mich von jeher für ihn. In romanischer Grammatik scheint er jedoch nicht fest gewesen zu sein, wie aus seinem Bericht über das Rigorosum, das er bei einem mir unbekannten Bekker<note
-            n="2" place="foot" type="editorial">„Der junge Heyse ist der erste, der in Berlin das romanistische Doktorexamen abgelegt hat, und zwar 1852, also nach Hubers Scheiden, mit der bekannten Dissertation Studia Romanensia, wobei er von Immanuel Bekker über romanische Grammatik geprüft wurde“ (Alfred Risop, <bibl>
-              <hi rend="unknown" rendition="#none">Die romanische Philologie an der Berliner Universität 1810-1910</hi>
-            </bibl>, Erlangen 1910, 76). Der ausführliche Bericht <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1764">Heyse</persName>s über sein Rigorosum endet: „Noch jetzt, wenn manchmal in Angstträumen jene Stunde in meiner Erinnerung auflebt, wenn ich die scharfen, trockenen Augen des kleinen Mannes [= Immanuel Bekker] auf mich gerichtet sehe und gewisse Fragen wieder höre, auf die ich verstummte oder eine verkehrte Antwort gab, fühle ich beim Erwachen, daß mir Mörike’s ,examinalischer Schweiß‘ auf die Stirne getreten ist. – Ich erfuhr nachher, selbst seine Collegen hätten dem unerbittlichen Peiniger vorgeworfen, daß er mir keine Gelegenheit gegeben, zu zeigen, was ich wirklich gelernt hatte. Da aber seine Stimme den Ausschlag gab, wurde mir mitgetheilt, daß ich nur <hi
-              rend="unknown" rendition="#none">multa</hi>, nicht <hi rend="unknown"
-              rendition="#none">summa cum laude</hi> bestanden hatte“. – <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.4815">Immanuel Bekker</persName> (1785-1871) war von Hause aus Altphilologe, hatte aber in zahlreichen europäischen Bibliotheken Handschriftenstudien betrieben und galt als sprachkundig. Schleiermacher sagte von ihm: „Bekker schweigt in sieben Sprachen“.</note> in Berlin ablegte, hervorgeht, (S. 121). Besonders hatte er sich mit Provenzalen, Spaniern und Altfranzosen beschäftigt. Seine Liebe zu <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.5969">Italien</placeName> ist späteren Datums. Es ist fast ein Glück für <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1764">Heyse</persName> zu nennen, daß er den Verrat seines heißgeliebten Italiens nicht miterlebt hat. Er ist, wenn ich nicht irre, <pb
-            facs="#IMG.6" n="6"/> kurz vor Ausbruch des Krieges gestorben.<note n="3" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1764">Paul Heyse</persName>, Literaturnobelpreisträger von 1910, ist am 2.4.1914 in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.42">München</placeName> verstorben.</note> Herr Hofrat hatten das Glück, den Dichter persönlich zu kennen. Ich erinnere mich, daß Sie in Ihrem <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.191">
-            <hi rend="unknown" rendition="#none">Beaumarchais</hi>
-          </ref>-Kolleg – ach, die schönen Zeiten! – ein Gespräch zitierten, das Sie mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1764">Heyse</persName> über die Gestalt des <hi rend="unknown"
-            rendition="#none">Chérubin</hi> geführt hatten. Dies wird wohl in Bonn<note n="4" place="foot"
-              type="editorial">Natürlich nicht, denn <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1764">Heyse</persName>, Jg. 1830, hatte 1849/50 in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">
-Bonn</placeName> studiert, als Schuchardt gerade einmal 7/8 Jahre alt war!</note> gewesen sein. Das Kapitel „Bonner Studien“ (S. 102-128) habe ich mit besonderem Interesse gelesen. Wie hübsch wäre es, wollten Herr Hofrat Ihre Erinnerungen an <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1764">
-Heyse</persName> veröffentlichen.<note n="5"
-            place="foot" type="editorial">
-Erhalten sind sechs Briefe <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1764">Heyses</persName> an Schuchardt aus den Jahren 1886-1905 (HSA, Lfd.Nr.  <ref
-            target="https://gams.uni-graz.at/o:hsa.persons#P.1764">04717-04722</ref>).</note> Da ich gerade bei dem Kapitel „Romanistik“ bin, so möchte ich Herrn Hofrat auch auf einen längeren Aufsatz von<persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2609">
-            <hi rend="unknown" rendition="#none"> B. Schädel</hi>
-          </persName> aufmerksam machen, der in der <hi rend="unknown" rendition="#none">Internationalen</hi>
-          <pb facs="#IMG.7" n="7"/>
-          <hi rend="unknown" rendition="#none">Monatsschrift</hi> (Jahrg. 10, Heft 3, S. 302f.)<note n="6" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.2609">Bernhard Schädel</persName>, „<bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.7" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.8" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.4353" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Klagenfurt, 14.1.16.</dateline>
+            <opener>
+               <hi rend="unknown" rendition="#none">Hochgeehrter Herr Hofrat!</hi>
+            </opener>
+            <p>Mit bestem Dank bestätige ich die Rückstellung der Schweizer Zeitschrift. Es war aber durchaus nicht Eile nötig. Ihre freundliche Erkundigung nach meinem Befinden freut mich ungemein. Gesundheitlich befinde ich mich ziemlich wohl, sonst hätte ich gerade auch nicht zu klagen, nur bin ich mit Korrekturen lästiger Art – deutsche Aufsätze! – überhäuft. Komme ich ins <pb facs="#IMG.2" n="2"/> Murren, so brauche ich nur an meine Ferialbeschäftigung zu denken – und meine gute Laune ist wieder hergestellt. Das war wohl die schlimmste Periode meines Lebens, vielleicht auch eine gute Schule für späterhin, nur böse, daß man mit 41 Jahren eine solche Schule durchmachen muß. Ich wurde viel hin- und her geworfen. Graz, Friesach, dann wieder Graz, Burgau und schließlich Hartberg, das waren meine Garnisonen. In Hartberg ging es mir leidlich, unter dem milden Regiment eines Reserveoffiziers. Sonst mußte ich mir viel gefallen lassen. Meine Hauptsorge war immer, die Erlaubnis zum Auswärtsschlafen <pb facs="#IMG.3" n="3"/> zu bekommen. Meistens gelang es mir; immerhin mußte ich eine Woche in der Reserve schlafen. Dabei hatte ich noch das unverhoffte Glück, zum Nachbar einen Bauer vom Semmering zu haben, einen naiven Burschen, der sich <hi rend="unknown" rendition="#none">in puncto Folklore</hi> bereitwilligst ausfragen ließ. So erzählte er mir auch von Wiesel und Eichhörnchen zwei ganz wunderbare Geschichten, die ich noch nirgends gebucht gefunden. Leider war ich damals zu apathisch – um sie mir zu notieren, jetzt bedaure ich es. – Meine Enthebung verdanke ich eigentlich nur einem Zufall – der Erkankung eines Kollegen, denn durch das Eingehen von Parallelklassen <pb facs="#IMG.4" n="4"/> ist ein Philologe überzählig, d.h. in diesem Falle überflüssig. Da ich während meiner ganzen Landsturmperiode geistig gehungert habe, fühlte ich in mir eine große Arbeitslust, die aber sehr gedämpft wurde durch den leidigen Umstand, daß die Hofbibliothek, aus der ich die meisten Bücher entlehnte, solche während des Krieges nicht versendet. Unlängst ist mir ein Buch in die Hände gefallen, auf das ich Herrn Hofrat aufmerksam machen möchte, wenn Sie es nicht schon kennen. Es sind dies die „Jugenderinnerungen und Bekenntnisse“ von <hi rend="unknown" rendition="#none">Heyse</hi>.<note n="1" place="foot" type="editorial">Berlin: W. Hertz, 1900, 383 S.</note> So frisch und flott ist dieses Buch geschrieben, daß es mir besser gefällt <pb facs="#IMG.5" n="5"/> als alle seine Novellen.Un[d] dann war ja <persName ref="[authorityLink]">Heyse</persName> seines Zeichens Romanist, deswegen interessierte ich mich von jeher für ihn. In romanischer Grammatik scheint er jedoch nicht fest gewesen zu sein, wie aus seinem Bericht über das Rigorosum, das er bei einem mir unbekannten Bekker<note n="2" place="foot" type="editorial">„Der junge Heyse ist der erste, der in Berlin das romanistische Doktorexamen abgelegt hat, und zwar 1852, also nach Hubers Scheiden, mit der bekannten Dissertation Studia Romanensia, wobei er von Immanuel Bekker über romanische Grammatik geprüft wurde“ (Alfred Risop, <bibl>
+                     <hi rend="unknown" rendition="#none">Die romanische Philologie an der Berliner Universität 1810-1910</hi>
+                  </bibl>, Erlangen 1910, 76). Der ausführliche Bericht <persName ref="[authorityLink]">Heyse</persName>s über sein Rigorosum endet: „Noch jetzt, wenn manchmal in Angstträumen jene Stunde in meiner Erinnerung auflebt, wenn ich die scharfen, trockenen Augen des kleinen Mannes [= Immanuel Bekker] auf mich gerichtet sehe und gewisse Fragen wieder höre, auf die ich verstummte oder eine verkehrte Antwort gab, fühle ich beim Erwachen, daß mir Mörike’s ,examinalischer Schweiß‘ auf die Stirne getreten ist. – Ich erfuhr nachher, selbst seine Collegen hätten dem unerbittlichen Peiniger vorgeworfen, daß er mir keine Gelegenheit gegeben, zu zeigen, was ich wirklich gelernt hatte. Da aber seine Stimme den Ausschlag gab, wurde mir mitgetheilt, daß ich nur <hi rend="unknown" rendition="#none">multa</hi>, nicht <hi rend="unknown" rendition="#none">summa cum laude</hi> bestanden hatte“. – <persName ref="[authorityLink]">Immanuel Bekker</persName> (1785-1871) war von Hause aus Altphilologe, hatte aber in zahlreichen europäischen Bibliotheken Handschriftenstudien betrieben und galt als sprachkundig. Schleiermacher sagte von ihm: „Bekker schweigt in sieben Sprachen“.</note> in Berlin ablegte, hervorgeht, (S. 121). Besonders hatte er sich mit Provenzalen, Spaniern und Altfranzosen beschäftigt. Seine Liebe zu <placeName ref="[authorityLink]">Italien</placeName> ist späteren Datums. Es ist fast ein Glück für <persName ref="[authorityLink]">Heyse</persName> zu nennen, daß er den Verrat seines heißgeliebten Italiens nicht miterlebt hat. Er ist, wenn ich nicht irre, <pb facs="#IMG.6" n="6"/> kurz vor Ausbruch des Krieges gestorben.<note n="3" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Paul Heyse</persName>, Literaturnobelpreisträger von 1910, ist am 2.4.1914 in <placeName ref="[authorityLink]">München</placeName> verstorben.</note> Herr Hofrat hatten das Glück, den Dichter persönlich zu kennen. Ich erinnere mich, daß Sie in Ihrem <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.191">
+                  <hi rend="unknown" rendition="#none">Beaumarchais</hi>
+               </ref>-Kolleg – ach, die schönen Zeiten! – ein Gespräch zitierten, das Sie mit <persName ref="[authorityLink]">Heyse</persName> über die Gestalt des <hi rend="unknown" rendition="#none">Chérubin</hi> geführt hatten. Dies wird wohl in Bonn<note n="4" place="foot" type="editorial">Natürlich nicht, denn <persName ref="[authorityLink]">Heyse</persName>, Jg. 1830, hatte 1849/50 in <placeName ref="[authorityLink]">
+Bonn</placeName> studiert, als Schuchardt gerade einmal 7/8 Jahre alt war!</note> gewesen sein. Das Kapitel „Bonner Studien“ (S. 102-128) habe ich mit besonderem Interesse gelesen. Wie hübsch wäre es, wollten Herr Hofrat Ihre Erinnerungen an <persName ref="[authorityLink]">
+Heyse</persName> veröffentlichen.<note n="5" place="foot" type="editorial">
+Erhalten sind sechs Briefe <persName ref="[authorityLink]">Heyses</persName> an Schuchardt aus den Jahren 1886-1905 (HSA, Lfd.Nr.  <ref target="https://gams.uni-graz.at/o:hsa.persons#P.1764">04717-04722</ref>).</note> Da ich gerade bei dem Kapitel „Romanistik“ bin, so möchte ich Herrn Hofrat auch auf einen längeren Aufsatz von<persName ref="[authorityLink]">
+                  <hi rend="unknown" rendition="#none"> B. Schädel</hi>
+               </persName> aufmerksam machen, der in der <hi rend="unknown" rendition="#none">Internationalen</hi>
+               <pb facs="#IMG.7" n="7"/>
+               <hi rend="unknown" rendition="#none">Monatsschrift</hi> (Jahrg. 10, Heft 3, S. 302f.)<note n="6" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Bernhard Schädel</persName>, „<bibl>
 
 Unsere kulturellen Beziehungen zu Südamerika vor und nach dem Kriege
-</bibl>“, <hi
-              rend="unknown"
-            rendition="#none">Internationale Monatsschrift für Wissenschaft, Kunst und Technik</hi> 10, 1915-16, Sp. 301-328.</note> erschienen ist: Unsere kulturellen Beziehungen zu Südamerika vor und nach dem Kriege! Der Verfasser klagt über die Vernachlässigung des Spanischstudiums in Deutschland, wobei er auf Frankreich hinweist, das in dieser Beziehung mehr geleistet habe. Er tadelt bei dieser Gelegenheit – in Übereinstimmung mit Ihren Untersuchungen – die einseitige Bevorzugung des Französischen. Vieles in dieser Abhandlung ist mir aus dem Herzen gesprochen, so z.B. der Vorwurf, daß wir von der spanischen u. portugiesischen Literatur Südamerikas gar nichts wüßten u. daß sich kein Mensch damit be- <pb
-            facs="#IMG.8"
-            n="8"/> schäftige. Und steht es mit der modernen Literatur Spaniens – das sage ich – viel besser? Wo ist die deutsche Bibliothek, die den großen spanischen Romanciers – ich nenne nur <hi
-            rend="unknown" rendition="#none">Pereda</hi>, <hi rend="unknown" rendition="#none">Galdós</hi>, <hi
-            rend="unknown" rendition="#none">
+</bibl>“, <hi rend="unknown" rendition="#none">Internationale Monatsschrift für Wissenschaft, Kunst und Technik</hi> 10, 1915-16, Sp. 301-328.</note> erschienen ist: Unsere kulturellen Beziehungen zu Südamerika vor und nach dem Kriege! Der Verfasser klagt über die Vernachlässigung des Spanischstudiums in Deutschland, wobei er auf Frankreich hinweist, das in dieser Beziehung mehr geleistet habe. Er tadelt bei dieser Gelegenheit – in Übereinstimmung mit Ihren Untersuchungen – die einseitige Bevorzugung des Französischen. Vieles in dieser Abhandlung ist mir aus dem Herzen gesprochen, so z.B. der Vorwurf, daß wir von der spanischen u. portugiesischen Literatur Südamerikas gar nichts wüßten u. daß sich kein Mensch damit be- <pb facs="#IMG.8" n="8"/> schäftige. Und steht es mit der modernen Literatur Spaniens – das sage ich – viel besser? Wo ist die deutsche Bibliothek, die den großen spanischen Romanciers – ich nenne nur <hi rend="unknown" rendition="#none">Pereda</hi>, <hi rend="unknown" rendition="#none">Galdós</hi>, <hi rend="unknown" rendition="#none">
 Ibañez</hi>
-          <note n="7" place="foot" type="editorial">
-
-            <persName>
+               <note n="7" place="foot" type="editorial">
+                  <persName>
 
 José Maria de Pereda</persName> (1833-1960), <persName>
 Benito Pérez Galdós</persName> (1843-1920), <persName>
-Vicente Blasco Ibañez</persName> (1867-1928).</note> – besitzt? Ich habe mir seiner Zeit als Junggeselle um teures Geld einige Werke dieser Autoren angeschafft. <hi
-            rend="unknown" rendition="#none">
+Vicente Blasco Ibañez</persName> (1867-1928).</note> – besitzt? Ich habe mir seiner Zeit als Junggeselle um teures Geld einige Werke dieser Autoren angeschafft. <hi rend="unknown" rendition="#none">
 Pereda </hi>besitze ich fast ganz. Jetzt kann ich es nicht mehr tuen, meine Frau würde ein zu großes Geschrei erheben. Vielleicht bringt die Zeit nach dem Kriege Besserung. Man wird sich mehr mit dem Spanischen beschäftigen als bisher – sind doch die Spanier unter allen Romanen diejenigen, die sich nicht direkt gegen uns gewandt haben.</p>
-        <p>Nun muß ich aber Herrn Hofrat um Verzeihung bitten wegen dieser ungebührlich langen Epistel. Ich sollte nur über mein Befinden berichten und nun habe ich acht Seiten voll geschrieben. Ihre letzten Veröffentlichungen habe ich leider noch nicht erhalten. Ich würde es sehr bedauern, bekäme ich sie nicht.</p>
-        <p>Mit den besten Wünschen für Ihr Wohlbefinden verbleibe ich, hochgeehrter Herr Hofrat,</p>
-        <closer>
-          <salute>Ihr dankbar ergebener</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">
-              <hi rend="unknown" rendition="#none">Rr</hi>
-            </persName>. </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Nun muß ich aber Herrn Hofrat um Verzeihung bitten wegen dieser ungebührlich langen Epistel. Ich sollte nur über mein Befinden berichten und nun habe ich acht Seiten voll geschrieben. Ihre letzten Veröffentlichungen habe ich leider noch nicht erhalten. Ich würde es sehr bedauern, bekäme ich sie nicht.</p>
+            <p>Mit den besten Wünschen für Ihr Wohlbefinden verbleibe ich, hochgeehrter Herr Hofrat,</p>
+            <closer>
+               <salute>Ihr dankbar ergebener</salute>
+               <signed>
+                  <persName ref="[authorityLink]">
+                     <hi rend="unknown" rendition="#none">Rr</hi>
+                  </persName>. </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

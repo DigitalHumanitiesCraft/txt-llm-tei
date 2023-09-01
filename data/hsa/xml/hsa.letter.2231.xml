@@ -1,356 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (385-11140)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2231" type="PID">o:hsa.letter.2231</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">385-11140</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11140</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" ref="http://sws.geonames.org/2946447">Bonn</origPlace>
-              <origDate ana="dcterms:created" when="1924-04-24">1924-04-24</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2231">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" key="#GID.1" ref="http://sws.geonames.org/2946447">Bonn</placeName>
-          <date when="1924-04-24">1924-04-24</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Bonn</settlement>
-                <name ref="http://geonames.org/2946447" type="fcode:PPLA3">Bonn</name>
-                <location>
-                  <geo>7.09549,50.73438</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4934" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Revue de Linguistique Romane</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.5468" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Dreyfus-Affäre</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4090" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Universität Marburg</term>
-          </term>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.languages">
-          <term ref="https://gams.uni-graz.at/o:hsa.languages#L.226" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Französisch</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2231" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2231" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2231" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2231" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2231" xml:id="IMG.5">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2231" xml:id="IMG.6">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2231" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bonn, 24. IV. 1924.</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-        <p>Von <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.666">Paris</placeName> nach 10tägigem Aufenthalt zurückgekehrt, nehme ich an, daß Sie sich für meine Eindrücke interessieren, und schreibe, obwohl Ihrerseits ein Brief fällig ist.</p>
-        <p>Eine Taverne in Paris trägt die Aufschrift "Au beau pays de la France". Das ist der Sucus meiner Eindrücke. Schönes Land, reiches Land, glückliches Land. Demgegenüber: Deutschland, oh armes Land!</p>
-
-        <p>Weiters: In Frankreich ist der Krieg vorbei, bei uns nicht. Das scheint in Widerspruch zu stehen mit dem bekannten Militarismus. Der Widerspruch löst sich, wenn man denkt, daß das Militär gegen außen sich wendet, Exportware ist – im Innern, wenigstens in Paris, hört man nichts von Krieg, nichts von Unruhe, nicht einmal Animoses über Deutschland. Die Zeitungen schreiben viel ruhiger als in Deutschland. In Paris gibt es wenig Kriegsdenkmäler (ich habe nur 2, sehr bescheidene gesehen), fast keine umbenannten Straßen – das Monument des Generals Galliéni kann aus Platzmangel nicht <pb
-            facs="#IMG.2" n="2"/> aufgestellt werden usw.</p>
-        <p>Ich sprach drei unserer Fachgenossen: Jeanroy, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1583">Gilliéron</persName>, <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4931">O.Bloch</persName>. Der erste der chauvinistischste: Deutschland glauben wir nicht mehr, wir wollen bezahlt sein, die Schwarzen im Rheinland und die Unterstützung der Sonderbündler – ma foi, on fait ce qu'on peut. Aber wenigstens kein Haß gegen Deutschland und kein Offensivgeist.</p>
-
-        <p>Gilliéron wildwütend wie immer und widerspruchsvoll. Einerseits: "L'Alle­magne est ma patrie scientifique", anderseits: "je hais les Allemands, et particulièrement les Suisses allemands" (wie <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2233">
-Morf</persName> u. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">
-M-L</persName>) "Je suis un Heimatlos". Mir wirft er vor, daß ich die Verletzung der belgischen Neutralität nicht genügend scharf in meinen Kriegsschriften verurteilt habe, aber wir wurden immerhin zum Thee eingeladen und wirklich herzlich aufgenommen, während er bekanntlich bei dem M-L.-Bankett fehlte. Auf ein Widmungsexemplar schrieb er mir: "A mon cher ami Spitzer". Die Rheinpolitik verurteilt er, er sieht voraus, daß Deutschland bald wieder Elsaß-Lothringen zurücknehmen werde. Mit seinen französischen Kollegen steht er schlechter denn je, alle sind Idioten oder Charlatane. Er will in 1 Jahr in Pension gehen, wenn sein <pb
-            facs="#IMG.3" n="3"/> Pensionsgehalt von der Kammer mit 2/3 (oder 3/4?) seiner jetzigen Bezüge normiert wird. Dann wird der ihm keineswegs gleichkommende O.Bloch sein Nachfolger.</p>
-
-        <p>O. Bloch ist Jude – überflüssig das zu sagen – und daher sehr linksgerichtet, Pazifist für Wiederanknüpfung der Beziehungen mit Deutschland. Daher möchte er bei seiner neuen Zeitschrift vor allem auch Artikel von Deutschen haben u. fragte mich, bei wem er sich keinen Refus holen würde. Vor allem möchte er eine Zusage von Ihnen für eine der ersten Nummern haben (Sie haben auf seinen Prospekt nicht geantwortet), da Sie durch Ihr Alter und Ihre Würde gewisser­maßen über den Gewässern tronen, dann auch von M-L und mir. "Soyez notre interprète auprès des deux grands maîtres", schreibt er mir noch nach meiner Abreise im Auftrag seines Mitarbeiters Terracher. Deutsche Sprache der Artikel ausdrücklich zugelassen. <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4934">"Revue de linguistique romane"</ref> soll der Titel sein.<note
-            n="1" place="foot" type="editorial"> Die Zeitschrift erschien ab 1925 zunächst in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.666">Paris</placeName>, später dann in <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.499">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2231" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bonn, 24. IV. 1924.</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Von <placeName ref="[authorityLink]">Paris</placeName> nach 10tägigem Aufenthalt zurückgekehrt, nehme ich an, daß Sie sich für meine Eindrücke interessieren, und schreibe, obwohl Ihrerseits ein Brief fällig ist.</p>
+            <p>Eine Taverne in Paris trägt die Aufschrift "Au beau pays de la France". Das ist der Sucus meiner Eindrücke. Schönes Land, reiches Land, glückliches Land. Demgegenüber: Deutschland, oh armes Land!</p>
+            <p>Weiters: In Frankreich ist der Krieg vorbei, bei uns nicht. Das scheint in Widerspruch zu stehen mit dem bekannten Militarismus. Der Widerspruch löst sich, wenn man denkt, daß das Militär gegen außen sich wendet, Exportware ist – im Innern, wenigstens in Paris, hört man nichts von Krieg, nichts von Unruhe, nicht einmal Animoses über Deutschland. Die Zeitungen schreiben viel ruhiger als in Deutschland. In Paris gibt es wenig Kriegsdenkmäler (ich habe nur 2, sehr bescheidene gesehen), fast keine umbenannten Straßen – das Monument des Generals Galliéni kann aus Platzmangel nicht <pb facs="#IMG.2" n="2"/> aufgestellt werden usw.</p>
+            <p>Ich sprach drei unserer Fachgenossen: Jeanroy, <persName ref="[authorityLink]">Gilliéron</persName>, <persName ref="[authorityLink]">O.Bloch</persName>. Der erste der chauvinistischste: Deutschland glauben wir nicht mehr, wir wollen bezahlt sein, die Schwarzen im Rheinland und die Unterstützung der Sonderbündler – ma foi, on fait ce qu'on peut. Aber wenigstens kein Haß gegen Deutschland und kein Offensivgeist.</p>
+            <p>Gilliéron wildwütend wie immer und widerspruchsvoll. Einerseits: "L'Alle­magne est ma patrie scientifique", anderseits: "je hais les Allemands, et particulièrement les Suisses allemands" (wie <persName ref="[authorityLink]">
+Morf</persName> u. <persName ref="[authorityLink]">
+M-L</persName>) "Je suis un Heimatlos". Mir wirft er vor, daß ich die Verletzung der belgischen Neutralität nicht genügend scharf in meinen Kriegsschriften verurteilt habe, aber wir wurden immerhin zum Thee eingeladen und wirklich herzlich aufgenommen, während er bekanntlich bei dem M-L.-Bankett fehlte. Auf ein Widmungsexemplar schrieb er mir: "A mon cher ami Spitzer". Die Rheinpolitik verurteilt er, er sieht voraus, daß Deutschland bald wieder Elsaß-Lothringen zurücknehmen werde. Mit seinen französischen Kollegen steht er schlechter denn je, alle sind Idioten oder Charlatane. Er will in 1 Jahr in Pension gehen, wenn sein <pb facs="#IMG.3" n="3"/> Pensionsgehalt von der Kammer mit 2/3 (oder 3/4?) seiner jetzigen Bezüge normiert wird. Dann wird der ihm keineswegs gleichkommende O.Bloch sein Nachfolger.</p>
+            <p>O. Bloch ist Jude – überflüssig das zu sagen – und daher sehr linksgerichtet, Pazifist für Wiederanknüpfung der Beziehungen mit Deutschland. Daher möchte er bei seiner neuen Zeitschrift vor allem auch Artikel von Deutschen haben u. fragte mich, bei wem er sich keinen Refus holen würde. Vor allem möchte er eine Zusage von Ihnen für eine der ersten Nummern haben (Sie haben auf seinen Prospekt nicht geantwortet), da Sie durch Ihr Alter und Ihre Würde gewisser­maßen über den Gewässern tronen, dann auch von M-L und mir. "Soyez notre interprète auprès des deux grands maîtres", schreibt er mir noch nach meiner Abreise im Auftrag seines Mitarbeiters Terracher. Deutsche Sprache der Artikel ausdrücklich zugelassen. <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4934">"Revue de linguistique romane"</ref> soll der Titel sein.<note n="1" place="foot" type="editorial"> Die Zeitschrift erschien ab 1925 zunächst in <placeName ref="[authorityLink]">Paris</placeName>, später dann in <placeName ref="[authorityLink]">
 Straßburg</placeName> und hat ihren Namen bis heute behalten.</note> Bitte, was soll ich antworten? Oder wollen Sie es gleich direkt tun? (Paris av. de Breteuil 79).</p>
-        <p>Sonst war in Paris nicht die geringste Empörung zu bemerken, wenn ich in Theatern oder im Métro mit <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2763">meiner Frau</persName> laut deutsch sprach. Überall zuvorkommende Höflichkeit. Nur in der Buchhandlung Champion war eine <pb
-            facs="#IMG.4" n="4"/> etwas reservierte Haltung zu merken, auch wurden abfällige Bemerkungen über die Einflüsse Stinnes' laut, aber ich wurde korrekt bedient.</p>
-        <p>Bloch klärte mich auch über die Stellung des Judentums in Frankreich auf: seit dem <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5468">Dreyfus-Prozeß</ref> sei dieses Thema erledigt. "Ja, wenn wir besiegt worden wären..." Auch Gilliéron gebrauchte einmal gesprächsweise die Wendung "ebenso verhaßt wie Juden in Deutschland".</p>
-
-        <p>Ich hielt im Ganzen eine mittlere Linie in den Diskussionen ein, hielt an dem "Erfüllungsprogramm" Rathenau-Wirth fest, tadelte aber die die Reaktion schützend, ja aufreizende Politik Frankreichs und fand wenigstens damit allgemeine Zustimmung. <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2156">Meillet</persName>, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2156">Roques</persName> waren abwesend, <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5069">
-Bédier</persName> und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1218">
+            <p>Sonst war in Paris nicht die geringste Empörung zu bemerken, wenn ich in Theatern oder im Métro mit <persName ref="[authorityLink]">meiner Frau</persName> laut deutsch sprach. Überall zuvorkommende Höflichkeit. Nur in der Buchhandlung Champion war eine <pb facs="#IMG.4" n="4"/> etwas reservierte Haltung zu merken, auch wurden abfällige Bemerkungen über die Einflüsse Stinnes' laut, aber ich wurde korrekt bedient.</p>
+            <p>Bloch klärte mich auch über die Stellung des Judentums in Frankreich auf: seit dem <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.5468">Dreyfus-Prozeß</ref> sei dieses Thema erledigt. "Ja, wenn wir besiegt worden wären..." Auch Gilliéron gebrauchte einmal gesprächsweise die Wendung "ebenso verhaßt wie Juden in Deutschland".</p>
+            <p>Ich hielt im Ganzen eine mittlere Linie in den Diskussionen ein, hielt an dem "Erfüllungsprogramm" Rathenau-Wirth fest, tadelte aber die die Reaktion schützend, ja aufreizende Politik Frankreichs und fand wenigstens damit allgemeine Zustimmung. <persName ref="[authorityLink]">Meillet</persName>, <persName ref="[authorityLink]">Roques</persName> waren abwesend, <persName ref="[authorityLink]">
+Bédier</persName> und <persName ref="[authorityLink]">
 Brunot</persName> wollte ich nicht aufsuchen, wegen ihrer mir bekannten Haltung.</p>
-
-        <p>Das Leben ist sehr viel teurer. Die kleinste schäbigste 3-Zimmer-Wohnung 6000 fr. – und in was für kleinen Wohnungen hausen unsere französischen Kollegen! Jeanroy hat kein Arbeitszimmer, die Blochs und Gilliérons sind sallottinettissimi. Billig ist nur Eisenbahn und Auto. Wir ließen es uns trotz allem gut gehen und trieben für 10 Tage Vogel Strauss<pb
-            facs="#IMG.5" n="5"/>-Politik, um nicht zu sehen, was uns in Deutschland erwartet. Natürlich verausgabten wir alle unsere Gelder vom Schwedenkurs – und dabei scheint es, als ob heuer keiner zustande käme.</p>
-
-        <p>Allgemeine Verehrtung fand ich für Sie. Gilliéron erkundigte sich aber ausführlich über Ihr Befinden, äußerte sich sehr nett über das <ref
-            target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1506">Brevier</ref>, ebenso Bloch (s. o.) und auch Jeanroy. Nichts Gutes dagegen war von M-L und <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">Vossler</persName> zu hören. Die "théories aventureuses" des ersteren, die "philosophie" des letzteren haben dort wenig Reperkussion.</p>
-        <p>Mein <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">Französisch</ref>, ich spürte es, wurde von Minute zu Minute besser. Es hatte keinen Rost angesetzt, seit den 14 Jahren, wo ich darin mich nicht üben konnte, meinte einer der Herren.</p>
-        <p>Nach <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> zurückgekehrt fühlen wir uns wie aus einem schönen Traum erwacht. Welche Spießbürgerlichkeit und Kleinheit der Verhältnisse. Die Großstadt hat doch etwas Erweiterndes, Befreidendes – man spürt sich selbst vibrieren, während die Ruhe der Kleinstadt nicht nur vertieft, sondern auch verflacht.</p>
-        <pb facs="#IMG.6" n="6"/>
-        <p>Hier fanden wir unser <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5275">
-Pückchen</persName> von fremder Kost etwas abgemagert, aber wohlauf und etwas hübscher geworden. Ein Haufen Korrespondenz türmt sich auf meinem Schreibtisch, auch von <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2520">Riegler</persName>, der über <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.3710">Theo</persName>'s Unbeständigkeit und Journalisterei, wie mir scheint nicht ganz unberechtigt, Klage führt. Bald gehen die Vorlesungen los.</p>
-        <p>Von <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4090">Marburg</ref> noch nichts Neues. Die Berufungen Heiss-<persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4365">Küchler</persName> sind noch nicht ergangen, die Regierung läßt sich zweifellos Zeit bis nach den Wahlen.</p>
-        <closer>
-          <salute>Nun lassen Sie bitte bald von sich hören! Alles Liebe vom</salute>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Spitzer</persName>
-          </signed>
-        </closer>
-        <postscript>
-          <p>Unser Bonner-Ferienkurs wurde sehr gut besucht. Ich hatte z.B. 150 Hörer (Oberlehrer und -innen). Von der letzten Vorlesungsstunde weg fuhr ich nach Paris. "Fesch"!</p>
-          <p>Was sagen Sie zu meinem <hi rend="unknown"
-              rendition="#none">Falott</hi>-Artikel und zur Bemerkung gegen Vossler über <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName>?<note n="2" place="foot" type="editorial">
-              <bibl>
-                <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3657"> L.S., "Französische Etymologien"</ref>, in: <hi
-                  rend="unknown"
-                rendition="#none">Zeitschrift für romanische Philologie</hi> 43 (1923): 587-600</bibl>. In einer längeren Fußnote (S. 593-94) korrigiert Spitzer <persName
-                ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">
-Vosslers</persName> Verständnis vom Sprachgebrauch im <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.97">Wien</placeName> der letzten Jahre des Monarchie insbesondere dahingehend, daß die Fremdsprachen sehrwohl unterschiedlichen Status in sozialer Hinsicht und damit in ihrem Alltagsgebrauch hatten.</note>
-          </p>
-        </postscript>
-      </div>
-    </body>
-  </text>
+            <p>Das Leben ist sehr viel teurer. Die kleinste schäbigste 3-Zimmer-Wohnung 6000 fr. – und in was für kleinen Wohnungen hausen unsere französischen Kollegen! Jeanroy hat kein Arbeitszimmer, die Blochs und Gilliérons sind sallottinettissimi. Billig ist nur Eisenbahn und Auto. Wir ließen es uns trotz allem gut gehen und trieben für 10 Tage Vogel Strauss<pb facs="#IMG.5" n="5"/>-Politik, um nicht zu sehen, was uns in Deutschland erwartet. Natürlich verausgabten wir alle unsere Gelder vom Schwedenkurs – und dabei scheint es, als ob heuer keiner zustande käme.</p>
+            <p>Allgemeine Verehrtung fand ich für Sie. Gilliéron erkundigte sich aber ausführlich über Ihr Befinden, äußerte sich sehr nett über das <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.1506">Brevier</ref>, ebenso Bloch (s. o.) und auch Jeanroy. Nichts Gutes dagegen war von M-L und <persName ref="[authorityLink]">Vossler</persName> zu hören. Die "théories aventureuses" des ersteren, die "philosophie" des letzteren haben dort wenig Reperkussion.</p>
+            <p>Mein <ref target="https://gams.uni-graz.at/o:hsa.languages#L.226">Französisch</ref>, ich spürte es, wurde von Minute zu Minute besser. Es hatte keinen Rost angesetzt, seit den 14 Jahren, wo ich darin mich nicht üben konnte, meinte einer der Herren.</p>
+            <p>Nach <placeName ref="[authorityLink]">Bonn</placeName> zurückgekehrt fühlen wir uns wie aus einem schönen Traum erwacht. Welche Spießbürgerlichkeit und Kleinheit der Verhältnisse. Die Großstadt hat doch etwas Erweiterndes, Befreidendes – man spürt sich selbst vibrieren, während die Ruhe der Kleinstadt nicht nur vertieft, sondern auch verflacht.</p>
+            <pb facs="#IMG.6" n="6"/>
+            <p>Hier fanden wir unser <persName ref="[authorityLink]">
+Pückchen</persName> von fremder Kost etwas abgemagert, aber wohlauf und etwas hübscher geworden. Ein Haufen Korrespondenz türmt sich auf meinem Schreibtisch, auch von <persName ref="[authorityLink]">Riegler</persName>, der über <persName ref="[authorityLink]">Theo</persName>'s Unbeständigkeit und Journalisterei, wie mir scheint nicht ganz unberechtigt, Klage führt. Bald gehen die Vorlesungen los.</p>
+            <p>Von <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4090">Marburg</ref> noch nichts Neues. Die Berufungen Heiss-<persName ref="[authorityLink]">Küchler</persName> sind noch nicht ergangen, die Regierung läßt sich zweifellos Zeit bis nach den Wahlen.</p>
+            <closer>
+               <salute>Nun lassen Sie bitte bald von sich hören! Alles Liebe vom</salute>
+               <signed>
+                  <persName ref="[authorityLink]">Spitzer</persName>
+               </signed>
+            </closer>
+            <postscript>
+               <p>Unser Bonner-Ferienkurs wurde sehr gut besucht. Ich hatte z.B. 150 Hörer (Oberlehrer und -innen). Von der letzten Vorlesungsstunde weg fuhr ich nach Paris. "Fesch"!</p>
+               <p>Was sagen Sie zu meinem <hi rend="unknown" rendition="#none">Falott</hi>-Artikel und zur Bemerkung gegen Vossler über <placeName ref="[authorityLink]">Wien</placeName>?<note n="2" place="foot" type="editorial">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3657"> L.S., "Französische Etymologien"</ref>, in: <hi rend="unknown" rendition="#none">Zeitschrift für romanische Philologie</hi> 43 (1923): 587-600</bibl>. In einer längeren Fußnote (S. 593-94) korrigiert Spitzer <persName ref="[authorityLink]">
+Vosslers</persName> Verständnis vom Sprachgebrauch im <placeName ref="[authorityLink]">Wien</placeName> der letzten Jahre des Monarchie insbesondere dahingehend, daß die Fremdsprachen sehrwohl unterschiedlichen Status in sozialer Hinsicht und damit in ihrem Alltagsgebrauch hatten.</note>
+               </p>
+            </postscript>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

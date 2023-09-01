@@ -1,324 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Jakob Jud (38-HSJJ04)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8518" type="PID">o:hsa.letter.8518</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">38-HSJJ04</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Bern</settlement>
-            <institution>Universität Bern</institution>
-            <repository ref="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">AIS Archiv</repository>
-            <idno type="shelfmark">HSJJ04</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1917-02-02">1917-02-02</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Jakob Jud</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1858"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8518">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1917-02-02">1917-02-02</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1858" ref="https://viaf.org/viaf/88644299">
-            <forename>Jakob</forename>
-            <surname>Jud</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1858" type="context">
-                        Korrespondenz Hugo Schuchardt - Jakob Jud
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8518" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8518" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8518" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8518" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8518" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>G. 2.2. ‘17</dateline>
-        <opener>Lieber Freund,</opener>
-
-        <p>In meinem gestrigen Brief habe ich ganz auf den Schluß des Vorigen vergessen. Vor Kurzem äußerte ich zu einem Kollegen, daß der Sprachforscher deshalb so langsam vorwärts komme, weil ihm beständig etymologische Knüppel zwischen die Füße geworfen werden. Gerade ein solcher wie der von Ihnen gespendete würde meine Zeit und meine Kraft allzu sehr in Anspruch nehmen. Meine Kraft – das Wälzen der Wörterbücher wird mir immer saurer. Von dem <hi
-            rend="unknown" rendition="#none">Atlas ling.</hi> will <pb facs="#IMG.2"
-            n="2"/> ich nicht reden; eine halbe Stunde Hin- und Herwerfen der Mappen hat mich neulich sehr mitgenommen. Einer kleinen Romanistin zwar, Fräulein D.<hi
-            rendition="#sup">r</hi> R. L. (die Wiener sagen Fexen wie sie sind, jetzt Frau D.r zu Unverheirateten) scheint die längere Handhabung dieses Werkes sehr gut bekommen zu sein; sie hat rosige Farben und dabei hat sie <hi
-            rend="unknown" rendition="#none">cercueil</hi> bearbeitet,<note n="1" place="foot"
-              type="editorial">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8518" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>G. 2.2. ‘17</dateline>
+            <opener>Lieber Freund,</opener>
+            <p>In meinem gestrigen Brief habe ich ganz auf den Schluß des Vorigen vergessen. Vor Kurzem äußerte ich zu einem Kollegen, daß der Sprachforscher deshalb so langsam vorwärts komme, weil ihm beständig etymologische Knüppel zwischen die Füße geworfen werden. Gerade ein solcher wie der von Ihnen gespendete würde meine Zeit und meine Kraft allzu sehr in Anspruch nehmen. Meine Kraft – das Wälzen der Wörterbücher wird mir immer saurer. Von dem <hi rend="unknown" rendition="#none">Atlas ling.</hi> will <pb facs="#IMG.2" n="2"/> ich nicht reden; eine halbe Stunde Hin- und Herwerfen der Mappen hat mich neulich sehr mitgenommen. Einer kleinen Romanistin zwar, Fräulein D.<hi rendition="#sup">r</hi> R. L. (die Wiener sagen Fexen wie sie sind, jetzt Frau D.r zu Unverheirateten) scheint die längere Handhabung dieses Werkes sehr gut bekommen zu sein; sie hat rosige Farben und dabei hat sie <hi rend="unknown" rendition="#none">cercueil</hi> bearbeitet,<note n="1" place="foot" type="editorial">
 Rosl Lipovsky, <hi rend="unknown" rendition="#none">
-              <bibl>
+                     <bibl>
 
 
 Die Namen des Sarges im Galloromanischen: onomasiologische Studie
 </bibl>
-            </hi>, Phil. Diss. Graz 1916 (Gutachter: <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.3054">
-Zauner</persName> u. <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1830">Ive</persName>). Im Briefverzeichnis findet sich (HSA 06541) ihre auf den 4.1.1917 datierte Visitenkarte. Das Gutachten ihrer Diss. ist <ref
-              target="http://unipub.uni-graz.at/obvugruada/content/pageview/1603603">
+                  </hi>, Phil. Diss. Graz 1916 (Gutachter: <persName ref="[authorityLink]">
+Zauner</persName> u. <persName ref="[authorityLink]">Ive</persName>). Im Briefverzeichnis findet sich (HSA 06541) ihre auf den 4.1.1917 datierte Visitenkarte. Das Gutachten ihrer Diss. ist <ref target="http://unipub.uni-graz.at/obvugruada/content/pageview/1603603">
 digitalisiert</ref>; Demnach wurde die Verf. 1861 in <placeName>
 
-Banjaluka</placeName> geboren und studierte in <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName>. Die Datei des OBV nennt als Verfasser dieser Diss. fälschlich einen „<persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2048">Richard Lipovsky</persName>“!</note> das anfangs mit angegangene <hi
-            rend="unknown" rendition="#none">berceau</hi> wurde wegen zu starker Umfangsvermehrung (oder aus Schamhaftigkeit?) wieder eingesargt. In den Prüfungszimmern sollte für Romanisten ein Kraftwerker aufgestellt werden; wer unter einer gewissen körperlichen Leistung bleibt, werde auch unfähig für die Wissenschaft erklärt.</p>
-        <p>
-          <pb facs="#IMG.3" n="3"/>Also kurz:</p>
-        <p>Sohn, da hast du meinen Speer <lb/> Meinem Arm wird er zu schwer<note n="2" place="foot" type="editorial">Altes Volkslied: <lb/> Sohn, da hast du meinen Speer!<lb/> meinem Arm wird er zu schwer.<lb/> Nimm den Schild und dies Geschoss!<lb/> Tummle du hinfort mein Ross!<lb/> Siehe, dies nun weisse Haar<lb/> deckt der Helm schon fünfzig Jahr’;<lb/> Jedes Jahr hat eine Schlacht<lb/> Schwert und Streitaxt stumpf gemacht. </note>
-        </p>
-
-        <p>Hier was ich tun würde. Ich untersuchte zunächst ob die Begriffe „Zweihandvoll“ und „Handvoll“ getrennte Bezeichnung haben, gegensätzliche usw. und welches die ursprüngliche Bedeutung ist.<note
-            n="3" place="foot" type="editorial">Vgl. Brief <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.8515">05181</ref>.</note> So ist z.B. nach Schmeller <hi
-            rend="unknown"
-            rendition="#none">Gauffen</hi> „die Höhlung der Hand, noch öfter die Höhlung der zusammengefügten“ [das letztere ist das Urspr.]<note
-            n="4" place="foot" type="editorial">Johann Andreas Schmeller, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3682">Bayer. Wörterb.</ref>
-              </bibl>
-            </hi> 1/1, 865.</note> so sloven. <hi rend="unknown"
-            rendition="#none">prgišcare</hi> 1) die Handvoll 2) beide Hände voll, perišče 1) die Gäspe 2) die Handvoll, <hi
-            rend="unknown" rendition="#none">
-peščiča</hi> nur die Handvoll. Ital. <hi rend="unknown"
-            rendition="#none">
-giumella, manata</hi> = kymr. <hi rend="unknown" rendition="#none">mawaid</hi> (2), <hi
-            rend="unknown" rendition="#none">munaid</hi> (1) usw. … </p>
-        <p>Ich stoße auf keinen Ausdruck der <hi rend="unknown" rendition="#none">zwei</hi> o. ä. in dem Wort für <pb
-            facs="#IMG.4" n="4"/> ,Gäspe‘<note n="5" place="foot" type="editorial">Gaspa, <hi rend="unknown"
-            rendition="#none">Gespe, Göspe und Geuspe</hi>, altes Volumenmaß für trockene Waren..</note> enthielte. Nun fällt mir ein, daß ich in meiner <hi
-            rend="unknown" rendition="#none">Berb. H.</hi>
-          <note n="6" place="foot" type="editorial">Schuchardt, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.621">Berberische Hiatustilgung</ref>
-              </bibl>
-            </hi>, Wien: Hölder, 1916 (<hi rend="unknown"
-            rendition="#none">Sitzungsberichte d. Wien. Ak.</hi> 182, 1-60).</note> ein berb. dafür erwähnt habe (38) <hi
-            rend="unknown" rendition="#none">ihenfaser</hi> zum Sing. <hi rend="unknown"
-            rendition="#none">
-ahenfus</hi>: Berb. <hi rend="unknown"
-            rendition="#none">a-fus</hi> bed. ,Hand‘, in einer Md.<note n="7" place="foot"
-            type="editorial">„Mundart“.</note> auch ,fünf‘ und das ist ein sehr häufiges Vorkommnis. bask. <hi
-            rend="unknown" rendition="#none">
-bost, bortz</hi> 5 wird auch eigentlich ,Hand‘ sein; ist mit kelt. <hi
-            rend="unknown" rendition="#none">bass, bóz </hi>verwandt (Boisacq<note n="8" place="foot"
-              type="editorial">Émile Boisacq, <hi rend="unknown" rendition="#none">
-              <bibl>
+Banjaluka</placeName> geboren und studierte in <placeName ref="[authorityLink]">Graz</placeName>. Die Datei des OBV nennt als Verfasser dieser Diss. fälschlich einen „<persName ref="[authorityLink]">Richard Lipovsky</persName>“!</note> das anfangs mit angegangene <hi rend="unknown" rendition="#none">berceau</hi> wurde wegen zu starker Umfangsvermehrung (oder aus Schamhaftigkeit?) wieder eingesargt. In den Prüfungszimmern sollte für Romanisten ein Kraftwerker aufgestellt werden; wer unter einer gewissen körperlichen Leistung bleibt, werde auch unfähig für die Wissenschaft erklärt.</p>
+            <p>
+               <pb facs="#IMG.3" n="3"/>Also kurz:</p>
+            <p>Sohn, da hast du meinen Speer <lb/> Meinem Arm wird er zu schwer<note n="2" place="foot" type="editorial">Altes Volkslied: <lb/> Sohn, da hast du meinen Speer!<lb/> meinem Arm wird er zu schwer.<lb/> Nimm den Schild und dies Geschoss!<lb/> Tummle du hinfort mein Ross!<lb/> Siehe, dies nun weisse Haar<lb/> deckt der Helm schon fünfzig Jahr’;<lb/> Jedes Jahr hat eine Schlacht<lb/> Schwert und Streitaxt stumpf gemacht. </note>
+            </p>
+            <p>Hier was ich tun würde. Ich untersuchte zunächst ob die Begriffe „Zweihandvoll“ und „Handvoll“ getrennte Bezeichnung haben, gegensätzliche usw. und welches die ursprüngliche Bedeutung ist.<note n="3" place="foot" type="editorial">Vgl. Brief <ref target="https://gams.uni-graz.at/o:hsa.letter.8515">05181</ref>.</note> So ist z.B. nach Schmeller <hi rend="unknown" rendition="#none">Gauffen</hi> „die Höhlung der Hand, noch öfter die Höhlung der zusammengefügten“ [das letztere ist das Urspr.]<note n="4" place="foot" type="editorial">Johann Andreas Schmeller, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3682">Bayer. Wörterb.</ref>
+                     </bibl>
+                  </hi> 1/1, 865.</note> so sloven. <hi rend="unknown" rendition="#none">prgišcare</hi> 1) die Handvoll 2) beide Hände voll, perišče 1) die Gäspe 2) die Handvoll, <hi rend="unknown" rendition="#none">
+peščiča</hi> nur die Handvoll. Ital. <hi rend="unknown" rendition="#none">
+giumella, manata</hi> = kymr. <hi rend="unknown" rendition="#none">mawaid</hi> (2), <hi rend="unknown" rendition="#none">munaid</hi> (1) usw. … </p>
+            <p>Ich stoße auf keinen Ausdruck der <hi rend="unknown" rendition="#none">zwei</hi> o. ä. in dem Wort für <pb facs="#IMG.4" n="4"/> ,Gäspe‘<note n="5" place="foot" type="editorial">Gaspa, <hi rend="unknown" rendition="#none">Gespe, Göspe und Geuspe</hi>, altes Volumenmaß für trockene Waren..</note> enthielte. Nun fällt mir ein, daß ich in meiner <hi rend="unknown" rendition="#none">Berb. H.</hi>
+               <note n="6" place="foot" type="editorial">Schuchardt, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.621">Berberische Hiatustilgung</ref>
+                     </bibl>
+                  </hi>, Wien: Hölder, 1916 (<hi rend="unknown" rendition="#none">Sitzungsberichte d. Wien. Ak.</hi> 182, 1-60).</note> ein berb. dafür erwähnt habe (38) <hi rend="unknown" rendition="#none">ihenfaser</hi> zum Sing. <hi rend="unknown" rendition="#none">
+ahenfus</hi>: Berb. <hi rend="unknown" rendition="#none">a-fus</hi> bed. ,Hand‘, in einer Md.<note n="7" place="foot" type="editorial">„Mundart“.</note> auch ,fünf‘ und das ist ein sehr häufiges Vorkommnis. bask. <hi rend="unknown" rendition="#none">
+bost, bortz</hi> 5 wird auch eigentlich ,Hand‘ sein; ist mit kelt. <hi rend="unknown" rendition="#none">bass, bóz </hi>verwandt (Boisacq<note n="8" place="foot" type="editorial">Émile Boisacq, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Dictionnaire étymologique de la langue grecque. Étudiée dans ses rapports avec les autres langues indo-européennes
 </bibl>
+                  </hi>, Heidelberg: Winter, 1916.</note> will von der Hinzuziehung von ἀγοστός nichts wissen)! Ich kann, wie gesagt, die romanischen Formen nicht zusammensuchen. Wie steht es denn mit span. <hi rend="unknown" rendition="#none">almuerza, alumeza, almuesta</hi>? Das bearn. <hi rend="unknown" rendition="#none">mousto</hi> stammt aus dem Aspetal,<note n="9" place="foot" type="editorial">Vallée d’Aspe, Pyrénées françaises, située dans le département des Pyrénées-Atlantiques et la région <placeName>
 
-            </hi>, Heidelberg: Winter, 1916.</note> will von der Hinzuziehung von ἀγοστός nichts wissen)! Ich kann, wie gesagt, die romanischen Formen nicht zusammensuchen. Wie steht es denn mit span. <hi
-            rend="unknown" rendition="#none">almuerza, alumeza, almuesta</hi>? Das bearn. <hi rend="unknown"
-            rendition="#none">mousto</hi> stammt aus dem Aspetal,<note n="9" place="foot"
-            type="editorial">Vallée d’Aspe, Pyrénées françaises, située dans le département des Pyrénées-Atlantiques et la région <placeName>
-
-Nouvelle-Aquitaine</placeName>.</note> also von der baskischen Grenze und erinnert sehr an <hi
-            rend="unknown" rendition="#none">
+Nouvelle-Aquitaine</placeName>.</note> also von der baskischen Grenze und erinnert sehr an <hi rend="unknown" rendition="#none">
 bost</hi>. Überall eröffnen sich Spaziergänge die mich reizen, die ich aber nicht verwirklichen kann.</p>
-        <p>Ich schrieb gestern <hi rend="unknown" rendition="#none">Diachronie</hi> wo ich <hi rend="unknown" rendition="#none">Synchronie</hi> meinte; das vertraute Wort gesellte sich zu einem vertrackten Begriff.</p>
-        <closer>
-          <salute>In Eile<lb/> Ihr getreuer </salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HSch</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Ich schrieb gestern <hi rend="unknown" rendition="#none">Diachronie</hi> wo ich <hi rend="unknown" rendition="#none">Synchronie</hi> meinte; das vertraute Wort gesellte sich zu einem vertrackten Begriff.</p>
+            <closer>
+               <salute>In Eile<lb/> Ihr getreuer </salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HSch</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

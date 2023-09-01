@@ -1,368 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Hugo Schuchardt an Jakob Jud (76-HSJJ22)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Frank-Rutger</forename>
-            <surname>Hausmann</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft, Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/8556" type="PID">o:hsa.letter.8556</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">76-HSJJ22</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Schweiz</country>
-            <settlement>Bern</settlement>
-            <institution>Universität Bern</institution>
-            <repository ref="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">AIS Archiv</repository>
-            <idno type="shelfmark">HSJJ22</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.109">
-                <forename>Hugo</forename>
-                <surname>Schuchardt</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="6" unit="pages">6 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" ref="http://sws.geonames.org/2778067">Graz</origPlace>
-              <origDate ana="dcterms:created" when="1920-01-04">1920-01-04</origDate>
-            </origin>
-          </history>
-        </msDesc>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Frank-Rutger</forename>
-              <surname>Hausmann</surname>
-            </persName>
-          </author>
-          <date when="2019">2019</date>
-          <title>Die Korrespondenz zwischen Hugo Schuchardt und Jakob Jud</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/1858"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.8556">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.6" key="#GID.1" ref="http://sws.geonames.org/2778067">Graz</placeName>
-          <date when="1920-01-04">1920-01-04</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.1858" ref="https://viaf.org/viaf/88644299">
-            <forename>Jakob</forename>
-            <surname>Jud</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Austria</country>
-                <settlement>Graz</settlement>
-                <name ref="http://geonames.org/2778067" type="fcode:PPLA">Graz</name>
-                <location>
-                  <geo>15.45,47.06667</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.1858" type="context">
-                        Korrespondenz Hugo Schuchardt - Jakob Jud
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.3981" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Wissen und Leben: neue Schweizer Rundschau</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8556" xml:id="IMG.1">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8556" xml:id="IMG.2">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8556" xml:id="IMG.3">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8556" xml:id="IMG.4">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8556" xml:id="IMG.5">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.8556" xml:id="IMG.6">
-
-        <desc>
-                  
-Die Publikation der vorliegenden Materialien im „Hugo Schuchardt Archiv” erfolgt mit freundlicher Genehmigung des <ref target="https://www.italiano.unibe.ch/dienstleistungen/ais_archiv/index_ger.html">Jaberg-Archiv, Universität Bern</ref> (Institute für Romanische Sprachen und Literaturen und Jaberg-Bibliothek).
-             </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.8556" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Graz 4.1.‘20</dateline>
-
-        <p>Aber – lieber bester Freund – nun versorgen Sie mich nicht bloß mit geistiger Nahrung, sondern auch mit leiblicher! Habe ich denn wirklich „trahi vos bienfaits“, daß Sie mir sagen dürfen: „Je t’en avais comblé; je t’en veux accabler“?<note
-            n="1" place="foot" type="editorial">Pierre Corneille, <hi rend="unknown" rendition="#none">
-              <bibl>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.5" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.6" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.8556" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Graz 4.1.‘20</dateline>
+            <p>Aber – lieber bester Freund – nun versorgen Sie mich nicht bloß mit geistiger Nahrung, sondern auch mit leiblicher! Habe ich denn wirklich „trahi vos bienfaits“, daß Sie mir sagen dürfen: „Je t’en avais comblé; je t’en veux accabler“?<note n="1" place="foot" type="editorial">Pierre Corneille, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 Cinna
 </bibl>
-            </hi> V, 3.</note> Bei dieser Gelegenheit bitte ich Sie mich Ihrer Frau Gemahlin<note n="2" place="foot" type="editorial">
-            <persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1859">Anna Maria Elisabeth</persName> geb. Hunziker (1874-1960), Tochter von <persName>
+                  </hi> V, 3.</note> Bei dieser Gelegenheit bitte ich Sie mich Ihrer Frau Gemahlin<note n="2" place="foot" type="editorial">
+                  <persName ref="[authorityLink]">Anna Maria Elisabeth</persName> geb. Hunziker (1874-1960), Tochter von <persName>
 
-Friedrich Hunziker</persName> (1845-1908), Prof. u. Rektor d. Industrie- u. Handelsschule <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.215">Zürich</placeName>. Sie war Romanistin und erste Lehrerin (Italienisch) am Lehrerseminar Küsnacht b. Zürich (verantwortlich für die Ausbildung der Primarlehrer). Nach der Geburts ihres ersten Sohnes widmete sie sich verstärkt der Familie und unterstützte ihren Ehemann als Lektorin und Inspiratorin bei seiner wissenschaftlichen Arbeit, als Pflegerin des großen Netzwerks der Verwandten, Freunde, Professorenkollegen, Doktoranden, Ehemaligen, Studierenden und der Familie (frdl. Auskunft von ihrem Enkel Pierre-André Jud, Zürich). Von ihr gibt es sechs wenig aussagekräftige Briefe / Karten an Schuchardt; vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.persons#P.1859">05231-05236</ref>.</note> zu empfehlen, deren Hand bei der Auswahl der Büchsli wohl nicht unbeteiligt war. Sonst bleibt mir nichts übrig als den Dank unserer Bettler – Bettler sind wir ja nun alle – nachzustammeln: Gott, vergelt’s tausend und abertausend Mal!</p>
-        <p>Die Sendung ist schon vorgestern eingetroffen, allein erst heute finde ich, obwohl sehr schläfrig, soviel <pb
-            facs="#IMG.2"
-            n="2"/> Kraft um Ihnen zu schreiben. Der ewige trostlos bleierne Himmel hat sich wenigstens herabgelassen, sich herabzulassen, nämlich als Schnee, und der Anblick der weißen Landschaft erfreut mich. Ich beabsichtige nun sogar, meine Cornutiana fortzusetzen,<note
-            n="3" place="foot" type="editorial">Vgl. <ref
-            target="https://gams.uni-graz.at/o:hsa.letter.8548">
-vBrief 20</ref>.</note> auf die Gefahr hin sie wiederum abzubrechen. – Sie wissen ja schon, bei mir geht alles zitzerlweis.<note
-            n="4" place="foot"
-            type="editorial">Austriazismus / Helvetismus: „Schritt für Schritt“.</note> – Cornu war bei allen Kollegen sehr beliebt; aber wer ihn näher kannte, war meiner Ansicht daß er hitzig, aufbrausend war. Ein ruhiger Waadtländer? Dann bin ich ein ruhiger Thüringer. Nur ist der Unterschied, daß er, wie mitteilsam er auch inbezug auf Rosenzucht oder Lautgesetze sein mochte, doch sein Inneres den Blicken Anderer nicht aussetzte (außer durch gelegentliche Ausbrüche). Meringer sagte einmal: Cornu hat eine Dunkelkammer in sich, und ich fand das sehr <pb
-            facs="#IMG.3"
-            n="3"/> bezeichnend. Auch gegen seinen Intimus Pogatscher schloß er sich nie ganz auf. Damit hing auch seine Starrköpfigkeit zusammen. Alles das hat mich nicht angefochten; er war mir ein lieber Freund, ich nahm ihn nur als eine ganz anders geartete Natur als ich selbst war. Es war Bauernart – im guten Sinne; ich entsann mich immer einer Stelle bei Gobineau, wo davon die Rede ist, daß man durch die Bevölkerung Europas einen horiziontalen Schnitt machen dürfe, der vielleicht eine größere Trennung bedeute als die Senkrechte; nämlich zwischen der bodenständigen und bodenbebauenden Klasse und den andern bunten und wechselnden Elementen (ich sage das mit meinen Worten; wie es bei Gobineau gesagt ist, weiß ich nicht mehr).<note
-            n="5" place="foot" type="editorial">Arthur de Gobineau, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6602">Essai sur l’inégalité des races humaines</ref>
-              </bibl>
-
-            </hi>, 1884.</note> An einem Punkte bestand Gefahr daß wir uns entzweien könnten. Ein Vierteljahrhundert hat [er] mich(: mit seinen <pb
-            facs="#IMG.4" n="4"/> metrischen Studien gequält, für die ich weder Interesse noch Verständnis hatte.<note
-            n="6" place="foot" type="editorial">Z. B. Jules Cornu, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5846">Beiträge zur lateinischen Metrik</ref>
-              </bibl>
-
-            </hi>, Wien: Hölder, 1908 (Sitzungsberichte der Kais. Akademie der Wissenschaften in Wien, Philosophisch-Historische Klasse; 159, 3).</note> Als Student hatte ich dafür Interesse gehabt, wollte über plautinische Metrik die Doktorarbeit machen, begann mich in Boeckhs Pindarische Metern zu versenken,<note
-            n="7" place="foot" type="editorial">August Boeckh, <hi rend="unknown" rendition="#none">
-              <bibl>
+Friedrich Hunziker</persName> (1845-1908), Prof. u. Rektor d. Industrie- u. Handelsschule <placeName ref="[authorityLink]">Zürich</placeName>. Sie war Romanistin und erste Lehrerin (Italienisch) am Lehrerseminar Küsnacht b. Zürich (verantwortlich für die Ausbildung der Primarlehrer). Nach der Geburts ihres ersten Sohnes widmete sie sich verstärkt der Familie und unterstützte ihren Ehemann als Lektorin und Inspiratorin bei seiner wissenschaftlichen Arbeit, als Pflegerin des großen Netzwerks der Verwandten, Freunde, Professorenkollegen, Doktoranden, Ehemaligen, Studierenden und der Familie (frdl. Auskunft von ihrem Enkel Pierre-André Jud, Zürich). Von ihr gibt es sechs wenig aussagekräftige Briefe / Karten an Schuchardt; vgl. HSA <ref target="https://gams.uni-graz.at/o:hsa.persons#P.1859">05231-05236</ref>.</note> zu empfehlen, deren Hand bei der Auswahl der Büchsli wohl nicht unbeteiligt war. Sonst bleibt mir nichts übrig als den Dank unserer Bettler – Bettler sind wir ja nun alle – nachzustammeln: Gott, vergelt’s tausend und abertausend Mal!</p>
+            <p>Die Sendung ist schon vorgestern eingetroffen, allein erst heute finde ich, obwohl sehr schläfrig, soviel <pb facs="#IMG.2" n="2"/> Kraft um Ihnen zu schreiben. Der ewige trostlos bleierne Himmel hat sich wenigstens herabgelassen, sich herabzulassen, nämlich als Schnee, und der Anblick der weißen Landschaft erfreut mich. Ich beabsichtige nun sogar, meine Cornutiana fortzusetzen,<note n="3" place="foot" type="editorial">Vgl. <ref target="https://gams.uni-graz.at/o:hsa.letter.8548">
+vBrief 20</ref>.</note> auf die Gefahr hin sie wiederum abzubrechen. – Sie wissen ja schon, bei mir geht alles zitzerlweis.<note n="4" place="foot" type="editorial">Austriazismus / Helvetismus: „Schritt für Schritt“.</note> – Cornu war bei allen Kollegen sehr beliebt; aber wer ihn näher kannte, war meiner Ansicht daß er hitzig, aufbrausend war. Ein ruhiger Waadtländer? Dann bin ich ein ruhiger Thüringer. Nur ist der Unterschied, daß er, wie mitteilsam er auch inbezug auf Rosenzucht oder Lautgesetze sein mochte, doch sein Inneres den Blicken Anderer nicht aussetzte (außer durch gelegentliche Ausbrüche). Meringer sagte einmal: Cornu hat eine Dunkelkammer in sich, und ich fand das sehr <pb facs="#IMG.3" n="3"/> bezeichnend. Auch gegen seinen Intimus Pogatscher schloß er sich nie ganz auf. Damit hing auch seine Starrköpfigkeit zusammen. Alles das hat mich nicht angefochten; er war mir ein lieber Freund, ich nahm ihn nur als eine ganz anders geartete Natur als ich selbst war. Es war Bauernart – im guten Sinne; ich entsann mich immer einer Stelle bei Gobineau, wo davon die Rede ist, daß man durch die Bevölkerung Europas einen horiziontalen Schnitt machen dürfe, der vielleicht eine größere Trennung bedeute als die Senkrechte; nämlich zwischen der bodenständigen und bodenbebauenden Klasse und den andern bunten und wechselnden Elementen (ich sage das mit meinen Worten; wie es bei Gobineau gesagt ist, weiß ich nicht mehr).<note n="5" place="foot" type="editorial">Arthur de Gobineau, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.6602">Essai sur l’inégalité des races humaines</ref>
+                     </bibl>
+                  </hi>, 1884.</note> An einem Punkte bestand Gefahr daß wir uns entzweien könnten. Ein Vierteljahrhundert hat [er] mich(: mit seinen <pb facs="#IMG.4" n="4"/> metrischen Studien gequält, für die ich weder Interesse noch Verständnis hatte.<note n="6" place="foot" type="editorial">Z. B. Jules Cornu, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5846">Beiträge zur lateinischen Metrik</ref>
+                     </bibl>
+                  </hi>, Wien: Hölder, 1908 (Sitzungsberichte der Kais. Akademie der Wissenschaften in Wien, Philosophisch-Historische Klasse; 159, 3).</note> Als Student hatte ich dafür Interesse gehabt, wollte über plautinische Metrik die Doktorarbeit machen, begann mich in Boeckhs Pindarische Metern zu versenken,<note n="7" place="foot" type="editorial">August Boeckh, <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 Ueber die Versmaße des Pindaros
 </bibl>
-            </hi>, Berlin: Realschulbuchhandlung, 1909; Ders., <hi rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>, Berlin: Realschulbuchhandlung, 1909; Ders., <hi rend="unknown" rendition="#none">
+                     <bibl>
 
 De metris Pindari, libri III. quibus praecepta artis metricae &amp; musices graecorum docentur; cum notis criticis in Pindari carmina
 </bibl>
-
-            </hi>, Leipzig: Weigel, 1814.</note> kaufte mir E. von Leutsch’s kuriose Metrik (die ich später Cornu schenkte),<note
-            n="8" place="foot" type="editorial">Ernst Ludwig von Leutsch, <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3699">Grundriß zu Vorlesungen über die griechische Metrik ; entworfen und mit einer Sammlung von Beispielen und Belegstellen</ref>
-              </bibl>
-
-            </hi>, Göttingen: Dieterich, 1841.</note> kam aber schließlich zur Überzeugung daß ich für dieses Fach – schon wegen meines gänzlichen Mangels an musikalischen Kenntnissen – nicht geschaffen sei. Er aber war von seinen metrischen Studien so eingenommen daß man kaum etwas anderes Wissenschaftliches mit ihm besprechen konnte – die Zeit, da er sich mit Port. u. Galiz. beschäftigen <hi
-            rend="unknown"
-            rendition="#none">mußte</hi>, dünkte mich eine erfrischende Oase. Er trat ins Zimmer und begann gleich etwa so: „Die Hephthemimeres ….“<note
-            n="9" place="foot" type="editorial">Zäsur nach dem siebten Halbfuß eines Verses, also im vierten Versfuß.</note>
-        </p>
-
-        <p>Alles wäre ja erträglich gewesen; aber nun sollte ich die Dinge, über die ich gar kein Urteil hatte, in die Schriften der Akademie bringen. Ich tat es, aber mit einem sehr unbehaglichen Gefühl und sie wurden auch „sans enthousiasme“ aufgenommen.<note
-            n="10" place="foot" type="editorial">Außer den <hi rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5846">Beiträgen zur lateinischen Metrik</ref>
-              </bibl>
-
-            </hi> (Accentus anima versus; Armáque und àrmatáque im Hexameter; Zu dem vierzehnsilbigen Hexameter der sechszeiligen Rätsel) konnte keine weitere Akademieschrift <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">Cornus</persName> nachgewiesen werden. </note> Ich möchte Ihnen nun nahe legen, über diese <hi
-            rend="unknown" rendition="#none">Beiträge zur lat Metrik</hi> (SB <pb facs="#IMG.5"
-            n="5"/> der Wiener Akad. dW. 159,3. – 1908) bei irgend einem dortigen klassischen Philologen Auskunft zu holen. Denn wenn Sie Cornu einen Nachruf widmen, so können Sie diese Sache, in der er bis zu seinem Tode völlig aufging, nicht mit Stillschweigen übergehen.<note
-            n="11" place="foot" type="editorial">Jud ist diesem Hinweis in seinem Nachruf (<hi rend="unknown" rendition="#none">
-              <bibl>
+                  </hi>, Leipzig: Weigel, 1814.</note> kaufte mir E. von Leutsch’s kuriose Metrik (die ich später Cornu schenkte),<note n="8" place="foot" type="editorial">Ernst Ludwig von Leutsch, <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3699">Grundriß zu Vorlesungen über die griechische Metrik ; entworfen und mit einer Sammlung von Beispielen und Belegstellen</ref>
+                     </bibl>
+                  </hi>, Göttingen: Dieterich, 1841.</note> kam aber schließlich zur Überzeugung daß ich für dieses Fach – schon wegen meines gänzlichen Mangels an musikalischen Kenntnissen – nicht geschaffen sei. Er aber war von seinen metrischen Studien so eingenommen daß man kaum etwas anderes Wissenschaftliches mit ihm besprechen konnte – die Zeit, da er sich mit Port. u. Galiz. beschäftigen <hi rend="unknown" rendition="#none">mußte</hi>, dünkte mich eine erfrischende Oase. Er trat ins Zimmer und begann gleich etwa so: „Die Hephthemimeres ….“<note n="9" place="foot" type="editorial">Zäsur nach dem siebten Halbfuß eines Verses, also im vierten Versfuß.</note>
+            </p>
+            <p>Alles wäre ja erträglich gewesen; aber nun sollte ich die Dinge, über die ich gar kein Urteil hatte, in die Schriften der Akademie bringen. Ich tat es, aber mit einem sehr unbehaglichen Gefühl und sie wurden auch „sans enthousiasme“ aufgenommen.<note n="10" place="foot" type="editorial">Außer den <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5846">Beiträgen zur lateinischen Metrik</ref>
+                     </bibl>
+                  </hi> (Accentus anima versus; Armáque und àrmatáque im Hexameter; Zu dem vierzehnsilbigen Hexameter der sechszeiligen Rätsel) konnte keine weitere Akademieschrift <persName ref="[authorityLink]">Cornus</persName> nachgewiesen werden. </note> Ich möchte Ihnen nun nahe legen, über diese <hi rend="unknown" rendition="#none">Beiträge zur lat Metrik</hi> (SB <pb facs="#IMG.5" n="5"/> der Wiener Akad. dW. 159,3. – 1908) bei irgend einem dortigen klassischen Philologen Auskunft zu holen. Denn wenn Sie Cornu einen Nachruf widmen, so können Sie diese Sache, in der er bis zu seinem Tode völlig aufging, nicht mit Stillschweigen übergehen.<note n="11" place="foot" type="editorial">Jud ist diesem Hinweis in seinem Nachruf (<hi rend="unknown" rendition="#none">
+                     <bibl>
 
 
 Romania
 </bibl>
-            </hi> 1920, 452-453) gefolgt: „<persName
-              ref="https://gams.uni-graz.at/o:hsa.persons#P.1328">J. Cornu</persName> fut appelé comme successeur de M. Schuchardt à <placeName
-              ref="https://gams.uni-graz.at/o:hsa.places#PL.6">Graz</placeName> où il s’adonna de plus en plus aux problèmes de la versification latine (et grecque); il lui semblait que l’intelligence du rhythme de la phrase romane, la solution de certains problèmes phonétiques et syntaxiques ne pourraient sortir que de l’étude approfondie de la versification des poètes latins de la décadence. Il s’était formé des idées extrêmement intéressantes à ce sujet, sans que jamais il ait pu se résoudre à les rédiger: pour se rendre compte de la direction de ses recherches, il suffira de lire avec attention les deux travaux publiés dans les <hi
-              rend="unknown" rendition="#none">
-              <bibl>
-                <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5902">Bausteine zur romanischen Philologie</ref>
-              </bibl>
-            </hi>, dédiés à Mussafia: <hi rend="unknown"
-              rendition="#none">Zu Commodian</hi> (p. 563-580); l’autre dans les <hi rend="unknown"
-              rendition="#none">Mélanges Chabaneau</hi>, p. 105-117: <hi rend="unknown"
-            rendition="#none">Phonétique française</hi>“ (453).</note> Pogatscher meint, es wären wohl viele feine und richtige Bemerkungen in Cs. Diesbezüglichen Arbeiten enthalten. Stoff für eine Geschichte des lat. Hexameters; aber er selbst steht trotz allem Bemühen dem Gegenstande zu fern, um ihn wirklich werten zu können, freilich näher als ich der ich eigentlich nur die Richtigkeit des Grundgedankens erkannt habe. – Ja so, fast hätte ich vergessen auf die Sache zurückzukommen, an deren Aufklärung mir am meisten lag. Ich habe mich erkundigt: Cornus Affaire in der Tyroler Weinstube begann mit seiner Behauptung, daß Kaiser Wilhelm das Ultimatum an Serbien verfaßt habe. Den Schluß bildete daß einer seiner Freunde wegen seiner antideutschen Äußerungen die Hand nicht geben wollte. Ich habe nur meinem <pb
-            facs="#IMG.6" n="6"/> Wunsche dienen wollen, daß Sie nicht etwa eine Andeutung über eine schlechte Behandlung machten, die er von seinen hiesigen Kollegen erfahren hätte. C. hat sich manchmal beschwert oder doch gekränkt gefühlt, wann er keinen Anlaß dazu hatte. Auch von oben ist er nicht schlecht behandelt worden (wurde mit 28 Jahren und Anrechnung von 10 Dienstjahren Professor in Prag.).</p>
-        <p>Bei Frau Cornu ist wegen der Bücher schon angefragt worden; ich werde Sie demnächst benachrichtigen.</p>
-        <p>Meine Abhandlung Sprachursprung I<note n="12" place="foot" type="editorial">
+                  </hi> 1920, 452-453) gefolgt: „<persName ref="[authorityLink]">J. Cornu</persName> fut appelé comme successeur de M. Schuchardt à <placeName ref="[authorityLink]">Graz</placeName> où il s’adonna de plus en plus aux problèmes de la versification latine (et grecque); il lui semblait que l’intelligence du rhythme de la phrase romane, la solution de certains problèmes phonétiques et syntaxiques ne pourraient sortir que de l’étude approfondie de la versification des poètes latins de la décadence. Il s’était formé des idées extrêmement intéressantes à ce sujet, sans que jamais il ait pu se résoudre à les rédiger: pour se rendre compte de la direction de ses recherches, il suffira de lire avec attention les deux travaux publiés dans les <hi rend="unknown" rendition="#none">
+                     <bibl>
+                        <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.5902">Bausteine zur romanischen Philologie</ref>
+                     </bibl>
+                  </hi>, dédiés à Mussafia: <hi rend="unknown" rendition="#none">Zu Commodian</hi> (p. 563-580); l’autre dans les <hi rend="unknown" rendition="#none">Mélanges Chabaneau</hi>, p. 105-117: <hi rend="unknown" rendition="#none">Phonétique française</hi>“ (453).</note> Pogatscher meint, es wären wohl viele feine und richtige Bemerkungen in Cs. Diesbezüglichen Arbeiten enthalten. Stoff für eine Geschichte des lat. Hexameters; aber er selbst steht trotz allem Bemühen dem Gegenstande zu fern, um ihn wirklich werten zu können, freilich näher als ich der ich eigentlich nur die Richtigkeit des Grundgedankens erkannt habe. – Ja so, fast hätte ich vergessen auf die Sache zurückzukommen, an deren Aufklärung mir am meisten lag. Ich habe mich erkundigt: Cornus Affaire in der Tyroler Weinstube begann mit seiner Behauptung, daß Kaiser Wilhelm das Ultimatum an Serbien verfaßt habe. Den Schluß bildete daß einer seiner Freunde wegen seiner antideutschen Äußerungen die Hand nicht geben wollte. Ich habe nur meinem <pb facs="#IMG.6" n="6"/> Wunsche dienen wollen, daß Sie nicht etwa eine Andeutung über eine schlechte Behandlung machten, die er von seinen hiesigen Kollegen erfahren hätte. C. hat sich manchmal beschwert oder doch gekränkt gefühlt, wann er keinen Anlaß dazu hatte. Auch von oben ist er nicht schlecht behandelt worden (wurde mit 28 Jahren und Anrechnung von 10 Dienstjahren Professor in Prag.).</p>
+            <p>Bei Frau Cornu ist wegen der Bücher schon angefragt worden; ich werde Sie demnächst benachrichtigen.</p>
+            <p>Meine Abhandlung Sprachursprung I<note n="12" place="foot" type="editorial">
 Schuchardt, „<bibl>
-              <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.555">
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.555">
 Sprachursprung I</ref>
-            </bibl>“, <hi rend="unknown" rendition="#none">
+                  </bibl>“, <hi rend="unknown" rendition="#none">
 Sitzungsberichte der Preussischen Akademie der Wissenschaften</hi> 1919, 716-720.</note> geht Ihnen zu; die erste Sendung scheint unterwegs verloren gegangen zu sein, man hat mir eine zweite Menge, aber nur die halbe der ersten geschickt, sodaß ich nicht alle Interessenten bedenken konnte. </p>
-        <p>Hoffentlich sind meine SA aus W. u. L.<note n="13" place="foot" type="editorial">
-Sonderabdrucke aus <hi
-              rend="unknown" rendition="#none">
-              <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3981">Wissen und Leben</ref>
-            </hi>.</note> nicht von einer Lawine verschlungen worden. Der Abdruck hat sehr zu meiner Beruhigung beigetragen; ich kann mich nun immer darauf beziehen. Wie ich Ihnen schon sagte ist meine feste Formel für die Italiener: ich bin sehr gerührt über die Wohltätigkeit [beiläufig, größtenteils auf sozialistische Anregung] und sehr betrübt über … </p>
-        <closer>
-          <salute>Herzlich Ihr</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.109">HSchuchardt</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Hoffentlich sind meine SA aus W. u. L.<note n="13" place="foot" type="editorial">
+Sonderabdrucke aus <hi rend="unknown" rendition="#none">
+                     <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.3981">Wissen und Leben</ref>
+                  </hi>.</note> nicht von einer Lawine verschlungen worden. Der Abdruck hat sehr zu meiner Beruhigung beigetragen; ich kann mich nun immer darauf beziehen. Wie ich Ihnen schon sagte ist meine feste Formel für die Italiener: ich bin sehr gerührt über die Wohltätigkeit [beiläufig, größtenteils auf sozialistische Anregung] und sehr betrübt über … </p>
+            <closer>
+               <salute>Herzlich Ihr</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">HSchuchardt</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>

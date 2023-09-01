@@ -1,319 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="hsa_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="de">
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Leo Spitzer an Hugo Schuchardt (357-11117)</title>
-        <author ana="marcrelator:aut">
-          <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-        </author>
-        <editor ana="marcrelator:edt">
-          <persName>
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-          </persName>
-        </editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher ana="marcrelator:pbl">
-          <orgName corresp="https://sprachwissenschaft.uni-graz.at" ref="http://d-nb.info/gnd/807328-4">Institut für Sprachwissenschaft,
-                  Karl-Franzens-Universität Graz</orgName>
-        </publisher>
-        <authority ana="marcrelator:his">
-          <orgName corresp="https://informationsmodellierung.uni-graz.at" ref="http://d-nb.info/gnd/1137284463">Zentrum für
-                  Informationsmodellierung - Austrian Centre for Digital Humanities,
-                  Karl-Franzens-Universität Graz</orgName>
-        </authority>
-        <distributor ana="marcrelator:rps">
-          <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                  Asset Management System</orgName>
-        </distributor>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
-                  BY-NC 4.0</licence>
-        </availability>
-        <date ana="dcterms:issued" when="2022">2022</date>
-        <pubPlace ana="marcrelator:pup">Graz</pubPlace>
-        <idno corresp="http://schuchardt.uni-graz.at/id/letter/2203" type="PID">o:hsa.letter.2203</idno>
-        <idno source="http://schuchardt.uni-graz.at" type="altIdentifier">357-11117</idno>
-      </publicationStmt>
-      <seriesStmt>
-        <title ref="https://schuchardt.uni-graz.at">Hugo Schuchardt Archiv</title>
-        <respStmt ana="marcrelator:pbl">
-          <resp>Herausgeber</resp>
-          <persName ref="http://d-nb.info/gnd/111679893">
-            <forename>Bernhard</forename>
-            <surname>Hurch</surname>
-            <orgName ref="http://d-nb.info/gnd/36157-4">Karl-Franzens-Universität Graz</orgName>
-          </persName>
-        </respStmt>
-      </seriesStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <country>Österreich</country>
-            <region>Steiermark</region>
-            <settlement>Graz</settlement>
-            <institution>Karl-Franzens-Universität Graz</institution>
-            <repository ref="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</repository>
-            <idno type="shelfmark">11117</idno>
-          </msIdentifier>
-          <msContents>
-            <textLang mainLang="de"/>
-            <msItem>
-              <author ref="https://gams.uni-graz.at/o:hsa.persons#P.877">
-                <forename>Leo</forename>
-                <surname>Spitzer</surname>
-              </author>
-            </msItem>
-          </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>
-                  <material ref="http://vocab.getty.edu/aat/300014109">Papier</material>
-                  <objectType>Brief</objectType>
-                </support>
-                <extent>
-                  <measure quantity="4" unit="pages">4 Seiten</measure>
-                </extent>
-              </supportDesc>
-            </objectDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace ana="marcrelator:prp" corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" ref="http://sws.geonames.org/2946447">Bonn</origPlace>
-              <origDate ana="dcterms:created" when="1922-11-01">1922-11-01</origDate>
-            </origin>
-            <provenance>
-                     Hugo Schuchardts wissenschaftlicher Nachlass (Bibliothek,
-                     Werkmanuskripte und wissenschaftliche Korrespondenz) kam nach seinem Tod 1927
-                     laut Verfügung in seinem Testament als Geschenk an die UB Graz.
-                  </provenance>
-          </history>
-        </msDesc>
-        <bibl type="print">
-          <author>
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2006">2006</date>
-          <title>Leo Spitzers Briefe an Hugo Schuchardt</title>
-          <pubPlace>Berlin</pubPlace>
-          <publisher>Walter de Gruyter</publisher>
-        </bibl>
-        <bibl type="online">
-          <author ana="marcrelator:aut">
-            <persName>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </persName>
-          </author>
-          <date when="2014">2014</date>
-          <title>Die Korrespondenz zwischen Leo Spitzer und Hugo Schuchardt</title>
-          <series>
-            <title>Hugo Schuchardt Archiv</title>
-            <editor>
-              <forename>Bernhard</forename>
-              <surname>Hurch</surname>
-            </editor>
-          </series>
-          <ref target="http://schuchardt.uni-graz.at/id/letters/877"/>
-        </bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <editorialDecl>
-        <p>Die Datenmodellierung orientiert sich am <ref
-            target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat</ref>,
-               <ref
-            target="https://www.ediarum.org/">ediarum</ref> und der
-               <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">CorrespDesc-SIG</ref>.</p>
-        <p>Das auf DTABf-Modellierungsschema wurde für die Zwecke des Projektes angepasst und befindet sich unter <ref target="https://gams.uni-graz.at/o:hsa.odd"/>
-        </p>
-      </editorialDecl>
-      <projectDesc>
-        <ab>
-          <ref target="info:fedora/context:hsa" type="context">Hugo Schuchardt Archiv</ref>
-        </ab>
-        <p>Das Hugo Schuchardt Archiv widmet sich der Aufarbeitung des Gesamtwerks und des Nachlasses von Hugo Schuchardt (1842-1927).
-               Die Onlinepräsentation stellt alle Schriften sowie eine umfangreiche Sekundärbibliografie zur Verfügung.
-               Die Bearbeitung des Nachlasses legt besonderes Augenmerk auf die Erschließung der Korrespondenz,
-               die zu großen Teilen bereits ediert vorliegt, und der Werkmanuskripte.</p>
-      </projectDesc>
-      <listPrefixDef>
-        <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
-          <p>Rollen-Taxonomie</p>
-        </prefixDef>
-        <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
-          <p>Datumstaxonomie</p>
-        </prefixDef>
-        <prefixDef ident="skos" matchPattern="([a-z]+)" replacementPattern="http://www.w3.org/2004/02/skos/core#$1">
-          <p>Thesaurustaxonomie</p>
-        </prefixDef>
-      </listPrefixDef>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc ref="https://gams.uni-graz.at/o:hsa.letter.2203">
-        <correspAction type="sent">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.877" ref="https://viaf.org/viaf/71397982">
-            <forename>Leo</forename>
-            <surname>Spitzer</surname>
-          </persName>
-          <placeName corresp="https://gams.uni-graz.at/o:hsa.places#PL.61" key="#GID.1" ref="http://sws.geonames.org/2946447">Bonn</placeName>
-          <date when="1922-11-01">1922-11-01</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName corresp="https://gams.uni-graz.at/o:hsa.persons#P.109" ref="https://viaf.org/viaf/261931943">
-            <forename>Hugo</forename>
-            <surname>Schuchardt</surname>
-          </persName>
-        </correspAction>
-      </correspDesc>
-      <textClass>
-        <keywords scheme="cirilo:normalizedPlaceNames">
-          <list>
-            <item>
-              <placeName xml:id="GID.1">
-                <country>Germany</country>
-                <settlement>Bonn</settlement>
-                <name ref="http://geonames.org/2946447" type="fcode:PPLA3">Bonn</name>
-                <location>
-                  <geo>7.09549,50.73438</geo>
-                </location>
-              </placeName>
-            </item>
-          </list>
-        </keywords>
-        <keywords ana="correspondence">
-          <list>
-            <item>
-              <ref target="info:fedora/context:hsa.letters.877" type="context">
-                        Korrespondenz Leo Spitzer - Hugo Schuchardt
-                     </ref>
-            </item>
-            <item>
-              <ref target="info:fedora/context:hsa.letters" type="context">Korrespondenz</ref>
-            </item>
-          </list>
-        </keywords>
-        <keywords scheme="https://gams.uni-graz.at/o:hsa.subjects">
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4360" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Antisemitismus</term>
-          </term>
-          <term ref="https://gams.uni-graz.at/o:hsa.subjects#S.4175" type="skos:Concept">
-            <term type="skos:prefLabel" xml:lang="de">Positivismus (Sprachwissenschaft)</term>
-          </term>
-        </keywords>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Wissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Sprachwissenschaft</classCode>
-        <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation">Brief</classCode>
-      </textClass>
-      <langUsage>
-        <language ident="de">Deutsch</language>
-      </langUsage>
-    </profileDesc>
-  </teiHeader>
-  <facsimile>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2203" xml:id="IMG.1">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2203" xml:id="IMG.2">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2203" xml:id="IMG.3">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-    <surface>
-      <graphic mimeType="image/jpeg" url="info:fedora/o:hsa.letter.2203" xml:id="IMG.4">
-        <desc>
-          <ref
-            target="https://ub.uni-graz.at/de/bibliotheken/sondersammlungen">Universitätsbibliothek Graz Abteilung für Sondersammlungen</ref>, <ref target="https://creativecommons.org/licenses/by-nc/4.0/">Creative commons CC BY-NC https://creativecommons.org/licenses/by-nc/4.0/</ref>
-        </desc>
-      </graphic>
-    </surface>
-  </facsimile>
-  <text>
-    <body>
-      <div subtype="original" type="letter" xml:id="L.2203" xml:lang="de">
-        <pb facs="#IMG.1" n="1"/>
-        <dateline>Bonn, 1. XI.</dateline>
-        <opener>Verehrter lieber Freund,</opener>
-        <p>Allerheiligenstimmung ist eine recht gute Antreiberin zum Briefeschreiben. Man denkt zurück an vieles, das tot ist, um einen und in einem. Tot sind meine Eltern, meine Adoptivmutter Gräfin Arco, tot die Eltern meiner Frau – tot sind auch manche Lebende, manche Ideale der Jugend oder deren Verkörperungen.</p>
-        <p>Und damit ist der Übergang zum Thema <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.2180">Meyer Lübke</persName> geschaffen, an dem ich mehr gelitten habe als an irgend einem anderen in meinem Leben, vielleicht sogar mehr als an dem der zerbrochenen Carriere. Und nur weil diese Kämpfe vorbei sind, weil all das tot oder 3/4 tot ist, spreche ich heute davon, zu Ihnen, den ich als meinen teuersten wissenschaftlichen Freund betrachte, heute am Aller­heiligentage, nachdem ich Jahre lang darüber geschwiegen habe.</p>
-
-        <p>Sie wissen, daß ich M-L leidenschaftlich geliebt und verehrt habe. Er erschien mir als ein edles Bild deutscher Männlichkeit, als "der" Romanist, "der" Philologe, "der" Gelehrte. Ging ich zu ihm, was sehr selten geschah, so hatte ich Herzklopfen. Als ich bei ihm Anerkennung fand, war ich überglücklich. Ich hatte mich nie an ihn herangedrängt. Er – oder vielmehr sie – kamen mir entgegen. Ich wurde fetiert, gehätschelt, gegen den <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.97">
-Wien</placeName>er <ref
-            target="https://gams.uni-graz.at/o:hsa.subjects#S.4360">
-Antisemitismus</ref> geschützt, auch wissenschaftlich vergöttert. In Pörtschach sagte einmal M-L zu meinem Vater bei Tisch vor mir: "Nicht jeder Widerspruch freut mich. Wenn Spitzer widerspricht, dann wohl." Daß ich in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.666">Paris</placeName> und <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.177">Leipzig</placeName> seinen Ruhm verkündete, tat ihm oder ihr wohl. Wenn ich gegen <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1858">Jud</persName> Front machte, wurde das begrüßt. In Paris nannte mich ein Wiener Freund "l'ambassadeur de M. Meyer Lübke". Der Umzug <pb
-            facs="#IMG.2" n="2"/>nach <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> wurde mir nahegelegt. Es schmeichelte, daß ich nachzog.</p>
-
-        <p>Das wurde nun anders vom Augenblick an, als ich mit dem Nachziehen Ernst machte. Hatte man mich anders beurteilt oder hatte man sich selbst gewandelt? Quién sabe? Es kamen schon vor meinem Herkommen Anzeichen des Sturmes. Und zwar war die Dissension keine politische, wenigstens anfangs nicht. Da warf mir <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.5334">Frau Minnie</persName> vor, ich zitiere ihren Mann "zu wenig" (sic!); für meine Antrittsvorlesung hatte ich u.a. die Auseinandersetzung mit M-L über das Suffix <hi
-            rend="unknown" rendition="#none">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.1" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.2" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.3" url="[pathtofile]"/>
+      </surface>
+      <surface>
+         <graphic mimeType="image/jpeg" xml:id="IMG.4" url="[pathtofile]"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div subtype="original" type="letter" xml:id="L.2203" xml:lang="de">
+            <pb facs="#IMG.1" n="1"/>
+            <dateline>Bonn, 1. XI.</dateline>
+            <opener>Verehrter lieber Freund,</opener>
+            <p>Allerheiligenstimmung ist eine recht gute Antreiberin zum Briefeschreiben. Man denkt zurück an vieles, das tot ist, um einen und in einem. Tot sind meine Eltern, meine Adoptivmutter Gräfin Arco, tot die Eltern meiner Frau – tot sind auch manche Lebende, manche Ideale der Jugend oder deren Verkörperungen.</p>
+            <p>Und damit ist der Übergang zum Thema <persName ref="[authorityLink]">Meyer Lübke</persName> geschaffen, an dem ich mehr gelitten habe als an irgend einem anderen in meinem Leben, vielleicht sogar mehr als an dem der zerbrochenen Carriere. Und nur weil diese Kämpfe vorbei sind, weil all das tot oder 3/4 tot ist, spreche ich heute davon, zu Ihnen, den ich als meinen teuersten wissenschaftlichen Freund betrachte, heute am Aller­heiligentage, nachdem ich Jahre lang darüber geschwiegen habe.</p>
+            <p>Sie wissen, daß ich M-L leidenschaftlich geliebt und verehrt habe. Er erschien mir als ein edles Bild deutscher Männlichkeit, als "der" Romanist, "der" Philologe, "der" Gelehrte. Ging ich zu ihm, was sehr selten geschah, so hatte ich Herzklopfen. Als ich bei ihm Anerkennung fand, war ich überglücklich. Ich hatte mich nie an ihn herangedrängt. Er – oder vielmehr sie – kamen mir entgegen. Ich wurde fetiert, gehätschelt, gegen den <placeName ref="[authorityLink]">
+Wien</placeName>er <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4360">
+Antisemitismus</ref> geschützt, auch wissenschaftlich vergöttert. In Pörtschach sagte einmal M-L zu meinem Vater bei Tisch vor mir: "Nicht jeder Widerspruch freut mich. Wenn Spitzer widerspricht, dann wohl." Daß ich in <placeName ref="[authorityLink]">Paris</placeName> und <placeName ref="[authorityLink]">Leipzig</placeName> seinen Ruhm verkündete, tat ihm oder ihr wohl. Wenn ich gegen <persName ref="[authorityLink]">Jud</persName> Front machte, wurde das begrüßt. In Paris nannte mich ein Wiener Freund "l'ambassadeur de M. Meyer Lübke". Der Umzug <pb facs="#IMG.2" n="2"/>nach <placeName ref="[authorityLink]">Bonn</placeName> wurde mir nahegelegt. Es schmeichelte, daß ich nachzog.</p>
+            <p>Das wurde nun anders vom Augenblick an, als ich mit dem Nachziehen Ernst machte. Hatte man mich anders beurteilt oder hatte man sich selbst gewandelt? Quién sabe? Es kamen schon vor meinem Herkommen Anzeichen des Sturmes. Und zwar war die Dissension keine politische, wenigstens anfangs nicht. Da warf mir <persName ref="[authorityLink]">Frau Minnie</persName> vor, ich zitiere ihren Mann "zu wenig" (sic!); für meine Antrittsvorlesung hatte ich u.a. die Auseinandersetzung mit M-L über das Suffix <hi rend="unknown" rendition="#none">
 ‑one</hi> (jetzt = Festschrift)<note n="1" place="foot" type="editorial">
-            <bibl>
-              <ref
-                  target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3653">L.S., "Französische Etymologien", in: <hi
-                  rend="unknown"
-            rendition="#none">
+                  <bibl>
+                     <ref target="https://gams.uni-graz.at/o:hsa.bibliography#BIBL.3653">L.S., "Französische Etymologien", in: <hi rend="unknown" rendition="#none">
 Zeitschrift für romanische Philologie</hi> XLI.1-2 (Festschrift für Meyer-Lübke)</ref>, 161-175</bibl>.</note> vorgeschlagen, was auf Mißbehagen stieß. Auf den Spuren der kleinlichen Beleidigtheit zogen nun moralische und politische Bedenken ein: moralische, ja wohl, über meine Auffassung der Liebe z.B. im Barbusse (Frau M. äußerte, "sie hätte nie mit Goethe verkehrt", das sagt alles), politische, weil man nicht verstehen wollte, daß meine damalige Hinneigung zum Sozialismus nicht dem Drang nach Zerstörung entsprang, sondern dem Gerechtigkeitsgefühl des Besitzenden, der gerne den Armen geholfen hätte. Nun folgte Schlag auf Schlag: das Sinken der österreichischen Valuta, das mich nicht mehr von der Gloriole des Reichtums und Luxus umstrahlt zeigte; die Heirat, die darauf wies, daß ich mich von jedem Einfluß befreien und ein eigenes Lebenszentrum gründen wollte; die schlechten Rezensionen, in der Anti-Spitzer-Nummer des Ltbl., die dem nicht sehr charakterstarken Mann trotz entgegenstehender Gründe doch Eindruck machten; Eifersucht auf die Beziehungen mit dem Ausland (worunter Sie natürlich auch zählen); Nichtmehrmitkönnen mit der Entwicklung der Zeit, die wie ich vom <ref target="https://gams.uni-graz.at/o:hsa.subjects#S.4175">Positivismus</ref> wegstrebte, Abneigung gegen mein far parte da sé, das nicht mehr sich zu Trabantendiensten brauchen ließ.</p>
-        <p>Wenn Sie nun bedenken, daß wir in einer Kleinstadt beisammen leben, wo jeder Schritt fünfzigfache Deutung und Mißdeutung erfährt, so können Sie sich ungefähr vorstellen, was ich in den 3 Jahren seit Wien gelitten habe.</p>
-        <pb facs="#IMG.3" n="3"/>
-        <p>Ich habe in dieser Zeit gelernt quanto sa di sale...</p>
-
-        <p>Stellen Sie sich nun bitte die Situation vor: in Deutschland wurde ich in Rezensionen und Privatgesprächen totgeprügelt, in <placeName
-            ref="https://gams.uni-graz.at/o:hsa.places#PL.61">Bonn</placeName> hatte ich keine neuen Freunde noch, während die alten, M-Ls, eher Haß zeigten; ich hatte keine Verwandten, nur meine Frau; <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.1348">Curtius</persName>, mit M-Ls gleichfalls aus persönlichen Gründen verfeindet und vom Minister wie von den Bonner Kreisen gestützt, in mir einen Protégé witternd, der ich längst nicht mehr war; meine Frau die größte Zeit krank und im Spital oder zu Hause liegend; die Plackereien des alltäglichen Lebens nach dem Umsturz, das Sinken der öst.Valuta usw.usw. So möcht kein Hund mehr länger leben!</p>
-        <p>Als nun im Vorjahr der 30. Jänner herankam, habe ich mir gesagt, daß ich dem großen Gelehrten, der mein Lehrer war, meinen Tribut zu bringen habe, wenngleich der Mensch mich schwer enttäuscht hatte. Als ich die, wie ich glaube, sehr herzlich geratene Festrede hielt, hatte ich das Empfinden, dem Manne gegenüberzustehen, der mir am meisten im Leben genützt aber auch am meisten weh getan. Er hatte wohl selbst das Empfinden, daß ich Böses mit Gutem vergolten hatte.</p>
-
-        <p>Heute stehen die Dinge anders: die Bonner Gelehrtenkreise haben hinter die Coulissen zu schauen gelernt, heute habe ich wohl mehr Beziehungen – ich glaube mich nicht zu überheben – als M-Ls; Curtius hat seinen Weg gemacht und, aus der gedrückten Stellung befreit, ist er mein Freund geworden; man ist auch überzeugt, daß mir Unrecht geschah durch die Nichtanstellung und daß der Österreicher ohne staatliche Hilfe hier nicht leben kann. Heute sind die Kämpfe in meinem Inneren um das Problem M-L zu Ende: er flößt mir Respekt, keine Liebe mehr ein; er regt mich weder auf noch an; sein häusliches Elend bemitleide ich, seine Enttäuschungen (Nichtberufung nach Berlin, Nichtverheiratung der Kinder, geringer Einfluß) <pb
-            facs="#IMG.4" n="4"/>tun mir leid – aber wie die eines Fremden. Für mich selbst aber habe ich einen beispiellosen bitteren Nachgeschmack gerettet, der mich an der "Vorurteilslosigkeit" der Wissenschaftler, der Uninteressiertheit, der Charakterstärke, zweifeln läßt. Wäre ich doch lieber ferne geblieben und hätte meine Ideale bewahrt! Es ist eine große Tragik darin, daß nicht nur erotische Beziehungen welken und daß am Schluß jahrelanger Beziehungen ein ödes Wort steht, das da heißt: Tod oder Nichts.</p>
-        <p>Ich weiß nicht, ob ich mich verständlich und richtig ausgedrückt habe, und wäre Ihnen dankbar, wenn Sie mir die Versicherung gäben, daß Sie in meinen Äußerungen nicht etwa niedere Instinkte des Anschwärzens vermuten. Ich habe alles gesagt, wie ich es empfinde, und glaube, rein zu empfinden. Bitte diesen Brief auch in das bewußte Couvert zu tun.</p>
-        <p>In <placeName ref="https://gams.uni-graz.at/o:hsa.places#PL.42">München</placeName> war ich bei <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.2956">
-Vossler</persName>, den <persName
-            ref="https://gams.uni-graz.at/o:hsa.persons#P.1471">
-Farinelli</persName> aus freien Stücken meinetwegen interpelliert hatte. Bei Vossler wie stets reizende Aufnahme, auch durch die <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.4309">Signora</persName>, Trostesworte, Ermahnung auszuharren usw. Über mich aber breitet sich dumpfe Niedergeschlagenheit. Ich werde nie mehr gesund. Ich habe die Menschen kennengelernt.</p>
-        <p>Daß ich trag Todeswunden,</p>
-        <p>Das ist der Menschen Tun.</p>
-        <p>Natur ließ mich gesunden,</p>
-        <p>Sie lassen mich nicht ruhn.</p>
-        <p>Meine Frau, die in Pörtschach allein zurückbleiben mußte und in ihrem kleinen, kaum heizbaren Zimmerchen zu Bette liegt, fühlt sich in ihrer Vereinsamung sehr unglücklich und auch ich irre wie eine arme Hälfte umher. Die Wohnung war tatsächlich ganz beschlagnahmt, ist aber freigekommen. Meine Renten betragen ca. 60-80.000 K – also für einen Rock. Der Immobilienbesitz ist viel wert, dürfte aber bei Ihnen und mir gleich sein. Was soll werden?</p>
-        <p>Bibl. fil. habe ich tatsächlich bekommen.</p>
-        <p>Unsere Einladung bleibt aufrecht. Ihre Lebensgewohnheiten schrecken uns keineswegs.</p>
-        <closer>
-          <salute>Alles Liebe von</salute>
-          <lb/>
-          <signed>
-            <persName ref="https://gams.uni-graz.at/o:hsa.persons#P.877">Sp.</persName>
-          </signed>
-        </closer>
-      </div>
-    </body>
-  </text>
+            <p>Wenn Sie nun bedenken, daß wir in einer Kleinstadt beisammen leben, wo jeder Schritt fünfzigfache Deutung und Mißdeutung erfährt, so können Sie sich ungefähr vorstellen, was ich in den 3 Jahren seit Wien gelitten habe.</p>
+            <pb facs="#IMG.3" n="3"/>
+            <p>Ich habe in dieser Zeit gelernt quanto sa di sale...</p>
+            <p>Stellen Sie sich nun bitte die Situation vor: in Deutschland wurde ich in Rezensionen und Privatgesprächen totgeprügelt, in <placeName ref="[authorityLink]">Bonn</placeName> hatte ich keine neuen Freunde noch, während die alten, M-Ls, eher Haß zeigten; ich hatte keine Verwandten, nur meine Frau; <persName ref="[authorityLink]">Curtius</persName>, mit M-Ls gleichfalls aus persönlichen Gründen verfeindet und vom Minister wie von den Bonner Kreisen gestützt, in mir einen Protégé witternd, der ich längst nicht mehr war; meine Frau die größte Zeit krank und im Spital oder zu Hause liegend; die Plackereien des alltäglichen Lebens nach dem Umsturz, das Sinken der öst.Valuta usw.usw. So möcht kein Hund mehr länger leben!</p>
+            <p>Als nun im Vorjahr der 30. Jänner herankam, habe ich mir gesagt, daß ich dem großen Gelehrten, der mein Lehrer war, meinen Tribut zu bringen habe, wenngleich der Mensch mich schwer enttäuscht hatte. Als ich die, wie ich glaube, sehr herzlich geratene Festrede hielt, hatte ich das Empfinden, dem Manne gegenüberzustehen, der mir am meisten im Leben genützt aber auch am meisten weh getan. Er hatte wohl selbst das Empfinden, daß ich Böses mit Gutem vergolten hatte.</p>
+            <p>Heute stehen die Dinge anders: die Bonner Gelehrtenkreise haben hinter die Coulissen zu schauen gelernt, heute habe ich wohl mehr Beziehungen – ich glaube mich nicht zu überheben – als M-Ls; Curtius hat seinen Weg gemacht und, aus der gedrückten Stellung befreit, ist er mein Freund geworden; man ist auch überzeugt, daß mir Unrecht geschah durch die Nichtanstellung und daß der Österreicher ohne staatliche Hilfe hier nicht leben kann. Heute sind die Kämpfe in meinem Inneren um das Problem M-L zu Ende: er flößt mir Respekt, keine Liebe mehr ein; er regt mich weder auf noch an; sein häusliches Elend bemitleide ich, seine Enttäuschungen (Nichtberufung nach Berlin, Nichtverheiratung der Kinder, geringer Einfluß) <pb facs="#IMG.4" n="4"/>tun mir leid – aber wie die eines Fremden. Für mich selbst aber habe ich einen beispiellosen bitteren Nachgeschmack gerettet, der mich an der "Vorurteilslosigkeit" der Wissenschaftler, der Uninteressiertheit, der Charakterstärke, zweifeln läßt. Wäre ich doch lieber ferne geblieben und hätte meine Ideale bewahrt! Es ist eine große Tragik darin, daß nicht nur erotische Beziehungen welken und daß am Schluß jahrelanger Beziehungen ein ödes Wort steht, das da heißt: Tod oder Nichts.</p>
+            <p>Ich weiß nicht, ob ich mich verständlich und richtig ausgedrückt habe, und wäre Ihnen dankbar, wenn Sie mir die Versicherung gäben, daß Sie in meinen Äußerungen nicht etwa niedere Instinkte des Anschwärzens vermuten. Ich habe alles gesagt, wie ich es empfinde, und glaube, rein zu empfinden. Bitte diesen Brief auch in das bewußte Couvert zu tun.</p>
+            <p>In <placeName ref="[authorityLink]">München</placeName> war ich bei <persName ref="[authorityLink]">
+Vossler</persName>, den <persName ref="[authorityLink]">
+Farinelli</persName> aus freien Stücken meinetwegen interpelliert hatte. Bei Vossler wie stets reizende Aufnahme, auch durch die <persName ref="[authorityLink]">Signora</persName>, Trostesworte, Ermahnung auszuharren usw. Über mich aber breitet sich dumpfe Niedergeschlagenheit. Ich werde nie mehr gesund. Ich habe die Menschen kennengelernt.</p>
+            <p>Daß ich trag Todeswunden,</p>
+            <p>Das ist der Menschen Tun.</p>
+            <p>Natur ließ mich gesunden,</p>
+            <p>Sie lassen mich nicht ruhn.</p>
+            <p>Meine Frau, die in Pörtschach allein zurückbleiben mußte und in ihrem kleinen, kaum heizbaren Zimmerchen zu Bette liegt, fühlt sich in ihrer Vereinsamung sehr unglücklich und auch ich irre wie eine arme Hälfte umher. Die Wohnung war tatsächlich ganz beschlagnahmt, ist aber freigekommen. Meine Renten betragen ca. 60-80.000 K – also für einen Rock. Der Immobilienbesitz ist viel wert, dürfte aber bei Ihnen und mir gleich sein. Was soll werden?</p>
+            <p>Bibl. fil. habe ich tatsächlich bekommen.</p>
+            <p>Unsere Einladung bleibt aufrecht. Ihre Lebensgewohnheiten schrecken uns keineswegs.</p>
+            <closer>
+               <salute>Alles Liebe von</salute>
+               <lb/>
+               <signed>
+                  <persName ref="[authorityLink]">Sp.</persName>
+               </signed>
+            </closer>
+         </div>
+      </body>
+   </text>
 </TEI>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://gams.uni-graz.at/o:hsa.odd/RNG" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
