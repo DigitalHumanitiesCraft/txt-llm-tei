@@ -37,7 +37,7 @@ Unstructured text:
 """
 
 # Insert your OpenAI API key here
-openai_api_key = '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'
+openai_api_key = ''
 openai.api_key = openai_api_key
 
 # Loop through each text file in the input directory
