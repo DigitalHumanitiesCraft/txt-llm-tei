@@ -51,25 +51,6 @@
       rel="icon"
       href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon.ico"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
-      integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
-      integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 
     <link
       rel="stylesheet"
@@ -90,6 +71,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/fold/xml-fold.min.js"
+      integrity="sha512-3/N6i9E1fOr1I/8Yt3KL9uFeoEcjh3ceFXf83X6vIlElMZEq0LKF1JDYsIJYaZIJeG2YD9TnGCA4KAR2bEbz/w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <meta name="theme-color" content="#712cf9" />
 
     <style>
@@ -107,40 +94,78 @@
       .input-group .dropdown-toggle {
         border-radius: 0;
       }
+
+      .CodeMirror {
+        height: 50vh;
+        resize: vertical;
+        overflow: hidden;
+      }
     </style>
   </head>
   <body class="bg-body-tertiary">
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path
-          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
-        />
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path
-          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
-        />
-        <path
-          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
-        />
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path
-          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-        />
-      </symbol>
-    </svg>
-
     <!-- Begin page content -->
     <main class="flex-shrink-0">
+      <div
+        id="sidebar"
+        class="position-fixed start-0 top-0 vh-100 bg-light border-end overflow-auto"
+        style="width: 250px; z-index: 1000"
+      >
+        <div
+          class="d-flex justify-content-between align-items-center border-bottom p-2"
+        >
+          <h3>Collection</h3>
+          <button
+            id="toggleSidebar"
+            class="btn btn-sm btn-outline-secondary"
+            title="Close sidebar"
+          >
+            <svg
+              id="sidebarIcon"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon-sm"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line id="toggleLine" x1="9" y1="3" x2="9" y2="21"></line>
+            </svg>
+          </button>
+        </div>
+        <!-- Input Files -->
+        <h5 class="p-2">Input files</h5>
+        <ul id="fileList" class="list-group list-group-flush"></ul>
+        <div class="p-2">
+          <button
+            id="downloadInputFiles"
+            class="btn btn-sm btn-primary mb-2 w-100"
+          >
+            Download Input files
+          </button>
+        </div>
+
+        <!-- Output Files -->
+        <h5 class="p-2">Result files</h5>
+        <ul id="outputFileList" class="list-group list-group-flush"></ul>
+
+        <!-- Download Buttons -->
+        <div class="p-2">
+          <button id="downloadOutputFiles" class="btn btn-sm btn-success w-100">
+            Download Result files
+          </button>
+        </div>
+      </div>
+
       <div class="container mt-5">
         <div class="row">
           <!-- Input Text -->
           <div class="col-md-6">
-            <label for="inputText">Input Text</label>
+            <h2>Input Text</h2>
             <textarea
               class="form-control"
               id="inputText"
@@ -161,24 +186,46 @@ C Baissac
 _____________________________________________1  Welche Broschüre hier gemeint ist, kann nicht mehr ausfindig gemacht werden.
         </textarea
             >
+
             <!-- Button Group for Input Text -->
-            <div class="btn-group mt-2">
-              <button class="btn btn-primary" type="button">
-                Upload file(s)
-              </button>
-            </div>
+
+            <!-- Hidden file input to handle file uploads -->
+            <input
+              type="file"
+              id="fileInputUploadButton"
+              multiple
+              accept=".txt"
+              style="display: none"
+            />
+            <button
+              class="mt-2 btn btn-primary"
+              type="button"
+              id="uploadButton"
+            >
+              Upload file(s)
+            </button>
+
+            <button
+              class="mt-2 btn btn-secondary"
+              type="button"
+              id="convertButton"
+            >
+              <span
+                class="spinner-border spinner-border-sm"
+                role="status"
+                aria-hidden="true"
+                style="display: none"
+              ></span>
+              Convert current file
+            </button>
           </div>
           <!-- TEI XML Preview -->
           <div class="col-md-6">
-            <label for="teiXMLPreview">TEI XML Preview</label>
-            <div
-              id="teiXMLPreview"
-              class="resizable"
-              style="height: 50vh"
-            ></div>
+            <h2>TEI XML Preview</h2>
+            <div id="teiXMLPreview"></div>
             <!-- Button Group for TEI XML Preview -->
             <div class="btn-group mt-2">
-              <button class="btn btn-success" type="button">
+              <button class="btn btn-success" type="button" id="downloadButton">
                 Download Result
               </button>
             </div>
@@ -252,6 +299,7 @@ _____________________________________________1  Welche Broschüre hier gemeint i
           </div>
         </div>
       </div>
+      <div id="spinner" style="display: none">Loading...</div>
     </main>
 
     <script
@@ -259,7 +307,67 @@ _____________________________________________1  Welche Broschüre hier gemeint i
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <!-- Download -->
+    <script>
+      // Get reference to the download button
+      var downloadButton = document.getElementById("downloadButton");
 
+      // Add a click event listener to the button
+      downloadButton.addEventListener("click", function () {
+        // 1. Get the content from the CodeMirror instance
+        var xmlContent = teiXMLPreviewEditor.getValue();
+
+        // 2. Create a Blob from the content
+        var blob = new Blob([xmlContent], { type: "text/xml" });
+
+        // 3. Create a temporary anchor element
+        var a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "result.xml"; // Name of the downloaded file
+
+        // 4. Programmatically trigger the download
+        document.body.appendChild(a);
+        a.click();
+
+        // 5. Clean up
+        document.body.removeChild(a);
+        URL.revokeObjectURL(a.href);
+      });
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+      //SIDEBAR
+      const sidebar = document.getElementById("sidebar");
+      const toggleSidebarBtn = document.getElementById("toggleSidebar");
+      const outputFileList = document.getElementById("outputFileList");
+      const downloadInputFilesBtn =
+        document.getElementById("downloadInputFiles");
+      const downloadOutputFilesBtn = document.getElementById(
+        "downloadOutputFiles"
+      );
+
+      toggleSidebarBtn.addEventListener("click", function () {
+        if (sidebar.style.width !== "0px") {
+          // Collapse
+          sidebar.style.width = "0px";
+          fileList.style.display = "none";
+          toggleSidebarBtn.style.position = "fixed"; // Make it fixed so it remains on viewport edge
+          toggleSidebarBtn.style.left = "0";
+          toggleSidebarBtn.style.top = "0";
+          toggleSidebarBtn.setAttribute("title", "Open sidebar");
+          toggleLine.setAttribute("x1", "15"); // Move the line to the right
+        } else {
+          // Expand
+          sidebar.style.width = "250px";
+          fileList.style.display = "block";
+          toggleSidebarBtn.style.position = "static"; // Reset to default positioning
+          toggleSidebarBtn.setAttribute("title", "Close sidebar");
+          toggleLine.setAttribute("x1", "9"); // Reset the line to its original position
+        }
+      });
+    </script>
+    <!-- Codemirror instance with XML code -->
     <script>
       // XML content for preview
       var xmlPreviewContent = `<div subtype="original" type="letter" xml:id="L.1" xml:lang="fr">
@@ -292,13 +400,9 @@ _____________________________________________1  Welche Broschüre hier gemeint i
 
       // Set the XML content as preview
       teiXMLPreviewEditor.setValue(xmlPreviewContent);
-
-      // Make the text areas resizable
-      $(".resizable").resizable({
-        handles: "s", // Resizable from the bottom edge
-      });
     </script>
-    <script>
+    <!-- Chat -->
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function () {
         const userInput = document.getElementById("userInput");
         const sendButton = document.getElementById("sendButton");
@@ -313,14 +417,40 @@ _____________________________________________1  Welche Broschüre hier gemeint i
           chatArea.scrollTop = chatArea.scrollHeight; // Scroll to the bottom
         }
 
-        function sendMessage() {
+        async function sendMessage() {
           const userMessage = userInput.value.trim(); // Get the user input value
           if (userMessage) {
             addMessage(userMessage, "user-message"); // Add user message to chat area
             userInput.value = ""; // Clear the input field
-            setTimeout(() => {
-              addMessage("This is a sample bot response.", "bot-message");
-            }, 1000);
+
+            try {
+              // Assuming you have a selected file and its filename stored somewhere
+              // For now, I'm using 'filename' directly from the earlier code's context.
+              const response = await fetchData(
+                `/corpus/${fileMapping[filename].corpus_id}/letter/${fileMapping[filename].letter_id}/chat`,
+                {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "text/plain",
+                  },
+                  body: userMessage,
+                }
+              );
+
+              // Using the tei_id from the response to fetch the XML content
+              const xmlContent = await fetchConvertedXMLContent(
+                filename,
+                response
+              );
+              displayXML(xmlContent);
+            } catch (error) {
+              // Handle errors, like network issues or invalid responses
+              addMessage(
+                "Error processing your request. Please try again later.",
+                "bot-message"
+              );
+              console.error("Error:", error);
+            }
           }
         }
 
@@ -361,6 +491,6 @@ _____________________________________________1  Welche Broschüre hier gemeint i
           item.addEventListener("click", handleTemplateSelection);
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>
